@@ -50,7 +50,7 @@ export function CalculatorSection() {
 
   return (
     <section className="py-20 px-4 xl:px-10 max-w-7xl mx-auto">
-      <Card className="bg-gray-200 dark:bg-gray-800 rounded-3xl shadow-lg p-10">
+      <Card className="bg-gray-200 dark:bg-gray-800 rounded-3xl shadow-lg py-10 px-0 lg:p-10">
         <CardContent>
           <div className="flex flex-col xl:flex-row gap-20 items-start">
             <div className="flex-1 max-w-3xl">

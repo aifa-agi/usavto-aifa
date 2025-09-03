@@ -12,7 +12,7 @@ import { FooterSection } from "./(_components)/footer-section";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 overflow-x-hidden">
       <HeroSection />
       <TravelSheetsSection />
       <FinesSection />

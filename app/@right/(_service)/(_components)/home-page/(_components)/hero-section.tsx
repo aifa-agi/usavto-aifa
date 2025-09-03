@@ -39,7 +39,7 @@ export function HeroSection() {
         </div>
 
         {/* Hero Images */}
-        <div className="relative w-full max-w-lg h-96 xl:mr-4">
+        <div className="relative w-full max-w-lg h-96 mr-4">
           <div className="absolute inset-0">
             <div
               className="absolute size-full bg-black rounded-2xl"

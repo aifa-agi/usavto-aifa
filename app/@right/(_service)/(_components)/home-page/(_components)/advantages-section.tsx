@@ -37,7 +37,7 @@ export function AdvantagesSection() {
 
   return (
     <section className="py-20 px-4 xl:px-10 max-w-7xl mx-auto">
-      <Card className="bg-gray-100 dark:bg-gray-800 border-t-4 border-t-blue-800 rounded-3xl shadow-lg p-10">
+      <Card className="bg-gray-100 dark:bg-gray-800 border-t-4 border-t-blue-800 rounded-3xl shadow-lg py-10 px-0 lg:p-10">
         <CardHeader>
           <CardTitle className="text-4xl font-bold mb-10 text-gray-900 dark:text-white">
             Преимущества нашего предложения
