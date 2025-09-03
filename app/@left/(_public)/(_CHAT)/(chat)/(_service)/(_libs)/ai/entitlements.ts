@@ -12,7 +12,7 @@ export const entitlementsByUserType: Record<UserType, Entitlements> = {
    * For users without an account
    */
   guest: {
-    maxMessagesPerDay: 1,
+    maxMessagesPerDay: 10,
     availableChatModelIds: ["chat-model", "chat-model-reasoning"],
   },
   subscriber: {
@@ -36,7 +36,7 @@ export const entitlementsByUserType: Record<UserType, Entitlements> = {
     availableChatModelIds: ["chat-model", "chat-model-reasoning"],
   },
   authUser: {
-    maxMessagesPerDay: 3,
+    maxMessagesPerDay: 30,
     availableChatModelIds: ["chat-model", "chat-model-reasoning"],
   },
   apiUser: {
