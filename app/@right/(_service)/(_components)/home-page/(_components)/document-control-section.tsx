@@ -57,7 +57,7 @@ export function DocumentControlSection() {
                 src="/images/usautopro6.jpg"
                 alt="Контроль документации"
                 fill
-                className="object-cover object-left-top origin-top-left transition-transform duration-300 hover:scale-105"
+                className="object-cover object-center origin-center transition-transform duration-300 hover:scale-105"
                 sizes="(max-width: 1280px) 100vw, 384px"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
