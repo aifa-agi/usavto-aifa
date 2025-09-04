@@ -19,28 +19,57 @@ function PureSuggestedActions({
   append,
   selectedVisibilityType,
 }: SuggestedActionsProps) {
+  // return new const suggestedActions
   const suggestedActions = [
     {
-      title: "What are the advantages",
-      label: "of using Next.js?",
-      action: "What are the advantages of using Next.js?",
+      title: "Чем занимается ЮС АВТО?",
+      label: "Коротко о платформе",
+      action:
+        "Расскажите, чем занимается ЮС АВТО и какие задачи для автопарков решает платформа.",
     },
     {
-      title: "Write code to",
-      label: `demonstrate djikstra's algorithm`,
-      action: `Write code to demonstrate djikstra's algorithm`,
+      title: "Преимущества ЮС АВТО",
+      label: "Почему выбирают нас",
+      action:
+        "Объясните ключевые преимущества ЮС АВТО по сравнению с альтернативами: сервисы, ЭПЛ, телемедицина, поддержка.",
     },
     {
-      title: "Help me write an essay",
-      label: `about silicon valley`,
-      action: `Help me write an essay about silicon valley`,
+      title: "Путевой лист vs ЭПЛ",
+      label: "Путевой лист и ЭПЛ",
+      action:
+        "Сравните наши бумажные путевые листы и наш электронный путевой лист (ЭПЛ): когда что удобнее, требования, скорость, контроль.",
     },
     {
-      title: "What is the weather",
-      label: "in San Francisco?",
-      action: "What is the weather in San Francisco?",
+      title: "Что такое ЭПЛ?",
+      label: "Электронный путевой лист",
+      action:
+        "Объясните, что такое электронный путевой лист (ЭПЛ), как он работает (QR, КЭП, ГИС ЭПД), и чем полезен бизнесу.",
     },
-  ];
+    {
+      title: "Зачем телемедицина?",
+      label: "Преимущества и допуск",
+      action:
+        "Расскажите, как телемедицина ускоряет предрейсовые осмотры, снижает риски и интегрируется с ЭПЛ.",
+    },
+    {
+      title: "Как начать работать?",
+      label: "Регистрация и запуск",
+      action:
+        "Опишите шаги старта: регистрация предприятия, договор/акцепт, демо-доступ, запуск , обучение и поддержка.",
+    },
+    {
+      title: "Что такое штрафы?",
+      label: "Единый центр штрафов",
+      action:
+        "Объясните модуль штрафов: источники (ГИБДД, МАДИ и др.), стадии, уведомления, выгрузка в банк-клиент и экономия на льготной оплате.",
+    },
+    {
+      title: "Выгода сотрудничества",
+      label: "Экономика и эффект",
+      action:
+        "Перечислите выгоды: экономия времени, снижение штрафов, отсутствие простоев, сокращение админзатрат",
+    },
+  ] as const;
 
   return (
     <div

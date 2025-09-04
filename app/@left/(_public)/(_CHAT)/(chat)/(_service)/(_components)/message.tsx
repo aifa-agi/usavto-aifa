@@ -7,12 +7,9 @@ import cx from "classnames";
 import { AnimatePresence, motion } from "framer-motion";
 import { memo, useState } from "react";
 import type { Vote } from "@prisma/client";
-import { DocumentToolCall, DocumentToolResult } from "./document";
 import { PencilEditIcon, SparklesIcon } from "@/components/shared/icons";
 import { Markdown } from "@/components/shared/markdown";
 import { MessageActions } from "./message-actions";
-import { PreviewAttachment } from "./preview-attachment";
-import { Weather } from "./weather";
 import equal from "fast-deep-equal";
 import { cn, sanitizeText } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -22,7 +19,6 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { MessageEditor } from "./message-editor";
-import { DocumentPreview } from "./document-preview";
 import { MessageReasoning } from "./message-reasoning";
 import type { UseChatHelpers } from "@ai-sdk/react";
 import { useTranslation } from "../(_libs)/translation";
@@ -48,6 +44,7 @@ const PurePreviewMessage = ({
 }) => {
   const [mode, setMode] = useState<"view" | "edit">("view");
   const { t } = useTranslation();
+
   return (
     <AnimatePresence>
       <motion.div
@@ -79,21 +76,6 @@ const PurePreviewMessage = ({
               "min-h-96": message.role === "assistant" && requiresScrollPadding,
             })}
           >
-            {message.experimental_attachments &&
-              message.experimental_attachments.length > 0 && (
-                <div
-                  data-testid={`message-attachments`}
-                  className="flex flex-row justify-end gap-2"
-                >
-                  {message.experimental_attachments.map((attachment) => (
-                    <PreviewAttachment
-                      key={attachment.url}
-                      attachment={attachment}
-                    />
-                  ))}
-                </div>
-              )}
-
             {message.parts?.map((part, index) => {
               const { type } = part;
               const key = `message-${message.id}-part-${index}`;
@@ -160,105 +142,8 @@ const PurePreviewMessage = ({
                 }
               }
 
-              if (type === "tool-invocation") {
-                const { toolInvocation } = part;
-                const { toolName, toolCallId, state } = toolInvocation;
-
-                if (state === "call") {
-                  const { args } = toolInvocation;
-
-                  return (
-                    <div
-                      key={toolCallId}
-                      className={cx({
-                        skeleton: ["getWeather"].includes(toolName),
-                      })}
-                    >
-                      {toolName === "getWeather" ? (
-                        <Weather />
-                      ) : toolName === "createDocument" ? (
-                        <DocumentPreview isReadonly={isReadonly} args={args} />
-                      ) : toolName === "updateDocument" ? (
-                        <DocumentToolCall
-                          type="update"
-                          args={args}
-                          isReadonly={isReadonly}
-                        />
-                      ) : toolName === "requestSuggestions" ? (
-                        <DocumentToolCall
-                          type="request-suggestions"
-                          args={args}
-                          isReadonly={isReadonly}
-                        />
-                      ) : toolName === "fileSearchVectorStore" ? (
-                        <div>
-                          <pre className="whitespace-pre-wrap break-words font-mono">
-                            {/* {JSON.stringify(result, null, 2)} */}
-                            {t(
-                              "Now I'm going to explore the knowledge base. I need some time..."
-                            )}
-                          </pre>
-                          <div className="flex flex-col">
-                            {[44, 32, 28, 64, 52].map((item) => (
-                              <div
-                                key={item}
-                                className="rounded-md h-8 flex gap-2 px-2 items-center"
-                              >
-                                <div
-                                  className="h-4 rounded-md flex-1 max-w-[--skeleton-width] bg-sidebar-accent-foreground/10"
-                                  style={
-                                    {
-                                      "--skeleton-width": `${item}%`,
-                                    } as React.CSSProperties
-                                  }
-                                />
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      ) : null}
-                    </div>
-                  );
-                }
-
-                if (state === "result") {
-                  const { result } = toolInvocation;
-
-                  return (
-                    <div key={toolCallId}>
-                      {toolName === "getWeather" ? (
-                        <Weather weatherAtLocation={result} />
-                      ) : toolName === "createDocument" ? (
-                        <DocumentPreview
-                          isReadonly={isReadonly}
-                          result={result}
-                        />
-                      ) : toolName === "updateDocument" ? (
-                        <DocumentToolResult
-                          type="update"
-                          result={result}
-                          isReadonly={isReadonly}
-                        />
-                      ) : toolName === "requestSuggestions" ? (
-                        <DocumentToolResult
-                          type="request-suggestions"
-                          result={result}
-                          isReadonly={isReadonly}
-                        />
-                      ) : (
-                        // <div className="overflow-x-auto max-w-full bg-primary text-primary-foreground px-3 py-2 rounded-xl">
-                        <pre className="whitespace-pre-wrap break-words font-mono">
-                          {/* {JSON.stringify(result, null, 2)} */}
-                          {t(
-                            "One more moment, and the answer will be ready in a second..."
-                          )}
-                        </pre>
-                        //  </div>
-                      )}
-                    </div>
-                  );
-                }
-              }
+              // Убираем всю обработку tool-invocation так как инструменты не используются
+              return null;
             })}
 
             {!isReadonly && (
@@ -294,6 +179,7 @@ export const PreviewMessage = memo(
 export const ThinkingMessage = () => {
   const role = "assistant";
   const { t } = useTranslation();
+
   return (
     <motion.div
       data-testid="message-assistant-loading"

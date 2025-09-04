@@ -274,37 +274,10 @@ export async function POST(request: Request) {
           model: myProvider.languageModel(selectedChatModel),
           system: systemPrompt({ selectedChatModel, requestHints }),
           messages,
-          maxSteps: 5,
-          experimental_activeTools:
-            selectedChatModel === "chat-model-reasoning"
-              ? []
-              : [
-                  "web_search_preview",
-                  "getWeather",
-                  "createDocument",
-                  "updateDocument",
-                  "requestSuggestions",
-                  "fileSearchVectorStore",
-                ],
+          maxSteps: 1, // Убираем многошаговое выполнение
           experimental_transform: smoothStream({ chunking: "word" }),
           experimental_generateMessageId: generateCuid,
-          tools: {
-            web_search_preview: openai.tools.webSearchPreview({
-              // optional configuration:
-              searchContextSize: "high",
-              userLocation: {
-                type: "approximate",
-                city: "San Francisco",
-                region: "California",
-              },
-            }),
-            fileSearchVectorStore,
-            getWeather,
-            createDocument: createDocument({ session, dataStream }),
-
-            updateDocument: updateDocument({ session, dataStream }),
-            requestSuggestions: requestSuggestions({ session, dataStream }),
-          },
+          // Полностью убираем все инструменты
           onFinish: async ({ response, usage }) => {
             if (!session.user?.id) return;
 
@@ -332,20 +305,16 @@ export async function POST(request: Request) {
                   parts: assistantMessage.parts
                     ? JSON.parse(JSON.stringify(assistantMessage.parts))
                     : undefined,
-                  attachments: (assistantMessage.experimental_attachments ??
-                    []) as unknown as Prisma.InputJsonValue,
+                  // Убираем attachments так как они не нужны для простого чата
                   createdAt: new Date(),
                 },
               });
 
-              // Additional logging for successful message saving
               console.log(
                 `✅ Assistant message saved successfully for chat ${chatId}`
               );
             } catch (error) {
               console.error("Failed to save assistant message:", error);
-
-              // Error logging with context
               console.error(
                 `❌ Error context - Chat ID: ${chatId}, User ID: ${userId}`
               );
