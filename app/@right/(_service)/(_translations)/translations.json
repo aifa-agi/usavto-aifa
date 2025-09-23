@@ -1,0 +1,34 @@
+{
+  "Mobile Menu": {
+    "ru": "Мобильное меню",
+    "en": "Mobile Menu",
+    "es": "Menú móvil",
+    "de": "Mobilmenü",
+    "fr": "Menu mobile",
+    "it": "Menu mobile"
+  },
+  "Close Menu": {
+    "ru": "Закрыть меню",
+    "en": "Close Menu",
+    "es": "Cerrar menú",
+    "de": "Menü schließen",
+    "fr": "Fermer le menu",
+    "it": "Chiudi menu"
+  },
+  "Open Menu": {
+    "ru": "Открыть меню",
+    "en": "Open Menu",
+    "es": "Abrir menú",
+    "de": "Menü öffnen",
+    "fr": "Ouvrir le menu",
+    "it": "Apri menu"
+  },
+  "Contents": {
+    "ru": "Содержание",
+    "en": "Contents",
+    "es": "Contenido",
+    "de": "Inhalt",
+    "fr": "Contenu",
+    "it": "Indice"
+  }
+}
