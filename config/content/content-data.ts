@@ -8,7 +8,7 @@ export const contentData = {
     "pages": [
       {
         "id": "j7fqhiry13jvec5l3imnaoa4",
-        "title": "Автоматизация путевых листов",
+        "title": "Автоматизация путевых листов!",
         "linkName": "avtomatizatsiya-putevyh-listov",
         "href": "/putevye-listy/avtomatizatsiya-putevyh-listov",
         "roles": [
@@ -1558,5 +1558,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-09-24T02:03:31.061Z";
+export const lastUpdated = "2025-09-24T02:16:47.693Z";
 export const generatedBy = "menu-persist-api";
