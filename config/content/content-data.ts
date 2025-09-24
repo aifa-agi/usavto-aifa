@@ -717,7 +717,7 @@ export const contentData = {
           "автоматизация путевых листов"
         ],
         "isReadyPromptForPerplexity": true,
-        "updatedAt": "2025-09-24T02:45:04.870Z",
+        "updatedAt": "2025-09-24T02:43:54.267Z",
         "draftContentStructure": [
           {
             "id": "h2-1",
@@ -2290,16 +2290,105 @@ export const contentData = {
               }
             ],
             "status": "checked"
-          }
-        ],
-        "isReadyDraftForPerplexity": true,
-        "sections": [
+          },
           {
-            "id": "h2-1",
-            "tempMDXContent": "<h2>Введение в автоматизацию путевых листов для транспортных компаний</h2>\n<p>Автоматизация путевых листов — это современный подход к ведению и управлению документацией, связанной с использованием автотранспорта в компаниях. Вместо привычных бумажных форм, которые часто требуют много времени на заполнение и проверку, автоматизированные системы позволяют быстро и точно фиксировать все необходимые данные. Это особенно важно для транспортных компаний, где эффективность работы напрямую зависит от правильного учета пробега, расходов топлива и состояния транспортных средств. Благодаря автоматизации, менеджеры и специалисты по логистике получают удобный инструмент для контроля и анализа работы автопарка, что значительно упрощает ежедневные процессы и снижает вероятность ошибок.</p>\n<p>Основные преимущества автоматизации путевых листов проявляются в снижении человеческого фактора, экономии времени и ресурсов, а также повышении прозрачности и контроля над использованием транспорта. Вместо ручного ввода данных, система автоматически собирает и обрабатывает информацию, что позволяет быстрее принимать обоснованные решения. Для руководителей автопарков это означает более эффективное управление ресурсами, оптимизацию маршрутов и сокращение затрат. В итоге, автоматизация становится не просто удобством, а необходимым инструментом для успешного развития бизнеса в сфере перевозок и логистики.</p>\n<p><em>Описание изображения:</em> логотип компании \"Us auto\", символизирующий современный подход к автоматизации путевых листов и управление транспортом.</p>\n<blockquote>«Автоматизация путевых листов — ключ к повышению эффективности и снижению ошибок в управлении автопарком, позволяющая транспортным компаниям работать быстрее и надежнее.»</blockquote>"
+            "id": "whluljofaioah4uwpq60e1xt",
+            "tag": "h2",
+            "status": "draft",
+            "additionalData": {
+              "minWords": 0,
+              "maxWords": 0,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "n0rx7e43dczijyop9n1knmxr",
+                "tag": "p",
+                "status": "draft",
+                "additionalData": {
+                  "minWords": 0,
+                  "maxWords": 0,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ncdm2y2c83s3is0nt4bi0lur",
+                "tag": "p",
+                "status": "draft",
+                "additionalData": {
+                  "minWords": 0,
+                  "maxWords": 0,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "k1cg3dyp2ba56iizvb042z3e",
+                "tag": "h3",
+                "status": "draft",
+                "additionalData": {
+                  "minWords": 0,
+                  "maxWords": 0,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "szsirr2kwmj5l0ve9tvzhpb5",
+                    "tag": "p",
+                    "status": "draft",
+                    "additionalData": {
+                      "minWords": 0,
+                      "maxWords": 0,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "badk4tnajbuy6am38xlsvpga",
+                    "tag": "p",
+                    "status": "draft",
+                    "additionalData": {
+                      "minWords": 0,
+                      "maxWords": 0,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "bo0puaerpaepdpp3a37gm053",
+                "tag": "h3",
+                "status": "draft",
+                "additionalData": {
+                  "minWords": 0,
+                  "maxWords": 0,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "og1h2hpid66s4hpbgh4uxkyw",
+                    "tag": "p",
+                    "status": "draft",
+                    "additionalData": {
+                      "minWords": 0,
+                      "maxWords": 0,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "mtsejdpq5fcyd5s9xhkkhjqi",
+                    "tag": "p",
+                    "status": "draft",
+                    "additionalData": {
+                      "minWords": 0,
+                      "maxWords": 0,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ],
-        "isPreviewComplited": false
+        "isReadyDraftForPerplexity": false
       },
       {
         "id": "hpuae76sxx2j79a8tn009ypj",
@@ -3142,5 +3231,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-09-24T02:45:39.960Z";
+export const lastUpdated = "2025-09-24T02:48:16.048Z";
 export const generatedBy = "menu-persist-api";
