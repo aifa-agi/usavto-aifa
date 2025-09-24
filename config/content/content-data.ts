@@ -715,7 +715,9 @@ export const contentData = {
         ],
         "keywords": [
           "автоматизация путевых листов"
-        ]
+        ],
+        "isReadyPromptForPerplexity": true,
+        "updatedAt": "2025-09-24T02:30:55.714Z"
       },
       {
         "id": "hpuae76sxx2j79a8tn009ypj",
@@ -1558,5 +1560,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-09-24T02:30:56.093Z";
+export const lastUpdated = "2025-09-24T02:32:24.491Z";
 export const generatedBy = "menu-persist-api";
