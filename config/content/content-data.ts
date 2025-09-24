@@ -717,7 +717,7 @@ export const contentData = {
           "автоматизация путевых листов"
         ],
         "isReadyPromptForPerplexity": true,
-        "updatedAt": "2025-09-24T02:43:13.863Z",
+        "updatedAt": "2025-09-24T02:43:17.251Z",
         "draftContentStructure": [
           {
             "id": "h2-1",
@@ -2193,7 +2193,8 @@ export const contentData = {
                   "minWords": 120,
                   "maxWords": 240,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-7-2",
@@ -2215,7 +2216,8 @@ export const contentData = {
                   "minWords": 100,
                   "maxWords": 200,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "ul-7-3",
@@ -2237,7 +2239,8 @@ export const contentData = {
                   "minWords": 60,
                   "maxWords": 120,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-7-4",
@@ -2259,7 +2262,8 @@ export const contentData = {
                   "minWords": 80,
                   "maxWords": 160,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "blockquote-7-5",
@@ -2281,12 +2285,14 @@ export const contentData = {
                   "minWords": 15,
                   "maxWords": 35,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           }
         ],
-        "isReadyDraftForPerplexity": false
+        "isReadyDraftForPerplexity": true
       },
       {
         "id": "hpuae76sxx2j79a8tn009ypj",
@@ -3129,5 +3135,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-09-24T02:43:17.697Z";
+export const lastUpdated = "2025-09-24T02:43:44.621Z";
 export const generatedBy = "menu-persist-api";
