@@ -717,7 +717,7 @@ export const contentData = {
           "автоматизация путевых листов"
         ],
         "isReadyPromptForPerplexity": true,
-        "updatedAt": "2025-09-24T02:34:25.574Z",
+        "updatedAt": "2025-09-24T02:34:30.920Z",
         "draftContentStructure": [
           {
             "id": "h2-1",
@@ -1809,7 +1809,8 @@ export const contentData = {
                   "minWords": 105,
                   "maxWords": 210,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "img-5-2",
@@ -1830,7 +1831,8 @@ export const contentData = {
                   "minWords": 5,
                   "maxWords": 15,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-5-3",
@@ -1874,7 +1876,8 @@ export const contentData = {
                       "minWords": 80,
                       "maxWords": 160,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "ul-5-3-2",
@@ -1896,7 +1899,8 @@ export const contentData = {
                       "minWords": 40,
                       "maxWords": 80,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "p-5-3-3",
@@ -1917,11 +1921,14 @@ export const contentData = {
                       "minWords": 70,
                       "maxWords": 140,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-6",
@@ -3113,5 +3120,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-09-24T02:34:32.307Z";
+export const lastUpdated = "2025-09-24T02:34:39.189Z";
 export const generatedBy = "menu-persist-api";
