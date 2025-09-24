@@ -20,6 +20,7 @@ import "@/components/tiptap/tiptap-node/image-node/image-node.scss";
 import "@/components/tiptap/tiptap-node/list-node/list-node.scss";
 import "@/components/tiptap/tiptap-node/paragraph-node/paragraph-node.scss";
 import Image from "next/image";
+import { CalculatorSection } from "../home-page/(_components)/calculator-section";
 
 // Wrapper для максимальной ширины
 function MaxWidthWrapper({
@@ -87,7 +88,7 @@ function extractTextFromNode(node: TipTapNode): string {
   return "";
 }
 
-// Компонент для отображения героического изображения
+// ✅ ИСПРАВЛЕННЫЙ компонент для отображения героического изображения
 function HeroImage({ image }: { image: PageImage }) {
   return (
     <div className="hero-image-container mb-8">
@@ -98,7 +99,7 @@ function HeroImage({ image }: { image: PageImage }) {
           width={1200}
           height={630}
           priority
-          placeholder="blur"
+          placeholder={process.env.NODE_ENV === 'production' ? 'blur' : 'empty'}
           src={image.href}
           sizes="(max-width: 768px) 770px, 1000px"
         />
@@ -585,7 +586,9 @@ export default function ContentRenderer({ sections, heroImage }: ContentRenderer
               />
             </div>
           </MaxWidthWrapper>
+
         </div>
+        <CalculatorSection />
       </div>
     </div>
   );
