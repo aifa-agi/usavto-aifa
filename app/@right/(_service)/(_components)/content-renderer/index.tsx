@@ -1,5 +1,3 @@
-// @/app/@right/(_service)/(_components)/content-renderer/index.tsx
-
 "use client";
 
 import React, { createRef, useEffect, useRef } from "react";
@@ -11,6 +9,7 @@ import { useRightSidebar } from "@/contexts/right-sidebar-context";
 import { useInteractiveSections } from "@/app/@right/(_service)/hooks/useInteractiveSections";
 import { InteractiveSection } from "@/components/shared/interactive-section";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "../../(_libs)/translation";
 
 // Импортируем все стили TipTap
 import "@/components/tiptap/tiptap-node/blockquote-node/blockquote-node.scss";
@@ -20,10 +19,7 @@ import "@/components/tiptap/tiptap-node/horizontal-rule-node/horizontal-rule-nod
 import "@/components/tiptap/tiptap-node/image-node/image-node.scss";
 import "@/components/tiptap/tiptap-node/list-node/list-node.scss";
 import "@/components/tiptap/tiptap-node/paragraph-node/paragraph-node.scss";
-import BlurImage from "../shared/blur-image";
-import { getBlurDataURL, placeholderBlurhash } from "../../(_libs)/(_utils)/utils";
 import Image from "next/image";
-import { useTranslation } from "../../(_libs)/translation";
 
 // Wrapper для максимальной ширины
 function MaxWidthWrapper({
@@ -91,7 +87,6 @@ function extractTextFromNode(node: TipTapNode): string {
   return "";
 }
 
-
 // Компонент для отображения героического изображения
 function HeroImage({ image }: { image: PageImage }) {
   return (
@@ -107,13 +102,10 @@ function HeroImage({ image }: { image: PageImage }) {
           src={image.href}
           sizes="(max-width: 768px) 770px, 1000px"
         />
-
       </div>
     </div>
   );
 }
-
-
 
 // Компонент навигационных кнопок для экранов до 2xl
 function SectionNavigationButtons({
@@ -147,7 +139,7 @@ function SectionNavigationButtons({
   );
 }
 
-// Компонент боковой навигации для широких экранов
+// ИСПРАВЛЕННЫЙ компонент боковой навигации для широких экранов
 function SidebarTableOfContents({
   navigationSections,
   onNavigate,
@@ -155,12 +147,14 @@ function SidebarTableOfContents({
   navigationSections: NavigationSection[];
   onNavigate: (sectionId: string) => void;
 }) {
+  // ✅ ВАЖНО: Хук должен быть вызван ДО любых условных возвратов
+  const { t } = useTranslation();
+
+  // Условие теперь после всех хуков
   if (navigationSections.length === 0) {
     return null;
   }
 
-
-  const { t } = useTranslation();
   return (
     <div className="space-y-1">
       <h3 className="text-sm font-medium text-muted-foreground mb-3">
@@ -185,6 +179,9 @@ function SidebarTableOfContents({
     </div>
   );
 }
+
+// Остальная часть кода остается без изменений...
+// (все функции рендеринга, renderHeading, renderParagraph, etc.)
 
 // Компонент разделителя секций
 function SectionSeparator() {
@@ -327,32 +324,23 @@ function renderTipTapNode(node: TipTapNode, index: number): React.ReactNode {
   switch (node.type) {
     case "heading":
       return renderHeading(node, index);
-
     case "paragraph":
       return renderParagraph(node, index);
-
     case "blockquote":
       return renderBlockquote(node, index);
-
     case "codeBlock":
       return renderCodeBlock(node, index);
-
     case "horizontalRule":
       return renderHorizontalRule(index);
-
     case "image":
       return renderImage(node, index);
-
     case "bulletList":
     case "orderedList":
       return renderList(node, index);
-
     case "listItem":
       return renderListItem(node, index);
-
     case "text":
       return renderText(node, index);
-
     default:
       console.warn(`Unknown TipTap node type: ${node.type}`);
       return (
@@ -419,7 +407,6 @@ export default function ContentRenderer({ sections, heroImage }: ContentRenderer
   const searchParams = useSearchParams();
   const { setInteractionContext } = useAppContext();
   const { isOpen, closeDrawer } = useRightSidebar();
-
 
   const {
     sendModeSectionId,

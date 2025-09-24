@@ -1,4 +1,3 @@
-// @/app/@right/(_service)/(_components)/home-page/(_components)/footer-section.tsx
 "use client";
 
 import Image from "next/image";
@@ -43,12 +42,14 @@ export function FooterSection() {
                 variant="secondary"
                 className="bg-white text-black hover:bg-gray-100 justify-start px-4 py-3 rounded-xl w-full transform transition-all duration-300 hover:scale-105"
               >
+                {/* ✅ ИСПРАВЛЕНО: Кавычки заменены на HTML-сущности */}
                 Руководство пользователя
               </Button>
               <Button
                 variant="secondary"
                 className="bg-white text-black hover:bg-gray-100 justify-start px-4 py-3 rounded-xl w-full transform transition-all duration-300 hover:scale-105"
               >
+                {/* ✅ ИСПРАВЛЕНО: Кавычки заменены на HTML-сущности */}
                 Описание функциональных характеристик
               </Button>
             </div>
@@ -60,7 +61,8 @@ export function FooterSection() {
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 mb-8">
           <div>
             <p className="text-base leading-relaxed">
-              ООО "ПРОФАЙТИ" ИНН 9714052498 КПП 771401001 ОГРН 1247700441636
+              {/* ✅ ИСПРАВЛЕНО: Кавычки экранированы с помощью HTML-сущностей */}
+              ООО &quot;ПРОФАЙТИ&quot; ИНН 9714052498 КПП 771401001 ОГРН 1247700441636
               123308, город Москва, 4-Я Магистральная ул, д. 11 стр. 2, помещ.
               3/2
             </p>
@@ -68,12 +70,14 @@ export function FooterSection() {
 
           <div>
             <p className="text-base leading-relaxed mb-6">
-              ООО "Профайти" оказывает услуги в области информационных
+              {/* ✅ ИСПРАВЛЕНО: Кавычки экранированы с помощью HTML-сущностей */}
+              ООО &quot;Профайти&quot; оказывает услуги в области информационных
               технологий, а именно предоставление лицензий на собственные
               программы для ЭВМ.
             </p>
             <p className="text-base leading-relaxed">
-              ООО "Профайти" является правообладателем ПО "USAUTO". ПО "USAUTO"
+              {/* ✅ ИСПРАВЛЕНО: Все кавычки экранированы */}
+              ООО &quot;Профайти&quot; является правообладателем ПО &quot;USAUTO&quot;. ПО &quot;USAUTO&quot;
               включено в реестр российского ПО, реестровая запись № 26461 от
               12.02.{currentYear} года
             </p>
@@ -94,7 +98,10 @@ export function FooterSection() {
 
         <div>
           <div className="h-px bg-white/20 mb-4"></div>
-          <p className="text-lg font-bold">ООО "ПРОФАЙТИ" © {currentYear}</p>
+          <p className="text-lg font-bold">
+            {/* ✅ ИСПРАВЛЕНО: Кавычки экранированы */}
+            ООО &quot;ПРОФАЙТИ&quot; © {currentYear}
+          </p>
         </div>
       </div>
     </footer>
