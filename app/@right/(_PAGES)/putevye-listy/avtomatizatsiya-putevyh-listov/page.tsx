@@ -1,12 +1,19 @@
-// Auto-generated page - do not edit manually
-// Generated on: 2025-09-24T02:58:14.671Z
+// Auto-generated SEO-optimized static page - do not edit manually
+// Generated on: 2025-09-24T16:49:57.510Z
 // Source href: /putevye-listy/avtomatizatsiya-putevyh-listov
-// Page metadata: Автоматизация путевых листов | 7 sections
+// Page metadata: Автоматизация путевых листов | 6 sections
+// SEO Mode: STATIC GENERATION ENABLED
 
 import { Metadata } from "next";
+import { appConfig } from "@/config/appConfig";
 import ContentRenderer from "@/app/@right/(_service)/(_components)/content-renderer";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
+
+// ПРИНУЖДЕНИЕ К СТАТИЧЕСКОЙ ГЕНЕРАЦИИ - критически важно для SEO
+export const dynamic = 'force-static';
+export const revalidate = false;
+export const fetchCache = 'force-cache';
 
 // Встроенные данные секций
 const sections = [
@@ -53,19 +60,14 @@ const sections = [
           ]
         },
         {
-          "type": "blockquote",
+          "type": "paragraph",
+          "attrs": {
+            "textAlign": null
+          },
           "content": [
             {
-              "type": "paragraph",
-              "attrs": {
-                "textAlign": null
-              },
-              "content": [
-                {
-                  "type": "text",
-                  "text": "Описание изображения: Логотип компании с надписью \"Us auto\", символизирующий современные технологии и инновации в сфере транспортного обслуживания."
-                }
-              ]
+              "type": "text",
+              "text": "Описание изображения: Логотип компании с надписью \"Us auto\", символизирующий современные технологии и инновации в сфере транспортного обслуживания."
             }
           ]
         },
@@ -794,76 +796,6 @@ const sections = [
       ]
     },
     "order": 6
-  },
-  {
-    "id": "h2-7",
-    "bodyContent": {
-      "type": "doc",
-      "content": [
-        {
-          "type": "heading",
-          "attrs": {
-            "textAlign": null,
-            "level": 2
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "Итоги по автоматизации путевых листов: ключевые преимущества и мотивация к внедрению"
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "attrs": {
-            "textAlign": null
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "Автоматизация путевых листов сегодня становится неотъемлемой частью эффективного управления автопарком в транспортных компаниях любого масштаба. Перевод документооборота в цифровой формат позволяет значительно упростить и ускорить процессы учета, контроля и анализа движения транспорта. Вместо громоздких бумажных форм и ручного ввода данных, современные системы обеспечивают прозрачность, точность и оперативность информации, что критично для принятия обоснованных управленческих решений. Внедрение автоматизации путевых листов помогает не только снизить количество ошибок, но и повысить дисциплину водителей, улучшить планирование маршрутов и оптимизировать затраты на эксплуатацию автопарка. Таким образом, автоматизация становится мощным инструментом, который поддерживает устойчивое развитие бизнеса и повышает его конкурентоспособность на рынке перевозок."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "attrs": {
-            "textAlign": null
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "Ключевым аспектом успешного внедрения автоматизации является понимание ее преимуществ и влияние на общую эффективность работы компании. Автоматизированные системы позволяют руководителям и менеджерам получить полный контроль над процессами, быстро получать необходимые отчеты и анализировать данные для оперативного реагирования на изменения. Это значительно сокращает временные затраты на рутинные операции и снижает риски, связанные с человеческим фактором. В итоге бизнес получает возможность более гибко адаптироваться к требованиям рынка, улучшать качество обслуживания клиентов и повышать прибыльность. Автоматизация путевых листов — это не просто технологическое новшество, а стратегическое решение, которое открывает новые горизонты для развития транспортной компании."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "attrs": {
-            "textAlign": null
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "Сокращение времени на оформление и обработку путевых листов;\n  Минимизация ошибок за счет автоматической проверки данных;\n  Повышение прозрачности и контроля использования автотранспорта;\n  Удобный доступ к аналитике и оперативная отчетность;\n  Снижение затрат на бумажный документооборот и хранение;\n  Улучшение дисциплины и ответственности водителей;\n  Гибкость и масштабируемость системы под нужды бизнеса.\n\n\n«Внедрение автоматизации путевых листов — это инвестиция в эффективность и надежность вашего бизнеса, которая окупается снижением ошибок и повышением прозрачности управления автопарком.»"
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "attrs": {
-            "textAlign": null
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "Если вы стремитесь вывести управление автопарком на новый уровень, автоматизация путевых листов — это первый и важный шаг к достижению этой цели. Современные цифровые решения позволяют не только оптимизировать внутренние процессы, но и создать прочную основу для дальнейшего роста и развития компании. Не откладывайте переход на автоматизированные системы — начните уже сегодня, чтобы завтра получать максимальную отдачу от каждого километра пути и каждого вложенного рубля. Помните, что успех в транспортном бизнесе напрямую зависит от точности, скорости и прозрачности управленческих решений, а автоматизация путевых листов — это именно тот инструмент, который поможет вам достичь этих показателей."
-            }
-          ]
-        }
-      ]
-    },
-    "order": 7
   }
 ];
 
@@ -873,9 +805,10 @@ const heroImage = {
   "alt": "Us auto"
 };
 
-// ИСПРАВЛЕННАЯ генерация метаданных для SEO из pageMetadata
+// ПОЛНАЯ SEO-ОПТИМИЗАЦИЯ: генерация метаданных из appConfig
 export async function generateMetadata(): Promise<Metadata> {
-  const siteUrl = process.env.SITE_URL || 'https://example.com';
+  // Используем URL из appConfig вместо переменных окружения
+  const siteUrl = appConfig.url;
   
   // КРИТИЧЕСКИ ВАЖНО: правильная сборка canonical URL
   const canonicalUrl = `${siteUrl}/putevye-listy/avtomatizatsiya-putevyh-listov`;
@@ -885,19 +818,23 @@ export async function generateMetadata(): Promise<Metadata> {
     description: "Узнайте, как автоматизация путевых листов с помощью цифровой платформы USAUTO помогает транспортным компаниям быстро и точно оформлять документы, снижать ошибки и штрафы, а также повышать эффективность управления автопарком.",
     keywords: ["автоматизация путевых листов"],
     
-    // ИСПРАВЛЕНИЕ: добавляем metadataBase для правильных URL
+    // Используем надежный metadataBase из конфигурации
     metadataBase: new URL(siteUrl),
     
-    // Open Graph метатеги
+    // Полные Open Graph метатеги
     openGraph: {
       title: "Автоматизация путевых листов",
       description: "Узнайте, как автоматизация путевых листов с помощью цифровой платформы USAUTO помогает транспортным компаниям быстро и точно оформлять документы, снижать ошибки и штрафы, а также повышать эффективность управления автопарком.",
       type: "article",
       url: canonicalUrl,
+      siteName: appConfig.name,
+      locale: appConfig.lang,
       images: [
         {
           url: "https://9d8adypzz8xutnay.public.blob.vercel-storage.com/usautopro2-6eWPOFRFIem2apMr86FViCUmQB9bJ8.jpg",
           alt: "Us auto",
+          width: 1200,
+          height: 630,
         }
       ],
     },
@@ -910,23 +847,45 @@ export async function generateMetadata(): Promise<Metadata> {
       images: ["https://9d8adypzz8xutnay.public.blob.vercel-storage.com/usautopro2-6eWPOFRFIem2apMr86FViCUmQB9bJ8.jpg"],
     },
     
-    // ИСПРАВЛЕНИЕ: правильный canonical URL - главное изменение
+    // Canonical URL из appConfig
     alternates: {
       canonical: canonicalUrl,
     },
     
+    // Управление поисковыми роботами
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
     
+    // Автор из конфигурации
+    authors: [{ name: appConfig.name }],
     
-    // Автор и издатель
-    authors: [{ name: process.env.SITE_AUTHOR || "Site Author" }],
+    // Дополнительные SEO метатеги
+    category: 'article',
+    classification: 'business',
+    
+    // Structured data для лучшего SEO
+    other: {
+      'article:author': appConfig.name,
+      'article:section': 'putevye-listy',
+      'article:tag': ["автоматизация путевых листов"].join(', '),
+    },
   };
 }
 
-// Основной компонент страницы
+// Основной компонент страницы - полностью статический
 export default function Page() {
   return (
     <article className="page-content">
-      {/* Заголовок страницы */}
+      {/* Заголовок страницы с правильной SEO структурой */}
       <div className="container max-w-screen-2xl pt-6 px-4 md:pt-10">
         <div className="flex flex-col space-y-4">
           <h1 className="font-heading text-3xl text-foreground sm:text-4xl">
@@ -940,8 +899,13 @@ export default function Page() {
 
           <div className="flex items-center space-x-4">
             <Badge className="shadow-none rounded-md px-2.5 py-0.5 text-xs font-semibold h-6 flex items-center">
-              Blog
+              putevye-listy
             </Badge>
+            {["автоматизация путевых листов"].slice(0, 3).map((keyword: string, index: number) => (
+              <Badge key={index} variant="outline" className="shadow-none rounded-md px-2.5 py-0.5 text-xs font-semibold h-6 flex items-center">
+                {keyword}
+              </Badge>
+            ))}
           </div>
         </div>
       </div>
@@ -951,6 +915,47 @@ export default function Page() {
         <div className="absolute top-52 w-full border-t" />
         <ContentRenderer sections={sections} heroImage={heroImage} />
       </div>
+      
+      {/* JSON-LD Structured Data для поисковых систем */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Автоматизация путевых листов",
+            "description": "Узнайте, как автоматизация путевых листов с помощью цифровой платформы USAUTO помогает транспортным компаниям быстро и точно оформлять документы, снижать ошибки и штрафы, а также повышать эффективность управления автопарком.",
+            "author": {
+              "@type": "Organization",
+              "name": appConfig.name,
+              "url": appConfig.url,
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": appConfig.name,
+              "url": appConfig.url,
+              "logo": {
+                "@type": "ImageObject",
+                "url": `${appConfig.url}${appConfig.logo}`,
+              },
+            },
+            "url": `${appConfig.url}/putevye-listy/avtomatizatsiya-putevyh-listov`,
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://9d8adypzz8xutnay.public.blob.vercel-storage.com/usautopro2-6eWPOFRFIem2apMr86FViCUmQB9bJ8.jpg",
+              "alt": "Us auto"
+            },
+            "datePublished": "2025-09-24T16:49:57.510Z",
+            "dateModified": "2025-09-24T16:49:57.510Z",
+            "articleSection": "putevye-listy",
+            "keywords": ["автоматизация путевых листов"],
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": `${appConfig.url}/putevye-listy/avtomatizatsiya-putevyh-listov`
+            }
+          })
+        }}
+      />
     </article>
   );
 }

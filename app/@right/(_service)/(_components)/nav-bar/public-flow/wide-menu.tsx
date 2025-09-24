@@ -131,7 +131,7 @@ export default function WideMenu({
     : null;
 
   const defaultColumns: JSX.Element[] = [];
-  for (let i = 0; i < roleFilteredCategories.length; ) {
+  for (let i = 0; i < roleFilteredCategories.length;) {
     const current = roleFilteredCategories[i];
     const next = roleFilteredCategories[i + 1];
     if (isSmallCategory(current) && next && isSmallCategory(next)) {
@@ -201,7 +201,7 @@ export default function WideMenu({
             </div>
             <div className="w-80 bg-gray-900 p-8 flex flex-col">
               <h3 className="text-gray-400 text-sm font-semibold mb-2 tracking-wider">
-                CATEGORIES
+                Категории
               </h3>
               <div className="flex-1 overflow-y-auto space-y-2 custom-scrollbar">
                 {roleFilteredCategories.map((category) => (

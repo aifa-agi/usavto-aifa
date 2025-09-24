@@ -19,6 +19,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import { LanguageProvider } from "@/contexts/language-context";
 import { AppProvider } from "@/contexts/app-context";
 import { DevIndicatorClient } from "@/lib/utils/dev-indicator-client";
+import { appConfig } from "@/config/appConfig";
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -68,7 +69,7 @@ export default async function RootLayout({
 }) {
   return (
     <html
-      lang="en"
+      lang={appConfig.lang}
       suppressHydrationWarning
       className={`${geist.variable} ${geistMono.variable}`}
     >

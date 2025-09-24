@@ -1,4 +1,4 @@
-// @\app\@right\loading.tsx
+// @/app/@right/loading.tsx
 
 export default function LeftLoading() {
   return (

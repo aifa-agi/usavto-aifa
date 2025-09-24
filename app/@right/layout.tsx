@@ -2,7 +2,6 @@
 
 import React, { Children } from "react";
 
-import { Footer } from "./(_service)/(_components)/footer";
 import { NavigationMenuProvider } from "./(_service)/(_context)/nav-bar-provider";
 import { NavBar } from "./(_service)/(_components)/nav-bar/nav-bar";
 
