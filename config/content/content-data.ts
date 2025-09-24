@@ -717,7 +717,7 @@ export const contentData = {
           "автоматизация путевых листов"
         ],
         "isReadyPromptForPerplexity": true,
-        "updatedAt": "2025-09-24T02:42:37.340Z",
+        "updatedAt": "2025-09-24T02:42:55.054Z",
         "draftContentStructure": [
           {
             "id": "h2-1",
@@ -767,7 +767,8 @@ export const contentData = {
                   "minWords": 120,
                   "maxWords": 250,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-1-2",
@@ -790,7 +791,8 @@ export const contentData = {
                   "minWords": 80,
                   "maxWords": 180,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "img-1-3",
@@ -812,7 +814,8 @@ export const contentData = {
                   "minWords": 5,
                   "maxWords": 15,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "blockquote-1-4",
@@ -835,9 +838,11 @@ export const contentData = {
                   "minWords": 25,
                   "maxWords": 50,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-2",
@@ -2226,7 +2231,8 @@ export const contentData = {
               }
             ]
           }
-        ]
+        ],
+        "isReadyDraftForPerplexity": false
       },
       {
         "id": "hpuae76sxx2j79a8tn009ypj",
@@ -3069,5 +3075,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-09-24T02:42:55.820Z";
+export const lastUpdated = "2025-09-24T02:43:00.371Z";
 export const generatedBy = "menu-persist-api";
