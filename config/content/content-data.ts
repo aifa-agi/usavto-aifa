@@ -717,7 +717,7 @@ export const contentData = {
           "автоматизация путевых листов"
         ],
         "isReadyPromptForPerplexity": true,
-        "updatedAt": "2025-09-24T02:42:55.054Z",
+        "updatedAt": "2025-09-24T02:42:59.843Z",
         "draftContentStructure": [
           {
             "id": "h2-1",
@@ -892,7 +892,8 @@ export const contentData = {
                   "minWords": 100,
                   "maxWords": 200,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-2-2",
@@ -937,7 +938,8 @@ export const contentData = {
                       "minWords": 70,
                       "maxWords": 140,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "p-2-2-2",
@@ -958,7 +960,8 @@ export const contentData = {
                       "minWords": 90,
                       "maxWords": 180,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "img-2-2-3",
@@ -979,7 +982,8 @@ export const contentData = {
                       "minWords": 5,
                       "maxWords": 15,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "table-2-2-4",
@@ -1002,9 +1006,11 @@ export const contentData = {
                       "minWords": 80,
                       "maxWords": 160,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "h3-2-3",
@@ -1050,7 +1056,8 @@ export const contentData = {
                       "minWords": 80,
                       "maxWords": 160,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "ul-2-3-2",
@@ -1073,7 +1080,8 @@ export const contentData = {
                       "minWords": 40,
                       "maxWords": 80,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "code-2-3-3",
@@ -1096,7 +1104,8 @@ export const contentData = {
                       "minWords": 20,
                       "maxWords": 50,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "p-2-3-4",
@@ -1118,11 +1127,14 @@ export const contentData = {
                       "minWords": 60,
                       "maxWords": 120,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-3",
@@ -3075,5 +3087,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-09-24T02:43:00.371Z";
+export const lastUpdated = "2025-09-24T02:43:03.527Z";
 export const generatedBy = "menu-persist-api";
