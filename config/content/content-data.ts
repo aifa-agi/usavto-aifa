@@ -6,7 +6,7 @@ export const contentData = {
     "title": "Путевые листы",
     "href": "/putevye-listy",
     "pages": [],
-    "order": 7
+    "order": 15
   },
   {
     "title": "ЭПЛ",
@@ -15,16 +15,16 @@ export const contentData = {
     "order": 8
   },
   {
-    "title": "Предрейсовый технический осмотр",
-    "href": "/predreysovyy-tehnicheskiy-osmotr",
-    "pages": [],
-    "order": 9
-  },
-  {
     "title": "Телемедицина",
     "href": "/telemeditsina",
     "pages": [],
     "order": 10
+  },
+  {
+    "title": "Предрейсовый технический осмотр",
+    "href": "/predreysovyy-tehnicheskiy-osmotr",
+    "pages": [],
+    "order": 9
   },
   {
     "title": "Управление штрафами",
@@ -146,5 +146,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-09-23T23:02:48.743Z";
+export const lastUpdated = "2025-09-24T01:06:51.959Z";
 export const generatedBy = "menu-persist-api";
