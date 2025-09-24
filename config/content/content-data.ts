@@ -717,7 +717,7 @@ export const contentData = {
           "автоматизация путевых листов"
         ],
         "isReadyPromptForPerplexity": true,
-        "updatedAt": "2025-09-24T02:43:17.251Z",
+        "updatedAt": "2025-09-24T02:43:43.671Z",
         "draftContentStructure": [
           {
             "id": "h2-1",
@@ -2290,9 +2290,95 @@ export const contentData = {
               }
             ],
             "status": "checked"
+          },
+          {
+            "id": "whluljofaioah4uwpq60e1xt",
+            "tag": "h2",
+            "status": "draft",
+            "additionalData": {
+              "minWords": 0,
+              "maxWords": 0,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "n0rx7e43dczijyop9n1knmxr",
+                "tag": "p",
+                "status": "draft",
+                "additionalData": {
+                  "minWords": 0,
+                  "maxWords": 0,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "k1cg3dyp2ba56iizvb042z3e",
+                "tag": "h3",
+                "status": "draft",
+                "additionalData": {
+                  "minWords": 0,
+                  "maxWords": 0,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "szsirr2kwmj5l0ve9tvzhpb5",
+                    "tag": "p",
+                    "status": "draft",
+                    "additionalData": {
+                      "minWords": 0,
+                      "maxWords": 0,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "badk4tnajbuy6am38xlsvpga",
+                    "tag": "p",
+                    "status": "draft",
+                    "additionalData": {
+                      "minWords": 0,
+                      "maxWords": 0,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "bo0puaerpaepdpp3a37gm053",
+                "tag": "h3",
+                "status": "draft",
+                "additionalData": {
+                  "minWords": 0,
+                  "maxWords": 0,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "og1h2hpid66s4hpbgh4uxkyw",
+                    "tag": "p",
+                    "status": "draft",
+                    "additionalData": {
+                      "minWords": 0,
+                      "maxWords": 0,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "mtsejdpq5fcyd5s9xhkkhjqi",
+                    "tag": "p",
+                    "status": "draft",
+                    "additionalData": {
+                      "minWords": 0,
+                      "maxWords": 0,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ],
-        "isReadyDraftForPerplexity": true
+        "isReadyDraftForPerplexity": false
       },
       {
         "id": "hpuae76sxx2j79a8tn009ypj",
@@ -3135,5 +3221,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-09-24T02:43:44.621Z";
+export const lastUpdated = "2025-09-24T02:43:54.970Z";
 export const generatedBy = "menu-persist-api";
