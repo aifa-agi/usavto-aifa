@@ -1558,5 +1558,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-09-24T01:38:04.606Z";
+export const lastUpdated = "2025-09-24T02:03:25.402Z";
 export const generatedBy = "menu-persist-api";
