@@ -717,7 +717,7 @@ export const contentData = {
           "автоматизация путевых листов"
         ],
         "isReadyPromptForPerplexity": true,
-        "updatedAt": "2025-09-24T02:34:30.920Z",
+        "updatedAt": "2025-09-24T02:34:38.403Z",
         "draftContentStructure": [
           {
             "id": "h2-1",
@@ -1977,7 +1977,8 @@ export const contentData = {
                   "minWords": 95,
                   "maxWords": 190,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-6-2",
@@ -2021,7 +2022,8 @@ export const contentData = {
                       "minWords": 75,
                       "maxWords": 150,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "table-6-2-2",
@@ -2043,7 +2045,8 @@ export const contentData = {
                       "minWords": 100,
                       "maxWords": 200,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "p-6-2-3",
@@ -2064,9 +2067,11 @@ export const contentData = {
                       "minWords": 85,
                       "maxWords": 170,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "h3-6-3",
@@ -2110,7 +2115,8 @@ export const contentData = {
                       "minWords": 90,
                       "maxWords": 180,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "code-6-3-2",
@@ -2131,11 +2137,14 @@ export const contentData = {
                       "minWords": 30,
                       "maxWords": 70,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-7",
@@ -3120,5 +3129,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-09-24T02:34:39.189Z";
+export const lastUpdated = "2025-09-24T02:34:44.261Z";
 export const generatedBy = "menu-persist-api";
