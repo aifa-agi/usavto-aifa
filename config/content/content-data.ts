@@ -717,7 +717,7 @@ export const contentData = {
           "автоматизация путевых листов"
         ],
         "isReadyPromptForPerplexity": true,
-        "updatedAt": "2025-09-24T02:43:43.671Z",
+        "updatedAt": "2025-09-24T02:43:54.267Z",
         "draftContentStructure": [
           {
             "id": "h2-1",
@@ -2312,6 +2312,16 @@ export const contentData = {
                 }
               },
               {
+                "id": "ncdm2y2c83s3is0nt4bi0lur",
+                "tag": "p",
+                "status": "draft",
+                "additionalData": {
+                  "minWords": 0,
+                  "maxWords": 0,
+                  "actualContent": ""
+                }
+              },
+              {
                 "id": "k1cg3dyp2ba56iizvb042z3e",
                 "tag": "h3",
                 "status": "draft",
@@ -3221,5 +3231,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-09-24T02:43:54.970Z";
+export const lastUpdated = "2025-09-24T02:44:15.362Z";
 export const generatedBy = "menu-persist-api";
