@@ -809,18 +809,18 @@ const heroImage = {
 export async function generateMetadata(): Promise<Metadata> {
   // Используем URL из appConfig вместо переменных окружения
   const siteUrl = appConfig.url;
-  
+
   // КРИТИЧЕСКИ ВАЖНО: правильная сборка canonical URL
   const canonicalUrl = `${siteUrl}/putevye-listy/avtomatizatsiya-putevyh-listov`;
-  
+
   return {
     title: "Автоматизация путевых листов",
     description: "Узнайте, как автоматизация путевых листов с помощью цифровой платформы USAUTO помогает транспортным компаниям быстро и точно оформлять документы, снижать ошибки и штрафы, а также повышать эффективность управления автопарком.",
     keywords: ["автоматизация путевых листов"],
-    
+
     // Используем надежный metadataBase из конфигурации
     metadataBase: new URL(siteUrl),
-    
+
     // Полные Open Graph метатеги
     openGraph: {
       title: "Автоматизация путевых листов",
@@ -838,7 +838,7 @@ export async function generateMetadata(): Promise<Metadata> {
         }
       ],
     },
-    
+
     // Twitter метатеги
     twitter: {
       card: "summary_large_image",
@@ -846,12 +846,12 @@ export async function generateMetadata(): Promise<Metadata> {
       description: "Узнайте, как автоматизация путевых листов с помощью цифровой платформы USAUTO помогает транспортным компаниям быстро и точно оформлять документы, снижать ошибки и штрафы, а также повышать эффективность управления автопарком.",
       images: ["https://9d8adypzz8xutnay.public.blob.vercel-storage.com/usautopro2-6eWPOFRFIem2apMr86FViCUmQB9bJ8.jpg"],
     },
-    
+
     // Canonical URL из appConfig
     alternates: {
       canonical: canonicalUrl,
     },
-    
+
     // Управление поисковыми роботами
     robots: {
       index: true,
@@ -864,14 +864,14 @@ export async function generateMetadata(): Promise<Metadata> {
         'max-snippet': -1,
       },
     },
-    
+
     // Автор из конфигурации
     authors: [{ name: appConfig.name }],
-    
+
     // Дополнительные SEO метатеги
     category: 'article',
     classification: 'business',
-    
+
     // Structured data для лучшего SEO
     other: {
       'article:author': appConfig.name,
@@ -891,7 +891,7 @@ export default function Page() {
           <h1 className="font-heading text-3xl text-foreground sm:text-4xl">
             Автоматизация путевых листов
           </h1>
-        
+
           {/* Описание страницы */}
           <p className="text-base text-muted-foreground md:text-lg">
             Узнайте, как автоматизация путевых листов с помощью цифровой платформы USAUTO помогает транспортным компаниям быстро и точно оформлять документы, снижать ошибки и штрафы, а также повышать эффективность управления автопарком.
@@ -915,7 +915,7 @@ export default function Page() {
         <div className="absolute top-52 w-full border-t" />
         <ContentRenderer sections={sections} heroImage={heroImage} />
       </div>
-      
+
       {/* JSON-LD Structured Data для поисковых систем */}
       <script
         type="application/ld+json"

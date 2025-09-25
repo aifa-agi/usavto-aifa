@@ -88,19 +88,18 @@ function extractTextFromNode(node: TipTapNode): string {
   return "";
 }
 
-// ✅ ИСПРАВЛЕННЫЙ компонент для отображения героического изображения
-function HeroImage({ image }: { image: PageImage }) {
+function HeroImage({ image }: { image: PageImage | undefined }) {
   return (
     <div className="hero-image-container mb-8">
       <div className="relative w-full h-64 md:h-80 lg:h-96 overflow-hidden rounded-lg 2xl:rounded-t-xl 2xl:rounded-b-none">
         <Image
-          alt={image.alt || "Aifa dev image"}
+          alt={image?.alt || "Aifa dev image"}
           className="aspect-[1200/630] border-b object-cover md:rounded-t-xl"
           width={1200}
           height={630}
           priority
           placeholder={process.env.NODE_ENV === 'production' ? 'blur' : 'empty'}
-          src={image.href}
+          src={"/_static/illustrations/usautopro1.jpg"}
           sizes="(max-width: 768px) 770px, 1000px"
         />
       </div>
