@@ -447,7 +447,7 @@ export function AdminPageStep5({ slug }: AdminPageInfoProps) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
               <div className="truncate">
                 <span className="text-muted-foreground">Title:</span>
-                <span className="ml-2 font-medium">{page?.title || page?.linkName}</span>
+                <span className="ml-2 font-medium">{page?.title || ""}</span>
               </div>
               <div className="truncate">
                 <span className="text-muted-foreground">Slug:</span>
