@@ -1,5 +1,5 @@
 // Auto-generated SEO-optimized static page - do not edit manually
-// Generated on: 2025-09-26T16:19:31.647Z
+// Generated on: 2025-09-26T17:33:14.831Z
 // Source href: /blog/putevye-listy/avtomatizatsiya-putevyh-listov
 // Page metadata: Автоматизация путевых лист | 6 sections
 // SEO Mode: STATIC GENERATION ENABLED
@@ -34,7 +34,7 @@ const sections = [
           "content": [
             {
               "type": "text",
-              "text": "Автоматизация путевых листов: введение в эффективное управление автопарком"
+              "text": "Автоматизация путевых листов: введение в эффективное управление автопарком!"
             }
           ]
         },
@@ -809,13 +809,13 @@ const heroImage = {
   "alt": "Us auto"
 };
 
+// ✅ ИСПРАВЛЕНО: Определяем canonicalUrl в глобальной области видимости модуля.
+const canonicalUrl = `${appConfig.url}/blog/putevye-listy/avtomatizatsiya-putevyh-listov`;
+
 
 // ПОЛНАЯ SEO-ОПТИМИЗАЦИЯ: генерация метаданных из appConfig
 export async function generateMetadata(): Promise<Metadata> {
   const siteUrl = appConfig.url;
-  
-  // ✅ ИСПРАВЛЕНО: Canonical URL теперь строится из полного пути.
-  const canonicalUrl = `${siteUrl}/blog/putevye-listy/avtomatizatsiya-putevyh-listov`;
   
   return {
     title: "Автоматизация путевых лист",
@@ -824,7 +824,6 @@ export async function generateMetadata(): Promise<Metadata> {
     
     metadataBase: new URL(siteUrl),
     
-    // ✅ ИСПРАВЛЕНО: Open Graph URL использует правильный canonicalUrl.
     openGraph: {
       title: "Автоматизация путевых лист",
       description: "Узнайте, как автоматизация путевых листов с помощью цифровой платформы USAUTO помогает транспортным компаниям быстро и точно оформлять документы, снижать ошибки и штрафы, а также повышать эффективность управления автопарком.",
@@ -849,7 +848,6 @@ export async function generateMetadata(): Promise<Metadata> {
       images: ["https://9d8adypzz8xutnay.public.blob.vercel-storage.com/usautopro2-6eWPOFRFIem2apMr86FViCUmQB9bJ8.jpg"],
     },
     
-    // ✅ ИСПРАВЛЕНО: alternates.canonical использует правильный canonicalUrl.
     alternates: {
       canonical: canonicalUrl,
     },
@@ -871,7 +869,6 @@ export async function generateMetadata(): Promise<Metadata> {
     category: 'article',
     classification: 'business',
     
-    // ✅ ИСПРАВЛЕНО: article:section теперь использует первую часть пути.
     other: {
       'article:author': appConfig.name,
       'article:section': 'blog',
@@ -894,7 +891,6 @@ export default function Page() {
             Узнайте, как автоматизация путевых листов с помощью цифровой платформы USAUTO помогает транспортным компаниям быстро и точно оформлять документы, снижать ошибки и штрафы, а также повышать эффективность управления автопарком.
           </p>
           <div className="flex items-center space-x-4">
-            {/* ✅ ИСПРАВЛЕНО: Бейдж категории использует первую часть пути. */}
             <Badge className="shadow-none rounded-md px-2.5 py-0.5 text-xs font-semibold h-6 flex items-center">
               blog
             </Badge>
@@ -911,7 +907,6 @@ export default function Page() {
         <ContentRenderer sections={sections} heroImage={heroImage} />
       </div>
       
-      {/* ✅ ИСПРАВЛЕНО: Structured Data использует полный и правильный URL. */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -940,8 +935,8 @@ export default function Page() {
               "url": "https://9d8adypzz8xutnay.public.blob.vercel-storage.com/usautopro2-6eWPOFRFIem2apMr86FViCUmQB9bJ8.jpg",
               "alt": "Us auto"
             },
-            "datePublished": "2025-09-26T16:19:31.647Z",
-            "dateModified": "2025-09-26T16:19:31.647Z",
+            "datePublished": "2025-09-26T17:33:14.831Z",
+            "dateModified": "2025-09-26T17:33:14.831Z",
             "articleSection": "blog",
             "keywords": ["автоматизация путевых листов"],
             "mainEntityOfPage": {

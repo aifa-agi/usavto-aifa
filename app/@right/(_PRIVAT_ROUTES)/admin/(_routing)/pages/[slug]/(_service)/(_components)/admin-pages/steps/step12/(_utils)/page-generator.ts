@@ -23,17 +23,15 @@ interface BodyContent {
 }
 
 /**
- * ✅ ИЗМЕНЕНО: Функция теперь принимает один аргумент `payload`.
+ * Generates complete page.tsx content with embedded sections data and metadata
  */
 export function generatePageTsxContent(
   payload: PageUploadPayload
 ): string {
-  // ✅ ИЗМЕНЕНО: Извлекаем href и определяем относительный путь и категорию.
   const { pageMetadata, sections, href } = payload;
   const relativePath = href.startsWith('/') ? href.slice(1) : href;
   const categorySlug = relativePath.split('/')[0] || 'general';
   
-  // Логика метаданных остается прежней
   const finalMetadata = {
     title: pageMetadata.title || "Страница без заголовка",
     description: pageMetadata.description || "Описание отсутствует", 
@@ -50,10 +48,8 @@ export function generatePageTsxContent(
     href: finalMetadata.images[0].href,
     alt: finalMetadata.images[0].alt || ""
   } : null;
-
-  // Логика извлечения alt-тегов остается прежней
+  
   const extractImageAlts = (sections: ExtendedSection[]): string[] => {
-    // ... (код без изменений)
     const alts: string[] = [];
     sections.forEach(section => {
       if (section.bodyContent && typeof section.bodyContent === 'object') {
@@ -105,13 +101,13 @@ const sections = ${sectionsJson};
 // Данные героического изображения
 const heroImage = ${heroImageData ? JSON.stringify(heroImageData, null, 2) : 'null'};
 
+// ✅ ИСПРАВЛЕНО: Определяем canonicalUrl в глобальной области видимости модуля.
+const canonicalUrl = \`\${appConfig.url}${href}\`;
+
 
 // ПОЛНАЯ SEO-ОПТИМИЗАЦИЯ: генерация метаданных из appConfig
 export async function generateMetadata(): Promise<Metadata> {
   const siteUrl = appConfig.url;
-  
-  // ✅ ИСПРАВЛЕНО: Canonical URL теперь строится из полного пути.
-  const canonicalUrl = \`\${siteUrl}${href}\`;
   
   return {
     title: "${escapedTitle}",
@@ -120,7 +116,6 @@ export async function generateMetadata(): Promise<Metadata> {
     
     metadataBase: new URL(siteUrl),
     
-    // ✅ ИСПРАВЛЕНО: Open Graph URL использует правильный canonicalUrl.
     openGraph: {
       title: "${escapedTitle}",
       description: "${escapedDescription}",
@@ -154,7 +149,6 @@ export async function generateMetadata(): Promise<Metadata> {
       images: [appConfig.ogImage],`}
     },
     
-    // ✅ ИСПРАВЛЕНО: alternates.canonical использует правильный canonicalUrl.
     alternates: {
       canonical: canonicalUrl,
     },
@@ -176,7 +170,6 @@ export async function generateMetadata(): Promise<Metadata> {
     category: 'article',
     classification: 'business',
     
-    // ✅ ИСПРАВЛЕНО: article:section теперь использует первую часть пути.
     other: {
       'article:author': appConfig.name,
       'article:section': '${categorySlug}',
@@ -199,7 +192,6 @@ export default function Page() {
             ${escapedDescription}
           </p>
           <div className="flex items-center space-x-4">
-            {/* ✅ ИСПРАВЛЕНО: Бейдж категории использует первую часть пути. */}
             <Badge className="shadow-none rounded-md px-2.5 py-0.5 text-xs font-semibold h-6 flex items-center">
               ${categorySlug}
             </Badge>
@@ -216,7 +208,6 @@ export default function Page() {
         <ContentRenderer sections={sections} heroImage={heroImage} />
       </div>
       
-      {/* ✅ ИСПРАВЛЕНО: Structured Data использует полный и правильный URL. */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
