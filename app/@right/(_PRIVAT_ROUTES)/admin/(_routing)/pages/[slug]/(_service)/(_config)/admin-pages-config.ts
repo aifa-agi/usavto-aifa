@@ -109,7 +109,7 @@ export const ADMIN_PAGES_TABS: AdminPageTabConfig[] = [
     defaultIndicatorStatus: "gray",
     etapNumber: 7,
     stepType: "required",
-    dependencies: ["step6"],
+    dependencies: [],
     titleForRequired: "Step 3",
   },
   {
