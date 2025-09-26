@@ -52,7 +52,7 @@ export function HeaderCard() {
   // Always return a plain string for JSX
   const pageTitleText = useMemo(
     () => getPageTitleSafe(page),
-    [page?.title, page?.metadata?.title, page?.linkName]
+    [page?.title, page?.metadata?.title]
   );
 
   const { total, completed, inProgress, readyPct } = useMemo(() => {

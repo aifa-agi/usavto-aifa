@@ -144,7 +144,7 @@ export function AdminPageInfo({ slug }: AdminPageInfoProps) {
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-3 mb-3">
             <h1 className="text-2xl font-bold text-foreground truncate">
-              {page.title || page.linkName}
+              {page.title || ""}
             </h1>
             {page.hasBadge && page.badgeName && (
               <Badge variant="secondary" className="shrink-0">

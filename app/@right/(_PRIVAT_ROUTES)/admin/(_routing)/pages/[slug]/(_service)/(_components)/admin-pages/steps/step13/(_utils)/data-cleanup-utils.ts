@@ -72,7 +72,6 @@ const EXTENDED_TEMPORARY_FIELDS: (keyof PageData)[] = [
  */
 const REQUIRED_FIELDS: (keyof CleanedPageData)[] = [
   "id",
-  "linkName", // FIXED: Added linkName as required
   "roles", 
   "isPublished",
   "isVectorConnected",
@@ -128,7 +127,6 @@ export function cleanupPageData(pageData: PageData): CleanedPageData {
   const cleanedData: CleanedPageData = {
     // Required fields
     id: pageData.id,
-    linkName: pageData.linkName, // FIXED: Include linkName
     roles: pageData.roles,
     isPublished: pageData.isPublished,
     isVectorConnected: pageData.isVectorConnected, 
@@ -244,9 +242,7 @@ export function validateCleanedData(cleanedData: CleanedPageData): {
     errors.push("ID cannot be empty");
   }
   
-  if (!cleanedData.linkName || cleanedData.linkName.trim() === "") {
-    errors.push("LinkName cannot be empty");
-  }
+  
   
   if (!Array.isArray(cleanedData.roles) || cleanedData.roles.length === 0) {
     errors.push("Roles array cannot be empty");

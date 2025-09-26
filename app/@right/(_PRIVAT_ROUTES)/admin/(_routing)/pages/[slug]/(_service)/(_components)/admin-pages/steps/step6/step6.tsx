@@ -520,7 +520,7 @@ export function AdminPageStep6({ slug }: AdminPageStep6Props) {
       {showRepairTool && hasValidationError && (
         <ContentRepairTool
           invalidJsonString={jsonContent}
-          pageName={page.title || page.linkName}
+          pageName={page.title || ""}
           pageSlug={slug}
           onRepairSuccess={handleRepairSuccess}
           onCancel={() => setShowRepairTool(false)}

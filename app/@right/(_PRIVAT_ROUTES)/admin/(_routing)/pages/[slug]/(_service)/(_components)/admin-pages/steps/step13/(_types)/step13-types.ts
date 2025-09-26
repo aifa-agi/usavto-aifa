@@ -17,6 +17,7 @@
 
 import { PageImages, PageType } from "@/app/@right/(_service)/(_types)/page-types";
 import { BadgeName } from "@/config/pages-config/badges/badge-config";
+
 import type { UserType,} from "@prisma/client";
 
 
@@ -26,7 +27,6 @@ import type { UserType,} from "@prisma/client";
  */
 export interface CleanedPageData {
   id: string;
-  linkName: string; // FIXED: Added required linkName field
   title?: string;
   description?: string;
   images?: PageImages[];

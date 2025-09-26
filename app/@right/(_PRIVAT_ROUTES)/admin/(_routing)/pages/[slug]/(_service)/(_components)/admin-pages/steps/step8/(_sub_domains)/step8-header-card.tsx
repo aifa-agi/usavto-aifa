@@ -61,7 +61,7 @@ export function Step8HeaderCard() {
                 Draft Results
               </h2>
               <span className="rounded-full border border-border px-2 py-0.5 text-xs text-muted-foreground">
-                {page?.title ?? page?.linkName ?? "Untitled Page"}
+                {page?.title ?? "Untitled Page"}
               </span>
             </div>
             <p className="mt-1 text-sm text-muted-foreground">

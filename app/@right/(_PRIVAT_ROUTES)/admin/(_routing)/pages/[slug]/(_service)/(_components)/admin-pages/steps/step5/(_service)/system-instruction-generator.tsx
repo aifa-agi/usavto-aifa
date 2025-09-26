@@ -128,7 +128,7 @@ export function useSystemInstructionGenerator({
 * PAGE CONTEXT DATA
 */
 PAGE_DATA: {
-  title: "${page.title || page.linkName || "Untitled Page"}",
+  title: "${page.title || "Untitled Page"}",
   description: "${page.description || ""}",
   slug: "${slug}",
   keywords: [${page.keywords?.map((k) => `"${k}"`).join(", ") || ""}],... intent: "${page.intent || ""}",
@@ -138,9 +138,9 @@ PAGE_DATA: {
   category: "${category?.title || ""}",
   images: [
 ${imagesList
-  .split("\n")
-  .map((line) => `    ${line}`)
-  .join("\n")}
+        .split("\n")
+        .map((line) => `    ${line}`)
+        .join("\n")}
   ],
   writingStyle: "${selectedStyle?.label || ""}" - ${selectedStyle?.description || ""},
   contentFormat: "${selectedFormat?.label || ""}" - ${selectedFormat?.description || ""},
@@ -210,15 +210,14 @@ MATRIX FILLING RULES:
 7) CODE TAG USAGE (COPYABLE INFO)
 - The code tag can represent copyable text beyond programming code (phones, addresses, booking refs, commands, URLs, emails).
 - Do NOT generate any actual content now; only metadata + advisory min/max + placeholder.
-${
-  sanitizedCustom
-    ? `
+${sanitizedCustom
+        ? `
 8) CUSTOM REQUIREMENTS:
 "${sanitizedCustom}"
 - Integrate these requirements into EACH element’s selfPrompt and metadata where relevant.
 `
-    : ""
-}
+        : ""
+      }
 /**
 * =============================================================================
 * MATRIX TO FILL

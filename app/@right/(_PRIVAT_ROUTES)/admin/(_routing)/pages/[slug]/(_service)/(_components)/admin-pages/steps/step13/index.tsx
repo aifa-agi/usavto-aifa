@@ -100,7 +100,7 @@ export function Step13Main({ slug }: Step13Props) {
     >
       {/* Accessible main title (screen reader only) */}
       <h1 id="step13-main-title" className="sr-only">
-        {STEP13_TEXTS.header.title} - {pageData?.title || pageData?.linkName || "Untitled Page"}
+        {STEP13_TEXTS.header.title} - {pageData?.title || "Untitled Page"}
       </h1>
 
       {/* Header Card - Full Width */}

@@ -106,7 +106,7 @@ export function Step13HeaderCard({ pageData }: Step13HeaderCardProps) {
                                 {STEP13_TEXTS.header.title}
                             </h2>
                             <span className="rounded-full border border-border px-2 py-0.5 text-xs text-muted-foreground">
-                                {pageData?.title ?? pageData?.linkName ?? "Untitled Page"}
+                                {pageData?.title ?? "Untitled Page"}
                             </span>
                         </div>
                         <p className="mt-1 text-sm text-muted-foreground">
