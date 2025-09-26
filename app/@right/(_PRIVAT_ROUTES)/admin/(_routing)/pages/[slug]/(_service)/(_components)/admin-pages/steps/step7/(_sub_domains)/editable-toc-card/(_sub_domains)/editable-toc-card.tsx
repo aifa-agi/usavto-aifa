@@ -23,7 +23,7 @@ export function EditableTocCard() {
 
   const pageTitle = React.useMemo(
     () => getPageTitleSafe(page),
-    [page?.title, page?.metadata?.title, page?.linkName]
+    [page?.title, page?.metadata?.title]
   );
 
   const active = getActiveSection();
