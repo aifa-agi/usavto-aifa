@@ -3032,8 +3032,8 @@ export const contentData = {
         "keywords": [
           "документ"
         ],
-        "isReadyDraftForPerplexity": true,
-        "updatedAt": "2025-09-26T19:18:53.532Z",
+        "isReadyDraftForPerplexity": false,
+        "updatedAt": "2025-09-26T19:19:08.669Z",
         "isReadyPromptForPerplexity": true,
         "draftContentStructure": [
           {
@@ -3088,7 +3088,8 @@ export const contentData = {
                   "minWords": 120,
                   "maxWords": 250,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-1-2",
@@ -3113,7 +3114,8 @@ export const contentData = {
                   "minWords": 80,
                   "maxWords": 180,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "img-1-3",
@@ -3136,7 +3138,8 @@ export const contentData = {
                   "minWords": 5,
                   "maxWords": 15,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "blockquote-1-4",
@@ -3160,9 +3163,11 @@ export const contentData = {
                   "minWords": 25,
                   "maxWords": 50,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-2",
@@ -5485,5 +5490,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-09-26T19:19:09.290Z";
+export const lastUpdated = "2025-09-26T19:19:14.475Z";
 export const generatedBy = "menu-persist-api";
