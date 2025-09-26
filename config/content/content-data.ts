@@ -3032,8 +3032,8 @@ export const contentData = {
         "keywords": [
           "документ"
         ],
-        "isReadyDraftForPerplexity": false,
-        "updatedAt": "2025-09-26T19:19:30.615Z",
+        "isReadyDraftForPerplexity": true,
+        "updatedAt": "2025-09-26T19:19:34.726Z",
         "isReadyPromptForPerplexity": true,
         "draftContentStructure": [
           {
@@ -4633,7 +4633,8 @@ export const contentData = {
                   "minWords": 120,
                   "maxWords": 240,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-7-2",
@@ -4657,7 +4658,8 @@ export const contentData = {
                   "minWords": 100,
                   "maxWords": 200,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "ul-7-3",
@@ -4681,7 +4683,8 @@ export const contentData = {
                   "minWords": 60,
                   "maxWords": 120,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-7-4",
@@ -4705,7 +4708,8 @@ export const contentData = {
                   "minWords": 80,
                   "maxWords": 160,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "blockquote-7-5",
@@ -4729,9 +4733,11 @@ export const contentData = {
                   "minWords": 15,
                   "maxWords": 35,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           }
         ]
       }
@@ -5544,5 +5550,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-09-26T19:19:35.361Z";
+export const lastUpdated = "2025-09-26T19:20:43.135Z";
 export const generatedBy = "menu-persist-api";
