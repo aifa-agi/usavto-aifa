@@ -4,9 +4,9 @@ import { useCallback } from "react";
 import { useDialogs } from "@/app/@right/(_service)/(_context)/dialogs";
 import { PageData, PageType } from "@/app/@right/(_service)/(_types)/page-types";
 import { MenuCategory } from "@/app/@right/(_service)/(_types)/menu-types";
-import { BadgeName } from "@/config/pages-config/badges/badge-config";
 import { UserType } from "@/app/@right/(_service)/(_types)/footer-types";
 import { transliterate } from "@/lib/utils/transliterate";
+import { BadgeName } from "@/config/pages-config/badges/badge-config";
 
 /**
  * Преобразует PageType в URL-префикс (kebab-case).

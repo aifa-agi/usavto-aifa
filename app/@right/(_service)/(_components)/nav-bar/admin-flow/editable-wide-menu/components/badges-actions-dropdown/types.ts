@@ -1,8 +1,9 @@
 // @/app/(_service)/components/nav-bar/admin-flow/editable-wide-menu/page-section/badges-actions-dropdown/types.ts
 
-import { BadgeName } from "@/config/pages-config/badges/badge-config";
+
 import { MenuCategory } from "@/app/@right/(_service)/(_types)/menu-types";
 import { PageData } from "@/app/@right/(_service)/(_types)/page-types";
+import { BadgeName } from "@/config/pages-config/badges/badge-config";
 import { UserType } from "@prisma/client";
 
 /**

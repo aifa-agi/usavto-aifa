@@ -80,7 +80,7 @@ export function CategoryActionsDropdown({
             const oldCategoryHref = cat.href ?? "/" + transliterate(cat.title);
 
             const updatedPages = cat.pages.map((page) => {
-              const pageSlug = page.href?.split("/").pop() ?? transliterate(page.title ?? page.linkName);
+              const pageSlug = page.href?.split("/").pop() ?? transliterate(page.title ?? "");
               return {
                 ...page,
                 href: `${newHref}/${pageSlug}`,
