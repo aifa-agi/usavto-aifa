@@ -28,7 +28,7 @@ export const useStepsOrchestrator = (slug: string) => {
     if (!categories || !slug) return null;
 
     for (const category of categories) {
-      const page = category.pages?.find((page) => page.linkName === slug);
+      const page = category.pages?.find((page) => page.id === slug);
       if (page) {
         return page as PageData;
       }
