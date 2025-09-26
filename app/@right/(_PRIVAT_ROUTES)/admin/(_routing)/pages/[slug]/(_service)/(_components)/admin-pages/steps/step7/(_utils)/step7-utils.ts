@@ -68,7 +68,7 @@ export function computeLaunchEligibility(
  */
 export function getPageTitleSafe(page: PageData | null | undefined): string {
   const raw =
-    page?.title ?? page?.metadata?.title ?? page?.linkName ?? "Untitled Page";
+    page?.title ?? page?.metadata?.title ?? "Untitled Page";
   return typeof raw === "string" ? raw : String(raw);
 }
 
