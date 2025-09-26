@@ -3034,8 +3034,7 @@ export const contentData = {
         ],
         "isReadyDraftForPerplexity": true,
         "updatedAt": "2025-09-26T19:06:42.407Z",
-        "isReadyPromptForPerplexity": true,
-        
+        "isReadyPromptForPerplexity": true
       }
     ],
     "order": 15
@@ -3846,5 +3845,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-09-26T19:07:26.615Z";
+export const lastUpdated = "2025-09-26T19:18:57.824Z";
 export const generatedBy = "menu-persist-api";
