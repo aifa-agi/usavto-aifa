@@ -71,11 +71,11 @@ export function PageActionsMenu({
     }
 
     // If clickable and has linkName, close modal and navigate to edit page
-    if (isClickable && currentPageData?.linkName) {
+    if (isClickable && currentPageData?.id) {
       // Close modal using context (this also handles body overflow reset)
       closeModal();
 
-      const url = `/admin/pages/${currentPageData.linkName}`;
+      const url = `/admin/pages/${currentPageData.id}`;
       router.push(url);
       return;
     }

@@ -19,14 +19,14 @@ import { PageData } from "@/app/@right/(_service)/(_types)/page-types";
 
 interface PageActionsMenuProps
   extends PageDataStatus,
-    Pick<
-      PageActionsHook,
-      | "handleAddTitle"
-      | "handleAddDescription"
-      | "handleAddImages"
-      | "handleAddKeywords"
-      | "handleAddPageCode"
-    > {
+  Pick<
+    PageActionsHook,
+    | "handleAddTitle"
+    | "handleAddDescription"
+    | "handleAddImages"
+    | "handleAddKeywords"
+    | "handleAddPageCode"
+  > {
   currentPageData: PageData | null;
   hasUnsavedChanges?: boolean;
 }
@@ -204,9 +204,9 @@ export function HomeActionsMenu({
       return;
     }
 
-    if (isClickable && currentPageData?.linkName) {
+    if (isClickable && currentPageData?.href) {
       closeModal();
-      const url = `/admin/pages/${currentPageData.linkName}`;
+      const url = `/admin/pages/${currentPageData.href}`;
       router.push(url);
       return;
     }
@@ -364,9 +364,9 @@ export function PageActionsMenu({
       return;
     }
 
-    if (isClickable && currentPageData?.linkName) {
+    if (isClickable && currentPageData?.href) {
       closeModal();
-      const url = `/admin/pages/${currentPageData.linkName}`;
+      const url = `/admin/pages/${currentPageData.href}`;
       router.push(url);
       return;
     }

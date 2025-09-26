@@ -13,7 +13,7 @@ interface AdminPageDetailsProps {
   }>;
 }
 
-/**
+/** 
  * Server component that extracts slug from route parameters
  * Uses existing NavigationMenuProvider (available at app level) for data
  * No need for additional data providers as NavigationMenuProvider already handles menu categories
@@ -26,7 +26,7 @@ export default async function AdminPageDetails({
 
   return (
     <AdminPagesNavBarProvider slug={slug}>
-      <SectionProvider>
+      <SectionProvider slug={slug}>
         <div className="p-6 w-full">
           <div className="bg-secondary rounded-lg shadow-sm border p-6">
             <div className="flex flex-row justify-between items-start gap-3">

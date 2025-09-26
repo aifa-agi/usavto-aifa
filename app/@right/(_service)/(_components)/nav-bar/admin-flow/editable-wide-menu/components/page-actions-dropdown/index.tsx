@@ -8,12 +8,14 @@ import { FileCode2 } from "lucide-react";
 import { PageActionsDropdownProps } from "./types";
 
 import { PageActionsMenu } from "./components/page-actions-menu";
-import { PageTypeMenu } from "./components/page-type-menu";
 import { HomeActionsMenu } from "./components/home-actions-menu";
 import {
   DropdownMenuContent,
   DropdownMenuTrigger,
   DropdownMenu,
+  DropdownMenuLabel,
+  DropdownMenuGroup,
+  DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -21,6 +23,9 @@ import { useIconStatus } from "./hooks/use-icon-status";
 import { useNavigationMenu } from "@/app/@right/(_service)/(_context)/nav-bar-provider";
 import { usePageData } from "./hooks/use-page-data";
 import { usePageActions } from "./hooks/use-page-actions";
+import { ALL_PAGE_TYPES } from "@/app/@right/(_service)/(_types)/page-types";
+import { TypeItemRow } from "../badges-actions-dropdown/components/type-item-row";
+import { useBadgesLogic } from "../badges-actions-dropdown";
 
 export function PageActionsDropdown({
   singlePage,
@@ -36,7 +41,14 @@ export function PageActionsDropdown({
     categoryTitle: categoryTitle || "", // Provide fallback to avoid undefined
     categories: categories || [], // Provide fallback to avoid undefined
   });
+  const {
 
+    handlePageTypeChange,
+  } = useBadgesLogic({
+    singlePage,
+    categoryTitle,
+    setCategories,
+  });
   const pageActions = usePageActions({
     singlePage,
     categoryTitle: categoryTitle || "",
@@ -110,12 +122,7 @@ export function PageActionsDropdown({
             hasUnsavedChanges={hasUnsavedChanges}
           />
         )}
-        {categoryTitle !== "home" && (
-          <PageTypeMenu
-            onSetPageType={pageActions.handleSetPageType}
-            isPageTypeActive={pageActions.isPageTypeActive}
-          />
-        )}
+
       </DropdownMenuContent>
     </DropdownMenu>
   );

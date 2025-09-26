@@ -12,6 +12,7 @@ export async function NavBar() {
 
   if (isPrivilegedUser) {
     return <EditableNavBar />;
+    // return <StaticNavBar />;
   }
   return <StaticNavBar />;
 }

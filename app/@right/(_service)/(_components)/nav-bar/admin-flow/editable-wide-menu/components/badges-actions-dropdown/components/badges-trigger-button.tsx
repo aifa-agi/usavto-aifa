@@ -3,7 +3,7 @@
 "use client";
 
 import React, { forwardRef } from "react";
-import { Pencil } from "lucide-react";
+import { Pencil, Settings } from "lucide-react";
 import { BadgesTriggerButtonProps } from "../types";
 import { cn } from "@/lib/utils";
 
@@ -22,7 +22,7 @@ export const BadgesTriggerButton = forwardRef<
       tabIndex={-1}
       {...props}
     >
-      <Pencil className="w-4 h-4 text-primary/80" />
+      <Settings className="w-4 h-4 text-primary/80" />
     </button>
   );
 });

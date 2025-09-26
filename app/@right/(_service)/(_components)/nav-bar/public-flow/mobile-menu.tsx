@@ -65,7 +65,7 @@ export default function MobileMenu({
             {singlePage.hasBadge && singlePage.badgeName ? (
               <div className="flex items-center justify-between gap-2 w-full">
                 <span className="flex-grow overflow-hidden whitespace-nowrap text-ellipsis flex items-center gap-2">
-                  {humanize(singlePage.title ?? singlePage.linkName)}
+                  {humanize(singlePage.title || "")}
                 </span>
                 <Badge
                   className={cn(
@@ -83,7 +83,7 @@ export default function MobileMenu({
               </div>
             ) : (
               <span className="flex items-center gap-2 overflow-hidden whitespace-nowrap text-ellipsis">
-                {humanize(singlePage.title ?? singlePage.linkName)}
+                {humanize(singlePage.title || "")}
               </span>
             )}
           </button>
@@ -107,7 +107,7 @@ export default function MobileMenu({
             className="bg-black text-white rounded-lg shadow-2xl border border-gray-700 p-6 mx-6 mb-6 w-full max-w-md flex flex-col"
             style={{ height: `calc(100vh - ${topOffset} - 100px)` }}
           >
-            <h2 className="text-2xl font-bold mb-4 text-left">Mobile Menu</h2>
+            <h2 className="text-2xl font-bold mb-4 text-left">Мобильное меню</h2>
             <div className="flex-1 overflow-y-auto scrollbar-hide">
               <Accordion type="single" collapsible className="w-full">
                 {roleFilteredCategories.map((category, index) => (

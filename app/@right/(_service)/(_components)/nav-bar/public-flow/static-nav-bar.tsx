@@ -39,13 +39,14 @@ export default function StaticNavBar() {
     (category) => !PROTECTED_CATEGORIES.includes(category.title.toLowerCase())
   );
 
+
+
   return (
     <>
       <div>
         <div
-          className={`flex items-center px-4 h-[56px] ${
-            isLargeScreen ? "justify-end w-full" : "justify-start w-1/2"
-          }`}
+          className={`flex items-center px-4 h-[56px] ${isLargeScreen ? "justify-end w-full" : "justify-start w-1/2"
+            }`}
           style={{ minHeight: HEADER_HEIGHT, maxHeight: HEADER_HEIGHT }}
         >
           {isLargeScreen ? (
@@ -55,11 +56,10 @@ export default function StaticNavBar() {
               size="sm"
               className="flex items-center gap-2 whitespace-nowrap px-4"
             >
-              <span>{isOpen ? "Close bar menu" : "Open bar menu"}</span>
+              <span>{isOpen ? "Закрыть меню" : "Открыть меню"}</span>
               <ChevronDown
-                className={`w-4 h-4 transition-transform duration-300 ${
-                  isOpen ? "rotate-180" : ""
-                }`}
+                className={`w-4 h-4 transition-transform duration-300 ${isOpen ? "rotate-180" : ""
+                  }`}
               />
             </Button>
           ) : (
@@ -67,7 +67,7 @@ export default function StaticNavBar() {
               variant="outline"
               onClick={handleButtonClick}
               className="flex items-center justify-center px-2"
-              aria-label={isOpen ? "Close bar menu" : "Open bar menu"}
+              aria-label={isOpen ? "Открыть меню" : "Закрыть меню"}
             >
               <Menu className="w-5 h-5" />
             </Button>
@@ -91,8 +91,14 @@ export default function StaticNavBar() {
 
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black/50 backdrop-blur-sm transition-opacity duration-300 ease-in-out z-40"
-          style={{ top: "64px" }}
+          className={`
+            absolute inset-0 bg-black/50 backdrop-blur-sm
+            transition-opacity duration-300 ease-in-out
+            z-40
+          `}
+          style={{
+            top: "64px",
+          }}
           onClick={handleOverlayClick}
           aria-hidden="true"
         />

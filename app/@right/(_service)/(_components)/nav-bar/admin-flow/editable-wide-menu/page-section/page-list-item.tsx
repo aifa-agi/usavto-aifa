@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { GripVertical } from "lucide-react";
 import { useSortable } from "@dnd-kit/sortable";
 import { useRouter } from "next/navigation";
+import { toast } from "sonner"; // Добавлен импорт sonner
 
 import { PageActionsDropdown } from "../components/page-actions-dropdown";
 import { PublishActionsDropdown } from "../components/publish-actions-dropdown/components/publish-actions-dropdown";
@@ -17,6 +18,7 @@ import { humanize } from "@/app/@right/(_service)/(_libs)/humanize";
 import { PageData } from "@/app/@right/(_service)/(_types)/page-types";
 import { Badge } from "@/components/ui/badge";
 import { AddToPromptActionsDropdown } from "../components/add-to-prompt-actions-dropdown";
+import { UpdateActionsDropdown } from "../components/update-actions-dropdown/update-actions-dropdown";
 
 const greenDotClass = "bg-emerald-500";
 
@@ -48,15 +50,32 @@ export function PageListItem({
 
   const [isAdminCategory, setAdminCategory] = useState(false);
 
-  const fullTitle = humanize(page.title ?? page.linkName);
+  const fullTitle = humanize(page?.title || "");
   const displayTitle =
     fullTitle.length > 20 ? `${fullTitle.substring(0, 20)}...` : fullTitle;
 
+  // ОБНОВЛЕННАЯ ФУНКЦИЯ
   const handlePageClick = () => {
     if (categoryTitle.toLowerCase() === "admin") {
       if (page.href) {
         router.push(page.href);
         setIsOpen(false);
+      }
+    } else {
+      // Добавлена новая логика для всех остальных категорий
+      if (page.href) {
+        const fullUrl = `${window.location.origin}${page.href}`;
+        navigator.clipboard
+          .writeText(fullUrl)
+          .then(() => {
+            toast.success(
+              "Go to incognito mode and paste this link to view the page."
+            );
+          })
+          .catch((err) => {
+            console.error("Failed to copy link: ", err);
+            toast.error("Failed to copy link.");
+          });
       }
     }
   };
@@ -80,17 +99,14 @@ export function PageListItem({
       {...attributes}
       {...listeners}
     >
-      {/* --- ИЗМЕНЕНИЕ НАЧАЛО --- */}
-      {/* Добавлен инлайновый стиль minWidth для предотвращения сжатия */}
       <div
         className="flex-grow flex items-center gap-2 overflow-hidden"
         style={{ minWidth: "200px" }}
       >
-        {/* --- ИЗМЕНЕНИЕ КОНЕЦ --- */}
         <span
           className={cn(
             "overflow-hidden text-ellipsis whitespace-nowrap",
-            isAdminCategory &&
+            // Добавлена логика курсора для всех кликабельных ссылок
             "cursor-pointer hover:text-primary hover:underline"
           )}
           onClick={handlePageClick}
@@ -110,6 +126,11 @@ export function PageListItem({
 
       {!isAdminCategory ? (
         <div className="flex items-center gap-1">
+          <UpdateActionsDropdown
+            singlePage={page}
+            categoryTitle={categoryTitle}
+            setCategories={setCategories}
+          />
           <BadgesActionsDropdown
             singlePage={page}
             categoryTitle={categoryTitle}

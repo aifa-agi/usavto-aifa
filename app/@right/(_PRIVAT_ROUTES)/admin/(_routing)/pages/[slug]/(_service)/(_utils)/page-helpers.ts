@@ -6,7 +6,7 @@ export const findPageBySlug = (
   targetSlug: string
 ) => {
   for (const category of categories) {
-    const page = category.pages.find((page) => page.linkName === targetSlug);
+    const page = category.pages.find((page) => page.id === targetSlug);
     if (page) {
       return { page, category };
     }

@@ -6,7 +6,7 @@ import { existsSync } from "fs";
 import type { PageUploadPayload } from "@/app/@right/(_service)/(_types)/section-types";
 import { generatePageTsxContent } from "./page-generator";
 
-// Response interface - exactly matching original
+// Интерфейсы и Enum остаются без изменений
 interface PageUploadResponse {
   success: boolean;
   message: string;
@@ -17,7 +17,6 @@ interface PageUploadResponse {
   details?: string;
 }
 
-// Error codes enum - identical to original
 enum ErrorCode {
   GITHUB_TOKEN_INVALID = "github_token_invalid",
   GITHUB_API_UNAVAILABLE = "github_api_unavailable",
@@ -29,12 +28,6 @@ enum ErrorCode {
   UNKNOWN_ERROR = "unknown_error",
 }
 
-/**
- * Ensures directory exists, creates it recursively if needed
- * Critical utility for filesystem operations - do not modify
- * 
- * @param dirPath - Full path to directory that should exist
- */
 export async function ensureDirectoryExists(dirPath: string): Promise<void> {
   if (!existsSync(dirPath)) {
     await mkdir(dirPath, { recursive: true });
@@ -42,32 +35,24 @@ export async function ensureDirectoryExists(dirPath: string): Promise<void> {
 }
 
 /**
- * Saves page to local filesystem for development environment
- * Production-critical function - preserve exact error handling
- * 
- * @param firstPartHref - First part of the URL path (category)
- * @param secondPartHref - Second part of the URL path (subcategory)
- * @param payload - Complete page data including metadata and sections
- * @returns Promise<PageUploadResponse> - Save result with status and details
+ * ✅ ИЗМЕНЕНО: Функция теперь принимает один аргумент `payload`.
  */
 export async function saveToFileSystem(
-  firstPartHref: string,
-  secondPartHref: string,
   payload: PageUploadPayload
 ): Promise<PageUploadResponse> {
   try {
+    // ✅ ИЗМЕНЕНО: Строим все пути на основе полного href из payload.
     const pagesDir = join(process.cwd(), "app", "@right", "(_PAGES)");
-    const categoryDir = join(pagesDir, firstPartHref);
-    const pageDir = join(categoryDir, secondPartHref);
+    const relativePath = payload.href.startsWith("/") ? payload.href.slice(1) : payload.href;
+    const pageDir = join(pagesDir, relativePath);
     const filePath = join(pageDir, "page.tsx");
-    const relativeFilePath = `app/@right/(_PAGES)/${firstPartHref}/${secondPartHref}/page.tsx`;
+    const relativeFilePath = `app/@right/(_PAGES)/${relativePath}/page.tsx`;
 
-    // Create all necessary directories
-    await ensureDirectoryExists(pagesDir);
-    await ensureDirectoryExists(categoryDir);
+    // ✅ УПРОЩЕНО: Один вызов для создания всех вложенных директорий.
     await ensureDirectoryExists(pageDir);
 
-    const fileContent = generatePageTsxContent(firstPartHref, secondPartHref, payload);
+    // ✅ ВАЖНО: `generatePageTsxContent` также должен быть обновлен.
+    const fileContent = generatePageTsxContent(payload);
     await writeFile(filePath, fileContent, "utf-8");
 
     return {
@@ -77,6 +62,7 @@ export async function saveToFileSystem(
       environment: "development",
     };
   } catch (error: any) {
+    // ... (обработка ошибок без изменений)
     if (error.message.includes("EACCES")) {
       return {
         success: false,
@@ -107,6 +93,6 @@ export async function saveToFileSystem(
   }
 }
 
-// Export types for use in main router
+// Экспорты остаются без изменений
 export type { PageUploadResponse };
 export { ErrorCode };

@@ -3,36 +3,33 @@
 "use client";
 
 import React from "react";
-import { BadgesActionsDropdownProps } from "../types";
-import { BadgesTriggerButton } from "./badges-trigger-button";
-import { BadgesDropdownContent } from "./badges-dropdown-content";
 import {
   DropdownMenu,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { UpdateActionsDropdownProps } from "./types";
+import { UpdateTriggerButton } from "./components/update-trigger-button";
+import { UpdateDropdownContent } from "./components/update-dropdown-content";
 
-/**
- * Main badges actions dropdown component for managing page badges and roles
- * Always interactive as this is an administrative function
- * Hidden for "home" category as it's a protected category
- */
-export function BadgesActionsDropdown({
+
+
+export function UpdateActionsDropdown({
   singlePage,
   categoryTitle,
   setCategories,
-}: BadgesActionsDropdownProps) {
+}: UpdateActionsDropdownProps) {
   // Hide dropdown if category is "home"
-  if (categoryTitle.toLowerCase() === "admin") {
+  if (categoryTitle.toLowerCase() === "home") {
     return null;
   }
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <BadgesTriggerButton />
+        <UpdateTriggerButton />
       </DropdownMenuTrigger>
 
-      <BadgesDropdownContent
+      <UpdateDropdownContent
         singlePage={singlePage}
         categoryTitle={categoryTitle}
         setCategories={setCategories}

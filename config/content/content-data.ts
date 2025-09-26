@@ -8,13 +8,13 @@ export const contentData = {
     "pages": [
       {
         "id": "j7fqhiry13jvec5l3imnaoa4",
-        "title": "Автоматизация путевых листов",
-        "linkName": "avtomatizatsiya-putevyh-listov",
-        "href": "/putevye-listy/avtomatizatsiya-putevyh-listov",
+        "title": "Автоматизация путевых лист",
+        "href": "/blog/putevye-listy/avtomatizatsiya-putevyh-listov",
         "roles": [
-          "guest"
+          "guest",
+          "apiUser"
         ],
-        "hasBadge": false,
+        "hasBadge": true,
         "type": "blog",
         "aiRecommendContentStructure": [
           {
@@ -700,7 +700,7 @@ export const contentData = {
             ]
           }
         ],
-        "isPublished": false,
+        "isPublished": true,
         "isAddedToPrompt": false,
         "isVectorConnected": false,
         "isChatSynchronized": false,
@@ -2319,13 +2319,1514 @@ export const contentData = {
             "tempMDXContent": "<h2>Часто задаваемые вопросы по автоматизации путевых листов</h2>\n<p>Раздел часто задаваемых вопросов (FAQ) создан, чтобы помочь вам быстро разобраться в ключевых аспектах автоматизации путевых листов. Здесь мы собрали самые распространённые вопросы, которые возникают у руководителей, специалистов по логистике и потенциальных клиентов, интересующихся внедрением современных цифровых решений для управления автопарком. Ответы на эти вопросы помогут развеять сомнения, понять преимущества автоматизации и получить представление о том, как платформа USAUTO может упростить и улучшить процессы учета и контроля транспорта. Мы стремимся к тому, чтобы информация была максимально понятной, профессиональной и дружелюбной — словно разговор с надежным консультантом, готовым помочь в любой момент.</p>\n\n<h3>Вопросы и ответы по автоматизации путевых листов</h3>\n<p>В этом разделе представлены подробно раскрытые ответы на три ключевых вопроса, которые чаще всего задают специалисты и руководители при рассмотрении автоматизации путевых листов. Мы объясним, как работает система, какие выгоды она приносит и какие технические моменты стоит учитывать при внедрении. Такой формат помогает не только получить информацию, но и лучше понять, как именно автоматизация может помочь вашему бизнесу.</p>\n\n<h4>1. Какие основные преимущества автоматизации путевых листов?</h4>\n<p>Автоматизация путевых листов позволяет значительно сократить время на оформление документов, уменьшить количество ошибок, связанных с ручным вводом данных, и повысить прозрачность учета использования транспорта. Благодаря цифровым системам, таким как USAUTO, можно оперативно получать актуальную информацию о маршрутах, расходах топлива и состоянии автопарка. Это улучшает контроль и планирование, снижает издержки и повышает общую эффективность работы транспортной компании.</p>\n\n<h4>2. Насколько сложно внедрить систему автоматизации в уже работающую компанию?</h4>\n<p>Внедрение автоматизации — это поэтапный процесс, который начинается с анализа текущих бизнес-процессов и выбора подходящего программного обеспечения. Платформа USAUTO разработана с учетом удобства интеграции и минимизации изменений в работе сотрудников. Обучение персонала и техническая поддержка помогают быстро адаптироваться к новому инструменту. При правильном подходе переход на автоматизированную систему проходит гладко и без сбоев, принося ощутимую пользу уже в первые месяцы эксплуатации.</p>\n\n<h4>3. Какие технические требования необходимы для работы с платформой USAUTO?</h4>\n<p>Для стабильной работы платформы USAUTO требуется современное серверное оборудование с достаточным объемом оперативной памяти и SSD-дисками, поддержка актуальных операционных систем (Windows Server или Linux), а также стабильное интернет-соединение с хорошей пропускной способностью. Важна также настройка безопасности — использование шифрования, разграничение прав доступа и регулярное резервное копирование данных. Платформа поддерживает мобильные устройства и интеграцию с GPS-трекерами, что обеспечивает полный контроль и удобство для водителей и менеджеров.</p>\n\n<table>\n  <thead>\n    <tr>\n      <th>Вопрос</th>\n      <th>Краткий ответ</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Как автоматизация влияет на скорость оформления путевых листов?</td>\n      <td>Сокращает время оформления в несколько раз за счет цифрового ввода и автоматической проверки данных.</td>\n    </tr>\n    <tr>\n      <td>Можно ли интегрировать систему с существующими учетными программами?</td>\n      <td>Да, USAUTO поддерживает интеграцию с 1С, GPS-системами и другими корпоративными решениями.</td>\n    </tr>\n    <tr>\n      <td>Какие устройства поддерживаются для работы с платформой?</td>\n      <td>Поддерживаются ПК, ноутбуки, а также мобильные устройства на Android и iOS для водителей.</td>\n    </tr>\n    <tr>\n      <td>Как обеспечивается безопасность данных в системе?</td>\n      <td>Используются протоколы шифрования SSL/TLS, разграничение прав доступа и регулярное резервное копирование.</td>\n    </tr>\n    <tr>\n      <td>Требуется ли специальное обучение для работы с системой?</td>\n      <td>Обучение проводится быстро благодаря интуитивному интерфейсу и поддержке специалистов.</td>\n    </tr>\n  </tbody>\n</table>\n\n<p>Мы надеемся, что эти ответы помогут вам лучше понять возможности и преимущества автоматизации путевых листов. Если у вас остались вопросы или требуется индивидуальная консультация, специалисты USAUTO всегда готовы помочь и"
           }
         ],
-        "isPreviewComplited": true
+        "isPreviewComplited": true,
+        "badgeName": "Путевые"
       },
       {
         "id": "hpuae76sxx2j79a8tn009ypj",
         "title": "Путевые листы онлайн",
-        "linkName": "Путевые листы онлайн",
         "href": "/putevye-listy/putevye-listy-onlayn",
+        "roles": [
+          "guest"
+        ],
+        "hasBadge": true,
+        "type": "customCategorias",
+        "aiRecommendContentStructure": [
+          {
+            "id": "h2-1",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 200,
+              "maxWords": 350,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-1-1",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 120,
+                  "maxWords": 250,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-2",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 180,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "img-1-3",
+                "tag": "img",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "blockquote-1-4",
+                "tag": "blockquote",
+                "additionalData": {
+                  "minWords": 25,
+                  "maxWords": 50,
+                  "actualContent": ""
+                }
+              }
+            ]
+          },
+          {
+            "id": "h2-2",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 400,
+              "maxWords": 600,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-2-1",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 200,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-2-2",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-2-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 140,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-2-2",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 90,
+                      "maxWords": 180,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "img-2-2-3",
+                    "tag": "img",
+                    "additionalData": {
+                      "minWords": 5,
+                      "maxWords": 15,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "table-2-2-4",
+                    "tag": "table",
+                    "additionalData": {
+                      "minWords": 80,
+                      "maxWords": 160,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-2-3",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 200,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-3-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 80,
+                      "maxWords": 160,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-2-3-2",
+                    "tag": "ul",
+                    "additionalData": {
+                      "minWords": 40,
+                      "maxWords": 80,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-2-3-3",
+                    "tag": "code",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 50,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-3-4",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 500,
+              "maxWords": 750,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "img-3-1",
+                "tag": "img",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-3-2",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 110,
+                  "maxWords": 220,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-3-3",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 350,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-3-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 85,
+                      "maxWords": 170,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-3-2",
+                    "tag": "ol",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 100,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "h4-3-3-3",
+                    "tag": "h4",
+                    "additionalData": {
+                      "minWords": 120,
+                      "maxWords": 200,
+                      "actualContent": ""
+                    },
+                    "realContentStructure": [
+                      {
+                        "id": "p-3-3-3-1",
+                        "tag": "p",
+                        "additionalData": {
+                          "minWords": 75,
+                          "maxWords": 150,
+                          "actualContent": ""
+                        }
+                      },
+                      {
+                        "id": "code-3-3-3-2",
+                        "tag": "code",
+                        "additionalData": {
+                          "minWords": 25,
+                          "maxWords": 60,
+                          "actualContent": ""
+                        }
+                      },
+                      {
+                        "id": "p-3-3-3-3",
+                        "tag": "p",
+                        "additionalData": {
+                          "minWords": 65,
+                          "maxWords": 130,
+                          "actualContent": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "h3-3-4",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 250,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-4-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 95,
+                      "maxWords": 190,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "blockquote-3-4-2",
+                    "tag": "blockquote",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 45,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-4-3",
+                    "tag": "ol",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "h2-4",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 450,
+              "maxWords": 650,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-4-1",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 200,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-4-2",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "img-4-2-1",
+                    "tag": "img",
+                    "additionalData": {
+                      "minWords": 5,
+                      "maxWords": 15,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-4-2-2",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 90,
+                      "maxWords": 180,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-4-2-3",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 85,
+                      "maxWords": 170,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-4-2-4",
+                    "tag": "ul",
+                    "additionalData": {
+                      "minWords": 45,
+                      "maxWords": 90,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-4-3",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 250,
+                  "maxWords": 350,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-4-3-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 110,
+                      "maxWords": 220,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-4-3-2",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 80,
+                      "maxWords": 160,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-4-3-3",
+                    "tag": "ol",
+                    "additionalData": {
+                      "minWords": 55,
+                      "maxWords": 110,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "blockquote-4-3-4",
+                    "tag": "blockquote",
+                    "additionalData": {
+                      "minWords": 18,
+                      "maxWords": 40,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "h2-5",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 400,
+              "maxWords": 550,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-5-1",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 105,
+                  "maxWords": 210,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "img-5-2",
+                "tag": "img",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-5-3",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 250,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-5-3-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 80,
+                      "maxWords": 160,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-5-3-2",
+                    "tag": "ul",
+                    "additionalData": {
+                      "minWords": 40,
+                      "maxWords": 80,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-5-3-3",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 140,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "h2-6",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 350,
+              "maxWords": 500,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-6-1",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 95,
+                  "maxWords": 190,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-6-2",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-6-2-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 150,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "table-6-2-2",
+                    "tag": "table",
+                    "additionalData": {
+                      "minWords": 100,
+                      "maxWords": 200,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-6-2-3",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 85,
+                      "maxWords": 170,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-6-3",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 150,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-6-3-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 90,
+                      "maxWords": 180,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-6-3-2",
+                    "tag": "code",
+                    "additionalData": {
+                      "minWords": 30,
+                      "maxWords": 70,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "h2-7",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-7-1",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 120,
+                  "maxWords": 240,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-7-2",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 200,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-7-3",
+                "tag": "ul",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 120,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-7-4",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "blockquote-7-5",
+                "tag": "blockquote",
+                "additionalData": {
+                  "minWords": 15,
+                  "maxWords": 35,
+                  "actualContent": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isPublished": false,
+        "isAddedToPrompt": false,
+        "isVectorConnected": false,
+        "isChatSynchronized": false,
+        "order": 2,
+        "badgeName": "ПTO"
+      },
+      {
+        "id": "a79hec9akmtsghozvt8a5b6p",
+        "title": "new new",
+        "href": "/putevye-listy/new-new",
+        "roles": [
+          "guest"
+        ],
+        "hasBadge": false,
+        "type": "customCategorias",
+        "aiRecommendContentStructure": [
+          {
+            "id": "h2-1",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 200,
+              "maxWords": 350,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-1-1",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 120,
+                  "maxWords": 250,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-2",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 180,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "img-1-3",
+                "tag": "img",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "blockquote-1-4",
+                "tag": "blockquote",
+                "additionalData": {
+                  "minWords": 25,
+                  "maxWords": 50,
+                  "actualContent": ""
+                }
+              }
+            ]
+          },
+          {
+            "id": "h2-2",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 400,
+              "maxWords": 600,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-2-1",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 200,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-2-2",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-2-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 140,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-2-2",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 90,
+                      "maxWords": 180,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "img-2-2-3",
+                    "tag": "img",
+                    "additionalData": {
+                      "minWords": 5,
+                      "maxWords": 15,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "table-2-2-4",
+                    "tag": "table",
+                    "additionalData": {
+                      "minWords": 80,
+                      "maxWords": 160,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-2-3",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 200,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-3-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 80,
+                      "maxWords": 160,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-2-3-2",
+                    "tag": "ul",
+                    "additionalData": {
+                      "minWords": 40,
+                      "maxWords": 80,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-2-3-3",
+                    "tag": "code",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 50,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-3-4",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 500,
+              "maxWords": 750,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "img-3-1",
+                "tag": "img",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-3-2",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 110,
+                  "maxWords": 220,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-3-3",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 350,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-3-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 85,
+                      "maxWords": 170,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-3-2",
+                    "tag": "ol",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 100,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "h4-3-3-3",
+                    "tag": "h4",
+                    "additionalData": {
+                      "minWords": 120,
+                      "maxWords": 200,
+                      "actualContent": ""
+                    },
+                    "realContentStructure": [
+                      {
+                        "id": "p-3-3-3-1",
+                        "tag": "p",
+                        "additionalData": {
+                          "minWords": 75,
+                          "maxWords": 150,
+                          "actualContent": ""
+                        }
+                      },
+                      {
+                        "id": "code-3-3-3-2",
+                        "tag": "code",
+                        "additionalData": {
+                          "minWords": 25,
+                          "maxWords": 60,
+                          "actualContent": ""
+                        }
+                      },
+                      {
+                        "id": "p-3-3-3-3",
+                        "tag": "p",
+                        "additionalData": {
+                          "minWords": 65,
+                          "maxWords": 130,
+                          "actualContent": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "h3-3-4",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 250,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-4-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 95,
+                      "maxWords": 190,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "blockquote-3-4-2",
+                    "tag": "blockquote",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 45,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-4-3",
+                    "tag": "ol",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "h2-4",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 450,
+              "maxWords": 650,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-4-1",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 200,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-4-2",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "img-4-2-1",
+                    "tag": "img",
+                    "additionalData": {
+                      "minWords": 5,
+                      "maxWords": 15,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-4-2-2",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 90,
+                      "maxWords": 180,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-4-2-3",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 85,
+                      "maxWords": 170,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-4-2-4",
+                    "tag": "ul",
+                    "additionalData": {
+                      "minWords": 45,
+                      "maxWords": 90,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-4-3",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 250,
+                  "maxWords": 350,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-4-3-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 110,
+                      "maxWords": 220,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-4-3-2",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 80,
+                      "maxWords": 160,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-4-3-3",
+                    "tag": "ol",
+                    "additionalData": {
+                      "minWords": 55,
+                      "maxWords": 110,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "blockquote-4-3-4",
+                    "tag": "blockquote",
+                    "additionalData": {
+                      "minWords": 18,
+                      "maxWords": 40,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "h2-5",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 400,
+              "maxWords": 550,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-5-1",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 105,
+                  "maxWords": 210,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "img-5-2",
+                "tag": "img",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-5-3",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 250,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-5-3-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 80,
+                      "maxWords": 160,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-5-3-2",
+                    "tag": "ul",
+                    "additionalData": {
+                      "minWords": 40,
+                      "maxWords": 80,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-5-3-3",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 140,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "h2-6",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 350,
+              "maxWords": 500,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-6-1",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 95,
+                  "maxWords": 190,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-6-2",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-6-2-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 150,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "table-6-2-2",
+                    "tag": "table",
+                    "additionalData": {
+                      "minWords": 100,
+                      "maxWords": 200,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-6-2-3",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 85,
+                      "maxWords": 170,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-6-3",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 150,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-6-3-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 90,
+                      "maxWords": 180,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-6-3-2",
+                    "tag": "code",
+                    "additionalData": {
+                      "minWords": 30,
+                      "maxWords": 70,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "h2-7",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-7-1",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 120,
+                  "maxWords": 240,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-7-2",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 200,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-7-3",
+                "tag": "ul",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 120,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-7-4",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "blockquote-7-5",
+                "tag": "blockquote",
+                "additionalData": {
+                  "minWords": 15,
+                  "maxWords": 35,
+                  "actualContent": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isPublished": false,
+        "isAddedToPrompt": false,
+        "isVectorConnected": false,
+        "isChatSynchronized": false,
+        "order": 3
+      }
+    ],
+    "order": 15
+  },
+  {
+    "title": "ЭПЛ",
+    "href": "/epl",
+    "pages": [],
+    "order": 8
+  },
+  {
+    "title": "Телемедицина",
+    "href": "/telemeditsina",
+    "pages": [],
+    "order": 10
+  },
+  {
+    "title": "Предрейсовый технический осмотр",
+    "href": "/predreysovyy-tehnicheskiy-osmotr",
+    "pages": [],
+    "order": 9
+  },
+  {
+    "title": "Управление штрафами",
+    "href": "/upravlenie-shtrafami",
+    "pages": [],
+    "order": 11
+  },
+  {
+    "title": "Уведомления и мониторинг документов",
+    "href": "/uvedomleniya-i-monitoring-dokumentov",
+    "pages": [],
+    "order": 12
+  },
+  {
+    "title": "home",
+    "pages": [
+      {
+        "id": "ks7eqcf6z1fhes1lwiwz75zn",
+        "href": "/home/home-page",
+        "roles": [
+          "guest"
+        ],
+        "hasBadge": false,
+        "type": "homePage",
+        "isPublished": false,
+        "isAddedToPrompt": false,
+        "isVectorConnected": false,
+        "isChatSynchronized": false,
+        "order": 1,
+        "title": "aifa",
+        "description": "AI generator",
+        "images": [
+          {
+            "id": "o2srus4w0jgeo81r96gyb55r",
+            "alt": "Logo",
+            "href": "https://9d8adypzz8xutnay.public.blob.vercel-storage.com/logo-DdZf25dGZUGryUbrmCK29xtMK5w1cw.png"
+          }
+        ],
+        "keywords": [
+          "Ai"
+        ]
+      }
+    ],
+    "order": 5
+  },
+  {
+    "title": "Образовательные услуги",
+    "href": "/obrazovatelnye-uslugi",
+    "pages": [],
+    "order": 13
+  },
+  {
+    "title": "Дополнительные сервисы и аутсорсинг",
+    "href": "/dopolnitelnye-servisy-i-autsorsing",
+    "pages": [],
+    "order": 14
+  },
+  {
+    "title": "admin",
+    "pages": [
+      {
+        "id": "r70rhidyb8w0o8ikzuuu8nil",
+        "title": "Vercel deploy",
+        "href": "/admin/vercel-deploy",
+        "roles": [
+          "guest"
+        ],
+        "hasBadge": false,
+        "type": "blog",
+        "isPublished": false,
+        "isAddedToPrompt": false,
+        "isVectorConnected": false,
+        "isChatSynchronized": false,
+        "order": 1
+      }
+    ],
+    "order": 4
+  },
+  {
+    "title": "qwerty",
+    "href": "/qwerty",
+    "pages": [
+      {
+        "id": "ro2406snfba317xumh6rslxb",
+        "title": "qwert",
+        "href": "/blog/qwert",
         "roles": [
           "guest"
         ],
@@ -3015,152 +4516,19 @@ export const contentData = {
             ]
           }
         ],
-        "isPublished": false,
-        "isAddedToPrompt": false,
-        "isVectorConnected": false,
-        "isChatSynchronized": false,
-        "order": 2
-      }
-    ],
-    "order": 15
-  },
-  {
-    "title": "ЭПЛ",
-    "href": "/epl",
-    "pages": [],
-    "order": 8
-  },
-  {
-    "title": "Телемедицина",
-    "href": "/telemeditsina",
-    "pages": [],
-    "order": 10
-  },
-  {
-    "title": "Предрейсовый технический осмотр",
-    "href": "/predreysovyy-tehnicheskiy-osmotr",
-    "pages": [],
-    "order": 9
-  },
-  {
-    "title": "Управление штрафами",
-    "href": "/upravlenie-shtrafami",
-    "pages": [],
-    "order": 11
-  },
-  {
-    "title": "Уведомления и мониторинг документов",
-    "href": "/uvedomleniya-i-monitoring-dokumentov",
-    "pages": [],
-    "order": 12
-  },
-  {
-    "title": "home",
-    "pages": [
-      {
-        "id": "ks7eqcf6z1fhes1lwiwz75zn",
-        "linkName": "home-page",
-        "href": "/home/home-page",
-        "roles": [
-          "guest"
-        ],
-        "hasBadge": false,
-        "type": "homePage",
-        "isPublished": false,
-        "isAddedToPrompt": false,
-        "isVectorConnected": false,
-        "isChatSynchronized": false,
-        "order": 1,
-        "title": "aifa",
-        "description": "AI generator",
-        "images": [
-          {
-            "id": "o2srus4w0jgeo81r96gyb55r",
-            "alt": "Logo",
-            "href": "https://9d8adypzz8xutnay.public.blob.vercel-storage.com/logo-DdZf25dGZUGryUbrmCK29xtMK5w1cw.png"
-          }
-        ],
-        "keywords": [
-          "Ai"
-        ]
-      }
-    ],
-    "order": 5
-  },
-  {
-    "title": "Образовательные услуги",
-    "href": "/obrazovatelnye-uslugi",
-    "pages": [],
-    "order": 13
-  },
-  {
-    "title": "Дополнительные сервисы и аутсорсинг",
-    "href": "/dopolnitelnye-servisy-i-autsorsing",
-    "pages": [],
-    "order": 14
-  },
-  {
-    "title": "root",
-    "pages": [
-      {
-        "id": "om8aaom6s12e89f3e22yp6k9",
-        "linkName": "term",
-        "href": "/root/term",
-        "roles": [
-          "guest"
-        ],
-        "hasBadge": false,
-        "type": "blog",
-        "isPublished": false,
+        "isPublished": true,
         "isAddedToPrompt": false,
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "order": 1
       }
     ],
-    "order": 6
-  },
-  {
-    "title": "admin",
-    "pages": [
-      {
-        "id": "r70rhidyb8w0o8ikzuuu8nil",
-        "linkName": "vercel-deploy",
-        "href": "/admin/vercel-deploy",
-        "roles": [
-          "guest"
-        ],
-        "hasBadge": false,
-        "type": "blog",
-        "isPublished": false,
-        "isAddedToPrompt": false,
-        "isVectorConnected": false,
-        "isChatSynchronized": false,
-        "order": 1
-      },
-      {
-        "id": "xyv6gexz8wkjdi1klh0hd87i",
-        "linkName": "all-users",
-        "href": "/admin/all-users",
-        "roles": [
-          "guest",
-          "admin"
-        ],
-        "hasBadge": false,
-        "type": "blog",
-        "isPublished": false,
-        "isAddedToPrompt": false,
-        "isVectorConnected": false,
-        "isChatSynchronized": false,
-        "order": 2
-      }
-    ],
-    "order": 4
+    "order": 16
   }
 ]
 } as { categories: MenuCategory[] };
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-09-24T16:50:05.302Z";
+export const lastUpdated = "2025-09-25T20:28:31.555Z";
 export const generatedBy = "menu-persist-api";

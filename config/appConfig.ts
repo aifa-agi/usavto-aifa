@@ -23,6 +23,9 @@ export const appConfig: AppConfig = {
   logo: "/logo.png",
 };
 
+export type SupportedLang = "ru" | "en" | "es" | "fr" | "de" | "it";
+
+// Обновленный интерфейс, использующий новый тип
 export interface AppConfig {
   name: string;
   short_name: string;
@@ -31,17 +34,14 @@ export interface AppConfig {
   ogImage: string;
   manifest: string;
   mailSupport: string;
-  lang: string;
-
+  lang: SupportedLang; 
   illustrations: {
     loading: {
       dark: string;
       light: string;
     };
   };
-
   logo: string;
-
   messages?: {
     loading?: {
       title?: string;
@@ -49,4 +49,3 @@ export interface AppConfig {
     };
   };
 }
-

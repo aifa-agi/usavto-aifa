@@ -99,7 +99,7 @@ function HeroImage({ image }: { image: PageImage | undefined }) {
           height={630}
           priority
           placeholder={process.env.NODE_ENV === 'production' ? 'blur' : 'empty'}
-          src={"/_static/illustrations/usautopro1.jpg"}
+          src={image?.href || "/_static/illustrations/usautopro1.jpg"}
           sizes="(max-width: 768px) 770px, 1000px"
         />
       </div>

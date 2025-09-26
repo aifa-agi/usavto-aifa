@@ -50,7 +50,7 @@ export default function EditableMobileMenu({
             {singlePage.hasBadge && singlePage.badgeName ? (
               <div className="flex items-center justify-between gap-2 w-full">
                 <span className="flex-grow overflow-hidden whitespace-nowrap text-ellipsis flex items-center gap-2">
-                  {humanize(singlePage.title ?? singlePage.linkName)}
+                  {humanize(singlePage.title || "")}
                 </span>
                 <Badge
                   className={cn(
@@ -68,7 +68,7 @@ export default function EditableMobileMenu({
               </div>
             ) : (
               <span className="flex items-center gap-2 overflow-hidden whitespace-nowrap text-ellipsis">
-                {humanize(singlePage.title ?? singlePage.linkName)}
+                {humanize(singlePage.title || "")}
               </span>
             )}
           </button>

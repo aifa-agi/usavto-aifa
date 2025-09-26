@@ -49,7 +49,8 @@ export default function WideMenu({
   const getFilteredLinks = (pages: PageData[]) =>
     pages.filter(
       (singlePage) =>
-        singlePage.roles.includes(userType) && singlePage.isPublished
+        //singlePage.roles.includes(userType) && 
+        singlePage.isPublished
     );
 
   const roleFilteredCategories = categories
@@ -90,7 +91,7 @@ export default function WideMenu({
                 )}
                 style={{ transition: "margin 0.2s" }}
               >
-                {humanize(singlePage.title ?? singlePage.linkName)}
+                {humanize(singlePage.title || "")}
               </span>
               {singlePage.hasBadge && singlePage.badgeName && !isHovered && (
                 <Badge
@@ -188,8 +189,8 @@ export default function WideMenu({
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className="fixed inset-x-0 mx-auto bg-black text-white rounded-lg shadow-2xl overflow-hidden z-50"
-          style={{ maxWidth: "80vw", top: "120px", height: "432px" }}
+          className="absolute inset-x-0 mx-auto bg-black text-white rounded-lg shadow-2xl overflow-hidden z-50 border "
+          style={{ maxWidth: "90%", top: "120px", height: "432px" }}
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -100 }}

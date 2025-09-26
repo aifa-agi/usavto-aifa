@@ -1,10 +1,9 @@
 // @/app/@right/(_PRIVAT_ROUTES)/admin/(_routing)/pages/[slug]/(_service)/(_components)/admin-pages/steps/step12/(_utils)/github-service.ts
 
-
 import type { PageUploadPayload } from "@/app/@right/(_service)/(_types)/section-types";
 import { generatePageTsxContent } from "./page-generator";
 
-// Response interface for GitHub operations
+// Интерфейсы и Enum остаются без изменений
 interface PageUploadResponse {
   success: boolean;
   message: string;
@@ -15,7 +14,6 @@ interface PageUploadResponse {
   details?: string;
 }
 
-// Error codes enum - exactly as in original
 enum ErrorCode {
   GITHUB_TOKEN_INVALID = "github_token_invalid",
   GITHUB_API_UNAVAILABLE = "github_api_unavailable",
@@ -28,17 +26,9 @@ enum ErrorCode {
 }
 
 /**
- * Saves page to GitHub repository using GitHub API
- * Production-critical function - do not modify core logic
- * 
- * @param firstPartHref - First part of the URL path (category)
- * @param secondPartHref - Second part of the URL path (subcategory) 
- * @param payload - Complete page data including metadata and sections
- * @returns Promise<PageUploadResponse> - Upload result with status and details
+ * ✅ ИЗМЕНЕНО: Функция теперь принимает один аргумент `payload`.
  */
 export async function saveToGitHub(
-  firstPartHref: string,
-  secondPartHref: string,
   payload: PageUploadPayload
 ): Promise<PageUploadResponse> {
   try {
@@ -66,11 +56,19 @@ export async function saveToGitHub(
       };
     }
 
-    const fileContents = generatePageTsxContent(firstPartHref, secondPartHref, payload);
+    // ✅ ИЗМЕНЕНО: Извлекаем href напрямую из payload.
+    const { href } = payload;
+    
+    // ✅ ВАЖНО: `generatePageTsxContent` также должен быть обновлен,
+    // чтобы принимать только `payload`.
+    const fileContents = generatePageTsxContent(payload);
     const encodedContent = Buffer.from(fileContents).toString("base64");
-    const filePath = `${GITHUB_PAGES_BASE_PATH}/${firstPartHref}/${secondPartHref}/page.tsx`;
+    
+    // ✅ ИЗМЕНЕНО: Строим путь на основе полного href.
+    const relativePath = href.startsWith("/") ? href.slice(1) : href;
+    const filePath = `${GITHUB_PAGES_BASE_PATH}/${relativePath}/page.tsx`;
 
-    // Check if file exists to get SHA for update
+    // Логика получения SHA остается без изменений
     const getFileResponse = await fetch(
       `https://api.github.com/repos/${GITHUB_REPO}/contents/${filePath}`,
       {
@@ -87,7 +85,7 @@ export async function saveToGitHub(
       sha = fileData.sha;
     }
 
-    // Create or update file via GitHub API
+    // Логика создания/обновления файла
     const updateResponse = await fetch(
       `https://api.github.com/repos/${GITHUB_REPO}/contents/${filePath}`,
       {
@@ -98,7 +96,8 @@ export async function saveToGitHub(
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          message: `${sha ? 'Update' : 'Create'} page: "${payload.pageMetadata.title || firstPartHref + '/' + secondPartHref}" - ${new Date().toISOString()}`,
+          // ✅ ИЗМЕНЕНО: Используем полный href в сообщении коммита.
+          message: `${sha ? 'Update' : 'Create'} page: "${payload.pageMetadata.title || href}" - ${new Date().toISOString()}`,
           content: encodedContent,
           ...(sha && { sha }),
         }),
@@ -106,6 +105,7 @@ export async function saveToGitHub(
     );
 
     if (!updateResponse.ok) {
+        // ... (обработка ошибок без изменений)
       const errorData = await updateResponse.json().catch(() => ({}));
       return {
         success: false,
@@ -126,6 +126,7 @@ export async function saveToGitHub(
       environment: "production",
     };
   } catch (error: any) {
+    // ... (обработка ошибок без изменений)
     return {
       success: false,
       message: "Network error while connecting to GitHub",
@@ -136,6 +137,6 @@ export async function saveToGitHub(
   }
 }
 
-// Export types for use in main router
+// Экспорты остаются без изменений
 export type { PageUploadResponse };
 export { ErrorCode };

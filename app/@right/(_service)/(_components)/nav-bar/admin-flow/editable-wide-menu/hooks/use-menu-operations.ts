@@ -4,16 +4,13 @@ import { useState, useMemo } from "react";
 import { toast } from "sonner";
 import { arrayMove } from "@dnd-kit/sortable";
 import { MenuCategory } from "@/app/@right/(_service)/(_types)/menu-types";
-import {
-  ContentClassification,
-  ContentStructure,
-  PageType,
-} from "@/app/@right/(_service)/(_types)/page-types";
 import { generateCuid } from "@/lib/utils/generateCuid";
 import { useDialogs } from "@/app/@right/(_service)/(_context)/dialogs";
-import { normalizeText } from "@/app/@right/(_service)/(_libs)/normalize-text";
 import { DEFAULT_CONTENT_STRUCTURE } from "@/config/default-page-structure-config";
 import { transliterate } from "@/lib/utils/transliterate";
+
+// Экспортируем тип для ясности
+
 
 export function useMenuOperations(
   categories: MenuCategory[],
@@ -83,7 +80,6 @@ export function useMenuOperations(
           ? Math.max(...categories.map((c) => c.order ?? 0))
           : 0;
 
-        // Генерация href из title
         const href = "/" + transliterate(normalizedTitle);
 
         setCategories((prev) => [
@@ -110,9 +106,10 @@ export function useMenuOperations(
         const normalizedTitle = value?.trim();
         if (!normalizedTitle) return;
 
-        // Формируем slug/href для страницы: категория + транслит
         const pageSlug = transliterate(normalizedTitle);
-        const categoryHref = category.href || "/" + transliterate(category.title);
+
+        const href =
+          category.title === "root" ? `/${pageSlug}` : `/blog/${pageSlug}`;
 
         setCategories((prev) =>
           prev.map((cat) =>
@@ -124,11 +121,10 @@ export function useMenuOperations(
                     {
                       id: generateCuid(),
                       title: normalizedTitle,
-                      linkName: normalizedTitle, // оставить для обратной совместимости
-                      href: `${categoryHref}/${pageSlug}`,
+                      href: href,
                       roles: ["guest"],
                       hasBadge: false,
-                      type: "blog",
+                      type: "blog", // В будущем это значение будет динамическим
                       aiRecommendContentStructure: DEFAULT_CONTENT_STRUCTURE,
                       isPublished: false,
                       isAddedToPrompt: false,

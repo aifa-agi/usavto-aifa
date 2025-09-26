@@ -2,16 +2,64 @@
 
 import { Metadata } from "next";
 import { UserType } from "@prisma/client";
-import { BadgeName } from "../../../../config/pages-config/badges/badge-config";
+import { BadgeName } from "@/config/pages-config/badges/badge-config";
+
 
 export type PageType =
-  | "homePage"
-  | "basePage"
-  | "footerPage"
+  | "rootCategorias"
+  | "customCategorias"
   | "blog"
-  | "document"
-  | "guide"
-  | "shopItem";
+  | "productCard";
+
+// ✅ ИЗМЕНЕНО: Добавлен 'productCard' в массив всех типов
+export const ALL_PAGE_TYPES: readonly PageType[] = [
+  "blog",
+  "customCategorias",
+  "rootCategorias",
+  "productCard",
+] as const;
+
+// ✅ ИЗМЕНЕНО: Добавлены переводы для 'productCard'
+export const PAGE_TYPE_TRANSLATIONS: Record<
+  PageType,
+  { [key: string]: string }
+> = {
+  rootCategorias: {
+    ru: "Без категории",
+    en: "Uncategorized",
+    es: "Sin categoría",
+    fr: "Non classé",
+    de: "Nicht kategorisiert",
+    it: "Senza categoria",
+  },
+  customCategorias: {
+    ru: "Пользовательские категории",
+    en: "Custom Categories",
+    es: "Categorías personalizadas",
+    fr: "Catégories personnalisées",
+    de: "Benutzerdefinierte Kategorien",
+    it: "Categorie personalizzate",
+  },
+  blog: {
+    ru: "Блог",
+    en: "Blog",
+    es: "Blog",
+    fr: "Blog",
+    de: "Blog",
+    it: "Blog",
+  },
+  productCard: {
+    ru: "Карточка товара",
+    en: "Product Card",
+    es: "Tarjeta de producto",
+    fr: "Fiche produit",
+    de: "Produktkarte",
+    it: "Scheda prodotto",
+  },
+};
+
+
+
 
 export interface LinksData {
   linkBuilderType: "outgoing" | "incoming" | "external";
@@ -356,7 +404,8 @@ export interface SemanticContentLibrary {
 export interface PageData {
   metadata?: Metadata;
   id: string;
-  linkName: string;
+  href?: string;
+  type: PageType;
   title?: string;
   description?: string;
   images?: PageImages[];
@@ -368,7 +417,6 @@ export interface PageData {
   taxonomy?: string;
   attention?: string;
   audiences?: string;
-  href?: string;
   roles: UserType[];
 
   semanticCapabilities?: AISemanticCapabilities;
@@ -424,7 +472,6 @@ export interface PageData {
   isVectorConnected: boolean;
   isAddedToPrompt: boolean;
   isChatSynchronized: boolean;
-  type: PageType;
   design?: string;
   linkConfiguration?: LinkConfiguration;
   createdAt?: string;
