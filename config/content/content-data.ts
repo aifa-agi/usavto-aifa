@@ -2324,8 +2324,8 @@ export const contentData = {
       },
       {
         "id": "hpuae76sxx2j79a8tn009ypj",
-        "title": "Путевые листы онлайн",
-        "href": "/putevye-listy/putevye-listy-onlayn",
+        "title": "Что такое электронный путевой лист",
+        "href": "/putevye-listy/chto-takoe-elektronnyy-putevoy-list",
         "roles": [
           "guest"
         ],
@@ -3020,7 +3020,18 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "order": 2,
-        "badgeName": "ПTO"
+        "badgeName": "ПTO",
+        "description": "Электронный путевой лист — это цифровой аналог традиционного бумажного путевого листа, который используется для оформления и контроля маршрутов транспортных средств.",
+        "images": [
+          {
+            "id": "pgcz47lwz03s99z4l6qptuts",
+            "alt": "usauto",
+            "href": "https://9d8adypzz8xutnay.public.blob.vercel-storage.com/usautopro4-lX0eE6GZbdKU7y5rcFj1wrvZbl83OF.jpg"
+          }
+        ],
+        "keywords": [
+          "документ"
+        ]
       },
       {
         "id": "a79hec9akmtsghozvt8a5b6p",
@@ -4530,5 +4541,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-09-25T20:28:31.555Z";
+export const lastUpdated = "2025-09-26T18:23:29.391Z";
 export const generatedBy = "menu-persist-api";
