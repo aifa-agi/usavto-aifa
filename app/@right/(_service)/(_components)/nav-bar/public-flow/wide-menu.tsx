@@ -1,3 +1,5 @@
+// @/app/@right/(_service)/(_components)/nav-bar/public-flow/wide-menu.tsx
+
 "use client"
 
 import { useState, useEffect, JSX } from "react"
@@ -8,12 +10,12 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { cn } from "@/lib/utils"
 import { useSession } from "next-auth/react"
-import { UserType } from "@prisma/client"
 import { MenuCategory } from "../../../(_types)/menu-types"
 import { useTranslation } from "../../../(_libs)/translation"
 import { PageData } from "../../../(_types)/page-types"
 import { humanize } from "../../../(_libs)/humanize"
 import { ModeToggle } from "../../shared/mode-toggle"
+import { UserType } from "../../../(_types)/footer-types"
 
 interface WideMenuProps {
   isOpen: boolean
@@ -57,6 +59,7 @@ export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProp
 
   const handlePageClick = (page: PageData) => {
     if (page.href) {
+      router.refresh()
       router.push(page.href)
     }
     setIsOpen(false)
@@ -64,6 +67,7 @@ export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProp
 
   // Функция для перехода на главную страницу
   const handleHomePageClick = () => {
+    router.refresh()
     router.push("/home")
     setIsOpen(false)
   }

@@ -575,7 +575,7 @@ export default function ContentRenderer({ sections, heroImage }: ContentRenderer
         const newUrl = currentSearch.toString()
           ? `${currentPath}?${currentSearch.toString()}`
           : currentPath;
-
+        router.refresh()
         router.push(newUrl, { scroll: false });
       }, 3500);
 
@@ -599,6 +599,7 @@ export default function ContentRenderer({ sections, heroImage }: ContentRenderer
     const newUrl = `${currentPath}?${currentSearch.toString()}`;
 
     // Используем shallow routing для предотвращения полной перезагрузки
+    router.refresh()
     router.push(newUrl, { scroll: false });
   };
 
