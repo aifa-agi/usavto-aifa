@@ -7,14 +7,6 @@
     "fr": "Menu mobile",
     "it": "Menu mobile"
   },
-  "Close Menu": {
-    "ru": "Закрыть меню",
-    "en": "Close Menu",
-    "es": "Cerrar menú",
-    "de": "Menü schließen",
-    "fr": "Fermer le menu",
-    "it": "Chiudi menu"
-  },
   "Open Menu": {
     "ru": "Открыть меню",
     "en": "Open Menu",
@@ -22,6 +14,14 @@
     "de": "Menü öffnen",
     "fr": "Ouvrir le menu",
     "it": "Apri menu"
+  },
+  "Close Menu": {
+    "ru": "Закрыть меню",
+    "en": "Close Menu",
+    "es": "Cerrar menú",
+    "de": "Menü schließen",
+    "fr": "Fermer le menu",
+    "it": "Chiudi menu"
   },
   "Contents": {
     "ru": "Содержание",

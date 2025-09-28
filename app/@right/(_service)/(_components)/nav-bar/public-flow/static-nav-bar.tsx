@@ -7,6 +7,7 @@ import WideMenu from "./wide-menu";
 import MobileMenu from "./mobile-menu";
 import { Button } from "@/components/ui/button";
 import { useNavigationMenu } from "../../../(_context)/nav-bar-provider";
+import { useTranslation } from "../../../(_libs)/translation";
 
 const HEADER_HEIGHT = 56;
 const MOBILE_MENU_OFFSET = 40;
@@ -15,6 +16,8 @@ export default function StaticNavBar() {
   const [isLargeScreen, setIsLargeScreen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const { categories } = useNavigationMenu();
+  const { t } = useTranslation();
+
   useEffect(() => {
     const handleResize = () => setIsLargeScreen(window.innerWidth >= 1024);
     handleResize();
@@ -39,8 +42,6 @@ export default function StaticNavBar() {
     (category) => !PROTECTED_CATEGORIES.includes(category.title.toLowerCase())
   );
 
-
-
   return (
     <>
       <div>
@@ -56,7 +57,7 @@ export default function StaticNavBar() {
               size="sm"
               className="flex items-center gap-2 whitespace-nowrap px-4"
             >
-              <span>{isOpen ? "Закрыть меню" : "Открыть меню"}</span>
+              <span>{isOpen ? t("Close Menu") : t("Open Menu")}</span>
               <ChevronDown
                 className={`w-4 h-4 transition-transform duration-300 ${isOpen ? "rotate-180" : ""
                   }`}
@@ -67,7 +68,7 @@ export default function StaticNavBar() {
               variant="outline"
               onClick={handleButtonClick}
               className="flex items-center justify-center px-2"
-              aria-label={isOpen ? "Открыть меню" : "Закрыть меню"}
+              aria-label={isOpen ? t("Close Menu") : t("Open Menu")}
             >
               <Menu className="w-5 h-5" />
             </Button>

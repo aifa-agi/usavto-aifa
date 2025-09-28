@@ -1,5 +1,5 @@
 // Auto-generated SEO-optimized static page - do not edit manually
-// Generated on: 2025-09-26T17:33:14.831Z
+// Generated on: 2025-09-28T22:00:17.787Z
 // Source href: /blog/putevye-listy/avtomatizatsiya-putevyh-listov
 // Page metadata: Автоматизация путевых лист | 6 sections
 // SEO Mode: STATIC GENERATION ENABLED
@@ -34,7 +34,7 @@ const sections = [
           "content": [
             {
               "type": "text",
-              "text": "Автоматизация путевых листов: введение в эффективное управление автопарком!"
+              "text": "Автоматизация путевых листов: введение в эффективное управление автопарком"
             }
           ]
         },
@@ -170,14 +170,901 @@ const sections = [
           ]
         },
         {
-          "type": "paragraph",
-          "attrs": {
-            "textAlign": null
-          },
+          "type": "table",
           "content": [
             {
-              "type": "text",
-              "text": "Этап\n      Описание\n    \n  \n  \n    \n      Настройка параметров\n      Определение структуры путевого листа и интеграция с внутренними системами компании для обеспечения корректного учета.\n    \n    \n      Создание и ввод данных\n      Использование удобного интерфейса для быстрого заполнения информации о водителе, транспорте и маршруте.\n    \n    \n      Валидация и проверка\n      Автоматическая проверка корректности введенных данных и предотвращение ошибок при оформлении документов.\n    \n    \n      Генерация отчетов\n      Формирование аналитических отчетов для руководства с возможностью оперативного мониторинга использования автопарка.\n    \n    \n      Хранение и архивирование\n      Безопасное хранение путевых листов в цифровом формате с возможностью быстрого поиска и доступа к данным."
+              "type": "tableRow",
+              "content": [
+                {
+                  "type": "tableHeader",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      133
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Этап"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableHeader",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      230
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Описание"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableHeader",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      139
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Этап"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableHeader",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      267
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Описание"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableHeader",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      128
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Этап"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableHeader",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      269
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Описание"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "tableRow",
+              "content": [
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      133
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Настройка параметров"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      230
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Определение структуры путевого листа и интеграция с внутренними системами компании для обеспечения корректного учета."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      139
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Настройка параметров"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      267
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Определение структуры путевого листа и интеграция с внутренними системами компании для обеспечения корректного учета."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      128
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Настройка параметров"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      269
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Определение структуры путевого листа и интеграция с внутренними системами компании для обеспечения корректного учета."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "tableRow",
+              "content": [
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      133
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Создание и ввод данных"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      230
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Использование удобного интерфейса для быстрого заполнения информации о водителе, транспорте и маршруте."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      139
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Создание и ввод данных"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      267
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Использование удобного интерфейса для быстрого заполнения информации о водителе, транспорте и маршруте."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      128
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Настройка параметров"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      269
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Определение структуры путевого листа и интеграция с внутренними системами компании для обеспечения корректного учета."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "tableRow",
+              "content": [
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      133
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Валидация и проверка"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      230
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Автоматическая проверка корректности введенных данных и предотвращение ошибок при оформлении документов."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      139
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Валидация и проверка"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      267
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Автоматическая проверка корректности введенных данных и предотвращение ошибок при оформлении документов."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      128
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Настройка параметров"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      269
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Определение структуры путевого листа и интеграция с внутренними системами компании для обеспечения корректного учета."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "tableRow",
+              "content": [
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      133
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Генерация отчетов"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      230
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Формирование аналитических отчетов для руководства с возможностью оперативного мониторинга использования автопарка."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      139
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Генерация отчетов"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      267
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Формирование аналитических отчетов для руководства с возможностью оперативного мониторинга использования автопарка."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      128
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Настройка параметров"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      269
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Определение структуры путевого листа и интеграция с внутренними системами компании для обеспечения корректного учета."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "tableRow",
+              "content": [
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      133
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Хранение и архивирование"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      230
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Безопасное хранение путевых листов в цифровом формате с возможностью быстрого поиска и доступа к данным."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      139
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Хранение и архивирование"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      267
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Безопасное хранение путевых листов в цифровом формате с возможностью быстрого поиска и доступа к данным."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      128
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Настройка параметров"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": [
+                      269
+                    ]
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Определение структуры путевого листа и интеграция с внутренними системами компании для обеспечения корректного учета."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -207,14 +1094,92 @@ const sections = [
           ]
         },
         {
-          "type": "paragraph",
-          "attrs": {
-            "textAlign": null
-          },
+          "type": "bulletList",
           "content": [
             {
-              "type": "text",
-              "text": "Сокращение времени на оформление документов и отчетность;\n  Уменьшение количества ошибок, связанных с ручным вводом данных;\n  Повышение прозрачности и контроля за использованием транспорта;\n  Удобный доступ к аналитике и оперативная отчетность;\n  Снижение затрат на бумажный документооборот и хранение."
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Сокращение времени на оформление документов и отчетность;"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Уменьшение количества ошибок, связанных с ручным вводом данных;"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Повышение прозрачности и контроля за использованием транспорта;"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Удобный доступ к аналитике и оперативная отчетность;"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Снижение затрат на бумажный документооборот и хранение."
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -314,14 +1279,130 @@ const sections = [
           ]
         },
         {
-          "type": "paragraph",
+          "type": "orderedList",
           "attrs": {
-            "textAlign": null
+            "start": 1,
+            "type": null
           },
           "content": [
             {
-              "type": "text",
-              "text": "Анализ текущих процессов: изучение существующего документооборота и выявление узких мест.\n  Выбор и настройка платформы: подбор программного обеспечения с учетом функционала и интеграции.\n  Разработка структуры путевого листа: определение обязательных полей и правил заполнения.\n  Обучение сотрудников: проведение тренингов и инструктажей по работе с новой системой.\n  Пилотное тестирование: запуск системы в тестовом режиме и сбор обратной связи.\n  Внедрение и сопровождение: переход на полноценное использование и техническая поддержка.\n  Анализ и оптимизация: регулярный мониторинг эффективности и внесение улучшений."
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Анализ текущих процессов: изучение существующего документооборота и выявление узких мест."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Выбор и настройка платформы: подбор программного обеспечения с учетом функционала и интеграции."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Разработка структуры путевого листа: определение обязательных полей и правил заполнения."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Обучение сотрудников: проведение тренингов и инструктажей по работе с новой системой."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Пилотное тестирование: запуск системы в тестовом режиме и сбор обратной связи."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Внедрение и сопровождение: переход на полноценное использование и техническая поддержка."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Анализ и оптимизация: регулярный мониторинг эффективности и внесение улучшений."
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -407,9 +1488,143 @@ const sections = [
           "content": [
             {
               "type": "text",
-              "text": "«Успешное внедрение автоматизации начинается с грамотного управления процессом: только слаженная команда и четкий план обеспечивают максимальную отдачу от новых технологий.»\n\n\n  Определите ответственных за внедрение: назначьте проектных менеджеров и технических специалистов.\n  Разработайте подробный план: установите этапы, сроки и критерии успешности.\n  Обеспечьте коммуникацию: регулярно информируйте всех участников о ходе работ и изменениях.\n  Контролируйте риски: выявляйте потенциальные проблемы и своевременно принимайте меры.\n  Поддерживайте мотивацию: вовлекайте сотрудников, поощряйте инициативу и обучение.\n  Проводите регулярный анализ: оценивайте результаты и корректируйте план по необходимости.\n  Обеспечьте техническую поддержку: гарантируйте оперативное решение технических вопросов."
+              "text": "«Успешное внедрение автоматизации начинается с грамотного управления процессом: только слаженная команда и четкий план обеспечивают максимальную отдачу от новых технологий.»"
             }
           ]
+        },
+        {
+          "type": "orderedList",
+          "attrs": {
+            "start": 1,
+            "type": null
+          },
+          "content": [
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Определите ответственных за внедрение: назначьте проектных менеджеров и технических специалистов."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Разработайте подробный план: установите этапы, сроки и критерии успешности."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Обеспечьте коммуникацию: регулярно информируйте всех участников о ходе работ и изменениях."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Контролируйте риски: выявляйте потенциальные проблемы и своевременно принимайте меры."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Поддерживайте мотивацию: вовлекайте сотрудников, поощряйте инициативу и обучение."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Проводите регулярный анализ: оценивайте результаты и корректируйте план по необходимости."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Обеспечьте техническую поддержку: гарантируйте оперативное решение технических вопросов."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "attrs": {
+            "textAlign": null
+          }
         }
       ]
     },
@@ -495,14 +1710,92 @@ const sections = [
           ]
         },
         {
-          "type": "paragraph",
-          "attrs": {
-            "textAlign": null
-          },
+          "type": "bulletList",
           "content": [
             {
-              "type": "text",
-              "text": "Комплексные ERP-системы с модулем транспорта — подходят для крупных предприятий с разветвленной структурой\n  Специализированные платформы для автопарков — оптимальны для транспортных компаний среднего размера\n  Облачные сервисы — обеспечивают быстрое развертывание и минимальные первоначальные инвестиции\n  Мобильные приложения — удобны для небольших компаний с простыми требованиями к учету\n  Отраслевые решения — созданы с учетом специфики конкретных видов перевозок"
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Комплексные ERP-системы с модулем транспорта — подходят для крупных предприятий с разветвленной структурой"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Специализированные платформы для автопарков — оптимальны для транспортных компаний среднего размера"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Облачные сервисы — обеспечивают быстрое развертывание и минимальные первоначальные инвестиции"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Мобильные приложения — удобны для небольших компаний с простыми требованиями к учету"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Отраслевые решения — созданы с учетом специфики конкретных видов перевозок"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -544,6 +1837,134 @@ const sections = [
           ]
         },
         {
+          "type": "orderedList",
+          "attrs": {
+            "start": 1,
+            "type": null
+          },
+          "content": [
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Полное соответствие российскому законодательству — готовые формы документов и отчетов по всем требованиям"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Интуитивный интерфейс — минимальное время на обучение сотрудников благодаря продуманному дизайну"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Облачная архитектура — доступ из любой точки мира, автоматические обновления и резервное копирование"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Гибкая настройка — адаптация под специфику любой транспортной компании без программирования"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Широкие интеграционные возможности — подключение к 1С, GPS-системам и другим корпоративным решениям"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Высокое качество технической поддержки — русскоязычная поддержка 24/7 от команды экспертов"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Прозрачное ценообразование — фиксированная стоимость без скрытых платежей и комиссий"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
           "type": "paragraph",
           "attrs": {
             "textAlign": null
@@ -551,7 +1972,7 @@ const sections = [
           "content": [
             {
               "type": "text",
-              "text": "Полное соответствие российскому законодательству — готовые формы документов и отчетов по всем требованиям\n  Интуитивный интерфейс — минимальное время на обучение сотрудников благодаря продуманному дизайну\n  Облачная архитектура — доступ из любой точки мира, автоматические обновления и резервное копирование\n  Гибкая настройка — адаптация под специфику любой транспортной компании без программирования\n  Широкие интеграционные возможности — подключение к 1С, GPS-системам и другим корпоративным решениям\n  Высокое качество технической поддержки — русскоязычная поддержка 24/7 от команды экспертов\n  Прозрачное ценообразование — фиксированная стоимость без скрытых платежей и комиссий\n\n\n«USAUTO — это не просто программа для путевых листов, это комплексное решение, которое растет вместе с вашим бизнесом и помогает достигать новых высот в управлении автопарком.»"
+              "text": "«USAUTO — это не просто программа для путевых листов, это комплексное решение, которое растет вместе с вашим бизнесом и помогает достигать новых высот в управлении автопарком.»"
             }
           ]
         }
@@ -627,14 +2048,126 @@ const sections = [
           ]
         },
         {
-          "type": "paragraph",
-          "attrs": {
-            "textAlign": null
-          },
+          "type": "bulletList",
           "content": [
             {
-              "type": "text",
-              "text": "Минимальные системные требования: серверы с современными процессорами (не ниже Intel Xeon или аналог), не менее 16 ГБ оперативной памяти и SSD-диски для быстрого доступа к данным.\n  Операционная система: поддержка Windows Server 2016 и выше, а также Linux (Ubuntu 20.04 и новее) для серверной части платформы.\n  Сетевые настройки: стабильное интернет-соединение с пропускной способностью не менее 100 Мбит/с, настройка VPN при удаленном доступе и открытые необходимые порты для обмена данными.\n  Безопасность данных: использование протоколов SSL/TLS для шифрования, регулярное обновление антивирусного ПО и настройка прав доступа по ролям.\n  Совместимость с оборудованием: поддержка мобильных устройств на Android и iOS для водителей, интеграция с GPS-трекерами и другими системами мониторинга.\n  Резервное копирование и восстановление: регулярное автоматическое создание резервных копий базы данных и настройка процедур восстановления для минимизации риска потери данных.\n  Обновления и поддержка: своевременное применение обновлений платформы USAUTO и наличие квалифицированной технической поддержки для решения возникающих вопросов."
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Минимальные системные требования: серверы с современными процессорами (не ниже Intel Xeon или аналог), не менее 16 ГБ оперативной памяти и SSD-диски для быстрого доступа к данным."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Операционная система: поддержка Windows Server 2016 и выше, а также Linux (Ubuntu 20.04 и новее) для серверной части платформы."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Сетевые настройки: стабильное интернет-соединение с пропускной способностью не менее 100 Мбит/с, настройка VPN при удаленном доступе и открытые необходимые порты для обмена данными."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Безопасность данных: использование протоколов SSL/TLS для шифрования, регулярное обновление антивирусного ПО и настройка прав доступа по ролям."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Совместимость с оборудованием: поддержка мобильных устройств на Android и iOS для водителей, интеграция с GPS-трекерами и другими системами мониторинга."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Резервное копирование и восстановление: регулярное автоматическое создание резервных копий базы данных и настройка процедур восстановления для минимизации риска потери данных."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Обновления и поддержка: своевременное применение обновлений платформы USAUTO и наличие квалифицированной технической поддержки для решения возникающих вопросов."
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -785,6 +2318,305 @@ const sections = [
           ]
         },
         {
+          "type": "table",
+          "content": [
+            {
+              "type": "tableRow",
+              "content": [
+                {
+                  "type": "tableHeader",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": null
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Вопрос"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableHeader",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": null
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Краткий ответ"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "tableRow",
+              "content": [
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": null
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Как автоматизация влияет на скорость оформления путевых листов?"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": null
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Сокращает время оформления в несколько раз за счет цифрового ввода и автоматической проверки данных."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "tableRow",
+              "content": [
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": null
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Можно ли интегрировать систему с существующими учетными программами?"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": null
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Да, USAUTO поддерживает интеграцию с 1С, GPS-системами и другими корпоративными решениями."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "tableRow",
+              "content": [
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": null
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Какие устройства поддерживаются для работы с платформой?"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": null
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Поддерживаются ПК, ноутбуки, а также мобильные устройства на Android и iOS для водителей."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "tableRow",
+              "content": [
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": null
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Как обеспечивается безопасность данных в системе?"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": null
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Используются протоколы шифрования SSL/TLS, разграничение прав доступа и регулярное резервное копирование."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "tableRow",
+              "content": [
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": null
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Требуется ли специальное обучение для работы с системой?"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableCell",
+                  "attrs": {
+                    "colspan": 1,
+                    "rowspan": 1,
+                    "colwidth": null
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Обучение проводится быстро благодаря интуитивному интерфейсу и поддержке специалистов."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
           "type": "paragraph",
           "attrs": {
             "textAlign": null
@@ -792,7 +2624,7 @@ const sections = [
           "content": [
             {
               "type": "text",
-              "text": "Вопрос\n      Краткий ответ\n    \n  \n  \n    \n      Как автоматизация влияет на скорость оформления путевых листов?\n      Сокращает время оформления в несколько раз за счет цифрового ввода и автоматической проверки данных.\n    \n    \n      Можно ли интегрировать систему с существующими учетными программами?\n      Да, USAUTO поддерживает интеграцию с 1С, GPS-системами и другими корпоративными решениями.\n    \n    \n      Какие устройства поддерживаются для работы с платформой?\n      Поддерживаются ПК, ноутбуки, а также мобильные устройства на Android и iOS для водителей.\n    \n    \n      Как обеспечивается безопасность данных в системе?\n      Используются протоколы шифрования SSL/TLS, разграничение прав доступа и регулярное резервное копирование.\n    \n    \n      Требуется ли специальное обучение для работы с системой?\n      Обучение проводится быстро благодаря интуитивному интерфейсу и поддержке специалистов.\n    \n  \n\n\nМы надеемся, что эти ответы помогут вам лучше понять возможности и преимущества автоматизации путевых листов. Если у вас остались вопросы или требуется индивидуальная консультация, специалисты USAUTO всегда готовы помочь и"
+              "text": "Мы надеемся, что эти ответы помогут вам лучше понять возможности и преимущества автоматизации путевых листов. Если у вас остались вопросы или требуется индивидуальная консультация, специалисты USAUTO всегда готовы помочь и"
             }
           ]
         }
@@ -935,8 +2767,8 @@ export default function Page() {
               "url": "https://9d8adypzz8xutnay.public.blob.vercel-storage.com/usautopro2-6eWPOFRFIem2apMr86FViCUmQB9bJ8.jpg",
               "alt": "Us auto"
             },
-            "datePublished": "2025-09-26T17:33:14.831Z",
-            "dateModified": "2025-09-26T17:33:14.831Z",
+            "datePublished": "2025-09-28T22:00:17.787Z",
+            "dateModified": "2025-09-28T22:00:17.787Z",
             "articleSection": "blog",
             "keywords": ["автоматизация путевых листов"],
             "mainEntityOfPage": {

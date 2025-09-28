@@ -84,6 +84,7 @@
     "@tiptap/extension-list": "^3.4.3",
     "@tiptap/extension-subscript": "^3.4.3",
     "@tiptap/extension-superscript": "^3.4.3",
+    "@tiptap/extension-table": "^3.6.1",
     "@tiptap/extension-text-align": "^3.4.3",
     "@tiptap/extension-typography": "^3.4.3",
     "@tiptap/extensions": "^3.4.3",

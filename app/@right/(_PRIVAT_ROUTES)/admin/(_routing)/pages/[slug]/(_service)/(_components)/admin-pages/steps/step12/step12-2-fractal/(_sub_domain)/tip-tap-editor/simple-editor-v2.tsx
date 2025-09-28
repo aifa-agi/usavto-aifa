@@ -1,4 +1,3 @@
-// File: @/app/@right/(_PRIVAT_ROUTES)/admin/(_routing)/pages/[slug]/(_service)/(_components)/admin-pages/steps/step12/step12-1-fractal/(_sub_dommain)/tip-tap-editor/simple-editor.tsx
 "use client";
 
 import * as React from "react";
@@ -13,10 +12,14 @@ import { Subscript } from "@tiptap/extension-subscript";
 import { Superscript } from "@tiptap/extension-superscript";
 import { Selection } from "@tiptap/extensions";
 
+// Импорт Table расширений
+import { Table, TableCell, TableHeader, TableRow } from "@tiptap/extension-table";
+
 import { Button } from "@/components/tiptap/tiptap-ui-primitive/button";
 import { Spacer } from "@/components/tiptap/tiptap-ui-primitive/spacer";
 import { Toolbar, ToolbarGroup, ToolbarSeparator } from "@/components/tiptap/tiptap-ui-primitive/toolbar";
 
+// Импорт стилей
 import "@/components/tiptap/tiptap-node/blockquote-node/blockquote-node.scss";
 import "@/components/tiptap/tiptap-node/code-block-node/code-block-node.scss";
 import "@/components/tiptap/tiptap-node/horizontal-rule-node/horizontal-rule-node.scss";
@@ -25,6 +28,7 @@ import "@/components/tiptap/tiptap-node/image-node/image-node.scss";
 import "@/components/tiptap/tiptap-node/heading-node/heading-node.scss";
 import "@/components/tiptap/tiptap-node/paragraph-node/paragraph-node.scss";
 
+// Импорт компонентов UI
 import { ImageUploadButton } from "@/components/tiptap/tiptap-ui/image-upload-button";
 import { ListDropdownMenu } from "@/components/tiptap/tiptap-ui/list-dropdown-menu";
 import { BlockquoteButton } from "@/components/tiptap/tiptap-ui/blockquote-button";
@@ -38,6 +42,9 @@ import { ArrowLeftIcon } from "@/components/tiptap/tiptap-icons/arrow-left-icon"
 import { HighlighterIcon } from "@/components/tiptap/tiptap-icons/highlighter-icon";
 import { LinkIcon } from "@/components/tiptap/tiptap-icons/link-icon";
 
+// ИМПОРТ НАШЕГО ОБНОВЛЕННОГО КОМПОНЕНТА
+
+
 import { useIsMobile } from "@/hooks/use-mobile";
 import { handleImageUpload, MAX_FILE_SIZE } from "@/lib/tiptap-utils";
 
@@ -45,6 +52,8 @@ import "./simple-editor.scss";
 import HorizontalRule from "@/components/tiptap/tiptap-node/horizontal-rule-node/horizontal-rule-node-extension";
 import { ImageUploadNode } from "@/components/tiptap/tiptap-node/image-upload-node";
 import { HeadingDropdownMenu } from "@/components/tiptap/tiptap-ui/heading-dropdown-menu";
+import { TableToolbarGroup } from "@/components/tiptap/table-toolbar-group";
+
 
 export type JSONContent = Record<string, any>;
 
@@ -53,6 +62,23 @@ export type SimpleEditorProps = {
   readOnlyMode?: boolean;
   onContentChange?: (json: JSONContent) => void;
 };
+
+const TableWithWrapper = Table.extend({
+  renderHTML({ HTMLAttributes }) {
+    // Рендерим table внутри div wrapper
+    return [
+      'div',
+      {
+        class: 'table-responsive-wrapper'
+      },
+      [
+        'table',
+        HTMLAttributes,
+        ['tbody', 0]
+      ]
+    ];
+  },
+});
 
 const MainToolbarContent = ({
   onHighlighterClick,
@@ -63,6 +89,9 @@ const MainToolbarContent = ({
   onLinkClick: () => void;
   isMobile: boolean;
 }) => {
+  // Состояние для управления раскрытием таблиц
+  const [isTableExpanded, setIsTableExpanded] = React.useState(false);
+
   return (
     <>
       <Spacer />
@@ -100,9 +129,16 @@ const MainToolbarContent = ({
         <TextAlignButton align="justify" />
       </ToolbarGroup>
       <ToolbarSeparator />
+      {/* СНАЧАЛА Image кнопка */}
       <ToolbarGroup>
         <ImageUploadButton text="Add" />
       </ToolbarGroup>
+      <ToolbarSeparator />
+      {/* ЗАТЕМ Table компонент с управляемым состоянием */}
+      <TableToolbarGroup
+        isExpanded={isTableExpanded}
+        onToggle={() => setIsTableExpanded(!isTableExpanded)}
+      />
       <Spacer />
       {isMobile && <ToolbarSeparator />}
     </>
@@ -157,6 +193,15 @@ export function SimpleEditorV2({ content, readOnlyMode = false, onContentChange 
       Superscript,
       Subscript,
       Selection,
+      TableWithWrapper.configure({
+        resizable: true,
+        HTMLAttributes: {
+          class: 'tiptap-table',
+        },
+      }),
+      TableRow,
+      TableHeader,
+      TableCell,
       ImageUploadNode.configure({
         accept: "image/*",
         maxSize: MAX_FILE_SIZE,

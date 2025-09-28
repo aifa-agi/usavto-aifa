@@ -717,7 +717,7 @@ export const contentData = {
           "автоматизация путевых листов"
         ],
         "isReadyPromptForPerplexity": true,
-        "updatedAt": "2025-09-24T16:49:57.513Z",
+        "updatedAt": "2025-09-28T22:00:17.797Z",
         "draftContentStructure": [
           {
             "id": "h2-1",
@@ -5577,5 +5577,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-09-26T19:26:13.820Z";
+export const lastUpdated = "2025-09-28T22:00:21.064Z";
 export const generatedBy = "menu-persist-api";

@@ -16,7 +16,7 @@ import {
 import {
     fromExtendedSections,
     updateSectionV2WithContent,
-    areAllSectionsReady // ✅ ИСПРАВЛЕНО: импортируем из mapper
+    areAllSectionsReady
 } from "../(_adapters)/sections-v2-mapper";
 import { mergeDocs, findSectionV2ById } from "../(_utils)/step12-v2-sections-utils";
 import { STEP12_V2_TEXTS } from "../(_constants)/step12-v2-texts";
@@ -64,9 +64,57 @@ export function Step12V2Provider({ children, page }: Step12V2ProviderProps) {
     }, [fileSections]);
 
     // Update sections when file system data changes
+    // Update sections when file system data changes
     useEffect(() => {
         if (fileSections) {
+            console.log('🔍 RAW fileSections received:', fileSections.length);
+            fileSections.forEach((section, idx) => {
+                console.log(`📋 Raw Section ${idx}:`, {
+                    id: section.id,
+                    hasBodyContent: !!section.bodyContent,
+                    contentLength: section.bodyContent?.content?.length || 0,
+                    contentTypes: section.bodyContent?.content?.map((item: any) => item.type) || []
+                });
+
+                // Специально ищем таблицы
+                const hasTable = section.bodyContent?.content?.some((item: any) => item.type === 'table');
+                if (hasTable) {
+                    console.log(`🔍 TABLE DETECTED in raw section ${section.id}!`);
+                    // Дополнительная информация о таблице с правильной типизацией
+                    const tableItems = section.bodyContent.content.filter((item: any) => item.type === 'table');
+                    tableItems.forEach((table: any, tableIdx: number) => {
+                        console.log(`   Table ${tableIdx} rows:`, table.content?.length || 0);
+                    });
+                }
+            });
+
             const newSections = fromExtendedSections(fileSections);
+            console.log('🔄 MAPPED sections count:', newSections.length);
+
+            newSections.forEach((section, idx) => {
+                console.log(`📋 Mapped Section ${idx}:`, {
+                    id: section.id,
+                    hasContent: !!section.content,
+                    hasData: section.hasData
+                });
+
+                // Проверяем не потерялись ли таблицы после маппинга
+                if (section.content?.content) {
+                    const contentTypes = section.content.content.map((item: any) => item.type);
+                    const hasTable = contentTypes.includes('table');
+                    if (hasTable) {
+                        console.log(`✅ TABLE PRESERVED in mapped section ${section.id}!`);
+                    } else {
+                        // Ищем таблицы в исходной секции
+                        const originalSection = fileSections.find(s => s.id === section.id);
+                        const originalHasTable = originalSection?.bodyContent?.content?.some((item: any) => item.type === 'table');
+                        if (originalHasTable) {
+                            console.error(`❌ TABLE LOST during mapping for section ${section.id}!`);
+                        }
+                    }
+                }
+            });
+
             setSections(newSections);
             setActiveId("all");
             setAllRefresh(v => v + 1);
@@ -81,6 +129,7 @@ export function Step12V2Provider({ children, page }: Step12V2ProviderProps) {
             }]);
         }
     }, [fileSections]);
+
 
     // Load individual section data (lazy loading simulation)
     const loadSectionData = useCallback(async (sectionId: string): Promise<void> => {
@@ -130,11 +179,11 @@ export function Step12V2Provider({ children, page }: Step12V2ProviderProps) {
     const resetAllFlags = useCallback((): void => {
         setSections(prev => prev.map(section => ({
             ...section,
-            hasData: Boolean(section.content), // Reset based on actual content presence
+            hasData: Boolean(section.content),
         })));
     }, []);
 
-    // ✅ ИСПРАВЛЕНО: Check if all sections are ready for save using imported function
+    // Check if all sections are ready for save using imported function
     const isAllReady = useCallback((): boolean => {
         return hasValidSections && areAllSectionsReady(sections);
     }, [sections, hasValidSections]);
@@ -181,7 +230,7 @@ export function Step12V2Provider({ children, page }: Step12V2ProviderProps) {
         return findSectionV2ById(sections, sectionId);
     }, [sections]);
 
-    // ✅ ДОБАВЛЕНО: Debug information for development
+    // Debug information for development
     useEffect(() => {
         if (process.env.NODE_ENV === 'development') {
             console.log('Step12V2Provider:', {
@@ -238,7 +287,7 @@ export function Step12V2Provider({ children, page }: Step12V2ProviderProps) {
         getSection,
     ]);
 
-    // ✅ ДОБАВЛЕНО: Error boundary для sections loading
+    // Error boundary для sections loading
     if (sectionsError) {
         console.error('Step12V2Provider: Error loading sections:', sectionsError);
         return (
@@ -284,7 +333,7 @@ export function useStep12V2Root(): Step12V2ContextType {
     return context;
 }
 
-// ✅ ДОБАВЛЕНО: Hook для упрощенного доступа к save функциональности
+// Hook для упрощенного доступа к save функциональности
 export function useStep12V2Save() {
     const context = useStep12V2Root();
     const { useStep12V2Save: saveHook } = require("../(_hooks)/use-step12-v2-save");

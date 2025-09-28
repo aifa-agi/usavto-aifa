@@ -181,9 +181,6 @@ function SidebarTableOfContents({
   );
 }
 
-// Остальная часть кода остается без изменений...
-// (все функции рендеринга, renderHeading, renderParagraph, etc.)
-
 // Компонент разделителя секций
 function SectionSeparator() {
   return (
@@ -315,12 +312,108 @@ function renderListItem(node: TipTapNode, index: number): React.ReactNode {
   );
 }
 
+// ✅ НОВЫЙ: Рендерер для таблицы
+function renderTable(node: TipTapNode, index: number): React.ReactNode {
+  const content = node.content?.map((child, childIndex) => renderTipTapNode(child, childIndex)) || [];
+
+  // Определяем есть ли заголовочные строки
+  const hasHeaders = node.content?.some(row =>
+    row.type === 'tableRow' &&
+    row.content?.some(cell => cell.type === 'tableHeader')
+  );
+
+  return (
+    <div key={index} className="table-responsive-wrapper">
+      <table>
+        {hasHeaders && (
+          <thead>
+            {content.filter((_, idx) => {
+              const row = node.content?.[idx];
+              return row?.content?.some(cell => cell.type === 'tableHeader');
+            })}
+          </thead>
+        )}
+        <tbody>
+          {hasHeaders
+            ? content.filter((_, idx) => {
+              const row = node.content?.[idx];
+              return !row?.content?.some(cell => cell.type === 'tableHeader');
+            })
+            : content
+          }
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+// ✅ НОВЫЙ: Рендерер для строки таблицы
+function renderTableRow(node: TipTapNode, index: number): React.ReactNode {
+  const content = node.content?.map((child, childIndex) => renderTipTapNode(child, childIndex)) || [];
+
+  return (
+    <tr key={index}>
+      {content}
+    </tr>
+  );
+}
+
+// ✅ НОВЫЙ: Рендерер для заголовочной ячейки
+function renderTableHeader(node: TipTapNode, index: number): React.ReactNode {
+  const content = node.content?.map((child, childIndex) => renderTipTapNode(child, childIndex)) || [];
+  const colspan = node.attrs?.colspan || 1;
+  const rowspan = node.attrs?.rowspan || 1;
+  const colwidth = node.attrs?.colwidth;
+
+  const style: React.CSSProperties = {};
+  if (colwidth && Array.isArray(colwidth) && colwidth[0]) {
+    style.minWidth = `${colwidth[0]}px`;
+    style.width = `${colwidth[0]}px`;
+  }
+
+  return (
+    <th
+      key={index}
+      colSpan={colspan}
+      rowSpan={rowspan}
+      style={style}
+    >
+      {content}
+    </th>
+  );
+}
+
+// ✅ НОВЫЙ: Рендерер для обычной ячейки
+function renderTableCell(node: TipTapNode, index: number): React.ReactNode {
+  const content = node.content?.map((child, childIndex) => renderTipTapNode(child, childIndex)) || [];
+  const colspan = node.attrs?.colspan || 1;
+  const rowspan = node.attrs?.rowspan || 1;
+  const colwidth = node.attrs?.colwidth;
+
+  const style: React.CSSProperties = {};
+  if (colwidth && Array.isArray(colwidth) && colwidth[0]) {
+    style.minWidth = `${colwidth[0]}px`;
+    style.width = `${colwidth[0]}px`;
+  }
+
+  return (
+    <td
+      key={index}
+      colSpan={colspan}
+      rowSpan={rowspan}
+      style={style}
+    >
+      {content}
+    </td>
+  );
+}
+
 // Рендерер для текста
 function renderText(node: TipTapNode, index: number): React.ReactNode {
   return node.text || "";
 }
 
-// Основная функция рендеринга узла
+// ✅ ОБНОВЛЕННАЯ: Основная функция рендеринга узла с поддержкой таблиц
 function renderTipTapNode(node: TipTapNode, index: number): React.ReactNode {
   switch (node.type) {
     case "heading":
@@ -342,6 +435,15 @@ function renderTipTapNode(node: TipTapNode, index: number): React.ReactNode {
       return renderListItem(node, index);
     case "text":
       return renderText(node, index);
+    // ✅ ДОБАВЛЯЕМ ОБРАБОТЧИКИ ТАБЛИЦ
+    case "table":
+      return renderTable(node, index);
+    case "tableRow":
+      return renderTableRow(node, index);
+    case "tableHeader":
+      return renderTableHeader(node, index);
+    case "tableCell":
+      return renderTableCell(node, index);
     default:
       console.warn(`Unknown TipTap node type: ${node.type}`);
       return (

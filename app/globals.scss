@@ -1,12 +1,11 @@
+// @/app/globals.scss
+
 @use '../styles/variables' as *;
 @use '../styles/keyframe-animations' as *;
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -233,7 +232,6 @@
   }
 }
 
-
 .no-scroll {
   overflow: hidden;
   scrollbar-width: none;
@@ -257,7 +255,6 @@
 }
 
 ::-webkit-scrollbar-track {
-
   border-radius: 8px;
 }
 
@@ -266,4 +263,313 @@
   display: none;
   height: 0;
   width: 0;
+}
+
+/* === RESPONSIVE TABLE WRAPPER === */
+/* Обертка для таблиц с горизонтальной прокруткой и кастомным скроллбаром */
+.table-responsive-wrapper {
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 1rem 0;
+  border-radius: var(--radius);
+  border: 1px solid hsl(var(--border));
+
+  /* Кастомный скроллбар в стиле приложения */
+  &::-webkit-scrollbar {
+    height: 12px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+    border-radius: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted-foreground));
+    border-radius: 6px;
+    border: 2px solid hsl(var(--muted));
+
+    &:hover {
+      background: hsl(var(--accent-foreground));
+    }
+  }
+
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--muted-foreground)) hsl(var(--muted));
+
+  /* Плавная прокрутка */
+  scroll-behavior: smooth;
+}
+
+/* === СТИЛИ ТАБЛИЦ === */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 100%;
+  margin: 0;
+  /* Убираем margin так как он есть у wrapper */
+  background-color: hsl(var(--card));
+  table-layout: fixed;
+
+  th {
+    background-color: hsl(var(--muted));
+    font-weight: 600;
+    color: hsl(var(--muted-foreground));
+    border: 1px solid hsl(var(--border));
+    padding: 0.75rem;
+    text-align: left;
+    vertical-align: top;
+    /* МИНИМАЛЬНАЯ ШИРИНА КОЛОНОК */
+    min-width: 150px;
+    width: 150px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+    &:first-child {
+      border-top-left-radius: calc(var(--radius) - 1px);
+    }
+
+    &:last-child {
+      border-top-right-radius: calc(var(--radius) - 1px);
+    }
+  }
+
+  td {
+    border: 1px solid hsl(var(--border));
+    padding: 0.75rem;
+    vertical-align: top;
+    background-color: hsl(var(--card));
+    color: hsl(var(--card-foreground));
+    /* МИНИМАЛЬНАЯ ШИРИНА КОЛОНОК */
+    min-width: 150px;
+    width: 150px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  tbody tr {
+    transition: background-color 0.15s ease-in-out;
+
+    &:hover td {
+      background-color: hsl(var(--accent));
+    }
+  }
+
+  // Стили для параграфов внутри ячеек
+  td p,
+  th p {
+    margin: 0;
+    padding: 0;
+  }
+
+  // Стили для выделенных ячеек (TipTap)
+  .selectedCell {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: hsl(var(--primary) / 0.1);
+      border: 2px solid hsl(var(--primary));
+      border-radius: 2px;
+      pointer-events: none;
+      z-index: 2;
+    }
+  }
+}
+
+/* Автоматическое вычисление минимальной ширины таблицы на основе количества колонок */
+table:has(th:nth-child(1):nth-last-child(1)),
+table:has(td:nth-child(1):nth-last-child(1)) {
+  min-width: 150px;
+}
+
+table:has(th:nth-child(2):nth-last-child(1)),
+table:has(td:nth-child(2):nth-last-child(1)) {
+  min-width: 300px;
+}
+
+table:has(th:nth-child(3):nth-last-child(1)),
+table:has(td:nth-child(3):nth-last-child(1)) {
+  min-width: 450px;
+}
+
+table:has(th:nth-child(4):nth-last-child(1)),
+table:has(td:nth-child(4):nth-last-child(1)) {
+  min-width: 600px;
+}
+
+table:has(th:nth-child(5):nth-last-child(1)),
+table:has(td:nth-child(5):nth-last-child(1)) {
+  min-width: 750px;
+}
+
+table:has(th:nth-child(6):nth-last-child(1)),
+table:has(td:nth-child(6):nth-last-child(1)) {
+  min-width: 900px;
+}
+
+table:has(th:nth-child(7):nth-last-child(1)),
+table:has(td:nth-child(7):nth-last-child(1)) {
+  min-width: 1050px;
+}
+
+table:has(th:nth-child(8):nth-last-child(1)),
+table:has(td:nth-child(8):nth-last-child(1)) {
+  min-width: 1200px;
+}
+
+table:has(th:nth-child(9):nth-last-child(1)),
+table:has(td:nth-child(9):nth-last-child(1)) {
+  min-width: 1350px;
+}
+
+table:has(th:nth-child(10):nth-last-child(1)),
+table:has(td:nth-child(10):nth-last-child(1)) {
+  min-width: 1500px;
+}
+
+/* Старый wrapper для обратной совместимости */
+.tableWrapper {
+  overflow-x: auto;
+  margin: 1rem 0;
+  border-radius: var(--radius);
+  border: 1px solid hsl(var(--border));
+}
+
+// Курсор изменения размера
+.resize-cursor {
+  cursor: col-resize;
+}
+
+// Адаптивные стили для таблиц
+@media (max-width: 768px) {
+  .table-responsive-wrapper {
+    margin: 0.5rem 0;
+  }
+
+  table {
+    font-size: 0.875rem;
+
+    td,
+    th {
+      min-width: 120px;
+      width: 120px;
+      padding: 0.5rem;
+    }
+  }
+
+  /* Адаптивные минимальные ширины для мобильных */
+  table:has(th:nth-child(1):nth-last-child(1)),
+  table:has(td:nth-child(1):nth-last-child(1)) {
+    min-width: 120px;
+  }
+
+  table:has(th:nth-child(2):nth-last-child(1)),
+  table:has(td:nth-child(2):nth-last-child(1)) {
+    min-width: 240px;
+  }
+
+  table:has(th:nth-child(3):nth-last-child(1)),
+  table:has(td:nth-child(3):nth-last-child(1)) {
+    min-width: 360px;
+  }
+
+  table:has(th:nth-child(4):nth-last-child(1)),
+  table:has(td:nth-child(4):nth-last-child(1)) {
+    min-width: 480px;
+  }
+
+  table:has(th:nth-child(5):nth-last-child(1)),
+  table:has(td:nth-child(5):nth-last-child(1)) {
+    min-width: 600px;
+  }
+}
+
+/* === АНИМАЦИИ ДЛЯ КНОПОК ТАБЛИЦ === */
+@keyframes slide-in-from-left {
+  from {
+    opacity: 0;
+    transform: translateX(-10px) scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.animate-in {
+  animation-fill-mode: both;
+}
+
+.slide-in-from-left-2 {
+  animation-name: slide-in-from-left;
+}
+
+.duration-150 {
+  animation-duration: 150ms;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* === СТИЛИ ДЛЯ КОНТЕЙНЕРА КНОПОК ТАБЛИЦ === */
+.table-buttons-container {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 400px;
+
+  /* Скрытие скроллбара для всех браузеров */
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE 10+ */
+
+  &::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+  }
+
+  /* Плавная прокрутка */
+  scroll-behavior: smooth;
+
+  /* Предотвращаем выделение текста при прокрутке */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Стили для кнопок внутри контейнера */
+.table-buttons-container .flex-nowrap {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.25rem;
+  padding: 0.25rem;
+}
+
+/* Дополнительные стили для лучшей видимости границ кнопок */
+.table-buttons-container button[data-style="outline"] {
+  border: 1px solid hsl(var(--border)) !important;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+
+  &:hover:not(:disabled) {
+    background-color: hsl(var(--accent));
+    color: hsl(var(--accent-foreground));
+    border-color: hsl(var(--accent-foreground));
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: hsl(var(--muted));
+    color: hsl(var(--muted-foreground));
+    border-color: hsl(var(--border));
+  }
 }
