@@ -1,5 +1,7 @@
 // @/config/translations.config.ts
 
+import { appConfig } from "./appConfig";
+
 export const SUPPORTED_LANGUAGES = [
   "en",
   "es",
@@ -17,4 +19,4 @@ export type TranslationEntry = {
 export type Translations = {
   [key: string]: TranslationEntry;
 };
-export const DEFAULT_LANGUAGE: SupportedLanguage = "en";
+export const DEFAULT_LANGUAGE: SupportedLanguage = appConfig.lang;

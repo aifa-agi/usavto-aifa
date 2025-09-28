@@ -21,6 +21,7 @@ import "@/components/tiptap/tiptap-node/list-node/list-node.scss";
 import "@/components/tiptap/tiptap-node/paragraph-node/paragraph-node.scss";
 import Image from "next/image";
 import { CalculatorSection } from "../home-page/(_components)/calculator-section";
+import { FooterSection } from "../home-page/(_components)/footer-section";
 
 // Wrapper для максимальной ширины
 function MaxWidthWrapper({
@@ -588,6 +589,7 @@ export default function ContentRenderer({ sections, heroImage }: ContentRenderer
 
         </div>
         <CalculatorSection />
+        <FooterSection />
       </div>
     </div>
   );

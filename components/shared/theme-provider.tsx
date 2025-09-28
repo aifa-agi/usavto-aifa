@@ -1,3 +1,5 @@
+// @/components/shared/theme-provider.tsx
+
 "use client";
 
 import {

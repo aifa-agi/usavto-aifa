@@ -1,3 +1,5 @@
+// @/app/@right/(_service)/(_libs)/translation.ts
+
 import { useChatLanguage } from "@/contexts/language-context";
 import translations from "../(_translations)/translations.json";
 import {

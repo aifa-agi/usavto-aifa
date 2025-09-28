@@ -8,7 +8,7 @@ import { NavigationMenuProvider } from "./(_service)/(_context)/nav-bar-provider
 
 export const metadata: Metadata = constructMetadata();
 
-export default function Default() {
+export default function Home() {
   return (
     <>
       <NavigationMenuProvider>

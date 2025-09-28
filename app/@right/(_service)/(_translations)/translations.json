@@ -30,5 +30,53 @@
     "de": "Inhalt",
     "fr": "Contenu",
     "it": "Indice"
+  },
+  "Categories": {
+    "ru": "Категории",
+    "en": "Categories",
+    "es": "Categorías",
+    "de": "Kategorien",
+    "fr": "Catégories",
+    "it": "Categorie"
+  },
+  "Theme Switcher": {
+    "ru": "Переключатель темы",
+    "en": "Theme Switcher",
+    "es": "Cambiar tema",
+    "de": "Theme wechseln",
+    "fr": "Changer de thème",
+    "it": "Cambia tema"
+  },
+  "Light": {
+    "ru": "Светлая",
+    "en": "Light",
+    "es": "Claro",
+    "de": "Hell",
+    "fr": "Clair",
+    "it": "Chiaro"
+  },
+  "Dark": {
+    "ru": "Тёмная",
+    "en": "Dark",
+    "es": "Oscuro",
+    "de": "Dunkel",
+    "fr": "Sombre",
+    "it": "Scuro"
+  },
+  "System": {
+    "ru": "Системная",
+    "en": "System",
+    "es": "Sistema",
+    "de": "System",
+    "fr": "Système",
+    "it": "Sistema"
+  },
+  "Home page": {
+    "ru": "Главная страница",
+    "en": "Home page",
+    "es": "Página principal",
+    "de": "Startseite",
+    "fr": "Page d'accueil",
+    "it": "Pagina principale"
   }
 }
