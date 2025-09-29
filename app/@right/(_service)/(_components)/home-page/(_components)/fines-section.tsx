@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { CheckCircle, BadgeCheck } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 export function FinesSection() {
   // Данные о штрафах
@@ -255,9 +256,13 @@ export function FinesSection() {
           <p className="text-gray-700 dark:text-gray-300 mb-4">
             Пришлем актуальные данные по штрафам, подскажем как сэкономить
           </p>
-          <Button className="bg-blue-800 hover:bg-blue-900 text-white px-8 py-3 transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
-            Узнать подробнее
-          </Button>
+          <Link
+            href="/interception_modal/lead-form"
+            className="inline-block"
+          >
+            <Button className="bg-blue-800 hover:bg-blue-900 text-white px-8 py-3 transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
+              Узнать подробнее
+            </Button></Link>
         </motion.div>
       </div>
     </motion.section>

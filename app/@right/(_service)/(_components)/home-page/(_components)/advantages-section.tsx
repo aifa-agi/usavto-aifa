@@ -3,6 +3,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Link from "next/link";
 
 export function AdvantagesSection() {
   // Данные о преимуществах
@@ -70,9 +71,13 @@ export function AdvantagesSection() {
                 <h3 className="text-xl font-bold mb-8 text-gray-900 dark:text-white">
                   Убедитесь в эффективности US AUTO
                 </h3>
-                <Button className="bg-blue-800 hover:bg-blue-900 text-white px-8 py-3 transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                  Попробовать бесплатно
-                </Button>
+                <Link
+                  href="/interception_modal/lead-form"
+                  className="inline-block"
+                >
+                  <Button className="bg-blue-800 hover:bg-blue-900 text-white px-8 py-3 transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                    Попробовать бесплатно
+                  </Button></Link>
               </CardContent>
             </Card>
           </div>

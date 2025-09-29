@@ -14,6 +14,7 @@ import {
   VEHICLE_OPTIONS,
   type PeriodType,
 } from "../(_libs)/pricing-data";
+import Link from "next/link";
 
 export function CalculatorSection() {
   const [selectedPeriod, setSelectedPeriod] = useState<PeriodType>("3 месяца");
@@ -66,16 +67,16 @@ export function CalculatorSection() {
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {PERIODS.map((period) => (
+
                     <Button
                       key={period}
                       variant={
                         selectedPeriod === period ? "default" : "outline"
                       }
-                      className={`px-4 py-3 rounded-3xl transform transition-all duration-300 hover:scale-105 ${
-                        selectedPeriod === period
+                      className={`px-4 py-3 rounded-3xl transform transition-all duration-300 hover:scale-105 ${selectedPeriod === period
                           ? "border-blue-800 bg-white dark:bg-gray-700 text-black dark:text-white"
                           : "bg-white dark:bg-gray-700 text-gray-900 dark:text-white border-gray-300 dark:border-gray-600 shadow-sm hover:shadow-md"
-                      }`}
+                        }`}
                       onClick={() => setSelectedPeriod(period)}
                     >
                       {period}
@@ -95,11 +96,10 @@ export function CalculatorSection() {
                       variant={
                         selectedVehicles === option ? "default" : "outline"
                       }
-                      className={`px-4 py-3 rounded-3xl transform transition-all duration-300 hover:scale-105 ${
-                        selectedVehicles === option
+                      className={`px-4 py-3 rounded-3xl transform transition-all duration-300 hover:scale-105 ${selectedVehicles === option
                           ? "border-blue-800 bg-white dark:bg-gray-700 text-black dark:text-white"
                           : "bg-white dark:bg-gray-700 text-gray-900 dark:text-white border-gray-300 dark:border-gray-600 shadow-sm hover:shadow-md"
-                      }`}
+                        }`}
                       onClick={() => {
                         setSelectedVehicles(option);
                         // Если выбран не "другое", очищаем поле ввода
@@ -245,15 +245,21 @@ export function CalculatorSection() {
           <div className="h-px bg-gray-400 dark:bg-gray-600 my-5"></div>
 
           <div className="flex flex-col sm:flex-row gap-5 mb-5">
-            <Button className="bg-blue-800 hover:bg-blue-900 text-white px-8 py-3 transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
-              Попробовать бесплатно
-            </Button>
-            <Button
+            <Link
+              href="/interception_modal/lead-form"
+              className="inline-block"
+            ><Button className="bg-blue-800 hover:bg-blue-900 text-white px-8 py-3 transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                Попробовать бесплатно
+              </Button></Link>
+            <Link
+              href="/interception_modal/lead-form"
+              className="inline-block"
+            ><Button
               variant="outline"
               className="border-blue-800 dark:border-blue-400 text-blue-800 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-800 dark:hover:text-white px-8 py-3 bg-white dark:bg-gray-700 transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
             >
-              Купить
-            </Button>
+                Купить
+              </Button></Link>
           </div>
 
           <p className="text-gray-500 dark:text-gray-400 text-base leading-relaxed max-w-4xl">

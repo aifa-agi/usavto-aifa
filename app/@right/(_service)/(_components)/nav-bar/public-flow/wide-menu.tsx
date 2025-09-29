@@ -55,7 +55,7 @@ export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProp
       ...category,
       pages: getFilteredLinks(category.pages),
     }))
-    .filter((category) => category.pages.length > 0)
+  // .filter((category) => category.pages.length > 0)
 
   const handlePageClick = (page: PageData) => {
     if (page.href) {
@@ -192,7 +192,7 @@ export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProp
         >
           <div className="flex h-full">
             {/* Левая панель - содержимое категорий */}
-            <div className="flex-1 p-8 pb-16 overflow-y-hidden flex custom-scrollbar overflow-x-auto flex-nowrap">
+            <div className="flex-1 p-8 pb-24 overflow-y-hidden flex custom-scrollbar overflow-x-auto flex-nowrap">
               {activeCategory ? activeColumns : defaultColumns}
             </div>
 

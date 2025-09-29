@@ -50,7 +50,7 @@ export default function MobileMenu({
       ...category,
       pages: getFilteredLinks(category.pages),
     }))
-    .filter((category) => category.pages.length > 0);
+  // .filter((category) => category.pages.length > 0);
 
   const handlePageClick = (page: PageData) => {
     if (page.href) {
