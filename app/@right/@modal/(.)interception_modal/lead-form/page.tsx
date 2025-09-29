@@ -259,7 +259,7 @@ export default function LeadFormModal() {
           </form>
 
           <p className="text-xs text-gray-500 dark:text-gray-400 text-center mt-4">
-            Нажимая "Отправить заявку", вы соглашаетесь с обработкой персональных данных
+            Нажимая &quot;Отправить заявку&quot;, вы соглашаетесь с обработкой персональных данных
           </p>
         </div>
       </div>
