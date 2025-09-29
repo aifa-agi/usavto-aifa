@@ -3,7 +3,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import { UserType } from "@prisma/client";
 import {
   Accordion,
   AccordionContent,
@@ -18,6 +17,7 @@ import { PageData } from "../../../(_types)/page-types";
 import { MenuCategory } from "../../../(_types)/menu-types";
 import { useTranslation } from "../../../(_libs)/translation";
 import { ModeToggle } from "../../shared/mode-toggle";
+import { UserType } from "../../../(_types)/footer-types";
 
 interface MobileMenuProps {
   isOpen: boolean;

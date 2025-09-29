@@ -3,6 +3,7 @@
 
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export function HeroSection() {
   return (
@@ -26,12 +27,23 @@ export function HeroSection() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center xl:justify-start">
-            <Button className="bg-blue-800 hover:bg-blue-900 text-white px-8 py-6 text-base">
-              Попробовать бесплатно
-            </Button>
+            {/* 
+              Используем Link для мягкой навигации
+              Перехватывающий маршрут сработает только в правом слоте
+              Левый слот (чат) останется полностью независимым
+            */}
+            <Link
+              href="/interception_modal/lead-form"
+              className="inline-block"
+            >
+              <Button className="bg-blue-800 hover:bg-blue-900 text-white px-8 py-6 text-base w-full sm:w-auto transition-all duration-200 hover:shadow-lg">
+                Попробовать бесплатно
+              </Button>
+            </Link>
+
             <Button
               variant="outline"
-              className="border-blue-800 text-blue-800 hover:bg-blue-50 dark:hover:bg-blue-800 dark:hover:text-white px-8 py-6 text-base bg-white dark:bg-gray-800 dark:text-blue-400 dark:border-blue-400"
+              className="border-blue-800 text-blue-800 hover:bg-blue-50 dark:hover:bg-blue-800 dark:hover:text-white px-8 py-6 text-base bg-white dark:bg-gray-800 dark:text-blue-400 dark:border-blue-400 transition-all duration-200 hover:shadow-lg"
             >
               Записаться на презентацию
             </Button>

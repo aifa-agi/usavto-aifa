@@ -1,4 +1,4 @@
-// @/app/@right/default.tsx
+// @/app/@right/home/page.tsx
 //THIS IS ROOT PAGE, USING AS HOME PAGE, CAN NOT HAVE LAYOUT!
 import type { Metadata } from "next";
 import { constructMetadata } from "@/lib/construct-metadata";

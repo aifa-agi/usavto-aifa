@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <NavigationMenuProvider>
         <div className=" flex flex-col h-svh pb-6">
-          <NavBar />
+          {/* <NavBar /> */}
           <main className="flex-1 overflow-y-auto hide-scrollbar ">
             <HomePage />
           </main>
