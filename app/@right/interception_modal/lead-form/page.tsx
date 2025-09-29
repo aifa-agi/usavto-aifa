@@ -1,4 +1,4 @@
-// app/@right/interception_modal/lead-form/page.tsx
+// app/interception_modal/lead-form/page.tsx
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

@@ -1,4 +1,4 @@
-// app/app/@right/@modal/(..)interception_modal/lead-form/page.tsx
+// @/app/@right/@modal/(..)interception_modal/lead-form/page.tsx
 "use client"
 import { useRouter } from 'next/navigation';
 import { X } from 'lucide-react';

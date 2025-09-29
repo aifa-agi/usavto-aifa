@@ -19,6 +19,8 @@ import { LanguageProvider } from "@/contexts/language-context";
 import { AppProvider } from "@/contexts/app-context";
 import { DevIndicatorClient } from "@/lib/utils/dev-indicator-client";
 import { appConfig } from "@/config/appConfig";
+import { NavBar } from "./@right/(_service)/(_components)/nav-bar/nav-bar";
+import { NavigationMenuProvider } from "./@right/(_service)/(_context)/nav-bar-provider";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -67,23 +69,45 @@ export default async function RootLayout({
               <LanguageProvider>
                 <RightSidebarProvider>
                   <AppProvider>
+                    {/* === DESKTOP LAYOUT === */}
                     <div className="hidden md:block h-screen w-screen">
                       <ResizablePanelGroup direction="horizontal">
                         <ResizablePanel defaultSize={40} minSize={35}>
-                          <div className="overflow-hidden">{left}</div>
+                          <div className="overflow-hidden h-full">{left}</div>
                         </ResizablePanel>
                         <ResizableHandle withHandle />
                         <ResizablePanel defaultSize={60} minSize={35}>
-                          <div className="relative overflow-hidden">{right}</div>
+                          {/* --- START: ИСПРАВЛЕННЫЙ БЛОК --- */}
+                          <NavigationMenuProvider>
+                            <div className="relative flex flex-col h-screen">
+                              <NavBar />
+                              <main className="flex-1 overflow-y-auto hide-scrollbar">
+                                {right}
+                              </main>
+                            </div>
+                          </NavigationMenuProvider>
+                          {/* --- END: ИСПРАВЛЕННЫЙ БЛОК --- */}
                         </ResizablePanel>
                       </ResizablePanelGroup>
                     </div>
+
+                    {/* === MOBILE LAYOUT === */}
                     <div className="w-full md:hidden relative">
                       {left}
                       <div className="border-l overflow-hidden border-secondary">
-                        <RightDrawerBar>{right}</RightDrawerBar>
+                        <RightDrawerBar>
+                          <NavigationMenuProvider>
+                            <div className="relative flex flex-col h-svh pb-6">
+                              <NavBar />
+                              <main className="flex-1 overflow-y-auto hide-scrollbar">
+                                {right}
+                              </main>
+                            </div>
+                          </NavigationMenuProvider>
+                        </RightDrawerBar>
                       </div>
                     </div>
+
                     <DevIndicatorClient />
                   </AppProvider>
                 </RightSidebarProvider>
