@@ -78,5 +78,125 @@
     "de": "Startseite",
     "fr": "Page d'accueil",
     "it": "Pagina principale"
+  },
+  "Free Access Description": {
+    "ru": "Оставьте заявку и получите доступ к тестированию нашей платформы",
+    "en": "Submit a request and get access to our platform testing",
+    "es": "Envíe una solicitud y obtenga acceso a las pruebas de nuestra plataforma",
+    "de": "Senden Sie eine Anfrage und erhalten Sie Zugang zu Tests unserer Plattform",
+    "fr": "Soumettez une demande et obtenez l'accès aux tests de notre plateforme",
+    "it": "Invia una richiesta e ottieni l'accesso ai test della nostra piattaforma"
+  },
+  "Name": {
+    "ru": "Имя",
+    "en": "Name",
+    "es": "Nombre",
+    "de": "Name",
+    "fr": "Nom",
+    "it": "Nome"
+  },
+  "Name Placeholder": {
+    "ru": "Введите ваше имя",
+    "en": "Enter your name",
+    "es": "Ingrese su nombre",
+    "de": "Geben Sie Ihren Namen ein",
+    "fr": "Entrez votre nom",
+    "it": "Inserisci il tuo nome"
+  },
+  "Phone": {
+    "ru": "Телефон",
+    "en": "Phone",
+    "es": "Teléfono",
+    "de": "Telefon",
+    "fr": "Téléphone",
+    "it": "Telefono"
+  },
+  "Phone Placeholder": {
+    "ru": "+7 (999) 123-45-67",
+    "en": "+1 (555) 123-4567",
+    "es": "+34 612 345 678",
+    "de": "+49 30 12345678",
+    "fr": "+33 1 23 45 67 89",
+    "it": "+39 02 1234567"
+  },
+  "Email": {
+    "ru": "Email",
+    "en": "Email",
+    "es": "Email",
+    "de": "E-Mail",
+    "fr": "Email",
+    "it": "Email"
+  },
+  "Email Placeholder": {
+    "ru": "example@email.com",
+    "en": "example@email.com",
+    "es": "ejemplo@email.com",
+    "de": "beispiel@email.com",
+    "fr": "exemple@email.com",
+    "it": "esempio@email.com"
+  },
+  "Submit Error": {
+    "ru": "Произошла ошибка при отправке. Попробуйте еще раз.",
+    "en": "An error occurred while sending. Please try again.",
+    "es": "Ocurrió un error al enviar. Inténtelo de nuevo.",
+    "de": "Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+    "fr": "Une erreur s'est produite lors de l'envoi. Veuillez réessayer.",
+    "it": "Si è verificato un errore durante l'invio. Riprova."
+  },
+  "Sending": {
+    "ru": "Отправка...",
+    "en": "Sending...",
+    "es": "Enviando...",
+    "de": "Senden...",
+    "fr": "Envoi en cours...",
+    "it": "Invio..."
+  },
+  "Submit Lead": {
+    "ru": "Отправить заявку",
+    "en": "Submit Request",
+    "es": "Enviar solicitud",
+    "de": "Anfrage senden",
+    "fr": "Envoyer la demande",
+    "it": "Invia richiesta"
+  },
+  "Privacy Agreement": {
+    "ru": "Нажимая \"Отправить заявку\", вы соглашаетесь с обработкой персональных данных",
+    "en": "By clicking \"Submit Request\", you agree to the processing of personal data",
+    "es": "Al hacer clic en \"Enviar solicitud\", acepta el procesamiento de datos personales",
+    "de": "Durch Klicken auf \"Anfrage senden\" stimmen Sie der Verarbeitung personenbezogener Daten zu",
+    "fr": "En cliquant sur \"Envoyer la demande\", vous acceptez le traitement des données personnelles",
+    "it": "Cliccando \"Invia richiesta\", accetti il trattamento dei dati personali"
+  },
+  "Go to Homepage": {
+    "ru": "Перейти на главную страницу",
+    "en": "Go to Homepage",
+    "es": "Ir a la página principal",
+    "de": "Zur Startseite gehen",
+    "fr": "Aller à la page d'accueil",
+    "it": "Vai alla homepage"
+  },
+  "Use Form on Homepage": {
+    "ru": "Для получения заявки воспользуйтесь формой на главной странице",
+    "en": "To submit a request, please use the form on the homepage",
+    "es": "Para enviar una solicitud, utilice el formulario en la página principal",
+    "de": "Um eine Anfrage zu stellen, verwenden Sie bitte das Formular auf der Startseite",
+    "fr": "Pour soumettre une demande, veuillez utiliser le formulaire sur la page d'accueil",
+    "it": "Per inviare una richiesta, utilizza il modulo sulla homepage"
+  },
+  "Required Field": {
+    "ru": "*",
+    "en": "*",
+    "es": "*",
+    "de": "*",
+    "fr": "*",
+    "it": "*"
+  },
+  "Close": {
+    "ru": "Закрыть",
+    "en": "Close",
+    "es": "Cerrar",
+    "de": "Schließen",
+    "fr": "Fermer",
+    "it": "Chiudi"
   }
 }

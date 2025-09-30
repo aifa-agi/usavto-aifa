@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { X, CheckCircle, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "@/app/@right/(_service)/(_libs)/translation";
 
 type FormErrors = {
   name?: string[];
@@ -21,6 +22,7 @@ type ApiResponse = {
 
 export default function LeadFormModal() {
   const router = useRouter();
+  const { t } = useTranslation();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [errors, setErrors] = useState<FormErrors>({});
@@ -62,7 +64,7 @@ export default function LeadFormModal() {
 
       if (result.success) {
         setIsSuccess(true);
-        // Автоматически закрываем модальное окно через 3 секунды
+        // Auto close modal after 3 seconds
         setTimeout(() => {
           router.back();
         }, 3000);
@@ -76,13 +78,13 @@ export default function LeadFormModal() {
       }
     } catch (error) {
       console.error('Submit error:', error);
-      setMessage('Произошла ошибка при отправке. Попробуйте еще раз.');
+      setMessage(t('Submit Error'));
     } finally {
       setIsSubmitting(false);
     }
   };
 
-  // Экран успеха
+  // Success screen
   if (isSuccess) {
     return (
       <div
@@ -96,7 +98,7 @@ export default function LeadFormModal() {
           <button
             onClick={handleClose}
             className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors"
-            aria-label="Закрыть"
+            aria-label={t('Close')}
           >
             <X size={24} />
           </button>
@@ -104,13 +106,13 @@ export default function LeadFormModal() {
           <div className="text-center">
             <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-              Заявка отправлена!
+              {t('Lead Form Submitted')}
             </h2>
             <p className="text-gray-600 dark:text-gray-300 mb-6">
-              Спасибо за интерес к US AUTO. Мы свяжемся с вами в ближайшее время.
+              {t('Lead Form Thank You')}
             </p>
             <p className="text-sm text-gray-500 dark:text-gray-400">
-              Окно закроется автоматически через несколько секунд
+              {t('Auto Close Window')}
             </p>
           </div>
         </div>
@@ -130,7 +132,7 @@ export default function LeadFormModal() {
         <button
           onClick={handleClose}
           className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors z-10"
-          aria-label="Закрыть"
+          aria-label={t('Close')}
         >
           <X size={24} />
         </button>
@@ -138,10 +140,10 @@ export default function LeadFormModal() {
         <div className="p-6">
           <div className="mb-6 text-center">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-              Попробовать бесплатно
+              {t('Try Free')}
             </h2>
             <p className="text-gray-600 dark:text-gray-300">
-              Оставьте заявку и получите доступ к тестированию US AUTO
+              {t('Free Access Description')}
             </p>
           </div>
 
@@ -152,7 +154,7 @@ export default function LeadFormModal() {
                 htmlFor="name"
                 className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
               >
-                Имя *
+                {t('Name')} {t('Required Field')}
               </label>
               <input
                 type="text"
@@ -163,7 +165,7 @@ export default function LeadFormModal() {
                           focus:outline-none focus:ring-2 focus:ring-blue-800 focus:border-transparent
                           bg-white dark:bg-gray-700 text-gray-900 dark:text-white
                           placeholder-gray-500 dark:placeholder-gray-400"
-                placeholder="Введите ваше имя"
+                placeholder={t('Name Placeholder')}
               />
               {errors.name && (
                 <p className="mt-1 text-sm text-red-600 dark:text-red-400">
@@ -178,7 +180,7 @@ export default function LeadFormModal() {
                 htmlFor="phone"
                 className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
               >
-                Телефон *
+                {t('Phone')} {t('Required Field')}
               </label>
               <input
                 type="tel"
@@ -189,7 +191,7 @@ export default function LeadFormModal() {
                           focus:outline-none focus:ring-2 focus:ring-blue-800 focus:border-transparent
                           bg-white dark:bg-gray-700 text-gray-900 dark:text-white
                           placeholder-gray-500 dark:placeholder-gray-400"
-                placeholder="+7 (999) 123-45-67"
+                placeholder={t('Phone Placeholder')}
               />
               {errors.phone && (
                 <p className="mt-1 text-sm text-red-600 dark:text-red-400">
@@ -204,7 +206,7 @@ export default function LeadFormModal() {
                 htmlFor="email"
                 className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
               >
-                Email *
+                {t('Email')} {t('Required Field')}
               </label>
               <input
                 type="email"
@@ -215,7 +217,7 @@ export default function LeadFormModal() {
                           focus:outline-none focus:ring-2 focus:ring-blue-800 focus:border-transparent
                           bg-white dark:bg-gray-700 text-gray-900 dark:text-white
                           placeholder-gray-500 dark:placeholder-gray-400"
-                placeholder="example@email.com"
+                placeholder={t('Email Placeholder')}
               />
               {errors.email && (
                 <p className="mt-1 text-sm text-red-600 dark:text-red-400">
@@ -246,12 +248,12 @@ export default function LeadFormModal() {
                 {isSubmitting ? (
                   <>
                     <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
-                    Отправка...
+                    {t('Sending')}
                   </>
                 ) : (
                   <>
                     <Send className="w-4 h-4 mr-2" />
-                    Отправить заявку
+                    {t('Submit Lead')}
                   </>
                 )}
               </Button>
@@ -259,7 +261,7 @@ export default function LeadFormModal() {
           </form>
 
           <p className="text-xs text-gray-500 dark:text-gray-400 text-center mt-4">
-            Нажимая &quot;Отправить заявку&quot;, вы соглашаетесь с обработкой персональных данных
+            {t('Privacy Agreement')}
           </p>
         </div>
       </div>

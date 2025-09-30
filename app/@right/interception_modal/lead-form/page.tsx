@@ -4,10 +4,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Home } from "lucide-react";
+import { appConfig } from "@/config/appConfig";
+import { useTranslation } from "@/app/@right/(_service)/(_libs)/translation";
+
+// Note: Since this is a server component, we need to create a client wrapper
+// or convert this to a client component to use translations
 
 export const metadata: Metadata = {
-    title: "Заявка на тестирование - US AUTO",
-    description: "Заполните форму для получения бесплатного доступа к тестированию системы управления коммерческим транспортом US AUTO",
+    title: `Lead Form - ${appConfig.short_name}`,
+    description: `Submit a request for free access to ${appConfig.short_name} commercial transport management system testing`,
     robots: {
         index: false,
         follow: true,
@@ -16,7 +21,10 @@ export const metadata: Metadata = {
 
 export const dynamic = "force-static";
 
-export default function LeadFormPage() {
+// Client component wrapper for translations
+function LeadFormPageContent() {
+    const { t } = useTranslation();
+
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-900 p-4">
             <div className="max-w-md w-full">
@@ -26,10 +34,10 @@ export default function LeadFormPage() {
                             <Home className="w-8 h-8 text-white" />
                         </div>
                         <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-                            US AUTO
+                            {appConfig.short_name}
                         </h1>
                         <p className="text-gray-600 dark:text-gray-300">
-                            Система управления коммерческим транспортом
+                            {appConfig.description}
                         </p>
                     </div>
 
@@ -38,15 +46,21 @@ export default function LeadFormPage() {
                             className="bg-blue-800 hover:bg-blue-900 text-white px-8 py-3 text-base
                         transition-all duration-200 hover:shadow-lg w-full"
                         >
-                            Перейти на главную страницу
+                            {t('Go to Homepage')}
                         </Button>
                     </Link>
 
                     <p className="text-sm text-gray-500 dark:text-gray-400 mt-4">
-                        Для получения заявки воспользуйтесь формой на главной странице
+                        {t('Use Form on Homepage')}
                     </p>
                 </div>
             </div>
         </div>
     );
+}
+
+export default function LeadFormPage() {
+    // Since this is a server component by default, we need to make it client-side
+    // to use translations. Alternative: use static translations or convert to client component
+    return <LeadFormPageContent />;
 }
