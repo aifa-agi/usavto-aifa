@@ -19,6 +19,7 @@ export const appConfig: AppConfig = {
       light: "/_static/illustrations/success.svg",
     },
   },
+  startChatIllustration: "/_static/illustrations/usautopro1.jpg",
 
   logo: "/logo.png",
 };
@@ -41,6 +42,8 @@ export interface AppConfig {
       light: string;
     };
   };
+  startChatIllustration: string
+
   logo: string;
   messages?: {
     loading?: {

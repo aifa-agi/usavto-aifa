@@ -198,5 +198,45 @@
     "de": "Schließen",
     "fr": "Fermer",
     "it": "Chiudi"
+  },
+  "Thank You Title": {
+    "ru": "Спасибо за вашу заявку!",
+    "en": "Thank you for your request!",
+    "es": "¡Gracias por su solicitud!",
+    "de": "Vielen Dank für Ihre Anfrage!",
+    "fr": "Merci pour votre demande !",
+    "it": "Grazie per la tua richiesta!"
+  },
+  "Thank You Message": {
+    "ru": "Мы получили вашу заявку и скоро свяжемся с вами для дальнейшего обсуждения.",
+    "en": "We have received your request and will contact you soon for further discussion.",
+    "es": "Hemos recibido su solicitud y nos pondremos en contacto pronto para mayor información.",
+    "de": "Wir haben Ihre Anfrage erhalten und werden uns bald für weitere Gespräche bei Ihnen melden.",
+    "fr": "Nous avons reçu votre demande et vous contacterons bientôt pour plus d'informations.",
+    "it": "Abbiamo ricevuto la tua richiesta e ti contatteremo presto per ulteriori informazioni."
+  },
+  "Back to Home": {
+    "ru": "Вернуться на главную страницу",
+    "en": "Back to Home Page",
+    "es": "Volver a la página principal",
+    "de": "Zurück zur Startseite",
+    "fr": "Retour à la page d'accueil",
+    "it": "Torna alla homepage"
+  },
+  "What Happens Next": {
+    "ru": "Что происходит дальше",
+    "en": "What happens next",
+    "es": "Qué pasa después",
+    "de": "Was passiert als nächstes",
+    "fr": "Que se passe-t-il ensuite",
+    "it": "Cosa succede dopo"
+  },
+  "Next Steps Description": {
+    "ru": "Наш специалист свяжется с вами в течение 24 часов для обсуждения ваших потребностей и демонстрации возможностей платформы.",
+    "en": "Our specialist will contact you within 24 hours to discuss your needs and demonstrate the platform capabilities.",
+    "es": "Nuestro especialista se pondrá en contacto con usted en 24 horas para discutir sus necesidades y demostrar las capacidades de la plataforma.",
+    "de": "Unser Spezialist wird sich innerhalb von 24 Stunden mit Ihnen in Verbindung setzen, um Ihre Bedürfnisse zu besprechen und die Plattform-Funktionen zu demonstrieren.",
+    "fr": "Notre spécialiste vous contactera dans les 24 heures pour discuter de vos besoins et démontrer les capacités de la plateforme.",
+    "it": "Il nostro specialista ti contatterà entro 24 ore per discutere le tue esigenze e dimostrare le capacità della piattaforma."
   }
 }

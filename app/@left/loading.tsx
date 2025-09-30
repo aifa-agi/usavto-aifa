@@ -1,4 +1,5 @@
 // @/app/@left/loading.tsx
+import { appConfig } from "@/config/appConfig";
 import Image from "next/image";
 
 // Принуждение к статической генерации (опционально)
@@ -7,7 +8,7 @@ export const revalidate = false;
 
 export default function LoadingPage() {
   // Используем статически только темную иллюстрацию
-  const currentIllustration = "/_static/illustrations/idea-launch.svg";
+  const currentIllustration = appConfig.startChatIllustration
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-center">
