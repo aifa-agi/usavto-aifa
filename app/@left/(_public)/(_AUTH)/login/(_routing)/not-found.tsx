@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { __ } from "@/lib/translation"; // Importing translation function
+import { __ } from "@/lib/translation/root-translations"; // Importing translation function
 
 export default function NotFound() {
   return (

@@ -21,6 +21,7 @@ import { DevIndicatorClient } from "@/lib/utils/dev-indicator-client";
 import { appConfig } from "@/config/appConfig";
 import { NavBar } from "./@right/(_service)/(_components)/nav-bar/nav-bar";
 import { NavigationMenuProvider } from "./@right/(_service)/(_context)/nav-bar-provider";
+import { CookieBanner } from "@/app/(_service)/(_components)/cookie-banner";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -113,6 +114,7 @@ export default async function RootLayout({
                 </RightSidebarProvider>
               </LanguageProvider>
             </OnlineStatusProvider>
+            <CookieBanner />
             {process.env.NODE_ENV === "production" && (
               <GoogleAnalytics
                 gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID!}

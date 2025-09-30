@@ -5,7 +5,7 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { __ } from "@/lib/translation";
+import { __ } from "@/lib/translation/root-translations";
 
 const LeftNavBar: React.FC = () => {
   const router = useRouter();

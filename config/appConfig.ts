@@ -5,9 +5,9 @@ const site_url = "https://usavto-aifa.vercel.app";
 
 export const appConfig: AppConfig = {
   name: "USAUTO Управление коммерческим автопарком. ",
-  short_name:"USAUTO",
+  short_name:"USAUTO ",
   description:
-    "USAUTO Управление коммерческим автопаркомОблачное решение комплексного управления коммерческим автомобильным парком.",
+    "USAUTO Управление коммерческим автопаркомОблачное решение комплексного управления коммерческим автомобильным парком. ",
   url: site_url,
   ogImage: `${site_url}/images/usautopro1.jpg`,
   manifest: "/manifest.json",
@@ -19,9 +19,9 @@ export const appConfig: AppConfig = {
       light: "/_static/illustrations/success.svg",
     },
   },
-  startChatIllustration: "/_static/illustrations/usautopro1.jpg",
+  startChatIllustration: "/_static/logo512.png",
 
-  logo: "/logo.png",
+  logo: "/_static/logo512.png",
 };
 
 export type SupportedLang = "ru" | "en" | "es" | "fr" | "de" | "it";

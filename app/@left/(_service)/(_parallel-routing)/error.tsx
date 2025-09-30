@@ -4,7 +4,7 @@
 
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { __ } from "@/lib/translation";
+import { __ } from "@/lib/translation/root-translations";
 
 interface LeftErrorProps {
   error: Error & { digest?: string }; // Error object with optional digest property
