@@ -110,5 +110,69 @@
     "de": "Cookie-Einstellungen",
     "fr": "Paramètres des cookies",
     "it": "Impostazioni cookie"
+  },
+  "Contact Support": {
+    "ru": "Связаться с поддержкой",
+    "en": "Contact Support",
+    "es": "Contactar soporte",
+    "de": "Support kontaktieren",
+    "fr": "Contacter l'assistance",
+    "it": "Contatta il supporto"
+  },
+  "Support": {
+    "ru": "Поддержка",
+    "en": "Support",
+    "es": "Soporte",
+    "de": "Support",
+    "fr": "Assistance",
+    "it": "Supporto"
+  },
+  "Consent Expiry Template": {
+    "ru": "Срок действия согласия истекает через {days} дней",
+    "en": "Consent expires in {days} days",
+    "es": "El consentimiento vence en {days} días",
+    "de": "Die Einwilligung läuft in {days} Tagen ab",
+    "fr": "Le consentement expire dans {days} jours",
+    "it": "Il consenso scade tra {days} giorni"
+  },
+  "Consent Expired": {
+    "ru": "Срок действия согласия истёк",
+    "en": "Consent has expired",
+    "es": "El consentimiento ha vencido",
+    "de": "Die Einwilligung ist abgelaufen",
+    "fr": "Le consentement a expiré",
+    "it": "Il consenso è scaduto"
+  },
+  "Cookie Info Lead": {
+    "ru": "Мы используем файлы cookie и аналогичные технологии",
+    "en": "We use cookies and similar technologies",
+    "es": "Usamos cookies y tecnologías similares",
+    "de": "Wir verwenden Cookies und ähnliche Technologien",
+    "fr": "Nous utilisons des cookies et des technologies similaires",
+    "it": "Utilizziamo cookie e tecnologie simili"
+  },
+  "Cookie Info Body": {
+    "ru": "Мы и выбранные партнёры используем cookie на {site} для анализа, улучшения функций, персонализации и рекламы. Можно принять, отклонить или настроить категории.",
+    "en": "We and selected partners use cookies on {site} to analyze usage, enhance features, personalize experiences, and tailor advertising. You can accept, reject, or manage categories.",
+    "es": "Nosotros y socios seleccionados usamos cookies en {site} para analizar el uso, mejorar funciones, personalizar la experiencia y adaptar la publicidad. Puedes aceptar, rechazar o gestionar categorías.",
+    "de": "Wir und ausgewählte Partner verwenden auf {site} Cookies, um Nutzung zu analysieren, Funktionen zu verbessern, Erlebnisse zu personalisieren und Werbung anzupassen. Sie können akzeptieren, ablehnen oder Kategorien verwalten.",
+    "fr": "Nous et des partenaires sélectionnés utilisons des cookies sur {site} pour analyser l’utilisation, améliorer les fonctionnalités, personnaliser l’expérience et adapter la publicité. Vous pouvez accepter, refuser ou gérer les catégories.",
+    "it": "Noi e partner selezionati utilizziamo cookie su {site} per analizzare l’uso, migliorare le funzionalità, personalizzare l’esperienza e adattare la pubblicità. Puoi accettare, rifiutare o gestire le categorie."
+  },
+  "Customize Privacy Preferences": {
+    "ru": "{brand} — настройте предпочтения конфиденциальности",
+    "en": "{brand} — customize your privacy preferences",
+    "es": "{brand} — personaliza tus preferencias de privacidad",
+    "de": "{brand} — passen Sie Ihre Datenschutzeinstellungen an",
+    "fr": "{brand} — personnalisez vos préférences de confidentialité",
+    "it": "{brand} — personalizza le tue preferenze sulla privacy"
+  },
+  "Always On": {
+    "ru": "Всегда включено",
+    "en": "Always On",
+    "es": "Siempre activado",
+    "de": "Immer aktiviert",
+    "fr": "Toujours activé",
+    "it": "Sempre attivo"
   }
 }
