@@ -7,6 +7,7 @@ import { useTranslation } from "@/app/(_service)/(_libs)/translation";
 import { appConfig } from "@/config/appConfig";
 import Image from "next/image";
 import Cookies from "js-cookie";
+import Link from "next/link";
 
 type CookieConsent = {
     essential: boolean;
@@ -152,19 +153,19 @@ export function CookieBanner() {
                                     <div className="flex items-center gap-4 mt-2 text-xs text-gray-500 dark:text-gray-400">
                                         <span>v{CONSENT_VERSION}</span>
                                         <span>•</span>
-                                        <a
+                                        <Link
                                             href="/privacy-policy"
                                             className="text-blue-600 dark:text-blue-400 hover:underline"
                                         >
                                             {t('Privacy Policy')}
-                                        </a>
+                                        </Link>
                                         <span>•</span>
-                                        <a
+                                        <Link
                                             href={`mailto:${appConfig.mailSupport}`}
                                             className="text-blue-600 dark:text-blue-400 hover:underline"
                                         >
                                             Support
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
