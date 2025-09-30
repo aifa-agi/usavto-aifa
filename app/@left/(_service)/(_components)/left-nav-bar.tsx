@@ -5,7 +5,6 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { __ } from "@/lib/translation/root-translations";
 
 const LeftNavBar: React.FC = () => {
   const router = useRouter();
@@ -17,7 +16,7 @@ const LeftNavBar: React.FC = () => {
         className="w-full"
         onClick={() => router.push("/")}
       >
-        {__("Chat bot")}
+        Chat bot
       </Button>
     </div>
   );

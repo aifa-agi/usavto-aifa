@@ -1,6 +1,9 @@
+// @/app/(_CHAT)/(chat)/(_routing)/not-found.tsx
+
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import { __ } from "@/lib/translation/root-translations"; // Importing translation function
 
 export default function NotFound() {
   return (
@@ -8,16 +11,18 @@ export default function NotFound() {
       <h1 className="text-6xl font-bold">404</h1>
       <Image
         src="/_static/illustrations/rocket-crashed.svg"
-        alt="404"
+        alt="rocket crashed illustration"
         width={400}
         height={400}
         className="pointer-events-none mb-5 mt-6 dark:invert"
       />
       <p className="text-balance px-4 text-center text-2xl font-medium">
-        {__("Страница не найдена. Вернуться на главную страницу.")} {/* Using translation function */}
-
-        <Link href="/" className="text-muted-foreground underline underline-offset-4 hover:text-purple-500">
-          {__("Homepage")} {/* Adding translation for "Homepage" */}
+        The page was not found. Go back to the main page.{" "}
+        <Link
+          href="/"
+          className="text-muted-foreground underline underline-offset-4 hover:text-purple-500"
+        >
+          Home page
         </Link>
       </p>
     </div>
