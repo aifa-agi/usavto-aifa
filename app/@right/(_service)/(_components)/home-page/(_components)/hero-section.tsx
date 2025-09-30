@@ -17,7 +17,7 @@ export function HeroSection() {
                 Цифровые решения
               </p>
               <h1 className="text-4xl xl:text-5xl font-bold leading-tight text-center xl:text-left text-gray-900 dark:text-white">
-                Управляйте коммерческим транспортом в удобной программе{" "}
+                Путевые листы в удобной программе{" "}
                 <span className="text-blue-800">US AUTO*</span>
               </h1>
             </div>

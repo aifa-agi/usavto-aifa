@@ -30,6 +30,16 @@ const isSmallCategory = (category: any) => category.pages.length <= 5
 const greenDotClass = "bg-emerald-500"
 
 export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProps) {
+  // 1) Понимание задачи:
+  // - В правой панели скроллируемый список категорий перекрывает нижний фиксированный переключатель темы.
+  // - Причина: футер с ModeToggle позиционирован absolute и делит тот же контекст прокрутки, из-за чего области "налезают" друг на друга.
+  // - Цель: сделать отдельный футер, который занимает свое место в потоке (auto), а скролл — только над ним.
+  // - Подход: переписать правую колонку на layout с grid или flex-col: 
+  //   * контейнер: flex flex-col h-full
+  //   * список: flex-1 overflow-y-auto pb-[высота-футера]
+  //   * футер: shrink-0 h-[...], static, без absolute.
+  // - Дополнительно: оставить небольшой нижний внутренний отступ у списка для комфортного скролла.
+
   const { data: session } = useSession()
   const userType: UserType = session?.user?.type || "guest"
   const router = useRouter()
@@ -46,16 +56,12 @@ export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProp
   }, [isOpen])
 
   const getFilteredLinks = (pages: PageData[]) =>
-    pages.filter((singlePage) =>
-      singlePage.roles.includes(userType) && singlePage.isPublished
-    )
+    pages.filter((singlePage) => singlePage.roles.includes(userType) && singlePage.isPublished)
 
-  const roleFilteredCategories = categories
-    .map((category) => ({
-      ...category,
-      pages: getFilteredLinks(category.pages),
-    }))
-  // .filter((category) => category.pages.length > 0)
+  const roleFilteredCategories = categories.map((category) => ({
+    ...category,
+    pages: getFilteredLinks(category.pages),
+  }))
 
   const handlePageClick = (page: PageData) => {
     if (page.href) {
@@ -65,7 +71,7 @@ export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProp
     setIsOpen(false)
   }
 
-  // Функция для перехода на главную страницу
+  // Переход на главную страницу
   const handleHomePageClick = () => {
     router.refresh()
     router.push("/home")
@@ -197,13 +203,14 @@ export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProp
             </div>
 
             {/* Правая панель - навигация по категориям */}
-            <div className="w-80 bg-gray-900 p-8 flex flex-col relative">
+            {/* Переписано: отдельные области для скролла и футера */}
+            <div className="w-80 bg-gray-900 p-8 flex flex-col">
               <h3 className="text-gray-400 text-sm font-semibold mb-2 tracking-wider">
                 {t("Categories")}
               </h3>
 
-              {/* Прокручиваемая область категорий с отступом снизу */}
-              <div className="flex-1 overflow-y-auto space-y-2 custom-scrollbar pb-8">
+              {/* Скроллируемая область категорий — занимает все доступное пространство */}
+              <div className="flex-1 overflow-y-auto space-y-2 custom-scrollbar pb-6">
                 {/* Псевдо-категория Home page - всегда первая */}
                 <div className="p-1">
                   <Card
@@ -242,8 +249,8 @@ export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProp
                 ))}
               </div>
 
-              {/* Минимальная фиксированная область переключения темы */}
-              <div className="absolute bottom-8 left-8 right-8 flex items-center justify-between">
+              {/* Футер с переключателем темы — НЕ absolute, не перекрывается */}
+              <div className="mt-4 pt-3 border-t border-gray-800 flex items-center justify-between shrink-0">
                 <span className="text-gray-400 text-sm font-semibold tracking-wider">
                   {t("Theme Switcher")}
                 </span>

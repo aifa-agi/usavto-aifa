@@ -238,5 +238,13 @@
     "de": "Unser Spezialist wird sich innerhalb von 24 Stunden mit Ihnen in Verbindung setzen, um Ihre Bedürfnisse zu besprechen und die Plattform-Funktionen zu demonstrieren.",
     "fr": "Notre spécialiste vous contactera dans les 24 heures pour discuter de vos besoins et démontrer les capacités de la plateforme.",
     "it": "Il nostro specialista ti contatterà entro 24 ore per discutere le tue esigenze e dimostrare le capacità della piattaforma."
+  },
+  "Try Free": {
+    "ru": "Попробовать бесплатно",
+    "en": "Try free",
+    "es": "Probar gratis",
+    "de": "Kostenlos testen",
+    "fr": "Essai gratuit",
+    "it": "Prova gratis"
   }
 }
