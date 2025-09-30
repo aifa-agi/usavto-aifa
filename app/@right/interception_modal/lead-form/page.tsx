@@ -7,19 +7,8 @@ import { Home } from "lucide-react";
 import { appConfig } from "@/config/appConfig";
 import { useTranslation } from "@/app/@right/(_service)/(_libs)/translation";
 
-// Note: Since this is a server component, we need to create a client wrapper
-// or convert this to a client component to use translations
 
-export const metadata: Metadata = {
-    title: `Lead Form - ${appConfig.short_name}`,
-    description: `Submit a request for free access to ${appConfig.short_name} commercial transport management system testing`,
-    robots: {
-        index: false,
-        follow: true,
-    },
-};
 
-export const dynamic = "force-static";
 
 // Client component wrapper for translations
 function LeadFormPageContent() {
