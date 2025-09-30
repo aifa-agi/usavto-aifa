@@ -46,7 +46,7 @@ export function HeroSection() {
             >
               <Button
                 variant="outline"
-                className="border-blue-800 text-blue-800 hover:bg-blue-50 dark:hover:bg-blue-800 dark:hover:text-white px-8 py-6 text-base bg-white dark:bg-gray-800 dark:text-blue-400 dark:border-blue-400 transition-all duration-200 hover:shadow-lg"
+                className="border-blue-800 text-blue-800 hover:bg-blue-50 dark:hover:bg-blue-800 w-full dark:hover:text-white px-8 py-6 text-base bg-white dark:bg-gray-800 dark:text-blue-400 dark:border-blue-400 transition-all duration-200 hover:shadow-lg"
               >
                 Записаться на презентацию
               </Button></Link>
