@@ -4851,7 +4851,7 @@ export const contentData = {
     "pages": [
       {
         "id": "ory1ruu5bd4tnz4m0sccap4r",
-        "title": "Беспилотные грузовые автомобили — новые лидеры логистики Подмосковья: запуск, вызовы, перспективы?",
+        "title": "Беспилотные грузовые автомобили — новые лидеры логистики Подмосковья: запуск, вызовы, перспективы??",
         "href": "/blog/bespilotnye-gruzovye-avtomobili-novye-lidery-logistiki-podmoskovya-zapusk-vyzovy-perspektivy",
         "roles": [
           "guest"
@@ -5544,7 +5544,7 @@ export const contentData = {
         ],
         "isPublished": true,
         "isAddedToPrompt": false,
-        "isVectorConnected": true,
+        "isVectorConnected": false,
         "isChatSynchronized": false,
         "order": 1,
         "badgeName": "Блог",
@@ -6996,5 +6996,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-01T19:15:04.214Z";
+export const lastUpdated = "2025-10-01T19:20:58.947Z";
 export const generatedBy = "menu-persist-api";
