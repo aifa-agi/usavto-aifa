@@ -4851,7 +4851,7 @@ export const contentData = {
     "pages": [
       {
         "id": "x07ohzulkoxymbekaa22i9bc",
-        "title": "Беспилотные грузовики прибавили газу на платной трассе",
+        "title": "Беспилотные грузовые автомобили — новые лидеры логистики Подмосковья: запуск, вызовы, перспективы",
         "href": "/blog/bespilotnye-gruzoviki-pribavili-gazu-na-platnoy-trasse",
         "roles": [
           "guest"
@@ -5589,5 +5589,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-01T10:40:52.655Z";
+export const lastUpdated = "2025-10-01T10:41:26.053Z";
 export const generatedBy = "menu-persist-api";
