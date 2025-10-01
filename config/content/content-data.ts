@@ -4857,7 +4857,7 @@ export const contentData = {
           "guest"
         ],
         "hasBadge": true,
-        "type": "customCategorias",
+        "type": "blog",
         "aiRecommendContentStructure": [
           {
             "id": "h2-1",
@@ -5544,7 +5544,7 @@ export const contentData = {
         ],
         "isPublished": true,
         "isAddedToPrompt": false,
-        "isVectorConnected": false,
+        "isVectorConnected": true,
         "isChatSynchronized": false,
         "order": 1,
         "badgeName": "Блог",
@@ -6996,5 +6996,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-01T18:30:52.801Z";
+export const lastUpdated = "2025-10-01T18:53:09.152Z";
 export const generatedBy = "menu-persist-api";
