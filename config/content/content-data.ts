@@ -5547,7 +5547,18 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "order": 1,
-        "badgeName": "Блог"
+        "badgeName": "Блог",
+        "description": "Как экспериментальные перевозки автономными фурами меняют транспортный ландшафт Московской области",
+        "images": [
+          {
+            "id": "wtercz4c1tdy6nt8us0eqqeg",
+            "alt": "usavto",
+            "href": "https://9d8adypzz8xutnay.public.blob.vercel-storage.com/usautopro1-aYYSBvjx3o6p00hmN90J6WBTVy3e0P.jpg"
+          }
+        ],
+        "keywords": [
+          "Беспилотные грузовые автомобили вышли на дороги Подмосковья"
+        ]
       }
     ],
     "order": 16
@@ -5578,5 +5589,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-01T11:20:02.706Z";
+export const lastUpdated = "2025-10-01T11:21:27.040Z";
 export const generatedBy = "menu-persist-api";
