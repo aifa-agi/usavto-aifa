@@ -5561,7 +5561,9 @@ export const contentData = {
         ],
         "taxonomy": "Логистика, транспорт авто, технологии, законодательство, экономика, инновации",
         "intent": "Раскрыть революцию беспилотной логистики, показать реальные выгоды, вызовы и перспективы для экономики и бизнеса",
-        "audiences": "Водители и логисты\n\nB2B-сектор, бизнес-операторы\n\nСтартапы индустрии\n\nГородские власти, инвесторы\n\nIT, журналисты и аналитики"
+        "audiences": "Водители и логисты\n\nB2B-сектор, бизнес-операторы\n\nСтартапы индустрии\n\nГородские власти, инвесторы\n\nIT, журналисты и аналитики",
+        "isReadyPromptForPerplexity": true,
+        "updatedAt": "2025-10-01T11:39:08.420Z"
       }
     ],
     "order": 16
@@ -5592,5 +5594,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-01T11:39:09.425Z";
+export const lastUpdated = "2025-10-01T11:50:53.422Z";
 export const generatedBy = "menu-persist-api";
