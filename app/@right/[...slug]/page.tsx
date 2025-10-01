@@ -8,6 +8,7 @@ import {
   SlugType,
 } from "@/app/@right/(_service)/(_types)/page-wrapper-types";
 import { PublicPagesConfig } from "../(_service)/(_config)/public-pages-config";
+import HomePage from "../(_service)/(_components)/home-page/home-page";
 
 interface Props {
   params: Promise<{ slug?: string[] }>;
@@ -38,7 +39,7 @@ export default async function PublicDynamicSlugPage({ params }: Props) {
   const publicPageConfig = getPageBySlug(slugArr);
 
   if (!publicPageConfig) {
-    return <div>Page not found</div>;
+    return <HomePage />
   }
 
   return <PageHtmlTransformer data={publicPageConfig} />;

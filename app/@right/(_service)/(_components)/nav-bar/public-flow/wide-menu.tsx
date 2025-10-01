@@ -1,221 +1,233 @@
 // @/app/@right/(_service)/(_components)/nav-bar/public-flow/wide-menu.tsx
 
-"use client"
+"use client";
 
-import { useState, useEffect, JSX } from "react"
-import { motion, AnimatePresence } from "framer-motion"
-import { ArrowRight } from "lucide-react"
-import { useRouter } from "next/navigation"
-import { Badge } from "@/components/ui/badge"
-import { Card, CardContent } from "@/components/ui/card"
-import { cn } from "@/lib/utils"
-import { useSession } from "next-auth/react"
-import { MenuCategory } from "../../../(_types)/menu-types"
-import { useTranslation } from "../../../(_libs)/translation"
-import { PageData } from "../../../(_types)/page-types"
-import { humanize } from "../../../(_libs)/humanize"
-import { ModeToggle } from "../../shared/mode-toggle"
-import { UserType } from "../../../(_types)/footer-types"
+import { useState, useEffect, useMemo } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { useRouter } from "next/navigation";
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
+import { cn } from "@/lib/utils";
+import { useSession } from "next-auth/react";
+import { MenuCategory } from "../../../(_types)/menu-types";
+import { useTranslation } from "../../../(_libs)/translation";
+import { PageData } from "../../../(_types)/page-types";
+import { humanize } from "../../../(_libs)/humanize";
+import { ModeToggle } from "../../shared/mode-toggle";
+import { UserType } from "../../../(_types)/footer-types";
+
+// Understanding (in English):
+// - Left side: single vertical scroll list.
+// - Default mode: show all categories expanded (static), up to 3 pages per category; then render “… more {count} pages” via translation without passing options to avoid TS2554.
+// - Active mode: when a right-side category is selected, show a flat list of all its pages.
+// - Badge must be on the right, text on the left, with justify-between layout.
+// - Keep right panel with categories and footer; ensure scroll separation.
 
 interface WideMenuProps {
-  isOpen: boolean
-  setIsOpen: (open: boolean) => void
-  categories: MenuCategory[]
+  isOpen: boolean;
+  setIsOpen: (open: boolean) => void;
+  categories: MenuCategory[];
 }
 
-const MAX_LINKS_PER_COLUMN_DEFAULT = 10
-const MAX_LINKS_PER_COLUMN_ACTIVE = 11
-
-const isSmallCategory = (category: any) => category.pages.length <= 5
-const greenDotClass = "bg-emerald-500"
+const greenDotClass = "bg-emerald-500";
+const MAX_VISIBLE_PER_CATEGORY = 3;
+const CONTAINER_HEIGHT = 432;
 
 export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProps) {
-  // 1) Понимание задачи:
-  // - В правой панели скроллируемый список категорий перекрывает нижний фиксированный переключатель темы.
-  // - Причина: футер с ModeToggle позиционирован absolute и делит тот же контекст прокрутки, из-за чего области "налезают" друг на друга.
-  // - Цель: сделать отдельный футер, который занимает свое место в потоке (auto), а скролл — только над ним.
-  // - Подход: переписать правую колонку на layout с grid или flex-col: 
-  //   * контейнер: flex flex-col h-full
-  //   * список: flex-1 overflow-y-auto pb-[высота-футера]
-  //   * футер: shrink-0 h-[...], static, без absolute.
-  // - Дополнительно: оставить небольшой нижний внутренний отступ у списка для комфортного скролла.
+  const { data: session } = useSession();
+  const userType: UserType = (session?.user?.type as UserType) || "guest";
+  const router = useRouter();
+  const { t } = useTranslation();
 
-  const { data: session } = useSession()
-  const userType: UserType = session?.user?.type || "guest"
-  const router = useRouter()
-  const { t } = useTranslation()
-
-  const [hoveredLink, setHoveredLink] = useState<string | null>(null)
-  const [activeCategoryTitle, setActiveCategoryTitle] = useState<string | null>(null)
+  const [hoveredLink, setHoveredLink] = useState<string | null>(null);
+  const [activeCategoryTitle, setActiveCategoryTitle] = useState<string | null>(null);
 
   useEffect(() => {
     if (!isOpen) {
-      setActiveCategoryTitle(null)
-      setHoveredLink(null)
+      setActiveCategoryTitle(null);
+      setHoveredLink(null);
     }
-  }, [isOpen])
+  }, [isOpen]);
 
+  // Filter by role + published
   const getFilteredLinks = (pages: PageData[]) =>
-    pages.filter((singlePage) => singlePage.roles.includes(userType) && singlePage.isPublished)
+    pages.filter((singlePage) => singlePage.roles.includes(userType) && singlePage.isPublished); // [web:26][web:25]
 
-  const roleFilteredCategories = categories.map((category) => ({
-    ...category,
-    pages: getFilteredLinks(category.pages),
-  }))
+  const roleFilteredCategories = useMemo(
+    () =>
+      categories.map((category) => ({
+        ...category,
+        pages: getFilteredLinks(category.pages),
+      })),
+    [categories, userType]
+  );
 
   const handlePageClick = (page: PageData) => {
     if (page.href) {
-      router.refresh()
-      router.push(page.href)
+      router.refresh();
+      router.push(page.href);
     }
-    setIsOpen(false)
-  }
+    setIsOpen(false);
+  };
 
-  // Переход на главную страницу
   const handleHomePageClick = () => {
-    router.refresh()
-    router.push("/home")
-    setIsOpen(false)
-  }
+    router.refresh();
+    router.push("/home");
+    setIsOpen(false);
+  };
 
-  const renderCategoryLinks = (pages: PageData[], maxLinks: number) => (
-    <ul className="space-y-3">
-      {pages.slice(0, maxLinks).map((singlePage) => {
-        const hoverKey = singlePage.id
-        const isHovered = hoveredLink === hoverKey
+  // Helper: page row — text left, badge right, justify-between
+  const PageRow = ({ page }: { page: PageData }) => {
+    const showBadge = page.hasBadge && page.badgeName;
 
-        return (
-          <li key={singlePage.id} style={{ height: 24, marginTop: 12 }}>
-            <button
-              onClick={() => handlePageClick(singlePage)}
-              onMouseEnter={() => setHoveredLink(hoverKey)}
-              onMouseLeave={() => setHoveredLink(null)}
-              className="group flex items-center justify-between text-white hover:text-gray-300 transition-colors duration-200 relative w-full text-left"
-              style={{ height: 24 }}
-            >
-              <span
-                className={cn(
-                  "flex-grow overflow-hidden text-ellipsis whitespace-nowrap flex items-center gap-2",
-                  singlePage.hasBadge && singlePage.badgeName && !isHovered ? "mr-2" : ""
-                )}
-                style={{ transition: "margin 0.2s" }}
-              >
-                {humanize(singlePage.title || "")}
-              </span>
-              {singlePage.hasBadge && singlePage.badgeName && !isHovered && (
-                <Badge className={cn("shadow-none rounded-full px-2.5 py-0.5 text-xs font-semibold h-6 flex items-center")}>
-                  <div className={cn("h-1.5 w-1.5 rounded-full mr-2", greenDotClass)} />
-                  {singlePage.badgeName}
-                </Badge>
-              )}
-              {isHovered && (
-                <motion.span
-                  initial={{ opacity: 0, scale: 0.85 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.85 }}
-                  transition={{ duration: 0.16 }}
-                  className="ml-2 flex-shrink-0 flex items-center"
-                  style={{ height: 24 }}
-                >
-                  <ArrowRight className="w-4 h-4" />
-                </motion.span>
-              )}
-            </button>
-          </li>
-        )
-      })}
-    </ul>
-  )
-
-  const activeCategory = activeCategoryTitle
-    ? roleFilteredCategories.find((cat) => cat.title === activeCategoryTitle)
-    : null
-
-  const defaultColumns: JSX.Element[] = []
-  for (let i = 0; i < roleFilteredCategories.length;) {
-    const current = roleFilteredCategories[i]
-    const next = roleFilteredCategories[i + 1]
-
-    if (isSmallCategory(current) && next && isSmallCategory(next)) {
-      defaultColumns.push(
-        <div key={`col-group-${i}`} className="w-[180px] flex-shrink-0 pr-4">
-          <h3 className="text-gray-400 text-sm font-semibold mb-4 tracking-wider border-b border-gray-700 pb-1">
-            {humanize(current.title)}
-          </h3>
-          {renderCategoryLinks(current.pages, MAX_LINKS_PER_COLUMN_DEFAULT)}
-          <div className="my-5 h-[2px]" />
-          <h3 className="text-gray-400 text-sm font-semibold mb-4 tracking-wider border-b border-gray-700 pb-1">
-            {humanize(next.title)}
-          </h3>
-          {renderCategoryLinks(next.pages, MAX_LINKS_PER_COLUMN_DEFAULT)}
-        </div>
-      )
-      i += 2
-    } else {
-      defaultColumns.push(
-        <div key={`col-${i}`} className="w-[180px] flex-shrink-0 pr-4">
-          <h3 className="text-gray-400 text-sm font-semibold mb-4 tracking-wider border-b border-gray-700 pb-1">
-            {humanize(current.title)}
-          </h3>
-          {renderCategoryLinks(current.pages, MAX_LINKS_PER_COLUMN_DEFAULT)}
-        </div>
-      )
-      i++
-    }
-  }
-
-  const activeColumns: JSX.Element[] = []
-  if (activeCategory) {
-    const numColumns = Math.ceil(activeCategory.pages.length / MAX_LINKS_PER_COLUMN_ACTIVE)
-    for (let col = 0; col < numColumns; col++) {
-      const start = col * MAX_LINKS_PER_COLUMN_ACTIVE
-      const end = start + MAX_LINKS_PER_COLUMN_ACTIVE
-      const columnLinks = activeCategory.pages.slice(start, end)
-
-      activeColumns.push(
-        <div key={`active-col-${col}`} className="w-[180px] flex-shrink-0 pr-4">
-          {col === 0 && (
-            <h3 className="text-gray-400 text-sm font-semibold mb-4 tracking-wider border-b border-gray-700 pb-1">
-              {humanize(activeCategory.title)}
-            </h3>
+    return (
+      <li key={page.id}>
+        <button
+          type="button"
+          onClick={() => handlePageClick(page)}
+          onMouseEnter={() => setHoveredLink(page.id)}
+          onMouseLeave={() => setHoveredLink(null)}
+          className="flex items-center justify-between text-white transition-colors duration-200 relative w-full text-left hover:text-gray-300" // justify-between layout
+        >
+          {/* Text left */}
+          <span className="flex-grow overflow-hidden whitespace-nowrap text-ellipsis">
+            {humanize(page.title || "")}
+          </span>
+          {/* Badge right (or empty spacer) */}
+          {showBadge ? (
+            <Badge className={cn("ml-3 shadow-none rounded-full px-2.5 py-0.5 text-xs font-semibold flex items-center")}>
+              <div className={cn("h-1.5 w-1.5 rounded-full mr-2", greenDotClass)} />
+              {page.badgeName}
+            </Badge>
+          ) : (
+            <span className="ml-3" />
           )}
-          {renderCategoryLinks(columnLinks, MAX_LINKS_PER_COLUMN_ACTIVE)}
+        </button>
+      </li>
+    );
+  };
+
+  // “… more {count} pages” without passing second arg to t (avoids TS2554)
+  const buildMoreLabel = (count: number) => {
+    const template =
+      typeof t === "function" ? t("... more pages {count}") : "... еще {count} страниц"; // [web:21]
+    return template.replace("{count}", String(count)); // [web:21]
+  };
+
+  const MoreRow = ({ remaining }: { remaining: number }) => {
+    const label = buildMoreLabel(remaining);
+    return (
+      <li aria-disabled className="text-gray-400 select-none">
+        <div className="flex items-center justify-between">
+          {/* Left text */}
+          <span className="flex-grow overflow-hidden whitespace-nowrap text-ellipsis">{label}</span>
+          {/* Right spacer to align with rows that have a badge */}
+          <span className="ml-3" />
         </div>
-      )
-    }
-  }
+      </li>
+    );
+  };
+
+  // Default: all categories expanded (static)
+  const DefaultExpandedAll = () => {
+    return (
+      <div className="flex-1 p-8 pb-24 overflow-y-auto custom-scrollbar">
+        {/* Pseudo-category: Home */}
+        <div className="mb-6">
+          <h3 className="text-gray-400 text-lg font-semibold mb-3 tracking-wider border-b border-gray-700 pb-1">
+            {t("Home")}
+          </h3>
+          <ul className="space-y-3 py-2">
+            <li>
+              <button
+                type="button"
+                onClick={handleHomePageClick}
+                className="flex items-center justify-between text-white transition-colors duration-200 relative w-full text-left hover:text-gray-300"
+              >
+                <span className="flex-grow overflow-hidden whitespace-nowrap text-ellipsis">
+                  {t("Home page")}
+                </span>
+                <span className="ml-3" />
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        {/* All categories expanded */}
+        {roleFilteredCategories.map((category) => {
+          const total = category.pages.length;
+          const visiblePages = category.pages.slice(0, MAX_VISIBLE_PER_CATEGORY);
+          const remaining = Math.max(total - MAX_VISIBLE_PER_CATEGORY, 0);
+
+          return (
+            <div key={category.title} className="mb-8">
+              <h3 className="text-gray-400 text-lg font-semibold mb-3 tracking-wider border-b border-gray-700 pb-1">
+                {humanize(category.title)}
+              </h3>
+              <ul className="space-y-3 py-2">
+                {visiblePages.map((p) => (
+                  <PageRow key={p.id} page={p} />
+                ))}
+                {remaining > 0 && <MoreRow remaining={remaining} />}
+              </ul>
+            </div>
+          );
+        })}
+      </div>
+    );
+  };
+
+  // Active: flat list of selected category pages
+  const ActiveFlatList = () => {
+    const activeCategory = activeCategoryTitle
+      ? roleFilteredCategories.find((cat) => cat.title === activeCategoryTitle)
+      : null;
+
+    const flatPages: PageData[] = activeCategory ? activeCategory.pages : [];
+
+    return (
+      <div className="flex-1 p-8 pb-24 overflow-y-auto custom-scrollbar">
+        <ul className="space-y-3 py-2">
+          {flatPages.map((p) => (
+            <PageRow key={p.id} page={p} />
+          ))}
+        </ul>
+      </div>
+    );
+  };
 
   return (
     <AnimatePresence>
       {isOpen && (
         <motion.div
           className="absolute inset-x-0 mx-auto bg-black text-white rounded-lg shadow-2xl overflow-hidden z-50 border"
-          style={{ maxWidth: "90%", top: "120px", height: "432px" }}
+          style={{ maxWidth: "90%", top: "120px", height: `${CONTAINER_HEIGHT}px` }}
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -100 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
           <div className="flex h-full">
-            {/* Левая панель - содержимое категорий */}
-            <div className="flex-1 p-8 pb-24 overflow-y-hidden flex custom-scrollbar overflow-x-auto flex-nowrap">
-              {activeCategory ? activeColumns : defaultColumns}
+            {/* Left panel — vertical scroll list */}
+            <div className="flex-1 flex flex-col overflow-hidden">
+              {activeCategoryTitle ? <ActiveFlatList /> : <DefaultExpandedAll />}
             </div>
 
-            {/* Правая панель - навигация по категориям */}
-            {/* Переписано: отдельные области для скролла и футера */}
+            {/* Right panel — categories */}
             <div className="w-80 bg-gray-900 p-8 flex flex-col">
               <h3 className="text-gray-400 text-sm font-semibold mb-2 tracking-wider">
                 {t("Categories")}
               </h3>
 
-              {/* Скроллируемая область категорий — занимает все доступное пространство */}
               <div className="flex-1 overflow-y-auto space-y-2 custom-scrollbar pb-6">
-                {/* Псевдо-категория Home page - всегда первая */}
+                {/* Home page card */}
                 <div className="p-1">
                   <Card
                     className="bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors duration-200 cursor-pointer h-[60px]"
-                    onClick={handleHomePageClick}
+                    onClick={() => {
+                      setActiveCategoryTitle(null);
+                      handleHomePageClick();
+                    }}
                   >
                     <CardContent className="flex items-center justify-start p-0">
                       <h4 className="text-white font-semibold text-base line-clamp-1 whitespace-nowrap overflow-hidden">
@@ -225,7 +237,7 @@ export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProp
                   </Card>
                 </div>
 
-                {/* Обычные категории */}
+                {/* Category cards */}
                 {roleFilteredCategories.map((category) => (
                   <div key={category.title} className="p-1">
                     <Card
@@ -249,7 +261,7 @@ export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProp
                 ))}
               </div>
 
-              {/* Футер с переключателем темы — НЕ absolute, не перекрывается */}
+              {/* Footer with theme switcher */}
               <div className="mt-4 pt-3 border-t border-gray-800 flex items-center justify-between shrink-0">
                 <span className="text-gray-400 text-sm font-semibold tracking-wider">
                   {t("Theme Switcher")}
@@ -261,5 +273,5 @@ export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProp
         </motion.div>
       )}
     </AnimatePresence>
-  )
+  );
 }
