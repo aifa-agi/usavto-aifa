@@ -5563,7 +5563,7 @@ export const contentData = {
         "intent": "Раскрыть революцию беспилотной логистики, показать реальные выгоды, вызовы и перспективы для экономики и бизнеса",
         "audiences": "Водители и логисты\n\nB2B-сектор, бизнес-операторы\n\nСтартапы индустрии\n\nГородские власти, инвесторы\n\nIT, журналисты и аналитики",
         "isReadyPromptForPerplexity": true,
-        "updatedAt": "2025-10-01T11:52:36.621Z",
+        "updatedAt": "2025-10-01T11:52:42.776Z",
         "draftContentStructure": [
           {
             "id": "h2-1",
@@ -6507,7 +6507,8 @@ export const contentData = {
                   "minWords": 105,
                   "maxWords": 210,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "img-5-2",
@@ -6526,7 +6527,8 @@ export const contentData = {
                   "minWords": 5,
                   "maxWords": 15,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-5-3",
@@ -6565,7 +6567,8 @@ export const contentData = {
                       "minWords": 80,
                       "maxWords": 160,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "ul-5-3-2",
@@ -6584,7 +6587,8 @@ export const contentData = {
                       "minWords": 40,
                       "maxWords": 80,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "p-5-3-3",
@@ -6603,11 +6607,14 @@ export const contentData = {
                       "minWords": 70,
                       "maxWords": 140,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-6",
@@ -6942,5 +6949,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-01T11:52:43.516Z";
+export const lastUpdated = "2025-10-01T11:52:48.748Z";
 export const generatedBy = "menu-persist-api";
