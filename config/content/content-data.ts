@@ -5563,7 +5563,7 @@ export const contentData = {
         "intent": "Раскрыть революцию беспилотной логистики, показать реальные выгоды, вызовы и перспективы для экономики и бизнеса",
         "audiences": "Водители и логисты\n\nB2B-сектор, бизнес-операторы\n\nСтартапы индустрии\n\nГородские власти, инвесторы\n\nIT, журналисты и аналитики",
         "isReadyPromptForPerplexity": true,
-        "updatedAt": "2025-10-01T11:52:42.776Z",
+        "updatedAt": "2025-10-01T11:52:47.978Z",
         "draftContentStructure": [
           {
             "id": "h2-1",
@@ -6655,7 +6655,8 @@ export const contentData = {
                   "minWords": 95,
                   "maxWords": 190,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-6-2",
@@ -6694,7 +6695,8 @@ export const contentData = {
                       "minWords": 75,
                       "maxWords": 150,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "table-6-2-2",
@@ -6713,7 +6715,8 @@ export const contentData = {
                       "minWords": 100,
                       "maxWords": 200,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "p-6-2-3",
@@ -6732,9 +6735,11 @@ export const contentData = {
                       "minWords": 85,
                       "maxWords": 170,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "h3-6-3",
@@ -6773,7 +6778,8 @@ export const contentData = {
                       "minWords": 90,
                       "maxWords": 180,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "code-6-3-2",
@@ -6792,11 +6798,14 @@ export const contentData = {
                       "minWords": 30,
                       "maxWords": 70,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-7",
@@ -6949,5 +6958,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-01T11:52:48.748Z";
+export const lastUpdated = "2025-10-01T11:52:56.621Z";
 export const generatedBy = "menu-persist-api";
