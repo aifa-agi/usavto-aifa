@@ -5559,7 +5559,8 @@ export const contentData = {
         "keywords": [
           "Беспилотные грузовые автомобили вышли на дороги Подмосковья"
         ],
-        "intent": "Раскрыть революцию беспилотной логистики, показать реальные выгоды, вызовы и перспективы для экономики и бизнеса"
+        "intent": "Раскрыть революцию беспилотной логистики, показать реальные выгоды, вызовы и перспективы для экономики и бизнеса",
+        "taxonomy": "Логистика, транспорт авто, технологии, законодательство, экономика, инновации"
       }
     ],
     "order": 16
@@ -5590,5 +5591,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-01T10:41:39.287Z";
+export const lastUpdated = "2025-10-01T10:41:50.908Z";
 export const generatedBy = "menu-persist-api";
