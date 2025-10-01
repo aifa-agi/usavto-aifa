@@ -4874,7 +4874,7 @@ export const contentData = {
             "additionalData": {
               "minWords": 200,
               "maxWords": 350,
-              "actualContent": ""
+              "actualContent": "need generate helpful content"
             },
             "realContentStructure": [
               {
@@ -4883,7 +4883,7 @@ export const contentData = {
                 "additionalData": {
                   "minWords": 120,
                   "maxWords": 250,
-                  "actualContent": ""
+                  "actualContent": "need generate helpful content"
                 }
               },
               {
@@ -4892,7 +4892,7 @@ export const contentData = {
                 "additionalData": {
                   "minWords": 80,
                   "maxWords": 180,
-                  "actualContent": ""
+                  "actualContent": "need generate helpful content"
                 }
               },
               {
@@ -4901,7 +4901,7 @@ export const contentData = {
                 "additionalData": {
                   "minWords": 5,
                   "maxWords": 15,
-                  "actualContent": ""
+                  "actualContent": "need generate helpful content"
                 }
               },
               {
@@ -4910,7 +4910,7 @@ export const contentData = {
                 "additionalData": {
                   "minWords": 25,
                   "maxWords": 50,
-                  "actualContent": ""
+                  "actualContent": "need generate helpful content"
                 }
               }
             ]
@@ -4930,7 +4930,7 @@ export const contentData = {
             "additionalData": {
               "minWords": 400,
               "maxWords": 600,
-              "actualContent": ""
+              "actualContent": "need generate helpful content"
             },
             "realContentStructure": [
               {
@@ -4939,7 +4939,7 @@ export const contentData = {
                 "additionalData": {
                   "minWords": 100,
                   "maxWords": 200,
-                  "actualContent": ""
+                  "actualContent": "need generate helpful content"
                 }
               },
               {
@@ -4948,7 +4948,7 @@ export const contentData = {
                 "additionalData": {
                   "minWords": 200,
                   "maxWords": 300,
-                  "actualContent": ""
+                  "actualContent": "need generate helpful content"
                 },
                 "realContentStructure": [
                   {
@@ -4957,7 +4957,7 @@ export const contentData = {
                     "additionalData": {
                       "minWords": 70,
                       "maxWords": 140,
-                      "actualContent": ""
+                      "actualContent": "need generate helpful content"
                     }
                   },
                   {
@@ -4966,7 +4966,7 @@ export const contentData = {
                     "additionalData": {
                       "minWords": 90,
                       "maxWords": 180,
-                      "actualContent": ""
+                      "actualContent": "need generate helpful content"
                     }
                   },
                   {
@@ -4975,7 +4975,7 @@ export const contentData = {
                     "additionalData": {
                       "minWords": 5,
                       "maxWords": 15,
-                      "actualContent": ""
+                      "actualContent": "need generate helpful content"
                     }
                   },
                   {
@@ -4984,7 +4984,7 @@ export const contentData = {
                     "additionalData": {
                       "minWords": 80,
                       "maxWords": 160,
-                      "actualContent": ""
+                      "actualContent": "need generate helpful content"
                     }
                   }
                 ]
@@ -4995,7 +4995,7 @@ export const contentData = {
                 "additionalData": {
                   "minWords": 100,
                   "maxWords": 200,
-                  "actualContent": ""
+                  "actualContent": "need generate helpful content"
                 },
                 "realContentStructure": [
                   {
@@ -5004,7 +5004,7 @@ export const contentData = {
                     "additionalData": {
                       "minWords": 80,
                       "maxWords": 160,
-                      "actualContent": ""
+                      "actualContent": "need generate helpful content"
                     }
                   },
                   {
@@ -5013,7 +5013,7 @@ export const contentData = {
                     "additionalData": {
                       "minWords": 40,
                       "maxWords": 80,
-                      "actualContent": ""
+                      "actualContent": "need generate helpful content"
                     }
                   },
                   {
@@ -5022,7 +5022,7 @@ export const contentData = {
                     "additionalData": {
                       "minWords": 20,
                       "maxWords": 50,
-                      "actualContent": ""
+                      "actualContent": "need generate helpful content"
                     }
                   },
                   {
@@ -5031,7 +5031,7 @@ export const contentData = {
                     "additionalData": {
                       "minWords": 60,
                       "maxWords": 120,
-                      "actualContent": ""
+                      "actualContent": "need generate helpful content"
                     }
                   }
                 ]
@@ -5053,7 +5053,7 @@ export const contentData = {
             "additionalData": {
               "minWords": 500,
               "maxWords": 750,
-              "actualContent": ""
+              "actualContent": "need generate helpful content"
             },
             "realContentStructure": [
               {
@@ -5062,7 +5062,7 @@ export const contentData = {
                 "additionalData": {
                   "minWords": 5,
                   "maxWords": 15,
-                  "actualContent": ""
+                  "actualContent": "need generate helpful content"
                 }
               },
               {
@@ -5071,7 +5071,7 @@ export const contentData = {
                 "additionalData": {
                   "minWords": 110,
                   "maxWords": 220,
-                  "actualContent": ""
+                  "actualContent": "need generate helpful content"
                 }
               },
               {
@@ -5080,7 +5080,7 @@ export const contentData = {
                 "additionalData": {
                   "minWords": 200,
                   "maxWords": 350,
-                  "actualContent": ""
+                  "actualContent": "need generate helpful content"
                 },
                 "realContentStructure": [
                   {
@@ -5089,7 +5089,7 @@ export const contentData = {
                     "additionalData": {
                       "minWords": 85,
                       "maxWords": 170,
-                      "actualContent": ""
+                      "actualContent": "need generate helpful content"
                     }
                   },
                   {
@@ -5098,7 +5098,7 @@ export const contentData = {
                     "additionalData": {
                       "minWords": 50,
                       "maxWords": 100,
-                      "actualContent": ""
+                      "actualContent": "need generate helpful content"
                     }
                   },
                   {
@@ -5107,7 +5107,7 @@ export const contentData = {
                     "additionalData": {
                       "minWords": 120,
                       "maxWords": 200,
-                      "actualContent": ""
+                      "actualContent": "need generate helpful content"
                     },
                     "realContentStructure": [
                       {
@@ -5116,7 +5116,7 @@ export const contentData = {
                         "additionalData": {
                           "minWords": 75,
                           "maxWords": 150,
-                          "actualContent": ""
+                          "actualContent": "need generate helpful content"
                         }
                       },
                       {
@@ -5125,7 +5125,7 @@ export const contentData = {
                         "additionalData": {
                           "minWords": 25,
                           "maxWords": 60,
-                          "actualContent": ""
+                          "actualContent": "need generate helpful content"
                         }
                       },
                       {
@@ -5134,7 +5134,7 @@ export const contentData = {
                         "additionalData": {
                           "minWords": 65,
                           "maxWords": 130,
-                          "actualContent": ""
+                          "actualContent": "need generate helpful content"
                         }
                       }
                     ]
@@ -5147,7 +5147,7 @@ export const contentData = {
                 "additionalData": {
                   "minWords": 150,
                   "maxWords": 250,
-                  "actualContent": ""
+                  "actualContent": "need generate helpful content"
                 },
                 "realContentStructure": [
                   {
@@ -5156,7 +5156,7 @@ export const contentData = {
                     "additionalData": {
                       "minWords": 95,
                       "maxWords": 190,
-                      "actualContent": ""
+                      "actualContent": "need generate helpful content"
                     }
                   },
                   {
@@ -5165,7 +5165,7 @@ export const contentData = {
                     "additionalData": {
                       "minWords": 20,
                       "maxWords": 45,
-                      "actualContent": ""
+                      "actualContent": "need generate helpful content"
                     }
                   },
                   {
@@ -5174,7 +5174,7 @@ export const contentData = {
                     "additionalData": {
                       "minWords": 60,
                       "maxWords": 120,
-                      "actualContent": ""
+                      "actualContent": "need generate helpful content"
                     }
                   }
                 ]
@@ -5196,7 +5196,7 @@ export const contentData = {
             "additionalData": {
               "minWords": 450,
               "maxWords": 650,
-              "actualContent": ""
+              "actualContent": "need generate helpful content"
             },
             "realContentStructure": [
               {
@@ -5205,7 +5205,7 @@ export const contentData = {
                 "additionalData": {
                   "minWords": 100,
                   "maxWords": 200,
-                  "actualContent": ""
+                  "actualContent": "need generate helpful content"
                 }
               },
               {
@@ -5214,7 +5214,7 @@ export const contentData = {
                 "additionalData": {
                   "minWords": 200,
                   "maxWords": 300,
-                  "actualContent": ""
+                  "actualContent": "need generate helpful content"
                 },
                 "realContentStructure": [
                   {
@@ -5223,7 +5223,7 @@ export const contentData = {
                     "additionalData": {
                       "minWords": 5,
                       "maxWords": 15,
-                      "actualContent": ""
+                      "actualContent": "need generate helpful content"
                     }
                   },
                   {
@@ -5232,7 +5232,7 @@ export const contentData = {
                     "additionalData": {
                       "minWords": 90,
                       "maxWords": 180,
-                      "actualContent": ""
+                      "actualContent": "need generate helpful content"
                     }
                   },
                   {
@@ -5241,7 +5241,7 @@ export const contentData = {
                     "additionalData": {
                       "minWords": 85,
                       "maxWords": 170,
-                      "actualContent": ""
+                      "actualContent": "need generate helpful content"
                     }
                   },
                   {
@@ -5250,7 +5250,7 @@ export const contentData = {
                     "additionalData": {
                       "minWords": 45,
                       "maxWords": 90,
-                      "actualContent": ""
+                      "actualContent": "need generate helpful content"
                     }
                   }
                 ]
@@ -5261,7 +5261,7 @@ export const contentData = {
                 "additionalData": {
                   "minWords": 250,
                   "maxWords": 350,
-                  "actualContent": ""
+                  "actualContent": "need generate helpful content"
                 },
                 "realContentStructure": [
                   {
@@ -5270,7 +5270,7 @@ export const contentData = {
                     "additionalData": {
                       "minWords": 110,
                       "maxWords": 220,
-                      "actualContent": ""
+                      "actualContent": "need generate helpful content"
                     }
                   },
                   {
@@ -5279,7 +5279,7 @@ export const contentData = {
                     "additionalData": {
                       "minWords": 80,
                       "maxWords": 160,
-                      "actualContent": ""
+                      "actualContent": "need generate helpful content"
                     }
                   },
                   {
@@ -5288,7 +5288,7 @@ export const contentData = {
                     "additionalData": {
                       "minWords": 55,
                       "maxWords": 110,
-                      "actualContent": ""
+                      "actualContent": "need generate helpful content"
                     }
                   },
                   {
@@ -5297,7 +5297,7 @@ export const contentData = {
                     "additionalData": {
                       "minWords": 18,
                       "maxWords": 40,
-                      "actualContent": ""
+                      "actualContent": "need generate helpful content"
                     }
                   }
                 ]
@@ -5319,7 +5319,7 @@ export const contentData = {
             "additionalData": {
               "minWords": 400,
               "maxWords": 550,
-              "actualContent": ""
+              "actualContent": "need generate helpful content"
             },
             "realContentStructure": [
               {
@@ -5328,7 +5328,7 @@ export const contentData = {
                 "additionalData": {
                   "minWords": 105,
                   "maxWords": 210,
-                  "actualContent": ""
+                  "actualContent": "need generate helpful content"
                 }
               },
               {
@@ -5337,7 +5337,7 @@ export const contentData = {
                 "additionalData": {
                   "minWords": 5,
                   "maxWords": 15,
-                  "actualContent": ""
+                  "actualContent": "need generate helpful content"
                 }
               },
               {
@@ -5346,7 +5346,7 @@ export const contentData = {
                 "additionalData": {
                   "minWords": 150,
                   "maxWords": 250,
-                  "actualContent": ""
+                  "actualContent": "need generate helpful content"
                 },
                 "realContentStructure": [
                   {
@@ -5355,7 +5355,7 @@ export const contentData = {
                     "additionalData": {
                       "minWords": 80,
                       "maxWords": 160,
-                      "actualContent": ""
+                      "actualContent": "need generate helpful content"
                     }
                   },
                   {
@@ -5364,7 +5364,7 @@ export const contentData = {
                     "additionalData": {
                       "minWords": 40,
                       "maxWords": 80,
-                      "actualContent": ""
+                      "actualContent": "need generate helpful content"
                     }
                   },
                   {
@@ -5373,7 +5373,7 @@ export const contentData = {
                     "additionalData": {
                       "minWords": 70,
                       "maxWords": 140,
-                      "actualContent": ""
+                      "actualContent": "need generate helpful content"
                     }
                   }
                 ]
@@ -5395,7 +5395,7 @@ export const contentData = {
             "additionalData": {
               "minWords": 350,
               "maxWords": 500,
-              "actualContent": ""
+              "actualContent": "need generate helpful content"
             },
             "realContentStructure": [
               {
@@ -5404,7 +5404,7 @@ export const contentData = {
                 "additionalData": {
                   "minWords": 95,
                   "maxWords": 190,
-                  "actualContent": ""
+                  "actualContent": "need generate helpful content"
                 }
               },
               {
@@ -5413,7 +5413,7 @@ export const contentData = {
                 "additionalData": {
                   "minWords": 200,
                   "maxWords": 300,
-                  "actualContent": ""
+                  "actualContent": "need generate helpful content"
                 },
                 "realContentStructure": [
                   {
@@ -5422,7 +5422,7 @@ export const contentData = {
                     "additionalData": {
                       "minWords": 75,
                       "maxWords": 150,
-                      "actualContent": ""
+                      "actualContent": "need generate helpful content"
                     }
                   },
                   {
@@ -5431,7 +5431,7 @@ export const contentData = {
                     "additionalData": {
                       "minWords": 100,
                       "maxWords": 200,
-                      "actualContent": ""
+                      "actualContent": "need generate helpful content"
                     }
                   },
                   {
@@ -5440,7 +5440,7 @@ export const contentData = {
                     "additionalData": {
                       "minWords": 85,
                       "maxWords": 170,
-                      "actualContent": ""
+                      "actualContent": "need generate helpful content"
                     }
                   }
                 ]
@@ -5451,7 +5451,7 @@ export const contentData = {
                 "additionalData": {
                   "minWords": 100,
                   "maxWords": 150,
-                  "actualContent": ""
+                  "actualContent": "need generate helpful content"
                 },
                 "realContentStructure": [
                   {
@@ -5460,7 +5460,7 @@ export const contentData = {
                     "additionalData": {
                       "minWords": 90,
                       "maxWords": 180,
-                      "actualContent": ""
+                      "actualContent": "need generate helpful content"
                     }
                   },
                   {
@@ -5469,7 +5469,7 @@ export const contentData = {
                     "additionalData": {
                       "minWords": 30,
                       "maxWords": 70,
-                      "actualContent": ""
+                      "actualContent": "need generate helpful content"
                     }
                   }
                 ]
@@ -5491,7 +5491,7 @@ export const contentData = {
             "additionalData": {
               "minWords": 300,
               "maxWords": 450,
-              "actualContent": ""
+              "actualContent": "need generate helpful content"
             },
             "realContentStructure": [
               {
@@ -5500,7 +5500,7 @@ export const contentData = {
                 "additionalData": {
                   "minWords": 120,
                   "maxWords": 240,
-                  "actualContent": ""
+                  "actualContent": "need generate helpful content"
                 }
               },
               {
@@ -5509,7 +5509,7 @@ export const contentData = {
                 "additionalData": {
                   "minWords": 100,
                   "maxWords": 200,
-                  "actualContent": ""
+                  "actualContent": "need generate helpful content"
                 }
               },
               {
@@ -5518,7 +5518,7 @@ export const contentData = {
                 "additionalData": {
                   "minWords": 60,
                   "maxWords": 120,
-                  "actualContent": ""
+                  "actualContent": "need generate helpful content"
                 }
               },
               {
@@ -5527,7 +5527,7 @@ export const contentData = {
                 "additionalData": {
                   "minWords": 80,
                   "maxWords": 160,
-                  "actualContent": ""
+                  "actualContent": "need generate helpful content"
                 }
               },
               {
@@ -5536,7 +5536,7 @@ export const contentData = {
                 "additionalData": {
                   "minWords": 15,
                   "maxWords": 35,
-                  "actualContent": ""
+                  "actualContent": "need generate helpful content"
                 }
               }
             ]
@@ -5561,7 +5561,8 @@ export const contentData = {
         ],
         "intent": "Раскрыть революцию беспилотной логистики, показать реальные выгоды, вызовы и перспективы для экономики и бизнеса",
         "taxonomy": "Логистика, транспорт авто, технологии, законодательство, экономика, инновации",
-        "attention": "Показать интеграцию новых маршрутов, масштаб экспериментов, законодательные новшества, реальную динамику перевозок и инфраструктурные трудности."
+        "attention": "Показать интеграцию новых маршрутов, масштаб экспериментов, законодательные новшества, реальную динамику перевозок и инфраструктурные трудности.",
+        "audiences": "Водители и логисты\n\nB2B-сектор, бизнес-операторы\n\nСтартапы индустрии\n\nГородские власти, инвесторы\n\nIT, журналисты и аналитики"
       }
     ],
     "order": 16
@@ -5592,5 +5593,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-01T10:42:08.181Z";
+export const lastUpdated = "2025-10-01T10:43:47.965Z";
 export const generatedBy = "menu-persist-api";
