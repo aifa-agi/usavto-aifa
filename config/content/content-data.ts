@@ -5544,7 +5544,7 @@ export const contentData = {
         ],
         "isPublished": true,
         "isAddedToPrompt": false,
-        "isVectorConnected": true,
+        "isVectorConnected": false,
         "isChatSynchronized": false,
         "order": 1,
         "badgeName": "Блог",
@@ -6996,5 +6996,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-01T19:21:30.716Z";
+export const lastUpdated = "2025-10-01T19:21:37.822Z";
 export const generatedBy = "menu-persist-api";
