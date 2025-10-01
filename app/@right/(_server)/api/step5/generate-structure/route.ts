@@ -53,11 +53,11 @@ export async function POST(req: Request) {
 
     // Stream content structure generation
     const result = streamText({
-      model: openai(model ?? "gpt-4.1-mini"),
+      model: openai("gpt-4.1-mini"),
       system,
       prompt,
       temperature: 0.2,
-      maxTokens: 90000,
+      maxTokens: 30000,
     });
 
     // AI SDK v4: use Data Stream helper
