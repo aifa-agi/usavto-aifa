@@ -5563,7 +5563,7 @@ export const contentData = {
         "intent": "Раскрыть революцию беспилотной логистики, показать реальные выгоды, вызовы и перспективы для экономики и бизнеса",
         "audiences": "Водители и логисты\n\nB2B-сектор, бизнес-операторы\n\nСтартапы индустрии\n\nГородские власти, инвесторы\n\nIT, журналисты и аналитики",
         "isReadyPromptForPerplexity": true,
-        "updatedAt": "2025-10-01T11:50:52.562Z",
+        "updatedAt": "2025-10-01T11:51:15.081Z",
         "draftContentStructure": [
           {
             "id": "h2-1",
@@ -5606,7 +5606,8 @@ export const contentData = {
                   "minWords": 120,
                   "maxWords": 250,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-1-2",
@@ -5625,7 +5626,8 @@ export const contentData = {
                   "minWords": 80,
                   "maxWords": 180,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "img-1-3",
@@ -5644,7 +5646,8 @@ export const contentData = {
                   "minWords": 5,
                   "maxWords": 15,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "blockquote-1-4",
@@ -5663,9 +5666,11 @@ export const contentData = {
                   "minWords": 25,
                   "maxWords": 50,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-2",
@@ -6867,7 +6872,8 @@ export const contentData = {
               }
             ]
           }
-        ]
+        ],
+        "isReadyDraftForPerplexity": false
       }
     ],
     "order": 16
@@ -6898,5 +6904,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-01T11:51:16.183Z";
+export const lastUpdated = "2025-10-01T11:52:27.322Z";
 export const generatedBy = "menu-persist-api";
