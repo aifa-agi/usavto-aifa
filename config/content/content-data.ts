@@ -5558,7 +5558,8 @@ export const contentData = {
         ],
         "keywords": [
           "Беспилотные грузовые автомобили вышли на дороги Подмосковья"
-        ]
+        ],
+        "taxonomy": "Логистика, транспорт авто, технологии, законодательство, экономика, инновации"
       }
     ],
     "order": 16
@@ -5589,5 +5590,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-01T11:22:03.063Z";
+export const lastUpdated = "2025-10-01T11:22:13.698Z";
 export const generatedBy = "menu-persist-api";
