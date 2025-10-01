@@ -57,7 +57,7 @@ export async function POST(req: Request) {
       system,
       prompt,
       temperature: 0.2,
-      maxTokens: 30000,
+      maxTokens: 90000,
     });
 
     // AI SDK v4: use Data Stream helper
