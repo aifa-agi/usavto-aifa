@@ -1,11 +1,11 @@
 // @/app/@right/(_PRIVAT_ROUTES)/admin/(_routing)/pages/[slug]/(_service)/(_components)/admin-pages/steps/step12/step12-1-fractal/index.tsx
 import { Suspense } from "react";
 import { LoadingSpinner } from "@/components/ui/loading-spinner";
-import { AdminPagesNavBarProvider } from "./(_service)/(_context)/admin-pages-nav-context";
 import AdminPagesNavBar from "./(_service)/(_components)/admin-page-nav-bar";
 import { AdminPageContent } from "./(_service)/(_components)/admin-page-content";
 import { AdminPageDynamicHeader } from "./(_service)/(_components)/admin-page-dynamic-header";
 import { SectionProvider } from "./(_service)/(_context)/section-provider";
+import { AdminPagesNavBarProvider } from "./(_service)/(_context)/admin-pages-nav-context";
 
 interface AdminPageDetailsProps {
   params: Promise<{

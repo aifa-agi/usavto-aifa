@@ -2,7 +2,7 @@
 
 "use client";
 
-import { useAdminPagesNav } from "../(_context)/admin-pages-nav-context";
+
 import { AdminPageInfo } from "./admin-pages/admin-page-info/(_service)/(_components)/admin-page-info";
 import { CompetitorResearch } from "./admin-pages/steps/competitor-research/(_service)/(_components)/competitor-research";
 
@@ -18,6 +18,7 @@ import { AdminPageStep8 } from "./admin-pages/steps/step8/step8";
 import { AdminPageStep9 } from "./admin-pages/steps/step9/step9";
 import { AdminPageStep13 } from "./admin-pages/steps/step13";
 import AdminPageStep12 from "./admin-pages/steps/step12";
+import { useAdminPagesNav } from "../(_context)/admin-pages-nav-context";
 
 export function AdminPageContent() {
   const { activeTab, slug } = useAdminPagesNav();
