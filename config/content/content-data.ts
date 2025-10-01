@@ -5563,7 +5563,7 @@ export const contentData = {
         "intent": "Раскрыть революцию беспилотной логистики, показать реальные выгоды, вызовы и перспективы для экономики и бизнеса",
         "audiences": "Водители и логисты\n\nB2B-сектор, бизнес-операторы\n\nСтартапы индустрии\n\nГородские власти, инвесторы\n\nIT, журналисты и аналитики",
         "isReadyPromptForPerplexity": true,
-        "updatedAt": "2025-10-01T11:52:47.978Z",
+        "updatedAt": "2025-10-01T11:52:55.559Z",
         "draftContentStructure": [
           {
             "id": "h2-1",
@@ -6846,7 +6846,8 @@ export const contentData = {
                   "minWords": 120,
                   "maxWords": 240,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-7-2",
@@ -6865,7 +6866,8 @@ export const contentData = {
                   "minWords": 100,
                   "maxWords": 200,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "ul-7-3",
@@ -6884,7 +6886,8 @@ export const contentData = {
                   "minWords": 60,
                   "maxWords": 120,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-7-4",
@@ -6903,7 +6906,8 @@ export const contentData = {
                   "minWords": 80,
                   "maxWords": 160,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "blockquote-7-5",
@@ -6922,12 +6926,14 @@ export const contentData = {
                   "minWords": 15,
                   "maxWords": 35,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           }
         ],
-        "isReadyDraftForPerplexity": false
+        "isReadyDraftForPerplexity": true
       }
     ],
     "order": 16
@@ -6958,5 +6964,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-01T11:52:56.621Z";
+export const lastUpdated = "2025-10-01T11:53:57.673Z";
 export const generatedBy = "menu-persist-api";
