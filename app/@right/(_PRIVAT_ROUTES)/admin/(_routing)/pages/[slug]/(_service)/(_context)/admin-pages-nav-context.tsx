@@ -1,280 +1,253 @@
-// @/app/@right/(_PRIVAT_ROUTES)/admin/(_routing)/pages/[slug]/(_service)/(_hooks)/use-steps-orchestrator.ts
+// @/app/@right/(_PRIVAT_ROUTES)/admin/(_routing)/pages/[slug]/(_service)/(_context)/admin-pages-nav-context.ts
 
 "use client";
 
-/**
- * Admin Steps Orchestrator Hook
- *
- * Key principles:
- * - This hook is admin-only and treats the server route as the single source of truth.
- * - It directly calls /api/menu/read for fresh data.
- * - The server decides the data source (Local FS in development, GitHub in production).
- * - We do NOT depend on any public provider for admin CRUD flows.
- *
- * What it provides:
- * - pageData: the current page data for the given slug
- * - isLoading, error: UI-ready states
- * - refreshPageData(): re-fetches categories from the server and resolves the page by slug
- * - updatePageDataField(): local optimistic field update (client-side only)
- * - updatePageData(): local optimistic full update (client-side only)
- * - syncPageDataToServer(): placeholder for actual persist logic (extend as needed)
- * - getOrchestratorStatus(): current readiness and meta for diagnostics
- *
- * Notes:
- * - All comments are in English as required.
- * - Replace lightweight types with your concrete PageData/MenuCategory types if available.
- */
+import {
+  createContext,
+  useContext,
+  useState,
+  ReactNode,
+  useEffect,
+  useMemo,
+} from "react";
+import {
+  ADMIN_PAGES_CONFIG,
+  ADMIN_PAGES_TABS,
+  IndicatorStatus,
+  canActivateStep,
+} from "../(_config)/admin-pages-config";
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import type { PageData } from "@/app/@right/(_service)/(_types)/page-types";
+// ✅ ИСПРАВЛЕНО: Импортируем конфиг условий завершения
+import {
+  getAllCompletedSteps,
+  getStepsDebugInfo,
+} from "../(_config)/step-completion-config";
 
-// Narrow types locally to avoid heavy imports or circular deps
-type MenuPage = PageData & { id: string };
-type MenuCategory = {
-  id: string;
-  title?: string;
-  pages?: MenuPage[];
+// ✅ ИСПРАВЛЕНО: Импортируем хук оркестратора
+import { useStepsOrchestrator } from "../(_hooks)/use-steps-orchestrator";
+import { PageData } from "@/app/@right/(_service)/(_types)/page-types";
+
+export type AdminPageTab =
+  | "info"
+  | "step1"
+  | "step2"
+  | "step3"
+  | "step4"
+  | "step5"
+  | "step6"
+  | "step7"
+  | "step8"
+  | "step9"
+  | "step10"
+  | "step11"
+  | "preview"
+  | "deploy";
+
+export type DisplayMode = "all" | "required";
+
+type IndicatorStatuses = {
+  [K in AdminPageTab]?: IndicatorStatus;
 };
 
-// Server route response shapes (mirror /api/menu/read contract)
-interface ReadOk {
-  success: true;
-  message: string;
-  categories: MenuCategory[];
-  source?: "Local FileSystem" | "GitHub API";
-  environment?: string;
-}
-interface ReadFail {
-  success: false;
-  message: string;
-  source?: "Local FileSystem" | "GitHub API";
-  environment?: string;
-}
+interface AdminPagesNavContextType {
+  activeTab: AdminPageTab;
+  setActiveTab: (tab: AdminPageTab) => void;
+  slug: string;
+  indicatorStatuses: IndicatorStatuses;
+  setIndicatorStatus: (tab: AdminPageTab, status: IndicatorStatus) => void;
+  getIndicatorStatus: (tab: AdminPageTab) => IndicatorStatus | undefined;
+  completedSteps: AdminPageTab[];
+  markStepAsCompleted: (step: AdminPageTab) => void;
+  canActivateStep: (step: AdminPageTab) => boolean;
+  isStepCompleted: (step: AdminPageTab) => boolean;
+  displayMode: DisplayMode;
+  setDisplayMode: (mode: DisplayMode) => void;
 
-type ReadResponse = ReadOk | ReadFail;
-
-async function readMenuFromServer(opts?: { filePath?: string }): Promise<ReadResponse> {
-  // Always hit the server route. The server decides FS vs GitHub.
-  const res = await fetch("/api/menu/read", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ filePath: opts?.filePath }),
-    cache: "no-store",
-  });
-
-  // Try to parse a JSON response; in case of parse error, emulate failure.
-  let data: any = null;
-  try {
-    data = await res.json();
-  } catch {
-    return {
-      success: false,
-      message: `Invalid JSON from server (HTTP ${res.status})`,
-    };
-  }
-
-  // If HTTP error, normalize a fail shape
-  if (!res.ok) {
-    return {
-      success: false,
-      message: String(data?.message || `HTTP ${res.status}`),
-      source: data?.source,
-      environment: data?.environment,
-    };
-  }
-
-  // On success path, ensure categories exist
-  if (data?.success) {
-    return {
-      success: true,
-      message: String(data?.message || "OK"),
-      categories: Array.isArray(data?.categories) ? data.categories : [],
-      source: data?.source,
-      environment: data?.environment,
-    };
-  }
-
-  // Server returned success:false
-  return {
-    success: false,
-    message: String(data?.message || "Unknown server error"),
-    source: data?.source,
-    environment: data?.environment,
-  };
+  // ✅ НОВЫЕ ПОЛЯ: Интеграция с Steps Orchestrator
+  pageData: PageData | null;
+  isPageDataLoading: boolean;
+  pageDataError: string | null;
+  refreshPageData: () => void;
+  debugInfo: Record<AdminPageTab, string>;
 }
 
-export const useStepsOrchestrator = (slug: string) => {
-  // Core state
-  const [pageData, setPageData] = useState<PageData | null>(null);
-  const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [error, setError] = useState<string | null>(null);
+const AdminPagesNavContext = createContext<
+  AdminPagesNavContextType | undefined
+>(undefined);
 
-  // Diagnostics
-  const lastSourceRef = useRef<string | undefined>(undefined);
-  const lastEnvironmentRef = useRef<string | undefined>(undefined);
-  const lastFetchTimeRef = useRef<number | null>(null);
+interface AdminPagesNavBarProviderProps {
+  children: ReactNode;
+  slug: string;
+  defaultTab?: AdminPageTab;
+}
 
-  // Resolve page by slug from categories
-  const resolvePageBySlug = useCallback(
-    (categories: MenuCategory[], key: string): PageData | null => {
-      if (!Array.isArray(categories) || !key) return null;
-      for (const category of categories) {
-        const found = category.pages?.find((p) => p.id === key);
-        if (found) return found;
-      }
-      return null;
-    },
-    []
-  );
+export function AdminPagesNavBarProvider({
+  children,
+  slug,
+  defaultTab = ADMIN_PAGES_CONFIG.defaultTab,
+}: AdminPagesNavBarProviderProps) {
+  const [activeTab, setActiveTab] = useState<AdminPageTab>(defaultTab);
+  const [displayMode, setDisplayMode] = useState<DisplayMode>("required");
 
-  // Initial load
-  useEffect(() => {
-    let cancelled = false;
-
-    async function init() {
-      if (!slug) return;
-      setIsLoading(true);
-      setError(null);
-
-      const resp = await readMenuFromServer();
-
-      if (cancelled) return;
-
-      if (resp.success) {
-        lastSourceRef.current = resp.source;
-        lastEnvironmentRef.current = resp.environment;
-        lastFetchTimeRef.current = Date.now();
-
-        const page = resolvePageBySlug(resp.categories, slug);
-        if (page) {
-          setPageData(page);
-          setError(null);
-        } else {
-          setPageData(null);
-          setError(`Page with slug "${slug}" not found`);
-        }
-        setIsLoading(false);
-      } else {
-        setPageData(null);
-        setIsLoading(false);
-        setError(resp.message || "Failed to load menu data");
-      }
-    }
-
-    void init();
-
-    return () => {
-      cancelled = true;
-    };
-  }, [slug, resolvePageBySlug]);
-
-  // Refresh from server (FS in dev, GitHub in prod) and re-resolve page
-  const refreshPageData = useCallback(async () => {
-    if (!slug) return { ok: false as const, message: "Missing slug" };
-    setIsLoading(true);
-    setError(null);
-
-    const resp = await readMenuFromServer();
-
-    if (resp.success) {
-      lastSourceRef.current = resp.source;
-      lastEnvironmentRef.current = resp.environment;
-      lastFetchTimeRef.current = Date.now();
-
-      const page = resolvePageBySlug(resp.categories, slug);
-      if (page) {
-        setPageData(page);
-        setIsLoading(false);
-        return { ok: true as const, source: resp.source, environment: resp.environment };
-      } else {
-        setPageData(null);
-        setIsLoading(false);
-        const message = `Page with slug "${slug}" not found`;
-        setError(message);
-        return { ok: false as const, message, source: resp.source, environment: resp.environment };
-      }
-    } else {
-      setIsLoading(false);
-      setError(resp.message || "Failed to refresh menu data");
-      return { ok: false as const, message: resp.message, source: resp.source, environment: resp.environment };
-    }
-  }, [slug, resolvePageBySlug]);
-
-  // Local optimistic update of a single field
-  const updatePageDataField = useCallback(
-    <K extends keyof PageData>(field: K, value: PageData[K]) => {
-      if (!pageData) return;
-      const updated = { ...pageData, [field]: value };
-      setPageData(updated);
-      // No server sync here; call syncPageDataToServer for persistence
-    },
-    [pageData]
-  );
-
-  // Local optimistic full update
-  const updatePageData = useCallback(
-    (updater: (current: PageData | null) => PageData | null) => {
-      const next = updater(pageData);
-      if (next) {
-        setPageData(next);
-      }
-    },
-    [pageData]
-  );
-
-  // Placeholder for actual persistence (e.g., call your persist route, then refresh)
-  const syncPageDataToServer = useCallback(
-    async (updates: Partial<PageData>) => {
-      if (!slug) return false;
-      try {
-        // TODO: implement actual persist call here (e.g., /api/menu/persist)
-        // After successful persist, reload from the source of truth:
-        // await refreshPageData();
-        if (pageData) {
-          setPageData({ ...pageData, ...updates });
-        }
-        return true;
-      } catch (e) {
-        setError(e instanceof Error ? e.message : "Sync error");
-        return false;
-      }
-    },
-    [slug, pageData /* , refreshPageData */]
-  );
-
-  // Orchestrator status and meta
-  const getOrchestratorStatus = useCallback(() => {
-    return {
-      isReady: !isLoading && !error && !!pageData,
-      hasData: !!pageData,
-      slug,
-      error,
-      source: lastSourceRef.current,
-      environment: lastEnvironmentRef.current,
-      lastFetchTime: lastFetchTimeRef.current,
-    };
-  }, [isLoading, error, pageData, slug]);
-
-  // Stable last fetch time for consumers that prefer a value
-  const lastFetchTime = useMemo(() => lastFetchTimeRef.current ?? null, [pageData, isLoading, error]);
-
-  return {
-    // Data
+  // ✅ ИСПРАВЛЕНО: Используем Steps Orchestrator для получения реальных данных
+  const {
     pageData,
-    isLoading,
-    error,
-
-    // Controls
+    isLoading: isPageDataLoading,
+    error: pageDataError,
     refreshPageData,
     updatePageData,
     updatePageDataField,
     syncPageDataToServer,
-
-    // Meta
     getOrchestratorStatus,
-    lastFetchTime,
+  } = useStepsOrchestrator(slug);
 
-    // Escape hatch for legacy integrations
-    setPageData,
+  // ✅ ИСПРАВЛЕНО: Автоматически вычисляем завершенные шаги на основе реальных данных
+  const completedSteps = useMemo(() => {
+    const computed = getAllCompletedSteps(pageData);
+
+    if (process.env.NODE_ENV === "development") {
+      console.log("🎭 Context: Computing completed steps", {
+        slug,
+        pageDataAvailable: !!pageData,
+        computedSteps: computed,
+      });
+    }
+
+    return computed;
+  }, [pageData, slug]);
+
+  // ✅ ИСПРАВЛЕНО: Получаем отладочную информацию
+  const debugInfo = useMemo(() => {
+    return getStepsDebugInfo(pageData);
+  }, [pageData]);
+
+  // ✅ ИСПРАВЛЕНО: Инициализация статусов через useMemo
+  const initialStatuses: IndicatorStatuses = useMemo(() => {
+    const statuses: IndicatorStatuses = {};
+    ADMIN_PAGES_TABS.forEach((tab) => {
+      if (tab.hasIndicator && tab.defaultIndicatorStatus) {
+        statuses[tab.key] = tab.defaultIndicatorStatus;
+      }
+    });
+    return statuses;
+  }, []);
+
+  // ✅ ИСПРАВЛЕНО: Вычисляем статусы на основе завершенных шагов
+  const computedIndicatorStatuses = useMemo(() => {
+    const newStatuses: IndicatorStatuses = { ...initialStatuses };
+
+    ADMIN_PAGES_TABS.forEach((tab) => {
+      if (tab.hasIndicator) {
+        if (completedSteps.includes(tab.key)) {
+          // Шаг завершен - зеленый
+          newStatuses[tab.key] = "green";
+        } else if (canActivateStep(tab.key, completedSteps)) {
+          // Шаг готов к выполнению - оранжевый
+          newStatuses[tab.key] = "orange";
+        } else {
+          // Шаг недоступен - серый
+          newStatuses[tab.key] = "gray";
+        }
+      }
+    });
+
+    return newStatuses;
+  }, [completedSteps, initialStatuses]);
+
+  const [indicatorStatuses, setIndicatorStatuses] = useState<IndicatorStatuses>(
+    computedIndicatorStatuses
+  );
+
+  // ✅ ИСПРАВЛЕНО: Обновляем статусы только при их изменении
+  useEffect(() => {
+    setIndicatorStatuses(computedIndicatorStatuses);
+  }, [computedIndicatorStatuses]);
+
+  const setIndicatorStatus = (tab: AdminPageTab, status: IndicatorStatus) => {
+    setIndicatorStatuses((prev) => ({
+      ...prev,
+      [tab]: status,
+    }));
   };
-};
+
+  const getIndicatorStatus = (
+    tab: AdminPageTab
+  ): IndicatorStatus | undefined => {
+    return indicatorStatuses[tab];
+  };
+
+  // ✅ ОБНОВЛЕНО: Функция помечания как завершенного теперь устарела
+  const markStepAsCompleted = (step: AdminPageTab) => {
+    console.warn(`🎭 markStepAsCompleted(${step}) устарела!`);
+    console.log(
+      `Шаги теперь завершаются автоматически на основе данных PageData.`
+    );
+    console.log(
+      `Для завершения шага ${step} обновите соответствующие поля в pageData:`,
+      debugInfo[step]
+    );
+  };
+
+  const canActivateStepLocal = (step: AdminPageTab): boolean => {
+    return canActivateStep(step, completedSteps);
+  };
+
+  const isStepCompleted = (step: AdminPageTab): boolean => {
+    return completedSteps.includes(step);
+  };
+
+  // ✅ ИСПРАВЛЕНО: Мемоизируем значение контекста для предотвращения лишних перерендеров
+  const contextValue = useMemo(
+    () => ({
+      activeTab,
+      setActiveTab,
+      slug,
+      indicatorStatuses,
+      setIndicatorStatus,
+      getIndicatorStatus,
+      completedSteps,
+      markStepAsCompleted,
+      canActivateStep: canActivateStepLocal,
+      isStepCompleted,
+      displayMode,
+      setDisplayMode,
+
+      // ✅ НОВЫЕ ПОЛЯ: Интеграция с реальными данными
+      pageData,
+      isPageDataLoading,
+      pageDataError,
+      refreshPageData,
+      debugInfo,
+    }),
+    [
+      activeTab,
+      slug,
+      indicatorStatuses,
+      completedSteps,
+      displayMode,
+      pageData,
+      isPageDataLoading,
+      pageDataError,
+      refreshPageData,
+      debugInfo,
+    ]
+  );
+
+  return (
+    <AdminPagesNavContext.Provider value={contextValue}>
+      {children}
+    </AdminPagesNavContext.Provider>
+  );
+}
+
+export function useAdminPagesNav() {
+  const context = useContext(AdminPagesNavContext);
+
+  if (context === undefined) {
+    throw new Error(
+      "useAdminPagesNav must be used within an AdminPagesNavBarProvider"
+    );
+  }
+
+  return context;
+}
