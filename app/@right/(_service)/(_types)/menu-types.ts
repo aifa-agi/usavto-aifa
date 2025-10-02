@@ -6,5 +6,5 @@ export interface MenuCategory {
   title: string;      
   href?: string;      
   order?: number;
-  pages?: PageData[];
+  pages: PageData[];
 }
