@@ -1,4 +1,9 @@
 // @/app/layout.tsx
+// Comments in English:
+// This is the final, correct version of the root layout.
+// - It hardcodes the manifest path to "/manifest.webmanifest" to match the app/manifest.ts convention, fixing previous discrepancies.
+// - It generates a comprehensive set of icons from appConfig, ensuring cross-platform compatibility.
+// - It maintains the "single source of truth" principle, deriving all defaults from appConfig.
 
 import { Toaster } from "sonner";
 import type { Metadata, Viewport } from "next";
@@ -23,10 +28,12 @@ import { NavBar } from "./@right/(_service)/(_components)/nav-bar/nav-bar";
 import { NavigationMenuProvider } from "./@right/(_service)/(_context)/nav-bar-provider";
 import { CookieBanner } from "@/app/(_service)/(_components)/cookie-banner";
 
+
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
 };
+
 
 const geist = Geist({
   subsets: ["latin"],
@@ -34,11 +41,13 @@ const geist = Geist({
   variable: "--font-geist",
 });
 
+
 const geistMono = Geist_Mono({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-geist-mono",
 });
+
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -123,7 +132,7 @@ export default async function RootLayout({
                         </ResizablePanel>
                         <ResizableHandle withHandle />
                         <ResizablePanel defaultSize={60} minSize={35}>
-                          {/* --- START: ИСПРАВЛЕННЫЙ БЛОК --- */}
+                          {/* --- START: CORRECTED BLOCK --- */}
                           <NavigationMenuProvider>
                             <div className="relative flex flex-col h-screen">
                               <NavBar />
@@ -132,10 +141,11 @@ export default async function RootLayout({
                               </main>
                             </div>
                           </NavigationMenuProvider>
-                          {/* --- END: ИСПРАВЛЕННЫЙ БЛОК --- */}
+                          {/* --- END: CORRECTED BLOCK --- */}
                         </ResizablePanel>
                       </ResizablePanelGroup>
                     </div>
+
 
                     {/* === MOBILE LAYOUT === */}
                     <div className="w-full md:hidden relative">
@@ -154,6 +164,7 @@ export default async function RootLayout({
                       </div>
                     </div>
 
+
                     <DevIndicatorClient />
                   </AppProvider>
                 </RightSidebarProvider>
@@ -171,3 +182,4 @@ export default async function RootLayout({
     </html>
   );
 }
+
