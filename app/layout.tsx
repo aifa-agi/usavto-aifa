@@ -49,7 +49,7 @@ export async function generateMetadata(): Promise<Metadata> {
       template: `%s | ${appConfig.short_name.trim()}`,
     },
     description: appConfig.description,
-    manifest: appConfig.manifest,
+    manifest: "/manifest.webmanifest",
     icons: [
       appConfig.icons?.faviconAny && {
         url: appConfig.icons.faviconAny,
