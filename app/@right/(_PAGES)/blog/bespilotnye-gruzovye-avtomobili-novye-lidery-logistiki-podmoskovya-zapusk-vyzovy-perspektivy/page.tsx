@@ -1,5 +1,5 @@
 // Auto-generated SEO-optimized static page - do not edit manually
-// Generated on: 2025-10-02T15:54:46.546Z
+// Generated on: 2025-10-02T22:35:57.164Z
 // Source href: /blog/bespilotnye-gruzovye-avtomobili-novye-lidery-logistiki-podmoskovya-zapusk-vyzovy-perspektivy
 // Page metadata: Беспилотные грузовые автомобили — новые лидеры логистики Подмосковья: запуск, вызовы, перспективы | 7 sections
 // SEO Mode: STATIC GENERATION ENABLED
@@ -2518,8 +2518,8 @@ export default function Page() {
               "url": "https://9d8adypzz8xutnay.public.blob.vercel-storage.com/usautopro1-aYYSBvjx3o6p00hmN90J6WBTVy3e0P.jpg",
               "alt": "usavto"
             },
-            "datePublished": "2025-10-02T15:54:46.546Z",
-            "dateModified": "2025-10-02T15:54:46.546Z",
+            "datePublished": "2025-10-02T22:35:57.164Z",
+            "dateModified": "2025-10-02T22:35:57.164Z",
             "articleSection": "blog",
             "keywords": ["Беспилотные грузовые автомобили вышли на дороги Подмосковья"],
             "mainEntityOfPage": {
