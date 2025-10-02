@@ -1,5 +1,5 @@
 // Auto-generated SEO-optimized static page - do not edit manually
-// Generated on: 2025-10-02T15:34:12.045Z
+// Generated on: 2025-10-02T15:54:46.546Z
 // Source href: /blog/bespilotnye-gruzovye-avtomobili-novye-lidery-logistiki-podmoskovya-zapusk-vyzovy-perspektivy
 // Page metadata: Беспилотные грузовые автомобили — новые лидеры логистики Подмосковья: запуск, вызовы, перспективы | 7 sections
 // SEO Mode: STATIC GENERATION ENABLED
@@ -32,7 +32,7 @@ const sections = [
           "content": [
             {
               "type": "text",
-              "text": "Введение в беспилотные грузовые автомобили и их роль в логистике Подмосковья!"
+              "text": "Введение в беспилотные грузовые автомобили и их роль в логистике Подмосковья!!"
             }
           ]
         },
@@ -2473,7 +2473,14 @@ export default function Page() {
             Как экспериментальные перевозки автономными фурами меняют транспортный ландшафт Московской области
           </p>
           <div className="flex items-center space-x-4">
-
+            <Badge className="shadow-none rounded-md px-2.5 py-0.5 text-xs font-semibold h-6 flex items-center">
+              blog
+            </Badge>
+             {["Беспилотные грузовые автомобили вышли на дороги Подмосковья"].slice(0, 3).map((keyword: string, index: number) => (
+              <Badge key={index} variant="outline" className="shadow-none rounded-md px-2.5 py-0.5 text-xs font-semibold h-6 flex items-center">
+                {keyword}
+              </Badge>
+            ))}
           </div>
         </div>
       </div>
@@ -2511,8 +2518,8 @@ export default function Page() {
               "url": "https://9d8adypzz8xutnay.public.blob.vercel-storage.com/usautopro1-aYYSBvjx3o6p00hmN90J6WBTVy3e0P.jpg",
               "alt": "usavto"
             },
-            "datePublished": "2025-10-02T15:34:12.045Z",
-            "dateModified": "2025-10-02T15:34:12.045Z",
+            "datePublished": "2025-10-02T15:54:46.546Z",
+            "dateModified": "2025-10-02T15:54:46.546Z",
             "articleSection": "blog",
             "keywords": ["Беспилотные грузовые автомобили вышли на дороги Подмосковья"],
             "mainEntityOfPage": {
