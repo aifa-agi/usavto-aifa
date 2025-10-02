@@ -1,4 +1,4 @@
-// Comments in English: Single source of truth for SEO/PWA. All metadata reads from this config.
+// Comments in English: Single source of truth for SEO/PWA. Everything reads from here.
 
 const site_url = "https://usavtopro.ru";
 
@@ -10,8 +10,7 @@ export const appConfig: AppConfig = {
   url: site_url,
   ogImage: `${site_url}/images/usautopro1.jpg`,
 
-  // Switch to the Next.js manifest convention.
-  // If you add app/manifest.ts, Next will serve /manifest.webmanifest by default.
+  // Next.js convention via app/manifest.ts
   manifest: "/manifest.webmanifest",
 
   lang: "ru",
@@ -25,8 +24,8 @@ export const appConfig: AppConfig = {
   startChatIllustration: "/_static/logo512.png",
   logo: "/_static/logo512.png",
 
+  // Icons set for Metadata API and PWA
   icons: {
-    // Keep only what you actually use. faviconAny may be omitted if you prefer PNGs.
     faviconAny: "/favicon.ico",
     icon32: "/icons/icon-32.png",
     icon48: "/icons/icon-48.png",
@@ -35,26 +34,54 @@ export const appConfig: AppConfig = {
     appleTouch: "/apple-touch-icon.png",
   },
 
+  // PWA defaults
   pwa: {
     themeColor: "#ffffff",
     backgroundColor: "#ffffff",
     startUrl: "/",
     display: "standalone",
+    // optional PWA-specific:
+    scope: "/",          // default scope
+    orientation: "any",  // or "portrait"
   },
 
+  // SEO and crawling
   seo: {
     indexing: "allow",
     sitemapUrl: `${site_url}/sitemap.xml`,
-    // Block service/system routes; expand as needed without code changes.
-    disallowPaths: [
-      "/admin",
-      "/auth",
-      "/login",
-      "/register",
-      "/chat",
-      "/api",
-      "/_next",
-    ],
+    disallowPaths: ["/admin", "/auth", "/login", "/register", "/chat", "/api", "/_next"],
+    // canonical defaults and i18n alternates
+    canonicalBase: site_url, // base to build canonical per page (pathname added at runtime)
+    locales: ["ru"], // enabled languages (optional)
+    defaultLocale: "ru",
+    // optional: social profiles for structured data or link rel=me
+    social: {
+      twitter: "@aifa_agi",
+      github: "https://github.com/aifa-agi/aifa",
+    },
+  },
+
+  // Open Graph / Twitter defaults
+  og: {
+    type: "website",
+    locale: "ru_RU",
+    siteName: "USAUTO",
+    imageWidth: 1200,
+    imageHeight: 630,
+  },
+
+  // Per-page defaults (can be overridden by constructMetadata arguments)
+  pageDefaults: {
+    titleTemplate: "%s | USAUTO",
+    robotsIndex: true,
+    robotsFollow: true,
+  },
+
+  messages: {
+    loading: {
+      title: "Загрузка...",
+      subtitle: "Пожалуйста, подождите",
+    },
   },
 };
 
@@ -92,12 +119,37 @@ export interface AppConfig {
     backgroundColor: string;
     startUrl: string;
     display: "fullscreen" | "standalone" | "minimal-ui" | "browser";
+    scope?: string;
+    orientation?: "any" | "portrait" | "landscape";
   };
 
   seo: {
     indexing: "allow" | "disallow";
     sitemapUrl?: string;
     disallowPaths?: string[];
+    canonicalBase?: string;
+    locales?: string[];
+    defaultLocale?: string;
+    social?: {
+      twitter?: string;
+      github?: string;
+      linkedin?: string;
+      facebook?: string;
+    };
+  };
+
+  og?: {
+    type?: "website" | "article" | "profile" | "video.other";
+    locale?: string;
+    siteName?: string;
+    imageWidth?: number;
+    imageHeight?: number;
+  };
+
+  pageDefaults?: {
+    titleTemplate?: string; // e.g. "%s | USAUTO"
+    robotsIndex?: boolean;
+    robotsFollow?: boolean;
   };
 
   messages?: {
