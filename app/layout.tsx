@@ -94,7 +94,7 @@ export default async function RootLayout({
                             <div className="relative flex flex-col h-screen">
                               <NavBar />
                               <main className="flex-1 overflow-y-auto hide-scrollbar">
-                                {right}
+                                {/* {right} */} Hello world
                               </main>
                             </div>
                           </NavigationMenuProvider>
@@ -113,7 +113,7 @@ export default async function RootLayout({
                             <div className="relative flex flex-col h-svh pb-6">
                               <NavBar />
                               <main className="flex-1 overflow-y-auto hide-scrollbar">
-                                {right}
+                                {/* {right} */} Hello world mobail
                               </main>
                             </div>
                           </NavigationMenuProvider>
@@ -127,7 +127,7 @@ export default async function RootLayout({
                 </RightSidebarProvider>
               </LanguageProvider>
             </OnlineStatusProvider>
-            <CookieBanner />
+            {/* <CookieBanner /> */}
             {process.env.NODE_ENV === "production" && (
               <GoogleAnalytics
                 gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID!}
