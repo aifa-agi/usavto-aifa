@@ -40,6 +40,51 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
 });
 
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    metadataBase: new URL(appConfig.url),
+    alternates: { canonical: "./" },
+    title: {
+      default: appConfig.name.trim(),
+      template: `%s | ${appConfig.short_name.trim()}`,
+    },
+    description: appConfig.description,
+    manifest: appConfig.manifest,
+    icons: [
+      appConfig.icons?.faviconAny && {
+        url: appConfig.icons.faviconAny,
+        rel: "icon",
+        sizes: "any",
+      },
+      appConfig.icons?.icon32 && {
+        url: appConfig.icons.icon32,
+        type: "image/png",
+        sizes: "32x32",
+      },
+      appConfig.icons?.icon48 && {
+        url: appConfig.icons.icon48,
+        type: "image/png",
+        sizes: "48x48",
+      },
+      appConfig.icons?.icon192 && {
+        url: appConfig.icons.icon192,
+        type: "image/png",
+        sizes: "192x192",
+      },
+      appConfig.icons?.icon512 && {
+        url: appConfig.icons.icon512,
+        type: "image/png",
+        sizes: "512x512",
+      },
+      appConfig.icons?.appleTouch && {
+        url: appConfig.icons.appleTouch,
+        rel: "apple-touch-icon",
+      },
+    ].filter(Boolean) as NonNullable<Metadata["icons"]>,
+  };
+}
+
+
 export default async function RootLayout({
   left,
   right,

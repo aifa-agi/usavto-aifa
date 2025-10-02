@@ -3,8 +3,8 @@
 import { PageData } from "./page-types";
 
 export interface MenuCategory {
-  title: string;      // русское название для отображения
-  href?: string;      // необязательное поле с url категории (латиница)
-  pages: PageData[];
+  title: string;      
+  href?: string;      
   order?: number;
+  pages?: PageData[];
 }
