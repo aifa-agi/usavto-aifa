@@ -134,13 +134,11 @@ export default function Page() {
             <Badge className="shadow-none rounded-md px-2.5 py-0.5 text-xs font-semibold h-6 flex items-center">
               ${categorySlug}
             </Badge>
-            ${finalMetadata.keywords.length > 0
-              ? `${JSON.stringify(finalMetadata.keywords)}.slice(0, 3).map((keyword: string, index: number) => (
+             {${finalMetadata.keywords.length > 0 ? `${JSON.stringify(finalMetadata.keywords)}.slice(0, 3).map((keyword: string, index: number) => (
               <Badge key={index} variant="outline" className="shadow-none rounded-md px-2.5 py-0.5 text-xs font-semibold h-6 flex items-center">
                 {keyword}
               </Badge>
-            ))`
-              : ""}
+            ))` : ''}}
           </div>
         </div>
       </div>

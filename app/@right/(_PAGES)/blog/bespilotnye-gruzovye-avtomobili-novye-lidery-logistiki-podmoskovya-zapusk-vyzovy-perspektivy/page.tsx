@@ -2473,14 +2473,7 @@ export default function Page() {
             Как экспериментальные перевозки автономными фурами меняют транспортный ландшафт Московской области
           </p>
           <div className="flex items-center space-x-4">
-            <Badge className="shadow-none rounded-md px-2.5 py-0.5 text-xs font-semibold h-6 flex items-center">
-              blog
-            </Badge>
-            ["Беспилотные грузовые автомобили вышли на дороги Подмосковья"].slice(0, 3).map((keyword: string, index: number) => (
-              <Badge key={index} variant="outline" className="shadow-none rounded-md px-2.5 py-0.5 text-xs font-semibold h-6 flex items-center">
-                {keyword}
-              </Badge>
-            ))
+
           </div>
         </div>
       </div>
