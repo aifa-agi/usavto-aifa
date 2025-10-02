@@ -1,3 +1,4 @@
+// @/config/appConfig.ts
 // Comments in English: Single source of truth for SEO/PWA. Everything reads from here.
 
 const site_url = "https://usavtopro.ru";
@@ -40,9 +41,8 @@ export const appConfig: AppConfig = {
     backgroundColor: "#ffffff",
     startUrl: "/",
     display: "standalone",
-    // optional PWA-specific:
-    scope: "/",          // default scope
-    orientation: "any",  // or "portrait"
+    scope: "/",
+    orientation: "any",
   },
 
   // SEO and crawling
@@ -50,11 +50,9 @@ export const appConfig: AppConfig = {
     indexing: "allow",
     sitemapUrl: `${site_url}/sitemap.xml`,
     disallowPaths: ["/admin", "/auth", "/login", "/register", "/chat", "/api", "/_next"],
-    // canonical defaults and i18n alternates
-    canonicalBase: site_url, // base to build canonical per page (pathname added at runtime)
-    locales: ["ru"], // enabled languages (optional)
+    canonicalBase: site_url,
+    locales: ["ru"],
     defaultLocale: "ru",
-    // optional: social profiles for structured data or link rel=me
     social: {
       twitter: "@aifa_agi",
       github: "https://github.com/aifa-agi/aifa",
