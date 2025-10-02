@@ -1,4 +1,4 @@
-// @/app/@left/layout.tsx
+// @/app/@left/(chat)/layout.tsx
 
 
 import React from "react";

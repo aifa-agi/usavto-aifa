@@ -2,7 +2,7 @@
 
 import { auth } from "@/app/@left/(_public)/(_AUTH)/(_service)/(_actions)/auth";
 import StaticNavBar from "./public-flow/static-nav-bar";
-import EditableNavBar from "./admin-flow/editable-nav-bar-content";
+import EditableNavBar from "./admin-flow/editable-nav-bar";
 
 export async function NavBar() {
   const session = await auth();
