@@ -2353,11 +2353,18 @@ export const contentData = {
         ],
         "isPreviewComplited": true,
         "badgeName": "Путевые"
-      },
+      }
+    ],
+    "order": 15
+  },
+  {
+    "title": "ЭПЛ",
+    "href": "/epl",
+    "pages": [
       {
-        "id": "hpuae76sxx2j79a8tn009ypj",
-        "title": "Что такое электронный путевой лист USAUTO",
-        "href": "/putevye-listy/chto-takoe-elektronnyy-putevoy-list",
+        "id": "li2heej0sj2fmjhukizbrm7m",
+        "title": "Электронный путевой лист",
+        "href": "/epl/elektronnyy-putevoy-list",
         "roles": [
           "guest"
         ],
@@ -2401,8 +2408,8 @@ export const contentData = {
                 }
               },
               {
-                "id": "img-1-3",
-                "tag": "img",
+                "id": "p-1-3",
+                "tag": "p",
                 "additionalData": {
                   "minWords": 5,
                   "maxWords": 15,
@@ -2475,8 +2482,8 @@ export const contentData = {
                     }
                   },
                   {
-                    "id": "img-2-2-3",
-                    "tag": "img",
+                    "id": "p-2-2-3",
+                    "tag": "p",
                     "additionalData": {
                       "minWords": 5,
                       "maxWords": 15,
@@ -2562,8 +2569,8 @@ export const contentData = {
             },
             "realContentStructure": [
               {
-                "id": "img-3-1",
-                "tag": "img",
+                "id": "p-3-1",
+                "tag": "p",
                 "additionalData": {
                   "minWords": 5,
                   "maxWords": 15,
@@ -2723,8 +2730,8 @@ export const contentData = {
                 },
                 "realContentStructure": [
                   {
-                    "id": "img-4-2-1",
-                    "tag": "img",
+                    "id": "p-4-2-1",
+                    "tag": "p",
                     "additionalData": {
                       "minWords": 5,
                       "maxWords": 15,
@@ -2837,8 +2844,8 @@ export const contentData = {
                 }
               },
               {
-                "id": "img-5-2",
-                "tag": "img",
+                "id": "p-5-2",
+                "tag": "p",
                 "additionalData": {
                   "minWords": 5,
                   "maxWords": 15,
@@ -2894,12 +2901,12 @@ export const contentData = {
             "attention": "",
             "intent": "",
             "audiences": "",
-            "selfPrompt": "",
+            "selfPrompt": "This FAQ section is designed for generating relevant questions and answers. To create meaningful questions, you should adopt the perspective of the user, which requires analyzing the existing content and understanding the target audience. Consider what six questions would be most interesting and useful for users within the context of the given topic. Then, generate those six questions and organize each one under an h3 heading, ensuring that each question is paired with a well-crafted answer.",
             "designDescription": "",
             "connectedDesignSectionId": "",
             "additionalData": {
-              "minWords": 350,
-              "maxWords": 500,
+              "minWords": 450,
+              "maxWords": 600,
               "actualContent": ""
             },
             "realContentStructure": [
@@ -2929,24 +2936,6 @@ export const contentData = {
                       "maxWords": 150,
                       "actualContent": ""
                     }
-                  },
-                  {
-                    "id": "table-6-2-2",
-                    "tag": "table",
-                    "additionalData": {
-                      "minWords": 100,
-                      "maxWords": 200,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "p-6-2-3",
-                    "tag": "p",
-                    "additionalData": {
-                      "minWords": 85,
-                      "maxWords": 170,
-                      "actualContent": ""
-                    }
                   }
                 ]
               },
@@ -2954,8 +2943,8 @@ export const contentData = {
                 "id": "h3-6-3",
                 "tag": "h3",
                 "additionalData": {
-                  "minWords": 100,
-                  "maxWords": 150,
+                  "minWords": 200,
+                  "maxWords": 300,
                   "actualContent": ""
                 },
                 "realContentStructure": [
@@ -2963,17 +2952,88 @@ export const contentData = {
                     "id": "p-6-3-1",
                     "tag": "p",
                     "additionalData": {
-                      "minWords": 90,
-                      "maxWords": 180,
+                      "minWords": 75,
+                      "maxWords": 150,
                       "actualContent": ""
                     }
-                  },
+                  }
+                ]
+              },
+              {
+                "id": "h3-6-4",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
                   {
-                    "id": "code-6-3-2",
-                    "tag": "code",
+                    "id": "p-6-4-1",
+                    "tag": "p",
                     "additionalData": {
-                      "minWords": 30,
-                      "maxWords": 70,
+                      "minWords": 75,
+                      "maxWords": 150,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-6-5",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-6-5-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 150,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-6-6",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-6-6-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 150,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-6-7",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-6-7-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 150,
                       "actualContent": ""
                     }
                   }
@@ -3003,7 +3063,7 @@ export const contentData = {
                 "id": "p-7-1",
                 "tag": "p",
                 "additionalData": {
-                  "minWords": 120,
+                  "minWords": 60,
                   "maxWords": 240,
                   "actualContent": ""
                 }
@@ -3014,6 +3074,15 @@ export const contentData = {
                 "additionalData": {
                   "minWords": 100,
                   "maxWords": 200,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-6-2-2",
+                "tag": "table",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
                   "actualContent": ""
                 }
               },
@@ -3051,1762 +3120,21 @@ export const contentData = {
         "isAddedToPrompt": false,
         "isVectorConnected": false,
         "isChatSynchronized": false,
-        "order": 2,
-        "badgeName": "ПTO",
-        "description": "Электронный путевой лист — это цифровой аналог традиционного бумажного путевого листа, который используется для оформления и контроля маршрутов транспортных средств.",
+        "order": 1,
+        "description": "Электронный путевой лист — современное решение для эффективного управления автопарком",
+        "badgeName": "ЭПЛ",
         "images": [
           {
-            "id": "pgcz47lwz03s99z4l6qptuts",
-            "alt": "usauto",
-            "href": "https://9d8adypzz8xutnay.public.blob.vercel-storage.com/usautopro4-lX0eE6GZbdKU7y5rcFj1wrvZbl83OF.jpg"
+            "id": "zp9lorf0ulvtyf5kgmyaa5kw",
+            "alt": "Электронный путевой лист",
+            "href": "https://9d8adypzz8xutnay.public.blob.vercel-storage.com/EPL-XVI94s0RAMThs1HMxNgPDG9V5SnaPU.png"
           }
         ],
         "keywords": [
-          "документ"
-        ],
-        "isReadyDraftForPerplexity": true,
-        "updatedAt": "2025-09-26T19:25:40.120Z",
-        "isReadyPromptForPerplexity": true,
-        "draftContentStructure": [
-          {
-            "id": "h2-1",
-            "tag": "h2",
-            "classification": "Guide",
-            "keywords": [
-              "электронный путевой лист",
-              "определение",
-              "цифровой документ",
-              "маршрут",
-              "транспорт"
-            ],
-            "taxonomy": "Определение и введение",
-            "attention": "Понимание, что такое электронный путевой лист, важно для правильного использования документа.",
-            "intent": "Объяснить, что представляет собой электронный путевой лист USAUTO и его основные характеристики.",
-            "audiences": [
-              "водители",
-              "логисты",
-              "менеджеры автопарков",
-              "специалисты по транспорту"
-            ],
-            "selfPrompt": "Создайте раздел с заголовком уровня 2, который подробно объясняет, что такое электронный путевой лист USAUTO, включая его определение и назначение. Используйте дружелюбный и профессиональный стиль, избегайте технических терминов без объяснения. Включите два абзаца, один блок цитаты и описание изображения без вставки тега img. Соблюдайте ограничения по объему слов для каждого элемента. • также следует учитывать пользовательские настройки, сделанные ко всей странице: writing-style:{title:Conversational, description:Friendly, informal, like talking to a friend}, content-format:{title:Professional, description:Business-appropriate, formal tone}, custom requirements and specifications:{—} •",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 1300,
-              "maxWords": 1500,
-              "actualContent": "need generate helpful content"
-            },
-            "realContentStructure": [
-              {
-                "id": "p-1-1",
-                "tag": "p",
-                "keywords": [
-                  "электронный документ",
-                  "путевой лист",
-                  "цифровой формат",
-                  "автотранспорт",
-                  "контроль маршрута"
-                ],
-                "taxonomy": "Введение",
-                "attention": "Первый абзац вводит читателя в тему электронных путевых листов.",
-                "intent": "Дать общее представление о сути электронного путевого листа и его преимуществах по сравнению с бумажным вариантом.",
-                "audiences": [
-                  "новички в транспортной сфере",
-                  "водители",
-                  "администраторы"
-                ],
-                "selfPrompt": "Напишите первый абзац, вводящий понятие электронного путевого листа USAUTO, с акцентом на его цифровой характер и роль в контроле маршрутов. Используйте простой и понятный язык, избегайте сложных технических терминов. Объем 120–250 слов.",
-                "additionalData": {
-                  "minWords": 120,
-                  "maxWords": 250,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "p-1-2",
-                "tag": "p",
-                "keywords": [
-                  "законодательство",
-                  "использование",
-                  "транспортные компании",
-                  "эффективность",
-                  "автоматизация"
-                ],
-                "taxonomy": "Обоснование",
-                "attention": "Второй абзац раскрывает причины популярности электронных путевых листов.",
-                "intent": "Объяснить, почему электронные путевые листы становятся стандартом в транспортных компаниях и как они повышают эффективность работы.",
-                "audiences": [
-                  "руководители",
-                  "логисты",
-                  "специалисты по автоматизации"
-                ],
-                "selfPrompt": "Напишите второй абзац, раскрывающий причины использования электронных путевых листов USAUTO, их преимущества для бизнеса и соответствие законодательству. Объем 80–180 слов.",
-                "additionalData": {
-                  "minWords": 80,
-                  "maxWords": 180,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "img-1-3",
-                "tag": "img",
-                "keywords": [
-                  "логотип USAUTO",
-                  "электронный документ",
-                  "цифровой путевой лист",
-                  "визуализация",
-                  "транспорт"
-                ],
-                "taxonomy": "Иллюстрация",
-                "attention": "Изображение помогает визуализировать бренд и тему статьи.",
-                "intent": "Представить изображение, связанное с электронным путевым листом USAUTO, с описанием для SEO и доступности.",
-                "audiences": [
-                  "все читатели"
-                ],
-                "selfPrompt": "Опишите изображение, связанное с электронным путевым листом USAUTO, без использования тега img. Укажите ключевые слова и альтернативный текст. Объем 5–15 слов.",
-                "additionalData": {
-                  "minWords": 5,
-                  "maxWords": 15,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "blockquote-1-4",
-                "tag": "blockquote",
-                "keywords": [
-                  "цитата",
-                  "значение документа",
-                  "транспортная безопасность",
-                  "контроль",
-                  "эффективность"
-                ],
-                "taxonomy": "Цитата",
-                "attention": "Цитата усиливает доверие и подчеркивает важность темы.",
-                "intent": "Включить цитату, подчеркивающую значимость электронного путевого листа для безопасности и контроля транспорта.",
-                "audiences": [
-                  "руководители",
-                  "специалисты по транспорту"
-                ],
-                "selfPrompt": "Создайте цитату, которая акцентирует внимание на важности электронного путевого листа USAUTO для безопасности и контроля транспортных средств. Объем 25–50 слов.",
-                "additionalData": {
-                  "minWords": 25,
-                  "maxWords": 50,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              }
-            ],
-            "status": "checked"
-          },
-          {
-            "id": "h2-2",
-            "tag": "h2",
-            "classification": "HowTo",
-            "keywords": [
-              "функции",
-              "возможности",
-              "электронный путевой лист",
-              "USAUTO",
-              "автоматизация"
-            ],
-            "taxonomy": "Функционал и возможности",
-            "attention": "Знание функций помогает понять, как использовать электронный путевой лист эффективно.",
-            "intent": "Рассказать о ключевых функциях и возможностях электронного путевого листа USAUTO.",
-            "audiences": [
-              "пользователи системы",
-              "администраторы",
-              "логисты"
-            ],
-            "selfPrompt": "Создайте раздел с заголовком уровня 2, подробно описывающий функции и возможности электронного путевого листа USAUTO. Включите один абзац введения, два подзаголовка уровня 3 с соответствующими абзацами, изображением и таблицей, а также список и кодовый блок с пояснениями. Соблюдайте ограничения по объему слов для каждого элемента. • также следует учитывать пользовательские настройки, сделанные ко всей странице: writing-style:{title:Conversational, description:Friendly, informal, like talking to a friend}, content-format:{title:Professional, description:Business-appropriate, formal tone}, custom requirements and specifications:{—} •",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 1300,
-              "maxWords": 1500,
-              "actualContent": "need generate helpful content"
-            },
-            "realContentStructure": [
-              {
-                "id": "p-2-1",
-                "tag": "p",
-                "keywords": [
-                  "обзор функций",
-                  "электронный документ",
-                  "автоматизация",
-                  "управление",
-                  "транспорт"
-                ],
-                "taxonomy": "Введение",
-                "attention": "Обзор функций помогает понять общие возможности системы.",
-                "intent": "Дать общее представление о функционале электронного путевого листа USAUTO.",
-                "audiences": [
-                  "пользователи",
-                  "руководители"
-                ],
-                "selfPrompt": "Напишите абзац, вводящий в тему функционала электронного путевого листа USAUTO, с акцентом на автоматизацию и управление транспортом. Объем 100–200 слов.",
-                "additionalData": {
-                  "minWords": 100,
-                  "maxWords": 200,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "h3-2-2",
-                "tag": "h3",
-                "classification": "Guide",
-                "keywords": [
-                  "основные функции",
-                  "электронный путевой лист",
-                  "контроль",
-                  "отчетность",
-                  "безопасность"
-                ],
-                "taxonomy": "Основные функции",
-                "attention": "Знание основных функций помогает эффективно использовать систему.",
-                "intent": "Подробно описать ключевые функции электронного путевого листа USAUTO.",
-                "audiences": [
-                  "пользователи",
-                  "администраторы"
-                ],
-                "selfPrompt": "Создайте подзаголовок уровня 3 с описанием основных функций электронного путевого листа USAUTO. Включите два абзаца, изображение и таблицу с характеристиками. Соблюдайте ограничения по объему слов для каждого элемента.",
-                "additionalData": {
-                  "minWords": 400,
-                  "maxWords": 600,
-                  "actualContent": "need generate helpful content"
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-2-2-1",
-                    "tag": "p",
-                    "keywords": [
-                      "контроль маршрута",
-                      "регистрация",
-                      "данные",
-                      "безопасность",
-                      "автоматизация"
-                    ],
-                    "taxonomy": "Описание функций",
-                    "attention": "Первый абзац раскрывает важность контроля и регистрации.",
-                    "intent": "Объяснить функции контроля маршрута и регистрации данных в системе.",
-                    "audiences": [
-                      "водители",
-                      "логисты"
-                    ],
-                    "selfPrompt": "Напишите абзац, описывающий функции контроля маршрута и регистрации данных в электронном путевом листе USAUTO. Объем 70–140 слов.",
-                    "additionalData": {
-                      "minWords": 70,
-                      "maxWords": 140,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "p-2-2-2",
-                    "tag": "p",
-                    "keywords": [
-                      "отчетность",
-                      "аналитика",
-                      "безопасность",
-                      "мониторинг",
-                      "автоматизация"
-                    ],
-                    "taxonomy": "Описание функций",
-                    "attention": "Второй абзац раскрывает возможности отчетности и аналитики.",
-                    "intent": "Рассказать о функциях отчетности и аналитики в системе.",
-                    "audiences": [
-                      "руководители",
-                      "аналитики"
-                    ],
-                    "selfPrompt": "Напишите абзац, описывающий функции отчетности и аналитики в электронном путевом листе USAUTO. Объем 90–180 слов.",
-                    "additionalData": {
-                      "minWords": 90,
-                      "maxWords": 180,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "img-2-2-3",
-                    "tag": "img",
-                    "keywords": [
-                      "функционал",
-                      "интерфейс",
-                      "электронный путевой лист",
-                      "USAUTO",
-                      "визуализация"
-                    ],
-                    "taxonomy": "Иллюстрация",
-                    "attention": "Изображение помогает визуализировать функционал системы.",
-                    "intent": "Представить изображение интерфейса или функционала электронного путевого листа USAUTO с описанием.",
-                    "audiences": [
-                      "пользователи",
-                      "администраторы"
-                    ],
-                    "selfPrompt": "Опишите изображение, демонстрирующее функционал электронного путевого листа USAUTO, без использования тега img. Объем 5–15 слов.",
-                    "additionalData": {
-                      "minWords": 5,
-                      "maxWords": 15,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "table-2-2-4",
-                    "tag": "table",
-                    "keywords": [
-                      "сравнение функций",
-                      "характеристики",
-                      "электронный путевой лист",
-                      "USAUTO",
-                      "таблица"
-                    ],
-                    "taxonomy": "Таблица характеристик",
-                    "attention": "Таблица структурирует информацию о функциях для удобства восприятия.",
-                    "intent": "Создать таблицу с основными функциями и их описаниями для электронного путевого листа USAUTO.",
-                    "audiences": [
-                      "пользователи",
-                      "администраторы"
-                    ],
-                    "selfPrompt": "Создайте таблицу, в которой перечислены основные функции электронного путевого листа USAUTO и краткие описания каждой функции. Объем описания 80–160 слов.",
-                    "additionalData": {
-                      "minWords": 80,
-                      "maxWords": 160,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
-              },
-              {
-                "id": "h3-2-3",
-                "tag": "h3",
-                "classification": "Guide",
-                "keywords": [
-                  "дополнительные функции",
-                  "интеграция",
-                  "автоматизация",
-                  "безопасность",
-                  "пользовательский опыт"
-                ],
-                "taxonomy": "Дополнительные функции",
-                "attention": "Знание дополнительных функций расширяет возможности использования системы.",
-                "intent": "Рассказать о дополнительных возможностях электронного путевого листа USAUTO и их преимуществах.",
-                "audiences": [
-                  "пользователи",
-                  "технические специалисты"
-                ],
-                "selfPrompt": "Создайте подзаголовок уровня 3 с описанием дополнительных функций электронного путевого листа USAUTO. Включите абзац, список, кодовый блок и завершающий абзац. Соблюдайте ограничения по объему слов для каждого элемента.",
-                "additionalData": {
-                  "minWords": 400,
-                  "maxWords": 600,
-                  "actualContent": "need generate helpful content"
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-2-3-1",
-                    "tag": "p",
-                    "keywords": [
-                      "интеграция",
-                      "автоматизация",
-                      "безопасность",
-                      "пользовательский опыт",
-                      "технологии"
-                    ],
-                    "taxonomy": "Описание функций",
-                    "attention": "Первый абзац объясняет важность дополнительных функций.",
-                    "intent": "Объяснить, как дополнительные функции повышают эффективность и безопасность.",
-                    "audiences": [
-                      "пользователи",
-                      "технические специалисты"
-                    ],
-                    "selfPrompt": "Напишите абзац, описывающий дополнительные функции электронного путевого листа USAUTO и их влияние на безопасность и удобство. Объем 80–160 слов.",
-                    "additionalData": {
-                      "minWords": 80,
-                      "maxWords": 160,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "ul-2-3-2",
-                    "tag": "ul",
-                    "keywords": [
-                      "список функций",
-                      "автоматизация",
-                      "интеграция",
-                      "безопасность",
-                      "пользовательский опыт"
-                    ],
-                    "taxonomy": "Список",
-                    "attention": "Список структурирует информацию для быстрого восприятия.",
-                    "intent": "Перечислить дополнительные функции электронного путевого листа USAUTO в виде маркированного списка.",
-                    "audiences": [
-                      "пользователи",
-                      "администраторы"
-                    ],
-                    "selfPrompt": "Создайте маркированный список из 5–7 дополнительных функций электронного путевого листа USAUTO. Объем списка 40–80 слов.",
-                    "additionalData": {
-                      "minWords": 40,
-                      "maxWords": 80,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "code-2-3-3",
-                    "tag": "code",
-                    "keywords": [
-                      "пример кода",
-                      "интеграция API",
-                      "электронный путевой лист",
-                      "USAUTO",
-                      "автоматизация"
-                    ],
-                    "taxonomy": "Пример кода",
-                    "attention": "Код помогает понять техническую реализацию функций.",
-                    "intent": "Показать пример кода или команды, связанной с интеграцией электронного путевого листа USAUTO.",
-                    "audiences": [
-                      "разработчики",
-                      "технические специалисты"
-                    ],
-                    "selfPrompt": "Предоставьте пример кода или команды, демонстрирующий интеграцию или автоматизацию с использованием электронного путевого листа USAUTO. Объем 20–50 слов.",
-                    "additionalData": {
-                      "minWords": 20,
-                      "maxWords": 50,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "p-2-3-4",
-                    "tag": "p",
-                    "keywords": [
-                      "заключение",
-                      "дополнительные функции",
-                      "преимущества",
-                      "использование",
-                      "эффективность"
-                    ],
-                    "taxonomy": "Заключение",
-                    "attention": "Заключительный абзац подводит итог раздела.",
-                    "intent": "Подытожить преимущества дополнительных функций электронного путевого листа USAUTO.",
-                    "audiences": [
-                      "пользователи",
-                      "руководители"
-                    ],
-                    "selfPrompt": "Напишите заключительный абзац, подчеркивающий преимущества использования дополнительных функций электронного путевого листа USAUTO. Объем 60–120 слов.",
-                    "additionalData": {
-                      "minWords": 60,
-                      "maxWords": 120,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
-              }
-            ],
-            "status": "checked"
-          },
-          {
-            "id": "h2-3",
-            "tag": "h2",
-            "classification": "HowTo",
-            "keywords": [
-              "как использовать",
-              "электронный путевой лист",
-              "инструкция",
-              "USAUTO",
-              "пошаговое руководство"
-            ],
-            "taxonomy": "Инструкция по использованию",
-            "attention": "Пошаговое руководство помогает пользователям правильно применять систему.",
-            "intent": "Дать подробную инструкцию по использованию электронного путевого листа USAUTO.",
-            "audiences": [
-              "водители",
-              "администраторы",
-              "логисты"
-            ],
-            "selfPrompt": "Создайте раздел с заголовком уровня 2, который содержит подробную инструкцию по использованию электронного путевого листа USAUTO. Включите изображение, абзац, два подзаголовка уровня 3 с соответствующими абзацами, списками, кодовыми блоками и подзаголовком уровня 4 с вложенными элементами. Соблюдайте ограничения по объему слов для каждого элемента. • также следует учитывать пользовательские настройки, сделанные ко всей странице: writing-style:{title:Conversational, description:Friendly, informal, like talking to a friend}, content-format:{title:Professional, description:Business-appropriate, formal tone}, custom requirements and specifications:{—} •",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 1300,
-              "maxWords": 1500,
-              "actualContent": "need generate helpful content"
-            },
-            "realContentStructure": [
-              {
-                "id": "img-3-1",
-                "tag": "img",
-                "keywords": [
-                  "инструкция",
-                  "использование",
-                  "электронный путевой лист",
-                  "USAUTO",
-                  "визуализация"
-                ],
-                "taxonomy": "Иллюстрация",
-                "attention": "Изображение помогает визуализировать процесс использования.",
-                "intent": "Представить изображение, связанное с использованием электронного путевого листа USAUTO, с описанием.",
-                "audiences": [
-                  "пользователи",
-                  "водители"
-                ],
-                "selfPrompt": "Опишите изображение, демонстрирующее процесс использования электронного путевого листа USAUTO, без использования тега img. Объем 5–15 слов.",
-                "additionalData": {
-                  "minWords": 5,
-                  "maxWords": 15,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "p-3-2",
-                "tag": "p",
-                "keywords": [
-                  "введение",
-                  "использование",
-                  "электронный путевой лист",
-                  "пошаговая инструкция",
-                  "USAUTO"
-                ],
-                "taxonomy": "Введение",
-                "attention": "Введение подготавливает пользователя к дальнейшему руководству.",
-                "intent": "Дать общее представление о процессе использования электронного путевого листа USAUTO.",
-                "audiences": [
-                  "новые пользователи",
-                  "водители"
-                ],
-                "selfPrompt": "Напишите абзац, вводящий в тему использования электронного путевого листа USAUTO и описывающий общие шаги. Объем 110–220 слов.",
-                "additionalData": {
-                  "minWords": 110,
-                  "maxWords": 220,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "h3-3-3",
-                "tag": "h3",
-                "classification": "HowTo",
-                "keywords": [
-                  "регистрация",
-                  "создание путевого листа",
-                  "пошаговая инструкция",
-                  "USAUTO",
-                  "электронный документ"
-                ],
-                "taxonomy": "Регистрация и создание",
-                "attention": "Правильная регистрация — ключ к успешному использованию системы.",
-                "intent": "Подробно описать процесс регистрации и создания электронного путевого листа в системе USAUTO.",
-                "audiences": [
-                  "водители",
-                  "администраторы"
-                ],
-                "selfPrompt": "Создайте подзаголовок уровня 3 с пошаговой инструкцией по регистрации и созданию электронного путевого листа USAUTO. Включите абзац, нумерованный список, подзаголовок уровня 4 с вложенными абзацами и кодовым блоком. Соблюдайте ограничения по объему слов для каждого элемента.",
-                "additionalData": {
-                  "minWords": 400,
-                  "maxWords": 700,
-                  "actualContent": "need generate helpful content"
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-3-3-1",
-                    "tag": "p",
-                    "keywords": [
-                      "регистрация",
-                      "создание",
-                      "электронный путевой лист",
-                      "начало работы",
-                      "USAUTO"
-                    ],
-                    "taxonomy": "Введение",
-                    "attention": "Первый абзац объясняет важность правильной регистрации.",
-                    "intent": "Объяснить, как начать работу с системой через регистрацию и создание документа.",
-                    "audiences": [
-                      "новые пользователи",
-                      "водители"
-                    ],
-                    "selfPrompt": "Напишите абзац, описывающий начало работы с электронным путевым листом USAUTO, включая регистрацию и создание документа. Объем 85–170 слов.",
-                    "additionalData": {
-                      "minWords": 85,
-                      "maxWords": 170,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "ol-3-3-2",
-                    "tag": "ol",
-                    "keywords": [
-                      "пошаговая инструкция",
-                      "создание документа",
-                      "регистрация",
-                      "USAUTO",
-                      "электронный путевой лист"
-                    ],
-                    "taxonomy": "Пошаговая инструкция",
-                    "attention": "Нумерованный список упрощает понимание последовательности действий.",
-                    "intent": "Представить пошаговую инструкцию по созданию электронного путевого листа USAUTO.",
-                    "audiences": [
-                      "водители",
-                      "администраторы"
-                    ],
-                    "selfPrompt": "Создайте нумерованный список с основными шагами регистрации и создания электронного путевого листа USAUTO. Объем 50–100 слов.",
-                    "additionalData": {
-                      "minWords": 50,
-                      "maxWords": 100,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "h4-3-3-3",
-                    "tag": "h4",
-                    "classification": "HowTo",
-                    "keywords": [
-                      "подробности",
-                      "регистрация",
-                      "создание",
-                      "электронный путевой лист",
-                      "USAUTO"
-                    ],
-                    "taxonomy": "Подробная инструкция",
-                    "attention": "Подзаголовок уровня 4 раскрывает детали процесса.",
-                    "intent": "Дать подробное описание этапов регистрации и создания документа в системе USAUTO.",
-                    "audiences": [
-                      "водители",
-                      "администраторы"
-                    ],
-                    "selfPrompt": "Создайте подзаголовок уровня 4 с подробным описанием процесса регистрации и создания электронного путевого листа USAUTO. Включите два абзаца и кодовый блок с примером. Соблюдайте ограничения по объему слов для каждого элемента.",
-                    "additionalData": {
-                      "minWords": 350,
-                      "maxWords": 500,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "realContentStructure": [
-                      {
-                        "id": "p-3-3-3-1",
-                        "tag": "p",
-                        "keywords": [
-                          "регистрация",
-                          "подробности",
-                          "электронный путевой лист",
-                          "USAUTO",
-                          "инструкция"
-                        ],
-                        "taxonomy": "Описание",
-                        "attention": "Первый абзац раскрывает детали регистрации.",
-                        "intent": "Подробно описать процесс регистрации в системе USAUTO.",
-                        "audiences": [
-                          "новые пользователи",
-                          "водители"
-                        ],
-                        "selfPrompt": "Напишите абзац с подробным описанием процесса регистрации в системе USAUTO. Объем 75–150 слов.",
-                        "additionalData": {
-                          "minWords": 75,
-                          "maxWords": 150,
-                          "actualContent": "need generate helpful content"
-                        },
-                        "status": "checked"
-                      },
-                      {
-                        "id": "code-3-3-3-2",
-                        "tag": "code",
-                        "keywords": [
-                          "пример кода",
-                          "регистрация",
-                          "электронный путевой лист",
-                          "USAUTO",
-                          "автоматизация"
-                        ],
-                        "taxonomy": "Пример кода",
-                        "attention": "Код иллюстрирует техническую сторону регистрации.",
-                        "intent": "Показать пример кода или команды, связанной с регистрацией в системе USAUTO.",
-                        "audiences": [
-                          "разработчики",
-                          "технические специалисты"
-                        ],
-                        "selfPrompt": "Предоставьте пример кода или команды, демонстрирующий процесс регистрации в системе USAUTO. Объем 25–60 слов.",
-                        "additionalData": {
-                          "minWords": 25,
-                          "maxWords": 60,
-                          "actualContent": "need generate helpful content"
-                        },
-                        "status": "checked"
-                      },
-                      {
-                        "id": "p-3-3-3-3",
-                        "tag": "p",
-                        "keywords": [
-                          "создание документа",
-                          "подробности",
-                          "электронный путевой лист",
-                          "USAUTO",
-                          "инструкция"
-                        ],
-                        "taxonomy": "Описание",
-                        "attention": "Второй абзац раскрывает детали создания документа.",
-                        "intent": "Подробно описать процесс создания электронного путевого листа в системе USAUTO.",
-                        "audiences": [
-                          "водители",
-                          "администраторы"
-                        ],
-                        "selfPrompt": "Напишите абзац с подробным описанием процесса создания электронного путевого листа USAUTO. Объем 65–130 слов.",
-                        "additionalData": {
-                          "minWords": 65,
-                          "maxWords": 130,
-                          "actualContent": "need generate helpful content"
-                        },
-                        "status": "checked"
-                      }
-                    ],
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
-              },
-              {
-                "id": "h3-3-4",
-                "tag": "h3",
-                "classification": "HowTo",
-                "keywords": [
-                  "эксплуатация",
-                  "контроль",
-                  "электронный путевой лист",
-                  "USAUTO",
-                  "инструкция"
-                ],
-                "taxonomy": "Эксплуатация и контроль",
-                "attention": "Правильная эксплуатация обеспечивает надежность и безопасность.",
-                "intent": "Объяснить, как правильно эксплуатировать и контролировать электронный путевой лист USAUTO.",
-                "audiences": [
-                  "водители",
-                  "логисты",
-                  "администраторы"
-                ],
-                "selfPrompt": "Создайте подзаголовок уровня 3 с инструкцией по эксплуатации и контролю электронного путевого листа USAUTO. Включите абзац, цитату и нумерованный список. Соблюдайте ограничения по объему слов для каждого элемента.",
-                "additionalData": {
-                  "minWords": 350,
-                  "maxWords": 500,
-                  "actualContent": "need generate helpful content"
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-3-4-1",
-                    "tag": "p",
-                    "keywords": [
-                      "эксплуатация",
-                      "контроль",
-                      "электронный путевой лист",
-                      "USAUTO",
-                      "безопасность"
-                    ],
-                    "taxonomy": "Описание",
-                    "attention": "Абзац объясняет важность правильной эксплуатации.",
-                    "intent": "Рассказать о правилах эксплуатации и контроля электронного путевого листа.",
-                    "audiences": [
-                      "водители",
-                      "администраторы"
-                    ],
-                    "selfPrompt": "Напишите абзац, описывающий правила эксплуатации и контроля электронного путевого листа USAUTO. Объем 95–190 слов.",
-                    "additionalData": {
-                      "minWords": 95,
-                      "maxWords": 190,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "blockquote-3-4-2",
-                    "tag": "blockquote",
-                    "keywords": [
-                      "цитата",
-                      "важность контроля",
-                      "безопасность",
-                      "электронный путевой лист",
-                      "USAUTO"
-                    ],
-                    "taxonomy": "Цитата",
-                    "attention": "Цитата подчеркивает значимость контроля для безопасности.",
-                    "intent": "Включить цитату, акцентирующую внимание на важности контроля электронного путевого листа.",
-                    "audiences": [
-                      "водители",
-                      "руководители"
-                    ],
-                    "selfPrompt": "Создайте цитату, подчеркивающую важность контроля и безопасности при использовании электронного путевого листа USAUTO. Объем 20–45 слов.",
-                    "additionalData": {
-                      "minWords": 20,
-                      "maxWords": 45,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "ol-3-4-3",
-                    "tag": "ol",
-                    "keywords": [
-                      "правила",
-                      "эксплуатация",
-                      "контроль",
-                      "электронный путевой лист",
-                      "USAUTO"
-                    ],
-                    "taxonomy": "Пошаговая инструкция",
-                    "attention": "Нумерованный список упрощает понимание правил эксплуатации.",
-                    "intent": "Представить пошаговые правила эксплуатации и контроля электронного путевого листа USAUTO.",
-                    "audiences": [
-                      "водители",
-                      "администраторы"
-                    ],
-                    "selfPrompt": "Создайте нумерованный список с основными правилами эксплуатации и контроля электронного путевого листа USAUTO. Объем 60–120 слов.",
-                    "additionalData": {
-                      "minWords": 60,
-                      "maxWords": 120,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
-              }
-            ],
-            "status": "checked"
-          },
-          {
-            "id": "h2-4",
-            "tag": "h2",
-            "classification": "Comparison",
-            "keywords": [
-              "преимущества",
-              "электронный путевой лист",
-              "USAUTO",
-              "бумажный путевой лист",
-              "сравнение"
-            ],
-            "taxonomy": "Преимущества и сравнение",
-            "attention": "Понимание преимуществ помогает сделать выбор в пользу электронного документа.",
-            "intent": "Сравнить электронный путевой лист USAUTO с традиционным бумажным и выделить преимущества.",
-            "audiences": [
-              "руководители",
-              "логисты",
-              "специалисты по транспорту"
-            ],
-            "selfPrompt": "Создайте раздел с заголовком уровня 2, который сравнивает электронный путевой лист USAUTO с бумажным аналогом, выделяя преимущества. Включите абзац введения, два подзаголовка уровня 3 с изображением, абзацами, списками и цитатой. Соблюдайте ограничения по объему слов для каждого элемента. • также следует учитывать пользовательские настройки, сделанные ко всей странице: writing-style:{title:Conversational, description:Friendly, informal, like talking to a friend}, content-format:{title:Professional, description:Business-appropriate, formal tone}, custom requirements and specifications:{—} •",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 1300,
-              "maxWords": 1500,
-              "actualContent": "need generate helpful content"
-            },
-            "realContentStructure": [
-              {
-                "id": "p-4-1",
-                "tag": "p",
-                "keywords": [
-                  "введение",
-                  "сравнение",
-                  "электронный путевой лист",
-                  "USAUTO",
-                  "бумажный документ"
-                ],
-                "taxonomy": "Введение",
-                "attention": "Введение подготавливает читателя к сравнению.",
-                "intent": "Дать общее представление о необходимости сравнения электронного и бумажного путевых листов.",
-                "audiences": [
-                  "руководители",
-                  "логисты"
-                ],
-                "selfPrompt": "Напишите абзац, вводящий в тему сравнения электронного и бумажного путевого листа, с акцентом на актуальность выбора. Объем 100–200 слов.",
-                "additionalData": {
-                  "minWords": 100,
-                  "maxWords": 200,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "h3-4-2",
-                "tag": "h3",
-                "classification": "Comparison",
-                "keywords": [
-                  "преимущества",
-                  "электронный путевой лист",
-                  "USAUTO",
-                  "эффективность",
-                  "автоматизация"
-                ],
-                "taxonomy": "Преимущества электронного путевого листа",
-                "attention": "Знание преимуществ помогает принять обоснованное решение.",
-                "intent": "Подробно описать преимущества использования электронного путевого листа USAUTO.",
-                "audiences": [
-                  "руководители",
-                  "логисты",
-                  "специалисты по транспорту"
-                ],
-                "selfPrompt": "Создайте подзаголовок уровня 3 с описанием преимуществ электронного путевого листа USAUTO. Включите изображение, два абзаца и маркированный список. Соблюдайте ограничения по объему слов для каждого элемента.",
-                "additionalData": {
-                  "minWords": 400,
-                  "maxWords": 600,
-                  "actualContent": "need generate helpful content"
-                },
-                "realContentStructure": [
-                  {
-                    "id": "img-4-2-1",
-                    "tag": "img",
-                    "keywords": [
-                      "преимущества",
-                      "электронный путевой лист",
-                      "USAUTO",
-                      "визуализация",
-                      "технологии"
-                    ],
-                    "taxonomy": "Иллюстрация",
-                    "attention": "Изображение визуализирует преимущества системы.",
-                    "intent": "Представить изображение, иллюстрирующее преимущества электронного путевого листа USAUTO, с описанием.",
-                    "audiences": [
-                      "руководители",
-                      "пользователи"
-                    ],
-                    "selfPrompt": "Опишите изображение, демонстрирующее преимущества электронного путевого листа USAUTO, без использования тега img. Объем 5–15 слов.",
-                    "additionalData": {
-                      "minWords": 5,
-                      "maxWords": 15,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "p-4-2-2",
-                    "tag": "p",
-                    "keywords": [
-                      "эффективность",
-                      "автоматизация",
-                      "экономия времени",
-                      "точность",
-                      "безопасность"
-                    ],
-                    "taxonomy": "Описание преимуществ",
-                    "attention": "Первый абзац раскрывает ключевые преимущества.",
-                    "intent": "Объяснить, как электронный путевой лист повышает эффективность и безопасность.",
-                    "audiences": [
-                      "руководители",
-                      "логисты"
-                    ],
-                    "selfPrompt": "Напишите абзац, описывающий ключевые преимущества электронного путевого листа USAUTO, включая автоматизацию и безопасность. Объем 90–180 слов.",
-                    "additionalData": {
-                      "minWords": 90,
-                      "maxWords": 180,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "p-4-2-3",
-                    "tag": "p",
-                    "keywords": [
-                      "экономия",
-                      "упрощение",
-                      "контроль",
-                      "доступность",
-                      "технологии"
-                    ],
-                    "taxonomy": "Описание преимуществ",
-                    "attention": "Второй абзац раскрывает дополнительные выгоды.",
-                    "intent": "Рассказать о дополнительных выгодах использования электронного путевого листа USAUTO.",
-                    "audiences": [
-                      "руководители",
-                      "пользователи"
-                    ],
-                    "selfPrompt": "Напишите абзац, описывающий дополнительные выгоды электронного путевого листа USAUTO, такие как экономия и упрощение процессов. Объем 85–170 слов.",
-                    "additionalData": {
-                      "minWords": 85,
-                      "maxWords": 170,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "ul-4-2-4",
-                    "tag": "ul",
-                    "keywords": [
-                      "список преимуществ",
-                      "автоматизация",
-                      "экономия времени",
-                      "точность",
-                      "безопасность"
-                    ],
-                    "taxonomy": "Список",
-                    "attention": "Список структурирует преимущества для удобства восприятия.",
-                    "intent": "Перечислить основные преимущества электронного путевого листа USAUTO в виде маркированного списка.",
-                    "audiences": [
-                      "руководители",
-                      "пользователи"
-                    ],
-                    "selfPrompt": "Создайте маркированный список из 5–7 основных преимуществ электронного путевого листа USAUTO. Объем 45–90 слов.",
-                    "additionalData": {
-                      "minWords": 45,
-                      "maxWords": 90,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
-              },
-              {
-                "id": "h3-4-3",
-                "tag": "h3",
-                "classification": "Comparison",
-                "keywords": [
-                  "сравнение",
-                  "бумажный путевой лист",
-                  "электронный путевой лист",
-                  "USAUTO",
-                  "недостатки"
-                ],
-                "taxonomy": "Сравнение с бумажным путевым листом",
-                "attention": "Понимание недостатков бумажного варианта помогает сделать выбор в пользу цифрового.",
-                "intent": "Сравнить электронный путевой лист USAUTO с традиционным бумажным, выделить недостатки последнего.",
-                "audiences": [
-                  "руководители",
-                  "логисты",
-                  "пользователи"
-                ],
-                "selfPrompt": "Создайте подзаголовок уровня 3 с описанием сравнений и недостатков бумажного путевого листа по сравнению с электронным. Включите два абзаца, нумерованный список и цитату. Соблюдайте ограничения по объему слов для каждого элемента.",
-                "additionalData": {
-                  "minWords": 400,
-                  "maxWords": 600,
-                  "actualContent": "need generate helpful content"
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-4-3-1",
-                    "tag": "p",
-                    "keywords": [
-                      "недостатки",
-                      "бумажный документ",
-                      "ручной ввод",
-                      "ошибки",
-                      "эффективность"
-                    ],
-                    "taxonomy": "Описание недостатков",
-                    "attention": "Первый абзац раскрывает основные проблемы бумажных путевых листов.",
-                    "intent": "Объяснить основные недостатки бумажных путевых листов и их влияние на работу.",
-                    "audiences": [
-                      "руководители",
-                      "логисты"
-                    ],
-                    "selfPrompt": "Напишите абзац, описывающий основные недостатки бумажных путевых листов, такие как ошибки и низкая эффективность. Объем 110–220 слов.",
-                    "additionalData": {
-                      "minWords": 110,
-                      "maxWords": 220,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "p-4-3-2",
-                    "tag": "p",
-                    "keywords": [
-                      "риски",
-                      "потеря данных",
-                      "недостатки",
-                      "бумажный документ",
-                      "контроль"
-                    ],
-                    "taxonomy": "Описание недостатков",
-                    "attention": "Второй абзац раскрывает дополнительные риски использования бумажных документов.",
-                    "intent": "Рассказать о рисках и проблемах контроля при использовании бумажных путевых листов.",
-                    "audiences": [
-                      "руководители",
-                      "пользователи"
-                    ],
-                    "selfPrompt": "Напишите абзац, описывающий риски и проблемы контроля при использовании бумажных путевых листов. Объем 80–160 слов.",
-                    "additionalData": {
-                      "minWords": 80,
-                      "maxWords": 160,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "ol-4-3-3",
-                    "tag": "ol",
-                    "keywords": [
-                      "недостатки",
-                      "бумажный путевой лист",
-                      "список",
-                      "проблемы",
-                      "USAUTO"
-                    ],
-                    "taxonomy": "Список",
-                    "attention": "Нумерованный список структурирует информацию о недостатках.",
-                    "intent": "Перечислить основные недостатки бумажного путевого листа в виде нумерованного списка.",
-                    "audiences": [
-                      "руководители",
-                      "пользователи"
-                    ],
-                    "selfPrompt": "Создайте нумерованный список из 5–7 основных недостатков бумажного путевого листа по сравнению с электронным. Объем 55–110 слов.",
-                    "additionalData": {
-                      "minWords": 55,
-                      "maxWords": 110,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "blockquote-4-3-4",
-                    "tag": "blockquote",
-                    "keywords": [
-                      "цитата",
-                      "недостатки",
-                      "бумажный документ",
-                      "электронный путевой лист",
-                      "USAUTO"
-                    ],
-                    "taxonomy": "Цитата",
-                    "attention": "Цитата подчеркивает важность перехода на электронный формат.",
-                    "intent": "Включить цитату, акцентирующую внимание на недостатках бумажных путевых листов и преимуществах электронных.",
-                    "audiences": [
-                      "руководители",
-                      "логисты"
-                    ],
-                    "selfPrompt": "Создайте цитату, подчеркивающую важность перехода с бумажных путевых листов на электронные с помощью USAUTO. Объем 18–40 слов.",
-                    "additionalData": {
-                      "minWords": 18,
-                      "maxWords": 40,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
-              }
-            ],
-            "status": "checked"
-          },
-          {
-            "id": "h2-5",
-            "tag": "h2",
-            "classification": "FAQ",
-            "keywords": [
-              "вопросы",
-              "электронный путевой лист",
-              "USAUTO",
-              "часто задаваемые вопросы",
-              "поддержка"
-            ],
-            "taxonomy": "Часто задаваемые вопросы",
-            "attention": "Ответы на частые вопросы помогают устранить сомнения и повысить доверие.",
-            "intent": "Предоставить ответы на часто задаваемые вопросы об электронном путевом листе USAUTO.",
-            "audiences": [
-              "пользователи",
-              "клиенты",
-              "новички"
-            ],
-            "selfPrompt": "Создайте раздел с заголовком уровня 2, содержащий ответы на часто задаваемые вопросы об электронном путевом листе USAUTO. Включите абзац введения, изображение и подзаголовок уровня 3 с вопросами и ответами в виде списка и поясняющих абзацев. Соблюдайте ограничения по объему слов для каждого элемента. • также следует учитывать пользовательские настройки, сделанные ко всей странице: writing-style:{title:Conversational, description:Friendly, informal, like talking to a friend}, content-format:{title:Professional, description:Business-appropriate, formal tone}, custom requirements and specifications:{—} •",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 1300,
-              "maxWords": 1500,
-              "actualContent": "need generate helpful content"
-            },
-            "realContentStructure": [
-              {
-                "id": "p-5-1",
-                "tag": "p",
-                "keywords": [
-                  "введение",
-                  "FAQ",
-                  "электронный путевой лист",
-                  "USAUTO",
-                  "поддержка"
-                ],
-                "taxonomy": "Введение",
-                "attention": "Введение объясняет цель раздела FAQ.",
-                "intent": "Объяснить, зачем нужен раздел часто задаваемых вопросов по электронному путевому листу USAUTO.",
-                "audiences": [
-                  "пользователи",
-                  "новички"
-                ],
-                "selfPrompt": "Напишите абзац, вводящий в раздел FAQ, объясняющий его цель и пользу для пользователей. Объем 105–210 слов.",
-                "additionalData": {
-                  "minWords": 105,
-                  "maxWords": 210,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "img-5-2",
-                "tag": "img",
-                "keywords": [
-                  "FAQ",
-                  "поддержка",
-                  "электронный путевой лист",
-                  "USAUTO",
-                  "визуализация"
-                ],
-                "taxonomy": "Иллюстрация",
-                "attention": "Изображение делает раздел FAQ более привлекательным.",
-                "intent": "Представить изображение, связанное с поддержкой и FAQ по электронному путевому листу USAUTO, с описанием.",
-                "audiences": [
-                  "пользователи",
-                  "клиенты"
-                ],
-                "selfPrompt": "Опишите изображение, иллюстрирующее раздел FAQ по электронному путевому листу USAUTO, без использования тега img. Объем 5–15 слов.",
-                "additionalData": {
-                  "minWords": 5,
-                  "maxWords": 15,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "h3-5-3",
-                "tag": "h3",
-                "classification": "FAQ",
-                "keywords": [
-                  "вопросы",
-                  "ответы",
-                  "электронный путевой лист",
-                  "USAUTO",
-                  "помощь"
-                ],
-                "taxonomy": "Вопросы и ответы",
-                "attention": "Ответы на вопросы помогают быстро решить проблемы пользователей.",
-                "intent": "Предоставить структурированные ответы на популярные вопросы об электронном путевом листе USAUTO.",
-                "audiences": [
-                  "пользователи",
-                  "новички",
-                  "клиенты"
-                ],
-                "selfPrompt": "Создайте подзаголовок уровня 3 с часто задаваемыми вопросами и ответами об электронном путевом листе USAUTO. Включите абзац, маркированный список вопросов и поясняющий абзац. Соблюдайте ограничения по объему слов для каждого элемента.",
-                "additionalData": {
-                  "minWords": 250,
-                  "maxWords": 350,
-                  "actualContent": "need generate helpful content"
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-5-3-1",
-                    "tag": "p",
-                    "keywords": [
-                      "введение",
-                      "вопросы",
-                      "ответы",
-                      "электронный путевой лист",
-                      "USAUTO"
-                    ],
-                    "taxonomy": "Введение",
-                    "attention": "Абзац вводит в раздел вопросов и ответов.",
-                    "intent": "Объяснить, какие вопросы будут рассмотрены в разделе FAQ.",
-                    "audiences": [
-                      "пользователи",
-                      "новички"
-                    ],
-                    "selfPrompt": "Напишите абзац, вводящий в раздел FAQ и описывающий его структуру. Объем 80–160 слов.",
-                    "additionalData": {
-                      "minWords": 80,
-                      "maxWords": 160,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "ul-5-3-2",
-                    "tag": "ul",
-                    "keywords": [
-                      "список вопросов",
-                      "FAQ",
-                      "электронный путевой лист",
-                      "USAUTO",
-                      "помощь"
-                    ],
-                    "taxonomy": "Список",
-                    "attention": "Список вопросов помогает быстро найти нужную информацию.",
-                    "intent": "Перечислить популярные вопросы об электронном путевом листе USAUTO в виде маркированного списка.",
-                    "audiences": [
-                      "пользователи",
-                      "новички"
-                    ],
-                    "selfPrompt": "Создайте маркированный список из 5–7 популярных вопросов об электронном путевом листе USAUTO. Объем 40–80 слов.",
-                    "additionalData": {
-                      "minWords": 40,
-                      "maxWords": 80,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "p-5-3-3",
-                    "tag": "p",
-                    "keywords": [
-                      "ответы",
-                      "пояснения",
-                      "электронный путевой лист",
-                      "USAUTO",
-                      "поддержка"
-                    ],
-                    "taxonomy": "Ответы",
-                    "attention": "Поясняющий абзац помогает лучше понять ответы на вопросы.",
-                    "intent": "Дать развернутые ответы и пояснения на популярные вопросы об электронном путевом листе USAUTO.",
-                    "audiences": [
-                      "пользователи",
-                      "новички"
-                    ],
-                    "selfPrompt": "Напишите абзац с развернутыми ответами и пояснениями на популярные вопросы об электронном путевом листе USAUTO. Объем 70–140 слов.",
-                    "additionalData": {
-                      "minWords": 70,
-                      "maxWords": 140,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
-              }
-            ],
-            "status": "checked"
-          },
-          {
-            "id": "h2-6",
-            "tag": "h2",
-            "classification": "Guide",
-            "keywords": [
-              "технические требования",
-              "электронный путевой лист",
-              "USAUTO",
-              "интеграция",
-              "системные требования"
-            ],
-            "taxonomy": "Технические требования и интеграция",
-            "attention": "Знание технических требований важно для успешной интеграции и эксплуатации.",
-            "intent": "Описать технические требования и возможности интеграции электронного путевого листа USAUTO.",
-            "audiences": [
-              "технические специалисты",
-              "разработчики",
-              "администраторы"
-            ],
-            "selfPrompt": "Создайте раздел с заголовком уровня 2, который подробно описывает технические требования и возможности интеграции электронного путевого листа USAUTO. Включите абзац, два подзаголовка уровня 3 с таблицей, абзацами и кодовым блоком. Соблюдайте ограничения по объему слов для каждого элемента. • также следует учитывать пользовательские настройки, сделанные ко всей странице: writing-style:{title:Conversational, description:Friendly, informal, like talking to a friend}, content-format:{title:Professional, description:Business-appropriate, formal tone}, custom requirements and specifications:{—} •",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 1300,
-              "maxWords": 1500,
-              "actualContent": "need generate helpful content"
-            },
-            "realContentStructure": [
-              {
-                "id": "p-6-1",
-                "tag": "p",
-                "keywords": [
-                  "введение",
-                  "технические требования",
-                  "электронный путевой лист",
-                  "USAUTO",
-                  "интеграция"
-                ],
-                "taxonomy": "Введение",
-                "attention": "Введение подготавливает читателя к технической информации.",
-                "intent": "Дать общее представление о технических аспектах электронного путевого листа USAUTO.",
-                "audiences": [
-                  "технические специалисты",
-                  "администраторы"
-                ],
-                "selfPrompt": "Напишите абзац, вводящий в тему технических требований и интеграции электронного путевого листа USAUTO. Объем 95–190 слов.",
-                "additionalData": {
-                  "minWords": 95,
-                  "maxWords": 190,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "h3-6-2",
-                "tag": "h3",
-                "classification": "Guide",
-                "keywords": [
-                  "системные требования",
-                  "технические характеристики",
-                  "электронный путевой лист",
-                  "USAUTO",
-                  "оборудование"
-                ],
-                "taxonomy": "Системные требования",
-                "attention": "Знание системных требований помогает подготовить инфраструктуру.",
-                "intent": "Подробно описать системные требования для работы с электронным путевым листом USAUTO.",
-                "audiences": [
-                  "технические специалисты",
-                  "администраторы"
-                ],
-                "selfPrompt": "Создайте подзаголовок уровня 3 с описанием системных требований электронного путевого листа USAUTO. Включите абзац, таблицу и завершающий абзац. Соблюдайте ограничения по объему слов для каждого элемента.",
-                "additionalData": {
-                  "minWords": 400,
-                  "maxWords": 600,
-                  "actualContent": "need generate helpful content"
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-6-2-1",
-                    "tag": "p",
-                    "keywords": [
-                      "оборудование",
-                      "программное обеспечение",
-                      "требования",
-                      "электронный путевой лист",
-                      "USAUTO"
-                    ],
-                    "taxonomy": "Описание",
-                    "attention": "Первый абзац раскрывает основные требования к оборудованию и ПО.",
-                    "intent": "Объяснить, какое оборудование и программное обеспечение необходимы для работы с системой.",
-                    "audiences": [
-                      "технические специалисты",
-                      "администраторы"
-                    ],
-                    "selfPrompt": "Напишите абзац, описывающий основные системные требования для работы с электронным путевым листом USAUTO. Объем 75–150 слов.",
-                    "additionalData": {
-                      "minWords": 75,
-                      "maxWords": 150,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "table-6-2-2",
-                    "tag": "table",
-                    "keywords": [
-                      "технические характеристики",
-                      "системные требования",
-                      "электронный путевой лист",
-                      "USAUTO",
-                      "таблица"
-                    ],
-                    "taxonomy": "Таблица характеристик",
-                    "attention": "Таблица структурирует технические данные для удобства восприятия.",
-                    "intent": "Создать таблицу с системными требованиями и техническими характеристиками для электронного путевого листа USAUTO.",
-                    "audiences": [
-                      "технические специалисты",
-                      "администраторы"
-                    ],
-                    "selfPrompt": "Создайте таблицу, в которой перечислены системные требования и технические характеристики для работы с электронным путевым листом USAUTO. Объем описания 100–200 слов.",
-                    "additionalData": {
-                      "minWords": 100,
-                      "maxWords": 200,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "p-6-2-3",
-                    "tag": "p",
-                    "keywords": [
-                      "поддержка",
-                      "обновления",
-                      "техническая помощь",
-                      "электронный путевой лист",
-                      "USAUTO"
-                    ],
-                    "taxonomy": "Описание",
-                    "attention": "Завершающий абзац объясняет важность поддержки и обновлений.",
-                    "intent": "Рассказать о поддержке, обновлениях и технической помощи для системы.",
-                    "audiences": [
-                      "технические специалисты",
-                      "администраторы"
-                    ],
-                    "selfPrompt": "Напишите абзац, описывающий поддержку, обновления и техническую помощь для электронного путевого листа USAUTO. Объем 85–170 слов.",
-                    "additionalData": {
-                      "minWords": 85,
-                      "maxWords": 170,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
-              },
-              {
-                "id": "h3-6-3",
-                "tag": "h3",
-                "classification": "Guide",
-                "keywords": [
-                  "интеграция",
-                  "API",
-                  "электронный путевой лист",
-                  "USAUTO",
-                  "технические детали"
-                ],
-                "taxonomy": "Интеграция и API",
-                "attention": "Знание возможностей интеграции расширяет функциональность системы.",
-                "intent": "Описать возможности интеграции электронного путевого листа USAUTO с другими системами через API.",
-                "audiences": [
-                  "разработчики",
-                  "технические специалисты"
-                ],
-                "selfPrompt": "Создайте подзаголовок уровня 3 с описанием возможностей интеграции и API электронного путевого листа USAUTO. Включите абзац и кодовый блок с примером. Соблюдайте ограничения по объему слов для каждого элемента.",
-                "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 350,
-                  "actualContent": "need generate helpful content"
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-6-3-1",
-                    "tag": "p",
-                    "keywords": [
-                      "интеграция",
-                      "API",
-                      "возможности",
-                      "электронный путевой лист",
-                      "USAUTO"
-                    ],
-                    "taxonomy": "Описание",
-                    "attention": "Абзац объясняет возможности интеграции через API.",
-                    "intent": "Рассказать о том, как электронный путевой лист USAUTO интегрируется с другими системами.",
-                    "audiences": [
-                      "разработчики",
-                      "технические специалисты"
-                    ],
-                    "selfPrompt": "Напишите абзац, описывающий возможности интеграции электронного путевого листа USAUTO через API. Объем 90–180 слов.",
-                    "additionalData": {
-                      "minWords": 90,
-                      "maxWords": 180,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "code-6-3-2",
-                    "tag": "code",
-                    "keywords": [
-                      "пример кода",
-                      "API",
-                      "интеграция",
-                      "электронный путевой лист",
-                      "USAUTO"
-                    ],
-                    "taxonomy": "Пример кода",
-                    "attention": "Код иллюстрирует техническую реализацию интеграции.",
-                    "intent": "Показать пример кода или команды для интеграции электронного путевого листа USAUTO через API.",
-                    "audiences": [
-                      "разработчики",
-                      "технические специалисты"
-                    ],
-                    "selfPrompt": "Предоставьте пример кода или команды, демонстрирующий интеграцию электронного путевого листа USAUTO через API. Объем 30–70 слов.",
-                    "additionalData": {
-                      "minWords": 30,
-                      "maxWords": 70,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
-              }
-            ],
-            "status": "checked"
-          },
-          {
-            "id": "h2-7",
-            "tag": "h2",
-            "classification": "Summary",
-            "keywords": [
-              "итоги",
-              "электронный путевой лист",
-              "USAUTO",
-              "выводы",
-              "преимущества"
-            ],
-            "taxonomy": "Заключение и выводы",
-            "attention": "Итоги помогают закрепить ключевую информацию и мотивируют к действию.",
-            "intent": "Подвести итоги и выделить ключевые преимущества электронного путевого листа USAUTO.",
-            "audiences": [
-              "все читатели",
-              "потенциальные пользователи",
-              "руководители"
-            ],
-            "selfPrompt": "Создайте раздел с заголовком уровня 2, который подводит итоги статьи и выделяет ключевые преимущества электронного путевого листа USAUTO. Включите два абзаца, маркированный список и цитату. Соблюдайте ограничения по объему слов для каждого элемента. • также следует учитывать пользовательские настройки, сделанные ко всей странице: writing-style:{title:Conversational, description:Friendly, informal, like talking to a friend}, content-format:{title:Professional, description:Business-appropriate, formal tone}, custom requirements and specifications:{—} •",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 1300,
-              "maxWords": 1500,
-              "actualContent": "need generate helpful content"
-            },
-            "realContentStructure": [
-              {
-                "id": "p-7-1",
-                "tag": "p",
-                "keywords": [
-                  "итоги",
-                  "электронный путевой лист",
-                  "USAUTO",
-                  "преимущества",
-                  "использование"
-                ],
-                "taxonomy": "Введение",
-                "attention": "Первый абзац подводит общие итоги статьи.",
-                "intent": "Сделать краткое резюме основных тем и преимуществ электронного путевого листа USAUTO.",
-                "audiences": [
-                  "все читатели",
-                  "потенциальные пользователи"
-                ],
-                "selfPrompt": "Напишите первый абзац, подводящий итоги статьи и выделяющий основные преимущества электронного путевого листа USAUTO. Объем 120–240 слов.",
-                "additionalData": {
-                  "minWords": 120,
-                  "maxWords": 240,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "p-7-2",
-                "tag": "p",
-                "keywords": [
-                  "мотивация",
-                  "использование",
-                  "электронный путевой лист",
-                  "USAUTO",
-                  "эффективность"
-                ],
-                "taxonomy": "Мотивация",
-                "attention": "Второй абзац мотивирует к использованию системы.",
-                "intent": "Подчеркнуть выгоды и мотивацию для внедрения электронного путевого листа USAUTO.",
-                "audiences": [
-                  "руководители",
-                  "потенциальные пользователи"
-                ],
-                "selfPrompt": "Напишите второй абзац, мотивирующий читателя к использованию электронного путевого листа USAUTO, подчеркивая выгоды и эффективность. Объем 100–200 слов.",
-                "additionalData": {
-                  "minWords": 100,
-                  "maxWords": 200,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "ul-7-3",
-                "tag": "ul",
-                "keywords": [
-                  "ключевые преимущества",
-                  "список",
-                  "электронный путевой лист",
-                  "USAUTO",
-                  "итоги"
-                ],
-                "taxonomy": "Список",
-                "attention": "Список структурирует ключевые преимущества для удобства восприятия.",
-                "intent": "Перечислить ключевые преимущества электронного путевого листа USAUTO в виде маркированного списка.",
-                "audiences": [
-                  "все читатели",
-                  "руководители"
-                ],
-                "selfPrompt": "Создайте маркированный список из 5–7 ключевых преимуществ электронного путевого листа USAUTO. Объем 60–120 слов.",
-                "additionalData": {
-                  "minWords": 60,
-                  "maxWords": 120,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "p-7-4",
-                "tag": "p",
-                "keywords": [
-                  "заключение",
-                  "призыв к действию",
-                  "электронный путевой лист",
-                  "USAUTO",
-                  "использование"
-                ],
-                "taxonomy": "Заключение",
-                "attention": "Заключительный абзац подталкивает к действию.",
-                "intent": "Сделать заключение с призывом к использованию электронного путевого листа USAUTO.",
-                "audiences": [
-                  "потенциальные пользователи",
-                  "руководители"
-                ],
-                "selfPrompt": "Напишите заключительный абзац с призывом к использованию электронного путевого листа USAUTO и подчеркиванием его преимуществ. Объем 80–160 слов.",
-                "additionalData": {
-                  "minWords": 80,
-                  "maxWords": 160,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "blockquote-7-5",
-                "tag": "blockquote",
-                "keywords": [
-                  "цитата",
-                  "итоги",
-                  "электронный путевой лист",
-                  "USAUTO",
-                  "мотивация"
-                ],
-                "taxonomy": "Цитата",
-                "attention": "Цитата усиливает мотивацию и доверие к системе.",
-                "intent": "Включить цитату, подчеркивающую важность и выгоды использования электронного путевого листа USAUTO.",
-                "audiences": [
-                  "все читатели",
-                  "потенциальные пользователи"
-                ],
-                "selfPrompt": "Создайте цитату, мотивирующую к использованию электронного путевого листа USAUTO и подчеркивающую его преимущества. Объем 15–35 слов.",
-                "additionalData": {
-                  "minWords": 15,
-                  "maxWords": 35,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              }
-            ],
-            "status": "checked"
-          }
-        ],
-        "sections": [
-          {
-            "id": "h2-1",
-            "tempMDXContent": "<h2>Что такое электронный путевой лист USAUTO: определение и назначение</h2>\n\n<p>Электронный путевой лист USAUTO — это современный цифровой документ, который заменяет привычные бумажные аналоги и служит для контроля и учета маршрутов автотранспорта. В отличие от традиционных бумажных форм, электронный путевой лист хранится и обрабатывается в цифровом формате, что значительно упрощает работу водителей, логистов и менеджеров автопарков. Этот документ содержит всю необходимую информацию о транспортном средстве, маршруте, времени выезда и возвращения, а также данные о водителе и состоянии автомобиля. Благодаря этому обеспечивается прозрачность и удобство контроля за выполнением заданий, а также возможность быстрого доступа к актуальной информации в любое время.</p>\n\n<p>Основное назначение электронного путевого листа USAUTO — оптимизация процессов управления автопарком и повышение безопасности перевозок. Он помогает автоматизировать ряд рутинных операций, таких как оформление документов, учет пробега и расхода топлива, а также контроль соблюдения маршрутов и графиков. Использование цифрового формата снижает риск ошибок, связанных с ручным вводом данных, и облегчает обмен информацией между всеми участниками транспортного процесса. В результате компании получают эффективный инструмент для улучшения качества обслуживания, повышения производительности и снижения затрат.</p>\n\n<blockquote>«Электронный путевой лист USAUTO — это не просто документ, а ключевой элемент современной системы безопасности и контроля автотранспорта, который помогает обеспечить прозрачность и эффективность работы на всех этапах перевозок.»</blockquote>\n\n<p><strong>Описание изображения:</strong> Логотип USAUTO на фоне цифрового путевого листа с изображением транспортного средства и карты маршрута.</p>"
-          },
-          {
-            "id": "h2-2",
-            "tempMDXContent": "<h2>Функции и возможности электронного путевого листа USAUTO</h2>\n\n<p>Электронный путевой лист USAUTO представляет собой мощный инструмент для автоматизации и оптимизации управления транспортом. Его функционал направлен на упрощение процесса оформления документов, повышение прозрачности контроля и улучшение безопасности перевозок. Используя цифровую платформу, компании могут эффективно управлять автопарком, контролировать маршруты и получать точные данные в реальном времени. Благодаря интеграции с другими системами и удобному интерфейсу, электронный путевой лист USAUTO становится незаменимым помощником для водителей, логистов и администраторов, позволяя сократить время на рутинные операции и минимизировать человеческие ошибки.</p>\n\n<h3>Основные функции электронного путевого листа USAUTO</h3>\n\n<p>Одной из ключевых возможностей системы является контроль маршрута и регистрация данных. Электронный путевой лист автоматически фиксирует время выезда и возвращения транспортного средства, маршрут движения, а также параметры работы автомобиля, такие как пробег и расход топлива. Эти данные обеспечивают прозрачность и позволяют оперативно реагировать на отклонения от заданного маршрута. Автоматизация регистрации снижает риск ошибок и облегчает работу водителей, исключая необходимость ручного заполнения бумажных документов.</p>\n\n<p>Кроме того, система предоставляет расширенные функции отчетности и аналитики. Руководители и аналитики получают доступ к подробным отчетам о работе автопарка, что помогает выявлять узкие места, контролировать расходы и повышать безопасность перевозок. Автоматизированный мониторинг состояния транспортных средств и соблюдения графиков способствует своевременному принятию управленческих решений и оптимизации процессов. Вся информация доступна в удобном формате, что значительно ускоряет анализ и планирование.</p>\n\n<p><strong>Описание изображения:</strong> Скриншот интерфейса электронного путевого листа USAUTO с отображением маршрута, данных автомобиля и отчетов.</p>\n\n<table>\n  <thead>\n    <tr>\n      <th>Функция</th>\n      <th>Описание</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Автоматический контроль маршрута</td>\n      <td>Фиксация времени выезда, возвращения и точек маршрута с возможностью отслеживания в реальном времени.</td>\n    </tr>\n    <tr>\n      <td>Регистрация данных автомобиля</td>\n      <td>Автоматический учет пробега, расхода топлива и технического состояния транспорта.</td>\n    </tr>\n    <tr>\n      <td>Отчетность и аналитика</td>\n      <td>Генерация подробных отчетов для анализа работы автопарка и оптимизации расходов.</td>\n    </tr>\n    <tr>\n      <td>Контроль безопасности</td>\n      <td>Мониторинг соблюдения правил и предупреждение о возможных нарушениях.</td>\n    </tr>\n    <tr>\n      <td>Интеграция с другими системами</td>\n      <td>Возможность обмена данными с бухгалтерскими, складскими и другими корпоративными системами.</td>\n    </tr>\n  </tbody>\n</table>\n\n<h3>Дополнительные функции и преимущества электронного путевого листа USAUTO</h3>\n\n<p>Помимо основных возможностей, электронный путевой лист USAUTO предлагает ряд дополнительных функций, которые значительно повышают эффективность работы и безопасность перевозок. Интеграция с GPS-трекерами и системами видеонаблюдения позволяет вести комплексный мониторинг транспорта. Пользовательский интерфейс адаптирован для удобства водителей и администраторов, что снижает время обучения и повышает точность внесения данных. Также система поддерживает автоматические уведомления о необходимости технического обслуживания и прохождения ТО, что способствует предотвращению поломок и аварий.</p>\n\n<ul>\n  <li>Интеграция с GPS и системами видеонаблюдения для комплексного контроля.</li>\n  <li>Автоматические уведомления о техническом обслуживании и проверках.</li>\n  <li>Гибкие настройки доступа и ролей пользователей для безопасности данных.</li>\n  <li>Мобильное приложение для удобного управления на ходу.</li>\n  <li>Возможность экспорта данных в различные форматы для отчетности.</li>\n  <li>Поддержка интеграции с внешними ERP и CRM системами.</li>\n  <li>Функция голосового ввода для быстрого заполнения данных водителями.</li>\n</ul>\n\n<pre><code>curl -X POST https://api.usauto.ru/v1/waybills \\\n  -H \"Authorization: Bearer YOUR_ACCESS_TOKEN\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n        \"vehicle_id\": \"12345\",\n        \"driver_id\": \"67890\",\n        \"route\": [\"Start Point\", \"Waypoint 1\", \"Destination\"],\n        \"departure_time\": \"2024-06-01T08:00:00Z\"\n      }'\n</code></pre>\n\n<p>Таким образом, дополнительные функции электронного путевого листа USAUTO не только расширяют возможности автоматизации, но и повышают безопасность, удобство и качество управления автопарком. Использование этих возможностей позволяет компаниям оптимизировать затраты, улучшить контроль и обеспечить высокий уровень сервиса, что особенно важно в современных условиях динамичного развития транспортной отрасли.</p>"
-          },
-          {
-            "id": "h2-3",
-            "tempMDXContent": "<h2>Как использовать электронный путевой лист USAUTO: подробная инструкция</h2>\n\n<p><strong>Описание изображения:</strong> Экран смартфона с открытым приложением USAUTO и формой электронного путевого листа.</p>\n\n<p>Использование электронного путевого листа USAUTO значительно упрощает процесс оформления и контроля транспортных операций. Для начала работы необходимо пройти регистрацию, после чего можно создавать и управлять путевыми листами в удобном цифровом формате. Важной частью является правильное заполнение всех данных — от информации о водителе и транспортном средстве до маршрута и времени поездки. Система автоматически фиксирует ключевые параметры, что снижает вероятность ошибок и ускоряет обработку документов. В дальнейшем путевой лист можно отслеживать и контролировать в режиме реального времени, что обеспечивает прозрачность и безопасность перевозок. В этой инструкции мы пошагово рассмотрим, как зарегистрироваться, создать путевой лист, а также как правильно эксплуатировать и контролировать электронный документ в системе USAUTO.</p>\n\n<h3>Регистрация и создание электронного путевого листа USAUTO</h3>\n\n<p>Начать работу с электронным путевым листом USAUTO просто — нужно зарегистрироваться в системе и создать первый документ. Регистрация открывает доступ к функционалу платформы и позволяет сохранять данные для последующего использования. Создание путевого листа осуществляется через удобный интерфейс, где пользователь вводит все необходимые сведения о поездке и транспортном средстве. Важно внимательно заполнять все поля, чтобы обеспечить корректность данных и соответствие требованиям контроля.</p>\n\n<ol>\n  <li>Перейдите на официальный сайт или откройте мобильное приложение USAUTO.</li>\n  <li>Зарегистрируйтесь, указав личные данные и информацию о компании или транспортном средстве.</li>\n  <li>Подтвердите регистрацию через электронную почту или SMS.</li>\n  <li>Войдите в личный кабинет и выберите раздел «Создать путевой лист».</li>\n  <li>Заполните форму с данными о водителе, транспортном средстве, маршруте и времени выезда.</li>\n  <li>Сохраните путевой лист и отправьте его на утверждение, если это предусмотрено внутренними правилами компании.</li>\n</ol>\n\n<h4>Подробности регистрации и создания путевого листа в USAUTO</h4>\n\n<p>Регистрация в системе USAUTO — это первый и важный шаг для полноценного использования электронного путевого листа. Процесс включает ввод основных данных пользователя, таких как ФИО, контактная информация и сведения о транспортном средстве. Для компаний предусмотрена возможность добавления нескольких водителей и автомобилей, что облегчает управление автопарком. После ввода данных система проверяет их корректность и создает учетную запись, которая служит отправной точкой для работы с путевыми листами. Важно использовать актуальные и точные данные, чтобы избежать проблем при контроле и отчетности.</p>\n\n<pre><code>POST /api/register\nContent-Type: application/json\n\n{\n  \"username\": \"ivan.petrov\",\n  \"email\": \"ivan.petrov@example.com\",\n  \"password\": \"StrongPassword123\",\n  \"company\": \"ООО Транспорт\",\n  \"vehicles\": [\n    {\n      \"vehicle_id\": \"AB123CD\",\n      \"type\": \"грузовой\"\n    }\n  ]\n}\n</code></pre>\n\n<p>Создание электронного путевого листа в USAUTO происходит через заполнение специальной формы, где указываются все детали поездки. После ввода информации система автоматически проверяет корректность данных и формирует документ, который можно сохранить или отправить на утверждение. Путевой лист содержит поля для данных о маршруте, времени выезда и возвращения, а также сведения о водителе и состоянии транспортного средства. Такой подход обеспечивает прозрачность и удобство учета, а также позволяет быстро получать необходимые отчеты и контролировать выполнение заданий.</p>\n\n<h3>Эксплуатация и контроль электронного путевого листа USAUTO</h3>\n\n<p>Правильная эксплуатация электронного путевого листа USAUTO — залог надежности и безопасности перевозок. После создания документа важно своевременно вносить изменения и корректировать данные при возникновении непредвиденных ситуаций. Контроль осуществляется с помощью встроенных инструментов системы, которые позволяют отслеживать статус путевого листа, время маршрута и состояние транспортного средства в реальном времени. Это помогает оперативно реагировать на отклонения и предотвращать нарушения. Также важным моментом является регулярное обновление информации и соблюдение внутренних регламентов компании.</p>\n\n<blockquote>«Контроль и своевременное обновление данных в электронном путевом листе USAUTO — ключевые факторы обеспечения безопасности и эффективности транспортных операций.»</blockquote>\n\n<ol>\n  <li>Перед началом поездки проверьте корректность всех данных в путевом листе.</li>\n  <li>В процессе эксплуатации своевременно вносите изменения, если маршрут или время меняются.</li>\n  <li>Используйте мобильное приложение для контроля статуса и получения уведомлений.</li>\n  <li>По возвращении завершите путевой лист, указав фактическое время и состояние транспортного средства.</li>\n  <li>Проводите регулярный анализ данных для выявления возможных проблем и оптимизации процессов.</li>\n</ol>"
-          },
-          {
-            "id": "h2-4",
-            "tempMDXContent": "<h2>Преимущества электронного путевого листа USAUTO по сравнению с бумажным аналогом</h2>\n\n<p>В современном мире выбор между традиционными бумажными документами и цифровыми решениями становится все более актуальным для бизнеса, особенно в сфере управления автопарком. Электронный путевой лист USAUTO предлагает инновационный подход к оформлению и контролю транспортных операций, значительно превосходя по удобству и функциональности привычные бумажные формы. В условиях высокой конкуренции и стремления к оптимизации процессов важно понимать, какие преимущества дает переход на электронный формат. В этом разделе мы подробно рассмотрим, почему электронный путевой лист USAUTO становится предпочтительным выбором для руководителей, логистов и специалистов по транспорту, а также сравним его с традиционным бумажным путевым листом, чтобы помочь сделать обоснованный выбор в пользу современных технологий.</p>\n\n<h3>Преимущества электронного путевого листа USAUTO</h3>\n\n<p><strong>Описание изображения:</strong> Графика, показывающая цифровой интерфейс электронного путевого листа USAUTO с иконками автоматизации и безопасности.</p>\n\n<p>Электронный путевой лист USAUTO существенно повышает эффективность управления транспортом благодаря автоматизации рутинных процессов и минимизации ошибок. Система автоматически фиксирует ключевые параметры поездки — время выезда и возвращения, маршрут, пробег и расход топлива, что исключает необходимость ручного заполнения и снижает риск человеческих ошибок. Это позволяет экономить время сотрудников и повышать точность учета данных. Кроме того, цифровой формат обеспечивает высокий уровень безопасности информации, предотвращая возможность подделок и потерь документов.</p>\n\n<p>Кроме того, использование электронного путевого листа упрощает контроль и отчетность. Доступ к данным возможен в режиме реального времени через удобный интерфейс, что позволяет быстро реагировать на изменения и принимать решения. Это особенно важно для крупных автопарков, где своевременный контроль маршрутов и состояния транспортных средств играет ключевую роль в оптимизации затрат и повышении безопасности перевозок.</p>\n\n<ul>\n  <li>Автоматизация заполнения и учета данных, снижает вероятность ошибок.</li>\n  <li>Экономия времени на оформление и обработку документов.</li>\n  <li>Повышенная точность и прозрачность учета маршрутов и пробега.</li>\n  <li>Доступ к информации в реальном времени и удобный интерфейс.</li>\n  <li>Улучшенный контроль безопасности и предотвращение подделок.</li>\n  <li>Возможность интеграции с другими системами управления.</li>\n  <li>Сокращение затрат на бумагу и печать.</li>\n</ul>\n\n<h3>Сравнение с традиционным бумажным путевым листом: недостатки и риски</h3>\n\n<p>Несмотря на привычность и простоту бумажных путевых листов, они имеют ряд существенных недостатков, которые влияют на эффективность работы и контроль автопарка. Ручное заполнение бумажных документов часто приводит к ошибкам и неточностям, что усложняет последующий анализ и отчетность. Кроме того, бумажные листы требуют дополнительного времени на оформление и обработку, что снижает общую производительность сотрудников.</p>\n\n<p>Еще одной проблемой является риск потери или повреждения бумажных документов. Хранение большого объема бумажных путевых листов создает сложности с их систематизацией и быстрым доступом к нужной информации. Контроль за подлинностью и полнотой данных затруднен, что может привести к нарушениям и финансовым потерям. В условиях современного бизнеса такие риски становятся критическими и требуют поиска более надежных решений.</p>\n\n<ol>\n  <li>Высокая вероятность ошибок при ручном заполнении и обработке данных.</li>\n  <li>Затраты времени и ресурсов на оформление и хранение бумажных документов.</li>\n  <li>Риски потери, повреждения или подделки документов.</li>\n  <li>Ограниченный доступ к информации и отсутствие оперативного контроля.</li>\n  <li>Сложности в систематизации и поиске нужных данных.</li>\n  <li>Отсутствие интеграции с современными системами управления.</li>\n  <li>Невозможность оперативного анализа и отчетности в реальном времени.</li>\n</ol>\n\n<blockquote>«Переход на электронный путевой лист USAUTO — это не просто шаг в цифровизацию, а стратегическое решение, которое позволяет повысить прозрачность, точность и безопасность управления автопарком, минимизируя риски и повышая эффективность бизнеса.»</blockquote>"
-          },
-          {
-            "id": "h2-5",
-            "tempMDXContent": "<h2>Часто задаваемые вопросы об электронном путевом листе USAUTO</h2>\n\n<p>Раздел часто задаваемых вопросов (FAQ) по электронному путевому листу USAUTO создан для того, чтобы помочь пользователям быстро найти ответы на наиболее распространённые вопросы и решить возможные трудности без необходимости обращаться в службу поддержки. Здесь собраны ключевые моменты, которые волнуют как новичков, так и опытных пользователей системы. Мы стремимся сделать работу с электронным путевым листом максимально понятной и удобной, поэтому в этом разделе вы найдете разъяснения по техническим аспектам, функционалу, безопасности и другим важным темам. Это позволит сэкономить ваше время и повысить уверенность в использовании платформы USAUTO для управления автопарком и контроля перевозок.</p>\n\n<p><strong>Описание изображения:</strong> Иллюстрация с символами поддержки и электронного документа путевого листа USAUTO.</p>\n\n<h3>Ответы на популярные вопросы об электронном путевом листе USAUTO</h3>\n\n<p>В этом разделе мы рассмотрим наиболее часто возникающие вопросы, которые помогают разобраться в работе электронного путевого листа USAUTO. Ниже представлен список популярных вопросов, а после него — подробные ответы, которые помогут вам лучше понять возможности системы и правила её использования.</p>\n\n<ul>\n  <li>Как зарегистрироваться и начать работу с электронным путевым листом USAUTO?</li>\n  <li>Какие данные необходимо указывать при создании путевого листа?</li>\n  <li>Можно ли вносить изменения в путевой лист после его создания?</li>\n  <li>Как система обеспечивает безопасность и защиту данных?</li>\n  <li>Какие устройства поддерживают работу с электронным путевым листом USAUTO?</li>\n  <li>Что делать, если возникли технические проблемы с платформой?</li>\n  <li>Как получить помощь или консультацию по использованию системы?</li>\n</ul>\n\n<p>Эти вопросы охватывают основные моменты, с которыми сталкиваются пользователи при работе с электронным путевым листом. Ответы помогут вам быстро ориентироваться в функционале, понять требования к заполнению и узнать, как правильно использовать систему для повышения эффективности и безопасности перевозок.</p>\n\n<p>Например, регистрация в системе USAUTO проста и интуитивно понятна: достаточно ввести базовые данные о компании, водителях и транспортных средствах. При создании путевого листа важно указывать точную информацию о маршруте, времени выезда и возвращения, а также состоянии автомобиля. Если в процессе эксплуатации необходимо внести корректировки, система позволяет это сделать с сохранением истории изменений, что обеспечивает прозрачность и контроль. Безопасность данных достигается за счёт современных методов шифрования и контроля доступа, а поддержка доступна через онлайн-чат, телефон или электронную почту. Платформа адаптирована для работы на различных устройствах — от компьютеров до смартфонов, что делает использование удобным в любых условиях.</p>"
-          },
-          {
-            "id": "h2-6",
-            "tempMDXContent": "<h2>Технические требования и возможности интеграции электронного путевого листа USAUTO</h2>\n\n<p>Для успешного внедрения и эксплуатации электронного путевого листа USAUTO крайне важно понимать технические требования и возможности интеграции системы с другими корпоративными решениями. Электронный путевой лист — это не просто программное обеспечение, а комплексное решение, которое требует соответствующей аппаратной базы, надежного программного обеспечения и корректной настройки сетевой инфраструктуры. Кроме того, современный бизнес нуждается в гибких инструментах интеграции, позволяющих объединять данные из разных систем для комплексного управления автопарком и автоматизации процессов. В этом разделе мы подробно рассмотрим системные требования для работы с USAUTO, а также расскажем о возможностях интеграции через API, что поможет техническим специалистам, разработчикам и администраторам подготовить инфраструктуру и обеспечить эффективное взаимодействие с другими сервисами.</p>\n\n<h3>Системные требования для работы с электронным путевым листом USAUTO</h3>\n\n<p>Для корректной работы электронного путевого листа USAUTO необходимы определённые аппаратные и программные ресурсы. Система рассчитана на работу как с серверной частью, так и с клиентскими устройствами, включая персональные компьютеры и мобильные гаджеты. Важно обеспечить стабильное интернет-соединение и соответствующую операционную среду для установки и запуска приложения. Кроме того, для интеграции с внешними устройствами и системами (например, GPS-трекерами, датчиками топлива) требуется наличие соответствующих драйверов и протоколов обмена данными. Соблюдение этих требований гарантирует бесперебойную работу и высокую производительность системы, а также минимизирует риски сбоев и потери данных.</p>\n\n<table>\n  <thead>\n    <tr>\n      <th>Компонент</th>\n      <th>Минимальные требования</th>\n      <th>Рекомендуемые характеристики</th>\n      <th>Примечания</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Операционная система (сервер)</td>\n      <td>Windows Server 2016 / Linux (Ubuntu 18.04+)</td>\n      <td>Windows Server 2019 / Linux (Ubuntu 20.04+)</td>\n      <td>Поддержка современных версий для безопасности и стабильности</td>\n    </tr>\n    <tr>\n      <td>Операционная система (клиент)</td>\n      <td>Windows 10, macOS 10.13, Android 8.0, iOS 12</td>\n      <td>Windows 11, macOS 11+, Android 11+, iOS 14+</td>\n      <td>Совместимость с мобильными приложениями и веб-интерфейсом</td>\n    </tr>\n    <tr>\n      <td>Процессор</td>\n      <td>2 ядра, 2.0 ГГц</td>\n      <td>4 ядра, 3.0 ГГц и выше</td>\n      <td>Для серверных задач и одновременной обработки данных</td>\n    </tr>\n    <tr>\n      <td>Оперативная память</td>\n      <td>4 ГБ</td>\n      <td>8 ГБ и более</td>\n      <td>Обеспечивает комфортную работу и быструю обработку данных</td>\n    </tr>\n    <tr>\n      <td>Место на диске</td>\n      <td>100 ГБ</td>\n      <td>500 ГБ и более</td>\n      <td>Для хранения базы данных, логов и резервных копий</td>\n    </tr>\n    <tr>\n      <td>Сетевое подключение</td>\n      <td>Стабильное подключение с пропускной способностью от 10 Мбит/с</td>\n      <td>Оптимально — 100 Мбит/с и выше</td>\n      <td>Для обмена данными в реальном времени и интеграции с внешними сервисами</td>\n    </tr>\n    <tr>\n      <td>Браузер</td>\n      <td>Последние версии Chrome, Firefox, Edge</td>\n      <td>Обновленные версии с поддержкой современных стандартов</td>\n      <td>Для работы в веб-интерфейсе</td>\n    </tr>\n    <tr>\n      <td>Дополнительное ПО</td>\n      <td>Java Runtime Environment (для некоторых модулей)</td>\n      <td>Обновленные версии компонентов и драйверов</td>\n      <td>Зависит от используемых интеграций и оборудования</td>\n    </tr>\n  </tbody>\n</table>\n\n<p>Соблюдение данных системных требований обеспечивает стабильную и эффективную работу электронного путевого листа USAUTO. Рекомендуется регулярно обновлять программное обеспечение и аппаратные компоненты, чтобы поддерживать безопасность и производительность системы на высоком уровне. Также важно обеспечить резервное копирование данных и мониторинг состояния серверов и клиентских устройств для своевременного обнаружения и устранения возможных проблем.</p>\n\n"
-          }
-        ],
-        "isPreviewComplited": false
+          "Электронный путевой лист"
+        ]
       }
     ],
-    "order": 15
-  },
-  {
-    "title": "ЭПЛ",
-    "href": "/epl",
-    "pages": [],
     "order": 8
   },
   {
@@ -6996,5 +5324,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-02T22:34:44.413Z";
+export const lastUpdated = "2025-10-02T22:44:07.777Z";
 export const generatedBy = "menu-persist-api";
