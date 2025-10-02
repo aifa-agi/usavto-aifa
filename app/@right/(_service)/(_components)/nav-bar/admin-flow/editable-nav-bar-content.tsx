@@ -15,7 +15,7 @@ import { useModal } from "../../../(_context)/modal-context";
 import { DialogsProvider } from "../../../(_context)/dialogs";
 import { Button } from "@/components/ui/button";
 import { useAdminNavigationMenu } from "../../../(_context)/admin-nav-bar-provider";
-import { useMenuOperations } from "../../../(_context)/nav-bar-provider";
+import { useAdminMenuOperations } from "../../../(_context)/admin-operations-hook";
 
 const HEADER_HEIGHT = 56;
 const MOBILE_MENU_OFFSET = 40;
@@ -29,7 +29,7 @@ export default function EditableNavBarContent() {
 
   const { isOpen, openModal, closeModal, toggleModal } = useModal();
   const { categories, setCategories, loading, dirty } = useAdminNavigationMenu();
-  const { handleUpdate, handleRetry, canRetry, retryCount, lastError } = useMenuOperations();
+  const { handleUpdate, handleRetry, canRetry, retryCount, lastError } = useAdminMenuOperations();
 
   const isAdminPagesRoute = pathname?.startsWith("/admin/pages") || false;
 

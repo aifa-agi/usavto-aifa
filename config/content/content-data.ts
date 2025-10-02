@@ -4851,7 +4851,7 @@ export const contentData = {
     "pages": [
       {
         "id": "ory1ruu5bd4tnz4m0sccap4r",
-        "title": "Беспилотные грузовые автомобили — новые лидеры логистики Подмосковья: запуск, вызовы, перспективы!~~~",
+        "title": "Беспилотные грузовые автомобили — новые лидеры логистики Подмосковья: запуск, вызовы, перспективы!",
         "href": "/blog/bespilotnye-gruzovye-avtomobili-novye-lidery-logistiki-podmoskovya-zapusk-vyzovy-perspektivy",
         "roles": [
           "guest"
@@ -6996,5 +6996,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-02T00:36:21.691Z";
+export const lastUpdated = "2025-10-02T00:46:19.397Z";
 export const generatedBy = "menu-persist-api";
