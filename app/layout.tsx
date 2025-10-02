@@ -28,6 +28,9 @@ import { NavBar } from "./@right/(_service)/(_components)/nav-bar/nav-bar";
 import { NavigationMenuProvider } from "./@right/(_service)/(_context)/nav-bar-provider";
 import { CookieBanner } from "@/app/(_service)/(_components)/cookie-banner";
 
+import { cookies, headers } from "next/headers";
+import { DEFAULT_LANGUAGE, SUPPORTED_LANGUAGES, SupportedLanguage } from "@/config/translations.config";
+
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -49,7 +52,14 @@ const geistMono = Geist_Mono({
 });
 
 
-
+export async function resolveLanguage(): Promise<SupportedLanguage> {
+  const c = await cookies();
+  const h = await headers();
+  const cookieLang = c.get("lang")?.value as SupportedLanguage | undefined;
+  const code = (h.get("accept-language") || "").split(",")[0]?.split("-")[0] || DEFAULT_LANGUAGE;
+  const headerLang = (SUPPORTED_LANGUAGES.includes(code as SupportedLanguage) ? code : DEFAULT_LANGUAGE) as SupportedLanguage;
+  return cookieLang && SUPPORTED_LANGUAGES.includes(cookieLang) ? cookieLang : headerLang;
+}
 
 export default async function RootLayout({
   left,
@@ -58,9 +68,12 @@ export default async function RootLayout({
   left: React.ReactNode;
   right: React.ReactNode;
 }) {
+  const lang = await resolveLanguage();
+
   return (
     <html
       lang={appConfig.lang}
+      data-lang={lang}
       suppressHydrationWarning
       className={`${geist.variable} ${geistMono.variable}`}
     >

@@ -109,7 +109,7 @@ export function useMenuOperations(
         const pageSlug = transliterate(normalizedTitle);
 
         const href =
-          category.title === "root" ? `/${pageSlug}` : `/blog/${pageSlug}`;
+          category.title === "root" ? `/${pageSlug}` : `/${category.title}/${pageSlug}`;
 
         setCategories((prev) =>
           prev.map((cat) =>
@@ -124,7 +124,7 @@ export function useMenuOperations(
                       href: href,
                       roles: ["guest"],
                       hasBadge: false,
-                      type: "blog", // В будущем это значение будет динамическим
+                      type: "customCategorias", 
                       aiRecommendContentStructure: DEFAULT_CONTENT_STRUCTURE,
                       isPublished: false,
                       isAddedToPrompt: false,
