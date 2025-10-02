@@ -92,7 +92,7 @@ export default async function RootLayout({
                         {/* --- START: CORRECTED BLOCK --- */}
                         <NavigationMenuProvider>
                           <div className="relative flex flex-col h-screen">
-                            <NavBar />
+                            {/* <NavBar /> */}
                             <main className="flex-1 overflow-y-auto hide-scrollbar">
                               {/* {right} */} Hello world
                             </main>
@@ -111,7 +111,7 @@ export default async function RootLayout({
                       <RightDrawerBar>
                         <NavigationMenuProvider>
                           <div className="relative flex flex-col h-svh pb-6">
-                            <NavBar />
+                            {/* <NavBar /> */}
                             <main className="flex-1 overflow-y-auto hide-scrollbar">
                               {/* {right} */} Hello world mobail
                             </main>
