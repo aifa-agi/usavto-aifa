@@ -19,16 +19,16 @@ export default function LoadingPage() {
         width={400}
         height={400}
         priority
-        className="pointer-events-none mb-5 mt-6 dark:invert"
+        className="pointer-events-none mb-5 mt-6 "
       />
 
       {/* Приветственный текст на русском языке */}
       <p className="text-foreground text-2xl font-semibold whitespace-pre-wrap mx-4 text-center">
-        Добро пожаловать в USAUTO с Chat GPT
+        Welcome to {appConfig.short_name} с Chat GPT
       </p>
 
       <p className="text-muted-foreground text-xl mt-4">
-        Загрузка...
+        Loading...
       </p>
     </div>
   );

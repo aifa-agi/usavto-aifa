@@ -175,6 +175,7 @@ function extractAndParseMenuCategories(source: string): unknown[] {
 // -------------------- HTTP handler --------------------
 
 export async function POST(req: NextRequest): Promise<NextResponse<ReadMenuResponse>> {
+  console.log("menu/read")
   const environment = getEnvMode();
   let filePath: string = DEFAULT_GITHUB_FILE_PATH;
 
