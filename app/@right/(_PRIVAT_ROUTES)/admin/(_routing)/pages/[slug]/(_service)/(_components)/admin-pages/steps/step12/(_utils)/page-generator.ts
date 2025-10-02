@@ -4,7 +4,7 @@
 
 import type { PageUploadPayload, ExtendedSection } from "@/app/@right/(_service)/(_types)/section-types";
 
-// Типы для работы с содержимым секций
+// Types for content nodes
 interface ContentNode {
   type: string;
   attrs?: {
@@ -24,40 +24,43 @@ interface BodyContent {
 
 /**
  * Generates complete page.tsx content with embedded sections data and metadata
+ * Comments in English: This version delegates all Metadata to constructMetadata
+ * to avoid conflicts and ensure single source of truth (icons, manifest, robots, canonical, OG/Twitter).
  */
-export function generatePageTsxContent(
-  payload: PageUploadPayload
-): string {
+export function generatePageTsxContent(payload: PageUploadPayload): string {
   const { pageMetadata, sections, href } = payload;
-  const relativePath = href.startsWith('/') ? href.slice(1) : href;
-  const categorySlug = relativePath.split('/')[0] || 'general';
-  
+  const relativePath = href.startsWith("/") ? href.slice(1) : href;
+  const categorySlug = relativePath.split("/")[0] || "general";
+
   const finalMetadata = {
     title: pageMetadata.title || "Страница без заголовка",
-    description: pageMetadata.description || "Описание отсутствует", 
+    description: pageMetadata.description || "Описание отсутствует",
     keywords: pageMetadata.keywords || [],
-    images: pageMetadata.images || []
+    images: pageMetadata.images || [],
   };
 
-  const escapedTitle = finalMetadata.title.replace(/`/g, '\\`').replace(/\$/g, '\\$');
-  const escapedDescription = finalMetadata.description.replace(/`/g, '\\`').replace(/\$/g, '\\$');
-  
+  const escapedTitle = finalMetadata.title.replace(/`/g, "\\`").replace(/\$/g, "\\$");
+  const escapedDescription = finalMetadata.description.replace(/`/g, "\\`").replace(/\$/g, "\\$");
+
   const sectionsJson = JSON.stringify(sections, null, 2);
-  
-  const heroImageData = finalMetadata.images.length > 0 ? {
-    href: finalMetadata.images[0].href,
-    alt: finalMetadata.images[0].alt || ""
-  } : null;
-  
-  const extractImageAlts = (sections: ExtendedSection[]): string[] => {
+
+  const heroImageData =
+    finalMetadata.images.length > 0
+      ? {
+          href: finalMetadata.images[0].href,
+          alt: finalMetadata.images[0].alt || "",
+        }
+      : null;
+
+  const extractImageAlts = (sectionsArr: ExtendedSection[]): string[] => {
     const alts: string[] = [];
-    sections.forEach(section => {
-      if (section.bodyContent && typeof section.bodyContent === 'object') {
+    sectionsArr.forEach((section) => {
+      if (section.bodyContent && typeof section.bodyContent === "object") {
         const bodyContent = section.bodyContent as BodyContent;
         if (bodyContent.content && Array.isArray(bodyContent.content)) {
           const extractFromContent = (content: ContentNode[]): void => {
             content.forEach((node: ContentNode) => {
-              if (node.type === 'image' && node.attrs?.alt) {
+              if (node.type === "image" && node.attrs?.alt) {
                 alts.push(node.attrs.alt);
               }
               if (node.content && Array.isArray(node.content)) {
@@ -73,113 +76,49 @@ export function generatePageTsxContent(
   };
   const imageAlts = extractImageAlts(sections);
 
-  // ✅ ИЗМЕНЕНО: Все пути строятся на основе полного `href` и `relativePath`.
+  // Canonical as plain reference for JSON-LD; actual canonical tag comes from constructMetadata
+  const canonicalUrl = `\${appConfig.url}${href}`;
+
+  // Template output
   return `// Auto-generated SEO-optimized static page - do not edit manually
 // Generated on: ${new Date().toISOString()}
 // Source href: ${href}
-// Page metadata: ${pageMetadata.title || 'No title'} | ${sections.length} sections
+// Page metadata: ${pageMetadata.title || "No title"} | ${sections.length} sections
 // SEO Mode: STATIC GENERATION ENABLED
 
-
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import { appConfig } from "@/config/appConfig";
+import { constructMetadata } from "@/lib/construct-metadata";
 import ContentRenderer from "@/app/@right/(_service)/(_components)/content-renderer";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 
-
-// ПРИНУЖДЕНИЕ К СТАТИЧЕСКОЙ ГЕНЕРАЦИИ - критически важно для SEO
-export const dynamic = 'force-static';
+// Enforce static generation for SEO
+export const dynamic = "force-static";
 export const revalidate = false;
-export const fetchCache = 'force-cache';
+export const fetchCache = "force-cache";
 
-
-// Встроенные данные секций
+// Embedded sections data
 const sections = ${sectionsJson};
 
+// Hero image data
+const heroImage = ${heroImageData ? JSON.stringify(heroImageData, null, 2) : "null"};
 
-// Данные героического изображения
-const heroImage = ${heroImageData ? JSON.stringify(heroImageData, null, 2) : 'null'};
+// Canonical URL for JSON-LD (metadata canonical is handled by constructMetadata)
+const canonicalUrl = \`${"${"}appConfig.url${"}"}${href}\`;
 
-// ✅ ИСПРАВЛЕНО: Определяем canonicalUrl в глобальной области видимости модуля.
-const canonicalUrl = \`\${appConfig.url}${href}\`;
-
-
-// ПОЛНАЯ SEO-ОПТИМИЗАЦИЯ: генерация метаданных из appConfig
+// Centralized Metadata via constructMetadata
 export async function generateMetadata(): Promise<Metadata> {
-  const siteUrl = appConfig.url;
-  
-  return {
+  return constructMetadata({
     title: "${escapedTitle}",
     description: "${escapedDescription}",
-    keywords: ${JSON.stringify(finalMetadata.keywords)},
-    
-    metadataBase: new URL(siteUrl),
-    
-    openGraph: {
-      title: "${escapedTitle}",
-      description: "${escapedDescription}",
-      type: "article",
-      url: canonicalUrl,
-      siteName: appConfig.name,
-      locale: appConfig.lang,${finalMetadata.images.length > 0 ? `
-      images: [
-        {
-          url: "${finalMetadata.images[0].href}",
-          alt: "${finalMetadata.images[0].alt?.replace(/`/g, '\\`').replace(/\$/g, '\\$') || ''}",
-          width: 1200,
-          height: 630,
-        }
-      ],` : `
-      images: [
-        {
-          url: appConfig.ogImage,
-          alt: appConfig.name,
-          width: 1200,
-          height: 630,
-        }
-      ],`}
-    },
-    
-    twitter: {
-      card: "summary_large_image",
-      title: "${escapedTitle}",
-      description: "${escapedDescription}",${finalMetadata.images.length > 0 ? `
-      images: ["${finalMetadata.images[0].href}"],` : `
-      images: [appConfig.ogImage],`}
-    },
-    
-    alternates: {
-      canonical: canonicalUrl,
-    },
-    
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        'max-video-preview': -1,
-        'max-image-preview': 'large',
-        'max-snippet': -1,
-      },
-    },
-    
-    authors: [{ name: appConfig.name }],
-    
-    category: 'article',
-    classification: 'business',
-    
-    other: {
-      'article:author': appConfig.name,
-      'article:section': '${categorySlug}',
-      'article:tag': ${JSON.stringify(finalMetadata.keywords)}.join(', '),
-    },
-  };
+    image: ${heroImageData ? `"${heroImageData.href}"` : "appConfig.ogImage"},
+    pathname: "${href}",
+    locale: appConfig.seo?.defaultLocale ?? appConfig.lang,
+  });
 }
 
-
-// Основной компонент страницы - полностью статический
+// Page component (fully static)
 export default function Page() {
   return (
     <article className="page-content">
@@ -195,11 +134,13 @@ export default function Page() {
             <Badge className="shadow-none rounded-md px-2.5 py-0.5 text-xs font-semibold h-6 flex items-center">
               ${categorySlug}
             </Badge>
-            {${finalMetadata.keywords.length > 0 ? `${JSON.stringify(finalMetadata.keywords)}.slice(0, 3).map((keyword: string, index: number) => (
+            ${finalMetadata.keywords.length > 0
+              ? `${JSON.stringify(finalMetadata.keywords)}.slice(0, 3).map((keyword: string, index: number) => (
               <Badge key={index} variant="outline" className="shadow-none rounded-md px-2.5 py-0.5 text-xs font-semibold h-6 flex items-center">
                 {keyword}
               </Badge>
-            ))` : ''}}
+            ))`
+              : ""}
           </div>
         </div>
       </div>
@@ -207,7 +148,8 @@ export default function Page() {
         <div className="absolute top-52 w-full border-t" />
         <ContentRenderer sections={sections} heroImage={heroImage} />
       </div>
-      
+
+      {/* Structured data: JSON-LD Article */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -219,7 +161,7 @@ export default function Page() {
             "author": {
               "@type": "Organization",
               "name": appConfig.name,
-              "url": appConfig.url,
+              "url": appConfig.url
             },
             "publisher": {
               "@type": "Organization",
@@ -227,15 +169,17 @@ export default function Page() {
               "url": appConfig.url,
               "logo": {
                 "@type": "ImageObject",
-                "url": \`\${appConfig.url}\${appConfig.logo}\`,
-              },
+                "url": \`\${appConfig.url}\${appConfig.logo}\`
+              }
             },
             "url": canonicalUrl,
-            ${finalMetadata.images.length > 0 ? `"image": {
+            ${heroImageData
+              ? `"image": {
               "@type": "ImageObject",
-              "url": "${finalMetadata.images[0].href}",
-              "alt": "${finalMetadata.images[0].alt || ''}"
-            },` : `"image": {
+              "url": "${heroImageData.href}",
+              "alt": "${heroImageData.alt || ""}"
+            },`
+              : `"image": {
               "@type": "ImageObject",
               "url": appConfig.ogImage,
               "alt": appConfig.name
@@ -253,5 +197,6 @@ export default function Page() {
       />
     </article>
   );
-}`;
+}
+`;
 }

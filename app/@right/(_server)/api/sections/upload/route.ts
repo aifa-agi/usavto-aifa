@@ -2,8 +2,6 @@
 // Production-critical module - consolidated from decomposed services
 
 import { NextRequest, NextResponse } from "next/server";
-import { existsSync } from "fs";
-import { join } from "path";
 import type { PageUploadPayload } from "@/app/@right/(_service)/(_types)/section-types";
 
 // Import decomposed services
@@ -14,13 +12,6 @@ function isProduction() {
   return process.env.NODE_ENV === "production";
 }
 
-// ❌ УДАЛЕНО: Функция parseHref больше не нужна, так как мы работаем с полным путем.
-/*
-function parseHref(href: string): {
-  firstPartHref: string;
-  secondPartHref: string;
-} { ... }
-*/
 
 function validateRequestBody(body: any): body is PageUploadPayload {
   if (!body || typeof body !== "object") {
@@ -62,10 +53,7 @@ function validateRequestBody(body: any): body is PageUploadPayload {
   return true;
 }
 
-// ❌ УДАЛЕНО: Функция validateSafeName больше не нужна, так как мы валидируем весь href.
-/*
-function validateSafeName(name: string, fieldName: string): void { ... }
-*/
+
 
 export async function POST(
   request: NextRequest
