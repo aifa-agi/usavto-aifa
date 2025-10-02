@@ -5551,9 +5551,9 @@ export const contentData = {
         "description": "Как экспериментальные перевозки автономными фурами меняют транспортный ландшафт Московской области",
         "images": [
           {
-            "id": "wtercz4c1tdy6nt8us0eqqeg",
-            "alt": "usavto",
-            "href": "https://9d8adypzz8xutnay.public.blob.vercel-storage.com/usautopro1-aYYSBvjx3o6p00hmN90J6WBTVy3e0P.jpg"
+            "id": "l5q4sd5etg94dgm9klpkn5w0",
+            "alt": "usauto1",
+            "href": "https://9d8adypzz8xutnay.public.blob.vercel-storage.com/generated-image%20%281%29-AA8fHd0wyYgLcOL3tEOcfofaMjGOju.png"
           }
         ],
         "keywords": [
@@ -6996,5 +6996,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-02T00:54:33.017Z";
+export const lastUpdated = "2025-10-02T22:34:44.413Z";
 export const generatedBy = "menu-persist-api";
