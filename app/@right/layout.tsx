@@ -15,7 +15,7 @@ export default function RightLayout({
       {children}
 
 
-      {/* {modal} */}
+      {modal}
 
     </>
   );
