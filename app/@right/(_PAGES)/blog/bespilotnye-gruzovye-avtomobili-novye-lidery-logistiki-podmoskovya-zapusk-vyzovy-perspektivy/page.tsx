@@ -1,24 +1,22 @@
 // Auto-generated SEO-optimized static page - do not edit manually
-// Generated on: 2025-10-01T11:57:18.335Z
+// Generated on: 2025-10-02T15:34:12.045Z
 // Source href: /blog/bespilotnye-gruzovye-avtomobili-novye-lidery-logistiki-podmoskovya-zapusk-vyzovy-perspektivy
 // Page metadata: Беспилотные грузовые автомобили — новые лидеры логистики Подмосковья: запуск, вызовы, перспективы | 7 sections
 // SEO Mode: STATIC GENERATION ENABLED
 
-
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import { appConfig } from "@/config/appConfig";
+import { constructMetadata } from "@/lib/construct-metadata";
 import ContentRenderer from "@/app/@right/(_service)/(_components)/content-renderer";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 
-
-// ПРИНУЖДЕНИЕ К СТАТИЧЕСКОЙ ГЕНЕРАЦИИ - критически важно для SEO
-export const dynamic = 'force-static';
+// Enforce static generation for SEO
+export const dynamic = "force-static";
 export const revalidate = false;
-export const fetchCache = 'force-cache';
+export const fetchCache = "force-cache";
 
-
-// Встроенные данные секций
+// Embedded sections data
 const sections = [
   {
     "id": "h2-1",
@@ -34,7 +32,7 @@ const sections = [
           "content": [
             {
               "type": "text",
-              "text": "Введение в беспилотные грузовые автомобили и их роль в логистике Подмосковья"
+              "text": "Введение в беспилотные грузовые автомобили и их роль в логистике Подмосковья!"
             }
           ]
         },
@@ -2442,83 +2440,27 @@ const sections = [
   }
 ];
 
-
-// Данные героического изображения
+// Hero image data
 const heroImage = {
   "href": "https://9d8adypzz8xutnay.public.blob.vercel-storage.com/usautopro1-aYYSBvjx3o6p00hmN90J6WBTVy3e0P.jpg",
   "alt": "usavto"
 };
 
-// ✅ ИСПРАВЛЕНО: Определяем canonicalUrl в глобальной области видимости модуля.
+// Canonical URL for JSON-LD (metadata canonical is handled by constructMetadata)
 const canonicalUrl = `${appConfig.url}/blog/bespilotnye-gruzovye-avtomobili-novye-lidery-logistiki-podmoskovya-zapusk-vyzovy-perspektivy`;
 
-
-// ПОЛНАЯ SEO-ОПТИМИЗАЦИЯ: генерация метаданных из appConfig
+// Centralized Metadata via constructMetadata
 export async function generateMetadata(): Promise<Metadata> {
-  const siteUrl = appConfig.url;
-  
-  return {
+  return constructMetadata({
     title: "Беспилотные грузовые автомобили — новые лидеры логистики Подмосковья: запуск, вызовы, перспективы",
     description: "Как экспериментальные перевозки автономными фурами меняют транспортный ландшафт Московской области",
-    keywords: ["Беспилотные грузовые автомобили вышли на дороги Подмосковья"],
-    
-    metadataBase: new URL(siteUrl),
-    
-    openGraph: {
-      title: "Беспилотные грузовые автомобили — новые лидеры логистики Подмосковья: запуск, вызовы, перспективы",
-      description: "Как экспериментальные перевозки автономными фурами меняют транспортный ландшафт Московской области",
-      type: "article",
-      url: canonicalUrl,
-      siteName: appConfig.name,
-      locale: appConfig.lang,
-      images: [
-        {
-          url: "https://9d8adypzz8xutnay.public.blob.vercel-storage.com/usautopro1-aYYSBvjx3o6p00hmN90J6WBTVy3e0P.jpg",
-          alt: "usavto",
-          width: 1200,
-          height: 630,
-        }
-      ],
-    },
-    
-    twitter: {
-      card: "summary_large_image",
-      title: "Беспилотные грузовые автомобили — новые лидеры логистики Подмосковья: запуск, вызовы, перспективы",
-      description: "Как экспериментальные перевозки автономными фурами меняют транспортный ландшафт Московской области",
-      images: ["https://9d8adypzz8xutnay.public.blob.vercel-storage.com/usautopro1-aYYSBvjx3o6p00hmN90J6WBTVy3e0P.jpg"],
-    },
-    
-    alternates: {
-      canonical: canonicalUrl,
-    },
-    
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        'max-video-preview': -1,
-        'max-image-preview': 'large',
-        'max-snippet': -1,
-      },
-    },
-    
-    authors: [{ name: appConfig.name }],
-    
-    category: 'article',
-    classification: 'business',
-    
-    other: {
-      'article:author': appConfig.name,
-      'article:section': 'blog',
-      'article:tag': ["Беспилотные грузовые автомобили вышли на дороги Подмосковья"].join(', '),
-    },
-  };
+    image: "https://9d8adypzz8xutnay.public.blob.vercel-storage.com/usautopro1-aYYSBvjx3o6p00hmN90J6WBTVy3e0P.jpg",
+    pathname: "/blog/bespilotnye-gruzovye-avtomobili-novye-lidery-logistiki-podmoskovya-zapusk-vyzovy-perspektivy",
+    locale: appConfig.seo?.defaultLocale ?? appConfig.lang,
+  });
 }
 
-
-// Основной компонент страницы - полностью статический
+// Page component (fully static)
 export default function Page() {
   return (
     <article className="page-content">
@@ -2534,11 +2476,11 @@ export default function Page() {
             <Badge className="shadow-none rounded-md px-2.5 py-0.5 text-xs font-semibold h-6 flex items-center">
               blog
             </Badge>
-            {["Беспилотные грузовые автомобили вышли на дороги Подмосковья"].slice(0, 3).map((keyword: string, index: number) => (
+            ["Беспилотные грузовые автомобили вышли на дороги Подмосковья"].slice(0, 3).map((keyword: string, index: number) => (
               <Badge key={index} variant="outline" className="shadow-none rounded-md px-2.5 py-0.5 text-xs font-semibold h-6 flex items-center">
                 {keyword}
               </Badge>
-            ))}
+            ))
           </div>
         </div>
       </div>
@@ -2546,7 +2488,8 @@ export default function Page() {
         <div className="absolute top-52 w-full border-t" />
         <ContentRenderer sections={sections} heroImage={heroImage} />
       </div>
-      
+
+      {/* Structured data: JSON-LD Article */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -2558,7 +2501,7 @@ export default function Page() {
             "author": {
               "@type": "Organization",
               "name": appConfig.name,
-              "url": appConfig.url,
+              "url": appConfig.url
             },
             "publisher": {
               "@type": "Organization",
@@ -2566,8 +2509,8 @@ export default function Page() {
               "url": appConfig.url,
               "logo": {
                 "@type": "ImageObject",
-                "url": `${appConfig.url}${appConfig.logo}`,
-              },
+                "url": `${appConfig.url}${appConfig.logo}`
+              }
             },
             "url": canonicalUrl,
             "image": {
@@ -2575,8 +2518,8 @@ export default function Page() {
               "url": "https://9d8adypzz8xutnay.public.blob.vercel-storage.com/usautopro1-aYYSBvjx3o6p00hmN90J6WBTVy3e0P.jpg",
               "alt": "usavto"
             },
-            "datePublished": "2025-10-01T11:57:18.335Z",
-            "dateModified": "2025-10-01T11:57:18.335Z",
+            "datePublished": "2025-10-02T15:34:12.045Z",
+            "dateModified": "2025-10-02T15:34:12.045Z",
             "articleSection": "blog",
             "keywords": ["Беспилотные грузовые автомобили вышли на дороги Подмосковья"],
             "mainEntityOfPage": {
