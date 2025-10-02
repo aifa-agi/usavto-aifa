@@ -13,7 +13,7 @@ export const contentData = {
         ],
         "hasBadge": false,
         "type": "homePage",
-        "isPublished": false,
+        "isPublished": true,
         "isAddedToPrompt": false,
         "isVectorConnected": false,
         "isChatSynchronized": false,
@@ -6978,7 +6978,7 @@ export const contentData = {
         "title": "Vercel deploy",
         "href": "/admin/vercel-deploy",
         "roles": [
-          "guest"
+          "admin"
         ],
         "hasBadge": false,
         "type": "blog",
