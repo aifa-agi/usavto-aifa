@@ -4939,7 +4939,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-03T12:47:53.635Z",
-        "updatedAt": "2025-10-03T12:57:38.520Z",
+        "updatedAt": "2025-10-03T12:59:07.908Z",
         "order": 1,
         "description": "про ЭПЛ",
         "images": [
@@ -4995,7 +4995,8 @@ export const contentData = {
                   "minWords": 120,
                   "maxWords": 250,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-1-2",
@@ -5015,7 +5016,8 @@ export const contentData = {
                   "minWords": 80,
                   "maxWords": 180,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-1-3",
@@ -5035,7 +5037,8 @@ export const contentData = {
                   "minWords": 5,
                   "maxWords": 15,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "blockquote-1-4",
@@ -5055,9 +5058,11 @@ export const contentData = {
                   "minWords": 25,
                   "maxWords": 50,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-2",
@@ -6451,7 +6456,8 @@ export const contentData = {
               }
             ]
           }
-        ]
+        ],
+        "isReadyDraftForPerplexity": false
       }
     ],
     "order": 17
@@ -6461,5 +6467,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-03T12:59:08.786Z";
+export const lastUpdated = "2025-10-03T12:59:16.550Z";
 export const generatedBy = "menu-persist-api";
