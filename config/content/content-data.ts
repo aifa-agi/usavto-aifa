@@ -4939,7 +4939,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-03T12:47:53.635Z",
-        "updatedAt": "2025-10-03T12:59:27.782Z",
+        "updatedAt": "2025-10-03T12:59:30.841Z",
         "order": 1,
         "description": "про ЭПЛ",
         "images": [
@@ -6411,7 +6411,8 @@ export const contentData = {
                   "minWords": 60,
                   "maxWords": 240,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-7-2",
@@ -6431,7 +6432,8 @@ export const contentData = {
                   "minWords": 100,
                   "maxWords": 200,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "table-6-2-2",
@@ -6451,7 +6453,8 @@ export const contentData = {
                   "minWords": 200,
                   "maxWords": 300,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "ul-7-3",
@@ -6471,7 +6474,8 @@ export const contentData = {
                   "minWords": 60,
                   "maxWords": 120,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-7-4",
@@ -6491,7 +6495,8 @@ export const contentData = {
                   "minWords": 80,
                   "maxWords": 160,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "blockquote-7-5",
@@ -6511,12 +6516,14 @@ export const contentData = {
                   "minWords": 15,
                   "maxWords": 35,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           }
         ],
-        "isReadyDraftForPerplexity": false
+        "isReadyDraftForPerplexity": true
       }
     ],
     "order": 17
@@ -6526,5 +6533,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-03T12:59:31.468Z";
+export const lastUpdated = "2025-10-03T13:00:13.402Z";
 export const generatedBy = "menu-persist-api";
