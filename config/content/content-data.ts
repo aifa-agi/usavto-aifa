@@ -13,12 +13,12 @@ export const contentData = {
         ],
         "hasBadge": false,
         "type": "homePage",
-        "isPublished": true,
+        "isPublished": false,
         "isAddedToPrompt": false,
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "order": 1,
-        "title": "aifa",
+        "title": "USAUTO!5555",
         "description": "AI generator",
         "images": [
           {
@@ -6560,5 +6560,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-03T13:22:14.543Z";
+export const lastUpdated = "2025-10-03T18:17:42.979Z";
 export const generatedBy = "menu-persist-api";

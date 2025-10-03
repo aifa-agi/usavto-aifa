@@ -95,7 +95,7 @@ export const ADMIN_PAGES_TABS: AdminPageTabConfig[] = [
     hasIndicator: true,
     defaultIndicatorStatus: "gray",
     etapNumber: 6,
-    stepType: "required",
+    stepType: "optional",
     dependencies: ["step5"],
     titleForRequired: "Step 2", // В режиме Required Only показывается как Step 2
   },
@@ -110,7 +110,7 @@ export const ADMIN_PAGES_TABS: AdminPageTabConfig[] = [
     etapNumber: 7,
     stepType: "required",
     dependencies: [],
-    titleForRequired: "Step 3",
+    titleForRequired: "Step 2",
   },
   {
     key: "step8",
@@ -122,7 +122,7 @@ export const ADMIN_PAGES_TABS: AdminPageTabConfig[] = [
     etapNumber: 8,
     stepType: "required",
     dependencies: ["step7"],
-    titleForRequired: "Step 4",
+    titleForRequired: "Step 3",
   },
   {
     key: "step9",

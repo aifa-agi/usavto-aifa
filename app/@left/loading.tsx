@@ -24,7 +24,7 @@ export default function LoadingPage() {
 
       {/* Приветственный текст на русском языке */}
       <p className="text-foreground text-2xl font-semibold whitespace-pre-wrap mx-4 text-center">
-        Welcome to {appConfig.short_name} с Chat GPT
+        Welcome to {appConfig.short_name} with {appConfig.chatBrand}
       </p>
 
       <p className="text-muted-foreground text-xl mt-4">

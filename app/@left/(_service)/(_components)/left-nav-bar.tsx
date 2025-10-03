@@ -5,6 +5,7 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
+import { appConfig } from "@/config/appConfig";
 
 const LeftNavBar: React.FC = () => {
   const router = useRouter();
@@ -16,7 +17,7 @@ const LeftNavBar: React.FC = () => {
         className="w-full"
         onClick={() => router.push("/")}
       >
-        Chat bot
+        {appConfig.chatBrand}
       </Button>
     </div>
   );

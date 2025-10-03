@@ -8,7 +8,7 @@ import { FileCode2 } from "lucide-react";
 import { PageActionsDropdownProps } from "./types";
 
 import { PageActionsMenu } from "./components/page-actions-menu";
-import { HomeActionsMenu } from "./components/home-actions-menu";
+import { HomeActionsMenu } from "./components/home-actions-menu/home-actions-menu";
 import {
   DropdownMenuContent,
   DropdownMenuTrigger,
@@ -116,10 +116,6 @@ export function PageActionsDropdown({
           />
         ) : (
           <HomeActionsMenu
-            {...dataStatus}
-            {...pageActions}
-            currentPageData={currentPageData}
-            hasUnsavedChanges={hasUnsavedChanges}
           />
         )}
 

@@ -26,7 +26,7 @@ export default function LoadingPage() {
       </div>
 
       <Link href="/" className="text-xl w-full mt-auto mb-2">
-        <Button className="w-full">Chat GPT</Button>
+        <Button className="w-full">{appConfig.chatBrand}</Button>
       </Link>
     </div>
   );
