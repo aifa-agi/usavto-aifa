@@ -3178,14 +3178,14 @@ export const contentData = {
     "href": "/blog",
     "pages": [
       {
-        "id": "d8dzgg5igskk8sgl2cbdraxg",
+        "id": "ftsaa59yh781pdn4rhmfplzs",
         "title": "Грузовые автомобили выходят на дороги Подмосковья",
         "href": "/blog/gruzovye-avtomobili-vyhodyat-na-dorogi-podmoskovya",
         "roles": [
           "guest"
         ],
         "hasBadge": false,
-        "type": "customCategorias",
+        "type": "blog",
         "aiRecommendContentStructure": [
           {
             "id": "h2-1",
@@ -3224,8 +3224,8 @@ export const contentData = {
                 }
               },
               {
-                "id": "p-1-3",
-                "tag": "p",
+                "id": "img-1-3",
+                "tag": "img",
                 "additionalData": {
                   "minWords": 5,
                   "maxWords": 15,
@@ -3298,8 +3298,8 @@ export const contentData = {
                     }
                   },
                   {
-                    "id": "p-2-2-3",
-                    "tag": "p",
+                    "id": "img-2-2-3",
+                    "tag": "img",
                     "additionalData": {
                       "minWords": 5,
                       "maxWords": 15,
@@ -3385,8 +3385,8 @@ export const contentData = {
             },
             "realContentStructure": [
               {
-                "id": "p-3-1",
-                "tag": "p",
+                "id": "img-3-1",
+                "tag": "img",
                 "additionalData": {
                   "minWords": 5,
                   "maxWords": 15,
@@ -3546,8 +3546,8 @@ export const contentData = {
                 },
                 "realContentStructure": [
                   {
-                    "id": "p-4-2-1",
-                    "tag": "p",
+                    "id": "img-4-2-1",
+                    "tag": "img",
                     "additionalData": {
                       "minWords": 5,
                       "maxWords": 15,
@@ -3660,8 +3660,8 @@ export const contentData = {
                 }
               },
               {
-                "id": "p-5-2",
-                "tag": "p",
+                "id": "img-5-2",
+                "tag": "img",
                 "additionalData": {
                   "minWords": 5,
                   "maxWords": 15,
@@ -3717,12 +3717,12 @@ export const contentData = {
             "attention": "",
             "intent": "",
             "audiences": "",
-            "selfPrompt": "This FAQ section is designed for generating relevant questions and answers. To create meaningful questions, you should adopt the perspective of the user, which requires analyzing the existing content and understanding the target audience. Consider what six questions would be most interesting and useful for users within the context of the given topic. Then, generate those six questions and organize each one under an h3 heading, ensuring that each question is paired with a well-crafted answer.",
+            "selfPrompt": "",
             "designDescription": "",
             "connectedDesignSectionId": "",
             "additionalData": {
-              "minWords": 450,
-              "maxWords": 600,
+              "minWords": 350,
+              "maxWords": 500,
               "actualContent": ""
             },
             "realContentStructure": [
@@ -3752,6 +3752,24 @@ export const contentData = {
                       "maxWords": 150,
                       "actualContent": ""
                     }
+                  },
+                  {
+                    "id": "table-6-2-2",
+                    "tag": "table",
+                    "additionalData": {
+                      "minWords": 100,
+                      "maxWords": 200,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-6-2-3",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 85,
+                      "maxWords": 170,
+                      "actualContent": ""
+                    }
                   }
                 ]
               },
@@ -3759,8 +3777,8 @@ export const contentData = {
                 "id": "h3-6-3",
                 "tag": "h3",
                 "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 300,
+                  "minWords": 100,
+                  "maxWords": 150,
                   "actualContent": ""
                 },
                 "realContentStructure": [
@@ -3768,88 +3786,17 @@ export const contentData = {
                     "id": "p-6-3-1",
                     "tag": "p",
                     "additionalData": {
-                      "minWords": 75,
-                      "maxWords": 150,
+                      "minWords": 90,
+                      "maxWords": 180,
                       "actualContent": ""
                     }
-                  }
-                ]
-              },
-              {
-                "id": "h3-6-4",
-                "tag": "h3",
-                "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 300,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
+                  },
                   {
-                    "id": "p-6-4-1",
-                    "tag": "p",
+                    "id": "code-6-3-2",
+                    "tag": "code",
                     "additionalData": {
-                      "minWords": 75,
-                      "maxWords": 150,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              },
-              {
-                "id": "h3-6-5",
-                "tag": "h3",
-                "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 300,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-6-5-1",
-                    "tag": "p",
-                    "additionalData": {
-                      "minWords": 75,
-                      "maxWords": 150,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              },
-              {
-                "id": "h3-6-6",
-                "tag": "h3",
-                "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 300,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-6-6-1",
-                    "tag": "p",
-                    "additionalData": {
-                      "minWords": 75,
-                      "maxWords": 150,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              },
-              {
-                "id": "h3-6-7",
-                "tag": "h3",
-                "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 300,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-6-7-1",
-                    "tag": "p",
-                    "additionalData": {
-                      "minWords": 75,
-                      "maxWords": 150,
+                      "minWords": 30,
+                      "maxWords": 70,
                       "actualContent": ""
                     }
                   }
@@ -3879,7 +3826,7 @@ export const contentData = {
                 "id": "p-7-1",
                 "tag": "p",
                 "additionalData": {
-                  "minWords": 60,
+                  "minWords": 120,
                   "maxWords": 240,
                   "actualContent": ""
                 }
@@ -3890,15 +3837,6 @@ export const contentData = {
                 "additionalData": {
                   "minWords": 100,
                   "maxWords": 200,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "table-6-2-2",
-                "tag": "table",
-                "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 300,
                   "actualContent": ""
                 }
               },
@@ -3967,5 +3905,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-03T07:42:24.854Z";
+export const lastUpdated = "2025-10-03T07:57:19.135Z";
 export const generatedBy = "menu-persist-api";
