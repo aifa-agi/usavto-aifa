@@ -4939,7 +4939,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-03T12:47:53.635Z",
-        "updatedAt": "2025-10-03T12:47:53.635Z",
+        "updatedAt": "2025-10-03T12:57:38.520Z",
         "order": 1,
         "description": "про ЭПЛ",
         "images": [
@@ -4951,6 +4951,1506 @@ export const contentData = {
         ],
         "keywords": [
           "ЭПЛ "
+        ],
+        "draftContentStructure": [
+          {
+            "id": "h2-1",
+            "tag": "h2",
+            "classification": "Guide",
+            "keywords": [
+              "ЭПЛ",
+              "введение",
+              "основы ЭПЛ",
+              "что такое ЭПЛ",
+              "обзор ЭПЛ"
+            ],
+            "taxonomy": "Introduction",
+            "attention": "Это введение поможет читателям понять базовые понятия и значение ЭПЛ.",
+            "intent": "Объяснить, что такое ЭПЛ, и дать общее представление о теме для новых читателей.",
+            "audiences": "новички, интересующиеся ЭПЛ, студенты, начинающие специалисты",
+            "selfPrompt": "Создайте вводный раздел с заголовком уровня 2 (h2) на тему 'про ЭПЛ'. Используйте дружелюбный и разговорный стиль, но сохраняйте профессиональный тон. Включите три абзаца и один блок цитаты, раскрывающие основные понятия ЭПЛ, его важность и контекст использования. Общий объем текста должен быть от 1300 до 1500 слов. Используйте ключевые слова из PAGE_DATA и синонимы. Не вставляйте изображения. • также следует учитывать пользовательские настройки, сделанные ко всей странице: writing-style:{title:Conversational, description:Friendly, informal, like talking to a friend}, content-format:{title:Professional, description:Business-appropriate, formal tone}, custom requirements and specifications:{—} •",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 1300,
+              "maxWords": 1500,
+              "actualContent": "need generate helpful content"
+            },
+            "realContentStructure": [
+              {
+                "id": "p-1-1",
+                "tag": "p",
+                "keywords": [
+                  "ЭПЛ",
+                  "определение",
+                  "значение",
+                  "основы"
+                ],
+                "taxonomy": "Definition",
+                "attention": "Первый абзац задает основу понимания ЭПЛ.",
+                "intent": "Дать четкое определение ЭПЛ и объяснить его значение.",
+                "audiences": "новички, студенты",
+                "selfPrompt": "Напишите абзац (p) объемом 120-250 слов, объясняющий, что такое ЭПЛ, с использованием ключевых слов и простого языка. Формат — обычный текст без списков и таблиц.",
+                "additionalData": {
+                  "minWords": 120,
+                  "maxWords": 250,
+                  "actualContent": "need generate helpful content"
+                }
+              },
+              {
+                "id": "p-1-2",
+                "tag": "p",
+                "keywords": [
+                  "история",
+                  "развитие",
+                  "контекст",
+                  "ЭПЛ"
+                ],
+                "taxonomy": "Context",
+                "attention": "Второй абзац помогает понять исторический и практический контекст ЭПЛ.",
+                "intent": "Рассказать об истории и развитии ЭПЛ, а также о его роли в современном мире.",
+                "audiences": "новички, интересующиеся историей",
+                "selfPrompt": "Создайте абзац (p) длиной 80-180 слов, описывающий исторический и современный контекст ЭПЛ. Используйте разговорный стиль с профессиональной подачей.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 180,
+                  "actualContent": "need generate helpful content"
+                }
+              },
+              {
+                "id": "p-1-3",
+                "tag": "p",
+                "keywords": [
+                  "значение",
+                  "применение",
+                  "ЭПЛ",
+                  "важность"
+                ],
+                "taxonomy": "Importance",
+                "attention": "Краткий абзац подчеркивает важность темы для читателя.",
+                "intent": "Кратко объяснить, почему ЭПЛ важен и какие преимущества он дает.",
+                "audiences": "широкая аудитория",
+                "selfPrompt": "Напишите короткий абзац (p) 5-15 слов, подчеркивающий значимость ЭПЛ для читателя.",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": "need generate helpful content"
+                }
+              },
+              {
+                "id": "blockquote-1-4",
+                "tag": "blockquote",
+                "keywords": [
+                  "цитата",
+                  "мотивация",
+                  "ЭПЛ",
+                  "вдохновение"
+                ],
+                "taxonomy": "Motivational Quote",
+                "attention": "Цитата добавляет эмоциональную ценность и мотивирует к изучению темы.",
+                "intent": "Включить вдохновляющую цитату, связанную с ЭПЛ, чтобы заинтересовать читателя.",
+                "audiences": "все читатели",
+                "selfPrompt": "Создайте блок цитаты (blockquote) объемом 25-50 слов, который вдохновляет и мотивирует читателей изучать ЭПЛ. Используйте профессиональный и дружелюбный стиль.",
+                "additionalData": {
+                  "minWords": 25,
+                  "maxWords": 50,
+                  "actualContent": "need generate helpful content"
+                }
+              }
+            ]
+          },
+          {
+            "id": "h2-2",
+            "tag": "h2",
+            "classification": "Guide",
+            "keywords": [
+              "структура ЭПЛ",
+              "компоненты",
+              "элементы ЭПЛ",
+              "основные части"
+            ],
+            "taxonomy": "Structure",
+            "attention": "Понимание структуры ЭПЛ важно для глубокого освоения темы.",
+            "intent": "Дать подробное описание структуры и основных компонентов ЭПЛ.",
+            "audiences": "студенты, специалисты, интересующиеся техническими аспектами",
+            "selfPrompt": "Разработайте раздел с заголовком h2, подробно описывающий структуру ЭПЛ. Используйте профессиональный и дружелюбный стиль, объемом от 1300 до 1500 слов. Включите один абзац введения, два подзаголовка h3 с соответствующими абзацами, таблицей, списком и кодом. Не используйте изображения. • также следует учитывать пользовательские настройки, сделанные ко всей странице: writing-style:{title:Conversational, description:Friendly, informal, like talking to a friend}, content-format:{title:Professional, description:Business-appropriate, formal tone}, custom requirements and specifications:{—} •",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 1300,
+              "maxWords": 1500,
+              "actualContent": "need generate helpful content"
+            },
+            "realContentStructure": [
+              {
+                "id": "p-2-1",
+                "tag": "p",
+                "keywords": [
+                  "введение",
+                  "структура",
+                  "обзор",
+                  "ЭПЛ"
+                ],
+                "taxonomy": "Introduction",
+                "attention": "Введение задает тон и контекст для последующего описания структуры.",
+                "intent": "Кратко представить тему структуры ЭПЛ и ее важность.",
+                "audiences": "студенты, специалисты",
+                "selfPrompt": "Напишите абзац (p) 100-200 слов, вводящий в тему структуры ЭПЛ, с использованием ключевых слов и разговорного, но профессионального стиля.",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 200,
+                  "actualContent": "need generate helpful content"
+                }
+              },
+              {
+                "id": "h3-2-2",
+                "tag": "h3",
+                "classification": "Guide",
+                "keywords": [
+                  "основные компоненты",
+                  "структура",
+                  "ЭПЛ",
+                  "элементы"
+                ],
+                "taxonomy": "Components",
+                "attention": "Подробное описание основных компонентов помогает понять устройство ЭПЛ.",
+                "intent": "Раскрыть основные компоненты и их функции в структуре ЭПЛ.",
+                "audiences": "студенты, специалисты",
+                "selfPrompt": "Создайте подзаголовок h3 и три абзаца (p) общей длиной 200-300 слов, подробно описывающих основные компоненты ЭПЛ. Добавьте таблицу с характеристиками компонентов объемом 80-160 слов. Используйте профессиональный и дружелюбный стиль.",
+                "additionalData": {
+                  "minWords": 400,
+                  "maxWords": 600,
+                  "actualContent": "need generate helpful content"
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "компоненты",
+                      "описание",
+                      "функции",
+                      "ЭПЛ"
+                    ],
+                    "taxonomy": "Description",
+                    "attention": "Первый абзац вводит в описание компонентов.",
+                    "intent": "Объяснить назначение основных компонентов ЭПЛ.",
+                    "audiences": "студенты, специалисты",
+                    "selfPrompt": "Напишите абзац (p) 70-140 слов, описывающий основные компоненты ЭПЛ и их функции.",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 140,
+                      "actualContent": "need generate helpful content"
+                    }
+                  },
+                  {
+                    "id": "p-2-2-2",
+                    "tag": "p",
+                    "keywords": [
+                      "структура",
+                      "взаимодействие",
+                      "компоненты",
+                      "ЭПЛ"
+                    ],
+                    "taxonomy": "Interaction",
+                    "attention": "Второй абзац раскрывает взаимодействие компонентов.",
+                    "intent": "Показать, как компоненты ЭПЛ взаимодействуют между собой.",
+                    "audiences": "студенты, специалисты",
+                    "selfPrompt": "Создайте абзац (p) 90-180 слов, описывающий взаимодействие компонентов ЭПЛ.",
+                    "additionalData": {
+                      "minWords": 90,
+                      "maxWords": 180,
+                      "actualContent": "need generate helpful content"
+                    }
+                  },
+                  {
+                    "id": "p-2-2-3",
+                    "tag": "p",
+                    "keywords": [
+                      "резюме",
+                      "структура",
+                      "ЭПЛ",
+                      "основные моменты"
+                    ],
+                    "taxonomy": "Summary",
+                    "attention": "Краткий абзац подводит итоги описания компонентов.",
+                    "intent": "Сделать краткое резюме по основным компонентам ЭПЛ.",
+                    "audiences": "студенты, специалисты",
+                    "selfPrompt": "Напишите короткий абзац (p) 5-15 слов, подчеркивающий ключевые моменты описания компонентов.",
+                    "additionalData": {
+                      "minWords": 5,
+                      "maxWords": 15,
+                      "actualContent": "need generate helpful content"
+                    }
+                  },
+                  {
+                    "id": "table-2-2-4",
+                    "tag": "table",
+                    "keywords": [
+                      "таблица",
+                      "характеристики",
+                      "компоненты",
+                      "ЭПЛ"
+                    ],
+                    "taxonomy": "Data Table",
+                    "attention": "Таблица визуализирует характеристики компонентов для лучшего понимания.",
+                    "intent": "Представить данные о компонентах ЭПЛ в табличном формате.",
+                    "audiences": "студенты, специалисты",
+                    "selfPrompt": "Создайте таблицу (table) объемом 80-160 слов с характеристиками основных компонентов ЭПЛ. Таблица должна быть информативной и легко читаемой, без изображений.",
+                    "additionalData": {
+                      "minWords": 80,
+                      "maxWords": 160,
+                      "actualContent": "need generate helpful content"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-2-3",
+                "tag": "h3",
+                "classification": "Guide",
+                "keywords": [
+                  "применение",
+                  "структура",
+                  "ЭПЛ",
+                  "практика"
+                ],
+                "taxonomy": "Applications",
+                "attention": "Раздел о применении помогает понять практическую ценность ЭПЛ.",
+                "intent": "Рассказать о практическом применении структуры ЭПЛ и ее особенностях.",
+                "audiences": "практики, специалисты, студенты",
+                "selfPrompt": "Создайте подзаголовок h3 и четыре элемента: абзац (p) 80-160 слов, маркированный список (ul) 40-80 слов, блок кода (code) 20-50 слов и абзац (p) 60-120 слов. Тема — практическое применение структуры ЭПЛ. Используйте профессиональный и дружелюбный стиль.",
+                "additionalData": {
+                  "minWords": 400,
+                  "maxWords": 600,
+                  "actualContent": "need generate helpful content"
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "применение",
+                      "структура",
+                      "ЭПЛ",
+                      "обзор"
+                    ],
+                    "taxonomy": "Overview",
+                    "attention": "Первый абзац вводит в тему практического применения.",
+                    "intent": "Объяснить, как структура ЭПЛ используется на практике.",
+                    "audiences": "практики, специалисты",
+                    "selfPrompt": "Напишите абзац (p) 80-160 слов, описывающий применение структуры ЭПЛ.",
+                    "additionalData": {
+                      "minWords": 80,
+                      "maxWords": 160,
+                      "actualContent": "need generate helpful content"
+                    }
+                  },
+                  {
+                    "id": "ul-2-3-2",
+                    "tag": "ul",
+                    "keywords": [
+                      "список",
+                      "преимущества",
+                      "применение",
+                      "ЭПЛ"
+                    ],
+                    "taxonomy": "List",
+                    "attention": "Список выделяет ключевые преимущества и особенности применения.",
+                    "intent": "Перечислить основные преимущества и особенности применения ЭПЛ.",
+                    "audiences": "практики, специалисты",
+                    "selfPrompt": "Создайте маркированный список (ul) из 4-6 пунктов, общий объем 40-80 слов, перечисляющий преимущества и особенности применения ЭПЛ.",
+                    "additionalData": {
+                      "minWords": 40,
+                      "maxWords": 80,
+                      "actualContent": "need generate helpful content"
+                    }
+                  },
+                  {
+                    "id": "code-2-3-3",
+                    "tag": "code",
+                    "keywords": [
+                      "пример",
+                      "код",
+                      "структура",
+                      "ЭПЛ"
+                    ],
+                    "taxonomy": "Code Example",
+                    "attention": "Пример кода иллюстрирует практическое применение структуры ЭПЛ.",
+                    "intent": "Представить пример кода, демонстрирующий использование структуры ЭПЛ.",
+                    "audiences": "разработчики, специалисты",
+                    "selfPrompt": "Создайте блок кода (code) объемом 20-50 слов с примером использования структуры ЭПЛ. Форматируйте как код, без лишних комментариев.",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 50,
+                      "actualContent": "need generate helpful content"
+                    }
+                  },
+                  {
+                    "id": "p-2-3-4",
+                    "tag": "p",
+                    "keywords": [
+                      "заключение",
+                      "применение",
+                      "ЭПЛ",
+                      "итог"
+                    ],
+                    "taxonomy": "Conclusion",
+                    "attention": "Заключительный абзац подводит итоги раздела о применении.",
+                    "intent": "Сделать выводы о значении практического применения ЭПЛ.",
+                    "audiences": "практики, специалисты",
+                    "selfPrompt": "Напишите абзац (p) 60-120 слов, подводящий итоги раздела о применении структуры ЭПЛ.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": "need generate helpful content"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "Guide",
+            "keywords": [
+              "технологии",
+              "инструменты",
+              "ЭПЛ",
+              "технические аспекты"
+            ],
+            "taxonomy": "Technology",
+            "attention": "Знание технологий и инструментов важно для эффективного использования ЭПЛ.",
+            "intent": "Рассмотреть современные технологии и инструменты, связанные с ЭПЛ.",
+            "audiences": "технические специалисты, разработчики, студенты",
+            "selfPrompt": "Создайте раздел с заголовком h2, посвященный технологиям и инструментам ЭПЛ. Используйте профессиональный и дружелюбный стиль, объемом 1300-1500 слов. Включите два абзаца, два подзаголовка h3 с соответствующими абзацами, списками, кодом и блоками цитат. Не используйте изображения. • также следует учитывать пользовательские настройки, сделанные ко всей странице: writing-style:{title:Conversational, description:Friendly, informal, like talking to a friend}, content-format:{title:Professional, description:Business-appropriate, formal tone}, custom requirements and specifications:{—} •",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 1300,
+              "maxWords": 1500,
+              "actualContent": "need generate helpful content"
+            },
+            "realContentStructure": [
+              {
+                "id": "p-3-1",
+                "tag": "p",
+                "keywords": [
+                  "введение",
+                  "технологии",
+                  "ЭПЛ",
+                  "обзор"
+                ],
+                "taxonomy": "Introduction",
+                "attention": "Краткое введение в тему технологий ЭПЛ.",
+                "intent": "Обозначить важность технологий для ЭПЛ и задать контекст.",
+                "audiences": "технические специалисты, студенты",
+                "selfPrompt": "Напишите короткий абзац (p) 5-15 слов, вводящий в тему технологий ЭПЛ.",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": "need generate helpful content"
+                }
+              },
+              {
+                "id": "p-3-2",
+                "tag": "p",
+                "keywords": [
+                  "технологии",
+                  "значение",
+                  "развитие",
+                  "ЭПЛ"
+                ],
+                "taxonomy": "Context",
+                "attention": "Объяснение роли технологий в развитии ЭПЛ.",
+                "intent": "Показать, как технологии влияют на развитие и применение ЭПЛ.",
+                "audiences": "технические специалисты, студенты",
+                "selfPrompt": "Создайте абзац (p) 110-220 слов, раскрывающий роль технологий в ЭПЛ.",
+                "additionalData": {
+                  "minWords": 110,
+                  "maxWords": 220,
+                  "actualContent": "need generate helpful content"
+                }
+              },
+              {
+                "id": "h3-3-3",
+                "tag": "h3",
+                "classification": "Guide",
+                "keywords": [
+                  "инструменты",
+                  "технологии",
+                  "ЭПЛ",
+                  "обзор"
+                ],
+                "taxonomy": "Tools",
+                "attention": "Подробное описание инструментов помогает понять техническую сторону ЭПЛ.",
+                "intent": "Рассмотреть основные инструменты, используемые в ЭПЛ.",
+                "audiences": "разработчики, технические специалисты",
+                "selfPrompt": "Создайте подзаголовок h3 и три абзаца (p) общей длиной 200-350 слов, один упорядоченный список (ol) 50-100 слов, один подзаголовок h4 с тремя элементами: абзац, код, абзац. Используйте профессиональный и дружелюбный стиль.",
+                "additionalData": {
+                  "minWords": 400,
+                  "maxWords": 700,
+                  "actualContent": "need generate helpful content"
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "инструменты",
+                      "описание",
+                      "функции",
+                      "ЭПЛ"
+                    ],
+                    "taxonomy": "Description",
+                    "attention": "Первый абзац вводит в описание инструментов.",
+                    "intent": "Объяснить назначение и функции основных инструментов ЭПЛ.",
+                    "audiences": "разработчики, специалисты",
+                    "selfPrompt": "Напишите абзац (p) 85-170 слов, описывающий основные инструменты ЭПЛ.",
+                    "additionalData": {
+                      "minWords": 85,
+                      "maxWords": 170,
+                      "actualContent": "need generate helpful content"
+                    }
+                  },
+                  {
+                    "id": "ol-3-3-2",
+                    "tag": "ol",
+                    "keywords": [
+                      "список",
+                      "инструменты",
+                      "особенности",
+                      "ЭПЛ"
+                    ],
+                    "taxonomy": "List",
+                    "attention": "Список выделяет ключевые инструменты и их особенности.",
+                    "intent": "Перечислить основные инструменты ЭПЛ с кратким описанием.",
+                    "audiences": "разработчики, специалисты",
+                    "selfPrompt": "Создайте упорядоченный список (ol) из 5-7 пунктов, общий объем 50-100 слов, описывающий инструменты ЭПЛ.",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 100,
+                      "actualContent": "need generate helpful content"
+                    }
+                  },
+                  {
+                    "id": "h4-3-3-3",
+                    "tag": "h4",
+                    "classification": "Guide",
+                    "keywords": [
+                      "пример",
+                      "код",
+                      "инструменты",
+                      "ЭПЛ"
+                    ],
+                    "taxonomy": "Example",
+                    "attention": "Пример кода иллюстрирует использование инструментов ЭПЛ.",
+                    "intent": "Показать пример кода, демонстрирующий работу с инструментами ЭПЛ.",
+                    "audiences": "разработчики",
+                    "selfPrompt": "Создайте подзаголовок h4 и три элемента: абзац (p) 75-150 слов, блок кода (code) 25-60 слов, абзац (p) 65-130 слов. Тема — пример использования инструментов ЭПЛ.",
+                    "additionalData": {
+                      "minWords": 350,
+                      "maxWords": 500,
+                      "actualContent": "need generate helpful content"
+                    },
+                    "realContentStructure": [
+                      {
+                        "id": "p-3-3-3-1",
+                        "tag": "p",
+                        "keywords": [
+                          "введение",
+                          "пример",
+                          "код",
+                          "ЭПЛ"
+                        ],
+                        "taxonomy": "Introduction",
+                        "attention": "Вводный абзац к примеру кода.",
+                        "intent": "Подготовить читателя к просмотру примера кода.",
+                        "audiences": "разработчики",
+                        "selfPrompt": "Напишите абзац (p) 75-150 слов, вводящий в пример кода по инструментам ЭПЛ.",
+                        "additionalData": {
+                          "minWords": 75,
+                          "maxWords": 150,
+                          "actualContent": "need generate helpful content"
+                        }
+                      },
+                      {
+                        "id": "code-3-3-3-2",
+                        "tag": "code",
+                        "keywords": [
+                          "код",
+                          "пример",
+                          "инструменты",
+                          "ЭПЛ"
+                        ],
+                        "taxonomy": "Code Example",
+                        "attention": "Код демонстрирует практическое применение инструментов.",
+                        "intent": "Представить пример кода, иллюстрирующий работу с инструментами ЭПЛ.",
+                        "audiences": "разработчики",
+                        "selfPrompt": "Создайте блок кода (code) 25-60 слов с примером использования инструментов ЭПЛ. Форматируйте как код, без лишних комментариев.",
+                        "additionalData": {
+                          "minWords": 25,
+                          "maxWords": 60,
+                          "actualContent": "need generate helpful content"
+                        }
+                      },
+                      {
+                        "id": "p-3-3-3-3",
+                        "tag": "p",
+                        "keywords": [
+                          "анализ",
+                          "пример",
+                          "код",
+                          "ЭПЛ"
+                        ],
+                        "taxonomy": "Analysis",
+                        "attention": "Аналитический абзац объясняет пример кода.",
+                        "intent": "Объяснить, что показывает пример кода и его значение.",
+                        "audiences": "разработчики",
+                        "selfPrompt": "Напишите абзац (p) 65-130 слов, анализирующий пример кода по инструментам ЭПЛ.",
+                        "additionalData": {
+                          "minWords": 65,
+                          "maxWords": 130,
+                          "actualContent": "need generate helpful content"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "h3-3-4",
+                "tag": "h3",
+                "classification": "Guide",
+                "keywords": [
+                  "технические вызовы",
+                  "проблемы",
+                  "ЭПЛ",
+                  "решения"
+                ],
+                "taxonomy": "Challenges",
+                "attention": "Освещение проблем помогает подготовиться к их решению при работе с ЭПЛ.",
+                "intent": "Рассмотреть основные технические вызовы и способы их преодоления в ЭПЛ.",
+                "audiences": "технические специалисты, разработчики",
+                "selfPrompt": "Создайте подзаголовок h3 и три элемента: абзац (p) 95-190 слов, блок цитаты (blockquote) 20-45 слов, упорядоченный список (ol) 60-120 слов. Тема — технические вызовы и решения в ЭПЛ. Используйте профессиональный и дружелюбный стиль.",
+                "additionalData": {
+                  "minWords": 175,
+                  "maxWords": 355,
+                  "actualContent": "need generate helpful content"
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "проблемы",
+                      "вызовы",
+                      "технические",
+                      "ЭПЛ"
+                    ],
+                    "taxonomy": "Description",
+                    "attention": "Первый абзац описывает основные технические проблемы.",
+                    "intent": "Объяснить, с какими техническими вызовами сталкиваются при работе с ЭПЛ.",
+                    "audiences": "технические специалисты",
+                    "selfPrompt": "Напишите абзац (p) 95-190 слов, описывающий технические вызовы ЭПЛ.",
+                    "additionalData": {
+                      "minWords": 95,
+                      "maxWords": 190,
+                      "actualContent": "need generate helpful content"
+                    }
+                  },
+                  {
+                    "id": "blockquote-3-4-2",
+                    "tag": "blockquote",
+                    "keywords": [
+                      "цитата",
+                      "мотивация",
+                      "решение",
+                      "ЭПЛ"
+                    ],
+                    "taxonomy": "Motivational Quote",
+                    "attention": "Цитата мотивирует к преодолению технических проблем.",
+                    "intent": "Включить вдохновляющую цитату о преодолении технических вызовов.",
+                    "audiences": "технические специалисты",
+                    "selfPrompt": "Создайте блок цитаты (blockquote) 20-45 слов, мотивирующий к решению технических проблем ЭПЛ.",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 45,
+                      "actualContent": "need generate helpful content"
+                    }
+                  },
+                  {
+                    "id": "ol-3-4-3",
+                    "tag": "ol",
+                    "keywords": [
+                      "решения",
+                      "технические вызовы",
+                      "ЭПЛ",
+                      "способы"
+                    ],
+                    "taxonomy": "List",
+                    "attention": "Список предлагает конкретные решения технических проблем.",
+                    "intent": "Перечислить эффективные методы решения технических вызовов ЭПЛ.",
+                    "audiences": "технические специалисты",
+                    "selfPrompt": "Создайте упорядоченный список (ol) из 5-7 пунктов, общий объем 60-120 слов, описывающий решения технических проблем ЭПЛ.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": "need generate helpful content"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "h2-4",
+            "tag": "h2",
+            "classification": "Guide",
+            "keywords": [
+              "преимущества",
+              "недостатки",
+              "ЭПЛ",
+              "анализ"
+            ],
+            "taxonomy": "Analysis",
+            "attention": "Анализ преимуществ и недостатков помогает сделать обоснованный выбор.",
+            "intent": "Дать сбалансированный обзор плюсов и минусов ЭПЛ.",
+            "audiences": "специалисты, менеджеры, студенты",
+            "selfPrompt": "Создайте раздел с заголовком h2, посвященный анализу преимуществ и недостатков ЭПЛ. Используйте профессиональный и дружелюбный стиль, объемом 1300-1500 слов. Включите абзац введения, два подзаголовка h3 с абзацами, списками и блоками цитат. Не используйте изображения. • также следует учитывать пользовательские настройки, сделанные ко всей странице: writing-style:{title:Conversational, description:Friendly, informal, like talking to a friend}, content-format:{title:Professional, description:Business-appropriate, formal tone}, custom requirements and specifications:{—} •",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 1300,
+              "maxWords": 1500,
+              "actualContent": "need generate helpful content"
+            },
+            "realContentStructure": [
+              {
+                "id": "p-4-1",
+                "tag": "p",
+                "keywords": [
+                  "введение",
+                  "анализ",
+                  "ЭПЛ",
+                  "обзор"
+                ],
+                "taxonomy": "Introduction",
+                "attention": "Введение задает контекст для анализа.",
+                "intent": "Кратко представить тему анализа преимуществ и недостатков ЭПЛ.",
+                "audiences": "специалисты, менеджеры",
+                "selfPrompt": "Напишите абзац (p) 100-200 слов, вводящий в анализ преимуществ и недостатков ЭПЛ.",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 200,
+                  "actualContent": "need generate helpful content"
+                }
+              },
+              {
+                "id": "h3-4-2",
+                "tag": "h3",
+                "classification": "Comparison",
+                "keywords": [
+                  "преимущества",
+                  "ЭПЛ",
+                  "плюсы",
+                  "анализ"
+                ],
+                "taxonomy": "Advantages",
+                "attention": "Подробное описание преимуществ помогает понять ценность ЭПЛ.",
+                "intent": "Раскрыть основные преимущества использования ЭПЛ.",
+                "audiences": "специалисты, менеджеры",
+                "selfPrompt": "Создайте подзаголовок h3 и четыре элемента: три абзаца (p) общей длиной 200-300 слов и маркированный список (ul) 45-90 слов. Используйте профессиональный и дружелюбный стиль.",
+                "additionalData": {
+                  "minWords": 400,
+                  "maxWords": 600,
+                  "actualContent": "need generate helpful content"
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-4-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "преимущества",
+                      "введение",
+                      "ЭПЛ",
+                      "плюсы"
+                    ],
+                    "taxonomy": "Introduction",
+                    "attention": "Первый абзац вводит в тему преимуществ.",
+                    "intent": "Объяснить, почему ЭПЛ имеет преимущества.",
+                    "audiences": "специалисты",
+                    "selfPrompt": "Напишите абзац (p) 5-15 слов, вводящий в тему преимуществ ЭПЛ.",
+                    "additionalData": {
+                      "minWords": 5,
+                      "maxWords": 15,
+                      "actualContent": "need generate helpful content"
+                    }
+                  },
+                  {
+                    "id": "p-4-2-2",
+                    "tag": "p",
+                    "keywords": [
+                      "преимущества",
+                      "детали",
+                      "ЭПЛ",
+                      "анализ"
+                    ],
+                    "taxonomy": "Details",
+                    "attention": "Второй абзац раскрывает детали преимуществ.",
+                    "intent": "Подробно описать ключевые преимущества ЭПЛ.",
+                    "audiences": "специалисты",
+                    "selfPrompt": "Создайте абзац (p) 90-180 слов, описывающий преимущества ЭПЛ.",
+                    "additionalData": {
+                      "minWords": 90,
+                      "maxWords": 180,
+                      "actualContent": "need generate helpful content"
+                    }
+                  },
+                  {
+                    "id": "p-4-2-3",
+                    "tag": "p",
+                    "keywords": [
+                      "преимущества",
+                      "итог",
+                      "ЭПЛ",
+                      "анализ"
+                    ],
+                    "taxonomy": "Summary",
+                    "attention": "Краткий абзац подводит итоги преимуществ.",
+                    "intent": "Сделать краткое резюме по преимуществам ЭПЛ.",
+                    "audiences": "специалисты",
+                    "selfPrompt": "Напишите абзац (p) 85-170 слов, подводящий итоги преимуществ ЭПЛ.",
+                    "additionalData": {
+                      "minWords": 85,
+                      "maxWords": 170,
+                      "actualContent": "need generate helpful content"
+                    }
+                  },
+                  {
+                    "id": "ul-4-2-4",
+                    "tag": "ul",
+                    "keywords": [
+                      "список",
+                      "преимущества",
+                      "ЭПЛ",
+                      "ключевые моменты"
+                    ],
+                    "taxonomy": "List",
+                    "attention": "Список выделяет ключевые преимущества для быстрого восприятия.",
+                    "intent": "Перечислить основные преимущества ЭПЛ в виде списка.",
+                    "audiences": "специалисты",
+                    "selfPrompt": "Создайте маркированный список (ul) из 5-7 пунктов, общий объем 45-90 слов, перечисляющий преимущества ЭПЛ.",
+                    "additionalData": {
+                      "minWords": 45,
+                      "maxWords": 90,
+                      "actualContent": "need generate helpful content"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-4-3",
+                "tag": "h3",
+                "classification": "Comparison",
+                "keywords": [
+                  "недостатки",
+                  "ЭПЛ",
+                  "минусы",
+                  "анализ"
+                ],
+                "taxonomy": "Disadvantages",
+                "attention": "Освещение недостатков помогает подготовиться к возможным трудностям.",
+                "intent": "Рассмотреть основные недостатки и ограничения ЭПЛ.",
+                "audiences": "специалисты, менеджеры",
+                "selfPrompt": "Создайте подзаголовок h3 и четыре элемента: два абзаца (p) общей длиной 250-350 слов, упорядоченный список (ol) 55-110 слов и блок цитаты (blockquote) 18-40 слов. Используйте профессиональный и дружелюбный стиль.",
+                "additionalData": {
+                  "minWords": 350,
+                  "maxWords": 500,
+                  "actualContent": "need generate helpful content"
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-4-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "недостатки",
+                      "введение",
+                      "ЭПЛ",
+                      "минусы"
+                    ],
+                    "taxonomy": "Introduction",
+                    "attention": "Первый абзац вводит в тему недостатков.",
+                    "intent": "Объяснить, почему важно знать недостатки ЭПЛ.",
+                    "audiences": "специалисты",
+                    "selfPrompt": "Напишите абзац (p) 110-220 слов, вводящий в тему недостатков ЭПЛ.",
+                    "additionalData": {
+                      "minWords": 110,
+                      "maxWords": 220,
+                      "actualContent": "need generate helpful content"
+                    }
+                  },
+                  {
+                    "id": "p-4-3-2",
+                    "tag": "p",
+                    "keywords": [
+                      "недостатки",
+                      "детали",
+                      "ограничения",
+                      "ЭПЛ"
+                    ],
+                    "taxonomy": "Details",
+                    "attention": "Второй абзац раскрывает детали недостатков.",
+                    "intent": "Подробно описать ключевые недостатки и ограничения ЭПЛ.",
+                    "audiences": "специалисты",
+                    "selfPrompt": "Создайте абзац (p) 80-160 слов, описывающий недостатки ЭПЛ.",
+                    "additionalData": {
+                      "minWords": 80,
+                      "maxWords": 160,
+                      "actualContent": "need generate helpful content"
+                    }
+                  },
+                  {
+                    "id": "ol-4-3-3",
+                    "tag": "ol",
+                    "keywords": [
+                      "список",
+                      "недостатки",
+                      "ЭПЛ",
+                      "ограничения"
+                    ],
+                    "taxonomy": "List",
+                    "attention": "Список выделяет ключевые недостатки для быстрого восприятия.",
+                    "intent": "Перечислить основные недостатки ЭПЛ в виде списка.",
+                    "audiences": "специалисты",
+                    "selfPrompt": "Создайте упорядоченный список (ol) из 5-7 пунктов, общий объем 55-110 слов, перечисляющий недостатки ЭПЛ.",
+                    "additionalData": {
+                      "minWords": 55,
+                      "maxWords": 110,
+                      "actualContent": "need generate helpful content"
+                    }
+                  },
+                  {
+                    "id": "blockquote-4-3-4",
+                    "tag": "blockquote",
+                    "keywords": [
+                      "цитата",
+                      "предупреждение",
+                      "недостатки",
+                      "ЭПЛ"
+                    ],
+                    "taxonomy": "Warning Quote",
+                    "attention": "Цитата предупреждает о возможных рисках и сложностях.",
+                    "intent": "Включить цитату, подчеркивающую важность учета недостатков ЭПЛ.",
+                    "audiences": "специалисты",
+                    "selfPrompt": "Создайте блок цитаты (blockquote) 18-40 слов, предупреждающий о недостатках ЭПЛ.",
+                    "additionalData": {
+                      "minWords": 18,
+                      "maxWords": 40,
+                      "actualContent": "need generate helpful content"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "h2-5",
+            "tag": "h2",
+            "classification": "HowTo",
+            "keywords": [
+              "как использовать",
+              "применение",
+              "ЭПЛ",
+              "инструкция"
+            ],
+            "taxonomy": "Usage",
+            "attention": "Практические инструкции помогают эффективно применять ЭПЛ.",
+            "intent": "Дать пошаговые рекомендации по использованию ЭПЛ.",
+            "audiences": "практики, специалисты, новички",
+            "selfPrompt": "Создайте раздел с заголовком h2, посвященный практическому использованию ЭПЛ. Используйте профессиональный и дружелюбный стиль, объемом 1300-1500 слов. Включите два абзаца и один подзаголовок h3 с абзацами и списком. Не используйте изображения. • также следует учитывать пользовательские настройки, сделанные ко всей странице: writing-style:{title:Conversational, description:Friendly, informal, like talking to a friend}, content-format:{title:Professional, description:Business-appropriate, formal tone}, custom requirements and specifications:{—} •",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 1300,
+              "maxWords": 1500,
+              "actualContent": "need generate helpful content"
+            },
+            "realContentStructure": [
+              {
+                "id": "p-5-1",
+                "tag": "p",
+                "keywords": [
+                  "введение",
+                  "использование",
+                  "ЭПЛ",
+                  "обзор"
+                ],
+                "taxonomy": "Introduction",
+                "attention": "Введение задает контекст для практического использования.",
+                "intent": "Кратко представить тему практического применения ЭПЛ.",
+                "audiences": "практики, новички",
+                "selfPrompt": "Напишите абзац (p) 105-210 слов, вводящий в тему использования ЭПЛ.",
+                "additionalData": {
+                  "minWords": 105,
+                  "maxWords": 210,
+                  "actualContent": "need generate helpful content"
+                }
+              },
+              {
+                "id": "p-5-2",
+                "tag": "p",
+                "keywords": [
+                  "значение",
+                  "применение",
+                  "ЭПЛ",
+                  "важность"
+                ],
+                "taxonomy": "Importance",
+                "attention": "Краткий абзац подчеркивает значимость правильного использования ЭПЛ.",
+                "intent": "Объяснить, почему важно правильно использовать ЭПЛ.",
+                "audiences": "практики, новички",
+                "selfPrompt": "Напишите короткий абзац (p) 5-15 слов, подчеркивающий важность правильного применения ЭПЛ.",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": "need generate helpful content"
+                }
+              },
+              {
+                "id": "h3-5-3",
+                "tag": "h3",
+                "classification": "HowTo",
+                "keywords": [
+                  "пошаговая инструкция",
+                  "использование",
+                  "ЭПЛ",
+                  "руководство"
+                ],
+                "taxonomy": "Instructions",
+                "attention": "Подробная инструкция помогает читателям применять ЭПЛ самостоятельно.",
+                "intent": "Предоставить пошаговое руководство по использованию ЭПЛ.",
+                "audiences": "практики, новички",
+                "selfPrompt": "Создайте подзаголовок h3 и три элемента: абзац (p) 80-160 слов, маркированный список (ul) 40-80 слов и абзац (p) 70-140 слов. Тема — пошаговое использование ЭПЛ. Используйте профессиональный и дружелюбный стиль.",
+                "additionalData": {
+                  "minWords": 190,
+                  "maxWords": 380,
+                  "actualContent": "need generate helpful content"
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-5-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "введение",
+                      "инструкция",
+                      "ЭПЛ",
+                      "начало"
+                    ],
+                    "taxonomy": "Introduction",
+                    "attention": "Вводный абзац к инструкции.",
+                    "intent": "Подготовить читателя к пошаговому руководству.",
+                    "audiences": "практики, новички",
+                    "selfPrompt": "Напишите абзац (p) 80-160 слов, вводящий в инструкцию по использованию ЭПЛ.",
+                    "additionalData": {
+                      "minWords": 80,
+                      "maxWords": 160,
+                      "actualContent": "need generate helpful content"
+                    }
+                  },
+                  {
+                    "id": "ul-5-3-2",
+                    "tag": "ul",
+                    "keywords": [
+                      "шаги",
+                      "инструкция",
+                      "использование",
+                      "ЭПЛ"
+                    ],
+                    "taxonomy": "List",
+                    "attention": "Список шагов облегчает понимание и применение инструкции.",
+                    "intent": "Перечислить основные шаги для использования ЭПЛ.",
+                    "audiences": "практики, новички",
+                    "selfPrompt": "Создайте маркированный список (ul) из 5-7 пунктов, общий объем 40-80 слов, описывающий пошаговое использование ЭПЛ.",
+                    "additionalData": {
+                      "minWords": 40,
+                      "maxWords": 80,
+                      "actualContent": "need generate helpful content"
+                    }
+                  },
+                  {
+                    "id": "p-5-3-3",
+                    "tag": "p",
+                    "keywords": [
+                      "заключение",
+                      "инструкция",
+                      "ЭПЛ",
+                      "советы"
+                    ],
+                    "taxonomy": "Conclusion",
+                    "attention": "Заключительный абзац подчеркивает важные моменты инструкции.",
+                    "intent": "Сделать выводы и дать советы по использованию ЭПЛ.",
+                    "audiences": "практики, новички",
+                    "selfPrompt": "Напишите абзац (p) 70-140 слов, подводящий итоги инструкции и дающий рекомендации.",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 140,
+                      "actualContent": "need generate helpful content"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "h2-6",
+            "tag": "h2",
+            "classification": "FAQ",
+            "keywords": [
+              "вопросы",
+              "ответы",
+              "часто задаваемые",
+              "ЭПЛ"
+            ],
+            "taxonomy": "FAQ",
+            "attention": "Раздел FAQ помогает быстро найти ответы на популярные вопросы по ЭПЛ.",
+            "intent": "Предоставить ответы на шесть наиболее часто задаваемых вопросов по теме ЭПЛ.",
+            "audiences": "широкая аудитория, новички, специалисты",
+            "selfPrompt": "Этот раздел FAQ предназначен для генерации релевантных вопросов и ответов. Для создания значимых вопросов необходимо принять перспективу пользователя, проанализировать существующий контент и понять целевую аудиторию. Сформулируйте шесть наиболее интересных и полезных вопросов в контексте темы ЭПЛ. Организуйте каждый вопрос под заголовком h3, сопровождая его развернутым ответом. Используйте профессиональный и дружелюбный стиль, общий объем раздела 1300-1500 слов. • также следует учитывать пользовательские настройки, сделанные ко всей странице: writing-style:{title:Conversational, description:Friendly, informal, like talking to a friend}, content-format:{title:Professional, description:Business-appropriate, formal tone}, custom requirements and specifications:{—} •",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 1300,
+              "maxWords": 1500,
+              "actualContent": "need generate helpful content"
+            },
+            "realContentStructure": [
+              {
+                "id": "p-6-1",
+                "tag": "p",
+                "keywords": [
+                  "введение",
+                  "FAQ",
+                  "ЭПЛ",
+                  "обзор"
+                ],
+                "taxonomy": "Introduction",
+                "attention": "Введение объясняет цель раздела FAQ.",
+                "intent": "Кратко представить раздел часто задаваемых вопросов по ЭПЛ.",
+                "audiences": "новички, специалисты",
+                "selfPrompt": "Напишите абзац (p) 95-190 слов, вводящий в раздел FAQ по ЭПЛ.",
+                "additionalData": {
+                  "minWords": 95,
+                  "maxWords": 190,
+                  "actualContent": "need generate helpful content"
+                }
+              },
+              {
+                "id": "h3-6-2",
+                "tag": "h3",
+                "classification": "FAQ Item",
+                "keywords": [
+                  "вопрос 1",
+                  "ответ 1",
+                  "ЭПЛ",
+                  "часто задаваемый"
+                ],
+                "taxonomy": "FAQ Question",
+                "attention": "Первый вопрос отвечает на важный аспект ЭПЛ.",
+                "intent": "Предоставить развернутый ответ на первый популярный вопрос по ЭПЛ.",
+                "audiences": "новички, специалисты",
+                "selfPrompt": "Создайте заголовок h3 с первым вопросом и абзац (p) 75-150 слов с подробным ответом. Используйте профессиональный и дружелюбный стиль.",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
+                  "actualContent": "need generate helpful content"
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-6-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "ответ",
+                      "вопрос 1",
+                      "ЭПЛ",
+                      "информация"
+                    ],
+                    "taxonomy": "Answer",
+                    "attention": "Ответ раскрывает суть вопроса и помогает читателю.",
+                    "intent": "Дать полный и понятный ответ на первый вопрос.",
+                    "audiences": "новички, специалисты",
+                    "selfPrompt": "Напишите абзац (p) 75-150 слов, подробно отвечающий на первый вопрос FAQ по ЭПЛ.",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 150,
+                      "actualContent": "need generate helpful content"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-6-3",
+                "tag": "h3",
+                "classification": "FAQ Item",
+                "keywords": [
+                  "вопрос 2",
+                  "ответ 2",
+                  "ЭПЛ",
+                  "часто задаваемый"
+                ],
+                "taxonomy": "FAQ Question",
+                "attention": "Второй вопрос раскрывает другой важный аспект ЭПЛ.",
+                "intent": "Предоставить развернутый ответ на второй популярный вопрос по ЭПЛ.",
+                "audiences": "новички, специалисты",
+                "selfPrompt": "Создайте заголовок h3 с вторым вопросом и абзац (p) 75-150 слов с подробным ответом. Используйте профессиональный и дружелюбный стиль.",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
+                  "actualContent": "need generate helpful content"
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-6-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "ответ",
+                      "вопрос 2",
+                      "ЭПЛ",
+                      "информация"
+                    ],
+                    "taxonomy": "Answer",
+                    "attention": "Ответ раскрывает суть вопроса и помогает читателю.",
+                    "intent": "Дать полный и понятный ответ на второй вопрос.",
+                    "audiences": "новички, специалисты",
+                    "selfPrompt": "Напишите абзац (p) 75-150 слов, подробно отвечающий на второй вопрос FAQ по ЭПЛ.",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 150,
+                      "actualContent": "need generate helpful content"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-6-4",
+                "tag": "h3",
+                "classification": "FAQ Item",
+                "keywords": [
+                  "вопрос 3",
+                  "ответ 3",
+                  "ЭПЛ",
+                  "часто задаваемый"
+                ],
+                "taxonomy": "FAQ Question",
+                "attention": "Третий вопрос раскрывает дополнительный аспект ЭПЛ.",
+                "intent": "Предоставить развернутый ответ на третий популярный вопрос по ЭПЛ.",
+                "audiences": "новички, специалисты",
+                "selfPrompt": "Создайте заголовок h3 с третьим вопросом и абзац (p) 75-150 слов с подробным ответом. Используйте профессиональный и дружелюбный стиль.",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
+                  "actualContent": "need generate helpful content"
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-6-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "ответ",
+                      "вопрос 3",
+                      "ЭПЛ",
+                      "информация"
+                    ],
+                    "taxonomy": "Answer",
+                    "attention": "Ответ раскрывает суть вопроса и помогает читателю.",
+                    "intent": "Дать полный и понятный ответ на третий вопрос.",
+                    "audiences": "новички, специалисты",
+                    "selfPrompt": "Напишите абзац (p) 75-150 слов, подробно отвечающий на третий вопрос FAQ по ЭПЛ.",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 150,
+                      "actualContent": "need generate helpful content"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-6-5",
+                "tag": "h3",
+                "classification": "FAQ Item",
+                "keywords": [
+                  "вопрос 4",
+                  "ответ 4",
+                  "ЭПЛ",
+                  "часто задаваемый"
+                ],
+                "taxonomy": "FAQ Question",
+                "attention": "Четвертый вопрос раскрывает важный аспект ЭПЛ.",
+                "intent": "Предоставить развернутый ответ на четвертый популярный вопрос по ЭПЛ.",
+                "audiences": "новички, специалисты",
+                "selfPrompt": "Создайте заголовок h3 с четвертым вопросом и абзац (p) 75-150 слов с подробным ответом. Используйте профессиональный и дружелюбный стиль.",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
+                  "actualContent": "need generate helpful content"
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-6-5-1",
+                    "tag": "p",
+                    "keywords": [
+                      "ответ",
+                      "вопрос 4",
+                      "ЭПЛ",
+                      "информация"
+                    ],
+                    "taxonomy": "Answer",
+                    "attention": "Ответ раскрывает суть вопроса и помогает читателю.",
+                    "intent": "Дать полный и понятный ответ на четвертый вопрос.",
+                    "audiences": "новички, специалисты",
+                    "selfPrompt": "Напишите абзац (p) 75-150 слов, подробно отвечающий на четвертый вопрос FAQ по ЭПЛ.",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 150,
+                      "actualContent": "need generate helpful content"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-6-6",
+                "tag": "h3",
+                "classification": "FAQ Item",
+                "keywords": [
+                  "вопрос 5",
+                  "ответ 5",
+                  "ЭПЛ",
+                  "часто задаваемый"
+                ],
+                "taxonomy": "FAQ Question",
+                "attention": "Пятый вопрос раскрывает дополнительный аспект ЭПЛ.",
+                "intent": "Предоставить развернутый ответ на пятый популярный вопрос по ЭПЛ.",
+                "audiences": "новички, специалисты",
+                "selfPrompt": "Создайте заголовок h3 с пятым вопросом и абзац (p) 75-150 слов с подробным ответом. Используйте профессиональный и дружелюбный стиль.",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
+                  "actualContent": "need generate helpful content"
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-6-6-1",
+                    "tag": "p",
+                    "keywords": [
+                      "ответ",
+                      "вопрос 5",
+                      "ЭПЛ",
+                      "информация"
+                    ],
+                    "taxonomy": "Answer",
+                    "attention": "Ответ раскрывает суть вопроса и помогает читателю.",
+                    "intent": "Дать полный и понятный ответ на пятый вопрос.",
+                    "audiences": "новички, специалисты",
+                    "selfPrompt": "Напишите абзац (p) 75-150 слов, подробно отвечающий на пятый вопрос FAQ по ЭПЛ.",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 150,
+                      "actualContent": "need generate helpful content"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-6-7",
+                "tag": "h3",
+                "classification": "FAQ Item",
+                "keywords": [
+                  "вопрос 6",
+                  "ответ 6",
+                  "ЭПЛ",
+                  "часто задаваемый"
+                ],
+                "taxonomy": "FAQ Question",
+                "attention": "Шестой вопрос завершает обзор популярных вопросов по ЭПЛ.",
+                "intent": "Предоставить развернутый ответ на шестой популярный вопрос по ЭПЛ.",
+                "audiences": "новички, специалисты",
+                "selfPrompt": "Создайте заголовок h3 с шестым вопросом и абзац (p) 75-150 слов с подробным ответом. Используйте профессиональный и дружелюбный стиль.",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
+                  "actualContent": "need generate helpful content"
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-6-7-1",
+                    "tag": "p",
+                    "keywords": [
+                      "ответ",
+                      "вопрос 6",
+                      "ЭПЛ",
+                      "информация"
+                    ],
+                    "taxonomy": "Answer",
+                    "attention": "Ответ раскрывает суть вопроса и помогает читателю.",
+                    "intent": "Дать полный и понятный ответ на шестой вопрос.",
+                    "audiences": "новички, специалисты",
+                    "selfPrompt": "Напишите абзац (p) 75-150 слов, подробно отвечающий на шестой вопрос FAQ по ЭПЛ.",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 150,
+                      "actualContent": "need generate helpful content"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "h2-7",
+            "tag": "h2",
+            "classification": "Summary",
+            "keywords": [
+              "итоги",
+              "выводы",
+              "резюме",
+              "ЭПЛ"
+            ],
+            "taxonomy": "Conclusion",
+            "attention": "Итоговый раздел помогает закрепить знания и подвести итог всему материалу.",
+            "intent": "Сделать обобщение и выводы по теме ЭПЛ, подчеркнуть ключевые моменты.",
+            "audiences": "все читатели",
+            "selfPrompt": "Создайте заключительный раздел с заголовком h2, подводящий итоги по ЭПЛ. Используйте профессиональный и дружелюбный стиль, объемом 1300-1500 слов. Включите несколько абзацев, таблицу, список и блок цитаты. Не используйте изображения. • также следует учитывать пользовательские настройки, сделанные ко всей странице: writing-style:{title:Conversational, description:Friendly, informal, like talking to a friend}, content-format:{title:Professional, description:Business-appropriate, formal tone}, custom requirements and specifications:{—} •",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 1300,
+              "maxWords": 1500,
+              "actualContent": "need generate helpful content"
+            },
+            "realContentStructure": [
+              {
+                "id": "p-7-1",
+                "tag": "p",
+                "keywords": [
+                  "итоги",
+                  "резюме",
+                  "ЭПЛ",
+                  "обзор"
+                ],
+                "taxonomy": "Summary",
+                "attention": "Первый абзац подводит общий итог темы.",
+                "intent": "Кратко резюмировать основные моменты по ЭПЛ.",
+                "audiences": "все читатели",
+                "selfPrompt": "Напишите абзац (p) 60-240 слов, подводящий общий итог по ЭПЛ.",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 240,
+                  "actualContent": "need generate helpful content"
+                }
+              },
+              {
+                "id": "p-7-2",
+                "tag": "p",
+                "keywords": [
+                  "выводы",
+                  "анализ",
+                  "ЭПЛ",
+                  "заключение"
+                ],
+                "taxonomy": "Conclusion",
+                "attention": "Второй абзац делает выводы и подчеркивает значимость темы.",
+                "intent": "Сформулировать ключевые выводы по теме ЭПЛ.",
+                "audiences": "все читатели",
+                "selfPrompt": "Напишите абзац (p) 100-200 слов, формулирующий выводы по ЭПЛ.",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 200,
+                  "actualContent": "need generate helpful content"
+                }
+              },
+              {
+                "id": "table-6-2-2",
+                "tag": "table",
+                "keywords": [
+                  "таблица",
+                  "итоги",
+                  "ключевые моменты",
+                  "ЭПЛ"
+                ],
+                "taxonomy": "Summary Table",
+                "attention": "Таблица визуализирует ключевые итоги для удобства восприятия.",
+                "intent": "Представить ключевые моменты и выводы по ЭПЛ в табличном формате.",
+                "audiences": "все читатели",
+                "selfPrompt": "Создайте таблицу (table) объемом 200-300 слов с ключевыми итогами и выводами по ЭПЛ. Таблица должна быть информативной и легко читаемой.",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
+                  "actualContent": "need generate helpful content"
+                }
+              },
+              {
+                "id": "ul-7-3",
+                "tag": "ul",
+                "keywords": [
+                  "список",
+                  "итоги",
+                  "рекомендации",
+                  "ЭПЛ"
+                ],
+                "taxonomy": "List",
+                "attention": "Список выделяет основные рекомендации и ключевые моменты.",
+                "intent": "Перечислить основные рекомендации и ключевые итоги по ЭПЛ.",
+                "audiences": "все читатели",
+                "selfPrompt": "Создайте маркированный список (ul) из 6-8 пунктов, общий объем 60-120 слов, перечисляющий рекомендации и ключевые итоги по ЭПЛ.",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 120,
+                  "actualContent": "need generate helpful content"
+                }
+              },
+              {
+                "id": "p-7-4",
+                "tag": "p",
+                "keywords": [
+                  "заключение",
+                  "подведение итогов",
+                  "ЭПЛ",
+                  "значение"
+                ],
+                "taxonomy": "Conclusion",
+                "attention": "Заключительный абзац подчеркивает важность темы для читателя.",
+                "intent": "Подчеркнуть значимость ЭПЛ и мотивировать к дальнейшему изучению.",
+                "audiences": "все читатели",
+                "selfPrompt": "Напишите абзац (p) 80-160 слов, заключающий раздел и мотивирующий читателя.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": "need generate helpful content"
+                }
+              },
+              {
+                "id": "blockquote-7-5",
+                "tag": "blockquote",
+                "keywords": [
+                  "цитата",
+                  "мотивация",
+                  "заключение",
+                  "ЭПЛ"
+                ],
+                "taxonomy": "Motivational Quote",
+                "attention": "Цитата вдохновляет и подчеркивает важность темы.",
+                "intent": "Включить вдохновляющую цитату, завершающую раздел.",
+                "audiences": "все читатели",
+                "selfPrompt": "Создайте блок цитаты (blockquote) 15-35 слов, мотивирующий и подчеркивающий значимость ЭПЛ.",
+                "additionalData": {
+                  "minWords": 15,
+                  "maxWords": 35,
+                  "actualContent": "need generate helpful content"
+                }
+              }
+            ]
+          }
         ]
       }
     ],
@@ -4961,5 +6461,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-03T12:57:39.342Z";
+export const lastUpdated = "2025-10-03T12:58:04.330Z";
 export const generatedBy = "menu-persist-api";
