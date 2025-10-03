@@ -33,6 +33,9 @@ export function useMenuOperations(
       setCategories((items) => arrayMove(items, oldIndex, newIndex));
     }
   };
+const nowIso = () => new Date().toISOString(); // [web:1][web:5]
+
+  const timestamp = nowIso(); // ISO-8601 timestamp for createdAt/updatedAt [web:1][web:5]
 
   const handlePageDragEnd = (activeId: string, overId: string) => {
     if (!activeCategory || activeId === overId) return;
@@ -130,6 +133,8 @@ export function useMenuOperations(
                       isAddedToPrompt: false,
                       isVectorConnected: false,
                       isChatSynchronized: false,
+                      createdAt: timestamp, 
+                      updatedAt: timestamp,
                       order:
                         cat.pages.length > 0
                           ? Math.max(...cat.pages.map((l) => l.order ?? 0)) + 1

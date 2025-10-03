@@ -7,7 +7,7 @@ export const contentData = {
     "pages": [
       {
         "id": "ks7eqcf6z1fhes1lwiwz75zn",
-        "href": "/home/home-page",
+        "href": "/home",
         "roles": [
           "guest"
         ],
