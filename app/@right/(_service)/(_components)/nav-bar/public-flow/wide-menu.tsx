@@ -14,7 +14,7 @@ import { useTranslation } from "../../../(_libs)/translation";
 import { PageData } from "../../../(_types)/page-types";
 import { humanize } from "../../../(_libs)/humanize";
 import { ModeToggle } from "../../shared/mode-toggle";
-import { UserType } from "../../../(_types)/footer-types";
+import { UserType } from "@prisma/client";
 
 // Understanding (in English):
 // - Left side: single vertical scroll list.

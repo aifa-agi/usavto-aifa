@@ -17,7 +17,7 @@ import { PageData } from "../../../(_types)/page-types";
 import { MenuCategory } from "../../../(_types)/menu-types";
 import { useTranslation } from "../../../(_libs)/translation";
 import { ModeToggle } from "../../shared/mode-toggle";
-import { UserType } from "../../../(_types)/footer-types";
+import { UserType } from "@prisma/client";
 
 interface MobileMenuProps {
   isOpen: boolean;
