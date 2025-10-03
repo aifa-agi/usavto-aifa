@@ -3122,7 +3122,15 @@ export const contentData = {
         "isChatSynchronized": false,
         "createdAt": "2025-10-03T08:56:54.857Z",
         "updatedAt": "2025-10-03T08:56:54.857Z",
-        "order": 1
+        "order": 1,
+        "description": "Как цифровые технологии меняют управление автопарком и помогают снизить издержки",
+        "images": [
+          {
+            "id": "aj9boafp4xftqhj8yxt50tnw",
+            "alt": "Как цифровые технологии меняют управление автопарком и помогают снизить издержки",
+            "href": "https://9d8adypzz8xutnay.public.blob.vercel-storage.com/EPL-72NXxLHtczUzaJFmjDpH0gT6nktRN1.png"
+          }
+        ]
       }
     ],
     "order": 8
@@ -3195,5 +3203,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-03T08:57:05.505Z";
+export const lastUpdated = "2025-10-03T09:03:02.525Z";
 export const generatedBy = "menu-persist-api";
