@@ -2362,9 +2362,9 @@ export const contentData = {
     "href": "/epl",
     "pages": [
       {
-        "id": "ilb0vpf9awa20jvvmifq2czy",
-        "title": "Электронный путевой лист",
-        "href": "/epl/elektronnyy-putevoy-list",
+        "id": "dajfus3srbyqmiuhoj1f1tvw",
+        "title": "Использование электронных путевых листов!!",
+        "href": "/epl/ispolzovanie-elektronnyh-putevyh-listov",
         "roles": [
           "guest"
         ],
@@ -2384,8 +2384,8 @@ export const contentData = {
             "designDescription": "",
             "connectedDesignSectionId": "",
             "additionalData": {
-              "minWords": 150,
-              "maxWords": 250,
+              "minWords": 200,
+              "maxWords": 350,
               "actualContent": ""
             },
             "realContentStructure": [
@@ -2393,8 +2393,8 @@ export const contentData = {
                 "id": "p-1-1",
                 "tag": "p",
                 "additionalData": {
-                  "minWords": 100,
-                  "maxWords": 180,
+                  "minWords": 120,
+                  "maxWords": 250,
                   "actualContent": ""
                 }
               },
@@ -2402,8 +2402,26 @@ export const contentData = {
                 "id": "p-1-2",
                 "tag": "p",
                 "additionalData": {
-                  "minWords": 60,
-                  "maxWords": 120,
+                  "minWords": 80,
+                  "maxWords": 180,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-3",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "blockquote-1-4",
+                "tag": "blockquote",
+                "additionalData": {
+                  "minWords": 25,
+                  "maxWords": 50,
                   "actualContent": ""
                 }
               }
@@ -2422,8 +2440,8 @@ export const contentData = {
             "designDescription": "",
             "connectedDesignSectionId": "",
             "additionalData": {
-              "minWords": 250,
-              "maxWords": 400,
+              "minWords": 400,
+              "maxWords": 600,
               "actualContent": ""
             },
             "realContentStructure": [
@@ -2431,26 +2449,8 @@ export const contentData = {
                 "id": "p-2-1",
                 "tag": "p",
                 "additionalData": {
-                  "minWords": 80,
-                  "maxWords": 150,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "p-2-2-3",
-                "tag": "p",
-                "additionalData": {
-                  "minWords": 5,
-                  "maxWords": 15,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "table-2-2-4",
-                "tag": "table",
-                "additionalData": {
-                  "minWords": 80,
-                  "maxWords": 160,
+                  "minWords": 100,
+                  "maxWords": 200,
                   "actualContent": ""
                 }
               },
@@ -2458,8 +2458,8 @@ export const contentData = {
                 "id": "h3-2-2",
                 "tag": "h3",
                 "additionalData": {
-                  "minWords": 150,
-                  "maxWords": 250,
+                  "minWords": 200,
+                  "maxWords": 300,
                   "actualContent": ""
                 },
                 "realContentStructure": [
@@ -2468,12 +2468,59 @@ export const contentData = {
                     "tag": "p",
                     "additionalData": {
                       "minWords": 70,
-                      "maxWords": 130,
+                      "maxWords": 140,
                       "actualContent": ""
                     }
                   },
                   {
-                    "id": "ul-2-2-2",
+                    "id": "p-2-2-2",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 90,
+                      "maxWords": 180,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-2-3",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 5,
+                      "maxWords": 15,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "table-2-2-4",
+                    "tag": "table",
+                    "additionalData": {
+                      "minWords": 80,
+                      "maxWords": 160,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-2-3",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 200,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-3-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 80,
+                      "maxWords": 160,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-2-3-2",
                     "tag": "ul",
                     "additionalData": {
                       "minWords": 40,
@@ -2482,11 +2529,20 @@ export const contentData = {
                     }
                   },
                   {
-                    "id": "p-2-2-3",
+                    "id": "code-2-3-3",
+                    "tag": "code",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 50,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-3-4",
                     "tag": "p",
                     "additionalData": {
                       "minWords": 60,
-                      "maxWords": 100,
+                      "maxWords": 120,
                       "actualContent": ""
                     }
                   }
@@ -2507,8 +2563,8 @@ export const contentData = {
             "designDescription": "",
             "connectedDesignSectionId": "",
             "additionalData": {
-              "minWords": 300,
-              "maxWords": 450,
+              "minWords": 500,
+              "maxWords": 750,
               "actualContent": ""
             },
             "realContentStructure": [
@@ -2516,44 +2572,120 @@ export const contentData = {
                 "id": "p-3-1",
                 "tag": "p",
                 "additionalData": {
-                  "minWords": 90,
-                  "maxWords": 170,
+                  "minWords": 5,
+                  "maxWords": 15,
                   "actualContent": ""
                 }
               },
               {
-                "id": "h3-3-2",
+                "id": "p-3-2",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 110,
+                  "maxWords": 220,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-3-3",
                 "tag": "h3",
                 "additionalData": {
-                  "minWords": 180,
-                  "maxWords": 280,
+                  "minWords": 200,
+                  "maxWords": 350,
                   "actualContent": ""
                 },
                 "realContentStructure": [
                   {
-                    "id": "p-3-2-1",
+                    "id": "p-3-3-1",
                     "tag": "p",
                     "additionalData": {
-                      "minWords": 75,
-                      "maxWords": 140,
+                      "minWords": 85,
+                      "maxWords": 170,
                       "actualContent": ""
                     }
                   },
                   {
-                    "id": "ol-3-2-2",
+                    "id": "ol-3-3-2",
                     "tag": "ol",
                     "additionalData": {
                       "minWords": 50,
-                      "maxWords": 90,
+                      "maxWords": 100,
                       "actualContent": ""
                     }
                   },
                   {
-                    "id": "code-3-2-3",
-                    "tag": "code",
+                    "id": "h4-3-3-3",
+                    "tag": "h4",
+                    "additionalData": {
+                      "minWords": 120,
+                      "maxWords": 200,
+                      "actualContent": ""
+                    },
+                    "realContentStructure": [
+                      {
+                        "id": "p-3-3-3-1",
+                        "tag": "p",
+                        "additionalData": {
+                          "minWords": 75,
+                          "maxWords": 150,
+                          "actualContent": ""
+                        }
+                      },
+                      {
+                        "id": "code-3-3-3-2",
+                        "tag": "code",
+                        "additionalData": {
+                          "minWords": 25,
+                          "maxWords": 60,
+                          "actualContent": ""
+                        }
+                      },
+                      {
+                        "id": "p-3-3-3-3",
+                        "tag": "p",
+                        "additionalData": {
+                          "minWords": 65,
+                          "maxWords": 130,
+                          "actualContent": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "h3-3-4",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 250,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-4-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 95,
+                      "maxWords": 190,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "blockquote-3-4-2",
+                    "tag": "blockquote",
                     "additionalData": {
                       "minWords": 20,
-                      "maxWords": 50,
+                      "maxWords": 45,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-4-3",
+                    "tag": "ol",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
                       "actualContent": ""
                     }
                   }
@@ -2570,12 +2702,12 @@ export const contentData = {
             "attention": "",
             "intent": "",
             "audiences": "",
-            "selfPrompt": "This FAQ section is designed for generating relevant questions and answers. To create meaningful questions, you should adopt the perspective of the user, which requires analyzing the existing content and understanding the target audience. Consider what four questions would be most interesting and useful for users within the context of the given topic. Then, generate those four questions and organize each one under an h3 heading, ensuring that each question is paired with a well-crafted answer.",
+            "selfPrompt": "",
             "designDescription": "",
             "connectedDesignSectionId": "",
             "additionalData": {
-              "minWords": 300,
-              "maxWords": 450,
+              "minWords": 450,
+              "maxWords": 650,
               "actualContent": ""
             },
             "realContentStructure": [
@@ -2583,8 +2715,8 @@ export const contentData = {
                 "id": "p-4-1",
                 "tag": "p",
                 "additionalData": {
-                  "minWords": 70,
-                  "maxWords": 130,
+                  "minWords": 100,
+                  "maxWords": 200,
                   "actualContent": ""
                 }
               },
@@ -2592,8 +2724,8 @@ export const contentData = {
                 "id": "h3-4-2",
                 "tag": "h3",
                 "additionalData": {
-                  "minWords": 150,
-                  "maxWords": 220,
+                  "minWords": 200,
+                  "maxWords": 300,
                   "actualContent": ""
                 },
                 "realContentStructure": [
@@ -2601,8 +2733,35 @@ export const contentData = {
                     "id": "p-4-2-1",
                     "tag": "p",
                     "additionalData": {
-                      "minWords": 60,
-                      "maxWords": 120,
+                      "minWords": 5,
+                      "maxWords": 15,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-4-2-2",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 90,
+                      "maxWords": 180,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-4-2-3",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 85,
+                      "maxWords": 170,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-4-2-4",
+                    "tag": "ul",
+                    "additionalData": {
+                      "minWords": 45,
+                      "maxWords": 90,
                       "actualContent": ""
                     }
                   }
@@ -2612,8 +2771,8 @@ export const contentData = {
                 "id": "h3-4-3",
                 "tag": "h3",
                 "additionalData": {
-                  "minWords": 150,
-                  "maxWords": 220,
+                  "minWords": 250,
+                  "maxWords": 350,
                   "actualContent": ""
                 },
                 "realContentStructure": [
@@ -2621,48 +2780,35 @@ export const contentData = {
                     "id": "p-4-3-1",
                     "tag": "p",
                     "additionalData": {
-                      "minWords": 60,
-                      "maxWords": 120,
+                      "minWords": 110,
+                      "maxWords": 220,
                       "actualContent": ""
                     }
-                  }
-                ]
-              },
-              {
-                "id": "h3-4-4",
-                "tag": "h3",
-                "additionalData": {
-                  "minWords": 150,
-                  "maxWords": 220,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
+                  },
                   {
-                    "id": "p-4-4-1",
+                    "id": "p-4-3-2",
                     "tag": "p",
                     "additionalData": {
-                      "minWords": 60,
-                      "maxWords": 120,
+                      "minWords": 80,
+                      "maxWords": 160,
                       "actualContent": ""
                     }
-                  }
-                ]
-              },
-              {
-                "id": "h3-4-5",
-                "tag": "h3",
-                "additionalData": {
-                  "minWords": 150,
-                  "maxWords": 220,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
+                  },
                   {
-                    "id": "p-4-5-1",
-                    "tag": "p",
+                    "id": "ol-4-3-3",
+                    "tag": "ol",
                     "additionalData": {
-                      "minWords": 60,
-                      "maxWords": 120,
+                      "minWords": 55,
+                      "maxWords": 110,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "blockquote-4-3-4",
+                    "tag": "blockquote",
+                    "additionalData": {
+                      "minWords": 18,
+                      "maxWords": 40,
                       "actualContent": ""
                     }
                   }
@@ -2683,8 +2829,8 @@ export const contentData = {
             "designDescription": "",
             "connectedDesignSectionId": "",
             "additionalData": {
-              "minWords": 200,
-              "maxWords": 300,
+              "minWords": 400,
+              "maxWords": 550,
               "actualContent": ""
             },
             "realContentStructure": [
@@ -2692,14 +2838,266 @@ export const contentData = {
                 "id": "p-5-1",
                 "tag": "p",
                 "additionalData": {
-                  "minWords": 80,
-                  "maxWords": 150,
+                  "minWords": 105,
+                  "maxWords": 210,
                   "actualContent": ""
                 }
               },
               {
-                "id": "table-5-3",
+                "id": "p-5-2",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-5-3",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 250,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-5-3-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 80,
+                      "maxWords": 160,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-5-3-2",
+                    "tag": "ul",
+                    "additionalData": {
+                      "minWords": 40,
+                      "maxWords": 80,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-5-3-3",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 140,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "h2-6",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "This FAQ section is designed for generating relevant questions and answers. To create meaningful questions, you should adopt the perspective of the user, which requires analyzing the existing content and understanding the target audience. Consider what six questions would be most interesting and useful for users within the context of the given topic. Then, generate those six questions and organize each one under an h3 heading, ensuring that each question is paired with a well-crafted answer.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 450,
+              "maxWords": 600,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-6-1",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 95,
+                  "maxWords": 190,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-6-2",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-6-2-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 150,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-6-3",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-6-3-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 150,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-6-4",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-6-4-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 150,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-6-5",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-6-5-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 150,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-6-6",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-6-6-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 150,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-6-7",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-6-7-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 150,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "h2-7",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-7-1",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 240,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-7-2",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 200,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-6-2-2",
                 "tag": "table",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-7-3",
+                "tag": "ul",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 120,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-7-4",
+                "tag": "p",
                 "additionalData": {
                   "minWords": 80,
                   "maxWords": 160,
@@ -2707,20 +3105,11 @@ export const contentData = {
                 }
               },
               {
-                "id": "ul-5-2",
-                "tag": "ul",
+                "id": "blockquote-7-5",
+                "tag": "blockquote",
                 "additionalData": {
-                  "minWords": 50,
-                  "maxWords": 90,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "p-5-3",
-                "tag": "p",
-                "additionalData": {
-                  "minWords": 70,
-                  "maxWords": 130,
+                  "minWords": 15,
+                  "maxWords": 35,
                   "actualContent": ""
                 }
               }
@@ -2731,9 +3120,21 @@ export const contentData = {
         "isAddedToPrompt": false,
         "isVectorConnected": false,
         "isChatSynchronized": false,
-        "createdAt": "2025-10-03T10:21:22.145Z",
-        "updatedAt": "2025-10-03T10:21:22.145Z",
-        "order": 1
+        "createdAt": "2025-10-03T08:56:54.857Z",
+        "updatedAt": "2025-10-03T09:44:23.253Z",
+        "order": 1,
+        "description": "Как цифровые технологии меняют управление автопарком и помогают снизить издержки",
+        "images": [
+          {
+            "id": "aj9boafp4xftqhj8yxt50tnw",
+            "alt": "Как цифровые технологии меняют управление автопарком и помогают снизить издержки",
+            "href": "https://9d8adypzz8xutnay.public.blob.vercel-storage.com/EPL-72NXxLHtczUzaJFmjDpH0gT6nktRN1.png"
+          }
+        ],
+        "keywords": [
+          "Использование электронных путевых листов"
+        ],
+        "isReadyPromptForPerplexity": true
       }
     ],
     "order": 8
@@ -2806,5 +3207,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-03T10:21:44.354Z";
+export const lastUpdated = "2025-10-03T10:38:38.866Z";
 export const generatedBy = "menu-persist-api";
