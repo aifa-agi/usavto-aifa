@@ -2360,7 +2360,520 @@ export const contentData = {
   {
     "title": "ЭПЛ",
     "href": "/epl",
-    "pages": [],
+    "pages": [
+      {
+        "id": "wx31eoetr5mdemguyo4xbxzm",
+        "title": "Электронный путевой лист: что это и как внедрить в вашей компании",
+        "href": "/epl/elektronnyy-putevoy-list-chto-eto-i-kak-vnedrit-v-vashey-kompanii",
+        "roles": [
+          "guest"
+        ],
+        "hasBadge": true,
+        "type": "customCategorias",
+        "aiRecommendContentStructure": [
+          {
+            "id": "h2-1",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-1-1",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 90,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-2",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-3",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "blockquote-1-4",
+                "tag": "blockquote",
+                "additionalData": {
+                  "minWords": 25,
+                  "maxWords": 45,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-5",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 110,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-1-6",
+                "tag": "ul",
+                "additionalData": {
+                  "minWords": 40,
+                  "maxWords": 70,
+                  "actualContent": ""
+                }
+              }
+            ]
+          },
+          {
+            "id": "h2-2",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 550,
+              "maxWords": 750,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-2-1",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 140,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-2-2",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-2-3",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 220,
+                  "maxWords": 320,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-3-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 130,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-2-3-2",
+                    "tag": "ul",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 85,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-3-3",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 65,
+                      "maxWords": 115,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-2-3-4",
+                    "tag": "code",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 45,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-2-4",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 280,
+                  "maxWords": 400,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-4-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "table-2-4-2",
+                    "tag": "table",
+                    "additionalData": {
+                      "minWords": 90,
+                      "maxWords": 150,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-4-3",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 5,
+                      "maxWords": 15,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "h4-2-4-4",
+                    "tag": "h4",
+                    "additionalData": {
+                      "minWords": 130,
+                      "maxWords": 200,
+                      "actualContent": ""
+                    },
+                    "realContentStructure": [
+                      {
+                        "id": "p-2-4-4-1",
+                        "tag": "p",
+                        "additionalData": {
+                          "minWords": 60,
+                          "maxWords": 105,
+                          "actualContent": ""
+                        }
+                      },
+                      {
+                        "id": "ol-2-4-4-2",
+                        "tag": "ol",
+                        "additionalData": {
+                          "minWords": 45,
+                          "maxWords": 75,
+                          "actualContent": ""
+                        }
+                      },
+                      {
+                        "id": "blockquote-2-4-4-3",
+                        "tag": "blockquote",
+                        "additionalData": {
+                          "minWords": 20,
+                          "maxWords": 40,
+                          "actualContent": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "This FAQ section is designed for generating relevant questions and answers. To create meaningful questions, you should adopt the perspective of the user, which requires analyzing the existing content and understanding the target audience. Consider what three questions would be most interesting and useful for users within the context of the given topic. Then, generate those three questions and organize each one under an h3 heading, ensuring that each question is paired with a well-crafted answer.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 350,
+              "maxWords": 500,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-3-1",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 120,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-3-2",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 160,
+                  "maxWords": 240,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-2-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-3-2-2",
+                    "tag": "ul",
+                    "additionalData": {
+                      "minWords": 35,
+                      "maxWords": 60,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-3-2-3",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 90,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-3-3",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 160,
+                  "maxWords": 240,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-3-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 65,
+                      "maxWords": 115,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-3-3-2",
+                    "tag": "code",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 40,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-3-3-3",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 55,
+                      "maxWords": 100,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-3-4",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 160,
+                  "maxWords": 240,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-4-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 130,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-4-2",
+                    "tag": "ol",
+                    "additionalData": {
+                      "minWords": 40,
+                      "maxWords": 70,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-3-4-3",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 45,
+                      "maxWords": 80,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "h2-4",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 350,
+              "maxWords": 500,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-4-1",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 140,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-4-2",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-4-3",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 280,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-4-3-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-4-3-2",
+                    "tag": "ul",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 85,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-4-3-3",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 105,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "blockquote-4-3-4",
+                    "tag": "blockquote",
+                    "additionalData": {
+                      "minWords": 18,
+                      "maxWords": 35,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "table-4-4",
+                "tag": "table",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 170,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-4-5",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 120,
+                  "actualContent": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isPublished": false,
+        "isAddedToPrompt": false,
+        "isVectorConnected": false,
+        "isChatSynchronized": false,
+        "createdAt": "2025-10-03T10:39:27.830Z",
+        "updatedAt": "2025-10-03T10:39:27.830Z",
+        "order": 1,
+        "description": "Пошаговое руководство по переходу на цифровую документацию для транспортных предприятий",
+        "images": [
+          {
+            "id": "n0r9xdic0p46tc1rm91hdjtt",
+            "alt": "Пошаговое руководство по переходу на цифровую документацию для транспортных предприятий",
+            "href": "https://9d8adypzz8xutnay.public.blob.vercel-storage.com/EPL-e6qFYAItxJB8mGiw3tv3gtognsMy1M.png"
+          }
+        ],
+        "badgeName": "ЭПЛ",
+        "keywords": [
+          "Электронный путевой лист"
+        ]
+      }
+    ],
     "order": 8
   },
   {
@@ -2431,5 +2944,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-03T10:39:07.246Z";
+export const lastUpdated = "2025-10-03T10:41:01.244Z";
 export const generatedBy = "menu-persist-api";
