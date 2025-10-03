@@ -2858,7 +2858,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-03T10:39:27.830Z",
-        "updatedAt": "2025-10-03T11:34:08.772Z",
+        "updatedAt": "2025-10-03T11:34:16.957Z",
         "order": 1,
         "description": "Пошаговое руководство по переходу на цифровую документацию для транспортных предприятий",
         "images": [
@@ -4236,7 +4236,8 @@ export const contentData = {
                   "minWords": 60,
                   "maxWords": 240,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-7-2",
@@ -4254,7 +4255,8 @@ export const contentData = {
                   "minWords": 100,
                   "maxWords": 200,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "table-6-2-2",
@@ -4273,7 +4275,8 @@ export const contentData = {
                   "minWords": 200,
                   "maxWords": 300,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "ul-7-3",
@@ -4291,7 +4294,8 @@ export const contentData = {
                   "minWords": 60,
                   "maxWords": 120,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-7-4",
@@ -4309,7 +4313,8 @@ export const contentData = {
                   "minWords": 80,
                   "maxWords": 160,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "blockquote-7-5",
@@ -4327,12 +4332,14 @@ export const contentData = {
                   "minWords": 15,
                   "maxWords": 35,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           }
         ],
-        "isReadyDraftForPerplexity": false
+        "isReadyDraftForPerplexity": true
       }
     ],
     "order": 8
@@ -4405,5 +4412,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-03T11:34:17.676Z";
+export const lastUpdated = "2025-10-03T11:37:22.582Z";
 export const generatedBy = "menu-persist-api";
