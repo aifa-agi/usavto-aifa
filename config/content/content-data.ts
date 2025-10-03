@@ -2858,7 +2858,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-03T10:39:27.830Z",
-        "updatedAt": "2025-10-03T11:34:02.012Z",
+        "updatedAt": "2025-10-03T11:34:08.772Z",
         "order": 1,
         "description": "Пошаговое руководство по переходу на цифровую документацию для транспортных предприятий",
         "images": [
@@ -3938,7 +3938,8 @@ export const contentData = {
                   "minWords": 95,
                   "maxWords": 190,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-6-2",
@@ -3976,9 +3977,11 @@ export const contentData = {
                       "minWords": 75,
                       "maxWords": 150,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "h3-6-3",
@@ -4016,9 +4019,11 @@ export const contentData = {
                       "minWords": 75,
                       "maxWords": 150,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "h3-6-4",
@@ -4056,9 +4061,11 @@ export const contentData = {
                       "minWords": 75,
                       "maxWords": 150,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "h3-6-5",
@@ -4096,9 +4103,11 @@ export const contentData = {
                       "minWords": 75,
                       "maxWords": 150,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "h3-6-6",
@@ -4136,9 +4145,11 @@ export const contentData = {
                       "minWords": 75,
                       "maxWords": 150,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "h3-6-7",
@@ -4177,11 +4188,14 @@ export const contentData = {
                       "minWords": 75,
                       "maxWords": 150,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-7",
@@ -4391,5 +4405,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-03T11:34:09.463Z";
+export const lastUpdated = "2025-10-03T11:34:17.676Z";
 export const generatedBy = "menu-persist-api";
