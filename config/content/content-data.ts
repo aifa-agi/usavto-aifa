@@ -2858,7 +2858,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-03T10:39:27.830Z",
-        "updatedAt": "2025-10-03T11:30:01.457Z",
+        "updatedAt": "2025-10-03T11:32:44.254Z",
         "order": 1,
         "description": "Пошаговое руководство по переходу на цифровую документацию для транспортных предприятий",
         "images": [
@@ -2914,7 +2914,8 @@ export const contentData = {
                   "minWords": 120,
                   "maxWords": 250,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-1-2",
@@ -2933,7 +2934,8 @@ export const contentData = {
                   "minWords": 80,
                   "maxWords": 180,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-1-3",
@@ -2951,7 +2953,8 @@ export const contentData = {
                   "minWords": 5,
                   "maxWords": 15,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "blockquote-1-4",
@@ -2970,9 +2973,11 @@ export const contentData = {
                   "minWords": 25,
                   "maxWords": 50,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-2",
@@ -4267,7 +4272,8 @@ export const contentData = {
               }
             ]
           }
-        ]
+        ],
+        "isReadyDraftForPerplexity": false
       }
     ],
     "order": 8
@@ -4340,5 +4346,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-03T11:32:45.143Z";
+export const lastUpdated = "2025-10-03T11:33:44.846Z";
 export const generatedBy = "menu-persist-api";
