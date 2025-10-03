@@ -52,14 +52,7 @@ const geistMono = Geist_Mono({
 });
 
 
-export async function resolveLanguage(): Promise<SupportedLanguage> {
-  const c = await cookies();
-  const h = await headers();
-  const cookieLang = c.get("lang")?.value as SupportedLanguage | undefined;
-  const code = (h.get("accept-language") || "").split(",")[0]?.split("-")[0] || DEFAULT_LANGUAGE;
-  const headerLang = (SUPPORTED_LANGUAGES.includes(code as SupportedLanguage) ? code : DEFAULT_LANGUAGE) as SupportedLanguage;
-  return cookieLang && SUPPORTED_LANGUAGES.includes(cookieLang) ? cookieLang : headerLang;
-}
+
 
 export default async function RootLayout({
   left,
@@ -68,12 +61,11 @@ export default async function RootLayout({
   left: React.ReactNode;
   right: React.ReactNode;
 }) {
-  const lang = await resolveLanguage();
+
 
   return (
     <html
       lang={appConfig.lang}
-      data-lang={lang}
       suppressHydrationWarning
       className={`${geist.variable} ${geistMono.variable}`}
     >
@@ -90,56 +82,56 @@ export default async function RootLayout({
         >
           <Toaster position="top-center" />
           <SessionProvider>
-            <OnlineStatusProvider>
-              <LanguageProvider>
-                <RightSidebarProvider>
-                  <AppProvider>
-                    {/* === DESKTOP LAYOUT === */}
-                    <div className="hidden md:block h-screen w-screen">
-                      <ResizablePanelGroup direction="horizontal">
-                        <ResizablePanel defaultSize={40} minSize={35}>
-                          <div className="overflow-hidden h-full">{left}</div>
-                        </ResizablePanel>
-                        <ResizableHandle withHandle />
-                        <ResizablePanel defaultSize={60} minSize={35}>
-                          {/* --- START: CORRECTED BLOCK --- */}
-                          <NavigationMenuProvider>
-                            <div className="relative flex flex-col h-screen">
-                              <NavBar />
-                              <main className="flex-1 overflow-y-auto hide-scrollbar">
-                                {right}
-                              </main>
-                            </div>
-                          </NavigationMenuProvider>
-                          {/* --- END: CORRECTED BLOCK --- */}
-                        </ResizablePanel>
-                      </ResizablePanelGroup>
+            {/* <OnlineStatusProvider> */}
+            <LanguageProvider>
+              <RightSidebarProvider>
+                <AppProvider>
+                  {/* === DESKTOP LAYOUT === */}
+                  <div className="hidden md:block h-screen w-screen">
+                    <ResizablePanelGroup direction="horizontal">
+                      <ResizablePanel defaultSize={40} minSize={35}>
+                        <div className="overflow-hidden h-full">{left}</div>
+                      </ResizablePanel>
+                      <ResizableHandle withHandle />
+                      <ResizablePanel defaultSize={60} minSize={35}>
+                        {/* --- START: CORRECTED BLOCK --- */}
+                        <NavigationMenuProvider>
+                          <div className="relative flex flex-col h-screen">
+                            <NavBar />
+                            <main className="flex-1 overflow-y-auto hide-scrollbar">
+                              {right}
+                            </main>
+                          </div>
+                        </NavigationMenuProvider>
+                        {/* --- END: CORRECTED BLOCK --- */}
+                      </ResizablePanel>
+                    </ResizablePanelGroup>
+                  </div>
+
+
+                  {/* === MOBILE LAYOUT === */}
+                  <div className="w-full md:hidden relative">
+                    {left}
+                    <div className="border-l overflow-hidden border-secondary">
+                      <RightDrawerBar>
+                        <NavigationMenuProvider>
+                          <div className="relative flex flex-col h-svh pb-6">
+                            <NavBar />
+                            <main className="flex-1 overflow-y-auto hide-scrollbar">
+                              {right}
+                            </main>
+                          </div>
+                        </NavigationMenuProvider>
+                      </RightDrawerBar>
                     </div>
+                  </div>
 
 
-                    {/* === MOBILE LAYOUT === */}
-                    <div className="w-full md:hidden relative">
-                      {left}
-                      <div className="border-l overflow-hidden border-secondary">
-                        <RightDrawerBar>
-                          <NavigationMenuProvider>
-                            <div className="relative flex flex-col h-svh pb-6">
-                              <NavBar />
-                              <main className="flex-1 overflow-y-auto hide-scrollbar">
-                                {right}
-                              </main>
-                            </div>
-                          </NavigationMenuProvider>
-                        </RightDrawerBar>
-                      </div>
-                    </div>
-
-
-                    <DevIndicatorClient />
-                  </AppProvider>
-                </RightSidebarProvider>
-              </LanguageProvider>
-            </OnlineStatusProvider>
+                  <DevIndicatorClient />
+                </AppProvider>
+              </RightSidebarProvider>
+            </LanguageProvider>
+            {/* </OnlineStatusProvider> */}
             <CookieBanner />
             {process.env.NODE_ENV === "production" && (
               <GoogleAnalytics

@@ -1,3 +1,7 @@
+
+
+// @/config/default-page-structure-config.ts
+
 import { RootContentStructure } from "@/app/@right/(_service)/(_types)/page-types";
 
 /**

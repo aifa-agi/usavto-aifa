@@ -22,7 +22,7 @@ export interface ContentRepairServerResult {
   confidence: number;
 }
 
-const OPENAI_MODEL = "gpt-4o";
+const OPENAI_MODEL = "gpt-4.1-mini";
 
 // ✅ Zod схема
 const TechnicalTagSchema = z.enum([

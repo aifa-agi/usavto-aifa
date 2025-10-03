@@ -8,6 +8,8 @@ import { generateCuid } from "@/lib/utils/generateCuid";
 import { useDialogs } from "@/app/@right/(_service)/(_context)/dialogs";
 import { DEFAULT_CONTENT_STRUCTURE } from "@/config/default-page-structure-config";
 import { transliterate } from "@/lib/utils/transliterate";
+import { MEDIUM_CONTENT_STRUCTURE } from "@/config/medium-page-structure-config";
+import { COMPACT_CONTENT_STRUCTURE } from "@/config/compact-page-structure-config";
 
 // Экспортируем тип для ясности
 
@@ -132,7 +134,7 @@ const href =
                       roles: ["guest"],
                       hasBadge: false,
                       type: "customCategorias", 
-                      aiRecommendContentStructure: DEFAULT_CONTENT_STRUCTURE,
+                      aiRecommendContentStructure: COMPACT_CONTENT_STRUCTURE,
                       isPublished: false,
                       isAddedToPrompt: false,
                       isVectorConnected: false,
