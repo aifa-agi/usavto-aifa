@@ -4940,7 +4940,18 @@ export const contentData = {
         "isChatSynchronized": false,
         "createdAt": "2025-10-03T12:47:53.635Z",
         "updatedAt": "2025-10-03T12:47:53.635Z",
-        "order": 1
+        "order": 1,
+        "description": "про ЭПЛ",
+        "images": [
+          {
+            "id": "gl7ag0u70z2d2gtfibvic4ng",
+            "alt": "",
+            "href": "https://9d8adypzz8xutnay.public.blob.vercel-storage.com/b56af9b40b494b4a1cf1837a18b653443f158e95-9zURofyjL90nAfYEdQuYfnDos4FSuA.jpg"
+          }
+        ],
+        "keywords": [
+          "ЭПЛ "
+        ]
       }
     ],
     "order": 17
@@ -4950,5 +4961,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-03T12:48:30.534Z";
+export const lastUpdated = "2025-10-03T12:50:05.330Z";
 export const generatedBy = "menu-persist-api";
