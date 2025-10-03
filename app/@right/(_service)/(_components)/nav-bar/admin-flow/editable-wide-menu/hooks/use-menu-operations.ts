@@ -111,8 +111,12 @@ const nowIso = () => new Date().toISOString(); // [web:1][web:5]
 
         const pageSlug = transliterate(normalizedTitle);
 
-        const href =
-          category.title === "root" ? `/${pageSlug}` : `/${category.title}/${pageSlug}`;
+        
+const href =
+  category.title === "root" 
+    ? `/${pageSlug}` 
+    : `/${transliterate(category.title)}/${pageSlug}`;
+
 
         setCategories((prev) =>
           prev.map((cat) =>
