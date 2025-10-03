@@ -4939,7 +4939,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-03T12:47:53.635Z",
-        "updatedAt": "2025-10-03T12:59:18.803Z",
+        "updatedAt": "2025-10-03T12:59:21.836Z",
         "order": 1,
         "description": "про ЭПЛ",
         "images": [
@@ -5676,7 +5676,8 @@ export const contentData = {
                   "minWords": 100,
                   "maxWords": 200,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-4-2",
@@ -5717,7 +5718,8 @@ export const contentData = {
                       "minWords": 5,
                       "maxWords": 15,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "p-4-2-2",
@@ -5737,7 +5739,8 @@ export const contentData = {
                       "minWords": 90,
                       "maxWords": 180,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "p-4-2-3",
@@ -5757,7 +5760,8 @@ export const contentData = {
                       "minWords": 85,
                       "maxWords": 170,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "ul-4-2-4",
@@ -5777,9 +5781,11 @@ export const contentData = {
                       "minWords": 45,
                       "maxWords": 90,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "h3-4-3",
@@ -5820,7 +5826,8 @@ export const contentData = {
                       "minWords": 110,
                       "maxWords": 220,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "p-4-3-2",
@@ -5840,7 +5847,8 @@ export const contentData = {
                       "minWords": 80,
                       "maxWords": 160,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "ol-4-3-3",
@@ -5860,7 +5868,8 @@ export const contentData = {
                       "minWords": 55,
                       "maxWords": 110,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "blockquote-4-3-4",
@@ -5880,11 +5889,14 @@ export const contentData = {
                       "minWords": 18,
                       "maxWords": 40,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-5",
@@ -6493,5 +6505,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-03T12:59:22.384Z";
+export const lastUpdated = "2025-10-03T12:59:25.448Z";
 export const generatedBy = "menu-persist-api";
