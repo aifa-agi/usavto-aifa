@@ -4939,7 +4939,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-03T12:47:53.635Z",
-        "updatedAt": "2025-10-03T12:59:24.761Z",
+        "updatedAt": "2025-10-03T12:59:27.782Z",
         "order": 1,
         "description": "про ЭПЛ",
         "images": [
@@ -6094,7 +6094,8 @@ export const contentData = {
                   "minWords": 95,
                   "maxWords": 190,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-6-2",
@@ -6135,9 +6136,11 @@ export const contentData = {
                       "minWords": 75,
                       "maxWords": 150,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "h3-6-3",
@@ -6178,9 +6181,11 @@ export const contentData = {
                       "minWords": 75,
                       "maxWords": 150,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "h3-6-4",
@@ -6221,9 +6226,11 @@ export const contentData = {
                       "minWords": 75,
                       "maxWords": 150,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "h3-6-5",
@@ -6264,9 +6271,11 @@ export const contentData = {
                       "minWords": 75,
                       "maxWords": 150,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "h3-6-6",
@@ -6307,9 +6316,11 @@ export const contentData = {
                       "minWords": 75,
                       "maxWords": 150,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "h3-6-7",
@@ -6350,11 +6361,14 @@ export const contentData = {
                       "minWords": 75,
                       "maxWords": 150,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-7",
@@ -6512,5 +6526,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-03T12:59:28.496Z";
+export const lastUpdated = "2025-10-03T12:59:31.468Z";
 export const generatedBy = "menu-persist-api";
