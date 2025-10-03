@@ -3939,7 +3939,7 @@ export const contentData = {
         "createdAt": "2025-10-03T07:59:14.393Z",
         "updatedAt": "2025-10-03T07:59:14.393Z",
         "order": 1,
-        "description": "bli"
+        "description": "bli bli"
       }
     ],
     "order": 16
@@ -3970,5 +3970,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-03T08:39:18.011Z";
+export const lastUpdated = "2025-10-03T08:55:35.116Z";
 export const generatedBy = "menu-persist-api";
