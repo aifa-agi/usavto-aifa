@@ -4939,7 +4939,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-03T12:47:53.635Z",
-        "updatedAt": "2025-10-03T12:59:15.728Z",
+        "updatedAt": "2025-10-03T12:59:18.803Z",
         "order": 1,
         "description": "про ЭПЛ",
         "images": [
@@ -5368,7 +5368,8 @@ export const contentData = {
                   "minWords": 5,
                   "maxWords": 15,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-3-2",
@@ -5388,7 +5389,8 @@ export const contentData = {
                   "minWords": 110,
                   "maxWords": 220,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-3-3",
@@ -5429,7 +5431,8 @@ export const contentData = {
                       "minWords": 85,
                       "maxWords": 170,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "ol-3-3-2",
@@ -5449,7 +5452,8 @@ export const contentData = {
                       "minWords": 50,
                       "maxWords": 100,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "h4-3-3-3",
@@ -5490,7 +5494,8 @@ export const contentData = {
                           "minWords": 75,
                           "maxWords": 150,
                           "actualContent": "need generate helpful content"
-                        }
+                        },
+                        "status": "checked"
                       },
                       {
                         "id": "code-3-3-3-2",
@@ -5510,7 +5515,8 @@ export const contentData = {
                           "minWords": 25,
                           "maxWords": 60,
                           "actualContent": "need generate helpful content"
-                        }
+                        },
+                        "status": "checked"
                       },
                       {
                         "id": "p-3-3-3-3",
@@ -5530,11 +5536,14 @@ export const contentData = {
                           "minWords": 65,
                           "maxWords": 130,
                           "actualContent": "need generate helpful content"
-                        }
+                        },
+                        "status": "checked"
                       }
-                    ]
+                    ],
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "h3-3-4",
@@ -5575,7 +5584,8 @@ export const contentData = {
                       "minWords": 95,
                       "maxWords": 190,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "blockquote-3-4-2",
@@ -5595,7 +5605,8 @@ export const contentData = {
                       "minWords": 20,
                       "maxWords": 45,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "ol-3-4-3",
@@ -5615,11 +5626,14 @@ export const contentData = {
                       "minWords": 60,
                       "maxWords": 120,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-4",
@@ -6479,5 +6493,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-03T12:59:19.548Z";
+export const lastUpdated = "2025-10-03T12:59:22.384Z";
 export const generatedBy = "menu-persist-api";
