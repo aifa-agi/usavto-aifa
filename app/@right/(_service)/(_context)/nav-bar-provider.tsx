@@ -21,11 +21,12 @@ import {
 } from "../(_libs)/persist-menu";
 import { toast } from "sonner";
 import { OperationStatus } from "../(_types)/api-response-types";
-import { fetchMenuCategories } from "../(_libs)/fetch-menu";
+import { fetchMenuCategories, type FetchMenuResponse } from "../(_libs)/fetch-menu";
 import { MenuCategory } from "../(_types)/menu-types";
 
 /**
  * Extended error information for better error handling
+ * Step 1: Define error structure with source tracking
  */
 export interface OperationError {
   status: OperationStatus;
@@ -35,8 +36,13 @@ export interface OperationError {
   isGitHubError: boolean;
   userMessage: string;
   environment?: "development" | "production";
+  source?: "Local FileSystem" | "GitHub API";
 }
 
+/**
+ * Context interface with source tracking
+ * Step 2: Add silent parameter for controlling toast display
+ */
 interface NavigationMenuContextProps {
   categories: MenuCategory[];
   setCategories: React.Dispatch<React.SetStateAction<MenuCategory[]>>;
@@ -45,10 +51,12 @@ interface NavigationMenuContextProps {
   loading: boolean;
   dirty: boolean;
   updateCategories: () => Promise<OperationError | null>;
-  refreshCategories: () => Promise<void>;
+  refreshCategories: (options?: { silent?: boolean }) => Promise<void>;
   initialized: boolean;
   lastOperationResult: PersistMenuResult | null;
   retryCount: number;
+  dataSource?: "Local FileSystem" | "GitHub API";
+  lastFetchResult?: FetchMenuResponse;
 }
 
 const NavigationMenuContext = createContext<
@@ -71,30 +79,69 @@ export function NavigationMenuProvider({
   const [lastOperationResult, setLastOperationResult] =
     useState<PersistMenuResult | null>(null);
   const [retryCount, setRetryCount] = useState(0);
+  const [dataSource, setDataSource] = useState<"Local FileSystem" | "GitHub API" | undefined>();
+  const [lastFetchResult, setLastFetchResult] = useState<FetchMenuResponse | undefined>();
 
   const dirty = !isCategoriesEqual(categories, serverCategoriesRef.current);
 
-  const refreshCategories = useCallback(async () => {
+  /**
+   * Refresh categories from server with optional silent mode
+   * Step 3: Add silent parameter to control toast notifications
+   * Step 4: Show success toast only for explicit user actions
+   * Step 5: Always show error toasts for user awareness
+   */
+  const refreshCategories = useCallback(async (options?: { silent?: boolean }) => {
+    const { silent = false } = options || {};
     setLoading(true);
+
     try {
       const result = await fetchMenuCategories();
+      setLastFetchResult(result);
+
       if (result.status === "ok" && result.categories) {
         setCategories(result.categories);
         serverCategoriesRef.current = JSON.parse(
           JSON.stringify(result.categories)
         );
-        setLastOperationResult(null); // Clear any previous operation results
-        setRetryCount(0); // Reset retry count on successful refresh
+        setDataSource(result.source);
+        setLastOperationResult(null);
+        setRetryCount(0);
+
+        // Show success toast ONLY if not silent
+        if (!silent && result.source) {
+          console.log(`✅ Menu loaded from ${result.source}`, result.serverMessage);
+          toast.success(`Menu loaded from ${result.source}`);
+        } else if (result.source) {
+          // Log silently without toast
+          console.log(`[Silent] Menu loaded from ${result.source}`);
+        }
+      } else {
+        // ALWAYS show error toasts (ignore silent flag)
+        console.error("Failed to refresh categories:", {
+          error: result.error,
+          source: result.source,
+          environment: result.environment,
+        });
+
+        const errorMessage = result.source
+          ? `Failed to load from ${result.source}: ${result.error}`
+          : `Failed to load menu: ${result.error}`;
+
+        toast.error(errorMessage); // ❗ Always show errors
       }
     } catch (error) {
-      console.error("Failed to refresh categories:", error);
-      toast.error("Failed to load menu categories");
+      console.error("Unexpected error in refreshCategories:", error);
+      toast.error("Failed to load menu categories"); // ❗ Always show errors
     } finally {
       setLoading(false);
       setInitialized(true);
     }
   }, []);
 
+  /**
+   * Update categories with enhanced error tracking
+   * Step 6: Show toasts for all update operations
+   */
   const updateCategories =
     useCallback(async (): Promise<OperationError | null> => {
       setLoading(true);
@@ -104,17 +151,14 @@ export function NavigationMenuProvider({
         setLastOperationResult(result);
 
         if (isPersistSuccess(result)) {
-          // Success - update server reference and reset retry count
           serverCategoriesRef.current = JSON.parse(JSON.stringify(categories));
           setRetryCount(0);
 
-          // Show success message
           const userMessage = getUserFriendlyMessage(result);
-          toast.success(userMessage);
+          toast.success(userMessage); // ✅ Always show success for updates
 
-          return null; // No error
+          return null;
         } else {
-          // Operation failed - create detailed error information
           const operationError: OperationError = {
             status: result.status,
             message: result.message,
@@ -123,21 +167,21 @@ export function NavigationMenuProvider({
             isGitHubError: isGitHubError(result),
             userMessage: getUserFriendlyMessage(result),
             environment: result.environment,
+            source: dataSource,
           };
 
-          // Increment retry count for failed operations
           setRetryCount((prev) => prev + 1);
 
           console.error("Failed to update categories:", {
             error: operationError,
             result: result,
             retryAttempt: retryCount + 1,
+            dataSource: dataSource,
           });
 
           return operationError;
         }
       } catch (unexpectedError: any) {
-        // This should not happen as persistMenuCategories handles all errors
         console.error("Unexpected error in updateCategories:", unexpectedError);
 
         const operationError: OperationError = {
@@ -148,6 +192,7 @@ export function NavigationMenuProvider({
           isGitHubError: false,
           userMessage: "An unexpected error occurred. Please try again.",
           environment: "production",
+          source: dataSource,
         };
 
         setRetryCount((prev) => prev + 1);
@@ -155,14 +200,22 @@ export function NavigationMenuProvider({
       } finally {
         setLoading(false);
       }
-    }, [categories, retryCount]);
+    }, [categories, retryCount, dataSource]);
 
+  /**
+   * Reset with explicit user action (show toast)
+   * Step 7: Explicit reset shows success toast
+   */
   const resetCategories = useCallback(async () => {
-    await refreshCategories();
+    await refreshCategories({ silent: false }); // Show toast on manual reset
   }, [refreshCategories]);
 
+  /**
+   * Initial load on mount (silent)
+   * Step 8: Suppress toast on initial mount
+   */
   useEffect(() => {
-    refreshCategories();
+    refreshCategories({ silent: true }); // Silent on initial load
   }, [refreshCategories]);
 
   return (
@@ -179,6 +232,8 @@ export function NavigationMenuProvider({
         initialized,
         lastOperationResult,
         retryCount,
+        dataSource,
+        lastFetchResult,
       }}
     >
       {children}
@@ -197,7 +252,8 @@ export function useNavigationMenu() {
 }
 
 /**
- * Custom hook for handling menu operations with automatic error handling
+ * Enhanced hook with better error handling
+ * Step 9: All update operations show toasts
  */
 export function useMenuOperations() {
   const {
@@ -207,43 +263,68 @@ export function useMenuOperations() {
     dirty,
     lastOperationResult,
     retryCount,
+    dataSource,
+    lastFetchResult,
   } = useNavigationMenu();
 
+  /**
+   * Handle update with toast notifications
+   * Step 10: Show error toasts with detailed information
+   */
   const handleUpdate = useCallback(async () => {
     const error = await updateCategories();
 
     if (error) {
-      // Show appropriate error message
-      if (error.isGitHubError) {
-        toast.error(error.userMessage);
-      } else if (error.isNetworkError) {
-        toast.error(
-          `${error.userMessage}${error.canRetry ? " You can try again." : ""}`
-        );
-      } else {
-        toast.error(error.userMessage);
+      // Enhanced error messages with source
+      let errorMsg = error.userMessage;
+      if (error.source) {
+        errorMsg += ` (Source: ${error.source})`;
       }
 
-      // Log detailed error information for debugging
+      // Show appropriate toast based on error type
+      if (error.isGitHubError) {
+        toast.error(errorMsg); // ✅ GitHub error toast
+      } else if (error.isNetworkError) {
+        toast.error(
+          `${errorMsg}${error.canRetry ? " You can try again." : ""}`
+        ); // ✅ Network error toast
+      } else {
+        toast.error(errorMsg); // ✅ Generic error toast
+      }
+
       console.warn("Menu update failed:", {
         status: error.status,
         canRetry: error.canRetry,
         retryAttempt: retryCount,
         environment: error.environment,
+        source: error.source,
       });
 
-      return false; // Indicate failure
+      return false;
     }
 
-    return true; // Indicate success
+    return true;
   }, [updateCategories, retryCount]);
 
+  /**
+   * Retry with toast notification
+   * Step 11: Retry shows toast on success/failure
+   */
   const handleRetry = useCallback(async () => {
     if (lastOperationResult && shouldRetry(lastOperationResult)) {
       return await handleUpdate();
     }
+    toast.warning("Cannot retry: operation not retryable"); // ⚠️ Warning toast
     return false;
   }, [handleUpdate, lastOperationResult]);
+
+  /**
+   * Manual refresh with toast
+   * Step 12: Expose manual refresh that shows toast
+   */
+  const handleManualRefresh = useCallback(async () => {
+    await refreshCategories({ silent: false }); // Show toast on manual action
+  }, [refreshCategories]);
 
   const canRetry = lastOperationResult
     ? shouldRetry(lastOperationResult)
@@ -252,17 +333,20 @@ export function useMenuOperations() {
   return {
     handleUpdate,
     handleRetry,
+    handleManualRefresh, // New method for explicit refresh
     canRetry,
     loading,
     dirty,
     retryCount,
+    dataSource,
+    lastFetchResult,
     lastError:
       lastOperationResult && !isPersistSuccess(lastOperationResult)
         ? {
-            status: lastOperationResult.status,
-            message: getUserFriendlyMessage(lastOperationResult),
-            canRetry: shouldRetry(lastOperationResult),
-          }
+          status: lastOperationResult.status,
+          message: getUserFriendlyMessage(lastOperationResult),
+          canRetry: shouldRetry(lastOperationResult),
+        }
         : null,
   };
 }

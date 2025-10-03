@@ -3938,7 +3938,8 @@ export const contentData = {
         "isChatSynchronized": false,
         "createdAt": "2025-10-03T07:59:14.393Z",
         "updatedAt": "2025-10-03T07:59:14.393Z",
-        "order": 1
+        "order": 1,
+        "description": "bli"
       }
     ],
     "order": 16
@@ -3969,5 +3970,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-03T08:14:00.348Z";
+export const lastUpdated = "2025-10-03T08:39:18.011Z";
 export const generatedBy = "menu-persist-api";
