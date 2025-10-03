@@ -2858,7 +2858,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-03T10:39:27.830Z",
-        "updatedAt": "2025-10-03T11:33:56.429Z",
+        "updatedAt": "2025-10-03T11:34:02.012Z",
         "order": 1,
         "description": "Пошаговое руководство по переходу на цифровую документацию для транспортных предприятий",
         "images": [
@@ -3794,7 +3794,8 @@ export const contentData = {
                   "minWords": 105,
                   "maxWords": 210,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-5-2",
@@ -3812,7 +3813,8 @@ export const contentData = {
                   "minWords": 5,
                   "maxWords": 15,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-5-3",
@@ -3850,7 +3852,8 @@ export const contentData = {
                       "minWords": 80,
                       "maxWords": 160,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "ul-5-3-2",
@@ -3868,7 +3871,8 @@ export const contentData = {
                       "minWords": 40,
                       "maxWords": 80,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "p-5-3-3",
@@ -3886,11 +3890,14 @@ export const contentData = {
                       "minWords": 70,
                       "maxWords": 140,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-6",
@@ -4384,5 +4391,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-03T11:34:02.811Z";
+export const lastUpdated = "2025-10-03T11:34:09.463Z";
 export const generatedBy = "menu-persist-api";
