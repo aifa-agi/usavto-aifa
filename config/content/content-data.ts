@@ -2858,7 +2858,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-03T10:39:27.830Z",
-        "updatedAt": "2025-10-03T11:32:44.254Z",
+        "updatedAt": "2025-10-03T11:33:44.065Z",
         "order": 1,
         "description": "Пошаговое руководство по переходу на цифровую документацию для транспортных предприятий",
         "images": [
@@ -3019,7 +3019,8 @@ export const contentData = {
                   "minWords": 100,
                   "maxWords": 200,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-2-2",
@@ -3057,7 +3058,8 @@ export const contentData = {
                       "minWords": 70,
                       "maxWords": 140,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "p-2-2-2",
@@ -3076,7 +3078,8 @@ export const contentData = {
                       "minWords": 90,
                       "maxWords": 180,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "p-2-2-3",
@@ -3094,7 +3097,8 @@ export const contentData = {
                       "minWords": 5,
                       "maxWords": 15,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "table-2-2-4",
@@ -3113,9 +3117,11 @@ export const contentData = {
                       "minWords": 80,
                       "maxWords": 160,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "h3-2-3",
@@ -3153,7 +3159,8 @@ export const contentData = {
                       "minWords": 80,
                       "maxWords": 160,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "ul-2-3-2",
@@ -3172,7 +3179,8 @@ export const contentData = {
                       "minWords": 40,
                       "maxWords": 80,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "code-2-3-3",
@@ -3191,7 +3199,8 @@ export const contentData = {
                       "minWords": 20,
                       "maxWords": 50,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "p-2-3-4",
@@ -3209,11 +3218,14 @@ export const contentData = {
                       "minWords": 60,
                       "maxWords": 120,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-3",
@@ -4346,5 +4358,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-03T11:33:44.846Z";
+export const lastUpdated = "2025-10-03T11:33:52.303Z";
 export const generatedBy = "menu-persist-api";
