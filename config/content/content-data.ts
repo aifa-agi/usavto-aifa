@@ -4939,7 +4939,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-03T12:47:53.635Z",
-        "updatedAt": "2025-10-03T12:59:21.836Z",
+        "updatedAt": "2025-10-03T12:59:24.761Z",
         "order": 1,
         "description": "про ЭПЛ",
         "images": [
@@ -5939,7 +5939,8 @@ export const contentData = {
                   "minWords": 105,
                   "maxWords": 210,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-5-2",
@@ -5959,7 +5960,8 @@ export const contentData = {
                   "minWords": 5,
                   "maxWords": 15,
                   "actualContent": "need generate helpful content"
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-5-3",
@@ -6000,7 +6002,8 @@ export const contentData = {
                       "minWords": 80,
                       "maxWords": 160,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "ul-5-3-2",
@@ -6020,7 +6023,8 @@ export const contentData = {
                       "minWords": 40,
                       "maxWords": 80,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "p-5-3-3",
@@ -6040,11 +6044,14 @@ export const contentData = {
                       "minWords": 70,
                       "maxWords": 140,
                       "actualContent": "need generate helpful content"
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-6",
@@ -6505,5 +6512,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-03T12:59:25.448Z";
+export const lastUpdated = "2025-10-03T12:59:28.496Z";
 export const generatedBy = "menu-persist-api";
