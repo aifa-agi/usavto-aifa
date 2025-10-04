@@ -22,9 +22,6 @@ export function VectorStoreActionsDropdown({
   categoryTitle,
   setCategories,
 }: VectorStoreActionsDropdownProps) {
-  if (categoryTitle.toLowerCase() === "admin" || categoryTitle.toLowerCase() === "home") {
-    return null;
-  }
   const {
     vectorStoreState,
     vectorStoreMode,
@@ -35,7 +32,9 @@ export function VectorStoreActionsDropdown({
     categoryTitle,
     setCategories,
   });
-
+  if (categoryTitle.toLowerCase() === "admin" || categoryTitle.toLowerCase() === "home") {
+    return null;
+  }
   // If not interactive, render just the trigger button without dropdown functionality
   if (!isInteractive) {
     return <VectorStoreTriggerButton vectorStoreState={vectorStoreState} />;
