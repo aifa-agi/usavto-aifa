@@ -22,6 +22,9 @@ export function PublishActionsDropdown({
   categoryTitle,
   setCategories,
 }: PublishActionsDropdownProps) {
+  if (categoryTitle.toLowerCase() === "admin" || categoryTitle.toLowerCase() === "home") {
+    return null;
+  }
   const { publishState, publishMode, isInteractive, handlePublishMode } =
     usePublishLogic({
       singlePage,

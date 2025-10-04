@@ -23,6 +23,9 @@ export function LinksActionsDropdown({
   categoryTitle,
   setCategories,
 }: LinkActionsDropdownProps) {
+  if (categoryTitle.toLowerCase() === "admin" || categoryTitle.toLowerCase() === "home") {
+    return null;
+  }
   const { linkState, linkConfiguration, isInteractive, handleLinkToggle } =
     useLinkLogic({
       singlePage,

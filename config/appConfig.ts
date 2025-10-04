@@ -4,8 +4,8 @@
 const site_url = "https://usavtopro.ru";
 
 export const appConfig: AppConfig = {
-  name: "USAUTO Путевые листы !",
-  short_name: "USAUTO ",
+  name: "USAUTO Путевые листы",
+  short_name: "USAUTO",
   description: "USAUTO Путевые листы, Управление коммерческим автопаркомОблачное решение комплексного управления коммерческим автомобильным парком",
   url: site_url,
   ogImage: `${site_url}/images/usautopro1.jpg`,

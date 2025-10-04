@@ -22,6 +22,9 @@ export function ChatSynchroniseActionDropdown({
   categoryTitle,
   setCategories,
 }: ChatSynchroniseActionDropdownProps) {
+  if (categoryTitle.toLowerCase() === "admin" || categoryTitle.toLowerCase() === "home") {
+    return null;
+  }
   const { chatSyncState, chatSyncMode, isInteractive, handleChatSyncMode } =
     useChatSyncLogic({
       singlePage,

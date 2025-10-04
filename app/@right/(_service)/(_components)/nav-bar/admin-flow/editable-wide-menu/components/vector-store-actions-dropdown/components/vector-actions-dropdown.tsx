@@ -22,6 +22,9 @@ export function VectorStoreActionsDropdown({
   categoryTitle,
   setCategories,
 }: VectorStoreActionsDropdownProps) {
+  if (categoryTitle.toLowerCase() === "admin" || categoryTitle.toLowerCase() === "home") {
+    return null;
+  }
   const {
     vectorStoreState,
     vectorStoreMode,

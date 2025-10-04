@@ -19,6 +19,7 @@ import { PageData } from "@/app/@right/(_service)/(_types)/page-types";
 import { Badge } from "@/components/ui/badge";
 import { AddToPromptActionsDropdown } from "../components/add-to-prompt-actions-dropdown";
 import { UpdateActionsDropdown } from "../components/update-actions-dropdown/update-actions-dropdown";
+import { appConfig } from "@/config/appConfig";
 
 const greenDotClass = "bg-emerald-500";
 
@@ -50,9 +51,17 @@ export function PageListItem({
 
   const [isAdminCategory, setAdminCategory] = useState(false);
 
-  const fullTitle = humanize(page?.title || "");
-  const displayTitle =
-    fullTitle.length > 20 ? `${fullTitle.substring(0, 20)}...` : fullTitle;
+  let fullTitle
+  let displayTitle
+
+  if (categoryTitle.toLowerCase() === "home") {
+    fullTitle = appConfig.short_name
+    displayTitle = appConfig.short_name
+  } else {
+    fullTitle = humanize(page?.title || "");
+    displayTitle =
+      fullTitle.length > 20 ? `${fullTitle.substring(0, 20)}...` : fullTitle;
+  }
 
   // ОБНОВЛЕННАЯ ФУНКЦИЯ
   const handlePageClick = () => {

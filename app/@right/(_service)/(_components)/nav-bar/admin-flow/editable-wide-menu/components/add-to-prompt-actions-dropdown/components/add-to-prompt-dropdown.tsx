@@ -22,6 +22,9 @@ export function AddToPromptActionsDropdown({
   categoryTitle,
   setCategories,
 }: AddToPromptActionsDropdownProps) {
+  if (categoryTitle.toLowerCase() === "admin" || categoryTitle.toLowerCase() === "home") {
+    return null;
+  }
   const {
     addToPromptState,
     addToPromptMode,

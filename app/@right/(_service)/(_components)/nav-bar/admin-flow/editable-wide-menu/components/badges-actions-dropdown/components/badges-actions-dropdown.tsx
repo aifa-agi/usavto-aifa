@@ -22,7 +22,7 @@ export function BadgesActionsDropdown({
   setCategories,
 }: BadgesActionsDropdownProps) {
   // Hide dropdown if category is "home"
-  if (categoryTitle.toLowerCase() === "admin") {
+  if (categoryTitle.toLowerCase() === "admin" || categoryTitle.toLowerCase() === "home") {
     return null;
   }
 
