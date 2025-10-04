@@ -139,9 +139,8 @@ function EditableNavBarContent() {
     if (isLargeScreen) {
       return (
         <ChevronDown
-          className={`size-4 transition-transform duration-300 ${
-            isOpen ? "rotate-180" : ""
-          }`}
+          className={`size-4 transition-transform duration-300 ${isOpen ? "rotate-180" : ""
+            }`}
         />
       );
     }
@@ -153,9 +152,8 @@ function EditableNavBarContent() {
     <DialogsProvider>
       <div>
         <div
-          className={`flex items-center px-4 h-[56px] ${
-            isLargeScreen ? "justify-end w-full" : "justify-start w-1/2"
-          }`}
+          className={`flex items-center px-4 h-[56px] ${isLargeScreen ? "justify-end w-full" : "justify-start w-1/2"
+            }`}
           style={{ minHeight: HEADER_HEIGHT, maxHeight: HEADER_HEIGHT }}
         >
           {isLargeScreen ? (

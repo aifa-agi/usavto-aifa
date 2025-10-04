@@ -82,56 +82,56 @@ export default async function RootLayout({
         >
           <Toaster position="top-center" />
           <SessionProvider>
-            {/* <OnlineStatusProvider> */}
-            <LanguageProvider>
-              <RightSidebarProvider>
-                <AppProvider>
-                  {/* === DESKTOP LAYOUT === */}
-                  <div className="hidden md:block h-screen w-screen">
-                    <ResizablePanelGroup direction="horizontal">
-                      <ResizablePanel defaultSize={40} minSize={35}>
-                        <div className="overflow-hidden h-full">{left}</div>
-                      </ResizablePanel>
-                      <ResizableHandle withHandle />
-                      <ResizablePanel defaultSize={60} minSize={35}>
-                        {/* --- START: CORRECTED BLOCK --- */}
-                        <NavigationMenuProvider>
-                          <div className="relative flex flex-col h-screen">
-                            <NavBar />
-                            <main className="flex-1 overflow-y-auto hide-scrollbar">
-                              {right}
-                            </main>
-                          </div>
-                        </NavigationMenuProvider>
-                        {/* --- END: CORRECTED BLOCK --- */}
-                      </ResizablePanel>
-                    </ResizablePanelGroup>
-                  </div>
-
-
-                  {/* === MOBILE LAYOUT === */}
-                  <div className="w-full md:hidden relative">
-                    {left}
-                    <div className="border-l overflow-hidden border-secondary">
-                      <RightDrawerBar>
-                        <NavigationMenuProvider>
-                          <div className="relative flex flex-col h-svh pb-6">
-                            <NavBar />
-                            <main className="flex-1 overflow-y-auto hide-scrollbar">
-                              {right}
-                            </main>
-                          </div>
-                        </NavigationMenuProvider>
-                      </RightDrawerBar>
+            <OnlineStatusProvider>
+              <LanguageProvider>
+                <RightSidebarProvider>
+                  <AppProvider>
+                    {/* === DESKTOP LAYOUT === */}
+                    <div className="hidden md:block h-screen w-screen">
+                      <ResizablePanelGroup direction="horizontal">
+                        <ResizablePanel defaultSize={40} minSize={35}>
+                          <div className="overflow-hidden h-full">{left}</div>
+                        </ResizablePanel>
+                        <ResizableHandle withHandle />
+                        <ResizablePanel defaultSize={60} minSize={35}>
+                          {/* --- START: CORRECTED BLOCK --- */}
+                          <NavigationMenuProvider>
+                            <div className="relative flex flex-col h-screen">
+                              <NavBar />
+                              <main className="flex-1 overflow-y-auto hide-scrollbar">
+                                {right}
+                              </main>
+                            </div>
+                          </NavigationMenuProvider>
+                          {/* --- END: CORRECTED BLOCK --- */}
+                        </ResizablePanel>
+                      </ResizablePanelGroup>
                     </div>
-                  </div>
 
 
-                  <DevIndicatorClient />
-                </AppProvider>
-              </RightSidebarProvider>
-            </LanguageProvider>
-            {/* </OnlineStatusProvider> */}
+                    {/* === MOBILE LAYOUT === */}
+                    <div className="w-full md:hidden relative">
+                      {left}
+                      <div className="border-l overflow-hidden border-secondary">
+                        <RightDrawerBar>
+                          <NavigationMenuProvider>
+                            <div className="flex flex-col h-svh pb-6">
+                              <NavBar />
+                              <main className="flex-1 overflow-y-auto hide-scrollbar">
+                                {right}
+                              </main>
+                            </div>
+                          </NavigationMenuProvider>
+                        </RightDrawerBar>
+                      </div>
+                    </div>
+
+
+                    <DevIndicatorClient />
+                  </AppProvider>
+                </RightSidebarProvider>
+              </LanguageProvider>
+            </OnlineStatusProvider>
             <CookieBanner />
             {process.env.NODE_ENV === "production" && (
               <GoogleAnalytics

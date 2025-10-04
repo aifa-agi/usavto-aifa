@@ -24,6 +24,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { useTranslation } from "../(_libs)/translation";
+import { appConfig } from "@/config/appConfig";
 
 export function AppSidebar({ user }: { user: User | undefined }) {
   const { t } = useTranslation();
@@ -43,7 +44,7 @@ export function AppSidebar({ user }: { user: User | undefined }) {
               className="flex flex-row gap-3 items-center"
             >
               <span className="text-lg font-semibold px-2 hover:bg-muted rounded-md cursor-pointer">
-                {t("Chat GPT")}
+                {appConfig.chatBrand}
               </span>
             </Link>
             <Tooltip>

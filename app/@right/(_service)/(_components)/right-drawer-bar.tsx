@@ -47,7 +47,7 @@ export default function RightDrawerBar({
         >
           <SheetHeader>
             <SheetTitle className="hidden">
-              Build something with AIFA
+              Build something with https://aifa.dev
             </SheetTitle>
           </SheetHeader>
 
