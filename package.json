@@ -145,6 +145,7 @@
     "resend": "^4.6.0",
     "resumable-stream": "^2.0.0",
     "server-only": "^0.0.1",
+    "sharp": "^0.34.4",
     "sonner": "^1.5.0",
     "swr": "^2.2.5",
     "tailwind-merge": "^2.5.2",

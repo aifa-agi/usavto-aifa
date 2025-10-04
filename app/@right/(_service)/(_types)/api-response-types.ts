@@ -100,3 +100,17 @@ export function getUserMessage(status: OperationStatus): string {
       return USER_MESSAGES.UNKNOWN_ERROR;
   }
 }
+// ==================== AppConfig Update Types ====================
+
+/**
+ * Data structure representing editable AppConfig fields
+ */
+export interface AppConfigUpdateData {
+  name: string;
+  short_name: string;
+  description: string;
+  lang: string;
+  logo: string;
+  chatBrand: string;
+  siteUrl: string;
+}
