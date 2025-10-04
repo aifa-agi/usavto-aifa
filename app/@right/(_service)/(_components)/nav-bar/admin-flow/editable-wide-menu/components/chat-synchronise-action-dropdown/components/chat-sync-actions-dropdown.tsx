@@ -22,16 +22,16 @@ export function ChatSynchroniseActionDropdown({
   categoryTitle,
   setCategories,
 }: ChatSynchroniseActionDropdownProps) {
-  if (categoryTitle.toLowerCase() === "admin" || categoryTitle.toLowerCase() === "home") {
-    return null;
-  }
+
   const { chatSyncState, chatSyncMode, isInteractive, handleChatSyncMode } =
     useChatSyncLogic({
       singlePage,
       categoryTitle,
       setCategories,
     });
-
+  if (categoryTitle.toLowerCase() === "admin" || categoryTitle.toLowerCase() === "home") {
+    return null;
+  }
   // If not interactive, render just the trigger button without dropdown functionality
   if (!isInteractive) {
     return <ChatSyncTriggerButton chatSyncState={chatSyncState} />;

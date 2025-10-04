@@ -23,16 +23,16 @@ export function LinksActionsDropdown({
   categoryTitle,
   setCategories,
 }: LinkActionsDropdownProps) {
-  if (categoryTitle.toLowerCase() === "admin" || categoryTitle.toLowerCase() === "home") {
-    return null;
-  }
+
   const { linkState, linkConfiguration, isInteractive, handleLinkToggle } =
     useLinkLogic({
       singlePage,
       categoryTitle,
       setCategories,
     });
-
+  if (categoryTitle.toLowerCase() === "admin" || categoryTitle.toLowerCase() === "home") {
+    return null;
+  }
   // If not interactive, render just the trigger button without dropdown functionality
   if (!isInteractive) {
     return <LinkTriggerButton linkState={linkState} />;

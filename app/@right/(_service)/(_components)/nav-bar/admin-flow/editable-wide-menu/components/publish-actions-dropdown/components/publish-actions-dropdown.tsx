@@ -22,16 +22,16 @@ export function PublishActionsDropdown({
   categoryTitle,
   setCategories,
 }: PublishActionsDropdownProps) {
-  if (categoryTitle.toLowerCase() === "admin" || categoryTitle.toLowerCase() === "home") {
-    return null;
-  }
+
   const { publishState, publishMode, isInteractive, handlePublishMode } =
     usePublishLogic({
       singlePage,
       categoryTitle,
       setCategories,
     });
-
+  if (categoryTitle.toLowerCase() === "admin" || categoryTitle.toLowerCase() === "home") {
+    return null;
+  }
   // If not interactive, render just the trigger button without dropdown functionality
   if (!isInteractive) {
     return <PublishTriggerButton publishState={publishState} />;

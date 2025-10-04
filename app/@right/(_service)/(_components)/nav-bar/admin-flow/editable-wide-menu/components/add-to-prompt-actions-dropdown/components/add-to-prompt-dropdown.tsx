@@ -22,9 +22,7 @@ export function AddToPromptActionsDropdown({
   categoryTitle,
   setCategories,
 }: AddToPromptActionsDropdownProps) {
-  if (categoryTitle.toLowerCase() === "admin" || categoryTitle.toLowerCase() === "home") {
-    return null;
-  }
+
   const {
     addToPromptState,
     addToPromptMode,
@@ -36,6 +34,9 @@ export function AddToPromptActionsDropdown({
     setCategories,
   });
 
+  if (categoryTitle.toLowerCase() === "admin" || categoryTitle.toLowerCase() === "home") {
+    return null;
+  }
   // If not interactive, render just the trigger button without dropdown functionality
   if (!isInteractive) {
     return <AddToPromptTriggerButton addToPromptState={addToPromptState} />;
