@@ -26,7 +26,7 @@ export function SidebarToggle({
           variant="outline"
           className="md:px-2 h-[34px]"
         >
-          <UserIcon />
+          <SidebarLeftIcon />
         </Button>
       </TooltipTrigger>
       <TooltipContent align="start">{t("Toggle Sidebar")}</TooltipContent>
