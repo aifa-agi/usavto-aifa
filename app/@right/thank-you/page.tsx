@@ -73,7 +73,7 @@ export default function ThankYouPage() {
                                 Thank You!
                             </h1>
                             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                                We've received your request and will contact you soon.
+                                We&apos;ve received your request and will contact you soon.
                             </p>
                         </div>
 
