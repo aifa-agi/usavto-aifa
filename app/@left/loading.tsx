@@ -1,34 +1,57 @@
 // @/app/@left/loading.tsx
-import { appConfig } from "@/config/appConfig";
+import { appConfig, getLoadingIllustration } from "@/config/appConfig";
 import Image from "next/image";
 
-// Принуждение к статической генерации (опционально)
 export const dynamic = 'force-static';
 export const revalidate = false;
 
+/**
+ * Comments in English: Static loading page with theme-aware illustration
+ * ✅ ИСПРАВЛЕНИЕ: Uses explicit validation to prevent empty src errors during builds
+ */
 export default function LoadingPage() {
-  // Используем статически только темную иллюстрацию
-  const currentIllustration = appConfig.startChatIllustration
+  // Get illustration paths
+  const darkPath = getLoadingIllustration("dark");
+  const lightPath = getLoadingIllustration("light");
+
+  // ✅ ИСПРАВЛЕНИЕ: Validate paths before rendering
+  const darkSrc = darkPath && typeof darkPath === 'string' && darkPath.length > 0 ? darkPath : null;
+  const lightSrc = lightPath && typeof lightPath === 'string' && lightPath.length > 0 ? lightPath : null;
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-center">
-      {/* Иллюстрация - только темная версия */}
-      <Image
-        src={currentIllustration}
-        alt="Иллюстрация рабочего места"
-        width={400}
-        height={400}
-        priority
-        className="pointer-events-none mb-5 mt-6 "
-      />
+      {/* Dark theme illustration */}
+      {darkSrc && (
+        <Image
+          src={darkSrc}
+          alt="Loading illustration"
+          width={400}
+          height={400}
+          priority
+          className="pointer-events-none mb-5 mt-6 dark:block hidden"
+        />
+      )}
 
-      {/* Приветственный текст на русском языке */}
+      {/* Light theme illustration */}
+      {lightSrc && (
+        <Image
+          src={lightSrc}
+          alt="Loading illustration"
+          width={400}
+          height={400}
+          priority
+          className="pointer-events-none mb-5 mt-6 dark:hidden block"
+        />
+      )}
+
+      {/* Welcome text */}
       <p className="text-foreground text-2xl font-semibold whitespace-pre-wrap mx-4 text-center">
         Welcome to {appConfig.short_name} with {appConfig.chatBrand}
       </p>
 
+      {/* Loading message */}
       <p className="text-muted-foreground text-xl mt-4">
-        Loading...
+        {appConfig.messages?.loading?.title || "Loading..."}
       </p>
     </div>
   );

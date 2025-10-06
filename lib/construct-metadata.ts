@@ -84,46 +84,84 @@ const MAX_DESCRIPTION_LENGTH = 160;
 
 /**
  * Comments in English: Cached icons array to avoid recreation on every call
+ * ✅ ИСПРАВЛЕНИЕ: Uses explicit checks to prevent empty src errors during builds
+ * Validates that each icon path is a non-empty string before adding to array
  */
 const CACHED_ICONS = (() => {
-  return [
-    appConfig.icons?.faviconAny && {
-      url: appConfig.icons.faviconAny,
+  const icons: Array<{
+    url: string;
+    rel?: string;
+    sizes?: string;
+    type?: string;
+  }> = [];
+
+  // Favicon (any size)
+  const faviconAny = appConfig.icons?.faviconAny;
+  if (faviconAny && typeof faviconAny === 'string' && faviconAny.length > 0) {
+    icons.push({
+      url: faviconAny,
       rel: "icon",
       sizes: "any",
       type: "image/x-icon",
-    },
-    appConfig.icons?.icon32 && {
-      url: appConfig.icons.icon32,
+    });
+  }
+
+  // Icon 32x32
+  const icon32 = appConfig.icons?.icon32;
+  if (icon32 && typeof icon32 === 'string' && icon32.length > 0) {
+    icons.push({
+      url: icon32,
       type: "image/png",
       sizes: "32x32",
       rel: "icon",
-    },
-    appConfig.icons?.icon48 && {
-      url: appConfig.icons.icon48,
+    });
+  }
+
+  // Icon 48x48
+  const icon48 = appConfig.icons?.icon48;
+  if (icon48 && typeof icon48 === 'string' && icon48.length > 0) {
+    icons.push({
+      url: icon48,
       type: "image/png",
       sizes: "48x48",
       rel: "icon",
-    },
-    appConfig.icons?.icon192 && {
-      url: appConfig.icons.icon192,
+    });
+  }
+
+  // Icon 192x192
+  const icon192 = appConfig.icons?.icon192;
+  if (icon192 && typeof icon192 === 'string' && icon192.length > 0) {
+    icons.push({
+      url: icon192,
       type: "image/png",
       sizes: "192x192",
       rel: "icon",
-    },
-    appConfig.icons?.icon512 && {
-      url: appConfig.icons.icon512,
+    });
+  }
+
+  // Icon 512x512
+  const icon512 = appConfig.icons?.icon512;
+  if (icon512 && typeof icon512 === 'string' && icon512.length > 0) {
+    icons.push({
+      url: icon512,
       type: "image/png",
       sizes: "512x512",
       rel: "icon",
-    },
-    appConfig.icons?.appleTouch && {
-      url: appConfig.icons.appleTouch,
+    });
+  }
+
+  // Apple Touch Icon
+  const appleTouch = appConfig.icons?.appleTouch;
+  if (appleTouch && typeof appleTouch === 'string' && appleTouch.length > 0) {
+    icons.push({
+      url: appleTouch,
       rel: "apple-touch-icon",
       sizes: "180x180",
       type: "image/png",
-    },
-  ].filter(Boolean) as NonNullable<Metadata["icons"]>;
+    });
+  }
+
+  return icons as NonNullable<Metadata["icons"]>;
 })();
 
 // ============================================

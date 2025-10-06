@@ -1,28 +1,23 @@
 {
-  "root": true,
   "extends": [
-    "next/core-web-vitals"
+    "next/core-web-vitals",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+    "prettier",
+    "plugin:tailwindcss/recommended"
   ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "project": "./tsconfig.json",
-    "tsconfigRootDir": ".",
-    "sourceType": "module",
-    "ecmaVersion": 2022
+  "plugins": ["tailwindcss"],
+  "rules": {
+    "tailwindcss/no-custom-classname": "off",
+    "tailwindcss/classnames-order": "off"
   },
-  "plugins": [
-    "@typescript-eslint",
-    "import"
-  ],
   "settings": {
     "import/resolver": {
       "typescript": {
+        "alwaysTryTypes": true,
         "project": "./tsconfig.json"
       }
     }
   },
-  "rules": {
-    "@typescript-eslint/no-explicit-any": "warn",
-    "import/no-duplicates": "warn"
-  }
+  "ignorePatterns": ["**/components/ui/**"]
 }
