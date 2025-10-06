@@ -21,7 +21,7 @@ export async function handleFieldUpdate(
       ...currentConfig,
       [fieldName]: newValue,
     };
-
+ 
     // Комментарии: Логируем начало обновления
     console.log("=== Field Update Started ===", {
       field: String(fieldName),

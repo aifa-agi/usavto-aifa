@@ -2,7 +2,8 @@
 
 "use client";
 
-import { ImageUploadItem } from "../(_ui)/image-upload-item";
+
+import { RegularImageUpload } from "../(_ui)/regular-image-upload";
 
 
 interface OgImageUploadProps {
@@ -17,7 +18,7 @@ interface OgImageUploadProps {
  */
 export function OgImageUpload({ loading, onUploadSuccess }: OgImageUploadProps) {
     return (
-        <ImageUploadItem
+        <RegularImageUpload
             label="Upload OG Image"
             imageType="ogImage"
             loading={loading}

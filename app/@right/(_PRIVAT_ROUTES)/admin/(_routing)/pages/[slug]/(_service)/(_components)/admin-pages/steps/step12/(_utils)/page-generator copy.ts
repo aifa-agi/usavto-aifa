@@ -3,7 +3,6 @@
 // Critical template generator - preserve exact formatting and structure
 
 import type { PageUploadPayload, ExtendedSection } from "@/app/@right/(_service)/(_types)/section-types";
-import { extractFAQs, generateFAQJsonLd } from "../(_lib)/faq-extractor";
 
 // Types for content nodes
 interface ContentNode {
@@ -27,7 +26,6 @@ interface BodyContent {
  * Generates complete page.tsx content with embedded sections data and metadata
  * Comments in English: This version delegates all Metadata to constructMetadata
  * to avoid conflicts and ensure single source of truth (icons, manifest, robots, canonical, OG/Twitter).
- * Now includes automatic FAQPage JSON-LD generation if FAQ sections detected.
  */
 export function generatePageTsxContent(payload: PageUploadPayload): string {
   const { pageMetadata, sections, href } = payload;
@@ -78,10 +76,6 @@ export function generatePageTsxContent(payload: PageUploadPayload): string {
   };
   const imageAlts = extractImageAlts(sections);
 
-  // Extract FAQs and generate JSON-LD (only if FAQ sections present)
-  const faqs = extractFAQs(sections as any);
-  const faqJsonLd = generateFAQJsonLd(faqs);
-
   // Canonical as plain reference for JSON-LD; actual canonical tag comes from constructMetadata
   const canonicalUrl = `\${appConfig.url}${href}`;
 
@@ -90,7 +84,6 @@ export function generatePageTsxContent(payload: PageUploadPayload): string {
 // Generated on: ${new Date().toISOString()}
 // Source href: ${href}
 // Page metadata: ${pageMetadata.title || "No title"} | ${sections.length} sections
-// FAQ sections detected: ${faqs.length}
 // SEO Mode: STATIC GENERATION ENABLED
 
 import type { Metadata } from "next";
@@ -200,14 +193,6 @@ export default function Page() {
           })
         }}
       />
-${faqJsonLd ? `
-      {/* Structured data: JSON-LD FAQPage */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(${JSON.stringify(faqJsonLd)})
-        }}
-      />` : ''}
     </article>
   );
 }

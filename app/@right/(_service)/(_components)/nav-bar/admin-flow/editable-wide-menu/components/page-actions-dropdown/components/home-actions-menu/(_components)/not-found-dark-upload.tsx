@@ -1,7 +1,8 @@
 // @/app/@right/(_service)/(_components)/nav-bar/admin-flow/editable-wide-menu/components/page-actions-dropdown/components/home-actions-menu/(_components)/not-found-dark-upload.tsx
 "use client";
 
-import { ImageUploadItem } from "../(_ui)/image-upload-item";
+
+import { RegularImageUpload } from "../(_ui)/regular-image-upload";
 
 interface NotFoundDarkUploadProps {
     loading: boolean;
@@ -17,7 +18,7 @@ export function NotFoundDarkUpload({
     onUploadSuccess,
 }: NotFoundDarkUploadProps) {
     return (
-        <ImageUploadItem
+        <RegularImageUpload
             label="Not Found (Dark)"
             imageType="notFound-dark"
             loading={loading}

@@ -1,7 +1,7 @@
 // @/app/@right/(_service)/(_components)/nav-bar/admin-flow/editable-wide-menu/components/page-actions-dropdown/components/home-actions-menu/(_components)/loading-light-upload.tsx
 "use client";
 
-import { ImageUploadItem } from "../(_ui)/image-upload-item";
+import { RegularImageUpload } from "../(_ui)/regular-image-upload";
 
 
 interface LoadingLightUploadProps {
@@ -18,7 +18,7 @@ export function LoadingLightUpload({
     onUploadSuccess,
 }: LoadingLightUploadProps) {
     return (
-        <ImageUploadItem
+        <RegularImageUpload
             label="Loading (Light)"
             imageType="loading-light"
             loading={loading}

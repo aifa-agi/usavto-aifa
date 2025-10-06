@@ -250,7 +250,7 @@ export const COMPACT_CONTENT_STRUCTURE: RootContentStructure[] = [
 
   // FAQ section
   {
-    id: "h2-3",
+    id: "FAQ",
     tag: "h2",
     classification: "semantic",
     keywords: [],
@@ -268,7 +268,7 @@ export const COMPACT_CONTENT_STRUCTURE: RootContentStructure[] = [
     },
     realContentStructure: [
       {
-        id: "p-3-1",
+        id: "p-FAQ",
         tag: "p",
         additionalData: {
           minWords: 70,
@@ -277,7 +277,7 @@ export const COMPACT_CONTENT_STRUCTURE: RootContentStructure[] = [
         },
       },
       {
-        id: "h3-3-2",
+        id: "h3-FAQ-1",
         tag: "h3",
         additionalData: {
           minWords: 160,
@@ -286,7 +286,7 @@ export const COMPACT_CONTENT_STRUCTURE: RootContentStructure[] = [
         },
         realContentStructure: [
           {
-            id: "p-3-2-1",
+            id: "p-FAQ-1-1",
             tag: "p",
             additionalData: {
               minWords: 70,
@@ -294,28 +294,11 @@ export const COMPACT_CONTENT_STRUCTURE: RootContentStructure[] = [
               actualContent: "",
             },
           },
-          {
-            id: "ul-3-2-2",
-            tag: "ul",
-            additionalData: {
-              minWords: 35,
-              maxWords: 60,
-              actualContent: "",
-            },
-          },
-          {
-            id: "p-3-2-3",
-            tag: "p",
-            additionalData: {
-              minWords: 50,
-              maxWords: 90,
-              actualContent: "",
-            },
-          },
+          
         ],
       },
       {
-        id: "h3-3-3",
+        id: "h3-FAQ-2",
         tag: "h3",
         additionalData: {
           minWords: 160,
@@ -324,7 +307,7 @@ export const COMPACT_CONTENT_STRUCTURE: RootContentStructure[] = [
         },
         realContentStructure: [
           {
-            id: "p-3-3-1",
+            id: "p-FAQ-2-1",
             tag: "p",
             additionalData: {
               minWords: 65,
@@ -332,28 +315,11 @@ export const COMPACT_CONTENT_STRUCTURE: RootContentStructure[] = [
               actualContent: "",
             },
           },
-          {
-            id: "code-3-3-2",
-            tag: "code",
-            additionalData: {
-              minWords: 20,
-              maxWords: 40,
-              actualContent: "",
-            },
-          },
-          {
-            id: "p-3-3-3",
-            tag: "p",
-            additionalData: {
-              minWords: 55,
-              maxWords: 100,
-              actualContent: "",
-            },
-          },
+          
         ],
       },
       {
-        id: "h3-3-4",
+        id: "h3-FAQ-3",
         tag: "h3",
         additionalData: {
           minWords: 160,
@@ -362,7 +328,7 @@ export const COMPACT_CONTENT_STRUCTURE: RootContentStructure[] = [
         },
         realContentStructure: [
           {
-            id: "p-3-4-1",
+            id: "p-FAQ-3-1",
             tag: "p",
             additionalData: {
               minWords: 75,
@@ -370,24 +336,7 @@ export const COMPACT_CONTENT_STRUCTURE: RootContentStructure[] = [
               actualContent: "",
             },
           },
-          {
-            id: "ol-3-4-2",
-            tag: "ol",
-            additionalData: {
-              minWords: 40,
-              maxWords: 70,
-              actualContent: "",
-            },
-          },
-          {
-            id: "p-3-4-3",
-            tag: "p",
-            additionalData: {
-              minWords: 45,
-              maxWords: 80,
-              actualContent: "",
-            },
-          },
+          
         ],
       },
     ],

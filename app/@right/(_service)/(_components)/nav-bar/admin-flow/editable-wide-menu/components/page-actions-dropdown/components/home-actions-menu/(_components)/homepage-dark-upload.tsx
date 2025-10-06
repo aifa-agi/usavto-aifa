@@ -1,7 +1,8 @@
 // @/app/@right/(_service)/(_components)/nav-bar/admin-flow/editable-wide-menu/components/page-actions-dropdown/components/home-actions-menu/(_components)/homepage-dark-upload.tsx
 "use client";
 
-import { ImageUploadItem } from "../(_ui)/image-upload-item";
+
+import { RegularImageUpload } from "../(_ui)/regular-image-upload";
 
 
 interface HomePageDarkUploadProps {
@@ -18,7 +19,7 @@ export function HomePageDarkUpload({
     onUploadSuccess,
 }: HomePageDarkUploadProps) {
     return (
-        <ImageUploadItem
+        <RegularImageUpload
             label="Home Page (Dark)"
             imageType="homePage-dark"
             loading={loading}

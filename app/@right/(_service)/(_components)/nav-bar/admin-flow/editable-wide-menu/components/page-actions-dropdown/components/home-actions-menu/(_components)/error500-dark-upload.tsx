@@ -1,7 +1,8 @@
 // @/app/@right/(_service)/(_components)/nav-bar/admin-flow/editable-wide-menu/components/page-actions-dropdown/components/home-actions-menu/(_components)/error500-dark-upload.tsx
 "use client";
 
-import { ImageUploadItem } from "../(_ui)/image-upload-item";
+
+import { RegularImageUpload } from "../(_ui)/regular-image-upload";
 
 
 interface Error500DarkUploadProps {
@@ -18,7 +19,7 @@ export function Error500DarkUpload({
     onUploadSuccess,
 }: Error500DarkUploadProps) {
     return (
-        <ImageUploadItem
+        <RegularImageUpload
             label="Error 500 (Dark)"
             imageType="error500-dark"
             loading={loading}

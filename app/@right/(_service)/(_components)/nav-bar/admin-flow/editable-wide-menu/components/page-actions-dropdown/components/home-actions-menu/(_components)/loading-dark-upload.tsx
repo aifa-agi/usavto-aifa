@@ -1,7 +1,8 @@
 // @/app/@right/(_service)/(_components)/nav-bar/admin-flow/editable-wide-menu/components/page-actions-dropdown/components/home-actions-menu/(_components)/loading-dark-upload.tsx
 "use client";
 
-import { ImageUploadItem } from "../(_ui)/image-upload-item";
+
+import { RegularImageUpload } from "../(_ui)/regular-image-upload";
 
 
 interface LoadingDarkUploadProps {
@@ -18,7 +19,7 @@ export function LoadingDarkUpload({
     onUploadSuccess,
 }: LoadingDarkUploadProps) {
     return (
-        <ImageUploadItem
+        <RegularImageUpload
             label="Loading (Dark)"
             imageType="loading-dark"
             loading={loading}

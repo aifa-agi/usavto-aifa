@@ -206,7 +206,7 @@ export const MEDIUM_CONTENT_STRUCTURE: RootContentStructure[] = [
 
   // FAQ section
   {
-    id: "h2-4",
+    id: "FAQ",
     tag: "h2",
     classification: "semantic",
     keywords: [],
@@ -224,7 +224,7 @@ export const MEDIUM_CONTENT_STRUCTURE: RootContentStructure[] = [
     },
     realContentStructure: [
       {
-        id: "p-4-1",
+        id: "p-FAQ",
         tag: "p",
         additionalData: {
           minWords: 70,
@@ -233,7 +233,7 @@ export const MEDIUM_CONTENT_STRUCTURE: RootContentStructure[] = [
         },
       },
       {
-        id: "h3-4-2",
+        id: "h3-FAQ-1",
         tag: "h3",
         additionalData: {
           minWords: 150,
@@ -242,7 +242,7 @@ export const MEDIUM_CONTENT_STRUCTURE: RootContentStructure[] = [
         },
         realContentStructure: [
           {
-            id: "p-4-2-1",
+            id: "p-FAQ-1-1",
             tag: "p",
             additionalData: {
               minWords: 60,
@@ -253,7 +253,7 @@ export const MEDIUM_CONTENT_STRUCTURE: RootContentStructure[] = [
         ],
       },
       {
-        id: "h3-4-3",
+        id: "FAQ-2",
         tag: "h3",
         additionalData: {
           minWords: 150,
@@ -262,7 +262,7 @@ export const MEDIUM_CONTENT_STRUCTURE: RootContentStructure[] = [
         },
         realContentStructure: [
           {
-            id: "p-4-3-1",
+            id: "p-FAQ-2-1",
             tag: "p",
             additionalData: {
               minWords: 60,
@@ -273,7 +273,7 @@ export const MEDIUM_CONTENT_STRUCTURE: RootContentStructure[] = [
         ],
       },
       {
-        id: "h3-4-4",
+        id: "FAQ-3",
         tag: "h3",
         additionalData: {
           minWords: 150,
@@ -282,7 +282,7 @@ export const MEDIUM_CONTENT_STRUCTURE: RootContentStructure[] = [
         },
         realContentStructure: [
           {
-            id: "p-4-4-1",
+            id: "p-FAQ-3-1",
             tag: "p",
             additionalData: {
               minWords: 60,
@@ -293,7 +293,7 @@ export const MEDIUM_CONTENT_STRUCTURE: RootContentStructure[] = [
         ],
       },
       {
-        id: "h3-4-5",
+        id: "FAQ-4",
         tag: "h3",
         additionalData: {
           minWords: 150,
@@ -302,7 +302,7 @@ export const MEDIUM_CONTENT_STRUCTURE: RootContentStructure[] = [
         },
         realContentStructure: [
           {
-            id: "p-4-5-1",
+            id: "p-FAQ-4-1",
             tag: "p",
             additionalData: {
               minWords: 60,

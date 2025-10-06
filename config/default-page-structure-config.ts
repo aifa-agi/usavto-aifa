@@ -544,7 +544,7 @@ export const DEFAULT_CONTENT_STRUCTURE: RootContentStructure[] = [
 
   // FAQ section
  {
-  id: "h2-6",
+  id: "FAQ",
   tag: "h2",
   classification: "semantic",
   keywords: [],
@@ -562,7 +562,7 @@ export const DEFAULT_CONTENT_STRUCTURE: RootContentStructure[] = [
   },
   realContentStructure: [
     {
-      id: "p-6-1",
+      id: "p-FAQ",
       tag: "p",
       additionalData: {
         minWords: 95,
@@ -571,7 +571,7 @@ export const DEFAULT_CONTENT_STRUCTURE: RootContentStructure[] = [
       }
     },
     {
-      id: "h3-6-2",
+      id: "h3-FAQ-1",
       tag: "h3",
       additionalData: {
         minWords: 200,
@@ -580,7 +580,7 @@ export const DEFAULT_CONTENT_STRUCTURE: RootContentStructure[] = [
       },
       realContentStructure: [
         {
-          id: "p-6-2-1",
+          id: "p-FAQ-1-1",
           tag: "p",
           additionalData: {
             minWords: 75,
@@ -591,7 +591,7 @@ export const DEFAULT_CONTENT_STRUCTURE: RootContentStructure[] = [
       ]
     },
     {
-      id: "h3-6-3",
+      id: "h3-FAQ-2",
       tag: "h3",
       additionalData: {
         minWords: 200,
@@ -600,7 +600,7 @@ export const DEFAULT_CONTENT_STRUCTURE: RootContentStructure[] = [
       },
       realContentStructure: [
         {
-          id: "p-6-3-1",
+          id: "p-FAQ-2-1",
           tag: "p",
           additionalData: {
             minWords: 75,
@@ -611,7 +611,7 @@ export const DEFAULT_CONTENT_STRUCTURE: RootContentStructure[] = [
       ]
     },
     {
-      id: "h3-6-4",
+      id: "h3-FAQ-3",
       tag: "h3",
       additionalData: {
         minWords: 200,
@@ -620,7 +620,7 @@ export const DEFAULT_CONTENT_STRUCTURE: RootContentStructure[] = [
       },
       realContentStructure: [
         {
-          id: "p-6-4-1",
+          id: "p-FAQ-3-1",
           tag: "p",
           additionalData: {
             minWords: 75,
@@ -631,7 +631,7 @@ export const DEFAULT_CONTENT_STRUCTURE: RootContentStructure[] = [
       ]
     },
     {
-      id: "h3-6-5",
+      id: "h3-FAQ-4",
       tag: "h3",
       additionalData: {
         minWords: 200,
@@ -640,7 +640,7 @@ export const DEFAULT_CONTENT_STRUCTURE: RootContentStructure[] = [
       },
       realContentStructure: [
         {
-          id: "p-6-5-1",
+          id: "p-FAQ-4-1",
           tag: "p",
           additionalData: {
             minWords: 75,
@@ -651,7 +651,7 @@ export const DEFAULT_CONTENT_STRUCTURE: RootContentStructure[] = [
       ]
     },
     {
-      id: "h3-6-6",
+      id: "h3-FAQ-5",
       tag: "h3",
       additionalData: {
         minWords: 200,
@@ -660,7 +660,7 @@ export const DEFAULT_CONTENT_STRUCTURE: RootContentStructure[] = [
       },
       realContentStructure: [
         {
-          id: "p-6-6-1",
+          id: "p-FAQ-5-1",
           tag: "p",
           additionalData: {
             minWords: 75,
@@ -671,7 +671,7 @@ export const DEFAULT_CONTENT_STRUCTURE: RootContentStructure[] = [
       ]
     },
     {
-      id: "h3-6-7",
+      id: "h3-FAQ-6",
       tag: "h3",
       additionalData: {
         minWords: 200,
@@ -680,7 +680,7 @@ export const DEFAULT_CONTENT_STRUCTURE: RootContentStructure[] = [
       },
       realContentStructure: [
         {
-          id: "p-6-7-1",
+          id: "p-FAQ-6-1",
           tag: "p",
           additionalData: {
             minWords: 75,

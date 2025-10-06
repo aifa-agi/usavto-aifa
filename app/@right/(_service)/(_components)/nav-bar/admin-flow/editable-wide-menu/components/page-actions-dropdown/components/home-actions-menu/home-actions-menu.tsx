@@ -1,4 +1,5 @@
-// a@/app/@right/(_service)/(_components)/nav-bar/admin-flow/editable-wide-menu/components/page-actions-dropdown/components/home-actions-menu/home-actions-menu.tsx
+// @/app/@right/(_service)/(_components)/nav-bar/admin-flow/editable-wide-menu/components/page-actions-dropdown/components/home-actions-menu/home-actions-menu.tsx
+
 "use client";
 
 import { DropdownMenuSeparator } from "@/components/ui/dropdown-menu";
@@ -23,58 +24,58 @@ import { ChatbotLightUpload } from "./(_components)/chatbot-light-upload";
 import { useAppConfigStatus } from "./(_hooks)/use-app-config-status";
 
 export function HomeActionsMenu() {
-  // Комментарии: Загружаем конфигурацию через хук
+  // Comments in English: Load configuration via hook
   const { config, loading, error, reload } = useAppConfigStatus();
 
   return (
-    <>
-      {/* Комментарии: Секция основных полей */}
+    <div className="h-[300px] overflow-y-auto custom-sidebar pr-2">
+      {/* Comments in English: Main fields section */}
       <NameField config={config} loading={loading} error={error} reload={reload} />
       <ShortNameField config={config} loading={loading} error={error} reload={reload} />
       <DescriptionField config={config} loading={loading} error={error} reload={reload} />
 
       <DropdownMenuSeparator />
 
-      {/* Комментарии: Секция настроек */}
+      {/* Comments in English: Settings section */}
       <LanguageField config={config} loading={loading} error={error} reload={reload} />
       <SiteUrlField config={config} loading={loading} error={error} reload={reload} />
       <ChatBrandField config={config} loading={loading} error={error} reload={reload} />
 
       <DropdownMenuSeparator />
 
-      {/* Комментарии: Секция основных изображений */}
+      {/* Comments in English: Main images section */}
       <LogoUpload loading={loading} onUploadSuccess={reload} />
       <OgImageUpload loading={loading} onUploadSuccess={reload} />
 
       <DropdownMenuSeparator />
 
-      {/* Комментарии: Секция иллюстраций - Loading */}
+      {/* Comments in English: Illustrations section - Loading */}
       <LoadingDarkUpload loading={loading} onUploadSuccess={reload} />
       <LoadingLightUpload loading={loading} onUploadSuccess={reload} />
 
       <DropdownMenuSeparator />
 
-      {/* Комментарии: Секция иллюстраций - Not Found (404) */}
+      {/* Comments in English: Illustrations section - Not Found (404) */}
       <NotFoundDarkUpload loading={loading} onUploadSuccess={reload} />
       <NotFoundLightUpload loading={loading} onUploadSuccess={reload} />
 
       <DropdownMenuSeparator />
 
-      {/* Комментарии: Секция иллюстраций - Error 500 */}
+      {/* Comments in English: Illustrations section - Error 500 */}
       <Error500DarkUpload loading={loading} onUploadSuccess={reload} />
       <Error500LightUpload loading={loading} onUploadSuccess={reload} />
 
       <DropdownMenuSeparator />
 
-      {/* Комментарии: Секция иллюстраций - Home Page */}
+      {/* Comments in English: Illustrations section - Home Page */}
       <HomePageDarkUpload loading={loading} onUploadSuccess={reload} />
       <HomePageLightUpload loading={loading} onUploadSuccess={reload} />
 
       <DropdownMenuSeparator />
 
-      {/* Комментарии: Секция иллюстраций - Chatbot */}
+      {/* Comments in English: Illustrations section - Chatbot */}
       <ChatbotDarkUpload loading={loading} onUploadSuccess={reload} />
       <ChatbotLightUpload loading={loading} onUploadSuccess={reload} />
-    </>
+    </div>
   );
 }

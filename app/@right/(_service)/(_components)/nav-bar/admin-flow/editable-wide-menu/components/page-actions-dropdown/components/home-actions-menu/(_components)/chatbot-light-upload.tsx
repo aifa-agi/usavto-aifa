@@ -3,7 +3,8 @@
 
 "use client";
 
-import { ImageUploadItem } from "../(_ui)/image-upload-item";
+
+import { RegularImageUpload } from "../(_ui)/regular-image-upload";
 
 
 interface ChatbotLightUploadProps {
@@ -20,7 +21,7 @@ export function ChatbotLightUpload({
     onUploadSuccess,
 }: ChatbotLightUploadProps) {
     return (
-        <ImageUploadItem
+        <RegularImageUpload
             label="Chatbot (Light)"
             imageType="chatbot-light"
             loading={loading}

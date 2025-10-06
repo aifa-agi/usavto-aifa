@@ -2,7 +2,8 @@
 
 "use client";
 
-import { ImageUploadItem } from "../(_ui)/image-upload-item";
+
+import { RegularImageUpload } from "../(_ui)/regular-image-upload";
 
 
 interface HomePageLightUploadProps {
@@ -19,7 +20,7 @@ export function HomePageLightUpload({
     onUploadSuccess,
 }: HomePageLightUploadProps) {
     return (
-        <ImageUploadItem
+        <RegularImageUpload
             label="Home Page (Light)"
             imageType="homePage-light"
             loading={loading}

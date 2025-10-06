@@ -1,5 +1,5 @@
-// @app/@right/(_service)/(_components)/nav-bar/admin-flow/editable-wide-menu/components/page-actions-dropdown/components/home-actions-menu/(_types)/image-upload-types.ts
-// Comments in English: Upload logo and automatically generate all icons using sharp
+// @/app/api/app-config-upload-with-icons/route.ts
+// Comments in English: Upload logo and generate icons (favicon.ico + PNG icons)
 
 import { NextRequest, NextResponse } from "next/server";
 import fs from "fs";
@@ -10,280 +10,422 @@ import {
   ImageUploadStatus,
   ImageUploadErrorCode,
   MAX_FILE_SIZE,
-  MIN_LOGO_DIMENSIONS,
-  FileValidationResult,
+  extensionToFormat,
+  extractExtension,
 } from "@/app/@right/(_service)/(_components)/nav-bar/admin-flow/editable-wide-menu/components/page-actions-dropdown/components/home-actions-menu/(_types)/image-upload-types";
+
+// ============================================
+// CONFIGURATION
+// ============================================
 
 const PROJECT_ROOT = process.cwd();
 const PUBLIC_DIR = path.join(PROJECT_ROOT, "public");
 const ICONS_DIR = path.join(PUBLIC_DIR, "app-config-images", "icons");
-const LOGO_PATH = path.join(PUBLIC_DIR, "app-config-images", "logo.png");
+const LOGO_DIR = path.join(PUBLIC_DIR, "app-config-images");
+const APP_CONFIG_TS_PATH = path.join(PROJECT_ROOT, "config", "appConfig.ts");
 
-function isProduction() {
+// Comments in English: Icon sizes to generate (all PNG except favicon.ico)
+const ICON_SIZES = [
+  { size: 32, filename: "icon-32.png" },
+  { size: 48, filename: "icon-48.png" },
+  { size: 192, filename: "icon-192.png" },
+  { size: 512, filename: "icon-512.png" },
+  { size: 180, filename: "apple-touch-icon.png" },
+] as const;
+
+// Comments in English: Delay in ms to ensure filesystem operations complete
+const FS_OPERATION_DELAY = 100;
+
+// ============================================
+// HELPER FUNCTIONS
+// ============================================
+
+/**
+ * Comments in English: Check if running in production environment
+ */
+function isProduction(): boolean {
   return process.env.NODE_ENV === "production";
 }
 
-function validateGitHubConfig(): { isValid: boolean; missingVars: string[] } {
-  const requiredVars = [
-    { key: "GITHUB_TOKEN", value: process.env.GITHUB_TOKEN },
-    { key: "GITHUB_REPO", value: process.env.GITHUB_REPO },
-  ];
-
-  const missingVars = requiredVars
-    .filter(({ value }) => !value)
-    .map(({ key }) => key);
-
-  return {
-    isValid: missingVars.length === 0,
-    missingVars,
-  };
+/**
+ * Comments in English: Async delay helper
+ */
+function delay(ms: number): Promise<void> {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 /**
- * Validate uploaded logo file
+ * Comments in English: Verify file exists and has size > 0
  */
-async function validateLogoFile(file: File): Promise<FileValidationResult> {
-  // Check file size
-  if (file.size > MAX_FILE_SIZE) {
-    return {
-      isValid: false,
-      error: `File size exceeds ${MAX_FILE_SIZE / 1024 / 1024}MB limit`,
-      errorCode: ImageUploadErrorCode.FILE_SIZE_EXCEEDED,
-    };
-  }
-
-  // Check file extension
-  const ext = path.extname(file.name).toLowerCase();
-  const allowedExts = [".png", ".jpg", ".jpeg"];
-
-  if (!allowedExts.includes(ext)) {
-    return {
-      isValid: false,
-      error: `Invalid file format. Allowed: ${allowedExts.join(", ")}`,
-      errorCode: ImageUploadErrorCode.FILE_EXTENSION_NOT_ALLOWED,
-    };
-  }
-
-  // Check image dimensions
+function verifyFileWritten(filePath: string): boolean {
   try {
-    const arrayBuffer = await file.arrayBuffer();
-    const buffer = Buffer.from(arrayBuffer);
-    const metadata = await sharp(buffer).metadata();
-
-    if (
-      !metadata.width ||
-      !metadata.height ||
-      metadata.width < MIN_LOGO_DIMENSIONS.width ||
-      metadata.height < MIN_LOGO_DIMENSIONS.height
-    ) {
-      return {
-        isValid: false,
-        error: `Logo must be at least ${MIN_LOGO_DIMENSIONS.width}x${MIN_LOGO_DIMENSIONS.height}px for icon generation`,
-        errorCode: ImageUploadErrorCode.LOGO_TOO_SMALL,
-      };
+    if (!fs.existsSync(filePath)) {
+      console.error(`[verifyFileWritten] File does not exist: ${filePath}`);
+      return false;
     }
-  } catch (error) {
-    return {
-      isValid: false,
-      error: "Failed to process image metadata",
-      errorCode: ImageUploadErrorCode.IMAGE_PROCESSING_FAILED,
-    };
-  }
-
-  return { isValid: true };
-}
-
-/**
- * Generate all icon sizes from source logo
- */
-async function generateIcons(
-  sourceBuffer: Buffer
-): Promise<{ [key: string]: string }> {
-  // Ensure icons directory exists
-  if (!fs.existsSync(ICONS_DIR)) {
-    fs.mkdirSync(ICONS_DIR, { recursive: true });
-  }
-
-  const iconSizes = [
-    { size: 32, name: "icon-32.png" },
-    { size: 48, name: "icon-48.png" },
-    { size: 192, name: "icon-192.png" },
-    { size: 512, name: "icon-512.png" },
-    { size: 180, name: "apple-touch-icon.png" },
-  ];
-
-  const generatedPaths: { [key: string]: string } = {};
-
-  // Generate PNG icons
-  for (const { size, name } of iconSizes) {
-    const outputPath = path.join(ICONS_DIR, name);
-    await sharp(sourceBuffer)
-      .resize(size, size, {
-        fit: "cover",
-        position: "center",
-      })
-      .png()
-      .toFile(outputPath);
-
-    generatedPaths[name.replace(".png", "").replace("-", "")] =
-      `/app-config-images/icons/${name}`;
-  }
-
-  // Generate favicon.ico (32x32)
-  const faviconPath = path.join(ICONS_DIR, "favicon.ico");
-  await sharp(sourceBuffer)
-    .resize(32, 32, {
-      fit: "cover",
-      position: "center",
-    })
-    .png()
-    .toFile(faviconPath);
-
-  generatedPaths["favicon"] = "/app-config-images/icons/favicon.ico";
-
-  return generatedPaths;
-}
-
-/**
- * Upload file to GitHub
- */
-async function uploadFileToGitHub(
-  fileBuffer: Buffer,
-  relativePath: string,
-  commitMessage: string
-): Promise<boolean> {
-  try {
-    const { GITHUB_TOKEN, GITHUB_REPO } = process.env;
-
-    // Check if file exists to get SHA
-    let sha: string | undefined;
-    try {
-      const getResponse = await fetch(
-        `https://api.github.com/repos/${GITHUB_REPO}/contents/${relativePath}`,
-        {
-          headers: {
-            Authorization: `Bearer ${GITHUB_TOKEN}`,
-            Accept: "application/vnd.github.v3+json",
-            "User-Agent": "NextJS-App",
-          },
-        }
-      );
-
-      if (getResponse.ok) {
-        const data = await getResponse.json();
-        sha = data.sha;
-      }
-    } catch {
-      // File doesn't exist, will create new
+    const stats = fs.statSync(filePath);
+    if (stats.size === 0) {
+      console.error(`[verifyFileWritten] File is empty: ${filePath}`);
+      return false;
     }
-
-    const apiPayload = {
-      message: commitMessage,
-      content: fileBuffer.toString("base64"),
-      branch: process.env.GITHUB_BRANCH || "main",
-      ...(sha && { sha }),
-    };
-
-    const response = await fetch(
-      `https://api.github.com/repos/${GITHUB_REPO}/contents/${relativePath}`,
-      {
-        method: "PUT",
-        headers: {
-          Authorization: `Bearer ${GITHUB_TOKEN}`,
-          Accept: "application/vnd.github.v3+json",
-          "Content-Type": "application/json",
-          "User-Agent": "NextJS-App",
-        },
-        body: JSON.stringify(apiPayload),
-      }
-    );
-
-    return response.ok;
-  } catch {
+    console.log(`[verifyFileWritten] File verified: ${filePath} (${stats.size} bytes)`);
+    return true;
+  } catch (error: any) {
+    console.error(`[verifyFileWritten] Error verifying file ${filePath}:`, error);
     return false;
   }
 }
 
+// ============================================
+// FILE SYSTEM OPERATIONS
+// ============================================
+
 /**
- * Save logo and icons to GitHub
+ * Comments in English: Delete all old logo files and icons in one centralized operation
+ * This prevents race conditions and ensures clean state before new files
  */
-async function saveToGitHub(
-  logoBuffer: Buffer,
-  iconBuffers: Map<string, Buffer>
-): Promise<ImageUploadWithIconsResponse> {
+async function deleteOldLogoAndIcons(): Promise<void> {
+  console.log("[deleteOldLogoAndIcons] Starting cleanup...");
+
   try {
-    const { isValid, missingVars } = validateGitHubConfig();
-    if (!isValid) {
-      return {
-        status: ImageUploadStatus.GITHUB_API_ERROR,
-        message: `Missing GitHub configuration: ${missingVars.join(", ")}`,
-        error: `Missing environment variables: ${missingVars.join(", ")}`,
-        errorCode: ImageUploadErrorCode.GITHUB_TOKEN_INVALID,
-        environment: "production",
-      };
+    // Step 1: Delete old logo files from app-config-images directory
+    if (fs.existsSync(LOGO_DIR)) {
+      const logoFiles = fs.readdirSync(LOGO_DIR);
+      for (const file of logoFiles) {
+        if (file.startsWith("logo.")) {
+          const fullPath = path.join(LOGO_DIR, file);
+          console.log(`[deleteOldLogoAndIcons] Removing old logo: ${file}`);
+          fs.unlinkSync(fullPath);
+          await delay(10); // Small delay between deletions
+        }
+      }
     }
 
-    // Upload logo
-    const logoUploaded = await uploadFileToGitHub(
-      logoBuffer,
-      "public/app-config-images/logo.png",
-      `Update logo - ${new Date().toISOString()}`
-    );
-
-    if (!logoUploaded) {
-      return {
-        status: ImageUploadStatus.GITHUB_API_ERROR,
-        message: "Failed to upload logo to GitHub",
-        errorCode: ImageUploadErrorCode.GITHUB_API_UNAVAILABLE,
-        environment: "production",
-      };
+    // Step 2: Delete ALL old icons from icons directory
+    if (fs.existsSync(ICONS_DIR)) {
+      const iconFiles = fs.readdirSync(ICONS_DIR);
+      for (const file of iconFiles) {
+        const fullPath = path.join(ICONS_DIR, file);
+        console.log(`[deleteOldLogoAndIcons] Removing old icon: ${file}`);
+        fs.unlinkSync(fullPath);
+        await delay(10); // Small delay between deletions
+      }
     }
 
-    // Upload icons
-    let iconsUploaded = 0;
-    for (const [filename, buffer] of iconBuffers.entries()) {
-      const uploaded = await uploadFileToGitHub(
-        buffer,
-        `public/app-config-images/icons/${filename}`,
-        `Update icon ${filename} - ${new Date().toISOString()}`
-      );
-      if (uploaded) iconsUploaded++;
+    // Step 3: Delete old favicon.ico from PUBLIC ROOT only
+    const faviconPath = path.join(PUBLIC_DIR, "favicon.ico");
+    if (fs.existsSync(faviconPath)) {
+      console.log("[deleteOldLogoAndIcons] Removing old favicon.ico from root");
+      fs.unlinkSync(faviconPath);
+      await delay(10);
     }
 
-    return {
-      status: ImageUploadStatus.SUCCESS,
-      message: `Logo and ${iconsUploaded} icons uploaded to GitHub`,
-      environment: "production",
-      uploadedPath: "/app-config-images/logo.png",
-      generatedIcons: {
-        favicon: "/app-config-images/icons/favicon.ico",
-        icon32: "/app-config-images/icons/icon-32.png",
-        icon48: "/app-config-images/icons/icon-48.png",
-        icon192: "/app-config-images/icons/icon-192.png",
-        icon512: "/app-config-images/icons/icon-512.png",
-        appleTouch: "/app-config-images/icons/apple-touch-icon.png",
-      },
-    };
+    // Step 4: Wait for filesystem to settle
+    await delay(FS_OPERATION_DELAY);
+
+    console.log("[deleteOldLogoAndIcons] Cleanup completed successfully");
   } catch (error: any) {
-    return {
-      status: ImageUploadStatus.GITHUB_API_ERROR,
-      message: "Network error while connecting to GitHub",
-      error: error.message || "Unknown network error",
-      errorCode: ImageUploadErrorCode.NETWORK_ERROR,
-      environment: "production",
-    };
+    console.error("[deleteOldLogoAndIcons] Error during cleanup:", error);
+    throw error;
   }
 }
 
 /**
- * POST handler for logo upload with icon generation
+ * Comments in English: Write file with verification and retry logic
+ */
+async function writeFileWithRetry(
+  filePath: string,
+  buffer: Buffer,
+  maxRetries: number = 3
+): Promise<boolean> {
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      console.log(`[writeFileWithRetry] Attempt ${attempt}/${maxRetries}: ${filePath}`);
+      
+      // Ensure directory exists
+      const dir = path.dirname(filePath);
+      if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir, { recursive: true });
+        await delay(50);
+      }
+
+      // Write file
+      fs.writeFileSync(filePath, buffer);
+      
+      // Wait for write to complete
+      await delay(FS_OPERATION_DELAY);
+
+      // Verify write
+      if (verifyFileWritten(filePath)) {
+        console.log(`[writeFileWithRetry] Success on attempt ${attempt}: ${filePath}`);
+        return true;
+      }
+
+      console.warn(`[writeFileWithRetry] Verification failed on attempt ${attempt}: ${filePath}`);
+      
+      // Wait before retry
+      if (attempt < maxRetries) {
+        await delay(FS_OPERATION_DELAY * attempt);
+      }
+    } catch (error: any) {
+      console.error(`[writeFileWithRetry] Error on attempt ${attempt}:`, error);
+      if (attempt === maxRetries) {
+        throw error;
+      }
+      await delay(FS_OPERATION_DELAY * attempt);
+    }
+  }
+
+  return false;
+}
+
+// ============================================
+// LOGO PROCESSING
+// ============================================
+
+/**
+ * Comments in English: Save main logo file
+ */
+async function saveLogoFile(
+  fileBuffer: Buffer,
+  extension: string
+): Promise<string> {
+  const relativePath = `app-config-images/logo.${extension}`;
+  const fullPath = path.join(PUBLIC_DIR, relativePath);
+
+  console.log("[saveLogoFile] Saving main logo:", { relativePath, fullPath });
+
+  const success = await writeFileWithRetry(fullPath, fileBuffer);
+  
+  if (!success) {
+    throw new Error(`Failed to save logo file after retries: ${relativePath}`);
+  }
+
+  return `/${relativePath}`;
+}
+
+/**
+ * Comments in English: Validate logo dimensions for icon generation
+ */
+async function validateLogoDimensions(
+  fileBuffer: Buffer
+): Promise<{ width: number; height: number }> {
+  try {
+    const metadata = await sharp(fileBuffer).metadata();
+
+    if (!metadata.width || !metadata.height) {
+      throw new Error("Could not determine image dimensions");
+    }
+
+    console.log("[validateLogoDimensions] Logo dimensions:", {
+      width: metadata.width,
+      height: metadata.height,
+    });
+
+    // Recommend at least 512x512 for quality icons
+    if (metadata.width < 512 || metadata.height < 512) {
+      console.warn(
+        "[validateLogoDimensions] Logo is smaller than recommended 512x512px"
+      );
+    }
+
+    return {
+      width: metadata.width,
+      height: metadata.height,
+    };
+  } catch (error: any) {
+    console.error("[validateLogoDimensions] Error:", error);
+    throw new Error(`Failed to read image metadata: ${error.message}`);
+  }
+}
+
+// ============================================
+// ICON GENERATION (SEQUENTIAL)
+// ============================================
+
+/**
+ * Comments in English: Generate PNG icons sequentially to avoid race conditions
+ * Returns paths to all generated icons
+ */
+async function generatePngIconsSequentially(
+  logoBuffer: Buffer
+): Promise<Record<string, string>> {
+  console.log("[generatePngIconsSequentially] Starting sequential icon generation...");
+
+  const generatedPaths: Record<string, string> = {};
+
+  // Ensure icons directory exists
+  if (!fs.existsSync(ICONS_DIR)) {
+    fs.mkdirSync(ICONS_DIR, { recursive: true });
+    await delay(50);
+  }
+
+  // Generate each icon sequentially with delays
+  for (const { size, filename } of ICON_SIZES) {
+    try {
+      console.log(`[generatePngIconsSequentially] Generating ${filename} (${size}x${size})...`);
+
+      const iconBuffer = await sharp(logoBuffer)
+        .resize(size, size, {
+          fit: "contain",
+          background: { r: 255, g: 255, b: 255, alpha: 0 },
+        })
+        .png()
+        .toBuffer();
+
+      const iconPath = path.join(ICONS_DIR, filename);
+      const success = await writeFileWithRetry(iconPath, iconBuffer);
+
+      if (!success) {
+        throw new Error(`Failed to write icon: ${filename}`);
+      }
+
+      const relativePath = `/app-config-images/icons/${filename}`;
+      generatedPaths[filename] = relativePath;
+
+      console.log(`[generatePngIconsSequentially] ✓ Generated: ${filename}`);
+
+      // Wait between icons to prevent filesystem congestion
+      await delay(FS_OPERATION_DELAY);
+    } catch (error: any) {
+      console.error(`[generatePngIconsSequentially] Error generating ${filename}:`, error);
+      throw new Error(`Failed to generate ${filename}: ${error.message}`);
+    }
+  }
+
+  console.log("[generatePngIconsSequentially] All PNG icons generated successfully");
+  return generatedPaths;
+}
+
+/**
+ * Comments in English: Generate favicon.ico (32x32) in PUBLIC ROOT ONLY
+ */
+async function generateFaviconIco(logoBuffer: Buffer): Promise<string> {
+  console.log("[generateFaviconIco] Generating favicon.ico...");
+
+  try {
+    // Generate 32x32 PNG buffer first
+    const faviconBuffer = await sharp(logoBuffer)
+      .resize(32, 32, {
+        fit: "contain",
+        background: { r: 255, g: 255, b: 255, alpha: 0 },
+      })
+      .png()
+      .toBuffer();
+
+    // Save ONLY to public root
+    const faviconPath = path.join(PUBLIC_DIR, "favicon.ico");
+    
+    console.log("[generateFaviconIco] Saving to PUBLIC ROOT:", faviconPath);
+    
+    const success = await writeFileWithRetry(faviconPath, faviconBuffer);
+
+    if (!success) {
+      throw new Error("Failed to write favicon.ico after retries");
+    }
+
+    console.log("[generateFaviconIco] ✓ Favicon.ico created in PUBLIC ROOT");
+
+    return "/favicon.ico";
+  } catch (error: any) {
+    console.error("[generateFaviconIco] Error:", error);
+    throw new Error(`Failed to generate favicon.ico: ${error.message}`);
+  }
+}
+
+// ============================================
+// APPCONFIG UPDATE
+// ============================================
+
+/**
+ * Comments in English: Update appConfig.ts with new logo and icon paths
+ */
+async function updateAppConfigTS(
+  logoPath: string,
+  logoFormat: string,
+  iconPaths: Record<string, string>,
+  faviconPath: string
+): Promise<void> {
+  try {
+    console.log("[updateAppConfigTS] Updating config file...");
+
+    let content = fs.readFileSync(APP_CONFIG_TS_PATH, "utf-8");
+    const timestamp = new Date().toISOString();
+
+    // Update logo path and format
+    content = content.replace(
+      /logo:\s*"[^"]*"/,
+      `logo: "${logoPath}"`
+    );
+
+    content = content.replace(
+      /logoFormat:\s*"[^"]*"/,
+      `logoFormat: "${logoFormat}"`
+    );
+
+    // Update icon paths - favicon
+    content = content.replace(
+      /faviconAny:\s*"[^"]*"/,
+      `faviconAny: "${faviconPath}"`
+    );
+
+    // Update icon paths - PNG icons
+    content = content.replace(
+      /icon32:\s*"[^"]*"/,
+      `icon32: "${iconPaths["icon-32.png"] || "/app-config-images/icons/icon-32.png"}"`
+    );
+
+    content = content.replace(
+      /icon48:\s*"[^"]*"/,
+      `icon48: "${iconPaths["icon-48.png"] || "/app-config-images/icons/icon-48.png"}"`
+    );
+
+    content = content.replace(
+      /icon192:\s*"[^"]*"/,
+      `icon192: "${iconPaths["icon-192.png"] || "/app-config-images/icons/icon-192.png"}"`
+    );
+
+    content = content.replace(
+      /icon512:\s*"[^"]*"/,
+      `icon512: "${iconPaths["icon-512.png"] || "/app-config-images/icons/icon-512.png"}"`
+    );
+
+    content = content.replace(
+      /appleTouch:\s*"[^"]*"/,
+      `appleTouch: "${iconPaths["apple-touch-icon.png"] || "/app-config-images/icons/apple-touch-icon.png"}"`
+    );
+
+    // Update timestamp
+    content = content.replace(
+      /\/\/ Last updated:.*$/m,
+      `// Last updated: ${timestamp}`
+    );
+
+    fs.writeFileSync(APP_CONFIG_TS_PATH, content, "utf-8");
+
+    console.log("[updateAppConfigTS] Config file updated successfully");
+  } catch (error: any) {
+    console.error("[updateAppConfigTS] Error:", error);
+    // Don't throw - config update failure shouldn't block upload
+  }
+}
+
+// ============================================
+// HTTP HANDLER
+// ============================================
+
+/**
+ * Comments in English: POST handler for logo upload with icon generation
  */
 export async function POST(req: NextRequest) {
+  const startTime = Date.now();
+
   try {
+    console.log("=== POST /api/app-config-upload-with-icons ===");
+
     const formData = await req.formData();
     const file = formData.get("file") as File | null;
 
-    // Validate file presence
     if (!file) {
       const errorResponse: ImageUploadWithIconsResponse = {
         status: ImageUploadStatus.VALIDATION_ERROR,
@@ -295,92 +437,103 @@ export async function POST(req: NextRequest) {
       return NextResponse.json(errorResponse, { status: 400 });
     }
 
-    // Validate logo file
-    const validation = await validateLogoFile(file);
-    if (!validation.isValid) {
+    const extension = extractExtension(file.name);
+    if (!extension || !["png", "jpg", "jpeg", "webp"].includes(extension)) {
       const errorResponse: ImageUploadWithIconsResponse = {
         status: ImageUploadStatus.VALIDATION_ERROR,
-        message: validation.error || "File validation failed",
-        error: validation.error,
-        errorCode: validation.errorCode,
+        message: "Invalid file type for logo",
+        error: "Logo must be PNG, JPG, or WebP",
+        errorCode: ImageUploadErrorCode.INVALID_FILE_TYPE,
         environment: isProduction() ? "production" : "development",
       };
       return NextResponse.json(errorResponse, { status: 400 });
     }
 
-    // Convert file to buffer
-    const arrayBuffer = await file.arrayBuffer();
-    const logoBuffer = Buffer.from(arrayBuffer);
-
-    // Save logo to filesystem
-    const logoDir = path.dirname(LOGO_PATH);
-    if (!fs.existsSync(logoDir)) {
-      fs.mkdirSync(logoDir, { recursive: true });
-    }
-    fs.writeFileSync(LOGO_PATH, logoBuffer);
-
-    // Generate icons
-    try {
-      await generateIcons(logoBuffer);
-    } catch (error: any) {
+    if (file.size > MAX_FILE_SIZE) {
       const errorResponse: ImageUploadWithIconsResponse = {
-        status: ImageUploadStatus.FILESYSTEM_ERROR,
-        message: "Failed to generate icons",
-        error: error.message || "Icon generation failed",
-        errorCode: ImageUploadErrorCode.ICON_GENERATION_FAILED,
+        status: ImageUploadStatus.VALIDATION_ERROR,
+        message: `File size exceeds ${MAX_FILE_SIZE / 1024 / 1024}MB limit`,
+        errorCode: ImageUploadErrorCode.FILE_TOO_LARGE,
         environment: isProduction() ? "production" : "development",
       };
-      return NextResponse.json(errorResponse, { status: 500 });
+      return NextResponse.json(errorResponse, { status: 400 });
     }
 
-    // In production, upload to GitHub
-    if (isProduction()) {
-      // Read generated icon files
-      const iconBuffers = new Map<string, Buffer>();
-      const iconFiles = [
-        "favicon.ico",
-        "icon-32.png",
-        "icon-48.png",
-        "icon-192.png",
-        "icon-512.png",
-        "apple-touch-icon.png",
-      ];
+    console.log("[POST] File info:", {
+      fileName: file.name,
+      fileSize: file.size,
+      fileType: file.type,
+      extension,
+    });
 
-      for (const filename of iconFiles) {
-        const iconPath = path.join(ICONS_DIR, filename);
-        if (fs.existsSync(iconPath)) {
-          iconBuffers.set(filename, fs.readFileSync(iconPath));
-        }
-      }
+    // Convert file to buffer
+    const arrayBuffer = await file.arrayBuffer();
+    const fileBuffer = Buffer.from(arrayBuffer);
 
-      const githubResult = await saveToGitHub(logoBuffer, iconBuffers);
-      const httpStatus =
-        githubResult.status === ImageUploadStatus.SUCCESS ? 200 : 500;
-      return NextResponse.json(githubResult, { status: httpStatus });
-    }
+    // Validate logo dimensions
+    const dimensions = await validateLogoDimensions(fileBuffer);
 
-    // Development: return success
-    const successResponse: ImageUploadWithIconsResponse = {
+    // STEP 1: Delete all old files first (centralized cleanup)
+    console.log("[POST] Step 1: Cleaning up old files...");
+    await deleteOldLogoAndIcons();
+
+    // STEP 2: Save main logo file
+    console.log("[POST] Step 2: Saving main logo...");
+    const logoPath = await saveLogoFile(fileBuffer, extension);
+
+    // STEP 3: Generate PNG icons sequentially
+    console.log("[POST] Step 3: Generating PNG icons...");
+    const iconPaths = await generatePngIconsSequentially(fileBuffer);
+
+    // STEP 4: Generate favicon.ico in PUBLIC ROOT
+    console.log("[POST] Step 4: Generating favicon.ico...");
+    const faviconPath = await generateFaviconIco(fileBuffer);
+
+    // STEP 5: Update appConfig.ts
+    console.log("[POST] Step 5: Updating appConfig.ts...");
+    await updateAppConfigTS(
+      logoPath,
+      extensionToFormat(extension),
+      iconPaths,
+      faviconPath
+    );
+
+    const endTime = Date.now();
+    const totalTime = endTime - startTime;
+
+    console.log("[POST] ✓ All operations completed successfully");
+    console.log(`[POST] Total time: ${totalTime}ms`);
+
+    const response: ImageUploadWithIconsResponse = {
       status: ImageUploadStatus.SUCCESS,
       message: "Logo uploaded and icons generated successfully",
-      environment: "development",
-      uploadedPath: "/app-config-images/logo.png",
+      environment: isProduction() ? "production" : "development",
+      uploadedPath: logoPath,
+      fileExtension: extension,
+      format: extensionToFormat(extension),
+      imageType: "logo",
+      fileSize: file.size,
+      dimensions,
       generatedIcons: {
-        favicon: "/app-config-images/icons/favicon.ico",
-        icon32: "/app-config-images/icons/icon-32.png",
-        icon48: "/app-config-images/icons/icon-48.png",
-        icon192: "/app-config-images/icons/icon-192.png",
-        icon512: "/app-config-images/icons/icon-512.png",
-        appleTouch: "/app-config-images/icons/apple-touch-icon.png",
+        favicon: faviconPath,
+        icon32: iconPaths["icon-32.png"],
+        icon48: iconPaths["icon-48.png"],
+        icon192: iconPaths["icon-192.png"],
+        icon512: iconPaths["icon-512.png"],
+        appleTouch: iconPaths["apple-touch-icon.png"],
       },
+      iconGenerationTime: totalTime,
     };
 
-    return NextResponse.json(successResponse, { status: 200 });
+    return NextResponse.json(response, { status: 200 });
   } catch (error: any) {
+    console.error("[POST] Unexpected error:", error);
+
     const errorResponse: ImageUploadWithIconsResponse = {
-      status: ImageUploadStatus.UNKNOWN_ERROR,
-      message: "An unexpected error occurred",
+      status: ImageUploadStatus.ERROR,
+      message: "Failed to upload logo and generate icons",
       error: error.message || "Unknown error",
+      errorCode: ImageUploadErrorCode.ICON_GENERATION_FAILED,
       environment: isProduction() ? "production" : "development",
     };
 
@@ -389,13 +542,22 @@ export async function POST(req: NextRequest) {
 }
 
 /**
- * GET handler for endpoint info
+ * Comments in English: GET handler for endpoint info
  */
 export async function GET() {
   return NextResponse.json({
     status: "ok",
     message: "Logo upload with icon generation API endpoint",
     environment: isProduction() ? "production" : "development",
-    requiredDimensions: MIN_LOGO_DIMENSIONS,
+    generatesIcons: [
+      "favicon.ico (32x32) - PUBLIC ROOT ONLY",
+      "icon-32.png (32x32)",
+      "icon-48.png (48x48)",
+      "icon-192.png (192x192)",
+      "icon-512.png (512x512)",
+      "apple-touch-icon.png (180x180)",
+    ],
+    recommendedLogoSize: "512x512px or larger",
+    maxFileSize: `${MAX_FILE_SIZE / 1024 / 1024}MB`,
   });
 }
