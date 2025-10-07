@@ -4726,6 +4726,7 @@ export const contentData = {
         "keywords": [
           "Как работает ЭПЛ в системе USAUTO"
         ]
+<<<<<<< HEAD
       },
       {
         "id": "fkbrjonjcki7at8i441ois60",
@@ -5076,6 +5077,8 @@ export const contentData = {
             "href": "/app-images/bnwoxg40p3vx8zcn7la5d4ej.jpg"
           }
         ]
+=======
+>>>>>>> ba1456318f95188b9311c4cc0813b94bdc225115
       }
     ],
     "order": 8
@@ -7265,5 +7268,9 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
+<<<<<<< HEAD
 export const lastUpdated = "2025-10-07T22:01:06.368Z";
+=======
+export const lastUpdated = "2025-10-07T21:38:22.150Z";
+>>>>>>> ba1456318f95188b9311c4cc0813b94bdc225115
 export const generatedBy = "menu-persist-api";
