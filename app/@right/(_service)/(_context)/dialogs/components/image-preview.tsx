@@ -12,29 +12,49 @@ interface ImagePreviewProps {
   disabled?: boolean;
 }
 
-export const ImagePreview = memo(({ 
-  href, 
-  alt, 
+// ✅ ДОБАВЛЕНО: Функция для получения GitHub Raw URL
+function getGitHubRawUrl(relativePath: string): string | null {
+  const GITHUB_REPO = process.env.NEXT_PUBLIC_GITHUB_REPO;
+  const GITHUB_BRANCH = process.env.NEXT_PUBLIC_GITHUB_BRANCH || "main";
+
+  if (!GITHUB_REPO) {
+    console.warn("[image-preview] NEXT_PUBLIC_GITHUB_REPO not configured");
+    return null;
+  }
+
+  // Убираем leading slash если есть
+  const cleanPath = relativePath.startsWith("/") ? relativePath.slice(1) : relativePath;
+
+  return `https://raw.githubusercontent.com/${GITHUB_REPO}/${GITHUB_BRANCH}/public/${cleanPath}`;
+}
+
+export const ImagePreview = memo(({
+  href,
+  alt,
   onImageUploaded,
-  disabled = false 
+  disabled = false
 }: ImagePreviewProps) => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [imageError, setImageError] = useState(false);
+  const [currentSrc, setCurrentSrc] = useState<string | undefined>(href);
+  const [fallbackAttempted, setFallbackAttempted] = useState(false);
   const [dragActive, setDragActive] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
-  
+
   const { uploadImage, isUploading, progress } = useImageUpload();
 
   // Reset image states when href changes
   useEffect(() => {
     setImageLoaded(false);
     setImageError(false);
+    setCurrentSrc(href);
+    setFallbackAttempted(false);
   }, [href]);
 
   // Handle file selection and upload
   const handleFileChange = async (file: File) => {
     if (disabled || isUploading) return;
-    
+
     const uploadedUrl = await uploadImage(file);
     if (uploadedUrl && onImageUploaded) {
       onImageUploaded(uploadedUrl);
@@ -46,6 +66,29 @@ export const ImagePreview = memo(({
     if (!disabled && !isUploading && fileInputRef.current) {
       fileInputRef.current.click();
     }
+  };
+
+  // ✅ ДОБАВЛЕНО: Обработка ошибки загрузки с fallback на GitHub
+  const handleImageError = () => {
+    console.log("[image-preview] Image load error for:", currentSrc);
+
+    // Если ещё не пытались fallback и это относительный путь
+    if (!fallbackAttempted && href && href.startsWith("/app-images/")) {
+      const githubUrl = getGitHubRawUrl(href);
+
+      if (githubUrl) {
+        console.log("[image-preview] Attempting GitHub fallback:", githubUrl);
+        setCurrentSrc(githubUrl);
+        setFallbackAttempted(true);
+        setImageError(false); // Сбрасываем ошибку для повторной попытки
+        return;
+      }
+    }
+
+    // Если fallback не сработал или уже был попытан
+    console.error("[image-preview] All attempts failed for:", href);
+    setImageError(true);
+    setImageLoaded(false);
   };
 
   // Handle drag and drop functionality
@@ -80,14 +123,12 @@ export const ImagePreview = memo(({
   if (!href?.trim() || isUploading) {
     return (
       <div className="relative">
-        <div 
-          className={`w-20 h-20 bg-muted rounded border-2 ${
-            dragActive 
-              ? 'border-primary border-solid' 
+        <div
+          className={`w-20 h-20 bg-muted rounded border-2 ${dragActive
+              ? 'border-primary border-solid'
               : 'border-dashed border-muted-foreground/30'
-          } flex items-center justify-center cursor-pointer transition-all hover:border-muted-foreground/50 ${
-            disabled ? 'opacity-50 cursor-not-allowed' : ''
-          }`}
+            } flex items-center justify-center cursor-pointer transition-all hover:border-muted-foreground/50 ${disabled ? 'opacity-50 cursor-not-allowed' : ''
+            }`}
           onClick={handleClick}
           onDrop={handleDrop}
           onDragOver={handleDragOver}
@@ -102,15 +143,13 @@ export const ImagePreview = memo(({
             </div>
           )}
         </div>
-        
-        {/* Progress bar for upload */}
+
         {isUploading && (
           <div className="absolute -bottom-8 left-0 right-0">
             <ProgressBar value={progress} />
           </div>
         )}
 
-        {/* Hidden file input */}
         <input
           ref={fileInputRef}
           type="file"
@@ -135,20 +174,26 @@ export const ImagePreview = memo(({
         {!imageError ? (
           <>
             <img
-              src={href}
+              src={currentSrc}
               alt={alt || "Preview"}
-              className={`w-full h-full object-cover transition-opacity duration-200 ${
-                imageLoaded ? 'opacity-100' : 'opacity-0'
-              }`}
-              onLoad={() => setImageLoaded(true)}
-              onError={() => {
-                setImageError(true);
-                setImageLoaded(false);
+              className={`w-full h-full object-cover transition-opacity duration-200 ${imageLoaded ? 'opacity-100' : 'opacity-0'
+                }`}
+              onLoad={() => {
+                console.log("[image-preview] Image loaded successfully:", currentSrc);
+                setImageLoaded(true);
               }}
+              onError={handleImageError}
             />
             {!imageLoaded && (
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-4 h-4 border-2 border-primary border-t-transparent rounded-full animate-spin" />
+              </div>
+            )}
+
+            {/* ✅ ДОБАВЛЕНО: Индикатор GitHub fallback */}
+            {fallbackAttempted && imageLoaded && (
+              <div className="absolute top-1 right-1 bg-blue-500 text-white text-[8px] px-1 py-0.5 rounded">
+                GH
               </div>
             )}
           </>
@@ -157,10 +202,9 @@ export const ImagePreview = memo(({
             <AlertCircle className="w-6 h-6 text-red-500" />
           </div>
         )}
-        
-        {/* Overlay for replacing image */}
+
         {!disabled && (
-          <div 
+          <div
             className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer flex items-center justify-center"
             onClick={handleClick}
             onDrop={handleDrop}
@@ -175,7 +219,6 @@ export const ImagePreview = memo(({
         )}
       </div>
 
-      {/* Hidden file input for replacement */}
       <input
         ref={fileInputRef}
         type="file"
