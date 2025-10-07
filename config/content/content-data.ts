@@ -5073,7 +5073,7 @@ export const contentData = {
           {
             "id": "nztskv530yy6ewohv5qwzujq",
             "alt": "asfas",
-            "href": "/app-images/memj6amnt8ot2h5puctc17ig.jpg"
+            "href": "/app-images/e7h8eolslp54aojny4zhuvo4.png"
           }
         ]
       }
@@ -7265,5 +7265,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-07T22:09:00.302Z";
+export const lastUpdated = "2025-10-07T22:15:17.595Z";
 export const generatedBy = "menu-persist-api";
