@@ -5068,7 +5068,14 @@ export const contentData = {
         "isChatSynchronized": false,
         "createdAt": "2025-10-07T20:49:52.312Z",
         "updatedAt": "2025-10-07T20:49:52.312Z",
-        "order": 3
+        "order": 3,
+        "images": [
+          {
+            "id": "be0vpb7ylp5ijkt6qz0x7e4d",
+            "alt": "1234r",
+            "href": "/app-images/mn0gq4b942z6nc4wn698np1i.png"
+          }
+        ]
       }
     ],
     "order": 8
@@ -7258,5 +7265,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-07T20:50:06.313Z";
+export const lastUpdated = "2025-10-07T21:22:16.847Z";
 export const generatedBy = "menu-persist-api";
