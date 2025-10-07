@@ -39,7 +39,17 @@ export function useDialogState() {
         const cleanedKeywords = keywords?.filter(k => k.trim().length > 0) || [];
         onConfirm(undefined, cleanedKeywords);
       } else if (inputType === "images") {
-        const cleanedImages = images?.filter(img => img.alt?.trim() || img.href?.trim()) || [];
+        // ✅ ИСПРАВЛЕНО: AND вместо OR - оба поля должны быть заполнены
+        const cleanedImages = images?.filter(img => {
+          const hasAlt = img.alt?.trim() && img.alt.trim().length > 0;
+          const hasHref = img.href?.trim() && img.href.trim().length > 0;
+          return hasAlt && hasHref; // ✅ Оба поля обязательны
+        }) || [];
+        
+        // ✅ ДОБАВЛЕНО: Логирование для отладки
+        console.log("[use-dialog-state] All images:", images);
+        console.log("[use-dialog-state] Cleaned images:", cleanedImages);
+        
         onConfirm(undefined, undefined, cleanedImages);
       } else {
         const valueToSend = type === "delete" ? undefined : value?.trim();

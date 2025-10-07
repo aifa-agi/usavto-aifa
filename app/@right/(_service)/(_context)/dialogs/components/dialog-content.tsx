@@ -64,13 +64,31 @@ export function DialogContent({
   if (!dialog.open) return null;
 
   const handleConfirm = () => {
+    let validImages = images.imagesList;
+
+    if (dialog.inputType === "images") {
+      validImages = images.imagesList.filter(
+        (image) => {
+          // ✅ ИСПРАВЛЕНО: Проверяем существование перед вызовом trim()
+          const hasAlt = image.alt && image.alt.trim().length > 0;
+          const hasHref = image.href && image.href.trim().length > 0;
+
+          // ✅ Оба поля должны быть заполнены
+          return hasAlt && hasHref;
+        }
+      );
+
+      console.log("[dialog-content] All images:", images.imagesList);
+      console.log("[dialog-content] Valid images:", validImages);
+    }
+
     onConfirm(
       dialog.onConfirm,
       dialog.type,
       dialog.inputType,
       input,
       keywords.keywordsList,
-      images.imagesList
+      validImages // ✅ Передаём только валидные изображения
     );
   };
 
@@ -82,8 +100,9 @@ export function DialogContent({
     }
 
     if (dialog.inputType === "images") {
+      // ✅ ИСПРАВЛЕНО: Проверяем, что есть хотя бы одно полностью заполненное изображение
       return images.imagesList.some(
-        (image) => image.alt?.trim() || image.href?.trim()
+        (image) => image.alt?.trim() && image.href?.trim()
       );
     }
 
@@ -93,11 +112,10 @@ export function DialogContent({
   return (
     <Dialog open onOpenChange={onClose}>
       <ShadcnDialogContent
-        className={`${
-          dialog.inputType === "images"
+        className={`${dialog.inputType === "images"
             ? "sm:max-w-[600px]"
             : "sm:max-w-[425px]"
-        } ${dialog.type === "delete" ? "border-2 border-red-600" : ""}`}
+          } ${dialog.type === "delete" ? "border-2 border-red-600" : ""}`}
       >
         <DialogHeader>
           <DialogTitle>{dialog.title}</DialogTitle>
