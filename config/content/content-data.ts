@@ -5075,6 +5075,10 @@ export const contentData = {
             "alt": "asfas",
             "href": "/app-images/e7h8eolslp54aojny4zhuvo4.png"
           }
+        ],
+        "description": "asfsdf",
+        "keywords": [
+          "asdfasd"
         ]
       }
     ],
@@ -7265,5 +7269,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-07T22:15:17.595Z";
+export const lastUpdated = "2025-10-07T22:20:12.672Z";
 export const generatedBy = "menu-persist-api";
