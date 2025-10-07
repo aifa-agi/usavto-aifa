@@ -4726,12 +4726,11 @@ export const contentData = {
         "keywords": [
           "Как работает ЭПЛ в системе USAUTO"
         ]
-<<<<<<< HEAD
       },
       {
-        "id": "fkbrjonjcki7at8i441ois60",
-        "title": "12345qwerty",
-        "href": "/epl/12345qwerty",
+        "id": "maoz959agkdx1l52v9g4ibjv",
+        "title": "4fef",
+        "href": "/epl/4fef",
         "roles": [
           "guest"
         ],
@@ -5067,18 +5066,16 @@ export const contentData = {
         "isAddedToPrompt": false,
         "isVectorConnected": false,
         "isChatSynchronized": false,
-        "createdAt": "2025-10-07T20:49:52.312Z",
-        "updatedAt": "2025-10-07T20:49:52.312Z",
+        "createdAt": "2025-10-07T22:08:28.308Z",
+        "updatedAt": "2025-10-07T22:08:28.308Z",
         "order": 3,
         "images": [
           {
-            "id": "be0vpb7ylp5ijkt6qz0x7e4d",
-            "alt": "1234r",
-            "href": "/app-images/bnwoxg40p3vx8zcn7la5d4ej.jpg"
+            "id": "nztskv530yy6ewohv5qwzujq",
+            "alt": "asfas",
+            "href": "/app-images/memj6amnt8ot2h5puctc17ig.jpg"
           }
         ]
-=======
->>>>>>> ba1456318f95188b9311c4cc0813b94bdc225115
       }
     ],
     "order": 8
@@ -7268,9 +7265,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-<<<<<<< HEAD
-export const lastUpdated = "2025-10-07T22:01:06.368Z";
-=======
-export const lastUpdated = "2025-10-07T21:38:22.150Z";
->>>>>>> ba1456318f95188b9311c4cc0813b94bdc225115
+export const lastUpdated = "2025-10-07T22:09:00.302Z";
 export const generatedBy = "menu-persist-api";
