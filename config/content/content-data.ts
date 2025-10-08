@@ -5787,7 +5787,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-08T14:30:24.434Z",
-        "updatedAt": "2025-10-08T22:11:25.314Z",
+        "updatedAt": "2025-10-08T22:20:02.381Z",
         "order": 1,
         "description": "Оптимизируйте предрейсовые медосмотры с телемедициной в USAUTO: быстро, удобно и экономично. Снижайте затраты и улучшайте безопасность водителей!",
         "images": [
@@ -5996,7 +5996,8 @@ export const contentData = {
                   "minWords": 80,
                   "maxWords": 140,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-2-2",
@@ -6015,7 +6016,8 @@ export const contentData = {
                   "minWords": 5,
                   "maxWords": 15,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-2-3",
@@ -6050,7 +6052,8 @@ export const contentData = {
                       "minWords": 75,
                       "maxWords": 130,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "ul-2-3-2",
@@ -6069,7 +6072,8 @@ export const contentData = {
                       "minWords": 50,
                       "maxWords": 85,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "p-2-3-3",
@@ -6087,7 +6091,8 @@ export const contentData = {
                       "minWords": 65,
                       "maxWords": 115,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "code-2-3-4",
@@ -6106,9 +6111,11 @@ export const contentData = {
                       "minWords": 20,
                       "maxWords": 45,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "h3-2-4",
@@ -6143,7 +6150,8 @@ export const contentData = {
                       "minWords": 70,
                       "maxWords": 120,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "table-2-4-2",
@@ -6162,7 +6170,8 @@ export const contentData = {
                       "minWords": 90,
                       "maxWords": 150,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "p-2-4-3",
@@ -6180,7 +6189,8 @@ export const contentData = {
                       "minWords": 5,
                       "maxWords": 15,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "h4-2-4-4",
@@ -6214,7 +6224,8 @@ export const contentData = {
                           "minWords": 60,
                           "maxWords": 105,
                           "actualContent": ""
-                        }
+                        },
+                        "status": "checked"
                       },
                       {
                         "id": "ol-2-4-4-2",
@@ -6233,7 +6244,8 @@ export const contentData = {
                           "minWords": 45,
                           "maxWords": 75,
                           "actualContent": ""
-                        }
+                        },
+                        "status": "checked"
                       },
                       {
                         "id": "blockquote-2-4-4-3",
@@ -6252,13 +6264,17 @@ export const contentData = {
                           "minWords": 20,
                           "maxWords": 40,
                           "actualContent": ""
-                        }
+                        },
+                        "status": "checked"
                       }
-                    ]
+                    ],
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "FAQ",
@@ -8596,5 +8612,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-08T22:20:03.991Z";
+export const lastUpdated = "2025-10-08T22:20:11.157Z";
 export const generatedBy = "menu-persist-api";
