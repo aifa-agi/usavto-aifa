@@ -15,7 +15,7 @@ export default function NotFound() {
         className="pointer-events-none mb-5 mt-6 dark:invert"
       />
       <p className="text-balance px-4 text-center text-2xl font-medium">
-        Страница не найдена. Вернуться на главную страницу.{" "}
+        Return to home pages{" "}
         {/* Using translation function */}
         <Link
           href="/"

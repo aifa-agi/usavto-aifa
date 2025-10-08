@@ -6,6 +6,7 @@ import EditableNavBar from "./admin-flow/editable-nav-bar";
 // check
 export async function NavBar() {
   const session = await auth();
+  console.log("NavBar session ", session)
   const user = session?.user;
   const isPrivilegedUser =
     user?.type && ["architect", "editor", "admin"].includes(user.type);

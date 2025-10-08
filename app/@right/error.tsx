@@ -5,12 +5,12 @@
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 
-interface LeftErrorProps {
+interface RightErrorProps {
   error: Error & { digest?: string }; // Error object with optional digest property
   reset: () => void;
 }
 
-export default function LeftError({ error, reset }: LeftErrorProps) {
+export default function RightError({ error, reset }: RightErrorProps) {
   const router = useRouter();
 
   return (

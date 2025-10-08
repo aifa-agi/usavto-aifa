@@ -11,12 +11,12 @@ export default async function AdminLayout({
   children: React.ReactNode;
 }) {
   const session = await auth();
-
+  console.log("AdminLayout session ", session)
   const allowed: UserType[] = [UserType.admin, UserType.architect];
-
-  if (!session || !allowed.includes(session.user.type)) {
-    redirect("/login");
-  }
+  console.log("AdminLayout allowed", allowed)
+  // if (!session || !allowed.includes(session.user.type)) {
+  //   redirect("/login");
+  // }
 
   return <>{children}</>;
 }
