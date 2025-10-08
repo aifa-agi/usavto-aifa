@@ -36,6 +36,8 @@ type GenerateFieldRequestBody = {
 /**
  * POST handler for field generation streaming
  */
+
+
 export async function POST(req: Request) {
   try {
     // Parse request body
