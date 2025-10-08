@@ -296,7 +296,6 @@ function ImageCard({ image, index, canEdit }: ImageCardProps) {
                 {altText}
             </p>
 
-            {/* Future: Image metadata (size, format, upload date, etc.) */}
         </div>
     );
 }
