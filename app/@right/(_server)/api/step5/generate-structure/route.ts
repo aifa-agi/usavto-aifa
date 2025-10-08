@@ -18,7 +18,7 @@ export async function POST(req: Request) {
       system: string;
       prompt: string;
       model?: string;
-    };
+    };""
 
     // Validation
     if (!system || typeof system !== "string") {

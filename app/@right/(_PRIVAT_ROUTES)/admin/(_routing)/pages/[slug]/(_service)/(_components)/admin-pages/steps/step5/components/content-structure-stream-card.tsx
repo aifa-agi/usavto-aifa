@@ -1,16 +1,6 @@
-// File: content-structure-stream-card.tsx
 "use client";
 
-/**
- * ContentStructureStreamCard:
- * - Handles streaming content structure generation following Step 8 architecture
- * - Clean separation of streaming logic from main component
- * - Uses optimized useStep5Stream hook with proper error handling
- * - Provides streaming controls and real-time output display
- */
-
-import * as React from "react";
-import { Textarea } from "@/components/ui/textarea";
+import React, { useState, useRef, useEffect, useCallback } from "react";
 import { LoadingSpinner } from "@/components/ui/loading-spinner";
 import { CheckCircle, Zap } from "lucide-react";
 import { toast } from "sonner";
@@ -29,27 +19,57 @@ export function ContentStructureStreamCard({
     pageData,
     onStreamCompleted
 }: ContentStructureStreamCardProps) {
-    // Streaming hook for live preview
     const { streamText, isStreaming, startStreaming, cancel } = useStep5Stream();
     const { saveDraftContentStructure } = useStep5Save();
 
-    // Local state for streaming output
-    const [localPreview, setLocalPreview] = React.useState<string>("");
-    const [generatedStructure, setGeneratedStructure] = React.useState<RootContentStructure[]>([]);
-    const [streamCompleted, setStreamCompleted] = React.useState<boolean>(false);
+    const [localPreview, setLocalPreview] = useState<string>("");
+    const [generatedStructure, setGeneratedStructure] = useState<RootContentStructure[]>([]);
+    const [streamCompleted, setStreamCompleted] = useState<boolean>(false);
+
+    const streamOutputRef = useRef<HTMLDivElement>(null);
+
+    // ✅ ИСПРАВЛЕНО: Дебаунс автоскролла с requestAnimationFrame
+    const scrollToBottomRef = useRef<number | null>(null);
+
+    const scrollToBottom = useCallback(() => {
+        // Отменяем предыдущий запланированный скролл
+        if (scrollToBottomRef.current !== null) {
+            cancelAnimationFrame(scrollToBottomRef.current);
+        }
+
+        // Планируем скролл на следующий frame (избегаем перегрузки)
+        scrollToBottomRef.current = requestAnimationFrame(() => {
+            if (streamOutputRef.current) {
+                streamOutputRef.current.scrollTop = streamOutputRef.current.scrollHeight;
+            }
+        });
+    }, []);
+
+    // ✅ ИСПРАВЛЕНО: Скролл только когда streaming активен И контент изменился
+    useEffect(() => {
+        if (isStreaming && localPreview) {
+            scrollToBottom();
+        }
+
+        // Cleanup: отменяем запланированный скролл при unmount
+        return () => {
+            if (scrollToBottomRef.current !== null) {
+                cancelAnimationFrame(scrollToBottomRef.current);
+            }
+        };
+    }, [isStreaming, localPreview, scrollToBottom]);
 
     // Keep the textarea in sync with the streaming completion
-    React.useEffect(() => {
+    useEffect(() => {
         if (isStreaming) {
             setLocalPreview(streamText ?? "");
         }
     }, [isStreaming, streamText]);
 
     // Watch for streaming completion and parse JSON
-    React.useEffect(() => {
+    useEffect(() => {
         if (!isStreaming && streamText && streamText.trim().length > 0) {
             try {
-                // Try to parse JSON from streamed text
                 const parsed = JSON.parse(streamText);
                 if (Array.isArray(parsed)) {
                     setGeneratedStructure(parsed);
@@ -58,18 +78,21 @@ export function ContentStructureStreamCard({
                 }
             } catch (e) {
                 console.warn("Failed to parse streamed JSON:", e);
-                // If not JSON, treat as raw text and create basic structure
                 setStreamCompleted(true);
             }
         }
     }, [isStreaming, streamText, onStreamCompleted]);
 
-    // Chip-style classes aligned with Step 8 architecture
+    // Chip-style classes
     const chipBase = "inline-flex items-center truncate rounded-md border px-3 py-1.5 text-xs font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background";
-    const tonePrimary = "border-violet-500 bg-violet-500/15 text-white hover:bg-violet-500/20 focus-visible:ring-violet-500";
+
+    // ✅ ИСПРАВЛЕНО: Темный текст в светлой теме, светлый в темной
+    const tonePrimary = "border-violet-500 bg-violet-500/15 text-black dark:text-white hover:bg-violet-500/20 focus-visible:ring-violet-500";
+
     const toneNeutral = "border-border bg-background/60 text-muted-foreground hover:bg-background/80 dark:bg-background/30 focus-visible:ring-neutral-500";
     const toneDisabled = "opacity-50 cursor-not-allowed";
     const toneCancel = "border-border bg-background/60 text-muted-foreground hover:bg-background/70 dark:bg-background/30 focus-visible:ring-neutral-500";
+    const toneSave = "border-orange-500 bg-orange-500 text-black dark:text-white hover:bg-orange-600 focus-visible:ring-orange-500 animate-pulse-strong font-semibold shadow-lg";
 
     const onStream = async () => {
         if (!systemInstruction) {
@@ -88,16 +111,14 @@ export function ContentStructureStreamCard({
             return;
         }
 
-        // Clear preview and reset state
         setLocalPreview("");
         setStreamCompleted(false);
         setGeneratedStructure([]);
 
-        // Start streaming
         await startStreaming({
             system: systemInstruction,
             prompt: "Generate enhanced content structure with selfPrompt fields for recursive generation.",
-            model: "gpt-4.1-mini",
+            model: "gpt-4o-mini",
         });
     };
 
@@ -133,30 +154,22 @@ export function ContentStructureStreamCard({
 
     return (
         <div className="rounded-md border p-4">
-            {/* Single-row chip buttons with horizontal scroll wrapped by custom sidebar styling */}
             <div className="custom-sidebar overflow-x-auto">
                 <div className="flex min-w-max items-center gap-2">
-                    {/* Stream Generate button */}
-                    <button
-                        type="button"
-                        onClick={onStream}
-                        disabled={streamDisabled}
-                        className={[chipBase, tonePrimary, streamDisabled ? toneDisabled : ""].join(" ")}
-                    >
-                        {isStreaming ? (
-                            <>
-                                <LoadingSpinner className="size-4 mr-2" />
-                                Generating...
-                            </>
-                        ) : (
-                            <>
-                                <Zap className="size-4 mr-2" />
-                                Start Structure Generation
-                            </>
-                        )}
-                    </button>
+                    {/* Start Generation button - ✅ Темный/светлый текст */}
+                    {!isStreaming && !streamCompleted && (
+                        <button
+                            type="button"
+                            onClick={onStream}
+                            disabled={streamDisabled}
+                            className={[chipBase, tonePrimary, streamDisabled ? toneDisabled : ""].join(" ")}
+                        >
+                            <Zap className="size-4 mr-2" />
+                            Start Structure Generation
+                        </button>
+                    )}
 
-                    {/* Cancel button (only visible when streaming) */}
+                    {/* Cancel button */}
                     {isStreaming && (
                         <button
                             type="button"
@@ -167,12 +180,12 @@ export function ContentStructureStreamCard({
                         </button>
                     )}
 
-                    {/* Save button (only visible when completed) */}
+                    {/* Save button - Пульсирующая оранжевая */}
                     {streamCompleted && (
                         <button
                             type="button"
                             onClick={onSave}
-                            className={[chipBase, tonePrimary].join(" ")}
+                            className={[chipBase, toneSave].join(" ")}
                         >
                             <CheckCircle className="size-4 mr-2" />
                             Save Content Structure
@@ -190,9 +203,12 @@ export function ContentStructureStreamCard({
                 </div>
             </div>
 
-            {/* Streaming output area */}
+            {/* Streaming output */}
             <div className="mt-3">
-                <div className="w-full h-96 p-4 text-sm font-mono bg-white text-black border border-input rounded-lg overflow-auto">
+                <div
+                    ref={streamOutputRef}
+                    className="w-full h-96 p-4 text-sm font-mono bg-white text-black border border-input rounded-lg overflow-auto"
+                >
                     {isStreaming && (
                         <div className="flex items-center gap-2 text-blue-600 mb-2">
                             <LoadingSpinner className="size-4" />
@@ -206,10 +222,11 @@ export function ContentStructureStreamCard({
                         <div className="text-gray-400 italic">Content structure will appear here during generation...</div>
                     )}
 
+                    {/* Зеленая плашка успешного завершения */}
                     {streamCompleted && generatedStructure.length > 0 && (
                         <div className="mt-4 p-3 bg-green-50 rounded border border-green-200">
                             <div className="text-green-800 text-xs font-medium">
-                                Structure generation completed! {generatedStructure.length} elements ready to save.
+                                ✓ Structure generation completed! {generatedStructure.length} elements ready to save.
                             </div>
                         </div>
                     )}

@@ -5787,7 +5787,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-08T14:30:24.434Z",
-        "updatedAt": "2025-10-08T17:44:19.119Z",
+        "updatedAt": "2025-10-08T22:11:25.314Z",
         "order": 1,
         "description": "Оптимизируйте предрейсовые медосмотры с телемедициной в USAUTO: быстро, удобно и экономично. Снижайте затраты и улучшайте безопасность водителей!",
         "images": [
@@ -5806,48 +5806,49 @@ export const contentData = {
         "taxonomy": "Информационно-коммерческий контент, относящийся к категории \"Коммерческий транспорт > Медицинское обслуживание > Предрейсовые осмотры > Телемедицинские решения\". Страница является кластерным контентом, поддерживающим основное пилларное содержание о телемедицинских решениях в транспортной сфере, и обеспечивает связь с более специализированными материалами о технологиях и их применении.",
         "attention": "Создайте захватывающий заголовок с конкретным предложением об экономии до 67% на предрейсовых медосмотрах благодаря телемедицине, сопровождаемый динамичным изображением водителя, проходящего осмотр за 2 минуты. На первом экране разместите интерактивный калькулятор, позволяющий пользователям быстро оценить потенциальную экономию и время, с помощью которого можно установить связь с медицинским специалистом. При прокрутке страницы внедрите последовательное раскрытие информации о преимуществах, включая видеоотзывы клиентов с конкретными результатами, такими как сокращение времени осмотра до 90 секунд и снижение затрат на медицинский персонал.",
         "audiences": "Эта страница предназначена для руководителей и специалистов по охране труда в транспортных и логистических компаниях, которые стремятся оптимизировать процесс предрейсовых медицинских осмотров водителей. Они сталкиваются с высокими затратами на традиционные медосмотры и необходимостью соблюдения законодательства, и заинтересованы в инновационных решениях, которые позволят сократить время и стоимость процедур, обеспечивая при этом высокое качество медицинской оценки.",
+        "isPreviewComplited": false,
         "draftContentStructure": [
           {
             "id": "h2-1",
             "tag": "h2",
             "classification": "Guide",
             "keywords": [
-              "телемедицина",
+              "Телемедицина",
               "предрейсовые медосмотры",
-              "оптимизация",
-              "экономия времени",
-              "безопасность водителей"
+              "оптимизация медосмотров водителей",
+              "телемедицинские технологии предрейсовых осмотров"
             ],
-            "taxonomy": "Введение в телемедицину для предрейсовых осмотров",
-            "attention": "Понимание основ телемедицины поможет быстро оценить её преимущества для бизнеса.",
-            "intent": "Объяснить, что такое телемедицина и почему она важна для предрейсовых медосмотров водителей.",
-            "audiences": "Руководители транспортных компаний, специалисты по охране труда, менеджеры по безопасности.",
-            "selfPrompt": "Создайте вводный раздел с заголовком уровня 2, объясняющий понятие телемедицины и её роль в предрейсовых медосмотрах. Используйте дружелюбный и профессиональный стиль, избегайте технических терминов без объяснений. Включите 3 абзаца и цитату, подчёркивающую важность инноваций в медосмотрах. Не используйте списки или таблицы. • также следует учитывать пользовательские настройки, сделанные ко всей странице: writing-style:{title:Conversational, description:Friendly, informal, like talking to a friend}, content-format:{title:Professional, description:Business-appropriate, formal tone}, custom requirements and specifications:{—} •",
+            "taxonomy": "Guide",
+            "attention": "Узнайте, как телемедицина может значительно ускорить и упростить предрейсовые медосмотры, снижая затраты и повышая безопасность.",
+            "intent": "Объяснить преимущества и возможности телемедицины для оптимизации предрейсовых медицинских осмотров водителей, предоставляя подробный обзор технологии и ее влияния на бизнес-процессы.",
+            "audiences": "Руководители и специалисты по охране труда транспортных компаний, заинтересованные в инновационных решениях для сокращения времени и стоимости медосмотров, уровень: средний, боль: высокая стоимость и длительность традиционных осмотров.",
+            "selfPrompt": "---\nCONTEXT: Generate h2 in section \"\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Представить общую картину и преимущества использования телемедицины для предрейсовых медосмотров, заинтересовать целевую аудиторию и подготовить почву для детального раскрытия темы.\n\nAUDIENCE: Руководители и специалисты по охране труда транспортных компаний | Level: intermediate | Pain points: высокая стоимость и длительность традиционных медосмотров, необходимость соблюдения законодательства\n\nKEYWORDS: Naturally integrate: Телемедицина, предрейсовые медосмотры, оптимизация медосмотров водителей, телемедицинские технологии предрейсовых осмотров\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for h2\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Use facts from Internal KB: Ускорение предрейсовых медицинских осмотров\n- Apply competitive insights from External KB: Технологии телемедицины могут сократить стоимость предрейсовых осмотров на 67%\n\nQUALITY CRITERIA:\n- Actionable (specific actions/recommendations)\n- Specific (avoid generic statements)\n- Data-backed (use facts/statistics when available)\n- No fluff (eliminate filler content)\n\nMANDATORY:\n- Highlight экономия времени и денег\n- Упомянуть интеграцию с оборудованием и удалённый контроль\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n- Generating \"filler\" without value\n- Copying text from knowledge bases verbatim\n---\n\nThis h2 selfPrompt MUST end with this exact suffix.",
             "designDescription": "",
             "connectedDesignSectionId": "",
             "additionalData": {
-              "minWords": 1300,
-              "maxWords": 1500,
-              "actualContent": "need generate helpful content"
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
             },
             "realContentStructure": [
               {
                 "id": "p-1-1",
                 "tag": "p",
                 "keywords": [
-                  "телемедицина",
-                  "медосмотры",
-                  "транспорт"
+                  "Телемедицина",
+                  "предрейсовые осмотры",
+                  "ускорение медосмотров",
+                  "удалённые медицинские проверки"
                 ],
-                "taxonomy": "Определение телемедицины",
-                "attention": "Объяснение базового понятия для понимания темы.",
-                "intent": "Дать определение телемедицине и её применению в транспортной сфере.",
-                "audiences": "Руководители и специалисты по охране труда.",
-                "selfPrompt": "Напишите абзац, раскрывающий определение телемедицины и её значение для предрейсовых осмотров. Используйте простой язык, избегайте сложных терминов. Объём 120-250 слов.",
+                "taxonomy": "Supporting",
+                "attention": "Поймите, как телемедицина сокращает время проведения предрейсовых осмотров и повышает эффективность работы автопарка.",
+                "intent": "Объяснить, каким образом телемедицина ускоряет процесс предрейсовых медицинских осмотров, снижая простой транспорта и повышая производительность.",
+                "audiences": "Специалисты по охране труда и руководители транспортных компаний | Level: intermediate | Pain points: длительность осмотров, простой транспорта",
+                "selfPrompt": "---\nCONTEXT: Generate p (body) in section \"h2-1\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Объяснить преимущества телемедицины в ускорении предрейсовых медицинских осмотров, показать конкретные выгоды для бизнеса.\n\nAUDIENCE: Специалисты по охране труда и руководители транспортных компаний | Level: intermediate | Pain points: длительность осмотров, простой транспорта\n\nKEYWORDS: Naturally integrate: Телемедицина, предрейсовые осмотры, ускорение медосмотров, удалённые медицинские проверки\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 90, maxWords: 160 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Ускорение предрейсовых медицинских осмотров\n- External KB: Скорость медосмотров возрастает в 5 раз\n\nQUALITY CRITERIA:\n- Specific, data-backed\n- Clear explanation\n\nMANDATORY:\n- Упомянуть дистанционный контроль и сертифицированное оборудование\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n- Copying text verbatim\n---",
                 "additionalData": {
-                  "minWords": 120,
-                  "maxWords": 250,
-                  "actualContent": "need generate helpful content"
+                  "minWords": 90,
+                  "maxWords": 160,
+                  "actualContent": ""
                 },
                 "status": "checked"
               },
@@ -5855,19 +5856,20 @@ export const contentData = {
                 "id": "p-1-2",
                 "tag": "p",
                 "keywords": [
-                  "преимущества",
-                  "телемедицина",
-                  "экономия времени"
+                  "экономия затрат",
+                  "телемедицина для водителей",
+                  "снижение расходов на медосмотры",
+                  "эффективность медосмотров"
                 ],
-                "taxonomy": "Преимущества телемедицины",
-                "attention": "Показывает выгоды для бизнеса и водителей.",
-                "intent": "Описать основные преимущества использования телемедицины для предрейсовых осмотров.",
-                "audiences": "Менеджеры по безопасности, специалисты по охране труда.",
-                "selfPrompt": "Создайте абзац, описывающий ключевые преимущества телемедицины: экономия времени, снижение затрат, удобство для водителей. Объём 80-180 слов.",
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, как телемедицина помогает снизить затраты на предрейсовые медосмотры и повысить безопасность водителей.",
+                "intent": "Показать экономическую выгоду от внедрения телемедицины в процесс предрейсовых осмотров, акцентируя внимание на снижении затрат и повышении качества контроля.",
+                "audiences": "Руководители транспортных компаний и специалисты по охране труда | Level: intermediate | Pain points: высокие расходы на традиционные медосмотры, необходимость контроля качества",
+                "selfPrompt": "---\nCONTEXT: Generate p (body) in section \"h2-1\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Раскрыть экономические преимущества телемедицины для предрейсовых медосмотров, показать снижение затрат и повышение безопасности.\n\nAUDIENCE: Руководители транспортных компаний и специалисты по охране труда | Level: intermediate | Pain points: высокие расходы на традиционные медосмотры, необходимость контроля качества\n\nKEYWORDS: Naturally integrate: экономия затрат, телемедицина для водителей, снижение расходов на медосмотры, эффективность медосмотров\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 70, maxWords: 130 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Ускорение предрейсовых медицинских осмотров\n- External KB: Снижение стоимости осмотров на 67%\n\nQUALITY CRITERIA:\n- Data-backed\n- Specific\n\nMANDATORY:\n- Упомянуть экономию и улучшение безопасности\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n- Copying text verbatim\n---",
                 "additionalData": {
-                  "minWords": 80,
-                  "maxWords": 180,
-                  "actualContent": "need generate helpful content"
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
                 },
                 "status": "checked"
               },
@@ -5875,19 +5877,19 @@ export const contentData = {
                 "id": "p-1-3",
                 "tag": "p",
                 "keywords": [
-                  "технологии",
-                  "инновации",
-                  "медосмотры"
+                  "быстрый медосмотр",
+                  "телемедицина время осмотра",
+                  "эффективность предрейсовых осмотров"
                 ],
-                "taxonomy": "Важность инноваций",
-                "attention": "Подчёркивает необходимость внедрения новых технологий.",
-                "intent": "Кратко отметить роль современных технологий в улучшении медосмотров.",
-                "audiences": "Руководители и специалисты по охране труда.",
-                "selfPrompt": "Напишите короткий абзац (5-15 слов), подчёркивающий важность инноваций в медосмотрах с помощью телемедицины.",
+                "taxonomy": "Supporting",
+                "attention": "Кратко подчеркните скорость и удобство телемедицинских предрейсовых осмотров.",
+                "intent": "Дать короткое, но ёмкое утверждение о быстроте и удобстве телемедицинских осмотров для водителей.\n",
+                "audiences": "Руководители и специалисты по охране труда | Level: beginner | Pain points: длительность осмотров\n",
+                "selfPrompt": "---\nCONTEXT: Generate short p (transition) in section \"h2-1\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Подчеркнуть скорость и удобство телемедицинских предрейсовых осмотров в краткой форме.\n\nAUDIENCE: Руководители и специалисты по охране труда | Level: beginner | Pain points: длительность осмотров\n\nKEYWORDS: Naturally integrate: быстрый медосмотр, телемедицина время осмотра, эффективность предрейсовых осмотров\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 5, maxWords: 15 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Ускорение предрейсовых медицинских осмотров\n\nQUALITY CRITERIA:\n- Кратко и ёмко\n\nMANDATORY:\n- Упомянуть скорость осмотра\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
                 "additionalData": {
                   "minWords": 5,
                   "maxWords": 15,
-                  "actualContent": "need generate helpful content"
+                  "actualContent": ""
                 },
                 "status": "checked"
               },
@@ -5895,19 +5897,59 @@ export const contentData = {
                 "id": "blockquote-1-4",
                 "tag": "blockquote",
                 "keywords": [
-                  "цитата",
-                  "инновации",
-                  "телемедицина"
+                  "телемедицина эффективность",
+                  "сокращение времени осмотра",
+                  "отзывы клиентов телемедицина"
                 ],
-                "taxonomy": "Мотивационная цитата",
-                "attention": "Вдохновляет на внедрение телемедицины.",
-                "intent": "Представить цитату, подчёркивающую важность инноваций в медосмотрах.",
-                "audiences": "Руководители и специалисты по охране труда.",
-                "selfPrompt": "Создайте цитату, которая мотивирует использовать телемедицинские решения для предрейсовых осмотров. Объём 25-50 слов.",
+                "taxonomy": "Supporting",
+                "attention": "Приведите убедительный отзыв или цитату, подтверждающую эффективность телемедицины в предрейсовых осмотрах.",
+                "intent": "Подкрепить преимущества телемедицины реальным отзывом или цитатой, демонстрирующей сокращение времени и повышение качества осмотров.",
+                "audiences": "Руководители и специалисты по охране труда | Level: intermediate | Pain points: сомнения в эффективности новых технологий",
+                "selfPrompt": "---\nCONTEXT: Generate blockquote in section \"h2-1\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Подкрепить преимущества телемедицины отзывом или цитатой, демонстрирующей эффективность и экономию времени.\n\nAUDIENCE: Руководители и специалисты по охране труда | Level: intermediate | Pain points: сомнения в эффективности новых технологий\n\nKEYWORDS: Naturally integrate: телемедицина эффективность, сокращение времени осмотра, отзывы клиентов телемедицина\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 25, maxWords: 45 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for blockquote\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- External KB: Отзывы клиентов с сокращением времени осмотра до 90 секунд\n\nQUALITY CRITERIA:\n- Реальный кейс или цитата\n- Убедительность\n\nMANDATORY:\n- Упомянуть конкретные результаты\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n- Копирование текста дословно\n---",
                 "additionalData": {
                   "minWords": 25,
-                  "maxWords": 50,
-                  "actualContent": "need generate helpful content"
+                  "maxWords": 45,
+                  "actualContent": ""
+                },
+                "status": "checked"
+              },
+              {
+                "id": "p-1-5",
+                "tag": "p",
+                "keywords": [
+                  "удобство телемедицины",
+                  "доступность медосмотров",
+                  "сокращение времени процедуры"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Расскажите о том, как телемедицина делает предрейсовые медосмотры более доступными и удобными для водителей и компаний.",
+                "intent": "Показать удобство и доступность телемедицинских осмотров, а также их влияние на сокращение времени процедуры и повышение комфорта для водителей.",
+                "audiences": "Руководители транспортных компаний и специалисты по охране труда | Level: intermediate | Pain points: неудобство и длительность традиционных осмотров",
+                "selfPrompt": "---\nCONTEXT: Generate p (body) in section \"h2-1\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Показать удобство и доступность телемедицинских предрейсовых осмотров, а также сокращение времени процедуры.\n\nAUDIENCE: Руководители транспортных компаний и специалисты по охране труда | Level: intermediate | Pain points: неудобство и длительность традиционных осмотров\n\nKEYWORDS: Naturally integrate: удобство телемедицины, доступность медосмотров, сокращение времени процедуры\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 60, maxWords: 110 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Ускорение предрейсовых медицинских осмотров\n\nQUALITY CRITERIA:\n- Specific, actionable\n- Data-backed\n\nMANDATORY:\n- Упомянуть удобство и доступность\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 110,
+                  "actualContent": ""
+                },
+                "status": "checked"
+              },
+              {
+                "id": "ul-1-6",
+                "tag": "ul",
+                "keywords": [
+                  "преимущества телемедицины",
+                  "телемедицинские функции",
+                  "особенности предрейсовых осмотров"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Изучите ключевые преимущества телемедицины для предрейсовых медосмотров в удобном списке.",
+                "intent": "Представить основные преимущества и функции телемедицины в формате списка для быстрого восприятия и сравнения с традиционными методами.",
+                "audiences": "Руководители и специалисты по охране труда | Level: beginner/intermediate | Pain points: необходимость быстрого понимания преимуществ телемедицины",
+                "selfPrompt": "---\nCONTEXT: Generate ul with 4-6 items in section \"h2-1\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Представить ключевые преимущества телемедицины для предрейсовых медосмотров в удобном формате списка.\n\nAUDIENCE: Руководители и специалисты по охране труда | Level: beginner/intermediate | Pain points: необходимость быстрого понимания преимуществ телемедицины\n\nKEYWORDS: Naturally integrate: преимущества телемедицины, телемедицинские функции, особенности предрейсовых осмотров\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 40, maxWords: 70 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for unordered list\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Ускорение предрейсовых медицинских осмотров\n- External KB: Экономия до 67%, скорость осмотра 2 минуты\n\nQUALITY CRITERIA:\n- Конкретные пункты\n- Легко читаемые\n\nMANDATORY:\n- Включить экономию времени и денег, удобство, законность\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
+                "additionalData": {
+                  "minWords": 40,
+                  "maxWords": 70,
+                  "actualContent": ""
                 },
                 "status": "checked"
               }
@@ -5917,1437 +5959,460 @@ export const contentData = {
           {
             "id": "h2-2",
             "tag": "h2",
-            "classification": "HowTo",
+            "classification": "Guide",
             "keywords": [
-              "законодательство",
-              "телемедицина",
-              "регулирование",
-              "медосмотры",
-              "транспорт"
+              "Законодательное соответствие телемедицины",
+              "безопасность предрейсовых осмотров",
+              "нормативы телемедицины",
+              "биометрическая идентификация водителей"
             ],
-            "taxonomy": "Правовые аспекты телемедицины",
-            "attention": "Знание законодательства обеспечивает законность и безопасность внедрения.",
-            "intent": "Дать подробный обзор законодательных требований и нормативов, регулирующих телемедицину в предрейсовых осмотрах.",
-            "audiences": "Юристы, руководители транспортных компаний, специалисты по охране труда.",
-            "selfPrompt": "Подготовьте подробный раздел с заголовком уровня 2, раскрывающий правовые аспекты использования телемедицины для предрейсовых медосмотров. Включите вводный абзац, два подзаголовка уровня 3 с соответствующими абзацами и таблицей. Используйте формальный и профессиональный стиль, избегайте излишне сложных терминов. • также следует учитывать пользовательские настройки, сделанные ко всей странице: writing-style:{title:Conversational, description:Friendly, informal, like talking to a friend}, content-format:{title:Professional, description:Business-appropriate, formal tone}, custom requirements and specifications:{—} •",
+            "taxonomy": "Guide",
+            "attention": "Узнайте, как телемедицина в USAUTO полностью соответствует законодательству и обеспечивает безопасность предрейсовых медосмотров.",
+            "intent": "Дать подробный обзор нормативных требований и мер безопасности, обеспечиваемых телемедицинскими решениями для предрейсовых осмотров, чтобы убедить пользователей в легитимности и надежности технологии.",
+            "audiences": "Руководители и специалисты по охране труда транспортных компаний, юристы и compliance-специалисты | Level: expert | Pain points: соблюдение законодательства, безопасность данных и процедур",
+            "selfPrompt": "---\nCONTEXT: Generate h2 in section \"\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Подробно раскрыть законодательное соответствие и меры безопасности телемедицины в предрейсовых медосмотрах.\n\nAUDIENCE: Руководители и специалисты по охране труда транспортных компаний, юристы и compliance-специалисты | Level: expert | Pain points: соблюдение законодательства, безопасность данных и процедур\n\nKEYWORDS: Naturally integrate: Законодательное соответствие телемедицины, безопасность предрейсовых осмотров, нормативы телемедицины, биометрическая идентификация водителей\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 550, maxWords: 750 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for h2\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n- External KB: Описание нормативов и требований\n\nQUALITY CRITERIA:\n- Data-backed\n- Specific\n- Actionable\n\nMANDATORY:\n- Упомянуть биометрическую идентификацию и видеофиксацию\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n- Копирование текста дословно\n---\n\nThis h2 selfPrompt MUST end with this exact suffix.",
             "designDescription": "",
             "connectedDesignSectionId": "",
             "additionalData": {
-              "minWords": 1300,
-              "maxWords": 1500,
-              "actualContent": "need generate helpful content"
+              "minWords": 550,
+              "maxWords": 750,
+              "actualContent": ""
             },
             "realContentStructure": [
               {
                 "id": "p-2-1",
                 "tag": "p",
                 "keywords": [
-                  "закон",
-                  "телемедицина",
-                  "регулирование"
+                  "законодательство телемедицины",
+                  "нормативные требования",
+                  "официальная регистрация данных"
                 ],
-                "taxonomy": "Введение в законодательство",
-                "attention": "Обеспечивает понимание нормативной базы.",
-                "intent": "Ввести читателя в тему правового регулирования телемедицины.",
-                "audiences": "Юристы, руководители, специалисты по охране труда.",
-                "selfPrompt": "Напишите абзац (100-200 слов), вводящий в тему законодательства, регулирующего телемедицину в предрейсовых осмотрах.",
+                "taxonomy": "Supporting",
+                "attention": "Поймите, какие законодательные нормы регулируют использование телемедицины в предрейсовых осмотрах и как USAUTO их соблюдает.",
+                "intent": "Объяснить нормативные требования к телемедицинским предрейсовым осмотрам и показать, как USAUTO обеспечивает их выполнение.",
+                "audiences": "Юристы, compliance-специалисты, руководители транспортных компаний | Level: expert | Pain points: соблюдение законодательства, легитимность процедур",
+                "selfPrompt": "---\nCONTEXT: Generate p (body) in section \"h2-2\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Объяснить нормативные требования к телемедицинским предрейсовым осмотрам и показать, как USAUTO их соблюдает.\n\nAUDIENCE: Юристы, compliance-специалисты, руководители транспортных компаний | Level: expert | Pain points: соблюдение законодательства, легитимность процедур\n\nKEYWORDS: Naturally integrate: законодательство телемедицины, нормативные требования, официальная регистрация данных\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 80, maxWords: 140 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n\nQUALITY CRITERIA:\n- Data-backed\n- Specific\n\nMANDATORY:\n- Упомянуть Федеральный налоговый приказ № ЕД-7-26/116@\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n- Копирование текста дословно\n---",
                 "additionalData": {
-                  "minWords": 100,
-                  "maxWords": 200,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
+                  "minWords": 80,
+                  "maxWords": 140,
+                  "actualContent": ""
+                }
               },
               {
-                "id": "h3-2-2",
-                "tag": "h3",
-                "classification": "Summary",
+                "id": "p-2-2",
+                "tag": "p",
                 "keywords": [
-                  "нормативы",
-                  "требования",
-                  "телемедицина"
+                  "безопасность данных",
+                  "видеофиксация осмотров",
+                  "биометрическая идентификация"
                 ],
-                "taxonomy": "Основные нормативные требования",
-                "attention": "Позволяет понять ключевые правила и стандарты.",
-                "intent": "Дать обзор основных нормативных требований к телемедицинским предрейсовым осмотрам.",
-                "audiences": "Юристы, специалисты по охране труда.",
-                "selfPrompt": "Создайте подзаголовок уровня 3 и три абзаца, а также таблицу с ключевыми нормативами и требованиями. Общий объём текста 200-300 слов, таблица 80-160 слов. Используйте формальный стиль.",
+                "taxonomy": "Supporting",
+                "attention": "Кратко подчеркните важность безопасности и контроля качества в телемедицинских осмотрах.",
+                "intent": "Дать краткое описание мер безопасности, таких как видеофиксация и биометрия, используемых в телемедицинских предрейсовых осмотрах.",
+                "audiences": "Руководители и специалисты по охране труда | Level: expert | Pain points: безопасность данных, предотвращение мошенничества",
+                "selfPrompt": "---\nCONTEXT: Generate short p (transition) in section \"h2-2\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Кратко описать меры безопасности и контроля качества в телемедицинских осмотрах.\n\nAUDIENCE: Руководители и специалисты по охране труда | Level: expert | Pain points: безопасность данных, предотвращение мошенничества\n\nKEYWORDS: Naturally integrate: безопасность данных, видеофиксация осмотров, биометрическая идентификация\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 5, maxWords: 15 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n\nQUALITY CRITERIA:\n- Кратко и ёмко\n\nMANDATORY:\n- Упомянуть видеофиксацию и биометрию\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
                 "additionalData": {
-                  "minWords": 400,
-                  "maxWords": 600,
-                  "actualContent": "need generate helpful content"
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-2-2-1",
-                    "tag": "p",
-                    "keywords": [
-                      "нормативы",
-                      "телемедицина",
-                      "безопасность"
-                    ],
-                    "taxonomy": "Обзор нормативов",
-                    "attention": "Обеспечивает понимание правил.",
-                    "intent": "Объяснить основные нормативы, влияющие на телемедицину.",
-                    "audiences": "Юристы, специалисты по охране труда.",
-                    "selfPrompt": "Напишите абзац (70-140 слов), описывающий основные нормативы в области телемедицины для транспорта.",
-                    "additionalData": {
-                      "minWords": 70,
-                      "maxWords": 140,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "p-2-2-2",
-                    "tag": "p",
-                    "keywords": [
-                      "требования",
-                      "медосмотры",
-                      "закон"
-                    ],
-                    "taxonomy": "Требования к процедурам",
-                    "attention": "Объясняет, как правильно проводить осмотры.",
-                    "intent": "Раскрыть требования к проведению предрейсовых медосмотров с использованием телемедицины.",
-                    "audiences": "Специалисты по охране труда, руководители.",
-                    "selfPrompt": "Создайте абзац (90-180 слов), описывающий требования к процедурам телемедицинских осмотров.",
-                    "additionalData": {
-                      "minWords": 90,
-                      "maxWords": 180,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "p-2-2-3",
-                    "tag": "p",
-                    "keywords": [
-                      "закон",
-                      "регулирование",
-                      "телемедицина"
-                    ],
-                    "taxonomy": "Юридические аспекты",
-                    "attention": "Подчёркивает важность соблюдения закона.",
-                    "intent": "Кратко отметить юридические аспекты и ответственность.",
-                    "audiences": "Юристы, руководители.",
-                    "selfPrompt": "Напишите короткий абзац (5-15 слов), подчёркивающий юридическую ответственность при использовании телемедицины.",
-                    "additionalData": {
-                      "minWords": 5,
-                      "maxWords": 15,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "table-2-2-4",
-                    "tag": "table",
-                    "keywords": [
-                      "таблица",
-                      "нормативы",
-                      "требования"
-                    ],
-                    "taxonomy": "Сводная таблица нормативов",
-                    "attention": "Упрощает восприятие ключевых правил.",
-                    "intent": "Создать таблицу с основными нормативами, требованиями и их описанием.",
-                    "audiences": "Юристы, специалисты по охране труда.",
-                    "selfPrompt": "Сформируйте таблицу с 3-5 строками, где каждая строка содержит название нормативного акта, ключевые требования и краткое описание. Объём описания 80-160 слов.",
-                    "additionalData": {
-                      "minWords": 80,
-                      "maxWords": 160,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
               },
               {
                 "id": "h3-2-3",
                 "tag": "h3",
-                "classification": "HowTo",
+                "classification": "Guide",
                 "keywords": [
-                  "внедрение",
-                  "телемедицина",
-                  "регулирование"
+                  "Федеральный налоговый приказ",
+                  "регулирование телемедицины",
+                  "нормативы предрейсовых осмотров",
+                  "законодательство телемедицины"
                 ],
-                "taxonomy": "Практические рекомендации по внедрению",
-                "attention": "Помогает правильно организовать процесс внедрения.",
-                "intent": "Предоставить рекомендации по соблюдению законодательства при внедрении телемедицины.",
-                "audiences": "Руководители, специалисты по охране труда.",
-                "selfPrompt": "Создайте подзаголовок уровня 3 и текст с рекомендациями, включая список и пример кода или шаблона. Общий объём 100-200 слов. Используйте формальный стиль.",
-                "additionalData": {
-                  "minWords": 400,
-                  "maxWords": 600,
-                  "actualContent": "need generate helpful content"
-                },
+                "taxonomy": "Guide",
+                "attention": "Изучите ключевые нормативные документы, регулирующие телемедицинские предрейсовые осмотры в России.",
+                "intent": "Дать подробный обзор Федерального налогового приказа и других нормативных актов, регулирующих телемедицинские предрейсовые осмотры, чтобы показать их законность и обязательность соблюдения.",
+                "audiences": "Юристы, compliance-специалисты, руководители транспортных компаний | Level: expert | Pain points: понимание нормативной базы, соблюдение законодательства",
+                "selfPrompt": "---\nCONTEXT: Generate h3 in section \"h2-2\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Подробно раскрыть нормативные документы и требования к телемедицинским предрейсовым осмотрам.\n\nAUDIENCE: Юристы, compliance-специалисты, руководители транспортных компаний | Level: expert | Pain points: понимание нормативной базы, соблюдение законодательства\n\nKEYWORDS: Naturally integrate: Федеральный налоговый приказ, регулирование телемедицины, нормативы предрейсовых осмотров, законодательство телемедицины\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 220, maxWords: 320 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for h3\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n- External KB: Описание нормативов\n\nQUALITY CRITERIA:\n- Data-backed\n- Specific\n- Actionable\n\nMANDATORY:\n- Упомянуть конкретные нормативные акты\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n- Копирование текста дословно\n---",
                 "realContentStructure": [
                   {
                     "id": "p-2-3-1",
                     "tag": "p",
                     "keywords": [
-                      "внедрение",
-                      "телемедицина",
-                      "советы"
+                      "Федеральный налоговый приказ",
+                      "регулирование телемедицины",
+                      "законодательство"
                     ],
-                    "taxonomy": "Введение в рекомендации",
-                    "attention": "Обеспечивает понимание процесса внедрения.",
-                    "intent": "Ввести читателя в тему практических рекомендаций.",
-                    "audiences": "Руководители, специалисты по охране труда.",
-                    "selfPrompt": "Напишите абзац (80-160 слов), вводящий в тему рекомендаций по внедрению телемедицины.",
+                    "taxonomy": "Supporting",
+                    "attention": "Поймите, как Федеральный налоговый приказ регулирует телемедицинские предрейсовые осмотры.",
+                    "intent": "Объяснить роль Федерального налогового приказа № ЕД-7-26/116@ в регулировании телемедицины для предрейсовых осмотров.",
+                    "audiences": "Юристы и compliance-специалисты | Level: expert | Pain points: нормативное регулирование телемедицины",
+                    "selfPrompt": "---\nCONTEXT: Generate p (body) in section \"h3-2-3\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Объяснить роль Федерального налогового приказа № ЕД-7-26/116@ в регулировании телемедицины.\n\nAUDIENCE: Юристы и compliance-специалисты | Level: expert | Pain points: нормативное регулирование телемедицины\n\nKEYWORDS: Naturally integrate: Федеральный налоговый приказ, регулирование телемедицины, законодательство\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 75, maxWords: 130 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n\nQUALITY CRITERIA:\n- Data-backed\n- Specific\n\nMANDATORY:\n- Упомянуть приказ и его требования\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n- Копирование текста дословно\n---",
                     "additionalData": {
-                      "minWords": 80,
-                      "maxWords": 160,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
+                      "minWords": 75,
+                      "maxWords": 130,
+                      "actualContent": ""
+                    }
                   },
                   {
                     "id": "ul-2-3-2",
                     "tag": "ul",
                     "keywords": [
-                      "рекомендации",
-                      "внедрение",
-                      "телемедицина"
+                      "требования к телемедицине",
+                      "нормативные акты",
+                      "регулирование предрейсовых осмотров"
                     ],
-                    "taxonomy": "Список рекомендаций",
-                    "attention": "Позволяет быстро ознакомиться с ключевыми шагами.",
-                    "intent": "Представить список из 4-6 рекомендаций по внедрению телемедицины.",
-                    "audiences": "Руководители, специалисты по охране труда.",
-                    "selfPrompt": "Создайте маркированный список из 4-6 пунктов с рекомендациями по внедрению телемедицины. Объём списка 40-80 слов.",
-                    "additionalData": {
-                      "minWords": 40,
-                      "maxWords": 80,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "code-2-3-3",
-                    "tag": "code",
-                    "keywords": [
-                      "пример",
-                      "шаблон",
-                      "регламент"
-                    ],
-                    "taxonomy": "Пример документа",
-                    "attention": "Помогает наглядно представить процесс.",
-                    "intent": "Предоставить пример кода или шаблона регламента для телемедицинских осмотров.",
-                    "audiences": "Руководители, специалисты по охране труда.",
-                    "selfPrompt": "Создайте пример кода или шаблона регламента для организации телемедицинских предрейсовых осмотров. Объём 20-50 слов. Не используйте сложный технический язык.",
-                    "additionalData": {
-                      "minWords": 20,
-                      "maxWords": 50,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "p-2-3-4",
-                    "tag": "p",
-                    "keywords": [
-                      "законодательство",
-                      "внедрение",
-                      "ответственность"
-                    ],
-                    "taxonomy": "Заключение раздела",
-                    "attention": "Подчёркивает важность соблюдения правил.",
-                    "intent": "Подытожить рекомендации и отметить ответственность за соблюдение законодательства.",
-                    "audiences": "Руководители, специалисты по охране труда.",
-                    "selfPrompt": "Напишите абзац (60-120 слов), подытоживающий рекомендации и акцентирующий внимание на ответственности при внедрении телемедицины.",
-                    "additionalData": {
-                      "minWords": 60,
-                      "maxWords": 120,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
-              }
-            ],
-            "status": "checked"
-          },
-          {
-            "id": "h2-3",
-            "tag": "h2",
-            "classification": "Comparison",
-            "keywords": [
-              "преимущества",
-              "телемедицина",
-              "традиционные осмотры",
-              "экономия",
-              "скорость"
-            ],
-            "taxonomy": "Сравнение телемедицины и традиционных медосмотров",
-            "attention": "Помогает принять решение о переходе на телемедицину.",
-            "intent": "Сравнить телемедицинские предрейсовые осмотры с традиционными по ключевым параметрам.",
-            "audiences": "Руководители, специалисты по охране труда, менеджеры по безопасности.",
-            "selfPrompt": "Разработайте раздел с заголовком уровня 2, сравнивающий телемедицину и традиционные предрейсовые медосмотры. Включите вводные абзацы, подзаголовки уровней 3 и 4, списки и цитаты. Используйте деловой и дружелюбный стиль. • также следует учитывать пользовательские настройки, сделанные ко всей странице: writing-style:{title:Conversational, description:Friendly, informal, like talking to a friend}, content-format:{title:Professional, description:Business-appropriate, formal tone}, custom requirements and specifications:{—} •",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 1300,
-              "maxWords": 1500,
-              "actualContent": "need generate helpful content"
-            },
-            "realContentStructure": [
-              {
-                "id": "p-3-1",
-                "tag": "p",
-                "keywords": [
-                  "сравнение",
-                  "телемедицина",
-                  "традиционные осмотры"
-                ],
-                "taxonomy": "Введение в сравнение",
-                "attention": "Обеспечивает контекст для последующего анализа.",
-                "intent": "Кратко ввести тему сравнения двух методов осмотров.",
-                "audiences": "Руководители, специалисты по охране труда.",
-                "selfPrompt": "Напишите короткий абзац (5-15 слов), вводящий в тему сравнения телемедицины и традиционных осмотров.",
-                "additionalData": {
-                  "minWords": 5,
-                  "maxWords": 15,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "p-3-2",
-                "tag": "p",
-                "keywords": [
-                  "преимущества",
-                  "телемедицина",
-                  "экономия времени"
-                ],
-                "taxonomy": "Общее описание преимуществ",
-                "attention": "Подчёркивает выгоды телемедицины.",
-                "intent": "Объяснить, почему телемедицина выгоднее традиционных осмотров.",
-                "audiences": "Руководители, менеджеры по безопасности.",
-                "selfPrompt": "Создайте абзац (110-220 слов), описывающий общие преимущества телемедицины по сравнению с традиционными осмотрами.",
-                "additionalData": {
-                  "minWords": 110,
-                  "maxWords": 220,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "h3-3-3",
-                "tag": "h3",
-                "classification": "Comparison",
-                "keywords": [
-                  "скорость",
-                  "экономия",
-                  "телемедицина",
-                  "традиционные осмотры"
-                ],
-                "taxonomy": "Ключевые показатели сравнения",
-                "attention": "Демонстрирует конкретные преимущества телемедицины.",
-                "intent": "Подробно сравнить скорость и экономию между двумя методами.",
-                "audiences": "Руководители, специалисты по охране труда.",
-                "selfPrompt": "Создайте подзаголовок уровня 3 с тремя абзацами, упорядоченным списком и подзаголовком уровня 4 с дополнительными абзацами и кодом. Общий объём 200-350 слов для h3 и 350-500 слов для h4. Используйте деловой стиль.",
-                "additionalData": {
-                  "minWords": 400,
-                  "maxWords": 850,
-                  "actualContent": "need generate helpful content"
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-3-3-1",
-                    "tag": "p",
-                    "keywords": [
-                      "скорость",
-                      "телемедицина",
-                      "эффективность"
-                    ],
-                    "taxonomy": "Скорость проведения осмотров",
-                    "attention": "Показывает преимущество по времени.",
-                    "intent": "Объяснить, как телемедицина сокращает время осмотра.",
-                    "audiences": "Руководители, специалисты по охране труда.",
-                    "selfPrompt": "Напишите абзац (85-170 слов), описывающий скорость проведения телемедицинских осмотров.",
-                    "additionalData": {
-                      "minWords": 85,
-                      "maxWords": 170,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "ol-3-3-2",
-                    "tag": "ol",
-                    "keywords": [
-                      "экономия",
-                      "затраты",
-                      "телемедицина"
-                    ],
-                    "taxonomy": "Список преимуществ",
-                    "attention": "Позволяет быстро оценить выгоды.",
-                    "intent": "Представить упорядоченный список из 5 пунктов с преимуществами телемедицины.",
-                    "audiences": "Руководители, менеджеры по безопасности.",
-                    "selfPrompt": "Создайте нумерованный список из 5 пунктов, описывающих экономию и другие преимущества телемедицины. Объём списка 50-100 слов.",
+                    "taxonomy": "Supporting",
+                    "attention": "Изучите основные требования и нормативы, регулирующие телемедицинские предрейсовые осмотры.",
+                    "intent": "Представить ключевые нормативные требования и акты в виде списка для удобства восприятия и понимания.",
+                    "audiences": "Юристы, compliance-специалисты | Level: expert | Pain points: необходимость быстрого понимания нормативов",
+                    "selfPrompt": "---\nCONTEXT: Generate ul with 4-6 items in section \"h3-2-3\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Представить ключевые нормативные требования и акты в удобном списке.\n\nAUDIENCE: Юристы, compliance-специалисты | Level: expert | Pain points: необходимость быстрого понимания нормативов\n\nKEYWORDS: Naturally integrate: требования к телемедицине, нормативные акты, регулирование предрейсовых осмотров\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 50, maxWords: 85 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for unordered list\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n\nQUALITY CRITERIA:\n- Конкретные пункты\n- Легко читаемые\n\nMANDATORY:\n- Включить основные требования и акты\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
                     "additionalData": {
                       "minWords": 50,
-                      "maxWords": 100,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
+                      "maxWords": 85,
+                      "actualContent": ""
+                    }
                   },
                   {
-                    "id": "h4-3-3-3",
-                    "tag": "h4",
-                    "classification": "Comparison",
-                    "keywords": [
-                      "технические детали",
-                      "телемедицина",
-                      "регламент"
-                    ],
-                    "taxonomy": "Технические аспекты и регламенты",
-                    "attention": "Обеспечивает понимание технических нюансов.",
-                    "intent": "Раскрыть технические детали и регламенты телемедицинских осмотров.",
-                    "audiences": "Специалисты по охране труда, технические специалисты.",
-                    "selfPrompt": "Создайте подзаголовок уровня 4 с тремя абзацами и блоком кода. Общий объём 350-500 слов. Используйте деловой стиль, код должен быть примером регламента или инструкции.",
-                    "additionalData": {
-                      "minWords": 350,
-                      "maxWords": 500,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "realContentStructure": [
-                      {
-                        "id": "p-3-3-3-1",
-                        "tag": "p",
-                        "keywords": [
-                          "технические требования",
-                          "телемедицина"
-                        ],
-                        "taxonomy": "Технические требования",
-                        "attention": "Объясняет необходимые технические условия.",
-                        "intent": "Описать технические требования к оборудованию и программному обеспечению.",
-                        "audiences": "Технические специалисты, специалисты по охране труда.",
-                        "selfPrompt": "Напишите абзац (75-150 слов), описывающий технические требования для телемедицинских осмотров.",
-                        "additionalData": {
-                          "minWords": 75,
-                          "maxWords": 150,
-                          "actualContent": "need generate helpful content"
-                        },
-                        "status": "checked"
-                      },
-                      {
-                        "id": "code-3-3-3-2",
-                        "tag": "code",
-                        "keywords": [
-                          "регламент",
-                          "пример",
-                          "телемедицина"
-                        ],
-                        "taxonomy": "Пример регламента",
-                        "attention": "Демонстрирует практическое применение.",
-                        "intent": "Предоставить пример кода или шаблона регламента для телемедицинских осмотров.",
-                        "audiences": "Технические специалисты, руководители.",
-                        "selfPrompt": "Создайте пример кода или шаблона регламента для телемедицинских предрейсовых осмотров. Объём 25-60 слов.",
-                        "additionalData": {
-                          "minWords": 25,
-                          "maxWords": 60,
-                          "actualContent": "need generate helpful content"
-                        },
-                        "status": "checked"
-                      },
-                      {
-                        "id": "p-3-3-3-3",
-                        "tag": "p",
-                        "keywords": [
-                          "регламент",
-                          "соблюдение",
-                          "телемедицина"
-                        ],
-                        "taxonomy": "Соблюдение регламентов",
-                        "attention": "Подчёркивает важность соблюдения правил.",
-                        "intent": "Объяснить, почему важно соблюдать регламенты при использовании телемедицины.",
-                        "audiences": "Руководители, специалисты по охране труда.",
-                        "selfPrompt": "Напишите абзац (65-130 слов), объясняющий важность соблюдения регламентов в телемедицинских осмотрах.",
-                        "additionalData": {
-                          "minWords": 65,
-                          "maxWords": 130,
-                          "actualContent": "need generate helpful content"
-                        },
-                        "status": "checked"
-                      }
-                    ],
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
-              },
-              {
-                "id": "h3-3-4",
-                "tag": "h3",
-                "classification": "Comparison",
-                "keywords": [
-                  "отзывы",
-                  "клиенты",
-                  "результаты",
-                  "телемедицина"
-                ],
-                "taxonomy": "Отзывы и результаты клиентов",
-                "attention": "Подтверждает эффективность телемедицины на практике.",
-                "intent": "Представить отзывы клиентов и конкретные результаты использования телемедицины.",
-                "audiences": "Руководители, специалисты по охране труда.",
-                "selfPrompt": "Создайте подзаголовок уровня 3 с абзацем, цитатой и упорядоченным списком. Общий объём 150-250 слов. Используйте дружелюбный и деловой стиль.",
-                "additionalData": {
-                  "minWords": 150,
-                  "maxWords": 250,
-                  "actualContent": "need generate helpful content"
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-3-4-1",
+                    "id": "p-2-3-3",
                     "tag": "p",
                     "keywords": [
-                      "отзывы",
-                      "телемедицина",
-                      "эффективность"
+                      "законность телемедицины",
+                      "соблюдение нормативов"
                     ],
-                    "taxonomy": "Введение в отзывы",
-                    "attention": "Создаёт доверие к технологии.",
-                    "intent": "Ввести читателя в раздел с отзывами клиентов.",
-                    "audiences": "Руководители, специалисты по охране труда.",
-                    "selfPrompt": "Напишите абзац (95-190 слов), вводящий в тему отзывов и результатов клиентов.",
+                    "taxonomy": "Supporting",
+                    "attention": "Подчеркните важность соблюдения нормативов для легитимности телемедицинских осмотров.",
+                    "intent": "Объяснить, почему соблюдение нормативных требований критично для успешного внедрения телемедицины в предрейсовые осмотры.",
+                    "audiences": "Юристы, compliance-специалисты | Level: expert | Pain points: легитимность и безопасность процедур",
+                    "selfPrompt": "---\nCONTEXT: Generate p (body) in section \"h3-2-3\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Объяснить важность соблюдения нормативов для легитимности телемедицины.\n\nAUDIENCE: Юристы, compliance-специалисты | Level: expert | Pain points: легитимность и безопасность процедур\n\nKEYWORDS: Naturally integrate: законность телемедицины, соблюдение нормативов\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 65, maxWords: 115 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n\nQUALITY CRITERIA:\n- Specific\n- Data-backed\n\nMANDATORY:\n- Упомянуть важность соблюдения нормативов\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
                     "additionalData": {
-                      "minWords": 95,
-                      "maxWords": 190,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
+                      "minWords": 65,
+                      "maxWords": 115,
+                      "actualContent": ""
+                    }
                   },
                   {
-                    "id": "blockquote-3-4-2",
-                    "tag": "blockquote",
+                    "id": "code-2-3-4",
+                    "tag": "code",
                     "keywords": [
-                      "отзыв",
-                      "клиент",
-                      "телемедицина"
+                      "пример нормативного документа",
+                      "регламент телемедицины",
+                      "образец приказа"
                     ],
-                    "taxonomy": "Цитата клиента",
-                    "attention": "Подтверждает реальные выгоды.",
-                    "intent": "Представить цитату довольного клиента о телемедицине.",
-                    "audiences": "Руководители, специалисты по охране труда.",
-                    "selfPrompt": "Создайте цитату клиента (20-45 слов), подчёркивающую преимущества телемедицины.",
+                    "taxonomy": "technical",
+                    "attention": "Посмотрите пример ключевого нормативного документа, регулирующего телемедицину в предрейсовых осмотрах.",
+                    "intent": "Предоставить пример кода или выдержки из нормативного документа для наглядности и практического понимания требований.",
+                    "audiences": "Юристы, compliance-специалисты | Level: expert | Pain points: необходимость точного понимания нормативов",
+                    "selfPrompt": "---\nCONTEXT: Generate code block in section \"h3-2-3\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Предоставить пример нормативного документа или регламента, регулирующего телемедицину.\n\nAUDIENCE: Юристы, compliance-специалисты | Level: expert | Pain points: необходимость точного понимания нормативов\n\nKEYWORDS: Naturally integrate: пример нормативного документа, регламент телемедицины, образец приказа\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 20, maxWords: 45 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for code block\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n\nQUALITY CRITERIA:\n- Точность\n- Наглядность\n\nMANDATORY:\n- Включить выдержку из приказа\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
                     "additionalData": {
                       "minWords": 20,
                       "maxWords": 45,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "ol-3-4-3",
-                    "tag": "ol",
-                    "keywords": [
-                      "результаты",
-                      "экономия",
-                      "скорость"
-                    ],
-                    "taxonomy": "Список результатов",
-                    "attention": "Демонстрирует конкретные достижения.",
-                    "intent": "Представить упорядоченный список из 4-6 конкретных результатов использования телемедицины.",
-                    "audiences": "Руководители, специалисты по охране труда.",
-                    "selfPrompt": "Создайте нумерованный список из 4-6 пунктов с конкретными результатами (сокращение времени, экономия затрат и т.п.). Объём 60-120 слов.",
-                    "additionalData": {
-                      "minWords": 60,
-                      "maxWords": 120,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
+                      "actualContent": ""
+                    }
                   }
-                ],
-                "status": "checked"
-              }
-            ],
-            "status": "checked"
-          },
-          {
-            "id": "h2-4",
-            "tag": "h2",
-            "classification": "Guide",
-            "keywords": [
-              "внедрение",
-              "телемедицина",
-              "технологии",
-              "обучение",
-              "поддержка"
-            ],
-            "taxonomy": "Практические шаги по внедрению телемедицины",
-            "attention": "Обеспечивает успешное и эффективное внедрение технологии.",
-            "intent": "Дать подробные рекомендации и инструкции по внедрению телемедицины в компании.",
-            "audiences": "Руководители, специалисты по охране труда, IT-специалисты.",
-            "selfPrompt": "Создайте раздел с заголовком уровня 2, раскрывающий практические шаги по внедрению телемедицины. Включите вводный абзац, два подзаголовка уровня 3 с абзацами и списками. Используйте деловой и дружелюбный стиль. • также следует учитывать пользовательские настройки, сделанные ко всей странице: writing-style:{title:Conversational, description:Friendly, informal, like talking to a friend}, content-format:{title:Professional, description:Business-appropriate, formal tone}, custom requirements and specifications:{—} •",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 1300,
-              "maxWords": 1500,
-              "actualContent": "need generate helpful content"
-            },
-            "realContentStructure": [
-              {
-                "id": "p-4-1",
-                "tag": "p",
-                "keywords": [
-                  "внедрение",
-                  "телемедицина",
-                  "подготовка"
-                ],
-                "taxonomy": "Введение во внедрение",
-                "attention": "Создаёт основу для понимания процесса.",
-                "intent": "Ввести читателя в тему внедрения телемедицины.",
-                "audiences": "Руководители, специалисты по охране труда.",
-                "selfPrompt": "Напишите абзац (100-200 слов), вводящий в тему внедрения телемедицины.",
-                "additionalData": {
-                  "minWords": 100,
-                  "maxWords": 200,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
+                ]
               },
               {
-                "id": "h3-4-2",
+                "id": "h3-2-4",
                 "tag": "h3",
-                "classification": "HowTo",
+                "classification": "Guide",
                 "keywords": [
-                  "обучение",
-                  "персонал",
-                  "телемедицина"
+                  "безопасность телемедицины",
+                  "биометрическая идентификация",
+                  "видеофиксация осмотров",
+                  "противодействие мошенничеству"
                 ],
-                "taxonomy": "Обучение и подготовка персонала",
-                "attention": "Обеспечивает квалифицированное использование технологии.",
-                "intent": "Дать рекомендации по обучению сотрудников работе с телемедициной.",
-                "audiences": "Руководители, специалисты по охране труда, HR.",
-                "selfPrompt": "Создайте подзаголовок уровня 3 с четырьмя абзацами и маркированным списком. Общий объём 200-300 слов. Используйте дружелюбный и деловой стиль.",
-                "additionalData": {
-                  "minWords": 400,
-                  "maxWords": 600,
-                  "actualContent": "need generate helpful content"
-                },
+                "taxonomy": "Guide",
+                "attention": "Узнайте о современных технологиях безопасности, применяемых в телемедицинских предрейсовых осмотрах.",
+                "intent": "Дать подробный обзор технологий безопасности, таких как биометрия и видеофиксация, используемых для защиты данных и предотвращения мошенничества в телемедицине.",
+                "audiences": "Руководители, специалисты по охране труда и IT-специалисты | Level: expert | Pain points: безопасность данных, предотвращение мошенничества",
+                "selfPrompt": "---\nCONTEXT: Generate h3 in section \"h2-2\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Подробно раскрыть технологии безопасности в телемедицинских предрейсовых осмотрах.\n\nAUDIENCE: Руководители, специалисты по охране труда и IT-специалисты | Level: expert | Pain points: безопасность данных, предотвращение мошенничества\n\nKEYWORDS: Naturally integrate: безопасность телемедицины, биометрическая идентификация, видеофиксация осмотров, противодействие мошенничеству\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 280, maxWords: 400 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for h3\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n\nQUALITY CRITERIA:\n- Data-backed\n- Specific\n- Actionable\n\nMANDATORY:\n- Упомянуть биометрию, видеофиксацию и их преимущества\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n- Копирование текста дословно\n---",
                 "realContentStructure": [
                   {
-                    "id": "p-4-2-1",
+                    "id": "p-2-4-1",
                     "tag": "p",
                     "keywords": [
-                      "обучение",
-                      "телемедицина",
-                      "важность"
+                      "биометрическая идентификация",
+                      "безопасность данных",
+                      "контроль доступа"
                     ],
-                    "taxonomy": "Значение обучения",
-                    "attention": "Подчёркивает необходимость подготовки персонала.",
-                    "intent": "Объяснить важность обучения для успешного внедрения.",
-                    "audiences": "Руководители, HR.",
-                    "selfPrompt": "Напишите короткий абзац (5-15 слов), подчёркивающий важность обучения.",
+                    "taxonomy": "Supporting",
+                    "attention": "Поймите, как биометрия повышает безопасность и предотвращает подделку документов в телемедицинских осмотрах.",
+                    "intent": "Объяснить роль биометрической идентификации в обеспечении безопасности и достоверности данных при предрейсовых осмотрах.",
+                    "audiences": "IT-специалисты, руководители по безопасности | Level: expert | Pain points: предотвращение мошенничества, контроль доступа\n",
+                    "selfPrompt": "---\nCONTEXT: Generate p (body) in section \"h3-2-4\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Объяснить роль биометрической идентификации в обеспечении безопасности телемедицинских осмотров.\n\nAUDIENCE: IT-специалисты, руководители по безопасности | Level: expert | Pain points: предотвращение мошенничества, контроль доступа\n\nKEYWORDS: Naturally integrate: биометрическая идентификация, безопасность данных, контроль доступа\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 70, maxWords: 120 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n\nQUALITY CRITERIA:\n- Specific\n- Data-backed\n\nMANDATORY:\n- Упомянуть биометрию и её преимущества\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "table-2-4-2",
+                    "tag": "table",
+                    "keywords": [
+                      "технологии безопасности",
+                      "сравнение методов",
+                      "телемедицина безопасность"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Сравните различные технологии безопасности, используемые в телемедицинских предрейсовых осмотрах, в удобной таблице.",
+                    "intent": "Представить сравнение технологий безопасности (биометрия, видеофиксация, другие методы) для наглядного понимания их преимуществ и особенностей.",
+                    "audiences": "IT-специалисты, руководители по безопасности | Level: expert | Pain points: выбор оптимальных технологий безопасности",
+                    "selfPrompt": "---\nCONTEXT: Generate table with 3 columns and 4 rows in section \"h3-2-4\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Сравнить технологии безопасности в телемедицинских предрейсовых осмотрах.\n\nAUDIENCE: IT-специалисты, руководители по безопасности | Level: expert | Pain points: выбор оптимальных технологий безопасности\n\nKEYWORDS: Naturally integrate: технологии безопасности, сравнение методов, телемедицина безопасность\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 90, maxWords: 150 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for table\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n\nQUALITY CRITERIA:\n- Четкая структура\n- Информативность\n\nMANDATORY:\n- Включить биометрию, видеофиксацию и другие методы\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
+                    "additionalData": {
+                      "minWords": 90,
+                      "maxWords": 150,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-4-3",
+                    "tag": "p",
+                    "keywords": [
+                      "противодействие мошенничеству",
+                      "безопасность телемедицины"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Кратко подчеркните важность мер против мошенничества в телемедицинских осмотрах.",
+                    "intent": "Дать краткое описание мер, направленных на предотвращение мошенничества и обеспечение безопасности данных в телемедицине.",
+                    "audiences": "Руководители, специалисты по безопасности | Level: expert | Pain points: мошенничество, безопасность данных",
+                    "selfPrompt": "---\nCONTEXT: Generate short p (transition) in section \"h3-2-4\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Кратко описать меры противодействия мошенничеству в телемедицинских осмотрах.\n\nAUDIENCE: Руководители, специалисты по безопасности | Level: expert | Pain points: мошенничество, безопасность данных\n\nKEYWORDS: Naturally integrate: противодействие мошенничеству, безопасность телемедицины\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 5, maxWords: 15 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n\nQUALITY CRITERIA:\n- Кратко и ёмко\n\nMANDATORY:\n- Упомянуть меры против мошенничества\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
                     "additionalData": {
                       "minWords": 5,
                       "maxWords": 15,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
+                      "actualContent": ""
+                    }
                   },
                   {
-                    "id": "p-4-2-2",
-                    "tag": "p",
+                    "id": "h4-2-4-4",
+                    "tag": "h4",
+                    "classification": "Guide",
                     "keywords": [
-                      "методы обучения",
-                      "телемедицина"
+                      "биометрия в телемедицине",
+                      "видеофиксация процедур",
+                      "безопасность данных"
                     ],
-                    "taxonomy": "Методы обучения",
-                    "attention": "Предлагает эффективные способы подготовки.",
-                    "intent": "Описать методы и форматы обучения персонала.",
-                    "audiences": "HR, специалисты по охране труда.",
-                    "selfPrompt": "Создайте абзац (90-180 слов), описывающий методы обучения для работы с телемедициной.",
-                    "additionalData": {
-                      "minWords": 90,
-                      "maxWords": 180,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "p-4-2-3",
-                    "tag": "p",
-                    "keywords": [
-                      "поддержка",
-                      "персонал",
-                      "телемедицина"
-                    ],
-                    "taxonomy": "Поддержка сотрудников",
-                    "attention": "Обеспечивает устойчивость внедрения.",
-                    "intent": "Раскрыть способы поддержки персонала после обучения.",
-                    "audiences": "Руководители, HR.",
-                    "selfPrompt": "Напишите абзац (85-170 слов), описывающий поддержку сотрудников при работе с телемедициной.",
-                    "additionalData": {
-                      "minWords": 85,
-                      "maxWords": 170,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "ul-4-2-4",
-                    "tag": "ul",
-                    "keywords": [
-                      "рекомендации",
-                      "обучение",
-                      "телемедицина"
-                    ],
-                    "taxonomy": "Список рекомендаций",
-                    "attention": "Упрощает восприятие ключевых советов.",
-                    "intent": "Представить список из 5-7 рекомендаций по обучению и поддержке персонала.",
-                    "audiences": "HR, руководители.",
-                    "selfPrompt": "Создайте маркированный список из 5-7 пунктов с рекомендациями по обучению и поддержке персонала. Объём 45-90 слов.",
-                    "additionalData": {
-                      "minWords": 45,
-                      "maxWords": 90,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
+                    "taxonomy": "Guide",
+                    "attention": "Углубитесь в детали биометрической идентификации и видеофиксации как ключевых элементов безопасности телемедицины.",
+                    "intent": "Дать подробное описание биометрической идентификации и видеофиксации, их роли и преимуществ в обеспечении безопасности предрейсовых осмотров.",
+                    "audiences": "IT-специалисты, специалисты по безопасности | Level: expert | Pain points: технические детали безопасности телемедицины",
+                    "selfPrompt": "---\nCONTEXT: Generate h4 in section \"h3-2-4\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Подробно описать биометрическую идентификацию и видеофиксацию как ключевые технологии безопасности.\n\nAUDIENCE: IT-специалисты, специалисты по безопасности | Level: expert | Pain points: технические детали безопасности телемедицины\n\nKEYWORDS: Naturally integrate: биометрия в телемедицине, видеофиксация процедур, безопасность данных\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 130, maxWords: 200 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for h4\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n\nQUALITY CRITERIA:\n- Data-backed\n- Specific\n- Actionable\n\nMANDATORY:\n- Упомянуть преимущества и технические детали\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n- Копирование текста дословно\n---",
+                    "realContentStructure": [
+                      {
+                        "id": "p-2-4-4-1",
+                        "tag": "p",
+                        "keywords": [
+                          "биометрия",
+                          "идентификация водителей",
+                          "безопасность телемедицины"
+                        ],
+                        "taxonomy": "Supporting",
+                        "attention": "Поймите, как биометрия помогает точно идентифицировать водителей и повысить безопасность процедур.",
+                        "intent": "Объяснить роль биометрической идентификации в предотвращении подделок и обеспечении безопасности телемедицинских осмотров.",
+                        "audiences": "IT-специалисты, специалисты по безопасности | Level: expert | Pain points: предотвращение мошенничества, точность идентификации",
+                        "selfPrompt": "---\nCONTEXT: Generate p (body) in section \"h4-2-4-4\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Объяснить роль биометрической идентификации в безопасности телемедицины.\n\nAUDIENCE: IT-специалисты, специалисты по безопасности | Level: expert | Pain points: предотвращение мошенничества, точность идентификации\n\nKEYWORDS: Naturally integrate: биометрия, идентификация водителей, безопасность телемедицины\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 60, maxWords: 105 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n\nQUALITY CRITERIA:\n- Specific\n- Data-backed\n\nMANDATORY:\n- Упомянуть преимущества биометрии\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
+                        "additionalData": {
+                          "minWords": 60,
+                          "maxWords": 105,
+                          "actualContent": ""
+                        }
+                      },
+                      {
+                        "id": "ol-2-4-4-2",
+                        "tag": "ol",
+                        "keywords": [
+                          "преимущества видеофиксации",
+                          "контроль качества осмотров",
+                          "безопасность данных"
+                        ],
+                        "taxonomy": "Supporting",
+                        "attention": "Изучите основные преимущества видеофиксации в телемедицинских предрейсовых осмотрах.",
+                        "intent": "Представить ключевые преимущества видеофиксации в виде нумерованного списка для удобства восприятия.",
+                        "audiences": "Специалисты по безопасности, руководители | Level: expert | Pain points: контроль качества, безопасность данных",
+                        "selfPrompt": "---\nCONTEXT: Generate ol with 3-5 items in section \"h4-2-4-4\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Представить преимущества видеофиксации в телемедицинских осмотрах в удобном списке.\n\nAUDIENCE: Специалисты по безопасности, руководители | Level: expert | Pain points: контроль качества, безопасность данных\n\nKEYWORDS: Naturally integrate: преимущества видеофиксации, контроль качества осмотров, безопасность данных\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 45, maxWords: 75 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for ordered list\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n\nQUALITY CRITERIA:\n- Конкретные пункты\n- Легко читаемые\n\nMANDATORY:\n- Включить ключевые преимущества\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
+                        "additionalData": {
+                          "minWords": 45,
+                          "maxWords": 75,
+                          "actualContent": ""
+                        }
+                      },
+                      {
+                        "id": "blockquote-2-4-4-3",
+                        "tag": "blockquote",
+                        "keywords": [
+                          "экспертное мнение",
+                          "безопасность телемедицины",
+                          "эффективность видеофиксации"
+                        ],
+                        "taxonomy": "Supporting",
+                        "attention": "Приведите экспертное мнение, подтверждающее эффективность видеофиксации и биометрии в телемедицине.",
+                        "intent": "Подкрепить технические описания цитатой или мнением эксперта, усиливающим доверие к технологиям безопасности.",
+                        "audiences": "Руководители, специалисты по безопасности | Level: expert | Pain points: сомнения в эффективности технологий",
+                        "selfPrompt": "---\nCONTEXT: Generate blockquote in section \"h4-2-4-4\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Подкрепить описание технологий безопасности экспертным мнением или цитатой.\n\nAUDIENCE: Руководители, специалисты по безопасности | Level: expert | Pain points: сомнения в эффективности технологий\n\nKEYWORDS: Naturally integrate: экспертное мнение, безопасность телемедицины, эффективность видеофиксации\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 20, maxWords: 40 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for blockquote\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n\nQUALITY CRITERIA:\n- Убедительность\n- Краткость\n\nMANDATORY:\n- Включить цитату или мнение эксперта\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
+                        "additionalData": {
+                          "minWords": 20,
+                          "maxWords": 40,
+                          "actualContent": ""
+                        }
+                      }
+                    ]
                   }
-                ],
-                "status": "checked"
-              },
-              {
-                "id": "h3-4-3",
-                "tag": "h3",
-                "classification": "HowTo",
-                "keywords": [
-                  "техническая поддержка",
-                  "оборудование",
-                  "телемедицина"
-                ],
-                "taxonomy": "Техническая поддержка и оборудование",
-                "attention": "Обеспечивает бесперебойную работу системы.",
-                "intent": "Дать рекомендации по технической поддержке и выбору оборудования.",
-                "audiences": "IT-специалисты, руководители, специалисты по охране труда.",
-                "selfPrompt": "Создайте подзаголовок уровня 3 с двумя абзацами, упорядоченным списком и цитатой. Общий объём 250-350 слов. Используйте деловой стиль.",
-                "additionalData": {
-                  "minWords": 250,
-                  "maxWords": 350,
-                  "actualContent": "need generate helpful content"
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-4-3-1",
-                    "tag": "p",
-                    "keywords": [
-                      "техническая поддержка",
-                      "телемедицина"
-                    ],
-                    "taxonomy": "Роль технической поддержки",
-                    "attention": "Обеспечивает стабильность работы.",
-                    "intent": "Объяснить важность технической поддержки для телемедицины.",
-                    "audiences": "IT-специалисты, руководители.",
-                    "selfPrompt": "Напишите абзац (110-220 слов), раскрывающий роль технической поддержки.",
-                    "additionalData": {
-                      "minWords": 110,
-                      "maxWords": 220,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "p-4-3-2",
-                    "tag": "p",
-                    "keywords": [
-                      "оборудование",
-                      "телемедицина",
-                      "выбор"
-                    ],
-                    "taxonomy": "Выбор оборудования",
-                    "attention": "Обеспечивает правильный подбор техники.",
-                    "intent": "Дать советы по выбору оборудования для телемедицинских осмотров.",
-                    "audiences": "IT-специалисты, специалисты по охране труда.",
-                    "selfPrompt": "Создайте абзац (80-160 слов), описывающий критерии выбора оборудования.",
-                    "additionalData": {
-                      "minWords": 80,
-                      "maxWords": 160,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "ol-4-3-3",
-                    "tag": "ol",
-                    "keywords": [
-                      "технические требования",
-                      "поддержка",
-                      "телемедицина"
-                    ],
-                    "taxonomy": "Список технических требований",
-                    "attention": "Упрощает понимание необходимых условий.",
-                    "intent": "Представить упорядоченный список из 5-7 технических требований и рекомендаций.",
-                    "audiences": "IT-специалисты, руководители.",
-                    "selfPrompt": "Создайте нумерованный список из 5-7 пунктов с техническими требованиями и рекомендациями. Объём 55-110 слов.",
-                    "additionalData": {
-                      "minWords": 55,
-                      "maxWords": 110,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "blockquote-4-3-4",
-                    "tag": "blockquote",
-                    "keywords": [
-                      "цитата",
-                      "техническая поддержка",
-                      "телемедицина"
-                    ],
-                    "taxonomy": "Мотивационная цитата",
-                    "attention": "Подчёркивает важность качественной поддержки.",
-                    "intent": "Представить цитату эксперта о значении технической поддержки.",
-                    "audiences": "Руководители, IT-специалисты.",
-                    "selfPrompt": "Создайте цитату (18-40 слов), подчёркивающую важность технической поддержки для успешного внедрения телемедицины.",
-                    "additionalData": {
-                      "minWords": 18,
-                      "maxWords": 40,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
+                ]
               }
-            ],
-            "status": "checked"
-          },
-          {
-            "id": "h2-5",
-            "tag": "h2",
-            "classification": "Summary",
-            "keywords": [
-              "итоги",
-              "телемедицина",
-              "преимущества",
-              "внедрение",
-              "безопасность"
-            ],
-            "taxonomy": "Заключение и рекомендации",
-            "attention": "Подводит итоги и мотивирует к действию.",
-            "intent": "Суммировать ключевые моменты и дать рекомендации по использованию телемедицины.",
-            "audiences": "Руководители, специалисты по охране труда.",
-            "selfPrompt": "Создайте заключительный раздел с заголовком уровня 2, включающий два абзаца и подзаголовок уровня 3 с абзацами и списком. Используйте дружелюбный и деловой стиль. • также следует учитывать пользовательские настройки, сделанные ко всей странице: writing-style:{title:Conversational, description:Friendly, informal, like talking to a friend}, content-format:{title:Professional, description:Business-appropriate, formal tone}, custom requirements and specifications:{—} •",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 1300,
-              "maxWords": 1500,
-              "actualContent": "need generate helpful content"
-            },
-            "realContentStructure": [
-              {
-                "id": "p-5-1",
-                "tag": "p",
-                "keywords": [
-                  "итоги",
-                  "телемедицина",
-                  "преимущества"
-                ],
-                "taxonomy": "Общие итоги",
-                "attention": "Подчёркивает основные выгоды.",
-                "intent": "Подвести итоги преимуществ телемедицины.",
-                "audiences": "Руководители, специалисты по охране труда.",
-                "selfPrompt": "Напишите абзац (105-210 слов), суммирующий основные преимущества телемедицины.",
-                "additionalData": {
-                  "minWords": 105,
-                  "maxWords": 210,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "p-5-2",
-                "tag": "p",
-                "keywords": [
-                  "мотивация",
-                  "внедрение",
-                  "телемедицина"
-                ],
-                "taxonomy": "Мотивационный абзац",
-                "attention": "Стремится побудить к действию.",
-                "intent": "Кратко мотивировать к внедрению телемедицины.",
-                "audiences": "Руководители, менеджеры.",
-                "selfPrompt": "Создайте короткий абзац (5-15 слов), мотивирующий к использованию телемедицины.",
-                "additionalData": {
-                  "minWords": 5,
-                  "maxWords": 15,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "h3-5-3",
-                "tag": "h3",
-                "classification": "Summary",
-                "keywords": [
-                  "рекомендации",
-                  "телемедицина",
-                  "внедрение"
-                ],
-                "taxonomy": "Рекомендации по использованию",
-                "attention": "Помогает правильно организовать процесс.",
-                "intent": "Дать конкретные рекомендации по внедрению и использованию телемедицины.",
-                "audiences": "Руководители, специалисты по охране труда.",
-                "selfPrompt": "Создайте подзаголовок уровня 3 с абзацем, списком и заключительным абзацем. Общий объём 150-250 слов. Используйте деловой стиль.",
-                "additionalData": {
-                  "minWords": 400,
-                  "maxWords": 600,
-                  "actualContent": "need generate helpful content"
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-5-3-1",
-                    "tag": "p",
-                    "keywords": [
-                      "рекомендации",
-                      "телемедицина"
-                    ],
-                    "taxonomy": "Введение в рекомендации",
-                    "attention": "Обеспечивает контекст для советов.",
-                    "intent": "Ввести читателя в раздел с рекомендациями.",
-                    "audiences": "Руководители, специалисты по охране труда.",
-                    "selfPrompt": "Напишите абзац (80-160 слов), вводящий в тему рекомендаций по телемедицине.",
-                    "additionalData": {
-                      "minWords": 80,
-                      "maxWords": 160,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "ul-5-3-2",
-                    "tag": "ul",
-                    "keywords": [
-                      "рекомендации",
-                      "внедрение",
-                      "телемедицина"
-                    ],
-                    "taxonomy": "Список рекомендаций",
-                    "attention": "Упрощает восприятие ключевых советов.",
-                    "intent": "Представить список из 5-7 рекомендаций по внедрению телемедицины.",
-                    "audiences": "Руководители, специалисты по охране труда.",
-                    "selfPrompt": "Создайте маркированный список из 5-7 пунктов с рекомендациями. Объём 40-80 слов.",
-                    "additionalData": {
-                      "minWords": 40,
-                      "maxWords": 80,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "p-5-3-3",
-                    "tag": "p",
-                    "keywords": [
-                      "заключение",
-                      "телемедицина",
-                      "безопасность"
-                    ],
-                    "taxonomy": "Заключительный абзац",
-                    "attention": "Подчёркивает важность безопасности и качества.",
-                    "intent": "Подытожить рекомендации и акцентировать внимание на безопасности.",
-                    "audiences": "Руководители, специалисты по охране труда.",
-                    "selfPrompt": "Напишите абзац (70-140 слов), подытоживающий рекомендации и подчёркивающий важность безопасности.",
-                    "additionalData": {
-                      "minWords": 70,
-                      "maxWords": 140,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
-              }
-            ],
-            "status": "checked"
+            ]
           },
           {
             "id": "FAQ",
             "tag": "h2",
             "classification": "FAQ",
             "keywords": [
-              "часто задаваемые вопросы",
-              "телемедицина",
-              "предрейсовые осмотры",
-              "ответы"
+              "телемедицина вопросы",
+              "предрейсовые медосмотры FAQ",
+              "часто задаваемые вопросы телемедицина"
             ],
-            "taxonomy": "Часто задаваемые вопросы по телемедицине",
-            "attention": "Отвечает на ключевые вопросы пользователей.",
-            "intent": "Предоставить ответы на наиболее частые вопросы о телемедицине в предрейсовых осмотрах.",
-            "audiences": "Руководители, специалисты по охране труда, водители.",
-            "selfPrompt": "Этот раздел FAQ предназначен для создания релевантных вопросов и ответов. Для формирования вопросов примите перспективу пользователя, анализируя содержание и целевую аудиторию. Сформулируйте шесть наиболее интересных и полезных вопросов по теме. Для каждого вопроса создайте заголовок уровня 3 и подробный ответ в абзаце. Используйте дружелюбный и профессиональный стиль. Общий объём раздела 450-600 слов. • также следует учитывать пользовательские настройки, сделанные ко всей странице: writing-style:{title:Conversational, description:Friendly, informal, like talking to a friend}, content-format:{title:Professional, description:Business-appropriate, formal tone}, custom requirements and specifications:{—} •",
+            "taxonomy": "FAQ",
+            "attention": "Ответьте на самые популярные вопросы о телемедицине и предрейсовых медосмотрах, чтобы развеять сомнения и помочь принять решение.",
+            "intent": "Предоставить пользователям исчерпывающие ответы на часто задаваемые вопросы, связанные с телемедициной в предрейсовых медосмотрах, облегчая понимание и принятие решения.",
+            "audiences": "Руководители и специалисты по охране труда транспортных компаний | Level: beginner/intermediate | Pain points: неопределённость, сомнения, необходимость быстрого получения информации",
+            "selfPrompt": "This FAQ section is designed for generating relevant questions and answers. To create meaningful questions, you should adopt the perspective of the user, which requires analyzing the existing content and understanding the target audience. Consider what three questions would be most interesting and useful for users within the context of the given topic. Then, generate those three questions and organize each one under an h3 heading, ensuring that each question is paired with a well-crafted answer.",
             "designDescription": "",
             "connectedDesignSectionId": "",
             "additionalData": {
-              "minWords": 1300,
-              "maxWords": 1500,
-              "actualContent": "need generate helpful content"
+              "minWords": 350,
+              "maxWords": 500,
+              "actualContent": ""
             },
             "realContentStructure": [
               {
                 "id": "p-FAQ",
                 "tag": "p",
                 "keywords": [
-                  "введение",
-                  "FAQ",
-                  "телемедицина"
+                  "телемедицина информация",
+                  "основы телемедицины",
+                  "предрейсовые осмотры"
                 ],
-                "taxonomy": "Введение в FAQ",
-                "attention": "Подготавливает пользователя к разделу вопросов и ответов.",
-                "intent": "Ввести читателя в раздел FAQ и объяснить его цель.",
-                "audiences": "Все посетители страницы.",
-                "selfPrompt": "Напишите абзац (95-190 слов), вводящий в раздел FAQ и объясняющий его назначение.",
+                "taxonomy": "Supporting",
+                "attention": "Введение в раздел FAQ с кратким описанием его цели и пользы для пользователя.",
+                "intent": "Объяснить, что в разделе представлены ответы на ключевые вопросы по телемедицине и предрейсовым медосмотрам.",
+                "audiences": "Руководители и специалисты по охране труда | Level: beginner | Pain points: необходимость быстрого понимания темы\n",
+                "selfPrompt": "---\nCONTEXT: Generate p (intro) in section \"FAQ\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Ввести пользователя в раздел FAQ, объяснить его пользу и цель.\n\nAUDIENCE: Руководители и специалисты по охране труда | Level: beginner | Pain points: необходимость быстрого понимания темы\n\nKEYWORDS: Naturally integrate: телемедицина информация, основы телемедицины, предрейсовые осмотры\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 70, maxWords: 120 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB\n- External KB\n\nQUALITY CRITERIA:\n- Ясность\n- Краткость\n\nMANDATORY:\n- Объяснить цель FAQ\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
                 "additionalData": {
-                  "minWords": 95,
-                  "maxWords": 190,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
+                  "minWords": 70,
+                  "maxWords": 120,
+                  "actualContent": ""
+                }
               },
               {
                 "id": "h3-FAQ-1",
                 "tag": "h3",
                 "classification": "FAQ",
                 "keywords": [
-                  "вопрос 1",
-                  "телемедицина",
-                  "предрейсовые осмотры"
+                  "как работает телемедицина",
+                  "процесс предрейсового осмотра",
+                  "телемедицина для водителей"
                 ],
-                "taxonomy": "Вопрос 1",
-                "attention": "Отвечает на важный вопрос пользователей.",
-                "intent": "Сформулировать и ответить на первый частый вопрос по теме.",
-                "audiences": "Руководители, специалисты по охране труда.",
-                "selfPrompt": "Создайте заголовок уровня 3 с вопросом и абзац с ответом (75-150 слов) на первый частый вопрос по телемедицине.",
-                "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 300,
-                  "actualContent": "need generate helpful content"
-                },
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, как именно проходит предрейсовый медосмотр с использованием телемедицины.",
+                "intent": "Дать подробный, но понятный ответ на вопрос о том, как работает телемедицина в контексте предрейсовых осмотров водителей.",
+                "audiences": "Руководители и специалисты по охране труда | Level: beginner | Pain points: непонимание процесса телемедицины",
+                "selfPrompt": "---\nCONTEXT: Generate h3 question and p answer in section \"FAQ\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Объяснить процесс работы телемедицины для предрейсовых медосмотров.\n\nAUDIENCE: Руководители и специалисты по охране труда | Level: beginner | Pain points: непонимание процесса телемедицины\n\nKEYWORDS: Naturally integrate: как работает телемедицина, процесс предрейсового осмотра, телемедицина для водителей\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 160, maxWords: 240 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for h3 and paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Ускорение предрейсовых медицинских осмотров\n- External KB\n\nQUALITY CRITERIA:\n- Ясность\n- Конкретика\n\nMANDATORY:\n- Описать процесс с оборудованием и дистанционным контролем\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
                 "realContentStructure": [
                   {
                     "id": "p-FAQ-1-1",
                     "tag": "p",
                     "keywords": [
-                      "ответ",
-                      "вопрос 1",
-                      "телемедицина"
+                      "процесс телемедицины",
+                      "предрейсовый осмотр",
+                      "удалённый медицинский контроль"
                     ],
-                    "taxonomy": "Ответ на вопрос 1",
-                    "attention": "Обеспечивает понимание темы.",
-                    "intent": "Дать подробный ответ на первый вопрос.",
-                    "audiences": "Руководители, специалисты по охране труда.",
-                    "selfPrompt": "Напишите абзац (75-150 слов), дающий развернутый ответ на первый вопрос.",
+                    "taxonomy": "Supporting",
+                    "attention": "Поймите, как проходит удалённый предрейсовый медосмотр с помощью телемедицины.",
+                    "intent": "Дать подробное описание процесса телемедицинского предрейсового осмотра, включая использование оборудования и дистанционный контроль врачей.",
+                    "audiences": "Руководители и специалисты по охране труда | Level: beginner | Pain points: непонимание процесса телемедицины",
+                    "selfPrompt": "---\nCONTEXT: Generate p (body) in section \"h3-FAQ-1\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Подробно описать процесс телемедицинского предрейсового осмотра.\n\nAUDIENCE: Руководители и специалисты по охране труда | Level: beginner | Pain points: непонимание процесса телемедицины\n\nKEYWORDS: Naturally integrate: процесс телемедицины, предрейсовый осмотр, удалённый медицинский контроль\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 70, maxWords: 120 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Ускорение предрейсовых медицинских осмотров\n\nQUALITY CRITERIA:\n- Ясность\n- Конкретика\n\nMANDATORY:\n- Описать оборудование и дистанционный контроль\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
                     "additionalData": {
-                      "minWords": 75,
-                      "maxWords": 150,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
+                      "minWords": 70,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
                   }
-                ],
-                "status": "checked"
+                ]
               },
               {
                 "id": "h3-FAQ-2",
                 "tag": "h3",
                 "classification": "FAQ",
                 "keywords": [
-                  "вопрос 2",
-                  "телемедицина",
-                  "законодательство"
+                  "законность телемедицины",
+                  "соответствие нормативам",
+                  "правовые аспекты телемедицины"
                 ],
-                "taxonomy": "Вопрос 2",
-                "attention": "Разъясняет правовые аспекты.",
-                "intent": "Ответить на второй частый вопрос о законодательстве.",
-                "audiences": "Юристы, руководители.",
-                "selfPrompt": "Создайте заголовок уровня 3 с вопросом и абзац с ответом (75-150 слов) на второй частый вопрос.",
-                "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 300,
-                  "actualContent": "need generate helpful content"
-                },
+                "taxonomy": "FAQ",
+                "attention": "Убедитесь, что телемедицина для предрейсовых осмотров соответствует законодательству и нормативам.",
+                "intent": "Ответить на вопрос о законности использования телемедицины для предрейсовых медосмотров и ее соответствии нормативным требованиям.",
+                "audiences": "Руководители, юристы, compliance-специалисты | Level: intermediate | Pain points: сомнения в легитимности телемедицины",
+                "selfPrompt": "---\nCONTEXT: Generate h3 question and p answer in section \"FAQ\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Разъяснить правовые аспекты и законность телемедицины для предрейсовых осмотров.\n\nAUDIENCE: Руководители, юристы, compliance-специалисты | Level: intermediate | Pain points: сомнения в легитимности телемедицины\n\nKEYWORDS: Naturally integrate: законность телемедицины, соответствие нормативам, правовые аспекты телемедицины\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 160, maxWords: 240 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for h3 and paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n\nQUALITY CRITERIA:\n- Ясность\n- Конкретика\n\nMANDATORY:\n- Упомянуть нормативные акты и безопасность\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
                 "realContentStructure": [
                   {
                     "id": "p-FAQ-2-1",
                     "tag": "p",
                     "keywords": [
-                      "ответ",
-                      "вопрос 2",
-                      "закон"
+                      "законность телемедицины",
+                      "нормативы",
+                      "безопасность данных"
                     ],
-                    "taxonomy": "Ответ на вопрос 2",
-                    "attention": "Обеспечивает юридическую ясность.",
-                    "intent": "Дать разъяснение по законодательным вопросам.",
-                    "audiences": "Юристы, руководители.",
-                    "selfPrompt": "Напишите абзац (75-150 слов), дающий развернутый ответ на второй вопрос.",
+                    "taxonomy": "Supporting",
+                    "attention": "Поймите, как телемедицина соответствует законодательству и обеспечивает безопасность данных.",
+                    "intent": "Объяснить, что телемедицина для предрейсовых осмотров полностью соответствует нормативным требованиям и обеспечивает безопасность процедур.",
+                    "audiences": "Руководители, юристы, compliance-специалисты | Level: intermediate | Pain points: сомнения в легитимности телемедицины",
+                    "selfPrompt": "---\nCONTEXT: Generate p (body) in section \"h3-FAQ-2\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Объяснить соответствие телемедицины законодательству и безопасность данных.\n\nAUDIENCE: Руководители, юристы, compliance-специалисты | Level: intermediate | Pain points: сомнения в легитимности телемедицины\n\nKEYWORDS: Naturally integrate: законность телемедицины, нормативы, безопасность данных\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 65, maxWords: 115 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n\nQUALITY CRITERIA:\n- Ясность\n- Конкретика\n\nMANDATORY:\n- Упомянуть нормативные акты\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
                     "additionalData": {
-                      "minWords": 75,
-                      "maxWords": 150,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
+                      "minWords": 65,
+                      "maxWords": 115,
+                      "actualContent": ""
+                    }
                   }
-                ],
-                "status": "checked"
+                ]
               },
               {
                 "id": "h3-FAQ-3",
                 "tag": "h3",
                 "classification": "FAQ",
                 "keywords": [
-                  "вопрос 3",
-                  "телемедицина",
-                  "технологии"
+                  "экономия на медосмотрах",
+                  "эффективность телемедицины",
+                  "сокращение времени осмотра"
                 ],
-                "taxonomy": "Вопрос 3",
-                "attention": "Объясняет технические аспекты.",
-                "intent": "Ответить на третий частый вопрос о технологиях телемедицины.",
-                "audiences": "IT-специалисты, руководители.",
-                "selfPrompt": "Создайте заголовок уровня 3 с вопросом и абзац с ответом (75-150 слов) на третий частый вопрос.",
-                "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 300,
-                  "actualContent": "need generate helpful content"
-                },
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, какую экономию и эффективность дает телемедицина при предрейсовых медосмотрах.",
+                "intent": "Ответить на вопрос о том, как телемедицина помогает сократить затраты и время на предрейсовые медосмотры водителей.",
+                "audiences": "Руководители транспортных компаний, специалисты по охране труда | Level: intermediate | Pain points: высокая стоимость и длительность осмотров",
+                "selfPrompt": "---\nCONTEXT: Generate h3 question and p answer in section \"FAQ\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Показать экономическую выгоду и эффективность телемедицины для предрейсовых осмотров.\n\nAUDIENCE: Руководители транспортных компаний, специалисты по охране труда | Level: intermediate | Pain points: высокая стоимость и длительность осмотров\n\nKEYWORDS: Naturally integrate: экономия на медосмотрах, эффективность телемедицины, сокращение времени осмотра\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 160, maxWords: 240 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for h3 and paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Ускорение предрейсовых медицинских осмотров\n- External KB: Экономия до 67%, время осмотра 2 минуты\n\nQUALITY CRITERIA:\n- Data-backed\n- Specific\n\nMANDATORY:\n- Упомянуть конкретные цифры экономии и времени\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
                 "realContentStructure": [
                   {
                     "id": "p-FAQ-3-1",
                     "tag": "p",
                     "keywords": [
-                      "ответ",
-                      "вопрос 3",
-                      "технологии"
+                      "экономия затрат",
+                      "сокращение времени",
+                      "телемедицина эффективность"
                     ],
-                    "taxonomy": "Ответ на вопрос 3",
-                    "attention": "Обеспечивает техническую ясность.",
-                    "intent": "Дать разъяснение по техническим вопросам.",
-                    "audiences": "IT-специалисты, руководители.",
-                    "selfPrompt": "Напишите абзац (75-150 слов), дающий развернутый ответ на третий вопрос.",
+                    "taxonomy": "Supporting",
+                    "attention": "Поймите, как телемедицина снижает затраты и ускоряет предрейсовые медосмотры.",
+                    "intent": "Дать конкретные данные и примеры экономии времени и денег при использовании телемедицины для предрейсовых осмотров.",
+                    "audiences": "Руководители транспортных компаний, специалисты по охране труда | Level: intermediate | Pain points: высокая стоимость и длительность осмотров",
+                    "selfPrompt": "---\nCONTEXT: Generate p (body) in section \"h3-FAQ-3\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Показать конкретные данные по экономии и эффективности телемедицины.\n\nAUDIENCE: Руководители транспортных компаний, специалисты по охране труда | Level: intermediate | Pain points: высокая стоимость и длительность осмотров\n\nKEYWORDS: Naturally integrate: экономия затрат, сокращение времени, телемедицина эффективность\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 75, maxWords: 130 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Ускорение предрейсовых медицинских осмотров\n- External KB: Экономия до 67%, время осмотра 2 минуты\n\nQUALITY CRITERIA:\n- Data-backed\n- Specific\n\nMANDATORY:\n- Упомянуть цифры экономии и времени\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
                     "additionalData": {
                       "minWords": 75,
-                      "maxWords": 150,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
+                      "maxWords": 130,
+                      "actualContent": ""
+                    }
                   }
-                ],
-                "status": "checked"
-              },
-              {
-                "id": "h3-FAQ-4",
-                "tag": "h3",
-                "classification": "FAQ",
-                "keywords": [
-                  "вопрос 4",
-                  "телемедицина",
-                  "безопасность"
-                ],
-                "taxonomy": "Вопрос 4",
-                "attention": "Разъясняет вопросы безопасности.",
-                "intent": "Ответить на четвёртый частый вопрос о безопасности телемедицины.",
-                "audiences": "Руководители, специалисты по охране труда.",
-                "selfPrompt": "Создайте заголовок уровня 3 с вопросом и абзац с ответом (75-150 слов) на четвёртый частый вопрос.",
-                "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 300,
-                  "actualContent": "need generate helpful content"
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-FAQ-4-1",
-                    "tag": "p",
-                    "keywords": [
-                      "ответ",
-                      "вопрос 4",
-                      "безопасность"
-                    ],
-                    "taxonomy": "Ответ на вопрос 4",
-                    "attention": "Обеспечивает понимание мер безопасности.",
-                    "intent": "Дать разъяснение по вопросам безопасности.",
-                    "audiences": "Руководители, специалисты по охране труда.",
-                    "selfPrompt": "Напишите абзац (75-150 слов), дающий развернутый ответ на четвёртый вопрос.",
-                    "additionalData": {
-                      "minWords": 75,
-                      "maxWords": 150,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
-              },
-              {
-                "id": "h3-FAQ-5",
-                "tag": "h3",
-                "classification": "FAQ",
-                "keywords": [
-                  "вопрос 5",
-                  "телемедицина",
-                  "экономия"
-                ],
-                "taxonomy": "Вопрос 5",
-                "attention": "Объясняет экономические выгоды.",
-                "intent": "Ответить на пятый частый вопрос о экономии с телемедициной.",
-                "audiences": "Руководители, менеджеры по безопасности.",
-                "selfPrompt": "Создайте заголовок уровня 3 с вопросом и абзац с ответом (75-150 слов) на пятый частый вопрос.",
-                "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 300,
-                  "actualContent": "need generate helpful content"
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-FAQ-5-1",
-                    "tag": "p",
-                    "keywords": [
-                      "ответ",
-                      "вопрос 5",
-                      "экономия"
-                    ],
-                    "taxonomy": "Ответ на вопрос 5",
-                    "attention": "Обеспечивает понимание экономических аспектов.",
-                    "intent": "Дать разъяснение по экономии затрат.",
-                    "audiences": "Руководители, менеджеры по безопасности.",
-                    "selfPrompt": "Напишите абзац (75-150 слов), дающий развернутый ответ на пятый вопрос.",
-                    "additionalData": {
-                      "minWords": 75,
-                      "maxWords": 150,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
-              },
-              {
-                "id": "h3-FAQ-6",
-                "tag": "h3",
-                "classification": "FAQ",
-                "keywords": [
-                  "вопрос 6",
-                  "телемедицина",
-                  "техническая поддержка"
-                ],
-                "taxonomy": "Вопрос 6",
-                "attention": "Разъясняет вопросы поддержки и обслуживания.",
-                "intent": "Ответить на шестой частый вопрос о технической поддержке телемедицины.",
-                "audiences": "IT-специалисты, руководители.",
-                "selfPrompt": "Создайте заголовок уровня 3 с вопросом и абзац с ответом (75-150 слов) на шестой частый вопрос.",
-                "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 300,
-                  "actualContent": "need generate helpful content"
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-FAQ-6-1",
-                    "tag": "p",
-                    "keywords": [
-                      "ответ",
-                      "вопрос 6",
-                      "поддержка"
-                    ],
-                    "taxonomy": "Ответ на вопрос 6",
-                    "attention": "Обеспечивает понимание поддержки системы.",
-                    "intent": "Дать разъяснение по вопросам технической поддержки.",
-                    "audiences": "IT-специалисты, руководители.",
-                    "selfPrompt": "Напишите абзац (75-150 слов), дающий развернутый ответ на шестой вопрос.",
-                    "additionalData": {
-                      "minWords": 75,
-                      "maxWords": 150,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
+                ]
               }
-            ],
-            "status": "checked"
-          },
-          {
-            "id": "h2-7",
-            "tag": "h2",
-            "classification": "Guide",
-            "keywords": [
-              "технологии",
-              "телемедицина",
-              "будущее",
-              "инновации",
-              "транспорт"
-            ],
-            "taxonomy": "Будущее телемедицины в транспортной отрасли",
-            "attention": "Помогает понять перспективы и тренды развития.",
-            "intent": "Рассмотреть перспективы развития телемедицины и её влияние на транспортную отрасль.",
-            "audiences": "Руководители, специалисты по охране труда, IT-специалисты.",
-            "selfPrompt": "Создайте раздел с заголовком уровня 2, раскрывающий будущее телемедицины в транспортной сфере. Включите два абзаца, таблицу, список, абзац и цитату. Используйте деловой и дружелюбный стиль. • также следует учитывать пользовательские настройки, сделанные ко всей странице: writing-style:{title:Conversational, description:Friendly, informal, like talking to a friend}, content-format:{title:Professional, description:Business-appropriate, formal tone}, custom requirements and specifications:{—} •",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 1300,
-              "maxWords": 1500,
-              "actualContent": "need generate helpful content"
-            },
-            "realContentStructure": [
-              {
-                "id": "p-7-1",
-                "tag": "p",
-                "keywords": [
-                  "будущее",
-                  "телемедицина",
-                  "транспорт"
-                ],
-                "taxonomy": "Введение в перспективы",
-                "attention": "Создаёт контекст для обсуждения трендов.",
-                "intent": "Ввести читателя в тему будущего телемедицины в транспорте.",
-                "audiences": "Руководители, специалисты по охране труда.",
-                "selfPrompt": "Напишите абзац (60-240 слов), вводящий в тему перспектив телемедицины.",
-                "additionalData": {
-                  "minWords": 60,
-                  "maxWords": 240,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "p-7-2",
-                "tag": "p",
-                "keywords": [
-                  "инновации",
-                  "технологии",
-                  "телемедицина"
-                ],
-                "taxonomy": "Роль инноваций",
-                "attention": "Подчёркивает значение новых технологий.",
-                "intent": "Объяснить роль инноваций в развитии телемедицины.",
-                "audiences": "Руководители, IT-специалисты.",
-                "selfPrompt": "Создайте абзац (100-200 слов), раскрывающий роль инноваций в телемедицине.",
-                "additionalData": {
-                  "minWords": 100,
-                  "maxWords": 200,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "table-6-2-2",
-                "tag": "table",
-                "keywords": [
-                  "тренды",
-                  "технологии",
-                  "телемедицина"
-                ],
-                "taxonomy": "Таблица трендов",
-                "attention": "Упрощает восприятие ключевых трендов.",
-                "intent": "Создать таблицу с основными трендами и их описанием.",
-                "audiences": "Руководители, специалисты по охране труда.",
-                "selfPrompt": "Сформируйте таблицу с 4-6 строками, где каждая строка содержит название тренда и краткое описание. Объём описания 200-300 слов.",
-                "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 300,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "ul-7-3",
-                "tag": "ul",
-                "keywords": [
-                  "преимущества",
-                  "будущее",
-                  "телемедицина"
-                ],
-                "taxonomy": "Список преимуществ",
-                "attention": "Позволяет быстро оценить выгоды будущих технологий.",
-                "intent": "Представить список из 5-7 преимуществ будущих телемедицинских решений.",
-                "audiences": "Руководители, специалисты по охране труда.",
-                "selfPrompt": "Создайте маркированный список из 5-7 пунктов с преимуществами будущих телемедицинских технологий. Объём 60-120 слов.",
-                "additionalData": {
-                  "minWords": 60,
-                  "maxWords": 120,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "p-7-4",
-                "tag": "p",
-                "keywords": [
-                  "заключение",
-                  "будущее",
-                  "телемедицина"
-                ],
-                "taxonomy": "Заключительный абзац",
-                "attention": "Подчёркивает важность подготовки к будущему.",
-                "intent": "Подытожить раздел и мотивировать к подготовке к изменениям.",
-                "audiences": "Руководители, специалисты по охране труда.",
-                "selfPrompt": "Напишите абзац (80-160 слов), подытоживающий перспективы и мотивирующий к подготовке.",
-                "additionalData": {
-                  "minWords": 80,
-                  "maxWords": 160,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "blockquote-7-5",
-                "tag": "blockquote",
-                "keywords": [
-                  "цитата",
-                  "будущее",
-                  "телемедицина"
-                ],
-                "taxonomy": "Мотивационная цитата",
-                "attention": "Вдохновляет на инновации и развитие.",
-                "intent": "Представить цитату эксперта о будущем телемедицины.",
-                "audiences": "Руководители, специалисты по охране труда.",
-                "selfPrompt": "Создайте цитату (15-35 слов), вдохновляющую на использование инноваций в телемедицине.",
-                "additionalData": {
-                  "minWords": 15,
-                  "maxWords": 35,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              }
-            ],
-            "status": "checked"
+            ]
           }
         ],
-        "isReadyDraftForPerplexity": true,
-        "sections": [
-          {
-            "id": "h2-1",
-            "tempMDXContent": "<h2>Телемедицина в предрейсовых медосмотрах: что это и почему это важно</h2>\n<p>Телемедицина — это современный способ организации медицинских услуг, который позволяет проводить консультации и обследования удалённо, с помощью цифровых технологий. В транспортной сфере это особенно актуально для предрейсовых медосмотров водителей. Вместо того чтобы тратить время на поездки в клинику и ожидание приёмов, водители могут пройти необходимые проверки в удобном месте, используя специальные устройства и связь с врачом через интернет. Такой подход не только упрощает процесс, но и гарантирует своевременный контроль состояния здоровья, что критично для безопасности на дорогах.</p>\n<p>Использование телемедицины для предрейсовых медосмотров приносит значительные преимущества как компаниям, так и самим водителям. Во-первых, это заметная экономия времени: осмотры проходят быстрее и без необходимости покидать рабочее место или стоянку. Во-вторых, снижаются затраты на организацию медосмотров — нет необходимости содержать собственный медпункт или оплачивать частые поездки к врачам. Наконец, водителям становится удобнее проходить проверки, что повышает их лояльность и снижает стресс, связанный с подготовкой к рейсу. В итоге телемедицина способствует оптимизации процессов и улучшению общей безопасности на транспорте.</p>\n<p>Сегодня внедрение инновационных технологий в медосмотры — это не просто модный тренд, а необходимое условие для повышения эффективности и качества контроля здоровья водителей. Телемедицина открывает новые возможности для быстрого и точного мониторинга состояния, позволяя своевременно выявлять риски и предотвращать аварийные ситуации.</p>\n<blockquote>«Инновации в медосмотрах — ключ к безопасности и успеху в транспортной отрасли. Телемедицина не просто облегчает процесс, она меняет правила игры, делая дороги безопаснее для всех нас.»</blockquote>"
-          },
-          {
-            "id": "h2-2",
-            "tempMDXContent": "<h2>Правовые аспекты использования телемедицины в предрейсовых медосмотрах</h2>\n<p>Внедрение телемедицины в систему предрейсовых медицинских осмотров требует строгого соблюдения действующего законодательства и нормативных актов. Телемедицина, как инновационная форма оказания медицинской помощи, регулируется рядом федеральных законов и подзаконных актов, направленных на обеспечение безопасности пациентов, защиту персональных данных и качество медицинских услуг. Для транспортных компаний и специалистов по охране труда важно понимать правовые рамки, в которых осуществляется дистанционный медицинский контроль водителей, чтобы гарантировать законность процедур и избежать возможных юридических рисков. В этом разделе мы подробно рассмотрим основные нормативные требования и рекомендации по организации телемедицинских предрейсовых осмотров с учётом актуального законодательства.</p>\n\n<h3>Основные нормативные требования к телемедицинским предрейсовым осмотрам</h3>\n<p>Телемедицина в сфере транспорта регулируется несколькими ключевыми нормативными актами, которые устанавливают требования к организации медицинских осмотров, техническому оснащению и квалификации специалистов. Основные нормативы направлены на обеспечение достоверности и своевременности медицинских данных, а также на защиту конфиденциальности информации о состоянии здоровья водителей. Важно, чтобы используемые телемедицинские системы имели соответствующую сертификацию, а процедуры осмотров соответствовали стандартам, утверждённым Министерством здравоохранения и другими профильными ведомствами.</p>\n<p>Процедуры предрейсовых медосмотров с применением телемедицины должны быть чётко регламентированы и включать этапы сбора данных, дистанционной консультации с врачом и документального подтверждения результатов. Особое внимание уделяется идентификации водителя и обеспечению возможности оперативного реагирования в случае выявления противопоказаний к выходу на рейс. Кроме того, законодательство требует ведения электронного архива медицинских осмотров, что позволяет контролировать историю здоровья каждого сотрудника и обеспечивает прозрачность процесса.</p>\n<p>Юридическая ответственность за соблюдение всех требований при использовании телемедицины возлагается как на медицинские организации, так и на работодателей. Несоблюдение норм может привести к административным штрафам и даже уголовной ответственности в случае причинения вреда здоровью или жизни третьих лиц. Поэтому важно тщательно подходить к выбору технологий и организации процессов, чтобы минимизировать риски и обеспечить безопасность на дорогах.</p>\n<table>\n  <thead>\n    <tr>\n      <th>Нормативный акт</th>\n      <th>Ключевые требования</th>\n      <th>Описание</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Федеральный закон №323-ФЗ «Об основах охраны здоровья граждан в Российской Федерации»</td>\n      <td>Регулирует оказание медицинской помощи, включая дистанционные услуги</td>\n      <td>Устанавливает общие принципы организации медицинской помощи, включая телемедицину, требования к квалификации медицинских работников и обеспечение качества услуг.</td>\n    </tr>\n    <tr>\n      <td>Приказ Минздрава РФ № 804н</td>\n      <td>Требования к проведению предрейсовых медицинских осмотров</td>\n      <td>Определяет порядок и содержание предрейсовых осмотров водителей, включая возможность применения телемедицинских технологий при соблюдении установленных стандартов.</td>\n    </tr>\n    <tr>\n      <td>Федеральный закон №152-ФЗ «О персональных данных»</td>\n      <td>Защита и конфиденциальность медицинской информации</td>\n      <td>Обеспечивает правовые основы для обработки и защиты персональных данных, включая медицинские сведения, что критично при использовании телемедицины.</td>\n    </tr>\n    <tr>\n      <td>ГОСТ Р 57580-2017 «Телемедицина. Термины и определения»</td>\n      <td>Стандартизация терминологии и требований к телемедицинским системам</td>\n      <td>Обеспечивает единообразие в понимании и применении телемедицинских технологий, что способствует правильной организации процессов и взаимодействию участников.</td>\n    </tr>\n    <tr>\n      <td>Приказ Минтранса РФ № 152</td>\n      <td>Требования к охране труда и медосмотрам водителей</td>\n      <td>Определяет обязательные процедуры предрейсовых медосмотров, включая использование современных технологий для контроля состояния водителей.</td>\n    </tr>\n  </tbody>\n</table>\n\n<h3>Практические рекомендации по соблюдению законодательства при внедрении телемедицины</h3>\n<p>Для успешного и законного внедрения телемедицины в процесс предрейсовых медосмотров необходимо тщательно подготовиться и организовать работу в соответствии с действующими нормативами. Важно начать с анализа требований законодательства и выбора сертифицированных телемедицинских платформ, которые обеспечивают безопасность данных и качество медицинских услуг. Также следует разработать внутренние регламенты, описывающие порядок проведения осмотров, ответственность сотрудников и взаимодействие с медицинскими организациями.</p>\n<ul>\n  <li>Проведите аудит действующих процедур и технических средств для выявления потребностей в модернизации.</li>\n  <li>Выберите телемедицинскую платформу с подтверждённой сертификацией и соответствием стандартам безопасности.</li>\n  <li>Разработайте и утвердите регламент проведения предрейсовых осмотров с использованием телемедицины.</li>\n  <li>Обучите персонал и водителей правилам работы с новой системой и соблюдению конфиденциальности.</li>\n  <li>Организуйте контроль и аудит соблюдения нормативных требований в процессе эксплуатации.</li>\n</ul>\n<code>\nРегламент_Телемедицинских_Осмотров.docx:<br>\n- Цель: обеспечение своевременного и качественного предрейсового контроля здоровья водителей.<br>\n- Процедура: дистанционное обследование с использованием сертифицированных устройств и программного обеспечения.<br>\n- Ответственные: медицинский работник, специалист по охране труда, водитель.<br>\n- Документирование: электронный журнал с результатами и заключениями врача.<br>\n</code>\n<p>Соблюдение этих рекомендаций поможет минимизировать юридические риски и повысить эффективность работы транспортной компании. Ответственность за соблюдение законодательства при внедрении телемедицины лежит на руководстве и специалистах по охране труда, поэтому важно уделять внимание не только технической стороне, но и правовому сопровождению процесса.</p>"
-          },
-          {
-            "id": "h2-3",
-            "tempMDXContent": "<h2>Сравнение телемедицинских и традиционных предрейсовых медосмотров: преимущества и особенности</h2>\n<p>Рассмотрим ключевые отличия и преимущества телемедицинских осмотров по сравнению с традиционными методами.</p>\n<p>Телемедицина в предрейсовых медосмотрах предлагает ряд значимых преимуществ, которые делают её более эффективной и удобной по сравнению с классическими подходами. Во-первых, это заметная экономия времени: водители проходят осмотр без необходимости покидать рабочее место или стоянку, что сокращает простой техники и повышает общую производительность. Во-вторых, снижаются затраты на организацию медицинских услуг — отсутствует необходимость в содержании стационарных медпунктов и оплате транспортных расходов. Кроме того, телемедицина обеспечивает более гибкий график осмотров, что удобно для компаний с большим автопарком. Важно и то, что цифровая фиксация результатов снижает риски ошибок и потери данных, повышая качество контроля здоровья. Все эти факторы делают телемедицину привлекательным решением для современных транспортных предприятий, стремящихся оптимизировать процессы и повысить безопасность на дорогах.</p>\n\n<h3>Скорость и экономия: ключевые показатели сравнения телемедицины и традиционных осмотров</h3>\n<p>Одним из главных преимуществ телемедицины является значительное сокращение времени, необходимого для проведения предрейсового медицинского осмотра. Традиционные методы требуют физического присутствия водителя в медицинском учреждении, что часто связано с ожиданием в очередях и затратами времени на дорогу. Телемедицинские осмотры позволяют проводить обследование удалённо, используя специализированное оборудование и связь с врачом в режиме реального времени. Это значительно ускоряет процесс и позволяет водителям оперативно получать разрешение на рейс без лишних задержек.</p>\n<p>Кроме того, телемедицина минимизирует простой транспорта, что особенно важно для компаний с интенсивным графиком работы. Быстрый доступ к результатам осмотра обеспечивает своевременное принятие решений и улучшает планирование рабочих смен. Такой подход повышает общую эффективность и снижает нагрузку на медицинский персонал, позволяя им концентрироваться на более сложных случаях.</p>\n<p>В сравнении с традиционными осмотрами, телемедицина также сокращает административные затраты и расходы на логистику, что положительно сказывается на бюджете компании и способствует улучшению экономических показателей.</p>\n<ol>\n  <li>Сокращение времени на проведение осмотра до 50% по сравнению с традиционным методом.</li>\n  <li>Уменьшение затрат на транспортировку и содержание медпунктов.</li>\n  <li>Повышение пропускной способности медицинского персонала.</li>\n  <li>Снижение простоев транспорта за счёт оперативного получения результатов.</li>\n  <li>Автоматизация документооборота и снижение риска ошибок.</li>\n</ol>\n\n<h4>Технические детали и регламенты телемедицинских предрейсовых осмотров</h4>\n<p>Для успешной реализации телемедицинских предрейсовых осмотров необходима соответствующая техническая база. В первую очередь, требуется оснащение рабочих мест водителей современными диагностическими устройствами, такими как портативные тонометры, пульсоксиметры, электрокардиографы и другие приборы, способные передавать данные в цифровом формате. Также важна стабильная и защищённая интернет-связь для обеспечения качественной видеоконференции с врачом и передачи медицинской информации.</p>\n<p>Программное обеспечение должно соответствовать требованиям безопасности и конфиденциальности, обеспечивая защиту персональных данных и предотвращая несанкционированный доступ. Используемые платформы должны иметь сертификаты соответствия и быть интегрированы с информационными системами медицинских учреждений для автоматического формирования отчётов и ведения электронных медицинских карт.</p>\n<p>Ниже представлен пример шаблона регламента, который может использоваться для организации телемедицинских предрейсовых осмотров в транспортной компании:</p>\n<pre><code>Регламент_Телемедицинских_Осмотров:\n- Цель: обеспечение своевременного и качественного контроля здоровья водителей перед рейсом.\n- Оборудование: сертифицированные диагностические устройства с возможностью передачи данных.\n- Программное обеспечение: защищённая платформа с функцией видеоконсультации и электронным документооборотом.\n- Процедура:\n  1. Идентификация водителя через систему аутентификации.\n  2. Проведение измерений с помощью оборудования.\n  3. Передача данных врачу в режиме реального времени.\n  4. Врач даёт заключение и рекомендации.\n  5. Результаты автоматически сохраняются в электронной медицинской карте.\n- Ответственные: медицинский работник, специалист по охране труда, водитель.\n- Контроль качества: регулярный аудит и обновление оборудования и ПО.</code></pre>\n<p>Соблюдение регламентов и технических требований гарантирует надёжность и эффективность телемедицинских осмотров. Это не только повышает уровень безопасности на транспорте, но и способствует соблюдению нормативных актов и стандартов медицинской практики. Важно, чтобы все участники процесса — от водителей до медицинских специалистов — были обучены и понимали свои обязанности в рамках данной системы.</p>"
-          },
-          {
-            "id": "h2-4",
-            "tempMDXContent": "<h2>Практические шаги по внедрению телемедицины в компании</h2>\n<p>Внедрение телемедицины в компании — это важный и многоэтапный процесс, который требует тщательной подготовки и координации между различными подразделениями. Чтобы технология стала эффективным инструментом для предрейсовых медицинских осмотров, необходимо обеспечить не только техническую готовность, но и грамотное обучение персонала, а также организацию постоянной поддержки пользователей. Правильный подход к внедрению позволит минимизировать риски, повысить уровень безопасности и улучшить качество контроля здоровья сотрудников. В этом разделе мы подробно рассмотрим ключевые шаги, которые помогут вашей компании успешно интегрировать телемедицинские решения в повседневную практику.</p>\n\n<h3>Обучение и подготовка персонала к работе с телемедициной</h3>\n<p><strong>Обучение персонала — залог успешного внедрения телемедицины.</strong> Без понимания принципов работы и возможностей новых технологий сотрудники не смогут эффективно использовать их в своей деятельности, что может привести к ошибкам и снижению качества медицинских осмотров.</p>\n<p>Для обучения рекомендуется использовать разнообразные методы и форматы, которые учитывают особенности восприятия информации разными категориями сотрудников. Это могут быть очные тренинги, вебинары, интерактивные курсы и практические занятия с использованием оборудования. Такой комплексный подход позволяет не только освоить технические навыки, но и понять, как правильно взаимодействовать с системой в реальных условиях.</p>\n<p>После прохождения обучения важно обеспечить сотрудников поддержкой и ресурсами для решения возникающих вопросов. Это может быть служба технической поддержки, регулярные обновления инструкций и проведение дополнительных сессий по повышению квалификации. Постоянная помощь помогает закрепить полученные знания и поддерживает мотивацию к использованию телемедицины.</p>\n<p>Обучение должно охватывать не только медицинский персонал, но и специалистов по охране труда, а также самих водителей, чтобы все участники процесса понимали свои роли и обязанности.</p>\n<ul>\n  <li>Проводите регулярные тренинги и обучающие вебинары для всех категорий участников.</li>\n  <li>Используйте интерактивные и практические методы обучения для лучшего усвоения материала.</li>\n  <li>Обеспечьте доступ к подробным инструкциям и руководствам.</li>\n  <li>Организуйте службу поддержки для оперативного решения технических и организационных вопросов.</li>\n  <li>Проводите периодическую оценку знаний и навыков персонала.</li>\n  <li>Стимулируйте сотрудников к активному использованию телемедицинских технологий.</li>\n  <li>Обеспечьте прозрачную коммуникацию между медицинским персоналом, специалистами по охране труда и водителями.</li>\n</ul>\n\n<h3>Техническая поддержка и выбор оборудования для телемедицины</h3>\n<p>Качественная техническая поддержка является фундаментом стабильной работы телемедицинской системы. Она включает в себя не только своевременное устранение технических неполадок, но и регулярное обновление программного обеспечения, мониторинг состояния оборудования и обучение персонала работе с новыми функциями. Без надежной поддержки возможны сбои в работе, которые могут повлиять на точность и своевременность медицинских осмотров, что недопустимо в транспортной сфере, где безопасность — приоритет.</p>\n<p>Выбор оборудования для телемедицинских осмотров должен базироваться на нескольких ключевых критериях: сертификация и соответствие стандартам, совместимость с используемым программным обеспечением, удобство эксплуатации и надежность. Важно учитывать специфику работы — оборудование должно быть портативным, простым в использовании и обеспечивать точную передачу медицинских данных в режиме реального времени. Также стоит обращать внимание на возможность интеграции с другими системами компании для автоматизации процессов и удобства ведения документации.</p>\n<ol>\n  <li>Обеспечьте наличие сертифицированных и проверенных медицинских устройств.</li>\n  <li>Выбирайте оборудование с поддержкой современных стандартов передачи данных.</li>\n  <li>Обеспечьте совместимость техники с используемым телемедицинским ПО.</li>\n  <li>Организуйте регулярное техническое обслуживание и обновление оборудования.</li>\n  <li>Создайте систему мониторинга состояния устройств для своевременного выявления проблем.</li>\n  <li>Обучите IT-персонал и медицинских работников основам работы с техникой.</li>\n  <li>Разработайте процедуры резервного копирования и защиты данных.</li>\n</ol>\n<blockquote>«Надёжная техническая поддержка — это не просто сервис, а основа безопасности и эффективности телемедицинских осмотров. Без неё невозможно обеспечить бесперебойную работу и высокое качество медицинских услуг.»</blockquote>"
-          },
-          {
-            "id": "h2-5",
-            "tempMDXContent": "<h2>Итоги и рекомендации по использованию телемедицины в предрейсовых медосмотрах</h2>\n<p>Телемедицина в предрейсовых медицинских осмотрах представляет собой эффективное решение, которое сочетает в себе удобство, скорость и безопасность. Благодаря удалённым консультациям и цифровой фиксации данных компании получают возможность значительно оптимизировать процесс контроля здоровья водителей, снижая временные и финансовые затраты. Внедрение телемедицинских технологий повышает качество медицинских осмотров за счёт автоматизации документооборота, минимизации ошибок и оперативного доступа к результатам. Кроме того, такой подход способствует улучшению условий труда водителей, снижая стресс и упрощая прохождение обязательных проверок. В итоге телемедицина становится неотъемлемой частью современной системы охраны труда и безопасности дорожного движения.</p>\n<p>Внедрение телемедицины — это не только технологический шаг вперёд, но и стратегическое решение для повышения общей безопасности на транспорте. Компании, которые инвестируют в современные решения, получают конкурентное преимущество, улучшая репутацию и снижая риски аварийных ситуаций. При этом важно помнить, что успех зависит от комплексного подхода: технической оснащённости, обучения персонала и строгого соблюдения нормативных требований. Только так можно обеспечить высокое качество медицинского контроля и защитить здоровье сотрудников, что является приоритетом для любого ответственного работодателя.</p>\n\n<p><em>Используйте телемедицину сегодня — инвестируйте в безопасность и эффективность вашего бизнеса.</em></p>\n\n<h3>Рекомендации по внедрению и эффективному использованию телемедицины</h3>\n<p>Для успешного внедрения телемедицины в систему предрейсовых медосмотров необходимо тщательно продумать организационные и технические аспекты. Важно не только выбрать надёжную платформу и оборудование, но и обеспечить обучение сотрудников, разработать чёткие регламенты и наладить контроль за соблюдением процессов. Ниже приведены ключевые рекомендации, которые помогут сделать переход к телемедицинским осмотрам максимально плавным и эффективным.</p>\n<ul>\n  <li>Проведите предварительный аудит существующих процедур и технической базы для выявления потребностей и возможностей интеграции телемедицины.</li>\n  <li>Выберите сертифицированные телемедицинские платформы и оборудование, соответствующие требованиям безопасности и конфиденциальности данных.</li>\n  <li>Разработайте и утвердите внутренние регламенты, подробно описывающие порядок проведения дистанционных осмотров и распределение ответственности.</li>\n  <li>Обеспечьте комплексное обучение медицинского персонала, специалистов по охране труда и водителей для эффективного взаимодействия с системой.</li>\n  <li>Организуйте постоянную техническую поддержку и мониторинг работы оборудования для предотвращения сбоев и поддержания качества услуг.</li>\n  <li>Внедрите систему контроля и аудита соблюдения нормативных требований и внутренних процедур, чтобы минимизировать риски и повысить прозрачность процессов.</li>\n  <li>Обеспечьте защиту персональных данных и соблюдение законодательства в области охраны здоровья и безопасности труда.</li>\n</ul>\n<p>Соблюдение этих рекомендаций позволит не только повысить эффективность предрейсовых медосмотров, но и создать безопасную и комфортную среду для водителей и медицинского персонала. В конечном итоге это способствует снижению аварийности и укреплению корпоративной культуры, ориентированной на заботу о здоровье сотрудников и ответственность за безопасность на дорогах.</p>"
-          },
-          {
-            "id": "FAQ",
-            "tempMDXContent": "<h2>Часто задаваемые вопросы о телемедицине в предрейсовых медосмотрах</h2>\n<p>В этом разделе мы собрали ответы на самые распространённые вопросы, которые возникают у руководителей, специалистов по охране труда и самих водителей при внедрении и использовании телемедицины для предрейсовых медицинских осмотров. Телемедицина — относительно новая и быстро развивающаяся область, поэтому важно разъяснить ключевые моменты, связанные с её применением, законодательной базой, техническими аспектами и безопасностью. Наши ответы помогут вам лучше понять, как эффективно и безопасно использовать телемедицинские технологии, а также избежать распространённых ошибок и недоразумений. Если у вас останутся дополнительные вопросы, мы всегда готовы помочь разобраться в деталях и подобрать оптимальные решения для вашей компании.</p>\n\n<h3>Что такое телемедицина в предрейсовых медосмотрах и как она работает?</h3>\n<p>Телемедицина в предрейсовых медосмотрах — это организация дистанционного контроля здоровья водителей с использованием современных цифровых технологий. Вместо традиционного посещения медицинского учреждения водитель проходит необходимые обследования на рабочем месте или в специально оборудованной зоне, используя портативные диагностические приборы. Полученные данные передаются врачу в режиме реального времени через защищённые каналы связи, что позволяет оперативно получить медицинское заключение. Такой подход сокращает время осмотра, снижает нагрузку на медицинский персонал и повышает удобство для водителей, сохраняя при этом высокие стандарты качества и безопасности медицинских услуг.</p>\n\n<h3>Какие законодательные требования необходимо соблюдать при использовании телемедицины для предрейсовых осмотров?</h3>\n<p>Использование телемедицины в предрейсовых медосмотрах регулируется рядом нормативных актов, включая федеральные законы и приказы Минздрава и Минтранса. Важно соблюдать требования по защите персональных данных, обеспечивать сертификацию используемого оборудования и программного обеспечения, а также вести электронный документооборот с сохранением истории медицинских осмотров. Кроме того, процедуры должны соответствовать стандартам качества медицинской помощи, а медицинские специалисты — иметь необходимую квалификацию. Соблюдение этих требований гарантирует законность и безопасность телемедицинских услуг, снижая риски юридической ответственности для работодателя и медицинской организации.</p>\n\n<h3>Какие технологии и оборудование используются для проведения телемедицинских предрейсовых осмотров?</h3>\n<p>Для телемедицинских осмотров применяются современные портативные медицинские приборы: тонометры, пульсоксиметры, электрокардиографы и другие устройства, способные передавать данные в цифровом формате. Важна стабильная и защищённая интернет-связь для видеоконсультаций с врачом и передачи информации. Программное обеспечение должно обеспечивать безопасность данных, иметь удобный интерфейс и возможность интеграции с медицинскими информационными системами. Всё оборудование и ПО должны иметь сертификаты соответствия и регулярно проходить техническое обслуживание, чтобы гарантировать точность измерений и надёжность работы системы.</p>\n\n<h3>Насколько безопасна телемедицина в предрейсовых медицинских осмотрах?</h3>\n<p>Телемедицина обеспечивает высокий уровень безопасности благодаря использованию сертифицированного оборудования, защищённых каналов передачи данных и строгому соблюдению нормативных требований. Все медицинские данные шифруются и хранятся в защищённых электронных архивах, что исключает несанкционированный доступ. Кроме того, дистанционный контроль позволяет оперативно выявлять противопоказания к выходу на рейс, снижая риски аварий и несчастных случаев. Внедрение системы контроля качества и регулярные аудиты помогают поддерживать высокий уровень безопасности и доверия к телемедицинским услугам.</p>\n\n<h3>Можно ли с помощью телемедицины сэкономить время и деньги при проведении предрейсовых осмотров?</h3>\n<p>Да, телемедицина существенно сокращает время проведения предрейсовых осмотров, устраняя необходимость поездок в медицинские учреждения и ожидания в очередях. Это снижает простой транспорта и повышает производительность. Кроме того, снижаются затраты на содержание стационарных медпунктов и транспортные расходы. Автоматизация документооборота уменьшает административные издержки и риск ошибок. В итоге компании получают экономический эффект за счёт оптимизации процессов и повышения эффективности контроля здоровья водителей.</p>\n\n<h3>Как организована техническая поддержка и обучение при внедрении телемедицины?</h3>\n<p>Техническая поддержка включает регулярное обслуживание и обновление оборудования и программного обеспечения, мониторинг работы системы и оперативное устранение неполадок. Для успешного внедрения важно провести комплексное обучение медицинского персонала, специалистов по охране труда и водителей. Обучение может включать тренинги, вебинары и практические занятия, а также предоставление подробных инструкций и круглосуточную службу поддержки. Такой подход обеспечивает бесперебойную работу системы, повышает уровень компетентности сотрудников и способствует успешной интеграции телемедицины в повседневную практику компании.</p>"
-          },
-          {
-            "id": "h2-7",
-            "tempMDXContent": ""
-          }
-        ],
-        "isPreviewComplited": false
+        "isReadyDraftForPerplexity": false
       }
     ],
     "order": 10
@@ -9531,5 +8596,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-08T17:44:47.217Z";
+export const lastUpdated = "2025-10-08T22:13:19.785Z";
 export const generatedBy = "menu-persist-api";
