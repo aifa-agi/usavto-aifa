@@ -2,7 +2,7 @@
 
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { LoadingSpinner } from "@/components/ui/loading-spinner";
@@ -15,6 +15,7 @@ import {
   AlertCircle,
   Hash,
   Target,
+  Database,
 } from "lucide-react";
 import { UserType } from "@prisma/client";
 
@@ -22,6 +23,7 @@ import { PageNotFound } from "../../../../page-not-found";
 import { AdminPageInfoProps } from "../(_types)/admin-page-types";
 import { useSystemFields } from "../(_hooks)/use-system-fields";
 import { useKeywordsField } from "../(_hooks)/use-keywords-field";
+import { useFieldStreamGeneration } from "../(_hooks)/use-field-stream-generation";
 import {
   EDITABLE_SYSTEM_FIELDS,
   SYSTEM_FIELDS_CONFIG,
@@ -30,7 +32,11 @@ import {
 } from "../(_constants)/system-fields-config";
 import { EditableSystemFields } from "./editable-system-fields";
 import { EditableKeywordsField } from "./editable-keywords-field";
+import { InternalKnowledgeBaseDisplay } from "./internal-knowledge-base-display";
+import { KnowledgeBaseDisplay } from "./knowledge-base-display";
+import { PageImagesSection } from "./page-images-section";
 import { useAdminPageData } from "../../../../../(_hooks)/use-admin-page-data";
+import type { FieldGenerationType } from "@/config/knowledge-base-prompts";
 
 /**
  * Helper function to format category display name
@@ -58,6 +64,18 @@ const formatUrlDisplay = (
 };
 
 /**
+ * Fields that support AI generation
+ */
+const AI_GENERATION_SUPPORTED_FIELDS = new Set<string>([
+  "title",
+  "description",
+  "intent",
+  "taxonomy",
+  "attention",
+  "audiences",
+]);
+
+/**
  * Main AdminPageInfo component that displays comprehensive page information
  * with inline editing capabilities for all editable fields including title, description, and keywords
  *
@@ -67,6 +85,9 @@ const formatUrlDisplay = (
  * - Organized field groups for better UX
  * - Enhanced system instructions editing
  * - Full-width keywords container
+ * - Internal and External Knowledge Base display
+ * - AI-powered field generation with streaming
+ * - Modular images section (extracted to separate component)
  */
 export function AdminPageInfo({ slug }: AdminPageInfoProps) {
   // Get page data using centralized hook
@@ -86,6 +107,40 @@ export function AdminPageInfo({ slug }: AdminPageInfoProps) {
     categoryTitle: category?.title || "",
     slug,
   });
+
+  // Initialize AI field generation hook
+  const aiGenerationHook = useFieldStreamGeneration();
+
+  /**
+   * Handle AI generation trigger
+   * Starts streaming generation and updates the editing value in real-time
+   */
+  const handleGenerateAi = async (fieldType: FieldGenerationType) => {
+    if (!page) return;
+
+    try {
+      await aiGenerationHook.startFieldGeneration({
+        fieldType,
+        currentValue: systemFieldsHook.editingValue,
+        externalKnowledgeBase: page.externallKnowledgeBase,
+        context: {
+          pageTitle: page.title,
+          keywords: page.keywords || [],
+        },
+      });
+    } catch (error) {
+      console.error("AI generation error:", error);
+    }
+  };
+
+  /**
+   * Update editing value when AI stream produces new content
+   */
+  useEffect(() => {
+    if (aiGenerationHook.streamedText && aiGenerationHook.isGenerating) {
+      systemFieldsHook.updateValue(aiGenerationHook.streamedText);
+    }
+  }, [aiGenerationHook.streamedText, aiGenerationHook.isGenerating]);
 
   // Show loading state with theme-aware colors
   if (loading || !initialized) {
@@ -117,6 +172,9 @@ export function AdminPageInfo({ slug }: AdminPageInfoProps) {
     userRole,
     systemFieldsCanEdit: systemFieldsHook.canEdit,
     keywordsFieldCanEdit: keywordsFieldHook.canEdit,
+    hasInternalKB: !!page.internalKnowledgeBase,
+    hasExternalKB: !!page.externallKnowledgeBase,
+    imagesCount: page.images?.length || 0,
   });
 
   return (
@@ -210,6 +268,8 @@ export function AdminPageInfo({ slug }: AdminPageInfoProps) {
               const currentValue = page[
                 fieldKey as keyof typeof page
               ] as string;
+              const supportsAiGeneration =
+                AI_GENERATION_SUPPORTED_FIELDS.has(fieldKey);
 
               return (
                 <EditableSystemFields
@@ -224,6 +284,17 @@ export function AdminPageInfo({ slug }: AdminPageInfoProps) {
                   onCancel={systemFieldsHook.cancelEditing}
                   onSave={systemFieldsHook.saveField}
                   onValueChange={systemFieldsHook.updateValue}
+                  supportsAiGeneration={supportsAiGeneration}
+                  externalKnowledgeBase={page.externallKnowledgeBase}
+                  pageContext={{
+                    pageTitle: page.title,
+                    keywords: page.keywords || [],
+                  }}
+                  onGenerateAi={handleGenerateAi}
+                  isGenerating={
+                    aiGenerationHook.isGenerating &&
+                    aiGenerationHook.currentFieldType === fieldKey
+                  }
                 />
               );
             })}
@@ -261,8 +332,6 @@ export function AdminPageInfo({ slug }: AdminPageInfoProps) {
         </div>
       )}
 
-
-
       {/* System Instructions - Only AI guidance fields */}
       {page && (
         <div className="space-y-4">
@@ -289,6 +358,8 @@ export function AdminPageInfo({ slug }: AdminPageInfoProps) {
               const currentValue = page[
                 fieldKey as keyof typeof page
               ] as string;
+              const supportsAiGeneration =
+                AI_GENERATION_SUPPORTED_FIELDS.has(fieldKey);
 
               return (
                 <EditableSystemFields
@@ -303,6 +374,17 @@ export function AdminPageInfo({ slug }: AdminPageInfoProps) {
                   onCancel={systemFieldsHook.cancelEditing}
                   onSave={systemFieldsHook.saveField}
                   onValueChange={systemFieldsHook.updateValue}
+                  supportsAiGeneration={supportsAiGeneration}
+                  externalKnowledgeBase={page.externallKnowledgeBase}
+                  pageContext={{
+                    pageTitle: page.title,
+                    keywords: page.keywords || [],
+                  }}
+                  onGenerateAi={handleGenerateAi}
+                  isGenerating={
+                    aiGenerationHook.isGenerating &&
+                    aiGenerationHook.currentFieldType === fieldKey
+                  }
                 />
               );
             })}
@@ -310,40 +392,38 @@ export function AdminPageInfo({ slug }: AdminPageInfoProps) {
         </div>
       )}
 
-      {/* Images Section */}
-      {page.images && page.images.length > 0 && (
-        <Card>
-          <CardHeader className="pb-4">
-            <CardTitle className="text-lg">Associated Images</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {page.images.map((image: any, index: number) => (
-                <div
-                  key={image.id || index}
-                  className="border border-border rounded-lg p-3 bg-card"
-                >
-                  {image.href ? (
-                    <img
-                      src={image.href}
-                      alt={image.alt || `Page image ${index + 1}`}
-                      className="w-full h-32 object-cover rounded-md mb-3"
-                      loading="lazy"
-                    />
-                  ) : (
-                    <div className="w-full h-32 bg-muted rounded-md mb-3 flex items-center justify-center">
-                      <FileText className="size-8 text-muted-foreground" />
-                    </div>
-                  )}
-                  <p className="text-xs text-muted-foreground break-words">
-                    {image.alt || `Image ${index + 1} - No description`}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
+      {/* Knowledge Base Section - Display Internal and External KB */}
+      {page && (page.internalKnowledgeBase || page.externallKnowledgeBase) && (
+        <div className="space-y-4">
+          <div className="flex items-center gap-2 mb-4">
+            <Database className="size-5" />
+            <h2 className="text-lg font-semibold text-foreground">
+              Knowledge Base
+            </h2>
+            <p className="text-sm text-muted-foreground">
+              Internal and external knowledge used for AI generation
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
+            {/* Internal Knowledge Base */}
+            <InternalKnowledgeBaseDisplay
+              internalKnowledgeBase={page.internalKnowledgeBase}
+            />
+
+            {/* External Knowledge Base */}
+            <KnowledgeBaseDisplay
+              externalKnowledgeBase={page.externallKnowledgeBase}
+            />
+          </div>
+        </div>
       )}
+
+      {/* Images Section - Extracted to separate component */}
+      <PageImagesSection
+        images={page.images}
+        canEdit={systemFieldsHook.canEdit}
+      />
     </div>
   );
 }
