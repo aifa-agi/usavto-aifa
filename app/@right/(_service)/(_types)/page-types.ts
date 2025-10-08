@@ -408,6 +408,8 @@ export interface PageData {
   type: PageType;
   title?: string;
   description?: string;
+  internalKnowledgeBase?: string;
+  externallKnowledgeBase?: string;
   images?: PageImages[];
   tags?: string[];
   authors?: PageAuthors[];

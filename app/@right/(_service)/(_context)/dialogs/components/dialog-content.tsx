@@ -1,4 +1,4 @@
-// @/app/(_service)/contexts/dialogs/components/dialog-content.tsx
+// @/app/@right/(_service)/(_context)/dialogs/components/dialog-content.tsx
 
 "use client";
 
@@ -63,20 +63,23 @@ export function DialogContent({
 }: DialogContentProps) {
   if (!dialog.open) return null;
 
+  // NEW: Handle "Information Does Not Exist" button click
+  const handleInfoDoesNotExist = () => {
+    setInput("Information does not exist");
+  };
+
   const handleConfirm = () => {
     let validImages = images.imagesList;
 
     if (dialog.inputType === "images") {
-      validImages = images.imagesList.filter(
-        (image) => {
-          // ✅ ИСПРАВЛЕНО: Проверяем существование перед вызовом trim()
-          const hasAlt = image.alt && image.alt.trim().length > 0;
-          const hasHref = image.href && image.href.trim().length > 0;
+      validImages = images.imagesList.filter((image) => {
+        // Check if both fields exist and are not empty
+        const hasAlt = image.alt && image.alt.trim().length > 0;
+        const hasHref = image.href && image.href.trim().length > 0;
 
-          // ✅ Оба поля должны быть заполнены
-          return hasAlt && hasHref;
-        }
-      );
+        // Both fields must be filled
+        return hasAlt && hasHref;
+      });
 
       console.log("[dialog-content] All images:", images.imagesList);
       console.log("[dialog-content] Valid images:", validImages);
@@ -88,7 +91,7 @@ export function DialogContent({
       dialog.inputType,
       input,
       keywords.keywordsList,
-      validImages // ✅ Передаём только валидные изображения
+      validImages // Pass only valid images
     );
   };
 
@@ -100,22 +103,37 @@ export function DialogContent({
     }
 
     if (dialog.inputType === "images") {
-      // ✅ ИСПРАВЛЕНО: Проверяем, что есть хотя бы одно полностью заполненное изображение
+      // Check that at least one image is completely filled
       return images.imagesList.some(
         (image) => image.alt?.trim() && image.href?.trim()
       );
     }
 
+    // NEW: Knowledge Base validation - input must have content
+    if (dialog.inputType === "knowledge-base") {
+      return input.trim().length > 0;
+    }
+
     return input.trim().length > 0;
   };
+
+  // NEW: Determine dialog width based on input type
+  const getDialogWidth = () => {
+    if (dialog.inputType === "images") return "sm:max-w-[600px]";
+    if (dialog.inputType === "knowledge-base") return "sm:max-w-[600px]";
+    return "sm:max-w-[425px]";
+  };
+
+  // NEW: Determine if we should show "Information Does Not Exist" button
+  const showInfoButton =
+    dialog.inputType === "knowledge-base" &&
+    dialog.knowledgeBase?.showInfoButton !== false;
 
   return (
     <Dialog open onOpenChange={onClose}>
       <ShadcnDialogContent
-        className={`${dialog.inputType === "images"
-            ? "sm:max-w-[600px]"
-            : "sm:max-w-[425px]"
-          } ${dialog.type === "delete" ? "border-2 border-red-600" : ""}`}
+        className={`${getDialogWidth()} ${dialog.type === "delete" ? "border-2 border-red-600" : ""
+          }`}
       >
         <DialogHeader>
           <DialogTitle>{dialog.title}</DialogTitle>
@@ -125,7 +143,12 @@ export function DialogContent({
         </DialogHeader>
 
         {dialog.type !== "delete" && (
-          <div className="grid gap-4 py-2">
+          <div
+            className={`grid gap-4 py-2 ${dialog.inputType === "knowledge-base"
+                ? "max-h-[500px] overflow-y-auto custom-scrollbar"
+                : ""
+              }`}
+          >
             <InputFields
               dialog={dialog}
               input={input}
@@ -133,6 +156,7 @@ export function DialogContent({
               keywords={keywords}
               images={images}
               onConfirm={handleConfirm}
+              onInfoDoesNotExist={handleInfoDoesNotExist}
             />
             {dialog.inputType === "textarea" && (
               <p className="text-xs text-muted-foreground">
@@ -143,6 +167,19 @@ export function DialogContent({
         )}
 
         <DialogFooter>
+          {/* NEW: "Information Does Not Exist" button for Knowledge Base */}
+          {showInfoButton && (
+            <Button
+              type="button"
+              variant="ghost"
+              disabled={dialog.confirmLoading}
+              onClick={handleInfoDoesNotExist}
+              className="mr-auto"
+            >
+              Information Does Not Exist
+            </Button>
+          )}
+
           <DialogClose asChild>
             <Button
               type="button"

@@ -33,7 +33,7 @@ export function PageActionsDropdown({
   categories,
   setCategories,
 }: PageActionsDropdownProps) {
-  // Все хуки должны быть вызваны ДО любых условных проверок
+  // All hooks must be called BEFORE any conditional checks (React hooks rules)
   const { dirty: hasUnsavedChanges } = useNavigationMenu();
 
   const { currentPageData, dataStatus, getCurrentPageData } = usePageData({
@@ -41,14 +41,13 @@ export function PageActionsDropdown({
     categoryTitle: categoryTitle || "", // Provide fallback to avoid undefined
     categories: categories || [], // Provide fallback to avoid undefined
   });
-  const {
 
-    handlePageTypeChange,
-  } = useBadgesLogic({
+  const { handlePageTypeChange } = useBadgesLogic({
     singlePage,
     categoryTitle,
     setCategories,
   });
+
   const pageActions = usePageActions({
     singlePage,
     categoryTitle: categoryTitle || "",
@@ -62,7 +61,7 @@ export function PageActionsDropdown({
     dataStatus,
   });
 
-  // Теперь проверяем условия ПОСЛЕ вызова всех хуков
+  // Now check conditions AFTER calling all hooks
   if (!categoryTitle || !categories) {
     return (
       <div className="p-4 bg-red-100 border border-red-400 rounded">
@@ -115,10 +114,8 @@ export function PageActionsDropdown({
             hasUnsavedChanges={hasUnsavedChanges}
           />
         ) : (
-          <HomeActionsMenu
-          />
+          <HomeActionsMenu />
         )}
-
       </DropdownMenuContent>
     </DropdownMenu>
   );

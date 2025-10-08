@@ -4725,7 +4725,8 @@ export const contentData = {
         ],
         "keywords": [
           "Как работает ЭПЛ в системе USAUTO"
-        ]
+        ],
+        "internalKnowledgeBase": "qwert"
       },
       {
         "id": "maoz959agkdx1l52v9g4ibjv",
@@ -5079,7 +5080,365 @@ export const contentData = {
         "description": "asfsdf",
         "keywords": [
           "asdfasd"
-        ]
+        ],
+        "internalKnowledgeBase": "qwerty",
+        "externallKnowledgeBase": "zxcvb"
+      },
+      {
+        "id": "muuf9jdkzyken6ru0bn32g5x",
+        "title": "srtwertwert",
+        "href": "/epl/srtwertwert",
+        "roles": [
+          "guest"
+        ],
+        "hasBadge": false,
+        "type": "customCategorias",
+        "aiRecommendContentStructure": [
+          {
+            "id": "h2-1",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-1-1",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 90,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-2",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-3",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "blockquote-1-4",
+                "tag": "blockquote",
+                "additionalData": {
+                  "minWords": 25,
+                  "maxWords": 45,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-5",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 110,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-1-6",
+                "tag": "ul",
+                "additionalData": {
+                  "minWords": 40,
+                  "maxWords": 70,
+                  "actualContent": ""
+                }
+              }
+            ]
+          },
+          {
+            "id": "h2-2",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 550,
+              "maxWords": 750,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-2-1",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 140,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-2-2",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-2-3",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 220,
+                  "maxWords": 320,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-3-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 130,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-2-3-2",
+                    "tag": "ul",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 85,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-3-3",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 65,
+                      "maxWords": 115,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-2-3-4",
+                    "tag": "code",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 45,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-2-4",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 280,
+                  "maxWords": 400,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-4-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "table-2-4-2",
+                    "tag": "table",
+                    "additionalData": {
+                      "minWords": 90,
+                      "maxWords": 150,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-4-3",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 5,
+                      "maxWords": 15,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "h4-2-4-4",
+                    "tag": "h4",
+                    "additionalData": {
+                      "minWords": 130,
+                      "maxWords": 200,
+                      "actualContent": ""
+                    },
+                    "realContentStructure": [
+                      {
+                        "id": "p-2-4-4-1",
+                        "tag": "p",
+                        "additionalData": {
+                          "minWords": 60,
+                          "maxWords": 105,
+                          "actualContent": ""
+                        }
+                      },
+                      {
+                        "id": "ol-2-4-4-2",
+                        "tag": "ol",
+                        "additionalData": {
+                          "minWords": 45,
+                          "maxWords": 75,
+                          "actualContent": ""
+                        }
+                      },
+                      {
+                        "id": "blockquote-2-4-4-3",
+                        "tag": "blockquote",
+                        "additionalData": {
+                          "minWords": 20,
+                          "maxWords": 40,
+                          "actualContent": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "This FAQ section is designed for generating relevant questions and answers. To create meaningful questions, you should adopt the perspective of the user, which requires analyzing the existing content and understanding the target audience. Consider what three questions would be most interesting and useful for users within the context of the given topic. Then, generate those three questions and organize each one under an h3 heading, ensuring that each question is paired with a well-crafted answer.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 350,
+              "maxWords": 500,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 120,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 160,
+                  "maxWords": 240,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-FAQ-2",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 160,
+                  "maxWords": 240,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 65,
+                      "maxWords": 115,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-FAQ-3",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 160,
+                  "maxWords": 240,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 130,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "isPublished": false,
+        "isAddedToPrompt": false,
+        "isVectorConnected": false,
+        "isChatSynchronized": false,
+        "createdAt": "2025-10-08T13:43:50.565Z",
+        "updatedAt": "2025-10-08T13:43:50.565Z",
+        "order": 4,
+        "description": "werqwesdf",
+        "images": [
+          {
+            "id": "ohl5a132fk8ebjr80ibwp8ar",
+            "alt": "asdfasdf",
+            "href": "/app-images/yxzxr0vb3k0im69nen0eylql.png"
+          }
+        ],
+        "keywords": [
+          "asdfasd"
+        ],
+        "internalKnowledgeBase": "sdfasdf",
+        "externallKnowledgeBase": "asdfasdfasd"
       }
     ],
     "order": 8
@@ -5087,7 +5446,364 @@ export const contentData = {
   {
     "title": "Телемедицина",
     "href": "/telemeditsina",
-    "pages": [],
+    "pages": [
+      {
+        "id": "xvr1xra8ny6o55b5vzl3fzx1",
+        "title": "как телемедицина в системе USAUTO помогает оптимизировать предрейсовые медицинские осмотры",
+        "href": "/telemeditsina/kak-telemeditsina-v-sisteme-usauto-pomogaet-optimizirovat-predreysovye-meditsinskie-osmotry",
+        "roles": [
+          "guest"
+        ],
+        "hasBadge": false,
+        "type": "customCategorias",
+        "aiRecommendContentStructure": [
+          {
+            "id": "h2-1",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-1-1",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 90,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-2",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-3",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "blockquote-1-4",
+                "tag": "blockquote",
+                "additionalData": {
+                  "minWords": 25,
+                  "maxWords": 45,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-5",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 110,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-1-6",
+                "tag": "ul",
+                "additionalData": {
+                  "minWords": 40,
+                  "maxWords": 70,
+                  "actualContent": ""
+                }
+              }
+            ]
+          },
+          {
+            "id": "h2-2",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 550,
+              "maxWords": 750,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-2-1",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 140,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-2-2",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-2-3",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 220,
+                  "maxWords": 320,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-3-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 130,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-2-3-2",
+                    "tag": "ul",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 85,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-3-3",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 65,
+                      "maxWords": 115,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-2-3-4",
+                    "tag": "code",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 45,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-2-4",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 280,
+                  "maxWords": 400,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-4-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "table-2-4-2",
+                    "tag": "table",
+                    "additionalData": {
+                      "minWords": 90,
+                      "maxWords": 150,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-4-3",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 5,
+                      "maxWords": 15,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "h4-2-4-4",
+                    "tag": "h4",
+                    "additionalData": {
+                      "minWords": 130,
+                      "maxWords": 200,
+                      "actualContent": ""
+                    },
+                    "realContentStructure": [
+                      {
+                        "id": "p-2-4-4-1",
+                        "tag": "p",
+                        "additionalData": {
+                          "minWords": 60,
+                          "maxWords": 105,
+                          "actualContent": ""
+                        }
+                      },
+                      {
+                        "id": "ol-2-4-4-2",
+                        "tag": "ol",
+                        "additionalData": {
+                          "minWords": 45,
+                          "maxWords": 75,
+                          "actualContent": ""
+                        }
+                      },
+                      {
+                        "id": "blockquote-2-4-4-3",
+                        "tag": "blockquote",
+                        "additionalData": {
+                          "minWords": 20,
+                          "maxWords": 40,
+                          "actualContent": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "This FAQ section is designed for generating relevant questions and answers. To create meaningful questions, you should adopt the perspective of the user, which requires analyzing the existing content and understanding the target audience. Consider what three questions would be most interesting and useful for users within the context of the given topic. Then, generate those three questions and organize each one under an h3 heading, ensuring that each question is paired with a well-crafted answer.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 350,
+              "maxWords": 500,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 120,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 160,
+                  "maxWords": 240,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-FAQ-2",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 160,
+                  "maxWords": 240,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 65,
+                      "maxWords": 115,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-FAQ-3",
+                "tag": "h3",
+                "additionalData": {
+                  "minWords": 160,
+                  "maxWords": 240,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 130,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "isPublished": false,
+        "isAddedToPrompt": false,
+        "isVectorConnected": false,
+        "isChatSynchronized": false,
+        "createdAt": "2025-10-08T14:30:24.434Z",
+        "updatedAt": "2025-10-08T14:30:24.434Z",
+        "order": 1,
+        "description": "Телемедицина позволяет проводить медицинские осмотры удалённо прямо на территории клиента с помощью сертифицированного медицинского оборудования, установленного в офисах или на объектах заказчика.",
+        "images": [
+          {
+            "id": "djta2b0lr9oe6vtnur9wjky0",
+            "alt": "telemedicina",
+            "href": "/app-images/lnk3d3ahv08hwhgz2ud4ul2u.jpg"
+          }
+        ],
+        "keywords": [
+          "Телемедицина"
+        ],
+        "internalKnowledgeBase": "**Телемедицина в системе USAUTO: Оптимизация предрейсовых медицинских осмотров**\n\n---\n\n### Ускорение предрейсовых медицинских осмотров  \nТелемедицина позволяет проводить предрейсовые и послерейсовые медицинские осмотры удалённо с использованием сертифицированного медицинского оборудования, установленного на территории клиента. Измеряются давление, температура, алкогольное опьянение и другие показатели, данные передаются в реальном времени в медицинский центр. Медицинский персонал дистанционно подтверждает результаты, что исключает необходимость физического присутствия врача и значительно сокращает время процедуры. Это снижает простой транспорта и повышает эффективность работы автопарка.\n\n---\n\n### Законодательное соответствие и безопасность  \nТелемедицина в USAUTO полностью соответствует требованиям Федерального налогового приказа № ЕД-7-26/116@, обеспечивая официальную регистрацию данных и видеофиксацию процедур. Используется биометрическая идентификация водителей и запись видеоосмотров, что исключает возможность подделки документов и ошибок. Это гарантирует полное соблюдение нормативов и снижает риски штрафов и аварий.\n\n---\n\n### Интеграция с электронными путевыми листами (ЭПЛ)  \nТелемедицинский модуль интегрирован с системой электронных путевых листов USAUTO, что обеспечивает автоматическую передачу данных о медицинских осмотрах в ЭПЛ. Водитель может предъявить инспектору ГИБДД QR-код с актуальной информацией о пройденном осмотре, подтверждённой в режиме реального времени. Такая интеграция исключает бумажный документооборот, ускоряет проверку и повышает прозрачность контроля.\n\n---\n\n### Техническое оснащение и функциональность  \nДля реализации телемедицины устанавливается сертифицированное медицинское оборудование на объектах клиента, позволяющее проводить измерения давления, температуры, алкоголя и других параметров. Данные передаются в реальный медицинский центр, где квалифицированный персонал подтверждает результаты дистанционно. В системе ведётся учёт и хранение данных с возможностью интеграции с другими модулями USAUTO.\n\n---\n\n### Преимущества для бизнеса  \n- Сокращение времени на проведение медицинских осмотров  \n- Уменьшение простоев транспорта за счёт оперативного прохождения осмотров  \n- Снижение рисков штрафов и нарушений благодаря автоматическому контролю и видеофиксации  \n- Повышение безопасности перевозок и соблюдение нормативных требований  \n- Удобство для водителей и работодателей за счёт удалённого формата и цифровой интеграции\n\n---\n\n### Интеграция с другими сервисами USAUTO  \nТелемедицина является частью единой цифровой экосистемы USAUTO, которая включает электронные путевые листы, контроль штрафов, мониторинг транспорта и другие модули. Это обеспечивает комплексное управление автопарком с максимальной автоматизацией и прозрачностью всех процессов.\n\n---\n\n### Примеры успешного применения  \nВ крупных промышленных предприятиях и удалённых объектах телемедицина позволяет организовать предрейсовые осмотры без необходимости вывоза водителей в медицинские учреждения. Это снижает транспортные и временные затраты, повышает эффективность и гарантирует 100% соответствие требованиям законодательства.\n\n---\n\n### Законодательная база и стандарты  \nТелемедицина в USAUTO соответствует:  \n- Федеральному налоговому приказу № ЕД-7-26/116@  \n- Требованиям по видеозаписи и биометрической идентификации  \n- Российским стандартам по обработке и хранению персональных данных (152-ФЗ)  \n- Интеграции с государственными реестрами и системами контроля\n\n---\n\n### Дополнительные услуги и поддержка  \nКомпания USAUTO предоставляет комплексные услуги по установке и обслуживанию телемедицинского оборудования, а также обучение персонала и техническую поддержку. Клиенты получают полный сервис, включая консультации по нормативам и помощь в интеграции с внутренними бизнес-процессами.\n\n---\n\nЕсли нужна дополнительная информация по конкретным аспектам телемедицины в USAUTO, готов помочь!",
+        "externallKnowledgeBase": "---\n\n**РЕСУРС 1**\n\n**Page Title:** Телемедицина и бизнес. Изучаем особенности предрейсовых медосмотров для водителей\n\n**Page Description:** Статья о внедрении аппаратно-программного комплекса «Телемедтест» для дистанционных предрейсовых медосмотров водителей, его преимуществах, ограничениях и экономической эффективности\n\n**Intent:** Коммерческо-информационный: продвижение решения для дистанционных медосмотров с демонстрацией практических преимуществ и кейсов внедрения\n\n**Taxonomy:** Категория: Коммерческий транспорт > Медицинское обслуживание > Предрейсовые осмотры > Телемедицинские решения\n\n**Attention:** Руководители транспортных компаний, автопарков, логистических предприятий, владельцы таксопарков\n\n**Audience:** B2B: ЛПР транспортных и логистических компаний, ответственные за организацию медосмотров, владельцы коммерческого автотранспорта\n\n**Resource Link:** https://gruzovoy.ru/news/news_partners/2596_telemedicina_i_biznes_izychaem_osobennosti_distancionnih_medosmotrov_dlya_voditelei.html\n\n**Blockquote:**\n> Технологии телемедицины могут сократить стоимость предрейсовых осмотров водителей на 67%. Стоимость одного медосмотра водителя при этом снижается до 20 рублей. Благодаря телемедицине скорость медосмотров возрастает примерно в 5 раз. Обследование водителя занимает около двух минут, доступно круглосуточно и не привязано к рабочему времени медработников.\n\n**Количество семантических секций:** 6\n\n**Ключевые резюме для каждой секции:**\n\n1. **Законодательная база** - Описание вступающего в силу Федерального закона №629-ФЗ от 29.12.2022, вводящего дистанционные формы контроля за состоянием водителей с использованием медицинских изделий с автоматизированной передачей информации\n\n2. **В чём преимущества «Телемедтест» перед привычными очными осмотрами - Выгодно** - Экономическая эффективность: снижение стоимости медосмотров на 67% до 20 рублей за осмотр, проведение без посещения медучреждения с дистанционной оценкой показателей (давление, температура, алкоголь) и печатью допуска\n\n3. **В чём преимущества «Телемедтест» перед привычными очными осмотрами - Быстро и удобно** - Ускорение медосмотров в 5 раз до 2 минут, круглосуточная доступность, быстрая установка за 1 день, подключение через стационарную сеть/WiFi/спутниковую связь, решение проблем очередей в крупных автопарках\n\n4. **В чём преимущества «Телемедтест» перед привычными очными осмотрами - С достоверным результатом** - Объективная оценка здоровья на сертифицированном оборудовании, исключение сговора врача с водителем, ЭЦП врача, хранение видеозаписей и результатов 10 лет в личном кабинете, защита каналов связи и серверов\n\n5. **В каких случаях выгодно использовать «Телемедтест»** - Целевая аудитория: компании с 3+ сотрудниками, требующими ежедневный осмотр; траты на дорогу более 40 минут; расходы на медперсонал более 10 000 руб/мес; потребность в медосмотрах на удаленных объектах; автоматизация электронного документооборота\n\n6. **Есть ли ограничения для использования «Телемедтеста»** - Законодательные ограничения с 1 сентября 2023: дважды в год очные химико-токсикологические исследования; запрет дистанционных осмотров для водителей опасных грузов, организованных детских перевозок, междугородних пассажирских маршрутов 300+ км\n\n***\n\n**РЕСУРС 2**\n\n**Page Title:** Телемедицина. Как технологии упрощают прохождение предрейсовых медосмотров? | Дивизион - Транспортная аналитика\n\n**Page Description:** Обзорная статья о телемедицинских решениях для дистанционных предрейсовых медосмотров водителей, объясняющая концепцию телемедицины, процесс осмотра и основные преимущества технологии\n\n**Intent:** Информационно-образовательный с элементами коммерческого продвижения: знакомство аудитории с технологией телемедицины для медосмотров и её преимуществами\n\n**Taxonomy:** Категория: Транспортная телематика > Дополнительное оборудование > Предрейсовые осмотры > Телемедицинские терминалы\n\n**Attention:** Руководители транспортных предприятий, диспетчеры, специалисты по охране труда и промышленной безопасности\n\n**Audience:** B2B: управленцы транспортных компаний, ответственные за безопасность перевозок, ИТ-директора, закупщики оборудования\n\n**Resource Link:** https://kontrol-glonass.ru/oborudovanie-omnicomm/telemedicina-kak-texnologii-uproshhayut-proxozhdenie-predrejsovyx-medosmotrov/\n\n**Blockquote:**\n> Телемедицина – это прохождение медицинских осмотров онлайн. Пациент и врач «встречаются» посредством видеосвязи. Единственное отличие удаленного осмотра от очного – пациент и врач находятся на расстоянии. Когда процесс дойдет до автоматизма, то на медосмотр действительно понадобится не более двух минут.\n\n**Количество семантических секций:** 4\n\n**Ключевые резюме для каждой секции:**\n\n1. **Традиционные способы организации медосмотров** - Описание двух традиционных методов: заключение договора с медицинской организацией для направления водителей или получение лицензии и открытие собственного медкабинета на территории предприятия с присущими неудобствами (необходимость поездки, привязка ко времени)\n\n2. **Телекоммуникации в области медицины** - Определение телемедицины как прохождения медосмотров онлайн через видеосвязь, появление решений для дистанционных медосмотров на российском рынке с 2020 года, сохранение качества и полноценности осмотра при упрощении процесса\n\n3. **Медосмотр за пару минут** - Описание процесса автоматизированного осмотра: измерение давления, температуры, алкоголя в выдыхаемом воздухе, удаленная оценка показателей врачом, печать наклейки о допуске в рейс терминалом при положительном результате, длительность процедуры до 2 минут\n\n4. **Главные преимущества удаленных медосмотров** - Пять ключевых преимуществ: прохождение в любое время; оперативное получение допуска; объективная картина здоровья; единый тариф на услугу; отсутствие затрат на лицензирование медкабинета; потенциал вытеснения традиционных осмотров\n\n***\n\n**РЕСУРС 3**\n\n**Page Title:** Дистанционные предрейсовые медицинские осмотры ...\n\n**Page Description:** Коммерческое предложение компании ТМскан по предоставлению услуг дистанционных телемедицинских осмотров водителей с детальным описанием технологии, ценообразования, законодательной базы и преимуществ\n\n**Intent:** Коммерческий с подробным информационным контентом: лидогенерация и продажа услуг/оборудования для дистанционных медосмотров с максимально полным раскрытием технологии\n\n**Taxonomy:** Категория: Медицинские технологии > Телемедицина > Корпоративная медицина > Предрейсовые/предсменные осмотры > SaaS-решения\n\n**Attention:** Владельцы транспортных компаний, логистических центров, таксопарков, коммунальных служб, экстренных служб (МЧС, пожарные)\n\n**Audience:** B2B: ЛПР транспортных, логистических, коммунальных предприятий, служб такси, специалисты по охране труда, финансовые директора\n\n**Resource Link:** https://tmscan.ru\n\n**Blockquote:**\n> Телемедицинские осмотры водителей - это технология проведения предрейсовых, предсменных, послерейсовых, послесменных медицинских осмотров водителей без их личного присутствия в медицинском кабинете. Сертифицированный медицинский работник дистанционно анализирует полученные данные и принимает решение о допуске водителя к управлению транспортным средством. С телемедициной весь осмотр занимает около 90 секунд.\n\n**Количество семантических секций:** 11\n\n**Ключевые резюме для каждой секции:**\n\n1. **Что такое телемедицинские осмотры** - Определение технологии как проведения предрейсовых/предсменных/послерейсовых/послесменных осмотров без личного присутствия через видеоконференцсвязь с передачей данных (термометр, алкометр, тонометр) в реальном времени для анализа медработником\n\n2. **5 ключевых преимуществ дистанционного осмотра над классическим** - Экономия финансов (без зарплаты штатному медработнику, лицензирования кабинета, доставки); экономия времени (90 секунд вместо поездки); доступность 24/7; надежность и соблюдение регламентов; хранение данных на серверах с доступом руководителя\n\n3. **Анализ преимуществ и недостатков различных видов медосмотров** - Сравнительная таблица дистанционного осмотра, собственного медкабинета и медосмотров в медцентре по параметрам: скорость (1 мин vs 3-5 мин), точность диагностики, законность, стоимость; вывод о наибольшей эффективности дистанционного метода\n\n4. **Цены на медосмотры** - Ценообразование: выкуп терминала от 170 000 руб, стоимость одного осмотра до 25 руб (снижается до 9,6 руб при объеме 15 000+ осмотров)\n\n5. **Что будет, если проигнорировать предрейсовый осмотр** - Последствия для водителей: штраф 3 000 руб, уголовная ответственность при ДТП; для работодателей: штраф 10 000-200 000 руб, приостановление деятельности до 90 суток\n\n6. **Как проходит дистанционный осмотр водителей** - Четырехэтапный процесс: регистрация и идентификация водителя; прохождение онлайн-осмотра с измерениями; принятие решения медработником; печать и выдача допуска на линию с наклейкой на путевой лист\n\n7. **Оборудование для дистанционного осмотра** - Состав оборудования для измерения артериального давления, температуры тела, алкогольного опьянения с визуальным представлением компонентов системы\n\n8. **Каким предприятиям необходимо проходить регулярные предрейсовые осмотры** - Законодательное требование (196-ФЗ от 10.12.1995) для всех ИП и юрлиц с деятельностью по эксплуатации транспорта; целевые сегменты: транспортные компании, пассажирские перевозки, эвакуаторы, инкассаторы, логистика, экстренные службы\n\n9. **О компании** - История компании ТМскан с 2021 года, формирование команды из инженера по энергетике и врача реаниматолога-анестезиолога, разработка стационарного и мобильного оборудования, ускорение медосмотра на 30% по сравнению с классическим методом\n\n10. **Часто задаваемые вопросы - Законность** - Законность дистанционных осмотров с 1 сентября 2023 года, требования к медорганизации (лицензия, телемедицинское оборудование, специально оборудованное помещение), обязательность для водителей на служебном транспорте\n\n11. **Часто задаваемые вопросы - Практические аспекты** - Процедура печати штампа термопринтером, удобство круглосуточного доступа за полторы минуты, качество дистанционного осмотра (проверка давления, пульса, алкоголя, наркотиков) с сохранением данных в электронном журнале для мониторинга здоровья\n\n[1](https://kontrol-glonass.ru/oborudovanie-omnicomm/telemedicina-kak-texnologii-uproshhayut-proxozhdenie-predrejsovyx-medosmotrov/)\n[2](https://gruzovoy.ru/news/news_partners/2596_telemedicina_i_biznes_izychaem_osobennosti_distancionnih_medosmotrov_dlya_voditelei.html)\n[3](https://evercare.ru/news/telemedicina-i-predreysovye-osmotry)\n[4](https://www.rosnaczdrav.ru/articles/telemeditsinskii_osmotr_voditelei)\n[5](https://medosmotr42.ru/telemedicina)\n[6](https://montrans.ru/uslugi/udalennyj-medicinskij-predrejsovyj-osmotr)\n[7](https://telemedic.one)\n[8](https://partner.napopravku.ru/blog2/telemeditsina-2-0-kak-vliyat-na-effektivnost-sotrudnikov-ekonomit-na-sebestoimosti-uslug-i-uvelichivat-vyruchku-kliniki/)\n[9](https://tmscan.ru)\n[10](https://biosoft.ltd/novosti/telemedicina-chto-eto-takoe)\n[11](https://www.sportmaster.ru/media/articles/chto-takoe-telemedicina-i-kak-ona-rabotaet/)\n[12](https://mdcm.ru/distancionnye-predrejsovye-osmotry/)\n[13](https://sputnik-service.com/telemedicina)\n[14](https://cyberleninka.ru/article/n/vozmozhnosti-tehnologiy-telemeditsiny-i-iskusstvennogo-intellekta-v-diagnostike-i-ekspertize-professionalnyh-zabolevaniy)\n[15](https://www.consultant.ru/law/podborki/telemedicina_predrejsovyj_medosmotr/)\n[16](https://xn--2--clc1arb0b.xn--p1ai/services/telemeditsina-med-osmotry/apparatnyy-kompleks-telemedtest-dlya-distantsionnykh-med-osmotrov/)\n[17](https://e-putevoy.ru/tpost/62jjigo151-telemeditsina-v-rossii-kak-ona-rabotaet)\n[18](https://transavto7.ru/blog/komu-nelzya-prokhodit-distantsionnye-predreysovye-osmotry)\n[19](https://kiosks.ru/index.php/product-category/distancionnyj-medosmotr-telemedicina/)\n[20](https://www.medikforum.ru/health/124226-uluchshit-zdorove-voditeley-s-pomoschyu-telemediciny.html)"
+      }
+    ],
     "order": 10
   },
   {
@@ -7269,5 +7985,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-07T22:20:12.672Z";
+export const lastUpdated = "2025-10-08T14:40:07.273Z";
 export const generatedBy = "menu-persist-api";

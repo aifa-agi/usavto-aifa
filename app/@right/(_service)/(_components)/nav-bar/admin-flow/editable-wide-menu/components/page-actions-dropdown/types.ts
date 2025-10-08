@@ -28,6 +28,10 @@ export interface PageActionsHook {
   handleAddPageCode: () => void;
   handleSetPageType: (type: PageType) => void;
   isPageTypeActive: (type: PageType) => boolean;
+  // NEW: Optional knowledge base handlers
+  // These fields are completely independent and do not affect page validation or activation logic
+  handleAddInternalKnowledge: () => void;
+  handleAddExternalKnowledge: () => void;
 }
 
 export type IconStatus = "default" | "partial" | "complete";

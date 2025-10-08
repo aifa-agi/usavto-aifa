@@ -1,4 +1,4 @@
-// @/app/(_service)/contexts/dialogs/types.ts
+// @/app/@right/(_service)/(_context)/dialogs/types.ts
 
 export type DialogType = 
   | "create"     
@@ -6,13 +6,34 @@ export type DialogType =
   | "confirm"   
   | "alert"      
   | "custom"
-  | "delete"
-export type InputType = "input" | "textarea" | "keywords" | "images";
+  | "delete";
+
+export type InputType = 
+  | "input" 
+  | "textarea" 
+  | "keywords" 
+  | "images"
+  | "knowledge-base"; // NEW: Knowledge Base type
 
 export interface PageImages {
   id: string;
   alt?: string;
   href?: string;
+}
+
+/**
+ * NEW: Knowledge Base specific data structure
+ * Used to configure and track the state of knowledge base dialogs
+ */
+export interface KnowledgeBaseData {
+  knowledgeType: "internal" | "external"; // Type of knowledge base
+  pageData: {
+    title: string;
+    description: string;
+    keywords: string[];
+  };
+  initialValue?: string; // Existing content for edit mode
+  showInfoButton?: boolean; // Show "Information Does Not Exist" button
 }
 
 export type DialogState =
@@ -25,6 +46,7 @@ export type DialogState =
       value?: string;
       keywords?: string[];
       images?: PageImages[];
+      knowledgeBase?: KnowledgeBaseData; // NEW: Knowledge Base data
       placeholder?: string;
       onConfirm?: (value?: string, keywords?: string[], images?: PageImages[]) => void;
       onCancel?: () => void;
@@ -42,6 +64,7 @@ export interface DialogShowOptions {
   value?: string;
   keywords?: string[];
   images?: PageImages[];
+  knowledgeBase?: KnowledgeBaseData; // NEW: Knowledge Base data
   placeholder?: string;
   onConfirm?: (value?: string, keywords?: string[], images?: PageImages[]) => void;
   onCancel?: () => void;
