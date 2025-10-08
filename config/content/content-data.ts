@@ -5787,7 +5787,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-08T14:30:24.434Z",
-        "updatedAt": "2025-10-08T22:20:02.381Z",
+        "updatedAt": "2025-10-08T22:20:09.076Z",
         "order": 1,
         "description": "Оптимизируйте предрейсовые медосмотры с телемедициной в USAUTO: быстро, удобно и экономично. Снижайте затраты и улучшайте безопасность водителей!",
         "images": [
@@ -6315,7 +6315,8 @@ export const contentData = {
                   "minWords": 70,
                   "maxWords": 120,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-FAQ-1",
@@ -6349,9 +6350,11 @@ export const contentData = {
                       "minWords": 70,
                       "maxWords": 120,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "h3-FAQ-2",
@@ -6385,9 +6388,11 @@ export const contentData = {
                       "minWords": 65,
                       "maxWords": 115,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "h3-FAQ-3",
@@ -6421,14 +6426,17 @@ export const contentData = {
                       "minWords": 75,
                       "maxWords": 130,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           }
         ],
-        "isReadyDraftForPerplexity": false
+        "isReadyDraftForPerplexity": true
       }
     ],
     "order": 10
@@ -8612,5 +8620,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-08T22:20:11.157Z";
+export const lastUpdated = "2025-10-08T22:21:36.341Z";
 export const generatedBy = "menu-persist-api";
