@@ -35,6 +35,7 @@ import { EditableKeywordsField } from "./editable-keywords-field";
 import { InternalKnowledgeBaseDisplay } from "./internal-knowledge-base-display";
 import { KnowledgeBaseDisplay } from "./knowledge-base-display";
 import { PageImagesSection } from "./page-images-section";
+import { PageStructureSelectorCard } from "./page-structure-selector-card";
 import { useAdminPageData } from "../../../../../(_hooks)/use-admin-page-data";
 import type { FieldGenerationType } from "@/config/knowledge-base-prompts";
 
@@ -88,6 +89,7 @@ const AI_GENERATION_SUPPORTED_FIELDS = new Set<string>([
  * - Internal and External Knowledge Base display
  * - AI-powered field generation with streaming
  * - Modular images section (extracted to separate component)
+ * - Page structure selector (Compact/Medium/Expanded) after description
  */
 export function AdminPageInfo({ slug }: AdminPageInfoProps) {
   // Get page data using centralized hook
@@ -298,6 +300,14 @@ export function AdminPageInfo({ slug }: AdminPageInfoProps) {
                 />
               );
             })}
+          </div>
+
+          {/* NEW: Page Structure Selector Card - inserted right after Basic Info fields */}
+          <div className="pt-2">
+            <PageStructureSelectorCard
+              page={page}
+              categoryTitle={category.title}
+            />
           </div>
         </div>
       )}

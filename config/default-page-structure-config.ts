@@ -4,12 +4,6 @@
 
 import { RootContentStructure } from "@/app/@right/(_service)/(_types)/page-types";
 
-/**
- * Enhanced realistic content structure template with all empty fields for system instruction completion
- * Template provides only structure while allowing system instruction to fill all content-specific fields
- * Total word count: ~1,500-5,000 words distributed across sections
- * Each element has a unique ID based on tag and hierarchical position
- */
 export const DEFAULT_CONTENT_STRUCTURE: RootContentStructure[] = [
   // Introduction section
   {
