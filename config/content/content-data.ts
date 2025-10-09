@@ -5462,18 +5462,18 @@ export const contentData = {
             "tag": "h2",
             "classification": "semantic",
             "keywords": [
-              "Generate 6-8 section-level keywords that comprehensively introduce the topic, establish deep context, historical background, and set comprehensive expectations for an in-depth exploration"
+              "Generate 5-7 section-level keywords inherited by children"
             ],
-            "taxonomy": "Guide | Comprehensive overview",
-            "attention": "Establish authoritative context and compelling value from the opening sentence with depth and sophistication.",
-            "intent": "Provide a comprehensive introduction that covers historical context, current relevance, core value proposition, and prepares readers for an extensive, expert-level exploration.",
-            "audiences": "Decision-makers, senior practitioners, researchers, and strategic thinkers; level: intermediate-to-advanced.",
-            "selfPrompt": "Create a comprehensive H2 introduction section that establishes the topic with exceptional depth and authority. Cover historical evolution, current landscape, strategic importance, and core value proposition. Frame complex concepts accessibly while maintaining sophistication. Naturally integrate the listed keywords without stuffing. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
+            "taxonomy": "Guide | Section overview",
+            "attention": "Set clear context and value in one sentence.",
+            "intent": "Introduce the topic and prepare readers for the main takeaways.",
+            "audiences": "Decision-makers and practitioners; level: intermediate.",
+            "selfPrompt": "Create the H2 section overview that frames the page topic, states the value, and aligns with user intent. Provide a strong, succinct setup and ensure a logical transition into subsequent subsections. Naturally integrate the listed keywords without stuffing. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
             "designDescription": "",
             "connectedDesignSectionId": "",
             "additionalData": {
-              "minWords": 500,
-              "maxWords": 750,
+              "minWords": 300,
+              "maxWords": 450,
               "actualContent": ""
             },
             "realContentStructure": [
@@ -5481,16 +5481,16 @@ export const contentData = {
                 "id": "p-1-1",
                 "tag": "p",
                 "keywords": [
-                  "Generate 3-4 powerful hook keywords that establish immediate authority and relevance."
+                  "Generate 2-3 relevant keywords for this introductory paragraph."
                 ],
-                "taxonomy": "Supporting | Authority hook",
-                "attention": "Open with an authoritative, data-backed statement that commands attention.",
-                "intent": "Establish immediate credibility and relevance with compelling evidence or insight.",
-                "audiences": "Senior decision-makers; level: intermediate-to-advanced.",
-                "selfPrompt": "Write a powerful opening paragraph that hooks readers with authoritative insights, compelling data, or strategic perspective. Lead with impact and specificity. Naturally integrate the provided keywords. Respect minWords/maxWords in additionalData. Generate the necessary content here.",
+                "taxonomy": "Supporting | Intro paragraph",
+                "attention": "Hook readers with a concrete benefit.",
+                "intent": "Set immediate context and clarify why this matters.",
+                "audiences": "General business audience; level: beginner-to-intermediate.",
+                "selfPrompt": "Write an introductory paragraph that cleanly explains the scope and value of the topic. Use actionable, specific statements and avoid fluff. Naturally integrate the provided keywords. Respect minWords/maxWords in additionalData. Generate the necessary content here.",
                 "additionalData": {
-                  "minWords": 150,
-                  "maxWords": 280,
+                  "minWords": 90,
+                  "maxWords": 160,
                   "actualContent": ""
                 }
               },
@@ -5498,16 +5498,16 @@ export const contentData = {
                 "id": "p-1-2",
                 "tag": "p",
                 "keywords": [
-                  "Generate 3-4 historical or contextual keywords."
+                  "Generate 2-3 supporting keywords aligned with the main topic."
                 ],
-                "taxonomy": "Supporting | Historical context",
-                "attention": "Provide historical evolution and contextual background.",
-                "intent": "Establish how the topic evolved and why it matters in the current landscape.",
-                "audiences": "Strategic thinkers and researchers; level: intermediate-to-advanced.",
-                "selfPrompt": "Write a context-building paragraph that traces the historical evolution of the topic and explains its current strategic importance. Be specific with timelines and milestones where relevant. Integrate keywords naturally. Respect min/max word constraints. Generate the necessary content here.",
+                "taxonomy": "Supporting | Context paragraph",
+                "attention": "Highlight a pressing pain point.",
+                "intent": "Deepen context with one concrete angle or use case.",
+                "audiences": "Practitioners and managers; level: intermediate.",
+                "selfPrompt": "Write a context-building paragraph that introduces one concrete angle (challenge, scenario, or use case). Be specific and useful. Integrate keywords naturally. Respect min/max word constraints. Generate the necessary content here.",
                 "additionalData": {
-                  "minWords": 120,
-                  "maxWords": 240,
+                  "minWords": 70,
+                  "maxWords": 130,
                   "actualContent": ""
                 }
               },
@@ -5515,30 +5515,13 @@ export const contentData = {
                 "id": "p-1-3",
                 "tag": "p",
                 "keywords": [
-                  "Generate 2-3 current-landscape keywords."
+                  "Generate 1-2 transition keywords."
                 ],
-                "taxonomy": "Supporting | Current state",
-                "attention": "Explain the current state of the field with recent data or trends.",
-                "intent": "Orient readers to the present state with concrete data and trends.",
-                "audiences": "Practitioners and analysts; level: intermediate.",
-                "selfPrompt": "Write a paragraph that describes the current state of the field, including recent trends, adoption rates, or market dynamics. Use specific data points where possible. Respect min/max words. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 100,
-                  "maxWords": 200,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "p-1-4",
-                "tag": "p",
-                "keywords": [
-                  "Generate 1 transition keyword."
-                ],
-                "taxonomy": "Transitional | Micro-bridge",
-                "attention": "Transition smoothly to expert evidence.",
-                "intent": "Introduce the upcoming expert quote or data point.",
+                "taxonomy": "Transitional | Separator",
+                "attention": "Smoothly transition to the next idea.",
+                "intent": "Provide a brief transition or micro-summary.",
                 "audiences": "All readers; level: general.",
-                "selfPrompt": "Write a concise transition sentence that introduces expert evidence or authoritative perspective. Be brief and purposeful. Generate the necessary content here.",
+                "selfPrompt": "Write a short transition line (separator) to guide readers to the next block. Keep it concise and purposeful. Generate the necessary content here.",
                 "additionalData": {
                   "minWords": 5,
                   "maxWords": 15,
@@ -5546,36 +5529,53 @@ export const contentData = {
                 }
               },
               {
-                "id": "blockquote-1-5",
+                "id": "blockquote-1-4",
                 "tag": "blockquote",
                 "keywords": [
-                  "Generate 2-3 authority or expert keywords."
+                  "Generate 1-2 keywords tied to authority or evidence."
                 ],
-                "taxonomy": "Supporting | Expert evidence",
-                "attention": "Reinforce with high-authority expert perspective.",
-                "intent": "Establish credibility with a relevant, authoritative quote from recognized expert.",
-                "audiences": "Skeptical decision-makers; level: intermediate-to-advanced.",
-                "selfPrompt": "Insert a compelling, authoritative quote that reinforces the introduction's strategic message. Prefer Internal KB as the source; if unavailable, use External KB from recognized thought leaders. Two to three sentences maximum. Cite the source with title/affiliation. Respect word constraints. Generate the necessary content here.",
+                "taxonomy": "Supporting | Evidence quote",
+                "attention": "Deliver a proof point or expert angle.",
+                "intent": "Reinforce credibility with a relevant quote.",
+                "audiences": "Skeptical readers; level: intermediate.",
+                "selfPrompt": "Insert a concise, relevant quote that reinforces the section’s claim. Prefer Internal KB as the source; if unavailable, use External KB. One to two sentences. Cite the perspective (internal expertise or external insight). Respect word constraints. Generate the necessary content here.",
                 "additionalData": {
-                  "minWords": 30,
-                  "maxWords": 60,
+                  "minWords": 25,
+                  "maxWords": 45,
                   "actualContent": ""
                 }
               },
               {
-                "id": "p-1-6",
+                "id": "p-1-5",
                 "tag": "p",
                 "keywords": [
-                  "Generate 3-4 value-proposition keywords."
+                  "Generate 2-3 value-centric keywords."
                 ],
-                "taxonomy": "Supporting | Value synthesis",
-                "attention": "Synthesize the core value proposition clearly and compellingly.",
-                "intent": "Articulate why this topic matters and what readers will gain from this deep dive.",
-                "audiences": "All readers; level: intermediate.",
-                "selfPrompt": "Write a value-focused paragraph that synthesizes what readers will gain, why it matters strategically, and how this content provides unique depth. Be specific about outcomes and benefits. Respect min/max words. Generate the necessary content here.",
+                "taxonomy": "Supporting | Value paragraph",
+                "attention": "State a clear, user-centric value.",
+                "intent": "Summarize the benefit and set up the next section.",
+                "audiences": "Decision-makers; level: intermediate.",
+                "selfPrompt": "Write a value-focused paragraph that summarizes what readers gain and prepares them for the next part. Keep it concrete and relevant. Respect minWords/maxWords. Generate the necessary content here.",
                 "additionalData": {
-                  "minWords": 90,
-                  "maxWords": 180,
+                  "minWords": 60,
+                  "maxWords": 110,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-1-6",
+                "tag": "ul",
+                "keywords": [
+                  "Generate 2-3 list-related keywords."
+                ],
+                "taxonomy": "List | Key takeaways",
+                "attention": "Make the content scannable.",
+                "intent": "Provide 3–5 concise, actionable bullets.",
+                "audiences": "Busy readers; level: general.",
+                "selfPrompt": "Create a concise unordered list with 3–5 items. Each item should be one sentence and deliver a practical takeaway. Avoid redundancy and keep a consistent style. Respect word constraints. Generate the necessary content here.",
+                "additionalData": {
+                  "minWords": 40,
+                  "maxWords": 70,
                   "actualContent": ""
                 }
               }
@@ -5586,1220 +5586,13 @@ export const contentData = {
             "tag": "h2",
             "classification": "semantic",
             "keywords": [
-              "Generate 6-8 section-level keywords focused on foundational concepts, core principles, theoretical frameworks, and fundamental understanding"
+              "Generate 5-7 section-level keywords to guide h3/h4 children."
             ],
-            "taxonomy": "Guide | Foundational theory",
-            "attention": "Establish comprehensive foundational understanding with theoretical depth and practical relevance.",
-            "intent": "Provide deep foundational knowledge covering core concepts, principles, frameworks, and theoretical underpinnings that inform all subsequent content.",
-            "audiences": "Technical practitioners, academics, and serious learners; level: intermediate-to-advanced.",
-            "selfPrompt": "Create an H2 section that establishes comprehensive foundational concepts with theoretical depth, practical examples, structured subsections, and comparative data. Balance academic rigor with practical accessibility. Naturally integrate the listed keywords. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 600,
-              "maxWords": 850,
-              "actualContent": ""
-            },
-            "realContentStructure": [
-              {
-                "id": "p-2-1",
-                "tag": "p",
-                "keywords": [
-                  "Generate 3-4 foundational-framework keywords."
-                ],
-                "taxonomy": "Supporting | Framework introduction",
-                "attention": "Introduce the foundational framework or model that structures understanding.",
-                "intent": "Establish the conceptual framework that will guide the section.",
-                "audiences": "Serious learners; level: intermediate-to-advanced.",
-                "selfPrompt": "Write a paragraph that introduces the foundational framework or conceptual model. Explain its origins, structure, and why it's the best lens for understanding. Be authoritative yet accessible. Respect min/max words. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 130,
-                  "maxWords": 260,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "h3-2-2",
-                "tag": "h3",
-                "keywords": [
-                  "Generate 5-7 keywords (inherit 2-3 from parent H2, add 3-4 specific to core principles)."
-                ],
-                "taxonomy": "Guide | Core principles subsection",
-                "attention": "Explain core principles with precision, examples, and structured content.",
-                "intent": "Detail the fundamental principles that underpin the entire topic.",
-                "audiences": "Technical practitioners and academics; level: intermediate-to-advanced.",
-                "selfPrompt": "Develop an H3 subsection that explores core principles in depth. Use multiple paragraphs, lists, and tables to structure complex information clearly. Integrate inherited and specific keywords naturally. Respect word limits. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 350,
-                  "maxWords": 500,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-2-2-1",
-                    "tag": "p",
-                    "keywords": [
-                      "Generate 3-4 principle-definition keywords."
-                    ],
-                    "taxonomy": "Supporting | Principle explanation",
-                    "attention": "Define and explain the first core principle with clarity and depth.",
-                    "intent": "Establish understanding of the first fundamental principle.",
-                    "audiences": "Learners and practitioners; level: intermediate.",
-                    "selfPrompt": "Write a paragraph that defines and explains a core principle with precision. Use concrete examples or analogies to clarify abstract concepts. Respect min/max words. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 110,
-                      "maxWords": 220,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "p-2-2-2",
-                    "tag": "p",
-                    "keywords": [
-                      "Generate 3-4 second-principle keywords."
-                    ],
-                    "taxonomy": "Supporting | Principle expansion",
-                    "attention": "Expand on a second related principle with examples.",
-                    "intent": "Build on the first principle with complementary understanding.",
-                    "audiences": "Practitioners; level: intermediate-to-advanced.",
-                    "selfPrompt": "Write a paragraph that expands on a second core principle, showing how it relates to or complements the first. Include practical implications. Respect min/max words. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 100,
-                      "maxWords": 200,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "ul-2-2-3",
-                    "tag": "ul",
-                    "keywords": [
-                      "Generate 3-4 principle-summary keywords."
-                    ],
-                    "taxonomy": "List | Principle summary",
-                    "attention": "Summarize key principles in a scannable format.",
-                    "intent": "Provide a concise list of 4-6 fundamental principles for quick reference.",
-                    "audiences": "All readers; level: intermediate.",
-                    "selfPrompt": "Create an unordered list with 4-6 fundamental principles. One sentence per item, clear and authoritative. Ensure comprehensive coverage and non-redundancy. Respect word constraints. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 60,
-                      "maxWords": 120,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "p-2-2-4",
-                    "tag": "p",
-                    "keywords": [
-                      "Generate 1 transition keyword."
-                    ],
-                    "taxonomy": "Transitional | Micro-bridge",
-                    "attention": "Transition to comparative data presentation.",
-                    "intent": "Introduce the upcoming comparison table.",
-                    "audiences": "All readers; level: general.",
-                    "selfPrompt": "Write a brief transition sentence that introduces the comparison table or framework analysis. Be concise. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 5,
-                      "maxWords": 15,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "table-2-2-5",
-                    "tag": "table",
-                    "keywords": [
-                      "Generate 3-5 framework-comparison keywords."
-                    ],
-                    "taxonomy": "Data | Framework comparison",
-                    "attention": "Present a comprehensive comparison of frameworks or approaches.",
-                    "intent": "Provide structured comparison data that clarifies distinctions and trade-offs.",
-                    "audiences": "Analytical readers; level: intermediate-to-advanced.",
-                    "selfPrompt": "Create a comprehensive comparison table with clear headers comparing different frameworks, approaches, or principle interpretations. Include 4-6 rows with meaningful distinctions. Respect word constraints. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 120,
-                      "maxWords": 220,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              },
-              {
-                "id": "h3-2-3",
-                "tag": "h3",
-                "keywords": [
-                  "Generate 5-7 keywords (inherit 2-3 from parent H2, add 3-4 specific to theoretical models)."
-                ],
-                "taxonomy": "Guide | Theoretical models subsection",
-                "attention": "Present theoretical models with visual clarity and practical connection.",
-                "intent": "Explain theoretical models that provide deeper analytical frameworks.",
-                "audiences": "Academics and advanced practitioners; level: advanced.",
-                "selfPrompt": "Develop an H3 subsection that presents theoretical models with depth and clarity. Use multiple paragraphs, structured lists, and code/pseudo-code where applicable. Integrate inherited and specific keywords naturally. Respect word limits. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 250,
-                  "maxWords": 350,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-2-3-1",
-                    "tag": "p",
-                    "keywords": [
-                      "Generate 3-4 model-introduction keywords."
-                    ],
-                    "taxonomy": "Supporting | Model explanation",
-                    "attention": "Introduce a key theoretical model with clarity.",
-                    "intent": "Establish understanding of an important analytical or conceptual model.",
-                    "audiences": "Advanced learners; level: advanced.",
-                    "selfPrompt": "Write a paragraph that introduces and explains a key theoretical model. Define its components, purpose, and how it's applied. Use precise terminology. Respect min/max words. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 100,
-                      "maxWords": 200,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "ol-2-3-2",
-                    "tag": "ol",
-                    "keywords": [
-                      "Generate 2-3 model-component keywords."
-                    ],
-                    "taxonomy": "List | Model components",
-                    "attention": "Break down the model into ordered, logical components.",
-                    "intent": "List the 4-6 key components or stages of the model in sequence.",
-                    "audiences": "Structured learners; level: intermediate-to-advanced.",
-                    "selfPrompt": "Create an ordered list with 4-6 components or stages of the theoretical model in logical sequence. Keep items clear and technically precise. Respect word constraints. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 70,
-                      "maxWords": 140,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "blockquote-2-3-3",
-                    "tag": "blockquote",
-                    "keywords": [
-                      "Generate 1-2 academic or research keywords."
-                    ],
-                    "taxonomy": "Supporting | Academic citation",
-                    "attention": "Reinforce the model with academic or research authority.",
-                    "intent": "Provide scholarly backing for the theoretical framework.",
-                    "audiences": "Academic readers; level: advanced.",
-                    "selfPrompt": "Insert a scholarly quote or research finding that supports the theoretical model. Prefer Internal KB; use External KB from peer-reviewed sources if needed. Include proper citation. Respect constraints. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 25,
-                      "maxWords": 50,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "h2-3",
-            "tag": "h2",
-            "classification": "semantic",
-            "keywords": [
-              "Generate 6-8 section-level keywords focused on technical architecture, system design, structural components, design patterns, and architectural decisions"
-            ],
-            "taxonomy": "Guide | Technical architecture",
-            "attention": "Provide comprehensive technical architecture guidance with depth, clarity, and practical design insights.",
-            "intent": "Cover system architecture, design patterns, structural decisions, component relationships, and architectural trade-offs in depth.",
-            "audiences": "Architects, senior developers, and technical decision-makers; level: advanced.",
-            "selfPrompt": "Create an H2 section that provides comprehensive technical architecture and design guidance. Include detailed subsections on architecture patterns, component design, system structure, code examples, and design trade-offs. Use precise technical language while maintaining clarity. Naturally integrate the listed keywords. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 700,
-              "maxWords": 950,
-              "actualContent": ""
-            },
-            "realContentStructure": [
-              {
-                "id": "p-3-1",
-                "tag": "p",
-                "keywords": [
-                  "Generate 3-4 architecture-overview keywords."
-                ],
-                "taxonomy": "Supporting | Architecture introduction",
-                "attention": "Establish the architectural vision and high-level design philosophy.",
-                "intent": "Introduce the overall architectural approach and design philosophy.",
-                "audiences": "Technical decision-makers; level: advanced.",
-                "selfPrompt": "Write a paragraph that introduces the architectural approach, design philosophy, and high-level structure. Establish the 'why' behind architectural decisions. Respect min/max words. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 140,
-                  "maxWords": 280,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "h3-3-2",
-                "tag": "h3",
-                "keywords": [
-                  "Generate 5-7 keywords (inherit 2-3 from parent H2, add 3-4 specific to core architecture patterns)."
-                ],
-                "taxonomy": "Guide | Architecture patterns subsection",
-                "attention": "Detail core architectural patterns with examples and code.",
-                "intent": "Explain the fundamental architectural patterns used and why they were chosen.",
-                "audiences": "Architects and senior developers; level: advanced.",
-                "selfPrompt": "Develop an H3 subsection that explores core architectural patterns in depth. Include pattern descriptions, code examples, trade-off analysis, and practical implementation guidance. Integrate inherited and specific keywords naturally. Respect word limits. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 400,
-                  "maxWords": 550,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-3-2-1",
-                    "tag": "p",
-                    "keywords": [
-                      "Generate 3-4 pattern-description keywords."
-                    ],
-                    "taxonomy": "Supporting | Pattern explanation",
-                    "attention": "Explain the first major architectural pattern with precision.",
-                    "intent": "Establish clear understanding of a key architectural pattern.",
-                    "audiences": "Senior developers; level: advanced.",
-                    "selfPrompt": "Write a paragraph that explains a major architectural pattern, its purpose, structure, and when to use it. Be technically precise. Respect min/max words. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 120,
-                      "maxWords": 240,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "code-3-2-2",
-                    "tag": "code",
-                    "keywords": [
-                      "Generate 2-3 pattern-implementation keywords."
-                    ],
-                    "taxonomy": "Technical | Pattern code example",
-                    "attention": "Demonstrate the pattern with clear, practical code.",
-                    "intent": "Illustrate the architectural pattern with working code or detailed pseudo-code.",
-                    "audiences": "Developers; level: advanced.",
-                    "selfPrompt": "Provide a comprehensive code example that demonstrates the architectural pattern in practice. Include inline comments explaining key decisions. Keep it focused but complete enough to be instructive. Respect min/max words. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 40,
-                      "maxWords": 80,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "p-3-2-3",
-                    "tag": "p",
-                    "keywords": [
-                      "Generate 3-4 trade-off or decision keywords."
-                    ],
-                    "taxonomy": "Supporting | Architectural trade-offs",
-                    "attention": "Explain architectural trade-offs and decision rationale.",
-                    "intent": "Clarify why this pattern was chosen and what trade-offs were considered.",
-                    "audiences": "Architects and technical leaders; level: advanced.",
-                    "selfPrompt": "Write a paragraph that explains the architectural trade-offs, alternatives considered, and rationale for choosing this pattern. Be honest about limitations. Respect min/max words. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 100,
-                      "maxWords": 200,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "h4-3-2-4",
-                    "tag": "h4",
-                    "keywords": [
-                      "Generate 4-6 keywords (inherit 2 from H3, add 2-4 specific to component design)."
-                    ],
-                    "taxonomy": "Guide | Component design subtopic",
-                    "attention": "Drill down into specific component-level design decisions.",
-                    "intent": "Explore detailed component architecture within the broader pattern.",
-                    "audiences": "Senior developers and architects; level: advanced.",
-                    "selfPrompt": "Develop an H4 subtopic that explores component-level design within the architectural pattern. Include detailed explanations, code, and lists of design principles. Respect word limits. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 250,
-                      "maxWords": 400,
-                      "actualContent": ""
-                    },
-                    "realContentStructure": [
-                      {
-                        "id": "p-3-2-4-1",
-                        "tag": "p",
-                        "keywords": [
-                          "Generate 3-4 component-detail keywords."
-                        ],
-                        "taxonomy": "Supporting | Component explanation",
-                        "attention": "Explain component responsibilities and interfaces.",
-                        "intent": "Clarify how specific components are designed and why.",
-                        "audiences": "Developers; level: advanced.",
-                        "selfPrompt": "Write a paragraph that explains component responsibilities, interfaces, and internal design. Be specific about API contracts and boundaries. Respect min/max words. Generate the necessary content here.",
-                        "additionalData": {
-                          "minWords": 90,
-                          "maxWords": 180,
-                          "actualContent": ""
-                        }
-                      },
-                      {
-                        "id": "ul-3-2-4-2",
-                        "tag": "ul",
-                        "keywords": [
-                          "Generate 2-3 design-principle keywords."
-                        ],
-                        "taxonomy": "List | Design principles",
-                        "attention": "List key component design principles.",
-                        "intent": "Provide 4-6 design principles that guide component development.",
-                        "audiences": "Developers; level: intermediate-to-advanced.",
-                        "selfPrompt": "Create an unordered list with 4-6 component design principles. One sentence per item, technical and actionable. Respect word constraints. Generate the necessary content here.",
-                        "additionalData": {
-                          "minWords": 60,
-                          "maxWords": 120,
-                          "actualContent": ""
-                        }
-                      },
-                      {
-                        "id": "code-3-2-4-3",
-                        "tag": "code",
-                        "keywords": [
-                          "Generate 1-2 component-implementation keywords."
-                        ],
-                        "taxonomy": "Technical | Component code",
-                        "attention": "Show component implementation example.",
-                        "intent": "Illustrate component design with code.",
-                        "audiences": "Developers; level: advanced.",
-                        "selfPrompt": "Provide a code example showing component implementation or interface definition. Include comments for clarity. Respect min/max words. Generate the necessary content here.",
-                        "additionalData": {
-                          "minWords": 30,
-                          "maxWords": 70,
-                          "actualContent": ""
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "id": "table-3-2-5",
-                    "tag": "table",
-                    "keywords": [
-                      "Generate 3-5 pattern-comparison keywords."
-                    ],
-                    "taxonomy": "Data | Pattern comparison",
-                    "attention": "Compare architectural patterns systematically.",
-                    "intent": "Provide a comparison table of related patterns or approaches.",
-                    "audiences": "Architects; level: advanced.",
-                    "selfPrompt": "Create a comparison table contrasting this pattern with alternatives. Include columns for trade-offs, use cases, and performance characteristics. Respect word constraints. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 100,
-                      "maxWords": 200,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              },
-              {
-                "id": "h3-3-3",
-                "tag": "h3",
-                "keywords": [
-                  "Generate 5-7 keywords (inherit 2-3 from parent H2, add 3-4 specific to system integration)."
-                ],
-                "taxonomy": "Guide | System integration subsection",
-                "attention": "Cover system integration points and inter-component communication.",
-                "intent": "Explain how components integrate and communicate within the architecture.",
-                "audiences": "Integration engineers and architects; level: advanced.",
-                "selfPrompt": "Develop an H3 subsection on system integration, covering communication patterns, data flow, API contracts, and integration best practices. Integrate inherited and specific keywords naturally. Respect word limits. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 300,
-                  "maxWords": 400,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-3-3-1",
-                    "tag": "p",
-                    "keywords": [
-                      "Generate 3-4 integration-approach keywords."
-                    ],
-                    "taxonomy": "Supporting | Integration explanation",
-                    "attention": "Explain the integration strategy and communication patterns.",
-                    "intent": "Clarify how system components integrate and communicate.",
-                    "audiences": "Integration engineers; level: advanced.",
-                    "selfPrompt": "Write a paragraph explaining the integration approach, communication patterns, and data flow between components. Be specific about protocols and contracts. Respect min/max words. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 110,
-                      "maxWords": 220,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "ol-3-3-2",
-                    "tag": "ol",
-                    "keywords": [
-                      "Generate 2-3 integration-step keywords."
-                    ],
-                    "taxonomy": "List | Integration steps",
-                    "attention": "Provide ordered integration steps or considerations.",
-                    "intent": "List 4-6 key integration steps or checkpoints in sequence.",
-                    "audiences": "Engineers; level: intermediate-to-advanced.",
-                    "selfPrompt": "Create an ordered list with 4-6 integration steps or key considerations in logical order. Keep items clear and actionable. Respect word constraints. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 70,
-                      "maxWords": 140,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "blockquote-3-3-3",
-                    "tag": "blockquote",
-                    "keywords": [
-                      "Generate 1-2 expert or best-practice keywords."
-                    ],
-                    "taxonomy": "Supporting | Integration best practice",
-                    "attention": "Reinforce with expert integration guidance.",
-                    "intent": "Provide authoritative integration advice or best practice.",
-                    "audiences": "Architects; level: advanced.",
-                    "selfPrompt": "Insert a quote or best-practice statement about integration from an expert source. Prefer Internal KB; use External KB if needed. Respect constraints. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 25,
-                      "maxWords": 50,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "h2-4",
-            "tag": "h2",
-            "classification": "semantic",
-            "keywords": [
-              "Generate 6-8 section-level keywords focused on implementation methodology, step-by-step procedures, development workflow, best practices, and practical execution strategies"
-            ],
-            "taxonomy": "Guide | Implementation methodology",
-            "attention": "Provide comprehensive, actionable implementation guidance with detailed methodology and best practices.",
-            "intent": "Guide readers through the complete implementation process with detailed methodology, workflows, code examples, best practices, and troubleshooting guidance.",
-            "audiences": "Implementers, developers, and technical practitioners; level: intermediate-to-advanced.",
-            "selfPrompt": "Create an H2 section that provides comprehensive implementation methodology with detailed workflows, step-by-step procedures, multiple code examples, best practices, and nested subsections for complex phases. Structure content for progressive complexity and practical utility. Naturally integrate the listed keywords. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 800,
-              "maxWords": 1100,
-              "actualContent": ""
-            },
-            "realContentStructure": [
-              {
-                "id": "p-4-1",
-                "tag": "p",
-                "keywords": [
-                  "Generate 3-4 methodology-overview keywords."
-                ],
-                "taxonomy": "Supporting | Methodology introduction",
-                "attention": "Establish the implementation methodology and overall approach.",
-                "intent": "Introduce the implementation methodology, key phases, and guiding principles.",
-                "audiences": "Implementers; level: intermediate.",
-                "selfPrompt": "Write a paragraph that introduces the implementation methodology, outlines key phases, and establishes guiding principles. Be comprehensive yet clear. Respect min/max words. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 150,
-                  "maxWords": 300,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "h3-4-2",
-                "tag": "h3",
-                "keywords": [
-                  "Generate 5-7 keywords (inherit 2-3 from parent H2, add 3-4 specific to preparation phase)."
-                ],
-                "taxonomy": "Guide | Preparation phase subsection",
-                "attention": "Detail the preparation and planning phase comprehensively.",
-                "intent": "Cover all preparation steps, prerequisites, planning activities, and setup procedures.",
-                "audiences": "Project leads and implementers; level: intermediate-to-advanced.",
-                "selfPrompt": "Develop an H3 subsection covering the preparation phase in depth. Include planning guidance, prerequisite checklists, setup procedures, and environment configuration. Integrate inherited and specific keywords naturally. Respect word limits. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 350,
-                  "maxWords": 500,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-4-2-1",
-                    "tag": "p",
-                    "keywords": [
-                      "Generate 3-4 planning keywords."
-                    ],
-                    "taxonomy": "Supporting | Planning guidance",
-                    "attention": "Explain planning considerations and prerequisites.",
-                    "intent": "Clarify what needs to be planned and prepared before implementation.",
-                    "audiences": "Project leads; level: intermediate.",
-                    "selfPrompt": "Write a paragraph explaining planning considerations, prerequisites, and key decisions that must be made before starting implementation. Be thorough and practical. Respect min/max words. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 120,
-                      "maxWords": 240,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "ul-4-2-2",
-                    "tag": "ul",
-                    "keywords": [
-                      "Generate 2-3 prerequisite or checklist keywords."
-                    ],
-                    "taxonomy": "List | Prerequisites checklist",
-                    "attention": "Provide a comprehensive prerequisites checklist.",
-                    "intent": "List 5-7 essential prerequisites or preparation items.",
-                    "audiences": "Implementers; level: intermediate.",
-                    "selfPrompt": "Create an unordered list with 5-7 essential prerequisites, tools, or preparation steps. One sentence per item, clear and actionable. Respect word constraints. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 70,
-                      "maxWords": 140,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "p-4-2-3",
-                    "tag": "p",
-                    "keywords": [
-                      "Generate 3-4 environment-setup keywords."
-                    ],
-                    "taxonomy": "Supporting | Environment setup",
-                    "attention": "Explain environment configuration and setup procedures.",
-                    "intent": "Guide readers through environment preparation and configuration.",
-                    "audiences": "DevOps and implementers; level: intermediate-to-advanced.",
-                    "selfPrompt": "Write a paragraph detailing environment setup, configuration requirements, and initial preparation steps. Include specific commands or settings where relevant. Respect min/max words. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 100,
-                      "maxWords": 200,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "code-4-2-4",
-                    "tag": "code",
-                    "keywords": [
-                      "Generate 1-2 setup or configuration keywords."
-                    ],
-                    "taxonomy": "Technical | Setup code",
-                    "attention": "Provide setup code or configuration example.",
-                    "intent": "Illustrate environment setup with code or configuration.",
-                    "audiences": "Developers; level: intermediate.",
-                    "selfPrompt": "Provide a code example showing environment setup, configuration file, or initialization script. Include comments for clarity. Respect min/max words. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 35,
-                      "maxWords": 70,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              },
-              {
-                "id": "h3-4-3",
-                "tag": "h3",
-                "keywords": [
-                  "Generate 5-7 keywords (inherit 2-3 from parent H2, add 3-4 specific to core implementation)."
-                ],
-                "taxonomy": "Guide | Core implementation subsection",
-                "attention": "Detail the core implementation phase with comprehensive guidance.",
-                "intent": "Provide step-by-step implementation guidance with code, nested subtopics, and best practices.",
-                "audiences": "Developers and implementers; level: intermediate-to-advanced.",
-                "selfPrompt": "Develop an H3 subsection covering core implementation with detailed steps, code examples, nested H4 for complex components, and best practices. Integrate inherited and specific keywords naturally. Respect word limits. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 450,
-                  "maxWords": 600,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-4-3-1",
-                    "tag": "p",
-                    "keywords": [
-                      "Generate 3-4 implementation-overview keywords."
-                    ],
-                    "taxonomy": "Supporting | Implementation intro",
-                    "attention": "Introduce the core implementation phase and approach.",
-                    "intent": "Set context for the core implementation activities.",
-                    "audiences": "Developers; level: intermediate.",
-                    "selfPrompt": "Write a paragraph introducing the core implementation phase, the overall approach, and key components to be built. Respect min/max words. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 100,
-                      "maxWords": 200,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "ol-4-3-2",
-                    "tag": "ol",
-                    "keywords": [
-                      "Generate 2-3 step-by-step keywords."
-                    ],
-                    "taxonomy": "List | Implementation steps",
-                    "attention": "Provide ordered implementation steps.",
-                    "intent": "List 5-7 sequential implementation steps.",
-                    "audiences": "Implementers; level: intermediate.",
-                    "selfPrompt": "Create an ordered list with 5-7 implementation steps in logical sequence. Keep items concise and actionable. Respect word constraints. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 80,
-                      "maxWords": 160,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "h4-4-3-3",
-                    "tag": "h4",
-                    "keywords": [
-                      "Generate 4-6 keywords (inherit 2 from H3, add 2-4 specific to data layer)."
-                    ],
-                    "taxonomy": "Guide | Data layer implementation",
-                    "attention": "Drill down into data layer implementation details.",
-                    "intent": "Provide comprehensive guidance on implementing the data layer.",
-                    "audiences": "Backend developers; level: intermediate-to-advanced.",
-                    "selfPrompt": "Develop an H4 subtopic covering data layer implementation with detailed explanations, code examples, and best practices. Respect word limits. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 300,
-                      "maxWords": 450,
-                      "actualContent": ""
-                    },
-                    "realContentStructure": [
-                      {
-                        "id": "p-4-3-3-1",
-                        "tag": "p",
-                        "keywords": [
-                          "Generate 3-4 data-layer keywords."
-                        ],
-                        "taxonomy": "Supporting | Data layer explanation",
-                        "attention": "Explain data layer design and implementation approach.",
-                        "intent": "Clarify data layer architecture and implementation strategy.",
-                        "audiences": "Backend developers; level: intermediate-to-advanced.",
-                        "selfPrompt": "Write a paragraph explaining data layer design, patterns, and implementation approach. Be technically detailed. Respect min/max words. Generate the necessary content here.",
-                        "additionalData": {
-                          "minWords": 110,
-                          "maxWords": 220,
-                          "actualContent": ""
-                        }
-                      },
-                      {
-                        "id": "code-4-3-3-2",
-                        "tag": "code",
-                        "keywords": [
-                          "Generate 2-3 data-implementation keywords."
-                        ],
-                        "taxonomy": "Technical | Data layer code",
-                        "attention": "Demonstrate data layer implementation with code.",
-                        "intent": "Illustrate data layer patterns with working code.",
-                        "audiences": "Developers; level: intermediate-to-advanced.",
-                        "selfPrompt": "Provide a comprehensive code example showing data layer implementation (models, repositories, or data access patterns). Include inline comments. Respect min/max words. Generate the necessary content here.",
-                        "additionalData": {
-                          "minWords": 50,
-                          "maxWords": 100,
-                          "actualContent": ""
-                        }
-                      },
-                      {
-                        "id": "ul-4-3-3-3",
-                        "tag": "ul",
-                        "keywords": [
-                          "Generate 2-3 data best-practice keywords."
-                        ],
-                        "taxonomy": "List | Data best practices",
-                        "attention": "List data layer best practices.",
-                        "intent": "Provide 4-6 best practices for data layer implementation.",
-                        "audiences": "Backend developers; level: intermediate.",
-                        "selfPrompt": "Create an unordered list with 4-6 data layer best practices. One sentence per item, technical and actionable. Respect word constraints. Generate the necessary content here.",
-                        "additionalData": {
-                          "minWords": 60,
-                          "maxWords": 120,
-                          "actualContent": ""
-                        }
-                      },
-                      {
-                        "id": "p-4-3-3-4",
-                        "tag": "p",
-                        "keywords": [
-                          "Generate 2-3 data-validation keywords."
-                        ],
-                        "taxonomy": "Supporting | Data validation",
-                        "attention": "Explain data validation and integrity measures.",
-                        "intent": "Cover validation, constraints, and data integrity approaches.",
-                        "audiences": "Backend developers; level: intermediate.",
-                        "selfPrompt": "Write a paragraph about data validation, integrity constraints, and error handling in the data layer. Be specific about techniques. Respect min/max words. Generate the necessary content here.",
-                        "additionalData": {
-                          "minWords": 80,
-                          "maxWords": 160,
-                          "actualContent": ""
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "id": "h4-4-3-4",
-                    "tag": "h4",
-                    "keywords": [
-                      "Generate 4-6 keywords (inherit 2 from H3, add 2-4 specific to business logic)."
-                    ],
-                    "taxonomy": "Guide | Business logic implementation",
-                    "attention": "Cover business logic implementation comprehensively.",
-                    "intent": "Detail business logic layer design and implementation.",
-                    "audiences": "Full-stack developers; level: intermediate-to-advanced.",
-                    "selfPrompt": "Develop an H4 subtopic on business logic implementation with patterns, code examples, and testing considerations. Respect word limits. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 200,
-                      "maxWords": 350,
-                      "actualContent": ""
-                    },
-                    "realContentStructure": [
-                      {
-                        "id": "p-4-3-4-1",
-                        "tag": "p",
-                        "keywords": [
-                          "Generate 3-4 business-logic keywords."
-                        ],
-                        "taxonomy": "Supporting | Business logic explanation",
-                        "attention": "Explain business logic organization and patterns.",
-                        "intent": "Clarify how business logic should be structured and implemented.",
-                        "audiences": "Developers; level: intermediate.",
-                        "selfPrompt": "Write a paragraph explaining business logic organization, separation of concerns, and implementation patterns. Be practical and principle-driven. Respect min/max words. Generate the necessary content here.",
-                        "additionalData": {
-                          "minWords": 100,
-                          "maxWords": 200,
-                          "actualContent": ""
-                        }
-                      },
-                      {
-                        "id": "code-4-3-4-2",
-                        "tag": "code",
-                        "keywords": [
-                          "Generate 1-2 business-logic keywords."
-                        ],
-                        "taxonomy": "Technical | Business logic code",
-                        "attention": "Show business logic implementation example.",
-                        "intent": "Illustrate business logic patterns with code.",
-                        "audiences": "Developers; level: intermediate.",
-                        "selfPrompt": "Provide a code example demonstrating business logic implementation with proper separation and testability. Include comments. Respect min/max words. Generate the necessary content here.",
-                        "additionalData": {
-                          "minWords": 40,
-                          "maxWords": 80,
-                          "actualContent": ""
-                        }
-                      },
-                      {
-                        "id": "blockquote-4-3-4-3",
-                        "tag": "blockquote",
-                        "keywords": [
-                          "Generate 1-2 design-principle keywords."
-                        ],
-                        "taxonomy": "Supporting | Design principle",
-                        "attention": "Reinforce with design principle or best practice quote.",
-                        "intent": "Provide authoritative guidance on business logic design.",
-                        "audiences": "Architects; level: intermediate-to-advanced.",
-                        "selfPrompt": "Insert a quote or principle about business logic design from an authoritative source. Prefer Internal KB. Respect constraints. Generate the necessary content here.",
-                        "additionalData": {
-                          "minWords": 20,
-                          "maxWords": 45,
-                          "actualContent": ""
-                        }
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "h2-5",
-            "tag": "h2",
-            "classification": "semantic",
-            "keywords": [
-              "Generate 6-8 section-level keywords focused on performance optimization, scalability strategies, efficiency improvements, resource management, and performance monitoring"
-            ],
-            "taxonomy": "Guide | Performance and scalability",
-            "attention": "Provide expert-level guidance on optimization, scalability, and performance engineering.",
-            "intent": "Cover performance optimization techniques, scalability patterns, bottleneck identification, benchmarking, and monitoring strategies comprehensively.",
-            "audiences": "Performance engineers, architects, and senior developers; level: advanced.",
-            "selfPrompt": "Create an H2 section covering performance optimization and scalability with depth and technical rigor. Include optimization techniques, scalability patterns, benchmarking data, monitoring strategies, and code examples. Use precise technical language and quantitative metrics. Naturally integrate the listed keywords. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 650,
-              "maxWords": 900,
-              "actualContent": ""
-            },
-            "realContentStructure": [
-              {
-                "id": "p-5-1",
-                "tag": "p",
-                "keywords": [
-                  "Generate 3-4 performance-overview keywords."
-                ],
-                "taxonomy": "Supporting | Performance introduction",
-                "attention": "Establish performance goals and optimization philosophy.",
-                "intent": "Introduce performance considerations, goals, and the optimization mindset.",
-                "audiences": "Performance engineers; level: advanced.",
-                "selfPrompt": "Write a paragraph introducing performance goals, key metrics, and the overall optimization philosophy. Set clear performance targets and expectations. Respect min/max words. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 130,
-                  "maxWords": 260,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "h3-5-2",
-                "tag": "h3",
-                "keywords": [
-                  "Generate 5-7 keywords (inherit 2-3 from parent H2, add 3-4 specific to optimization techniques)."
-                ],
-                "taxonomy": "Guide | Optimization techniques subsection",
-                "attention": "Detail specific optimization techniques with measurable impact.",
-                "intent": "Provide actionable optimization techniques with code examples and performance data.",
-                "audiences": "Senior developers and performance engineers; level: advanced.",
-                "selfPrompt": "Develop an H3 subsection covering specific optimization techniques with detailed explanations, code examples, performance comparisons, and quantitative results. Integrate inherited and specific keywords naturally. Respect word limits. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 400,
-                  "maxWords": 550,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-5-2-1",
-                    "tag": "p",
-                    "keywords": [
-                      "Generate 3-4 technique-description keywords."
-                    ],
-                    "taxonomy": "Supporting | Technique explanation",
-                    "attention": "Explain a major optimization technique with technical precision.",
-                    "intent": "Detail a specific optimization technique and its performance impact.",
-                    "audiences": "Performance engineers; level: advanced.",
-                    "selfPrompt": "Write a paragraph explaining a major optimization technique, how it works, and what performance gains to expect. Include technical details and metrics. Respect min/max words. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 110,
-                      "maxWords": 220,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "code-5-2-2",
-                    "tag": "code",
-                    "keywords": [
-                      "Generate 2-3 optimization-implementation keywords."
-                    ],
-                    "taxonomy": "Technical | Optimization code",
-                    "attention": "Demonstrate the optimization with before/after code.",
-                    "intent": "Show practical implementation of the optimization technique.",
-                    "audiences": "Developers; level: advanced.",
-                    "selfPrompt": "Provide a code example showing the optimization in practice, ideally with before/after comparison. Include comments highlighting the optimization. Respect min/max words. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 45,
-                      "maxWords": 90,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "table-5-2-3",
-                    "tag": "table",
-                    "keywords": [
-                      "Generate 3-5 benchmark or performance-data keywords."
-                    ],
-                    "taxonomy": "Data | Performance benchmark",
-                    "attention": "Present quantitative performance data in structured format.",
-                    "intent": "Provide benchmark results showing optimization impact.",
-                    "audiences": "Data-driven engineers; level: advanced.",
-                    "selfPrompt": "Create a performance benchmark table showing before/after metrics, percentage improvements, and test conditions. Include 4-6 meaningful metrics. Respect word constraints. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 120,
-                      "maxWords": 240,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "p-5-2-4",
-                    "tag": "p",
-                    "keywords": [
-                      "Generate 2-3 impact-analysis keywords."
-                    ],
-                    "taxonomy": "Supporting | Impact analysis",
-                    "attention": "Analyze the performance impact and trade-offs.",
-                    "intent": "Explain the real-world impact and any trade-offs of the optimization.",
-                    "audiences": "Architects and performance engineers; level: advanced.",
-                    "selfPrompt": "Write a paragraph analyzing the performance impact, resource utilization changes, and any trade-offs introduced by the optimization. Be balanced and honest. Respect min/max words. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 90,
-                      "maxWords": 180,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              },
-              {
-                "id": "h3-5-3",
-                "tag": "h3",
-                "keywords": [
-                  "Generate 5-7 keywords (inherit 2-3 from parent H2, add 3-4 specific to scalability patterns)."
-                ],
-                "taxonomy": "Guide | Scalability patterns subsection",
-                "attention": "Cover scalability strategies and patterns for growth.",
-                "intent": "Explain architectural patterns and strategies for scaling the system.",
-                "audiences": "Architects and infrastructure engineers; level: advanced.",
-                "selfPrompt": "Develop an H3 subsection on scalability patterns covering horizontal/vertical scaling, caching strategies, load distribution, and capacity planning. Integrate inherited and specific keywords naturally. Respect word limits. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 350,
-                  "maxWords": 450,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-5-3-1",
-                    "tag": "p",
-                    "keywords": [
-                      "Generate 3-4 scalability-strategy keywords."
-                    ],
-                    "taxonomy": "Supporting | Scalability explanation",
-                    "attention": "Explain core scalability strategies and when to use them.",
-                    "intent": "Clarify different scalability approaches and their applicability.",
-                    "audiences": "Architects; level: advanced.",
-                    "selfPrompt": "Write a paragraph explaining horizontal vs vertical scaling, when to use each, and architectural implications. Be strategic and technical. Respect min/max words. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 120,
-                      "maxWords": 240,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "ul-5-3-2",
-                    "tag": "ul",
-                    "keywords": [
-                      "Generate 2-3 scalability-pattern keywords."
-                    ],
-                    "taxonomy": "List | Scalability patterns",
-                    "attention": "List key scalability patterns and techniques.",
-                    "intent": "Provide 5-7 proven scalability patterns.",
-                    "audiences": "Architects and engineers; level: advanced.",
-                    "selfPrompt": "Create an unordered list with 5-7 scalability patterns or techniques. One sentence per item, technical and strategic. Respect word constraints. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 80,
-                      "maxWords": 160,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "p-5-3-3",
-                    "tag": "p",
-                    "keywords": [
-                      "Generate 3-4 capacity-planning keywords."
-                    ],
-                    "taxonomy": "Supporting | Capacity planning",
-                    "attention": "Discuss capacity planning and resource forecasting.",
-                    "intent": "Explain how to plan for growth and capacity needs.",
-                    "audiences": "Infrastructure planners; level: advanced.",
-                    "selfPrompt": "Write a paragraph about capacity planning, growth forecasting, and resource provisioning strategies. Include metrics to track. Respect min/max words. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 100,
-                      "maxWords": 200,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "h2-6",
-            "tag": "h2",
-            "classification": "semantic",
-            "keywords": [
-              "Generate 6-8 section-level keywords focused on security practices, compliance requirements, risk mitigation, threat modeling, and security architecture"
-            ],
-            "taxonomy": "Guide | Security and compliance",
-            "attention": "Provide comprehensive security guidance with practical implementations and compliance considerations.",
-            "intent": "Cover security architecture, threat mitigation, compliance requirements, security best practices, and risk management strategies.",
-            "audiences": "Security engineers, compliance officers, and architects; level: advanced.",
-            "selfPrompt": "Create an H2 section covering security, compliance, and risk management comprehensively. Include security patterns, threat mitigation strategies, compliance frameworks, code examples, and risk assessment methodologies. Use precise security terminology. Naturally integrate the listed keywords. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 600,
-              "maxWords": 850,
-              "actualContent": ""
-            },
-            "realContentStructure": [
-              {
-                "id": "p-6-1",
-                "tag": "p",
-                "keywords": [
-                  "Generate 3-4 security-overview keywords."
-                ],
-                "taxonomy": "Supporting | Security introduction",
-                "attention": "Establish security philosophy and principles.",
-                "intent": "Introduce the security approach, threat landscape, and guiding principles.",
-                "audiences": "Security engineers and architects; level: advanced.",
-                "selfPrompt": "Write a paragraph introducing the security philosophy, threat landscape, and core security principles that guide the implementation. Be strategic and risk-focused. Respect min/max words. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 140,
-                  "maxWords": 280,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "h3-6-2",
-                "tag": "h3",
-                "keywords": [
-                  "Generate 5-7 keywords (inherit 2-3 from parent H2, add 3-4 specific to threat mitigation)."
-                ],
-                "taxonomy": "Guide | Threat mitigation subsection",
-                "attention": "Detail threat mitigation strategies and security controls.",
-                "intent": "Cover common threats and how to mitigate them with specific controls.",
-                "audiences": "Security engineers; level: advanced.",
-                "selfPrompt": "Develop an H3 subsection on threat mitigation covering common attack vectors, security controls, mitigation strategies, and implementation examples. Integrate inherited and specific keywords naturally. Respect word limits. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 350,
-                  "maxWords": 500,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-6-2-1",
-                    "tag": "p",
-                    "keywords": [
-                      "Generate 3-4 threat-landscape keywords."
-                    ],
-                    "taxonomy": "Supporting | Threat analysis",
-                    "attention": "Analyze the threat landscape and common attack vectors.",
-                    "intent": "Identify and explain key security threats relevant to the implementation.",
-                    "audiences": "Security analysts; level: advanced.",
-                    "selfPrompt": "Write a paragraph analyzing the threat landscape, common attack vectors, and security risks specific to this context. Be specific and threat-focused. Respect min/max words. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 110,
-                      "maxWords": 220,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "table-6-2-2",
-                    "tag": "table",
-                    "keywords": [
-                      "Generate 3-5 threat-control keywords."
-                    ],
-                    "taxonomy": "Data | Security controls matrix",
-                    "attention": "Present threats and corresponding controls systematically.",
-                    "intent": "Provide a threat-control mapping table.",
-                    "audiences": "Security engineers; level: advanced.",
-                    "selfPrompt": "Create a table mapping 5-7 threats to their corresponding security controls and mitigation strategies. Include threat severity and control effectiveness. Respect word constraints. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 130,
-                      "maxWords": 260,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "code-6-2-3",
-                    "tag": "code",
-                    "keywords": [
-                      "Generate 2-3 security-implementation keywords."
-                    ],
-                    "taxonomy": "Technical | Security code",
-                    "attention": "Demonstrate security control implementation with code.",
-                    "intent": "Show practical security implementation examples.",
-                    "audiences": "Developers; level: intermediate-to-advanced.",
-                    "selfPrompt": "Provide a code example demonstrating a key security control implementation (authentication, authorization, input validation, etc.). Include security-focused comments. Respect min/max words. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 40,
-                      "maxWords": 80,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "ul-6-2-4",
-                    "tag": "ul",
-                    "keywords": [
-                      "Generate 2-3 security-best-practice keywords."
-                    ],
-                    "taxonomy": "List | Security best practices",
-                    "attention": "List essential security best practices.",
-                    "intent": "Provide 5-7 critical security best practices.",
-                    "audiences": "All developers; level: intermediate.",
-                    "selfPrompt": "Create an unordered list with 5-7 essential security best practices. One sentence per item, actionable and security-focused. Respect word constraints. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 70,
-                      "maxWords": 140,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              },
-              {
-                "id": "h3-6-3",
-                "tag": "h3",
-                "keywords": [
-                  "Generate 5-7 keywords (inherit 2-3 from parent H2, add 3-4 specific to compliance)."
-                ],
-                "taxonomy": "Guide | Compliance subsection",
-                "attention": "Cover compliance requirements and frameworks.",
-                "intent": "Explain relevant compliance requirements and how to meet them.",
-                "audiences": "Compliance officers and architects; level: advanced.",
-                "selfPrompt": "Develop an H3 subsection on compliance covering relevant frameworks (GDPR, HIPAA, SOC 2, etc.), requirements, documentation needs, and implementation guidance. Integrate inherited and specific keywords naturally. Respect word limits. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 300,
-                  "maxWords": 400,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-6-3-1",
-                    "tag": "p",
-                    "keywords": [
-                      "Generate 3-4 compliance-framework keywords."
-                    ],
-                    "taxonomy": "Supporting | Compliance explanation",
-                    "attention": "Explain relevant compliance frameworks and requirements.",
-                    "intent": "Clarify which compliance frameworks apply and what they require.",
-                    "audiences": "Compliance officers; level: advanced.",
-                    "selfPrompt": "Write a paragraph explaining relevant compliance frameworks, their applicability, and key requirements. Be specific about obligations. Respect min/max words. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 120,
-                      "maxWords": 240,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "ol-6-3-2",
-                    "tag": "ol",
-                    "keywords": [
-                      "Generate 2-3 compliance-step keywords."
-                    ],
-                    "taxonomy": "List | Compliance checklist",
-                    "attention": "Provide ordered compliance implementation steps.",
-                    "intent": "List 5-7 steps for achieving compliance.",
-                    "audiences": "Compliance implementers; level: intermediate-to-advanced.",
-                    "selfPrompt": "Create an ordered list with 5-7 steps for implementing compliance requirements in logical sequence. Keep items clear and actionable. Respect word constraints. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 80,
-                      "maxWords": 160,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "blockquote-6-3-3",
-                    "tag": "blockquote",
-                    "keywords": [
-                      "Generate 1-2 compliance or regulatory keywords."
-                    ],
-                    "taxonomy": "Supporting | Regulatory guidance",
-                    "attention": "Provide authoritative compliance guidance or requirement quote.",
-                    "intent": "Reinforce compliance requirements with authoritative source.",
-                    "audiences": "Compliance officers; level: advanced.",
-                    "selfPrompt": "Insert a quote or regulatory requirement from an authoritative compliance source or framework documentation. Prefer Internal KB; use External KB from official sources. Respect constraints. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 25,
-                      "maxWords": 50,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "h2-7",
-            "tag": "h2",
-            "classification": "semantic",
-            "keywords": [
-              "Generate 6-8 section-level keywords focused on real-world applications, case studies, industry examples, success stories, and practical lessons learned"
-            ],
-            "taxonomy": "Guide | Case studies and applications",
-            "attention": "Provide concrete real-world examples and case studies with measurable outcomes.",
-            "intent": "Demonstrate practical application through detailed case studies, industry examples, success metrics, and lessons learned.",
-            "audiences": "Decision-makers, practitioners, and learners; level: intermediate.",
-            "selfPrompt": "Create an H2 section covering real-world case studies and applications with depth and practical insights. Include detailed case study analyses, success metrics, industry-specific applications, and lessons learned. Use storytelling and data to make examples compelling. Naturally integrate the listed keywords. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
+            "taxonomy": "Guide | Core section",
+            "attention": "Focus on concrete, high-value insights.",
+            "intent": "Deliver the main body of actionable, expert information.",
+            "audiences": "Practitioners and technical stakeholders; level: intermediate-to-advanced.",
+            "selfPrompt": "Create the core H2 section that delivers actionable, specific, and data-backed insights. Structure content for clarity and depth. Avoid overlap with previous sections. Integrate keywords naturally. Respect minWords/maxWords. Generate the necessary content here.",
             "designDescription": "",
             "connectedDesignSectionId": "",
             "additionalData": {
@@ -6809,355 +5602,263 @@ export const contentData = {
             },
             "realContentStructure": [
               {
-                "id": "p-7-1",
+                "id": "p-2-1",
                 "tag": "p",
                 "keywords": [
-                  "Generate 3-4 case-study-intro keywords."
+                  "Generate 2-3 supporting keywords for this body paragraph."
                 ],
-                "taxonomy": "Supporting | Case study introduction",
-                "attention": "Frame the value of real-world examples and case studies.",
-                "intent": "Introduce why case studies matter and what readers will learn.",
-                "audiences": "Decision-makers; level: intermediate.",
-                "selfPrompt": "Write a paragraph introducing the value of real-world case studies, what patterns emerge, and what readers can learn from practical applications. Respect min/max words. Generate the necessary content here.",
+                "taxonomy": "Supporting | Body paragraph",
+                "attention": "Lead with a specific, useful claim.",
+                "intent": "Explain a key concept or mechanism clearly.",
+                "audiences": "Practitioners; level: intermediate.",
+                "selfPrompt": "Write a body paragraph that explains one key concept with clarity and usefulness. Use concrete examples where helpful. Respect min/max words. Generate the necessary content here.",
                 "additionalData": {
-                  "minWords": 120,
-                  "maxWords": 240,
+                  "minWords": 80,
+                  "maxWords": 140,
                   "actualContent": ""
                 }
               },
               {
-                "id": "h3-7-2",
+                "id": "p-2-2",
+                "tag": "p",
+                "keywords": [
+                  "Generate 1 transition keyword."
+                ],
+                "taxonomy": "Transitional | Micro-bridge",
+                "attention": "Maintain flow between ideas.",
+                "intent": "Provide a short bridge to the next subsection.",
+                "audiences": "All readers; level: general.",
+                "selfPrompt": "Write a short transitional sentence that smoothly connects ideas. Be concise and purposeful. Generate the necessary content here.",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-2-3",
                 "tag": "h3",
                 "keywords": [
-                  "Generate 5-7 keywords (inherit 2-3 from parent H2, add 3-4 specific to enterprise case study)."
+                  "Generate 4-6 keywords (inherit 2 from parent H2, add 2-4 specific)."
                 ],
-                "taxonomy": "Guide | Enterprise case study subsection",
-                "attention": "Present a detailed enterprise-level case study with metrics.",
-                "intent": "Provide an in-depth case study showing enterprise implementation and results.",
-                "audiences": "Enterprise decision-makers; level: intermediate-to-advanced.",
-                "selfPrompt": "Develop an H3 subsection presenting a detailed enterprise case study with background, challenges, solution approach, implementation details, and quantifiable results. Integrate inherited and specific keywords naturally. Respect word limits. Generate the necessary content here.",
+                "taxonomy": "Guide | Subsection",
+                "attention": "Define a sharp, unique angle.",
+                "intent": "Expand the parent H2 with a focused subtopic.",
+                "audiences": "Practitioners; level: intermediate-to-advanced.",
+                "selfPrompt": "Develop an H3 subsection that expands the parent H2 with a unique, sharply defined angle. Avoid overlapping with sibling subsections. State the micro-intent and expected outcomes. Integrate inherited and specific keywords naturally. Respect word limits. Generate the necessary content here.",
                 "additionalData": {
-                  "minWords": 350,
-                  "maxWords": 500,
+                  "minWords": 220,
+                  "maxWords": 320,
                   "actualContent": ""
                 },
                 "realContentStructure": [
                   {
-                    "id": "p-7-2-1",
+                    "id": "p-2-3-1",
                     "tag": "p",
                     "keywords": [
-                      "Generate 3-4 case-background keywords."
+                      "Generate 2-3 micro-intent keywords."
                     ],
-                    "taxonomy": "Supporting | Case background",
-                    "attention": "Establish case study context, company profile, and initial challenges.",
-                    "intent": "Set the stage for the case study with relevant background.",
-                    "audiences": "Business readers; level: intermediate.",
-                    "selfPrompt": "Write a paragraph establishing the case study context: company profile, industry, scale, and initial challenges faced. Be specific with details. Respect min/max words. Generate the necessary content here.",
+                    "taxonomy": "Supporting | Explanation",
+                    "attention": "Clarify ‘how’ or ‘why’ directly.",
+                    "intent": "Explain the key idea with a concrete example.",
+                    "audiences": "Hands-on implementers; level: intermediate.",
+                    "selfPrompt": "Write an explanatory paragraph that clarifies how/why this subtopic matters, including one concrete example. Keep it practical. Respect min/max words. Generate the necessary content here.",
                     "additionalData": {
-                      "minWords": 100,
-                      "maxWords": 200,
+                      "minWords": 75,
+                      "maxWords": 130,
                       "actualContent": ""
                     }
                   },
                   {
-                    "id": "p-7-2-2",
-                    "tag": "p",
-                    "keywords": [
-                      "Generate 3-4 solution-approach keywords."
-                    ],
-                    "taxonomy": "Supporting | Solution description",
-                    "attention": "Explain the solution approach and implementation strategy.",
-                    "intent": "Detail how the problem was solved and what approach was taken.",
-                    "audiences": "Practitioners; level: intermediate.",
-                    "selfPrompt": "Write a paragraph explaining the solution approach, key decisions, implementation strategy, and timeline. Be specific about methods used. Respect min/max words. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 110,
-                      "maxWords": 220,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "table-7-2-3",
-                    "tag": "table",
-                    "keywords": [
-                      "Generate 3-5 results or metrics keywords."
-                    ],
-                    "taxonomy": "Data | Results metrics",
-                    "attention": "Present quantifiable results and success metrics.",
-                    "intent": "Show before/after metrics demonstrating impact.",
-                    "audiences": "Data-driven decision-makers; level: intermediate.",
-                    "selfPrompt": "Create a results table showing before/after metrics, percentage improvements, and timeframes. Include 5-7 meaningful business or technical metrics. Respect word constraints. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 130,
-                      "maxWords": 260,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "blockquote-7-2-4",
-                    "tag": "blockquote",
-                    "keywords": [
-                      "Generate 1-2 testimonial or stakeholder keywords."
-                    ],
-                    "taxonomy": "Supporting | Stakeholder quote",
-                    "attention": "Include stakeholder or executive quote about the results.",
-                    "intent": "Reinforce the case study with firsthand perspective.",
-                    "audiences": "Decision-makers; level: intermediate.",
-                    "selfPrompt": "Insert a quote from a key stakeholder (executive, project lead, or user) reflecting on the success and impact. Prefer Internal KB. Respect constraints. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 25,
-                      "maxWords": 50,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "ul-7-2-5",
+                    "id": "ul-2-3-2",
                     "tag": "ul",
                     "keywords": [
-                      "Generate 2-3 lessons-learned keywords."
+                      "Generate 2-3 checklist-style keywords."
                     ],
-                    "taxonomy": "List | Key lessons",
-                    "attention": "List key lessons learned from the case study.",
-                    "intent": "Provide 4-6 actionable lessons readers can apply.",
+                    "taxonomy": "List | Action steps",
+                    "attention": "Make a compact, actionable checklist.",
+                    "intent": "List 3–5 steps or tips readers can apply.",
                     "audiences": "Practitioners; level: intermediate.",
-                    "selfPrompt": "Create an unordered list with 4-6 key lessons learned from the case study. One sentence per item, actionable and insightful. Respect word constraints. Generate the necessary content here.",
+                    "selfPrompt": "Create an unordered list with 3–5 concise, actionable steps or tips. One sentence per item, imperative style. Ensure non-overlapping items. Respect word constraints. Generate the necessary content here.",
                     "additionalData": {
-                      "minWords": 60,
+                      "minWords": 50,
+                      "maxWords": 85,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-3-3",
+                    "tag": "p",
+                    "keywords": [
+                      "Generate 2-3 result-focused keywords."
+                    ],
+                    "taxonomy": "Supporting | Outcome",
+                    "attention": "Highlight expected outcomes or metrics.",
+                    "intent": "Show what success looks like for this subtopic.",
+                    "audiences": "Outcome-driven readers; level: intermediate.",
+                    "selfPrompt": "Write a paragraph that describes expected outcomes or metrics that indicate success. Be specific and measurable when possible. Respect min/max words. Generate the necessary content here.",
+                    "additionalData": {
+                      "minWords": 65,
+                      "maxWords": 115,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-2-3-4",
+                    "tag": "code",
+                    "keywords": [
+                      "Generate 1-2 technology-related keywords."
+                    ],
+                    "taxonomy": "Technical | Code example",
+                    "attention": "Demonstrate with a concise code snippet.",
+                    "intent": "Illustrate the concept via code or pseudo-code.",
+                    "audiences": "Developers and technical practitioners; level: intermediate.",
+                    "selfPrompt": "Provide a short code example or pseudo-code illustrating the concept. Keep it minimal and self-explanatory. Add a brief inline comment if useful. Respect min/max words. Generate the necessary content here.",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 45,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-2-4",
+                "tag": "h3",
+                "keywords": [
+                  "Generate 4-6 keywords (inherit 2 from H2, add 2-4 specific to this angle)."
+                ],
+                "taxonomy": "Guide | Subsection",
+                "attention": "State a distinct, practical angle.",
+                "intent": "Cover a different but complementary facet of the H2.",
+                "audiences": "Practitioners; level: intermediate-to-advanced.",
+                "selfPrompt": "Develop an H3 subsection with a distinct, practical angle that complements the previous subsection without overlap. Clearly state the micro-intent and constraints. Integrate keywords naturally. Respect word limits. Generate the necessary content here.",
+                "additionalData": {
+                  "minWords": 280,
+                  "maxWords": 400,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "Generate 2-3 clarity-focused keywords."
+                    ],
+                    "taxonomy": "Supporting | Clarification",
+                    "attention": "Explain a key nuance succinctly.",
+                    "intent": "Clarify a nuance or constraint of this subtopic.",
+                    "audiences": "Practitioners; level: intermediate.",
+                    "selfPrompt": "Write a paragraph that clarifies a key nuance, limitation, or boundary condition of this subtopic. Keep it specific and helpful. Respect word constraints. Generate the necessary content here.",
+                    "additionalData": {
+                      "minWords": 70,
                       "maxWords": 120,
                       "actualContent": ""
                     }
-                  }
-                ]
-              },
-              {
-                "id": "h3-7-3",
-                "tag": "h3",
-                "keywords": [
-                  "Generate 5-7 keywords (inherit 2-3 from parent H2, add 3-4 specific to startup/SMB case)."
-                ],
-                "taxonomy": "Guide | Startup case study subsection",
-                "attention": "Present a startup or SMB case study showing agility and innovation.",
-                "intent": "Provide a contrasting case study from a smaller, more agile organization.",
-                "audiences": "Startup founders and SMB leaders; level: intermediate.",
-                "selfPrompt": "Develop an H3 subsection presenting a startup or SMB case study highlighting agility, innovation, resource constraints, and creative solutions. Integrate inherited and specific keywords naturally. Respect word limits. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 300,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-7-3-1",
-                    "tag": "p",
-                    "keywords": [
-                      "Generate 3-4 startup-context keywords."
-                    ],
-                    "taxonomy": "Supporting | Startup case",
-                    "attention": "Present startup context, challenges, and constraints.",
-                    "intent": "Establish the startup case study with resource and scale context.",
-                    "audiences": "Startup readers; level: intermediate.",
-                    "selfPrompt": "Write a paragraph presenting a startup case study: company stage, constraints, challenges, and how they approached the problem differently than enterprises. Respect min/max words. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 110,
-                      "maxWords": 220,
-                      "actualContent": ""
-                    }
                   },
                   {
-                    "id": "p-7-3-2",
-                    "tag": "p",
+                    "id": "table-2-4-2",
+                    "tag": "table",
                     "keywords": [
-                      "Generate 2-3 innovation or outcome keywords."
+                      "Generate 2-4 comparison/data keywords."
                     ],
-                    "taxonomy": "Supporting | Innovation outcome",
-                    "attention": "Highlight innovative approach and results achieved.",
-                    "intent": "Show creative solutions and measurable outcomes despite constraints.",
-                    "audiences": "Innovators; level: intermediate.",
-                    "selfPrompt": "Write a paragraph highlighting the innovative approach, creative solutions, and measurable results achieved. Include specific metrics. Respect min/max words. Generate the necessary content here.",
+                    "taxonomy": "Data | Comparison table",
+                    "attention": "Summarize comparisons or metrics clearly.",
+                    "intent": "Present compact, scannable data with headers.",
+                    "audiences": "Analytical readers; level: intermediate.",
+                    "selfPrompt": "Create a compact comparison/data table with clear headers. Define the meaning of each column and keep the total size within word constraints. Summarize insights succinctly. Generate the necessary content here.",
                     "additionalData": {
                       "minWords": 90,
-                      "maxWords": 180,
+                      "maxWords": 150,
                       "actualContent": ""
                     }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "h2-8",
-            "tag": "h2",
-            "classification": "semantic",
-            "keywords": [
-              "Generate 6-8 section-level keywords focused on advanced topics, emerging trends, future developments, innovation horizons, and strategic evolution"
-            ],
-            "taxonomy": "Guide | Advanced topics and future trends",
-            "attention": "Provide expert-level insights into advanced topics and strategic future trends.",
-            "intent": "Cover cutting-edge topics, emerging trends, future developments, research directions, and strategic implications for the field.",
-            "audiences": "Thought leaders, researchers, and strategic planners; level: advanced.",
-            "selfPrompt": "Create an H2 section covering advanced topics and future trends with strategic depth and forward-thinking analysis. Include emerging technologies, research directions, expert predictions, and strategic implications. Balance technical depth with accessibility. Naturally integrate the listed keywords. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 550,
-              "maxWords": 800,
-              "actualContent": ""
-            },
-            "realContentStructure": [
-              {
-                "id": "p-8-1",
-                "tag": "p",
-                "keywords": [
-                  "Generate 3-4 future-landscape keywords."
-                ],
-                "taxonomy": "Supporting | Future introduction",
-                "attention": "Frame the future landscape and emerging possibilities.",
-                "intent": "Introduce emerging trends and future developments in the field.",
-                "audiences": "Strategic thinkers; level: advanced.",
-                "selfPrompt": "Write a paragraph introducing the future landscape, emerging trends, and what developments are on the horizon. Be forward-thinking and strategic. Respect min/max words. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 130,
-                  "maxWords": 260,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "h3-8-2",
-                "tag": "h3",
-                "keywords": [
-                  "Generate 5-7 keywords (inherit 2-3 from parent H2, add 3-4 specific to emerging technologies)."
-                ],
-                "taxonomy": "Guide | Emerging technologies subsection",
-                "attention": "Explore emerging technologies and their potential impact.",
-                "intent": "Detail cutting-edge technologies and their implications for the field.",
-                "audiences": "Technology innovators; level: advanced.",
-                "selfPrompt": "Develop an H3 subsection on emerging technologies covering new developments, experimental approaches, research directions, and potential transformative impacts. Integrate inherited and specific keywords naturally. Respect word limits. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 350,
-                  "maxWords": 500,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
+                  },
                   {
-                    "id": "p-8-2-1",
+                    "id": "p-2-4-3",
                     "tag": "p",
                     "keywords": [
-                      "Generate 3-4 emerging-tech keywords."
+                      "Generate 1 transition keyword."
                     ],
-                    "taxonomy": "Supporting | Technology analysis",
-                    "attention": "Analyze a key emerging technology and its potential.",
-                    "intent": "Explain an emerging technology and how it could reshape the field.",
-                    "audiences": "Technologists; level: advanced.",
-                    "selfPrompt": "Write a paragraph analyzing an emerging technology, its current state, development trajectory, and potential impact on the field. Be analytical and evidence-based. Respect min/max words. Generate the necessary content here.",
+                    "taxonomy": "Transitional | Micro-bridge",
+                    "attention": "Maintain flow within the subsection.",
+                    "intent": "Provide a short bridge to the nested H4.",
+                    "audiences": "All readers; level: general.",
+                    "selfPrompt": "Write a concise transition to introduce the nested H4 topic. Be brief and purposeful. Generate the necessary content here.",
                     "additionalData": {
-                      "minWords": 120,
-                      "maxWords": 240,
+                      "minWords": 5,
+                      "maxWords": 15,
                       "actualContent": ""
                     }
                   },
                   {
-                    "id": "p-8-2-2",
-                    "tag": "p",
+                    "id": "h4-2-4-4",
+                    "tag": "h4",
                     "keywords": [
-                      "Generate 3-4 research-direction keywords."
+                      "Generate 3-5 keywords (inherit 1-2 from H3, add 2-3 specific)."
                     ],
-                    "taxonomy": "Supporting | Research trends",
-                    "attention": "Discuss active research areas and breakthrough potential.",
-                    "intent": "Highlight key research directions and innovation opportunities.",
-                    "audiences": "Researchers and academics; level: advanced.",
-                    "selfPrompt": "Write a paragraph discussing active research areas, breakthrough potential, and where innovation is heading. Include specific research initiatives if known. Respect min/max words. Generate the necessary content here.",
+                    "taxonomy": "Guide | Nested subtopic",
+                    "attention": "Focus on a tightly scoped subtopic.",
+                    "intent": "Drill down into one precise angle of the H3.",
+                    "audiences": "Practitioners; level: intermediate-to-advanced.",
+                    "selfPrompt": "Develop an H4 subtopic that is tightly scoped to the H3. Provide a single, focused angle with clear value. Avoid overlap with sibling content. Respect word limits. Generate the necessary content here.",
                     "additionalData": {
-                      "minWords": 110,
-                      "maxWords": 220,
+                      "minWords": 130,
+                      "maxWords": 200,
                       "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "ul-8-2-3",
-                    "tag": "ul",
-                    "keywords": [
-                      "Generate 2-3 innovation-opportunity keywords."
-                    ],
-                    "taxonomy": "List | Innovation opportunities",
-                    "attention": "List key innovation opportunities and potential breakthroughs.",
-                    "intent": "Provide 5-7 specific areas ripe for innovation.",
-                    "audiences": "Innovators and entrepreneurs; level: advanced.",
-                    "selfPrompt": "Create an unordered list with 5-7 specific innovation opportunities or areas ripe for breakthrough. One sentence per item, forward-thinking. Respect word constraints. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 70,
-                      "maxWords": 140,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "blockquote-8-2-4",
-                    "tag": "blockquote",
-                    "keywords": [
-                      "Generate 1-2 thought-leader or futurist keywords."
-                    ],
-                    "taxonomy": "Supporting | Expert prediction",
-                    "attention": "Include thought leader perspective on future developments.",
-                    "intent": "Reinforce future trends with expert prediction or analysis.",
-                    "audiences": "Strategic thinkers; level: advanced.",
-                    "selfPrompt": "Insert a quote from a thought leader or expert predicting future developments or offering strategic analysis. Prefer Internal KB; use External KB from recognized futurists. Respect constraints. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 30,
-                      "maxWords": 60,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              },
-              {
-                "id": "h3-8-3",
-                "tag": "h3",
-                "keywords": [
-                  "Generate 5-7 keywords (inherit 2-3 from parent H2, add 3-4 specific to strategic implications)."
-                ],
-                "taxonomy": "Guide | Strategic implications subsection",
-                "attention": "Analyze strategic implications and preparedness strategies.",
-                "intent": "Explain how organizations should prepare for future developments.",
-                "audiences": "Strategic planners and executives; level: advanced.",
-                "selfPrompt": "Develop an H3 subsection on strategic implications covering how organizations should prepare, what capabilities to build, and strategic positioning for the future. Integrate inherited and specific keywords naturally. Respect word limits. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 300,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-8-3-1",
-                    "tag": "p",
-                    "keywords": [
-                      "Generate 3-4 strategic-readiness keywords."
-                    ],
-                    "taxonomy": "Supporting | Strategic guidance",
-                    "attention": "Provide strategic guidance on future preparedness.",
-                    "intent": "Advise on how to strategically prepare for future developments.",
-                    "audiences": "Executives and planners; level: advanced.",
-                    "selfPrompt": "Write a paragraph providing strategic guidance on preparing for future developments, building necessary capabilities, and positioning for success. Be actionable and strategic. Respect min/max words. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 110,
-                      "maxWords": 220,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "ol-8-3-2",
-                    "tag": "ol",
-                    "keywords": [
-                      "Generate 2-3 preparation-step keywords."
-                    ],
-                    "taxonomy": "List | Preparation steps",
-                    "attention": "List strategic preparation steps in priority order.",
-                    "intent": "Provide 5-7 ordered steps for strategic preparedness.",
-                    "audiences": "Strategic implementers; level: advanced.",
-                    "selfPrompt": "Create an ordered list with 5-7 strategic preparation steps organizations should take in priority order. Keep items clear and strategic. Respect word constraints. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 80,
-                      "maxWords": 160,
-                      "actualContent": ""
-                    }
+                    },
+                    "realContentStructure": [
+                      {
+                        "id": "p-2-4-4-1",
+                        "tag": "p",
+                        "keywords": [
+                          "Generate 2-3 micro-detail keywords."
+                        ],
+                        "taxonomy": "Supporting | Micro-detail",
+                        "attention": "Explain one fine-grained detail.",
+                        "intent": "Illuminate a detail crucial to implementation.",
+                        "audiences": "Hands-on implementers; level: intermediate.",
+                        "selfPrompt": "Write a paragraph explaining one fine-grained detail of the H4 subtopic. Keep it practical and specific. Respect word constraints. Generate the necessary content here.",
+                        "additionalData": {
+                          "minWords": 60,
+                          "maxWords": 105,
+                          "actualContent": ""
+                        }
+                      },
+                      {
+                        "id": "ol-2-4-4-2",
+                        "tag": "ol",
+                        "keywords": [
+                          "Generate 2-3 stepwise keywords."
+                        ],
+                        "taxonomy": "List | Ordered steps",
+                        "attention": "Provide a short, ordered procedure.",
+                        "intent": "List 3–5 steps in logical order.",
+                        "audiences": "Implementers; level: intermediate.",
+                        "selfPrompt": "Create an ordered list with 3–5 steps in a logical progression. Keep items concise and precise. Respect word constraints. Generate the necessary content here.",
+                        "additionalData": {
+                          "minWords": 45,
+                          "maxWords": 75,
+                          "actualContent": ""
+                        }
+                      },
+                      {
+                        "id": "blockquote-2-4-4-3",
+                        "tag": "blockquote",
+                        "keywords": [
+                          "Generate 1-2 evidence keywords."
+                        ],
+                        "taxonomy": "Supporting | Expert quote",
+                        "attention": "Use a targeted, credibility-boosting quote.",
+                        "intent": "Reinforce the H4 point with authority.",
+                        "audiences": "Skeptical readers; level: intermediate.",
+                        "selfPrompt": "Insert a short, targeted quote that reinforces the H4’s claim. Prefer Internal KB; use External KB if needed. One to two sentences. Respect constraints. Generate the necessary content here.",
+                        "additionalData": {
+                          "minWords": 20,
+                          "maxWords": 40,
+                          "actualContent": ""
+                        }
+                      }
+                    ]
                   }
                 ]
               }
@@ -7168,18 +5869,18 @@ export const contentData = {
             "tag": "h2",
             "classification": "semantic",
             "keywords": [
-              "Generate 6-8 FAQ-related keywords tied to comprehensive user questions across beginner, intermediate, advanced, and specialized concerns"
+              "Generate 5-7 FAQ-related keywords tied to user intent."
             ],
-            "taxonomy": "FAQ | Comprehensive Q&A section",
-            "attention": "Anticipate and answer user questions comprehensively across all skill levels and concerns.",
-            "intent": "Address common questions with clear, helpful answers spanning basic understanding through advanced implementation and strategic concerns.",
-            "audiences": "All readers from beginners to experts; level: beginner-to-advanced.",
-            "selfPrompt": "This FAQ H2 section is designed for comprehensive question coverage. Adopt diverse user perspectives by analyzing all preceding content and understanding audience needs across skill levels. Generate eight high-impact questions covering beginner basics, intermediate implementation, advanced optimization, troubleshooting, decision-making, compliance, and future readiness. Organize each question under an H3 heading with a well-crafted, comprehensive answer. Avoid repeating content from other sections. Respect min/max words per element. Generate the necessary content here.",
+            "taxonomy": "FAQ | Q&A section",
+            "attention": "Anticipate top questions and answer succinctly.",
+            "intent": "Address the most pressing user questions with clarity.",
+            "audiences": "Prospects and users; level: beginner-to-intermediate.",
+            "selfPrompt": "This FAQ H2 introduces a focused Q&A area. Generate 3 high-impact questions aligned with the page topic and audience needs. Each question must be an H3 with a concise answer paragraph beneath. Avoid repeating content from other sections. Respect min/max words per element. Generate the necessary content here.",
             "designDescription": "",
             "connectedDesignSectionId": "",
             "additionalData": {
-              "minWords": 600,
-              "maxWords": 850,
+              "minWords": 350,
+              "maxWords": 500,
               "actualContent": ""
             },
             "realContentStructure": [
@@ -7190,13 +5891,13 @@ export const contentData = {
                   "Generate 2-3 FAQ-intro keywords."
                 ],
                 "taxonomy": "Supporting | FAQ intro",
-                "attention": "Set expectations for comprehensive FAQ coverage across levels.",
-                "intent": "Introduce the FAQ section's comprehensive scope and organization.",
+                "attention": "Set expectations for the Q&A format.",
+                "intent": "Briefly introduce how the FAQ helps users.",
                 "audiences": "All readers; level: general.",
-                "selfPrompt": "Write an introductory paragraph explaining the FAQ's comprehensive coverage from basic to advanced questions, how it's organized by complexity, and how to use it effectively. Respect word limits. Generate the necessary content here.",
+                "selfPrompt": "Write a short paragraph introducing the FAQ purpose and how to use it. Keep it clear and user-centric. Respect word limits. Generate the necessary content here.",
                 "additionalData": {
-                  "minWords": 110,
-                  "maxWords": 220,
+                  "minWords": 70,
+                  "maxWords": 120,
                   "actualContent": ""
                 }
               },
@@ -7204,16 +5905,16 @@ export const contentData = {
                 "id": "h3-FAQ-1",
                 "tag": "h3",
                 "keywords": [
-                  "Generate 3-5 question-specific keywords for foundational beginner question."
+                  "Generate 3-5 question-specific keywords."
                 ],
-                "taxonomy": "FAQ | Beginner question heading",
-                "attention": "Formulate the most fundamental beginner question.",
-                "intent": "Ask the most basic, essential question beginners need answered.",
-                "audiences": "Complete beginners; level: beginner.",
-                "selfPrompt": "Create an H3 question that addresses the most foundational concern a complete beginner would have. Keep it simple and essential. Generate the necessary content here.",
+                "taxonomy": "FAQ | Question heading",
+                "attention": "Formulate a highly relevant question.",
+                "intent": "Ask a common, high-impact user question.",
+                "audiences": "Prospects and users; level: beginner.",
+                "selfPrompt": "Create an H3 question that reflects a common, high-impact concern derived from the page topic and audience. Keep it direct and specific. Generate the necessary content here.",
                 "additionalData": {
-                  "minWords": 220,
-                  "maxWords": 320,
+                  "minWords": 160,
+                  "maxWords": 240,
                   "actualContent": ""
                 },
                 "realContentStructure": [
@@ -7221,16 +5922,16 @@ export const contentData = {
                     "id": "p-FAQ-1-1",
                     "tag": "p",
                     "keywords": [
-                      "Generate 2-3 beginner-answer keywords."
+                      "Generate 2-3 answer-focused keywords."
                     ],
-                    "taxonomy": "FAQ | Beginner answer",
-                    "attention": "Provide a crystal-clear beginner-friendly answer.",
-                    "intent": "Deliver a simple, accessible answer that builds foundational understanding.",
-                    "audiences": "Beginners; level: beginner.",
-                    "selfPrompt": "Write a clear, beginner-friendly answer using simple language, concrete examples, and avoiding jargon. Build confidence and understanding. Respect min/max words. Generate the necessary content here.",
+                    "taxonomy": "FAQ | Answer",
+                    "attention": "Answer clearly in 1–2 short paragraphs.",
+                    "intent": "Provide a precise, user-friendly answer.",
+                    "audiences": "Beginners; level: beginner-to-intermediate.",
+                    "selfPrompt": "Write a concise answer that directly addresses the question. Use plain, helpful language. Include one concrete example or constraint if applicable. Respect min/max words. Generate the necessary content here.",
                     "additionalData": {
-                      "minWords": 80,
-                      "maxWords": 160,
+                      "minWords": 70,
+                      "maxWords": 120,
                       "actualContent": ""
                     }
                   }
@@ -7240,16 +5941,16 @@ export const contentData = {
                 "id": "h3-FAQ-2",
                 "tag": "h3",
                 "keywords": [
-                  "Generate 3-5 question-specific keywords for practical getting-started question."
+                  "Generate 3-5 question-specific keywords."
                 ],
-                "taxonomy": "FAQ | Getting started question",
-                "attention": "Pose a practical getting-started question.",
-                "intent": "Ask how to begin or take first steps practically.",
-                "audiences": "Motivated beginners; level: beginner-to-intermediate.",
-                "selfPrompt": "Create an H3 question about getting started or first practical steps. Keep it actionable. Generate the necessary content here.",
+                "taxonomy": "FAQ | Question heading",
+                "attention": "Pose another top-priority user question.",
+                "intent": "Ask a distinct question that avoids overlap.",
+                "audiences": "Prospects and users; level: beginner-to-intermediate.",
+                "selfPrompt": "Create an H3 question that is distinct from the first and addresses another top-priority concern. Keep it clear and specific. Generate the necessary content here.",
                 "additionalData": {
-                  "minWords": 220,
-                  "maxWords": 320,
+                  "minWords": 160,
+                  "maxWords": 240,
                   "actualContent": ""
                 },
                 "realContentStructure": [
@@ -7257,16 +5958,16 @@ export const contentData = {
                     "id": "p-FAQ-2-1",
                     "tag": "p",
                     "keywords": [
-                      "Generate 2-3 getting-started keywords."
+                      "Generate 2-3 answer-focused keywords."
                     ],
-                    "taxonomy": "FAQ | Getting started answer",
-                    "attention": "Provide actionable first steps.",
-                    "intent": "Give clear, practical guidance on how to begin.",
+                    "taxonomy": "FAQ | Answer",
+                    "attention": "Deliver a concise, useful answer.",
+                    "intent": "Resolve the question with clarity and precision.",
                     "audiences": "Beginners; level: beginner-to-intermediate.",
-                    "selfPrompt": "Write an actionable answer with clear first steps, prerequisites, and initial guidance. Be encouraging and practical. Respect min/max words. Generate the necessary content here.",
+                    "selfPrompt": "Write a clear, concise answer that resolves the question without ambiguity. Use simple language and practical framing. Respect min/max words. Generate the necessary content here.",
                     "additionalData": {
-                      "minWords": 80,
-                      "maxWords": 160,
+                      "minWords": 65,
+                      "maxWords": 115,
                       "actualContent": ""
                     }
                   }
@@ -7276,16 +5977,16 @@ export const contentData = {
                 "id": "h3-FAQ-3",
                 "tag": "h3",
                 "keywords": [
-                  "Generate 3-5 question-specific keywords for intermediate implementation question."
+                  "Generate 3-5 question-specific keywords."
                 ],
-                "taxonomy": "FAQ | Implementation question",
-                "attention": "Address a common intermediate implementation challenge.",
-                "intent": "Ask about a typical implementation hurdle or decision point.",
-                "audiences": "Intermediate practitioners; level: intermediate.",
-                "selfPrompt": "Create an H3 question addressing a common implementation challenge or decision that intermediate users face. Keep it specific. Generate the necessary content here.",
+                "taxonomy": "FAQ | Question heading",
+                "attention": "Focus on a decision-making blocker.",
+                "intent": "Ask a question that addresses a final hesitation.",
+                "audiences": "Prospects; level: beginner-to-intermediate.",
+                "selfPrompt": "Create an H3 question that addresses a common blocker or hesitation before conversion. Keep it targeted and distinct from prior questions. Generate the necessary content here.",
                 "additionalData": {
-                  "minWords": 220,
-                  "maxWords": 320,
+                  "minWords": 160,
+                  "maxWords": 240,
                   "actualContent": ""
                 },
                 "realContentStructure": [
@@ -7293,329 +5994,25 @@ export const contentData = {
                     "id": "p-FAQ-3-1",
                     "tag": "p",
                     "keywords": [
-                      "Generate 2-3 implementation-answer keywords."
+                      "Generate 2-3 answer-focused keywords."
                     ],
-                    "taxonomy": "FAQ | Implementation answer",
-                    "attention": "Provide practical implementation guidance.",
-                    "intent": "Resolve the implementation question with detailed, actionable advice.",
-                    "audiences": "Practitioners; level: intermediate.",
-                    "selfPrompt": "Write a practical answer that resolves the implementation challenge with specific guidance, code snippets if helpful, and decision frameworks. Respect min/max words. Generate the necessary content here.",
+                    "taxonomy": "FAQ | Answer",
+                    "attention": "Provide a reassuring, specific answer.",
+                    "intent": "Help readers confidently move forward.",
+                    "audiences": "Prospects; level: beginner-to-intermediate.",
+                    "selfPrompt": "Write a reassuring answer that resolves the hesitation with specifics (benefits, constraints, or example). Keep it practical and concise. Respect min/max words. Generate the necessary content here.",
                     "additionalData": {
-                      "minWords": 85,
-                      "maxWords": 170,
+                      "minWords": 75,
+                      "maxWords": 130,
                       "actualContent": ""
                     }
                   }
                 ]
-              },
-              {
-                "id": "h3-FAQ-4",
-                "tag": "h3",
-                "keywords": [
-                  "Generate 3-5 question-specific keywords for advanced optimization question."
-                ],
-                "taxonomy": "FAQ | Advanced question",
-                "attention": "Cover an advanced optimization or performance question.",
-                "intent": "Ask about optimization, performance, or advanced technique.",
-                "audiences": "Advanced users; level: advanced.",
-                "selfPrompt": "Create an H3 question addressing an advanced optimization concern, performance issue, or expert-level technique. Keep it technical. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 220,
-                  "maxWords": 320,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-FAQ-4-1",
-                    "tag": "p",
-                    "keywords": [
-                      "Generate 2-3 advanced-answer keywords."
-                    ],
-                    "taxonomy": "FAQ | Advanced answer",
-                    "attention": "Provide expert-level technical guidance.",
-                    "intent": "Answer the advanced question with depth and technical precision.",
-                    "audiences": "Advanced users; level: advanced.",
-                    "selfPrompt": "Write an expert-level answer with technical depth, specific metrics, optimization techniques, and advanced considerations. Use appropriate technical terminology. Respect min/max words. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 90,
-                      "maxWords": 180,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              },
-              {
-                "id": "h3-FAQ-5",
-                "tag": "h3",
-                "keywords": [
-                  "Generate 3-5 question-specific keywords for troubleshooting question."
-                ],
-                "taxonomy": "FAQ | Troubleshooting question",
-                "attention": "Address a common troubleshooting or debugging scenario.",
-                "intent": "Ask about a frequent problem or error situation.",
-                "audiences": "Troubleshooters; level: intermediate-to-advanced.",
-                "selfPrompt": "Create an H3 question about a common problem, error, or troubleshooting scenario users encounter. Keep it problem-focused. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 220,
-                  "maxWords": 320,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-FAQ-5-1",
-                    "tag": "p",
-                    "keywords": [
-                      "Generate 2-3 troubleshooting-answer keywords."
-                    ],
-                    "taxonomy": "FAQ | Troubleshooting answer",
-                    "attention": "Provide diagnostic and solution guidance.",
-                    "intent": "Help readers diagnose and resolve the problem.",
-                    "audiences": "Troubleshooters; level: intermediate-to-advanced.",
-                    "selfPrompt": "Write a troubleshooting answer with diagnostic steps, common causes, and solution approaches. Be systematic and solution-oriented. Respect min/max words. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 85,
-                      "maxWords": 170,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              },
-              {
-                "id": "h3-FAQ-6",
-                "tag": "h3",
-                "keywords": [
-                  "Generate 3-5 question-specific keywords for decision-making or ROI question."
-                ],
-                "taxonomy": "FAQ | Business question",
-                "attention": "Focus on a business or ROI decision-making question.",
-                "intent": "Ask about business value, ROI, or strategic justification.",
-                "audiences": "Decision-makers and executives; level: intermediate.",
-                "selfPrompt": "Create an H3 question addressing business value, ROI calculation, or strategic decision-making criteria. Keep it business-focused. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 220,
-                  "maxWords": 320,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-FAQ-6-1",
-                    "tag": "p",
-                    "keywords": [
-                      "Generate 2-3 business-answer keywords."
-                    ],
-                    "taxonomy": "FAQ | Business answer",
-                    "attention": "Provide strategic and business-focused guidance.",
-                    "intent": "Help decision-makers understand business value and make informed choices.",
-                    "audiences": "Decision-makers; level: intermediate.",
-                    "selfPrompt": "Write a business-focused answer with ROI considerations, strategic benefits, implementation costs, and decision frameworks. Be business-savvy. Respect min/max words. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 85,
-                      "maxWords": 170,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              },
-              {
-                "id": "h3-FAQ-7",
-                "tag": "h3",
-                "keywords": [
-                  "Generate 3-5 question-specific keywords for security or compliance question."
-                ],
-                "taxonomy": "FAQ | Security question",
-                "attention": "Address a security, privacy, or compliance concern.",
-                "intent": "Ask about security practices, compliance requirements, or risk management.",
-                "audiences": "Security-conscious users; level: intermediate-to-advanced.",
-                "selfPrompt": "Create an H3 question addressing security, privacy, compliance, or risk management concerns. Keep it security-focused. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 220,
-                  "maxWords": 320,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-FAQ-7-1",
-                    "tag": "p",
-                    "keywords": [
-                      "Generate 2-3 security-answer keywords."
-                    ],
-                    "taxonomy": "FAQ | Security answer",
-                    "attention": "Provide security and compliance guidance.",
-                    "intent": "Address the security or compliance concern with authoritative guidance.",
-                    "audiences": "Security-conscious users; level: intermediate-to-advanced.",
-                    "selfPrompt": "Write a security-focused answer with best practices, compliance requirements, risk mitigation strategies, and authoritative references. Be security-conscious. Respect min/max words. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 85,
-                      "maxWords": 170,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              },
-              {
-                "id": "h3-FAQ-8",
-                "tag": "h3",
-                "keywords": [
-                  "Generate 3-5 question-specific keywords for future readiness question."
-                ],
-                "taxonomy": "FAQ | Future trends question",
-                "attention": "Cover a future-oriented or evolution question.",
-                "intent": "Ask about future developments, upgrade paths, or long-term strategy.",
-                "audiences": "Strategic planners; level: intermediate-to-advanced.",
-                "selfPrompt": "Create an H3 question about future developments, evolution, migration paths, or long-term strategic considerations. Keep it forward-thinking. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 220,
-                  "maxWords": 320,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-FAQ-8-1",
-                    "tag": "p",
-                    "keywords": [
-                      "Generate 2-3 future-answer keywords."
-                    ],
-                    "taxonomy": "FAQ | Future answer",
-                    "attention": "Provide forward-looking strategic guidance.",
-                    "intent": "Help readers prepare for future developments and plan strategically.",
-                    "audiences": "Strategic planners; level: intermediate-to-advanced.",
-                    "selfPrompt": "Write a forward-looking answer addressing future trends, upgrade strategies, long-term planning, and strategic preparedness. Be strategic and future-focused. Respect min/max words. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 85,
-                      "maxWords": 170,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "h2-9",
-            "tag": "h2",
-            "classification": "semantic",
-            "keywords": [
-              "Generate 6-8 section-level keywords focused on synthesis, comprehensive summary, key insights, actionable takeaways, recommended actions, and strategic next steps"
-            ],
-            "taxonomy": "Guide | Comprehensive conclusion",
-            "attention": "Synthesize the entire deep dive comprehensively and guide readers toward strategic action.",
-            "intent": "Provide a comprehensive summary synthesizing all major sections, highlighting key insights, presenting comparative data, offering actionable takeaways, and guiding readers toward strategic next steps.",
-            "audiences": "All readers; level: general-to-intermediate.",
-            "selfPrompt": "Create an H2 summary section that comprehensively synthesizes the entire long-read content. Recap key insights from all sections, present summary comparison tables, highlight must-remember takeaways, include inspirational expert quotes, and provide clear next steps with multiple pathways for different reader goals. Be comprehensive yet accessible. Naturally integrate the listed keywords. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 500,
-              "maxWords": 750,
-              "actualContent": ""
-            },
-            "realContentStructure": [
-              {
-                "id": "p-9-1",
-                "tag": "p",
-                "keywords": [
-                  "Generate 3-4 synthesis-opening keywords."
-                ],
-                "taxonomy": "Supporting | Summary synthesis",
-                "attention": "Open with a powerful synthesis of the entire journey.",
-                "intent": "Recap the comprehensive journey and reinforce core value.",
-                "audiences": "All readers; level: general.",
-                "selfPrompt": "Write an opening paragraph that synthesizes the entire long-read journey, major themes covered, and core value delivered. Be comprehensive yet concise. Respect min/max words. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 120,
-                  "maxWords": 240,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "p-9-2",
-                "tag": "p",
-                "keywords": [
-                  "Generate 3-4 key-insights keywords."
-                ],
-                "taxonomy": "Supporting | Key insights",
-                "attention": "Highlight the most important insights and discoveries.",
-                "intent": "Emphasize breakthrough insights and critical understanding gained.",
-                "audiences": "Strategic readers; level: intermediate.",
-                "selfPrompt": "Write a paragraph highlighting the most important insights, discoveries, and breakthroughs covered throughout the content. Be insight-focused. Respect min/max words. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 100,
-                  "maxWords": 200,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "table-9-3",
-                "tag": "table",
-                "keywords": [
-                  "Generate 3-5 comparison or decision-framework keywords."
-                ],
-                "taxonomy": "Data | Summary decision table",
-                "attention": "Present a comprehensive decision framework or approach comparison.",
-                "intent": "Provide a summary table helping readers choose paths or approaches based on their context.",
-                "audiences": "Decision-makers; level: intermediate.",
-                "selfPrompt": "Create a comprehensive summary table comparing different approaches, implementation paths, or decision frameworks covered in the content. Include columns for context, approach, benefits, and considerations. Present 5-7 comparison rows that synthesize key decision points. Keep content within word constraints while ensuring completeness and utility. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 220,
-                  "maxWords": 350,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "ul-9-4",
-                "tag": "ul",
-                "keywords": [
-                  "Generate 3-4 key-takeaway or must-remember keywords."
-                ],
-                "taxonomy": "List | Essential takeaways",
-                "attention": "Distill the most critical takeaways into a scannable list.",
-                "intent": "Provide 6-8 must-remember points that readers should carry forward.",
-                "audiences": "All readers; level: general-to-intermediate.",
-                "selfPrompt": "Create an unordered list with 6-8 essential takeaways that synthesize the most important points from the entire long-read. One sentence per item, impactful and memorable. Cover diverse aspects: foundational concepts, implementation insights, optimization principles, security considerations, and strategic guidance. Avoid redundancy and ensure each takeaway delivers unique value. Respect word constraints. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 90,
-                  "maxWords": 180,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "p-9-5",
-                "tag": "p",
-                "keywords": [
-                  "Generate 3-4 next-steps or action-pathway keywords."
-                ],
-                "taxonomy": "Supporting | Action guidance",
-                "attention": "Guide readers toward their next steps with clear pathways.",
-                "intent": "Provide clear, actionable next steps tailored to different reader goals and contexts.",
-                "audiences": "Engaged readers and implementers; level: general-to-intermediate.",
-                "selfPrompt": "Write a comprehensive paragraph that guides readers toward next steps, offering multiple pathways based on different goals (learning more, starting implementation, optimizing existing systems, strategic planning). Be specific with resources, actions, and decision points. Make it encouraging and actionable. Respect min/max words. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 130,
-                  "maxWords": 260,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "blockquote-9-6",
-                "tag": "blockquote",
-                "keywords": [
-                  "Generate 1-2 inspirational or motivational keywords."
-                ],
-                "taxonomy": "Supporting | Closing inspiration",
-                "attention": "End with an inspirational, memorable quote that motivates action.",
-                "intent": "Provide a final inspirational message that reinforces value and encourages readers to act.",
-                "audiences": "All readers; level: general.",
-                "selfPrompt": "Insert a powerful, inspirational closing quote that reinforces the content's core message and motivates readers to take action on what they've learned. Prefer Internal KB as the source; if unavailable, use External KB from recognized thought leaders or practitioners. Two to three sentences maximum. Make it memorable and action-oriented. Cite the source with name and credentials. Respect word constraints. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 25,
-                  "maxWords": 50,
-                  "actualContent": ""
-                }
               }
             ]
           }
         ],
-        "isPublished": false,
+        "isPublished": true,
         "isAddedToPrompt": false,
         "isVectorConnected": false,
         "isChatSynchronized": false,
@@ -8316,2128 +6713,11 @@ export const contentData = {
       }
     ],
     "order": 4
-  },
-  {
-    "title": "EPL",
-    "href": "/epl",
-    "pages": [
-      {
-        "id": "ak6in7ce0bo10y68pmbuei93",
-        "title": "про ЭПЛ",
-        "href": "/epl/pro-epl",
-        "roles": [
-          "guest"
-        ],
-        "hasBadge": false,
-        "type": "customCategorias",
-        "aiRecommendContentStructure": [
-          {
-            "id": "h2-1",
-            "tag": "h2",
-            "classification": "semantic",
-            "keywords": [],
-            "taxonomy": "",
-            "attention": "",
-            "intent": "",
-            "audiences": "",
-            "selfPrompt": "",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 300,
-              "maxWords": 450,
-              "actualContent": ""
-            },
-            "realContentStructure": [
-              {
-                "id": "p-1-1",
-                "tag": "p",
-                "additionalData": {
-                  "minWords": 90,
-                  "maxWords": 160,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "p-1-2",
-                "tag": "p",
-                "additionalData": {
-                  "minWords": 70,
-                  "maxWords": 130,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "p-1-3",
-                "tag": "p",
-                "additionalData": {
-                  "minWords": 5,
-                  "maxWords": 15,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "blockquote-1-4",
-                "tag": "blockquote",
-                "additionalData": {
-                  "minWords": 25,
-                  "maxWords": 45,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "p-1-5",
-                "tag": "p",
-                "additionalData": {
-                  "minWords": 60,
-                  "maxWords": 110,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "ul-1-6",
-                "tag": "ul",
-                "additionalData": {
-                  "minWords": 40,
-                  "maxWords": 70,
-                  "actualContent": ""
-                }
-              }
-            ]
-          },
-          {
-            "id": "h2-2",
-            "tag": "h2",
-            "classification": "semantic",
-            "keywords": [],
-            "taxonomy": "",
-            "attention": "",
-            "intent": "",
-            "audiences": "",
-            "selfPrompt": "",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 550,
-              "maxWords": 750,
-              "actualContent": ""
-            },
-            "realContentStructure": [
-              {
-                "id": "p-2-1",
-                "tag": "p",
-                "additionalData": {
-                  "minWords": 80,
-                  "maxWords": 140,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "p-2-2",
-                "tag": "p",
-                "additionalData": {
-                  "minWords": 5,
-                  "maxWords": 15,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "h3-2-3",
-                "tag": "h3",
-                "additionalData": {
-                  "minWords": 220,
-                  "maxWords": 320,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-2-3-1",
-                    "tag": "p",
-                    "additionalData": {
-                      "minWords": 75,
-                      "maxWords": 130,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "ul-2-3-2",
-                    "tag": "ul",
-                    "additionalData": {
-                      "minWords": 50,
-                      "maxWords": 85,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "p-2-3-3",
-                    "tag": "p",
-                    "additionalData": {
-                      "minWords": 65,
-                      "maxWords": 115,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "code-2-3-4",
-                    "tag": "code",
-                    "additionalData": {
-                      "minWords": 20,
-                      "maxWords": 45,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              },
-              {
-                "id": "h3-2-4",
-                "tag": "h3",
-                "additionalData": {
-                  "minWords": 280,
-                  "maxWords": 400,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-2-4-1",
-                    "tag": "p",
-                    "additionalData": {
-                      "minWords": 70,
-                      "maxWords": 120,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "table-2-4-2",
-                    "tag": "table",
-                    "additionalData": {
-                      "minWords": 90,
-                      "maxWords": 150,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "p-2-4-3",
-                    "tag": "p",
-                    "additionalData": {
-                      "minWords": 5,
-                      "maxWords": 15,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "h4-2-4-4",
-                    "tag": "h4",
-                    "additionalData": {
-                      "minWords": 130,
-                      "maxWords": 200,
-                      "actualContent": ""
-                    },
-                    "realContentStructure": [
-                      {
-                        "id": "p-2-4-4-1",
-                        "tag": "p",
-                        "additionalData": {
-                          "minWords": 60,
-                          "maxWords": 105,
-                          "actualContent": ""
-                        }
-                      },
-                      {
-                        "id": "ol-2-4-4-2",
-                        "tag": "ol",
-                        "additionalData": {
-                          "minWords": 45,
-                          "maxWords": 75,
-                          "actualContent": ""
-                        }
-                      },
-                      {
-                        "id": "blockquote-2-4-4-3",
-                        "tag": "blockquote",
-                        "additionalData": {
-                          "minWords": 20,
-                          "maxWords": 40,
-                          "actualContent": ""
-                        }
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "h2-3",
-            "tag": "h2",
-            "classification": "semantic",
-            "keywords": [],
-            "taxonomy": "",
-            "attention": "",
-            "intent": "",
-            "audiences": "",
-            "selfPrompt": "This FAQ section is designed for generating relevant questions and answers. To create meaningful questions, you should adopt the perspective of the user, which requires analyzing the existing content and understanding the target audience. Consider what three questions would be most interesting and useful for users within the context of the given topic. Then, generate those three questions and organize each one under an h3 heading, ensuring that each question is paired with a well-crafted answer.",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 350,
-              "maxWords": 500,
-              "actualContent": ""
-            },
-            "realContentStructure": [
-              {
-                "id": "p-3-1",
-                "tag": "p",
-                "additionalData": {
-                  "minWords": 70,
-                  "maxWords": 120,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "h3-3-2",
-                "tag": "h3",
-                "additionalData": {
-                  "minWords": 160,
-                  "maxWords": 240,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-3-2-1",
-                    "tag": "p",
-                    "additionalData": {
-                      "minWords": 70,
-                      "maxWords": 120,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "ul-3-2-2",
-                    "tag": "ul",
-                    "additionalData": {
-                      "minWords": 35,
-                      "maxWords": 60,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "p-3-2-3",
-                    "tag": "p",
-                    "additionalData": {
-                      "minWords": 50,
-                      "maxWords": 90,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              },
-              {
-                "id": "h3-3-3",
-                "tag": "h3",
-                "additionalData": {
-                  "minWords": 160,
-                  "maxWords": 240,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-3-3-1",
-                    "tag": "p",
-                    "additionalData": {
-                      "minWords": 65,
-                      "maxWords": 115,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "code-3-3-2",
-                    "tag": "code",
-                    "additionalData": {
-                      "minWords": 20,
-                      "maxWords": 40,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "p-3-3-3",
-                    "tag": "p",
-                    "additionalData": {
-                      "minWords": 55,
-                      "maxWords": 100,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              },
-              {
-                "id": "h3-3-4",
-                "tag": "h3",
-                "additionalData": {
-                  "minWords": 160,
-                  "maxWords": 240,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-3-4-1",
-                    "tag": "p",
-                    "additionalData": {
-                      "minWords": 75,
-                      "maxWords": 130,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "ol-3-4-2",
-                    "tag": "ol",
-                    "additionalData": {
-                      "minWords": 40,
-                      "maxWords": 70,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "p-3-4-3",
-                    "tag": "p",
-                    "additionalData": {
-                      "minWords": 45,
-                      "maxWords": 80,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "h2-4",
-            "tag": "h2",
-            "classification": "semantic",
-            "keywords": [],
-            "taxonomy": "",
-            "attention": "",
-            "intent": "",
-            "audiences": "",
-            "selfPrompt": "",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 350,
-              "maxWords": 500,
-              "actualContent": ""
-            },
-            "realContentStructure": [
-              {
-                "id": "p-4-1",
-                "tag": "p",
-                "additionalData": {
-                  "minWords": 80,
-                  "maxWords": 140,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "p-4-2",
-                "tag": "p",
-                "additionalData": {
-                  "minWords": 5,
-                  "maxWords": 15,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "h3-4-3",
-                "tag": "h3",
-                "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 280,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-4-3-1",
-                    "tag": "p",
-                    "additionalData": {
-                      "minWords": 70,
-                      "maxWords": 120,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "ul-4-3-2",
-                    "tag": "ul",
-                    "additionalData": {
-                      "minWords": 50,
-                      "maxWords": 85,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "p-4-3-3",
-                    "tag": "p",
-                    "additionalData": {
-                      "minWords": 60,
-                      "maxWords": 105,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "blockquote-4-3-4",
-                    "tag": "blockquote",
-                    "additionalData": {
-                      "minWords": 18,
-                      "maxWords": 35,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              },
-              {
-                "id": "table-4-4",
-                "tag": "table",
-                "additionalData": {
-                  "minWords": 100,
-                  "maxWords": 170,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "p-4-5",
-                "tag": "p",
-                "additionalData": {
-                  "minWords": 70,
-                  "maxWords": 120,
-                  "actualContent": ""
-                }
-              }
-            ]
-          }
-        ],
-        "isPublished": true,
-        "isAddedToPrompt": false,
-        "isVectorConnected": false,
-        "isChatSynchronized": false,
-        "createdAt": "2025-10-03T12:47:53.635Z",
-        "updatedAt": "2025-10-03T13:02:49.520Z",
-        "order": 1,
-        "description": "про ЭПЛ",
-        "images": [
-          {
-            "id": "gl7ag0u70z2d2gtfibvic4ng",
-            "alt": "",
-            "href": "https://9d8adypzz8xutnay.public.blob.vercel-storage.com/b56af9b40b494b4a1cf1837a18b653443f158e95-9zURofyjL90nAfYEdQuYfnDos4FSuA.jpg"
-          }
-        ],
-        "keywords": [
-          "ЭПЛ "
-        ],
-        "draftContentStructure": [
-          {
-            "id": "h2-1",
-            "tag": "h2",
-            "classification": "Guide",
-            "keywords": [
-              "ЭПЛ",
-              "введение",
-              "основы ЭПЛ",
-              "что такое ЭПЛ",
-              "обзор ЭПЛ"
-            ],
-            "taxonomy": "Introduction",
-            "attention": "Это введение поможет читателям понять базовые понятия и значение ЭПЛ.",
-            "intent": "Объяснить, что такое ЭПЛ, и дать общее представление о теме для новых читателей.",
-            "audiences": "новички, интересующиеся ЭПЛ, студенты, начинающие специалисты",
-            "selfPrompt": "Создайте вводный раздел с заголовком уровня 2 (h2) на тему 'про ЭПЛ'. Используйте дружелюбный и разговорный стиль, но сохраняйте профессиональный тон. Включите три абзаца и один блок цитаты, раскрывающие основные понятия ЭПЛ, его важность и контекст использования. Общий объем текста должен быть от 1300 до 1500 слов. Используйте ключевые слова из PAGE_DATA и синонимы. Не вставляйте изображения. • также следует учитывать пользовательские настройки, сделанные ко всей странице: writing-style:{title:Conversational, description:Friendly, informal, like talking to a friend}, content-format:{title:Professional, description:Business-appropriate, formal tone}, custom requirements and specifications:{—} •",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 1300,
-              "maxWords": 1500,
-              "actualContent": "need generate helpful content"
-            },
-            "realContentStructure": [
-              {
-                "id": "p-1-1",
-                "tag": "p",
-                "keywords": [
-                  "ЭПЛ",
-                  "определение",
-                  "значение",
-                  "основы"
-                ],
-                "taxonomy": "Definition",
-                "attention": "Первый абзац задает основу понимания ЭПЛ.",
-                "intent": "Дать четкое определение ЭПЛ и объяснить его значение.",
-                "audiences": "новички, студенты",
-                "selfPrompt": "Напишите абзац (p) объемом 120-250 слов, объясняющий, что такое ЭПЛ, с использованием ключевых слов и простого языка. Формат — обычный текст без списков и таблиц.",
-                "additionalData": {
-                  "minWords": 120,
-                  "maxWords": 250,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "p-1-2",
-                "tag": "p",
-                "keywords": [
-                  "история",
-                  "развитие",
-                  "контекст",
-                  "ЭПЛ"
-                ],
-                "taxonomy": "Context",
-                "attention": "Второй абзац помогает понять исторический и практический контекст ЭПЛ.",
-                "intent": "Рассказать об истории и развитии ЭПЛ, а также о его роли в современном мире.",
-                "audiences": "новички, интересующиеся историей",
-                "selfPrompt": "Создайте абзац (p) длиной 80-180 слов, описывающий исторический и современный контекст ЭПЛ. Используйте разговорный стиль с профессиональной подачей.",
-                "additionalData": {
-                  "minWords": 80,
-                  "maxWords": 180,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "p-1-3",
-                "tag": "p",
-                "keywords": [
-                  "значение",
-                  "применение",
-                  "ЭПЛ",
-                  "важность"
-                ],
-                "taxonomy": "Importance",
-                "attention": "Краткий абзац подчеркивает важность темы для читателя.",
-                "intent": "Кратко объяснить, почему ЭПЛ важен и какие преимущества он дает.",
-                "audiences": "широкая аудитория",
-                "selfPrompt": "Напишите короткий абзац (p) 5-15 слов, подчеркивающий значимость ЭПЛ для читателя.",
-                "additionalData": {
-                  "minWords": 5,
-                  "maxWords": 15,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "blockquote-1-4",
-                "tag": "blockquote",
-                "keywords": [
-                  "цитата",
-                  "мотивация",
-                  "ЭПЛ",
-                  "вдохновение"
-                ],
-                "taxonomy": "Motivational Quote",
-                "attention": "Цитата добавляет эмоциональную ценность и мотивирует к изучению темы.",
-                "intent": "Включить вдохновляющую цитату, связанную с ЭПЛ, чтобы заинтересовать читателя.",
-                "audiences": "все читатели",
-                "selfPrompt": "Создайте блок цитаты (blockquote) объемом 25-50 слов, который вдохновляет и мотивирует читателей изучать ЭПЛ. Используйте профессиональный и дружелюбный стиль.",
-                "additionalData": {
-                  "minWords": 25,
-                  "maxWords": 50,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              }
-            ],
-            "status": "checked"
-          },
-          {
-            "id": "h2-2",
-            "tag": "h2",
-            "classification": "Guide",
-            "keywords": [
-              "структура ЭПЛ",
-              "компоненты",
-              "элементы ЭПЛ",
-              "основные части"
-            ],
-            "taxonomy": "Structure",
-            "attention": "Понимание структуры ЭПЛ важно для глубокого освоения темы.",
-            "intent": "Дать подробное описание структуры и основных компонентов ЭПЛ.",
-            "audiences": "студенты, специалисты, интересующиеся техническими аспектами",
-            "selfPrompt": "Разработайте раздел с заголовком h2, подробно описывающий структуру ЭПЛ. Используйте профессиональный и дружелюбный стиль, объемом от 1300 до 1500 слов. Включите один абзац введения, два подзаголовка h3 с соответствующими абзацами, таблицей, списком и кодом. Не используйте изображения. • также следует учитывать пользовательские настройки, сделанные ко всей странице: writing-style:{title:Conversational, description:Friendly, informal, like talking to a friend}, content-format:{title:Professional, description:Business-appropriate, formal tone}, custom requirements and specifications:{—} •",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 1300,
-              "maxWords": 1500,
-              "actualContent": "need generate helpful content"
-            },
-            "realContentStructure": [
-              {
-                "id": "p-2-1",
-                "tag": "p",
-                "keywords": [
-                  "введение",
-                  "структура",
-                  "обзор",
-                  "ЭПЛ"
-                ],
-                "taxonomy": "Introduction",
-                "attention": "Введение задает тон и контекст для последующего описания структуры.",
-                "intent": "Кратко представить тему структуры ЭПЛ и ее важность.",
-                "audiences": "студенты, специалисты",
-                "selfPrompt": "Напишите абзац (p) 100-200 слов, вводящий в тему структуры ЭПЛ, с использованием ключевых слов и разговорного, но профессионального стиля.",
-                "additionalData": {
-                  "minWords": 100,
-                  "maxWords": 200,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "h3-2-2",
-                "tag": "h3",
-                "classification": "Guide",
-                "keywords": [
-                  "основные компоненты",
-                  "структура",
-                  "ЭПЛ",
-                  "элементы"
-                ],
-                "taxonomy": "Components",
-                "attention": "Подробное описание основных компонентов помогает понять устройство ЭПЛ.",
-                "intent": "Раскрыть основные компоненты и их функции в структуре ЭПЛ.",
-                "audiences": "студенты, специалисты",
-                "selfPrompt": "Создайте подзаголовок h3 и три абзаца (p) общей длиной 200-300 слов, подробно описывающих основные компоненты ЭПЛ. Добавьте таблицу с характеристиками компонентов объемом 80-160 слов. Используйте профессиональный и дружелюбный стиль.",
-                "additionalData": {
-                  "minWords": 400,
-                  "maxWords": 600,
-                  "actualContent": "need generate helpful content"
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-2-2-1",
-                    "tag": "p",
-                    "keywords": [
-                      "компоненты",
-                      "описание",
-                      "функции",
-                      "ЭПЛ"
-                    ],
-                    "taxonomy": "Description",
-                    "attention": "Первый абзац вводит в описание компонентов.",
-                    "intent": "Объяснить назначение основных компонентов ЭПЛ.",
-                    "audiences": "студенты, специалисты",
-                    "selfPrompt": "Напишите абзац (p) 70-140 слов, описывающий основные компоненты ЭПЛ и их функции.",
-                    "additionalData": {
-                      "minWords": 70,
-                      "maxWords": 140,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "p-2-2-2",
-                    "tag": "p",
-                    "keywords": [
-                      "структура",
-                      "взаимодействие",
-                      "компоненты",
-                      "ЭПЛ"
-                    ],
-                    "taxonomy": "Interaction",
-                    "attention": "Второй абзац раскрывает взаимодействие компонентов.",
-                    "intent": "Показать, как компоненты ЭПЛ взаимодействуют между собой.",
-                    "audiences": "студенты, специалисты",
-                    "selfPrompt": "Создайте абзац (p) 90-180 слов, описывающий взаимодействие компонентов ЭПЛ.",
-                    "additionalData": {
-                      "minWords": 90,
-                      "maxWords": 180,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "p-2-2-3",
-                    "tag": "p",
-                    "keywords": [
-                      "резюме",
-                      "структура",
-                      "ЭПЛ",
-                      "основные моменты"
-                    ],
-                    "taxonomy": "Summary",
-                    "attention": "Краткий абзац подводит итоги описания компонентов.",
-                    "intent": "Сделать краткое резюме по основным компонентам ЭПЛ.",
-                    "audiences": "студенты, специалисты",
-                    "selfPrompt": "Напишите короткий абзац (p) 5-15 слов, подчеркивающий ключевые моменты описания компонентов.",
-                    "additionalData": {
-                      "minWords": 5,
-                      "maxWords": 15,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "table-2-2-4",
-                    "tag": "table",
-                    "keywords": [
-                      "таблица",
-                      "характеристики",
-                      "компоненты",
-                      "ЭПЛ"
-                    ],
-                    "taxonomy": "Data Table",
-                    "attention": "Таблица визуализирует характеристики компонентов для лучшего понимания.",
-                    "intent": "Представить данные о компонентах ЭПЛ в табличном формате.",
-                    "audiences": "студенты, специалисты",
-                    "selfPrompt": "Создайте таблицу (table) объемом 80-160 слов с характеристиками основных компонентов ЭПЛ. Таблица должна быть информативной и легко читаемой, без изображений.",
-                    "additionalData": {
-                      "minWords": 80,
-                      "maxWords": 160,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
-              },
-              {
-                "id": "h3-2-3",
-                "tag": "h3",
-                "classification": "Guide",
-                "keywords": [
-                  "применение",
-                  "структура",
-                  "ЭПЛ",
-                  "практика"
-                ],
-                "taxonomy": "Applications",
-                "attention": "Раздел о применении помогает понять практическую ценность ЭПЛ.",
-                "intent": "Рассказать о практическом применении структуры ЭПЛ и ее особенностях.",
-                "audiences": "практики, специалисты, студенты",
-                "selfPrompt": "Создайте подзаголовок h3 и четыре элемента: абзац (p) 80-160 слов, маркированный список (ul) 40-80 слов, блок кода (code) 20-50 слов и абзац (p) 60-120 слов. Тема — практическое применение структуры ЭПЛ. Используйте профессиональный и дружелюбный стиль.",
-                "additionalData": {
-                  "minWords": 400,
-                  "maxWords": 600,
-                  "actualContent": "need generate helpful content"
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-2-3-1",
-                    "tag": "p",
-                    "keywords": [
-                      "применение",
-                      "структура",
-                      "ЭПЛ",
-                      "обзор"
-                    ],
-                    "taxonomy": "Overview",
-                    "attention": "Первый абзац вводит в тему практического применения.",
-                    "intent": "Объяснить, как структура ЭПЛ используется на практике.",
-                    "audiences": "практики, специалисты",
-                    "selfPrompt": "Напишите абзац (p) 80-160 слов, описывающий применение структуры ЭПЛ.",
-                    "additionalData": {
-                      "minWords": 80,
-                      "maxWords": 160,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "ul-2-3-2",
-                    "tag": "ul",
-                    "keywords": [
-                      "список",
-                      "преимущества",
-                      "применение",
-                      "ЭПЛ"
-                    ],
-                    "taxonomy": "List",
-                    "attention": "Список выделяет ключевые преимущества и особенности применения.",
-                    "intent": "Перечислить основные преимущества и особенности применения ЭПЛ.",
-                    "audiences": "практики, специалисты",
-                    "selfPrompt": "Создайте маркированный список (ul) из 4-6 пунктов, общий объем 40-80 слов, перечисляющий преимущества и особенности применения ЭПЛ.",
-                    "additionalData": {
-                      "minWords": 40,
-                      "maxWords": 80,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "code-2-3-3",
-                    "tag": "code",
-                    "keywords": [
-                      "пример",
-                      "код",
-                      "структура",
-                      "ЭПЛ"
-                    ],
-                    "taxonomy": "Code Example",
-                    "attention": "Пример кода иллюстрирует практическое применение структуры ЭПЛ.",
-                    "intent": "Представить пример кода, демонстрирующий использование структуры ЭПЛ.",
-                    "audiences": "разработчики, специалисты",
-                    "selfPrompt": "Создайте блок кода (code) объемом 20-50 слов с примером использования структуры ЭПЛ. Форматируйте как код, без лишних комментариев.",
-                    "additionalData": {
-                      "minWords": 20,
-                      "maxWords": 50,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "p-2-3-4",
-                    "tag": "p",
-                    "keywords": [
-                      "заключение",
-                      "применение",
-                      "ЭПЛ",
-                      "итог"
-                    ],
-                    "taxonomy": "Conclusion",
-                    "attention": "Заключительный абзац подводит итоги раздела о применении.",
-                    "intent": "Сделать выводы о значении практического применения ЭПЛ.",
-                    "audiences": "практики, специалисты",
-                    "selfPrompt": "Напишите абзац (p) 60-120 слов, подводящий итоги раздела о применении структуры ЭПЛ.",
-                    "additionalData": {
-                      "minWords": 60,
-                      "maxWords": 120,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
-              }
-            ],
-            "status": "checked"
-          },
-          {
-            "id": "h2-3",
-            "tag": "h2",
-            "classification": "Guide",
-            "keywords": [
-              "технологии",
-              "инструменты",
-              "ЭПЛ",
-              "технические аспекты"
-            ],
-            "taxonomy": "Technology",
-            "attention": "Знание технологий и инструментов важно для эффективного использования ЭПЛ.",
-            "intent": "Рассмотреть современные технологии и инструменты, связанные с ЭПЛ.",
-            "audiences": "технические специалисты, разработчики, студенты",
-            "selfPrompt": "Создайте раздел с заголовком h2, посвященный технологиям и инструментам ЭПЛ. Используйте профессиональный и дружелюбный стиль, объемом 1300-1500 слов. Включите два абзаца, два подзаголовка h3 с соответствующими абзацами, списками, кодом и блоками цитат. Не используйте изображения. • также следует учитывать пользовательские настройки, сделанные ко всей странице: writing-style:{title:Conversational, description:Friendly, informal, like talking to a friend}, content-format:{title:Professional, description:Business-appropriate, formal tone}, custom requirements and specifications:{—} •",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 1300,
-              "maxWords": 1500,
-              "actualContent": "need generate helpful content"
-            },
-            "realContentStructure": [
-              {
-                "id": "p-3-1",
-                "tag": "p",
-                "keywords": [
-                  "введение",
-                  "технологии",
-                  "ЭПЛ",
-                  "обзор"
-                ],
-                "taxonomy": "Introduction",
-                "attention": "Краткое введение в тему технологий ЭПЛ.",
-                "intent": "Обозначить важность технологий для ЭПЛ и задать контекст.",
-                "audiences": "технические специалисты, студенты",
-                "selfPrompt": "Напишите короткий абзац (p) 5-15 слов, вводящий в тему технологий ЭПЛ.",
-                "additionalData": {
-                  "minWords": 5,
-                  "maxWords": 15,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "p-3-2",
-                "tag": "p",
-                "keywords": [
-                  "технологии",
-                  "значение",
-                  "развитие",
-                  "ЭПЛ"
-                ],
-                "taxonomy": "Context",
-                "attention": "Объяснение роли технологий в развитии ЭПЛ.",
-                "intent": "Показать, как технологии влияют на развитие и применение ЭПЛ.",
-                "audiences": "технические специалисты, студенты",
-                "selfPrompt": "Создайте абзац (p) 110-220 слов, раскрывающий роль технологий в ЭПЛ.",
-                "additionalData": {
-                  "minWords": 110,
-                  "maxWords": 220,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "h3-3-3",
-                "tag": "h3",
-                "classification": "Guide",
-                "keywords": [
-                  "инструменты",
-                  "технологии",
-                  "ЭПЛ",
-                  "обзор"
-                ],
-                "taxonomy": "Tools",
-                "attention": "Подробное описание инструментов помогает понять техническую сторону ЭПЛ.",
-                "intent": "Рассмотреть основные инструменты, используемые в ЭПЛ.",
-                "audiences": "разработчики, технические специалисты",
-                "selfPrompt": "Создайте подзаголовок h3 и три абзаца (p) общей длиной 200-350 слов, один упорядоченный список (ol) 50-100 слов, один подзаголовок h4 с тремя элементами: абзац, код, абзац. Используйте профессиональный и дружелюбный стиль.",
-                "additionalData": {
-                  "minWords": 400,
-                  "maxWords": 700,
-                  "actualContent": "need generate helpful content"
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-3-3-1",
-                    "tag": "p",
-                    "keywords": [
-                      "инструменты",
-                      "описание",
-                      "функции",
-                      "ЭПЛ"
-                    ],
-                    "taxonomy": "Description",
-                    "attention": "Первый абзац вводит в описание инструментов.",
-                    "intent": "Объяснить назначение и функции основных инструментов ЭПЛ.",
-                    "audiences": "разработчики, специалисты",
-                    "selfPrompt": "Напишите абзац (p) 85-170 слов, описывающий основные инструменты ЭПЛ.",
-                    "additionalData": {
-                      "minWords": 85,
-                      "maxWords": 170,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "ol-3-3-2",
-                    "tag": "ol",
-                    "keywords": [
-                      "список",
-                      "инструменты",
-                      "особенности",
-                      "ЭПЛ"
-                    ],
-                    "taxonomy": "List",
-                    "attention": "Список выделяет ключевые инструменты и их особенности.",
-                    "intent": "Перечислить основные инструменты ЭПЛ с кратким описанием.",
-                    "audiences": "разработчики, специалисты",
-                    "selfPrompt": "Создайте упорядоченный список (ol) из 5-7 пунктов, общий объем 50-100 слов, описывающий инструменты ЭПЛ.",
-                    "additionalData": {
-                      "minWords": 50,
-                      "maxWords": 100,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "h4-3-3-3",
-                    "tag": "h4",
-                    "classification": "Guide",
-                    "keywords": [
-                      "пример",
-                      "код",
-                      "инструменты",
-                      "ЭПЛ"
-                    ],
-                    "taxonomy": "Example",
-                    "attention": "Пример кода иллюстрирует использование инструментов ЭПЛ.",
-                    "intent": "Показать пример кода, демонстрирующий работу с инструментами ЭПЛ.",
-                    "audiences": "разработчики",
-                    "selfPrompt": "Создайте подзаголовок h4 и три элемента: абзац (p) 75-150 слов, блок кода (code) 25-60 слов, абзац (p) 65-130 слов. Тема — пример использования инструментов ЭПЛ.",
-                    "additionalData": {
-                      "minWords": 350,
-                      "maxWords": 500,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "realContentStructure": [
-                      {
-                        "id": "p-3-3-3-1",
-                        "tag": "p",
-                        "keywords": [
-                          "введение",
-                          "пример",
-                          "код",
-                          "ЭПЛ"
-                        ],
-                        "taxonomy": "Introduction",
-                        "attention": "Вводный абзац к примеру кода.",
-                        "intent": "Подготовить читателя к просмотру примера кода.",
-                        "audiences": "разработчики",
-                        "selfPrompt": "Напишите абзац (p) 75-150 слов, вводящий в пример кода по инструментам ЭПЛ.",
-                        "additionalData": {
-                          "minWords": 75,
-                          "maxWords": 150,
-                          "actualContent": "need generate helpful content"
-                        },
-                        "status": "checked"
-                      },
-                      {
-                        "id": "code-3-3-3-2",
-                        "tag": "code",
-                        "keywords": [
-                          "код",
-                          "пример",
-                          "инструменты",
-                          "ЭПЛ"
-                        ],
-                        "taxonomy": "Code Example",
-                        "attention": "Код демонстрирует практическое применение инструментов.",
-                        "intent": "Представить пример кода, иллюстрирующий работу с инструментами ЭПЛ.",
-                        "audiences": "разработчики",
-                        "selfPrompt": "Создайте блок кода (code) 25-60 слов с примером использования инструментов ЭПЛ. Форматируйте как код, без лишних комментариев.",
-                        "additionalData": {
-                          "minWords": 25,
-                          "maxWords": 60,
-                          "actualContent": "need generate helpful content"
-                        },
-                        "status": "checked"
-                      },
-                      {
-                        "id": "p-3-3-3-3",
-                        "tag": "p",
-                        "keywords": [
-                          "анализ",
-                          "пример",
-                          "код",
-                          "ЭПЛ"
-                        ],
-                        "taxonomy": "Analysis",
-                        "attention": "Аналитический абзац объясняет пример кода.",
-                        "intent": "Объяснить, что показывает пример кода и его значение.",
-                        "audiences": "разработчики",
-                        "selfPrompt": "Напишите абзац (p) 65-130 слов, анализирующий пример кода по инструментам ЭПЛ.",
-                        "additionalData": {
-                          "minWords": 65,
-                          "maxWords": 130,
-                          "actualContent": "need generate helpful content"
-                        },
-                        "status": "checked"
-                      }
-                    ],
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
-              },
-              {
-                "id": "h3-3-4",
-                "tag": "h3",
-                "classification": "Guide",
-                "keywords": [
-                  "технические вызовы",
-                  "проблемы",
-                  "ЭПЛ",
-                  "решения"
-                ],
-                "taxonomy": "Challenges",
-                "attention": "Освещение проблем помогает подготовиться к их решению при работе с ЭПЛ.",
-                "intent": "Рассмотреть основные технические вызовы и способы их преодоления в ЭПЛ.",
-                "audiences": "технические специалисты, разработчики",
-                "selfPrompt": "Создайте подзаголовок h3 и три элемента: абзац (p) 95-190 слов, блок цитаты (blockquote) 20-45 слов, упорядоченный список (ol) 60-120 слов. Тема — технические вызовы и решения в ЭПЛ. Используйте профессиональный и дружелюбный стиль.",
-                "additionalData": {
-                  "minWords": 175,
-                  "maxWords": 355,
-                  "actualContent": "need generate helpful content"
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-3-4-1",
-                    "tag": "p",
-                    "keywords": [
-                      "проблемы",
-                      "вызовы",
-                      "технические",
-                      "ЭПЛ"
-                    ],
-                    "taxonomy": "Description",
-                    "attention": "Первый абзац описывает основные технические проблемы.",
-                    "intent": "Объяснить, с какими техническими вызовами сталкиваются при работе с ЭПЛ.",
-                    "audiences": "технические специалисты",
-                    "selfPrompt": "Напишите абзац (p) 95-190 слов, описывающий технические вызовы ЭПЛ.",
-                    "additionalData": {
-                      "minWords": 95,
-                      "maxWords": 190,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "blockquote-3-4-2",
-                    "tag": "blockquote",
-                    "keywords": [
-                      "цитата",
-                      "мотивация",
-                      "решение",
-                      "ЭПЛ"
-                    ],
-                    "taxonomy": "Motivational Quote",
-                    "attention": "Цитата мотивирует к преодолению технических проблем.",
-                    "intent": "Включить вдохновляющую цитату о преодолении технических вызовов.",
-                    "audiences": "технические специалисты",
-                    "selfPrompt": "Создайте блок цитаты (blockquote) 20-45 слов, мотивирующий к решению технических проблем ЭПЛ.",
-                    "additionalData": {
-                      "minWords": 20,
-                      "maxWords": 45,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "ol-3-4-3",
-                    "tag": "ol",
-                    "keywords": [
-                      "решения",
-                      "технические вызовы",
-                      "ЭПЛ",
-                      "способы"
-                    ],
-                    "taxonomy": "List",
-                    "attention": "Список предлагает конкретные решения технических проблем.",
-                    "intent": "Перечислить эффективные методы решения технических вызовов ЭПЛ.",
-                    "audiences": "технические специалисты",
-                    "selfPrompt": "Создайте упорядоченный список (ol) из 5-7 пунктов, общий объем 60-120 слов, описывающий решения технических проблем ЭПЛ.",
-                    "additionalData": {
-                      "minWords": 60,
-                      "maxWords": 120,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
-              }
-            ],
-            "status": "checked"
-          },
-          {
-            "id": "h2-4",
-            "tag": "h2",
-            "classification": "Guide",
-            "keywords": [
-              "преимущества",
-              "недостатки",
-              "ЭПЛ",
-              "анализ"
-            ],
-            "taxonomy": "Analysis",
-            "attention": "Анализ преимуществ и недостатков помогает сделать обоснованный выбор.",
-            "intent": "Дать сбалансированный обзор плюсов и минусов ЭПЛ.",
-            "audiences": "специалисты, менеджеры, студенты",
-            "selfPrompt": "Создайте раздел с заголовком h2, посвященный анализу преимуществ и недостатков ЭПЛ. Используйте профессиональный и дружелюбный стиль, объемом 1300-1500 слов. Включите абзац введения, два подзаголовка h3 с абзацами, списками и блоками цитат. Не используйте изображения. • также следует учитывать пользовательские настройки, сделанные ко всей странице: writing-style:{title:Conversational, description:Friendly, informal, like talking to a friend}, content-format:{title:Professional, description:Business-appropriate, formal tone}, custom requirements and specifications:{—} •",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 1300,
-              "maxWords": 1500,
-              "actualContent": "need generate helpful content"
-            },
-            "realContentStructure": [
-              {
-                "id": "p-4-1",
-                "tag": "p",
-                "keywords": [
-                  "введение",
-                  "анализ",
-                  "ЭПЛ",
-                  "обзор"
-                ],
-                "taxonomy": "Introduction",
-                "attention": "Введение задает контекст для анализа.",
-                "intent": "Кратко представить тему анализа преимуществ и недостатков ЭПЛ.",
-                "audiences": "специалисты, менеджеры",
-                "selfPrompt": "Напишите абзац (p) 100-200 слов, вводящий в анализ преимуществ и недостатков ЭПЛ.",
-                "additionalData": {
-                  "minWords": 100,
-                  "maxWords": 200,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "h3-4-2",
-                "tag": "h3",
-                "classification": "Comparison",
-                "keywords": [
-                  "преимущества",
-                  "ЭПЛ",
-                  "плюсы",
-                  "анализ"
-                ],
-                "taxonomy": "Advantages",
-                "attention": "Подробное описание преимуществ помогает понять ценность ЭПЛ.",
-                "intent": "Раскрыть основные преимущества использования ЭПЛ.",
-                "audiences": "специалисты, менеджеры",
-                "selfPrompt": "Создайте подзаголовок h3 и четыре элемента: три абзаца (p) общей длиной 200-300 слов и маркированный список (ul) 45-90 слов. Используйте профессиональный и дружелюбный стиль.",
-                "additionalData": {
-                  "minWords": 400,
-                  "maxWords": 600,
-                  "actualContent": "need generate helpful content"
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-4-2-1",
-                    "tag": "p",
-                    "keywords": [
-                      "преимущества",
-                      "введение",
-                      "ЭПЛ",
-                      "плюсы"
-                    ],
-                    "taxonomy": "Introduction",
-                    "attention": "Первый абзац вводит в тему преимуществ.",
-                    "intent": "Объяснить, почему ЭПЛ имеет преимущества.",
-                    "audiences": "специалисты",
-                    "selfPrompt": "Напишите абзац (p) 5-15 слов, вводящий в тему преимуществ ЭПЛ.",
-                    "additionalData": {
-                      "minWords": 5,
-                      "maxWords": 15,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "p-4-2-2",
-                    "tag": "p",
-                    "keywords": [
-                      "преимущества",
-                      "детали",
-                      "ЭПЛ",
-                      "анализ"
-                    ],
-                    "taxonomy": "Details",
-                    "attention": "Второй абзац раскрывает детали преимуществ.",
-                    "intent": "Подробно описать ключевые преимущества ЭПЛ.",
-                    "audiences": "специалисты",
-                    "selfPrompt": "Создайте абзац (p) 90-180 слов, описывающий преимущества ЭПЛ.",
-                    "additionalData": {
-                      "minWords": 90,
-                      "maxWords": 180,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "p-4-2-3",
-                    "tag": "p",
-                    "keywords": [
-                      "преимущества",
-                      "итог",
-                      "ЭПЛ",
-                      "анализ"
-                    ],
-                    "taxonomy": "Summary",
-                    "attention": "Краткий абзац подводит итоги преимуществ.",
-                    "intent": "Сделать краткое резюме по преимуществам ЭПЛ.",
-                    "audiences": "специалисты",
-                    "selfPrompt": "Напишите абзац (p) 85-170 слов, подводящий итоги преимуществ ЭПЛ.",
-                    "additionalData": {
-                      "minWords": 85,
-                      "maxWords": 170,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "ul-4-2-4",
-                    "tag": "ul",
-                    "keywords": [
-                      "список",
-                      "преимущества",
-                      "ЭПЛ",
-                      "ключевые моменты"
-                    ],
-                    "taxonomy": "List",
-                    "attention": "Список выделяет ключевые преимущества для быстрого восприятия.",
-                    "intent": "Перечислить основные преимущества ЭПЛ в виде списка.",
-                    "audiences": "специалисты",
-                    "selfPrompt": "Создайте маркированный список (ul) из 5-7 пунктов, общий объем 45-90 слов, перечисляющий преимущества ЭПЛ.",
-                    "additionalData": {
-                      "minWords": 45,
-                      "maxWords": 90,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
-              },
-              {
-                "id": "h3-4-3",
-                "tag": "h3",
-                "classification": "Comparison",
-                "keywords": [
-                  "недостатки",
-                  "ЭПЛ",
-                  "минусы",
-                  "анализ"
-                ],
-                "taxonomy": "Disadvantages",
-                "attention": "Освещение недостатков помогает подготовиться к возможным трудностям.",
-                "intent": "Рассмотреть основные недостатки и ограничения ЭПЛ.",
-                "audiences": "специалисты, менеджеры",
-                "selfPrompt": "Создайте подзаголовок h3 и четыре элемента: два абзаца (p) общей длиной 250-350 слов, упорядоченный список (ol) 55-110 слов и блок цитаты (blockquote) 18-40 слов. Используйте профессиональный и дружелюбный стиль.",
-                "additionalData": {
-                  "minWords": 350,
-                  "maxWords": 500,
-                  "actualContent": "need generate helpful content"
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-4-3-1",
-                    "tag": "p",
-                    "keywords": [
-                      "недостатки",
-                      "введение",
-                      "ЭПЛ",
-                      "минусы"
-                    ],
-                    "taxonomy": "Introduction",
-                    "attention": "Первый абзац вводит в тему недостатков.",
-                    "intent": "Объяснить, почему важно знать недостатки ЭПЛ.",
-                    "audiences": "специалисты",
-                    "selfPrompt": "Напишите абзац (p) 110-220 слов, вводящий в тему недостатков ЭПЛ.",
-                    "additionalData": {
-                      "minWords": 110,
-                      "maxWords": 220,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "p-4-3-2",
-                    "tag": "p",
-                    "keywords": [
-                      "недостатки",
-                      "детали",
-                      "ограничения",
-                      "ЭПЛ"
-                    ],
-                    "taxonomy": "Details",
-                    "attention": "Второй абзац раскрывает детали недостатков.",
-                    "intent": "Подробно описать ключевые недостатки и ограничения ЭПЛ.",
-                    "audiences": "специалисты",
-                    "selfPrompt": "Создайте абзац (p) 80-160 слов, описывающий недостатки ЭПЛ.",
-                    "additionalData": {
-                      "minWords": 80,
-                      "maxWords": 160,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "ol-4-3-3",
-                    "tag": "ol",
-                    "keywords": [
-                      "список",
-                      "недостатки",
-                      "ЭПЛ",
-                      "ограничения"
-                    ],
-                    "taxonomy": "List",
-                    "attention": "Список выделяет ключевые недостатки для быстрого восприятия.",
-                    "intent": "Перечислить основные недостатки ЭПЛ в виде списка.",
-                    "audiences": "специалисты",
-                    "selfPrompt": "Создайте упорядоченный список (ol) из 5-7 пунктов, общий объем 55-110 слов, перечисляющий недостатки ЭПЛ.",
-                    "additionalData": {
-                      "minWords": 55,
-                      "maxWords": 110,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "blockquote-4-3-4",
-                    "tag": "blockquote",
-                    "keywords": [
-                      "цитата",
-                      "предупреждение",
-                      "недостатки",
-                      "ЭПЛ"
-                    ],
-                    "taxonomy": "Warning Quote",
-                    "attention": "Цитата предупреждает о возможных рисках и сложностях.",
-                    "intent": "Включить цитату, подчеркивающую важность учета недостатков ЭПЛ.",
-                    "audiences": "специалисты",
-                    "selfPrompt": "Создайте блок цитаты (blockquote) 18-40 слов, предупреждающий о недостатках ЭПЛ.",
-                    "additionalData": {
-                      "minWords": 18,
-                      "maxWords": 40,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
-              }
-            ],
-            "status": "checked"
-          },
-          {
-            "id": "h2-5",
-            "tag": "h2",
-            "classification": "HowTo",
-            "keywords": [
-              "как использовать",
-              "применение",
-              "ЭПЛ",
-              "инструкция"
-            ],
-            "taxonomy": "Usage",
-            "attention": "Практические инструкции помогают эффективно применять ЭПЛ.",
-            "intent": "Дать пошаговые рекомендации по использованию ЭПЛ.",
-            "audiences": "практики, специалисты, новички",
-            "selfPrompt": "Создайте раздел с заголовком h2, посвященный практическому использованию ЭПЛ. Используйте профессиональный и дружелюбный стиль, объемом 1300-1500 слов. Включите два абзаца и один подзаголовок h3 с абзацами и списком. Не используйте изображения. • также следует учитывать пользовательские настройки, сделанные ко всей странице: writing-style:{title:Conversational, description:Friendly, informal, like talking to a friend}, content-format:{title:Professional, description:Business-appropriate, formal tone}, custom requirements and specifications:{—} •",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 1300,
-              "maxWords": 1500,
-              "actualContent": "need generate helpful content"
-            },
-            "realContentStructure": [
-              {
-                "id": "p-5-1",
-                "tag": "p",
-                "keywords": [
-                  "введение",
-                  "использование",
-                  "ЭПЛ",
-                  "обзор"
-                ],
-                "taxonomy": "Introduction",
-                "attention": "Введение задает контекст для практического использования.",
-                "intent": "Кратко представить тему практического применения ЭПЛ.",
-                "audiences": "практики, новички",
-                "selfPrompt": "Напишите абзац (p) 105-210 слов, вводящий в тему использования ЭПЛ.",
-                "additionalData": {
-                  "minWords": 105,
-                  "maxWords": 210,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "p-5-2",
-                "tag": "p",
-                "keywords": [
-                  "значение",
-                  "применение",
-                  "ЭПЛ",
-                  "важность"
-                ],
-                "taxonomy": "Importance",
-                "attention": "Краткий абзац подчеркивает значимость правильного использования ЭПЛ.",
-                "intent": "Объяснить, почему важно правильно использовать ЭПЛ.",
-                "audiences": "практики, новички",
-                "selfPrompt": "Напишите короткий абзац (p) 5-15 слов, подчеркивающий важность правильного применения ЭПЛ.",
-                "additionalData": {
-                  "minWords": 5,
-                  "maxWords": 15,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "h3-5-3",
-                "tag": "h3",
-                "classification": "HowTo",
-                "keywords": [
-                  "пошаговая инструкция",
-                  "использование",
-                  "ЭПЛ",
-                  "руководство"
-                ],
-                "taxonomy": "Instructions",
-                "attention": "Подробная инструкция помогает читателям применять ЭПЛ самостоятельно.",
-                "intent": "Предоставить пошаговое руководство по использованию ЭПЛ.",
-                "audiences": "практики, новички",
-                "selfPrompt": "Создайте подзаголовок h3 и три элемента: абзац (p) 80-160 слов, маркированный список (ul) 40-80 слов и абзац (p) 70-140 слов. Тема — пошаговое использование ЭПЛ. Используйте профессиональный и дружелюбный стиль.",
-                "additionalData": {
-                  "minWords": 190,
-                  "maxWords": 380,
-                  "actualContent": "need generate helpful content"
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-5-3-1",
-                    "tag": "p",
-                    "keywords": [
-                      "введение",
-                      "инструкция",
-                      "ЭПЛ",
-                      "начало"
-                    ],
-                    "taxonomy": "Introduction",
-                    "attention": "Вводный абзац к инструкции.",
-                    "intent": "Подготовить читателя к пошаговому руководству.",
-                    "audiences": "практики, новички",
-                    "selfPrompt": "Напишите абзац (p) 80-160 слов, вводящий в инструкцию по использованию ЭПЛ.",
-                    "additionalData": {
-                      "minWords": 80,
-                      "maxWords": 160,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "ul-5-3-2",
-                    "tag": "ul",
-                    "keywords": [
-                      "шаги",
-                      "инструкция",
-                      "использование",
-                      "ЭПЛ"
-                    ],
-                    "taxonomy": "List",
-                    "attention": "Список шагов облегчает понимание и применение инструкции.",
-                    "intent": "Перечислить основные шаги для использования ЭПЛ.",
-                    "audiences": "практики, новички",
-                    "selfPrompt": "Создайте маркированный список (ul) из 5-7 пунктов, общий объем 40-80 слов, описывающий пошаговое использование ЭПЛ.",
-                    "additionalData": {
-                      "minWords": 40,
-                      "maxWords": 80,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "p-5-3-3",
-                    "tag": "p",
-                    "keywords": [
-                      "заключение",
-                      "инструкция",
-                      "ЭПЛ",
-                      "советы"
-                    ],
-                    "taxonomy": "Conclusion",
-                    "attention": "Заключительный абзац подчеркивает важные моменты инструкции.",
-                    "intent": "Сделать выводы и дать советы по использованию ЭПЛ.",
-                    "audiences": "практики, новички",
-                    "selfPrompt": "Напишите абзац (p) 70-140 слов, подводящий итоги инструкции и дающий рекомендации.",
-                    "additionalData": {
-                      "minWords": 70,
-                      "maxWords": 140,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
-              }
-            ],
-            "status": "checked"
-          },
-          {
-            "id": "h2-6",
-            "tag": "h2",
-            "classification": "FAQ",
-            "keywords": [
-              "вопросы",
-              "ответы",
-              "часто задаваемые",
-              "ЭПЛ"
-            ],
-            "taxonomy": "FAQ",
-            "attention": "Раздел FAQ помогает быстро найти ответы на популярные вопросы по ЭПЛ.",
-            "intent": "Предоставить ответы на шесть наиболее часто задаваемых вопросов по теме ЭПЛ.",
-            "audiences": "широкая аудитория, новички, специалисты",
-            "selfPrompt": "Этот раздел FAQ предназначен для генерации релевантных вопросов и ответов. Для создания значимых вопросов необходимо принять перспективу пользователя, проанализировать существующий контент и понять целевую аудиторию. Сформулируйте шесть наиболее интересных и полезных вопросов в контексте темы ЭПЛ. Организуйте каждый вопрос под заголовком h3, сопровождая его развернутым ответом. Используйте профессиональный и дружелюбный стиль, общий объем раздела 1300-1500 слов. • также следует учитывать пользовательские настройки, сделанные ко всей странице: writing-style:{title:Conversational, description:Friendly, informal, like talking to a friend}, content-format:{title:Professional, description:Business-appropriate, formal tone}, custom requirements and specifications:{—} •",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 1300,
-              "maxWords": 1500,
-              "actualContent": "need generate helpful content"
-            },
-            "realContentStructure": [
-              {
-                "id": "p-6-1",
-                "tag": "p",
-                "keywords": [
-                  "введение",
-                  "FAQ",
-                  "ЭПЛ",
-                  "обзор"
-                ],
-                "taxonomy": "Introduction",
-                "attention": "Введение объясняет цель раздела FAQ.",
-                "intent": "Кратко представить раздел часто задаваемых вопросов по ЭПЛ.",
-                "audiences": "новички, специалисты",
-                "selfPrompt": "Напишите абзац (p) 95-190 слов, вводящий в раздел FAQ по ЭПЛ.",
-                "additionalData": {
-                  "minWords": 95,
-                  "maxWords": 190,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "h3-6-2",
-                "tag": "h3",
-                "classification": "FAQ Item",
-                "keywords": [
-                  "вопрос 1",
-                  "ответ 1",
-                  "ЭПЛ",
-                  "часто задаваемый"
-                ],
-                "taxonomy": "FAQ Question",
-                "attention": "Первый вопрос отвечает на важный аспект ЭПЛ.",
-                "intent": "Предоставить развернутый ответ на первый популярный вопрос по ЭПЛ.",
-                "audiences": "новички, специалисты",
-                "selfPrompt": "Создайте заголовок h3 с первым вопросом и абзац (p) 75-150 слов с подробным ответом. Используйте профессиональный и дружелюбный стиль.",
-                "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 300,
-                  "actualContent": "need generate helpful content"
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-6-2-1",
-                    "tag": "p",
-                    "keywords": [
-                      "ответ",
-                      "вопрос 1",
-                      "ЭПЛ",
-                      "информация"
-                    ],
-                    "taxonomy": "Answer",
-                    "attention": "Ответ раскрывает суть вопроса и помогает читателю.",
-                    "intent": "Дать полный и понятный ответ на первый вопрос.",
-                    "audiences": "новички, специалисты",
-                    "selfPrompt": "Напишите абзац (p) 75-150 слов, подробно отвечающий на первый вопрос FAQ по ЭПЛ.",
-                    "additionalData": {
-                      "minWords": 75,
-                      "maxWords": 150,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
-              },
-              {
-                "id": "h3-6-3",
-                "tag": "h3",
-                "classification": "FAQ Item",
-                "keywords": [
-                  "вопрос 2",
-                  "ответ 2",
-                  "ЭПЛ",
-                  "часто задаваемый"
-                ],
-                "taxonomy": "FAQ Question",
-                "attention": "Второй вопрос раскрывает другой важный аспект ЭПЛ.",
-                "intent": "Предоставить развернутый ответ на второй популярный вопрос по ЭПЛ.",
-                "audiences": "новички, специалисты",
-                "selfPrompt": "Создайте заголовок h3 с вторым вопросом и абзац (p) 75-150 слов с подробным ответом. Используйте профессиональный и дружелюбный стиль.",
-                "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 300,
-                  "actualContent": "need generate helpful content"
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-6-3-1",
-                    "tag": "p",
-                    "keywords": [
-                      "ответ",
-                      "вопрос 2",
-                      "ЭПЛ",
-                      "информация"
-                    ],
-                    "taxonomy": "Answer",
-                    "attention": "Ответ раскрывает суть вопроса и помогает читателю.",
-                    "intent": "Дать полный и понятный ответ на второй вопрос.",
-                    "audiences": "новички, специалисты",
-                    "selfPrompt": "Напишите абзац (p) 75-150 слов, подробно отвечающий на второй вопрос FAQ по ЭПЛ.",
-                    "additionalData": {
-                      "minWords": 75,
-                      "maxWords": 150,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
-              },
-              {
-                "id": "h3-6-4",
-                "tag": "h3",
-                "classification": "FAQ Item",
-                "keywords": [
-                  "вопрос 3",
-                  "ответ 3",
-                  "ЭПЛ",
-                  "часто задаваемый"
-                ],
-                "taxonomy": "FAQ Question",
-                "attention": "Третий вопрос раскрывает дополнительный аспект ЭПЛ.",
-                "intent": "Предоставить развернутый ответ на третий популярный вопрос по ЭПЛ.",
-                "audiences": "новички, специалисты",
-                "selfPrompt": "Создайте заголовок h3 с третьим вопросом и абзац (p) 75-150 слов с подробным ответом. Используйте профессиональный и дружелюбный стиль.",
-                "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 300,
-                  "actualContent": "need generate helpful content"
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-6-4-1",
-                    "tag": "p",
-                    "keywords": [
-                      "ответ",
-                      "вопрос 3",
-                      "ЭПЛ",
-                      "информация"
-                    ],
-                    "taxonomy": "Answer",
-                    "attention": "Ответ раскрывает суть вопроса и помогает читателю.",
-                    "intent": "Дать полный и понятный ответ на третий вопрос.",
-                    "audiences": "новички, специалисты",
-                    "selfPrompt": "Напишите абзац (p) 75-150 слов, подробно отвечающий на третий вопрос FAQ по ЭПЛ.",
-                    "additionalData": {
-                      "minWords": 75,
-                      "maxWords": 150,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
-              },
-              {
-                "id": "h3-6-5",
-                "tag": "h3",
-                "classification": "FAQ Item",
-                "keywords": [
-                  "вопрос 4",
-                  "ответ 4",
-                  "ЭПЛ",
-                  "часто задаваемый"
-                ],
-                "taxonomy": "FAQ Question",
-                "attention": "Четвертый вопрос раскрывает важный аспект ЭПЛ.",
-                "intent": "Предоставить развернутый ответ на четвертый популярный вопрос по ЭПЛ.",
-                "audiences": "новички, специалисты",
-                "selfPrompt": "Создайте заголовок h3 с четвертым вопросом и абзац (p) 75-150 слов с подробным ответом. Используйте профессиональный и дружелюбный стиль.",
-                "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 300,
-                  "actualContent": "need generate helpful content"
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-6-5-1",
-                    "tag": "p",
-                    "keywords": [
-                      "ответ",
-                      "вопрос 4",
-                      "ЭПЛ",
-                      "информация"
-                    ],
-                    "taxonomy": "Answer",
-                    "attention": "Ответ раскрывает суть вопроса и помогает читателю.",
-                    "intent": "Дать полный и понятный ответ на четвертый вопрос.",
-                    "audiences": "новички, специалисты",
-                    "selfPrompt": "Напишите абзац (p) 75-150 слов, подробно отвечающий на четвертый вопрос FAQ по ЭПЛ.",
-                    "additionalData": {
-                      "minWords": 75,
-                      "maxWords": 150,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
-              },
-              {
-                "id": "h3-6-6",
-                "tag": "h3",
-                "classification": "FAQ Item",
-                "keywords": [
-                  "вопрос 5",
-                  "ответ 5",
-                  "ЭПЛ",
-                  "часто задаваемый"
-                ],
-                "taxonomy": "FAQ Question",
-                "attention": "Пятый вопрос раскрывает дополнительный аспект ЭПЛ.",
-                "intent": "Предоставить развернутый ответ на пятый популярный вопрос по ЭПЛ.",
-                "audiences": "новички, специалисты",
-                "selfPrompt": "Создайте заголовок h3 с пятым вопросом и абзац (p) 75-150 слов с подробным ответом. Используйте профессиональный и дружелюбный стиль.",
-                "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 300,
-                  "actualContent": "need generate helpful content"
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-6-6-1",
-                    "tag": "p",
-                    "keywords": [
-                      "ответ",
-                      "вопрос 5",
-                      "ЭПЛ",
-                      "информация"
-                    ],
-                    "taxonomy": "Answer",
-                    "attention": "Ответ раскрывает суть вопроса и помогает читателю.",
-                    "intent": "Дать полный и понятный ответ на пятый вопрос.",
-                    "audiences": "новички, специалисты",
-                    "selfPrompt": "Напишите абзац (p) 75-150 слов, подробно отвечающий на пятый вопрос FAQ по ЭПЛ.",
-                    "additionalData": {
-                      "minWords": 75,
-                      "maxWords": 150,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
-              },
-              {
-                "id": "h3-6-7",
-                "tag": "h3",
-                "classification": "FAQ Item",
-                "keywords": [
-                  "вопрос 6",
-                  "ответ 6",
-                  "ЭПЛ",
-                  "часто задаваемый"
-                ],
-                "taxonomy": "FAQ Question",
-                "attention": "Шестой вопрос завершает обзор популярных вопросов по ЭПЛ.",
-                "intent": "Предоставить развернутый ответ на шестой популярный вопрос по ЭПЛ.",
-                "audiences": "новички, специалисты",
-                "selfPrompt": "Создайте заголовок h3 с шестым вопросом и абзац (p) 75-150 слов с подробным ответом. Используйте профессиональный и дружелюбный стиль.",
-                "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 300,
-                  "actualContent": "need generate helpful content"
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-6-7-1",
-                    "tag": "p",
-                    "keywords": [
-                      "ответ",
-                      "вопрос 6",
-                      "ЭПЛ",
-                      "информация"
-                    ],
-                    "taxonomy": "Answer",
-                    "attention": "Ответ раскрывает суть вопроса и помогает читателю.",
-                    "intent": "Дать полный и понятный ответ на шестой вопрос.",
-                    "audiences": "новички, специалисты",
-                    "selfPrompt": "Напишите абзац (p) 75-150 слов, подробно отвечающий на шестой вопрос FAQ по ЭПЛ.",
-                    "additionalData": {
-                      "minWords": 75,
-                      "maxWords": 150,
-                      "actualContent": "need generate helpful content"
-                    },
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
-              }
-            ],
-            "status": "checked"
-          },
-          {
-            "id": "h2-7",
-            "tag": "h2",
-            "classification": "Summary",
-            "keywords": [
-              "итоги",
-              "выводы",
-              "резюме",
-              "ЭПЛ"
-            ],
-            "taxonomy": "Conclusion",
-            "attention": "Итоговый раздел помогает закрепить знания и подвести итог всему материалу.",
-            "intent": "Сделать обобщение и выводы по теме ЭПЛ, подчеркнуть ключевые моменты.",
-            "audiences": "все читатели",
-            "selfPrompt": "Создайте заключительный раздел с заголовком h2, подводящий итоги по ЭПЛ. Используйте профессиональный и дружелюбный стиль, объемом 1300-1500 слов. Включите несколько абзацев, таблицу, список и блок цитаты. Не используйте изображения. • также следует учитывать пользовательские настройки, сделанные ко всей странице: writing-style:{title:Conversational, description:Friendly, informal, like talking to a friend}, content-format:{title:Professional, description:Business-appropriate, formal tone}, custom requirements and specifications:{—} •",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 1300,
-              "maxWords": 1500,
-              "actualContent": "need generate helpful content"
-            },
-            "realContentStructure": [
-              {
-                "id": "p-7-1",
-                "tag": "p",
-                "keywords": [
-                  "итоги",
-                  "резюме",
-                  "ЭПЛ",
-                  "обзор"
-                ],
-                "taxonomy": "Summary",
-                "attention": "Первый абзац подводит общий итог темы.",
-                "intent": "Кратко резюмировать основные моменты по ЭПЛ.",
-                "audiences": "все читатели",
-                "selfPrompt": "Напишите абзац (p) 60-240 слов, подводящий общий итог по ЭПЛ.",
-                "additionalData": {
-                  "minWords": 60,
-                  "maxWords": 240,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "p-7-2",
-                "tag": "p",
-                "keywords": [
-                  "выводы",
-                  "анализ",
-                  "ЭПЛ",
-                  "заключение"
-                ],
-                "taxonomy": "Conclusion",
-                "attention": "Второй абзац делает выводы и подчеркивает значимость темы.",
-                "intent": "Сформулировать ключевые выводы по теме ЭПЛ.",
-                "audiences": "все читатели",
-                "selfPrompt": "Напишите абзац (p) 100-200 слов, формулирующий выводы по ЭПЛ.",
-                "additionalData": {
-                  "minWords": 100,
-                  "maxWords": 200,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "table-6-2-2",
-                "tag": "table",
-                "keywords": [
-                  "таблица",
-                  "итоги",
-                  "ключевые моменты",
-                  "ЭПЛ"
-                ],
-                "taxonomy": "Summary Table",
-                "attention": "Таблица визуализирует ключевые итоги для удобства восприятия.",
-                "intent": "Представить ключевые моменты и выводы по ЭПЛ в табличном формате.",
-                "audiences": "все читатели",
-                "selfPrompt": "Создайте таблицу (table) объемом 200-300 слов с ключевыми итогами и выводами по ЭПЛ. Таблица должна быть информативной и легко читаемой.",
-                "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 300,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "ul-7-3",
-                "tag": "ul",
-                "keywords": [
-                  "список",
-                  "итоги",
-                  "рекомендации",
-                  "ЭПЛ"
-                ],
-                "taxonomy": "List",
-                "attention": "Список выделяет основные рекомендации и ключевые моменты.",
-                "intent": "Перечислить основные рекомендации и ключевые итоги по ЭПЛ.",
-                "audiences": "все читатели",
-                "selfPrompt": "Создайте маркированный список (ul) из 6-8 пунктов, общий объем 60-120 слов, перечисляющий рекомендации и ключевые итоги по ЭПЛ.",
-                "additionalData": {
-                  "minWords": 60,
-                  "maxWords": 120,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "p-7-4",
-                "tag": "p",
-                "keywords": [
-                  "заключение",
-                  "подведение итогов",
-                  "ЭПЛ",
-                  "значение"
-                ],
-                "taxonomy": "Conclusion",
-                "attention": "Заключительный абзац подчеркивает важность темы для читателя.",
-                "intent": "Подчеркнуть значимость ЭПЛ и мотивировать к дальнейшему изучению.",
-                "audiences": "все читатели",
-                "selfPrompt": "Напишите абзац (p) 80-160 слов, заключающий раздел и мотивирующий читателя.",
-                "additionalData": {
-                  "minWords": 80,
-                  "maxWords": 160,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              },
-              {
-                "id": "blockquote-7-5",
-                "tag": "blockquote",
-                "keywords": [
-                  "цитата",
-                  "мотивация",
-                  "заключение",
-                  "ЭПЛ"
-                ],
-                "taxonomy": "Motivational Quote",
-                "attention": "Цитата вдохновляет и подчеркивает важность темы.",
-                "intent": "Включить вдохновляющую цитату, завершающую раздел.",
-                "audiences": "все читатели",
-                "selfPrompt": "Создайте блок цитаты (blockquote) 15-35 слов, мотивирующий и подчеркивающий значимость ЭПЛ.",
-                "additionalData": {
-                  "minWords": 15,
-                  "maxWords": 35,
-                  "actualContent": "need generate helpful content"
-                },
-                "status": "checked"
-              }
-            ],
-            "status": "checked"
-          }
-        ],
-        "isReadyDraftForPerplexity": true,
-        "sections": [
-          {
-            "id": "h2-1",
-            "tempMDXContent": "<h2>Про ЭПЛ: Введение и Основы</h2>\n<p>ЭПЛ, или электронная подпись, — это современный инструмент, который позволяет удостоверять подлинность документов в цифровом формате. По сути, ЭПЛ служит цифровым аналогом обычной рукописной подписи, обеспечивая юридическую значимость электронных документов. В отличие от простого сканированного изображения подписи, электронная подпись использует сложные криптографические методы, которые гарантируют целостность и подлинность информации. Это значит, что при использовании ЭПЛ можно быть уверенным: документ не был изменён после подписания, а личность подписанта подтверждена. Для многих организаций и частных лиц ЭПЛ становится незаменимым инструментом в работе с контрактами, отчетами, заявлениями и другими важными документами.</p>\n<p>История развития ЭПЛ тесно связана с развитием информационных технологий и интернета. В начале 2000-х годов, когда электронный документооборот только начинал набирать популярность, возникла необходимость в безопасных способах подтверждения подлинности цифровых документов. Законодательства многих стран стали вводить нормы, регулирующие использование электронных подписей, что способствовало их широкому распространению. Сегодня ЭПЛ применяется не только в бизнесе, но и в государственных структурах, что позволяет ускорить процессы, снизить бумажную волокиту и повысить прозрачность взаимодействия между сторонами. Современные системы ЭПЛ обеспечивают высокий уровень безопасности и удобства, что делает их важным элементом цифровой экономики.</p>\n<p>Значение ЭПЛ трудно переоценить: она позволяет существенно экономить время и ресурсы, упрощая процедуру подписания документов и делая её доступной в любом месте и в любое время. Применение ЭПЛ повышает эффективность бизнес-процессов, снижает риск мошенничества и обеспечивает юридическую защиту в случае споров. В современном мире, где скорость и надежность обмена информацией играют ключевую роль, электронная подпись становится не просто удобной опцией, а необходимостью для компаний и частных лиц, стремящихся к цифровой трансформации и инновациям.</p>\n<blockquote>«Электронная подпись — это не просто технология, а мост между традиционным и цифровым миром, открывающий новые горизонты для бизнеса и общества.»</blockquote>"
-          },
-          {
-            "id": "h2-2",
-            "tempMDXContent": "<h2>Структура ЭПЛ: Подробный обзор основных компонентов</h2>\n<p>Понимание структуры электронной подписи (ЭПЛ) является ключевым шагом для тех, кто хочет глубже разобраться в технологии, обеспечивающей безопасность и юридическую значимость цифровых документов. Структура ЭПЛ включает в себя несколько взаимосвязанных компонентов, каждый из которых играет свою роль в процессе создания, передачи и проверки подписи. Знание этих элементов помогает не только лучше ориентироваться в технических аспектах, но и эффективно использовать ЭПЛ в различных сферах деятельности. В этом разделе мы подробно рассмотрим основные части электронной подписи, их функции и взаимодействие, что позволит сформировать целостное представление о том, как работает этот важный инструмент цифровой безопасности.</p>\n\n<h3>Основные компоненты структуры ЭПЛ</h3>\n<p>Электронная подпись состоит из нескольких ключевых компонентов, каждый из которых выполняет определённую функцию в обеспечении безопасности и подлинности данных. Во-первых, это криптографический ключ — уникальный набор данных, который используется для создания подписи. Он делится на закрытый (приватный) и открытый (публичный) ключи. Закрытый ключ хранится в секрете у владельца и применяется для подписания документа, а открытый ключ доступен всем и используется для проверки подписи. Во-вторых, важным элементом является сертификат ключа, который подтверждает принадлежность открытого ключа конкретному пользователю и выдается доверенным центром сертификации. Наконец, сама структура подписи включает в себя данные документа, зашифрованные с помощью закрытого ключа, и метаданные, необходимые для проверки и верификации подписи.</p>\n<p>Компоненты электронной подписи тесно взаимодействуют между собой, обеспечивая надежность и безопасность процесса. Когда пользователь подписывает документ, его закрытый ключ применяется для генерации цифровой подписи, которая затем прикрепляется к документу. Для проверки подлинности подписи получатель использует открытый ключ, проверяя, что подпись соответствует содержимому документа и принадлежит указанному владельцу. Сертификат ключа играет роль гаранта, подтверждая, что открытый ключ действительно ассоциирован с конкретным лицом или организацией. Такое взаимодействие компонентов исключает возможность подделки подписи и обеспечивает юридическую силу электронного документа.</p>\n<p>В итоге, структура ЭПЛ строится на взаимодополняющих элементах, которые вместе создают надежную систему цифровой идентификации и защиты информации.</p>\n<table>\n  <thead>\n    <tr>\n      <th>Компонент</th>\n      <th>Описание</th>\n      <th>Основная функция</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Закрытый ключ</td>\n      <td>Уникальный секретный ключ, хранящийся у владельца подписи</td>\n      <td>Используется для создания цифровой подписи</td>\n    </tr>\n    <tr>\n      <td>Открытый ключ</td>\n      <td>Публичный ключ, доступный для всех участников процесса</td>\n      <td>Применяется для проверки подлинности подписи</td>\n    </tr>\n    <tr>\n      <td>Сертификат ключа</td>\n      <td>Цифровой документ, подтверждающий принадлежность открытого ключа</td>\n      <td>Гарантирует доверие к открытом ключу и владельцу</td>\n    </tr>\n    <tr>\n      <td>Цифровая подпись</td>\n      <td>Зашифрованные данные, созданные с помощью закрытого ключа</td>\n      <td>Обеспечивает целостность и подлинность документа</td>\n    </tr>\n    <tr>\n      <td>Документ</td>\n      <td>Исходный электронный файл, к которому применяется подпись</td>\n      <td>Объект, подлежащий защите и подтверждению</td>\n    </tr>\n  </tbody>\n</table>\n<p>Таким образом, каждый компонент ЭПЛ имеет четко определённую роль и вместе они формируют надежную систему электронной подписи.</p>\n\n<h3>Практическое применение структуры ЭПЛ</h3>\n<p>Структура электронной подписи находит широкое применение в различных областях, где требуется надежное подтверждение подлинности документов и безопасность обмена информацией. В бизнесе ЭПЛ используется для подписания контрактов, счетов, отчетов и других важных документов, что значительно ускоряет процессы и снижает затраты на бумажный документооборот. В государственных учреждениях электронная подпись обеспечивает прозрачность и безопасность взаимодействия с гражданами, позволяя дистанционно оформлять заявления, получать услуги и проводить электронные голосования. Кроме того, в IT-сфере ЭПЛ применяется для защиты программного обеспечения и обеспечения безопасности электронных транзакций.</p>\n<ul>\n  <li>Ускорение документооборота и снижение затрат</li>\n  <li>Повышение безопасности и прозрачности процессов</li>\n  <li>Дистанционное оформление и подписание документов</li>\n  <li>Юридическая значимость электронных документов</li>\n  <li>Защита программного обеспечения и данных</li>\n</ul>\n<code>\nconst verifySignature = (document, signature, publicKey) =&gt; {  \n  // Проверка цифровой подписи с использованием открытого ключа  \n  return crypto.verify(document, signature, publicKey); \n};\n</code>\n<p>Использование структуры ЭПЛ в реальных условиях позволяет значительно повысить эффективность и безопасность работы с цифровыми документами, обеспечивая при этом юридическую силу и доверие между сторонами.</p>"
-          },
-          {
-            "id": "h2-3",
-            "tempMDXContent": "<h2>Технологии и инструменты электронной подписи (ЭПЛ)</h2>\n<p>Технологии играют ключевую роль в развитии и применении электронной подписи.</p>\n<p>Современные технологии существенно расширили возможности электронной подписи, сделав её более безопасной, удобной и доступной для широкого круга пользователей. Развитие криптографии, облачных сервисов и мобильных платформ позволило интегрировать ЭПЛ в разнообразные бизнес-процессы и государственные услуги. Благодаря этим технологиям, создание и проверка цифровых подписей стали быстрыми и надежными, что существенно повысило доверие к электронным документам. Кроме того, инструменты для работы с ЭПЛ постоянно совершенствуются, учитывая требования законодательства и стандарты безопасности. В результате, пользователи получают эффективные решения, которые обеспечивают юридическую значимость и защиту информации в цифровом пространстве.</p>\n\n<h3>Основные инструменты для работы с ЭПЛ</h3>\n<p>Для эффективного использования электронной подписи применяется множество специализированных инструментов, которые обеспечивают создание, хранение и проверку цифровых подписей. Эти инструменты варьируются от программных библиотек и приложений до аппаратных средств, таких как токены и смарт-карты. Основная задача таких инструментов — гарантировать, что процесс подписания проходит безопасно, а подпись соответствует требованиям законодательства и стандартам криптографии. Они также обеспечивают удобство использования, интеграцию с другими системами и поддержку различных форматов документов.</p>\n<p>Современные инструменты позволяют автоматизировать многие процессы, связанные с ЭПЛ, включая генерацию ключей, управление сертификатами, а также проверку подлинности подписей. Кроме того, они часто включают функции аудита и ведения журналов, что важно для обеспечения прозрачности и отслеживания операций. Разработчики и технические специалисты могут использовать эти инструменты для создания собственных решений или интеграции ЭПЛ в существующие информационные системы.</p>\n<p>Использование надежных инструментов значительно снижает риски, связанные с неправильной реализацией электронной подписи, и обеспечивает соответствие требованиям безопасности и юридической значимости.</p>\n<ol>\n  <li>Криптографические библиотеки — обеспечивают создание и проверку цифровых подписей.</li>\n  <li>Приложения для подписания — удобные интерфейсы для пользователей.</li>\n  <li>Сертификатные центры — выдают и управляют цифровыми сертификатами.</li>\n  <li>Аппаратные средства — токены и смарт-карты для безопасного хранения ключей.</li>\n  <li>Облачные сервисы — предлагают удалённое создание и проверку подписей.</li>\n  <li>Интеграционные модули — позволяют встраивать ЭПЛ в корпоративные системы.</li>\n</ol>\n\n<h4>Пример использования инструментов для ЭПЛ</h4>\n<p>Давайте рассмотрим простой пример, как с помощью криптографической библиотеки можно создать и проверить электронную подпись. Такой код часто используется в серверных приложениях, где необходимо обеспечить безопасность документов и подтвердить их подлинность.</p>\n<code>\nconst crypto = require('crypto');  \nconst sign = crypto.createSign('SHA256');  \nsign.update('Документ для подписи');  \nconst privateKey = '-----BEGIN PRIVATE KEY-----...';  \nconst signature = sign.sign(privateKey, 'hex');  \n\nconst verify = crypto.createVerify('SHA256');  \nverify.update('Документ для подписи');  \nconst publicKey = '-----BEGIN PUBLIC KEY-----...';  \nconst isValid = verify.verify(publicKey, signature, 'hex');  \nconsole.log(isValid);\n</code>\n<p>В этом примере создается цифровая подпись для строки «Документ для подписи» с использованием закрытого ключа. Затем с помощью открытого ключа проверяется, соответствует ли подпись исходным данным. Такой подход гарантирует, что документ не был изменён и подписан именно владельцем ключа. Пример демонстрирует базовые операции, которые лежат в основе большинства систем электронной подписи, и показывает, как инструменты позволяют реализовать эти процессы на практике.</p>\n\n<h3>Технические вызовы и решения в области ЭПЛ</h3>\n<p>Несмотря на значительный прогресс, внедрение и использование электронной подписи сталкивается с рядом технических вызовов. Одной из основных проблем является обеспечение безопасности ключей и предотвращение их компрометации. Кроме того, сложность интеграции ЭПЛ в существующие информационные системы и необходимость соответствия различным нормативным требованиям создают дополнительные трудности. Важным аспектом является также удобство для конечных пользователей, поскольку сложные процедуры могут снижать скорость и качество работы с электронными документами. Технические специалисты постоянно работают над решением этих проблем, разрабатывая новые методы защиты и оптимизации процессов.</p>\n<blockquote>«Технические вызовы — это не препятствия, а возможности для инноваций и улучшения систем электронной подписи.»</blockquote>\n<ol>\n  <li>Использование аппаратных средств для безопасного хранения ключей.</li>\n  <li>Внедрение многофакторной аутентификации для доступа к ЭПЛ.</li>\n  <li>Разработка удобных интерфейсов и автоматизация процессов подписания.</li>\n  <li>Обеспечение совместимости с международными стандартами и законодательством.</li>\n  <li>Регулярное обновление криптографических алгоритмов и протоколов.</li>\n  <li>Внедрение систем аудита и мониторинга для контроля операций.</li>\n</ol>"
-          },
-          {
-            "id": "h2-4",
-            "tempMDXContent": "<h2>Анализ преимуществ и недостатков электронной подписи (ЭПЛ)</h2>\n<p>Электронная подпись (ЭПЛ) стала неотъемлемой частью современного цифрового мира, обеспечивая юридическую значимость и безопасность электронных документов. Однако, как и любая технология, ЭПЛ имеет свои сильные и слабые стороны. Важно понимать не только преимущества, которые открывает использование электронной подписи, но и те ограничения и риски, с которыми могут столкнуться пользователи и организации. Такой сбалансированный анализ помогает специалистам, менеджерам и студентам делать обоснованный выбор, максимально эффективно используя возможности ЭПЛ и минимизируя потенциальные проблемы. В данном разделе мы подробно рассмотрим ключевые плюсы и минусы ЭПЛ, что позволит получить целостное представление о её применении в различных сферах.</p>\n\n<h3>Преимущества электронной подписи</h3>\n<p>Электронная подпись обладает рядом значимых преимуществ, которые делают её привлекательным инструментом для бизнеса и государственных структур. Прежде всего, ЭПЛ обеспечивает высокую степень безопасности благодаря использованию криптографических методов, что гарантирует подлинность и целостность подписанных документов. Это значительно снижает риски мошенничества и подделки, что особенно важно в условиях цифрового документооборота.</p>\n<p>Кроме того, применение электронной подписи существенно ускоряет процессы подписания и обмена документами. Устранение необходимости в бумажном носителе и физическом присутствии сторон позволяет экономить время и ресурсы, делая взаимодействие более гибким и удобным. Это особенно актуально для компаний с удалёнными офисами и международными партнёрами.</p>\n<p>Не менее важным является юридический аспект: электронная подпись, оформленная в соответствии с законодательством, имеет такую же силу, как и собственноручная подпись. Это позволяет использовать ЭПЛ в судебных разбирательствах и официальных документах, что повышает доверие к электронным процессам.</p>\n<ul>\n  <li>Высокий уровень безопасности и защита от подделок</li>\n  <li>Сокращение времени на оформление и согласование документов</li>\n  <li>Экономия на бумаге, печати и доставке</li>\n  <li>Юридическая значимость и признание в суде</li>\n  <li>Удобство для удалённой работы и международного сотрудничества</li>\n  <li>Автоматизация и интеграция с бизнес-процессами</li>\n  <li>Снижение риска ошибок и потери документов</li>\n</ul>\n<p>В итоге, преимущества ЭПЛ делают её мощным инструментом для повышения эффективности и безопасности документооборота. Использование электронной подписи способствует цифровой трансформации организаций и упрощает взаимодействие между сторонами, что особенно важно в условиях современного бизнеса и государственного управления.</p>\n\n<h3>Недостатки и ограничения электронной подписи</h3>\n<p>Несмотря на многочисленные достоинства, электронная подпись также имеет ряд недостатков и ограничений, которые необходимо учитывать при её внедрении и использовании. Прежде всего, техническая сложность и необходимость соблюдения строгих требований безопасности могут стать препятствием для некоторых пользователей. Для корректной работы ЭПЛ требуется наличие доверенного сертификата, надёжного хранения закрытого ключа и соответствующего программного обеспечения, что не всегда просто обеспечить.</p>\n<p>Кроме того, законодательные нормы и стандарты в области ЭПЛ могут различаться в разных странах и регионах, что создаёт сложности при международном использовании. Не всегда легко обеспечить совместимость между системами и подтвердить юридическую силу подписи за пределами страны выдачи сертификата. Это требует дополнительного внимания к вопросам нормативного соответствия и юридической проверки.</p>\n<ol>\n  <li>Сложности с технической реализацией и безопасным хранением ключей</li>\n  <li>Необходимость обучения пользователей и адаптации процессов</li>\n  <li>Различия в законодательстве и стандартах между странами</li>\n  <li>Риски компрометации ключей и мошенничества при неправильном использовании</li>\n  <li>Зависимость от инфраструктуры и доверенных центров сертификации</li>\n  <li>Ограничения при работе с определёнными типами документов и форматами</li>\n  <li>Возможные проблемы с интеграцией в устаревшие системы</li>\n</ol>\n<blockquote>«Игнорирование недостатков электронной подписи может привести к серьёзным рискам безопасности и юридическим осложнениям.»</blockquote>\n<p>Понимание и учет этих ограничений позволяют организациям подготовиться к возможным трудностям и своевременно принимать меры для их минимизации. Важно не только выбирать надёжные технические решения, но и проводить регулярное обучение персонала, а также следить за изменениями в законодательстве и стандартах. Такой комплексный подход обеспечивает эффективное и безопасное использование электронной подписи в долгосрочной перспективе.</p>"
-          },
-          {
-            "id": "h2-5",
-            "tempMDXContent": "<h2>Практическое использование электронной подписи (ЭПЛ): пошаговая инструкция</h2>\n<p>Электронная подпись (ЭПЛ) сегодня стала неотъемлемым инструментом для многих организаций и специалистов, стремящихся оптимизировать документооборот и повысить безопасность своих операций. Несмотря на техническую сложность, применение ЭПЛ доступно и эффективно при правильном подходе. В этом разделе мы рассмотрим основные моменты, связанные с практическим использованием электронной подписи, чтобы каждый пользователь — будь то опытный специалист или новичок — мог уверенно и грамотно применять этот инструмент в своей работе. Понимание порядка действий и особенностей использования ЭПЛ поможет избежать типичных ошибок и повысить эффективность электронного документооборота.</p>\n<p>Использование электронной подписи охватывает широкий спектр задач: от подписания договоров и отчетов до оформления заявлений и взаимодействия с государственными органами в электронном виде. Важно не только знать, как технически создать подпись, но и понимать юридические и организационные аспекты процесса. В совокупности это обеспечивает надежность, юридическую значимость и безопасность подписанных документов. В следующих подразделах мы подробно разберем, как правильно использовать ЭПЛ, чтобы максимизировать ее преимущества и минимизировать возможные риски.</p>\n<p>Правильное применение электронной подписи — залог безопасности и юридической силы документов.</p>\n\n<h3>Пошаговое руководство по использованию электронной подписи</h3>\n<p>Перед началом работы с электронной подписью важно подготовиться и понять основные этапы, которые обеспечат корректное и безопасное использование ЭПЛ. Независимо от того, работаете ли вы с простыми договорами или сложными юридическими документами, следование четкой инструкции поможет избежать ошибок и повысить эффективность. В этом руководстве мы рассмотрим базовые шаги, необходимые для создания, применения и проверки электронной подписи в рамках типового бизнес-процесса. Такой подход позволит вам уверенно интегрировать ЭПЛ в повседневную работу и обеспечить юридическую значимость электронных документов.</p>\n<ul>\n  <li>Получение квалифицированного сертификата электронной подписи в аккредитованном центре сертификации.</li>\n  <li>Установка и настройка программного обеспечения для создания ЭПЛ (например, специализированных приложений или плагинов).</li>\n  <li>Генерация ключевой пары (закрытого и открытого ключей) и безопасное хранение закрытого ключа.</li>\n  <li>Подписание электронного документа с помощью установленного ПО и закрытого ключа.</li>\n  <li>Передача подписанного документа контрагенту или загрузка в соответствующую систему.</li>\n  <li>Проверка подлинности подписи с использованием открытого ключа и сертификата.</li>\n  <li>Архивирование подписанных документов с учетом требований безопасности и хранения.</li>\n</ul>\n<p>Каждый из этих шагов требует внимательности и соблюдения рекомендаций по безопасности, чтобы исключить риски компрометации ключей и обеспечить юридическую силу документов. Кроме того, важно регулярно обновлять программное обеспечение и следить за сроком действия сертификата, чтобы поддерживать актуальность и надежность электронной подписи. Следуя этому пошаговому руководству, вы сможете эффективно использовать ЭПЛ в своей профессиональной деятельности, минимизируя возможные ошибки и обеспечивая высокий уровень безопасности.</p>"
-          },
-          {
-            "id": "h2-6",
-            "tempMDXContent": "<h2>Часто задаваемые вопросы (FAQ) по электронной подписи (ЭПЛ)</h2>\n<p>В этом разделе мы собрали ответы на шесть наиболее часто возникающих вопросов, связанных с электронной подписью (ЭПЛ). Независимо от того, только ли вы начинаете знакомиться с этой технологией или уже имеете опыт её использования, здесь вы найдете полезную и понятную информацию, которая поможет разобраться в ключевых аспектах ЭПЛ. Часто задаваемые вопросы охватывают как технические, так и юридические моменты, а также практические рекомендации, что делает этот раздел полезным для широкой аудитории — от новичков до опытных специалистов. Мы постарались изложить ответы в дружелюбном и профессиональном стиле, чтобы каждый мог получить исчерпывающую информацию и уверенность в работе с электронной подписью.</p>\n\n<h3>Что такое электронная подпись и чем она отличается от простой цифровой подписи?</h3>\n<p>Электронная подпись (ЭПЛ) — это юридически значимый способ подтверждения подлинности электронных документов, который обеспечивает идентификацию подписанта и целостность данных. В отличие от простой цифровой подписи, которая представляет собой лишь технический механизм шифрования, ЭПЛ включает в себя дополнительные юридические гарантии и соответствует требованиям законодательства, например, квалифицированной электронной подписи, признанной в суде. Электронная подпись создается с использованием криптографических ключей и сертификатов, выданных доверенными центрами сертификации, что обеспечивает высокий уровень доверия и безопасности. Проще говоря, ЭПЛ — это цифровой аналог рукописной подписи с юридической силой, в то время как простая цифровая подпись может быть использована только для технической проверки, но не всегда имеет юридическую значимость.</p>\n\n<h3>Какие виды электронной подписи существуют и в чем их особенности?</h3>\n<p>Существует несколько видов электронной подписи, различающихся по уровню безопасности и юридической силе. Основные типы включают простую электронную подпись, усиленную неквалифицированную и квалифицированную электронную подпись. Простая подпись — это, например, сканированное изображение подписи или ввод пароля, она подходит для внутренних документов, но не всегда признается законом. Усиленная неквалифицированная подпись использует криптографические методы и сертификаты, но не соответствует самым строгим требованиям законодательства. Квалифицированная электронная подпись — самый надежный и юридически значимый вид, создается с использованием квалифицированного сертификата и защищенных средств, и имеет равную силу с собственноручной подписью. Выбор вида ЭПЛ зависит от целей, требований законодательства и уровня необходимой защиты документов.</p>\n\n<h3>Как получить электронную подпись и что для этого нужно?</h3>\n<p>Для получения электронной подписи необходимо обратиться в аккредитованный центр сертификации, который выдает квалифицированные сертификаты. Процесс обычно включает подачу заявки, подтверждение личности (лично или через электронные сервисы), а также установку специального программного обеспечения или аппаратных средств, например, токена или смарт-карты. Важно иметь действующий документ, удостоверяющий личность, и выполнить требования центра сертификации. После оформления сертификата вы получите закрытый и открытый ключи, где закрытый ключ хранится в безопасности и используется для подписания документов, а открытый — для проверки подписи. Некоторые провайдеры также предлагают облачные решения, которые упрощают процесс получения и использования ЭПЛ без необходимости установки оборудования. Регулярно проверяйте срок действия сертификата и своевременно обновляйте его для сохранения юридической силы подписи.</p>\n\n<h3>Насколько безопасна электронная подпись и как защитить свои ключи?</h3>\n<p>Электронная подпись считается очень безопасной благодаря использованию современных криптографических алгоритмов, которые обеспечивают надежную защиту данных и предотвращают подделку подписей. Однако безопасность напрямую зависит от правильного хранения закрытого ключа, который является «секретным паролем» для создания подписи. Чтобы защитить ключ, рекомендуется использовать аппаратные средства (токены, смарт-карты), защищать устройство паролями, а также применять многофакторную аутентификацию при доступе к ЭПЛ. Важно не передавать закрытый ключ третьим лицам и не хранить его в открытом виде на общедоступных устройствах. Регулярное обновление программного обеспечения и своевременная замена сертификатов также повышают уровень безопасности. При подозрении на компрометацию ключа необходимо немедленно отозвать сертификат и получить новый, чтобы избежать рисков мошенничества.</p>\n\n<h3>Как проверить подлинность электронной подписи в документе?</h3>\n<p>Проверка электронной подписи выполняется с помощью открытого ключа и сертификата, предоставленных подписантом или доверенным центром сертификации. Для этого используются специальные программные средства или встроенные функции в документах (например, в PDF или XML). При проверке система анализирует цифровую подпись, сверяет её с содержимым документа и подтверждает, что данные не были изменены после подписания. Также проверяется действительность сертификата — его срок действия, статус отзыва и соответствие законодательным требованиям. В случае успешной проверки пользователь получает подтверждение подлинности подписи и целостности документа. Если подпись недействительна или документ изменён, система выдаст предупреждение. Регулярное использование проверочных инструментов помогает обеспечить юридическую силу и безопасность электронного документооборота.</p>\n\n<h3>Можно ли использовать электронную подпись для международных сделок и есть ли ограничения?</h3>\n<p>Использование электронной подписи в международных сделках возможно, но требует учета законодательных особенностей разных стран. Некоторые государства признают квалифицированные электронные подписи, выданные в других странах, если они соответствуют международным стандартам, таким как eIDAS в Европейском союзе. Однако в ряде юрисдикций могут действовать свои требования к типу подписи и процедурам ее получения. Важно заранее уточнять, какие виды ЭПЛ принимаются партнерами и регулируются законом в конкретной стране. Также следует использовать сертификаты от признанных международных центров сертификации и обеспечивать совместимость технических решений. В случае сомнений рекомендуется консультироваться с юридическими экспертами для обеспечения юридической силы и безопасности международных документов. Таким образом, электронная подпись может значительно упростить и ускорить международное сотрудничество при правильном подходе и соблюдении нормативных требований.</p>"
-          }
-        ],
-        "isPreviewComplited": false
-      }
-    ],
-    "order": 17
   }
 ]
 } as { categories: MenuCategory[] };
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-09T23:08:44.080Z";
+export const lastUpdated = "2025-10-09T23:27:00.695Z";
 export const generatedBy = "menu-persist-api";
