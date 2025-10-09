@@ -81,7 +81,7 @@ function keyToLabel(key: StructureKey): string {
         case 'expanded':
             return 'Expanded page (7 sections, ~6,280 words)';
         case 'longread':
-            return 'Long-read (10 sections, ~12,475 words)';
+            return 'Long-read page (10 sections, ~12,475 words)';
     }
 }
 
