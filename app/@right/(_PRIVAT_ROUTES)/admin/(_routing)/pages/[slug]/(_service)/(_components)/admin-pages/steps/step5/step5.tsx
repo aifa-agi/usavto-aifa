@@ -1,3 +1,5 @@
+// @/app/@right/(_PRIVAT_ROUTES)/admin/(_routing)/pages/[slug]/(_service)/(_components)/admin-pages/steps/step5/step5.tsx
+
 "use client";
 
 /**
@@ -323,12 +325,18 @@ export function AdminPageStep5({ slug }: AdminPageInfoProps) {
             </Label>
 
             <ContentStructureStreamCard
-              systemInstruction={systemInstruction}
               pageData={pageData}
+              slug={slug}
+              writingStyle={writingStyle}
+              contentFormat={contentFormat}
+              customRequirements={customRequirements}
+              writingStyles={WRITING_STYLES}
+              contentFormats={CONTENT_FORMATS}
               onStreamCompleted={(structure) => {
                 console.log("Stream completed with structure:", structure);
               }}
             />
+
           </div>
         </CardContent>
       </Card>

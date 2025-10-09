@@ -1,237 +1,301 @@
+// @/app/@right/(_PRIVAT_ROUTES)/admin/(_routing)/pages/[slug]/(_service)/(_components)/admin-pages/steps/step5/components/content-structure-stream-card.tsx
 "use client";
 
-import React, { useState, useRef, useEffect, useCallback } from "react";
-import { LoadingSpinner } from "@/components/ui/loading-spinner";
-import { CheckCircle, Zap } from "lucide-react";
+import React, { useState, useEffect, useMemo, useCallback } from "react";
+import { Button } from "@/components/ui/button";
+import { CheckCircle, Sparkles } from "lucide-react";
 import { toast } from "sonner";
+import { SectionGenerationCard } from "./section-generation-card";
+import { useSystemInstructionGenerator } from "../(_hooks)/system-instruction-generator";
 import { useStep5Save } from "../(_hooks)/use-step5-save";
-import { RootContentStructure } from "@/app/@right/(_service)/(_types)/page-types";
-import { useStep5Stream } from "../(_hooks)/use-step5-stream";
+import { useStep5Finalize } from "../(_hooks)/use-step5-finalize";
+import type { RootContentStructure } from "@/app/@right/(_service)/(_types)/page-types";
 
 interface ContentStructureStreamCardProps {
-    systemInstruction: string;
-    pageData: any;
+    pageData: {
+        page: any;
+        category: any;
+    } | null;
+    slug: string;
+    writingStyle: string;
+    contentFormat: string;
+    customRequirements: string;
+    writingStyles: Array<{
+        value: string;
+        label: string;
+        description: string;
+    }>;
+    contentFormats: Array<{
+        value: string;
+        label: string;
+        description: string;
+    }>;
     onStreamCompleted?: (structure: RootContentStructure[]) => void;
 }
 
 export function ContentStructureStreamCard({
-    systemInstruction,
     pageData,
-    onStreamCompleted
+    slug,
+    writingStyle,
+    contentFormat,
+    customRequirements,
+    writingStyles,
+    contentFormats,
+    onStreamCompleted,
 }: ContentStructureStreamCardProps) {
-    const { streamText, isStreaming, startStreaming, cancel } = useStep5Stream();
     const { saveDraftContentStructure } = useStep5Save();
+    const { finalizeDraft, isDraftFinalized, canFinalizeDraft, isFinalizing } = useStep5Finalize();
 
-    const [localPreview, setLocalPreview] = useState<string>("");
-    const [generatedStructure, setGeneratedStructure] = useState<RootContentStructure[]>([]);
-    const [streamCompleted, setStreamCompleted] = useState<boolean>(false);
+    const { generateSectionInstruction } = useSystemInstructionGenerator({
+        pageData,
+        slug,
+        writingStyle,
+        contentFormat,
+        customRequirements,
+        writingStyles,
+        contentFormats,
+    });
 
-    const streamOutputRef = useRef<HTMLDivElement>(null);
-
-    // ✅ ИСПРАВЛЕНО: Дебаунс автоскролла с requestAnimationFrame
-    const scrollToBottomRef = useRef<number | null>(null);
-
-    const scrollToBottom = useCallback(() => {
-        // Отменяем предыдущий запланированный скролл
-        if (scrollToBottomRef.current !== null) {
-            cancelAnimationFrame(scrollToBottomRef.current);
+    const sections = useMemo(() => {
+        if (!pageData?.page?.aiRecommendContentStructure) {
+            return [];
         }
+        const structure = pageData.page.aiRecommendContentStructure;
+        return Array.isArray(structure) ? structure.filter((s: any) => s.tag === "h2") : [];
+    }, [pageData]);
 
-        // Планируем скролл на следующий frame (избегаем перегрузки)
-        scrollToBottomRef.current = requestAnimationFrame(() => {
-            if (streamOutputRef.current) {
-                streamOutputRef.current.scrollTop = streamOutputRef.current.scrollHeight;
+    const [generatedSections, setGeneratedSections] = useState<Array<RootContentStructure | null>>([]);
+    const [currentSectionIndex, setCurrentSectionIndex] = useState<number>(0);
+    const [savedSections, setSavedSections] = useState<Set<number>>(new Set());
+
+    useEffect(() => {
+        if (sections.length > 0) {
+            const savedDraft = pageData?.page?.draftContentStructure;
+
+            if (Array.isArray(savedDraft) && savedDraft.length > 0) {
+                console.log("[ContentStructure] Loading saved sections from draftContentStructure");
+                console.log("[ContentStructure] Saved sections count:", savedDraft.length);
+
+                const initialized = sections.map((_, index) => savedDraft[index] || null);
+                setGeneratedSections(initialized);
+
+                const savedIndexes = new Set<number>();
+                savedDraft.forEach((section, index) => {
+                    if (section !== null && section !== undefined) {
+                        savedIndexes.add(index);
+                    }
+                });
+                setSavedSections(savedIndexes);
+
+                console.log("[ContentStructure] Saved section indexes:", Array.from(savedIndexes));
+
+                const firstUnsaved = initialized.findIndex(s => s === null);
+                setCurrentSectionIndex(firstUnsaved >= 0 ? firstUnsaved : 0);
+            } else {
+                console.log("[ContentStructure] No saved data, initializing empty array");
+                setGeneratedSections(new Array(sections.length).fill(null));
+                setCurrentSectionIndex(0);
+                setSavedSections(new Set());
             }
+        }
+    }, [sections, pageData?.page?.draftContentStructure]);
+
+    const handleSectionGenerated = useCallback((index: number, data: RootContentStructure) => {
+        console.log(`[ContentStructure] Section ${index + 1} generated`);
+
+        const updated = [...generatedSections];
+        updated[index] = data;
+        setGeneratedSections(updated);
+
+        if (index < sections.length - 1) {
+            setCurrentSectionIndex(index + 1);
+        }
+    }, [generatedSections, sections.length]);
+
+    const handleSectionSaved = useCallback((index: number) => {
+        console.log(`[ContentStructure] Section ${index + 1} marked as saved`);
+
+        setSavedSections((prev) => {
+            const updated = new Set(prev);
+            updated.add(index);
+            return updated;
+        });
+
+        toast.success("Section saved", {
+            description: `Section ${index + 1} has been saved successfully.`,
         });
     }, []);
 
-    // ✅ ИСПРАВЛЕНО: Скролл только когда streaming активен И контент изменился
-    useEffect(() => {
-        if (isStreaming && localPreview) {
-            scrollToBottom();
-        }
+    const allCompleted = useMemo(() => {
+        return generatedSections.length > 0 && generatedSections.every((s) => s !== null);
+    }, [generatedSections]);
 
-        // Cleanup: отменяем запланированный скролл при unmount
-        return () => {
-            if (scrollToBottomRef.current !== null) {
-                cancelAnimationFrame(scrollToBottomRef.current);
-            }
-        };
-    }, [isStreaming, localPreview, scrollToBottom]);
+    const allSaved = useMemo(() => {
+        if (sections.length === 0) return false;
+        return savedSections.size === sections.length;
+    }, [savedSections, sections.length]);
 
-    // Keep the textarea in sync with the streaming completion
-    useEffect(() => {
-        if (isStreaming) {
-            setLocalPreview(streamText ?? "");
-        }
-    }, [isStreaming, streamText]);
+    // ✅ NEW: Check if we have unsaved sections
+    const hasUnsavedSections = useMemo(() => {
+        if (generatedSections.length === 0) return false;
 
-    // Watch for streaming completion and parse JSON
-    useEffect(() => {
-        if (!isStreaming && streamText && streamText.trim().length > 0) {
-            try {
-                const parsed = JSON.parse(streamText);
-                if (Array.isArray(parsed)) {
-                    setGeneratedStructure(parsed);
-                    setStreamCompleted(true);
-                    onStreamCompleted?.(parsed);
-                }
-            } catch (e) {
-                console.warn("Failed to parse streamed JSON:", e);
-                setStreamCompleted(true);
-            }
-        }
-    }, [isStreaming, streamText, onStreamCompleted]);
+        const generatedCount = generatedSections.filter(s => s !== null).length;
+        const savedCount = savedSections.size;
 
-    // Chip-style classes
-    const chipBase = "inline-flex items-center truncate rounded-md border px-3 py-1.5 text-xs font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background";
+        return generatedCount > savedCount;
+    }, [generatedSections, savedSections]);
 
-    // ✅ ИСПРАВЛЕНО: Темный текст в светлой теме, светлый в темной
-    const tonePrimary = "border-violet-500 bg-violet-500/15 text-black dark:text-white hover:bg-violet-500/20 focus-visible:ring-violet-500";
+    // ✅ NEW: Show "Save All" only if we have unsaved sections AND not all completed
+    const shouldShowSaveAll = useMemo(() => {
+        return hasUnsavedSections && !allCompleted;
+    }, [hasUnsavedSections, allCompleted]);
 
-    const toneNeutral = "border-border bg-background/60 text-muted-foreground hover:bg-background/80 dark:bg-background/30 focus-visible:ring-neutral-500";
-    const toneDisabled = "opacity-50 cursor-not-allowed";
-    const toneCancel = "border-border bg-background/60 text-muted-foreground hover:bg-background/70 dark:bg-background/30 focus-visible:ring-neutral-500";
-    const toneSave = "border-orange-500 bg-orange-500 text-black dark:text-white hover:bg-orange-600 focus-visible:ring-orange-500 animate-pulse-strong font-semibold shadow-lg";
-
-    const onStream = async () => {
-        if (!systemInstruction) {
-            toast.error("System instruction is required", {
-                id: "step5-stream-error",
-                description: "Please configure the system instruction first.",
-            });
-            return;
-        }
-
+    const handleSaveAll = async () => {
         if (!pageData?.page) {
-            toast.error("Page data is missing", {
-                id: "step5-stream-error",
-                description: "Cannot generate structure without page data.",
+            toast.error("Cannot save", {
+                description: "Page data not found.",
             });
             return;
         }
 
-        setLocalPreview("");
-        setStreamCompleted(false);
-        setGeneratedStructure([]);
+        const validSections = generatedSections.filter((s) => s !== null) as RootContentStructure[];
 
-        await startStreaming({
-            system: systemInstruction,
-            prompt: "Generate enhanced content structure with selfPrompt fields for recursive generation.",
-            model: "gpt-4o-mini",
-        });
-    };
-
-    const onSave = async () => {
-        if (!pageData?.page || generatedStructure.length === 0) {
+        if (validSections.length === 0) {
             toast.error("Nothing to save", {
-                description: "No generated structure found.",
+                description: "No generated sections found.",
             });
             return;
         }
 
-        const success = await saveDraftContentStructure(pageData.page, generatedStructure);
+        console.log("[ContentStructure] Saving all sections:", validSections.length);
+
+        const success = await saveDraftContentStructure(pageData.page, validSections);
+
         if (success) {
-            setStreamCompleted(false);
-            setGeneratedStructure([]);
-            setLocalPreview("");
-            toast.success("Structure saved successfully", {
-                description: "Content structure has been saved to the page.",
+            const allIndexes = new Set(sections.map((_, i) => i));
+            setSavedSections(allIndexes);
+
+            console.log("[ContentStructure] All sections saved successfully");
+
+            onStreamCompleted?.(validSections);
+            toast.success("All sections saved", {
+                description: `${validSections.length} sections saved to draft structure.`,
             });
         }
     };
 
-    const onClear = () => {
-        setLocalPreview("");
-        setGeneratedStructure([]);
-        setStreamCompleted(false);
-        toast.info("Output cleared", {
-            description: "Streaming output has been cleared.",
-        });
-    };
+    const handleFinalizeDraft = useCallback(async () => {
+        if (!pageData?.page) {
+            toast.error("Cannot finalize", {
+                description: "Page data not found.",
+            });
+            return;
+        }
 
-    const streamDisabled = isStreaming || !systemInstruction;
+        console.log("[ContentStructure] Finalizing draft...");
+
+        const success = await finalizeDraft(pageData.page);
+
+        if (success) {
+            console.log("[ContentStructure] Draft finalized successfully");
+        }
+    }, [pageData, finalizeDraft]);
+
+    const getPreviousSections = useCallback((upToIndex: number): RootContentStructure[] => {
+        return generatedSections
+            .slice(0, upToIndex)
+            .filter((s): s is RootContentStructure => s !== null);
+    }, [generatedSections]);
+
+    const isFinalized = useMemo(() => {
+        return isDraftFinalized(pageData?.page);
+    }, [pageData?.page, isDraftFinalized]);
+
+    const canFinalize = useMemo(() => {
+        return canFinalizeDraft(pageData?.page);
+    }, [pageData?.page, canFinalizeDraft]);
+
+    if (sections.length === 0) {
+        return (
+            <div className="rounded-md border p-6 text-center text-muted-foreground">
+                <p>No h2 sections found in aiRecommendContentStructure.</p>
+                <p className="text-xs mt-2">Please complete previous steps to generate section structure.</p>
+            </div>
+        );
+    }
 
     return (
-        <div className="rounded-md border p-4">
-            <div className="custom-sidebar overflow-x-auto">
-                <div className="flex min-w-max items-center gap-2">
-                    {/* Start Generation button - ✅ Темный/светлый текст */}
-                    {!isStreaming && !streamCompleted && (
-                        <button
-                            type="button"
-                            onClick={onStream}
-                            disabled={streamDisabled}
-                            className={[chipBase, tonePrimary, streamDisabled ? toneDisabled : ""].join(" ")}
-                        >
-                            <Zap className="size-4 mr-2" />
-                            Start Structure Generation
-                        </button>
-                    )}
+        <div className="space-y-4">
+            {sections.map((section: RootContentStructure, index: number) => (
+                <SectionGenerationCard
+                    key={section.id || `section-${index}`}
+                    sectionIndex={index}
+                    totalSections={sections.length}
+                    sectionData={section}
+                    previousSections={getPreviousSections(index)}
+                    systemInstructionGenerator={generateSectionInstruction}
+                    pageData={pageData}
+                    onSectionGenerated={handleSectionGenerated}
+                    onSectionSaved={handleSectionSaved}
+                    isActive={currentSectionIndex === index}
+                    isPending={currentSectionIndex < index}
+                    isCompleted={generatedSections[index] !== null && generatedSections[index] !== undefined}
+                />
+            ))}
 
-                    {/* Cancel button */}
-                    {isStreaming && (
-                        <button
-                            type="button"
-                            onClick={cancel}
-                            className={[chipBase, toneCancel].join(" ")}
-                        >
-                            Cancel
-                        </button>
-                    )}
-
-                    {/* Save button - Пульсирующая оранжевая */}
-                    {streamCompleted && (
-                        <button
-                            type="button"
-                            onClick={onSave}
-                            className={[chipBase, toneSave].join(" ")}
-                        >
-                            <CheckCircle className="size-4 mr-2" />
-                            Save Content Structure
-                        </button>
-                    )}
-
-                    {/* Clear button */}
-                    <button
-                        type="button"
-                        onClick={onClear}
-                        className={[chipBase, toneNeutral].join(" ")}
+            {/* ✅ FIXED: Show "Save All" only when needed */}
+            {shouldShowSaveAll && (
+                <div className="pt-4">
+                    <Button
+                        onClick={handleSaveAll}
+                        className="w-full border-orange-500 bg-orange-500 text-white hover:bg-orange-600 animate-pulse-strong font-semibold shadow-lg"
+                        size="lg"
                     >
-                        Clear
-                    </button>
+                        <CheckCircle className="size-5 mr-2" />
+                        Save All Sections to Draft Structure
+                    </Button>
                 </div>
-            </div>
+            )}
 
-            {/* Streaming output */}
-            <div className="mt-3">
-                <div
-                    ref={streamOutputRef}
-                    className="w-full h-96 p-4 text-sm font-mono bg-white text-black border border-input rounded-lg overflow-auto"
-                >
-                    {isStreaming && (
-                        <div className="flex items-center gap-2 text-blue-600 mb-2">
-                            <LoadingSpinner className="size-4" />
-                            <span>Generating content structure...</span>
-                        </div>
-                    )}
-
-                    {localPreview ? (
-                        <pre className="whitespace-pre-wrap text-xs leading-relaxed">{localPreview}</pre>
-                    ) : (
-                        <div className="text-gray-400 italic">Content structure will appear here during generation...</div>
-                    )}
-
-                    {/* Зеленая плашка успешного завершения */}
-                    {streamCompleted && generatedStructure.length > 0 && (
-                        <div className="mt-4 p-3 bg-green-50 rounded border border-green-200">
-                            <div className="text-green-800 text-xs font-medium">
-                                ✓ Structure generation completed! {generatedStructure.length} elements ready to save.
-                            </div>
-                        </div>
-                    )}
+            {/* ✅ CORRECT: Show "Finalize Draft" when all saved but not finalized */}
+            {allSaved && !isFinalized && canFinalize && (
+                <div className="pt-4">
+                    <Button
+                        onClick={handleFinalizeDraft}
+                        disabled={isFinalizing}
+                        className="w-full border-green-500 bg-green-500 text-white hover:bg-green-600 font-semibold shadow-lg"
+                        size="lg"
+                    >
+                        {isFinalizing ? (
+                            <>
+                                <div className="size-5 mr-2 animate-spin rounded-full border-2 border-white border-t-transparent" />
+                                Finalizing Draft...
+                            </>
+                        ) : (
+                            <>
+                                <Sparkles className="size-5 mr-2" />
+                                Finalize Draft for Perplexity
+                            </>
+                        )}
+                    </Button>
                 </div>
-            </div>
+            )}
+
+            {/* ✅ CORRECT: Show finalized confirmation */}
+            {isFinalized && (
+                <div className="pt-4">
+                    <div className="p-4 rounded-md bg-green-50 border border-green-200 text-green-800 text-sm flex items-center gap-3">
+                        <Sparkles className="size-5 flex-shrink-0" />
+                        <div>
+                            <p className="font-semibold">Draft finalized successfully!</p>
+                            <p className="text-xs mt-1">
+                                All {sections.length} section{sections.length > 1 ? 's' : ''} are saved and ready for Perplexity processing.
+                                You can proceed to the next step.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }

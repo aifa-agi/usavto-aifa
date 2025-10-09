@@ -1,4 +1,4 @@
-"use client";
+// @/app/@right/(_PRIVAT_ROUTES)/admin/(_routing)/pages/[slug]/(_service)/(_components)/admin-pages/steps/step5/(_hooks)/use-step5-save.ts
 
 /**
  * Step 5 - Save hook for draftContentStructure
@@ -54,6 +54,9 @@ export function useStep5Save() {
         return false;
       }
 
+      console.log("[Step5Save] Saving draft structure for page:", page.id);
+      console.log("[Step5Save] Structure length:", draftStructure.length);
+
       // Snapshot for rollback
       const prevCategories = deepCloneCategories(categories);
 
@@ -68,11 +71,14 @@ export function useStep5Save() {
 
       // Optimistic patch
       setCategories(nextCategories);
+      console.log("[Step5Save] Optimistic update applied to categories");
 
       // Persist
       const error = await updateCategories();
 
       if (error) {
+        console.error("[Step5Save] Persistence failed:", error);
+        
         // Rollback
         setCategories(prevCategories);
 
@@ -88,6 +94,8 @@ export function useStep5Save() {
         return false;
       }
 
+      console.log("[Step5Save] Draft structure saved successfully");
+
       toast.success("Saved", {
         id: "step5-save-success",
         description: "Draft content structure saved successfully.",
@@ -98,7 +106,64 @@ export function useStep5Save() {
     [categories, setCategories, updateCategories]
   );
 
+  /**
+   * Save a single section by index in draftContentStructure
+   * Replaces the section at the specified index with new data
+   */
+  const saveSingleSection = React.useCallback(
+    async (
+      page: PageData,
+      sectionData: RootContentStructure,
+      sectionIndex: number
+    ): Promise<boolean> => {
+      if (!page?.id) {
+        toast.error("Save failed", {
+          id: "step5-section-save-error",
+          description: "Page not found for saving section.",
+        });
+        return false;
+      }
+
+      console.log(`[Step5Save] Saving section ${sectionIndex + 1} for page:`, page.id);
+
+      // Get current draft structure or initialize empty array
+      const currentDraft = Array.isArray(page.draftContentStructure)
+        ? [...page.draftContentStructure]
+        : [];
+
+      // Ensure array has enough slots
+      while (currentDraft.length <= sectionIndex) {
+        currentDraft.push(null as any);
+      }
+
+      // Replace section at index
+      currentDraft[sectionIndex] = sectionData;
+
+      console.log("[Step5Save] Updated draft array length:", currentDraft.length);
+      console.log("[Step5Save] Section data:", {
+        id: sectionData.id,
+        tag: sectionData.tag,
+        classification: sectionData.classification,
+        hasRealContent: !!sectionData.realContentStructure,
+        realContentLength: Array.isArray(sectionData.realContentStructure) 
+          ? sectionData.realContentStructure.length 
+          : 0,
+      });
+
+      // Use existing save method to persist entire structure
+      const success = await saveDraftContentStructure(page, currentDraft);
+
+      if (success) {
+        console.log(`[Step5Save] Section ${sectionIndex + 1} saved successfully`);
+      }
+
+      return success;
+    },
+    [saveDraftContentStructure]
+  );
+
   return {
     saveDraftContentStructure,
+    saveSingleSection,
   };
 }

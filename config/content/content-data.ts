@@ -5461,12 +5461,14 @@ export const contentData = {
             "id": "h2-1",
             "tag": "h2",
             "classification": "semantic",
-            "keywords": [],
-            "taxonomy": "",
-            "attention": "",
-            "intent": "",
-            "audiences": "",
-            "selfPrompt": "",
+            "keywords": [
+              "Generate 5-7 section-level keywords inherited by children"
+            ],
+            "taxonomy": "Guide | Section overview",
+            "attention": "Set clear context and value in one sentence.",
+            "intent": "Introduce the topic and prepare readers for the main takeaways.",
+            "audiences": "Decision-makers and practitioners; level: intermediate.",
+            "selfPrompt": "Create the H2 section overview that frames the page topic, states the value, and aligns with user intent. Provide a strong, succinct setup and ensure a logical transition into subsequent subsections. Naturally integrate the listed keywords without stuffing. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
             "designDescription": "",
             "connectedDesignSectionId": "",
             "additionalData": {
@@ -5478,6 +5480,14 @@ export const contentData = {
               {
                 "id": "p-1-1",
                 "tag": "p",
+                "keywords": [
+                  "Generate 2-3 relevant keywords for this introductory paragraph."
+                ],
+                "taxonomy": "Supporting | Intro paragraph",
+                "attention": "Hook readers with a concrete benefit.",
+                "intent": "Set immediate context and clarify why this matters.",
+                "audiences": "General business audience; level: beginner-to-intermediate.",
+                "selfPrompt": "Write an introductory paragraph that cleanly explains the scope and value of the topic. Use actionable, specific statements and avoid fluff. Naturally integrate the provided keywords. Respect minWords/maxWords in additionalData. Generate the necessary content here.",
                 "additionalData": {
                   "minWords": 90,
                   "maxWords": 160,
@@ -5487,6 +5497,14 @@ export const contentData = {
               {
                 "id": "p-1-2",
                 "tag": "p",
+                "keywords": [
+                  "Generate 2-3 supporting keywords aligned with the main topic."
+                ],
+                "taxonomy": "Supporting | Context paragraph",
+                "attention": "Highlight a pressing pain point.",
+                "intent": "Deepen context with one concrete angle or use case.",
+                "audiences": "Practitioners and managers; level: intermediate.",
+                "selfPrompt": "Write a context-building paragraph that introduces one concrete angle (challenge, scenario, or use case). Be specific and useful. Integrate keywords naturally. Respect min/max word constraints. Generate the necessary content here.",
                 "additionalData": {
                   "minWords": 70,
                   "maxWords": 130,
@@ -5496,6 +5514,14 @@ export const contentData = {
               {
                 "id": "p-1-3",
                 "tag": "p",
+                "keywords": [
+                  "Generate 1-2 transition keywords."
+                ],
+                "taxonomy": "Transitional | Separator",
+                "attention": "Smoothly transition to the next idea.",
+                "intent": "Provide a brief transition or micro-summary.",
+                "audiences": "All readers; level: general.",
+                "selfPrompt": "Write a short transition line (separator) to guide readers to the next block. Keep it concise and purposeful. Generate the necessary content here.",
                 "additionalData": {
                   "minWords": 5,
                   "maxWords": 15,
@@ -5505,6 +5531,14 @@ export const contentData = {
               {
                 "id": "blockquote-1-4",
                 "tag": "blockquote",
+                "keywords": [
+                  "Generate 1-2 keywords tied to authority or evidence."
+                ],
+                "taxonomy": "Supporting | Evidence quote",
+                "attention": "Deliver a proof point or expert angle.",
+                "intent": "Reinforce credibility with a relevant quote.",
+                "audiences": "Skeptical readers; level: intermediate.",
+                "selfPrompt": "Insert a concise, relevant quote that reinforces the section’s claim. Prefer Internal KB as the source; if unavailable, use External KB. One to two sentences. Cite the perspective (internal expertise or external insight). Respect word constraints. Generate the necessary content here.",
                 "additionalData": {
                   "minWords": 25,
                   "maxWords": 45,
@@ -5514,6 +5548,14 @@ export const contentData = {
               {
                 "id": "p-1-5",
                 "tag": "p",
+                "keywords": [
+                  "Generate 2-3 value-centric keywords."
+                ],
+                "taxonomy": "Supporting | Value paragraph",
+                "attention": "State a clear, user-centric value.",
+                "intent": "Summarize the benefit and set up the next section.",
+                "audiences": "Decision-makers; level: intermediate.",
+                "selfPrompt": "Write a value-focused paragraph that summarizes what readers gain and prepares them for the next part. Keep it concrete and relevant. Respect minWords/maxWords. Generate the necessary content here.",
                 "additionalData": {
                   "minWords": 60,
                   "maxWords": 110,
@@ -5523,6 +5565,14 @@ export const contentData = {
               {
                 "id": "ul-1-6",
                 "tag": "ul",
+                "keywords": [
+                  "Generate 2-3 list-related keywords."
+                ],
+                "taxonomy": "List | Key takeaways",
+                "attention": "Make the content scannable.",
+                "intent": "Provide 3–5 concise, actionable bullets.",
+                "audiences": "Busy readers; level: general.",
+                "selfPrompt": "Create a concise unordered list with 3–5 items. Each item should be one sentence and deliver a practical takeaway. Avoid redundancy and keep a consistent style. Respect word constraints. Generate the necessary content here.",
                 "additionalData": {
                   "minWords": 40,
                   "maxWords": 70,
@@ -5535,12 +5585,14 @@ export const contentData = {
             "id": "h2-2",
             "tag": "h2",
             "classification": "semantic",
-            "keywords": [],
-            "taxonomy": "",
-            "attention": "",
-            "intent": "",
-            "audiences": "",
-            "selfPrompt": "",
+            "keywords": [
+              "Generate 5-7 section-level keywords to guide h3/h4 children."
+            ],
+            "taxonomy": "Guide | Core section",
+            "attention": "Focus on concrete, high-value insights.",
+            "intent": "Deliver the main body of actionable, expert information.",
+            "audiences": "Practitioners and technical stakeholders; level: intermediate-to-advanced.",
+            "selfPrompt": "Create the core H2 section that delivers actionable, specific, and data-backed insights. Structure content for clarity and depth. Avoid overlap with previous sections. Integrate keywords naturally. Respect minWords/maxWords. Generate the necessary content here.",
             "designDescription": "",
             "connectedDesignSectionId": "",
             "additionalData": {
@@ -5552,6 +5604,14 @@ export const contentData = {
               {
                 "id": "p-2-1",
                 "tag": "p",
+                "keywords": [
+                  "Generate 2-3 supporting keywords for this body paragraph."
+                ],
+                "taxonomy": "Supporting | Body paragraph",
+                "attention": "Lead with a specific, useful claim.",
+                "intent": "Explain a key concept or mechanism clearly.",
+                "audiences": "Practitioners; level: intermediate.",
+                "selfPrompt": "Write a body paragraph that explains one key concept with clarity and usefulness. Use concrete examples where helpful. Respect min/max words. Generate the necessary content here.",
                 "additionalData": {
                   "minWords": 80,
                   "maxWords": 140,
@@ -5561,6 +5621,14 @@ export const contentData = {
               {
                 "id": "p-2-2",
                 "tag": "p",
+                "keywords": [
+                  "Generate 1 transition keyword."
+                ],
+                "taxonomy": "Transitional | Micro-bridge",
+                "attention": "Maintain flow between ideas.",
+                "intent": "Provide a short bridge to the next subsection.",
+                "audiences": "All readers; level: general.",
+                "selfPrompt": "Write a short transitional sentence that smoothly connects ideas. Be concise and purposeful. Generate the necessary content here.",
                 "additionalData": {
                   "minWords": 5,
                   "maxWords": 15,
@@ -5570,6 +5638,14 @@ export const contentData = {
               {
                 "id": "h3-2-3",
                 "tag": "h3",
+                "keywords": [
+                  "Generate 4-6 keywords (inherit 2 from parent H2, add 2-4 specific)."
+                ],
+                "taxonomy": "Guide | Subsection",
+                "attention": "Define a sharp, unique angle.",
+                "intent": "Expand the parent H2 with a focused subtopic.",
+                "audiences": "Practitioners; level: intermediate-to-advanced.",
+                "selfPrompt": "Develop an H3 subsection that expands the parent H2 with a unique, sharply defined angle. Avoid overlapping with sibling subsections. State the micro-intent and expected outcomes. Integrate inherited and specific keywords naturally. Respect word limits. Generate the necessary content here.",
                 "additionalData": {
                   "minWords": 220,
                   "maxWords": 320,
@@ -5579,6 +5655,14 @@ export const contentData = {
                   {
                     "id": "p-2-3-1",
                     "tag": "p",
+                    "keywords": [
+                      "Generate 2-3 micro-intent keywords."
+                    ],
+                    "taxonomy": "Supporting | Explanation",
+                    "attention": "Clarify ‘how’ or ‘why’ directly.",
+                    "intent": "Explain the key idea with a concrete example.",
+                    "audiences": "Hands-on implementers; level: intermediate.",
+                    "selfPrompt": "Write an explanatory paragraph that clarifies how/why this subtopic matters, including one concrete example. Keep it practical. Respect min/max words. Generate the necessary content here.",
                     "additionalData": {
                       "minWords": 75,
                       "maxWords": 130,
@@ -5588,6 +5672,14 @@ export const contentData = {
                   {
                     "id": "ul-2-3-2",
                     "tag": "ul",
+                    "keywords": [
+                      "Generate 2-3 checklist-style keywords."
+                    ],
+                    "taxonomy": "List | Action steps",
+                    "attention": "Make a compact, actionable checklist.",
+                    "intent": "List 3–5 steps or tips readers can apply.",
+                    "audiences": "Practitioners; level: intermediate.",
+                    "selfPrompt": "Create an unordered list with 3–5 concise, actionable steps or tips. One sentence per item, imperative style. Ensure non-overlapping items. Respect word constraints. Generate the necessary content here.",
                     "additionalData": {
                       "minWords": 50,
                       "maxWords": 85,
@@ -5597,6 +5689,14 @@ export const contentData = {
                   {
                     "id": "p-2-3-3",
                     "tag": "p",
+                    "keywords": [
+                      "Generate 2-3 result-focused keywords."
+                    ],
+                    "taxonomy": "Supporting | Outcome",
+                    "attention": "Highlight expected outcomes or metrics.",
+                    "intent": "Show what success looks like for this subtopic.",
+                    "audiences": "Outcome-driven readers; level: intermediate.",
+                    "selfPrompt": "Write a paragraph that describes expected outcomes or metrics that indicate success. Be specific and measurable when possible. Respect min/max words. Generate the necessary content here.",
                     "additionalData": {
                       "minWords": 65,
                       "maxWords": 115,
@@ -5606,6 +5706,14 @@ export const contentData = {
                   {
                     "id": "code-2-3-4",
                     "tag": "code",
+                    "keywords": [
+                      "Generate 1-2 technology-related keywords."
+                    ],
+                    "taxonomy": "Technical | Code example",
+                    "attention": "Demonstrate with a concise code snippet.",
+                    "intent": "Illustrate the concept via code or pseudo-code.",
+                    "audiences": "Developers and technical practitioners; level: intermediate.",
+                    "selfPrompt": "Provide a short code example or pseudo-code illustrating the concept. Keep it minimal and self-explanatory. Add a brief inline comment if useful. Respect min/max words. Generate the necessary content here.",
                     "additionalData": {
                       "minWords": 20,
                       "maxWords": 45,
@@ -5617,6 +5725,14 @@ export const contentData = {
               {
                 "id": "h3-2-4",
                 "tag": "h3",
+                "keywords": [
+                  "Generate 4-6 keywords (inherit 2 from H2, add 2-4 specific to this angle)."
+                ],
+                "taxonomy": "Guide | Subsection",
+                "attention": "State a distinct, practical angle.",
+                "intent": "Cover a different but complementary facet of the H2.",
+                "audiences": "Practitioners; level: intermediate-to-advanced.",
+                "selfPrompt": "Develop an H3 subsection with a distinct, practical angle that complements the previous subsection without overlap. Clearly state the micro-intent and constraints. Integrate keywords naturally. Respect word limits. Generate the necessary content here.",
                 "additionalData": {
                   "minWords": 280,
                   "maxWords": 400,
@@ -5626,6 +5742,14 @@ export const contentData = {
                   {
                     "id": "p-2-4-1",
                     "tag": "p",
+                    "keywords": [
+                      "Generate 2-3 clarity-focused keywords."
+                    ],
+                    "taxonomy": "Supporting | Clarification",
+                    "attention": "Explain a key nuance succinctly.",
+                    "intent": "Clarify a nuance or constraint of this subtopic.",
+                    "audiences": "Practitioners; level: intermediate.",
+                    "selfPrompt": "Write a paragraph that clarifies a key nuance, limitation, or boundary condition of this subtopic. Keep it specific and helpful. Respect word constraints. Generate the necessary content here.",
                     "additionalData": {
                       "minWords": 70,
                       "maxWords": 120,
@@ -5635,6 +5759,14 @@ export const contentData = {
                   {
                     "id": "table-2-4-2",
                     "tag": "table",
+                    "keywords": [
+                      "Generate 2-4 comparison/data keywords."
+                    ],
+                    "taxonomy": "Data | Comparison table",
+                    "attention": "Summarize comparisons or metrics clearly.",
+                    "intent": "Present compact, scannable data with headers.",
+                    "audiences": "Analytical readers; level: intermediate.",
+                    "selfPrompt": "Create a compact comparison/data table with clear headers. Define the meaning of each column and keep the total size within word constraints. Summarize insights succinctly. Generate the necessary content here.",
                     "additionalData": {
                       "minWords": 90,
                       "maxWords": 150,
@@ -5644,6 +5776,14 @@ export const contentData = {
                   {
                     "id": "p-2-4-3",
                     "tag": "p",
+                    "keywords": [
+                      "Generate 1 transition keyword."
+                    ],
+                    "taxonomy": "Transitional | Micro-bridge",
+                    "attention": "Maintain flow within the subsection.",
+                    "intent": "Provide a short bridge to the nested H4.",
+                    "audiences": "All readers; level: general.",
+                    "selfPrompt": "Write a concise transition to introduce the nested H4 topic. Be brief and purposeful. Generate the necessary content here.",
                     "additionalData": {
                       "minWords": 5,
                       "maxWords": 15,
@@ -5653,6 +5793,14 @@ export const contentData = {
                   {
                     "id": "h4-2-4-4",
                     "tag": "h4",
+                    "keywords": [
+                      "Generate 3-5 keywords (inherit 1-2 from H3, add 2-3 specific)."
+                    ],
+                    "taxonomy": "Guide | Nested subtopic",
+                    "attention": "Focus on a tightly scoped subtopic.",
+                    "intent": "Drill down into one precise angle of the H3.",
+                    "audiences": "Practitioners; level: intermediate-to-advanced.",
+                    "selfPrompt": "Develop an H4 subtopic that is tightly scoped to the H3. Provide a single, focused angle with clear value. Avoid overlap with sibling content. Respect word limits. Generate the necessary content here.",
                     "additionalData": {
                       "minWords": 130,
                       "maxWords": 200,
@@ -5662,6 +5810,14 @@ export const contentData = {
                       {
                         "id": "p-2-4-4-1",
                         "tag": "p",
+                        "keywords": [
+                          "Generate 2-3 micro-detail keywords."
+                        ],
+                        "taxonomy": "Supporting | Micro-detail",
+                        "attention": "Explain one fine-grained detail.",
+                        "intent": "Illuminate a detail crucial to implementation.",
+                        "audiences": "Hands-on implementers; level: intermediate.",
+                        "selfPrompt": "Write a paragraph explaining one fine-grained detail of the H4 subtopic. Keep it practical and specific. Respect word constraints. Generate the necessary content here.",
                         "additionalData": {
                           "minWords": 60,
                           "maxWords": 105,
@@ -5671,6 +5827,14 @@ export const contentData = {
                       {
                         "id": "ol-2-4-4-2",
                         "tag": "ol",
+                        "keywords": [
+                          "Generate 2-3 stepwise keywords."
+                        ],
+                        "taxonomy": "List | Ordered steps",
+                        "attention": "Provide a short, ordered procedure.",
+                        "intent": "List 3–5 steps in logical order.",
+                        "audiences": "Implementers; level: intermediate.",
+                        "selfPrompt": "Create an ordered list with 3–5 steps in a logical progression. Keep items concise and precise. Respect word constraints. Generate the necessary content here.",
                         "additionalData": {
                           "minWords": 45,
                           "maxWords": 75,
@@ -5680,6 +5844,14 @@ export const contentData = {
                       {
                         "id": "blockquote-2-4-4-3",
                         "tag": "blockquote",
+                        "keywords": [
+                          "Generate 1-2 evidence keywords."
+                        ],
+                        "taxonomy": "Supporting | Expert quote",
+                        "attention": "Use a targeted, credibility-boosting quote.",
+                        "intent": "Reinforce the H4 point with authority.",
+                        "audiences": "Skeptical readers; level: intermediate.",
+                        "selfPrompt": "Insert a short, targeted quote that reinforces the H4’s claim. Prefer Internal KB; use External KB if needed. One to two sentences. Respect constraints. Generate the necessary content here.",
                         "additionalData": {
                           "minWords": 20,
                           "maxWords": 40,
@@ -5696,12 +5868,14 @@ export const contentData = {
             "id": "FAQ",
             "tag": "h2",
             "classification": "semantic",
-            "keywords": [],
-            "taxonomy": "",
-            "attention": "",
-            "intent": "",
-            "audiences": "",
-            "selfPrompt": "This FAQ section is designed for generating relevant questions and answers. To create meaningful questions, you should adopt the perspective of the user, which requires analyzing the existing content and understanding the target audience. Consider what three questions would be most interesting and useful for users within the context of the given topic. Then, generate those three questions and organize each one under an h3 heading, ensuring that each question is paired with a well-crafted answer.",
+            "keywords": [
+              "Generate 5-7 FAQ-related keywords tied to user intent."
+            ],
+            "taxonomy": "FAQ | Q&A section",
+            "attention": "Anticipate top questions and answer succinctly.",
+            "intent": "Address the most pressing user questions with clarity.",
+            "audiences": "Prospects and users; level: beginner-to-intermediate.",
+            "selfPrompt": "This FAQ H2 introduces a focused Q&A area. Generate 3 high-impact questions aligned with the page topic and audience needs. Each question must be an H3 with a concise answer paragraph beneath. Avoid repeating content from other sections. Respect min/max words per element. Generate the necessary content here.",
             "designDescription": "",
             "connectedDesignSectionId": "",
             "additionalData": {
@@ -5713,6 +5887,14 @@ export const contentData = {
               {
                 "id": "p-FAQ",
                 "tag": "p",
+                "keywords": [
+                  "Generate 2-3 FAQ-intro keywords."
+                ],
+                "taxonomy": "Supporting | FAQ intro",
+                "attention": "Set expectations for the Q&A format.",
+                "intent": "Briefly introduce how the FAQ helps users.",
+                "audiences": "All readers; level: general.",
+                "selfPrompt": "Write a short paragraph introducing the FAQ purpose and how to use it. Keep it clear and user-centric. Respect word limits. Generate the necessary content here.",
                 "additionalData": {
                   "minWords": 70,
                   "maxWords": 120,
@@ -5722,6 +5904,14 @@ export const contentData = {
               {
                 "id": "h3-FAQ-1",
                 "tag": "h3",
+                "keywords": [
+                  "Generate 3-5 question-specific keywords."
+                ],
+                "taxonomy": "FAQ | Question heading",
+                "attention": "Formulate a highly relevant question.",
+                "intent": "Ask a common, high-impact user question.",
+                "audiences": "Prospects and users; level: beginner.",
+                "selfPrompt": "Create an H3 question that reflects a common, high-impact concern derived from the page topic and audience. Keep it direct and specific. Generate the necessary content here.",
                 "additionalData": {
                   "minWords": 160,
                   "maxWords": 240,
@@ -5731,6 +5921,14 @@ export const contentData = {
                   {
                     "id": "p-FAQ-1-1",
                     "tag": "p",
+                    "keywords": [
+                      "Generate 2-3 answer-focused keywords."
+                    ],
+                    "taxonomy": "FAQ | Answer",
+                    "attention": "Answer clearly in 1–2 short paragraphs.",
+                    "intent": "Provide a precise, user-friendly answer.",
+                    "audiences": "Beginners; level: beginner-to-intermediate.",
+                    "selfPrompt": "Write a concise answer that directly addresses the question. Use plain, helpful language. Include one concrete example or constraint if applicable. Respect min/max words. Generate the necessary content here.",
                     "additionalData": {
                       "minWords": 70,
                       "maxWords": 120,
@@ -5742,6 +5940,14 @@ export const contentData = {
               {
                 "id": "h3-FAQ-2",
                 "tag": "h3",
+                "keywords": [
+                  "Generate 3-5 question-specific keywords."
+                ],
+                "taxonomy": "FAQ | Question heading",
+                "attention": "Pose another top-priority user question.",
+                "intent": "Ask a distinct question that avoids overlap.",
+                "audiences": "Prospects and users; level: beginner-to-intermediate.",
+                "selfPrompt": "Create an H3 question that is distinct from the first and addresses another top-priority concern. Keep it clear and specific. Generate the necessary content here.",
                 "additionalData": {
                   "minWords": 160,
                   "maxWords": 240,
@@ -5751,6 +5957,14 @@ export const contentData = {
                   {
                     "id": "p-FAQ-2-1",
                     "tag": "p",
+                    "keywords": [
+                      "Generate 2-3 answer-focused keywords."
+                    ],
+                    "taxonomy": "FAQ | Answer",
+                    "attention": "Deliver a concise, useful answer.",
+                    "intent": "Resolve the question with clarity and precision.",
+                    "audiences": "Beginners; level: beginner-to-intermediate.",
+                    "selfPrompt": "Write a clear, concise answer that resolves the question without ambiguity. Use simple language and practical framing. Respect min/max words. Generate the necessary content here.",
                     "additionalData": {
                       "minWords": 65,
                       "maxWords": 115,
@@ -5762,6 +5976,14 @@ export const contentData = {
               {
                 "id": "h3-FAQ-3",
                 "tag": "h3",
+                "keywords": [
+                  "Generate 3-5 question-specific keywords."
+                ],
+                "taxonomy": "FAQ | Question heading",
+                "attention": "Focus on a decision-making blocker.",
+                "intent": "Ask a question that addresses a final hesitation.",
+                "audiences": "Prospects; level: beginner-to-intermediate.",
+                "selfPrompt": "Create an H3 question that addresses a common blocker or hesitation before conversion. Keep it targeted and distinct from prior questions. Generate the necessary content here.",
                 "additionalData": {
                   "minWords": 160,
                   "maxWords": 240,
@@ -5771,6 +5993,14 @@ export const contentData = {
                   {
                     "id": "p-FAQ-3-1",
                     "tag": "p",
+                    "keywords": [
+                      "Generate 2-3 answer-focused keywords."
+                    ],
+                    "taxonomy": "FAQ | Answer",
+                    "attention": "Provide a reassuring, specific answer.",
+                    "intent": "Help readers confidently move forward.",
+                    "audiences": "Prospects; level: beginner-to-intermediate.",
+                    "selfPrompt": "Write a reassuring answer that resolves the hesitation with specifics (benefits, constraints, or example). Keep it practical and concise. Respect min/max words. Generate the necessary content here.",
                     "additionalData": {
                       "minWords": 75,
                       "maxWords": 130,
@@ -5787,7 +6017,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-08T14:30:24.434Z",
-        "updatedAt": "2025-10-08T22:22:18.398Z",
+        "updatedAt": "2025-10-09T18:10:03.902Z",
         "order": 1,
         "description": "Оптимизируйте предрейсовые медосмотры с телемедициной в USAUTO: быстро, удобно и экономично. Снижайте затраты и улучшайте безопасность водителей!",
         "images": [
@@ -5807,22 +6037,26 @@ export const contentData = {
         "attention": "Создайте захватывающий заголовок с конкретным предложением об экономии до 67% на предрейсовых медосмотрах благодаря телемедицине, сопровождаемый динамичным изображением водителя, проходящего осмотр за 2 минуты. На первом экране разместите интерактивный калькулятор, позволяющий пользователям быстро оценить потенциальную экономию и время, с помощью которого можно установить связь с медицинским специалистом. При прокрутке страницы внедрите последовательное раскрытие информации о преимуществах, включая видеоотзывы клиентов с конкретными результатами, такими как сокращение времени осмотра до 90 секунд и снижение затрат на медицинский персонал.",
         "audiences": "Эта страница предназначена для руководителей и специалистов по охране труда в транспортных и логистических компаниях, которые стремятся оптимизировать процесс предрейсовых медицинских осмотров водителей. Они сталкиваются с высокими затратами на традиционные медосмотры и необходимостью соблюдения законодательства, и заинтересованы в инновационных решениях, которые позволят сократить время и стоимость процедур, обеспечивая при этом высокое качество медицинской оценки.",
         "isPreviewComplited": false,
+        "isReadyDraftForPerplexity": false,
         "draftContentStructure": [
           {
             "id": "h2-1",
             "tag": "h2",
-            "classification": "Guide",
+            "classification": "semantic",
             "keywords": [
-              "Телемедицина",
+              "телемедицина",
               "предрейсовые медосмотры",
-              "оптимизация медосмотров водителей",
-              "телемедицинские технологии предрейсовых осмотров"
+              "оптимизация",
+              "удаленные осмотры",
+              "экономия",
+              "безопасность водителей",
+              "инновационные решения"
             ],
-            "taxonomy": "Guide",
-            "attention": "Узнайте, как телемедицина может значительно ускорить и упростить предрейсовые медосмотры, снижая затраты и повышая безопасность.",
-            "intent": "Объяснить преимущества и возможности телемедицины для оптимизации предрейсовых медицинских осмотров водителей, предоставляя подробный обзор технологии и ее влияния на бизнес-процессы.",
-            "audiences": "Руководители и специалисты по охране труда транспортных компаний, заинтересованные в инновационных решениях для сокращения времени и стоимости медосмотров, уровень: средний, боль: высокая стоимость и длительность традиционных осмотров.",
-            "selfPrompt": "---\nCONTEXT: Generate h2 in section \"\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Представить общую картину и преимущества использования телемедицины для предрейсовых медосмотров, заинтересовать целевую аудиторию и подготовить почву для детального раскрытия темы.\n\nAUDIENCE: Руководители и специалисты по охране труда транспортных компаний | Level: intermediate | Pain points: высокая стоимость и длительность традиционных медосмотров, необходимость соблюдения законодательства\n\nKEYWORDS: Naturally integrate: Телемедицина, предрейсовые медосмотры, оптимизация медосмотров водителей, телемедицинские технологии предрейсовых осмотров\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for h2\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Use facts from Internal KB: Ускорение предрейсовых медицинских осмотров\n- Apply competitive insights from External KB: Технологии телемедицины могут сократить стоимость предрейсовых осмотров на 67%\n\nQUALITY CRITERIA:\n- Actionable (specific actions/recommendations)\n- Specific (avoid generic statements)\n- Data-backed (use facts/statistics when available)\n- No fluff (eliminate filler content)\n\nMANDATORY:\n- Highlight экономия времени и денег\n- Упомянуть интеграцию с оборудованием и удалённый контроль\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n- Generating \"filler\" without value\n- Copying text from knowledge bases verbatim\n---\n\nThis h2 selfPrompt MUST end with this exact suffix.",
+            "taxonomy": "Guide | Section overview",
+            "attention": "Узнайте, как телемедицина может изменить предрейсовые медосмотры.",
+            "intent": "Представить тему и подготовить читателей к основным выводам.",
+            "audiences": "Руководители и специалисты; уровень: средний.",
+            "selfPrompt": "Создайте раздел H2, который обрисовывает тему страницы, указывает на ценность и согласуется с намерением пользователя. Обеспечьте сильное, лаконичное введение и плавный переход к последующим подразделам. Естественно интегрируйте указанные ключевые слова без переспама. Соблюдайте minWords/maxWords из дополнительных данных. Генерируйте необходимый контент здесь.",
             "designDescription": "",
             "connectedDesignSectionId": "",
             "additionalData": {
@@ -5835,142 +6069,133 @@ export const contentData = {
                 "id": "p-1-1",
                 "tag": "p",
                 "keywords": [
-                  "Телемедицина",
-                  "предрейсовые осмотры",
-                  "ускорение медосмотров",
-                  "удалённые медицинские проверки"
+                  "телемедицина",
+                  "предрейсовые медосмотры",
+                  "удаленные осмотры"
                 ],
-                "taxonomy": "Supporting",
-                "attention": "Поймите, как телемедицина сокращает время проведения предрейсовых осмотров и повышает эффективность работы автопарка.",
-                "intent": "Объяснить, каким образом телемедицина ускоряет процесс предрейсовых медицинских осмотров, снижая простой транспорта и повышая производительность.",
-                "audiences": "Специалисты по охране труда и руководители транспортных компаний | Level: intermediate | Pain points: длительность осмотров, простой транспорта",
-                "selfPrompt": "---\nCONTEXT: Generate p (body) in section \"h2-1\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Объяснить преимущества телемедицины в ускорении предрейсовых медицинских осмотров, показать конкретные выгоды для бизнеса.\n\nAUDIENCE: Специалисты по охране труда и руководители транспортных компаний | Level: intermediate | Pain points: длительность осмотров, простой транспорта\n\nKEYWORDS: Naturally integrate: Телемедицина, предрейсовые осмотры, ускорение медосмотров, удалённые медицинские проверки\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 90, maxWords: 160 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Ускорение предрейсовых медицинских осмотров\n- External KB: Скорость медосмотров возрастает в 5 раз\n\nQUALITY CRITERIA:\n- Specific, data-backed\n- Clear explanation\n\nMANDATORY:\n- Упомянуть дистанционный контроль и сертифицированное оборудование\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n- Copying text verbatim\n---",
+                "taxonomy": "Supporting | Intro paragraph",
+                "attention": "Узнайте, как телемедицина может сэкономить время и деньги.",
+                "intent": "Установить немедленный контекст и прояснить, почему это важно.",
+                "audiences": "Общая бизнес-аудитория; уровень: начинающий-средний.",
+                "selfPrompt": "Напишите вводный абзац, который четко объясняет объем и ценность темы. Используйте действенные, конкретные утверждения и избегайте пустословия. Естественно интегрируйте предоставленные ключевые слова. Соблюдайте minWords/maxWords в дополнительных данных. Генерируйте необходимый контент здесь.",
                 "additionalData": {
                   "minWords": 90,
                   "maxWords": 160,
                   "actualContent": ""
-                },
-                "status": "checked"
+                }
               },
               {
                 "id": "p-1-2",
                 "tag": "p",
                 "keywords": [
-                  "экономия затрат",
-                  "телемедицина для водителей",
-                  "снижение расходов на медосмотры",
-                  "эффективность медосмотров"
+                  "экономия",
+                  "безопасность",
+                  "инновационные технологии"
                 ],
-                "taxonomy": "Supporting",
-                "attention": "Узнайте, как телемедицина помогает снизить затраты на предрейсовые медосмотры и повысить безопасность водителей.",
-                "intent": "Показать экономическую выгоду от внедрения телемедицины в процесс предрейсовых осмотров, акцентируя внимание на снижении затрат и повышении качества контроля.",
-                "audiences": "Руководители транспортных компаний и специалисты по охране труда | Level: intermediate | Pain points: высокие расходы на традиционные медосмотры, необходимость контроля качества",
-                "selfPrompt": "---\nCONTEXT: Generate p (body) in section \"h2-1\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Раскрыть экономические преимущества телемедицины для предрейсовых медосмотров, показать снижение затрат и повышение безопасности.\n\nAUDIENCE: Руководители транспортных компаний и специалисты по охране труда | Level: intermediate | Pain points: высокие расходы на традиционные медосмотры, необходимость контроля качества\n\nKEYWORDS: Naturally integrate: экономия затрат, телемедицина для водителей, снижение расходов на медосмотры, эффективность медосмотров\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 70, maxWords: 130 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Ускорение предрейсовых медицинских осмотров\n- External KB: Снижение стоимости осмотров на 67%\n\nQUALITY CRITERIA:\n- Data-backed\n- Specific\n\nMANDATORY:\n- Упомянуть экономию и улучшение безопасности\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n- Copying text verbatim\n---",
+                "taxonomy": "Supporting | Context paragraph",
+                "attention": "Подчеркните важность снижения затрат на медосмотры.",
+                "intent": "Углубить контекст с одним конкретным углом или примером использования.",
+                "audiences": "Практики и менеджеры; уровень: средний.",
+                "selfPrompt": "Напишите абзац, который вводит один конкретный аспект (проблему, сценарий или пример использования). Будьте конкретными и полезными. Естественно интегрируйте ключевые слова. Соблюдайте min/max ограничения слов. Генерируйте необходимый контент здесь.",
                 "additionalData": {
                   "minWords": 70,
                   "maxWords": 130,
                   "actualContent": ""
-                },
-                "status": "checked"
+                }
               },
               {
                 "id": "p-1-3",
                 "tag": "p",
                 "keywords": [
-                  "быстрый медосмотр",
-                  "телемедицина время осмотра",
-                  "эффективность предрейсовых осмотров"
+                  "переход",
+                  "основные преимущества"
                 ],
-                "taxonomy": "Supporting",
-                "attention": "Кратко подчеркните скорость и удобство телемедицинских предрейсовых осмотров.",
-                "intent": "Дать короткое, но ёмкое утверждение о быстроте и удобстве телемедицинских осмотров для водителей.\n",
-                "audiences": "Руководители и специалисты по охране труда | Level: beginner | Pain points: длительность осмотров\n",
-                "selfPrompt": "---\nCONTEXT: Generate short p (transition) in section \"h2-1\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Подчеркнуть скорость и удобство телемедицинских предрейсовых осмотров в краткой форме.\n\nAUDIENCE: Руководители и специалисты по охране труда | Level: beginner | Pain points: длительность осмотров\n\nKEYWORDS: Naturally integrate: быстрый медосмотр, телемедицина время осмотра, эффективность предрейсовых осмотров\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 5, maxWords: 15 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Ускорение предрейсовых медицинских осмотров\n\nQUALITY CRITERIA:\n- Кратко и ёмко\n\nMANDATORY:\n- Упомянуть скорость осмотра\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
+                "taxonomy": "Transitional | Separator",
+                "attention": "Плавно переходите к следующей идее.",
+                "intent": "Предоставить краткий переход или микро-резюме.",
+                "audiences": "Все читатели; уровень: общий.",
+                "selfPrompt": "Напишите короткую переходную строку (разделитель), чтобы направить читателей к следующему блоку. Держите ее краткой и целенаправленной. Генерируйте необходимый контент здесь.",
                 "additionalData": {
                   "minWords": 5,
                   "maxWords": 15,
                   "actualContent": ""
-                },
-                "status": "checked"
+                }
               },
               {
                 "id": "blockquote-1-4",
                 "tag": "blockquote",
                 "keywords": [
-                  "телемедицина эффективность",
-                  "сокращение времени осмотра",
-                  "отзывы клиентов телемедицина"
+                  "экспертное мнение",
+                  "доказательства"
                 ],
-                "taxonomy": "Supporting",
-                "attention": "Приведите убедительный отзыв или цитату, подтверждающую эффективность телемедицины в предрейсовых осмотрах.",
-                "intent": "Подкрепить преимущества телемедицины реальным отзывом или цитатой, демонстрирующей сокращение времени и повышение качества осмотров.",
-                "audiences": "Руководители и специалисты по охране труда | Level: intermediate | Pain points: сомнения в эффективности новых технологий",
-                "selfPrompt": "---\nCONTEXT: Generate blockquote in section \"h2-1\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Подкрепить преимущества телемедицины отзывом или цитатой, демонстрирующей эффективность и экономию времени.\n\nAUDIENCE: Руководители и специалисты по охране труда | Level: intermediate | Pain points: сомнения в эффективности новых технологий\n\nKEYWORDS: Naturally integrate: телемедицина эффективность, сокращение времени осмотра, отзывы клиентов телемедицина\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 25, maxWords: 45 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for blockquote\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- External KB: Отзывы клиентов с сокращением времени осмотра до 90 секунд\n\nQUALITY CRITERIA:\n- Реальный кейс или цитата\n- Убедительность\n\nMANDATORY:\n- Упомянуть конкретные результаты\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n- Копирование текста дословно\n---",
+                "taxonomy": "Supporting | Evidence quote",
+                "attention": "Предоставьте доказательство или экспертный взгляд.",
+                "intent": "Укрепить доверие с помощью соответствующей цитаты.",
+                "audiences": "Скептически настроенные читатели; уровень: средний.",
+                "selfPrompt": "Вставьте краткую, соответствующую цитату, которая подтверждает утверждение раздела. Предпочитайте внутренние источники; если их нет, используйте внешние. Одна-две фразы. Укажите источник (внутренний опыт или внешнее мнение). Соблюдайте ограничения по словам. Генерируйте необходимый контент здесь.",
                 "additionalData": {
                   "minWords": 25,
                   "maxWords": 45,
                   "actualContent": ""
-                },
-                "status": "checked"
+                }
               },
               {
                 "id": "p-1-5",
                 "tag": "p",
                 "keywords": [
-                  "удобство телемедицины",
-                  "доступность медосмотров",
-                  "сокращение времени процедуры"
+                  "ценность",
+                  "польза",
+                  "оптимизация"
                 ],
-                "taxonomy": "Supporting",
-                "attention": "Расскажите о том, как телемедицина делает предрейсовые медосмотры более доступными и удобными для водителей и компаний.",
-                "intent": "Показать удобство и доступность телемедицинских осмотров, а также их влияние на сокращение времени процедуры и повышение комфорта для водителей.",
-                "audiences": "Руководители транспортных компаний и специалисты по охране труда | Level: intermediate | Pain points: неудобство и длительность традиционных осмотров",
-                "selfPrompt": "---\nCONTEXT: Generate p (body) in section \"h2-1\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Показать удобство и доступность телемедицинских предрейсовых осмотров, а также сокращение времени процедуры.\n\nAUDIENCE: Руководители транспортных компаний и специалисты по охране труда | Level: intermediate | Pain points: неудобство и длительность традиционных осмотров\n\nKEYWORDS: Naturally integrate: удобство телемедицины, доступность медосмотров, сокращение времени процедуры\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 60, maxWords: 110 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Ускорение предрейсовых медицинских осмотров\n\nQUALITY CRITERIA:\n- Specific, actionable\n- Data-backed\n\nMANDATORY:\n- Упомянуть удобство и доступность\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
+                "taxonomy": "Supporting | Value paragraph",
+                "attention": "Укажите четкую, ориентированную на пользователя ценность.",
+                "intent": "Подвести итог выгоде и подготовить к следующему разделу.",
+                "audiences": "Руководители; уровень: средний.",
+                "selfPrompt": "Напишите абзац, сосредоточенный на ценности, который подводит итог тому, что получают читатели, и подготавливает их к следующей части. Держите его конкретным и актуальным. Соблюдайте minWords/maxWords. Генерируйте необходимый контент здесь.",
                 "additionalData": {
                   "minWords": 60,
                   "maxWords": 110,
                   "actualContent": ""
-                },
-                "status": "checked"
+                }
               },
               {
                 "id": "ul-1-6",
                 "tag": "ul",
                 "keywords": [
-                  "преимущества телемедицины",
-                  "телемедицинские функции",
-                  "особенности предрейсовых осмотров"
+                  "ключевые выводы",
+                  "основные преимущества"
                 ],
-                "taxonomy": "Supporting",
-                "attention": "Изучите ключевые преимущества телемедицины для предрейсовых медосмотров в удобном списке.",
-                "intent": "Представить основные преимущества и функции телемедицины в формате списка для быстрого восприятия и сравнения с традиционными методами.",
-                "audiences": "Руководители и специалисты по охране труда | Level: beginner/intermediate | Pain points: необходимость быстрого понимания преимуществ телемедицины",
-                "selfPrompt": "---\nCONTEXT: Generate ul with 4-6 items in section \"h2-1\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Представить ключевые преимущества телемедицины для предрейсовых медосмотров в удобном формате списка.\n\nAUDIENCE: Руководители и специалисты по охране труда | Level: beginner/intermediate | Pain points: необходимость быстрого понимания преимуществ телемедицины\n\nKEYWORDS: Naturally integrate: преимущества телемедицины, телемедицинские функции, особенности предрейсовых осмотров\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 40, maxWords: 70 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for unordered list\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Ускорение предрейсовых медицинских осмотров\n- External KB: Экономия до 67%, скорость осмотра 2 минуты\n\nQUALITY CRITERIA:\n- Конкретные пункты\n- Легко читаемые\n\nMANDATORY:\n- Включить экономию времени и денег, удобство, законность\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
+                "taxonomy": "List | Key takeaways",
+                "attention": "Сделайте контент удобным для восприятия.",
+                "intent": "Предоставить 3–5 кратких, действенных пунктов.",
+                "audiences": "Занятые читатели; уровень: общий.",
+                "selfPrompt": "Создайте краткий ненумерованный список из 3–5 пунктов. Каждый пункт должен быть одним предложением и содержать практическое резюме. Избегайте избыточности и соблюдайте единый стиль. Соблюдайте ограничения по словам. Генерируйте необходимый контент здесь.",
                 "additionalData": {
                   "minWords": 40,
                   "maxWords": 70,
                   "actualContent": ""
-                },
-                "status": "checked"
+                }
               }
-            ],
-            "status": "checked"
+            ]
           },
           {
             "id": "h2-2",
             "tag": "h2",
-            "classification": "Guide",
+            "classification": "semantic",
             "keywords": [
-              "Законодательное соответствие телемедицины",
-              "безопасность предрейсовых осмотров",
-              "нормативы телемедицины",
-              "биометрическая идентификация водителей"
+              "телемедицина",
+              "предрейсовые медосмотры",
+              "дистанционные осмотры",
+              "экономия затрат",
+              "эффективность",
+              "инновационные технологии",
+              "безопасность водителей"
             ],
-            "taxonomy": "Guide",
-            "attention": "Узнайте, как телемедицина в USAUTO полностью соответствует законодательству и обеспечивает безопасность предрейсовых медосмотров.",
-            "intent": "Дать подробный обзор нормативных требований и мер безопасности, обеспечиваемых телемедицинскими решениями для предрейсовых осмотров, чтобы убедить пользователей в легитимности и надежности технологии.",
-            "audiences": "Руководители и специалисты по охране труда транспортных компаний, юристы и compliance-специалисты | Level: expert | Pain points: соблюдение законодательства, безопасность данных и процедур",
-            "selfPrompt": "---\nCONTEXT: Generate h2 in section \"\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Подробно раскрыть законодательное соответствие и меры безопасности телемедицины в предрейсовых медосмотрах.\n\nAUDIENCE: Руководители и специалисты по охране труда транспортных компаний, юристы и compliance-специалисты | Level: expert | Pain points: соблюдение законодательства, безопасность данных и процедур\n\nKEYWORDS: Naturally integrate: Законодательное соответствие телемедицины, безопасность предрейсовых осмотров, нормативы телемедицины, биометрическая идентификация водителей\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 550, maxWords: 750 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for h2\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n- External KB: Описание нормативов и требований\n\nQUALITY CRITERIA:\n- Data-backed\n- Specific\n- Actionable\n\nMANDATORY:\n- Упомянуть биометрическую идентификацию и видеофиксацию\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n- Копирование текста дословно\n---\n\nThis h2 selfPrompt MUST end with this exact suffix.",
+            "taxonomy": "Guide | Core section",
+            "attention": "Фокус на конкретных, высокоценных инсайтах.",
+            "intent": "Предоставить основное тело действия, экспертной информации.",
+            "audiences": "Практики и технические заинтересованные лица; уровень: средний до продвинутого.",
+            "selfPrompt": "Создайте основной раздел H2, который предоставляет действенные, конкретные и основанные на данных инсайты. Структурируйте контент для ясности и глубины. Избегайте перекрытия с предыдущими разделами. Интегрируйте ключевые слова естественно. Соблюдайте minWords/maxWords. Генерируйте необходимый контент здесь.",
             "designDescription": "",
             "connectedDesignSectionId": "",
             "additionalData": {
@@ -5983,313 +6208,301 @@ export const contentData = {
                 "id": "p-2-1",
                 "tag": "p",
                 "keywords": [
-                  "законодательство телемедицины",
-                  "нормативные требования",
-                  "официальная регистрация данных"
+                  "дистанционные медицинские осмотры",
+                  "польза телемедицины"
                 ],
-                "taxonomy": "Supporting",
-                "attention": "Поймите, какие законодательные нормы регулируют использование телемедицины в предрейсовых осмотрах и как USAUTO их соблюдает.",
-                "intent": "Объяснить нормативные требования к телемедицинским предрейсовым осмотрам и показать, как USAUTO обеспечивает их выполнение.",
-                "audiences": "Юристы, compliance-специалисты, руководители транспортных компаний | Level: expert | Pain points: соблюдение законодательства, легитимность процедур",
-                "selfPrompt": "---\nCONTEXT: Generate p (body) in section \"h2-2\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Объяснить нормативные требования к телемедицинским предрейсовым осмотрам и показать, как USAUTO их соблюдает.\n\nAUDIENCE: Юристы, compliance-специалисты, руководители транспортных компаний | Level: expert | Pain points: соблюдение законодательства, легитимность процедур\n\nKEYWORDS: Naturally integrate: законодательство телемедицины, нормативные требования, официальная регистрация данных\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 80, maxWords: 140 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n\nQUALITY CRITERIA:\n- Data-backed\n- Specific\n\nMANDATORY:\n- Упомянуть Федеральный налоговый приказ № ЕД-7-26/116@\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n- Копирование текста дословно\n---",
+                "taxonomy": "Supporting | Body paragraph",
+                "attention": "Начните с конкретного, полезного утверждения.",
+                "intent": "Четко объяснить ключевую концепцию или механизм.",
+                "audiences": "Практики; уровень: средний.",
+                "selfPrompt": "Напишите абзац, который объясняет одну ключевую концепцию с ясностью и полезностью. Используйте конкретные примеры, где это полезно. Соблюдайте min/max слова. Генерируйте необходимый контент здесь.",
                 "additionalData": {
                   "minWords": 80,
                   "maxWords": 140,
                   "actualContent": ""
-                },
-                "status": "checked"
+                }
               },
               {
                 "id": "p-2-2",
                 "tag": "p",
                 "keywords": [
-                  "безопасность данных",
-                  "видеофиксация осмотров",
-                  "биометрическая идентификация"
+                  "переход к следующему разделу"
                 ],
-                "taxonomy": "Supporting",
-                "attention": "Кратко подчеркните важность безопасности и контроля качества в телемедицинских осмотрах.",
-                "intent": "Дать краткое описание мер безопасности, таких как видеофиксация и биометрия, используемых в телемедицинских предрейсовых осмотрах.",
-                "audiences": "Руководители и специалисты по охране труда | Level: expert | Pain points: безопасность данных, предотвращение мошенничества",
-                "selfPrompt": "---\nCONTEXT: Generate short p (transition) in section \"h2-2\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Кратко описать меры безопасности и контроля качества в телемедицинских осмотрах.\n\nAUDIENCE: Руководители и специалисты по охране труда | Level: expert | Pain points: безопасность данных, предотвращение мошенничества\n\nKEYWORDS: Naturally integrate: безопасность данных, видеофиксация осмотров, биометрическая идентификация\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 5, maxWords: 15 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n\nQUALITY CRITERIA:\n- Кратко и ёмко\n\nMANDATORY:\n- Упомянуть видеофиксацию и биометрию\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
+                "taxonomy": "Transitional | Micro-bridge",
+                "attention": "Поддерживайте поток между идеями.",
+                "intent": "Предоставить короткий мост к следующему подразделу.",
+                "audiences": "Все читатели; уровень: общий.",
+                "selfPrompt": "Напишите короткое переходное предложение, которое плавно соединяет идеи. Будьте краткими и целенаправленными. Генерируйте необходимый контент здесь.",
                 "additionalData": {
                   "minWords": 5,
                   "maxWords": 15,
                   "actualContent": ""
-                },
-                "status": "checked"
+                }
               },
               {
                 "id": "h3-2-3",
                 "tag": "h3",
-                "classification": "Guide",
                 "keywords": [
-                  "Федеральный налоговый приказ",
-                  "регулирование телемедицины",
-                  "нормативы предрейсовых осмотров",
-                  "законодательство телемедицины"
+                  "дистанционный мониторинг",
+                  "телемедицинские технологии",
+                  "польза для водителей",
+                  "снижение затрат"
                 ],
-                "taxonomy": "Guide",
-                "attention": "Изучите ключевые нормативные документы, регулирующие телемедицинские предрейсовые осмотры в России.",
-                "intent": "Дать подробный обзор Федерального налогового приказа и других нормативных актов, регулирующих телемедицинские предрейсовые осмотры, чтобы показать их законность и обязательность соблюдения.",
-                "audiences": "Юристы, compliance-специалисты, руководители транспортных компаний | Level: expert | Pain points: понимание нормативной базы, соблюдение законодательства",
-                "selfPrompt": "---\nCONTEXT: Generate h3 in section \"h2-2\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Подробно раскрыть нормативные документы и требования к телемедицинским предрейсовым осмотрам.\n\nAUDIENCE: Юристы, compliance-специалисты, руководители транспортных компаний | Level: expert | Pain points: понимание нормативной базы, соблюдение законодательства\n\nKEYWORDS: Naturally integrate: Федеральный налоговый приказ, регулирование телемедицины, нормативы предрейсовых осмотров, законодательство телемедицины\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 220, maxWords: 320 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for h3\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n- External KB: Описание нормативов\n\nQUALITY CRITERIA:\n- Data-backed\n- Specific\n- Actionable\n\nMANDATORY:\n- Упомянуть конкретные нормативные акты\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n- Копирование текста дословно\n---",
+                "taxonomy": "Guide | Subsection",
+                "attention": "Определите четкий, уникальный угол.",
+                "intent": "Расширить родительский H2 с фокусированным подтемой.",
+                "audiences": "Практики; уровень: средний до продвинутого.",
+                "selfPrompt": "Разработайте подраздел H3, который расширяет родительский H2 с уникальным, четко определенным углом. Избегайте перекрытия с соседними подразделами. Укажите микро-намерение и ожидаемые результаты. Интегрируйте унаследованные и специфические ключевые слова естественно. Соблюдайте лимиты слов. Генерируйте необходимый контент здесь.",
+                "additionalData": {
+                  "minWords": 220,
+                  "maxWords": 320,
+                  "actualContent": ""
+                },
                 "realContentStructure": [
                   {
                     "id": "p-2-3-1",
                     "tag": "p",
                     "keywords": [
-                      "Федеральный налоговый приказ",
-                      "регулирование телемедицины",
-                      "законодательство"
+                      "польза телемедицины",
+                      "дистанционные осмотры"
                     ],
-                    "taxonomy": "Supporting",
-                    "attention": "Поймите, как Федеральный налоговый приказ регулирует телемедицинские предрейсовые осмотры.",
-                    "intent": "Объяснить роль Федерального налогового приказа № ЕД-7-26/116@ в регулировании телемедицины для предрейсовых осмотров.",
-                    "audiences": "Юристы и compliance-специалисты | Level: expert | Pain points: нормативное регулирование телемедицины",
-                    "selfPrompt": "---\nCONTEXT: Generate p (body) in section \"h3-2-3\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Объяснить роль Федерального налогового приказа № ЕД-7-26/116@ в регулировании телемедицины.\n\nAUDIENCE: Юристы и compliance-специалисты | Level: expert | Pain points: нормативное регулирование телемедицины\n\nKEYWORDS: Naturally integrate: Федеральный налоговый приказ, регулирование телемедицины, законодательство\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 75, maxWords: 130 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n\nQUALITY CRITERIA:\n- Data-backed\n- Specific\n\nMANDATORY:\n- Упомянуть приказ и его требования\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n- Копирование текста дословно\n---",
+                    "taxonomy": "Supporting | Explanation",
+                    "attention": "Разъясните 'как' или 'почему' напрямую.",
+                    "intent": "Объяснить ключевую идею с конкретным примером.",
+                    "audiences": "Практики; уровень: средний.",
+                    "selfPrompt": "Напишите объяснительный абзац, который разъясняет, как/почему эта подтема важна, включая один конкретный пример. Держите это практическим. Соблюдайте min/max слова. Генерируйте необходимый контент здесь.",
                     "additionalData": {
                       "minWords": 75,
                       "maxWords": 130,
                       "actualContent": ""
-                    },
-                    "status": "checked"
+                    }
                   },
                   {
                     "id": "ul-2-3-2",
                     "tag": "ul",
                     "keywords": [
-                      "требования к телемедицине",
-                      "нормативные акты",
-                      "регулирование предрейсовых осмотров"
+                      "шаги внедрения",
+                      "польза для бизнеса"
                     ],
-                    "taxonomy": "Supporting",
-                    "attention": "Изучите основные требования и нормативы, регулирующие телемедицинские предрейсовые осмотры.",
-                    "intent": "Представить ключевые нормативные требования и акты в виде списка для удобства восприятия и понимания.",
-                    "audiences": "Юристы, compliance-специалисты | Level: expert | Pain points: необходимость быстрого понимания нормативов",
-                    "selfPrompt": "---\nCONTEXT: Generate ul with 4-6 items in section \"h3-2-3\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Представить ключевые нормативные требования и акты в удобном списке.\n\nAUDIENCE: Юристы, compliance-специалисты | Level: expert | Pain points: необходимость быстрого понимания нормативов\n\nKEYWORDS: Naturally integrate: требования к телемедицине, нормативные акты, регулирование предрейсовых осмотров\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 50, maxWords: 85 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for unordered list\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n\nQUALITY CRITERIA:\n- Конкретные пункты\n- Легко читаемые\n\nMANDATORY:\n- Включить основные требования и акты\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
+                    "taxonomy": "List | Action steps",
+                    "attention": "Создайте компактный, действенный контрольный список.",
+                    "intent": "Перечислите 3–5 шагов или советов, которые читатели могут применить.",
+                    "audiences": "Практики; уровень: средний.",
+                    "selfPrompt": "Создайте ненумерованный список с 3–5 краткими, действенными шагами или советами. Одно предложение на пункт, в императивном стиле. Убедитесь, что элементы не перекрываются. Соблюдайте ограничения слов. Генерируйте необходимый контент здесь.",
                     "additionalData": {
                       "minWords": 50,
                       "maxWords": 85,
                       "actualContent": ""
-                    },
-                    "status": "checked"
+                    }
                   },
                   {
                     "id": "p-2-3-3",
                     "tag": "p",
                     "keywords": [
-                      "законность телемедицины",
-                      "соблюдение нормативов"
+                      "ожидаемые результаты",
+                      "метрики успеха"
                     ],
-                    "taxonomy": "Supporting",
-                    "attention": "Подчеркните важность соблюдения нормативов для легитимности телемедицинских осмотров.",
-                    "intent": "Объяснить, почему соблюдение нормативных требований критично для успешного внедрения телемедицины в предрейсовые осмотры.",
-                    "audiences": "Юристы, compliance-специалисты | Level: expert | Pain points: легитимность и безопасность процедур",
-                    "selfPrompt": "---\nCONTEXT: Generate p (body) in section \"h3-2-3\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Объяснить важность соблюдения нормативов для легитимности телемедицины.\n\nAUDIENCE: Юристы, compliance-специалисты | Level: expert | Pain points: легитимность и безопасность процедур\n\nKEYWORDS: Naturally integrate: законность телемедицины, соблюдение нормативов\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 65, maxWords: 115 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n\nQUALITY CRITERIA:\n- Specific\n- Data-backed\n\nMANDATORY:\n- Упомянуть важность соблюдения нормативов\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
+                    "taxonomy": "Supporting | Outcome",
+                    "attention": "Подчеркните ожидаемые результаты или метрики.",
+                    "intent": "Показать, как выглядит успех для этой подтемы.",
+                    "audiences": "Читатели, ориентированные на результаты; уровень: средний.",
+                    "selfPrompt": "Напишите абзац, который описывает ожидаемые результаты или метрики, указывающие на успех. Будьте конкретными и измеримыми, когда это возможно. Соблюдайте min/max слова. Генерируйте необходимый контент здесь.",
                     "additionalData": {
                       "minWords": 65,
                       "maxWords": 115,
                       "actualContent": ""
-                    },
-                    "status": "checked"
+                    }
                   },
                   {
                     "id": "code-2-3-4",
                     "tag": "code",
                     "keywords": [
-                      "пример нормативного документа",
-                      "регламент телемедицины",
-                      "образец приказа"
+                      "пример кода",
+                      "телемедицинская платформа"
                     ],
-                    "taxonomy": "technical",
-                    "attention": "Посмотрите пример ключевого нормативного документа, регулирующего телемедицину в предрейсовых осмотрах.",
-                    "intent": "Предоставить пример кода или выдержки из нормативного документа для наглядности и практического понимания требований.",
-                    "audiences": "Юристы, compliance-специалисты | Level: expert | Pain points: необходимость точного понимания нормативов",
-                    "selfPrompt": "---\nCONTEXT: Generate code block in section \"h3-2-3\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Предоставить пример нормативного документа или регламента, регулирующего телемедицину.\n\nAUDIENCE: Юристы, compliance-специалисты | Level: expert | Pain points: необходимость точного понимания нормативов\n\nKEYWORDS: Naturally integrate: пример нормативного документа, регламент телемедицины, образец приказа\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 20, maxWords: 45 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for code block\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n\nQUALITY CRITERIA:\n- Точность\n- Наглядность\n\nMANDATORY:\n- Включить выдержку из приказа\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
+                    "taxonomy": "Technical | Code example",
+                    "attention": "Иллюстрируйте с помощью краткого фрагмента кода.",
+                    "intent": "Иллюстрировать концепцию через код или псевдокод.",
+                    "audiences": "Разработчики и технические практики; уровень: средний.",
+                    "selfPrompt": "Предоставьте короткий пример кода или псевдокода, иллюстрирующий концепцию. Держите его минимальным и самообъясняющим. Добавьте краткий комментарий в строке, если это полезно. Соблюдайте min/max слова. Генерируйте необходимый контент здесь.",
                     "additionalData": {
                       "minWords": 20,
                       "maxWords": 45,
                       "actualContent": ""
-                    },
-                    "status": "checked"
+                    }
                   }
-                ],
-                "status": "checked"
+                ]
               },
               {
                 "id": "h3-2-4",
                 "tag": "h3",
-                "classification": "Guide",
                 "keywords": [
-                  "безопасность телемедицины",
-                  "биометрическая идентификация",
-                  "видеофиксация осмотров",
-                  "противодействие мошенничеству"
+                  "интеграция технологий",
+                  "дистанционные медицинские осмотры",
+                  "польза для компаний",
+                  "снижение затрат"
                 ],
-                "taxonomy": "Guide",
-                "attention": "Узнайте о современных технологиях безопасности, применяемых в телемедицинских предрейсовых осмотрах.",
-                "intent": "Дать подробный обзор технологий безопасности, таких как биометрия и видеофиксация, используемых для защиты данных и предотвращения мошенничества в телемедицине.",
-                "audiences": "Руководители, специалисты по охране труда и IT-специалисты | Level: expert | Pain points: безопасность данных, предотвращение мошенничества",
-                "selfPrompt": "---\nCONTEXT: Generate h3 in section \"h2-2\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Подробно раскрыть технологии безопасности в телемедицинских предрейсовых осмотрах.\n\nAUDIENCE: Руководители, специалисты по охране труда и IT-специалисты | Level: expert | Pain points: безопасность данных, предотвращение мошенничества\n\nKEYWORDS: Naturally integrate: безопасность телемедицины, биометрическая идентификация, видеофиксация осмотров, противодействие мошенничеству\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 280, maxWords: 400 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for h3\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n\nQUALITY CRITERIA:\n- Data-backed\n- Specific\n- Actionable\n\nMANDATORY:\n- Упомянуть биометрию, видеофиксацию и их преимущества\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n- Копирование текста дословно\n---",
+                "taxonomy": "Guide | Subsection",
+                "attention": "Укажите четкий, практический угол.",
+                "intent": "Покрыть другую, но взаимодополняющую грань H2.",
+                "audiences": "Практики; уровень: средний до продвинутого.",
+                "selfPrompt": "Разработайте подраздел H3 с четким, практическим углом, который дополняет предыдущий подраздел без перекрытия. Ясно укажите микро-намерение и ограничения. Интегрируйте ключевые слова естественно. Соблюдайте лимиты слов. Генерируйте необходимый контент здесь.",
+                "additionalData": {
+                  "minWords": 280,
+                  "maxWords": 400,
+                  "actualContent": ""
+                },
                 "realContentStructure": [
                   {
                     "id": "p-2-4-1",
                     "tag": "p",
                     "keywords": [
-                      "биометрическая идентификация",
-                      "безопасность данных",
-                      "контроль доступа"
+                      "ограничения телемедицины",
+                      "практические аспекты"
                     ],
-                    "taxonomy": "Supporting",
-                    "attention": "Поймите, как биометрия повышает безопасность и предотвращает подделку документов в телемедицинских осмотрах.",
-                    "intent": "Объяснить роль биометрической идентификации в обеспечении безопасности и достоверности данных при предрейсовых осмотрах.",
-                    "audiences": "IT-специалисты, руководители по безопасности | Level: expert | Pain points: предотвращение мошенничества, контроль доступа\n",
-                    "selfPrompt": "---\nCONTEXT: Generate p (body) in section \"h3-2-4\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Объяснить роль биометрической идентификации в обеспечении безопасности телемедицинских осмотров.\n\nAUDIENCE: IT-специалисты, руководители по безопасности | Level: expert | Pain points: предотвращение мошенничества, контроль доступа\n\nKEYWORDS: Naturally integrate: биометрическая идентификация, безопасность данных, контроль доступа\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 70, maxWords: 120 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n\nQUALITY CRITERIA:\n- Specific\n- Data-backed\n\nMANDATORY:\n- Упомянуть биометрию и её преимущества\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
+                    "taxonomy": "Supporting | Clarification",
+                    "attention": "Кратко объясните ключевую нюанс.",
+                    "intent": "Разъяснить нюанс или ограничение этой подтемы.",
+                    "audiences": "Практики; уровень: средний.",
+                    "selfPrompt": "Напишите абзац, который разъясняет ключевой нюанс, ограничение или условие этой подтемы. Держите его конкретным и полезным. Соблюдайте ограничения слов. Генерируйте необходимый контент здесь.",
                     "additionalData": {
                       "minWords": 70,
                       "maxWords": 120,
                       "actualContent": ""
-                    },
-                    "status": "checked"
+                    }
                   },
                   {
                     "id": "table-2-4-2",
                     "tag": "table",
                     "keywords": [
-                      "технологии безопасности",
-                      "сравнение методов",
-                      "телемедицина безопасность"
+                      "сравнительные данные",
+                      "метрики успеха"
                     ],
-                    "taxonomy": "Supporting",
-                    "attention": "Сравните различные технологии безопасности, используемые в телемедицинских предрейсовых осмотрах, в удобной таблице.",
-                    "intent": "Представить сравнение технологий безопасности (биометрия, видеофиксация, другие методы) для наглядного понимания их преимуществ и особенностей.",
-                    "audiences": "IT-специалисты, руководители по безопасности | Level: expert | Pain points: выбор оптимальных технологий безопасности",
-                    "selfPrompt": "---\nCONTEXT: Generate table with 3 columns and 4 rows in section \"h3-2-4\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Сравнить технологии безопасности в телемедицинских предрейсовых осмотрах.\n\nAUDIENCE: IT-специалисты, руководители по безопасности | Level: expert | Pain points: выбор оптимальных технологий безопасности\n\nKEYWORDS: Naturally integrate: технологии безопасности, сравнение методов, телемедицина безопасность\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 90, maxWords: 150 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for table\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n\nQUALITY CRITERIA:\n- Четкая структура\n- Информативность\n\nMANDATORY:\n- Включить биометрию, видеофиксацию и другие методы\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
+                    "taxonomy": "Data | Comparison table",
+                    "attention": "Четко обобщите сравнения или метрики.",
+                    "intent": "Представить компактные, сканируемые данные с заголовками.",
+                    "audiences": "Аналитические читатели; уровень: средний.",
+                    "selfPrompt": "Создайте компактную таблицу сравнения/данных с четкими заголовками. Определите значение каждого столбца и держите общий размер в пределах ограничений слов. Кратко обобщите инсайты. Генерируйте необходимый контент здесь.",
                     "additionalData": {
                       "minWords": 90,
                       "maxWords": 150,
                       "actualContent": ""
-                    },
-                    "status": "checked"
+                    }
                   },
                   {
                     "id": "p-2-4-3",
                     "tag": "p",
                     "keywords": [
-                      "противодействие мошенничеству",
-                      "безопасность телемедицины"
+                      "переход к следующему разделу"
                     ],
-                    "taxonomy": "Supporting",
-                    "attention": "Кратко подчеркните важность мер против мошенничества в телемедицинских осмотрах.",
-                    "intent": "Дать краткое описание мер, направленных на предотвращение мошенничества и обеспечение безопасности данных в телемедицине.",
-                    "audiences": "Руководители, специалисты по безопасности | Level: expert | Pain points: мошенничество, безопасность данных",
-                    "selfPrompt": "---\nCONTEXT: Generate short p (transition) in section \"h3-2-4\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Кратко описать меры противодействия мошенничеству в телемедицинских осмотрах.\n\nAUDIENCE: Руководители, специалисты по безопасности | Level: expert | Pain points: мошенничество, безопасность данных\n\nKEYWORDS: Naturally integrate: противодействие мошенничеству, безопасность телемедицины\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 5, maxWords: 15 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n\nQUALITY CRITERIA:\n- Кратко и ёмко\n\nMANDATORY:\n- Упомянуть меры против мошенничества\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
+                    "taxonomy": "Transitional | Micro-bridge",
+                    "attention": "Поддерживайте поток внутри подраздела.",
+                    "intent": "Предоставить короткий мост к вложенному H4.",
+                    "audiences": "Все читатели; уровень: общий.",
+                    "selfPrompt": "Напишите краткий переход, чтобы представить тему вложенного H4. Будьте краткими и целенаправленными. Генерируйте необходимый контент здесь.",
                     "additionalData": {
                       "minWords": 5,
                       "maxWords": 15,
                       "actualContent": ""
-                    },
-                    "status": "checked"
+                    }
                   },
                   {
                     "id": "h4-2-4-4",
                     "tag": "h4",
-                    "classification": "Guide",
                     "keywords": [
-                      "биометрия в телемедицине",
-                      "видеофиксация процедур",
-                      "безопасность данных"
+                      "технологические решения",
+                      "дистанционные осмотры",
+                      "практические аспекты"
                     ],
-                    "taxonomy": "Guide",
-                    "attention": "Углубитесь в детали биометрической идентификации и видеофиксации как ключевых элементов безопасности телемедицины.",
-                    "intent": "Дать подробное описание биометрической идентификации и видеофиксации, их роли и преимуществ в обеспечении безопасности предрейсовых осмотров.",
-                    "audiences": "IT-специалисты, специалисты по безопасности | Level: expert | Pain points: технические детали безопасности телемедицины",
-                    "selfPrompt": "---\nCONTEXT: Generate h4 in section \"h3-2-4\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Подробно описать биометрическую идентификацию и видеофиксацию как ключевые технологии безопасности.\n\nAUDIENCE: IT-специалисты, специалисты по безопасности | Level: expert | Pain points: технические детали безопасности телемедицины\n\nKEYWORDS: Naturally integrate: биометрия в телемедицине, видеофиксация процедур, безопасность данных\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 130, maxWords: 200 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for h4\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n\nQUALITY CRITERIA:\n- Data-backed\n- Specific\n- Actionable\n\nMANDATORY:\n- Упомянуть преимущества и технические детали\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n- Копирование текста дословно\n---",
+                    "taxonomy": "Guide | Nested subtopic",
+                    "attention": "Сосредоточьтесь на узком подзадаче.",
+                    "intent": "Углубиться в один точный угол H3.",
+                    "audiences": "Практики; уровень: средний до продвинутого.",
+                    "selfPrompt": "Разработайте подтему H4, которая строго соответствует H3. Предоставьте один, четко определенный угол с ясной ценностью. Избегайте перекрытия с соседним контентом. Соблюдайте лимиты слов. Генерируйте необходимый контент здесь.",
+                    "additionalData": {
+                      "minWords": 130,
+                      "maxWords": 200,
+                      "actualContent": ""
+                    },
                     "realContentStructure": [
                       {
                         "id": "p-2-4-4-1",
                         "tag": "p",
                         "keywords": [
-                          "биометрия",
-                          "идентификация водителей",
-                          "безопасность телемедицины"
+                          "конкретные детали",
+                          "практические примеры"
                         ],
-                        "taxonomy": "Supporting",
-                        "attention": "Поймите, как биометрия помогает точно идентифицировать водителей и повысить безопасность процедур.",
-                        "intent": "Объяснить роль биометрической идентификации в предотвращении подделок и обеспечении безопасности телемедицинских осмотров.",
-                        "audiences": "IT-специалисты, специалисты по безопасности | Level: expert | Pain points: предотвращение мошенничества, точность идентификации",
-                        "selfPrompt": "---\nCONTEXT: Generate p (body) in section \"h4-2-4-4\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Объяснить роль биометрической идентификации в безопасности телемедицины.\n\nAUDIENCE: IT-специалисты, специалисты по безопасности | Level: expert | Pain points: предотвращение мошенничества, точность идентификации\n\nKEYWORDS: Naturally integrate: биометрия, идентификация водителей, безопасность телемедицины\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 60, maxWords: 105 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n\nQUALITY CRITERIA:\n- Specific\n- Data-backed\n\nMANDATORY:\n- Упомянуть преимущества биометрии\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
+                        "taxonomy": "Supporting | Micro-detail",
+                        "attention": "Объясните одну деталь.",
+                        "intent": "Осветить деталь, важную для реализации.",
+                        "audiences": "Практики; уровень: средний.",
+                        "selfPrompt": "Напишите абзац, объясняющий одну деталь, важную для подтемы H4. Держите его практическим и конкретным. Соблюдайте ограничения слов. Генерируйте необходимый контент здесь.",
                         "additionalData": {
                           "minWords": 60,
                           "maxWords": 105,
                           "actualContent": ""
-                        },
-                        "status": "checked"
+                        }
                       },
                       {
                         "id": "ol-2-4-4-2",
                         "tag": "ol",
                         "keywords": [
-                          "преимущества видеофиксации",
-                          "контроль качества осмотров",
-                          "безопасность данных"
+                          "шаги внедрения",
+                          "практические советы"
                         ],
-                        "taxonomy": "Supporting",
-                        "attention": "Изучите основные преимущества видеофиксации в телемедицинских предрейсовых осмотрах.",
-                        "intent": "Представить ключевые преимущества видеофиксации в виде нумерованного списка для удобства восприятия.",
-                        "audiences": "Специалисты по безопасности, руководители | Level: expert | Pain points: контроль качества, безопасность данных",
-                        "selfPrompt": "---\nCONTEXT: Generate ol with 3-5 items in section \"h4-2-4-4\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Представить преимущества видеофиксации в телемедицинских осмотрах в удобном списке.\n\nAUDIENCE: Специалисты по безопасности, руководители | Level: expert | Pain points: контроль качества, безопасность данных\n\nKEYWORDS: Naturally integrate: преимущества видеофиксации, контроль качества осмотров, безопасность данных\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 45, maxWords: 75 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for ordered list\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n\nQUALITY CRITERIA:\n- Конкретные пункты\n- Легко читаемые\n\nMANDATORY:\n- Включить ключевые преимущества\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
+                        "taxonomy": "List | Ordered steps",
+                        "attention": "Предоставьте короткую, упорядоченную процедуру.",
+                        "intent": "Перечислите 3–5 шагов в логическом порядке.",
+                        "audiences": "Реализаторы; уровень: средний.",
+                        "selfPrompt": "Создайте упорядоченный список с 3–5 шагами в логической последовательности. Держите элементы краткими и точными. Соблюдайте ограничения слов. Генерируйте необходимый контент здесь.",
                         "additionalData": {
                           "minWords": 45,
                           "maxWords": 75,
                           "actualContent": ""
-                        },
-                        "status": "checked"
+                        }
                       },
                       {
                         "id": "blockquote-2-4-4-3",
                         "tag": "blockquote",
                         "keywords": [
                           "экспертное мнение",
-                          "безопасность телемедицины",
-                          "эффективность видеофиксации"
+                          "доказательства"
                         ],
-                        "taxonomy": "Supporting",
-                        "attention": "Приведите экспертное мнение, подтверждающее эффективность видеофиксации и биометрии в телемедицине.",
-                        "intent": "Подкрепить технические описания цитатой или мнением эксперта, усиливающим доверие к технологиям безопасности.",
-                        "audiences": "Руководители, специалисты по безопасности | Level: expert | Pain points: сомнения в эффективности технологий",
-                        "selfPrompt": "---\nCONTEXT: Generate blockquote in section \"h4-2-4-4\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Подкрепить описание технологий безопасности экспертным мнением или цитатой.\n\nAUDIENCE: Руководители, специалисты по безопасности | Level: expert | Pain points: сомнения в эффективности технологий\n\nKEYWORDS: Naturally integrate: экспертное мнение, безопасность телемедицины, эффективность видеофиксации\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 20, maxWords: 40 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for blockquote\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n\nQUALITY CRITERIA:\n- Убедительность\n- Краткость\n\nMANDATORY:\n- Включить цитату или мнение эксперта\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
+                        "taxonomy": "Supporting | Expert quote",
+                        "attention": "Используйте целевую, повышающую доверие цитату.",
+                        "intent": "Подтвердить утверждение H4 авторитетом.",
+                        "audiences": "Скептически настроенные читатели; уровень: средний.",
+                        "selfPrompt": "Вставьте короткую, целевую цитату, которая подтверждает утверждение H4. Предпочтительно используйте внутренние источники; используйте внешние, если необходимо. Один-два предложения. Соблюдайте ограничения. Генерируйте необходимый контент здесь.",
                         "additionalData": {
                           "minWords": 20,
                           "maxWords": 40,
                           "actualContent": ""
-                        },
-                        "status": "checked"
+                        }
                       }
-                    ],
-                    "status": "checked"
+                    ]
                   }
-                ],
-                "status": "checked"
+                ]
               }
-            ],
-            "status": "checked"
+            ]
           },
           {
             "id": "FAQ",
             "tag": "h2",
-            "classification": "FAQ",
+            "classification": "semantic",
             "keywords": [
-              "телемедицина вопросы",
-              "предрейсовые медосмотры FAQ",
-              "часто задаваемые вопросы телемедицина"
+              "телемедицина",
+              "предрейсовые медосмотры",
+              "вопросы и ответы",
+              "дистанционные осмотры",
+              "польза телемедицины",
+              "экономия затрат",
+              "безопасность водителей"
             ],
-            "taxonomy": "FAQ",
-            "attention": "Ответьте на самые популярные вопросы о телемедицине и предрейсовых медосмотрах, чтобы развеять сомнения и помочь принять решение.",
-            "intent": "Предоставить пользователям исчерпывающие ответы на часто задаваемые вопросы, связанные с телемедициной в предрейсовых медосмотрах, облегчая понимание и принятие решения.",
-            "audiences": "Руководители и специалисты по охране труда транспортных компаний | Level: beginner/intermediate | Pain points: неопределённость, сомнения, необходимость быстрого получения информации",
-            "selfPrompt": "This FAQ section is designed for generating relevant questions and answers. To create meaningful questions, you should adopt the perspective of the user, which requires analyzing the existing content and understanding the target audience. Consider what three questions would be most interesting and useful for users within the context of the given topic. Then, generate those three questions and organize each one under an h3 heading, ensuring that each question is paired with a well-crafted answer.",
+            "taxonomy": "FAQ | Q&A section",
+            "attention": "Антиципируйте основные вопросы и дайте краткие ответы.",
+            "intent": "Ответить на наиболее актуальные вопросы пользователей с ясностью.",
+            "audiences": "Потенциальные клиенты и пользователи; уровень: начинающий-средний.",
+            "selfPrompt": "Этот H2 FAQ вводит целевую область вопросов и ответов. Сгенерируйте 3 высокоэффективных вопроса, соответствующих теме страницы и потребностям аудитории. Каждый вопрос должен быть H3 с кратким ответом в абзаце под ним. Избегайте повторения контента из других разделов. Соблюдайте минимальные/максимальные слова для каждого элемента. Сгенерируйте необходимый контент здесь.",
             "designDescription": "",
             "connectedDesignSectionId": "",
             "additionalData": {
@@ -6302,149 +6515,142 @@ export const contentData = {
                 "id": "p-FAQ",
                 "tag": "p",
                 "keywords": [
-                  "телемедицина информация",
-                  "основы телемедицины",
-                  "предрейсовые осмотры"
+                  "введение в FAQ",
+                  "польза вопросов и ответов",
+                  "информация для пользователей"
                 ],
-                "taxonomy": "Supporting",
-                "attention": "Введение в раздел FAQ с кратким описанием его цели и пользы для пользователя.",
-                "intent": "Объяснить, что в разделе представлены ответы на ключевые вопросы по телемедицине и предрейсовым медосмотрам.",
-                "audiences": "Руководители и специалисты по охране труда | Level: beginner | Pain points: необходимость быстрого понимания темы\n",
-                "selfPrompt": "---\nCONTEXT: Generate p (intro) in section \"FAQ\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Ввести пользователя в раздел FAQ, объяснить его пользу и цель.\n\nAUDIENCE: Руководители и специалисты по охране труда | Level: beginner | Pain points: необходимость быстрого понимания темы\n\nKEYWORDS: Naturally integrate: телемедицина информация, основы телемедицины, предрейсовые осмотры\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 70, maxWords: 120 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB\n- External KB\n\nQUALITY CRITERIA:\n- Ясность\n- Краткость\n\nMANDATORY:\n- Объяснить цель FAQ\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
+                "taxonomy": "Supporting | FAQ intro",
+                "attention": "Установите ожидания для формата вопросов и ответов.",
+                "intent": "Кратко представить, как FAQ помогает пользователям.",
+                "audiences": "Все читатели; уровень: общий.",
+                "selfPrompt": "Напишите короткий абзац, представляющий цель FAQ и как его использовать. Сделайте его ясным и ориентированным на пользователя. Соблюдайте ограничения по словам. Сгенерируйте необходимый контент здесь.",
                 "additionalData": {
                   "minWords": 70,
                   "maxWords": 120,
                   "actualContent": ""
-                },
-                "status": "checked"
+                }
               },
               {
                 "id": "h3-FAQ-1",
                 "tag": "h3",
-                "classification": "FAQ",
                 "keywords": [
                   "как работает телемедицина",
-                  "процесс предрейсового осмотра",
-                  "телемедицина для водителей"
+                  "предрейсовые медосмотры",
+                  "дистанционные осмотры"
                 ],
-                "taxonomy": "FAQ",
-                "attention": "Узнайте, как именно проходит предрейсовый медосмотр с использованием телемедицины.",
-                "intent": "Дать подробный, но понятный ответ на вопрос о том, как работает телемедицина в контексте предрейсовых осмотров водителей.",
-                "audiences": "Руководители и специалисты по охране труда | Level: beginner | Pain points: непонимание процесса телемедицины",
-                "selfPrompt": "---\nCONTEXT: Generate h3 question and p answer in section \"FAQ\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Объяснить процесс работы телемедицины для предрейсовых медосмотров.\n\nAUDIENCE: Руководители и специалисты по охране труда | Level: beginner | Pain points: непонимание процесса телемедицины\n\nKEYWORDS: Naturally integrate: как работает телемедицина, процесс предрейсового осмотра, телемедицина для водителей\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 160, maxWords: 240 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for h3 and paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Ускорение предрейсовых медицинских осмотров\n- External KB\n\nQUALITY CRITERIA:\n- Ясность\n- Конкретика\n\nMANDATORY:\n- Описать процесс с оборудованием и дистанционным контролем\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
+                "taxonomy": "FAQ | Question heading",
+                "attention": "Сформулируйте высокоактуальный вопрос.",
+                "intent": "Задать распространенный, высокоэффективный вопрос пользователей.",
+                "audiences": "Потенциальные клиенты и пользователи; уровень: начинающий.",
+                "selfPrompt": "Создайте вопрос H3, который отражает распространенную, высокоэффективную проблему, вытекающую из темы страницы и аудитории. Держите его прямым и конкретным. Сгенерируйте необходимый контент здесь.",
+                "additionalData": {
+                  "minWords": 160,
+                  "maxWords": 240,
+                  "actualContent": ""
+                },
                 "realContentStructure": [
                   {
                     "id": "p-FAQ-1-1",
                     "tag": "p",
                     "keywords": [
-                      "процесс телемедицины",
-                      "предрейсовый осмотр",
-                      "удалённый медицинский контроль"
+                      "ответ на вопрос",
+                      "информация о телемедицине",
+                      "польза для водителей"
                     ],
-                    "taxonomy": "Supporting",
-                    "attention": "Поймите, как проходит удалённый предрейсовый медосмотр с помощью телемедицины.",
-                    "intent": "Дать подробное описание процесса телемедицинского предрейсового осмотра, включая использование оборудования и дистанционный контроль врачей.",
-                    "audiences": "Руководители и специалисты по охране труда | Level: beginner | Pain points: непонимание процесса телемедицины",
-                    "selfPrompt": "---\nCONTEXT: Generate p (body) in section \"h3-FAQ-1\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Подробно описать процесс телемедицинского предрейсового осмотра.\n\nAUDIENCE: Руководители и специалисты по охране труда | Level: beginner | Pain points: непонимание процесса телемедицины\n\nKEYWORDS: Naturally integrate: процесс телемедицины, предрейсовый осмотр, удалённый медицинский контроль\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 70, maxWords: 120 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Ускорение предрейсовых медицинских осмотров\n\nQUALITY CRITERIA:\n- Ясность\n- Конкретика\n\nMANDATORY:\n- Описать оборудование и дистанционный контроль\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
+                    "taxonomy": "FAQ | Answer",
+                    "attention": "Ответьте четко в 1–2 коротких абзацах.",
+                    "intent": "Предоставить точный, удобный для пользователя ответ.",
+                    "audiences": "Начинающие; уровень: начинающий-средний.",
+                    "selfPrompt": "Напишите краткий ответ, который непосредственно отвечает на вопрос. Используйте простой, полезный язык. Включите один конкретный пример или ограничение, если это применимо. Соблюдайте минимальные/максимальные слова. Сгенерируйте необходимый контент здесь.",
                     "additionalData": {
                       "minWords": 70,
                       "maxWords": 120,
                       "actualContent": ""
-                    },
-                    "status": "checked"
+                    }
                   }
-                ],
-                "status": "checked"
+                ]
               },
               {
                 "id": "h3-FAQ-2",
                 "tag": "h3",
-                "classification": "FAQ",
                 "keywords": [
-                  "законность телемедицины",
-                  "соответствие нормативам",
-                  "правовые аспекты телемедицины"
+                  "преимущества телемедицины",
+                  "сравнение с традиционными осмотрами",
+                  "экономия времени"
                 ],
-                "taxonomy": "FAQ",
-                "attention": "Убедитесь, что телемедицина для предрейсовых осмотров соответствует законодательству и нормативам.",
-                "intent": "Ответить на вопрос о законности использования телемедицины для предрейсовых медосмотров и ее соответствии нормативным требованиям.",
-                "audiences": "Руководители, юристы, compliance-специалисты | Level: intermediate | Pain points: сомнения в легитимности телемедицины",
-                "selfPrompt": "---\nCONTEXT: Generate h3 question and p answer in section \"FAQ\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Разъяснить правовые аспекты и законность телемедицины для предрейсовых осмотров.\n\nAUDIENCE: Руководители, юристы, compliance-специалисты | Level: intermediate | Pain points: сомнения в легитимности телемедицины\n\nKEYWORDS: Naturally integrate: законность телемедицины, соответствие нормативам, правовые аспекты телемедицины\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 160, maxWords: 240 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for h3 and paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n\nQUALITY CRITERIA:\n- Ясность\n- Конкретика\n\nMANDATORY:\n- Упомянуть нормативные акты и безопасность\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
+                "taxonomy": "FAQ | Question heading",
+                "attention": "Задайте еще один вопрос с высоким приоритетом для пользователей.",
+                "intent": "Задать отдельный вопрос, который избегает перекрытия.",
+                "audiences": "Потенциальные клиенты и пользователи; уровень: начинающий-средний.",
+                "selfPrompt": "Создайте вопрос H3, который отличается от первого и касается другого важного вопроса. Держите его ясным и конкретным. Сгенерируйте необходимый контент здесь.",
+                "additionalData": {
+                  "minWords": 160,
+                  "maxWords": 240,
+                  "actualContent": ""
+                },
                 "realContentStructure": [
                   {
                     "id": "p-FAQ-2-1",
                     "tag": "p",
                     "keywords": [
-                      "законность телемедицины",
-                      "нормативы",
-                      "безопасность данных"
+                      "ответ на вопрос",
+                      "польза телемедицины",
+                      "сравнение с традиционными методами"
                     ],
-                    "taxonomy": "Supporting",
-                    "attention": "Поймите, как телемедицина соответствует законодательству и обеспечивает безопасность данных.",
-                    "intent": "Объяснить, что телемедицина для предрейсовых осмотров полностью соответствует нормативным требованиям и обеспечивает безопасность процедур.",
-                    "audiences": "Руководители, юристы, compliance-специалисты | Level: intermediate | Pain points: сомнения в легитимности телемедицины",
-                    "selfPrompt": "---\nCONTEXT: Generate p (body) in section \"h3-FAQ-2\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Объяснить соответствие телемедицины законодательству и безопасность данных.\n\nAUDIENCE: Руководители, юристы, compliance-специалисты | Level: intermediate | Pain points: сомнения в легитимности телемедицины\n\nKEYWORDS: Naturally integrate: законность телемедицины, нормативы, безопасность данных\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 65, maxWords: 115 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Законодательное соответствие и безопасность\n\nQUALITY CRITERIA:\n- Ясность\n- Конкретика\n\nMANDATORY:\n- Упомянуть нормативные акты\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
+                    "taxonomy": "FAQ | Answer",
+                    "attention": "Предоставьте краткий, полезный ответ.",
+                    "intent": "Разрешить вопрос с ясностью и точностью.",
+                    "audiences": "Начинающие; уровень: начинающий-средний.",
+                    "selfPrompt": "Напишите ясный, краткий ответ, который разрешает вопрос без двусмысленности. Используйте простой язык и практическое оформление. Соблюдайте минимальные/максимальные слова. Сгенерируйте необходимый контент здесь.",
                     "additionalData": {
                       "minWords": 65,
                       "maxWords": 115,
                       "actualContent": ""
-                    },
-                    "status": "checked"
+                    }
                   }
-                ],
-                "status": "checked"
+                ]
               },
               {
                 "id": "h3-FAQ-3",
                 "tag": "h3",
-                "classification": "FAQ",
                 "keywords": [
-                  "экономия на медосмотрах",
-                  "эффективность телемедицины",
-                  "сокращение времени осмотра"
+                  "безопасность водителей",
+                  "дистанционные осмотры",
+                  "законодательные аспекты"
                 ],
-                "taxonomy": "FAQ",
-                "attention": "Узнайте, какую экономию и эффективность дает телемедицина при предрейсовых медосмотрах.",
-                "intent": "Ответить на вопрос о том, как телемедицина помогает сократить затраты и время на предрейсовые медосмотры водителей.",
-                "audiences": "Руководители транспортных компаний, специалисты по охране труда | Level: intermediate | Pain points: высокая стоимость и длительность осмотров",
-                "selfPrompt": "---\nCONTEXT: Generate h3 question and p answer in section \"FAQ\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Показать экономическую выгоду и эффективность телемедицины для предрейсовых осмотров.\n\nAUDIENCE: Руководители транспортных компаний, специалисты по охране труда | Level: intermediate | Pain points: высокая стоимость и длительность осмотров\n\nKEYWORDS: Naturally integrate: экономия на медосмотрах, эффективность телемедицины, сокращение времени осмотра\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 160, maxWords: 240 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for h3 and paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Ускорение предрейсовых медицинских осмотров\n- External KB: Экономия до 67%, время осмотра 2 минуты\n\nQUALITY CRITERIA:\n- Data-backed\n- Specific\n\nMANDATORY:\n- Упомянуть конкретные цифры экономии и времени\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
+                "taxonomy": "FAQ | Question heading",
+                "attention": "Сосредоточьтесь на блокировщике принятия решения.",
+                "intent": "Задать вопрос, который касается последней нерешительности.",
+                "audiences": "Потенциальные клиенты; уровень: начинающий-средний.",
+                "selfPrompt": "Создайте вопрос H3, который касается распространенного блокировщика или нерешительности перед конверсией. Держите его целенаправленным и отличным от предыдущих вопросов. Сгенерируйте необходимый контент здесь.",
+                "additionalData": {
+                  "minWords": 160,
+                  "maxWords": 240,
+                  "actualContent": ""
+                },
                 "realContentStructure": [
                   {
                     "id": "p-FAQ-3-1",
                     "tag": "p",
                     "keywords": [
-                      "экономия затрат",
-                      "сокращение времени",
-                      "телемедицина эффективность"
+                      "ответ на вопрос",
+                      "польза телемедицины",
+                      "примеры успешного применения"
                     ],
-                    "taxonomy": "Supporting",
-                    "attention": "Поймите, как телемедицина снижает затраты и ускоряет предрейсовые медосмотры.",
-                    "intent": "Дать конкретные данные и примеры экономии времени и денег при использовании телемедицины для предрейсовых осмотров.",
-                    "audiences": "Руководители транспортных компаний, специалисты по охране труда | Level: intermediate | Pain points: высокая стоимость и длительность осмотров",
-                    "selfPrompt": "---\nCONTEXT: Generate p (body) in section \"h3-FAQ-3\" of page \"Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!\"\n\nGOAL: Показать конкретные данные по экономии и эффективности телемедицины.\n\nAUDIENCE: Руководители транспортных компаний, специалисты по охране труда | Level: intermediate | Pain points: высокая стоимость и длительность осмотров\n\nKEYWORDS: Naturally integrate: экономия затрат, сокращение времени, телемедицина эффективность\nWARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 75, maxWords: 130 - STRICT COMPLIANCE REQUIRED\n\nSTRUCTURE: Markdown/MDX syntax for paragraph\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\n\nKNOWLEDGE SOURCES:\n- Internal KB: Ускорение предрейсовых медицинских осмотров\n- External KB: Экономия до 67%, время осмотра 2 минуты\n\nQUALITY CRITERIA:\n- Data-backed\n- Specific\n\nMANDATORY:\n- Упомянуть цифры экономии и времени\n\nFORBIDDEN:\n- Exceeding maxWords\n- Keyword stuffing\n---",
+                    "taxonomy": "FAQ | Answer",
+                    "attention": "Предоставьте успокаивающий, конкретный ответ.",
+                    "intent": "Помочь читателям уверенно двигаться вперед.",
+                    "audiences": "Потенциальные клиенты; уровень: начинающий-средний.",
+                    "selfPrompt": "Напишите успокаивающий ответ, который разрешает нерешительность с конкретикой (преимущества, ограничения или пример). Сделайте его практическим и кратким. Соблюдайте минимальные/максимальные слова. Сгенерируйте необходимый контент здесь.",
                     "additionalData": {
                       "minWords": 75,
                       "maxWords": 130,
                       "actualContent": ""
-                    },
-                    "status": "checked"
+                    }
                   }
-                ],
-                "status": "checked"
+                ]
               }
-            ],
-            "status": "checked"
-          }
-        ],
-        "isReadyDraftForPerplexity": true,
-        "sections": [
-          {
-            "id": "h2-1",
-            "tempMDXContent": "<h2>Телемедицина: инновационный подход к оптимизации предрейсовых медосмотров водителей</h2>\n<p>В современном транспортном бизнесе предрейсовые медосмотры играют ключевую роль в обеспечении безопасности и соблюдении законодательства. Однако традиционные методы проверки здоровья водителей часто сопровождаются длительным временем ожидания и значительными затратами. Именно здесь на помощь приходит телемедицина — технология, которая кардинально меняет подход к предрейсовым медицинским осмотрам.</p>\n<p>Телемедицинские технологии позволяют значительно ускорить процесс проверки состояния водителей, интегрируясь с сертифицированным медицинским оборудованием и обеспечивая удалённый контроль специалистов. Это не только сокращает простой транспортных средств, но и повышает производительность автопарка за счёт оперативного выявления возможных противопоказаний к работе.</p>\n<p>Кроме того, внедрение телемедицины приносит ощутимую экономию времени и денег. Согласно последним исследованиям, использование телемедицинских решений может снизить стоимость предрейсовых осмотров до 67%, что существенно уменьшает расходы компании без потери качества контроля. Удалённый мониторинг состояния здоровья водителей обеспечивает своевременное реагирование и повышает уровень безопасности на дорогах.</p>\n<p>Телемедицина также способствует упрощению соблюдения нормативных требований благодаря автоматизации сбора и хранения медицинских данных, что минимизирует ошибки и повышает прозрачность процессов. В итоге компании получают не только эффективный инструмент для оптимизации медосмотров, но и конкурентное преимущество на рынке за счёт внедрения современных технологий.</p>\n<p>Таким образом, использование телемедицины для предрейсовых медосмотров — это стратегически важное решение, позволяющее повысить безопасность, снизить издержки и оптимизировать бизнес-процессы в транспортной отрасли.</p>"
-          },
-          {
-            "id": "h2-2",
-            "tempMDXContent": "<h2>Законодательное соответствие и безопасность телемедицины в предрейсовых медосмотрах</h2>\n<p>Внедрение телемедицинских решений для предрейсовых медосмотров требует строгого соблюдения нормативных требований и обеспечения безопасности процедур. Законодательное соответствие телемедицины — ключевой фактор, гарантирующий легитимность и надежность таких осмотров. В России регулирование данной сферы осуществляется на основании федеральных нормативных актов, среди которых особое место занимает Федеральный налоговый приказ № ЕД-7-26/116@. Этот документ устанавливает требования к организации и проведению телемедицинских осмотров, включая обязательную официальную регистрацию данных и соблюдение стандартов качества.</p>\n<p>Компания USAUTO строго придерживается всех нормативов телемедицины, обеспечивая официальную регистрацию медицинских данных и прозрачность процедур. Это позволяет не только соответствовать законодательству, но и повышать доверие со стороны контролирующих органов и клиентов. Кроме того, использование сертифицированного оборудования и программного обеспечения гарантирует точность и достоверность результатов предрейсовых осмотров, что критично для безопасности перевозок и здоровья водителей.</p>\n<p>Безопасность предрейсовых осмотров в телемедицинском формате обеспечивается комплексом современных технологий. Среди них ключевую роль играют биометрическая идентификация водителей и видеофиксация осмотров. Биометрия помогает точно определить личность каждого водителя, исключая возможность подмены или мошенничества, а видеофиксация фиксирует весь процесс осмотра, обеспечивая прозрачность и контроль качества. Эти меры позволяют не только защитить данные от несанкционированного доступа, но и повысить уровень доверия к системе телемедицины.</p>\n<p>Таким образом, телемедицинские решения USAUTO отвечают самым высоким стандартам безопасности и законодательным требованиям, что делает их надежным инструментом для оптимизации предрейсовых медосмотров. Внедрение таких технологий помогает транспортным компаниям минимизировать риски, связанные с нарушениями в процессе медосмотров, и обеспечивает комплексный контроль за состоянием здоровья водителей.</p>\n<h3>Нормативное регулирование телемедицинских предрейсовых осмотров</h3>\n<p>Федеральный налоговый приказ № ЕД-7-26/116@ играет ключевую роль в регулировании телемедицины для предрейсовых осмотров. Этот приказ устанавливает обязательные требования к процедурам, включая порядок проведения дистанционных медицинских проверок, стандарты оформления и хранения медицинской документации, а также требования к квалификации специалистов, участвующих в осмотрах. Благодаря этому документу телемедицинские услуги приобретают официальный статус и могут использоваться в рамках законодательства без риска для компаний и водителей.</p>\n<ul>\n  <li>Обязательная регистрация всех данных предрейсовых медосмотров в единой системе учета.</li>\n  <li>Использование сертифицированного медицинского оборудования и программного обеспечения.</li>\n  <li>Обеспечение конфиденциальности и защиты персональных данных водителей.</li>\n  <li>Требования к квалификации и лицензированию медицинских специалистов, проводящих осмотры.</li>\n  <li>Установление порядка взаимодействия между транспортными компаниями и медицинскими организациями.</li>\n</ul>\n<p>Соблюдение этих нормативных требований критически важно для законности телемедицины. Только при полном соответствии установленным стандартам можно гарантировать легитимность процедур, а также обеспечить безопасность и надежность предрейсовых медосмотров. Несоблюдение нормативов может привести к юридическим рискам и снижению доверия со стороны контролирующих органов.</p>\n<pre><code>Приказ № ЕД-7-26/116@ от 15.03.2023 г.:\n\"Все телемедицинские предрейсовые осмотры должны проводиться с использованием сертифицированных систем, обеспечивающих официальную регистрацию и хранение данных в соответствии с требованиями законодательства РФ.\"</code></pre>\n<h3>Технологии безопасности в телемедицинских предрейсовых осмотрах</h3>\n<p>Безопасность телемедицины — это не только защита данных, но и обеспечение достоверности и непрерывности контроля качества предрейсовых осмотров. Биометрическая идентификация водителей является одним из самых эффективных методов подтверждения личности и предотвращения мошенничества. Использование отпечатков пальцев, распознавания лиц или радужной оболочки глаза позволяет исключить подмену и гарантировать, что осмотр проводится именно с тем водителем, который должен быть проверен. Это значительно повышает уровень безопасности данных и контроля доступа.</p>\n<table>\n  <thead>\n    <tr>\n      <th>Технология</th>\n      <th>Преимущества</th>\n      <th>Особенности</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Биометрическая идентификация</td>\n      <td>Точная идентификация, предотвращение подделок</td>\n      <td>Использование уникальных биометрических данных (отпечатки, лицо)</td>\n    </tr>\n    <tr>\n      <td>Видеофиксация осмотров</td>\n      <td>Контроль качества, доказательная база</td>\n      <td>Запись процесса осмотра с хранением в защищенном формате</td>\n    </tr>\n    <tr>\n      <td>Шифрование данных</td>\n      <td>Защита от несанкционированного доступа</td>\n      <td>Использование современных протоколов безопасности</td>\n    </tr>\n    <tr>\n      <td>Двухфакторная аутентификация</td>\n      <td>Дополнительный уровень защиты доступа</td>\n      <td>Комбинация пароля и биометрии или SMS-кода</td>\n    </tr>\n  </tbody>\n</table>\n<p>В дополнение к биометрии и видеофиксации, телемедицинские платформы применяют комплексные меры противодействия мошенничеству. Это включает мониторинг аномалий, автоматическую проверку целостности данных и строгий контроль доступа к информации. Такие меры обеспечивают высокий уровень безопасности телемедицины и защищают интересы как транспортных компаний, так и самих водителей.</p> \n<p>В итоге, сочетание нормативного соответствия и современных технологий безопасности делает телемедицинские предрейсовые осмотры USAUTO надежным и эффективным инструментом для обеспечения здоровья и безопасности на дорогах.</p>"
+            ]
           }
         ]
       }
@@ -8630,5 +8836,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-08T22:28:06.861Z";
+export const lastUpdated = "2025-10-09T18:10:08.148Z";
 export const generatedBy = "menu-persist-api";
