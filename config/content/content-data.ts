@@ -5462,18 +5462,18 @@ export const contentData = {
             "tag": "h2",
             "classification": "semantic",
             "keywords": [
-              "Generate 5-7 section-level keywords inherited by children"
+              "Generate 5-7 section-level keywords that introduce the topic and set context for child elements"
             ],
             "taxonomy": "Guide | Section overview",
-            "attention": "Set clear context and value in one sentence.",
-            "intent": "Introduce the topic and prepare readers for the main takeaways.",
-            "audiences": "Decision-makers and practitioners; level: intermediate.",
-            "selfPrompt": "Create the H2 section overview that frames the page topic, states the value, and aligns with user intent. Provide a strong, succinct setup and ensure a logical transition into subsequent subsections. Naturally integrate the listed keywords without stuffing. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
+            "attention": "Establish clear value and context in the opening.",
+            "intent": "Introduce the topic, frame the core message, and prepare readers for detailed content.",
+            "audiences": "General business audience and decision-makers; level: beginner-to-intermediate.",
+            "selfPrompt": "Create an H2 introduction section that establishes the topic, communicates immediate value, and sets expectations. Use clear, accessible language. Naturally integrate the listed keywords without stuffing. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
             "designDescription": "",
             "connectedDesignSectionId": "",
             "additionalData": {
-              "minWords": 300,
-              "maxWords": 450,
+              "minWords": 150,
+              "maxWords": 250,
               "actualContent": ""
             },
             "realContentStructure": [
@@ -5481,16 +5481,16 @@ export const contentData = {
                 "id": "p-1-1",
                 "tag": "p",
                 "keywords": [
-                  "Generate 2-3 relevant keywords for this introductory paragraph."
+                  "Generate 2-3 introductory keywords aligned with the H2 topic."
                 ],
                 "taxonomy": "Supporting | Intro paragraph",
-                "attention": "Hook readers with a concrete benefit.",
-                "intent": "Set immediate context and clarify why this matters.",
+                "attention": "Hook readers with clear, immediate value.",
+                "intent": "Set context and explain why this topic matters to the audience.",
                 "audiences": "General business audience; level: beginner-to-intermediate.",
-                "selfPrompt": "Write an introductory paragraph that cleanly explains the scope and value of the topic. Use actionable, specific statements and avoid fluff. Naturally integrate the provided keywords. Respect minWords/maxWords in additionalData. Generate the necessary content here.",
+                "selfPrompt": "Write an introductory paragraph that clearly explains the topic scope and its relevance. Use specific, actionable language. Naturally integrate the provided keywords. Respect minWords/maxWords in additionalData. Generate the necessary content here.",
                 "additionalData": {
-                  "minWords": 90,
-                  "maxWords": 160,
+                  "minWords": 100,
+                  "maxWords": 180,
                   "actualContent": ""
                 }
               },
@@ -5498,84 +5498,16 @@ export const contentData = {
                 "id": "p-1-2",
                 "tag": "p",
                 "keywords": [
-                  "Generate 2-3 supporting keywords aligned with the main topic."
+                  "Generate 2-3 supporting keywords that deepen the introduction."
                 ],
                 "taxonomy": "Supporting | Context paragraph",
-                "attention": "Highlight a pressing pain point.",
-                "intent": "Deepen context with one concrete angle or use case.",
+                "attention": "Provide concrete context or a relatable scenario.",
+                "intent": "Expand on the introduction with a specific angle or use case.",
                 "audiences": "Practitioners and managers; level: intermediate.",
-                "selfPrompt": "Write a context-building paragraph that introduces one concrete angle (challenge, scenario, or use case). Be specific and useful. Integrate keywords naturally. Respect min/max word constraints. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 70,
-                  "maxWords": 130,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "p-1-3",
-                "tag": "p",
-                "keywords": [
-                  "Generate 1-2 transition keywords."
-                ],
-                "taxonomy": "Transitional | Separator",
-                "attention": "Smoothly transition to the next idea.",
-                "intent": "Provide a brief transition or micro-summary.",
-                "audiences": "All readers; level: general.",
-                "selfPrompt": "Write a short transition line (separator) to guide readers to the next block. Keep it concise and purposeful. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 5,
-                  "maxWords": 15,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "blockquote-1-4",
-                "tag": "blockquote",
-                "keywords": [
-                  "Generate 1-2 keywords tied to authority or evidence."
-                ],
-                "taxonomy": "Supporting | Evidence quote",
-                "attention": "Deliver a proof point or expert angle.",
-                "intent": "Reinforce credibility with a relevant quote.",
-                "audiences": "Skeptical readers; level: intermediate.",
-                "selfPrompt": "Insert a concise, relevant quote that reinforces the section’s claim. Prefer Internal KB as the source; if unavailable, use External KB. One to two sentences. Cite the perspective (internal expertise or external insight). Respect word constraints. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 25,
-                  "maxWords": 45,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "p-1-5",
-                "tag": "p",
-                "keywords": [
-                  "Generate 2-3 value-centric keywords."
-                ],
-                "taxonomy": "Supporting | Value paragraph",
-                "attention": "State a clear, user-centric value.",
-                "intent": "Summarize the benefit and set up the next section.",
-                "audiences": "Decision-makers; level: intermediate.",
-                "selfPrompt": "Write a value-focused paragraph that summarizes what readers gain and prepares them for the next part. Keep it concrete and relevant. Respect minWords/maxWords. Generate the necessary content here.",
+                "selfPrompt": "Write a context-building paragraph that introduces one concrete scenario, challenge, or application. Be specific and practical. Integrate keywords naturally. Respect min/max word constraints. Generate the necessary content here.",
                 "additionalData": {
                   "minWords": 60,
-                  "maxWords": 110,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "ul-1-6",
-                "tag": "ul",
-                "keywords": [
-                  "Generate 2-3 list-related keywords."
-                ],
-                "taxonomy": "List | Key takeaways",
-                "attention": "Make the content scannable.",
-                "intent": "Provide 3–5 concise, actionable bullets.",
-                "audiences": "Busy readers; level: general.",
-                "selfPrompt": "Create a concise unordered list with 3–5 items. Each item should be one sentence and deliver a practical takeaway. Avoid redundancy and keep a consistent style. Respect word constraints. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 40,
-                  "maxWords": 70,
+                  "maxWords": 120,
                   "actualContent": ""
                 }
               }
@@ -5586,18 +5518,18 @@ export const contentData = {
             "tag": "h2",
             "classification": "semantic",
             "keywords": [
-              "Generate 5-7 section-level keywords to guide h3/h4 children."
+              "Generate 5-7 section-level keywords focused on technical concepts and foundational knowledge"
             ],
-            "taxonomy": "Guide | Core section",
-            "attention": "Focus on concrete, high-value insights.",
-            "intent": "Deliver the main body of actionable, expert information.",
-            "audiences": "Practitioners and technical stakeholders; level: intermediate-to-advanced.",
-            "selfPrompt": "Create the core H2 section that delivers actionable, specific, and data-backed insights. Structure content for clarity and depth. Avoid overlap with previous sections. Integrate keywords naturally. Respect minWords/maxWords. Generate the necessary content here.",
+            "taxonomy": "Guide | Technical foundation",
+            "attention": "Explain core technical concepts with clarity and precision.",
+            "intent": "Provide foundational technical knowledge that readers can build upon.",
+            "audiences": "Technical practitioners and implementers; level: intermediate-to-advanced.",
+            "selfPrompt": "Create an H2 section that establishes technical foundations with clear explanations, practical examples, and structured content. Use precise terminology while remaining accessible. Naturally integrate the listed keywords. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
             "designDescription": "",
             "connectedDesignSectionId": "",
             "additionalData": {
-              "minWords": 550,
-              "maxWords": 750,
+              "minWords": 250,
+              "maxWords": 400,
               "actualContent": ""
             },
             "realContentStructure": [
@@ -5605,30 +5537,30 @@ export const contentData = {
                 "id": "p-2-1",
                 "tag": "p",
                 "keywords": [
-                  "Generate 2-3 supporting keywords for this body paragraph."
+                  "Generate 2-3 foundational keywords tied to core concepts."
                 ],
-                "taxonomy": "Supporting | Body paragraph",
-                "attention": "Lead with a specific, useful claim.",
-                "intent": "Explain a key concept or mechanism clearly.",
-                "audiences": "Practitioners; level: intermediate.",
-                "selfPrompt": "Write a body paragraph that explains one key concept with clarity and usefulness. Use concrete examples where helpful. Respect min/max words. Generate the necessary content here.",
+                "taxonomy": "Supporting | Foundation paragraph",
+                "attention": "Define key concepts clearly and concisely.",
+                "intent": "Establish core technical understanding before diving deeper.",
+                "audiences": "Technical practitioners; level: intermediate.",
+                "selfPrompt": "Write a foundational paragraph that defines key concepts with clarity and precision. Use concrete examples where helpful. Integrate keywords naturally. Respect min/max word constraints. Generate the necessary content here.",
                 "additionalData": {
                   "minWords": 80,
-                  "maxWords": 140,
+                  "maxWords": 150,
                   "actualContent": ""
                 }
               },
               {
-                "id": "p-2-2",
+                "id": "p-2-2-3",
                 "tag": "p",
                 "keywords": [
                   "Generate 1 transition keyword."
                 ],
                 "taxonomy": "Transitional | Micro-bridge",
-                "attention": "Maintain flow between ideas.",
-                "intent": "Provide a short bridge to the next subsection.",
+                "attention": "Smoothly transition to the data presentation.",
+                "intent": "Provide a brief bridge to the upcoming table.",
                 "audiences": "All readers; level: general.",
-                "selfPrompt": "Write a short transitional sentence that smoothly connects ideas. Be concise and purposeful. Generate the necessary content here.",
+                "selfPrompt": "Write a concise transition sentence that introduces the table or data comparison. Be brief and purposeful. Generate the necessary content here.",
                 "additionalData": {
                   "minWords": 5,
                   "maxWords": 15,
@@ -5636,229 +5568,198 @@ export const contentData = {
                 }
               },
               {
-                "id": "h3-2-3",
+                "id": "table-2-2-4",
+                "tag": "table",
+                "keywords": [
+                  "Generate 2-4 comparison or data-focused keywords."
+                ],
+                "taxonomy": "Data | Comparison table",
+                "attention": "Present technical comparisons or metrics clearly.",
+                "intent": "Provide scannable, structured data that supports the technical foundation.",
+                "audiences": "Analytical and technical readers; level: intermediate.",
+                "selfPrompt": "Create a compact comparison or data table with clear headers and well-organized rows. Define the meaning of each column. Keep the content within word constraints while ensuring clarity. Generate the necessary content here.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-2-2",
                 "tag": "h3",
                 "keywords": [
-                  "Generate 4-6 keywords (inherit 2 from parent H2, add 2-4 specific)."
+                  "Generate 4-6 keywords (inherit 2 from parent H2, add 2-4 specific to this subsection)."
                 ],
-                "taxonomy": "Guide | Subsection",
-                "attention": "Define a sharp, unique angle.",
-                "intent": "Expand the parent H2 with a focused subtopic.",
-                "audiences": "Practitioners; level: intermediate-to-advanced.",
-                "selfPrompt": "Develop an H3 subsection that expands the parent H2 with a unique, sharply defined angle. Avoid overlapping with sibling subsections. State the micro-intent and expected outcomes. Integrate inherited and specific keywords naturally. Respect word limits. Generate the necessary content here.",
+                "taxonomy": "Guide | Technical subsection",
+                "attention": "Focus on a specific technical angle or component.",
+                "intent": "Drill down into a particular aspect of the technical foundation.",
+                "audiences": "Technical practitioners; level: intermediate-to-advanced.",
+                "selfPrompt": "Develop an H3 subsection that explores a specific technical angle within the parent H2 context. Provide detailed, actionable information. Avoid overlap with sibling content. Integrate inherited and specific keywords naturally. Respect word limits. Generate the necessary content here.",
                 "additionalData": {
-                  "minWords": 220,
-                  "maxWords": 320,
+                  "minWords": 150,
+                  "maxWords": 250,
                   "actualContent": ""
                 },
                 "realContentStructure": [
                   {
-                    "id": "p-2-3-1",
+                    "id": "p-2-2-1",
                     "tag": "p",
                     "keywords": [
-                      "Generate 2-3 micro-intent keywords."
+                      "Generate 2-3 explanation-focused keywords."
                     ],
-                    "taxonomy": "Supporting | Explanation",
-                    "attention": "Clarify ‘how’ or ‘why’ directly.",
-                    "intent": "Explain the key idea with a concrete example.",
-                    "audiences": "Hands-on implementers; level: intermediate.",
-                    "selfPrompt": "Write an explanatory paragraph that clarifies how/why this subtopic matters, including one concrete example. Keep it practical. Respect min/max words. Generate the necessary content here.",
+                    "taxonomy": "Supporting | Technical explanation",
+                    "attention": "Explain the technical mechanism or approach clearly.",
+                    "intent": "Clarify how or why this technical aspect works.",
+                    "audiences": "Implementers; level: intermediate.",
+                    "selfPrompt": "Write an explanatory paragraph that clarifies the technical mechanism, including concrete examples or scenarios. Keep it practical and precise. Respect min/max words. Generate the necessary content here.",
                     "additionalData": {
-                      "minWords": 75,
+                      "minWords": 70,
                       "maxWords": 130,
                       "actualContent": ""
                     }
                   },
                   {
-                    "id": "ul-2-3-2",
+                    "id": "ul-2-2-2",
                     "tag": "ul",
                     "keywords": [
-                      "Generate 2-3 checklist-style keywords."
+                      "Generate 2-3 checklist or feature keywords."
                     ],
-                    "taxonomy": "List | Action steps",
-                    "attention": "Make a compact, actionable checklist.",
-                    "intent": "List 3–5 steps or tips readers can apply.",
-                    "audiences": "Practitioners; level: intermediate.",
-                    "selfPrompt": "Create an unordered list with 3–5 concise, actionable steps or tips. One sentence per item, imperative style. Ensure non-overlapping items. Respect word constraints. Generate the necessary content here.",
+                    "taxonomy": "List | Technical features",
+                    "attention": "Highlight key features or requirements in a scannable format.",
+                    "intent": "List 3-5 important technical features or requirements.",
+                    "audiences": "Technical practitioners; level: intermediate.",
+                    "selfPrompt": "Create an unordered list with 3-5 concise items highlighting key technical features or requirements. One sentence per item. Ensure clarity and non-redundancy. Respect word constraints. Generate the necessary content here.",
                     "additionalData": {
-                      "minWords": 50,
-                      "maxWords": 85,
+                      "minWords": 40,
+                      "maxWords": 80,
                       "actualContent": ""
                     }
                   },
                   {
-                    "id": "p-2-3-3",
+                    "id": "p-2-2-3",
                     "tag": "p",
                     "keywords": [
-                      "Generate 2-3 result-focused keywords."
+                      "Generate 2-3 outcome or implication keywords."
                     ],
-                    "taxonomy": "Supporting | Outcome",
-                    "attention": "Highlight expected outcomes or metrics.",
-                    "intent": "Show what success looks like for this subtopic.",
-                    "audiences": "Outcome-driven readers; level: intermediate.",
-                    "selfPrompt": "Write a paragraph that describes expected outcomes or metrics that indicate success. Be specific and measurable when possible. Respect min/max words. Generate the necessary content here.",
+                    "taxonomy": "Supporting | Technical implication",
+                    "attention": "Highlight practical implications or outcomes.",
+                    "intent": "Explain what these technical features mean for implementation.",
+                    "audiences": "Practitioners and decision-makers; level: intermediate.",
+                    "selfPrompt": "Write a paragraph that explains the practical implications or outcomes of the technical features discussed. Be specific about benefits or constraints. Respect min/max words. Generate the necessary content here.",
                     "additionalData": {
-                      "minWords": 65,
-                      "maxWords": 115,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "code-2-3-4",
-                    "tag": "code",
-                    "keywords": [
-                      "Generate 1-2 technology-related keywords."
-                    ],
-                    "taxonomy": "Technical | Code example",
-                    "attention": "Demonstrate with a concise code snippet.",
-                    "intent": "Illustrate the concept via code or pseudo-code.",
-                    "audiences": "Developers and technical practitioners; level: intermediate.",
-                    "selfPrompt": "Provide a short code example or pseudo-code illustrating the concept. Keep it minimal and self-explanatory. Add a brief inline comment if useful. Respect min/max words. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 20,
-                      "maxWords": 45,
+                      "minWords": 60,
+                      "maxWords": 100,
                       "actualContent": ""
                     }
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "Generate 5-7 section-level keywords focused on implementation, process, and practical application"
+            ],
+            "taxonomy": "Guide | Implementation section",
+            "attention": "Provide clear, actionable implementation guidance.",
+            "intent": "Guide readers through the practical implementation process with concrete steps.",
+            "audiences": "Implementers and technical practitioners; level: intermediate-to-advanced.",
+            "selfPrompt": "Create an H2 section that provides comprehensive implementation guidance with clear steps, practical examples, and code where appropriate. Structure the content for easy follow-along. Naturally integrate the listed keywords. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-3-1",
+                "tag": "p",
+                "keywords": [
+                  "Generate 2-3 implementation-focused keywords."
+                ],
+                "taxonomy": "Supporting | Implementation intro",
+                "attention": "Set clear expectations for the implementation process.",
+                "intent": "Introduce the implementation approach and key considerations.",
+                "audiences": "Implementers; level: intermediate.",
+                "selfPrompt": "Write an introductory paragraph that frames the implementation process, highlighting key considerations and prerequisites. Be practical and specific. Integrate keywords naturally. Respect min/max word constraints. Generate the necessary content here.",
+                "additionalData": {
+                  "minWords": 90,
+                  "maxWords": 170,
+                  "actualContent": ""
+                }
               },
               {
-                "id": "h3-2-4",
+                "id": "h3-3-2",
                 "tag": "h3",
                 "keywords": [
-                  "Generate 4-6 keywords (inherit 2 from H2, add 2-4 specific to this angle)."
+                  "Generate 4-6 keywords (inherit 2 from parent H2, add 2-4 specific to this implementation step)."
                 ],
-                "taxonomy": "Guide | Subsection",
-                "attention": "State a distinct, practical angle.",
-                "intent": "Cover a different but complementary facet of the H2.",
-                "audiences": "Practitioners; level: intermediate-to-advanced.",
-                "selfPrompt": "Develop an H3 subsection with a distinct, practical angle that complements the previous subsection without overlap. Clearly state the micro-intent and constraints. Integrate keywords naturally. Respect word limits. Generate the necessary content here.",
+                "taxonomy": "Guide | Implementation subsection",
+                "attention": "Focus on a specific implementation phase or component.",
+                "intent": "Detail a particular implementation step with practical guidance.",
+                "audiences": "Hands-on implementers; level: intermediate-to-advanced.",
+                "selfPrompt": "Develop an H3 subsection that details a specific implementation step or phase. Include ordered steps, code examples, and practical tips. Avoid overlap with sibling content. Integrate inherited and specific keywords naturally. Respect word limits. Generate the necessary content here.",
                 "additionalData": {
-                  "minWords": 280,
-                  "maxWords": 400,
+                  "minWords": 180,
+                  "maxWords": 280,
                   "actualContent": ""
                 },
                 "realContentStructure": [
                   {
-                    "id": "p-2-4-1",
+                    "id": "p-3-2-1",
                     "tag": "p",
                     "keywords": [
-                      "Generate 2-3 clarity-focused keywords."
+                      "Generate 2-3 step-specific keywords."
                     ],
-                    "taxonomy": "Supporting | Clarification",
-                    "attention": "Explain a key nuance succinctly.",
-                    "intent": "Clarify a nuance or constraint of this subtopic.",
-                    "audiences": "Practitioners; level: intermediate.",
-                    "selfPrompt": "Write a paragraph that clarifies a key nuance, limitation, or boundary condition of this subtopic. Keep it specific and helpful. Respect word constraints. Generate the necessary content here.",
+                    "taxonomy": "Supporting | Step explanation",
+                    "attention": "Explain what this implementation step achieves.",
+                    "intent": "Clarify the purpose and outcome of this implementation phase.",
+                    "audiences": "Implementers; level: intermediate.",
+                    "selfPrompt": "Write a paragraph that explains the purpose and expected outcome of this implementation step. Include context on why this step matters. Respect min/max words. Generate the necessary content here.",
                     "additionalData": {
-                      "minWords": 70,
-                      "maxWords": 120,
+                      "minWords": 75,
+                      "maxWords": 140,
                       "actualContent": ""
                     }
                   },
                   {
-                    "id": "table-2-4-2",
-                    "tag": "table",
+                    "id": "ol-3-2-2",
+                    "tag": "ol",
                     "keywords": [
-                      "Generate 2-4 comparison/data keywords."
+                      "Generate 2-3 procedural keywords."
                     ],
-                    "taxonomy": "Data | Comparison table",
-                    "attention": "Summarize comparisons or metrics clearly.",
-                    "intent": "Present compact, scannable data with headers.",
-                    "audiences": "Analytical readers; level: intermediate.",
-                    "selfPrompt": "Create a compact comparison/data table with clear headers. Define the meaning of each column and keep the total size within word constraints. Summarize insights succinctly. Generate the necessary content here.",
+                    "taxonomy": "List | Ordered steps",
+                    "attention": "Provide a clear, sequential procedure.",
+                    "intent": "List 3-5 ordered steps for this implementation phase.",
+                    "audiences": "Implementers; level: intermediate.",
+                    "selfPrompt": "Create an ordered list with 3-5 sequential steps in logical order. Keep items concise, actionable, and imperative. Ensure clear progression. Respect word constraints. Generate the necessary content here.",
                     "additionalData": {
-                      "minWords": 90,
-                      "maxWords": 150,
+                      "minWords": 50,
+                      "maxWords": 90,
                       "actualContent": ""
                     }
                   },
                   {
-                    "id": "p-2-4-3",
-                    "tag": "p",
+                    "id": "code-3-2-3",
+                    "tag": "code",
                     "keywords": [
-                      "Generate 1 transition keyword."
+                      "Generate 1-2 technology or syntax keywords."
                     ],
-                    "taxonomy": "Transitional | Micro-bridge",
-                    "attention": "Maintain flow within the subsection.",
-                    "intent": "Provide a short bridge to the nested H4.",
-                    "audiences": "All readers; level: general.",
-                    "selfPrompt": "Write a concise transition to introduce the nested H4 topic. Be brief and purposeful. Generate the necessary content here.",
+                    "taxonomy": "Technical | Code example",
+                    "attention": "Demonstrate with a practical code snippet.",
+                    "intent": "Illustrate the implementation step with working code.",
+                    "audiences": "Developers; level: intermediate-to-advanced.",
+                    "selfPrompt": "Provide a concise code example or snippet that illustrates this implementation step. Include brief inline comments if helpful. Keep it minimal and self-explanatory. Respect min/max words. Generate the necessary content here.",
                     "additionalData": {
-                      "minWords": 5,
-                      "maxWords": 15,
+                      "minWords": 20,
+                      "maxWords": 50,
                       "actualContent": ""
                     }
-                  },
-                  {
-                    "id": "h4-2-4-4",
-                    "tag": "h4",
-                    "keywords": [
-                      "Generate 3-5 keywords (inherit 1-2 from H3, add 2-3 specific)."
-                    ],
-                    "taxonomy": "Guide | Nested subtopic",
-                    "attention": "Focus on a tightly scoped subtopic.",
-                    "intent": "Drill down into one precise angle of the H3.",
-                    "audiences": "Practitioners; level: intermediate-to-advanced.",
-                    "selfPrompt": "Develop an H4 subtopic that is tightly scoped to the H3. Provide a single, focused angle with clear value. Avoid overlap with sibling content. Respect word limits. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 130,
-                      "maxWords": 200,
-                      "actualContent": ""
-                    },
-                    "realContentStructure": [
-                      {
-                        "id": "p-2-4-4-1",
-                        "tag": "p",
-                        "keywords": [
-                          "Generate 2-3 micro-detail keywords."
-                        ],
-                        "taxonomy": "Supporting | Micro-detail",
-                        "attention": "Explain one fine-grained detail.",
-                        "intent": "Illuminate a detail crucial to implementation.",
-                        "audiences": "Hands-on implementers; level: intermediate.",
-                        "selfPrompt": "Write a paragraph explaining one fine-grained detail of the H4 subtopic. Keep it practical and specific. Respect word constraints. Generate the necessary content here.",
-                        "additionalData": {
-                          "minWords": 60,
-                          "maxWords": 105,
-                          "actualContent": ""
-                        }
-                      },
-                      {
-                        "id": "ol-2-4-4-2",
-                        "tag": "ol",
-                        "keywords": [
-                          "Generate 2-3 stepwise keywords."
-                        ],
-                        "taxonomy": "List | Ordered steps",
-                        "attention": "Provide a short, ordered procedure.",
-                        "intent": "List 3–5 steps in logical order.",
-                        "audiences": "Implementers; level: intermediate.",
-                        "selfPrompt": "Create an ordered list with 3–5 steps in a logical progression. Keep items concise and precise. Respect word constraints. Generate the necessary content here.",
-                        "additionalData": {
-                          "minWords": 45,
-                          "maxWords": 75,
-                          "actualContent": ""
-                        }
-                      },
-                      {
-                        "id": "blockquote-2-4-4-3",
-                        "tag": "blockquote",
-                        "keywords": [
-                          "Generate 1-2 evidence keywords."
-                        ],
-                        "taxonomy": "Supporting | Expert quote",
-                        "attention": "Use a targeted, credibility-boosting quote.",
-                        "intent": "Reinforce the H4 point with authority.",
-                        "audiences": "Skeptical readers; level: intermediate.",
-                        "selfPrompt": "Insert a short, targeted quote that reinforces the H4’s claim. Prefer Internal KB; use External KB if needed. One to two sentences. Respect constraints. Generate the necessary content here.",
-                        "additionalData": {
-                          "minWords": 20,
-                          "maxWords": 40,
-                          "actualContent": ""
-                        }
-                      }
-                    ]
                   }
                 ]
               }
@@ -5869,18 +5770,18 @@ export const contentData = {
             "tag": "h2",
             "classification": "semantic",
             "keywords": [
-              "Generate 5-7 FAQ-related keywords tied to user intent."
+              "Generate 5-7 FAQ-related keywords tied to common user questions and concerns"
             ],
             "taxonomy": "FAQ | Q&A section",
-            "attention": "Anticipate top questions and answer succinctly.",
-            "intent": "Address the most pressing user questions with clarity.",
-            "audiences": "Prospects and users; level: beginner-to-intermediate.",
-            "selfPrompt": "This FAQ H2 introduces a focused Q&A area. Generate 3 high-impact questions aligned with the page topic and audience needs. Each question must be an H3 with a concise answer paragraph beneath. Avoid repeating content from other sections. Respect min/max words per element. Generate the necessary content here.",
+            "attention": "Anticipate and answer the most pressing user questions.",
+            "intent": "Address common questions with clear, helpful answers.",
+            "audiences": "Prospects, users, and decision-makers; level: beginner-to-intermediate.",
+            "selfPrompt": "This FAQ H2 section is designed for generating relevant questions and answers. Adopt the user's perspective by analyzing existing content and understanding the target audience. Generate four high-impact questions that would be most interesting and useful within the context of the topic. Organize each question under an H3 heading with a well-crafted answer. Avoid repeating content from other sections. Respect min/max words per element. Generate the necessary content here.",
             "designDescription": "",
             "connectedDesignSectionId": "",
             "additionalData": {
-              "minWords": 350,
-              "maxWords": 500,
+              "minWords": 300,
+              "maxWords": 450,
               "actualContent": ""
             },
             "realContentStructure": [
@@ -5891,13 +5792,13 @@ export const contentData = {
                   "Generate 2-3 FAQ-intro keywords."
                 ],
                 "taxonomy": "Supporting | FAQ intro",
-                "attention": "Set expectations for the Q&A format.",
-                "intent": "Briefly introduce how the FAQ helps users.",
+                "attention": "Set expectations for the FAQ format and utility.",
+                "intent": "Briefly introduce how the FAQ helps users find quick answers.",
                 "audiences": "All readers; level: general.",
-                "selfPrompt": "Write a short paragraph introducing the FAQ purpose and how to use it. Keep it clear and user-centric. Respect word limits. Generate the necessary content here.",
+                "selfPrompt": "Write a short introductory paragraph that explains the purpose of the FAQ section and how to use it. Keep it clear and user-centric. Respect word limits. Generate the necessary content here.",
                 "additionalData": {
                   "minWords": 70,
-                  "maxWords": 120,
+                  "maxWords": 130,
                   "actualContent": ""
                 }
               },
@@ -5905,16 +5806,16 @@ export const contentData = {
                 "id": "h3-FAQ-1",
                 "tag": "h3",
                 "keywords": [
-                  "Generate 3-5 question-specific keywords."
+                  "Generate 3-5 question-specific keywords aligned with user concerns."
                 ],
                 "taxonomy": "FAQ | Question heading",
-                "attention": "Formulate a highly relevant question.",
-                "intent": "Ask a common, high-impact user question.",
-                "audiences": "Prospects and users; level: beginner.",
-                "selfPrompt": "Create an H3 question that reflects a common, high-impact concern derived from the page topic and audience. Keep it direct and specific. Generate the necessary content here.",
+                "attention": "Formulate a highly relevant, commonly asked question.",
+                "intent": "Ask a question that reflects a top user concern or blocker.",
+                "audiences": "Prospects and users; level: beginner-to-intermediate.",
+                "selfPrompt": "Create an H3 question that reflects a common, high-priority user concern derived from the page topic and audience needs. Keep it direct, specific, and natural. Generate the necessary content here.",
                 "additionalData": {
-                  "minWords": 160,
-                  "maxWords": 240,
+                  "minWords": 150,
+                  "maxWords": 220,
                   "actualContent": ""
                 },
                 "realContentStructure": [
@@ -5925,12 +5826,12 @@ export const contentData = {
                       "Generate 2-3 answer-focused keywords."
                     ],
                     "taxonomy": "FAQ | Answer",
-                    "attention": "Answer clearly in 1–2 short paragraphs.",
-                    "intent": "Provide a precise, user-friendly answer.",
-                    "audiences": "Beginners; level: beginner-to-intermediate.",
-                    "selfPrompt": "Write a concise answer that directly addresses the question. Use plain, helpful language. Include one concrete example or constraint if applicable. Respect min/max words. Generate the necessary content here.",
+                    "attention": "Provide a clear, concise answer in 1-2 paragraphs.",
+                    "intent": "Deliver a precise, user-friendly answer that resolves the question.",
+                    "audiences": "Beginners and prospects; level: beginner-to-intermediate.",
+                    "selfPrompt": "Write a clear, concise answer that directly addresses the question. Use plain, helpful language. Include one concrete example or constraint if applicable. Respect min/max words. Generate the necessary content here.",
                     "additionalData": {
-                      "minWords": 70,
+                      "minWords": 60,
                       "maxWords": 120,
                       "actualContent": ""
                     }
@@ -5938,19 +5839,19 @@ export const contentData = {
                 ]
               },
               {
-                "id": "h3-FAQ-2",
+                "id": "FAQ-2",
                 "tag": "h3",
                 "keywords": [
-                  "Generate 3-5 question-specific keywords."
+                  "Generate 3-5 question-specific keywords for a distinct user concern."
                 ],
                 "taxonomy": "FAQ | Question heading",
-                "attention": "Pose another top-priority user question.",
-                "intent": "Ask a distinct question that avoids overlap.",
+                "attention": "Pose a distinct, high-value question.",
+                "intent": "Ask a different question that addresses another common concern.",
                 "audiences": "Prospects and users; level: beginner-to-intermediate.",
-                "selfPrompt": "Create an H3 question that is distinct from the first and addresses another top-priority concern. Keep it clear and specific. Generate the necessary content here.",
+                "selfPrompt": "Create an H3 question that is distinct from the first and addresses a different top-priority user concern. Keep it clear, specific, and natural. Generate the necessary content here.",
                 "additionalData": {
-                  "minWords": 160,
-                  "maxWords": 240,
+                  "minWords": 150,
+                  "maxWords": 220,
                   "actualContent": ""
                 },
                 "realContentStructure": [
@@ -5961,32 +5862,32 @@ export const contentData = {
                       "Generate 2-3 answer-focused keywords."
                     ],
                     "taxonomy": "FAQ | Answer",
-                    "attention": "Deliver a concise, useful answer.",
+                    "attention": "Answer clearly and helpfully.",
                     "intent": "Resolve the question with clarity and precision.",
-                    "audiences": "Beginners; level: beginner-to-intermediate.",
-                    "selfPrompt": "Write a clear, concise answer that resolves the question without ambiguity. Use simple language and practical framing. Respect min/max words. Generate the necessary content here.",
+                    "audiences": "Beginners and prospects; level: beginner-to-intermediate.",
+                    "selfPrompt": "Write a clear, concise answer that resolves the question without ambiguity. Use simple, practical language. Respect min/max words. Generate the necessary content here.",
                     "additionalData": {
-                      "minWords": 65,
-                      "maxWords": 115,
+                      "minWords": 60,
+                      "maxWords": 120,
                       "actualContent": ""
                     }
                   }
                 ]
               },
               {
-                "id": "h3-FAQ-3",
+                "id": "FAQ-3",
                 "tag": "h3",
                 "keywords": [
-                  "Generate 3-5 question-specific keywords."
+                  "Generate 3-5 question-specific keywords for a technical or decision-making concern."
                 ],
                 "taxonomy": "FAQ | Question heading",
-                "attention": "Focus on a decision-making blocker.",
-                "intent": "Ask a question that addresses a final hesitation.",
-                "audiences": "Prospects; level: beginner-to-intermediate.",
-                "selfPrompt": "Create an H3 question that addresses a common blocker or hesitation before conversion. Keep it targeted and distinct from prior questions. Generate the necessary content here.",
+                "attention": "Address a technical or decision-blocking question.",
+                "intent": "Ask a question that helps users overcome a final hesitation.",
+                "audiences": "Decision-makers and technical users; level: intermediate.",
+                "selfPrompt": "Create an H3 question that addresses a common technical concern or decision-making blocker. Keep it targeted and distinct from prior questions. Generate the necessary content here.",
                 "additionalData": {
-                  "minWords": 160,
-                  "maxWords": 240,
+                  "minWords": 150,
+                  "maxWords": 220,
                   "actualContent": ""
                 },
                 "realContentStructure": [
@@ -5998,16 +5899,142 @@ export const contentData = {
                     ],
                     "taxonomy": "FAQ | Answer",
                     "attention": "Provide a reassuring, specific answer.",
-                    "intent": "Help readers confidently move forward.",
-                    "audiences": "Prospects; level: beginner-to-intermediate.",
-                    "selfPrompt": "Write a reassuring answer that resolves the hesitation with specifics (benefits, constraints, or example). Keep it practical and concise. Respect min/max words. Generate the necessary content here.",
+                    "intent": "Help readers confidently move forward with their decision.",
+                    "audiences": "Decision-makers; level: intermediate.",
+                    "selfPrompt": "Write a reassuring answer that resolves the concern with specifics (benefits, constraints, or examples). Keep it practical and concise. Respect min/max words. Generate the necessary content here.",
                     "additionalData": {
-                      "minWords": 75,
-                      "maxWords": 130,
+                      "minWords": 60,
+                      "maxWords": 120,
                       "actualContent": ""
                     }
                   }
                 ]
+              },
+              {
+                "id": "FAQ-4",
+                "tag": "h3",
+                "keywords": [
+                  "Generate 3-5 question-specific keywords for an advanced or edge-case concern."
+                ],
+                "taxonomy": "FAQ | Question heading",
+                "attention": "Cover an advanced or edge-case scenario.",
+                "intent": "Ask a question that addresses a less common but important concern.",
+                "audiences": "Advanced users and specialists; level: intermediate-to-advanced.",
+                "selfPrompt": "Create an H3 question that covers an advanced scenario or edge case that power users might encounter. Keep it specific and valuable. Generate the necessary content here.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "Generate 2-3 answer-focused keywords."
+                    ],
+                    "taxonomy": "FAQ | Answer",
+                    "attention": "Provide a detailed, expert-level answer.",
+                    "intent": "Address the advanced concern with depth and precision.",
+                    "audiences": "Advanced users; level: intermediate-to-advanced.",
+                    "selfPrompt": "Write a detailed answer that addresses the advanced scenario with precision. Include technical details or caveats as needed. Respect min/max words. Generate the necessary content here.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "h2-5",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "Generate 5-7 section-level keywords focused on synthesis, key takeaways, and next steps"
+            ],
+            "taxonomy": "Guide | Summary and conclusion",
+            "attention": "Synthesize key points and guide readers toward action.",
+            "intent": "Summarize the main takeaways and provide clear next steps.",
+            "audiences": "All readers; level: general-to-intermediate.",
+            "selfPrompt": "Create an H2 summary section that synthesizes the key points from the page, reinforces the main value proposition, and suggests clear next steps or actions. Be concise and actionable. Naturally integrate the listed keywords. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 200,
+              "maxWords": 300,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-5-1",
+                "tag": "p",
+                "keywords": [
+                  "Generate 2-3 summary-focused keywords."
+                ],
+                "taxonomy": "Supporting | Summary paragraph",
+                "attention": "Recap the main value and key insights concisely.",
+                "intent": "Summarize the core message and reinforce value.",
+                "audiences": "All readers; level: general.",
+                "selfPrompt": "Write a summary paragraph that recaps the main value and key insights from the page. Keep it concise and reinforcing. Integrate keywords naturally. Respect min/max word constraints. Generate the necessary content here.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-5-3",
+                "tag": "table",
+                "keywords": [
+                  "Generate 2-4 comparison or summary-data keywords."
+                ],
+                "taxonomy": "Data | Summary table",
+                "attention": "Present key takeaways or comparisons in a scannable format.",
+                "intent": "Provide a compact, structured summary of key points or options.",
+                "audiences": "Decision-makers and analysts; level: intermediate.",
+                "selfPrompt": "Create a compact summary table that presents key takeaways, comparisons, or options with clear headers. Keep the content organized and within word constraints. Generate the necessary content here.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-5-2",
+                "tag": "ul",
+                "keywords": [
+                  "Generate 2-3 takeaway or action keywords."
+                ],
+                "taxonomy": "List | Key takeaways",
+                "attention": "Highlight 3-5 key takeaways in a scannable list.",
+                "intent": "Provide a bullet list of the most important points or actions.",
+                "audiences": "Busy readers; level: general.",
+                "selfPrompt": "Create an unordered list with 3-5 key takeaways or action items. One sentence per item, clear and actionable. Avoid redundancy and maintain consistent style. Respect word constraints. Generate the necessary content here.",
+                "additionalData": {
+                  "minWords": 50,
+                  "maxWords": 90,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-5-3",
+                "tag": "p",
+                "keywords": [
+                  "Generate 2-3 next-step or CTA keywords."
+                ],
+                "taxonomy": "Supporting | Call-to-action",
+                "attention": "Guide readers toward the next logical step.",
+                "intent": "Suggest clear next actions or resources for further engagement.",
+                "audiences": "Engaged readers; level: general-to-intermediate.",
+                "selfPrompt": "Write a closing paragraph that suggests clear next steps, resources, or calls-to-action for readers who want to proceed. Keep it practical and encouraging. Respect min/max words. Generate the necessary content here.",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
               }
             ]
           }
@@ -6104,5 +6131,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-10T02:43:11.650Z";
+export const lastUpdated = "2025-10-10T02:43:20.535Z";
 export const generatedBy = "menu-persist-api";
