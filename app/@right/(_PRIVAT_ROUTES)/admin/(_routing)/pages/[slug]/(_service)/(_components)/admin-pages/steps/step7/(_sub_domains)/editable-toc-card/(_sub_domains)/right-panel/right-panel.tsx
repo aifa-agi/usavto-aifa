@@ -249,7 +249,7 @@ export function RightPanel() {
           />
           {descDirty && (
             <div className="mt-1 text-right">
-              <Button size="sm" variant="secondary" onClick={onSaveDescription}>
+              <Button size="sm" onClick={onSaveDescription}>
                 Save field
               </Button>
             </div>
@@ -266,7 +266,7 @@ export function RightPanel() {
           />
           {intentDirty && (
             <div className="mt-1 text-right">
-              <Button size="sm" variant="secondary" onClick={onSaveIntent}>
+              <Button size="sm" onClick={onSaveIntent}>
                 Save field
               </Button>
             </div>
@@ -283,7 +283,7 @@ export function RightPanel() {
           />
           {taxonomyDirty && (
             <div className="mt-1 text-right">
-              <Button size="sm" variant="secondary" onClick={onSaveTaxonomy}>
+              <Button size="sm" onClick={onSaveTaxonomy}>
                 Save field
               </Button>
             </div>
@@ -300,7 +300,7 @@ export function RightPanel() {
           />
           {audiencesDirty && (
             <div className="mt-1 text-right">
-              <Button size="sm" variant="secondary" onClick={onSaveAudiences}>
+              <Button size="sm" onClick={onSaveAudiences}>
                 Save field
               </Button>
             </div>
@@ -336,7 +336,7 @@ export function RightPanel() {
           </div>
           {(minDirty || maxDirty) && (
             <div className="mt-1 text-right">
-              <Button size="sm" variant="secondary" onClick={onSaveMinMax}>
+              <Button size="sm" onClick={onSaveMinMax}>
                 Save field
               </Button>
             </div>
@@ -354,7 +354,7 @@ export function RightPanel() {
           />
           {selfPromptDirty && (
             <div className="mt-1 text-right">
-              <Button size="sm" variant="secondary" onClick={onSaveSelfPrompt}>
+              <Button size="sm" onClick={onSaveSelfPrompt}>
                 Save field
               </Button>
             </div>
@@ -372,7 +372,7 @@ export function RightPanel() {
             />
             {linksDirty && (
               <div className="mt-1 text-right">
-                <Button size="sm" variant="secondary" onClick={onSaveLinks}>
+                <Button size="sm" onClick={onSaveLinks}>
                   Save field
                 </Button>
               </div>
@@ -388,7 +388,7 @@ export function RightPanel() {
             />
             {keywordsDirty && (
               <div className="mt-1 text-right">
-                <Button size="sm" variant="secondary" onClick={onSaveKeywords}>
+                <Button size="sm" onClick={onSaveKeywords}>
                   Save field
                 </Button>
               </div>

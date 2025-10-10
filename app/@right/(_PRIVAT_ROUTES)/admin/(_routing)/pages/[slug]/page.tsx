@@ -30,7 +30,7 @@ export default async function AdminPageDetails({
         <div className="p-6 w-full">
           <div className="bg-secondary rounded-lg shadow-sm border p-6">
             <div className="flex flex-row justify-between items-start gap-3">
-              <AdminPageDynamicHeader />
+              {/* <AdminPageDynamicHeader /> */}
               <AdminPagesNavBar />
             </div>
 

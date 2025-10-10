@@ -6,11 +6,14 @@
  * Comments are in English. UI texts are in English (US).
  *
  * LeftPanel:
- * - Adds a read-only mini TOC for the active section below the header and above the TreeView.
+ * - Redesigned with 2025 best practices: proper visual hierarchy, breathing room, and clear information architecture.
+ * - Simplified layout with removed redundant containers.
+ * - Full-width pulsing orange button that becomes green metallic after confirmation.
  */
 
 import * as React from "react";
-import { Switch } from "@/components/ui/switch";
+import { Button } from "@/components/ui/button";
+import { CheckCircle } from "lucide-react";
 import {
   Tooltip,
   TooltipContent,
@@ -37,8 +40,8 @@ export function LeftPanel() {
   const confirmed = derived?.confirmed ?? 0;
   const isConfirmed = Boolean(derived?.isConfirmed);
 
-  const onToggleAll = async (next: boolean) => {
-    if (!next || isConfirmed) return;
+  const handleConfirmAll = async () => {
+    if (isConfirmed || total === 0) return;
     await confirmSection();
   };
 
@@ -53,56 +56,58 @@ export function LeftPanel() {
 
   return (
     <TooltipProvider>
-      <div className="flex h-full flex-col gap-3 rounded-lg border border-neutral-800 bg-neutral-925 p-3">
-        {/* Header */}
-        <div className="flex items-center justify-between gap-3">
-          <div className="flex min-w-0 flex-col">
-            <h3 className="text-sm font-semibold text-neutral-100 truncate line-clamp-1">
-              Content Structure
-            </h3>
-            <p className="text-xs text-neutral-500 truncate line-clamp-2">
-              Manage your draft content elements for the active section.
-            </p>
-            <div className="rounded-md border border-neutral-800 bg-neutral-900 px-2 py-1 text-xs text-neutral-300 w-12 text-center">
+      <div className="flex h-full flex-col rounded-lg border border-neutral-800 bg-neutral-925">
+        {/* Header Zone - Compact badge + full-width action */}
+        <div className="flex flex-col gap-3 p-4 border-b border-neutral-800">
+          {/* Progress Badge */}
+          <div className="inline-flex items-center gap-2 rounded-lg border border-neutral-700 bg-neutral-900 px-3 py-1.5 self-start">
+            <span className="text-xs font-medium text-neutral-300">
               {confirmed}/{total}
-            </div>
+            </span>
+            <span className="text-[10px] uppercase tracking-wider text-neutral-500">
+              confirmed
+            </span>
           </div>
 
-          {/* Metrics + Confirm all */}
-          <div className="flex items-center gap-3">
-            <div className="flex items-center gap-2">
-              <span className="text-xs text-neutral-400">
-                Confirm all elements
-              </span>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <span>
-                    <Switch
-                      checked={isConfirmed}
-                      onCheckedChange={onToggleAll}
-                      disabled={isConfirmed || total === 0}
-                      aria-label="Confirm all elements in the active section"
-                    />
-                  </span>
-                </TooltipTrigger>
-                <TooltipContent align="end" side="bottom" className="max-w-xs">
-                  <p className="text-xs">
-                    One-way action. Confirms all existing elements in the active
-                    section.
-                  </p>
-                </TooltipContent>
-              </Tooltip>
-            </div>
-          </div>
+          {/* Full-width Confirm Button - Only when rootSection exists */}
+          {rootSection && (
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  onClick={handleConfirmAll}
+                  disabled={isConfirmed || total === 0}
+                  className={
+                    isConfirmed
+                      ? "w-full bg-green-500 text-white hover:bg-green-600 font-semibold shadow-md transition-all"
+                      : "w-full bg-orange-500 hover:bg-orange-600 text-white animate-pulse-strong shadow-md transition-all"
+                  }
+                  size="default"
+                  aria-label="Confirm all elements in the active section"
+                >
+                  <CheckCircle className="size-4 mr-2" />
+                  {isConfirmed ? "Confirmed" : "Confirm"}
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent side="bottom" className="max-w-xs">
+                <p className="text-xs leading-relaxed">
+                  {isConfirmed
+                    ? "All elements in this section are confirmed and locked."
+                    : "One-way action. Confirms and locks all existing elements in the active section."}
+                </p>
+              </TooltipContent>
+            </Tooltip>
+          )}
         </div>
 
-        {/* Read-only mini TOC (below header, above editable tree) */}
-        <SectionTOC elements={tocElements} />
+        {/* TOC Zone - Read-only mini navigation */}
+        <div className="px-4 pt-3 pb-2">
+          <SectionTOC elements={tocElements} />
+        </div>
 
         <Separator className="bg-neutral-800" />
 
-        {/* Body: tree view (always expanded) */}
-        <div className="min-h-[220px]">
+        {/* Tree View Zone - Main content area */}
+        <div className="flex-1 overflow-auto p-4">
           <TreeView root={rootSection} nodes={nodes} />
         </div>
       </div>

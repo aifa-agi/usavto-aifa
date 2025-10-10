@@ -274,7 +274,7 @@ export function ContentStructureStreamCard({
                         ) : (
                             <>
                                 <Sparkles className="size-5 mr-2" />
-                                Finalize Draft for Perplexity
+                                Finalize Draft
                             </>
                         )}
                     </Button>

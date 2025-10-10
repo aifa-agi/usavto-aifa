@@ -29,7 +29,7 @@ export function SaveBar() {
         type="button"
         onClick={finishAndSave}
         disabled={saving}
-        className="w-full h-9 bg-violet-600 hover:bg-violet-700 text-white"
+        // className="w-full h-9 bg-violet-600 hover:bg-violet-700 text-white"
         aria-busy={saving}
       >
         {saving ? "Saving..." : "Finish & Save"}

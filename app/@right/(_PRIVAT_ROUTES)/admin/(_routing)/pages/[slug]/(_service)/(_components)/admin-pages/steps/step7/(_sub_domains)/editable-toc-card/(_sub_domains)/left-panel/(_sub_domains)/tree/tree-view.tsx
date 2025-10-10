@@ -21,6 +21,7 @@ import type {
   RootContentStructure,
 } from "@/app/@right/(_service)/(_types)/page-types";
 import { useDraftSectionCreate } from "../../../../../../(_hooks)/use-draft-section-create";
+import { Button } from "@/components/ui/button";
 
 export interface TreeViewProps {
   nodes: ContentStructure[] | undefined;
@@ -53,15 +54,15 @@ function PlusRow({
   onClick?: () => void | Promise<void>;
 }) {
   return (
-    <button
-      type="button"
-      className="my-1 w-full rounded-md border border-dashed border-neutral-700 bg-neutral-900/40 px-3 py-2 text-center text-xs text-neutral-400 hover:bg-neutral-850 hover:text-neutral-200"
+    <Button
+      variant="outline"
+      className="my-1 w-full "
       aria-label={aria ?? "Add element"}
       title="Add element"
       onClick={onClick}
     >
       +
-    </button>
+    </Button>
   );
 }
 

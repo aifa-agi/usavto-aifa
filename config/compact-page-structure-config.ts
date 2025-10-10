@@ -2,31 +2,7 @@
 
 import { RootContentStructure } from "@/app/@right/(_service)/(_types)/page-types";
 
-/**
- * Understanding and changes (step-by-step):
- * 1) Problem: Nested nodes (p, ul, ol, table, code, blockquote, h3, h4) missed metadata:
- *    keywords, taxonomy, attention, intent, audiences, selfPrompt.
- * 2) Why it matters: Your enrichment/generation pipelines rely on these fields
- *    to create high-quality, SEO-optimized, and instruction-driven content.
- * 3) Fix: Add clear English directives to all nested nodes:
- *    - keywords: a short imperative placeholder (so generator knows to fill)
- *    - taxonomy: expected semantic type guidance
- *    - attention: one-sentence hook requirement
- *    - intent: micro-intent for the element
- *    - audiences: persona + level requirement
- *    - selfPrompt: concrete, actionable instructions, ending with
- *      “Generate the necessary content here.”
- * 4) H2 nodes kept; we also strengthened child nodes with complete metadata.
- * 5) Word limits: Each selfPrompt reminds to respect additionalData.minWords/maxWords.
- * 6) Style: Neutral, US English, action-oriented prompts to ensure predictable generation.
- */
 
-/**
- * Enhanced Compact content structure template
- * Total word count: ~1,500-2,100 words
- * Rich structure with diverse content blocks for SEO optimization
- * 350% increase in content blocks while maintaining 4 main h2 sections
- */
 export const COMPACT_CONTENT_STRUCTURE: RootContentStructure[] = [
   // Introduction section
   {
