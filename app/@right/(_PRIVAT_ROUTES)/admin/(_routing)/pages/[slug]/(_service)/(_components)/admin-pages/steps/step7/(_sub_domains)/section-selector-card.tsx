@@ -16,7 +16,7 @@
 
 import * as React from "react";
 import { Button } from "@/components/ui/button";
-import { Plus, CheckCircle, Edit } from "lucide-react";
+import { Plus, CheckCircle, Edit, Edit2 } from "lucide-react";
 import { useStep7Root } from "../(_contexts)/step7-root-context";
 import { useSectionInsert } from "../(_hooks)/use-section-insert";
 
@@ -86,7 +86,7 @@ export function SectionSelectorCard() {
                     className="max-w-[240px] truncate"
                     aria-pressed="true"
                     title={label}
-                  ><Edit className="size-3 mr-1.5" />
+                  ><Edit2 className="size-3 mr-1.5" />
 
                     {label}
                   </Button>
@@ -111,7 +111,7 @@ export function SectionSelectorCard() {
                     aria-pressed="false"
                     title={label}
                   >
-
+                    <Edit2 className="size-3 mr-1.5" />
                     {label}
                   </Button>
                 )}

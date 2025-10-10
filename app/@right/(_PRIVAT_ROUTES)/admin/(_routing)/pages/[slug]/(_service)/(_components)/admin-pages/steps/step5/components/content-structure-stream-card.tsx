@@ -289,7 +289,7 @@ export function ContentStructureStreamCard({
                         <div>
                             <p className="font-semibold">Draft finalized successfully!</p>
                             <p className="text-xs mt-1">
-                                All {sections.length} section{sections.length > 1 ? 's' : ''} are saved and ready for Perplexity processing.
+                                All {sections.length} section{sections.length > 1 ? 's' : ''} are saved and ready for generate processing.
                                 You can proceed to the next step.
                             </p>
                         </div>

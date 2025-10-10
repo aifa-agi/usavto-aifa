@@ -297,7 +297,9 @@ export function SectionGenerationCard({
                 {/* Control buttons */}
                 <div className="flex flex-wrap items-center gap-2">
                     {isActive && !isStreaming && !isCompleted && (
-                        <Button onClick={handleStartGeneration} className="bg-purple-600 hover:bg-purple-700 text-white">
+                        <Button onClick={handleStartGeneration}
+                            className="bg-orange-500 hover:bg-orange-600 text-white animate-pulse-strong">
+
                             <Zap className="size-4 mr-2" />
                             Start Generation
                         </Button>
@@ -313,7 +315,7 @@ export function SectionGenerationCard({
                     {isCompleted && generatedData && !isSaved && (
                         <Button
                             onClick={handleSave}
-                            className="bg-orange-500 hover:bg-orange-600 text-white animate-pulse-strong"
+                            className="w-full border-green-500 bg-green-500 text-white hover:bg-green-600 font-semibold shadow-lg"
                         >
                             <CheckCircle className="size-4 mr-2" />
                             Save Section

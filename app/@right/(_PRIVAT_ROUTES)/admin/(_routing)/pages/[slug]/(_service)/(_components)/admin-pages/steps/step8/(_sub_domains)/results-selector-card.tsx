@@ -3,12 +3,24 @@
 
 /**
  * ResultsSelectorCard:
- * - Horizontal chips of H2 sections with a small badge when results exist.
- * - Keeps visual consistency with Step 7 SectionSelectorCard.
+ * - Horizontal navigation of H2 sections with four visual states:
+ *   1. Locked (secondary gray) - Index > unlockedIndex (previous sections not completed)
+ *   2. Active (primary) - Currently selected section
+ *   3. Completed (green with checkmark) - Index < unlockedIndex (saved, clickable for editing)
+ *   4. Next (orange pulsing) - Index === unlockedIndex && not active (available to work on)
+ * - Enforces sequential activation: only completed + current sections are clickable
+ * - Matches corporate design standard with shadcn/ui Button variants
+ * - Logic based on unlockedIndex from useStep8Status (enhanced from ProgressStrip)
  */
 
 import * as React from "react";
+import { CheckCircle, Edit, Edit2, Lock } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import { useStep8Root } from "../(_contexts)/step8-root-context";
+import { useStep8Status } from "../(_hooks)/use-step8-status";
+import { toast } from "sonner";
+import { STEP8_TEXTS } from "../(_constants)/step8-texts";
+import { STEP8_IDS } from "../(_constants)/step8-ids";
 
 function labelByIndex(index: number): string {
   return `Section ${index + 1}`;
@@ -16,6 +28,7 @@ function labelByIndex(index: number): string {
 
 export function ResultsSelectorCard() {
   const { getSections, ui, setActiveSection } = useStep8Root();
+  const { unlockedIndex } = useStep8Status();
   const sections = getSections();
 
   const containerCls =
@@ -23,21 +36,25 @@ export function ResultsSelectorCard() {
   const titleCls = "text-sm font-semibold text-foreground";
   const subtitleCls = "text-xs text-muted-foreground";
 
-  const chipBase =
-    "inline-flex max-w-[240px] items-center truncate rounded-md border px-3 py-1.5 text-xs font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background";
-  const tonePrimary =
-    "border-violet-500 bg-violet-500/15 text-white hover:bg-violet-500/20 focus-visible:ring-violet-500";
-  const toneCompleted =
-    "border-emerald-500 bg-emerald-500/15 text-white hover:bg-emerald-500/20 focus-visible:ring-emerald-500";
-  const toneNeutral =
-    "border-border bg-background/60 text-muted-foreground hover:bg-background/80 dark:bg-background/30 focus-visible:ring-neutral-500";
-
   const handlePick = React.useCallback(
-    (id: string | undefined | null) => {
+    (id: string | undefined | null, index: number) => {
       if (!id) return;
+
+      // Allow clicking on:
+      // 1. Completed sections (index < unlockedIndex) - for editing
+      // 2. Current section (index === unlockedIndex) - for working
+      // Block only: locked sections (index > unlockedIndex)
+      if (index > unlockedIndex) {
+        toast.error(STEP8_TEXTS.guard.lockedTitle, {
+          id: STEP8_IDS.toasts.guardLocked,
+          description: STEP8_TEXTS.guard.lockedDescription,
+        });
+        return;
+      }
+
       setActiveSection(id);
     },
-    [setActiveSection]
+    [unlockedIndex, setActiveSection]
   );
 
   return (
@@ -47,33 +64,72 @@ export function ResultsSelectorCard() {
         <p className={subtitleCls}>Pick a section to inspect its AI results.</p>
       </div>
 
-      <div className="custom-scrollbar overflow-x-auto">
+      <div className="custom-scrollbar overflow-x-auto overflow-y-hidden">
         <div className="flex min-w-max items-center gap-2">
           {sections.map((s, idx) => {
             const isActive = ui.activeSectionId === s.id;
-            const hasResults = s.id ? !!ui.resultsBySection[s.id] : false;
-            const tone = isActive
-              ? tonePrimary
-              : hasResults
-                ? toneCompleted
-                : toneNeutral;
             const label = labelByIndex(idx);
+
+            // State logic based on unlockedIndex
+            const isCompleted = idx < unlockedIndex; // Saved sections (green)
+            const isCurrent = idx === unlockedIndex; // Current unlocked section (orange if not active)
+            const isLocked = idx > unlockedIndex; // Locked sections (gray)
+
             return (
-              <button
-                key={s.id ?? `idx-${idx}`}
-                type="button"
-                onClick={() => handlePick(s.id)}
-                className={[chipBase, tone].join(" ")}
-                title={label}
-                aria-pressed={isActive}
-              >
-                <span className="truncate">{label}</span>
-                {hasResults && (
-                  <span className="ml-2 inline-flex items-center rounded-sm bg-emerald-500/20 px-1.5 py-0.5 text-[10px] text-emerald-300">
-                    result
-                  </span>
+              <React.Fragment key={s.id ?? `idx-${idx}`}>
+                {/* State 1: Locked (secondary gray with lock icon) - NOT CLICKABLE */}
+                {isLocked ? (
+                  <Button
+                    onClick={() => handlePick(s.id, idx)}
+                    variant="secondary"
+                    size="sm"
+                    className="max-w-[240px] truncate"
+                    aria-pressed="false"
+                    disabled
+                    title={`${label} - ${STEP8_TEXTS.labels.locked}`}
+                  >
+                    <Lock className="size-3 mr-1.5" />
+                    {label}
+                  </Button>
+                ) : isActive ? (
+                  /* State 2: Active (primary with edit icon) - CLICKABLE */
+                  <Button
+                    onClick={() => handlePick(s.id, idx)}
+                    variant="default"
+                    size="sm"
+                    className="max-w-[240px] truncate"
+                    aria-pressed="true"
+                    title={label}
+                  >
+                    <Edit className="size-3 mr-1.5" />
+                    {label}
+                  </Button>
+                ) : isCompleted ? (
+                  /* State 3: Completed (green with checkmark) - CLICKABLE for editing */
+                  <Button
+                    onClick={() => handlePick(s.id, idx)}
+                    className="bg-green-500 hover:bg-green-600 text-white shadow-md max-w-[240px] truncate"
+                    size="sm"
+                    aria-pressed="false"
+                    title={`${label} - Click to edit`}
+                  >
+                    <CheckCircle className="size-3 mr-1.5" />
+                    {label}
+                  </Button>
+                ) : (
+                  /* State 4: Next/Current (orange pulsing) - CLICKABLE */
+                  <Button
+                    onClick={() => handlePick(s.id, idx)}
+                    className="bg-orange-500 hover:bg-orange-600 text-white animate-pulse-strong shadow-md max-w-[240px] truncate"
+                    size="sm"
+                    aria-pressed="false"
+                    title={label}
+                  >
+                    <Edit2 className="size-3 mr-1.5" />
+                    {label}
+                  </Button>
                 )}
-              </button>
+              </React.Fragment>
             );
           })}
         </div>

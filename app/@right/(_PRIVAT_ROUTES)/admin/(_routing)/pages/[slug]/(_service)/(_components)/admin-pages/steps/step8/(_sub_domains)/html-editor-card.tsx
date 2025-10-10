@@ -1,15 +1,7 @@
-// File: @/app/@right/(_PRIVAT_ROUTES)/admin/(_routing)/pages/[slug]/(_service)/(_components)/admin-pages/steps/step8/(_sub_domains)/mdx-editor-card.tsx
+// File: @/app/@right/(_PRIVAT_ROUTES)/admin/(_routing)/pages/[slug]/(_service)/(_components)/admin-pages/steps/step8/(_sub_domains)/html-editor-card.tsx
 "use client";
 
-/**
- * MDXEditorCard:
- * - Top-right action buttons use the app's chip-style design to match Results Navigation / Progress.
- * - Actions are in a single horizontal row with horizontal scroll when overflowing.
- * - Row is wrapped with 'custom-sidebar' to reuse the global sidebar style.
- *
- * Notes:
- * - Saves/clears via useStep8Save; does not perform generation.
- */
+
 
 import * as React from "react";
 import { useStep8Root } from "../(_contexts)/step8-root-context";
@@ -18,7 +10,7 @@ import { useStep8Save } from "../(_hooks)/use-step8-save";
 import { STEP8_TEXTS } from "../(_constants)/step8-texts";
 import { Textarea } from "@/components/ui/textarea";
 
-export function MDXEditorCard() {
+export function HtmlEditorCard() {
   const { page, getActiveSection } = useStep8Root();
   const { getCompletionFor } = useStep8Status();
   const { saveSectionTempMDX, clearSectionTempMDX } = useStep8Save();
@@ -78,7 +70,7 @@ export function MDXEditorCard() {
     <div className="w-full rounded-md border border-neutral-200 bg-neutral-50/60 p-4 shadow-sm dark:border-neutral-800/60 dark:bg-neutral-900/40">
       <div className="mb-2 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <h3 className="text-sm font-semibold text-foreground">MDX Editor</h3>
+          <h3 className="text-sm font-semibold text-foreground">HTML content Editor</h3>
           {isCompleted ? (
             <span className="rounded-sm bg-emerald-500/20 px-2 py-0.5 text-xs text-emerald-300">
               {STEP8_TEXTS.editor.completedBadge}
@@ -106,13 +98,14 @@ export function MDXEditorCard() {
               disabled={!isDirty}
               className={[
                 chipBase,
-                tonePrimary,
+                toneNeutral,
                 !isDirty ? toneDisabled : "",
               ].join(" ")}
             >
               Save
             </button>
           </div>
+
         </div>
       </div>
 
@@ -135,4 +128,4 @@ export function MDXEditorCard() {
   );
 }
 
-export default MDXEditorCard;
+export default HtmlEditorCard;

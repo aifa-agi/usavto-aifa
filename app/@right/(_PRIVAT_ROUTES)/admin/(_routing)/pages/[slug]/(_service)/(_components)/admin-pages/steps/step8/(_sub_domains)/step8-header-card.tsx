@@ -3,26 +3,46 @@
 
 /**
  * Step8HeaderCard:
- * - Shows summary metrics and last update.
- * - Adds a 4px tri-state status dot INSIDE the "Regenerate draft" button, left to the label.
+ * - Shows summary metrics (Coverage, Current, Saved) with three statistical blocks.
+ * - Displays last update timestamp.
+ * - Includes a 4px tri-state status dot INSIDE the "Generate draft" button.
  * - Status logic: green (all saved), gray (none saved or zero sections), orange (partial).
  * - Uses derived UI-only metrics from useStep8Status (no persistence).
+ * - Matches corporate design standard with neutral card surfaces and colored metric indicators.
  */
+
 
 import * as React from "react";
 import { useStep8Root } from "../(_contexts)/step8-root-context";
 import { useStep8Status } from "../(_hooks)/use-step8-status";
+import { getPageTitleSafe } from "../(_utils)/step8-utils";
 
+function PencilIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      {...props}
+      viewBox="0 0 24 24"
+      fill="none"
+      className={`h-5 w-5 ${props.className ?? ""}`}
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path
+        d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a1.003 1.003 0 0 0 0-1.42l-2.34-2.34a1.003 1.003 0 0 0-1.42 0l-1.83 1.83 3.75 3.75 1.84-1.82z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+}
 export function Step8HeaderCard() {
-  const { page, getSections, ui } = useStep8Root();
-  const { savedCount, totalCount, isAllSaved8 } = useStep8Status();
+  const { page } = useStep8Root();
+  const { savedCount, totalCount, isAllSaved8, coverage8, unlockedIndex } =
+    useStep8Status();
 
-  const sections = getSections();
-  const total = sections.length;
-  const withResults = sections.filter(
-    (s) => s.id && ui.resultsBySection[s.id]
-  ).length;
-  const pct = total > 0 ? Math.round((withResults / total) * 100) : 0;
+  const pageTitleText = React.useMemo(
+    () => getPageTitleSafe(page),
+    [page?.title, page?.metadata?.title]
+  );
 
   const updatedAt =
     typeof page?.updatedAt === "string"
@@ -46,43 +66,60 @@ export function Step8HeaderCard() {
 
   return (
     <div className="w-full rounded-md border border-neutral-200 bg-neutral-50/60 p-5 shadow-sm dark:border-neutral-800/60 dark:bg-neutral-900/40">
-      <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+
+
+      <div className="flex items-center gap-3">
         <div className="flex items-start gap-3">
           <div className="mt-0.5 text-violet-400">
-            {/* icon placeholder */}
-            <div
-              className="h-5 w-5 rounded-sm bg-violet-500/30"
-              aria-hidden="true"
-            />
+            <PencilIcon />
           </div>
           <div>
             <div className="flex items-center gap-2">
               <h2 className="text-base font-semibold text-foreground">
-                Draft Results
+                Sequential Content Generation
               </h2>
-              <span className="rounded-full border border-border px-2 py-0.5 text-xs text-muted-foreground">
-                {page?.title ?? "Untitled Page"}
+              <span className="rounded-full border border-border px-2 py-0.5 text-xs text-muted-foreground line-clamp-2">
+                {pageTitleText}
               </span>
             </div>
             <p className="mt-1 text-sm text-muted-foreground">
-              Review AI draft results and analysis before proceeding to
-              reporting.
+              Activate content generation step-by-step with your configured structure, knowledge bases,
+              and custom instructions. Export prompts for external AI tools (e.g., Perplexity) or generate
+              internally, then upload results for seamless integration.
             </p>
           </div>
+
+
         </div>
 
-        <div className="flex shrink-0">
-          <div className="inline-flex items-center gap-2 rounded-md border border-violet-500 bg-violet-500/15 px-3 py-1.5 text-sm text-white hover:bg-violet-500/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500 focus-visible:ring-offset-2 focus-visible:ring-offset-background">
-            {/* 4px status dot placed inside the button, left to the label */}
-            <span className={`${dotCls}`} aria-hidden="true" />
-            <span> Generate draft</span>
-          </div>
-        </div>
       </div>
 
-      <p className="mt-2 text-xs text-muted-foreground">
-        Last update: {updatedAt}
-      </p>
+      {/* Three statistical blocks matching Step 7 design standard */}
+      <div className="mt-4 grid grid-cols-2 gap-3 md:grid-cols-3">
+        {/* Coverage Block - Emerald (green) */}
+        <div className="rounded-md border border-neutral-200 bg-neutral-50/60 p-4 text-center dark:border-neutral-800/60 dark:bg-neutral-900/30">
+          <div className="text-xl font-semibold text-emerald-400">
+            {coverage8}%
+          </div>
+          <div className="text-xs text-muted-foreground">Coverage</div>
+        </div>
+
+        {/* Current Block - Violet (purple) */}
+        <div className="rounded-md border border-neutral-200 bg-neutral-50/60 p-4 text-center dark:border-neutral-800/60 dark:bg-neutral-900/30">
+          <div className="text-xl font-semibold text-violet-400">
+            {unlockedIndex + 1} / {totalCount}
+          </div>
+          <div className="text-xs text-muted-foreground">Current</div>
+        </div>
+
+        {/* Saved Block - Orange */}
+        <div className="rounded-md border border-neutral-200 bg-neutral-50/60 p-4 text-center dark:border-neutral-800/60 dark:bg-neutral-900/30">
+          <div className="text-xl font-semibold text-orange-400">
+            {savedCount}
+          </div>
+          <div className="text-xs text-muted-foreground">Saved</div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -4,9 +4,10 @@
 /**
  * Step 8 entry: wires context and cards:
  * - Step8HeaderCard
- * - ProgressStrip
- * - ResultsSelectorCard
+ * - ResultsSelectorCard (with sequential activation logic)
  * - DraftResultsCard
+ * 
+ * Note: ProgressStrip has been removed - its logic is now integrated into ResultsSelectorCard
  */
 
 import * as React from "react";
@@ -17,7 +18,6 @@ import { findPageBySlug } from "../../../../(_utils)/page-helpers";
 import { PageNotFound } from "../../../page-not-found";
 import { Step8HeaderCard } from "./(_sub_domains)/step8-header-card";
 import { ResultsSelectorCard } from "./(_sub_domains)/results-selector-card";
-import { ProgressStrip } from "./(_sub_domains)/progress-strip";
 import { DraftResultsCard } from "./(_sub_domains)/draft-results-card";
 
 interface AdminPageInfoProps {
@@ -47,7 +47,6 @@ export function AdminPageStep8({ slug }: AdminPageInfoProps) {
     <Step8RootProvider page={page}>
       <div className="space-y-4">
         <Step8HeaderCard />
-        <ProgressStrip />
         <ResultsSelectorCard />
         <DraftResultsCard />
       </div>

@@ -12,7 +12,7 @@
  * - Сохранение сгенерированной структуры в draftContentStructure
  */
 
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
@@ -26,7 +26,7 @@ import {
   Edit3,
   Network,
   Target,
-  Zap
+  Zap,
 } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
@@ -35,6 +35,7 @@ import { ContentStructureStreamCard } from "./components/content-structure-strea
 import { useNavigationMenu } from "@/app/@right/(_service)/(_context)/nav-bar-provider";
 import { findPageBySlug } from "../../../../(_utils)/page-helpers";
 import { useSystemInstructionGenerator } from "./(_hooks)/system-instruction-generator";
+import { getPageTitleSafe } from "./(_utils)/step5-utils";
 
 interface AdminPageInfoProps {
   slug: string;
@@ -67,7 +68,23 @@ const CONTENT_FORMATS = [
   { value: "comparison", label: "Comparison", description: "Pros/cons, before/after analysis" },
   { value: "listicle", label: "Listicle", description: "Organized in numbered or bulleted lists" },
 ];
-
+function PencilIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      {...props}
+      viewBox="0 0 24 24"
+      fill="none"
+      className={`h-5 w-5 ${props.className ?? ""}`}
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path
+        d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a1.003 1.003 0 0 0 0-1.42l-2.34-2.34a1.003 1.003 0 0 0-1.42 0l-1.83 1.83 3.75 3.75 1.84-1.82z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+}
 export function AdminPageStep5({ slug }: AdminPageInfoProps) {
   const { categories, loading, initialized } = useNavigationMenu();
 
@@ -99,7 +116,10 @@ export function AdminPageStep5({ slug }: AdminPageInfoProps) {
       </div>
     );
   }
-
+  const pageTitleText = useMemo(
+    () => getPageTitleSafe(page),
+    [page?.title, page?.metadata?.title]
+  );
   if (!pageData) {
     return <PageNotFound slug={slug} />;
   }
@@ -110,26 +130,27 @@ export function AdminPageStep5({ slug }: AdminPageInfoProps) {
       <Card className="w-full rounded-md border border-neutral-200 bg-neutral-50/60 shadow-sm dark:border-neutral-800/60 dark:bg-neutral-900/40">
         <CardHeader>
           <div className="flex items-center gap-3">
-            <div className="text-violet-400">
-              <div className="h-5 w-5 rounded-sm bg-violet-500/30" aria-hidden="true" />
+            <div className="flex items-start gap-3">
+              <div className="mt-0.5 text-violet-400">
+                <PencilIcon />
+              </div>
+              <div>
+                <div className="flex items-center gap-2">
+                  <h2 className="text-base font-semibold text-foreground">
+                    Content Structure Generation
+                  </h2>
+                  <span className="rounded-full border border-border px-2 py-0.5 text-xs text-muted-foreground line-clamp-2">
+                    {pageTitleText}
+                  </span>
+                </div>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  AI generates project structure using internal knowledge base, external
+                  sources, and custom settings to create foundation for content generation.
+                </p>
+              </div>
+
             </div>
-            <div className="min-w-0 flex-1">
-              <CardTitle className="text-xl truncate text-foreground">
-                AI Content Structure Generation
-              </CardTitle>
-              <p className="text-sm text-muted-foreground mt-1 truncate">
-                Generate content structure using internal AI model with personalized settings
-              </p>
-            </div>
-            <div className="ml-auto">
-              <Button
-                type="button"
-                className="inline-flex items-center gap-2 rounded-md border border-violet-500 bg-violet-500/15 px-3 py-1.5 text-sm text-white hover:bg-violet-500/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
-              >
-                <Zap className="size-4" aria-hidden="true" />
-                <span className="ml-2 truncate">AI Generation</span>
-              </Button>
-            </div>
+
           </div>
         </CardHeader>
       </Card>

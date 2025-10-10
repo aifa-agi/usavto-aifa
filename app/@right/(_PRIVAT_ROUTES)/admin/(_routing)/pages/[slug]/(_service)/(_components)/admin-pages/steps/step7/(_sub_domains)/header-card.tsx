@@ -80,43 +80,32 @@ export function HeaderCard() {
   return (
     <div className="w-full rounded-md border border-neutral-200 bg-neutral-50/60 p-5 shadow-sm dark:border-neutral-800/60 dark:bg-neutral-900/40">
       <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-        <div className="flex items-start gap-3">
-          <div className="mt-0.5 text-violet-400">
-            <PencilIcon />
-          </div>
-          <div>
-            <div className="flex items-center gap-2">
-              <h2 className="text-base font-semibold text-foreground">
-                Draft Preparation
-              </h2>
-              <span className="rounded-full border border-border px-2 py-0.5 text-xs text-muted-foreground">
-                {pageTitleText}
-              </span>
+        <div className="flex items-center gap-3">
+          <div className="flex items-start gap-3">
+            <div className="mt-0.5 text-violet-400">
+              <PencilIcon />
             </div>
-            <p className="mt-1 text-sm text-muted-foreground">
-              Prepare your content structure for generation. Make necessary
-              adjustments before launching the content generation process.
-            </p>
+            <div>
+              <div className="flex items-center gap-2">
+                <h2 className="text-base font-semibold text-foreground">
+                  Content Structure Customization
+                </h2>
+                <span className="rounded-full border border-border px-2 py-0.5 text-xs text-muted-foreground line-clamp-2">
+                  {pageTitleText}
+                </span>
+              </div>
+              <p className="mt-1 text-sm text-muted-foreground">
+                Edit AI-generated structure: add or remove typography elements, adjust system
+                instructions, modify character limits, and fine-tune content generation settings.
+              </p>
+            </div>
+
+
           </div>
+
         </div>
 
-        {/* Draft Editor primary-highlighted with dynamic readiness dot */}
-        <div className="flex shrink-0">
-          <button
-            type="button"
-            className={`${editorBtnBase} ${editorBtnTone}`}
-            aria-label="Open draft editor"
-            title="Open draft editor"
-          >
-            <span
-              className={`inline-block h-1.5 w-1.5 rounded-full ${readyDotClass(
-                readyPct
-              )}`}
-              aria-hidden="true"
-            />
-            Draft Editor
-          </button>
-        </div>
+
       </div>
 
       <div className="mt-4 grid grid-cols-2 gap-3 md:grid-cols-3">
