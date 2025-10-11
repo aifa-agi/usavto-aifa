@@ -6044,7 +6044,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-08T14:30:24.434Z",
-        "updatedAt": "2025-10-10T23:15:04.507Z",
+        "updatedAt": "2025-10-11T16:26:58.809Z",
         "order": 1,
         "description": "Оптимизируйте предрейсовые медосмотры с телемедициной в USAUTO: быстро, удобно и экономично. Снижайте затраты и улучшайте безопасность водителей!",
         "images": [
@@ -6684,6 +6684,213 @@ export const contentData = {
               }
             ],
             "status": "checked"
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "часто задаваемые вопросы",
+              "телемедицина",
+              "предрейсовые медосмотры",
+              "дистанционные осмотры",
+              "польза телемедицины",
+              "экономия времени",
+              "безопасность водителей"
+            ],
+            "taxonomy": "FAQ | Q&A section",
+            "attention": "Anticipate and answer the most pressing user questions.",
+            "intent": "Address common questions with clear, helpful answers.",
+            "audiences": "Prospects, users, and decision-makers; level: beginner-to-intermediate.",
+            "selfPrompt": "This FAQ H2 section is designed for generating relevant questions and answers. Adopt the user's perspective by analyzing existing content and understanding the target audience. Generate four high-impact questions that would be most interesting and useful within the context of the topic. Organize each question under an H3 heading with a well-crafted answer. Avoid repeating content from other sections. Respect min/max words per element. Generate the necessary content here.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "keywords": [
+                  "введение в FAQ",
+                  "польза FAQ",
+                  "как использовать FAQ"
+                ],
+                "taxonomy": "Supporting | FAQ intro",
+                "attention": "Set expectations for the FAQ format and utility.",
+                "intent": "Briefly introduce how the FAQ helps users find quick answers.",
+                "audiences": "All readers; level: general.",
+                "selfPrompt": "Write a short introductory paragraph that explains the purpose of the FAQ section and how to use it. Keep it clear and user-centric. Respect word limits. Generate the necessary content here.",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "keywords": [
+                  "как работает телемедицина",
+                  "телемедицина и безопасность",
+                  "дистанционные медосмотры"
+                ],
+                "taxonomy": "FAQ | Question heading",
+                "attention": "Formulate a highly relevant, commonly asked question.",
+                "intent": "Ask a question that reflects a top user concern or blocker.",
+                "audiences": "Prospects and users; level: beginner-to-intermediate.",
+                "selfPrompt": "Create an H3 question that reflects a common, high-priority user concern derived from the page topic and audience needs. Keep it direct, specific, and natural. Generate the necessary content here.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "keywords": [
+                      "ответ на вопрос о телемедицине",
+                      "польза телемедицины",
+                      "безопасность водителей"
+                    ],
+                    "taxonomy": "FAQ | Answer",
+                    "attention": "Provide a clear, concise answer in 1-2 paragraphs.",
+                    "intent": "Deliver a precise, user-friendly answer that resolves the question.",
+                    "audiences": "Beginners and prospects; level: beginner-to-intermediate.",
+                    "selfPrompt": "Write a clear, concise answer that directly addresses the question. Use plain, helpful language. Include one concrete example or constraint if applicable. Respect min/max words. Generate the necessary content here.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-2",
+                "tag": "h3",
+                "keywords": [
+                  "почему стоит выбрать телемедицину",
+                  "дистанционные осмотры",
+                  "экономия времени"
+                ],
+                "taxonomy": "FAQ | Question heading",
+                "attention": "Pose a distinct, high-value question.",
+                "intent": "Ask a different question that addresses another common concern.",
+                "audiences": "Prospects and users; level: beginner-to-intermediate.",
+                "selfPrompt": "Create an H3 question that is distinct from the first and addresses a different top-priority user concern. Keep it clear, specific, and natural. Generate the necessary content here.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "ответ на вопрос о преимуществах",
+                      "экономия времени",
+                      "удобство телемедицины"
+                    ],
+                    "taxonomy": "FAQ | Answer",
+                    "attention": "Answer clearly and helpfully.",
+                    "intent": "Resolve the question with clarity and precision.",
+                    "audiences": "Beginners and prospects; level: beginner-to-intermediate.",
+                    "selfPrompt": "Write a clear, concise answer that resolves the question without ambiguity. Use simple, practical language. Respect min/max words. Generate the necessary content here.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-3",
+                "tag": "h3",
+                "keywords": [
+                  "как телемедицина помогает водителям",
+                  "дистанционные осмотры",
+                  "проверка здоровья"
+                ],
+                "taxonomy": "FAQ | Question heading",
+                "attention": "Address a technical or decision-blocking question.",
+                "intent": "Ask a question that helps users overcome a final hesitation.",
+                "audiences": "Decision-makers and technical users; level: intermediate.",
+                "selfPrompt": "Create an H3 question that addresses a common technical concern or decision-making blocker. Keep it targeted and distinct from prior questions. Generate the necessary content here.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "ответ на вопрос о проверке здоровья",
+                      "польза телемедицины",
+                      "дистанционные осмотры"
+                    ],
+                    "taxonomy": "FAQ | Answer",
+                    "attention": "Provide a reassuring, specific answer.",
+                    "intent": "Help readers confidently move forward with their decision.",
+                    "audiences": "Decision-makers; level: intermediate.",
+                    "selfPrompt": "Write a reassuring answer that resolves the concern with specifics (benefits, constraints, or examples). Keep it practical and concise. Respect min/max words. Generate the necessary content here.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-4",
+                "tag": "h3",
+                "keywords": [
+                  "что делать в случае проблем с телемедициной",
+                  "дистанционные осмотры",
+                  "поддержка пользователей"
+                ],
+                "taxonomy": "FAQ | Question heading",
+                "attention": "Cover an advanced or edge-case scenario.",
+                "intent": "Ask a question that addresses a less common but important concern.",
+                "audiences": "Advanced users and specialists; level: intermediate-to-advanced.",
+                "selfPrompt": "Create an H3 question that covers an advanced scenario or edge case that power users might encounter. Keep it specific and valuable. Generate the necessary content here.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "ответ на вопрос о поддержке",
+                      "решение проблем",
+                      "дистанционные осмотры"
+                    ],
+                    "taxonomy": "FAQ | Answer",
+                    "attention": "Provide a detailed, expert-level answer.",
+                    "intent": "Address the advanced concern with depth and precision.",
+                    "audiences": "Advanced users; level: intermediate-to-advanced.",
+                    "selfPrompt": "Write a detailed answer that addresses the advanced scenario with precision. Include technical details or caveats as needed. Respect min/max words. Generate the necessary content here.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ],
         "sections": [
@@ -6762,5 +6969,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-11T16:27:00.511Z";
+export const lastUpdated = "2025-10-11T16:30:49.436Z";
 export const generatedBy = "menu-persist-api";
