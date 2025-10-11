@@ -1889,7 +1889,7 @@ export const LONG_READ_CONTENT_STRUCTURE: RootContentStructure[] = [
     ],
   },
 
-  // 10. Comprehensive Summary and Next Steps section
+  // 10. Comprehensive Summary and Next Steps section!
   {
     id: "h2-9",
     tag: "h2",
