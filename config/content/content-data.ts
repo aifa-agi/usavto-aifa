@@ -5965,12 +5965,12 @@ export const contentData = {
             ]
           }
         ],
-        "isPublished": false,
+        "isPublished": true,
         "isAddedToPrompt": false,
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-08T14:30:24.434Z",
-        "updatedAt": "2025-10-11T16:40:02.154Z",
+        "updatedAt": "2025-10-11T19:38:47.669Z",
         "order": 1,
         "description": "Оптимизируйте предрейсовые медосмотры с телемедициной в USAUTO: быстро, удобно и экономично. Снижайте затраты и улучшайте безопасность водителей!",
         "images": [
@@ -5990,7 +5990,657 @@ export const contentData = {
         "attention": "Создайте захватывающий заголовок с конкретным предложением об экономии до 67% на предрейсовых медосмотрах благодаря телемедицине, сопровождаемый динамичным изображением водителя, проходящего осмотр за 2 минуты. На первом экране разместите интерактивный калькулятор, позволяющий пользователям быстро оценить потенциальную экономию и время, с помощью которого можно установить связь с медицинским специалистом. При прокрутке страницы внедрите последовательное раскрытие информации о преимуществах, включая видеоотзывы клиентов с конкретными результатами, такими как сокращение времени осмотра до 90 секунд и снижение затрат на медицинский персонал.",
         "audiences": "Эта страница предназначена для руководителей и специалистов по охране труда в транспортных и логистических компаниях, которые стремятся оптимизировать процесс предрейсовых медицинских осмотров водителей. Они сталкиваются с высокими затратами на традиционные медосмотры и необходимостью соблюдения законодательства, и заинтересованы в инновационных решениях, которые позволят сократить время и стоимость процедур, обеспечивая при этом высокое качество медицинской оценки.",
         "isPreviewComplited": false,
-        "isReadyDraftForPerplexity": false
+        "isReadyDraftForPerplexity": true,
+        "draftContentStructure": [
+          {
+            "id": "h2-1",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "телемедицина",
+              "предрейсовые медосмотры",
+              "оптимизация",
+              "удаленные осмотры",
+              "экономия",
+              "безопасность водителей",
+              "инновационные решения"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, как телемедицина может сократить ваши затраты на предрейсовые медосмотры до 67%!",
+            "intent": "Представить преимущества телемедицины для предрейсовых медосмотров и показать, как она может оптимизировать процесс.",
+            "audiences": "Руководители и специалисты по охране труда в транспортных и логистических компаниях, стремящиеся оптимизировать медосмотры.",
+            "selfPrompt": "Generate h2 in section 'Введение' of page 'Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!' GOAL: Introduce the benefits of telemedicine for pre-trip medical examinations. AUDIENCE: Transport and logistics company managers | Level: expert | Pain points: High costs of traditional medical examinations.",
+            "writingStyle": "narrative",
+            "contentFormat": "expert",
+            "customRequirements": "При формировании контента в основе своей бери информацию из собственной базы знания расширяет дополняй её информации с внешней базы знаний. Допускаю конфликтов и не применяй отсылы к конкурирующим решением",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-1-1",
+                "tag": "p",
+                "keywords": [
+                  "телемедицина",
+                  "предрейсовые медосмотры"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Телемедицина предлагает быстрое и удобное решение для предрейсовых медосмотров.",
+                "intent": "Объяснить, как телемедицина улучшает процесс предрейсовых медосмотров.",
+                "audiences": "Руководители транспортных компаний",
+                "selfPrompt": "Generate p in section 'Введение' of page 'Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!' GOAL: Explain how telemedicine improves the pre-trip medical examination process. AUDIENCE: Transport company managers | Level: expert | Pain points: Inefficiencies in traditional medical examinations.",
+                "additionalData": {
+                  "minWords": 90,
+                  "maxWords": 160,
+                  "actualContent": ""
+                },
+                "status": "checked"
+              },
+              {
+                "id": "p-1-2",
+                "tag": "p",
+                "keywords": [
+                  "оптимизация",
+                  "экономия"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Сокращение затрат и времени — ключевые преимущества телемедицины.",
+                "intent": "Подчеркнуть экономические выгоды от использования телемедицины.",
+                "audiences": "Специалисты по охране труда",
+                "selfPrompt": "Generate p in section 'Введение' of page 'Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!' GOAL: Highlight the economic benefits of using telemedicine. AUDIENCE: Occupational safety specialists | Level: expert | Pain points: High costs of traditional medical examinations.",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                },
+                "status": "checked"
+              },
+              {
+                "id": "p-1-3",
+                "tag": "p",
+                "keywords": [
+                  "инновационные решения"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Телемедицина — это будущее предрейсовых медосмотров.",
+                "intent": "Сформировать представление о телемедицине как о современном решении.",
+                "audiences": "Руководители транспортных компаний",
+                "selfPrompt": "Generate p in section 'Введение' of page 'Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!' GOAL: Present telemedicine as a modern solution for pre-trip medical examinations. AUDIENCE: Transport company managers | Level: expert | Pain points: Need for innovative solutions.",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                },
+                "status": "checked"
+              },
+              {
+                "id": "blockquote-1-4",
+                "tag": "blockquote",
+                "keywords": [
+                  "безопасность водителей"
+                ],
+                "taxonomy": "supporting",
+                "attention": "«Телемедицина может значительно повысить безопасность водителей, сокращая время на медосмотры.»",
+                "intent": "Подтвердить важность телемедицины для повышения безопасности.",
+                "audiences": "Руководители транспортных компаний",
+                "selfPrompt": "Generate blockquote in section 'Введение' of page 'Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!' GOAL: Confirm the importance of telemedicine for enhancing safety. AUDIENCE: Transport company managers | Level: expert | Pain points: Ensuring driver safety.",
+                "additionalData": {
+                  "minWords": 25,
+                  "maxWords": 45,
+                  "actualContent": ""
+                },
+                "status": "checked"
+              },
+              {
+                "id": "p-1-5",
+                "tag": "p",
+                "keywords": [
+                  "удаленные осмотры"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Телемедицина позволяет проводить осмотры без необходимости физического присутствия врача.",
+                "intent": "Объяснить, как удаленные осмотры работают в рамках телемедицины.",
+                "audiences": "Специалисты по охране труда",
+                "selfPrompt": "Generate p in section 'Введение' of page 'Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!' GOAL: Explain how remote examinations work within telemedicine. AUDIENCE: Occupational safety specialists | Level: expert | Pain points: Need for efficient examination processes.",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 110,
+                  "actualContent": ""
+                },
+                "status": "checked"
+              },
+              {
+                "id": "ul-1-6",
+                "tag": "ul",
+                "keywords": [
+                  "преимущества",
+                  "телемедицина"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Преимущества телемедицины:",
+                "intent": "Представить список ключевых преимуществ телемедицины.",
+                "audiences": "Руководители транспортных компаний",
+                "selfPrompt": "Generate ul in section 'Введение' of page 'Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!' GOAL: Present a list of key benefits of telemedicine. AUDIENCE: Transport company managers | Level: expert | Pain points: Need for effective solutions.",
+                "additionalData": {
+                  "minWords": 40,
+                  "maxWords": 70,
+                  "actualContent": ""
+                },
+                "status": "checked"
+              }
+            ],
+            "status": "checked"
+          },
+          {
+            "id": "h2-2",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "телемедицина",
+              "предрейсовые медосмотры",
+              "дистанционные технологии",
+              "экономия затрат",
+              "инновационные решения",
+              "безопасность водителей",
+              "оптимизация процессов"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, как телемедицина может сократить ваши затраты на предрейсовые медосмотры.",
+            "intent": "Объяснить, как телемедицинские технологии могут оптимизировать процесс предрейсовых медосмотров и снизить затраты.",
+            "audiences": "Руководители и специалисты по охране труда в транспортных и логистических компаниях.",
+            "selfPrompt": "Generate h2 in section 'Преимущества телемедицины для предрейсовых медосмотров' of page 'Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!' GOAL: Explain how telemedicine technologies can optimize the pre-trip medical examination process and reduce costs. AUDIENCE: Managers and occupational safety specialists in transport and logistics companies.",
+            "writingStyle": "narrative",
+            "contentFormat": "expert",
+            "customRequirements": "При формировании контента в основе своей бери информацию из собственной базы знания расширяет дополняй её информации с внешней базы знаний. Допускаю конфликтов и не применяй отсылы к конкурирующим решением",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 550,
+              "maxWords": 750,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-2-1",
+                "tag": "p",
+                "keywords": [
+                  "телемедицина",
+                  "предрейсовые медосмотры"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Телемедицина предлагает новые возможности для оптимизации медосмотров.",
+                "intent": "Ввести читателя в тему и подготовить к основным преимуществам.",
+                "audiences": "Руководители и специалисты по охране труда.",
+                "selfPrompt": "Generate p in section 'Преимущества телемедицины для предрейсовых медосмотров' of page 'Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!' GOAL: Introduce the reader to the topic and prepare for the main benefits. AUDIENCE: Managers and occupational safety specialists.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 140,
+                  "actualContent": ""
+                },
+                "status": "checked"
+              },
+              {
+                "id": "p-2-2",
+                "tag": "p",
+                "keywords": [
+                  "инновационные решения"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Инновационные решения для медосмотров.",
+                "intent": "Кратко упомянуть о важности инновационных решений.",
+                "audiences": "Специалисты по охране труда.",
+                "selfPrompt": "Generate p in section 'Преимущества телемедицины для предрейсовых медосмотров' of page 'Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!' GOAL: Briefly mention the importance of innovative solutions. AUDIENCE: Occupational safety specialists.",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                },
+                "status": "checked"
+              },
+              {
+                "id": "h3-2-3",
+                "tag": "h3",
+                "keywords": [
+                  "дистанционные технологии",
+                  "оптимизация процессов",
+                  "снижение затрат"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Как дистанционные технологии помогают оптимизировать процессы.",
+                "intent": "Объяснить, как дистанционные технологии влияют на оптимизацию процессов.",
+                "audiences": "Руководители и специалисты по охране труда.",
+                "selfPrompt": "Generate h3 in section 'Преимущества телемедицины для предрейсовых медосмотров' of page 'Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!' GOAL: Explain how remote technologies impact process optimization. AUDIENCE: Managers and occupational safety specialists.",
+                "additionalData": {
+                  "minWords": 220,
+                  "maxWords": 320,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "дистанционные технологии"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Дистанционные технологии меняют подход к медосмотрам.",
+                    "intent": "Объяснить, как дистанционные технологии меняют подход к медосмотрам.",
+                    "audiences": "Специалисты по охране труда.",
+                    "selfPrompt": "Generate p in section 'Как дистанционные технологии помогают оптимизировать процессы' of page 'Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!' GOAL: Explain how remote technologies change the approach to medical examinations. AUDIENCE: Occupational safety specialists.",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 130,
+                      "actualContent": ""
+                    },
+                    "status": "checked"
+                  },
+                  {
+                    "id": "ul-2-3-2",
+                    "tag": "ul",
+                    "keywords": [
+                      "показатели здоровья",
+                      "удаленные осмотры"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Преимущества удаленных осмотров.",
+                    "intent": "Перечислить преимущества удаленных осмотров.",
+                    "audiences": "Руководители и специалисты по охране труда.",
+                    "selfPrompt": "Generate ul in section 'Как дистанционные технологии помогают оптимизировать процессы' of page 'Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!' GOAL: List the advantages of remote examinations. AUDIENCE: Managers and occupational safety specialists.",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 85,
+                      "actualContent": ""
+                    },
+                    "status": "checked"
+                  },
+                  {
+                    "id": "p-2-3-3",
+                    "tag": "p",
+                    "keywords": [
+                      "снижение затрат"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Снижение затрат на медосмотры.",
+                    "intent": "Объяснить, как телемедицина снижает затраты.",
+                    "audiences": "Руководители и специалисты по охране труда.",
+                    "selfPrompt": "Generate p in section 'Как дистанционные технологии помогают оптимизировать процессы' of page 'Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!' GOAL: Explain how telemedicine reduces costs. AUDIENCE: Managers and occupational safety specialists.",
+                    "additionalData": {
+                      "minWords": 65,
+                      "maxWords": 115,
+                      "actualContent": ""
+                    },
+                    "status": "checked"
+                  },
+                  {
+                    "id": "code-2-3-4",
+                    "tag": "code",
+                    "keywords": [
+                      "API интеграция"
+                    ],
+                    "taxonomy": "technical",
+                    "attention": "Пример кода для интеграции.",
+                    "intent": "Предоставить пример кода для интеграции телемедицинских решений.",
+                    "audiences": "Разработчики и технические специалисты.",
+                    "selfPrompt": "Generate code in section 'Как дистанционные технологии помогают оптимизировать процессы' of page 'Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!' GOAL: Provide a code example for integrating telemedicine solutions. AUDIENCE: Developers and technical specialists.",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 45,
+                      "actualContent": ""
+                    },
+                    "status": "checked"
+                  }
+                ],
+                "status": "checked"
+              },
+              {
+                "id": "h3-2-4",
+                "tag": "h3",
+                "keywords": [
+                  "безопасность водителей",
+                  "законодательное соответствие",
+                  "телемедицинские решения"
+                ],
+                "taxonomy": "Case Study",
+                "attention": "Как телемедицинские решения обеспечивают безопасность водителей.",
+                "intent": "Обсудить, как телемедицинские решения способствуют безопасности водителей.",
+                "audiences": "Руководители и специалисты по охране труда.",
+                "selfPrompt": "Generate h3 in section 'Преимущества телемедицины для предрейсовых медосмотров' of page 'Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!' GOAL: Discuss how telemedicine solutions contribute to driver safety. AUDIENCE: Managers and occupational safety specialists.",
+                "additionalData": {
+                  "minWords": 280,
+                  "maxWords": 400,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "безопасность водителей"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Обеспечение безопасности водителей с помощью телемедицины.",
+                    "intent": "Объяснить, как телемедицина обеспечивает безопасность водителей.",
+                    "audiences": "Руководители и специалисты по охране труда.",
+                    "selfPrompt": "Generate p in section 'Как телемедицинские решения обеспечивают безопасность водителей' of page 'Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!' GOAL: Explain how telemedicine ensures driver safety. AUDIENCE: Managers and occupational safety specialists.",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    },
+                    "status": "checked"
+                  },
+                  {
+                    "id": "table-2-4-2",
+                    "tag": "table",
+                    "keywords": [
+                      "параметры безопасности",
+                      "телемедицинские решения"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Параметры безопасности в телемедицинских решениях.",
+                    "intent": "Предоставить таблицу с параметрами безопасности.",
+                    "audiences": "Руководители и специалисты по охране труда.",
+                    "selfPrompt": "Generate table in section 'Как телемедицинские решения обеспечивают безопасность водителей' of page 'Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!' GOAL: Provide a table with safety parameters. AUDIENCE: Managers and occupational safety specialists.",
+                    "additionalData": {
+                      "minWords": 90,
+                      "maxWords": 150,
+                      "actualContent": ""
+                    },
+                    "status": "checked"
+                  },
+                  {
+                    "id": "p-2-4-3",
+                    "tag": "p",
+                    "keywords": [
+                      "законодательное соответствие"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Законодательное соответствие телемедицинских решений.",
+                    "intent": "Объяснить, как телемедицинские решения соответствуют законодательству.",
+                    "audiences": "Руководители и специалисты по охране труда.",
+                    "selfPrompt": "Generate p in section 'Как телемедицинские решения обеспечивают безопасность водителей' of page 'Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!' GOAL: Explain how telemedicine solutions comply with legislation. AUDIENCE: Managers and occupational safety specialists.",
+                    "additionalData": {
+                      "minWords": 5,
+                      "maxWords": 15,
+                      "actualContent": ""
+                    },
+                    "status": "checked"
+                  },
+                  {
+                    "id": "h4-2-4-4",
+                    "tag": "h4",
+                    "keywords": [
+                      "телемедицинские решения",
+                      "безопасность водителей"
+                    ],
+                    "taxonomy": "technical",
+                    "attention": "Технические аспекты телемедицинских решений.",
+                    "intent": "Обсудить технические аспекты телемедицинских решений.",
+                    "audiences": "Технические специалисты.",
+                    "selfPrompt": "Generate h4 in section 'Как телемедицинские решения обеспечивают безопасность водителей' of page 'Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!' GOAL: Discuss the technical aspects of telemedicine solutions. AUDIENCE: Technical specialists.",
+                    "additionalData": {
+                      "minWords": 130,
+                      "maxWords": 200,
+                      "actualContent": ""
+                    },
+                    "realContentStructure": [
+                      {
+                        "id": "p-2-4-4-1",
+                        "tag": "p",
+                        "keywords": [
+                          "технические аспекты"
+                        ],
+                        "taxonomy": "supporting",
+                        "attention": "Технические аспекты телемедицинских решений.",
+                        "intent": "Объяснить технические аспекты телемедицинских решений.",
+                        "audiences": "Технические специалисты.",
+                        "selfPrompt": "Generate p in section 'Технические аспекты телемедицинских решений' of page 'Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!' GOAL: Explain the technical aspects of telemedicine solutions. AUDIENCE: Technical specialists.",
+                        "additionalData": {
+                          "minWords": 60,
+                          "maxWords": 105,
+                          "actualContent": ""
+                        },
+                        "status": "checked"
+                      },
+                      {
+                        "id": "ol-2-4-4-2",
+                        "tag": "ol",
+                        "keywords": [
+                          "этапы внедрения",
+                          "технические требования"
+                        ],
+                        "taxonomy": "supporting",
+                        "attention": "Этапы внедрения телемедицинских решений.",
+                        "intent": "Перечислить этапы внедрения телемедицинских решений.",
+                        "audiences": "Технические специалисты.",
+                        "selfPrompt": "Generate ol in section 'Технические аспекты телемедицинских решений' of page 'Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!' GOAL: List the steps for implementing telemedicine solutions. AUDIENCE: Technical specialists.",
+                        "additionalData": {
+                          "minWords": 45,
+                          "maxWords": 75,
+                          "actualContent": ""
+                        },
+                        "status": "checked"
+                      },
+                      {
+                        "id": "blockquote-2-4-4-3",
+                        "tag": "blockquote",
+                        "keywords": [
+                          "экспертное мнение"
+                        ],
+                        "taxonomy": "supporting",
+                        "attention": "Мнение эксперта о телемедицинских решениях.",
+                        "intent": "Предоставить экспертное мнение о телемедицинских решениях.",
+                        "audiences": "Специалисты по охране труда.",
+                        "selfPrompt": "Generate blockquote in section 'Технические аспекты телемедицинских решений' of page 'Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!' GOAL: Provide expert opinion on telemedicine solutions. AUDIENCE: Occupational safety specialists.",
+                        "additionalData": {
+                          "minWords": 20,
+                          "maxWords": 40,
+                          "actualContent": ""
+                        },
+                        "status": "checked"
+                      }
+                    ],
+                    "status": "checked"
+                  }
+                ],
+                "status": "checked"
+              }
+            ],
+            "status": "checked"
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "телемедицина",
+              "предрейсовые медосмотры",
+              "часто задаваемые вопросы",
+              "дистанционные осмотры",
+              "польза телемедицины",
+              "безопасность водителей",
+              "инновационные решения"
+            ],
+            "taxonomy": "FAQ",
+            "attention": "Узнайте ответы на самые распространенные вопросы о телемедицине и предрейсовых медосмотрах.",
+            "intent": "Предоставить пользователям информацию о часто задаваемых вопросах, связанных с телемедициной и предрейсовыми медосмотрами.",
+            "audiences": "Руководители и специалисты по охране труда в транспортных и логистических компаниях, заинтересованные в оптимизации медосмотров.",
+            "selfPrompt": "Generate h2 in section 'Часто задаваемые вопросы' of page 'Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!' GOAL: Provide answers to frequently asked questions about telemedicine and pre-trip medical examinations. AUDIENCE: Transport and logistics company managers and occupational safety specialists looking to optimize medical examinations.",
+            "writingStyle": "narrative",
+            "contentFormat": "expert",
+            "customRequirements": "При формировании контента в основе своей бери информацию из собственной базы знания расширяет дополняй её информации с внешней базы знаний. Допускаю конфликтов и не применяй отсылы к конкурирующим решением",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 350,
+              "maxWords": 500,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "keywords": [
+                  "телемедицина",
+                  "предрейсовые медосмотры",
+                  "информация"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Здесь вы найдете ответы на ваши вопросы о телемедицине.",
+                "intent": "Ввести пользователей в раздел часто задаваемых вопросов.",
+                "audiences": "Руководители и специалисты по охране труда.",
+                "selfPrompt": "Generate p in section 'Часто задаваемые вопросы' of page 'Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!' GOAL: Introduce the FAQ section. AUDIENCE: Transport and logistics company managers and occupational safety specialists.",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 120,
+                  "actualContent": ""
+                },
+                "status": "checked"
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "keywords": [
+                  "телемедицина",
+                  "предрейсовые медосмотры",
+                  "польза"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Как телемедицина помогает в предрейсовых медосмотрах?",
+                "intent": "Объяснить, как телемедицина улучшает процесс предрейсовых медосмотров.",
+                "audiences": "Руководители и специалисты по охране труда.",
+                "selfPrompt": "Generate h3 in section 'Часто задаваемые вопросы' of page 'Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!' GOAL: Explain how telemedicine helps in pre-trip medical examinations. AUDIENCE: Transport and logistics company managers and occupational safety specialists.",
+                "additionalData": {
+                  "minWords": 160,
+                  "maxWords": 240,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "keywords": [
+                      "телемедицина",
+                      "предрейсовые медосмотры",
+                      "польза"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "",
+                    "intent": "Подробно объяснить преимущества телемедицины.",
+                    "audiences": "Руководители и специалисты по охране труда.",
+                    "selfPrompt": "Generate p in section 'Часто задаваемые вопросы' under 'Как телемедицина помогает в предрейсовых медосмотрах?' of page 'Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!' GOAL: Detail the benefits of telemedicine. AUDIENCE: Transport and logistics company managers and occupational safety specialists.",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    },
+                    "status": "checked"
+                  }
+                ],
+                "status": "checked"
+              },
+              {
+                "id": "h3-FAQ-2",
+                "tag": "h3",
+                "keywords": [
+                  "телемедицина",
+                  "дистанционные осмотры",
+                  "безопасность"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Как обеспечивается безопасность данных при использовании телемедицины?",
+                "intent": "Объяснить меры безопасности, принимаемые при использовании телемедицины.",
+                "audiences": "Руководители и специалисты по охране труда.",
+                "selfPrompt": "Generate h3 in section 'Часто задаваемые вопросы' of page 'Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!' GOAL: Explain how data security is ensured when using telemedicine. AUDIENCE: Transport and logistics company managers and occupational safety specialists.",
+                "additionalData": {
+                  "minWords": 160,
+                  "maxWords": 240,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "безопасность данных",
+                      "телемедицина",
+                      "дистанционные осмотры"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "",
+                    "intent": "Подробно объяснить меры безопасности данных.",
+                    "audiences": "Руководители и специалисты по охране труда.",
+                    "selfPrompt": "Generate p in section 'Часто задаваемые вопросы' under 'Как обеспечивается безопасность данных при использовании телемедицины?' of page 'Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!' GOAL: Detail data security measures. AUDIENCE: Transport and logistics company managers and occupational safety specialists.",
+                    "additionalData": {
+                      "minWords": 65,
+                      "maxWords": 115,
+                      "actualContent": ""
+                    },
+                    "status": "checked"
+                  }
+                ],
+                "status": "checked"
+              },
+              {
+                "id": "h3-FAQ-3",
+                "tag": "h3",
+                "keywords": [
+                  "телемедицина",
+                  "предрейсовые медосмотры",
+                  "доступность"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Как быстро можно пройти предрейсовый медосмотр с помощью телемедицины?",
+                "intent": "Объяснить скорость и доступность телемедицинских осмотров.",
+                "audiences": "Руководители и специалисты по охране труда.",
+                "selfPrompt": "Generate h3 in section 'Часто задаваемые вопросы' of page 'Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!' GOAL: Explain how quickly a pre-trip medical examination can be completed using telemedicine. AUDIENCE: Transport and logistics company managers and occupational safety specialists.",
+                "additionalData": {
+                  "minWords": 160,
+                  "maxWords": 240,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "скорость",
+                      "телемедицина",
+                      "предрейсовые медосмотры"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "",
+                    "intent": "Подробно объяснить скорость телемедицинских осмотров.",
+                    "audiences": "Руководители и специалисты по охране труда.",
+                    "selfPrompt": "Generate p in section 'Часто задаваемые вопросы' under 'Как быстро можно пройти предрейсовый медосмотр с помощью телемедицины?' of page 'Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас!' GOAL: Detail the speed of telemedicine examinations. AUDIENCE: Transport and logistics company managers and occupational safety specialists.",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 130,
+                      "actualContent": ""
+                    },
+                    "status": "checked"
+                  }
+                ],
+                "status": "checked"
+              }
+            ],
+            "status": "checked"
+          }
+        ],
+        "sections": [
+          {
+            "id": "h2-1",
+            "tempMDXContent": "<h2 id=\"h2-1\">Как телемедицина оптимизирует предрейсовые медосмотры и снижает затраты</h2>\n<p id=\"p-1-1\">В современном транспортном бизнесе предрейсовые медицинские осмотры играют ключевую роль в обеспечении безопасности на дорогах. Однако традиционные методы проведения таких осмотров часто связаны с длительным временем ожидания, необходимостью физического присутствия водителя в медицинском учреждении и значительными затратами для компании. Телемедицина предлагает инновационное решение, позволяющее проводить предрейсовые медосмотры удалённо, используя сертифицированное медицинское оборудование, установленное непосредственно на территории предприятия. Водитель проходит обследование за считанные минуты: измеряется давление, температура, уровень алкоголя в выдыхаемом воздухе и другие показатели. Все данные в режиме реального времени передаются квалифицированному медицинскому специалисту, который дистанционно подтверждает результаты и принимает решение о допуске к рейсу. Такой подход значительно сокращает время процедуры, снижает простой транспорта и повышает общую эффективность работы автопарка, обеспечивая при этом полное соответствие нормативным требованиям.</p>\n<p id=\"p-1-2\">Экономическая выгода от внедрения телемедицины в процесс предрейсовых осмотров очевидна: компании могут сократить затраты на проведение каждого осмотра до 67%, что особенно актуально для крупных автопарков с большим количеством водителей. Отсутствие необходимости в постоянном присутствии штатного медицинского персонала и сокращение времени на осмотр позволяют значительно снизить операционные расходы. Кроме того, автоматизация и интеграция телемедицинских решений с электронными путевыми листами упрощают документооборот и минимизируют риски штрафов за несоблюдение законодательства. Такой подход обеспечивает не только экономию финансовых ресурсов, но и повышает прозрачность и контроль над процессом медосмотров, что важно для специалистов по охране труда и руководителей транспортных компаний.</p>\n<p id=\"p-1-3\">Телемедицина — это современный и перспективный инструмент, который меняет привычные стандарты проведения предрейсовых медицинских осмотров, делая их более удобными, быстрыми и надёжными.</p>\n<blockquote id=\"blockquote-1-4\">«Телемедицина может значительно повысить безопасность водителей, сокращая время на медосмотры и обеспечивая объективную оценку состояния здоровья в режиме реального времени.»</blockquote>\n<p id=\"p-1-5\">Удалённые осмотры в рамках телемедицины осуществляются с помощью специализированного оборудования, которое фиксирует жизненно важные показатели водителя и передаёт их в медицинский центр. Врачи анализируют данные дистанционно, исключая необходимость физического присутствия и снижая вероятность ошибок или подделок. Такой формат позволяет проводить осмотры круглосуточно, без привязки к рабочему времени медицинского персонала, что особенно важно для предприятий с интенсивным графиком работы и большим автопарком.</p>\n<ul id=\"ul-1-6\">\n  <li>Сокращение времени осмотра до 2 минут без потери качества оценки.</li>\n  <li>Снижение затрат на медицинский персонал и организацию кабинетов.</li>\n  <li>Полное соответствие федеральным нормативам и требованиям безопасности.</li>\n  <li>Удалённый контроль с видеофиксацией и биометрической идентификацией.</li>\n  <li>Интеграция с электронными путевыми листами для прозрачности и удобства.</li>\n</ul>"
+          },
+          {
+            "id": "h2-2",
+            "tempMDXContent": "<h2 id=\"h2-2\">Преимущества телемедицины для предрейсовых медосмотров: оптимизация и экономия</h2>\n<p id=\"p-2-1\">Телемедицина открывает новые горизонты в организации предрейсовых медицинских осмотров, предлагая эффективные решения для транспортных компаний и служб охраны труда. Использование дистанционных технологий позволяет значительно упростить и ускорить процесс проверки состояния здоровья водителей, что особенно важно для крупных автопарков с интенсивным графиком работы. Благодаря телемедицинским системам, оснащённым сертифицированным оборудованием для измерения артериального давления, температуры и уровня алкоголя, осмотры проводятся без необходимости физического присутствия медицинского персонала на месте. Это не только сокращает время, затрачиваемое на процедуру, но и снижает связанные с ней расходы, делая процесс более доступным и удобным для всех участников.</p>\n<p id=\"p-2-2\">Инновационные решения в области телемедицины стали ключевым фактором повышения эффективности и качества предрейсовых медосмотров.</p>\n<h3 id=\"h3-2-3\">Как дистанционные технологии помогают оптимизировать процессы и снизить затраты на медосмотры</h3>\n<p id=\"p-2-3-1\">Дистанционные технологии полностью меняют традиционный подход к предрейсовым медицинским осмотрам, внедряя автоматизацию и удалённый контроль. Водители проходят обследование на специализированных терминалах, которые фиксируют жизненно важные показатели и передают данные в реальном времени в медицинский центр. Медицинский персонал анализирует результаты дистанционно, что исключает необходимость длительного ожидания и физического присутствия врача. Такой подход позволяет компаниям организовать круглосуточный доступ к осмотрам, что особенно важно при сменной работе и большом количестве водителей. Внедрение телемедицины способствует не только ускорению процедур, но и повышению их прозрачности и надёжности, благодаря видеофиксации и биометрической идентификации участников.</p>\n<ul id=\"ul-2-3-2\">\n  <li>Сокращение времени осмотра до 1,5–2 минут без ущерба качеству диагностики.</li>\n  <li>Удалённый контроль с использованием сертифицированного медицинского оборудования.</li>\n  <li>Круглосуточный доступ к процедурам без привязки к графику медперсонала.</li>\n  <li>Автоматизация документооборота и интеграция с электронными путевыми листами.</li>\n  <li>Снижение операционных затрат на персонал и организацию медкабинетов.</li>\n</ul>\n<p id=\"p-2-3-3\">Экономия затрат достигается за счёт уменьшения времени простоя транспорта и снижения расходов на содержание штатного медицинского персонала. Телемедицинские решения позволяют заменить дорогостоящие очные осмотры, минимизируя финансовые и временные ресурсы компании. При этом сохраняется полное соответствие нормативным требованиям и обеспечивается высокая точность оценки состояния здоровья водителей, что важно для безопасности и соблюдения законодательства.</p>\n<code id=\"code-2-3-4\">{\n  \"telemed_exam\": {\n    \"device_id\": \"TM-12345\",\n    \"driver_id\": \"D-98765\",\n    \"parameters\": {\n      \"blood_pressure\": \"120/80\",\n      \"temperature\": \"36.6\",\n      \"alcohol_level\": \"0.00\"\n    },\n    \"timestamp\": \"2025-05-15T08:30:00Z\",\n    \"result\": \"approved\"\n  }\n}</code>\n<h3 id=\"h3-2-4\">Как телемедицинские решения обеспечивают безопасность водителей и соответствуют законодательству</h3>\n<p id=\"p-2-4-1\">Телемедицина играет важную роль в обеспечении безопасности водителей, позволяя своевременно выявлять потенциальные риски для здоровья и предотвращать аварийные ситуации на дорогах. Использование сертифицированного оборудования и дистанционный контроль медицинским персоналом гарантируют объективность и достоверность результатов. Видеофиксация процедур и биометрическая идентификация исключают возможность подделки данных и обеспечивают прозрачность процесса. Это существенно снижает вероятность нарушений и штрафов, а также повышает доверие к системе со стороны контролирующих органов. Благодаря телемедицинским решениям компании могут оперативно реагировать на изменения состояния здоровья водителей и принимать меры для поддержания высокого уровня безопасности перевозок.</p>\n<table id=\"table-2-4-2\" border=\"1\" cellpadding=\"6\" cellspacing=\"0\" style=\"border-collapse: collapse; width: 100%;\">\n  <thead>\n    <tr>\n      <th>Параметр безопасности</th>\n      <th>Описание</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Биометрическая идентификация</td>\n      <td>Уникальная проверка личности водителя для исключения подмены и мошенничества.</td>\n    </tr>\n    <tr>\n      <td>Видеофиксация осмотра</td>\n      <td>Запись процедуры для подтверждения достоверности и последующего аудита.</td>\n    </tr>\n    <tr>\n      <td>Сертифицированное оборудование</td>\n      <td>Использование медицинских приборов с официальной регистрацией и калибровкой.</td>\n    </tr>\n    <tr>\n      <td>Хранение данных</td>\n      <td>Безопасное сохранение результатов осмотров с доступом для руководства и контролирующих органов.</td>\n    </tr>\n  </tbody>\n</table>\n<p id=\"p-2-4-3\">Телемедицинские решения полностью соответствуют требованиям Федерального налогового приказа № ЕД-7-26/116@ и другим нормативным актам, регламентирующим проведение предрейсовых медицинских осмотров. Это обеспечивает законность и надежность процесса, позволяя компаниям избегать штрафных санкций и обеспечивать высокий уровень контроля за состоянием здоровья водителей.</p>\n<p id=\"p-2-4-4-1\">Техническая составляющая телемедицины включает установку специализированного медицинского оборудования на территории предприятия, которое интегрируется с программными модулями для передачи данных в реальном времени. Система поддерживает биометрическую идентификацию, видеофиксацию и автоматическую синхронизацию с электронными путевыми листами, что обеспечивает комплексный и прозрачный контроль. Высокая степень автоматизации снижает вероятность ошибок и позволяет быстро адаптировать процессы под требования бизнеса и законодательства.</p>\n<ol id=\"ol-2-4-4-2\">\n  <li>Установка и калибровка сертифицированного медицинского оборудования на объекте клиента.</li>\n  <li>Интеграция с программным обеспечением медицинского центра и системой электронных путевых листов.</li>\n  <li>Обучение персонала и водителей работе с телемедицинским терминалом.</li>\n  <li>Запуск дистанционных осмотров с круглосуточным доступом и автоматическим хранением данных.</li>\n  <li>Регулярное техническое обслуживание и обновление программного обеспечения.</li>\n</ol>\n<blockquote id=\"blockquote-2-4-4-3\">«Телемедицина — это не просто технология, а комплексное решение, которое повышает безопасность и эффективность транспортных компаний, обеспечивая полный контроль и прозрачность предрейсовых медосмотров.»</blockquote>"
+          }
+        ]
       }
     ],
     "order": 10
@@ -6057,5 +6707,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-11T17:46:19.790Z";
+export const lastUpdated = "2025-10-11T19:42:42.333Z";
 export const generatedBy = "menu-persist-api";
