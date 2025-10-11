@@ -5462,52 +5462,108 @@ export const contentData = {
             "tag": "h2",
             "classification": "semantic",
             "keywords": [
-              "Generate 5-7 section-level keywords that introduce the topic and set context for child elements"
+              "Generate 5-7 section-level keywords inherited by children"
             ],
             "taxonomy": "Guide | Section overview",
-            "attention": "Establish clear value and context in the opening.",
-            "intent": "Introduce the topic, frame the core message, and prepare readers for detailed content.",
-            "audiences": "General business audience and decision-makers; level: beginner-to-intermediate.",
-            "selfPrompt": "Create an H2 introduction section that establishes the topic, communicates immediate value, and sets expectations. Use clear, accessible language. Naturally integrate the listed keywords without stuffing. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
+            "attention": "Set clear context and value in one sentence.",
+            "intent": "Introduce the topic and prepare readers for the main takeaways.",
+            "audiences": "Decision-makers and practitioners; level: intermediate.",
+            "selfPrompt": "Create the H2 section overview that frames the page topic, states the value, and aligns with user intent. Provide a strong, succinct setup and ensure a logical transition into subsequent subsections. Naturally integrate the listed keywords without stuffing. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
             "designDescription": "",
             "connectedDesignSectionId": "",
             "additionalData": {
-              "minWords": 150,
-              "maxWords": 250,
+              "minWords": 300,
+              "maxWords": 450,
               "actualContent": ""
             },
             "realContentStructure": [
               {
                 "id": "p-1-1",
                 "tag": "p",
-                "keywords": [
-                  "Generate 2-3 introductory keywords aligned with the H2 topic."
-                ],
-                "taxonomy": "Supporting | Intro paragraph",
-                "attention": "Hook readers with clear, immediate value.",
-                "intent": "Set context and explain why this topic matters to the audience.",
-                "audiences": "General business audience; level: beginner-to-intermediate.",
-                "selfPrompt": "Write an introductory paragraph that clearly explains the topic scope and its relevance. Use specific, actionable language. Naturally integrate the provided keywords. Respect minWords/maxWords in additionalData. Generate the necessary content here.",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
                 "additionalData": {
-                  "minWords": 100,
-                  "maxWords": 180,
+                  "minWords": 90,
+                  "maxWords": 160,
                   "actualContent": ""
                 }
               },
               {
                 "id": "p-1-2",
                 "tag": "p",
-                "keywords": [
-                  "Generate 2-3 supporting keywords that deepen the introduction."
-                ],
-                "taxonomy": "Supporting | Context paragraph",
-                "attention": "Provide concrete context or a relatable scenario.",
-                "intent": "Expand on the introduction with a specific angle or use case.",
-                "audiences": "Practitioners and managers; level: intermediate.",
-                "selfPrompt": "Write a context-building paragraph that introduces one concrete scenario, challenge, or application. Be specific and practical. Integrate keywords naturally. Respect min/max word constraints. Generate the necessary content here.",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-3",
+                "tag": "p",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "blockquote-1-4",
+                "tag": "blockquote",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 25,
+                  "maxWords": 45,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-5",
+                "tag": "p",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
                 "additionalData": {
                   "minWords": 60,
-                  "maxWords": 120,
+                  "maxWords": 110,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-1-6",
+                "tag": "ul",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 40,
+                  "maxWords": 70,
                   "actualContent": ""
                 }
               }
@@ -5518,49 +5574,45 @@ export const contentData = {
             "tag": "h2",
             "classification": "semantic",
             "keywords": [
-              "Generate 5-7 section-level keywords focused on technical concepts and foundational knowledge"
+              "Generate 5-7 section-level keywords to guide h3/h4 children."
             ],
-            "taxonomy": "Guide | Technical foundation",
-            "attention": "Explain core technical concepts with clarity and precision.",
-            "intent": "Provide foundational technical knowledge that readers can build upon.",
-            "audiences": "Technical practitioners and implementers; level: intermediate-to-advanced.",
-            "selfPrompt": "Create an H2 section that establishes technical foundations with clear explanations, practical examples, and structured content. Use precise terminology while remaining accessible. Naturally integrate the listed keywords. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
+            "taxonomy": "Guide | Core section",
+            "attention": "Focus on concrete, high-value insights.",
+            "intent": "Deliver the main body of actionable, expert information.",
+            "audiences": "Practitioners and technical stakeholders; level: intermediate-to-advanced.",
+            "selfPrompt": "Create the core H2 section that delivers actionable, specific, and data-backed insights. Structure content for clarity and depth. Avoid overlap with previous sections. Integrate keywords naturally. Respect minWords/maxWords. Generate the necessary content here.",
             "designDescription": "",
             "connectedDesignSectionId": "",
             "additionalData": {
-              "minWords": 250,
-              "maxWords": 400,
+              "minWords": 550,
+              "maxWords": 750,
               "actualContent": ""
             },
             "realContentStructure": [
               {
                 "id": "p-2-1",
                 "tag": "p",
-                "keywords": [
-                  "Generate 2-3 foundational keywords tied to core concepts."
-                ],
-                "taxonomy": "Supporting | Foundation paragraph",
-                "attention": "Define key concepts clearly and concisely.",
-                "intent": "Establish core technical understanding before diving deeper.",
-                "audiences": "Technical practitioners; level: intermediate.",
-                "selfPrompt": "Write a foundational paragraph that defines key concepts with clarity and precision. Use concrete examples where helpful. Integrate keywords naturally. Respect min/max word constraints. Generate the necessary content here.",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
                 "additionalData": {
                   "minWords": 80,
-                  "maxWords": 150,
+                  "maxWords": 140,
                   "actualContent": ""
                 }
               },
               {
-                "id": "p-2-2-3",
+                "id": "p-2-2",
                 "tag": "p",
-                "keywords": [
-                  "Generate 1 transition keyword."
-                ],
-                "taxonomy": "Transitional | Micro-bridge",
-                "attention": "Smoothly transition to the data presentation.",
-                "intent": "Provide a brief bridge to the upcoming table.",
-                "audiences": "All readers; level: general.",
-                "selfPrompt": "Write a concise transition sentence that introduces the table or data comparison. Be brief and purposeful. Generate the necessary content here.",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
                 "additionalData": {
                   "minWords": 5,
                   "maxWords": 15,
@@ -5568,198 +5620,203 @@ export const contentData = {
                 }
               },
               {
-                "id": "table-2-2-4",
-                "tag": "table",
-                "keywords": [
-                  "Generate 2-4 comparison or data-focused keywords."
-                ],
-                "taxonomy": "Data | Comparison table",
-                "attention": "Present technical comparisons or metrics clearly.",
-                "intent": "Provide scannable, structured data that supports the technical foundation.",
-                "audiences": "Analytical and technical readers; level: intermediate.",
-                "selfPrompt": "Create a compact comparison or data table with clear headers and well-organized rows. Define the meaning of each column. Keep the content within word constraints while ensuring clarity. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 80,
-                  "maxWords": 160,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "h3-2-2",
+                "id": "h3-2-3",
                 "tag": "h3",
-                "keywords": [
-                  "Generate 4-6 keywords (inherit 2 from parent H2, add 2-4 specific to this subsection)."
-                ],
-                "taxonomy": "Guide | Technical subsection",
-                "attention": "Focus on a specific technical angle or component.",
-                "intent": "Drill down into a particular aspect of the technical foundation.",
-                "audiences": "Technical practitioners; level: intermediate-to-advanced.",
-                "selfPrompt": "Develop an H3 subsection that explores a specific technical angle within the parent H2 context. Provide detailed, actionable information. Avoid overlap with sibling content. Integrate inherited and specific keywords naturally. Respect word limits. Generate the necessary content here.",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
                 "additionalData": {
-                  "minWords": 150,
-                  "maxWords": 250,
+                  "minWords": 220,
+                  "maxWords": 320,
                   "actualContent": ""
                 },
                 "realContentStructure": [
                   {
-                    "id": "p-2-2-1",
+                    "id": "p-2-3-1",
                     "tag": "p",
-                    "keywords": [
-                      "Generate 2-3 explanation-focused keywords."
-                    ],
-                    "taxonomy": "Supporting | Technical explanation",
-                    "attention": "Explain the technical mechanism or approach clearly.",
-                    "intent": "Clarify how or why this technical aspect works.",
-                    "audiences": "Implementers; level: intermediate.",
-                    "selfPrompt": "Write an explanatory paragraph that clarifies the technical mechanism, including concrete examples or scenarios. Keep it practical and precise. Respect min/max words. Generate the necessary content here.",
+                    "keywords": [],
+                    "taxonomy": "",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "selfPrompt": "",
                     "additionalData": {
-                      "minWords": 70,
+                      "minWords": 75,
                       "maxWords": 130,
                       "actualContent": ""
                     }
                   },
                   {
-                    "id": "ul-2-2-2",
+                    "id": "ul-2-3-2",
                     "tag": "ul",
-                    "keywords": [
-                      "Generate 2-3 checklist or feature keywords."
-                    ],
-                    "taxonomy": "List | Technical features",
-                    "attention": "Highlight key features or requirements in a scannable format.",
-                    "intent": "List 3-5 important technical features or requirements.",
-                    "audiences": "Technical practitioners; level: intermediate.",
-                    "selfPrompt": "Create an unordered list with 3-5 concise items highlighting key technical features or requirements. One sentence per item. Ensure clarity and non-redundancy. Respect word constraints. Generate the necessary content here.",
+                    "keywords": [],
+                    "taxonomy": "",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "selfPrompt": "",
                     "additionalData": {
-                      "minWords": 40,
-                      "maxWords": 80,
+                      "minWords": 50,
+                      "maxWords": 85,
                       "actualContent": ""
                     }
                   },
                   {
-                    "id": "p-2-2-3",
+                    "id": "p-2-3-3",
                     "tag": "p",
-                    "keywords": [
-                      "Generate 2-3 outcome or implication keywords."
-                    ],
-                    "taxonomy": "Supporting | Technical implication",
-                    "attention": "Highlight practical implications or outcomes.",
-                    "intent": "Explain what these technical features mean for implementation.",
-                    "audiences": "Practitioners and decision-makers; level: intermediate.",
-                    "selfPrompt": "Write a paragraph that explains the practical implications or outcomes of the technical features discussed. Be specific about benefits or constraints. Respect min/max words. Generate the necessary content here.",
+                    "keywords": [],
+                    "taxonomy": "",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "selfPrompt": "",
                     "additionalData": {
-                      "minWords": 60,
-                      "maxWords": 100,
+                      "minWords": 65,
+                      "maxWords": 115,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-2-3-4",
+                    "tag": "code",
+                    "keywords": [],
+                    "taxonomy": "",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "selfPrompt": "",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 45,
                       "actualContent": ""
                     }
                   }
                 ]
-              }
-            ]
-          },
-          {
-            "id": "h2-3",
-            "tag": "h2",
-            "classification": "semantic",
-            "keywords": [
-              "Generate 5-7 section-level keywords focused on implementation, process, and practical application"
-            ],
-            "taxonomy": "Guide | Implementation section",
-            "attention": "Provide clear, actionable implementation guidance.",
-            "intent": "Guide readers through the practical implementation process with concrete steps.",
-            "audiences": "Implementers and technical practitioners; level: intermediate-to-advanced.",
-            "selfPrompt": "Create an H2 section that provides comprehensive implementation guidance with clear steps, practical examples, and code where appropriate. Structure the content for easy follow-along. Naturally integrate the listed keywords. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 300,
-              "maxWords": 450,
-              "actualContent": ""
-            },
-            "realContentStructure": [
-              {
-                "id": "p-3-1",
-                "tag": "p",
-                "keywords": [
-                  "Generate 2-3 implementation-focused keywords."
-                ],
-                "taxonomy": "Supporting | Implementation intro",
-                "attention": "Set clear expectations for the implementation process.",
-                "intent": "Introduce the implementation approach and key considerations.",
-                "audiences": "Implementers; level: intermediate.",
-                "selfPrompt": "Write an introductory paragraph that frames the implementation process, highlighting key considerations and prerequisites. Be practical and specific. Integrate keywords naturally. Respect min/max word constraints. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 90,
-                  "maxWords": 170,
-                  "actualContent": ""
-                }
               },
               {
-                "id": "h3-3-2",
+                "id": "h3-2-4",
                 "tag": "h3",
-                "keywords": [
-                  "Generate 4-6 keywords (inherit 2 from parent H2, add 2-4 specific to this implementation step)."
-                ],
-                "taxonomy": "Guide | Implementation subsection",
-                "attention": "Focus on a specific implementation phase or component.",
-                "intent": "Detail a particular implementation step with practical guidance.",
-                "audiences": "Hands-on implementers; level: intermediate-to-advanced.",
-                "selfPrompt": "Develop an H3 subsection that details a specific implementation step or phase. Include ordered steps, code examples, and practical tips. Avoid overlap with sibling content. Integrate inherited and specific keywords naturally. Respect word limits. Generate the necessary content here.",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
                 "additionalData": {
-                  "minWords": 180,
-                  "maxWords": 280,
+                  "minWords": 280,
+                  "maxWords": 400,
                   "actualContent": ""
                 },
                 "realContentStructure": [
                   {
-                    "id": "p-3-2-1",
+                    "id": "p-2-4-1",
                     "tag": "p",
-                    "keywords": [
-                      "Generate 2-3 step-specific keywords."
-                    ],
-                    "taxonomy": "Supporting | Step explanation",
-                    "attention": "Explain what this implementation step achieves.",
-                    "intent": "Clarify the purpose and outcome of this implementation phase.",
-                    "audiences": "Implementers; level: intermediate.",
-                    "selfPrompt": "Write a paragraph that explains the purpose and expected outcome of this implementation step. Include context on why this step matters. Respect min/max words. Generate the necessary content here.",
+                    "keywords": [],
+                    "taxonomy": "",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "selfPrompt": "",
                     "additionalData": {
-                      "minWords": 75,
-                      "maxWords": 140,
+                      "minWords": 70,
+                      "maxWords": 120,
                       "actualContent": ""
                     }
                   },
                   {
-                    "id": "ol-3-2-2",
-                    "tag": "ol",
-                    "keywords": [
-                      "Generate 2-3 procedural keywords."
-                    ],
-                    "taxonomy": "List | Ordered steps",
-                    "attention": "Provide a clear, sequential procedure.",
-                    "intent": "List 3-5 ordered steps for this implementation phase.",
-                    "audiences": "Implementers; level: intermediate.",
-                    "selfPrompt": "Create an ordered list with 3-5 sequential steps in logical order. Keep items concise, actionable, and imperative. Ensure clear progression. Respect word constraints. Generate the necessary content here.",
+                    "id": "table-2-4-2",
+                    "tag": "table",
+                    "keywords": [],
+                    "taxonomy": "",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "selfPrompt": "",
                     "additionalData": {
-                      "minWords": 50,
-                      "maxWords": 90,
+                      "minWords": 90,
+                      "maxWords": 150,
                       "actualContent": ""
                     }
                   },
                   {
-                    "id": "code-3-2-3",
-                    "tag": "code",
-                    "keywords": [
-                      "Generate 1-2 technology or syntax keywords."
-                    ],
-                    "taxonomy": "Technical | Code example",
-                    "attention": "Demonstrate with a practical code snippet.",
-                    "intent": "Illustrate the implementation step with working code.",
-                    "audiences": "Developers; level: intermediate-to-advanced.",
-                    "selfPrompt": "Provide a concise code example or snippet that illustrates this implementation step. Include brief inline comments if helpful. Keep it minimal and self-explanatory. Respect min/max words. Generate the necessary content here.",
+                    "id": "p-2-4-3",
+                    "tag": "p",
+                    "keywords": [],
+                    "taxonomy": "",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "selfPrompt": "",
                     "additionalData": {
-                      "minWords": 20,
-                      "maxWords": 50,
+                      "minWords": 5,
+                      "maxWords": 15,
                       "actualContent": ""
                     }
+                  },
+                  {
+                    "id": "h4-2-4-4",
+                    "tag": "h4",
+                    "keywords": [],
+                    "taxonomy": "",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "selfPrompt": "",
+                    "additionalData": {
+                      "minWords": 130,
+                      "maxWords": 200,
+                      "actualContent": ""
+                    },
+                    "realContentStructure": [
+                      {
+                        "id": "p-2-4-4-1",
+                        "tag": "p",
+                        "keywords": [],
+                        "taxonomy": "",
+                        "attention": "",
+                        "intent": "",
+                        "audiences": "",
+                        "selfPrompt": "",
+                        "additionalData": {
+                          "minWords": 60,
+                          "maxWords": 105,
+                          "actualContent": ""
+                        }
+                      },
+                      {
+                        "id": "ol-2-4-4-2",
+                        "tag": "ol",
+                        "keywords": [],
+                        "taxonomy": "",
+                        "attention": "",
+                        "intent": "",
+                        "audiences": "",
+                        "selfPrompt": "",
+                        "additionalData": {
+                          "minWords": 45,
+                          "maxWords": 75,
+                          "actualContent": ""
+                        }
+                      },
+                      {
+                        "id": "blockquote-2-4-4-3",
+                        "tag": "blockquote",
+                        "keywords": [],
+                        "taxonomy": "",
+                        "attention": "",
+                        "intent": "",
+                        "audiences": "",
+                        "selfPrompt": "",
+                        "additionalData": {
+                          "minWords": 20,
+                          "maxWords": 40,
+                          "actualContent": ""
+                        }
+                      }
+                    ]
                   }
                 ]
               }
@@ -5770,68 +5827,62 @@ export const contentData = {
             "tag": "h2",
             "classification": "semantic",
             "keywords": [
-              "Generate 5-7 FAQ-related keywords tied to common user questions and concerns"
+              "Generate 5-7 FAQ-related keywords tied to user intent."
             ],
             "taxonomy": "FAQ | Q&A section",
-            "attention": "Anticipate and answer the most pressing user questions.",
-            "intent": "Address common questions with clear, helpful answers.",
-            "audiences": "Prospects, users, and decision-makers; level: beginner-to-intermediate.",
-            "selfPrompt": "This FAQ H2 section is designed for generating relevant questions and answers. Adopt the user's perspective by analyzing existing content and understanding the target audience. Generate four high-impact questions that would be most interesting and useful within the context of the topic. Organize each question under an H3 heading with a well-crafted answer. Avoid repeating content from other sections. Respect min/max words per element. Generate the necessary content here.",
+            "attention": "Anticipate top questions and answer succinctly.",
+            "intent": "Address the most pressing user questions with clarity.",
+            "audiences": "Prospects and users; level: beginner-to-intermediate.",
+            "selfPrompt": "This FAQ H2 introduces a focused Q&A area. Generate 3 high-impact questions aligned with the page topic and audience needs. Each question must be an H3 with a concise answer paragraph beneath. Avoid repeating content from other sections. Respect min/max words per element. Generate the necessary content here.",
             "designDescription": "",
             "connectedDesignSectionId": "",
             "additionalData": {
-              "minWords": 300,
-              "maxWords": 450,
+              "minWords": 350,
+              "maxWords": 500,
               "actualContent": ""
             },
             "realContentStructure": [
               {
                 "id": "p-FAQ",
                 "tag": "p",
-                "keywords": [
-                  "Generate 2-3 FAQ-intro keywords."
-                ],
-                "taxonomy": "Supporting | FAQ intro",
-                "attention": "Set expectations for the FAQ format and utility.",
-                "intent": "Briefly introduce how the FAQ helps users find quick answers.",
-                "audiences": "All readers; level: general.",
-                "selfPrompt": "Write a short introductory paragraph that explains the purpose of the FAQ section and how to use it. Keep it clear and user-centric. Respect word limits. Generate the necessary content here.",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
                 "additionalData": {
                   "minWords": 70,
-                  "maxWords": 130,
+                  "maxWords": 120,
                   "actualContent": ""
                 }
               },
               {
                 "id": "h3-FAQ-1",
                 "tag": "h3",
-                "keywords": [
-                  "Generate 3-5 question-specific keywords aligned with user concerns."
-                ],
-                "taxonomy": "FAQ | Question heading",
-                "attention": "Formulate a highly relevant, commonly asked question.",
-                "intent": "Ask a question that reflects a top user concern or blocker.",
-                "audiences": "Prospects and users; level: beginner-to-intermediate.",
-                "selfPrompt": "Create an H3 question that reflects a common, high-priority user concern derived from the page topic and audience needs. Keep it direct, specific, and natural. Generate the necessary content here.",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
                 "additionalData": {
-                  "minWords": 150,
-                  "maxWords": 220,
+                  "minWords": 160,
+                  "maxWords": 240,
                   "actualContent": ""
                 },
                 "realContentStructure": [
                   {
                     "id": "p-FAQ-1-1",
                     "tag": "p",
-                    "keywords": [
-                      "Generate 2-3 answer-focused keywords."
-                    ],
-                    "taxonomy": "FAQ | Answer",
-                    "attention": "Provide a clear, concise answer in 1-2 paragraphs.",
-                    "intent": "Deliver a precise, user-friendly answer that resolves the question.",
-                    "audiences": "Beginners and prospects; level: beginner-to-intermediate.",
-                    "selfPrompt": "Write a clear, concise answer that directly addresses the question. Use plain, helpful language. Include one concrete example or constraint if applicable. Respect min/max words. Generate the necessary content here.",
+                    "keywords": [],
+                    "taxonomy": "",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "selfPrompt": "",
                     "additionalData": {
-                      "minWords": 60,
+                      "minWords": 70,
                       "maxWords": 120,
                       "actualContent": ""
                     }
@@ -5839,202 +5890,68 @@ export const contentData = {
                 ]
               },
               {
-                "id": "FAQ-2",
+                "id": "h3-FAQ-2",
                 "tag": "h3",
-                "keywords": [
-                  "Generate 3-5 question-specific keywords for a distinct user concern."
-                ],
-                "taxonomy": "FAQ | Question heading",
-                "attention": "Pose a distinct, high-value question.",
-                "intent": "Ask a different question that addresses another common concern.",
-                "audiences": "Prospects and users; level: beginner-to-intermediate.",
-                "selfPrompt": "Create an H3 question that is distinct from the first and addresses a different top-priority user concern. Keep it clear, specific, and natural. Generate the necessary content here.",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
                 "additionalData": {
-                  "minWords": 150,
-                  "maxWords": 220,
+                  "minWords": 160,
+                  "maxWords": 240,
                   "actualContent": ""
                 },
                 "realContentStructure": [
                   {
                     "id": "p-FAQ-2-1",
                     "tag": "p",
-                    "keywords": [
-                      "Generate 2-3 answer-focused keywords."
-                    ],
-                    "taxonomy": "FAQ | Answer",
-                    "attention": "Answer clearly and helpfully.",
-                    "intent": "Resolve the question with clarity and precision.",
-                    "audiences": "Beginners and prospects; level: beginner-to-intermediate.",
-                    "selfPrompt": "Write a clear, concise answer that resolves the question without ambiguity. Use simple, practical language. Respect min/max words. Generate the necessary content here.",
+                    "keywords": [],
+                    "taxonomy": "",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "selfPrompt": "",
                     "additionalData": {
-                      "minWords": 60,
-                      "maxWords": 120,
+                      "minWords": 65,
+                      "maxWords": 115,
                       "actualContent": ""
                     }
                   }
                 ]
               },
               {
-                "id": "FAQ-3",
+                "id": "h3-FAQ-3",
                 "tag": "h3",
-                "keywords": [
-                  "Generate 3-5 question-specific keywords for a technical or decision-making concern."
-                ],
-                "taxonomy": "FAQ | Question heading",
-                "attention": "Address a technical or decision-blocking question.",
-                "intent": "Ask a question that helps users overcome a final hesitation.",
-                "audiences": "Decision-makers and technical users; level: intermediate.",
-                "selfPrompt": "Create an H3 question that addresses a common technical concern or decision-making blocker. Keep it targeted and distinct from prior questions. Generate the necessary content here.",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
                 "additionalData": {
-                  "minWords": 150,
-                  "maxWords": 220,
+                  "minWords": 160,
+                  "maxWords": 240,
                   "actualContent": ""
                 },
                 "realContentStructure": [
                   {
                     "id": "p-FAQ-3-1",
                     "tag": "p",
-                    "keywords": [
-                      "Generate 2-3 answer-focused keywords."
-                    ],
-                    "taxonomy": "FAQ | Answer",
-                    "attention": "Provide a reassuring, specific answer.",
-                    "intent": "Help readers confidently move forward with their decision.",
-                    "audiences": "Decision-makers; level: intermediate.",
-                    "selfPrompt": "Write a reassuring answer that resolves the concern with specifics (benefits, constraints, or examples). Keep it practical and concise. Respect min/max words. Generate the necessary content here.",
+                    "keywords": [],
+                    "taxonomy": "",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "selfPrompt": "",
                     "additionalData": {
-                      "minWords": 60,
-                      "maxWords": 120,
+                      "minWords": 75,
+                      "maxWords": 130,
                       "actualContent": ""
                     }
                   }
                 ]
-              },
-              {
-                "id": "FAQ-4",
-                "tag": "h3",
-                "keywords": [
-                  "Generate 3-5 question-specific keywords for an advanced or edge-case concern."
-                ],
-                "taxonomy": "FAQ | Question heading",
-                "attention": "Cover an advanced or edge-case scenario.",
-                "intent": "Ask a question that addresses a less common but important concern.",
-                "audiences": "Advanced users and specialists; level: intermediate-to-advanced.",
-                "selfPrompt": "Create an H3 question that covers an advanced scenario or edge case that power users might encounter. Keep it specific and valuable. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 150,
-                  "maxWords": 220,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-FAQ-4-1",
-                    "tag": "p",
-                    "keywords": [
-                      "Generate 2-3 answer-focused keywords."
-                    ],
-                    "taxonomy": "FAQ | Answer",
-                    "attention": "Provide a detailed, expert-level answer.",
-                    "intent": "Address the advanced concern with depth and precision.",
-                    "audiences": "Advanced users; level: intermediate-to-advanced.",
-                    "selfPrompt": "Write a detailed answer that addresses the advanced scenario with precision. Include technical details or caveats as needed. Respect min/max words. Generate the necessary content here.",
-                    "additionalData": {
-                      "minWords": 60,
-                      "maxWords": 120,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "h2-5",
-            "tag": "h2",
-            "classification": "semantic",
-            "keywords": [
-              "Generate 5-7 section-level keywords focused on synthesis, key takeaways, and next steps"
-            ],
-            "taxonomy": "Guide | Summary and conclusion",
-            "attention": "Synthesize key points and guide readers toward action.",
-            "intent": "Summarize the main takeaways and provide clear next steps.",
-            "audiences": "All readers; level: general-to-intermediate.",
-            "selfPrompt": "Create an H2 summary section that synthesizes the key points from the page, reinforces the main value proposition, and suggests clear next steps or actions. Be concise and actionable. Naturally integrate the listed keywords. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 200,
-              "maxWords": 300,
-              "actualContent": ""
-            },
-            "realContentStructure": [
-              {
-                "id": "p-5-1",
-                "tag": "p",
-                "keywords": [
-                  "Generate 2-3 summary-focused keywords."
-                ],
-                "taxonomy": "Supporting | Summary paragraph",
-                "attention": "Recap the main value and key insights concisely.",
-                "intent": "Summarize the core message and reinforce value.",
-                "audiences": "All readers; level: general.",
-                "selfPrompt": "Write a summary paragraph that recaps the main value and key insights from the page. Keep it concise and reinforcing. Integrate keywords naturally. Respect min/max word constraints. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 80,
-                  "maxWords": 150,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "table-5-3",
-                "tag": "table",
-                "keywords": [
-                  "Generate 2-4 comparison or summary-data keywords."
-                ],
-                "taxonomy": "Data | Summary table",
-                "attention": "Present key takeaways or comparisons in a scannable format.",
-                "intent": "Provide a compact, structured summary of key points or options.",
-                "audiences": "Decision-makers and analysts; level: intermediate.",
-                "selfPrompt": "Create a compact summary table that presents key takeaways, comparisons, or options with clear headers. Keep the content organized and within word constraints. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 80,
-                  "maxWords": 160,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "ul-5-2",
-                "tag": "ul",
-                "keywords": [
-                  "Generate 2-3 takeaway or action keywords."
-                ],
-                "taxonomy": "List | Key takeaways",
-                "attention": "Highlight 3-5 key takeaways in a scannable list.",
-                "intent": "Provide a bullet list of the most important points or actions.",
-                "audiences": "Busy readers; level: general.",
-                "selfPrompt": "Create an unordered list with 3-5 key takeaways or action items. One sentence per item, clear and actionable. Avoid redundancy and maintain consistent style. Respect word constraints. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 50,
-                  "maxWords": 90,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "p-5-3",
-                "tag": "p",
-                "keywords": [
-                  "Generate 2-3 next-step or CTA keywords."
-                ],
-                "taxonomy": "Supporting | Call-to-action",
-                "attention": "Guide readers toward the next logical step.",
-                "intent": "Suggest clear next actions or resources for further engagement.",
-                "audiences": "Engaged readers; level: general-to-intermediate.",
-                "selfPrompt": "Write a closing paragraph that suggests clear next steps, resources, or calls-to-action for readers who want to proceed. Keep it practical and encouraging. Respect min/max words. Generate the necessary content here.",
-                "additionalData": {
-                  "minWords": 70,
-                  "maxWords": 130,
-                  "actualContent": ""
-                }
               }
             ]
           }
@@ -6044,7 +5961,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-08T14:30:24.434Z",
-        "updatedAt": "2025-10-10T23:15:04.507Z",
+        "updatedAt": "2025-10-11T16:40:02.154Z",
         "order": 1,
         "description": "Оптимизируйте предрейсовые медосмотры с телемедициной в USAUTO: быстро, удобно и экономично. Снижайте затраты и улучшайте безопасность водителей!",
         "images": [
@@ -6064,638 +5981,7 @@ export const contentData = {
         "attention": "Создайте захватывающий заголовок с конкретным предложением об экономии до 67% на предрейсовых медосмотрах благодаря телемедицине, сопровождаемый динамичным изображением водителя, проходящего осмотр за 2 минуты. На первом экране разместите интерактивный калькулятор, позволяющий пользователям быстро оценить потенциальную экономию и время, с помощью которого можно установить связь с медицинским специалистом. При прокрутке страницы внедрите последовательное раскрытие информации о преимуществах, включая видеоотзывы клиентов с конкретными результатами, такими как сокращение времени осмотра до 90 секунд и снижение затрат на медицинский персонал.",
         "audiences": "Эта страница предназначена для руководителей и специалистов по охране труда в транспортных и логистических компаниях, которые стремятся оптимизировать процесс предрейсовых медицинских осмотров водителей. Они сталкиваются с высокими затратами на традиционные медосмотры и необходимостью соблюдения законодательства, и заинтересованы в инновационных решениях, которые позволят сократить время и стоимость процедур, обеспечивая при этом высокое качество медицинской оценки.",
         "isPreviewComplited": false,
-        "isReadyDraftForPerplexity": true,
-        "draftContentStructure": [
-          {
-            "id": "h2-1",
-            "tag": "h2",
-            "classification": "semantic",
-            "keywords": [
-              "телемедицина",
-              "предрейсовые медосмотры",
-              "оптимизация",
-              "дистанционные осмотры",
-              "экономия",
-              "безопасность водителей",
-              "инновационные решения"
-            ],
-            "taxonomy": "Guide | Section overview",
-            "attention": "Узнайте, как телемедицина может значительно сократить затраты на предрейсовые медосмотры.",
-            "intent": "Ввести читателей в тему телемедицины и ее преимуществ для предрейсовых медосмотров.",
-            "audiences": "Руководители и специалисты по охране труда; уровень: средний.",
-            "selfPrompt": "Создайте раздел H2, который представляет тему страницы, заявляет о ценности и соответствует намерениям пользователей. Обеспечьте сильное и лаконичное введение, которое плавно переходит к последующим подразделам. Естественно интегрируйте указанные ключевые слова без переспама. Соблюдайте minWords/maxWords из дополнительных данных. Генерируйте необходимый контент здесь.",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 300,
-              "maxWords": 450,
-              "actualContent": ""
-            },
-            "realContentStructure": [
-              {
-                "id": "p-1-1",
-                "tag": "p",
-                "keywords": [
-                  "телемедицина",
-                  "предрейсовые медосмотры"
-                ],
-                "taxonomy": "supporting",
-                "attention": "Телемедицина предлагает новые возможности для оптимизации медосмотров.",
-                "intent": "Представить основные преимущества телемедицины в контексте предрейсовых медосмотров.",
-                "audiences": "Руководители транспортных компаний; уровень: средний.",
-                "selfPrompt": "Напишите вводный абзац, который подчеркивает важность телемедицины для предрейсовых медосмотров и ее влияние на процесс.",
-                "additionalData": {
-                  "minWords": 90,
-                  "maxWords": 160,
-                  "actualContent": ""
-                },
-                "status": "checked"
-              },
-              {
-                "id": "p-1-2",
-                "tag": "p",
-                "keywords": [
-                  "экономия",
-                  "дистанционные осмотры"
-                ],
-                "taxonomy": "supporting",
-                "attention": "Сокращение затрат на медосмотры — ключевое преимущество.",
-                "intent": "Объяснить, как телемедицина помогает сократить затраты на предрейсовые медосмотры.",
-                "audiences": "Специалисты по охране труда; уровень: средний.",
-                "selfPrompt": "Создайте абзац, который объясняет, как телемедицина может снизить затраты на предрейсовые медосмотры.",
-                "additionalData": {
-                  "minWords": 70,
-                  "maxWords": 130,
-                  "actualContent": ""
-                },
-                "status": "checked"
-              },
-              {
-                "id": "p-1-3",
-                "tag": "p",
-                "keywords": [
-                  "безопасность водителей"
-                ],
-                "taxonomy": "supporting",
-                "attention": "Безопасность водителей — наш приоритет.",
-                "intent": "Подчеркнуть важность безопасности водителей в процессе медосмотров.",
-                "audiences": "Руководители транспортных компаний; уровень: средний.",
-                "selfPrompt": "Напишите короткий абзац, который акцентирует внимание на безопасности водителей в контексте телемедицины.",
-                "additionalData": {
-                  "minWords": 5,
-                  "maxWords": 15,
-                  "actualContent": ""
-                },
-                "status": "checked"
-              },
-              {
-                "id": "blockquote-1-4",
-                "tag": "blockquote",
-                "keywords": [
-                  "инновационные решения"
-                ],
-                "taxonomy": "supporting",
-                "attention": "Цитата подчеркивает важность инноваций в медицине.",
-                "intent": "Предоставить подтверждение важности телемедицины через цитату.",
-                "audiences": "Все заинтересованные стороны; уровень: средний.",
-                "selfPrompt": "Добавьте цитату, которая подтверждает преимущества телемедицины в предрейсовых медосмотрах.",
-                "additionalData": {
-                  "minWords": 25,
-                  "maxWords": 45,
-                  "actualContent": ""
-                },
-                "status": "checked"
-              },
-              {
-                "id": "p-1-5",
-                "tag": "p",
-                "keywords": [
-                  "дистанционные осмотры"
-                ],
-                "taxonomy": "supporting",
-                "attention": "Дистанционные осмотры — это будущее медицины.",
-                "intent": "Объяснить, как дистанционные осмотры меняют подход к медосмотрам.",
-                "audiences": "Специалисты по охране труда; уровень: средний.",
-                "selfPrompt": "Создайте абзац, который подчеркивает, как дистанционные осмотры меняют подход к предрейсовым медосмотрам.",
-                "additionalData": {
-                  "minWords": 60,
-                  "maxWords": 110,
-                  "actualContent": ""
-                },
-                "status": "checked"
-              },
-              {
-                "id": "ul-1-6",
-                "tag": "ul",
-                "keywords": [
-                  "преимущества телемедицины"
-                ],
-                "taxonomy": "supporting",
-                "attention": "Преимущества телемедицины для предрейсовых медосмотров.",
-                "intent": "Предоставить список ключевых преимуществ телемедицины.",
-                "audiences": "Руководители транспортных компаний; уровень: средний.",
-                "selfPrompt": "Создайте список из 5-7 пунктов, описывающих преимущества телемедицины для предрейсовых медосмотров.",
-                "additionalData": {
-                  "minWords": 40,
-                  "maxWords": 70,
-                  "actualContent": ""
-                },
-                "status": "checked"
-              }
-            ],
-            "status": "checked"
-          },
-          {
-            "id": "h2-2",
-            "tag": "h2",
-            "classification": "semantic",
-            "keywords": [
-              "дистанционные медосмотры",
-              "технологии телемедицины",
-              "эффективность предрейсовых осмотров",
-              "снижение затрат",
-              "инновационные медицинские решения",
-              "удаленный мониторинг здоровья",
-              "польза для водителей"
-            ],
-            "taxonomy": "Guide | Core section",
-            "attention": "Узнайте, как телемедицина может значительно улучшить процесс предрейсовых медосмотров.",
-            "intent": "Предоставить основную информацию о преимуществах и технологиях телемедицины для предрейсовых медосмотров.",
-            "audiences": "Руководители и специалисты по охране труда в транспортных компаниях; уровень: средний и выше.",
-            "selfPrompt": "Создайте основной раздел H2, который предоставляет конкретные, высокоценные инсайты о телемедицине и ее применении в предрейсовых медосмотрах. Структурируйте контент для ясности и глубины. Избегайте пересечений с предыдущими разделами. Интегрируйте ключевые слова естественным образом. Соблюдайте minWords/maxWords. Генерируйте необходимый контент здесь.",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 550,
-              "maxWords": 750,
-              "actualContent": ""
-            },
-            "realContentStructure": [
-              {
-                "id": "p-2-1",
-                "tag": "p",
-                "keywords": [
-                  "дистанционные медосмотры",
-                  "телемедицина"
-                ],
-                "taxonomy": "supporting",
-                "attention": "Понимание основ телемедицины поможет вам оптимизировать процессы.",
-                "intent": "Ввести читателей в тему и объяснить, как телемедицина меняет подход к медосмотрам.",
-                "audiences": "Руководители и специалисты по охране труда; уровень: средний.",
-                "selfPrompt": "Создайте вводный абзац, который объясняет, как телемедицина меняет подход к предрейсовым медосмотрам.",
-                "additionalData": {
-                  "minWords": 80,
-                  "maxWords": 140,
-                  "actualContent": ""
-                },
-                "status": "checked"
-              },
-              {
-                "id": "p-2-2",
-                "tag": "p",
-                "keywords": [
-                  "инновационные решения"
-                ],
-                "taxonomy": "supporting",
-                "attention": "Краткое введение в преимущества телемедицины.",
-                "intent": "Представить краткий обзор преимуществ телемедицины.",
-                "audiences": "Специалисты по охране труда; уровень: начинающий.",
-                "selfPrompt": "Создайте короткий абзац, который подчеркивает преимущества телемедицины.",
-                "additionalData": {
-                  "minWords": 5,
-                  "maxWords": 15,
-                  "actualContent": ""
-                },
-                "status": "checked"
-              },
-              {
-                "id": "h3-2-3",
-                "tag": "h3",
-                "keywords": [
-                  "технологии телемедицины",
-                  "дистанционный мониторинг",
-                  "польза для водителей"
-                ],
-                "taxonomy": "Guide",
-                "attention": "Изучите, как технологии телемедицины улучшают процесс медосмотров.",
-                "intent": "Объяснить, как технологии телемедицины применяются в предрейсовых медосмотрах.",
-                "audiences": "Технические специалисты и руководители; уровень: средний.",
-                "selfPrompt": "Создайте раздел H3, который объясняет, как технологии телемедицины применяются в предрейсовых медосмотрах.",
-                "additionalData": {
-                  "minWords": 220,
-                  "maxWords": 320,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-2-3-1",
-                    "tag": "p",
-                    "keywords": [
-                      "дистанционный мониторинг"
-                    ],
-                    "taxonomy": "supporting",
-                    "attention": "Понимание технологий поможет в их внедрении.",
-                    "intent": "Объяснить, как дистанционный мониторинг здоровья водителей осуществляется.",
-                    "audiences": "Специалисты по охране труда; уровень: средний.",
-                    "selfPrompt": "Создайте абзац, который объясняет, как осуществляется дистанционный мониторинг здоровья водителей.",
-                    "additionalData": {
-                      "minWords": 75,
-                      "maxWords": 130,
-                      "actualContent": ""
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "ul-2-3-2",
-                    "tag": "ul",
-                    "keywords": [
-                      "показатели здоровья",
-                      "удаленные осмотры"
-                    ],
-                    "taxonomy": "supporting",
-                    "attention": "Список ключевых показателей для мониторинга.",
-                    "intent": "Предоставить список ключевых показателей здоровья, которые можно контролировать дистанционно.",
-                    "audiences": "Руководители и специалисты; уровень: средний.",
-                    "selfPrompt": "Создайте список из 5-7 ключевых показателей здоровья, которые можно контролировать дистанционно.",
-                    "additionalData": {
-                      "minWords": 50,
-                      "maxWords": 85,
-                      "actualContent": ""
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "p-2-3-3",
-                    "tag": "p",
-                    "keywords": [
-                      "польза для водителей"
-                    ],
-                    "taxonomy": "supporting",
-                    "attention": "Понимание пользы для водителей важно для внедрения.",
-                    "intent": "Объяснить, как телемедицина приносит пользу водителям.",
-                    "audiences": "Специалисты по охране труда; уровень: средний.",
-                    "selfPrompt": "Создайте абзац, который объясняет, как телемедицина приносит пользу водителям.",
-                    "additionalData": {
-                      "minWords": 65,
-                      "maxWords": 115,
-                      "actualContent": ""
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "code-2-3-4",
-                    "tag": "code",
-                    "keywords": [
-                      "API интеграция"
-                    ],
-                    "taxonomy": "technical",
-                    "attention": "Пример кода для интеграции.",
-                    "intent": "Предоставить пример кода для интеграции телемедицинских решений.",
-                    "audiences": "Разработчики; уровень: продвинутый.",
-                    "selfPrompt": "Создайте пример кода для интеграции телемедицинских решений.",
-                    "additionalData": {
-                      "minWords": 20,
-                      "maxWords": 45,
-                      "actualContent": ""
-                    },
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
-              },
-              {
-                "id": "h3-2-4",
-                "tag": "h3",
-                "keywords": [
-                  "экономическая эффективность",
-                  "снижение затрат",
-                  "дистанционные медосмотры"
-                ],
-                "taxonomy": "Guide",
-                "attention": "Узнайте, как телемедицина снижает затраты на медосмотры.",
-                "intent": "Объяснить экономическую эффективность телемедицинских решений.",
-                "audiences": "Руководители и финансовые специалисты; уровень: средний.",
-                "selfPrompt": "Создайте раздел H3, который объясняет экономическую эффективность телемедицинских решений.",
-                "additionalData": {
-                  "minWords": 280,
-                  "maxWords": 400,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-2-4-1",
-                    "tag": "p",
-                    "keywords": [
-                      "снижение затрат"
-                    ],
-                    "taxonomy": "supporting",
-                    "attention": "Экономия средств важна для бизнеса.",
-                    "intent": "Объяснить, как телемедицина помогает снизить затраты на медосмотры.",
-                    "audiences": "Финансовые специалисты; уровень: средний.",
-                    "selfPrompt": "Создайте абзац, который объясняет, как телемедицина помогает снизить затраты на медосмотры.",
-                    "additionalData": {
-                      "minWords": 70,
-                      "maxWords": 120,
-                      "actualContent": ""
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "table-2-4-2",
-                    "tag": "table",
-                    "keywords": [
-                      "сравнение затрат"
-                    ],
-                    "taxonomy": "data-driven",
-                    "attention": "Сравнение затрат на традиционные и дистанционные медосмотры.",
-                    "intent": "Предоставить таблицу с сравнением затрат на традиционные и дистанционные медосмотры.",
-                    "audiences": "Руководители; уровень: средний.",
-                    "selfPrompt": "Создайте таблицу, сравнивающую затраты на традиционные и дистанционные медосмотры.",
-                    "additionalData": {
-                      "minWords": 90,
-                      "maxWords": 150,
-                      "actualContent": ""
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "p-2-4-3",
-                    "tag": "p",
-                    "keywords": [
-                      "экономическая эффективность"
-                    ],
-                    "taxonomy": "supporting",
-                    "attention": "Понимание экономической эффективности важно для принятия решений.",
-                    "intent": "Объяснить, как экономическая эффективность влияет на выбор телемедицинских решений.",
-                    "audiences": "Руководители; уровень: средний.",
-                    "selfPrompt": "Создайте абзац, который объясняет, как экономическая эффективность влияет на выбор телемедицинских решений.",
-                    "additionalData": {
-                      "minWords": 5,
-                      "maxWords": 15,
-                      "actualContent": ""
-                    },
-                    "status": "checked"
-                  },
-                  {
-                    "id": "h4-2-4-4",
-                    "tag": "h4",
-                    "keywords": [
-                      "примеры успешного внедрения",
-                      "кейсы"
-                    ],
-                    "taxonomy": "Case Study",
-                    "attention": "Изучите успешные примеры внедрения телемедицины.",
-                    "intent": "Предоставить примеры успешного внедрения телемедицинских решений.",
-                    "audiences": "Руководители и специалисты; уровень: средний.",
-                    "selfPrompt": "Создайте раздел H4, который предоставляет примеры успешного внедрения телемедицинских решений.",
-                    "additionalData": {
-                      "minWords": 130,
-                      "maxWords": 200,
-                      "actualContent": ""
-                    },
-                    "realContentStructure": [
-                      {
-                        "id": "p-2-4-4-1",
-                        "tag": "p",
-                        "keywords": [
-                          "успешные кейсы"
-                        ],
-                        "taxonomy": "supporting",
-                        "attention": "Изучение кейсов поможет в принятии решений.",
-                        "intent": "Объяснить, как успешные кейсы внедрения телемедицины могут служить примером.",
-                        "audiences": "Руководители; уровень: средний.",
-                        "selfPrompt": "Создайте абзац, который объясняет, как успешные кейсы внедрения телемедицины могут служить примером.",
-                        "additionalData": {
-                          "minWords": 60,
-                          "maxWords": 105,
-                          "actualContent": ""
-                        },
-                        "status": "checked"
-                      },
-                      {
-                        "id": "ol-2-4-4-2",
-                        "tag": "ol",
-                        "keywords": [
-                          "шаги внедрения"
-                        ],
-                        "taxonomy": "supporting",
-                        "attention": "Понимание шагов внедрения важно для успешного результата.",
-                        "intent": "Предоставить список шагов для успешного внедрения телемедицинских решений.",
-                        "audiences": "Специалисты по охране труда; уровень: средний.",
-                        "selfPrompt": "Создайте список шагов для успешного внедрения телемедицинских решений.",
-                        "additionalData": {
-                          "minWords": 45,
-                          "maxWords": 75,
-                          "actualContent": ""
-                        },
-                        "status": "checked"
-                      },
-                      {
-                        "id": "blockquote-2-4-4-3",
-                        "tag": "blockquote",
-                        "keywords": [
-                          "отзывы клиентов"
-                        ],
-                        "taxonomy": "supporting",
-                        "attention": "Отзывы клиентов подтверждают эффективность.",
-                        "intent": "Предоставить отзывы клиентов о внедрении телемедицинских решений.",
-                        "audiences": "Руководители; уровень: средний.",
-                        "selfPrompt": "Создайте блок цитаты с отзывами клиентов о внедрении телемедицинских решений.",
-                        "additionalData": {
-                          "minWords": 20,
-                          "maxWords": 40,
-                          "actualContent": ""
-                        },
-                        "status": "checked"
-                      }
-                    ],
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
-              }
-            ],
-            "status": "checked"
-          },
-          {
-            "id": "FAQ",
-            "tag": "h2",
-            "classification": "FAQ",
-            "keywords": [
-              "телемедицина",
-              "предрейсовые медосмотры",
-              "вопросы и ответы",
-              "дистанционные осмотры",
-              "польза телемедицины",
-              "экономия времени",
-              "безопасность водителей"
-            ],
-            "taxonomy": "FAQ | Q&A section",
-            "attention": "Здесь вы найдете ответы на самые распространенные вопросы о телемедицине и предрейсовых медосмотрах.",
-            "intent": "Предоставить пользователям четкие и лаконичные ответы на их вопросы о телемедицине.",
-            "audiences": "Потенциальные клиенты и пользователи; уровень: начинающий до среднего.",
-            "selfPrompt": "Этот раздел FAQ представляет собой область вопросов и ответов. Сгенерируйте 3 высокоэффективных вопроса, связанных с темой страницы и потребностями аудитории. Каждый вопрос должен быть H3 с кратким ответом в абзаце под ним. Избегайте повторения контента из других разделов. Соблюдайте минимальные и максимальные слова для каждого элемента. Сгенерируйте необходимый контент здесь.",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 350,
-              "maxWords": 500,
-              "actualContent": ""
-            },
-            "realContentStructure": [
-              {
-                "id": "p-FAQ",
-                "tag": "p",
-                "keywords": [
-                  "телемедицина",
-                  "предрейсовые медосмотры"
-                ],
-                "taxonomy": "supporting",
-                "attention": "В этом разделе мы ответим на ваши вопросы о телемедицине.",
-                "intent": "Введение в раздел FAQ, который поможет пользователям найти нужную информацию.",
-                "audiences": "Потенциальные клиенты; уровень: начинающий.",
-                "selfPrompt": "Введение в раздел FAQ, который поможет пользователям найти нужную информацию о телемедицине и предрейсовых медосмотрах.",
-                "additionalData": {
-                  "minWords": 70,
-                  "maxWords": 120,
-                  "actualContent": ""
-                },
-                "status": "checked"
-              },
-              {
-                "id": "h3-FAQ-1",
-                "tag": "h3",
-                "keywords": [
-                  "как работает телемедицина",
-                  "дистанционные медосмотры"
-                ],
-                "taxonomy": "FAQ",
-                "attention": "Узнайте, как телемедицина может помочь в предрейсовых медосмотрах.",
-                "intent": "Объяснить, как работает телемедицина в контексте предрейсовых медосмотров.",
-                "audiences": "Руководители транспортных компаний; уровень: средний.",
-                "selfPrompt": "Сформулируйте вопрос о том, как работает телемедицина в предрейсовых медосмотрах, и предоставьте краткий ответ.",
-                "additionalData": {
-                  "minWords": 160,
-                  "maxWords": 240,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-FAQ-1-1",
-                    "tag": "p",
-                    "keywords": [
-                      "телемедицина",
-                      "предрейсовые медосмотры"
-                    ],
-                    "taxonomy": "supporting",
-                    "attention": "Ответ на вопрос о том, как работает телемедицина.",
-                    "intent": "Предоставить четкий ответ на вопрос о работе телемедицины.",
-                    "audiences": "Руководители транспортных компаний; уровень: средний.",
-                    "selfPrompt": "Предоставьте ответ на вопрос о том, как работает телемедицина в предрейсовых медосмотрах.",
-                    "additionalData": {
-                      "minWords": 70,
-                      "maxWords": 120,
-                      "actualContent": ""
-                    },
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
-              },
-              {
-                "id": "h3-FAQ-2",
-                "tag": "h3",
-                "keywords": [
-                  "преимущества телемедицины",
-                  "экономия времени"
-                ],
-                "taxonomy": "FAQ",
-                "attention": "Узнайте о преимуществах телемедицины для водителей.",
-                "intent": "Объяснить преимущества телемедицины для предрейсовых медосмотров.",
-                "audiences": "Специалисты по охране труда; уровень: средний.",
-                "selfPrompt": "Сформулируйте вопрос о преимуществах телемедицины и предоставьте краткий ответ.",
-                "additionalData": {
-                  "minWords": 160,
-                  "maxWords": 240,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-FAQ-2-1",
-                    "tag": "p",
-                    "keywords": [
-                      "телемедицина",
-                      "преимущества"
-                    ],
-                    "taxonomy": "supporting",
-                    "attention": "Ответ на вопрос о преимуществах телемедицины.",
-                    "intent": "Предоставить четкий ответ на вопрос о преимуществах телемедицины.",
-                    "audiences": "Специалисты по охране труда; уровень: средний.",
-                    "selfPrompt": "Предоставьте ответ на вопрос о преимуществах телемедицины для предрейсовых медосмотров.",
-                    "additionalData": {
-                      "minWords": 65,
-                      "maxWords": 115,
-                      "actualContent": ""
-                    },
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
-              },
-              {
-                "id": "h3-FAQ-3",
-                "tag": "h3",
-                "keywords": [
-                  "безопасность водителей",
-                  "дистанционные осмотры"
-                ],
-                "taxonomy": "FAQ",
-                "attention": "Узнайте, как телемедицина повышает безопасность водителей.",
-                "intent": "Объяснить, как телемедицина способствует безопасности водителей.",
-                "audiences": "Руководители транспортных компаний; уровень: средний.",
-                "selfPrompt": "Сформулируйте вопрос о том, как телемедицина повышает безопасность водителей, и предоставьте краткий ответ.",
-                "additionalData": {
-                  "minWords": 160,
-                  "maxWords": 240,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-FAQ-3-1",
-                    "tag": "p",
-                    "keywords": [
-                      "телемедицина",
-                      "безопасность"
-                    ],
-                    "taxonomy": "supporting",
-                    "attention": "Ответ на вопрос о том, как телемедицина повышает безопасность водителей.",
-                    "intent": "Предоставить четкий ответ на вопрос о безопасности водителей.",
-                    "audiences": "Руководители транспортных компаний; уровень: средний.",
-                    "selfPrompt": "Предоставьте ответ на вопрос о том, как телемедицина повышает безопасность водителей.",
-                    "additionalData": {
-                      "minWords": 75,
-                      "maxWords": 130,
-                      "actualContent": ""
-                    },
-                    "status": "checked"
-                  }
-                ],
-                "status": "checked"
-              }
-            ],
-            "status": "checked"
-          }
-        ],
-        "sections": [
-          {
-            "id": "h2-1",
-            "tempMDXContent": "<h2>Телемедицина в предрейсовых медосмотрах: инновационный подход к безопасности и экономии</h2>\n<p>Современные технологии стремительно меняют традиционные подходы к медосмотрам водителей перед рейсом. Телемедицина становится ключевым инструментом оптимизации предрейсовых медосмотров, предлагая эффективные решения для контроля здоровья сотрудников без необходимости физического присутствия в медицинском учреждении. Благодаря дистанционным осмотрам компании получают возможность значительно ускорить процесс проверки состояния водителей, снизить затраты и обеспечить высокий уровень безопасности на дорогах. Такой инновационный подход не только упрощает организационные процедуры, но и повышает качество медицинского контроля, что особенно важно в условиях интенсивного графика работы транспортных предприятий.</p>\n<p>Внедрение телемедицины в систему предрейсовых медосмотров позволяет повысить оперативность и точность диагностики, а также минимизировать риски, связанные с человеческим фактором и задержками в проведении осмотров. Использование цифровых платформ и специализированных приложений облегчает взаимодействие между водителями и медицинскими специалистами, обеспечивая при этом конфиденциальность и надежность данных. Это открывает новые горизонты для охраны труда и безопасности на транспорте, делая процесс медосмотров более гибким и доступным.</p>\n<p>Одним из значимых преимуществ телемедицины является существенная экономия ресурсов. Дистанционные осмотры позволяют сократить расходы на аренду помещений, транспортные и временные затраты, связанные с организацией традиционных медосмотров. Кроме того, автоматизация процессов снижает нагрузку на медицинский персонал и упрощает ведение документации. Такая оптимизация особенно актуальна для крупных транспортных компаний, где количество водителей требует регулярного и системного контроля состояния здоровья.</p>\n<p>Безопасность водителей остается приоритетом в любой системе предрейсовых медосмотров. Телемедицина обеспечивает своевременное выявление противопоказаний к выезду на маршрут, что помогает предотвратить возможные аварийные ситуации и сохранить жизнь и здоровье сотрудников. Современные технологии позволяют проводить мониторинг в режиме реального времени, что повышает уровень контроля и оперативности реагирования.</p>\n<blockquote>«Телемедицина — это не просто инновация, а необходимое решение для повышения эффективности и безопасности предрейсовых медосмотров в современном транспорте.»</blockquote>\n<p>Дистанционные осмотры меняют традиционный подход к медицинскому контролю, делая его более доступным и адаптированным к требованиям бизнеса. Возможность быстрого обмена данными и использования современных диагностических инструментов позволяет значительно улучшить качество принимаемых решений и повысить уровень ответственности всех участников процесса.</p>\n<ul>\n  <li>Сокращение времени проведения медосмотров без потери качества.</li>\n  <li>Снижение затрат на организацию и проведение проверок здоровья.</li>\n  <li>Повышение доступности медицинских услуг для водителей в любом регионе.</li>\n  <li>Улучшение контроля состояния здоровья и безопасности на дорогах.</li>\n  <li>Автоматизация процессов и упрощение документооборота.</li>\n  <li>Возможность оперативного реагирования на выявленные медицинские риски.</li>\n  <li>Интеграция с современными системами управления охраной труда.</li>\n</ul>"
-          },
-          {
-            "id": "h2-2",
-            "tempMDXContent": "<h2>Преимущества и технологии телемедицины в предрейсовых медосмотрах</h2>\n<p>Дистанционные медосмотры с использованием технологий телемедицины кардинально меняют традиционный подход к проверке здоровья водителей перед рейсом. Благодаря инновационным медицинским решениям теперь возможно проводить полноценный медицинский контроль в удалённом режиме, что существенно повышает эффективность предрейсовых осмотров. Телемедицина позволяет не только сократить время на проведение процедур, но и обеспечить более точный и своевременный мониторинг состояния здоровья водителей, что особенно важно для поддержания безопасности на дорогах и соблюдения норм охраны труда в транспортных компаниях.</p>\n<p>Одним из ключевых аспектов является возможность удалённого мониторинга здоровья, который реализуется через специализированные цифровые платформы и медицинские устройства, подключённые к интернету. Такие технологии позволяют оперативно собирать и анализировать жизненно важные показатели, передавая данные врачам в реальном времени. Это обеспечивает непрерывный контроль и быстрое выявление возможных противопоказаний к выходу на маршрут, снижая риски аварий и несчастных случаев.</p>\n<p>Внедрение телемедицины в систему предрейсовых медосмотров способствует значительному снижению затрат, связанных с организацией традиционных осмотров. Уменьшаются расходы на аренду медицинских кабинетов, транспортировку персонала и водителей, а также сокращается время простоя техники и сотрудников. Автоматизация процессов ведения документации и обмена данными между медицинскими специалистами и руководством компании упрощает администрирование и повышает прозрачность контроля.</p>\n<h3>Технологии телемедицины в предрейсовых медосмотрах: как это работает</h3>\n<p>Дистанционный мониторинг здоровья водителей осуществляется с помощью современных медицинских гаджетов и программного обеспечения, которые фиксируют ключевые параметры организма и передают их врачу для анализа. Водитель может самостоятельно провести измерения, используя портативные устройства, такие как пульсоксиметры, тонометры, глюкометры и другие сенсоры, интегрированные с мобильными приложениями. Полученная информация автоматически загружается в систему, где специалисты оперативно оценивают состояние и принимают решение о допуске к работе.</p>\n<ul>\n  <li>Артериальное давление</li>\n  <li>Частота сердечных сокращений</li>\n  <li>Уровень кислорода в крови (сатурация)</li>\n  <li>Температура тела</li>\n  <li>Уровень глюкозы в крови</li>\n  <li>Электрокардиограмма (ЭКГ)</li>\n  <li>Показатели сна и усталости (при наличии соответствующих датчиков)</li>\n</ul>\n<p>Такой комплексный мониторинг позволяет своевременно выявлять отклонения и предотвращать выезд водителей в небезопасном состоянии. Для водителей это означает не только удобство и экономию времени, но и уверенность в том, что их здоровье находится под постоянным контролем, а любые риски минимизированы. Телемедицина способствует улучшению общего самочувствия и снижению стресса, связанного с предрейсовыми проверками, что положительно сказывается на производительности и безопасности труда.</p>\n<code>/* Пример интеграции API телемедицинского сервиса для передачи данных о здоровье водителя */\nfetch('https://api.telemedservice.com/v1/healthdata', {\n  method: 'POST',\n  headers: {\n    'Content-Type': 'application/json',\n    'Authorization': 'Bearer YOUR_ACCESS_TOKEN'\n  },\n  body: JSON.stringify({\n    driverId: '12345',\n    bloodPressure: '120/80',\n    heartRate: 72,\n    oxygenSaturation: 98\n  })\n}).then(response => response.json())\n  .then(data => console.log('Данные успешно отправлены:', data))\n  .catch(error => console.error('Ошибка при отправке данных:', error));</code>\n<h3>Экономическая эффективность телемедицины в предрейсовых медосмотрах</h3>\n<p>Телемедицина существенно снижает затраты на организацию и проведение предрейсовых медосмотров, что делает её привлекательной для транспортных компаний любого масштаба. Отсутствие необходимости в физическом присутствии медицинского персонала на месте экономит средства на оплату труда, аренду помещений и транспортные расходы. Кроме того, сокращается время простоя водителей и техники, что напрямую влияет на производительность и прибыльность бизнеса.</p>\n<table>\n  <thead>\n    <tr>\n      <th>Показатель</th>\n      <th>Традиционные медосмотры</th>\n      <th>Дистанционные медосмотры</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Средняя стоимость одного осмотра</td>\n      <td>1500 руб.</td>\n      <td>800 руб.</td>\n    </tr>\n    <tr>\n      <td>Время на проведение</td>\n      <td>30-45 минут</td>\n      <td>10-15 минут</td>\n    </tr>\n    <tr>\n      <td>Затраты на транспорт и логистику</td>\n      <td>Высокие</td>\n      <td>Минимальные</td>\n    </tr>\n    <tr>\n      <td>Административные расходы</td>\n      <td>Средние</td>\n      <td>Низкие</td>\n    </tr>\n    <tr>\n      <td>Общая экономия</td>\n      <td>—</td>\n      <td>до 40%</td>\n    </tr>\n  </tbody>\n</table>\n<p>Экономическая эффективность телемедицинских решений позволяет компаниям направлять сэкономленные ресурсы на развитие инфраструктуры, повышение квалификации персонала и улучшение условий труда. Это также способствует более быстрому внедрению современных стандартов безопасности и охраны здоровья на транспорте.</p>\n<h4>Примеры успешного внедрения телемедицины в транспортных компаниях</h4>\n<p>Реальные кейсы внедрения телемедицинских решений демонстрируют их практическую пользу и эффективность. Многие крупные и средние транспортные предприятия отмечают значительное улучшение качества предрейсовых осмотров, снижение числа отказов по состоянию здоровья и уменьшение административной нагрузки. Такие примеры служат убедительным аргументом в пользу перехода на дистанционные медосмотры.</p>\n<ol>\n  <li>Анализ текущих процессов и определение потребностей компании.</li>\n  <li>Выбор и интеграция телемедицинской платформы с существующими системами управления.</li>\n  <li>Обучение персонала и водителей работе с новыми технологиями.</li>\n  <li>Пилотный запуск и сбор обратной связи для корректировки процессов.</li>\n  <li>Полномасштабное внедрение и регулярный мониторинг эффективности.</li>\n</ol>\n<blockquote>«Внедрение телемедицины позволило нам сократить время предрейсовых медосмотров вдвое и значительно повысить контроль за здоровьем водителей. Это положительно сказалось на безопасности и экономической эффективности работы компании.»</blockquote>"
-          }
-        ]
+        "isReadyDraftForPerplexity": false
       }
     ],
     "order": 10
@@ -6762,5 +6048,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-11T16:27:00.511Z";
+export const lastUpdated = "2025-10-11T17:19:09.541Z";
 export const generatedBy = "menu-persist-api";

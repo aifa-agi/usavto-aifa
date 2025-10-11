@@ -280,6 +280,7 @@ export interface RootContentStructure extends Omit<ContentStructure, "tag"> {
   tag: "h2";
   writingStyle?: string;
   contentFormat?: string;
+  customRequirements?: string;
 }
 export interface ContentStructure {
   id?: string;

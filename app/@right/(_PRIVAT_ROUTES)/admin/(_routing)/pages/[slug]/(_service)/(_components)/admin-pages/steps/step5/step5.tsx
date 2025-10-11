@@ -4,6 +4,7 @@
 
 /**
  * Step 5 - Content Structure Generation System with Internal AI
+ * ✅ FIX: Removed conditional early returns after hooks to comply with React Rules of Hooks
  * 
  * Функциональность:
  * - Генерация структуры контента с помощью встроенной AI модели
@@ -68,6 +69,7 @@ const CONTENT_FORMATS = [
   { value: "comparison", label: "Comparison", description: "Pros/cons, before/after analysis" },
   { value: "listicle", label: "Listicle", description: "Organized in numbered or bulleted lists" },
 ];
+
 function PencilIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
@@ -85,16 +87,25 @@ function PencilIcon(props: React.SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
 export function AdminPageStep5({ slug }: AdminPageInfoProps) {
   const { categories, loading, initialized } = useNavigationMenu();
 
+  // ✅ FIX: All hooks BEFORE any conditional returns
   // Personalization state
   const [writingStyle, setWritingStyle] = useState<string>("conversational");
   const [contentFormat, setContentFormat] = useState<string>("professional");
   const [customRequirements, setCustomRequirements] = useState<string>("");
 
-  const pageData = findPageBySlug(categories, slug);
+  // Find page data
+  const pageData = useMemo(() => findPageBySlug(categories, slug), [categories, slug]);
   const page = pageData?.page;
+
+  // ✅ FIX: useMemo for pageTitleText BEFORE any returns
+  const pageTitleText = useMemo(
+    () => getPageTitleSafe(page),
+    [page?.title, page?.metadata?.title]
+  );
 
   // Генерация системной инструкции для AI модели
   const systemInstruction = useSystemInstructionGenerator({
@@ -107,6 +118,7 @@ export function AdminPageStep5({ slug }: AdminPageInfoProps) {
     contentFormats: CONTENT_FORMATS,
   });
 
+  // ✅ FIX: Conditional rendering via JSX (NO early returns after hooks)
   // Loading state
   if (loading || !initialized) {
     return (
@@ -116,14 +128,13 @@ export function AdminPageStep5({ slug }: AdminPageInfoProps) {
       </div>
     );
   }
-  const pageTitleText = useMemo(
-    () => getPageTitleSafe(page),
-    [page?.title, page?.metadata?.title]
-  );
+
+  // Page not found state
   if (!pageData) {
     return <PageNotFound slug={slug} />;
   }
 
+  // ✅ Main UI (all hooks already called above)
   return (
     <div className="space-y-6">
       {/* Header */}
@@ -148,9 +159,7 @@ export function AdminPageStep5({ slug }: AdminPageInfoProps) {
                   sources, and custom settings to create foundation for content generation.
                 </p>
               </div>
-
             </div>
-
           </div>
         </CardHeader>
       </Card>
@@ -357,7 +366,6 @@ export function AdminPageStep5({ slug }: AdminPageInfoProps) {
                 console.log("Stream completed with structure:", structure);
               }}
             />
-
           </div>
         </CardContent>
       </Card>

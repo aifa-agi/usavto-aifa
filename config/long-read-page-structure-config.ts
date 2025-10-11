@@ -11,13 +11,17 @@ export const LONG_READ_CONTENT_STRUCTURE: RootContentStructure[] = [
     keywords: [
       "Generate 6-8 section-level keywords that comprehensively introduce the topic, establish deep context, historical background, and set comprehensive expectations for an in-depth exploration",
     ],
-    taxonomy: "Guide | Comprehensive overview",
-    attention: "Establish authoritative context and compelling value from the opening sentence with depth and sophistication.",
-    intent: "Provide a comprehensive introduction that covers historical context, current relevance, core value proposition, and prepares readers for an extensive, expert-level exploration.",
-    audiences: "Decision-makers, senior practitioners, researchers, and strategic thinkers; level: intermediate-to-advanced.",
-    selfPrompt:
-      "Create a comprehensive H2 introduction section that establishes the topic with exceptional depth and authority. Cover historical evolution, current landscape, strategic importance, and core value proposition. Frame complex concepts accessibly while maintaining sophistication. Naturally integrate the listed keywords without stuffing. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
-    designDescription: "",
+    
+    taxonomy: "",
+    attention: "",
+    intent: "",
+    audiences: "",
+    selfPrompt:"",
+    writingStyle:"",
+  contentFormat:"",
+  customRequirements:"",
+
+  designDescription: "",
     connectedDesignSectionId: "",
     additionalData: {
       minWords: 500,
@@ -126,13 +130,17 @@ export const LONG_READ_CONTENT_STRUCTURE: RootContentStructure[] = [
     keywords: [
       "Generate 6-8 section-level keywords focused on foundational concepts, core principles, theoretical frameworks, and fundamental understanding",
     ],
-    taxonomy: "Guide | Foundational theory",
-    attention: "Establish comprehensive foundational understanding with theoretical depth and practical relevance.",
-    intent: "Provide deep foundational knowledge covering core concepts, principles, frameworks, and theoretical underpinnings that inform all subsequent content.",
-    audiences: "Technical practitioners, academics, and serious learners; level: intermediate-to-advanced.",
-    selfPrompt:
-      "Create an H2 section that establishes comprehensive foundational concepts with theoretical depth, practical examples, structured subsections, and comparative data. Balance academic rigor with practical accessibility. Naturally integrate the listed keywords. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
-    designDescription: "",
+    
+    taxonomy: "",
+    attention: "",
+    intent: "",
+    audiences: "",
+    selfPrompt:"",
+    writingStyle:"",
+  contentFormat:"",
+  customRequirements:"",
+
+  designDescription: "",
     connectedDesignSectionId: "",
     additionalData: {
       minWords: 600,
@@ -320,13 +328,17 @@ export const LONG_READ_CONTENT_STRUCTURE: RootContentStructure[] = [
     keywords: [
       "Generate 6-8 section-level keywords focused on technical architecture, system design, structural components, design patterns, and architectural decisions",
     ],
-    taxonomy: "Guide | Technical architecture",
-    attention: "Provide comprehensive technical architecture guidance with depth, clarity, and practical design insights.",
-    intent: "Cover system architecture, design patterns, structural decisions, component relationships, and architectural trade-offs in depth.",
-    audiences: "Architects, senior developers, and technical decision-makers; level: advanced.",
-    selfPrompt:
-      "Create an H2 section that provides comprehensive technical architecture and design guidance. Include detailed subsections on architecture patterns, component design, system structure, code examples, and design trade-offs. Use precise technical language while maintaining clarity. Naturally integrate the listed keywords. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
-    designDescription: "",
+   
+    taxonomy: "",
+    attention: "",
+    intent: "",
+    audiences: "",
+    selfPrompt:"",
+    writingStyle:"",
+  contentFormat:"",
+  customRequirements:"",
+
+  designDescription: "",
     connectedDesignSectionId: "",
     additionalData: {
       minWords: 700,
@@ -561,13 +573,17 @@ export const LONG_READ_CONTENT_STRUCTURE: RootContentStructure[] = [
     keywords: [
       "Generate 6-8 section-level keywords focused on implementation methodology, step-by-step procedures, development workflow, best practices, and practical execution strategies",
     ],
-    taxonomy: "Guide | Implementation methodology",
-    attention: "Provide comprehensive, actionable implementation guidance with detailed methodology and best practices.",
-    intent: "Guide readers through the complete implementation process with detailed methodology, workflows, code examples, best practices, and troubleshooting guidance.",
-    audiences: "Implementers, developers, and technical practitioners; level: intermediate-to-advanced.",
-    selfPrompt:
-      "Create an H2 section that provides comprehensive implementation methodology with detailed workflows, step-by-step procedures, multiple code examples, best practices, and nested subsections for complex phases. Structure content for progressive complexity and practical utility. Naturally integrate the listed keywords. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
-    designDescription: "",
+    
+    taxonomy: "",
+    attention: "",
+    intent: "",
+    audiences: "",
+    selfPrompt:"",
+    writingStyle:"",
+  contentFormat:"",
+  customRequirements:"",
+
+  designDescription: "",
     connectedDesignSectionId: "",
     additionalData: {
       minWords: 800,
@@ -864,13 +880,17 @@ export const LONG_READ_CONTENT_STRUCTURE: RootContentStructure[] = [
     keywords: [
       "Generate 6-8 section-level keywords focused on performance optimization, scalability strategies, efficiency improvements, resource management, and performance monitoring",
     ],
-    taxonomy: "Guide | Performance and scalability",
-    attention: "Provide expert-level guidance on optimization, scalability, and performance engineering.",
-    intent: "Cover performance optimization techniques, scalability patterns, bottleneck identification, benchmarking, and monitoring strategies comprehensively.",
-    audiences: "Performance engineers, architects, and senior developers; level: advanced.",
-    selfPrompt:
-      "Create an H2 section covering performance optimization and scalability with depth and technical rigor. Include optimization techniques, scalability patterns, benchmarking data, monitoring strategies, and code examples. Use precise technical language and quantitative metrics. Naturally integrate the listed keywords. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
-    designDescription: "",
+    
+    taxonomy: "",
+    attention: "",
+    intent: "",
+    audiences: "",
+    selfPrompt:"",
+    writingStyle:"",
+  contentFormat:"",
+  customRequirements:"",
+
+  designDescription: "",
     connectedDesignSectionId: "",
     additionalData: {
       minWords: 650,
@@ -1043,13 +1063,17 @@ export const LONG_READ_CONTENT_STRUCTURE: RootContentStructure[] = [
     keywords: [
       "Generate 6-8 section-level keywords focused on security practices, compliance requirements, risk mitigation, threat modeling, and security architecture",
     ],
-    taxonomy: "Guide | Security and compliance",
-    attention: "Provide comprehensive security guidance with practical implementations and compliance considerations.",
-    intent: "Cover security architecture, threat mitigation, compliance requirements, security best practices, and risk management strategies.",
-    audiences: "Security engineers, compliance officers, and architects; level: advanced.",
-    selfPrompt:
-      "Create an H2 section covering security, compliance, and risk management comprehensively. Include security patterns, threat mitigation strategies, compliance frameworks, code examples, and risk assessment methodologies. Use precise security terminology. Naturally integrate the listed keywords. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
-    designDescription: "",
+    
+    taxonomy: "",
+    attention: "",
+    intent: "",
+    audiences: "",
+    selfPrompt:"",
+    writingStyle:"",
+  contentFormat:"",
+  customRequirements:"",
+
+  designDescription: "",
     connectedDesignSectionId: "",
     additionalData: {
       minWords: 600,
@@ -1222,13 +1246,17 @@ export const LONG_READ_CONTENT_STRUCTURE: RootContentStructure[] = [
     keywords: [
       "Generate 6-8 section-level keywords focused on real-world applications, case studies, industry examples, success stories, and practical lessons learned",
     ],
-    taxonomy: "Guide | Case studies and applications",
-    attention: "Provide concrete real-world examples and case studies with measurable outcomes.",
-    intent: "Demonstrate practical application through detailed case studies, industry examples, success metrics, and lessons learned.",
-    audiences: "Decision-makers, practitioners, and learners; level: intermediate.",
-    selfPrompt:
-      "Create an H2 section covering real-world case studies and applications with depth and practical insights. Include detailed case study analyses, success metrics, industry-specific applications, and lessons learned. Use storytelling and data to make examples compelling. Naturally integrate the listed keywords. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
-    designDescription: "",
+    
+    taxonomy: "",
+    attention: "",
+    intent: "",
+    audiences: "",
+    selfPrompt:"",
+    writingStyle:"",
+  contentFormat:"",
+  customRequirements:"",
+
+  designDescription: "",
     connectedDesignSectionId: "",
     additionalData: {
       minWords: 550,
@@ -1401,13 +1429,17 @@ export const LONG_READ_CONTENT_STRUCTURE: RootContentStructure[] = [
     keywords: [
       "Generate 6-8 section-level keywords focused on advanced topics, emerging trends, future developments, innovation horizons, and strategic evolution",
     ],
-    taxonomy: "Guide | Advanced topics and future trends",
-    attention: "Provide expert-level insights into advanced topics and strategic future trends.",
-    intent: "Cover cutting-edge topics, emerging trends, future developments, research directions, and strategic implications for the field.",
-    audiences: "Thought leaders, researchers, and strategic planners; level: advanced.",
-    selfPrompt:
-      "Create an H2 section covering advanced topics and future trends with strategic depth and forward-thinking analysis. Include emerging technologies, research directions, expert predictions, and strategic implications. Balance technical depth with accessibility. Naturally integrate the listed keywords. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
-    designDescription: "",
+    
+    taxonomy: "",
+    attention: "",
+    intent: "",
+    audiences: "",
+    selfPrompt:"",
+    writingStyle:"",
+  contentFormat:"",
+  customRequirements:"",
+
+  designDescription: "",
     connectedDesignSectionId: "",
     additionalData: {
       minWords: 550,
@@ -1565,13 +1597,17 @@ export const LONG_READ_CONTENT_STRUCTURE: RootContentStructure[] = [
     keywords: [
       "Generate 6-8 FAQ-related keywords tied to comprehensive user questions across beginner, intermediate, advanced, and specialized concerns",
     ],
-    taxonomy: "FAQ | Comprehensive Q&A section",
-    attention: "Anticipate and answer user questions comprehensively across all skill levels and concerns.",
-    intent: "Address common questions with clear, helpful answers spanning basic understanding through advanced implementation and strategic concerns.",
-    audiences: "All readers from beginners to experts; level: beginner-to-advanced.",
-    selfPrompt:
-      "This FAQ H2 section is designed for comprehensive question coverage. Adopt diverse user perspectives by analyzing all preceding content and understanding audience needs across skill levels. Generate eight high-impact questions covering beginner basics, intermediate implementation, advanced optimization, troubleshooting, decision-making, compliance, and future readiness. Organize each question under an H3 heading with a well-crafted, comprehensive answer. Avoid repeating content from other sections. Respect min/max words per element. Generate the necessary content here.",
-    designDescription: "",
+    
+    taxonomy: "",
+    attention: "",
+    intent: "",
+    audiences: "",
+    selfPrompt:"",
+    writingStyle:"",
+  contentFormat:"",
+  customRequirements:"",
+
+  designDescription: "",
     connectedDesignSectionId: "",
     additionalData: {
       minWords: 600,
@@ -1861,13 +1897,17 @@ export const LONG_READ_CONTENT_STRUCTURE: RootContentStructure[] = [
     keywords: [
       "Generate 6-8 section-level keywords focused on synthesis, comprehensive summary, key insights, actionable takeaways, recommended actions, and strategic next steps",
     ],
-    taxonomy: "Guide | Comprehensive conclusion",
-    attention: "Synthesize the entire deep dive comprehensively and guide readers toward strategic action.",
-    intent: "Provide a comprehensive summary synthesizing all major sections, highlighting key insights, presenting comparative data, offering actionable takeaways, and guiding readers toward strategic next steps.",
-    audiences: "All readers; level: general-to-intermediate.",
-    selfPrompt:
-      "Create an H2 summary section that comprehensively synthesizes the entire long-read content. Recap key insights from all sections, present summary comparison tables, highlight must-remember takeaways, include inspirational expert quotes, and provide clear next steps with multiple pathways for different reader goals. Be comprehensive yet accessible. Naturally integrate the listed keywords. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
-    designDescription: "",
+    
+    taxonomy: "",
+    attention: "",
+    intent: "",
+    audiences: "",
+    selfPrompt:"",
+    writingStyle:"",
+  contentFormat:"",
+  customRequirements:"",
+
+  designDescription: "",
     connectedDesignSectionId: "",
     additionalData: {
       minWords: 500,

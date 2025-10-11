@@ -11,13 +11,17 @@ export const MEDIUM_CONTENT_STRUCTURE: RootContentStructure[] = [
     keywords: [
       "Generate 5-7 section-level keywords that introduce the topic and set context for child elements",
     ],
-    taxonomy: "Guide | Section overview",
-    attention: "Establish clear value and context in the opening.",
-    intent: "Introduce the topic, frame the core message, and prepare readers for detailed content.",
-    audiences: "General business audience and decision-makers; level: beginner-to-intermediate.",
-    selfPrompt:
-      "Create an H2 introduction section that establishes the topic, communicates immediate value, and sets expectations. Use clear, accessible language. Naturally integrate the listed keywords without stuffing. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
-    designDescription: "",
+   
+    taxonomy: "",
+    attention: "",
+    intent: "",
+    audiences: "",
+    selfPrompt:"",
+    writingStyle:"",
+  contentFormat:"",
+  customRequirements:"",
+
+  designDescription: "",
     connectedDesignSectionId: "",
     additionalData: {
       minWords: 150,
@@ -66,13 +70,17 @@ export const MEDIUM_CONTENT_STRUCTURE: RootContentStructure[] = [
     keywords: [
       "Generate 5-7 section-level keywords focused on technical concepts and foundational knowledge",
     ],
-    taxonomy: "Guide | Technical foundation",
-    attention: "Explain core technical concepts with clarity and precision.",
-    intent: "Provide foundational technical knowledge that readers can build upon.",
-    audiences: "Technical practitioners and implementers; level: intermediate-to-advanced.",
-    selfPrompt:
-      "Create an H2 section that establishes technical foundations with clear explanations, practical examples, and structured content. Use precise terminology while remaining accessible. Naturally integrate the listed keywords. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
-    designDescription: "",
+    
+    taxonomy: "",
+    attention: "",
+    intent: "",
+    audiences: "",
+    selfPrompt:"",
+    writingStyle:"",
+  contentFormat:"",
+  customRequirements:"",
+
+  designDescription: "",
     connectedDesignSectionId: "",
     additionalData: {
       minWords: 250,
@@ -198,13 +206,17 @@ export const MEDIUM_CONTENT_STRUCTURE: RootContentStructure[] = [
     keywords: [
       "Generate 5-7 section-level keywords focused on implementation, process, and practical application",
     ],
-    taxonomy: "Guide | Implementation section",
-    attention: "Provide clear, actionable implementation guidance.",
-    intent: "Guide readers through the practical implementation process with concrete steps.",
-    audiences: "Implementers and technical practitioners; level: intermediate-to-advanced.",
-    selfPrompt:
-      "Create an H2 section that provides comprehensive implementation guidance with clear steps, practical examples, and code where appropriate. Structure the content for easy follow-along. Naturally integrate the listed keywords. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
-    designDescription: "",
+    
+    taxonomy: "",
+    attention: "",
+    intent: "",
+    audiences: "",
+    selfPrompt:"",
+    writingStyle:"",
+  contentFormat:"",
+  customRequirements:"",
+
+  designDescription: "",
     connectedDesignSectionId: "",
     additionalData: {
       minWords: 300,
@@ -300,13 +312,17 @@ export const MEDIUM_CONTENT_STRUCTURE: RootContentStructure[] = [
     keywords: [
       "Generate 5-7 FAQ-related keywords tied to common user questions and concerns",
     ],
-    taxonomy: "FAQ | Q&A section",
-    attention: "Anticipate and answer the most pressing user questions.",
-    intent: "Address common questions with clear, helpful answers.",
-    audiences: "Prospects, users, and decision-makers; level: beginner-to-intermediate.",
-    selfPrompt:
-      "This FAQ H2 section is designed for generating relevant questions and answers. Adopt the user's perspective by analyzing existing content and understanding the target audience. Generate four high-impact questions that would be most interesting and useful within the context of the topic. Organize each question under an H3 heading with a well-crafted answer. Avoid repeating content from other sections. Respect min/max words per element. Generate the necessary content here.",
-    designDescription: "",
+    
+    taxonomy: "",
+    attention: "",
+    intent: "",
+    audiences: "",
+    selfPrompt:"",
+    writingStyle:"",
+  contentFormat:"",
+  customRequirements:"",
+
+  designDescription: "",
     connectedDesignSectionId: "",
     additionalData: {
       minWords: 300,
@@ -468,13 +484,17 @@ export const MEDIUM_CONTENT_STRUCTURE: RootContentStructure[] = [
     keywords: [
       "Generate 5-7 section-level keywords focused on synthesis, key takeaways, and next steps",
     ],
-    taxonomy: "Guide | Summary and conclusion",
-    attention: "Synthesize key points and guide readers toward action.",
-    intent: "Summarize the main takeaways and provide clear next steps.",
-    audiences: "All readers; level: general-to-intermediate.",
-    selfPrompt:
-      "Create an H2 summary section that synthesizes the key points from the page, reinforces the main value proposition, and suggests clear next steps or actions. Be concise and actionable. Naturally integrate the listed keywords. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
-    designDescription: "",
+   
+    taxonomy: "",
+    attention: "",
+    intent: "",
+    audiences: "",
+    selfPrompt:"",
+    writingStyle:"",
+  contentFormat:"",
+  customRequirements:"",
+
+  designDescription: "",
     connectedDesignSectionId: "",
     additionalData: {
       minWords: 200,

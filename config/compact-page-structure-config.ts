@@ -13,12 +13,17 @@ export const COMPACT_CONTENT_STRUCTURE: RootContentStructure[] = [
       // High-level prompting for keywords (kept explicit for consistency)
       "Generate 5-7 section-level keywords inherited by children",
     ],
-    taxonomy: "Guide | Section overview",
-    attention: "Set clear context and value in one sentence.",
-    intent: "Introduce the topic and prepare readers for the main takeaways.",
-    audiences: "Decision-makers and practitioners; level: intermediate.",
-    selfPrompt:
-      "Create the H2 section overview that frames the page topic, states the value, and aligns with user intent. Provide a strong, succinct setup and ensure a logical transition into subsequent subsections. Naturally integrate the listed keywords without stuffing. Respect minWords/maxWords from additionalData. Generate the necessary content here.",
+
+    taxonomy: "",
+    attention: "",
+    intent: "",
+    audiences: "",
+    selfPrompt:"",
+    writingStyle:"",
+  contentFormat:"",
+  customRequirements:"",
+
+
     designDescription: "",
     connectedDesignSectionId: "",
     additionalData: {
@@ -128,13 +133,17 @@ export const COMPACT_CONTENT_STRUCTURE: RootContentStructure[] = [
     keywords: [
       "Generate 5-7 section-level keywords to guide h3/h4 children.",
     ],
-    taxonomy: "Guide | Core section",
-    attention: "Focus on concrete, high-value insights.",
-    intent: "Deliver the main body of actionable, expert information.",
-    audiences: "Practitioners and technical stakeholders; level: intermediate-to-advanced.",
-    selfPrompt:
-      "Create the core H2 section that delivers actionable, specific, and data-backed insights. Structure content for clarity and depth. Avoid overlap with previous sections. Integrate keywords naturally. Respect minWords/maxWords. Generate the necessary content here.",
-    designDescription: "",
+    
+    taxonomy: "",
+    attention: "",
+    intent: "",
+    audiences: "",
+    selfPrompt:"",
+    writingStyle:"",
+  contentFormat:"",
+  customRequirements:"",
+
+  designDescription: "",
     connectedDesignSectionId: "",
     additionalData: {
       minWords: 550,
@@ -384,13 +393,17 @@ export const COMPACT_CONTENT_STRUCTURE: RootContentStructure[] = [
     keywords: [
       "Generate 5-7 FAQ-related keywords tied to user intent.",
     ],
-    taxonomy: "FAQ | Q&A section",
-    attention: "Anticipate top questions and answer succinctly.",
-    intent: "Address the most pressing user questions with clarity.",
-    audiences: "Prospects and users; level: beginner-to-intermediate.",
-    selfPrompt:
-      "This FAQ H2 introduces a focused Q&A area. Generate 3 high-impact questions aligned with the page topic and audience needs. Each question must be an H3 with a concise answer paragraph beneath. Avoid repeating content from other sections. Respect min/max words per element. Generate the necessary content here.",
-    designDescription: "",
+    
+    taxonomy: "",
+    attention: "",
+    intent: "",
+    audiences: "",
+    selfPrompt:"",
+    writingStyle:"",
+  contentFormat:"",
+  customRequirements:"",
+
+   designDescription: "",
     connectedDesignSectionId: "",
     additionalData: {
       minWords: 350,
