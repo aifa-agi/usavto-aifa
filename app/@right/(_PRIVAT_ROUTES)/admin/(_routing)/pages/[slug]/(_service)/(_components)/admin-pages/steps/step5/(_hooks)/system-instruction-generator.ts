@@ -40,6 +40,7 @@ interface SystemInstructionGeneratorProps {
  * 8) Anti-duplication of meanings: semanticFingerprint guidance per node.
  * 9) Sequential metadata (Element 20/21): Kept, clarified, and referenced in validation.
  * 10) Output guardrails: Still plain JSON array; no fences; language from appConfig.
+ * 11) ✅ NEW: CONTEXT FIELDS PROPAGATION - Explicit instructions to copy writingStyle, contentFormat, customRequirements to ALL H2 elements.
  */
 
 export function useSystemInstructionGenerator({
@@ -246,10 +247,43 @@ MEDIA RESOURCES:
 Total Images: ${totalImages}
 ${imagesList}
 
-STYLE CONFIGURATION:
-- Writing Style: ${selectedStyle?.label || ""} - ${selectedStyle?.description || ""}
-- Content Format: ${selectedFormat?.label || ""} - ${selectedFormat?.description || ""}
-${customRequirements ? `- Custom Requirements: ACTIVE (see PRIORITY OVERRIDE RULES above)` : "- Custom Requirements: none"}
+🆕 CONTEXT FIELDS FOR H2 PROPAGATION (MANDATORY TO COPY):
+⚠️ CRITICAL: These values MUST be copied to EVERY H2 element in output JSON:
+
+1. writingStyle (string): "${writingStyle}"
+   - Description: ${selectedStyle?.description || ""}
+   - Purpose: Ensures consistent tone across all sections
+   - Action: COPY this exact value "${writingStyle}" to writingStyle field of ALL H2 elements
+
+2. contentFormat (string): "${contentFormat}"
+   - Description: ${selectedFormat?.description || ""}
+   - Purpose: Maintains structural consistency
+   - Action: COPY this exact value "${contentFormat}" to contentFormat field of ALL H2 elements
+
+3. customRequirements (string): ${customRequirements ? `"${customRequirements.substring(0, 500)}${customRequirements.length > 500 ? "..." : ""}"` : '""'}
+   - Purpose: Section-specific overrides and special instructions
+   - Action: COPY this value to customRequirements field of ALL H2 elements
+   - Note: If empty, use empty string ""
+
+EXAMPLE H2 OUTPUT (showing context fields):
+{
+  "id": "h2-1",
+  "tag": "h2",
+  "classification": "semantic",
+  "keywords": ["keyword1", "keyword2"],
+  "taxonomy": "Guide",
+  "attention": "Your attention hook",
+  "intent": "Your intent",
+  "audiences": "Your audience",
+  "selfPrompt": "Your detailed selfPrompt...",
+  "writingStyle": "${writingStyle}",  ← MANDATORY: Copy from above
+  "contentFormat": "${contentFormat}",  ← MANDATORY: Copy from above
+  "customRequirements": "${customRequirements || ""}",  ← MANDATORY: Copy from above (or "" if empty)
+  "designDescription": "",
+  "connectedDesignSectionId": "",
+  "additionalData": { "minWords": 300, "maxWords": 450, "actualContent": "" },
+  "realContentStructure": [...]
+}
 
 OUTPUT LANGUAGE: ${appConfig.lang}
 
@@ -267,9 +301,11 @@ IF ENRICHMENT MODE (default):
   6. DO NOT change "realContentStructure" nesting
   7. DO NOT generate content in "actualContent" (keep "need generate helpful content")
   8. ALL metadata must be in ${appConfig.lang} language
+  9. 🆕 DO copy context fields (writingStyle, contentFormat, customRequirements) to EVERY H2 element
 
   ALLOWED ACTIONS:
   - Fill empty metadata fields: keywords, intent, audiences, taxonomy, attention, selfPrompt, classification
+  - 🆕 Add context fields: writingStyle, contentFormat, customRequirements to ALL H2 elements
   - Analyze knowledge bases to extract facts and insights
   - Create detailed selfPrompt directives for each element
   - Apply SEO best practices (mid-2025 standards)
@@ -283,6 +319,7 @@ IF STRUCTURAL OVERRIDE MODE (triggered by customRequirements):
   5. DO BUILD realContentStructure hierarchy as specified in customRequirements
   6. DO NOT generate content in "actualContent" (keep "need generate helpful content")
   7. ALL metadata must be in ${appConfig.lang} language
+  8. 🆕 DO copy context fields (writingStyle, contentFormat, customRequirements) to EVERY H2 element
 
 ====================
 KEYWORD INHERITANCE ALGORITHM (RECURSIVE CASCADE)
@@ -424,7 +461,7 @@ QUALITY CRITERIA:
 - No fluff (eliminate filler content)
 
 E-E-A-T ENHANCERS (STRUCTURAL):
-- semanticFingerprint: Provide a 1-line unique claim of this node’s content to ensure no sibling overlap.
+- semanticFingerprint: Provide a 1-line unique claim of this node's content to ensure no sibling overlap.
 - sourceHint: Specify expected source (Internal KB section / External KB resource / user-provided content).
 - evidenceStrength: internal-tested | external-peer-reviewed | vendor-claim | anecdotal.
 
@@ -490,6 +527,22 @@ FORBIDDEN:
    - For technical elements (code/table): "technical"
    - For supporting elements (blockquote/p): "supporting"
 
+🆕 8. CONTEXT FIELDS (MANDATORY FOR ALL H2 ELEMENTS):
+   ⚠️ CRITICAL: These fields MUST be present in EVERY H2 element in output JSON.
+   
+   - writingStyle (string): "${writingStyle}"
+     Action: Copy this exact value to the writingStyle field of this H2 element
+     Example: "writingStyle": "${writingStyle}"
+   
+   - contentFormat (string): "${contentFormat}"
+     Action: Copy this exact value to the contentFormat field of this H2 element
+     Example: "contentFormat": "${contentFormat}"
+   
+   - customRequirements (string): ${customRequirements ? `"${customRequirements}"` : '""'}
+     Action: Copy this value to the customRequirements field of this H2 element
+     Example: "customRequirements": ${customRequirements ? `"${customRequirements.substring(0, 100)}..."` : '""'}
+     Note: If no custom requirements, use empty string ""
+
 ====================
 VALIDATION CHECKLIST
 ====================
@@ -500,6 +553,13 @@ TIER 0 - Custom Requirements Priority:
 □ Did I apply ALL overrides correctly?
 □ Did I resolve conflicts by prioritizing customRequirements?
 □ Did I include customRequirements notice in EVERY selfPrompt?
+
+🆕 TIER 0.5 - Context Fields Propagation (NEW - MANDATORY):
+□ Did I add writingStyle field with value "${writingStyle}" to EVERY H2 element?
+□ Did I add contentFormat field with value "${contentFormat}" to EVERY H2 element?
+□ Did I add customRequirements field to EVERY H2 element? (empty string "" if not provided)
+□ Did I verify ALL H2 elements have these 3 context fields with correct values?
+□ Did I check that writingStyle="${writingStyle}", contentFormat="${contentFormat}" are exact matches?
 
 TIER 1 - Knowledge Base Priority:
 □ Did I check Internal KB first for each topic?
@@ -518,6 +578,7 @@ TIER 2 - Keyword Inheritance:
 
 TIER 3 - Metadata Completeness:
 □ ALL H2/H3/H4 have: keywords, intent, audiences, taxonomy, attention, selfPrompt, classification
+□ 🆕 ALL H2 have: writingStyle, contentFormat, customRequirements (in addition to above)
 □ ALL P/UL/OL/TABLE have: keywords, selfPrompt (intent/audiences/taxonomy optional)
 □ ALL CODE/BLOCKQUOTE have: keywords, selfPrompt
 □ Added E-E-A-T enhancers where applicable: semanticFingerprint, sourceHint, evidenceStrength
@@ -559,6 +620,36 @@ Start with [ and end with ]
 The JSON must be valid and parseable.
 Every string must use double quotes.
 Every object must have all required fields.
+🆕 Every H2 object MUST have these 3 context fields with exact values from INPUT DATA:
+- "writingStyle": "${writingStyle}"  ← Copy exactly from CONTEXT FIELDS section
+- "contentFormat": "${contentFormat}"  ← Copy exactly from CONTEXT FIELDS section
+- "customRequirements": ${customRequirements ? `"${customRequirements.substring(0, 100)}..."` : '""'}  ← Copy from CONTEXT FIELDS section (or "" if empty)
+
+EXAMPLE OUTPUT STRUCTURE (showing context fields placement):
+[
+  {
+    "id": "h2-1",
+    "tag": "h2",
+    "classification": "semantic",
+    "keywords": ["keyword1", "keyword2", ...],
+    "taxonomy": "Guide",
+    "attention": "Your attention hook",
+    "intent": "Your intent",
+    "audiences": "Your audience",
+    "selfPrompt": "Your detailed selfPrompt...",
+    "writingStyle": "${writingStyle}",  ← MANDATORY
+    "contentFormat": "${contentFormat}",  ← MANDATORY
+    "customRequirements": "${customRequirements || ""}",  ← MANDATORY
+    "designDescription": "",
+    "connectedDesignSectionId": "",
+    "additionalData": {
+      "minWords": 300,
+      "maxWords": 450,
+      "actualContent": ""
+    },
+    "realContentStructure": [...]
+  }
+]
 `;
   }, [
     pageData,
@@ -570,6 +661,7 @@ Every object must have all required fields.
     contentFormats,
   ]);
 
+  // ... rest of the code (generateSectionInstruction, fullInstruction) remains the same
   // ============================================================
   // SECTION INSTRUCTION - генерирует инструкцию для одной секции
   // с учётом прогресса и контекста предыдущих секций
@@ -582,9 +674,7 @@ Every object must have all required fields.
         totalSections: number,
         previousSections: RootContentStructure[]
       ): string => {
-        // ============================================================
-        // TIER 7: SEQUENTIAL METADATA - прогресс и контекст
-        // ============================================================
+        // Same as before, baseInstruction already contains context fields instructions
         const progressPercent = Math.round(((sectionIndex + 1) / totalSections) * 100);
         const position =
           sectionIndex === 0
@@ -630,9 +720,6 @@ This is an INTERMEDIATE section (body content):
 }
 `;
 
-        // ============================================================
-        // PREVIOUS SECTIONS SUMMARY (Element 21) - анти-дубликация
-        // ============================================================
         let previousSectionsNote = "";
         if (sectionIndex > 0 && previousSections.length > 0) {
           previousSectionsNote = `
@@ -682,9 +769,6 @@ Use semantic variations and long-tail keywords instead.
 `;
         }
 
-        // ============================================================
-        // STRUCTURE TO ENRICH - текущая секция для обработки
-        // ============================================================
         const structureSection = `
 
 ====================
@@ -703,21 +787,17 @@ FINAL INSTRUCTIONS
 4. Apply KEYWORD INHERITANCE rules (parent → child cascade)
 5. Add E-E-A-T enhancers (semanticFingerprint/sourceHint/evidenceStrength) where applicable
 6. Add interlink planning and schema readiness if applicable
-7. Validate against CHECKLIST before returning
-8. Return ONLY raw JSON (no markdown fences, no explanations)
+7. 🆕 Add CONTEXT FIELDS (writingStyle, contentFormat, customRequirements) to THIS H2 element
+8. Validate against CHECKLIST before returning
+9. Return ONLY raw JSON (no markdown fences, no explanations)
 
 Return the enriched structure now:`;
 
-        // Объединяем все части инструкции
         return baseInstruction + progressNote + previousSectionsNote + structureSection;
       },
     [baseInstruction]
   );
 
-  // ============================================================
-  // FULL INSTRUCTION - полная инструкция для всех секций (legacy)
-  // Используется для обратной совместимости или batch-режима
-  // ============================================================
   const fullInstruction = useMemo(() => {
     if (!pageData?.page) {
       return "";
@@ -743,8 +823,9 @@ FINAL INSTRUCTIONS
 3. Apply KEYWORD INHERITANCE rules (parent → child cascade)
 4. Add E-E-A-T enhancers (semanticFingerprint/sourceHint/evidenceStrength) where applicable
 5. Add interlink planning and schema readiness if applicable
-6. Validate against CHECKLIST before returning
-7. Return ONLY raw JSON (no markdown fences, no explanations)
+6. 🆕 Add CONTEXT FIELDS (writingStyle, contentFormat, customRequirements) to ALL H2 elements
+7. Validate against CHECKLIST before returning
+8. Return ONLY raw JSON (no markdown fences, no explanations)
 
 Return the enriched structure now:`;
   }, [baseInstruction, pageData]);
