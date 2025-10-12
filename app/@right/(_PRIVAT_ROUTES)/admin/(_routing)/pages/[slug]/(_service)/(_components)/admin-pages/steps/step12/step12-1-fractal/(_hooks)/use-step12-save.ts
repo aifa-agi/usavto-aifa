@@ -171,6 +171,7 @@ export function useStep12Save(): UseStep12SaveReturn {
     },
     [categories, setCategories, updateCategories, contextPage, isAllReady, sections, resetAllFlags, setContextSaving]
   );
+  
 
   return { save, saving: localSaving };
 }
