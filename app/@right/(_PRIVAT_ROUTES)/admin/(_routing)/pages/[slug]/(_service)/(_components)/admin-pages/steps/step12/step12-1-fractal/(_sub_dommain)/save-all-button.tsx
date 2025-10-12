@@ -3,20 +3,19 @@
 
 /**
  * Changes (EN):
- * - Uses ButtonsContext to enable button only when all sections are confirmed.
- * - Awaits save(); on success resets all confirmation flags.
- * - Keeps existing saving logic and toasts via useStep12Save.
+ * - Disabled state: gray muted background
+ * - Ready state: pulsing orange when allConfirmed
+ * - Resets confirmation flags after successful save
+ * - Matches Step8 visual design pattern
  */
 
 import * as React from "react";
+import { Button } from "@/components/ui/button";
+import { Save } from "lucide-react";
 import { useStep12Save } from "../(_hooks)/use-step12-save";
 import { STEP12_TEXTS } from "../(_constants)/step12-texts";
 import type { PageData } from "@/app/@right/(_service)/(_types)/page-types";
 import { useStep12Buttons } from "../(_contexts)/step12-buttons-context";
-
-function cx(...arr: Array<string | false | null | undefined>) {
-    return arr.filter(Boolean).join(" ");
-}
 
 export function SaveAllButton({ page }: { page?: PageData | null }) {
     const { save, saving } = useStep12Save();
@@ -34,20 +33,32 @@ export function SaveAllButton({ page }: { page?: PageData | null }) {
 
     return (
         <div className="flex items-center gap-2">
-            <button
-                type="button"
-                onClick={onClick}
-                disabled={disabled}
-                className={cx(
-                    "inline-flex items-center rounded-md border px-3 py-1.5 text-xs font-medium transition-colors",
+            {disabled ? (
+                /* Disabled state: gray muted */
+                <Button
+                    type="button"
+                    onClick={onClick}
                     disabled
-                        ? "cursor-not-allowed border-border bg-muted text-muted-foreground"
-                        : "border-emerald-500 bg-emerald-500/15 text-white hover:bg-emerald-500/20"
-                )}
-                aria-busy={saving}
-            >
-                {saving ? STEP12_TEXTS.labels.saving : STEP12_TEXTS.labels.saveAll}
-            </button>
+                    variant="secondary"
+                    size="sm"
+                    className="cursor-not-allowed opacity-50"
+                    aria-busy={saving}
+                >
+                    {saving ? STEP12_TEXTS.labels.saving : STEP12_TEXTS.labels.saveAll}
+                </Button>
+            ) : (
+                /* Ready state: pulsing orange */
+                <Button
+                    type="button"
+                    onClick={onClick}
+                    className="bg-orange-500 hover:bg-orange-600 text-white animate-pulse-strong shadow-md"
+                    size="sm"
+                    aria-busy={saving}
+                >
+                    <Save className="size-3 mr-1.5" />
+                    {saving ? STEP12_TEXTS.labels.saving : STEP12_TEXTS.labels.saveAll}
+                </Button>
+            )}
         </div>
     );
 }

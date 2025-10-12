@@ -1,12 +1,17 @@
 // File: @/app/@right/(_PRIVAT_ROUTES)/admin/(_routing)/pages/[slug]/(_service)/(_components)/admin-pages/steps/step12/step12-1-fractal/(_sub_dommain)/sections-selector-card.tsx
 
 /**
- * Changes:
- * - Removed local <Step12ButtonsProvider> wrapper.
- * - Rely on Step12Provider to provide buttons context for the whole subtree.
+ * Changes (EN):
+ * - "All" button: removed icon
+ * - Section buttons: added px- padding and text-left alignment
+ * - Maintains four-state system: Locked, Next, Active, Completed
+ * - Enforces sequential activation based on unlockedIndex logic
  */
 
 import * as React from "react";
+import { CheckCircle, Edit, Edit2, Lock } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { toast } from "sonner";
 
 import { STEP12_TEXTS } from "../(_constants)/step12-texts";
 import { SaveAllButton } from "./save-all-button";
@@ -23,25 +28,48 @@ export function SectionsSelectorCard({ page }: { page?: PageData | null }) {
     const titleCls = "text-sm font-semibold text-foreground";
     const subtitleCls = "text-xs text-muted-foreground";
 
-    const chipBase =
-        "inline-flex max-w-[240px] items-center truncate rounded-md border px-3 py-1.5 text-xs font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background";
-    const toneActive =
-        "border-violet-500 bg-violet-500/15 text-white hover:bg-violet-500/20 focus-visible:ring-violet-500";
-    const toneNeutral =
-        "border-border bg-background/60 text-muted-foreground hover:bg-background/80 dark:bg-background/30 focus-visible:ring-neutral-500";
+    // Calculate unlockedIndex: highest confirmed section index + 1
+    const unlockedIndex = React.useMemo(() => {
+        const realSections = sections.filter((s) => s.id !== "all");
 
-    const onChipClick = (id: string) => {
-        if (id === "all") {
-            if (activeId === "all") {
-                refreshAll();
+        let lastConfirmedIdx = -1;
+        for (let i = 0; i < realSections.length; i++) {
+            if (buttons.isConfirmed(realSections[i].id)) {
+                lastConfirmedIdx = i;
             } else {
-                setActive("all");
+                break;
             }
-            return;
         }
-        setActive(id);
-        buttons.confirm(id);
-    };
+
+        return lastConfirmedIdx + 1;
+    }, [sections, buttons]);
+
+    const handleSectionClick = React.useCallback(
+        (id: string, index: number) => {
+            if (id === "all") {
+                if (activeId === "all") {
+                    refreshAll();
+                } else {
+                    setActive("all");
+                }
+                return;
+            }
+
+            if (index > unlockedIndex) {
+                toast.error("Section Locked", {
+                    description: "Please complete previous sections first.",
+                });
+                return;
+            }
+
+            setActive(id);
+            buttons.confirm(id);
+        },
+        [activeId, unlockedIndex, setActive, refreshAll, buttons]
+    );
+
+    const allButton = sections.find((s) => s.id === "all");
+    const sectionButtons = sections.filter((s) => s.id !== "all");
 
     return (
         <div className={containerCls}>
@@ -59,29 +87,97 @@ export function SectionsSelectorCard({ page }: { page?: PageData | null }) {
                 </div>
             </div>
 
-            <div className="custom-scrollbar overflow-x-auto whitespace-nowrap">
+            <div className="custom-scrollbar overflow-x-auto overflow-y-hidden">
                 <div className="flex min-w-max items-center gap-2 pr-1">
-                    {sections.map((s) => {
+                    {/* "All" button - NO ICON, green by default, primary when active */}
+                    {allButton && (
+                        <React.Fragment key={allButton.id}>
+                            {activeId === "all" ? (
+                                <Button
+                                    onClick={() => handleSectionClick(allButton.id, -1)}
+                                    variant="default"
+                                    size="sm"
+                                    className="max-w-[240px] truncate px-4 justify-start text-left"
+                                    aria-pressed="true"
+                                    title={allButton.label}
+                                >
+                                    {allButton.label}
+                                </Button>
+                            ) : (
+                                <Button
+                                    onClick={() => handleSectionClick(allButton.id, -1)}
+                                    className="bg-green-500 hover:bg-green-600 text-white shadow-md max-w-[240px] truncate px-2 justify-start text-left"
+                                    size="sm"
+                                    aria-pressed="false"
+                                    title={allButton.label}
+                                >
+                                    {allButton.label}
+                                </Button>
+                            )}
+                        </React.Fragment>
+                    )}
+
+                    {/* Section buttons with icons, px-1 padding, left-aligned text */}
+                    {sectionButtons.map((s, idx) => {
                         const isActive = activeId === s.id;
-                        const tone = isActive ? toneActive : toneNeutral;
-                        const showConfirm = s.id !== "all" && buttons.isConfirmed(s.id);
+                        const isCompleted = idx < unlockedIndex;
+                        const isCurrent = idx === unlockedIndex;
+                        const isLocked = idx > unlockedIndex;
+
                         return (
-                            <button
-                                key={s.id}
-                                type="button"
-                                onClick={() => onChipClick(s.id)}
-                                className={[chipBase, tone].join(" ")}
-                                title={s.label}
-                                aria-pressed={isActive}
-                                disabled={s.isLoading}
-                            >
-                                <span className="truncate">{s.isLoading ? "Loading..." : s.label}</span>
-                                {showConfirm && (
-                                    <span className="ml-2 inline-flex items-center rounded-sm bg-emerald-500/20 px-1.5 py-0.5 text-[10px] text-emerald-300">
-                                        {STEP12_TEXTS.labels.resultBadge}
-                                    </span>
+                            <React.Fragment key={s.id}>
+                                {isLocked ? (
+                                    <Button
+                                        onClick={() => handleSectionClick(s.id, idx)}
+                                        variant="secondary"
+                                        size="sm"
+                                        className="max-w-[240px] truncate px-2 justify-start text-left"
+                                        aria-pressed="false"
+                                        disabled
+                                        title={`${s.label} - Locked`}
+                                    >
+                                        <Lock className="size-3 mr-1.5 shrink-0" />
+                                        <span className="truncate">{s.isLoading ? "Loading..." : s.label}</span>
+                                    </Button>
+                                ) : isActive ? (
+                                    <Button
+                                        onClick={() => handleSectionClick(s.id, idx)}
+                                        variant="default"
+                                        size="sm"
+                                        className="max-w-[240px] truncate px-2 justify-start text-left"
+                                        aria-pressed="true"
+                                        disabled={s.isLoading}
+                                        title={s.label}
+                                    >
+                                        <Edit className="size-3 mr-1.5 shrink-0" />
+                                        <span className="truncate">{s.isLoading ? "Loading..." : s.label}</span>
+                                    </Button>
+                                ) : isCompleted ? (
+                                    <Button
+                                        onClick={() => handleSectionClick(s.id, idx)}
+                                        className="bg-green-500 hover:bg-green-600 text-white shadow-md max-w-[240px] truncate px-2 justify-start text-left"
+                                        size="sm"
+                                        aria-pressed="false"
+                                        disabled={s.isLoading}
+                                        title={`${s.label} - Click to edit`}
+                                    >
+                                        <CheckCircle className="size-3 mr-1.5 shrink-0" />
+                                        <span className="truncate">{s.isLoading ? "Loading..." : s.label}</span>
+                                    </Button>
+                                ) : (
+                                    <Button
+                                        onClick={() => handleSectionClick(s.id, idx)}
+                                        className="bg-orange-500 hover:bg-orange-600 text-white animate-pulse-strong shadow-md max-w-[240px] truncate px-2 justify-start text-left"
+                                        size="sm"
+                                        aria-pressed="false"
+                                        disabled={s.isLoading}
+                                        title={s.label}
+                                    >
+                                        <Edit2 className="size-3 mr-1.5 shrink-0" />
+                                        <span className="truncate">{s.isLoading ? "Loading..." : s.label}</span>
+                                    </Button>
                                 )}
-                            </button>
+                            </React.Fragment>
                         );
                     })}
                 </div>

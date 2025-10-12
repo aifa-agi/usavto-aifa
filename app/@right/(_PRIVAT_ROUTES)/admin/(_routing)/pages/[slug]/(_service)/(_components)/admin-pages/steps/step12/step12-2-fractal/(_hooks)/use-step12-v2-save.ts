@@ -54,12 +54,8 @@ class SectionUploadV2Error extends Error {
   }
 }
 
-/**
- * ✅ ОБНОВЛЕНО: Использует новый API endpoint и PageUploadPayload
- */
 async function uploadSectionsV2(payload: PageUploadPayload): Promise<SectionUploadV2Response> {
   try {
-    // Validate payload before sending using new validation
     const validationErrors = validatePageUploadPayload(payload);
     if (validationErrors.length > 0) {
       throw new SectionUploadV2Error(
@@ -68,7 +64,6 @@ async function uploadSectionsV2(payload: PageUploadPayload): Promise<SectionUplo
       );
     }
 
-    // ✅ ОБНОВЛЕНО: Используем новый API endpoint
     const response = await fetch("/api/sections/upload", {
       method: "POST",
       headers: {
@@ -77,7 +72,6 @@ async function uploadSectionsV2(payload: PageUploadPayload): Promise<SectionUplo
       body: JSON.stringify(payload),
     });
 
-    // Handle non-JSON responses (HTML error pages)
     const responseText = await response.text();
     if (responseText.startsWith("<!DOCTYPE") || responseText.startsWith("<html")) {
       throw new SectionUploadV2Error(
@@ -98,7 +92,6 @@ async function uploadSectionsV2(payload: PageUploadPayload): Promise<SectionUplo
       );
     }
 
-    // Handle HTTP errors
     if (!response.ok) {
       const errorType = getV2ErrorTypeFromStatus(response.status);
       throw new SectionUploadV2Error(
@@ -109,7 +102,6 @@ async function uploadSectionsV2(payload: PageUploadPayload): Promise<SectionUplo
       );
     }
 
-    // Handle application-level failures
     if (!result.success) {
       const errorType = getV2ErrorTypeFromCode(result.errorCode);
       throw new SectionUploadV2Error(
@@ -126,7 +118,6 @@ async function uploadSectionsV2(payload: PageUploadPayload): Promise<SectionUplo
       throw error;
     }
 
-    // Network or other unexpected errors
     if (error instanceof TypeError && error.message.includes("fetch")) {
       throw new SectionUploadV2Error(
         "Network error: Unable to connect to server",
@@ -140,10 +131,6 @@ async function uploadSectionsV2(payload: PageUploadPayload): Promise<SectionUplo
     );
   }
 }
-
-/**
- * ✅ УДАЛЕНО: validateV2Payload - теперь используется validatePageUploadPayload из mapper
- */
 
 function getV2ErrorTypeFromStatus(status: number): UploadErrorV2Type {
   if (status >= 400 && status < 500) return UploadErrorV2Type.VALIDATION_ERROR;
@@ -178,9 +165,6 @@ interface UseStep12V2SaveReturn {
   saving: boolean;
 }
 
-/**
- * ✅ ОБНОВЛЕНО: Использует toPageUploadPayload вместо toFileSystemPayload
- */
 export function useStep12V2Save(
   sections: import("../(_types)/step12-v2-types").SectionStateV2[],
   isAllReady: () => boolean,
@@ -194,7 +178,14 @@ export function useStep12V2Save(
   const save = useCallback(async (targetPage?: PageData): Promise<boolean> => {
     const pageToSave = targetPage || page;
     
+    console.log("🚀 [V2Save] Save started", {
+      pageId: pageToSave?.id,
+      href: pageToSave?.href,
+      currentIsPreviewComplited: pageToSave?.isPreviewComplited
+    });
+
     if (!pageToSave) {
+      console.error("❌ [V2Save] No page to save");
       toast.error(STEP12_V2_TEXTS.errors.missingHref, {
         id: STEP12_V2_IDS.toasts.saveError
       });
@@ -202,6 +193,7 @@ export function useStep12V2Save(
     }
 
     if (!pageToSave.href) {
+      console.error("❌ [V2Save] Page missing href");
       toast.error(STEP12_V2_TEXTS.errors.missingHref, {
         id: STEP12_V2_IDS.toasts.saveError
       });
@@ -209,6 +201,7 @@ export function useStep12V2Save(
     }
 
     if (!isAllReady()) {
+      console.warn("⚠️ [V2Save] Sections not ready");
       toast.error(STEP12_V2_TEXTS.save.notReadyDescription, {
         id: STEP12_V2_IDS.toasts.saveNotReady
       });
@@ -223,46 +216,93 @@ export function useStep12V2Save(
     });
 
     try {
-      // ✅ ОБНОВЛЕНО: Используем toPageUploadPayload с разделенными метаданными
       const payload: PageUploadPayload = toPageUploadPayload(sections, pageToSave);
       
+      console.log("📦 [V2Save] Payload created", {
+        sectionsCount: payload.sections.length,
+        pageTitle: payload.pageMetadata.title
+      });
+
       if (payload.sections.length === 0) {
         throw new Error(STEP12_V2_TEXTS.errors.noSections);
       }
 
-      // Валидация метаданных страницы
-      if (!payload.pageMetadata.title && !payload.pageMetadata.description) {
-        console.warn("Step12V2Save: Page metadata is incomplete - no title or description provided");
-      }
-
       const response = await uploadSectionsV2(payload);
+      
+      console.log("✅ [V2Save] Upload successful");
 
       resetAllFlags();
 
-      // Update navigation state optimistically
-      try {
-        setCategories(prevCategories => 
-          prevCategories.map(category => ({
-            ...category,
-            pages: category.pages.map(p => 
-              p.href === pageToSave.href 
-                ? { 
-                    ...p, 
-                    isPreviewComplited: true, 
-                    updatedAt: new Date().toISOString(),
-                    // Обновляем также метаданные в навигации
-                    title: payload.pageMetadata.title || p.title,
-                    description: payload.pageMetadata.description || p.description,
-                  }
-                : p
-            )
-          }))
-        );
-      } catch (navError) {
-        console.warn("Step12V2Save: Failed to update navigation state", navError);
-      }
+      console.log("🔄 [V2Save] Starting categories update");
+      console.log("🔍 [V2Save] Looking for page with href:", pageToSave.href);
 
-      // ✅ ОБНОВЛЕНО: Показываем название страницы в успешном сообщении
+      // Force update with detailed logging
+      setCategories(prevCategories => {
+        console.log("📝 [V2Save] Previous categories count:", prevCategories.length);
+        
+        let foundPage = false;
+        let updatedCount = 0;
+
+        const newCategories = prevCategories.map(category => {
+          console.log(`🔍 [V2Save] Checking category: "${category.title}" (${category.pages.length} pages)`);
+          
+          const newPages = category.pages.map(p => {
+            if (p.href === pageToSave.href) {
+              foundPage = true;
+              updatedCount++;
+              
+              const oldTimestamp = p.updatedAt;
+              const newTimestamp = new Date().toISOString();
+              
+              console.log("✨ [V2Save] FOUND & UPDATING PAGE!", {
+                categoryTitle: category.title,
+                pageId: p.id,
+                pageHref: p.href,
+                oldIsPreviewComplited: p.isPreviewComplited,
+                newIsPreviewComplited: true,
+                oldTimestamp,
+                newTimestamp,
+                timestampChanged: oldTimestamp !== newTimestamp
+              });
+
+              return { 
+                ...p, 
+                isPreviewComplited: true, 
+                updatedAt: newTimestamp,
+                title: payload.pageMetadata.title || p.title,
+                description: payload.pageMetadata.description || p.description,
+              };
+            }
+            return p;
+          });
+
+          return {
+            ...category,
+            pages: newPages
+          };
+        });
+
+        console.log("📊 [V2Save] Update summary:", {
+          foundPage,
+          updatedCount,
+          searchedHref: pageToSave.href
+        });
+
+        if (!foundPage) {
+          console.error("❌ [V2Save] PAGE NOT FOUND IN ANY CATEGORY!");
+          console.log("🔍 [V2Save] All hrefs in categories:", 
+            prevCategories.flatMap(c => c.pages.map(p => ({ 
+              category: c.title, 
+              href: p.href, 
+            })))
+          );
+        }
+
+        return newCategories;
+      });
+
+      console.log("✅ [V2Save] Categories update completed");
+
       toast.success(
         `Successfully saved page "${payload.pageMetadata.title || 'Untitled'}" with ${payload.sections.length} sections${
           response.filePath ? ` to ${response.filePath}` : ""
@@ -273,10 +313,11 @@ export function useStep12V2Save(
         }
       );
 
+      console.log("🎉 [V2Save] Save process finished successfully");
       return true;
 
     } catch (error) {
-      console.error("Step12V2Save: Save failed", error);
+      console.error("❌ [V2Save] Save failed:", error);
 
       if (error instanceof SectionUploadV2Error) {
         let errorMessage = error.message;
@@ -316,21 +357,18 @@ export function useStep12V2Save(
         });
       }
 
-      // Rollback navigation state
-      try {
-        setCategories(prevCategories =>
-          prevCategories.map(category => ({
-            ...category,
-            pages: category.pages.map(p =>
-              p.href === (targetPage || page)?.href
-                ? { ...p, isPreviewComplited: false }
-                : p
-            ),
-          }))
-        );
-      } catch (rollbackError) {
-        console.warn("Step12V2Save: Failed to rollback navigation state", rollbackError);
-      }
+      console.log("🔄 [V2Save] Rolling back to false");
+      
+      setCategories(prevCategories =>
+        prevCategories.map(category => ({
+          ...category,
+          pages: category.pages.map(p =>
+            p.href === pageToSave.href
+              ? { ...p, isPreviewComplited: false }
+              : p
+          ),
+        }))
+      );
 
       return false;
 
@@ -338,6 +376,7 @@ export function useStep12V2Save(
       setLocalSaving(false);
       setSaving(false);
       toast.dismiss(STEP12_V2_IDS.toasts.saveStart);
+      console.log("🏁 [V2Save] Finally block executed");
     }
   }, [sections, isAllReady, resetAllFlags, setSaving, page, setCategories]);
 
@@ -349,10 +388,6 @@ export function useStep12V2Save(
 
 // ==================== LEGACY SUPPORT ====================
 
-/**
- * @deprecated Legacy function for backward compatibility
- * Use the updated version above instead
- */
 export function useStep12V2SaveLegacy(
   sections: import("../(_types)/step12-v2-types").SectionStateV2[],
   isAllReady: () => boolean,

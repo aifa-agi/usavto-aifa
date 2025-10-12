@@ -30,30 +30,62 @@ function cx(...arr: Array<string | false | null | undefined>): string {
  * FIXED: Proper type handling for page parameter (null safety)
  */
 export function SaveAllV2Button({ page }: SaveAllV2ButtonProps) {
-    const { isAllReady, resetAllFlags, setSaving } = useStep12V2Root();
+    const rootContext = useStep12V2Root();
+    const { isAllReady, resetAllFlags, setSaving, sections } = rootContext;
     const { allConfirmed, resetAll: resetButtonFlags } = useStep12V2Buttons();
+
+    console.log("🔘 [SaveAllV2Button] Render", {
+        hasPage: !!page,
+        pageId: page?.id,
+        pageHref: page?.href,
+        allConfirmed,
+        isAllReady: isAllReady(),
+        sectionsCount: sections.length
+    });
 
     // Convert page to proper type: null becomes undefined
     const pageForHook: PageData | undefined = page || undefined;
 
     const { save, saving } = useStep12V2Save(
-        useStep12V2Root().sections,
+        sections,
         isAllReady,
         resetAllFlags,
         setSaving,
-        pageForHook // Now correctly typed as PageData | undefined
+        pageForHook
     );
 
     // Button is disabled if: no page, not all sections confirmed, or currently saving
     const disabled = !allConfirmed || saving || !page;
 
-    const onClick = async () => {
-        if (!page) return;
+    console.log("🔘 [SaveAllV2Button] Button state", {
+        disabled,
+        saving,
+        allConfirmed,
+        hasPage: !!page
+    });
 
+    const onClick = async () => {
+        console.log("🔘 [SaveAllV2Button] Button clicked!", {
+            hasPage: !!page,
+            pageId: page?.id,
+            disabled
+        });
+
+        if (!page) {
+            console.error("❌ [SaveAllV2Button] No page available");
+            return;
+        }
+
+        console.log("🔘 [SaveAllV2Button] Calling save function...");
         const success = await save(page);
+
+        console.log("🔘 [SaveAllV2Button] Save result:", { success });
+
         if (success) {
-            // Reset button confirmation flags after successful save
+            console.log("✅ [SaveAllV2Button] Save successful, resetting button flags");
             resetButtonFlags();
+        } else {
+            console.error("❌ [SaveAllV2Button] Save failed");
         }
     };
 

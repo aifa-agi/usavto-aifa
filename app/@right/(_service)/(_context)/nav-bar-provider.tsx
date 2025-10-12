@@ -1,4 +1,4 @@
-// @/app/(_service)/contexts/nav-bar-provider.tsx
+// @/app/@right/(_service)/(_context)/nav-bar-provider.tsx
 
 "use client";
 
@@ -74,6 +74,11 @@ export function NavigationMenuProvider({
 }) {
   const [categories, setCategories] = useState<MenuCategory[]>([]);
   const serverCategoriesRef = useRef<MenuCategory[]>([]);
+
+  // ✅ FIX: Add ref to track current categories state
+  // This ensures updateCategories always has access to latest state
+  const categoriesRef = useRef<MenuCategory[]>([]);
+
   const [loading, setLoading] = useState(false);
   const [initialized, setInitialized] = useState(false);
   const [lastOperationResult, setLastOperationResult] =
@@ -81,6 +86,12 @@ export function NavigationMenuProvider({
   const [retryCount, setRetryCount] = useState(0);
   const [dataSource, setDataSource] = useState<"Local FileSystem" | "GitHub API" | undefined>();
   const [lastFetchResult, setLastFetchResult] = useState<FetchMenuResponse | undefined>();
+
+  // ✅ FIX: Sync categoriesRef with categories state changes
+  // This keeps the ref up-to-date without causing re-renders
+  useEffect(() => {
+    categoriesRef.current = categories;
+  }, [categories]);
 
   const dirty = !isCategoriesEqual(categories, serverCategoriesRef.current);
 
@@ -127,11 +138,11 @@ export function NavigationMenuProvider({
           ? `Failed to load from ${result.source}: ${result.error}`
           : `Failed to load menu: ${result.error}`;
 
-        toast.error(errorMessage); // ❗ Always show errors
+        toast.error(errorMessage);
       }
     } catch (error) {
       console.error("Unexpected error in refreshCategories:", error);
-      toast.error("Failed to load menu categories"); // ❗ Always show errors
+      toast.error("Failed to load menu categories");
     } finally {
       setLoading(false);
       setInitialized(true);
@@ -139,75 +150,98 @@ export function NavigationMenuProvider({
   }, []);
 
   /**
-   * Update categories with enhanced error tracking
+   * ✅ FIX: Update categories with categoriesRef to avoid stale closure
+   * 
+   * Previous issue:
+   * - useCallback captured 'categories' in closure at creation time
+   * - When called immediately after setCategories(), it used old value
+   * - Second click worked because closure was recreated with new value
+   * 
+   * Solution:
+   * - Use categoriesRef.current to always access latest state
+   * - Remove 'categories' from dependencies to keep callback stable
+   * - Ref updates synchronously via useEffect, ensuring fresh data
+   * 
    * Step 6: Show toasts for all update operations
    */
-  const updateCategories =
-    useCallback(async (): Promise<OperationError | null> => {
-      setLoading(true);
+  const updateCategories = useCallback(async (): Promise<OperationError | null> => {
+    setLoading(true);
 
-      try {
-        const result = await persistMenuCategories(categories);
-        setLastOperationResult(result);
+    try {
+      // ✅ FIX: Use ref instead of closure variable
+      // This ensures we persist the LATEST state, not stale closure value
+      const currentCategories = categoriesRef.current;
 
-        if (isPersistSuccess(result)) {
-          serverCategoriesRef.current = JSON.parse(JSON.stringify(categories));
-          setRetryCount(0);
+      console.log("[updateCategories] Persisting categories from ref:", {
+        categoriesCount: currentCategories.length,
+        pagesCount: currentCategories.reduce((sum, cat) => sum + (cat.pages?.length || 0), 0),
+        timestamp: new Date().toISOString(),
+      });
 
-          const userMessage = getUserFriendlyMessage(result);
-          toast.success(userMessage); // ✅ Always show success for updates
+      const result = await persistMenuCategories(currentCategories);
+      setLastOperationResult(result);
 
-          return null;
-        } else {
-          const operationError: OperationError = {
-            status: result.status,
-            message: result.message,
-            canRetry: shouldRetry(result),
-            isNetworkError: isNetworkError(result),
-            isGitHubError: isGitHubError(result),
-            userMessage: getUserFriendlyMessage(result),
-            environment: result.environment,
-            source: dataSource,
-          };
+      if (isPersistSuccess(result)) {
+        // ✅ Update serverRef with the same data we just persisted
+        serverCategoriesRef.current = JSON.parse(JSON.stringify(currentCategories));
+        setRetryCount(0);
 
-          setRetryCount((prev) => prev + 1);
+        const userMessage = getUserFriendlyMessage(result);
+        toast.success(userMessage);
 
-          console.error("Failed to update categories:", {
-            error: operationError,
-            result: result,
-            retryAttempt: retryCount + 1,
-            dataSource: dataSource,
-          });
+        console.log("[updateCategories] Successfully persisted to server");
 
-          return operationError;
-        }
-      } catch (unexpectedError: any) {
-        console.error("Unexpected error in updateCategories:", unexpectedError);
-
+        return null;
+      } else {
         const operationError: OperationError = {
-          status: OperationStatus.UNKNOWN_ERROR,
-          message: "Unexpected client-side error",
-          canRetry: true,
-          isNetworkError: true,
-          isGitHubError: false,
-          userMessage: "An unexpected error occurred. Please try again.",
-          environment: "production",
+          status: result.status,
+          message: result.message,
+          canRetry: shouldRetry(result),
+          isNetworkError: isNetworkError(result),
+          isGitHubError: isGitHubError(result),
+          userMessage: getUserFriendlyMessage(result),
+          environment: result.environment,
           source: dataSource,
         };
 
         setRetryCount((prev) => prev + 1);
+
+        console.error("Failed to update categories:", {
+          error: operationError,
+          result: result,
+          retryAttempt: retryCount + 1,
+          dataSource: dataSource,
+        });
+
         return operationError;
-      } finally {
-        setLoading(false);
       }
-    }, [categories, retryCount, dataSource]);
+    } catch (unexpectedError: any) {
+      console.error("Unexpected error in updateCategories:", unexpectedError);
+
+      const operationError: OperationError = {
+        status: OperationStatus.UNKNOWN_ERROR,
+        message: "Unexpected client-side error",
+        canRetry: true,
+        isNetworkError: true,
+        isGitHubError: false,
+        userMessage: "An unexpected error occurred. Please try again.",
+        environment: "production",
+        source: dataSource,
+      };
+
+      setRetryCount((prev) => prev + 1);
+      return operationError;
+    } finally {
+      setLoading(false);
+    }
+  }, [retryCount, dataSource]); // ✅ FIX: Removed 'categories' from dependencies
 
   /**
    * Reset with explicit user action (show toast)
    * Step 7: Explicit reset shows success toast
    */
   const resetCategories = useCallback(async () => {
-    await refreshCategories({ silent: false }); // Show toast on manual reset
+    await refreshCategories({ silent: false });
   }, [refreshCategories]);
 
   /**
@@ -215,7 +249,7 @@ export function NavigationMenuProvider({
    * Step 8: Suppress toast on initial mount
    */
   useEffect(() => {
-    refreshCategories({ silent: true }); // Silent on initial load
+    refreshCategories({ silent: true });
   }, [refreshCategories]);
 
   return (
@@ -283,13 +317,13 @@ export function useMenuOperations() {
 
       // Show appropriate toast based on error type
       if (error.isGitHubError) {
-        toast.error(errorMsg); // ✅ GitHub error toast
+        toast.error(errorMsg);
       } else if (error.isNetworkError) {
         toast.error(
           `${errorMsg}${error.canRetry ? " You can try again." : ""}`
-        ); // ✅ Network error toast
+        );
       } else {
-        toast.error(errorMsg); // ✅ Generic error toast
+        toast.error(errorMsg);
       }
 
       console.warn("Menu update failed:", {
@@ -314,7 +348,7 @@ export function useMenuOperations() {
     if (lastOperationResult && shouldRetry(lastOperationResult)) {
       return await handleUpdate();
     }
-    toast.warning("Cannot retry: operation not retryable"); // ⚠️ Warning toast
+    toast.warning("Cannot retry: operation not retryable");
     return false;
   }, [handleUpdate, lastOperationResult]);
 
@@ -323,7 +357,7 @@ export function useMenuOperations() {
    * Step 12: Expose manual refresh that shows toast
    */
   const handleManualRefresh = useCallback(async () => {
-    await refreshCategories({ silent: false }); // Show toast on manual action
+    await refreshCategories({ silent: false });
   }, [refreshCategories]);
 
   const canRetry = lastOperationResult
@@ -333,7 +367,7 @@ export function useMenuOperations() {
   return {
     handleUpdate,
     handleRetry,
-    handleManualRefresh, // New method for explicit refresh
+    handleManualRefresh,
     canRetry,
     loading,
     dirty,
