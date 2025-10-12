@@ -28,8 +28,6 @@ import { NavBar } from "./@right/(_service)/(_components)/nav-bar/nav-bar";
 import { NavigationMenuProvider } from "./@right/(_service)/(_context)/nav-bar-provider";
 import { CookieBanner } from "@/app/(_service)/(_components)/cookie-banner";
 
-import { cookies, headers } from "next/headers";
-import { DEFAULT_LANGUAGE, SUPPORTED_LANGUAGES, SupportedLanguage } from "@/config/translations.config";
 
 
 export const viewport: Viewport = {
@@ -106,6 +104,7 @@ export default async function RootLayout({
                           {/* --- END: CORRECTED BLOCK --- */}
                         </ResizablePanel>
                       </ResizablePanelGroup>
+                      <CookieBanner />
                     </div>
 
 
@@ -120,9 +119,11 @@ export default async function RootLayout({
                               <main className="flex-1 overflow-y-auto hide-scrollbar">
                                 {right}
                               </main>
+                              <CookieBanner />
                             </div>
                           </NavigationMenuProvider>
                         </RightDrawerBar>
+
                       </div>
                     </div>
 
@@ -132,7 +133,7 @@ export default async function RootLayout({
                 </RightSidebarProvider>
               </LanguageProvider>
             </OnlineStatusProvider>
-            <CookieBanner />
+
             {process.env.NODE_ENV === "production" && (
               <GoogleAnalytics
                 gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID!}
@@ -140,6 +141,7 @@ export default async function RootLayout({
             )}
           </SessionProvider>
         </ThemeProvider>
+
       </body>
     </html>
   );

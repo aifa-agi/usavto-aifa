@@ -75,8 +75,8 @@ export default function MobileMenu({
             className="flex items-center text-white transition-colors duration-200 relative w-full text-left"
           >
             {singlePage.hasBadge && singlePage.badgeName ? (
-              <div className="flex items-center justify-between gap-2 w-full">
-                <span className="flex-grow overflow-hidden whitespace-nowrap text-ellipsis flex items-center gap-2">
+              <div className="flex items-start justify-between gap-2 w-full">
+                <span className="fflex-grow overflow-hidden line-clamp-2">
                   {humanize(singlePage.title || "")}
                 </span>
                 <Badge
@@ -94,7 +94,7 @@ export default function MobileMenu({
                 </Badge>
               </div>
             ) : (
-              <span className="flex items-center gap-2 overflow-hidden whitespace-nowrap text-ellipsis">
+              <span className="flex-grow overflow-hidden line-clamp-2">
                 {humanize(singlePage.title || "")}
               </span>
             )}

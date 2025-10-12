@@ -15,6 +15,8 @@ import { PageData } from "../../../(_types)/page-types";
 import { humanize } from "../../../(_libs)/humanize";
 import { ModeToggle } from "../../shared/mode-toggle";
 import { UserType } from "@prisma/client";
+import { Separator } from "@/components/ui/separator";
+import { SelectSeparator } from "@/components/ui/select";
 
 // Understanding (in English):
 // - Left side: single vertical scroll list.
@@ -87,10 +89,10 @@ export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProp
           onClick={() => handlePageClick(page)}
           onMouseEnter={() => setHoveredLink(page.id)}
           onMouseLeave={() => setHoveredLink(null)}
-          className="flex items-center justify-between text-white transition-colors duration-200 relative w-full text-left hover:text-gray-300" // justify-between layout
+          className="flex items-start justify-between text-white transition-colors duration-200 relative w-full text-left hover:text-gray-300" // justify-between layout
         >
           {/* Text left */}
-          <span className="flex-grow overflow-hidden whitespace-nowrap text-ellipsis">
+          <span className="flex-grow overflow-hidden line-clamp-2">
             {humanize(page.title || "")}
           </span>
           {/* Badge right (or empty spacer) */}
@@ -103,6 +105,7 @@ export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProp
             <span className="ml-3" />
           )}
         </button>
+        <Separator className="bg-gray-500 my-2" />
       </li>
     );
   };
@@ -134,7 +137,7 @@ export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProp
       <div className="flex-1 p-8 pb-24 overflow-y-auto custom-scrollbar">
         {/* Pseudo-category: Home */}
         <div className="mb-6">
-          <h3 className="text-gray-400 text-lg font-semibold mb-3 tracking-wider border-b border-gray-700 pb-1">
+          <h3 className="text-gray-400 text-lg font-semibold mb-3 tracking-wider pb-1">
             {t("Home")}
           </h3>
           <ul className="space-y-3 py-2">
@@ -149,6 +152,7 @@ export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProp
                 </span>
                 <span className="ml-3" />
               </button>
+              <Separator className="bg-gray-500 my-2" />
             </li>
           </ul>
         </div>
@@ -161,7 +165,7 @@ export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProp
 
           return (
             <div key={category.title} className="mb-8">
-              <h3 className="text-gray-400 text-lg font-semibold mb-3 tracking-wider border-b border-gray-700 pb-1">
+              <h3 className="text-gray-400 text-lg font-semibold mb-3 tracking-wider  pb-1">
                 {humanize(category.title)}
               </h3>
               <ul className="space-y-3 py-2">
