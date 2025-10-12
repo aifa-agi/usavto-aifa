@@ -2,29 +2,26 @@
 "use client";
 
 /**
- * Step 12 - Save hook following Step5/Step8 stability patterns
- * ✅ REFACTORED: Updates state AFTER server persistence (no optimistic update)
+ * Step 12 - Save hook with delayed state persistence
  * 
  * Understanding of the task (step-by-step):
  * 1) Build payload from sections and page metadata
  * 2) Upload sections to file system (uploadSections)
- * 3) Persist to server: await updateCategories() (NO args)
- * 4) On success: Update local state with isPreviewComplited: true
- * 5) On failure: Show error toast (no rollback needed)
- * 6) Reset content flags after successful update
+ * 3) Update local state with isPreviewComplited: true
+ * 4) Wait 500ms for React state to commit
+ * 5) Persist updated state to server via updateCategories()
+ * 6) On failure: Show error toast
+ * 7) Reset content flags after successful update
  * 
- * Key changes from previous version:
- * - Removed optimistic update (state updates only after server confirmation)
- * - Removed deepCloneCategories (no rollback needed)
- * - Server persistence happens BEFORE state update
- * - Eliminates race condition with Next.js re-render
+ * Key changes:
+ * - Added 500ms delay between setCategories and updateCategories
+ * - Ensures React has time to commit state updates before server sync
  */
 
 import { useState, useCallback } from "react";
 import { toast } from "sonner";
 import type { PageData } from "@/app/@right/(_service)/(_types)/page-types";
 import type { PageUploadPayload } from "@/app/@right/(_service)/(_types)/section-types";
-import type { MenuCategory } from "@/app/@right/(_service)/(_types)/menu-types";
 import { useNavigationMenu } from "@/app/@right/(_service)/(_context)/nav-bar-provider";
 import { uploadSections, SectionUploadError, UploadErrorType } from "../(_utils)/sections-upload.service";
 import { toPageUploadPayload } from "../(_adapters)/sections-mapper";
@@ -34,27 +31,6 @@ import { useStep12Root } from "../(_contexts)/step12-root-context";
 interface UseStep12SaveReturn {
   save: (page?: PageData) => Promise<boolean>;
   saving: boolean;
-}
-
-/** Replaces a page within categories by href, returns new categories array. */
-function replacePageInCategories(
-  categories: MenuCategory[],
-  updatedPage: PageData
-): MenuCategory[] {
-  let replaced = false;
-  const nextCategories = categories.map((cat) => {
-    const pages = Array.isArray(cat.pages) ? cat.pages : [];
-    const newPages = pages.map((p) => {
-      if (p?.href === updatedPage.href) {
-        replaced = true;
-        return { ...updatedPage, updatedAt: new Date().toISOString() };
-      }
-      return p;
-    });
-    return { ...cat, pages: newPages };
-  });
-
-  return replaced ? nextCategories : categories;
 }
 
 export function useStep12Save(): UseStep12SaveReturn {
@@ -74,15 +50,8 @@ export function useStep12Save(): UseStep12SaveReturn {
       const targetPage = page || contextPage;
 
       // Validation checks
-      if (!targetPage) {
-        toast.error("Page data is required for saving", { 
-          id: STEP12_IDS.toasts.saveError 
-        });
-        return false;
-      }
-
-      if (!targetPage.href) {
-        toast.error("Page href is required for saving", { 
+      if (!targetPage?.href) {
+        toast.error("Page data with href is required for saving", { 
           id: STEP12_IDS.toasts.saveError 
         });
         return false;
@@ -102,7 +71,7 @@ export function useStep12Save(): UseStep12SaveReturn {
       });
 
       try {
-        // 1. Build payload with sections and page metadata
+        // 1. Build and validate payload
         const payload: PageUploadPayload = toPageUploadPayload(sections, targetPage);
 
         if (payload.sections.length === 0) {
@@ -114,22 +83,31 @@ export function useStep12Save(): UseStep12SaveReturn {
         const response = await uploadSections(payload);
         console.log("[Step12Save] Upload successful:", response);
 
-        // 3. Build updated page object
-        const updatedPage: PageData = {
-          ...targetPage,
-          isPreviewComplited: true,
-          title: payload.pageMetadata.title || targetPage.title,
-          description: payload.pageMetadata.description || targetPage.description,
-          updatedAt: new Date().toISOString(),
-        };
+        // 3. Update local state FIRST with new values
+        const updatedCategories = categories.map((cat) => ({
+          ...cat,
+          pages: (cat.pages || []).map((p) =>
+            p?.href === targetPage.href
+              ? {
+                  ...p,
+                  isPreviewComplited: true,
+                  title: payload.pageMetadata.title || p.title,
+                  description: payload.pageMetadata.description || p.description,
+                  updatedAt: new Date().toISOString(),
+                }
+              : p
+          ),
+        }));
 
-        // 4. ✅ FIX: Persist to server FIRST (before state update)
+        setCategories(updatedCategories);
+        console.log("[Step12Save] Local state updated with isPreviewComplited: true");
+
+        // 4. ⏱️ Wait 500ms for React to commit state update
+        console.log("[Step12Save] Waiting 500ms for state to commit...");
+        await new Promise((resolve) => setTimeout(resolve, 500));
+
+        // 5. Persist to server (now reading from updated context)
         console.log("[Step12Save] Persisting to server...");
-        const nextCategories = replacePageInCategories(categories, updatedPage);
-        
-        // Temporarily update categories in memory for server action
-        const tempCategories = nextCategories;
-        
         const updateError = await updateCategories();
 
         if (updateError) {
@@ -144,10 +122,6 @@ export function useStep12Save(): UseStep12SaveReturn {
         }
 
         console.log("[Step12Save] Server persistence successful");
-
-        // 5. ✅ FIX: Update local state AFTER successful server persistence
-        setCategories(nextCategories);
-        console.log("[Step12Save] Local state updated with isPreviewComplited: true");
 
         // 6. Reset content-related flags after successful persist
         resetAllFlags();
@@ -167,29 +141,16 @@ export function useStep12Save(): UseStep12SaveReturn {
 
         // Handle specific error types
         if (error instanceof SectionUploadError) {
-          let errorMessage = error.message;
+          const errorMessages: Record<UploadErrorType, string> = {
+            [UploadErrorType.VALIDATION_ERROR]: `Validation error: ${error.message}`,
+            [UploadErrorType.NETWORK_ERROR]: "Network error: Please check your connection and try again",
+            [UploadErrorType.GITHUB_ERROR]: "GitHub integration error: Please contact administrator",
+            [UploadErrorType.FILESYSTEM_ERROR]: "File system error: Unable to save page",
+            [UploadErrorType.SERVER_ERROR]: `Server error: ${error.message}`,
+            [UploadErrorType.UNKNOWN_ERROR]: `Upload failed: ${error.message}`,
+          };
 
-          switch (error.type) {
-            case UploadErrorType.VALIDATION_ERROR:
-              errorMessage = `Validation error: ${error.message}`;
-              break;
-            case UploadErrorType.NETWORK_ERROR:
-              errorMessage = "Network error: Please check your connection and try again";
-              break;
-            case UploadErrorType.GITHUB_ERROR:
-              errorMessage = "GitHub integration error: Please contact administrator";
-              break;
-            case UploadErrorType.FILESYSTEM_ERROR:
-              errorMessage = "File system error: Unable to save page";
-              break;
-            case UploadErrorType.SERVER_ERROR:
-              errorMessage = `Server error: ${error.message}`;
-              break;
-            default:
-              errorMessage = `Upload failed: ${error.message}`;
-          }
-
-          toast.error(errorMessage, { 
+          toast.error(errorMessages[error.type], { 
             id: STEP12_IDS.toasts.saveError, 
             duration: 6000 
           });

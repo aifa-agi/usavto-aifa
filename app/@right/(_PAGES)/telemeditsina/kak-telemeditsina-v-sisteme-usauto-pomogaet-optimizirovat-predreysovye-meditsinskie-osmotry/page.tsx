@@ -1,5 +1,5 @@
 // Auto-generated SEO-optimized static page - do not edit manually
-// Generated on: 2025-10-12T18:44:58.798Z
+// Generated on: 2025-10-12T19:22:48.467Z
 // Source href: /telemeditsina/kak-telemeditsina-v-sisteme-usauto-pomogaet-optimizirovat-predreysovye-meditsinskie-osmotry
 // Page metadata: Телемедицина: Оптимизируйте предрейсовые медосмотры сейчас! | 3 sections
 // FAQ sections detected: 0
@@ -1086,8 +1086,8 @@ export default function Page() {
               "url": "/app-images/lnk3d3ahv08hwhgz2ud4ul2u.jpg",
               "alt": "telemedicina"
             },
-            "datePublished": "2025-10-12T18:44:58.798Z",
-            "dateModified": "2025-10-12T18:44:58.798Z",
+            "datePublished": "2025-10-12T19:22:48.467Z",
+            "dateModified": "2025-10-12T19:22:48.467Z",
             "articleSection": "telemeditsina",
             "keywords": ["Телемедицина"],
             "mainEntityOfPage": {
