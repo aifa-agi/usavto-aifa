@@ -135,7 +135,7 @@ const href =
                       hasBadge: false,
                       type: "customCategorias", 
                       aiRecommendContentStructure: COMPACT_CONTENT_STRUCTURE,
-                      isPublished: false,
+                      isPublished:  true,
                       isAddedToPrompt: false,
                       isVectorConnected: false,
                       isChatSynchronized: false,
