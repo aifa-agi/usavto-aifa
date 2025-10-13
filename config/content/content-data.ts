@@ -2358,13 +2358,13 @@ export const contentData = {
     "order": 15
   },
   {
-    "title": "ЭПЛ",
-    "href": "/epl",
+    "title": "Электронные путевые листы (ЭПЛ)",
+    "href": "/elektronnye-putevye-listy-epl",
     "pages": [
       {
         "id": "wx31eoetr5mdemguyo4xbxzm",
         "title": "Электронный путевой лист: что это и как внедрить в вашей компании",
-        "href": "/epl/elektronnyy-putevoy-list-chto-eto-i-kak-vnedrit-v-vashey-kompanii",
+        "href": "/elektronnye-putevye-listy-epl/elektronnyy-putevoy-list-chto-eto-i-kak-vnedrit-v-vashey-kompanii",
         "roles": [
           "guest"
         ],
@@ -4375,7 +4375,7 @@ export const contentData = {
       {
         "id": "jm03pyedcit89ceslcf5mbht",
         "title": "ЭПЛ",
-        "href": "/epl/epl",
+        "href": "/elektronnye-putevye-listy-epl/epl",
         "roles": [
           "guest"
         ],
@@ -4731,7 +4731,7 @@ export const contentData = {
       {
         "id": "maoz959agkdx1l52v9g4ibjv",
         "title": "4fef",
-        "href": "/epl/4fef",
+        "href": "/elektronnye-putevye-listy-epl/4fef",
         "roles": [
           "guest"
         ],
@@ -5087,7 +5087,7 @@ export const contentData = {
       {
         "id": "muuf9jdkzyken6ru0bn32g5x",
         "title": "srtwertwert",
-        "href": "/epl/srtwertwert",
+        "href": "/elektronnye-putevye-listy-epl/srtwertwert",
         "roles": [
           "guest"
         ],
@@ -6711,5 +6711,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-12T19:22:50.095Z";
+export const lastUpdated = "2025-10-13T17:54:05.523Z";
 export const generatedBy = "menu-persist-api";
