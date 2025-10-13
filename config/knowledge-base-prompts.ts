@@ -29,6 +29,33 @@ export const INTERNAL_KNOWLEDGE_PROMPT_TEMPLATE = `You are an AI model with acce
  */
 export const EXTERNAL_KNOWLEDGE_PROMPT_TEMPLATE = `Conduct a deep and comprehensive study of the three most significant and recent web resources that are promoted in search for the query: {title} or for the keyword: {keywords}. From the obtained research, separately for each resource, I expect to receive information: page title, page Description, intent, taxonomy, attention, audience, resource link and a short excerpt as a blockquote for use on our own resource, the number of semantic sections of the page, key summary for each semantic section of the page. Present the answer in the form of information available for copying, without any introductory or concluding comments.`;
 
+/**
+ * Default instruction for combining Internal and External Knowledge Bases
+ * This instruction is used when the "Use Knowledge Base Mixing" checkbox is enabled
+ * 
+ * Purpose: Guide AI to properly merge internal and external knowledge sources
+ * to generate original, high-quality content while avoiding competitor promotion
+ */
+export const DEFAULT_KNOWLEDGE_BASE_MIXING_INSTRUCTION = `You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.
+
+Step-by-Step Process:
+
+1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.
+
+2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:
+   • Any direct or indirect promotion of competitor products, services, or brands.
+   • Biased opinions that favor competitors.
+   • Irrelevant or conflicting details that could dilute our objectives.
+
+3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:
+   • Adds depth and usefulness without overwhelming the internal content.
+   • Maintains neutrality and focuses on user benefits aligned with our products/services.
+   • Uses transitions to make the content flow naturally.
+
+4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.
+
+Output Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.`;
+
 // ========================================
 // SEO FIELD GENERATION SYSTEM INSTRUCTIONS
 // ========================================

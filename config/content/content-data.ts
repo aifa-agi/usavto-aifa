@@ -2356,7 +2356,7 @@ export const contentData = {
       },
       {
         "id": "by57ifq11s8r3cpddwdkzo8i",
-        "title": "как делать путевые листы",
+        "title": "Как правильно делать путевые листы: полное руководство 2025",
         "href": "/putevye-listy/kak-delat-putevye-listy",
         "roles": [
           "guest"
@@ -2369,7 +2369,194 @@ export const contentData = {
             "tag": "h2",
             "classification": "semantic",
             "keywords": [
-              "Generate 5-7 section-level keywords inherited by children"
+              "Generate 5-7 section-level keywords that introduce the topic and set context for child elements"
+            ],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "writingStyle": "",
+            "contentFormat": "",
+            "customRequirements": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 150,
+              "maxWords": 250,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-1-1",
+                "tag": "p",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 180,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-2",
+                "tag": "p",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 120,
+                  "actualContent": ""
+                }
+              }
+            ]
+          },
+          {
+            "id": "h2-2",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "Generate 5-7 section-level keywords focused on technical concepts and foundational knowledge"
+            ],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "writingStyle": "",
+            "contentFormat": "",
+            "customRequirements": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 250,
+              "maxWords": 400,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-2-1",
+                "tag": "p",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-2-2-3",
+                "tag": "p",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-2-2-4",
+                "tag": "table",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-2-2",
+                "tag": "h3",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 250,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-2-1",
+                    "tag": "p",
+                    "keywords": [],
+                    "taxonomy": "",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "selfPrompt": "",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 130,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-2-2-2",
+                    "tag": "ul",
+                    "keywords": [],
+                    "taxonomy": "",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "selfPrompt": "",
+                    "additionalData": {
+                      "minWords": 40,
+                      "maxWords": 80,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-2-3",
+                    "tag": "p",
+                    "keywords": [],
+                    "taxonomy": "",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "selfPrompt": "",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 100,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "Generate 5-7 section-level keywords focused on implementation, process, and practical application"
             ],
             "taxonomy": "",
             "attention": "",
@@ -2388,7 +2575,7 @@ export const contentData = {
             },
             "realContentStructure": [
               {
-                "id": "p-1-1",
+                "id": "p-3-1",
                 "tag": "p",
                 "keywords": [],
                 "taxonomy": "",
@@ -2398,142 +2585,12 @@ export const contentData = {
                 "selfPrompt": "",
                 "additionalData": {
                   "minWords": 90,
-                  "maxWords": 160,
+                  "maxWords": 170,
                   "actualContent": ""
                 }
               },
               {
-                "id": "p-1-2",
-                "tag": "p",
-                "keywords": [],
-                "taxonomy": "",
-                "attention": "",
-                "intent": "",
-                "audiences": "",
-                "selfPrompt": "",
-                "additionalData": {
-                  "minWords": 70,
-                  "maxWords": 130,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "p-1-3",
-                "tag": "p",
-                "keywords": [],
-                "taxonomy": "",
-                "attention": "",
-                "intent": "",
-                "audiences": "",
-                "selfPrompt": "",
-                "additionalData": {
-                  "minWords": 5,
-                  "maxWords": 15,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "blockquote-1-4",
-                "tag": "blockquote",
-                "keywords": [],
-                "taxonomy": "",
-                "attention": "",
-                "intent": "",
-                "audiences": "",
-                "selfPrompt": "",
-                "additionalData": {
-                  "minWords": 25,
-                  "maxWords": 45,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "p-1-5",
-                "tag": "p",
-                "keywords": [],
-                "taxonomy": "",
-                "attention": "",
-                "intent": "",
-                "audiences": "",
-                "selfPrompt": "",
-                "additionalData": {
-                  "minWords": 60,
-                  "maxWords": 110,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "ul-1-6",
-                "tag": "ul",
-                "keywords": [],
-                "taxonomy": "",
-                "attention": "",
-                "intent": "",
-                "audiences": "",
-                "selfPrompt": "",
-                "additionalData": {
-                  "minWords": 40,
-                  "maxWords": 70,
-                  "actualContent": ""
-                }
-              }
-            ]
-          },
-          {
-            "id": "h2-2",
-            "tag": "h2",
-            "classification": "semantic",
-            "keywords": [
-              "Generate 5-7 section-level keywords to guide h3/h4 children."
-            ],
-            "taxonomy": "",
-            "attention": "",
-            "intent": "",
-            "audiences": "",
-            "selfPrompt": "",
-            "writingStyle": "",
-            "contentFormat": "",
-            "customRequirements": "",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 550,
-              "maxWords": 750,
-              "actualContent": ""
-            },
-            "realContentStructure": [
-              {
-                "id": "p-2-1",
-                "tag": "p",
-                "keywords": [],
-                "taxonomy": "",
-                "attention": "",
-                "intent": "",
-                "audiences": "",
-                "selfPrompt": "",
-                "additionalData": {
-                  "minWords": 80,
-                  "maxWords": 140,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "p-2-2",
-                "tag": "p",
-                "keywords": [],
-                "taxonomy": "",
-                "attention": "",
-                "intent": "",
-                "audiences": "",
-                "selfPrompt": "",
-                "additionalData": {
-                  "minWords": 5,
-                  "maxWords": 15,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "h3-2-3",
+                "id": "h3-3-2",
                 "tag": "h3",
                 "keywords": [],
                 "taxonomy": "",
@@ -2542,13 +2599,13 @@ export const contentData = {
                 "audiences": "",
                 "selfPrompt": "",
                 "additionalData": {
-                  "minWords": 220,
-                  "maxWords": 320,
+                  "minWords": 180,
+                  "maxWords": 280,
                   "actualContent": ""
                 },
                 "realContentStructure": [
                   {
-                    "id": "p-2-3-1",
+                    "id": "p-3-2-1",
                     "tag": "p",
                     "keywords": [],
                     "taxonomy": "",
@@ -2558,13 +2615,13 @@ export const contentData = {
                     "selfPrompt": "",
                     "additionalData": {
                       "minWords": 75,
-                      "maxWords": 130,
+                      "maxWords": 140,
                       "actualContent": ""
                     }
                   },
                   {
-                    "id": "ul-2-3-2",
-                    "tag": "ul",
+                    "id": "ol-3-2-2",
+                    "tag": "ol",
                     "keywords": [],
                     "taxonomy": "",
                     "attention": "",
@@ -2573,27 +2630,12 @@ export const contentData = {
                     "selfPrompt": "",
                     "additionalData": {
                       "minWords": 50,
-                      "maxWords": 85,
+                      "maxWords": 90,
                       "actualContent": ""
                     }
                   },
                   {
-                    "id": "p-2-3-3",
-                    "tag": "p",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
-                      "minWords": 65,
-                      "maxWords": 115,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "code-2-3-4",
+                    "id": "code-3-2-3",
                     "tag": "code",
                     "keywords": [],
                     "taxonomy": "",
@@ -2603,133 +2645,9 @@ export const contentData = {
                     "selfPrompt": "",
                     "additionalData": {
                       "minWords": 20,
-                      "maxWords": 45,
+                      "maxWords": 50,
                       "actualContent": ""
                     }
-                  }
-                ]
-              },
-              {
-                "id": "h3-2-4",
-                "tag": "h3",
-                "keywords": [],
-                "taxonomy": "",
-                "attention": "",
-                "intent": "",
-                "audiences": "",
-                "selfPrompt": "",
-                "additionalData": {
-                  "minWords": 280,
-                  "maxWords": 400,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-2-4-1",
-                    "tag": "p",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
-                      "minWords": 70,
-                      "maxWords": 120,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "table-2-4-2",
-                    "tag": "table",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
-                      "minWords": 90,
-                      "maxWords": 150,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "p-2-4-3",
-                    "tag": "p",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
-                      "minWords": 5,
-                      "maxWords": 15,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "h4-2-4-4",
-                    "tag": "h4",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
-                      "minWords": 130,
-                      "maxWords": 200,
-                      "actualContent": ""
-                    },
-                    "realContentStructure": [
-                      {
-                        "id": "p-2-4-4-1",
-                        "tag": "p",
-                        "keywords": [],
-                        "taxonomy": "",
-                        "attention": "",
-                        "intent": "",
-                        "audiences": "",
-                        "selfPrompt": "",
-                        "additionalData": {
-                          "minWords": 60,
-                          "maxWords": 105,
-                          "actualContent": ""
-                        }
-                      },
-                      {
-                        "id": "ol-2-4-4-2",
-                        "tag": "ol",
-                        "keywords": [],
-                        "taxonomy": "",
-                        "attention": "",
-                        "intent": "",
-                        "audiences": "",
-                        "selfPrompt": "",
-                        "additionalData": {
-                          "minWords": 45,
-                          "maxWords": 75,
-                          "actualContent": ""
-                        }
-                      },
-                      {
-                        "id": "blockquote-2-4-4-3",
-                        "tag": "blockquote",
-                        "keywords": [],
-                        "taxonomy": "",
-                        "attention": "",
-                        "intent": "",
-                        "audiences": "",
-                        "selfPrompt": "",
-                        "additionalData": {
-                          "minWords": 20,
-                          "maxWords": 40,
-                          "actualContent": ""
-                        }
-                      }
-                    ]
                   }
                 ]
               }
@@ -2740,7 +2658,7 @@ export const contentData = {
             "tag": "h2",
             "classification": "semantic",
             "keywords": [
-              "Generate 5-7 FAQ-related keywords tied to user intent."
+              "Generate 5-7 FAQ-related keywords tied to common user questions and concerns"
             ],
             "taxonomy": "",
             "attention": "",
@@ -2753,8 +2671,8 @@ export const contentData = {
             "designDescription": "",
             "connectedDesignSectionId": "",
             "additionalData": {
-              "minWords": 350,
-              "maxWords": 500,
+              "minWords": 300,
+              "maxWords": 450,
               "actualContent": ""
             },
             "realContentStructure": [
@@ -2769,7 +2687,7 @@ export const contentData = {
                 "selfPrompt": "",
                 "additionalData": {
                   "minWords": 70,
-                  "maxWords": 120,
+                  "maxWords": 130,
                   "actualContent": ""
                 }
               },
@@ -2783,8 +2701,8 @@ export const contentData = {
                 "audiences": "",
                 "selfPrompt": "",
                 "additionalData": {
-                  "minWords": 160,
-                  "maxWords": 240,
+                  "minWords": 150,
+                  "maxWords": 220,
                   "actualContent": ""
                 },
                 "realContentStructure": [
@@ -2798,7 +2716,7 @@ export const contentData = {
                     "audiences": "",
                     "selfPrompt": "",
                     "additionalData": {
-                      "minWords": 70,
+                      "minWords": 60,
                       "maxWords": 120,
                       "actualContent": ""
                     }
@@ -2806,7 +2724,7 @@ export const contentData = {
                 ]
               },
               {
-                "id": "h3-FAQ-2",
+                "id": "FAQ-2",
                 "tag": "h3",
                 "keywords": [],
                 "taxonomy": "",
@@ -2815,8 +2733,8 @@ export const contentData = {
                 "audiences": "",
                 "selfPrompt": "",
                 "additionalData": {
-                  "minWords": 160,
-                  "maxWords": 240,
+                  "minWords": 150,
+                  "maxWords": 220,
                   "actualContent": ""
                 },
                 "realContentStructure": [
@@ -2830,15 +2748,15 @@ export const contentData = {
                     "audiences": "",
                     "selfPrompt": "",
                     "additionalData": {
-                      "minWords": 65,
-                      "maxWords": 115,
+                      "minWords": 60,
+                      "maxWords": 120,
                       "actualContent": ""
                     }
                   }
                 ]
               },
               {
-                "id": "h3-FAQ-3",
+                "id": "FAQ-3",
                 "tag": "h3",
                 "keywords": [],
                 "taxonomy": "",
@@ -2847,8 +2765,8 @@ export const contentData = {
                 "audiences": "",
                 "selfPrompt": "",
                 "additionalData": {
-                  "minWords": 160,
-                  "maxWords": 240,
+                  "minWords": 150,
+                  "maxWords": 220,
                   "actualContent": ""
                 },
                 "realContentStructure": [
@@ -2862,12 +2780,129 @@ export const contentData = {
                     "audiences": "",
                     "selfPrompt": "",
                     "additionalData": {
-                      "minWords": 75,
-                      "maxWords": 130,
+                      "minWords": 60,
+                      "maxWords": 120,
                       "actualContent": ""
                     }
                   }
                 ]
+              },
+              {
+                "id": "FAQ-4",
+                "tag": "h3",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [],
+                    "taxonomy": "",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "selfPrompt": "",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "h2-5",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "Generate 5-7 section-level keywords focused on synthesis, key takeaways, and next steps"
+            ],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "writingStyle": "",
+            "contentFormat": "",
+            "customRequirements": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 200,
+              "maxWords": 300,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-5-1",
+                "tag": "p",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-5-3",
+                "tag": "table",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-5-2",
+                "tag": "ul",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 50,
+                  "maxWords": 90,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-5-3",
+                "tag": "p",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
               }
             ]
           }
@@ -2880,7 +2915,7 @@ export const contentData = {
         "updatedAt": "2025-10-13T17:54:49.048Z",
         "order": 2,
         "badgeName": "Путевые",
-        "description": "как делать путевые листы",
+        "description": "Узнайте, как правильно делать путевые листы в 2025 году! Полное руководство с актуальными требованиями, образцами и рекомендациями для успешного оформления.",
         "keywords": [
           "как делать путевые листы"
         ],
@@ -2890,7 +2925,12 @@ export const contentData = {
             "alt": "как делать путевые листы",
             "href": "/app-images/seq18rg2nsxx6clzr3knl7ai.jpg"
           }
-        ]
+        ],
+        "internalKnowledgeBase": "### Что такое путевые листы и зачем они нужны  \nПутевой лист — это обязательный документ для коммерческого транспорта, подтверждающий законность и безопасность перевозок. Он содержит информацию об организации, транспортном средстве, водителе, маршруте, медицинском и техническом контроле. Правильное оформление путевых листов обеспечивает соблюдение требований законодательства и предотвращает штрафы.\n\n### Проблемы при ручном оформлении путевых листов  \nРучное создание путевых листов занимает много времени (10-15 минут на один документ), подвержено ошибкам и требует значительных трудозатрат. Ошибки в документах приводят к штрафам от ГИБДД, МАДИ и других контролирующих органов, а также к простою транспорта.\n\n### Автоматизация создания путевых листов с помощью USAUTO  \nПлатформа USAUTO предлагает модуль «Путевые листы», который решает проблемы ручного оформления через:\n\n- Конструктор с тремя базами данных: организации, транспорт, водители  \n- Быстрое создание документов — 30 секунд вместо 10-15 минут вручную  \n- Использование шаблонов и массовая печать  \n- Автоматическая проверка и валидация полей для исключения ошибок  \n- Интеграция с медицинским персоналом и контролёрами  \n- Автоматический перенос данных в 5 обязательных журналов безопасности  \n- Планирование маршрутов с адресами погрузки и выгрузки  \n- Интеграция с учётом топлива и списания\n\n### Электронные путевые листы (ЭПЛ)  \nUSAUTO реализует полностью электронные путевые листы с QR-кодами, которые водитель показывает инспектору ГИБДД. Электронный путевой лист содержит данные о медицинском осмотре, техническом контроле, транспортном средстве, организации и водителе. Это позволяет перейти к безбумажному документообороту, повысить скорость контроля и снизить риски ошибок.\n\n### Интеграция с медицинским контролем и телемедициной  \nПутевые листы в USAUTO связаны с модулем телемедицины, который обеспечивает удалённые предрейсовые и послерейсовые медицинские осмотры с использованием сертифицированного оборудования. Результаты осмотров автоматически передаются в систему и отражаются в путевых листах, что гарантирует соответствие требованиям законодательства.\n\n### Контроль и уведомления о сроках действия документов  \nСистема USAUTO автоматически отслеживает сроки действия всех документов, связанных с путевыми листами, и своевременно уведомляет операторов, предотвращая использование просроченных документов и связанные с этим штрафы.\n\n### Печать и массовое оформление путевых листов  \nUSAUTO позволяет готовить и печатать путевые листы в больших объёмах, что экономит время и снижает административные расходы. Также возможна подготовка и доставка бланков путевых листов с фирменными штампами для ускорения и упрощения оформления.\n\n### Обучение и поддержка по оформлению путевых листов  \nКомпания предоставляет обучение по работе с системой USAUTO, включая создание и ведение путевых листов. Форматы обучения: очные занятия, вебинары, видеоинструкции и самостоятельное изучение. Поддержка клиентов осуществляется через техническую службу и персональных менеджеров.\n\n### Юридическая ответственность и штрафы за неправильное оформление  \nUSAUTO помогает минимизировать штрафы за нарушения, связанные с путевыми листами, через автоматизацию и контроль. Система учитывает штрафы от ГИБДД, МАДИ, Мосгортехнадзора и ФССП, а также помогает в их своевременной оплате с экономией до 50% при льготных платежах.\n\n### Интеграция с бухгалтерским учётом и другими системами  \nПутевые листы, созданные в USAUTO, интегрируются с 1С и другими ERP-системами для автоматизации учёта топлива, расходов и финансовых операций, что упрощает бухгалтерский учёт и снижает ошибки.\n\n### Как начать использовать USAUTO для оформления путевых листов  \nДля начала работы необходимо зарегистрировать организацию, внести данные о транспортных средствах и водителях, после чего можно сразу создавать путевые листы. Весь процесс занимает от нескольких минут до одного рабочего дня в зависимости от объёма данных и навыков оператора.\n\n### Технические требования для работы с системой  \nДля работы с модулем путевых листов достаточно стабильного интернет-соединения и современного браузера (Chrome, Edge, Safari, Firefox) с поддержкой TLS 1.3. Платформа работает через адаптивный веб-интерфейс без необходимости установки приложений.\n\n### Экономическая эффективность использования USAUTO для путевых листов  \nИспользование автоматизированного модуля путевых листов сокращает время оформления документов до 85%, снижает административные расходы до 80%, исключает штрафы за просрочку и уменьшает простой транспорта, что значительно повышает общую эффективность работы автопарка.",
+        "externallKnowledgeBase": "## РЕСУРС 1\n\n**Page Title:** Образец заполнения путевого листа\n\n**Page Description:** Подробное руководство по правильному заполнению путевых листов с учетом актуальных требований законодательства, обязательных реквизитов и новых нормативов.\n\n**Intent:** Информационно-образовательный - предоставить владельцам бизнеса, бухгалтерам и ответственным лицам полное руководство по оформлению путевых листов с практическими примерами.\n\n**Taxonomy:** Бухгалтерский учет > Первичная документация > Путевые листы > Оформление и заполнение\n\n**Attention:** Статья охватывает обязательные требования законодательства, последовательность заполнения путевого листа, штрафы за нарушения, новые требования 2021-2022 годов.\n\n**Audience:** Руководители транспортных компаний, бухгалтеры, диспетчеры, предприниматели, использующие автотранспорт в коммерческой деятельности.\n\n**Resource Link:** https://www.moedelo.org/club/buhgalterskij-uchet/zapolnenie-putevogo-lista\n\n**Short Excerpt:**\n> Путевой лист — обязательный документ для предприятий, которые предлагают транспортные услуги или используют в работе перевозки на автомобилях. Чтобы при проверках не возникало проблем, при заполнении путевого листа нужно учесть все актуальные требования.\n\n**Number of Semantic Sections:** 9\n\n**Key Summary for Each Semantic Section:**\n\n1. **Зачем нужны путевые листы** - Путевой лист контролирует работу водителя, состояние машины, километраж, расход топлива, позволяет рассчитать зарплату водителя и подтвердить расходы на ГСМ.\n\n2. **Кто должен заполнять путевой лист** - Заполнением занимаются руководители подразделений, диспетчеры, бухгалтеры; водитель только подтверждает прием и сдачу автомобиля подписью.\n\n3. **Когда необходимо оформление путевых листов** - Согласно закону №259-ФЗ, оформление обязательно для любой рабочей поездки независимо от наличия груза или пассажиров.\n\n4. **Новые требования по заполнению путевого листа** - С 2021 года добавлены новые сведения о виде перевозки, марке автомобиля, обязательная информация о медосмотрах и техконтроле.\n\n5. **Как заполнять путевой лист легкового автомобиля: обязательные реквизиты** - Обязательно указывают номер документа, срок действия, информацию о владельце, машине, водителе, типе перевозки и виде сообщения.\n\n6. **Как заполнить путевой лист легкового автомобиля: дополнительные реквизиты** - Дополнительно можно указать маршрут поездки, нормативный расход топлива, экономию или перерасход, что важно для налоговой.\n\n7. **Образец заполнения путевого листа** - Заполнение проводится последовательно: серия, номер, дата, владелец, машина, водитель, задание на рейс, километраж, расход топлива, сведения о поездках.\n\n8. **Медицинский осмотр и технический контроль** - Контролер проверяет исправность транспорта, медработник проводит осмотр водителя, результаты отражаются в путевом листе с подписями.\n\n9. **Наказание за нарушение порядка оформления путевых листов** - Штрафы варьируются от 500 рублей для водителя до 130 000 рублей для компаний за отсутствие медосмотра или техконтроля.\n\n---\n\n## РЕСУРС 2\n\n**Page Title:** Как заполнять путевой лист в 2025 году\n\n**Page Description:** Комплексное руководство по оформлению путевых листов с учетом изменений законодательства 2023-2025 годов, включая обязательные реквизиты, виды форм, электронный формат и штрафы.\n\n**Intent:** Информационно-практический - помочь организациям и ИП правильно оформлять путевые листы в соответствии с актуальными требованиями законодательства 2025 года.\n\n**Taxonomy:** Автотранспорт > Документооборот > Путевые листы > Правила оформления 2025\n\n**Attention:** Статья содержит актуальные требования с 1 марта 2023 года, таблицы обязательных реквизитов, разъяснения новых полей \"Вид перевозки\" и \"Вид сообщения\", образцы различных форм.\n\n**Audience:** Транспортные компании, автопарки, таксопарки, индивидуальные предприниматели, бухгалтеры, диспетчеры, использующие коммерческий автотранспорт.\n\n**Resource Link:** https://omnicomm.pro/about/articles/putevye-listy/\n\n**Short Excerpt:**\n> Под термином «Путевой лист» понимается отчетный документ, который применяется в рамках ведения бухгалтерского учета для фиксации работы транспортных средств на предприятиях, где они числятся. Без него трудно будет подтвердить расходы, связанные с использованием любого автомобильного транспорта.\n\n**Number of Semantic Sections:** 10\n\n**Key Summary for Each Semantic Section:**\n\n1. **Зачем нужен путевой лист** - Документ необходим для расчета зарплаты водителей, выделения средств на ГСМ, бухгалтерской отчетности и подтверждения правомерности управления транспортом компании.\n\n2. **Российское законодательство о путевых листах** - Основные требования регулируются Приказами Минтранса №368 и №390, Федеральным законом №259-ФЗ; изменения вступили в силу с 1 марта 2023 года.\n\n3. **Как правильно заполнять в 2025 году: актуальные требования** - Обязательные реквизиты включают период действия, данные оформителя, информацию об автомобиле, водителе, типе поездки и варианте перемещения.\n\n4. **Какие существуют виды путевых листов** - Формы различаются по типу транспорта: легковые (форма 3, ПЛ-1), грузовые (4-С, 4-П), автобусы (форма 6), спецтехника (3-спец).\n\n5. **Можно ли управлять машиной без путевого листа** - Выезжать в рейс без путевого листа запрещено; при проверке ГИБДД водитель получит штраф 500 рублей или предупреждение.\n\n6. **Как правильно заполнять путевой лист** - Документ оформляет транспортная организация, заполняется шариковой ручкой без ошибок, водитель расписывается о приемке и сдаче транспортного средства.\n\n7. **Как заполнить поле «Вид перевозки» в Путевом листе 2025 года** - Раздел появился в марте 2023 года, включает коммерческие перевозки, транспортировку для личных целей, работу спецтехники.\n\n8. **Как заполнить поле «Вид сообщения» в Путевом листе** - Три варианта: городское (в пределах населенного пункта), пригородное (до 50 км), междугородное (свыше 50 км).\n\n9. **Учет путевых листов в автопарке** - Учет ведется в журнале регистрации с указанием ФИО водителя, табельного номера, номера ТС, дат получения и сдачи путевого листа.\n\n10. **Штрафы и ответственность за несоблюдение закона** - Штрафы варьируются от 500 рублей водителю за отсутствие путевки до 200 000 рублей юридическому лицу за отсутствие медосмотра при повторном нарушении.\n\n***\n\n## РЕСУРС 3\n\n**Page Title:** Путевые листы 2025: правила оформления, бланки\n\n**Page Description:** Полное руководство по правилам оформления путевых листов в 2025 году согласно Приказу Минтранса №390, включая перечень обязательных реквизитов, порядок заполнения и формы бланков.\n\n**Intent:** Нормативно-справочный - предоставить исчерпывающую информацию о требованиях законодательства к оформлению путевых листов для обеспечения соответствия нормативам.\n\n**Taxonomy:** Транспортное право > Нормативная документация > Путевые листы > Требования 2025 года\n\n**Attention:** Статья основана на официальном Приказе Минтранса №390 от 28.09.2022, содержит детальное описание семи правил оформления, требований к медосмотрам и техконтролю.\n\n**Audience:** Юридические лица, индивидуальные предприниматели, владельцы транспортных средств, бухгалтеры, специалисты по кадрам, юристы транспортных компаний.\n\n**Resource Link:** https://glavkniga.ru/situations/s518621\n\n**Short Excerpt:**\n> Минтрансом утвержден перечень сведений, указание которых обязательно в путевых листах, а также порядок оформления путевых листов (Приказ Минтранса России от 28.09.2022 N 390). Владелец транспортного средства вправе дополнить путевой лист сведениями, учитывающими особенности его деятельности.\n\n**Number of Semantic Sections:** 3\n\n**Key Summary for Each Semantic Section:**\n\n1. **Путевые листы-2025: перечень обязательных реквизитов** - Обязательные сведения включают срок действия, данные оформителя, информацию о транспортном средстве (тип, марка, модель, госномер, показания одометра), водителе (ФИО, СНИЛС, водительское удостоверение), виде перевозки и виде сообщения.\n\n2. **Путевой лист: порядок оформления** - Семь правил оформления: выбор бумажного или электронного формата, оформление на каждое ТС до выпуска на линию, обязательные отметки медработника с УКЭП, дата и время выпуска ТС с подписью ответственного лица, показания одометра при возвращении, предъявление электронного путевого листа или его копии грузоотправителю.\n\n3. **Путевой лист: бланк** - Законодательно установленной формы нет; организации разрабатывают самостоятельно на основе унифицированных форм Госкомстата (формы 3, 4, 4-С, 4-П) с добавлением необходимых сведений и закреплением в учетной политике.\n\n[1](https://www.moedelo.org/club/buhgalterskij-uchet/zapolnenie-putevogo-lista)\n[2](https://school.kontur.ru/publications/1683)\n[3](https://www.consultant.ru/document/cons_doc_LAW_432726/10f9acc37fadb46152b8986bb789129a64f48399/)\n[4](https://omnicomm.pro/about/articles/putevye-listy/)\n[5](https://www.kontur-extern.ru/info/43783-putevoy_list)\n[6](https://glavkniga.ru/situations/s518621)\n[7](https://perevozki-tk.ru/articles/poleznaya-informatsiya/putevoy-list/)\n[8](https://buhplatforma.com.ua/article/ru/8211-putevoy-list-2020)\n[9](https://kontur.ru/elba/spravka/79548-kak_pravilno_zapolnit_putevoy_list)\n[10](https://help.ati.su/waybill-rus)\n[11](https://trs72.ru/putevoj-list-gruzovika/)\n[12](https://ppt.ru/forms/putevoi-list)\n[13](https://transavto7.ru/obyazatelnyye-rekvizity-i-poryadok-zapolneniya-putevykh-listov)\n[14](https://its.1c.ru/db/content/bizlegsup/src/4040000_%D1%82_%D0%BF%D1%83%D1%82%D0%B5%D0%B2%D0%BE%D0%B9_%D0%BB%D0%B8%D1%81%D1%82.htm)\n[15](https://putevki.pro/pages/putevoy_list_2023_zapolnenie.php)\n[16](https://ksen-ri.by/stati/zapolnenie-putevogo-lista-gruzovogo-avtomobilya/)\n[17](https://aerob2b.ru/blog/kak-oformit-putevoj-list-na-komandirovku)\n[18](https://transavto7.ru/blog/zapolneniye-putevykh-listov-2022-klyuchevyye-osobennosti)\n[19](https://pobedasoft.ru/putevoj-list-gruzovogo-avtomobilja-forma-4-p/)\n[20](https://www.glavbukh.ru/art/90337-putevoy-list-na-mesyats-v-2025-godu-mojno-li-oformlyat-i-kak-pravilno-zapolnit)",
+        "intent": "Пользователи ищут полное руководство по правильному оформлению путевых листов в 2025 году с акцентом на актуальные требования законодательства. Их цель — получить четкие инструкции и примеры для заполнения, чтобы избежать штрафов и обеспечить правомерность использования автотранспорта. Данная страница предоставляет исчерпывающую информацию и пошаговые рекомендации, что полностью соответствует их запросам.",
+        "taxonomy": "Данная страница представляет собой полное руководство (гид) по правильному оформлению путевых листов в 2025 году и относится к категории \"Автотранспорт > Документооборот > Путевые листы > Правила оформления 2025\". Она служит кластерным контентом, дополняющим основное пилларное содержание о путевых листах, обеспечивая актуальную информацию о требованиях законодательства и практические советы для целевой аудитории, включающей транспортные компании и бухгалтеров.",
+        "attention": "Создайте мощный захват внимания в первые 3 секунды с помощью яркого заголовка и интерактивной визуализации, демонстрирующей актуальность и пользу путевых листов в 2025 году. Поддержите интерес пользователей с помощью четкой визуальной иерархии, динамического контента и интерактивных элементов, таких как калькуляторы и шаблоны, предлагая уникальные примеры и практические советы, которые выделят ваш ресурс на фоне конкурентов и помогут пользователям легко применять знания на практике."
       }
     ],
     "order": 15
@@ -7249,5 +7289,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-13T17:58:10.739Z";
+export const lastUpdated = "2025-10-13T19:44:04.075Z";
 export const generatedBy = "menu-persist-api";

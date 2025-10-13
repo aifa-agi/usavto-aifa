@@ -5,21 +5,26 @@
 /**
  * Step 5 - Content Structure Generation System with Internal AI
  * ✅ FIX: Removed conditional early returns after hooks to comply with React Rules of Hooks
+ * ✅ NEW: Added Switch toggle to enable/disable predefined knowledge base mixing instruction
+ * ✅ FIX: Replaced Checkbox with Switch to avoid MenuItem context conflicts
  * 
- * Функциональность:
- * - Генерация структуры контента с помощью встроенной AI модели
- * - Персонализация: стиль написания и формат контента
- * - Streaming вывод результатов генерации в реальном времени
- * - Сохранение сгенерированной структуры в draftContentStructure
+ * Functionality:
+ * - Generate content structure using built-in AI model
+ * - Personalization: writing style and content format
+ * - Streaming output of generation results in real-time
+ * - Save generated structure to draftContentStructure
+ * - Toggle predefined instruction for mixing internal/external knowledge bases
  */
 
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { LoadingSpinner } from "@/components/ui/loading-spinner";
+import { Switch } from "@/components/ui/switch";
+import { Badge } from "@/components/ui/badge";
 import {
   FileText,
   Palette,
@@ -28,15 +33,16 @@ import {
   Network,
   Target,
   Zap,
+  Info,
 } from "lucide-react";
 
-import { Badge } from "@/components/ui/badge";
 import { PageNotFound } from "../../../page-not-found";
 import { ContentStructureStreamCard } from "./components/content-structure-stream-card";
 import { useNavigationMenu } from "@/app/@right/(_service)/(_context)/nav-bar-provider";
 import { findPageBySlug } from "../../../../(_utils)/page-helpers";
 import { useSystemInstructionGenerator } from "./(_hooks)/system-instruction-generator";
 import { getPageTitleSafe } from "./(_utils)/step5-utils";
+import { DEFAULT_KNOWLEDGE_BASE_MIXING_INSTRUCTION } from "@/config/knowledge-base-prompts";
 
 interface AdminPageInfoProps {
   slug: string;
@@ -97,6 +103,9 @@ export function AdminPageStep5({ slug }: AdminPageInfoProps) {
   const [contentFormat, setContentFormat] = useState<string>("professional");
   const [customRequirements, setCustomRequirements] = useState<string>("");
 
+  // ✅ NEW: State for Knowledge Base Mixing switch
+  const [useKnowledgeBaseMixing, setUseKnowledgeBaseMixing] = useState<boolean>(false);
+
   // Find page data
   const pageData = useMemo(() => findPageBySlug(categories, slug), [categories, slug]);
   const page = pageData?.page;
@@ -107,7 +116,45 @@ export function AdminPageStep5({ slug }: AdminPageInfoProps) {
     [page?.title, page?.metadata?.title]
   );
 
-  // Генерация системной инструкции для AI модели
+  // ✅ NEW: Effect to sync switch state with textarea content
+  // When switch is enabled, populate textarea with predefined instruction
+  // When switch is disabled, clear textarea if it contains the predefined instruction
+  useEffect(() => {
+    if (useKnowledgeBaseMixing) {
+      // Only set if textarea is empty or contains different content
+      if (!customRequirements.trim() || customRequirements !== DEFAULT_KNOWLEDGE_BASE_MIXING_INSTRUCTION) {
+        setCustomRequirements(DEFAULT_KNOWLEDGE_BASE_MIXING_INSTRUCTION);
+      }
+    } else {
+      // Only clear if textarea contains exactly the predefined instruction
+      if (customRequirements === DEFAULT_KNOWLEDGE_BASE_MIXING_INSTRUCTION) {
+        setCustomRequirements("");
+      }
+    }
+  }, [useKnowledgeBaseMixing]);
+
+  // ✅ NEW: Handler for switch change
+  const handleKnowledgeBaseMixingChange = (checked: boolean) => {
+    setUseKnowledgeBaseMixing(checked);
+  };
+
+  // ✅ NEW: Handler for textarea manual changes
+  // If user manually edits the textarea, disable the switch if content no longer matches
+  const handleCustomRequirementsChange = (value: string) => {
+    setCustomRequirements(value);
+
+    // If user manually clears or changes content, disable the switch
+    if (useKnowledgeBaseMixing && value !== DEFAULT_KNOWLEDGE_BASE_MIXING_INSTRUCTION) {
+      setUseKnowledgeBaseMixing(false);
+    }
+
+    // If user manually pastes the exact predefined instruction, enable the switch
+    if (!useKnowledgeBaseMixing && value === DEFAULT_KNOWLEDGE_BASE_MIXING_INSTRUCTION) {
+      setUseKnowledgeBaseMixing(true);
+    }
+  };
+
+  // Generate system instruction for AI model
   const systemInstruction = useSystemInstructionGenerator({
     pageData,
     slug,
@@ -241,13 +288,48 @@ export function AdminPageStep5({ slug }: AdminPageInfoProps) {
               </Label>
               <Badge variant="outline" className="text-xs">Optional</Badge>
             </div>
+
+            {/* ✅ NEW: Knowledge Base Mixing Switch */}
+            <div className="flex items-start justify-between space-x-3 rounded-lg border border-blue-200 dark:border-blue-800 bg-blue-50/50 dark:bg-blue-950/50 p-4">
+              <div className="flex-1 space-y-1">
+                <div className="flex items-center gap-2">
+                  <Label
+                    htmlFor="knowledge-base-mixing"
+                    className="text-sm font-medium leading-none cursor-pointer"
+                  >
+                    Use Knowledge Base Mixing Instruction
+                  </Label>
+                  <Info className="size-4 text-blue-600 dark:text-blue-400 shrink-0" />
+                </div>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  Activate this switch to enable the standard predefined instruction for mixing internal and external knowledge bases to generate original content. The instruction will automatically populate the text area below and will be removed if you disable this option.
+                </p>
+              </div>
+              <Switch
+                id="knowledge-base-mixing"
+                checked={useKnowledgeBaseMixing}
+                onCheckedChange={handleKnowledgeBaseMixingChange}
+                className="mt-0.5"
+              />
+            </div>
+
             <Textarea
               id="custom-requirements"
               placeholder="Add specific requirements for content structure generation..."
               value={customRequirements}
-              onChange={(e) => setCustomRequirements(e.target.value)}
-              className="min-h-[100px] resize-y"
+              onChange={(e) => handleCustomRequirementsChange(e.target.value)}
+              className="min-h-[200px] resize-y font-mono text-xs"
+              disabled={useKnowledgeBaseMixing}
             />
+
+            {useKnowledgeBaseMixing && (
+              <p className="text-xs text-muted-foreground flex items-center gap-2">
+                <Info className="size-3" />
+                <span>
+                  Predefined instruction is active. Disable the switch above to edit manually.
+                </span>
+              </p>
+            )}
           </div>
 
           {/* Configuration Summary */}
@@ -265,7 +347,10 @@ export function AdminPageStep5({ slug }: AdminPageInfoProps) {
               <p className="truncate">
                 <span className="font-medium">Current Structure:</span> {page?.aiRecommendContentStructure?.length || 0} existing elements
               </p>
-              {customRequirements.trim() && (
+              <p className="truncate">
+                <span className="font-medium">Knowledge Base Mixing:</span> {useKnowledgeBaseMixing ? "Enabled (Predefined)" : "Disabled"}
+              </p>
+              {customRequirements.trim() && !useKnowledgeBaseMixing && (
                 <p className="truncate">
                   <span className="font-medium">Custom Requirements:</span> {customRequirements.trim().length} characters specified
                 </p>
