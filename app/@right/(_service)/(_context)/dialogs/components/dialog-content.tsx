@@ -3,6 +3,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { DialogState, DialogType, InputType, PageImages } from "../types";
 import { InputFields } from "./input-fields";
 import {
@@ -141,85 +142,105 @@ export function DialogContent({
     dialog.knowledgeBase?.showInfoButton !== false;
 
   return (
-    <Dialog open onOpenChange={onClose}>
-      <ShadcnDialogContent
-        container={container}
-        onInteractOutside={(e) => {
-          e.preventDefault(); // Предотвращает закрытие при клике снаружи
-        }}
-        className={`${getDialogWidth()} ${dialog.type === "delete" ? "border-2 border-red-600" : ""
-          }`}
-      >
-        <DialogHeader>
-          <DialogTitle>{dialog.title}</DialogTitle>
-          {dialog.description && (
-            <DialogDescription>{dialog.description}</DialogDescription>
-          )}
-        </DialogHeader>
-
-        {dialog.type !== "delete" && (
+    <>
+      {/* Custom overlay for right slot only - doesn't block mouse events */}
+      {container &&
+        createPortal(
           <div
-            className={`grid gap-4 py-2 ${dialog.inputType === "knowledge-base"
-                ? "max-h-[500px] overflow-y-auto custom-scrollbar"
-                : ""
-              }`}
-          >
-            <InputFields
-              dialog={dialog}
-              input={input}
-              setInput={setInput}
-              keywords={keywords}
-              images={images}
-              onConfirm={handleConfirm}
-              onInfoDoesNotExist={handleInfoDoesNotExist}
-            />
-            {dialog.inputType === "textarea" && (
-              <p className="text-xs text-muted-foreground">
-                Press Ctrl+Enter to save
-              </p>
-            )}
-          </div>
+            className="absolute inset-0 z-50 bg-black/80 animate-in fade-in-0 duration-200"
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              pointerEvents: "none", // Allows clicks to pass through
+            }}
+            aria-hidden="true"
+          />,
+          container
         )}
 
-        <DialogFooter>
-          {/* "Information Does Not Exist" button for Knowledge Base */}
-          {showInfoButton && (
-            <Button
-              type="button"
-              variant="ghost"
-              disabled={dialog.confirmLoading}
-              onClick={handleInfoDoesNotExist}
-              className="mr-auto"
+      <Dialog open modal={false} onOpenChange={onClose}>
+        <ShadcnDialogContent
+          container={container}
+          onInteractOutside={(e) => {
+            e.preventDefault(); // Предотвращает закрытие при клике снаружи
+          }}
+          className={`${getDialogWidth()} ${dialog.type === "delete" ? "border-2 border-red-600" : ""
+            }`}
+        >
+          <DialogHeader>
+            <DialogTitle>{dialog.title}</DialogTitle>
+            {dialog.description && (
+              <DialogDescription>{dialog.description}</DialogDescription>
+            )}
+          </DialogHeader>
+
+          {dialog.type !== "delete" && (
+            <div
+              className={`grid gap-4 py-2 ${dialog.inputType === "knowledge-base"
+                ? "max-h-[500px] overflow-y-auto custom-scrollbar"
+                : ""
+                }`}
             >
-              Information Does Not Exist
-            </Button>
+              <InputFields
+                dialog={dialog}
+                input={input}
+                setInput={setInput}
+                keywords={keywords}
+                images={images}
+                onConfirm={handleConfirm}
+                onInfoDoesNotExist={handleInfoDoesNotExist}
+              />
+              {dialog.inputType === "textarea" && (
+                <p className="text-xs text-muted-foreground">
+                  Press Ctrl+Enter to save
+                </p>
+              )}
+            </div>
           )}
 
-          <DialogClose asChild>
+          <DialogFooter>
+            {/* "Information Does Not Exist" button for Knowledge Base */}
+            {showInfoButton && (
+              <Button
+                type="button"
+                variant="ghost"
+                disabled={dialog.confirmLoading}
+                onClick={handleInfoDoesNotExist}
+                className="mr-auto"
+              >
+                Information Does Not Exist
+              </Button>
+            )}
+
+            <DialogClose asChild>
+              <Button
+                type="button"
+                variant="outline"
+                disabled={dialog.confirmLoading}
+                onClick={dialog.onCancel || onClose}
+              >
+                {dialog.cancelLabel || "Cancel"}
+              </Button>
+            </DialogClose>
             <Button
               type="button"
-              variant="outline"
-              disabled={dialog.confirmLoading}
-              onClick={dialog.onCancel || onClose}
+              variant={dialog.type === "delete" ? "destructive" : "default"}
+              disabled={dialog.confirmLoading || !isFormValid()}
+              onClick={handleConfirm}
             >
-              {dialog.cancelLabel || "Cancel"}
+              {dialog.confirmLabel ||
+                (dialog.type === "delete"
+                  ? "Delete"
+                  : dialog.type === "edit"
+                    ? "Save changes"
+                    : "Create")}
             </Button>
-          </DialogClose>
-          <Button
-            type="button"
-            variant={dialog.type === "delete" ? "destructive" : "default"}
-            disabled={dialog.confirmLoading || !isFormValid()}
-            onClick={handleConfirm}
-          >
-            {dialog.confirmLabel ||
-              (dialog.type === "delete"
-                ? "Delete"
-                : dialog.type === "edit"
-                  ? "Save changes"
-                  : "Create")}
-          </Button>
-        </DialogFooter>
-      </ShadcnDialogContent>
-    </Dialog>
+          </DialogFooter>
+        </ShadcnDialogContent>
+      </Dialog>
+    </>
   );
 }
