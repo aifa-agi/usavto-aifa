@@ -2912,7 +2912,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-13T17:54:49.048Z",
-        "updatedAt": "2025-10-13T17:54:49.048Z",
+        "updatedAt": "2025-10-13T20:28:16.073Z",
         "order": 2,
         "badgeName": "Путевые",
         "description": "Узнайте, как правильно делать путевые листы в 2025 году! Полное руководство с актуальными требованиями, образцами и рекомендациями для успешного оформления.",
@@ -2931,7 +2931,75 @@ export const contentData = {
         "intent": "Пользователи ищут полное руководство по правильному оформлению путевых листов в 2025 году с акцентом на актуальные требования законодательства. Их цель — получить четкие инструкции и примеры для заполнения, чтобы избежать штрафов и обеспечить правомерность использования автотранспорта. Данная страница предоставляет исчерпывающую информацию и пошаговые рекомендации, что полностью соответствует их запросам.",
         "taxonomy": "Данная страница представляет собой полное руководство (гид) по правильному оформлению путевых листов в 2025 году и относится к категории \"Автотранспорт > Документооборот > Путевые листы > Правила оформления 2025\". Она служит кластерным контентом, дополняющим основное пилларное содержание о путевых листах, обеспечивая актуальную информацию о требованиях законодательства и практические советы для целевой аудитории, включающей транспортные компании и бухгалтеров.",
         "attention": "Создайте мощный захват внимания в первые 3 секунды с помощью яркого заголовка и интерактивной визуализации, демонстрирующей актуальность и пользу путевых листов в 2025 году. Поддержите интерес пользователей с помощью четкой визуальной иерархии, динамического контента и интерактивных элементов, таких как калькуляторы и шаблоны, предлагая уникальные примеры и практические советы, которые выделят ваш ресурс на фоне конкурентов и помогут пользователям легко применять знания на практике.",
-        "audiences": "Данный контент предназначен для владельцев транспортных компаний, бухгалтеров и диспетчеров, занимающихся оформлением путевых листов в 2025 году. Эти специалисты сталкиваются с необходимостью соответствия новым законодательным требованиям и часто испытывают трудности с правильным заполнением документов и пониманием актуальных норм, что делает данное руководство важным ресурсом для их профессиональной деятельности."
+        "audiences": "Данный контент предназначен для владельцев транспортных компаний, бухгалтеров и диспетчеров, занимающихся оформлением путевых листов в 2025 году. Эти специалисты сталкиваются с необходимостью соответствия новым законодательным требованиям и часто испытывают трудности с правильным заполнением документов и пониманием актуальных норм, что делает данное руководство важным ресурсом для их профессиональной деятельности.",
+        "draftContentStructure": [
+          {
+            "id": "h2-1",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "как делать путевые листы",
+              "путевые листы 2025",
+              "правильное оформление путевых листов",
+              "требования к путевым листам",
+              "образцы путевых листов",
+              "инструкции по заполнению путевых листов",
+              "советы по оформлению путевых листов"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, как правильно оформлять путевые листы, чтобы избежать штрафов и обеспечить законность использования автотранспорта.",
+            "intent": "В этом разделе вы познакомитесь с основами оформления путевых листов и получите представление о том, что будет рассмотрено в дальнейшем.",
+            "audiences": "Владельцы транспортных компаний, бухгалтеры, диспетчеры | Уровень: начинающий | Проблемы: трудности с заполнением документов и пониманием норм.",
+            "selfPrompt": "Generate h2 in section 'Введение' of page 'Как правильно делать путевые листы: полное руководство 2025'\n\nGOAL: Ввести читателя в тему оформления путевых листов и объяснить важность правильного заполнения.\n\nAUDIENCE: Владельцы транспортных компаний, бухгалтеры, диспетчеры | Level: начинающий | Pain points: трудности с заполнением документов и пониманием норм.\n\nKEYWORDS TO INTEGRATE:\n[как делать путевые листы, путевые листы 2025, правильное оформление путевых листов, требования к путевым листам, образцы путевых листов, инструкции по заполнению путевых листов, советы по оформлению путевых листов]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 150, maxWords: 250 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: # Заголовок второго уровня\n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: [Что такое путевые листы и зачем они нужны, Проблемы при ручном оформлении путевых листов]\n- SECONDARY: Apply insights from External KB: [Образец заполнения путевого листа]\n\nQUALITY CRITERIA:\n- Actionable (specific actions/recommendations)\n- Specific (avoid generic statements)\n- Data-backed (use facts/statistics from Knowledge Bases)\n- No fluff (eliminate filler content)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Введение в оформление путевых листов и их значение для бизнеса.\n- sourceHint: Internal KB (Что такое путевые листы и зачем они нужны)\n- evidenceStrength: internal-tested.",
+            "writingStyle": "conversational",
+            "contentFormat": "professional",
+            "customRequirements": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 150,
+              "maxWords": 250,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-1-1",
+                "tag": "p",
+                "keywords": [
+                  "путевые листы",
+                  "правильное оформление путевых листов"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Путевые листы являются ключевым документом для транспортных компаний.",
+                "intent": "Объяснить, что такое путевые листы и почему их правильное оформление критично.",
+                "audiences": "Владельцы транспортных компаний, бухгалтеры | Уровень: начинающий | Проблемы: недостаток информации о путевых листах.",
+                "selfPrompt": "Generate p in section 'Введение' of page 'Как правильно делать путевые листы: полное руководство 2025'\n\nGOAL: Объяснить значение путевых листов для бизнеса.\n\nAUDIENCE: Владельцы транспортных компаний, бухгалтеры | Level: начинающий | Pain points: недостаток информации о путевых листах.\n\nKEYWORDS TO INTEGRATE:\n[путевые листы, правильное оформление путевых листов]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 100, maxWords: 180 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: \n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: [Что такое путевые листы и зачем они нужны]\n\nQUALITY CRITERIA:\n- Actionable (specific actions/recommendations)\n- Specific (avoid generic statements)\n- Data-backed (use facts/statistics from Knowledge Bases)\n- No fluff (eliminate filler content)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Введение в понятие путевых листов.\n- sourceHint: Internal KB (Что такое путевые листы и зачем они нужны)\n- evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 180,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-2",
+                "tag": "p",
+                "keywords": [
+                  "инструкции по заполнению путевых листов"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Следующий раздел предоставит подробные инструкции по заполнению путевых листов.",
+                "intent": "Подготовить читателя к следующему разделу, где будут даны конкретные инструкции.",
+                "audiences": "Владельцы транспортных компаний, бухгалтеры | Уровень: начинающий | Проблемы: недостаток четких инструкций.",
+                "selfPrompt": "Generate p in section 'Введение' of page 'Как правильно делать путевые листы: полное руководство 2025'\n\nGOAL: Подготовить читателя к следующему разделу.\n\nAUDIENCE: Владельцы транспортных компаний, бухгалтеры | Level: начинающий | Pain points: недостаток четких инструкций.\n\nKEYWORDS TO INTEGRATE:\n[инструкции по заполнению путевых листов]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 60, maxWords: 120 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: \n\nWRITING STYLE: Friendly, informal, like talking to a friend\n\nCONTENT FORMAT: Business-appropriate, formal tone\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: [Проблемы при ручном оформлении путевых листов]\n\nQUALITY CRITERIA:\n- Actionable (specific actions/recommendations)\n- Specific (avoid generic statements)\n- Data-backed (use facts/statistics from Knowledge Bases)\n- No fluff (eliminate filler content)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Подготовка к инструкциям по заполнению.\n- sourceHint: Internal KB (Проблемы при ручном оформлении путевых листов)\n- evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 120,
+                  "actualContent": ""
+                }
+              }
+            ]
+          }
+        ]
       }
     ],
     "order": 15
@@ -7290,5 +7358,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-13T20:28:17.358Z";
+export const lastUpdated = "2025-10-13T20:29:06.744Z";
 export const generatedBy = "menu-persist-api";
