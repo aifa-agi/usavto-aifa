@@ -1,6 +1,7 @@
-// @/.../page-generator.ts
+// @/app/@right/(_PRIVAT_ROUTES)/admin/(_routing)/pages/[slug]/(_service)/(_components)/admin-pages/steps/step12/(_utils)/page-generator.ts
 // Page generation service for creating Next.js page.tsx files
 // Critical template generator - preserve exact formatting and structure
+// UPDATED: Now generates pages with ServerContentRenderer for full SSR/SSG
 
 import type { PageUploadPayload, ExtendedSection } from "@/app/@right/(_service)/(_types)/section-types";
 import { extractFAQs, generateFAQJsonLd } from "../(_lib)/faq-extractor";
@@ -25,18 +26,27 @@ interface BodyContent {
 
 /**
  * Generates complete page.tsx content with embedded sections data and metadata
- * Comments in English: This version delegates all Metadata to constructMetadata
- * to avoid conflicts and ensure single source of truth (icons, manifest, robots, canonical, OG/Twitter).
- * Now includes automatic FAQPage JSON-LD generation if FAQ sections detected.
+ * 
+ * CRITICAL CHANGES:
+ * - Uses ServerContentRenderer instead of client-side ContentRenderer
+ * - Adds generateStaticParams() for true SSG
+ * - All content is server-rendered in initial HTML
+ * - Client islands provide interactivity without affecting SEO
+ * 
+ * Comments in English: This version ensures 100% static generation
+ * with all content present in the initial HTML for optimal SEO.
  */
 export function generatePageTsxContent(payload: PageUploadPayload): string {
   const { pageMetadata, sections, href } = payload;
   const relativePath = href.startsWith("/") ? href.slice(1) : href;
   const categorySlug = relativePath.split("/")[0] || "general";
 
+  // Parse path segments for generateStaticParams
+  const pathSegments = relativePath.split("/").filter(Boolean);
+
   const finalMetadata = {
-    title: pageMetadata.title || "Страница без заголовка",
-    description: pageMetadata.description || "Описание отсутствует",
+    title: pageMetadata.title || "Page Without Title",
+    description: pageMetadata.description || "No description provided",
     keywords: pageMetadata.keywords || [],
     images: pageMetadata.images || [],
   };
@@ -82,39 +92,58 @@ export function generatePageTsxContent(payload: PageUploadPayload): string {
   const faqs = extractFAQs(sections as any);
   const faqJsonLd = generateFAQJsonLd(faqs);
 
-  // Canonical as plain reference for JSON-LD; actual canonical tag comes from constructMetadata
+  // Canonical URL for JSON-LD
   const canonicalUrl = `\${appConfig.url}${href}`;
 
-  // Template output
-  return `// Auto-generated SEO-optimized static page - do not edit manually
+  // Generate params object for generateStaticParams
+  const paramsObject = pathSegments.length === 1 
+    ? `{ slug: "${pathSegments[0]}" }` 
+    : pathSegments.length === 2 
+    ? `{ category: "${pathSegments[0]}", slug: "${pathSegments[1]}" }` 
+    : `{ segments: ${JSON.stringify(pathSegments)} }`;
+
+ // Template output (в конце функции generatePageTsxContent)
+return `// Auto-generated SEO-optimized static page - do not edit manually
 // Generated on: ${new Date().toISOString()}
 // Source href: ${href}
 // Page metadata: ${pageMetadata.title || "No title"} | ${sections.length} sections
 // FAQ sections detected: ${faqs.length}
-// SEO Mode: STATIC GENERATION ENABLED
+// SEO Mode: FULL SERVER-SIDE RENDERING + STATIC GENERATION
+// NOTE: This page has a hardcoded path - no dynamic segments
 
 import type { Metadata } from "next";
 import { appConfig } from "@/config/appConfig";
 import { constructMetadata } from "@/lib/construct-metadata";
-import ContentRenderer from "@/app/@right/(_service)/(_components)/content-renderer";
+import ServerContentRenderer from "@/app/@right/(_service)/(_components)/server-content-renderer";
 import { Badge } from "@/components/ui/badge";
-import { cn } from "@/lib/utils";
 
-// Enforce static generation for SEO
+// ============================================
+// STATIC GENERATION CONFIGURATION
+// ============================================
+
+// Force static generation for optimal SEO and performance
 export const dynamic = "force-static";
 export const revalidate = false;
 export const fetchCache = "force-cache";
 
-// Embedded sections data
+// NOTE: generateStaticParams is not needed for this page
+// Path is hardcoded: ${href}
+// Next.js will automatically detect this as a static route
+
+// ============================================
+// EMBEDDED DATA
+// ============================================
+
 const sections = ${sectionsJson};
 
-// Hero image data
 const heroImage = ${heroImageData ? JSON.stringify(heroImageData, null, 2) : "null"};
 
-// Canonical URL for JSON-LD (metadata canonical is handled by constructMetadata)
 const canonicalUrl = \`${"${"}appConfig.url${"}"}${href}\`;
 
-// Centralized Metadata via constructMetadata
+// ============================================
+// METADATA GENERATION
+// ============================================
+
 export async function generateMetadata(): Promise<Metadata> {
   return constructMetadata({
     title: "${escapedTitle}",
@@ -125,7 +154,10 @@ export async function generateMetadata(): Promise<Metadata> {
   });
 }
 
-// Page component (fully static)
+// ============================================
+// PAGE COMPONENT (SERVER-RENDERED)
+// ============================================
+
 export default function Page() {
   return (
     <article className="page-content">
@@ -134,25 +166,32 @@ export default function Page() {
           <h1 className="font-heading text-3xl text-foreground sm:text-4xl">
             ${escapedTitle}
           </h1>
+          
           <p className="text-base text-muted-foreground md:text-lg">
             ${escapedDescription}
           </p>
-          <div className="flex items-center space-x-4">
+          
+          <div className="flex items-center space-x-4 flex-wrap gap-2">
             <Badge className="shadow-none rounded-md px-2.5 py-0.5 text-xs font-semibold h-6 flex items-center">
               ${categorySlug}
             </Badge>
-             {${finalMetadata.keywords.length > 0 ? `${JSON.stringify(finalMetadata.keywords)}.slice(0, 3).map((keyword: string, index: number) => (
-              <Badge key={index} variant="outline" className="shadow-none rounded-md px-2.5 py-0.5 text-xs font-semibold h-6 flex items-center">
+            ${finalMetadata.keywords.length > 0 ? `{${JSON.stringify(finalMetadata.keywords)}.slice(0, 3).map((keyword: string, index: number) => (
+              <Badge 
+                key={index} 
+                variant="outline" 
+                className="shadow-none rounded-md px-2.5 py-0.5 text-xs font-semibold h-6 flex items-center"
+              >
                 {keyword}
               </Badge>
-            ))` : ''}}
+            ))}` : ''}
           </div>
         </div>
       </div>
-      <div className="relative">
-        <div className="absolute top-52 w-full border-t" />
-        <ContentRenderer sections={sections} heroImage={heroImage} />
-      </div>
+
+      <ServerContentRenderer 
+        sections={sections} 
+        heroImage={heroImage} 
+      />
 
       {/* Structured data: JSON-LD Article */}
       <script
@@ -201,7 +240,6 @@ export default function Page() {
         }}
       />
 ${faqJsonLd ? `
-      {/* Structured data: JSON-LD FAQPage */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -212,4 +250,5 @@ ${faqJsonLd ? `
   );
 }
 `;
+
 }

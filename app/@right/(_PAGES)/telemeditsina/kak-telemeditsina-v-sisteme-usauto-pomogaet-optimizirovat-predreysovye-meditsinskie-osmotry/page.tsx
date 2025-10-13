@@ -1,3 +1,4 @@
+// @/app/@right/(_PAGES)/telemeditsina/kak-telemeditsina-v-sisteme-usauto-pomogaet-optimizirovat-predreysovye-meditsinskie-osmotry/page.tsx
 // Auto-generated SEO-optimized static page - do not edit manually
 // Generated on: 2025-10-13T01:02:35.676Z
 // Source href: /telemeditsina/kak-telemeditsina-v-sisteme-usauto-pomogaet-optimizirovat-predreysovye-meditsinskie-osmotry
@@ -1044,7 +1045,7 @@ export default function Page() {
             <Badge className="shadow-none rounded-md px-2.5 py-0.5 text-xs font-semibold h-6 flex items-center">
               telemeditsina
             </Badge>
-             {["Телемедицина"].slice(0, 3).map((keyword: string, index: number) => (
+            {["Телемедицина"].slice(0, 3).map((keyword: string, index: number) => (
               <Badge key={index} variant="outline" className="shadow-none rounded-md px-2.5 py-0.5 text-xs font-semibold h-6 flex items-center">
                 {keyword}
               </Badge>

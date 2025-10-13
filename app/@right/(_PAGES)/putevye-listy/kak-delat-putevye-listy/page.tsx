@@ -1,23 +1,34 @@
 // Auto-generated SEO-optimized static page - do not edit manually
-// Generated on: 2025-10-13T20:37:08.355Z
+// Generated on: 2025-10-13T22:35:30.660Z
 // Source href: /putevye-listy/kak-delat-putevye-listy
 // Page metadata: Как правильно делать путевые листы: полное руководство 2025 | 5 sections
 // FAQ sections detected: 0
-// SEO Mode: STATIC GENERATION ENABLED
+// SEO Mode: FULL SERVER-SIDE RENDERING + STATIC GENERATION
+// NOTE: This page has a hardcoded path - no dynamic segments
 
 import type { Metadata } from "next";
 import { appConfig } from "@/config/appConfig";
 import { constructMetadata } from "@/lib/construct-metadata";
-import ContentRenderer from "@/app/@right/(_service)/(_components)/content-renderer";
+import ServerContentRenderer from "@/app/@right/(_service)/(_components)/server-content-renderer";
 import { Badge } from "@/components/ui/badge";
-import { cn } from "@/lib/utils";
 
-// Enforce static generation for SEO
+// ============================================
+// STATIC GENERATION CONFIGURATION
+// ============================================
+
+// Force static generation for optimal SEO and performance
 export const dynamic = "force-static";
 export const revalidate = false;
 export const fetchCache = "force-cache";
 
-// Embedded sections data
+// NOTE: generateStaticParams is not needed for this page
+// Path is hardcoded: /putevye-listy/kak-delat-putevye-listy
+// Next.js will automatically detect this as a static route
+
+// ============================================
+// EMBEDDED DATA
+// ============================================
+
 const sections = [
   {
     "id": "h2-1",
@@ -33,7 +44,7 @@ const sections = [
           "content": [
             {
               "type": "text",
-              "text": "Как правильно делать путевые листы в 2025 году: основы и важность оформления"
+              "text": "Как правильно делать путевые листы в 2025 году: основы и важность оформления!"
             }
           ]
         },
@@ -79,7 +90,7 @@ const sections = [
           "content": [
             {
               "type": "text",
-              "text": "Основы и ключевые правила оформления путевых листов в 2025 году"
+              "text": "Основы и ключевые правила оформления путевых листов в 2025 году!"
             }
           ]
         },
@@ -788,7 +799,7 @@ const sections = [
           "content": [
             {
               "type": "text",
-              "text": "Практическое оформление путевых листов: пошаговый процесс и советы по автоматизации"
+              "text": "Практическое оформление путевых листов: пошаговый процесс и советы по автоматизации!"
             }
           ]
         },
@@ -1699,16 +1710,17 @@ const sections = [
   }
 ];
 
-// Hero image data
 const heroImage = {
   "href": "/app-images/seq18rg2nsxx6clzr3knl7ai.jpg",
   "alt": "как делать путевые листы"
 };
 
-// Canonical URL for JSON-LD (metadata canonical is handled by constructMetadata)
 const canonicalUrl = `${appConfig.url}/putevye-listy/kak-delat-putevye-listy`;
 
-// Centralized Metadata via constructMetadata
+// ============================================
+// METADATA GENERATION
+// ============================================
+
 export async function generateMetadata(): Promise<Metadata> {
   return constructMetadata({
     title: "Как правильно делать путевые листы: полное руководство 2025",
@@ -1719,7 +1731,10 @@ export async function generateMetadata(): Promise<Metadata> {
   });
 }
 
-// Page component (fully static)
+// ============================================
+// PAGE COMPONENT (SERVER-RENDERED)
+// ============================================
+
 export default function Page() {
   return (
     <article className="page-content">
@@ -1728,25 +1743,32 @@ export default function Page() {
           <h1 className="font-heading text-3xl text-foreground sm:text-4xl">
             Как правильно делать путевые листы: полное руководство 2025
           </h1>
+          
           <p className="text-base text-muted-foreground md:text-lg">
             Узнайте, как правильно делать путевые листы в 2025 году! Полное руководство с актуальными требованиями, образцами и рекомендациями для успешного оформления.
           </p>
-          <div className="flex items-center space-x-4">
+          
+          <div className="flex items-center space-x-4 flex-wrap gap-2">
             <Badge className="shadow-none rounded-md px-2.5 py-0.5 text-xs font-semibold h-6 flex items-center">
               putevye-listy
             </Badge>
-             {["как делать путевые листы"].slice(0, 3).map((keyword: string, index: number) => (
-              <Badge key={index} variant="outline" className="shadow-none rounded-md px-2.5 py-0.5 text-xs font-semibold h-6 flex items-center">
+            {["как делать путевые листы"].slice(0, 3).map((keyword: string, index: number) => (
+              <Badge 
+                key={index} 
+                variant="outline" 
+                className="shadow-none rounded-md px-2.5 py-0.5 text-xs font-semibold h-6 flex items-center"
+              >
                 {keyword}
               </Badge>
             ))}
           </div>
         </div>
       </div>
-      <div className="relative">
-        <div className="absolute top-52 w-full border-t" />
-        <ContentRenderer sections={sections} heroImage={heroImage} />
-      </div>
+
+      <ServerContentRenderer 
+        sections={sections} 
+        heroImage={heroImage} 
+      />
 
       {/* Structured data: JSON-LD Article */}
       <script
@@ -1777,8 +1799,8 @@ export default function Page() {
               "url": "/app-images/seq18rg2nsxx6clzr3knl7ai.jpg",
               "alt": "как делать путевые листы"
             },
-            "datePublished": "2025-10-13T20:37:08.355Z",
-            "dateModified": "2025-10-13T20:37:08.355Z",
+            "datePublished": "2025-10-13T22:35:30.660Z",
+            "dateModified": "2025-10-13T22:35:30.660Z",
             "articleSection": "putevye-listy",
             "keywords": ["как делать путевые листы"],
             "mainEntityOfPage": {
