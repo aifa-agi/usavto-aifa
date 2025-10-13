@@ -1,6 +1,6 @@
 // @/app/@right/(_service)/(_components)/static-section.tsx
 // Server component for rendering individual content section
-// Comments in English: Renders a single section with TipTap content as static HTML
+// Comments in English: Uses correct TipTap classes for styling
 
 import React from "react";
 import { ExtendedSection } from "../(_types)/section-types";
@@ -29,10 +29,9 @@ export interface StaticSectionProps {
  * 
  * Features:
  * - Pure server-side rendering of TipTap JSON to HTML
- * - Applies TipTap styling classes for proper formatting
+ * - Uses correct TipTap classes (tiptap ProseMirror) for styling
  * - Adds section ID to H2 headings for anchor navigation
  * - Handles missing or invalid content gracefully
- * - Provides wrapper div for client-side interactivity positioning
  * 
  * @param section - The content section to render
  * @param sectionId - Optional ID for anchor navigation
@@ -90,8 +89,12 @@ export function StaticSection({
             className="static-section relative"
             data-section-index={index}
         >
-            {/* TipTap content container with proper styling classes */}
-            {/* Classes 'tiptap' and 'ProseMirror' apply imported SCSS styles */}
+            {/* 
+        CRITICAL: Use exact classes from working ContentRenderer
+        - 'tiptap' class triggers TipTap SCSS styles
+        - 'ProseMirror' class applies editor formatting
+        - DO NOT use 'prose' classes - they conflict with TipTap styles
+      */}
             <div className="tiptap ProseMirror">
                 {renderedContent}
             </div>
@@ -105,7 +108,6 @@ export function StaticSection({
 
 /**
  * EmptySection - Placeholder when section has no content
- * Used internally by StaticSection
  */
 function EmptySection({ index }: { index: number }) {
     return (
@@ -132,7 +134,6 @@ function EmptySection({ index }: { index: number }) {
 
 /**
  * ErrorSection - Error state when content structure is invalid
- * Used internally by StaticSection
  */
 function ErrorSection({ index, message }: { index: number; message?: string }) {
     return (

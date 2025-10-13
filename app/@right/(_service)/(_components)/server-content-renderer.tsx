@@ -1,19 +1,31 @@
 // @/app/@right/(_service)/(_components)/server-content-renderer.tsx
 // Main server component for rendering static page content
-// Comments in English: This is a pure server component that renders all content
-// as static HTML, ensuring optimal SEO and Core Web Vitals performance.
+// Comments in English: Pure server component with TipTap styles imported
 
 import React from "react";
 import { ExtendedSection } from "../(_types)/section-types";
 import { extractNavigationSections } from "../(_utils)/navigation-utils";
 import { HeroImage, type PageImage } from "./hero-image";
 import { StaticSection } from "./static-section";
-
+import { StaticTOC } from "./static-toc";
 import { ClientNavigationIsland } from "./client-navigation-island";
 import { ClientInteractivityIsland } from "./client-interactivity-island";
 import { CalculatorSection } from "./home-page/(_components)/calculator-section";
 import { FooterSection } from "./home-page/(_components)/footer-section";
-import StaticTOC from "./static-toc";
+
+// ============================================
+// CRITICAL: Import all TipTap SCSS styles
+// ============================================
+// These styles are essential for proper content rendering
+// Without them, headings, lists, tables will have no formatting
+
+import "@/components/tiptap/tiptap-node/blockquote-node/blockquote-node.scss";
+import "@/components/tiptap/tiptap-node/code-block-node/code-block-node.scss";
+import "@/components/tiptap/tiptap-node/heading-node/heading-node.scss";
+import "@/components/tiptap/tiptap-node/horizontal-rule-node/horizontal-rule-node.scss";
+import "@/components/tiptap/tiptap-node/image-node/image-node.scss";
+import "@/components/tiptap/tiptap-node/list-node/list-node.scss";
+import "@/components/tiptap/tiptap-node/paragraph-node/paragraph-node.scss";
 
 // ============================================
 // TYPES & INTERFACES
@@ -75,6 +87,7 @@ function SectionSeparator() {
  * - Anchor navigation for sections
  * - Responsive layout with conditional styles
  * - Client islands for interactivity (navigation buttons, send to chat)
+ * - TipTap styles imported for proper formatting
  * 
  * @param sections - Array of content sections to render
  * @param heroImage - Optional hero image data
@@ -142,14 +155,13 @@ export default function ServerContentRenderer({
                             {/* Content container with conditional padding */}
                             <div className="2xl:px-[.8rem] 2xl:pb-10 2xl:md:px-8">
                                 {/* Client Navigation Island - Mobile navigation buttons */}
-                                {/* Hidden on 2xl+ screens where sidebar TOC is shown */}
                                 <ClientNavigationIsland sections={navigationSections} />
 
                                 {/* Render all content sections */}
                                 {sections.map((section, index) => {
                                     const isLastSection = index === sections.length - 1;
                                     const navigationSection = navigationSections.find(
-                                        nav => sections.indexOf(section) === index
+                                        (nav, navIndex) => navIndex === index
                                     );
 
                                     return (
@@ -182,7 +194,6 @@ export default function ServerContentRenderer({
             </div>
 
             {/* Client Interactivity Island - Send to Chat functionality */}
-            {/* Rendered at the end to avoid blocking content rendering */}
             <ClientInteractivityIsland sectionIds={sectionIds} sections={sections} />
         </div>
     );

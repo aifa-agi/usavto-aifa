@@ -4,7 +4,8 @@
 // UPDATED: Now generates pages with ServerContentRenderer for full SSR/SSG
 
 import type { PageUploadPayload, ExtendedSection } from "@/app/@right/(_service)/(_types)/section-types";
-import { extractFAQs, generateFAQJsonLd } from "../(_lib)/faq-extractor";
+// ✅ FIXED: Correct path to faq-extractor
+import { extractFAQs, generateFAQJsonLd } from "@/app/@right/(_service)/(_utils)/faq-extractor";
 
 // Types for content nodes
 interface ContentNode {
@@ -29,9 +30,9 @@ interface BodyContent {
  * 
  * CRITICAL CHANGES:
  * - Uses ServerContentRenderer instead of client-side ContentRenderer
- * - Adds generateStaticParams() for true SSG
  * - All content is server-rendered in initial HTML
  * - Client islands provide interactivity without affecting SEO
+ * - Includes FAQPage Schema.org markup when FAQ sections detected
  * 
  * Comments in English: This version ensures 100% static generation
  * with all content present in the initial HTML for optimal SEO.
@@ -88,22 +89,15 @@ export function generatePageTsxContent(payload: PageUploadPayload): string {
   };
   const imageAlts = extractImageAlts(sections);
 
-  // Extract FAQs and generate JSON-LD (only if FAQ sections present)
+  // ✅ Extract FAQs and generate JSON-LD (only if FAQ sections present)
   const faqs = extractFAQs(sections as any);
   const faqJsonLd = generateFAQJsonLd(faqs);
 
   // Canonical URL for JSON-LD
   const canonicalUrl = `\${appConfig.url}${href}`;
 
-  // Generate params object for generateStaticParams
-  const paramsObject = pathSegments.length === 1 
-    ? `{ slug: "${pathSegments[0]}" }` 
-    : pathSegments.length === 2 
-    ? `{ category: "${pathSegments[0]}", slug: "${pathSegments[1]}" }` 
-    : `{ segments: ${JSON.stringify(pathSegments)} }`;
-
- // Template output (в конце функции generatePageTsxContent)
-return `// Auto-generated SEO-optimized static page - do not edit manually
+  // Template output
+  return `// Auto-generated SEO-optimized static page - do not edit manually
 // Generated on: ${new Date().toISOString()}
 // Source href: ${href}
 // Page metadata: ${pageMetadata.title || "No title"} | ${sections.length} sections
@@ -240,6 +234,7 @@ export default function Page() {
         }}
       />
 ${faqJsonLd ? `
+      {/* Structured data: JSON-LD FAQPage */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -250,5 +245,4 @@ ${faqJsonLd ? `
   );
 }
 `;
-
 }

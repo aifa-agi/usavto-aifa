@@ -108,6 +108,23 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* ============================================ */
+  /* SMOOTH SCROLL FOR ANCHOR NAVIGATION */
+  /* ============================================ */
+  /* Enable smooth scrolling for anchor links */
+  /* This makes navigation to sections via # links smooth */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Alternative: Apply only to anchor links */
+  /* Uncomment if you want smooth scroll only for links, not programmatic scrolling */
+  /*
+  a[href^="#"] {
+    scroll-behavior: smooth;
+  }
+  */
 }
 
 .skeleton {
@@ -308,7 +325,6 @@ table {
   width: 100%;
   min-width: 100%;
   margin: 0;
-  /* Убираем margin так как он есть у wrapper */
   background-color: hsl(var(--card));
   table-layout: fixed;
 
@@ -320,7 +336,6 @@ table {
     padding: 0.75rem;
     text-align: left;
     vertical-align: top;
-    /* МИНИМАЛЬНАЯ ШИРИНА КОЛОНОК */
     min-width: 150px;
     width: 150px;
     word-wrap: break-word;
@@ -341,7 +356,6 @@ table {
     vertical-align: top;
     background-color: hsl(var(--card));
     color: hsl(var(--card-foreground));
-    /* МИНИМАЛЬНАЯ ШИРИНА КОЛОНОК */
     min-width: 150px;
     width: 150px;
     word-wrap: break-word;
@@ -356,14 +370,12 @@ table {
     }
   }
 
-  // Стили для параграфов внутри ячеек
   td p,
   th p {
     margin: 0;
     padding: 0;
   }
 
-  // Стили для выделенных ячеек (TipTap)
   .selectedCell {
     position: relative;
 
@@ -442,12 +454,10 @@ table:has(td:nth-child(10):nth-last-child(1)) {
   border: 1px solid hsl(var(--border));
 }
 
-// Курсор изменения размера
 .resize-cursor {
   cursor: col-resize;
 }
 
-// Адаптивные стили для таблиц
 @media (max-width: 768px) {
   .table-responsive-wrapper {
     margin: 0.5rem 0;
@@ -464,7 +474,6 @@ table:has(td:nth-child(10):nth-last-child(1)) {
     }
   }
 
-  /* Адаптивные минимальные ширины для мобильных */
   table:has(th:nth-child(1):nth-last-child(1)),
   table:has(td:nth-child(1):nth-last-child(1)) {
     min-width: 120px;
@@ -491,7 +500,7 @@ table:has(td:nth-child(10):nth-last-child(1)) {
   }
 }
 
-/* === АНИМАЦИИ ДЛЯ КНОПОК ТАБЛИЦ === */
+/* === АНИМАЦИИ === */
 @keyframes slide-in-from-left {
   from {
     opacity: 0;
@@ -517,35 +526,25 @@ table:has(td:nth-child(10):nth-last-child(1)) {
   animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* === СТИЛИ ДЛЯ КОНТЕЙНЕРА КНОПОК ТАБЛИЦ === */
 .table-buttons-container {
   display: flex;
   overflow-x: auto;
   overflow-y: hidden;
   max-width: 400px;
-
-  /* Скрытие скроллбара для всех браузеров */
   scrollbar-width: none;
-  /* Firefox */
   -ms-overflow-style: none;
-  /* IE 10+ */
 
   &::-webkit-scrollbar {
     display: none;
-    /* Chrome, Safari, Opera */
   }
 
-  /* Плавная прокрутка */
   scroll-behavior: smooth;
-
-  /* Предотвращаем выделение текста при прокрутке */
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
-/* Стили для кнопок внутри контейнера */
 .table-buttons-container .flex-nowrap {
   display: flex;
   flex-wrap: nowrap;
@@ -553,7 +552,6 @@ table:has(td:nth-child(10):nth-last-child(1)) {
   padding: 0.25rem;
 }
 
-/* Дополнительные стили для лучшей видимости границ кнопок */
 .table-buttons-container button[data-style="outline"] {
   border: 1px solid hsl(var(--border)) !important;
   background-color: hsl(var(--background));

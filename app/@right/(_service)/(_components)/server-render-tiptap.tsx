@@ -1,7 +1,6 @@
 // @/app/@right/(_service)/(_components)/server-render-tiptap.tsx
 // Server-side utilities for rendering TipTap JSON to React JSX
-// Comments in English: This module converts TipTap Document JSON into static React elements
-// for server-side rendering, ensuring all content is present in the initial HTML.
+// Comments in English: Minimal rendering functions, styles come from SCSS
 
 import React from "react";
 import { TipTapNode, TipTapDocument } from "./content-renderer/types";
@@ -23,33 +22,25 @@ interface RenderOptions {
 
 /**
  * Generate a URL-friendly ID from H2 heading text
- * Used for anchor navigation links
- * 
- * @param h2Text - The text content of the H2 heading
- * @param fallbackIndex - Fallback index if text is empty
- * @returns URL-safe ID string
  */
 export function generateSectionId(h2Text: string, fallbackIndex: number): string {
   if (!h2Text || !h2Text.trim()) {
     return `section-${fallbackIndex}`;
   }
 
-  // Convert to lowercase and remove special characters
-  // Support both Latin and Cyrillic characters
   const slug = h2Text
     .toLowerCase()
-    .replace(/[^a-z0-9а-яё\s-]/g, '') // Keep letters, numbers, spaces, hyphens
+    .replace(/[^a-z0-9а-яё\s-]/g, '')
     .trim()
-    .replace(/\s+/g, '-') // Replace spaces with hyphens
-    .replace(/-+/g, '-') // Remove duplicate hyphens
-    .slice(0, 60); // Limit length
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-')
+    .slice(0, 60);
 
   return slug || `section-${fallbackIndex}`;
 }
 
 /**
  * Extract plain text from TipTap node recursively
- * Used for generating IDs and metadata
  */
 export function extractTextFromNode(node: TipTapNode): string {
   if (node.type === "text" && node.text) {
@@ -71,7 +62,7 @@ export function extractTextFromNode(node: TipTapNode): string {
 
 /**
  * Render heading node (h1-h6)
- * Adds id attribute to H2 for anchor navigation
+ * Minimal approach - styles come from heading-node.scss
  */
 function renderHeading(
   node: TipTapNode,
@@ -88,11 +79,13 @@ function renderHeading(
     ? { textAlign: textAlign as React.CSSProperties['textAlign'] }
     : {};
 
-  // Add padding and scroll margin for H2 headings
+  // Add scroll margin for anchor navigation (prevents header overlap)
+  style.scrollMarginTop = '100px';
+
+  // Add padding for H2 (from original ContentRenderer)
   if (level === 2) {
     style.paddingRight = '36px';
     style.paddingTop = '4px';
-    style.scrollMarginTop = '100px'; // Offset for fixed header
   }
 
   // Add id to H2 for anchor navigation
@@ -100,7 +93,7 @@ function renderHeading(
     ? { id: sectionId, style }
     : { style };
 
-  // Return appropriate heading level
+  // Clean HTML without extra classes - SCSS handles styling
   switch (level) {
     case 1:
       return <h1 key={index} style={style}>{content}</h1>;
@@ -179,7 +172,6 @@ function renderHorizontalRule(index: number): React.ReactNode {
 
 /**
  * Render image node
- * Note: Using standard img tag here. Can be upgraded to Next/Image if needed.
  */
 function renderImage(node: TipTapNode, index: number): React.ReactNode {
   const src = node.attrs?.src || "";
@@ -201,6 +193,7 @@ function renderImage(node: TipTapNode, index: number): React.ReactNode {
 
 /**
  * Render list (bullet or ordered)
+ * Clean HTML - list-node.scss handles styling
  */
 function renderList(node: TipTapNode, index: number): React.ReactNode {
   const isOrdered = node.type === "orderedList";
@@ -234,7 +227,6 @@ function renderTable(node: TipTapNode, index: number): React.ReactNode {
     renderTipTapNode(child, idx)
   ) || [];
 
-  // Detect if table has header rows
   const hasHeaders = node.content?.some(row =>
     row.type === 'tableRow' &&
     row.content?.some(cell => cell.type === 'tableHeader')
@@ -349,7 +341,6 @@ function renderText(node: TipTapNode): string {
 
 /**
  * Main dispatcher for rendering TipTap nodes
- * Routes to appropriate renderer based on node type
  */
 export function renderTipTapNode(
   node: TipTapNode,
@@ -396,11 +387,6 @@ export function renderTipTapNode(
 
 /**
  * Render complete TipTap document to React elements
- * Main entry point for server-side rendering
- * 
- * @param document - TipTap JSON document
- * @param sectionId - Optional ID to add to first H2 heading
- * @returns Array of React elements
  */
 export function renderTipTapDocument(
   document: TipTapDocument,
@@ -410,7 +396,6 @@ export function renderTipTapDocument(
     return [];
   }
 
-  // Track if we've added the sectionId to an H2 yet
   let h2IdApplied = false;
 
   return document.content.map((node, index) => {
@@ -428,9 +413,6 @@ export function renderTipTapDocument(
 // VALIDATION UTILITIES
 // ============================================
 
-/**
- * Validate that the provided object is a valid TipTap document
- */
 export function isValidTipTapDocument(doc: any): doc is TipTapDocument {
   return (
     doc &&
@@ -440,9 +422,6 @@ export function isValidTipTapDocument(doc: any): doc is TipTapDocument {
   );
 }
 
-/**
- * Safe wrapper for rendering that handles invalid documents
- */
 export function safeRenderTipTapDocument(
   document: any,
   sectionId?: string
