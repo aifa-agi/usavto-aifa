@@ -22,7 +22,7 @@ const MOBILE_MENU_OFFSET = 40;
 function EditableNavBarContent() {
   const [isLargeScreen, setIsLargeScreen] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
-
+  console.log("EditableNavBarContent rendered");
   const pathname = usePathname();
   const router = useRouter();
 

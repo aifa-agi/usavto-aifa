@@ -12,7 +12,7 @@ export async function NavBar() {
     user?.type && ["architect", "editor", "admin"].includes(user.type);
 
   if (isPrivilegedUser) {
-    return <EditableNavBar />;
+    return <div className="relative"> <EditableNavBar /></div>;
   }
   return <StaticNavBar />;
 }

@@ -2,7 +2,7 @@
 
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { DialogState, DialogType, InputType, PageImages } from "../types";
 import { InputFields } from "./input-fields";
 import {
@@ -61,9 +61,24 @@ export function DialogContent({
   keywords,
   images,
 }: DialogContentProps) {
+  // State for the container element
+  const [container, setContainer] = useState<HTMLElement | null>(null);
+
+  // Get the right-slot container on mount
+  useEffect(() => {
+    const el = document.getElementById("right-slot");
+    console.log("Right slot element:", el);
+    if (el) {
+      setContainer(el);
+      console.log("Container set successfully");
+    } else {
+      console.log("ERROR: Right slot element NOT FOUND!");
+    }
+  }, []);
+
   if (!dialog.open) return null;
 
-  // NEW: Handle "Information Does Not Exist" button click
+  // Handle "Information Does Not Exist" button click
   const handleInfoDoesNotExist = () => {
     setInput("Information does not exist");
   };
@@ -109,7 +124,7 @@ export function DialogContent({
       );
     }
 
-    // NEW: Knowledge Base validation - input must have content
+    // Knowledge Base validation - input must have content
     if (dialog.inputType === "knowledge-base") {
       return input.trim().length > 0;
     }
@@ -117,14 +132,14 @@ export function DialogContent({
     return input.trim().length > 0;
   };
 
-  // NEW: Determine dialog width based on input type
+  // Determine dialog width based on input type
   const getDialogWidth = () => {
     if (dialog.inputType === "images") return "sm:max-w-[600px]";
     if (dialog.inputType === "knowledge-base") return "sm:max-w-[600px]";
     return "sm:max-w-[425px]";
   };
 
-  // NEW: Determine if we should show "Information Does Not Exist" button
+  // Determine if we should show "Information Does Not Exist" button
   const showInfoButton =
     dialog.inputType === "knowledge-base" &&
     dialog.knowledgeBase?.showInfoButton !== false;
@@ -132,6 +147,7 @@ export function DialogContent({
   return (
     <Dialog open onOpenChange={onClose}>
       <ShadcnDialogContent
+        container={container}
         className={`${getDialogWidth()} ${dialog.type === "delete" ? "border-2 border-red-600" : ""
           }`}
       >
@@ -145,8 +161,8 @@ export function DialogContent({
         {dialog.type !== "delete" && (
           <div
             className={`grid gap-4 py-2 ${dialog.inputType === "knowledge-base"
-                ? "max-h-[500px] overflow-y-auto custom-scrollbar"
-                : ""
+              ? "max-h-[500px] overflow-y-auto custom-scrollbar"
+              : ""
               }`}
           >
             <InputFields
@@ -167,7 +183,7 @@ export function DialogContent({
         )}
 
         <DialogFooter>
-          {/* NEW: "Information Does Not Exist" button for Knowledge Base */}
+          {/* "Information Does Not Exist" button for Knowledge Base */}
           {showInfoButton && (
             <Button
               type="button"

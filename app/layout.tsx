@@ -94,7 +94,14 @@ export default async function RootLayout({
                         <ResizablePanel defaultSize={60} minSize={35}>
                           {/* --- START: CORRECTED BLOCK --- */}
                           <NavigationMenuProvider>
-                            <div className="relative flex flex-col h-screen">
+                            <div
+                              id="right-slot"
+                              className="relative flex flex-col h-screen"
+                              style={{
+                                isolation: 'isolate',
+                                overflow: 'hidden'
+                              }}
+                            >
                               <NavBar />
                               <main className="flex-1 overflow-y-auto hide-scrollbar">
                                 {right}

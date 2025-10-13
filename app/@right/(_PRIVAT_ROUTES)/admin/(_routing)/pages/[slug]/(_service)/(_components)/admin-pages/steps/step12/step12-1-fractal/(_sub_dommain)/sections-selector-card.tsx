@@ -1,13 +1,5 @@
 // File: @/app/@right/(_PRIVAT_ROUTES)/admin/(_routing)/pages/[slug]/(_service)/(_components)/admin-pages/steps/step12/step12-1-fractal/(_sub_dommain)/sections-selector-card.tsx
 
-/**
- * Changes (EN):
- * - "All" button: removed icon
- * - Section buttons: added px- padding and text-left alignment
- * - Maintains four-state system: Locked, Next, Active, Completed
- * - Enforces sequential activation based on unlockedIndex logic
- */
-
 import * as React from "react";
 import { CheckCircle, Edit, Edit2, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
