@@ -67,12 +67,8 @@ export function DialogContent({
   // Get the right-slot container on mount
   useEffect(() => {
     const el = document.getElementById("right-slot");
-    console.log("Right slot element:", el);
     if (el) {
       setContainer(el);
-      console.log("Container set successfully");
-    } else {
-      console.log("ERROR: Right slot element NOT FOUND!");
     }
   }, []);
 
@@ -148,6 +144,9 @@ export function DialogContent({
     <Dialog open onOpenChange={onClose}>
       <ShadcnDialogContent
         container={container}
+        onInteractOutside={(e) => {
+          e.preventDefault(); // Предотвращает закрытие при клике снаружи
+        }}
         className={`${getDialogWidth()} ${dialog.type === "delete" ? "border-2 border-red-600" : ""
           }`}
       >
@@ -161,8 +160,8 @@ export function DialogContent({
         {dialog.type !== "delete" && (
           <div
             className={`grid gap-4 py-2 ${dialog.inputType === "knowledge-base"
-              ? "max-h-[500px] overflow-y-auto custom-scrollbar"
-              : ""
+                ? "max-h-[500px] overflow-y-auto custom-scrollbar"
+                : ""
               }`}
           >
             <InputFields
