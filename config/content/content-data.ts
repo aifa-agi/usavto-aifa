@@ -2912,7 +2912,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-13T17:54:49.048Z",
-        "updatedAt": "2025-10-13T20:29:48.551Z",
+        "updatedAt": "2025-10-13T20:32:43.057Z",
         "order": 2,
         "badgeName": "Путевые",
         "description": "Узнайте, как правильно делать путевые листы в 2025 году! Полное руководство с актуальными требованиями, образцами и рекомендациями для успешного оформления.",
@@ -3262,6 +3262,207 @@ export const contentData = {
                     "additionalData": {
                       "minWords": 20,
                       "maxWords": 50,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "часто задаваемые вопросы",
+              "путевые листы",
+              "оформление путевых листов",
+              "требования к путевым листам",
+              "заполнение путевых листов",
+              "советы по оформлению путевых листов",
+              "проблемы с путевыми листами"
+            ],
+            "taxonomy": "FAQ",
+            "attention": "Узнайте ответы на самые распространенные вопросы о путевых листах!",
+            "intent": "Предоставить пользователям полезную информацию и ответы на часто задаваемые вопросы о путевых листах.",
+            "audiences": "Владельцы транспортных компаний, бухгалтеры, диспетчеры | Уровень: средний | Проблемы: необходимость соблюдения законодательства и правильного оформления документов.",
+            "selfPrompt": "Generate h2 in section 'Часто задаваемые вопросы' of page 'Как правильно делать путевые листы: полное руководство 2025'  GOAL: Предоставить пользователям ответы на распространенные вопросы о путевых листах, чтобы помочь им избежать ошибок и штрафов.",
+            "writingStyle": "conversational",
+            "contentFormat": "professional",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "keywords": [
+                  "путевые листы",
+                  "часто задаваемые вопросы"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Здесь вы найдете ответы на самые распространенные вопросы.",
+                "intent": "Ввести читателя в раздел часто задаваемых вопросов.",
+                "audiences": "Владельцы транспортных компаний, бухгалтеры, диспетчеры | Уровень: средний",
+                "selfPrompt": "Generate p in section 'Часто задаваемые вопросы' of page 'Как правильно делать путевые листы: полное руководство 2025'  GOAL: Ввести читателя в раздел часто задаваемых вопросов о путевых листах.",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "keywords": [
+                  "зачем нужны путевые листы",
+                  "значение путевых листов"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Почему путевые листы важны для бизнеса?",
+                "intent": "Объяснить значение путевых листов для транспортных компаний.",
+                "audiences": "Владельцы транспортных компаний, бухгалтеры | Уровень: средний",
+                "selfPrompt": "Generate h3 in section 'Часто задаваемые вопросы' of page 'Как правильно делать путевые листы: полное руководство 2025'  GOAL: Объяснить, почему путевые листы важны для бизнеса.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "keywords": [
+                      "значение путевых листов",
+                      "польза путевых листов"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Путевые листы помогают контролировать расходы и соблюдение законодательства.",
+                    "intent": "Объяснить, как путевые листы помогают в управлении транспортом.",
+                    "audiences": "Владельцы транспортных компаний, бухгалтеры | Уровень: средний",
+                    "selfPrompt": "Generate p in section 'Часто задаваемые вопросы' of page 'Как правильно делать путевые листы: полное руководство 2025'  GOAL: Объяснить, как путевые листы помогают в управлении транспортом.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-2",
+                "tag": "h3",
+                "keywords": [
+                  "кто заполняет путевой лист",
+                  "ответственные лица"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Кто отвечает за заполнение путевых листов?",
+                "intent": "Уточнить, кто должен заниматься заполнением путевых листов.",
+                "audiences": "Диспетчеры, бухгалтеры | Уровень: средний",
+                "selfPrompt": "Generate h3 in section 'Часто задаваемые вопросы' of page 'Как правильно делать путевые листы: полное руководство 2025'  GOAL: Уточнить, кто должен заниматься заполнением путевых листов.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "ответственные лица",
+                      "заполнение путевых листов"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Заполнение путевых листов — важная задача для диспетчеров и бухгалтеров.",
+                    "intent": "Объяснить, кто отвечает за заполнение путевых листов.",
+                    "audiences": "Диспетчеры, бухгалтеры | Уровень: средний",
+                    "selfPrompt": "Generate p in section 'Часто задаваемые вопросы' of page 'Как правильно делать путевые листы: полное руководство 2025'  GOAL: Объяснить, кто отвечает за заполнение путевых листов.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-3",
+                "tag": "h3",
+                "keywords": [
+                  "новые требования к путевым листам",
+                  "изменения в законодательстве"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Какие новые требования к путевым листам в 2025 году?",
+                "intent": "Объяснить изменения в законодательстве, касающиеся путевых листов.",
+                "audiences": "Бухгалтеры, владельцы транспортных компаний | Уровень: средний",
+                "selfPrompt": "Generate h3 in section 'Часто задаваемые вопросы' of page 'Как правильно делать путевые листы: полное руководство 2025'  GOAL: Объяснить изменения в законодательстве, касающиеся путевых листов.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "изменения в законодательстве",
+                      "требования к путевым листам"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Знание новых требований поможет избежать штрафов.",
+                    "intent": "Объяснить, как новые требования влияют на оформление путевых листов.",
+                    "audiences": "Бухгалтеры, владельцы транспортных компаний | Уровень: средний",
+                    "selfPrompt": "Generate p in section 'Часто задаваемые вопросы' of page 'Как правильно делать путевые листы: полное руководство 2025'  GOAL: Объяснить, как новые требования влияют на оформление путевых листов.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-4",
+                "tag": "h3",
+                "keywords": [
+                  "ошибки при заполнении путевых листов",
+                  "как избежать штрафов"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Как избежать распространенных ошибок при заполнении путевых листов?",
+                "intent": "Предоставить советы по избежанию ошибок при заполнении путевых листов.",
+                "audiences": "Бухгалтеры, диспетчеры | Уровень: средний",
+                "selfPrompt": "Generate h3 in section 'Часто задаваемые вопросы' of page 'Как правильно делать путевые листы: полное руководство 2025'  GOAL: Предоставить советы по избежанию ошибок при заполнении путевых листов.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "ошибки при заполнении",
+                      "советы по оформлению"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Избегайте распространенных ошибок, чтобы не получить штрафы.",
+                    "intent": "Объяснить, как избежать распространенных ошибок при заполнении путевых листов.",
+                    "audiences": "Бухгалтеры, диспетчеры | Уровень: средний",
+                    "selfPrompt": "Generate p in section 'Часто задаваемые вопросы' of page 'Как правильно делать путевые листы: полное руководство 2025'  GOAL: Объяснить, как избежать распространенных ошибок при заполнении путевых листов.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
                       "actualContent": ""
                     }
                   }
@@ -7628,5 +7829,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-13T20:32:44.187Z";
+export const lastUpdated = "2025-10-13T20:33:32.538Z";
 export const generatedBy = "menu-persist-api";
