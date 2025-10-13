@@ -2912,7 +2912,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-13T17:54:49.048Z",
-        "updatedAt": "2025-10-13T20:33:31.427Z",
+        "updatedAt": "2025-10-13T20:33:41.372Z",
         "order": 2,
         "badgeName": "Путевые",
         "description": "Узнайте, как правильно делать путевые листы в 2025 году! Полное руководство с актуальными требованиями, образцами и рекомендациями для успешного оформления.",
@@ -2978,7 +2978,8 @@ export const contentData = {
                   "minWords": 100,
                   "maxWords": 180,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-1-2",
@@ -2995,9 +2996,11 @@ export const contentData = {
                   "minWords": 60,
                   "maxWords": 120,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-2",
@@ -3575,7 +3578,8 @@ export const contentData = {
               }
             ]
           }
-        ]
+        ],
+        "isReadyDraftForPerplexity": false
       }
     ],
     "order": 15
@@ -7934,5 +7938,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-13T20:33:42.596Z";
+export const lastUpdated = "2025-10-13T20:33:46.571Z";
 export const generatedBy = "menu-persist-api";
