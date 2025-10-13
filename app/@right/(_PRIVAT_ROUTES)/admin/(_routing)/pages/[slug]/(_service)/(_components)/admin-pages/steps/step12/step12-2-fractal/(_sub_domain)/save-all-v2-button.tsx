@@ -13,6 +13,9 @@ import { useStep12V2Save } from "../(_hooks)/use-step12-v2-save";
 import { STEP12_V2_TEXTS } from "../(_constants)/step12-v2-texts";
 import { STEP12_V2_IDS } from "../(_constants)/step12-v2-ids";
 import { PageData } from "@/app/@right/(_service)/(_types)/page-types";
+import { Button } from "@/components/ui/button";
+import { STEP12_TEXTS } from "../../step12-1-fractal/(_constants)/step12-texts";
+import { Save } from "lucide-react";
 
 interface SaveAllV2ButtonProps {
     page?: PageData | null;
@@ -91,24 +94,32 @@ export function SaveAllV2Button({ page }: SaveAllV2ButtonProps) {
 
     return (
         <div className="flex items-center gap-2">
-            <button
-                type="button"
-                onClick={onClick}
-                disabled={disabled}
-                className={cx(
-                    "inline-flex items-center rounded-md border px-3 py-1.5 text-xs font-medium transition-colors",
+            {disabled ? (
+                /* Disabled state: gray muted */
+                <Button
+                    type="button"
+                    onClick={onClick}
                     disabled
-                        ? "cursor-not-allowed border-border bg-muted text-muted-foreground"
-                        : "border-emerald-500 bg-emerald-500/15 text-white hover:bg-emerald-500/20"
-                )}
-                aria-busy={saving}
-                data-testid={STEP12_V2_IDS.selectors.saveAllButton}
-            >
-                {saving
-                    ? STEP12_V2_TEXTS.labels.saving
-                    : STEP12_V2_TEXTS.labels.saveAll
-                }
-            </button>
+                    variant="secondary"
+                    size="sm"
+                    className="cursor-not-allowed opacity-50"
+                    aria-busy={saving}
+                >
+                    {saving ? STEP12_TEXTS.labels.saving : STEP12_TEXTS.labels.saveAll}
+                </Button>
+            ) : (
+                /* Ready state: pulsing orange */
+                <Button
+                    type="button"
+                    onClick={onClick}
+                    className="bg-orange-500 hover:bg-orange-600 text-white animate-pulse-strong shadow-md"
+                    size="sm"
+                    aria-busy={saving}
+                >
+                    <Save className="size-3 mr-1.5" />
+                    {saving ? STEP12_TEXTS.labels.saving : STEP12_TEXTS.labels.saveAll}
+                </Button>
+            )}
         </div>
     );
 }

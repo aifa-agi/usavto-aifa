@@ -20,7 +20,6 @@ import { useStep12Buttons } from "../(_contexts)/step12-buttons-context";
 export function SaveAllButton({ page }: { page?: PageData | null }) {
     const { save, saving } = useStep12Save();
     const { allConfirmed, resetAll } = useStep12Buttons();
-
     const disabled = !allConfirmed || saving || !page;
 
     const onClick = async () => {
