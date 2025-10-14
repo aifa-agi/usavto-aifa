@@ -10838,7 +10838,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-14T19:46:56.756Z",
-        "updatedAt": "2025-10-14T20:04:06.514Z",
+        "updatedAt": "2025-10-14T20:05:17.410Z",
         "order": 4,
         "badgeName": "Блог",
         "description": "Узнайте, какие классы есть в Яндекс Такси, их требования и тарифы. Получите полную информацию для выбора подходящего автомобиля!",
@@ -11414,6 +11414,111 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-5",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "итоги классов автомобилей Яндекс Такси",
+              "рекомендации по выбору автомобиля",
+              "следующие шаги для водителей",
+              "основные выводы о тарифах",
+              "практическое применение информации",
+              "польза для водителей такси"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, как выбрать подходящий класс автомобиля для работы в Яндекс Такси!",
+            "intent": "Подвести итоги и предоставить рекомендации по выбору автомобиля для водителей такси.",
+            "audiences": "Профессиональные водители такси и предприниматели в сфере пассажирских перевозок.",
+            "selfPrompt": "Generate a concluding section that summarizes key takeaways about car classes in Yandex Taxi, provides actionable recommendations for drivers, and outlines next steps for those considering registration. Highlight the importance of understanding the information provided in previous sections.",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 200,
+              "maxWords": 300,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-5-1",
+                "tag": "p",
+                "keywords": [
+                  "итоги",
+                  "рекомендации",
+                  "выбор автомобиля"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Подводя итоги, важно помнить о ключевых моментах.",
+                "intent": "Суммировать основные выводы о классах автомобилей и их требованиях.",
+                "audiences": "Профессиональные водители такси.",
+                "selfPrompt": "Generate a paragraph summarizing the key takeaways regarding car classes and their requirements for Yandex Taxi, emphasizing the importance of this information for drivers.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-5-3",
+                "tag": "table",
+                "keywords": [
+                  "классы автомобилей",
+                  "требования",
+                  "рекомендации"
+                ],
+                "taxonomy": "data-driven",
+                "attention": "Посмотрите на таблицу, чтобы быстро понять требования к классам автомобилей.",
+                "intent": "Предоставить наглядное представление требований к классам автомобилей Яндекс Такси.",
+                "audiences": "Водители и предприниматели в сфере такси.",
+                "selfPrompt": "Generate a table summarizing the classes of cars for Yandex Taxi, including their requirements and recommendations for drivers. Ensure the table is clear and easy to read.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-5-2",
+                "tag": "ul",
+                "keywords": [
+                  "рекомендации",
+                  "следующие шаги",
+                  "выбор тарифа"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Следуйте этим рекомендациям, чтобы сделать правильный выбор.",
+                "intent": "Предоставить список рекомендаций и следующих шагов для водителей такси.",
+                "audiences": "Профессиональные водители такси.",
+                "selfPrompt": "Generate a list of actionable recommendations for drivers regarding the selection of car classes and tariffs in Yandex Taxi. Include practical steps that can be easily followed.",
+                "additionalData": {
+                  "minWords": 50,
+                  "maxWords": 90,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-5-3",
+                "tag": "p",
+                "keywords": [
+                  "заключение",
+                  "польза для водителей"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Не забывайте, что правильный выбор автомобиля может существенно повлиять на ваш доход.",
+                "intent": "Подвести итог и подчеркнуть важность выбора правильного класса автомобиля.",
+                "audiences": "Профессиональные водители такси.",
+                "selfPrompt": "Generate a concluding paragraph that emphasizes the importance of selecting the right class of car for maximizing earnings in Yandex Taxi. Encourage drivers to utilize the information provided.",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              }
+            ]
           }
         ]
       }
@@ -11446,5 +11551,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T20:05:17.153Z";
+export const lastUpdated = "2025-10-14T20:05:29.690Z";
 export const generatedBy = "menu-persist-api";
