@@ -8259,7 +8259,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-14T18:47:37.663Z",
-        "updatedAt": "2025-10-14T19:01:57.444Z",
+        "updatedAt": "2025-10-14T19:03:30.973Z",
         "order": 2,
         "description": "Узнайте, как заказать доставку через Яндекс Такси до двери с нашей пошаговой инструкцией. Просто следуйте рекомендациям и получите ваши посылки быстро и удобно!",
         "images": [
@@ -8626,6 +8626,211 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "часто задаваемые вопросы",
+              "доставка Яндекс Такси",
+              "информация о доставке",
+              "помощь пользователям",
+              "вопросы и ответы",
+              "как заказать доставку",
+              "услуги Яндекс Такси"
+            ],
+            "taxonomy": "FAQ",
+            "attention": "Узнайте ответы на самые распространенные вопросы о доставке через Яндекс Такси.",
+            "intent": "Предоставить пользователям информацию, которая поможет им лучше понять процесс доставки и решить возможные проблемы.",
+            "audiences": "Пользователи Яндекс Такси, ищущие информацию о доставке; владельцы малого бизнеса, использующие услуги доставки.",
+            "selfPrompt": "Generate a comprehensive FAQ section addressing common questions and concerns related to ordering delivery through Yandex Taxi, ensuring clarity and user support.",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "keywords": [
+                  "вопросы о доставке",
+                  "информация для пользователей"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Здесь вы найдете ответы на часто задаваемые вопросы, которые помогут вам лучше понять процесс доставки.",
+                "intent": "Ввести пользователей в раздел с вопросами и ответами, предоставляя им необходимую информацию.",
+                "audiences": "Пользователи Яндекс Такси, ищущие помощь и информацию.",
+                "selfPrompt": "Generate an introductory paragraph for the FAQ section, highlighting the importance of addressing common user questions about Yandex Taxi delivery.",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "keywords": [
+                  "как заказать доставку",
+                  "пошаговая инструкция",
+                  "доставка Яндекс Такси"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Как правильно заказать доставку через Яндекс Такси?",
+                "intent": "Объяснить пользователям, как правильно оформить заказ на доставку через Яндекс Такси.",
+                "audiences": "Пользователи, которые впервые заказывают доставку через Яндекс Такси.",
+                "selfPrompt": "Generate a subsection addressing how to properly order delivery through Yandex Taxi, including step-by-step instructions.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "keywords": [
+                      "инструкция по заказу",
+                      "пошаговые действия"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Следуйте этим шагам, чтобы успешно заказать доставку.",
+                    "intent": "Предоставить четкие шаги для оформления заказа.",
+                    "audiences": "Пользователи, нуждающиеся в пошаговом руководстве.",
+                    "selfPrompt": "Generate a paragraph detailing the specific steps users should follow to place an order for delivery through Yandex Taxi.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-2",
+                "tag": "h3",
+                "keywords": [
+                  "платежи за доставку",
+                  "оплата Яндекс Такси",
+                  "как оплатить"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Как осуществляется оплата за доставку?",
+                "intent": "Объяснить пользователям, как они могут оплатить доставку через Яндекс Такси.",
+                "audiences": "Пользователи, интересующиеся процессом оплаты.",
+                "selfPrompt": "Generate a subsection explaining how users can pay for their delivery through Yandex Taxi, including payment methods.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "методы оплаты",
+                      "информация о платежах"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Узнайте о доступных методах оплаты за доставку.",
+                    "intent": "Предоставить информацию о различных способах оплаты.",
+                    "audiences": "Пользователи, нуждающиеся в информации о платежах.",
+                    "selfPrompt": "Generate a paragraph detailing the available payment methods for delivery through Yandex Taxi.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-3",
+                "tag": "h3",
+                "keywords": [
+                  "время доставки",
+                  "сроки доставки",
+                  "как долго ждать"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Сколько времени занимает доставка?",
+                "intent": "Предоставить информацию о времени, необходимом для доставки через Яндекс Такси.",
+                "audiences": "Пользователи, интересующиеся сроками доставки.",
+                "selfPrompt": "Generate a subsection discussing the estimated delivery times for Yandex Taxi services.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "время ожидания",
+                      "информация о доставке"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Узнайте, как долго обычно занимает доставка.",
+                    "intent": "Объяснить пользователям, сколько времени они могут ожидать, пока их заказ будет доставлен.",
+                    "audiences": "Пользователи, ожидающие информацию о сроках доставки.",
+                    "selfPrompt": "Generate a paragraph explaining how long users can typically expect to wait for their delivery through Yandex Taxi.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-4",
+                "tag": "h3",
+                "keywords": [
+                  "проблемы с доставкой",
+                  "что делать если",
+                  "поддержка Яндекс Такси"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Что делать, если возникли проблемы с доставкой?",
+                "intent": "Объяснить пользователям, как действовать в случае возникновения проблем с доставкой.",
+                "audiences": "Пользователи, столкнувшиеся с проблемами при доставке.",
+                "selfPrompt": "Generate a subsection providing guidance on what users should do if they encounter issues with their delivery through Yandex Taxi.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "решение проблем",
+                      "поддержка клиентов"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Следуйте этим рекомендациям для решения проблем с доставкой.",
+                    "intent": "Предоставить пользователям конкретные шаги для решения проблем.",
+                    "audiences": "Пользователи, нуждающиеся в помощи по вопросам доставки.",
+                    "selfPrompt": "Generate a paragraph detailing the steps users can take to resolve issues they may face with their delivery through Yandex Taxi.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -8658,5 +8863,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T19:03:29.976Z";
+export const lastUpdated = "2025-10-14T19:05:01.853Z";
 export const generatedBy = "menu-persist-api";
