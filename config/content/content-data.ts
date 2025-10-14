@@ -6825,7 +6825,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-14T16:33:14.979Z",
-        "updatedAt": "2025-10-14T17:07:56.004Z",
+        "updatedAt": "2025-10-14T17:08:03.232Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "какую машину купить для работы в такси комфорт",
@@ -8187,7 +8187,8 @@ export const contentData = {
                   "minWords": 60,
                   "maxWords": 240,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-7-2",
@@ -8205,7 +8206,8 @@ export const contentData = {
                   "minWords": 100,
                   "maxWords": 200,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "table-6-2-2",
@@ -8223,7 +8225,8 @@ export const contentData = {
                   "minWords": 200,
                   "maxWords": 300,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "ul-7-3",
@@ -8241,7 +8244,8 @@ export const contentData = {
                   "minWords": 60,
                   "maxWords": 120,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-7-4",
@@ -8259,7 +8263,8 @@ export const contentData = {
                   "minWords": 80,
                   "maxWords": 160,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "blockquote-7-5",
@@ -8277,12 +8282,14 @@ export const contentData = {
                   "minWords": 15,
                   "maxWords": 35,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           }
         ],
-        "isReadyDraftForPerplexity": false
+        "isReadyDraftForPerplexity": true
       }
     ],
     "order": 16
@@ -8313,5 +8320,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T17:08:02.344Z";
+export const lastUpdated = "2025-10-14T17:08:54.929Z";
 export const generatedBy = "menu-persist-api";
