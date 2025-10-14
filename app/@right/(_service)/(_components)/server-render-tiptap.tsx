@@ -1,6 +1,6 @@
 // @/app/@right/(_service)/(_components)/server-render-tiptap.tsx
 // Server-side utilities for rendering TipTap JSON to React JSX
-// Comments in English: Minimal rendering functions, styles come from SCSS
+// Comments in English: Minimal rendering functions with Cyrillic transliteration
 
 import React from "react";
 import { TipTapNode, TipTapDocument } from "./content-renderer/types";
@@ -21,26 +21,63 @@ interface RenderOptions {
 // ============================================
 
 /**
+ * Transliterate Cyrillic characters to Latin equivalents
+ * Supports Russian and Ukrainian alphabets
+ */
+function transliterate(text: string): string {
+  const cyrillicToLatin: Record<string, string> = {
+    // Russian lowercase
+    'а': 'a', 'б': 'b', 'в': 'v', 'г': 'g', 'д': 'd', 'е': 'e', 'ё': 'yo',
+    'ж': 'zh', 'з': 'z', 'и': 'i', 'й': 'y', 'к': 'k', 'л': 'l', 'м': 'm',
+    'н': 'n', 'о': 'o', 'п': 'p', 'р': 'r', 'с': 's', 'т': 't', 'у': 'u',
+    'ф': 'f', 'х': 'h', 'ц': 'ts', 'ч': 'ch', 'ш': 'sh', 'щ': 'sch',
+    'ъ': '', 'ы': 'y', 'ь': '', 'э': 'e', 'ю': 'yu', 'я': 'ya',
+    // Russian uppercase
+    'А': 'a', 'Б': 'b', 'В': 'v', 'Г': 'g', 'Д': 'd', 'Е': 'e', 'Ё': 'yo',
+    'Ж': 'zh', 'З': 'z', 'И': 'i', 'Й': 'y', 'К': 'k', 'Л': 'l', 'М': 'm',
+    'Н': 'n', 'О': 'o', 'П': 'p', 'Р': 'r', 'С': 's', 'Т': 't', 'У': 'u',
+    'Ф': 'f', 'Х': 'h', 'Ц': 'ts', 'Ч': 'ch', 'Ш': 'sh', 'Щ': 'sch',
+    'Ъ': '', 'Ы': 'y', 'Ь': '', 'Э': 'e', 'Ю': 'yu', 'Я': 'ya',
+    // Ukrainian specific
+    'і': 'i', 'ї': 'yi', 'є': 'ye', 'ґ': 'g',
+    'І': 'i', 'Ї': 'yi', 'Є': 'ye', 'Ґ': 'g'
+  };
+
+  return text.split('').map(char => cyrillicToLatin[char] || char).join('');
+}
+
+/**
  * Generate a URL-friendly ID from H2 heading text
+ * UPDATED: Transliterates Cyrillic to Latin for clean URLs
+ * 
+ * @param h2Text - The text content of the H2 heading
+ * @param fallbackIndex - Fallback index if text is empty
+ * @returns URL-safe ID string with Latin characters only
  */
 export function generateSectionId(h2Text: string, fallbackIndex: number): string {
   if (!h2Text || !h2Text.trim()) {
     return `section-${fallbackIndex}`;
   }
 
-  const slug = h2Text
+  // Step 1: Transliterate Cyrillic to Latin
+  const transliterated = transliterate(h2Text);
+
+  // Step 2: Convert to lowercase and remove special characters
+  // Keep only Latin letters (a-z), numbers (0-9), spaces, and hyphens
+  const slug = transliterated
     .toLowerCase()
-    .replace(/[^a-z0-9а-яё\s-]/g, '')
+    .replace(/[^a-z0-9\s-]/g, '') // Remove non-Latin characters
     .trim()
-    .replace(/\s+/g, '-')
-    .replace(/-+/g, '-')
-    .slice(0, 60);
+    .replace(/\s+/g, '-') // Replace spaces with hyphens
+    .replace(/-+/g, '-') // Remove duplicate hyphens
+    .slice(0, 60); // Limit length to 60 characters
 
   return slug || `section-${fallbackIndex}`;
 }
 
 /**
  * Extract plain text from TipTap node recursively
+ * Used for generating IDs and metadata
  */
 export function extractTextFromNode(node: TipTapNode): string {
   if (node.type === "text" && node.text) {
@@ -341,6 +378,7 @@ function renderText(node: TipTapNode): string {
 
 /**
  * Main dispatcher for rendering TipTap nodes
+ * Routes to appropriate renderer based on node type
  */
 export function renderTipTapNode(
   node: TipTapNode,
@@ -387,6 +425,11 @@ export function renderTipTapNode(
 
 /**
  * Render complete TipTap document to React elements
+ * Main entry point for server-side rendering
+ * 
+ * @param document - TipTap JSON document
+ * @param sectionId - Optional ID to add to first H2 heading
+ * @returns Array of React elements
  */
 export function renderTipTapDocument(
   document: TipTapDocument,
@@ -396,6 +439,7 @@ export function renderTipTapDocument(
     return [];
   }
 
+  // Track if we've added the sectionId to an H2 yet
   let h2IdApplied = false;
 
   return document.content.map((node, index) => {
@@ -413,6 +457,9 @@ export function renderTipTapDocument(
 // VALIDATION UTILITIES
 // ============================================
 
+/**
+ * Validate that the provided object is a valid TipTap document
+ */
 export function isValidTipTapDocument(doc: any): doc is TipTapDocument {
   return (
     doc &&
@@ -422,6 +469,9 @@ export function isValidTipTapDocument(doc: any): doc is TipTapDocument {
   );
 }
 
+/**
+ * Safe wrapper for rendering that handles invalid documents
+ */
 export function safeRenderTipTapDocument(
   document: any,
   sectionId?: string
