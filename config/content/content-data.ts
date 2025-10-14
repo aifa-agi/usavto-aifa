@@ -6825,7 +6825,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-14T16:33:14.979Z",
-        "updatedAt": "2025-10-14T17:07:46.884Z",
+        "updatedAt": "2025-10-14T17:07:56.004Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "какую машину купить для работы в такси комфорт",
@@ -7908,7 +7908,8 @@ export const contentData = {
                   "minWords": 95,
                   "maxWords": 190,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-FAQ-1",
@@ -7942,9 +7943,11 @@ export const contentData = {
                       "minWords": 75,
                       "maxWords": 150,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "h3-FAQ-2",
@@ -7978,9 +7981,11 @@ export const contentData = {
                       "minWords": 75,
                       "maxWords": 150,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "h3-FAQ-3",
@@ -8014,9 +8019,11 @@ export const contentData = {
                       "minWords": 75,
                       "maxWords": 150,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "h3-FAQ-4",
@@ -8050,9 +8057,11 @@ export const contentData = {
                       "minWords": 75,
                       "maxWords": 150,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "h3-FAQ-5",
@@ -8086,9 +8095,11 @@ export const contentData = {
                       "minWords": 75,
                       "maxWords": 150,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "h3-FAQ-6",
@@ -8122,11 +8133,14 @@ export const contentData = {
                       "minWords": 75,
                       "maxWords": 150,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-7",
@@ -8299,5 +8313,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T17:07:55.114Z";
+export const lastUpdated = "2025-10-14T17:08:02.344Z";
 export const generatedBy = "menu-persist-api";
