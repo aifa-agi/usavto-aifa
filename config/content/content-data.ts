@@ -10838,7 +10838,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-14T19:46:56.756Z",
-        "updatedAt": "2025-10-14T20:02:22.756Z",
+        "updatedAt": "2025-10-14T20:04:06.514Z",
         "order": 4,
         "badgeName": "Блог",
         "description": "Узнайте, какие классы есть в Яндекс Такси, их требования и тарифы. Получите полную информацию для выбора подходящего автомобиля!",
@@ -11211,6 +11211,209 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "часто задаваемые вопросы Яндекс Такси",
+              "классы автомобилей Яндекс Такси",
+              "требования к автомобилям",
+              "тарифы Яндекс Такси",
+              "выбор автомобиля для такси",
+              "информация для водителей",
+              "проверка соответствия"
+            ],
+            "taxonomy": "FAQ",
+            "attention": "У вас есть вопросы о классах автомобилей Яндекс Такси? Мы собрали ответы на самые распространенные вопросы!",
+            "intent": "Предоставить пользователям ответы на часто задаваемые вопросы о классах автомобилей и требованиях Яндекс Такси.",
+            "audiences": "Профессиональные водители такси и предприниматели в сфере пассажирских перевозок, ищущие информацию о классах автомобилей и их требованиях.",
+            "selfPrompt": "Generate a FAQ section addressing common questions about car classes in Yandex Taxi, focusing on their requirements and tariffs. Highlight the importance of understanding these classes for drivers.",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "keywords": [
+                  "часто задаваемые вопросы",
+                  "информация о классах автомобилей",
+                  "требования Яндекс Такси"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Здесь вы найдете ответы на самые распространенные вопросы о классах автомобилей Яндекс Такси.",
+                "intent": "Ввести пользователей в раздел часто задаваемых вопросов, предоставляя краткий обзор.",
+                "audiences": "Профессиональные водители такси и предприниматели.",
+                "selfPrompt": "Generate an introductory paragraph for the FAQ section, summarizing the purpose and importance of the FAQs about Yandex Taxi car classes.",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "keywords": [
+                  "какие классы автомобилей доступны в Яндекс Такси",
+                  "требования к автомобилям Яндекс Такси",
+                  "информация для водителей"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Как узнать, какие классы автомобилей доступны в Яндекс Такси?",
+                "intent": "Ответить на вопрос о доступных классах автомобилей в Яндекс Такси.",
+                "audiences": "Профессиональные водители такси и предприниматели.",
+                "selfPrompt": "Generate a FAQ entry addressing the question about available car classes in Yandex Taxi, including their requirements.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "keywords": [
+                      "классы автомобилей",
+                      "требования Яндекс Такси"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Здесь вы найдете информацию о классах автомобилей, которые могут выполнять заказы в Яндекс Такси.",
+                    "intent": "Предоставить подробности о классах автомобилей и их требованиях.",
+                    "audiences": "Профессиональные водители такси.",
+                    "selfPrompt": "Generate a paragraph providing details about the classes of cars that can operate in Yandex Taxi, including specific requirements.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-2",
+                "tag": "h3",
+                "keywords": [
+                  "как проверить соответствие автомобиля",
+                  "требования к автомобилям Яндекс Такси"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Как проверить, соответствует ли мой автомобиль требованиям Яндекс Такси?",
+                "intent": "Объяснить, как водители могут проверить соответствие своих автомобилей требованиям Яндекс Такси.",
+                "audiences": "Профессиональные водители такси.",
+                "selfPrompt": "Generate a FAQ entry explaining how drivers can check if their car meets the requirements for Yandex Taxi.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "проверка соответствия",
+                      "требования Яндекс Такси"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Узнайте, как проверить соответствие вашего автомобиля требованиям Яндекс Такси.",
+                    "intent": "Предоставить информацию о процессе проверки соответствия.",
+                    "audiences": "Профессиональные водители такси.",
+                    "selfPrompt": "Generate a paragraph detailing the process for checking if a car meets Yandex Taxi requirements.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-3",
+                "tag": "h3",
+                "keywords": [
+                  "как выбрать тариф Яндекс Такси",
+                  "информация о тарифах"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Как выбрать подходящий тариф для работы в Яндекс Такси?",
+                "intent": "Объяснить, как водители могут выбрать подходящий тариф для работы в Яндекс Такси.",
+                "audiences": "Профессиональные водители такси.",
+                "selfPrompt": "Generate a FAQ entry discussing how drivers can choose the right tariff for working in Yandex Taxi.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "выбор тарифа",
+                      "тарифы Яндекс Такси"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Узнайте, как выбрать тариф, который соответствует вашему автомобилю.",
+                    "intent": "Предоставить советы по выбору тарифа в зависимости от автомобиля.",
+                    "audiences": "Профессиональные водители такси.",
+                    "selfPrompt": "Generate a paragraph providing tips on how to choose a tariff based on the type of car.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-4",
+                "tag": "h3",
+                "keywords": [
+                  "изменения в тарифах Яндекс Такси",
+                  "новости Яндекс Такси"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Какие изменения произошли в тарифах Яндекс Такси в 2023 году?",
+                "intent": "Объяснить изменения в тарифах Яндекс Такси и их влияние на водителей.",
+                "audiences": "Профессиональные водители такси.",
+                "selfPrompt": "Generate a FAQ entry explaining the changes in Yandex Taxi tariffs in 2023 and their impact on drivers.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "изменения в тарифах",
+                      "тарифы Яндекс Такси"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Узнайте о последних изменениях в тарифах Яндекс Такси.",
+                    "intent": "Предоставить информацию о новых тарифах и их условиях.",
+                    "audiences": "Профессиональные водители такси.",
+                    "selfPrompt": "Generate a paragraph detailing the latest changes in Yandex Taxi tariffs and their conditions.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -11243,5 +11446,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T20:04:06.634Z";
+export const lastUpdated = "2025-10-14T20:05:17.153Z";
 export const generatedBy = "menu-persist-api";
