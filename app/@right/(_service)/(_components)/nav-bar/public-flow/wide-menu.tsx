@@ -16,14 +16,6 @@ import { humanize } from "../../../(_libs)/humanize";
 import { ModeToggle } from "../../shared/mode-toggle";
 import { UserType } from "@prisma/client";
 import { Separator } from "@/components/ui/separator";
-import { SelectSeparator } from "@/components/ui/select";
-
-// Understanding (in English):
-// - Left side: single vertical scroll list.
-// - Default mode: show all categories expanded (static), up to 3 pages per category; then render “… more {count} pages” via translation without passing options to avoid TS2554.
-// - Active mode: when a right-side category is selected, show a flat list of all its pages.
-// - Badge must be on the right, text on the left, with justify-between layout.
-// - Keep right panel with categories and footer; ensure scroll separation.
 
 interface WideMenuProps {
   isOpen: boolean;
@@ -41,19 +33,16 @@ export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProp
   const router = useRouter();
   const { t } = useTranslation();
 
-  const [hoveredLink, setHoveredLink] = useState<string | null>(null);
   const [activeCategoryTitle, setActiveCategoryTitle] = useState<string | null>(null);
 
   useEffect(() => {
     if (!isOpen) {
       setActiveCategoryTitle(null);
-      setHoveredLink(null);
     }
   }, [isOpen]);
 
-  // Filter by role + published
   const getFilteredLinks = (pages: PageData[]) =>
-    pages.filter((singlePage) => singlePage.roles.includes(userType) && singlePage.isPublished); // [web:26][web:25]
+    pages.filter((singlePage) => singlePage.roles.includes(userType) && singlePage.isPublished);
 
   const roleFilteredCategories = useMemo(
     () =>
@@ -78,7 +67,6 @@ export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProp
     setIsOpen(false);
   };
 
-  // Helper: page row — text left, badge right, justify-between
   const PageRow = ({ page }: { page: PageData }) => {
     const showBadge = page.hasBadge && page.badgeName;
 
@@ -87,15 +75,11 @@ export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProp
         <button
           type="button"
           onClick={() => handlePageClick(page)}
-          onMouseEnter={() => setHoveredLink(page.id)}
-          onMouseLeave={() => setHoveredLink(null)}
-          className="flex items-start justify-between text-white transition-colors duration-200 relative w-full text-left hover:text-gray-300" // justify-between layout
+          className="group flex items-start justify-between text-white transition-colors duration-200 relative w-full text-left hover:text-gray-300"
         >
-          {/* Text left */}
           <span className="flex-grow overflow-hidden line-clamp-2">
             {humanize(page.title || "")}
           </span>
-          {/* Badge right (or empty spacer) */}
           {showBadge ? (
             <Badge className={cn("ml-3 shadow-none rounded-full px-2.5 py-0.5 text-xs font-semibold flex items-center")}>
               <div className={cn("h-1.5 w-1.5 rounded-full mr-2", greenDotClass)} />
@@ -110,11 +94,10 @@ export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProp
     );
   };
 
-  // “… more {count} pages” without passing second arg to t (avoids TS2554)
   const buildMoreLabel = (count: number) => {
     const template =
-      typeof t === "function" ? t("... more pages {count}") : "... еще {count} страниц"; // [web:21]
-    return template.replace("{count}", String(count)); // [web:21]
+      typeof t === "function" ? t("... more pages {count}") : "... еще {count} страниц";
+    return template.replace("{count}", String(count));
   };
 
   const MoreRow = ({ remaining }: { remaining: number }) => {
@@ -122,20 +105,16 @@ export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProp
     return (
       <li aria-disabled className="text-gray-400 select-none">
         <div className="flex items-center justify-between">
-          {/* Left text */}
           <span className="flex-grow overflow-hidden whitespace-nowrap text-ellipsis">{label}</span>
-          {/* Right spacer to align with rows that have a badge */}
           <span className="ml-3" />
         </div>
       </li>
     );
   };
 
-  // Default: all categories expanded (static)
   const DefaultExpandedAll = () => {
     return (
       <div className="flex-1 p-8 pb-24 overflow-y-auto custom-scrollbar">
-        {/* Pseudo-category: Home */}
         <div className="mb-6">
           <h3 className="text-gray-400 text-lg font-semibold mb-3 tracking-wider pb-1">
             {t("Home")}
@@ -157,7 +136,6 @@ export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProp
           </ul>
         </div>
 
-        {/* All categories expanded */}
         {roleFilteredCategories.map((category) => {
           const total = category.pages.length;
           const visiblePages = category.pages.slice(0, MAX_VISIBLE_PER_CATEGORY);
@@ -165,7 +143,7 @@ export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProp
 
           return (
             <div key={category.title} className="mb-8">
-              <h3 className="text-gray-400 text-lg font-semibold mb-3 tracking-wider  pb-1">
+              <h3 className="text-gray-400 text-lg font-semibold mb-3 tracking-wider pb-1">
                 {humanize(category.title)}
               </h3>
               <ul className="space-y-3 py-2">
@@ -181,7 +159,6 @@ export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProp
     );
   };
 
-  // Active: flat list of selected category pages
   const ActiveFlatList = () => {
     const activeCategory = activeCategoryTitle
       ? roleFilteredCategories.find((cat) => cat.title === activeCategoryTitle)
@@ -212,19 +189,16 @@ export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProp
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
           <div className="flex h-full">
-            {/* Left panel — vertical scroll list */}
             <div className="flex-1 flex flex-col overflow-hidden">
               {activeCategoryTitle ? <ActiveFlatList /> : <DefaultExpandedAll />}
             </div>
 
-            {/* Right panel — categories */}
             <div className="w-80 bg-gray-900 p-8 flex flex-col">
               <h3 className="text-gray-400 text-sm font-semibold mb-2 tracking-wider">
                 {t("Categories")}
               </h3>
 
               <div className="flex-1 overflow-y-auto space-y-2 custom-scrollbar pb-6">
-                {/* Home page card */}
                 <div className="p-1">
                   <Card
                     className="bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors duration-200 cursor-pointer h-[60px]"
@@ -241,7 +215,6 @@ export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProp
                   </Card>
                 </div>
 
-                {/* Category cards */}
                 {roleFilteredCategories.map((category) => (
                   <div key={category.title} className="p-1">
                     <Card
@@ -265,7 +238,6 @@ export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProp
                 ))}
               </div>
 
-              {/* Footer with theme switcher */}
               <div className="mt-4 pt-3 border-t border-gray-800 flex items-center justify-between shrink-0">
                 <span className="text-gray-400 text-sm font-semibold tracking-wider">
                   {t("Theme Switcher")}
