@@ -1,5 +1,5 @@
 // Auto-generated SEO-optimized static page - do not edit manually
-// Generated on: 2025-10-14T17:16:07.189Z
+// Generated on: 2025-10-14T17:16:57.395Z
 // Source href: /blog/kakuyu-mashinu-kupit-dlya-raboty-v-taksi-komfort
 // Page metadata: Какую машину купить для работы в такси комфорт в 2025? | 7 sections
 // FAQ sections detected: 12
@@ -44,7 +44,7 @@ const sections = [
           "content": [
             {
               "type": "text",
-              "text": "Какую машину купить для работы в такси комфорт: ключевые критерии выбора в 2025 году"
+              "text": "Какую машину купить для работы в такси комфорт: ключевые критерии выбора в 2025 году!"
             }
           ]
         },
@@ -2676,8 +2676,8 @@ export default function Page() {
               "url": "/app-images/iec2jmhir50uta8ge29uwq95.jpg",
               "alt": "какую машину купить для работы в такси комфорт"
             },
-            "datePublished": "2025-10-14T17:16:07.189Z",
-            "dateModified": "2025-10-14T17:16:07.189Z",
+            "datePublished": "2025-10-14T17:16:57.395Z",
+            "dateModified": "2025-10-14T17:16:57.395Z",
             "articleSection": "blog",
             "keywords": ["какую машину купить для работы в такси комфорт"],
             "mainEntityOfPage": {
