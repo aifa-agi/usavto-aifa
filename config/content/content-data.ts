@@ -6825,7 +6825,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-14T16:33:14.979Z",
-        "updatedAt": "2025-10-14T17:03:28.443Z",
+        "updatedAt": "2025-10-14T17:03:59.713Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "какую машину купить для работы в такси комфорт",
@@ -6891,7 +6891,8 @@ export const contentData = {
                   "minWords": 120,
                   "maxWords": 250,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-1-2",
@@ -6910,7 +6911,8 @@ export const contentData = {
                   "minWords": 80,
                   "maxWords": 180,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-1-3",
@@ -6928,7 +6930,8 @@ export const contentData = {
                   "minWords": 5,
                   "maxWords": 15,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "blockquote-1-4",
@@ -6946,9 +6949,11 @@ export const contentData = {
                   "minWords": 25,
                   "maxWords": 50,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-2",
@@ -8218,7 +8223,7 @@ export const contentData = {
             ]
           }
         ],
-        "isReadyDraftForPerplexity": true
+        "isReadyDraftForPerplexity": false
       }
     ],
     "order": 16
@@ -8249,5 +8254,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T17:03:58.631Z";
+export const lastUpdated = "2025-10-14T17:05:17.597Z";
 export const generatedBy = "menu-persist-api";
