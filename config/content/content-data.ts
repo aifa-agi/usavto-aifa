@@ -8259,7 +8259,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-14T18:47:37.663Z",
-        "updatedAt": "2025-10-14T18:47:37.663Z",
+        "updatedAt": "2025-10-14T18:59:12.445Z",
         "order": 2,
         "description": "Узнайте, как заказать доставку через Яндекс Такси до двери с нашей пошаговой инструкцией. Просто следуйте рекомендациям и получите ваши посылки быстро и удобно!",
         "images": [
@@ -8277,7 +8277,77 @@ export const contentData = {
         "intent": "Пользователи, попадая на эту страницу, ищут пошаговую инструкцию по заказу доставки через Яндекс Такси до двери, что указывает на их транзакционное намерение. Они хотят получить ясные указания для успешного оформления заказа и ожидают, что страница предоставит им четкие шаги и необходимую информацию для выполнения этой задачи. Эта страница удовлетворяет их запрос, предоставляя структурированное руководство, которое объясняет процесс и детали заказа услуги.",
         "taxonomy": "Этот ресурс представляет собой пошаговое руководство по заказу доставки через Яндекс Такси до двери, классифицируясь как инструкция/руководство пользователя. Он находится в категории \"Транспорт и логистика\" с подкатегорией \"Доставка\", играя роль кластерного контента, который поддерживает более широкие темы, связанные с услугами Яндекс Такси и их функциональностью. Страница соответствует семантической тематике удобства и доступности услуг доставки, обеспечивая пользователя актуальной информацией и подтверждая авторитет в данной области.",
         "attention": "Создайте захватывающий заголовок с четким указанием на простоту и удобство заказа доставки через Яндекс Такси, используя интерактивные элементы, такие как пошаговые кнопки или видеоинструкции, чтобы удержать внимание пользователей. Обеспечьте визуальную иерархию с выделением ключевых моментов и часто задаваемых вопросов для ускорения восприятия информации, комбинируя текст с иконками и графикой, чтобы поддержать интерес и вовлеченность на протяжении всей страницы.",
-        "audiences": "Целевая аудитория данной страницы — это частные пользователи в возрасте 20-45 лет, которые хотят быстро и удобно заказать доставку через Яндекс Такси до двери, а также владельцы малого бизнеса, стремящиеся оптимизировать процесс доставки для своих клиентов. Их главные боли связаны с недостатком информации о процессе заказа, неуверенностью в правильности выбора опций и необходимостью экономии времени. Эта инструкция поможет им преодолеть эти трудности, предоставляя четкие пошаговые рекомендации и повышая уверенность в использовании услуги."
+        "audiences": "Целевая аудитория данной страницы — это частные пользователи в возрасте 20-45 лет, которые хотят быстро и удобно заказать доставку через Яндекс Такси до двери, а также владельцы малого бизнеса, стремящиеся оптимизировать процесс доставки для своих клиентов. Их главные боли связаны с недостатком информации о процессе заказа, неуверенностью в правильности выбора опций и необходимостью экономии времени. Эта инструкция поможет им преодолеть эти трудности, предоставляя четкие пошаговые рекомендации и повышая уверенность в использовании услуги.",
+        "draftContentStructure": [
+          {
+            "id": "h2-1",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "как заказать доставку через яндекс такси до двери",
+              "пошаговая инструкция",
+              "доставка до двери",
+              "Яндекс Такси",
+              "удобство заказа",
+              "процесс доставки",
+              "услуги Яндекс Такси"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, как легко и быстро заказать доставку через Яндекс Такси до двери с нашей пошаговой инструкцией!",
+            "intent": "Предоставить пользователям четкие и понятные шаги для успешного заказа доставки через Яндекс Такси.",
+            "audiences": "Частные пользователи и владельцы малого бизнеса, ищущие удобные решения для доставки.",
+            "selfPrompt": "Generate an engaging introduction for the section on how to order delivery through Yandex Taxi to the door, emphasizing the ease and convenience of the process. Include a preview of the steps involved and establish credibility by mentioning the expertise in taxi services.",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 150,
+              "maxWords": 250,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-1-1",
+                "tag": "p",
+                "keywords": [
+                  "доставка через Яндекс Такси",
+                  "пошаговая инструкция",
+                  "удобство заказа"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Следуйте нашей инструкции, чтобы быстро и удобно заказать доставку.",
+                "intent": "Объяснить, как заказать доставку через Яндекс Такси, предоставив четкие шаги.",
+                "audiences": "Пользователи, желающие быстро разобраться в процессе заказа.",
+                "selfPrompt": "Generate a paragraph that introduces the topic of ordering delivery through Yandex Taxi, highlighting the convenience and efficiency of the service. Mention the target audience and their needs.",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 180,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-2",
+                "tag": "p",
+                "keywords": [
+                  "услуги Яндекс Такси",
+                  "доставка до двери"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Узнайте, как легко воспользоваться услугами Яндекс Такси.",
+                "intent": "Предоставить информацию о том, что пользователи могут ожидать от услуги доставки.",
+                "audiences": "Пользователи, ищущие информацию о доставке через Яндекс Такси.",
+                "selfPrompt": "Generate a second paragraph that outlines what users can expect from the delivery service through Yandex Taxi, emphasizing its reliability and ease of use.",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 120,
+                  "actualContent": ""
+                }
+              }
+            ]
+          }
+        ]
       }
     ],
     "order": 16
@@ -8308,5 +8378,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T18:59:11.927Z";
+export const lastUpdated = "2025-10-14T19:00:13.514Z";
 export const generatedBy = "menu-persist-api";
