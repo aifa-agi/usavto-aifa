@@ -8259,7 +8259,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-14T18:47:37.663Z",
-        "updatedAt": "2025-10-14T19:06:03.740Z",
+        "updatedAt": "2025-10-14T19:06:13.568Z",
         "order": 2,
         "description": "Узнайте, как заказать доставку через Яндекс Такси до двери с нашей пошаговой инструкцией. Просто следуйте рекомендациям и получите ваши посылки быстро и удобно!",
         "images": [
@@ -8689,7 +8689,8 @@ export const contentData = {
                   "minWords": 70,
                   "maxWords": 130,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-FAQ-1",
@@ -8726,9 +8727,11 @@ export const contentData = {
                       "minWords": 60,
                       "maxWords": 120,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "FAQ-2",
@@ -8765,9 +8768,11 @@ export const contentData = {
                       "minWords": 60,
                       "maxWords": 120,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "FAQ-3",
@@ -8804,9 +8809,11 @@ export const contentData = {
                       "minWords": 60,
                       "maxWords": 120,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "FAQ-4",
@@ -8843,11 +8850,14 @@ export const contentData = {
                       "minWords": 60,
                       "maxWords": 120,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-5",
@@ -8987,5 +8997,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T19:06:12.913Z";
+export const lastUpdated = "2025-10-14T19:06:23.454Z";
 export const generatedBy = "menu-persist-api";
