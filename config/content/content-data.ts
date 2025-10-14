@@ -10838,7 +10838,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-14T19:46:56.756Z",
-        "updatedAt": "2025-10-14T20:01:20.500Z",
+        "updatedAt": "2025-10-14T20:02:22.756Z",
         "order": 4,
         "badgeName": "Блог",
         "description": "Узнайте, какие классы есть в Яндекс Такси, их требования и тарифы. Получите полную информацию для выбора подходящего автомобиля!",
@@ -11087,6 +11087,130 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "классы автомобилей Яндекс Такси",
+              "требования к автомобилям",
+              "выбор тарифа",
+              "практическое применение",
+              "информация для водителей",
+              "проверка соответствия",
+              "автомобили для такси"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Хотите узнать, как выбрать подходящий класс автомобиля для работы в Яндекс Такси?",
+            "intent": "Предоставить водителям практическое руководство по выбору класса автомобиля и соответствию требованиям Яндекс Такси.",
+            "audiences": "Профессиональные водители такси и предприниматели в сфере пассажирских перевозок, ищущие информацию о классах автомобилей.",
+            "selfPrompt": "Generate a detailed overview of practical steps for drivers to choose the right class of car for Yandex Taxi, including how to check compliance with requirements. Highlight the importance of understanding these processes for maximizing earnings.",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-3-1",
+                "tag": "p",
+                "keywords": [
+                  "выбор автомобиля",
+                  "требования Яндекс Такси"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Понимание требований поможет вам выбрать правильный класс автомобиля.",
+                "intent": "Ввести читателя в тему выбора автомобиля для Яндекс Такси.",
+                "audiences": "Водители такси, которые хотят узнать о требованиях к автомобилям.",
+                "selfPrompt": "Generate an introductory paragraph that explains the importance of understanding the requirements for choosing a car class for Yandex Taxi.",
+                "additionalData": {
+                  "minWords": 90,
+                  "maxWords": 170,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-3-2",
+                "tag": "h3",
+                "keywords": [
+                  "проверка соответствия",
+                  "выбор тарифа",
+                  "классы автомобилей"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Узнайте, как проверить соответствие вашего автомобиля требованиям Яндекс Такси.",
+                "intent": "Предоставить пошаговое руководство по проверке соответствия автомобиля требованиям Яндекс Такси.",
+                "audiences": "Профессиональные водители и владельцы автомобилей, которые хотят зарегистрироваться в Яндекс Такси.",
+                "selfPrompt": "Generate a detailed guide on how drivers can check if their vehicle meets the requirements for Yandex Taxi, including steps to verify compliance with the tariff system.",
+                "additionalData": {
+                  "minWords": 180,
+                  "maxWords": 280,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "проверка автомобиля",
+                      "требования к автомобилям"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Следуйте этим шагам, чтобы убедиться, что ваш автомобиль соответствует требованиям.",
+                    "intent": "Объяснить, как проверить соответствие автомобиля требованиям Яндекс Такси.",
+                    "audiences": "Водители такси, которые хотят удостовериться, что их автомобиль подходит для работы.",
+                    "selfPrompt": "Generate a paragraph that outlines the steps drivers should take to verify their vehicle's compliance with Yandex Taxi requirements.",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 140,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-2-2",
+                    "tag": "ol",
+                    "keywords": [
+                      "шаги проверки",
+                      "требования Яндекс Такси"
+                    ],
+                    "taxonomy": "actionable",
+                    "attention": "Следуйте этим шагам для проверки вашего автомобиля.",
+                    "intent": "Предоставить список шагов для проверки соответствия автомобиля.",
+                    "audiences": "Водители, которые ищут конкретные действия для проверки.",
+                    "selfPrompt": "Generate an ordered list of steps that drivers need to follow to check their vehicle's compliance with Yandex Taxi requirements.",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 90,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-3-2-3",
+                    "tag": "code",
+                    "keywords": [
+                      "код проверки",
+                      "инструмент проверки"
+                    ],
+                    "taxonomy": "technical",
+                    "attention": "Используйте этот код для автоматизации проверки.",
+                    "intent": "Предоставить пример кода для автоматизации процесса проверки соответствия.",
+                    "audiences": "Разработчики и водители, которые хотят использовать технологические решения.",
+                    "selfPrompt": "Generate a code snippet that can be used to automate the compliance checking process for Yandex Taxi vehicles.",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 50,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -11119,5 +11243,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T20:02:22.950Z";
+export const lastUpdated = "2025-10-14T20:04:06.634Z";
 export const generatedBy = "menu-persist-api";
