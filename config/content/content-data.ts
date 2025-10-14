@@ -10816,7 +10816,8 @@ export const contentData = {
         ],
         "keywords": [
           "какие классы есть в яндекс такси"
-        ]
+        ],
+        "internalKnowledgeBase": "В базе знаний US AUTO отсутствует информация о классах в Яндекс Такси. К сожалению, мы не располагаем данными по этому вопросу. Если нужна помощь по другим темам, связанным с транспортом и управлением автопарком, с удовольствием помогу."
       }
     ],
     "order": 16
@@ -10847,5 +10848,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T19:51:01.908Z";
+export const lastUpdated = "2025-10-14T19:51:51.470Z";
 export const generatedBy = "menu-persist-api";
