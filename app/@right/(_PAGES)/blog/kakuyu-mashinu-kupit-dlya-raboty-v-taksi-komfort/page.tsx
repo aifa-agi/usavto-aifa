@@ -1,5 +1,5 @@
 // Auto-generated SEO-optimized static page - do not edit manually
-// Generated on: 2025-10-14T17:16:57.395Z
+// Generated on: 2025-10-14T17:46:56.624Z
 // Source href: /blog/kakuyu-mashinu-kupit-dlya-raboty-v-taksi-komfort
 // Page metadata: Какую машину купить для работы в такси комфорт в 2025? | 7 sections
 // FAQ sections detected: 12
@@ -44,7 +44,7 @@ const sections = [
           "content": [
             {
               "type": "text",
-              "text": "Какую машину купить для работы в такси комфорт: ключевые критерии выбора в 2025 году!"
+              "text": "Какую машину купить для работы в такси комфорт: ключевые критерии выбора в 2025 году"
             }
           ]
         },
@@ -2601,7 +2601,7 @@ const canonicalUrl = `${appConfig.url}/blog/kakuyu-mashinu-kupit-dlya-raboty-v-t
 export async function generateMetadata(): Promise<Metadata> {
   return constructMetadata({
     title: "Какую машину купить для работы в такси комфорт в 2025?",
-    description: "какую машину купить для работы в такси комфорт",
+    description: "Узнайте, какую машину купить для работы в такси комфорт в 2025 году! Обзор лучших моделей, советы по выбору и секреты успешного заработка.",
     image: "/app-images/iec2jmhir50uta8ge29uwq95.jpg",
     pathname: "/blog/kakuyu-mashinu-kupit-dlya-raboty-v-taksi-komfort",
     locale: appConfig.seo?.defaultLocale ?? appConfig.lang,
@@ -2622,7 +2622,7 @@ export default function Page() {
           </h1>
           
           <p className="text-base text-muted-foreground md:text-lg">
-            какую машину купить для работы в такси комфорт
+            Узнайте, какую машину купить для работы в такси комфорт в 2025 году! Обзор лучших моделей, советы по выбору и секреты успешного заработка.
           </p>
           
           <div className="flex items-center space-x-4 flex-wrap gap-2">
@@ -2655,7 +2655,7 @@ export default function Page() {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "Какую машину купить для работы в такси комфорт в 2025?",
-            "description": "какую машину купить для работы в такси комфорт",
+            "description": "Узнайте, какую машину купить для работы в такси комфорт в 2025 году! Обзор лучших моделей, советы по выбору и секреты успешного заработка.",
             "author": {
               "@type": "Organization",
               "name": appConfig.name,
@@ -2676,8 +2676,8 @@ export default function Page() {
               "url": "/app-images/iec2jmhir50uta8ge29uwq95.jpg",
               "alt": "какую машину купить для работы в такси комфорт"
             },
-            "datePublished": "2025-10-14T17:16:57.395Z",
-            "dateModified": "2025-10-14T17:16:57.395Z",
+            "datePublished": "2025-10-14T17:46:56.624Z",
+            "dateModified": "2025-10-14T17:46:56.624Z",
             "articleSection": "blog",
             "keywords": ["какую машину купить для работы в такси комфорт"],
             "mainEntityOfPage": {
