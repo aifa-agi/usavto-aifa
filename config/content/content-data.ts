@@ -6825,7 +6825,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-14T16:33:14.979Z",
-        "updatedAt": "2025-10-14T17:00:45.558Z",
+        "updatedAt": "2025-10-14T17:02:13.196Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "какую машину купить для работы в такси комфорт",
@@ -7815,6 +7815,268 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "часто задаваемые вопросы о выборе автомобиля для такси",
+              "рекомендации по выбору автомобиля для такси комфорт",
+              "популярные модели автомобилей для такси",
+              "экономия на обслуживании такси",
+              "требования к автомобилям для такси комфорт",
+              "плюсы и минусы различных моделей такси",
+              "советы по выбору автомобиля для работы в такси"
+            ],
+            "taxonomy": "FAQ",
+            "attention": "Узнайте ответы на самые распространенные вопросы о выборе автомобиля для работы в такси комфорт.",
+            "intent": "Предоставить читателям полезные ответы на часто задаваемые вопросы, связанные с выбором автомобилей для такси.",
+            "audiences": "Водители такси, владельцы таксопарков, начинающие водители | Уровень: начинающий/средний | Болевые точки: неопределенность в выборе автомобиля, недостаток информации о моделях.",
+            "selfPrompt": "Generate h2 in section 'Часто задаваемые вопросы о выборе автомобиля для такси комфорт' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Предоставить ответы на часто задаваемые вопросы, чтобы помочь пользователям в выборе автомобиля для такси.  AUDIENCE: Водители такси, владельцы таксопарков, начинающие водители.",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 450,
+              "maxWords": 600,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "keywords": [],
+                "taxonomy": "supporting",
+                "attention": "Часто задаваемые вопросы помогут вам лучше понять, как выбрать подходящий автомобиль для работы в такси.",
+                "intent": "Ввести читателя в тему часто задаваемых вопросов о выборе автомобиля для такси.",
+                "audiences": "Водители такси, владельцы таксопарков, начинающие водители",
+                "selfPrompt": "Generate p in section 'Часто задаваемые вопросы о выборе автомобиля для такси комфорт' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Ввести читателя в тему часто задаваемых вопросов о выборе автомобиля для такси.  AUDIENCE: Водители такси, владельцы таксопарков, начинающие водители.",
+                "additionalData": {
+                  "minWords": 95,
+                  "maxWords": 190,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "keywords": [
+                  "какие автомобили лучше для такси комфорт",
+                  "рекомендации по выбору автомобиля",
+                  "популярные модели для такси"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, какие автомобили наиболее подходят для работы в такси комфорт.",
+                "intent": "Предоставить информацию о лучших автомобилях для работы в такси комфорт.",
+                "audiences": "Водители такси, владельцы таксопарков",
+                "selfPrompt": "Generate h3 in section 'Часто задаваемые вопросы о выборе автомобиля для такси комфорт' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Обсудить, какие автомобили лучше всего подходят для работы в такси комфорт.  AUDIENCE: Водители такси, владельцы таксопарков.",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "keywords": [],
+                    "taxonomy": "supporting",
+                    "attention": "Обзор популярных моделей автомобилей для такси комфорт.",
+                    "intent": "Предоставить краткий обзор популярных моделей автомобилей для такси.",
+                    "audiences": "Водители такси, владельцы таксопарков",
+                    "selfPrompt": "Generate p in section 'Часто задаваемые вопросы о выборе автомобиля для такси комфорт' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Обсудить популярные модели автомобилей для такси комфорт.  AUDIENCE: Водители такси, владельцы таксопарков.",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 150,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-FAQ-2",
+                "tag": "h3",
+                "keywords": [
+                  "как выбрать автомобиль для такси",
+                  "основные критерии выбора",
+                  "советы по выбору автомобиля"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, какие критерии важны при выборе автомобиля для такси.",
+                "intent": "Обсудить основные критерии выбора автомобиля для работы в такси.",
+                "audiences": "Водители такси, владельцы таксопарков",
+                "selfPrompt": "Generate h3 in section 'Часто задаваемые вопросы о выборе автомобиля для такси комфорт' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Обсудить основные критерии выбора автомобиля для такси.  AUDIENCE: Водители такси, владельцы таксопарков.",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "keywords": [],
+                    "taxonomy": "supporting",
+                    "attention": "Краткий обзор основных критериев выбора автомобиля для такси.",
+                    "intent": "Предоставить краткий обзор основных критериев выбора автомобиля для такси.",
+                    "audiences": "Водители такси, владельцы таксопарков",
+                    "selfPrompt": "Generate p in section 'Часто задаваемые вопросы о выборе автомобиля для такси комфорт' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Обсудить основные критерии выбора автомобиля для такси.  AUDIENCE: Водители такси, владельцы таксопарков.",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 150,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-FAQ-3",
+                "tag": "h3",
+                "keywords": [
+                  "как снизить затраты на обслуживание такси",
+                  "экономия на обслуживании автомобилей",
+                  "практические советы по обслуживанию"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, как можно снизить затраты на обслуживание автомобилей для такси.",
+                "intent": "Предоставить советы по снижению затрат на обслуживание автомобилей для такси.",
+                "audiences": "Водители такси, владельцы таксопарков",
+                "selfPrompt": "Generate h3 in section 'Часто задаваемые вопросы о выборе автомобиля для такси комфорт' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Обсудить, как снизить затраты на обслуживание автомобилей для такси.  AUDIENCE: Водители такси, владельцы таксопарков.",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "keywords": [],
+                    "taxonomy": "supporting",
+                    "attention": "Практические советы по снижению затрат на обслуживание такси.",
+                    "intent": "Предоставить практические советы по снижению затрат на обслуживание автомобилей для такси.",
+                    "audiences": "Водители такси, владельцы таксопарков",
+                    "selfPrompt": "Generate p in section 'Часто задаваемые вопросы о выборе автомобиля для такси комфорт' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Обсудить практические советы по снижению затрат на обслуживание автомобилей для такси.  AUDIENCE: Водители такси, владельцы таксопарков.",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 150,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-FAQ-4",
+                "tag": "h3",
+                "keywords": [
+                  "требования к автомобилям для такси",
+                  "лицензирование автомобилей для такси",
+                  "законодательные изменения в такси"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте о требованиях к автомобилям для работы в такси.",
+                "intent": "Обсудить требования к автомобилям для работы в такси.",
+                "audiences": "Водители такси, владельцы таксопарков",
+                "selfPrompt": "Generate h3 in section 'Часто задаваемые вопросы о выборе автомобиля для такси комфорт' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Обсудить требования к автомобилям для работы в такси.  AUDIENCE: Водители такси, владельцы таксопарков.",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [],
+                    "taxonomy": "supporting",
+                    "attention": "Обзор требований к автомобилям для работы в такси.",
+                    "intent": "Предоставить краткий обзор требований к автомобилям для работы в такси.",
+                    "audiences": "Водители такси, владельцы таксопарков",
+                    "selfPrompt": "Generate p in section 'Часто задаваемые вопросы о выборе автомобиля для такси комфорт' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Обсудить требования к автомобилям для работы в такси.  AUDIENCE: Водители такси, владельцы таксопарков.",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 150,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-FAQ-5",
+                "tag": "h3",
+                "keywords": [
+                  "плюсы и минусы различных моделей такси",
+                  "сравнение автомобилей для такси",
+                  "рекомендации по выбору моделей"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте о плюсах и минусах различных моделей автомобилей для такси.",
+                "intent": "Обсудить плюсы и минусы различных моделей автомобилей для такси.",
+                "audiences": "Водители такси, владельцы таксопарков",
+                "selfPrompt": "Generate h3 in section 'Часто задаваемые вопросы о выборе автомобиля для такси комфорт' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Обсудить плюсы и минусы различных моделей автомобилей для такси.  AUDIENCE: Водители такси, владельцы таксопарков.",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-5-1",
+                    "tag": "p",
+                    "keywords": [],
+                    "taxonomy": "supporting",
+                    "attention": "Краткий обзор плюсов и минусов различных моделей автомобилей для такси.",
+                    "intent": "Предоставить краткий обзор плюсов и минусов различных моделей автомобилей для такси.",
+                    "audiences": "Водители такси, владельцы таксопарков",
+                    "selfPrompt": "Generate p in section 'Часто задаваемые вопросы о выборе автомобиля для такси комфорт' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Обсудить плюсы и минусы различных моделей автомобилей для такси.  AUDIENCE: Водители такси, владельцы таксопарков.",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 150,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-FAQ-6",
+                "tag": "h3",
+                "keywords": [
+                  "советы по выбору автомобиля для работы в такси",
+                  "рекомендации по обслуживанию автомобилей",
+                  "практические советы для водителей такси"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте советы по выбору и обслуживанию автомобилей для такси.",
+                "intent": "Предоставить советы по выбору и обслуживанию автомобилей для такси.",
+                "audiences": "Водители такси, владельцы таксопарков",
+                "selfPrompt": "Generate h3 in section 'Часто задаваемые вопросы о выборе автомобиля для такси комфорт' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Обсудить советы по выбору и обслуживанию автомобилей для такси.  AUDIENCE: Водители такси, владельцы таксопарков.",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-6-1",
+                    "tag": "p",
+                    "keywords": [],
+                    "taxonomy": "supporting",
+                    "attention": "Практические советы по выбору и обслуживанию автомобилей для такси.",
+                    "intent": "Предоставить практические советы по выбору и обслуживанию автомобилей для такси.",
+                    "audiences": "Водители такси, владельцы таксопарков",
+                    "selfPrompt": "Generate p in section 'Часто задаваемые вопросы о выборе автомобиля для такси комфорт' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Обсудить практические советы по выбору и обслуживанию автомобилей для такси.  AUDIENCE: Водители такси, владельцы таксопарков.",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 150,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -7847,5 +8109,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T17:02:11.990Z";
+export const lastUpdated = "2025-10-14T17:03:09.228Z";
 export const generatedBy = "menu-persist-api";
