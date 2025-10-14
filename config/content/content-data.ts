@@ -9531,7 +9531,8 @@ export const contentData = {
         ],
         "keywords": [
           "какая страховка нужна для такси на личном авто самозанятом"
-        ]
+        ],
+        "internalKnowledgeBase": "В базе знаний отсутствует информация, касающаяся конкретных требований к страховке для такси на личном автомобиле самозанятого. Если нужна помощь по другим вопросам, связанным с такси или транспортным бизнесом, готов помочь."
       }
     ],
     "order": 16
@@ -9562,5 +9563,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T19:15:55.519Z";
+export const lastUpdated = "2025-10-14T19:17:26.542Z";
 export const generatedBy = "menu-persist-api";
