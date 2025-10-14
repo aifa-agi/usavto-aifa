@@ -9554,7 +9554,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-14T19:12:30.467Z",
-        "updatedAt": "2025-10-14T19:31:06.721Z",
+        "updatedAt": "2025-10-14T19:32:02.964Z",
         "order": 3,
         "description": "Узнайте, какая страховка нужна для такси на личном авто самозанятого! Получите актуальные советы по оформлению ОСАГО и ОСГОП. Начните работать безопасно!",
         "images": [
@@ -10220,7 +10220,8 @@ export const contentData = {
               }
             ]
           }
-        ]
+        ],
+        "isReadyDraftForPerplexity": true
       }
     ],
     "order": 16
@@ -10251,5 +10252,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T19:32:02.056Z";
+export const lastUpdated = "2025-10-14T19:32:11.958Z";
 export const generatedBy = "menu-persist-api";
