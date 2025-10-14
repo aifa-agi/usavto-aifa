@@ -8226,7 +8226,7 @@ export const contentData = {
         "createdAt": "2025-10-14T18:47:37.663Z",
         "updatedAt": "2025-10-14T18:47:37.663Z",
         "order": 2,
-        "description": "как заказать доставку через яндекс такси до двери",
+        "description": "Узнайте, как заказать доставку через Яндекс Такси до двери с нашей пошаговой инструкцией. Просто следуйте рекомендациям и получите ваши посылки быстро и удобно!",
         "images": [
           {
             "id": "iauk0sdnx8ojwyym6fougi4g",
@@ -8269,5 +8269,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T18:55:42.252Z";
+export const lastUpdated = "2025-10-14T18:55:49.698Z";
 export const generatedBy = "menu-persist-api";
