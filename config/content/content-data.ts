@@ -10838,7 +10838,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-14T19:46:56.756Z",
-        "updatedAt": "2025-10-14T20:05:17.410Z",
+        "updatedAt": "2025-10-14T20:05:29.923Z",
         "order": 4,
         "badgeName": "Блог",
         "description": "Узнайте, какие классы есть в Яндекс Такси, их требования и тарифы. Получите полную информацию для выбора подходящего автомобиля!",
@@ -11520,7 +11520,8 @@ export const contentData = {
               }
             ]
           }
-        ]
+        ],
+        "isReadyDraftForPerplexity": true
       }
     ],
     "order": 16
@@ -11551,5 +11552,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T20:05:29.690Z";
+export const lastUpdated = "2025-10-14T20:05:51.206Z";
 export const generatedBy = "menu-persist-api";
