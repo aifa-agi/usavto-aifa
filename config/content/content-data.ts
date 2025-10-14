@@ -10282,7 +10282,7 @@ export const contentData = {
       },
       {
         "id": "p35dc9zkrxw3edjutoyoqrjb",
-        "title": "какие классы есть в яндекс такси",
+        "title": "Классы автомобилей Яндекс Такси: Узнайте все тарифы и требования",
         "href": "/blog/kakie-klassy-est-v-yandeks-taksi",
         "roles": [
           "guest"
@@ -10849,5 +10849,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T19:55:55.192Z";
+export const lastUpdated = "2025-10-14T19:56:22.325Z";
 export const generatedBy = "menu-persist-api";
