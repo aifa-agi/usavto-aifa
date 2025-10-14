@@ -10813,6 +10813,9 @@ export const contentData = {
             "alt": "какие классы есть в яндекс такси",
             "href": "/app-images/ob53nrsnh6rxoxpz2ddc8hvt.jpg"
           }
+        ],
+        "keywords": [
+          "какие классы есть в яндекс такси"
         ]
       }
     ],
@@ -10844,5 +10847,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T19:50:43.622Z";
+export const lastUpdated = "2025-10-14T19:51:01.908Z";
 export const generatedBy = "menu-persist-api";
