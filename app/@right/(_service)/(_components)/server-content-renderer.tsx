@@ -10,6 +10,7 @@ import { StaticSection } from "./static-section";
 import { StaticTOC } from "./static-toc";
 import { ClientNavigationIsland } from "./client-navigation-island";
 import { ClientInteractivityIsland } from "./client-interactivity-island";
+import { SmoothScrollHandler } from "./smooth-scroll-handler";
 import { CalculatorSection } from "./home-page/(_components)/calculator-section";
 import { FooterSection } from "./home-page/(_components)/footer-section";
 
@@ -88,6 +89,7 @@ function SectionSeparator() {
  * - Responsive layout with conditional styles
  * - Client islands for interactivity (navigation buttons, send to chat)
  * - TipTap styles imported for proper formatting
+ * - Smooth scroll handler for UX enhancement
  * 
  * @param sections - Array of content sections to render
  * @param heroImage - Optional hero image data
@@ -134,6 +136,9 @@ export default function ServerContentRenderer({
 
     return (
         <div className="content-renderer">
+            {/* ✅ ADDED: Smooth scroll handler for anchor navigation */}
+            <SmoothScrollHandler />
+
             <div className="relative">
                 {/* Decorative line - visible only on 2xl+ screens */}
                 <div className="absolute top-52 w-full border-t hidden 2xl:block" />
