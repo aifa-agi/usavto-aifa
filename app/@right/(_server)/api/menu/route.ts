@@ -1,27 +1,34 @@
-// app/@right/(_server)/api/menu/read/route.ts
+// app/@right/(_server)/api/menu//route.ts
 import { NextRequest, NextResponse } from "next/server";
 import { promises as fs } from "fs";
 import path from "path";
 import { auth } from "@/app/@left/(_public)/(_AUTH)/(_service)/(_actions)/auth";
 
-
 /**
- * Menu read route with role-based data source selection
+ * Menu read route with role-based data source selection and rate limit tracking
  * 
  * Architecture:
  * 1. Get current user session via NextAuth
  * 2. Determine if user has privileged role (architect, admin, editor)
  * 3. In production:
- *    - Privileged users → GitHub API (fresh data, low frequency)
- *    - Regular/guest users → Local filesystem (static data, high frequency)
+ *    - Privileged users → GitHub API (fresh data, with rate limit tracking)
+ *    - Regular/guest users → Local filesystem (static data, no limits)
  * 4. In development:
  *    - All users → Local filesystem
  * 
- * Goal: Optimize GitHub API rate limits by serving static data to most users
- * while privileged users always get fresh content for admin operations
+ * Goal: Optimize GitHub API rate limits while providing rate limit visibility to admins
  */
 
 // -------------------- Types --------------------
+
+interface RateLimitInfo {
+  remaining: number;
+  total: number;
+  used: number;
+  resetAt: string; // ISO 8601 timestamp
+  percentUsed: number;
+  willResetIn: string; // Human-readable format: "in 45 minutes" or "in 1 hour"
+}
 
 interface ReadMenuResponse {
   success: boolean;
@@ -29,15 +36,15 @@ interface ReadMenuResponse {
   categories?: unknown[];
   source?: "Local FileSystem" | "GitHub API";
   environment?: string;
-  userRole?: string; // Log which role accessed the endpoint
-  isPrivileged?: boolean; // Log if user has privileged access
+  userRole?: string;
+  isPrivileged?: boolean;
+  rateLimitInfo?: RateLimitInfo; // Only present when source is GitHub API
 }
 
 interface ReadMenuBody {
   filePath?: string;
 }
 
-// User role type based on your schema
 type UserRole = 
   | "guest" 
   | "architect" 
@@ -52,12 +59,10 @@ type UserRole =
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const GITHUB_REPO = process.env.GITHUB_REPO;
-const DEFAULT_GITHUB_FILE_PATH =
-  process.env.GITHUB_FILE_PATH || "config/content/content-data.ts";
+const GITHUB_FILE_PATH = process.env.GITHUB_FILE_PATH || "config/content/content-data.ts";
 
 const PROJECT_ROOT = process.cwd();
 
-// Define privileged roles that can access GitHub API in production
 const PRIVILEGED_ROLES: UserRole[] = ["architect", "admin", "editor"];
 
 // -------------------- Helpers --------------------
@@ -66,31 +71,26 @@ function getEnvMode(): "development" | "production" {
   return process.env.NODE_ENV === "production" ? "production" : "development";
 }
 
-/**
- * Check if user has privileged role
- */
 function isPrivilegedRole(role?: string | null): boolean {
   if (!role) return false;
   return PRIVILEGED_ROLES.includes(role as UserRole);
 }
 
 /**
- * Get user role from session with fallback to guest
+ * Extract user role from NextAuth session
+ * Uses session.user.type field as defined in auth.ts
  */
 function getUserRole(session: any): UserRole {
-  // Adjust this path based on your NextAuth session structure
-  // Common paths: session?.user?.type or session?.role
-  const role = session?.user?.type;
+  const userType = session?.user?.type;
   
-  if (!role) return "guest";
+  if (!userType) return "guest";
   
-  // Validate role is one of allowed types
   const validRoles: UserRole[] = [
     "guest", "architect", "admin", "editor", 
     "authUser", "subscriber", "customer", "apiUser"
   ];
   
-  return validRoles.includes(role as UserRole) ? (role as UserRole) : "guest";
+  return validRoles.includes(userType as UserRole) ? (userType as UserRole) : "guest";
 }
 
 function resolveLocalAbsolutePath(relPath: string): string {
@@ -103,8 +103,8 @@ function resolveLocalAbsolutePath(relPath: string): string {
   return normalized;
 }
 
-async function readMenuFromLocal(filePath: string, requestId: string): Promise<string> {
-  const absolute = resolveLocalAbsolutePath(filePath);
+async function readMenuFromLocal(requestId: string): Promise<string> {
+  const absolute = resolveLocalAbsolutePath(GITHUB_FILE_PATH);
   
   console.log(`[${requestId}] 📁 READING FROM LOCAL FILESYSTEM`);
   console.log(`[${requestId}] 📂 Absolute path: ${absolute}`);
@@ -132,12 +132,19 @@ async function readMenuFromLocal(filePath: string, requestId: string): Promise<s
   }
 }
 
-async function readMenuFromGitHub(filePath: string, requestId: string): Promise<string> {
+/**
+ * Read menu from GitHub API with full rate limit tracking
+ * Returns both content and rate limit information for admin visibility
+ */
+async function readMenuFromGitHub(requestId: string): Promise<{
+  content: string;
+  rateLimitInfo: RateLimitInfo;
+}> {
   if (!GITHUB_TOKEN || !GITHUB_REPO) {
     throw new Error("GitHub config missing");
   }
   
-  const apiUrl = `https://api.github.com/repos/${GITHUB_REPO}/contents/${filePath}`;
+  const apiUrl = `https://api.github.com/repos/${GITHUB_REPO}/contents/${GITHUB_FILE_PATH}`;
   
   console.log(`[${requestId}] 🌐 READING FROM GITHUB API`);
   console.log(`[${requestId}] 🔗 URL: ${apiUrl}`);
@@ -158,14 +165,49 @@ async function readMenuFromGitHub(filePath: string, requestId: string): Promise<
     
     const duration = Date.now() - startTime;
     
-    // Log rate limit info from headers if available
-    const rateLimit = res.headers.get("x-ratelimit-remaining");
+    // Extract rate limit information from GitHub response headers
+    const rateLimitRemaining = res.headers.get("x-ratelimit-remaining");
     const rateLimitTotal = res.headers.get("x-ratelimit-limit");
+    const rateLimitUsed = res.headers.get("x-ratelimit-used");
+    const rateLimitReset = res.headers.get("x-ratelimit-reset");
+    
+    const remaining = rateLimitRemaining ? parseInt(rateLimitRemaining) : 0;
+    const total = rateLimitTotal ? parseInt(rateLimitTotal) : 5000;
+    const used = rateLimitUsed ? parseInt(rateLimitUsed) : 0;
+    const resetTimestamp = rateLimitReset ? parseInt(rateLimitReset) * 1000 : Date.now() + 3600000;
+    const resetDate = new Date(resetTimestamp);
+    const percentUsed = total > 0 ? Math.round((used / total) * 100) : 0;
+    
+    // Calculate human-readable time until reset
+    const now = Date.now();
+    const msUntilReset = resetTimestamp - now;
+    const minutesUntilReset = Math.ceil(msUntilReset / 60000);
+    const hoursUntilReset = Math.ceil(msUntilReset / 3600000);
+    
+    let willResetIn = "";
+    if (minutesUntilReset < 60) {
+      willResetIn = `in ${minutesUntilReset} minute${minutesUntilReset !== 1 ? 's' : ''}`;
+    } else if (hoursUntilReset === 1) {
+      willResetIn = "in 1 hour";
+    } else if (hoursUntilReset === 2) {
+      willResetIn = "in 1-2 hours";
+    } else {
+      willResetIn = `in ${hoursUntilReset} hours`;
+    }
+    
+    const rateLimitInfo: RateLimitInfo = {
+      remaining,
+      total,
+      used,
+      resetAt: resetDate.toISOString(),
+      percentUsed,
+      willResetIn,
+    };
     
     console.log(`[${requestId}] 📡 GitHub response: ${res.status} (${duration}ms)`);
-    if (rateLimit && rateLimitTotal) {
-      console.log(`[${requestId}] 📊 GitHub API remaining: ${rateLimit}/${rateLimitTotal}`);
-    }
+    console.log(`[${requestId}] 📊 GitHub API usage: ${used}/${total} (${percentUsed}% used)`);
+    console.log(`[${requestId}] 📊 Remaining: ${remaining} requests`);
+    console.log(`[${requestId}] 📊 Limit resets ${willResetIn}`);
     
     if (!res.ok) {
       const text = await res.text();
@@ -176,6 +218,11 @@ async function readMenuFromGitHub(filePath: string, requestId: string): Promise<
       if (res.status === 404) {
         throw new Error("Menu file not found in GitHub repository");
       }
+      
+      if (res.status === 403 || res.status === 429) {
+        throw new Error(`GitHub rate limit exceeded. Limit resets ${willResetIn}.`);
+      }
+      
       throw new Error(`GitHub API error: ${res.status} - ${text}`);
     }
     
@@ -192,7 +239,10 @@ async function readMenuFromGitHub(filePath: string, requestId: string): Promise<
     console.log(`[${requestId}] 📊 Content length: ${content.length} bytes`);
     console.log(`[${requestId}] 📊 Encoding: ${json.encoding || "unknown"}`);
     
-    return content;
+    return {
+      content,
+      rateLimitInfo,
+    };
   } catch (err: any) {
     const duration = Date.now() - startTime;
     console.error(`[${requestId}] ❌ GITHUB REQUEST EXCEPTION (${duration}ms)`);
@@ -286,20 +336,15 @@ export async function POST(req: NextRequest): Promise<NextResponse<ReadMenuRespo
   console.log(`${"=".repeat(70)}`);
   
   const environment = getEnvMode();
-  let filePath: string = DEFAULT_GITHUB_FILE_PATH;
-
-  // Get user session
   let session: any = null;
   let userRole: UserRole = "guest";
   let isPrivileged = false;
+  let rateLimitInfo: RateLimitInfo | undefined = undefined;
 
   try {
     session = await auth();
     userRole = getUserRole(session);
-    isPrivileged = isPrivilegedRole(userRole)
-  
-    
-
+    isPrivileged = isPrivilegedRole(userRole);
     
     console.log(`[${requestId}] 👤 USER SESSION INFO:`);
     console.log(`[${requestId}] 👤 Authenticated: ${session ? "YES" : "NO"}`);
@@ -322,29 +367,20 @@ export async function POST(req: NextRequest): Promise<NextResponse<ReadMenuRespo
   console.log(`[${requestId}] 🔧 Environment: ${environment}`);
   console.log(`[${requestId}] 🔧 GitHub Token exists: ${!!GITHUB_TOKEN}`);
   console.log(`[${requestId}] 🔧 GitHub Repo: ${GITHUB_REPO || "NOT SET"}`);
-  console.log(`[${requestId}] 🔧 Default file path: ${DEFAULT_GITHUB_FILE_PATH}`);
-
-  try {
-    const body = (await req.json().catch(() => ({}))) as ReadMenuBody;
-    if (body?.filePath && typeof body.filePath === "string" && body.filePath.trim()) {
-      filePath = body.filePath.trim();
-      console.log(`[${requestId}] 📝 Custom file path requested: ${filePath}`);
-    }
-  } catch {
-    // ignore body parse errors
-  }
+  console.log(`[${requestId}] 🔧 File path: ${GITHUB_FILE_PATH}`);
 
   try {
     let raw = "";
     let source: ReadMenuResponse["source"];
 
-    // Data source decision logic
     if (environment === "production") {
-      // Production: check if user is privileged AND GitHub is configured
       if (isPrivileged && GITHUB_TOKEN && GITHUB_REPO) {
         console.log(`[${requestId}] ⚙️  DECISION: GITHUB API`);
         console.log(`[${requestId}] ⚙️  Reason: Production + Privileged user (${userRole}) + GitHub configured`);
-        raw = await readMenuFromGitHub(filePath, requestId);
+        
+        const githubResponse = await readMenuFromGitHub(requestId);
+        raw = githubResponse.content;
+        rateLimitInfo = githubResponse.rateLimitInfo;
         source = "GitHub API";
       } else {
         console.log(`[${requestId}] ⚙️  DECISION: LOCAL FILESYSTEM`);
@@ -353,14 +389,13 @@ export async function POST(req: NextRequest): Promise<NextResponse<ReadMenuRespo
         } else if (!GITHUB_TOKEN || !GITHUB_REPO) {
           console.log(`[${requestId}] ⚙️  Reason: GitHub not configured (fallback to local)`);
         }
-        raw = await readMenuFromLocal(filePath, requestId);
+        raw = await readMenuFromLocal(requestId);
         source = "Local FileSystem";
       }
     } else {
-      // Development: always local
       console.log(`[${requestId}] ⚙️  DECISION: LOCAL FILESYSTEM`);
       console.log(`[${requestId}] ⚙️  Reason: Development environment`);
-      raw = await readMenuFromLocal(filePath, requestId);
+      raw = await readMenuFromLocal(requestId);
       source = "Local FileSystem";
     }
 
@@ -376,7 +411,8 @@ export async function POST(req: NextRequest): Promise<NextResponse<ReadMenuRespo
           source, 
           environment,
           userRole,
-          isPrivileged
+          isPrivileged,
+          rateLimitInfo,
         },
         { status: 500 }
       );
@@ -394,7 +430,8 @@ export async function POST(req: NextRequest): Promise<NextResponse<ReadMenuRespo
       source,
       environment,
       userRole,
-      isPrivileged
+      isPrivileged,
+      rateLimitInfo,
     });
   } catch (e: any) {
     const msg = String(e?.message || e || "Unknown error");
@@ -414,7 +451,8 @@ export async function POST(req: NextRequest): Promise<NextResponse<ReadMenuRespo
           : "Local FileSystem",
         environment,
         userRole,
-        isPrivileged
+        isPrivileged,
+        rateLimitInfo,
       });
     }
     
@@ -427,7 +465,8 @@ export async function POST(req: NextRequest): Promise<NextResponse<ReadMenuRespo
           : "Local FileSystem",
         environment,
         userRole,
-        isPrivileged
+        isPrivileged,
+        rateLimitInfo,
       },
       { status: 500 }
     );
