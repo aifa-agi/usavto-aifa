@@ -10806,7 +10806,7 @@ export const contentData = {
         "updatedAt": "2025-10-14T19:46:56.756Z",
         "order": 4,
         "badgeName": "Блог",
-        "description": "какие классы есть в яндекс такси",
+        "description": "Узнайте, какие классы есть в Яндекс Такси, их требования и тарифы. Получите полную информацию для выбора подходящего автомобиля!",
         "images": [
           {
             "id": "tccflu8hmlt8dnqxnb8l5es3",
@@ -10849,5 +10849,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T19:56:22.325Z";
+export const lastUpdated = "2025-10-14T19:56:35.870Z";
 export const generatedBy = "menu-persist-api";
