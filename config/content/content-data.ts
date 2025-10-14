@@ -6825,7 +6825,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-14T16:33:14.979Z",
-        "updatedAt": "2025-10-14T17:05:24.097Z",
+        "updatedAt": "2025-10-14T17:05:31.258Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "какую машину купить для работы в такси комфорт",
@@ -7527,7 +7527,8 @@ export const contentData = {
                   "minWords": 100,
                   "maxWords": 200,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-4-2",
@@ -7562,7 +7563,8 @@ export const contentData = {
                       "minWords": 5,
                       "maxWords": 15,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "p-4-2-2",
@@ -7579,7 +7581,8 @@ export const contentData = {
                       "minWords": 90,
                       "maxWords": 180,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "p-4-2-3",
@@ -7596,7 +7599,8 @@ export const contentData = {
                       "minWords": 85,
                       "maxWords": 170,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "ul-4-2-4",
@@ -7613,9 +7617,11 @@ export const contentData = {
                       "minWords": 45,
                       "maxWords": 90,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "h3-4-3",
@@ -7650,7 +7656,8 @@ export const contentData = {
                       "minWords": 110,
                       "maxWords": 220,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "p-4-3-2",
@@ -7667,7 +7674,8 @@ export const contentData = {
                       "minWords": 80,
                       "maxWords": 160,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "ol-4-3-3",
@@ -7684,7 +7692,8 @@ export const contentData = {
                       "minWords": 55,
                       "maxWords": 110,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "blockquote-4-3-4",
@@ -7701,11 +7710,14 @@ export const contentData = {
                       "minWords": 18,
                       "maxWords": 40,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-5",
@@ -8280,5 +8292,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T17:05:30.151Z";
+export const lastUpdated = "2025-10-14T17:07:45.894Z";
 export const generatedBy = "menu-persist-api";
