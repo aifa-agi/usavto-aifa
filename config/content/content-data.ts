@@ -8259,7 +8259,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-14T18:47:37.663Z",
-        "updatedAt": "2025-10-14T19:03:30.973Z",
+        "updatedAt": "2025-10-14T19:05:02.597Z",
         "order": 2,
         "description": "Узнайте, как заказать доставку через Яндекс Такси до двери с нашей пошаговой инструкцией. Просто следуйте рекомендациям и получите ваши посылки быстро и удобно!",
         "images": [
@@ -8831,6 +8831,112 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-5",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "ключевые выводы",
+              "дальнейшие шаги",
+              "пользовательский опыт",
+              "успешный заказ",
+              "доставка Яндекс Такси",
+              "инструкция по доставке",
+              "пошаговое руководство"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Подводя итоги, мы выделим ключевые моменты и предложим дальнейшие шаги для успешного заказа доставки.",
+            "intent": "Суммировать основные моменты и предоставить пользователям четкие рекомендации для следующего шага.",
+            "audiences": "Пользователи Яндекс Такси, желающие получить ясные рекомендации по заказу доставки | Уровень: начинающий | Боли: недостаток информации о следующих действиях.",
+            "selfPrompt": "Generate a concluding section summarizing key takeaways from the delivery process through Yandex Taxi, emphasizing actionable next steps for users to enhance their experience.",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 200,
+              "maxWords": 300,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-5-1",
+                "tag": "p",
+                "keywords": [
+                  "основные моменты",
+                  "выводы",
+                  "доставка"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Важно помнить, что успешный заказ доставки требует внимания к деталям.",
+                "intent": "Подвести итоги и выделить ключевые моменты, которые пользователи должны помнить.",
+                "audiences": "Пользователи Яндекс Такси, желающие быстро вспомнить основные моменты | Уровень: начинающий | Боли: забывчивость о важных деталях.",
+                "selfPrompt": "Generate a paragraph summarizing the key points users should remember when ordering delivery through Yandex Taxi.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-5-3",
+                "tag": "table",
+                "keywords": [
+                  "сравнение шагов",
+                  "действия",
+                  "доставка"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Сравнение шагов поможет пользователям лучше понять процесс.",
+                "intent": "Предоставить пользователям наглядное сравнение шагов, необходимых для успешного заказа.",
+                "audiences": "Пользователи Яндекс Такси, желающие визуализировать процесс | Уровень: начинающий | Боли: сложность восприятия информации.",
+                "selfPrompt": "Generate a table comparing the steps involved in ordering delivery through Yandex Taxi, highlighting key actions.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-5-2",
+                "tag": "ul",
+                "keywords": [
+                  "рекомендации",
+                  "дальнейшие шаги",
+                  "успех"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Следуйте этим рекомендациям для успешного заказа.",
+                "intent": "Предоставить пользователям список рекомендаций для дальнейших действий.",
+                "audiences": "Пользователи Яндекс Такси, желающие получить советы по улучшению своего опыта | Уровень: начинающий | Боли: неуверенность в следующих действиях.",
+                "selfPrompt": "Generate a list of actionable recommendations for users to follow after learning how to order delivery through Yandex Taxi.",
+                "additionalData": {
+                  "minWords": 50,
+                  "maxWords": 90,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-5-3",
+                "tag": "p",
+                "keywords": [
+                  "заключение",
+                  "дальнейшие действия"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Теперь вы готовы сделать свой первый заказ!",
+                "intent": "Подвести итог и вдохновить пользователей на действия.",
+                "audiences": "Пользователи Яндекс Такси, готовые сделать заказ | Уровень: начинающий | Боли: страх перед первым шагом.",
+                "selfPrompt": "Generate a concluding paragraph encouraging users to take action and place their first delivery order through Yandex Taxi.",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              }
+            ]
           }
         ]
       }
@@ -8863,5 +8969,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T19:05:01.853Z";
+export const lastUpdated = "2025-10-14T19:05:25.111Z";
 export const generatedBy = "menu-persist-api";
