@@ -10838,7 +10838,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-14T19:46:56.756Z",
-        "updatedAt": "2025-10-14T19:46:56.756Z",
+        "updatedAt": "2025-10-14T20:00:09.506Z",
         "order": 4,
         "badgeName": "Блог",
         "description": "Узнайте, какие классы есть в Яндекс Такси, их требования и тарифы. Получите полную информацию для выбора подходящего автомобиля!",
@@ -10857,7 +10857,77 @@ export const contentData = {
         "intent": "Пользователи ищут информацию о классах автомобилей Яндекс Такси, чтобы понять, какие модели соответствуют требованиям для разных тарифов. Они хотят решить проблему выбора подходящего автомобиля для работы в сервисе, чтобы оптимально зарабатывать. На этой странице они должны ознакомиться с классификацией автомобилей и требованиями к ним, что поможет им принять решение о регистрации своего автомобиля в Яндекс Такси.",
         "taxonomy": "Эта страница представляет собой информационный гид, описывающий классы автомобилей Яндекс Такси и их тарифы, что помещает её в категорию \"База знаний / Такси / Тарифы\". Она служит основным контентом, который дополняет и связывает с другими ресурсами о тарифах и требованиях к автомобилям, создавая кластер вокруг темы классификации автомобилей в Яндекс Такси. Страница соответствует семантической теме транспортных услуг и авторитетности в области такси, предоставляя пользователям актуальную информацию о тарифах.",
         "attention": "Создайте захватывающий заголовок с вопросом, который привлечет внимание пользователей в первые три секунды, например: \"Знаете ли вы, какие классы автомобилей доступны в Яндекс Такси?\". Используйте визуальную иерархию с четкими заголовками и подзаголовками, чтобы структурировать информацию, а также добавьте интерактивные элементы, такие как калькулятор соответствия автомобилей и визуальные таблицы для лучшего восприятия данных. Включите триггеры вовлечения, такие как интерактивные опросы и кнопки \"узнать больше\", чтобы поддерживать интерес и побуждать к дальнейшему взаимодействию, выделяясь на фоне конкурентов, предлагая уникальные инструменты и актуальные данные.",
-        "audiences": "Данный контент предназначен для профессиональных водителей такси и предпринимателей в сфере пассажирских перевозок, которые ищут информацию о классах автомобилей и соответствующих требованиях Яндекс Такси. Эти лица сталкиваются с трудностями в выборе подходящего тарифа для своих автомобилей и хотят максимизировать свои доходы, понимая, какие модели автомобилей допустимы для различных тарифов. Страница предоставляет актуальные данные о требованиях и изменениях в классификации автомобилей, что делает её важным ресурсом для их бизнеса."
+        "audiences": "Данный контент предназначен для профессиональных водителей такси и предпринимателей в сфере пассажирских перевозок, которые ищут информацию о классах автомобилей и соответствующих требованиях Яндекс Такси. Эти лица сталкиваются с трудностями в выборе подходящего тарифа для своих автомобилей и хотят максимизировать свои доходы, понимая, какие модели автомобилей допустимы для различных тарифов. Страница предоставляет актуальные данные о требованиях и изменениях в классификации автомобилей, что делает её важным ресурсом для их бизнеса.",
+        "draftContentStructure": [
+          {
+            "id": "h2-1",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "классы автомобилей Яндекс Такси",
+              "тарифы Яндекс Такси",
+              "требования к автомобилям",
+              "выбор автомобиля для такси",
+              "информация о Яндекс Такси",
+              "автомобили для работы в такси",
+              "классификация автомобилей"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Знаете ли вы, какие классы автомобилей доступны в Яндекс Такси?",
+            "intent": "Предоставить пользователям информацию о классах автомобилей и их требованиях для работы в Яндекс Такси.",
+            "audiences": "Профессиональные водители такси и предприниматели в сфере пассажирских перевозок.",
+            "selfPrompt": "Generate an engaging introduction for the section about classes of cars in Yandex Taxi, focusing on their requirements and tariffs. Highlight the importance of understanding these classes for drivers looking to maximize their earnings.",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 150,
+              "maxWords": 250,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-1-1",
+                "tag": "p",
+                "keywords": [
+                  "классы автомобилей",
+                  "требования к автомобилям",
+                  "информация о тарифах"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Узнайте, какие автомобили подходят для работы в Яндекс Такси.",
+                "intent": "Объяснить, какие классы автомобилей доступны и какие требования к ним предъявляются.",
+                "audiences": "Профессиональные водители и владельцы автомобилей.",
+                "selfPrompt": "Generate a paragraph that introduces the classes of cars available in Yandex Taxi and outlines the importance of understanding their requirements for drivers.",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 180,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-2",
+                "tag": "p",
+                "keywords": [
+                  "выбор автомобиля",
+                  "максимизация дохода"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Понимание классов автомобилей поможет вам выбрать подходящий тариф.",
+                "intent": "Подчеркнуть, как правильный выбор автомобиля может повлиять на доходы водителей.",
+                "audiences": "Водители такси, стремящиеся увеличить свои доходы.",
+                "selfPrompt": "Generate a paragraph that emphasizes how understanding the classes of cars can help drivers choose the right tariff and maximize their earnings.",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 120,
+                  "actualContent": ""
+                }
+              }
+            ]
+          }
+        ]
       }
     ],
     "order": 16
@@ -10888,5 +10958,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T20:00:08.945Z";
+export const lastUpdated = "2025-10-14T20:01:24.348Z";
 export const generatedBy = "menu-persist-api";
