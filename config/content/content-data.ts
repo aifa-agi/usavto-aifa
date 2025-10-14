@@ -9554,7 +9554,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-14T19:12:30.467Z",
-        "updatedAt": "2025-10-14T19:29:18.167Z",
+        "updatedAt": "2025-10-14T19:30:22.209Z",
         "order": 3,
         "description": "Узнайте, какая страховка нужна для такси на личном авто самозанятого! Получите актуальные советы по оформлению ОСАГО и ОСГОП. Начните работать безопасно!",
         "images": [
@@ -9917,6 +9917,207 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "часто задаваемые вопросы",
+              "страхование для такси",
+              "ОСАГО и ОСГОП",
+              "требования к страховке",
+              "самозанятые таксисты",
+              "пассажирские перевозки",
+              "полезные советы"
+            ],
+            "taxonomy": "FAQ",
+            "attention": "Узнайте ответы на самые распространенные вопросы о страховании для самозанятых таксистов!",
+            "intent": "Предоставить пользователям четкие ответы на часто задаваемые вопросы о страховании для такси.",
+            "audiences": "Самозанятые водители такси, ищущие информацию о страховании.",
+            "selfPrompt": "Generate h2 in section 'Часто задаваемые вопросы' of page 'Страховка для такси на личном авто самозанятого: что знать?'  GOAL: Provide clear answers to frequently asked questions about insurance for self-employed taxi drivers.",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "keywords": [
+                  "страхование для такси",
+                  "часто задаваемые вопросы"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Здесь вы найдете ответы на наиболее распространенные вопросы.",
+                "intent": "Ввести пользователей в раздел часто задаваемых вопросов.",
+                "audiences": "Самозанятые водители такси.",
+                "selfPrompt": "Generate p in section 'Часто задаваемые вопросы' of page 'Страховка для такси на личном авто самозанятого: что знать?'  GOAL: Introduce users to the FAQ section.",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "keywords": [
+                  "что такое ОСАГО",
+                  "обязательное страхование"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, что такое ОСАГО и почему оно важно для таксистов.",
+                "intent": "Объяснить, что такое ОСАГО и его значение для самозанятых таксистов.",
+                "audiences": "Самозанятые водители такси, начинающие свою деятельность.",
+                "selfPrompt": "Generate h3 in section 'Часто задаваемые вопросы' of page 'Страховка для такси на личном авто самозанятого: что знать?'  GOAL: Explain what ОСАГО is and its importance for self-employed taxi drivers.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "keywords": [
+                      "значение ОСАГО",
+                      "страхование"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "ОСАГО — это обязательное страхование автогражданской ответственности.",
+                    "intent": "Объяснить значение ОСАГО.",
+                    "audiences": "Самозанятые водители такси.",
+                    "selfPrompt": "Generate p in section 'Что такое ОСАГО' of page 'Часто задаваемые вопросы'  GOAL: Explain the meaning of ОСАГО.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-2",
+                "tag": "h3",
+                "keywords": [
+                  "что такое ОСГОП",
+                  "обязательное страхование перевозчика"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, что такое ОСГОП и его роль в страховании таксистов.",
+                "intent": "Объяснить, что такое ОСГОП и его значение для самозанятых таксистов.",
+                "audiences": "Самозанятые водители такси, желающие узнать о страховании.",
+                "selfPrompt": "Generate h3 in section 'Часто задаваемые вопросы' of page 'Страховка для такси на личном авто самозанятого: что знать?'  GOAL: Explain what ОСГОП is and its importance for self-employed taxi drivers.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "значение ОСГОП",
+                      "страхование перевозчика"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "ОСГОП — это обязательное страхование гражданской ответственности перевозчика.",
+                    "intent": "Объяснить значение ОСГОП.",
+                    "audiences": "Самозанятые водители такси.",
+                    "selfPrompt": "Generate p in section 'Что такое ОСГОП' of page 'Часто задаваемые вопросы'  GOAL: Explain the meaning of ОСГОП.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-3",
+                "tag": "h3",
+                "keywords": [
+                  "как оформить страховку",
+                  "процесс оформления"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, как правильно оформить страховку для такси.",
+                "intent": "Объяснить процесс оформления страховки для самозанятых таксистов.",
+                "audiences": "Самозанятые водители такси, ищущие информацию о процессе оформления.",
+                "selfPrompt": "Generate h3 in section 'Часто задаваемые вопросы' of page 'Страховка для такси на личном авто самозанятого: что знать?'  GOAL: Explain the process of obtaining insurance for self-employed taxi drivers.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "шаги оформления страховки",
+                      "рекомендации"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Процесс оформления страховки включает несколько ключевых шагов.",
+                    "intent": "Объяснить шаги оформления страховки.",
+                    "audiences": "Самозанятые водители такси.",
+                    "selfPrompt": "Generate p in section 'Как оформить страховку' of page 'Часто задаваемые вопросы'  GOAL: Explain the steps for obtaining insurance.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-4",
+                "tag": "h3",
+                "keywords": [
+                  "где купить страховку",
+                  "выбор страховой компании"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, где можно приобрести страховку для такси.",
+                "intent": "Объяснить, где и как можно приобрести страховку для самозанятых таксистов.",
+                "audiences": "Самозанятые водители такси, ищущие информацию о страховых компаниях.",
+                "selfPrompt": "Generate h3 in section 'Часто задаваемые вопросы' of page 'Страховка для такси на личном авто самозанятого: что знать?'  GOAL: Explain where and how to purchase insurance for self-employed taxi drivers.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "рекомендации по выбору",
+                      "страховые компании"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Выбор надежной страховой компании — ключевой момент.",
+                    "intent": "Объяснить, как выбрать страховую компанию.",
+                    "audiences": "Самозанятые водители такси.",
+                    "selfPrompt": "Generate p in section 'Где купить страховку' of page 'Часто задаваемые вопросы'  GOAL: Explain how to choose an insurance company.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -9949,5 +10150,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T19:30:21.357Z";
+export const lastUpdated = "2025-10-14T19:31:05.998Z";
 export const generatedBy = "menu-persist-api";
