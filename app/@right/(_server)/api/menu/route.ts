@@ -79,8 +79,8 @@ function isPrivilegedRole(role?: string | null): boolean {
  */
 function getUserRole(session: any): UserRole {
   // Adjust this path based on your NextAuth session structure
-  // Common paths: session?.user?.role or session?.role
-  const role = session?.user?.role || session?.role;
+  // Common paths: session?.user?.type or session?.role
+  const role = session?.user?.type;
   
   if (!role) return "guest";
   
