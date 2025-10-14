@@ -6825,7 +6825,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-14T16:33:14.979Z",
-        "updatedAt": "2025-10-14T16:56:23.418Z",
+        "updatedAt": "2025-10-14T16:58:03.700Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "какую машину купить для работы в такси комфорт",
@@ -7181,6 +7181,275 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "методология выбора автомобиля для такси",
+              "пошаговый процесс выбора автомобиля",
+              "практическое руководство по выбору такси",
+              "рекомендации по выбору автомобиля",
+              "выбор автомобиля для комфортного такси"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, как правильно выбрать автомобиль для работы в такси комфорт с помощью нашего пошагового руководства.",
+            "intent": "Предоставить читателям практическое руководство по выбору автомобиля для работы в такси комфорт.",
+            "audiences": "Водители такси, владельцы таксопарков | Уровень: начинающий/опытный | Проблемы: трудности в выборе подходящего автомобиля.",
+            "selfPrompt": "Generate h2 in section 'Методология выбора автомобиля для такси комфорт' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Обсудить методологию и пошаговые рекомендации по выбору автомобиля для работы в такси комфорт.  AUDIENCE: Водители такси и владельцы таксопарков, которые ищут практическое руководство.",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 500,
+              "maxWords": 750,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-3-1",
+                "tag": "p",
+                "keywords": [
+                  "методология выбора",
+                  "выбор автомобиля"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Понимание методологии выбора автомобиля поможет вам сделать осознанный выбор.",
+                "intent": "Ввести читателя в тему методологии выбора автомобиля для такси.",
+                "audiences": "Водители такси | Уровень: начинающий | Проблемы: недостаток информации о методах выбора.",
+                "selfPrompt": "Generate p in section 'Методология выбора автомобиля для такси комфорт' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Ввести читателя в методологию выбора автомобиля для такси.  AUDIENCE: Водители такси, которые ищут информацию о методах выбора.",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-3-2",
+                "tag": "p",
+                "keywords": [
+                  "пошаговый процесс",
+                  "выбор автомобиля"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Следуйте пошаговому процессу для выбора идеального автомобиля.",
+                "intent": "Объяснить пошаговый процесс выбора автомобиля для такси.",
+                "audiences": "Водители такси | Уровень: начинающий/опытный | Проблемы: сложности в выборе.",
+                "selfPrompt": "Generate p in section 'Методология выбора автомобиля для такси комфорт' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Объяснить пошаговый процесс выбора автомобиля для такси.  AUDIENCE: Водители такси, которые ищут четкие шаги для выбора.",
+                "additionalData": {
+                  "minWords": 110,
+                  "maxWords": 220,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-3-3",
+                "tag": "h3",
+                "keywords": [
+                  "рекомендации по выбору",
+                  "выбор автомобиля"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Получите рекомендации по выбору автомобиля для такси.",
+                "intent": "Предоставить рекомендации по выбору автомобиля для работы в такси.",
+                "audiences": "Водители такси | Уровень: начинающий/опытный | Проблемы: недостаток информации о лучших моделях.",
+                "selfPrompt": "Generate h3 in section 'Методология выбора автомобиля для такси комфорт' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Предоставить рекомендации по выбору автомобиля для такси.  AUDIENCE: Водители такси, которые ищут советы по выбору.",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 350,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "рекомендации",
+                      "выбор автомобиля"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Следуйте этим рекомендациям для успешного выбора.",
+                    "intent": "Дать конкретные рекомендации по выбору автомобиля.",
+                    "audiences": "Водители такси | Уровень: начинающий/опытный | Проблемы: неопределенность в выборе.",
+                    "selfPrompt": "Generate p in section 'Рекомендации по выбору автомобиля' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Дать рекомендации по выбору автомобиля для такси.  AUDIENCE: Водители такси, которые ищут конкретные советы.",
+                    "additionalData": {
+                      "minWords": 85,
+                      "maxWords": 170,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-3-2",
+                    "tag": "ol",
+                    "keywords": [
+                      "шаги выбора",
+                      "рекомендации"
+                    ],
+                    "taxonomy": "actionable",
+                    "attention": "Следуйте этим шагам для выбора автомобиля.",
+                    "intent": "Предоставить список шагов для выбора автомобиля.",
+                    "audiences": "Водители такси | Уровень: начинающий/опытный | Проблемы: недостаток структуры в выборе.",
+                    "selfPrompt": "Generate ol in section 'Рекомендации по выбору автомобиля' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Предоставить шаги для выбора автомобиля.  AUDIENCE: Водители такси, которые ищут структурированные рекомендации.",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 100,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "h4-3-3-3",
+                    "tag": "h4",
+                    "keywords": [
+                      "дополнительные советы",
+                      "выбор автомобиля"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Дополнительные советы для успешного выбора.",
+                    "intent": "Предоставить дополнительные советы по выбору автомобиля.",
+                    "audiences": "Водители такси | Уровень: начинающий/опытный | Проблемы: недостаток информации.",
+                    "selfPrompt": "Generate h4 in section 'Дополнительные советы по выбору автомобиля' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Дать дополнительные советы по выбору автомобиля.  AUDIENCE: Водители такси, которые ищут больше информации.",
+                    "additionalData": {
+                      "minWords": 120,
+                      "maxWords": 200,
+                      "actualContent": ""
+                    },
+                    "realContentStructure": [
+                      {
+                        "id": "p-3-3-3-1",
+                        "tag": "p",
+                        "keywords": [
+                          "дополнительные советы",
+                          "выбор автомобиля"
+                        ],
+                        "taxonomy": "supporting",
+                        "attention": "Эти советы помогут вам сделать лучший выбор.",
+                        "intent": "Дать конкретные дополнительные советы по выбору автомобиля.",
+                        "audiences": "Водители такси | Уровень: начинающий/опытный | Проблемы: неопределенность в выборе.",
+                        "selfPrompt": "Generate p in section 'Дополнительные советы' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Дать дополнительные советы по выбору автомобиля.  AUDIENCE: Водители такси, которые ищут больше информации.",
+                        "additionalData": {
+                          "minWords": 75,
+                          "maxWords": 150,
+                          "actualContent": ""
+                        }
+                      },
+                      {
+                        "id": "code-3-3-3-2",
+                        "tag": "code",
+                        "keywords": [
+                          "код выбора",
+                          "выбор автомобиля"
+                        ],
+                        "taxonomy": "technical",
+                        "attention": "Пример кода для выбора автомобиля.",
+                        "intent": "Предоставить пример кода для выбора автомобиля.",
+                        "audiences": "Водители такси | Уровень: опытный | Проблемы: необходимость в автоматизации.",
+                        "selfPrompt": "Generate code in section 'Пример кода для выбора автомобиля' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Дать пример кода для выбора автомобиля.  AUDIENCE: Водители такси, которые ищут автоматизацию выбора.",
+                        "additionalData": {
+                          "minWords": 25,
+                          "maxWords": 60,
+                          "actualContent": ""
+                        }
+                      },
+                      {
+                        "id": "p-3-3-3-3",
+                        "tag": "p",
+                        "keywords": [
+                          "дополнительные советы",
+                          "выбор автомобиля"
+                        ],
+                        "taxonomy": "supporting",
+                        "attention": "Эти советы помогут вам сделать лучший выбор.",
+                        "intent": "Дать заключение по дополнительным советам.",
+                        "audiences": "Водители такси | Уровень: начинающий/опытный | Проблемы: неопределенность в выборе.",
+                        "selfPrompt": "Generate p in section 'Заключение по дополнительным советам' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Дать заключение по дополнительным советам.  AUDIENCE: Водители такси, которые ищут больше информации.",
+                        "additionalData": {
+                          "minWords": 65,
+                          "maxWords": 130,
+                          "actualContent": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "h3-3-4",
+                "tag": "h3",
+                "keywords": [
+                  "законодательные изменения",
+                  "выбор автомобиля"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте о законодательных изменениях, влияющих на выбор автомобиля.",
+                "intent": "Обсудить законодательные изменения, касающиеся выбора автомобиля для такси.",
+                "audiences": "Водители такси | Уровень: начинающий/опытный | Проблемы: недостаток информации о законодательстве.",
+                "selfPrompt": "Generate h3 in section 'Законодательные изменения, влияющие на выбор автомобиля' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Обсудить законодательные изменения, касающиеся выбора автомобиля для такси.  AUDIENCE: Водители такси, которые ищут информацию о законодательных изменениях.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 250,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "законодательные изменения",
+                      "выбор автомобиля"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Эти изменения могут повлиять на ваш выбор автомобиля.",
+                    "intent": "Объяснить, как законодательные изменения влияют на выбор автомобиля.",
+                    "audiences": "Водители такси | Уровень: начинающий/опытный | Проблемы: недостаток информации о законодательстве.",
+                    "selfPrompt": "Generate p in section 'Законодательные изменения' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Объяснить, как законодательные изменения влияют на выбор автомобиля.  AUDIENCE: Водители такси, которые ищут информацию о законодательных изменениях.",
+                    "additionalData": {
+                      "minWords": 95,
+                      "maxWords": 190,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "blockquote-3-4-2",
+                    "tag": "blockquote",
+                    "keywords": [
+                      "законодательные изменения",
+                      "выбор автомобиля"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Цитата эксперта о законодательных изменениях.",
+                    "intent": "Предоставить мнение эксперта о законодательных изменениях.",
+                    "audiences": "Водители такси | Уровень: начинающий/опытный | Проблемы: недостаток информации о законодательстве.",
+                    "selfPrompt": "Generate blockquote in section 'Цитата эксперта' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Предоставить мнение эксперта о законодательных изменениях.  AUDIENCE: Водители такси, которые ищут информацию о законодательных изменениях.",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 45,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-4-3",
+                    "tag": "ol",
+                    "keywords": [
+                      "шаги выбора",
+                      "законодательные изменения"
+                    ],
+                    "taxonomy": "actionable",
+                    "attention": "Следуйте этим шагам для учета законодательных изменений.",
+                    "intent": "Предоставить список шагов для учета законодательных изменений при выборе автомобиля.",
+                    "audiences": "Водители такси | Уровень: начинающий/опытный | Проблемы: недостаток информации о законодательстве.",
+                    "selfPrompt": "Generate ol in section 'Шаги учета законодательных изменений' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Предоставить шаги для учета законодательных изменений при выборе автомобиля.  AUDIENCE: Водители такси, которые ищут информацию о законодательных изменениях.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -7213,5 +7482,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T16:58:02.569Z";
+export const lastUpdated = "2025-10-14T16:59:27.090Z";
 export const generatedBy = "menu-persist-api";
