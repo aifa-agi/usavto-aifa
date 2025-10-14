@@ -9554,7 +9554,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-14T19:12:30.467Z",
-        "updatedAt": "2025-10-14T19:12:30.467Z",
+        "updatedAt": "2025-10-14T19:26:56.441Z",
         "order": 3,
         "description": "Узнайте, какая страховка нужна для такси на личном авто самозанятого! Получите актуальные советы по оформлению ОСАГО и ОСГОП. Начните работать безопасно!",
         "images": [
@@ -9572,7 +9572,77 @@ export const contentData = {
         "intent": "Пользователи, попадая на эту страницу, ищут информацию о необходимых страховках для работы самозанятыми таксистами, включая детали обязательного страхования гражданской ответственности перевозчика (ОСГОП). Они хотят найти четкие инструкции по оформлению страховок и понять, какие полисы потребуются для легальной работы в данной сфере. Эта страница предоставляет необходимую информацию и рекомендации, что позволяет пользователям уверенно действовать в соответствии с законодательством и избегать штрафов.",
         "taxonomy": "Данная страница представляет собой практическое руководство (гид) для самозанятых водителей такси, фокусируясь на обязательном страховании гражданской ответственности перевозчика (ОСГОП) и необходимых условиях для его получения. Она попадает в категорию \"Бизнес\" с подкатегориями \"Самозанятость\" и \"Транспортные услуги\", и служит кластерным контентом, поддерживающим более обширные темы о работе самозанятых в такси и страховании для транспортных услуг. Страница соответствует семантической тематике страхования и правовых аспектов, усиливая авторитет в области налогового регулирования и обязательного страхования для самозанятых таксистов.",
         "attention": "Создайте захватывающее начало с ярким заголовком, который акцентирует внимание на обязательности страховки для самозанятых таксистов, используя анимацию и визуальные метафоры для пояснения важности осознания требований к страхованию. Обеспечьте четкую визуальную иерархию, разбив текст на легко воспринимаемые секции, добавьте интерактивные элементы, такие как калькуляторы страховых затрат и опросы, чтобы удерживать пользователей вовлеченными. Поддержите интерес, предлагая уникальные инсайты и практические рекомендации, выделяющие ваш контент среди конкурентов, с акцентом на актуальность и правовые изменения в сфере такси.",
-        "audiences": "Целевая аудитория данной страницы — это самозанятые водители такси в возрасте 25-45 лет, которые имеют опыт работы в такси или планируют начать свою деятельность в этой сфере. Они стремятся получить информацию о необходимых страховых полисах для легальной работы, испытывают беспокойство по поводу соблюдения новых законодательных требований и хотят минимизировать свои финансовые риски. Эта страница предоставляет актуальные данные о страховании гражданской ответственности перевозчика, что критически важно для их профессиональной деятельности."
+        "audiences": "Целевая аудитория данной страницы — это самозанятые водители такси в возрасте 25-45 лет, которые имеют опыт работы в такси или планируют начать свою деятельность в этой сфере. Они стремятся получить информацию о необходимых страховых полисах для легальной работы, испытывают беспокойство по поводу соблюдения новых законодательных требований и хотят минимизировать свои финансовые риски. Эта страница предоставляет актуальные данные о страховании гражданской ответственности перевозчика, что критически важно для их профессиональной деятельности.",
+        "draftContentStructure": [
+          {
+            "id": "h2-1",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "страховка для такси",
+              "самозанятые водители",
+              "обязательное страхование",
+              "ОСАГО",
+              "ОСГОП",
+              "требования к страховке",
+              "пассажирские перевозки"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, почему страховка для самозанятых таксистов критически важна для вашей безопасности и легальности работы.",
+            "intent": "В этом разделе мы обсудим, какая страховка необходима для работы самозанятыми таксистами и как правильно оформить полисы.",
+            "audiences": "Самозанятые водители такси, которые хотят узнать о необходимых страховках для легальной работы.",
+            "selfPrompt": "Generate h2 in section 'Введение' of page 'Страховка для такси на личном авто самозанятого: что знать?'\n\nGOAL: Introduce the importance of insurance for self-employed taxi drivers and outline the necessary policies.\n\nAUDIENCE: Self-employed taxi drivers | Level: beginner | Pain points: Understanding legal requirements for insurance.\n\nKEYWORDS TO INTEGRATE:\n['страховка для такси', 'самозанятые водители', 'обязательное страхование', 'ОСАГО', 'ОСГОП', 'требования к страховке', 'пассажирские перевозки']\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 150, maxWords: 250 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: # Заголовок\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: [none available]\n- SECONDARY: Apply insights from External KB: [обязательное страхование, ОСАГО, ОСГОП]\n\nQUALITY CRITERIA:\n- Actionable (specific actions/recommendations)\n- Specific (avoid generic statements)\n- Data-backed (use facts/statistics from Knowledge Bases)\n- No fluff (eliminate filler content)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: This section emphasizes the necessity of insurance for self-employed taxi drivers, ensuring compliance and safety.\n- sourceHint: External KB resource\n- evidenceStrength: external-peer-reviewed.",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 150,
+              "maxWords": 250,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-1-1",
+                "tag": "p",
+                "keywords": [
+                  "страховка для такси",
+                  "самозанятые водители"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Важно понимать, что наличие страховки не только защищает вас, но и ваших пассажиров.",
+                "intent": "Объяснить, почему страховка необходима для самозанятых таксистов.",
+                "audiences": "Самозанятые водители такси, которые хотят узнать о необходимости страховки.",
+                "selfPrompt": "Generate p in section 'Введение' of page 'Страховка для такси на личном авто самозанятого: что знать?'\n\nGOAL: Explain the importance of insurance for self-employed taxi drivers.\n\nAUDIENCE: Self-employed taxi drivers | Level: beginner | Pain points: Understanding the necessity of insurance.\n\nKEYWORDS TO INTEGRATE:\n['страховка для такси', 'самозанятые водители']\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 100, maxWords: 180 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: \n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: [none available]\n- SECONDARY: Apply insights from External KB: [обязательное страхование, ОСАГО, ОСГОП]\n\nQUALITY CRITERIA:\n- Actionable (specific actions/recommendations)\n- Specific (avoid generic statements)\n- Data-backed (use facts/statistics from Knowledge Bases)\n- No fluff (eliminate filler content)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: This paragraph highlights the dual protection offered by insurance for both drivers and passengers.\n- sourceHint: External KB resource\n- evidenceStrength: external-peer-reviewed.",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 180,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-2",
+                "tag": "p",
+                "keywords": [
+                  "обязательное страхование",
+                  "ОСАГО",
+                  "ОСГОП"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Не забудьте, что без страховки вы рискуете не только своим бизнесом, но и своей безопасностью.",
+                "intent": "Подчеркнуть важность обязательного страхования для самозанятых таксистов.",
+                "audiences": "Самозанятые водители такси, которые хотят понять требования к страховке.",
+                "selfPrompt": "Generate p in section 'Введение' of page 'Страховка для такси на личном авто самозанятого: что знать?'\n\nGOAL: Emphasize the importance of mandatory insurance for self-employed taxi drivers.\n\nAUDIENCE: Self-employed taxi drivers | Level: beginner | Pain points: Understanding mandatory insurance requirements.\n\nKEYWORDS TO INTEGRATE:\n['обязательное страхование', 'ОСАГО', 'ОСГОП']\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 60, maxWords: 120 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: \n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: [none available]\n- SECONDARY: Apply insights from External KB: [обязательное страхование, ОСАГО, ОСГОП]\n\nQUALITY CRITERIA:\n- Actionable (specific actions/recommendations)\n- Specific (avoid generic statements)\n- Data-backed (use facts/statistics from Knowledge Bases)\n- No fluff (eliminate filler content)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: This paragraph stresses the risks of operating without insurance, highlighting the legal implications.\n- sourceHint: External KB resource\n- evidenceStrength: external-peer-reviewed.",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 120,
+                  "actualContent": ""
+                }
+              }
+            ]
+          }
+        ]
       }
     ],
     "order": 16
@@ -9603,5 +9673,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T19:26:55.813Z";
+export const lastUpdated = "2025-10-14T19:28:07.670Z";
 export const generatedBy = "menu-persist-api";
