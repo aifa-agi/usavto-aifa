@@ -70,25 +70,25 @@ const nextConfig = {
    * - Vercel will include them in the serverless function bundle
    * 
    * Route pattern syntax:
-   * - /api/menu/read matches exact route in pages dir
+   * - /api/menu matches exact route in pages dir
    * - For app router, use the full route path without 'route.ts'
    * - Wildcards: /api/** matches all API routes
    * 
    * File pattern syntax:
    * - Relative to project root (where package.json lives)
    
-  
+
    */
   outputFileTracingIncludes: {
     // Include all content data files for the menu read API route
     // This ensures config/content/* files are available in serverless environment
-    '/api/menu/read': [
+    '/api/menu': [
       './config/content/**/*',
     ],
     
     // If you have the route in app router with parallel routes:
     // Use the full route path without the route.ts file
-    '/@right/(_server)/api/menu/read': [
+    '/@right/(_server)/api/menu': [
       './config/content/**/*',
     ],
     
@@ -113,7 +113,7 @@ const nextConfig = {
    * Helps reduce bundle size
    */
   // outputFileTracingExcludes: {
-  //   '/api/menu/read': [
+  //   '/api/menu': [
   //     './node_modules/@some-large-package/**/*',
   //   ],
   // },
