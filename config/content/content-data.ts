@@ -10838,7 +10838,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-14T19:46:56.756Z",
-        "updatedAt": "2025-10-14T20:00:09.506Z",
+        "updatedAt": "2025-10-14T20:01:20.500Z",
         "order": 4,
         "badgeName": "Блог",
         "description": "Узнайте, какие классы есть в Яндекс Такси, их требования и тарифы. Получите полную информацию для выбора подходящего автомобиля!",
@@ -10926,6 +10926,167 @@ export const contentData = {
                 }
               }
             ]
+          },
+          {
+            "id": "h2-2",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "требования к автомобилям Яндекс Такси",
+              "классификация автомобилей",
+              "тарифы Яндекс Такси",
+              "модели автомобилей",
+              "возраст автомобилей",
+              "стоимость автомобилей",
+              "проверка соответствия"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, какие требования предъявляются к автомобилям для работы в Яндекс Такси!",
+            "intent": "Объяснить требования к автомобилям, которые могут выполнять заказы в Яндекс Такси, и помочь водителям выбрать подходящий тариф.",
+            "audiences": "Профессиональные водители такси и предприниматели в сфере пассажирских перевозок, ищущие информацию о требованиях к автомобилям.",
+            "selfPrompt": "Generate a detailed overview of the requirements for vehicles eligible for Yandex Taxi, including model specifications, age limits, and market value considerations. Highlight the importance of understanding these requirements for drivers looking to maximize their earnings.",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 250,
+              "maxWords": 400,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-2-1",
+                "tag": "p",
+                "keywords": [
+                  "требования к автомобилям",
+                  "возраст автомобилей",
+                  "стоимость автомобилей"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Понимание требований поможет вам выбрать правильный автомобиль.",
+                "intent": "Предоставить информацию о требованиях к автомобилям для работы в Яндекс Такси.",
+                "audiences": "Водители такси, которые хотят узнать, какие автомобили подходят для работы.",
+                "selfPrompt": "Generate a paragraph explaining the basic requirements for vehicles to be eligible for Yandex Taxi, including age and market value considerations.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-2-2-3",
+                "tag": "p",
+                "keywords": [
+                  "модели автомобилей",
+                  "проверка соответствия"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Узнайте, как проверить соответствие вашего автомобиля требованиям.",
+                "intent": "Объяснить, как водители могут проверить, подходит ли их автомобиль для работы в Яндекс Такси.",
+                "audiences": "Водители такси, которые хотят проверить соответствие своего автомобиля.",
+                "selfPrompt": "Generate a short paragraph on how drivers can check if their vehicle meets the requirements for Yandex Taxi.",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-2-2-4",
+                "tag": "table",
+                "keywords": [
+                  "требования к автомобилям",
+                  "возраст",
+                  "стоимость"
+                ],
+                "taxonomy": "data-driven",
+                "attention": "Посмотрите таблицу с требованиями к автомобилям для разных тарифов.",
+                "intent": "Предоставить таблицу с требованиями к автомобилям для различных тарифов Яндекс Такси.",
+                "audiences": "Водители такси, которые хотят быстро ознакомиться с требованиями.",
+                "selfPrompt": "Generate a table that outlines the requirements for vehicles eligible for different Yandex Taxi tariffs, including model, age, and market value.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-2-2",
+                "tag": "h3",
+                "keywords": [
+                  "классификация автомобилей",
+                  "тарифы Яндекс Такси"
+                ],
+                "taxonomy": "Guide",
+                "attention": "Узнайте о классификации автомобилей для тарифов Яндекс Такси.",
+                "intent": "Объяснить, как классификация автомобилей влияет на тарифы Яндекс Такси.",
+                "audiences": "Водители такси, которые хотят понять, как классификация автомобилей влияет на их доход.",
+                "selfPrompt": "Generate a subsection that explains how vehicle classification affects Yandex Taxi tariffs and the implications for drivers.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 250,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "классификация автомобилей",
+                      "тарифы"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Понимание классификации поможет вам выбрать правильный тариф.",
+                    "intent": "Объяснить, как классификация автомобилей влияет на выбор тарифа.",
+                    "audiences": "Водители такси, которые хотят выбрать подходящий тариф.",
+                    "selfPrompt": "Generate a paragraph explaining how vehicle classification impacts tariff selection for drivers in Yandex Taxi.",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 130,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-2-2-2",
+                    "tag": "ul",
+                    "keywords": [
+                      "тарифы Яндекс Такси",
+                      "классификация"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Посмотрите на основные тарифы Яндекс Такси.",
+                    "intent": "Предоставить список основных тарифов Яндекс Такси и их характеристик.",
+                    "audiences": "Водители такси, которые хотят ознакомиться с тарифами.",
+                    "selfPrompt": "Generate a list of the main Yandex Taxi tariffs and their characteristics, focusing on how vehicle classification affects them.",
+                    "additionalData": {
+                      "minWords": 40,
+                      "maxWords": 80,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-2-3",
+                    "tag": "p",
+                    "keywords": [
+                      "выбор тарифа",
+                      "классификация автомобилей"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Узнайте, как выбрать правильный тариф для вашего автомобиля.",
+                    "intent": "Объяснить, как выбрать правильный тариф в зависимости от классификации автомобиля.",
+                    "audiences": "Водители такси, которые хотят оптимизировать свои доходы.",
+                    "selfPrompt": "Generate a paragraph on how to choose the right tariff based on vehicle classification to maximize earnings in Yandex Taxi.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 100,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -10958,5 +11119,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T20:01:24.348Z";
+export const lastUpdated = "2025-10-14T20:02:22.950Z";
 export const generatedBy = "menu-persist-api";
