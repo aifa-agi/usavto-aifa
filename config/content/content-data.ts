@@ -9554,7 +9554,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-14T19:12:30.467Z",
-        "updatedAt": "2025-10-14T19:30:22.209Z",
+        "updatedAt": "2025-10-14T19:31:06.721Z",
         "order": 3,
         "description": "Узнайте, какая страховка нужна для такси на личном авто самозанятого! Получите актуальные советы по оформлению ОСАГО и ОСГОП. Начните работать безопасно!",
         "images": [
@@ -10118,6 +10118,107 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-5",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "ключевые выводы",
+              "рекомендации по страхованию",
+              "следующие шаги для самозанятых",
+              "обязательное страхование",
+              "страховые полисы для такси"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, как правильно подготовиться к обязательному страхованию для работы в такси.",
+            "intent": "Подвести итоги и предоставить рекомендации по обязательному страхованию для самозанятых таксистов.",
+            "audiences": "Самозанятые водители такси, которые ищут информацию о страховании.",
+            "selfPrompt": "Generate h2 in section 'Заключение' of page 'Страховка для такси на личном авто самозанятого: что знать?'  GOAL: Summarize key takeaways and provide actionable next steps for self-employed taxi drivers regarding mandatory insurance.",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 200,
+              "maxWords": 300,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-5-1",
+                "tag": "p",
+                "keywords": [
+                  "обзор обязательного страхования",
+                  "значение страховки для таксистов"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Понимание важности страхования поможет избежать штрафов.",
+                "intent": "Подвести итоги о значении обязательного страхования для самозанятых таксистов.",
+                "audiences": "Самозанятые водители такси, которые ищут информацию о страховании.",
+                "selfPrompt": "Generate p in section 'Заключение' of page 'Страховка для такси на личном авто самозанятого: что знать?'  GOAL: Summarize the importance of mandatory insurance for self-employed taxi drivers.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-5-3",
+                "tag": "table",
+                "keywords": [
+                  "сравнение страховых полисов",
+                  "обязательное страхование для такси"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Сравнение поможет выбрать лучший вариант страхования.",
+                "intent": "Предоставить таблицу с основными характеристиками обязательного страхования.",
+                "audiences": "Самозанятые водители такси, которые ищут информацию о страховании.",
+                "selfPrompt": "Generate table in section 'Заключение' of page 'Страховка для такси на личном авто самозанятого: что знать?'  GOAL: Provide a comparison table of mandatory insurance policies for self-employed taxi drivers.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-5-2",
+                "tag": "ul",
+                "keywords": [
+                  "рекомендации по выбору страховки",
+                  "шаги для получения полиса"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Следуйте этим рекомендациям для успешного оформления страховки.",
+                "intent": "Предоставить список рекомендаций по выбору и оформлению страховки.",
+                "audiences": "Самозанятые водители такси, которые ищут информацию о страховании.",
+                "selfPrompt": "Generate ul in section 'Заключение' of page 'Страховка для такси на личном авто самозанятого: что знать?'  GOAL: Provide a list of recommendations for choosing and obtaining insurance for self-employed taxi drivers.",
+                "additionalData": {
+                  "minWords": 50,
+                  "maxWords": 90,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-5-3",
+                "tag": "p",
+                "keywords": [
+                  "последние советы",
+                  "действия после получения страховки"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Не забудьте следовать этим шагам после получения страховки.",
+                "intent": "Поделиться последними советами и действиями, которые необходимо предпринять после получения страховки.",
+                "audiences": "Самозанятые водители такси, которые ищут информацию о страховании.",
+                "selfPrompt": "Generate p in section 'Заключение' of page 'Страховка для такси на личном авто самозанятого: что знать?'  GOAL: Share final tips and actions to take after obtaining insurance.",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              }
+            ]
           }
         ]
       }
@@ -10150,5 +10251,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T19:31:05.998Z";
+export const lastUpdated = "2025-10-14T19:32:02.056Z";
 export const generatedBy = "menu-persist-api";
