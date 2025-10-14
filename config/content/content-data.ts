@@ -6825,7 +6825,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-14T16:33:14.979Z",
-        "updatedAt": "2025-10-14T16:59:28.127Z",
+        "updatedAt": "2025-10-14T17:00:45.558Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "какую машину купить для работы в такси комфорт",
@@ -7675,6 +7675,146 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-5",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "обслуживание автомобилей для такси",
+              "мониторинг состояния автомобиля",
+              "практики технического обслуживания",
+              "устранение неполадок",
+              "управление жизненным циклом автомобиля",
+              "экономия на обслуживании",
+              "долговечность автомобилей для такси"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, как правильно обслуживать ваш автомобиль для такси, чтобы обеспечить его долговечность и надежность.",
+            "intent": "Обсудить важность регулярного обслуживания и мониторинга состояния автомобилей для такси.",
+            "audiences": "Водители такси, владельцы таксопарков | Уровень: начинающий/средний | Болевые точки: необходимость в экономии на обслуживании и поддержании автомобилей в хорошем состоянии.",
+            "selfPrompt": "Generate h2 in section 'Обслуживание и мониторинг автомобилей для такси комфорт' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Обсудить важность регулярного обслуживания и мониторинга состояния автомобилей для такси.  AUDIENCE: Водители такси, владельцы таксопарков, которые хотят узнать, как поддерживать свои автомобили в идеальном состоянии.",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 400,
+              "maxWords": 550,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-5-1",
+                "tag": "p",
+                "keywords": [
+                  "значение обслуживания автомобилей",
+                  "польза регулярного контроля"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Регулярное обслуживание автомобилей для такси помогает избежать серьезных поломок и затрат.",
+                "intent": "Объяснить, почему важно регулярно обслуживать автомобили для такси.",
+                "audiences": "Водители такси, владельцы таксопарков | Уровень: начинающий | Болевые точки: необходимость в экономии на обслуживании.",
+                "selfPrompt": "Generate p in section 'Обслуживание и мониторинг автомобилей для такси комфорт' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Объяснить важность регулярного обслуживания автомобилей для такси.  AUDIENCE: Водители такси, владельцы таксопарков.",
+                "additionalData": {
+                  "minWords": 105,
+                  "maxWords": 210,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-5-2",
+                "tag": "p",
+                "keywords": [
+                  "основные практики обслуживания"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Знание основных практик обслуживания поможет вам продлить срок службы автомобиля.",
+                "intent": "Предоставить краткий обзор основных практик обслуживания автомобилей для такси.",
+                "audiences": "Водители такси, владельцы таксопарков | Уровень: начинающий | Болевые точки: необходимость в экономии на обслуживании.",
+                "selfPrompt": "Generate p in section 'Обслуживание и мониторинг автомобилей для такси комфорт' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Предоставить краткий обзор основных практик обслуживания автомобилей для такси.  AUDIENCE: Водители такси, владельцы таксопарков.",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-5-3",
+                "tag": "h3",
+                "keywords": [
+                  "техническое обслуживание автомобилей",
+                  "мониторинг состояния автомобиля",
+                  "устранение неполадок"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Узнайте, как правильно проводить техническое обслуживание и мониторинг состояния вашего автомобиля.",
+                "intent": "Обсудить методы технического обслуживания и мониторинга состояния автомобилей для такси.",
+                "audiences": "Водители такси, владельцы таксопарков | Уровень: средний | Болевые точки: необходимость в поддержании автомобилей в рабочем состоянии.",
+                "selfPrompt": "Generate h3 in section 'Обслуживание и мониторинг автомобилей для такси комфорт' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Обсудить методы технического обслуживания и мониторинга состояния автомобилей для такси.  AUDIENCE: Водители такси, владельцы таксопарков.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 250,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-5-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "методы технического обслуживания"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Знание методов технического обслуживания поможет избежать поломок.",
+                    "intent": "Объяснить методы технического обслуживания автомобилей для такси.",
+                    "audiences": "Водители такси, владельцы таксопарков | Уровень: средний | Болевые точки: необходимость в поддержании автомобилей в рабочем состоянии.",
+                    "selfPrompt": "Generate p in section 'Методы технического обслуживания' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Объяснить методы технического обслуживания автомобилей для такси.  AUDIENCE: Водители такси, владельцы таксопарков.",
+                    "additionalData": {
+                      "minWords": 80,
+                      "maxWords": 160,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-5-3-2",
+                    "tag": "ul",
+                    "keywords": [
+                      "проверка масла",
+                      "замена фильтров",
+                      "проверка тормозов"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Следуйте этим рекомендациям для поддержания автомобиля в хорошем состоянии.",
+                    "intent": "Предоставить список основных практик технического обслуживания.",
+                    "audiences": "Водители такси, владельцы таксопарков | Уровень: начинающий | Болевые точки: необходимость в экономии на обслуживании.",
+                    "selfPrompt": "Generate ul in section 'Методы технического обслуживания' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Предоставить список основных практик технического обслуживания автомобилей для такси.  AUDIENCE: Водители такси, владельцы таксопарков.",
+                    "additionalData": {
+                      "minWords": 40,
+                      "maxWords": 80,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-5-3-3",
+                    "tag": "p",
+                    "keywords": [
+                      "устранение неполадок"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Знание методов устранения неполадок поможет вам быстро реагировать на проблемы.",
+                    "intent": "Обсудить важность устранения неполадок и их влияние на работу такси.",
+                    "audiences": "Водители такси, владельцы таксопарков | Уровень: средний | Болевые точки: необходимость в поддержании автомобилей в рабочем состоянии.",
+                    "selfPrompt": "Generate p in section 'Устранение неполадок' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Обсудить важность устранения неполадок и их влияние на работу такси.  AUDIENCE: Водители такси, владельцы таксопарков.",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 140,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -7707,5 +7847,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T17:00:44.376Z";
+export const lastUpdated = "2025-10-14T17:02:11.990Z";
 export const generatedBy = "menu-persist-api";
