@@ -296,7 +296,10 @@ export async function POST(req: NextRequest): Promise<NextResponse<ReadMenuRespo
   try {
     session = await auth();
     userRole = getUserRole(session);
-    isPrivileged = isPrivilegedRole(userRole);
+    isPrivileged = isPrivilegedRole(userRole)
+  
+    
+
     
     console.log(`[${requestId}] 👤 USER SESSION INFO:`);
     console.log(`[${requestId}] 👤 Authenticated: ${session ? "YES" : "NO"}`);
