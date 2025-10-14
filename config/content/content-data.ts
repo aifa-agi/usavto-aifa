@@ -8259,7 +8259,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-14T18:47:37.663Z",
-        "updatedAt": "2025-10-14T18:59:12.445Z",
+        "updatedAt": "2025-10-14T19:00:14.219Z",
         "order": 2,
         "description": "Узнайте, как заказать доставку через Яндекс Такси до двери с нашей пошаговой инструкцией. Просто следуйте рекомендациям и получите ваши посылки быстро и удобно!",
         "images": [
@@ -8346,6 +8346,162 @@ export const contentData = {
                 }
               }
             ]
+          },
+          {
+            "id": "h2-2",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "доставка через Яндекс Такси",
+              "как заказать доставку",
+              "инструкция по доставке",
+              "особенности доставки",
+              "пошаговые рекомендации",
+              "доставка до двери",
+              "удобство сервиса"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте о ключевых аспектах заказа доставки через Яндекс Такси и получите полезные советы!",
+            "intent": "Объяснить пользователям важные аспекты и шаги, которые необходимо учитывать при заказе доставки через Яндекс Такси.",
+            "audiences": "Частные пользователи и владельцы малого бизнеса, желающие оптимизировать процесс доставки.",
+            "selfPrompt": "Generate a detailed section explaining the key aspects and steps involved in ordering delivery through Yandex Taxi, focusing on user convenience and practical tips.",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 250,
+              "maxWords": 400,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-2-1",
+                "tag": "p",
+                "keywords": [
+                  "доставка через Яндекс Такси",
+                  "пошаговые рекомендации"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Понимание процесса заказа доставки поможет избежать ошибок.",
+                "intent": "Предоставить пользователям общее представление о процессе заказа.",
+                "audiences": "Частные пользователи, желающие узнать, как правильно заказать доставку.",
+                "selfPrompt": "Generate an introductory paragraph that outlines the importance of understanding the delivery ordering process through Yandex Taxi.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-2-2-3",
+                "tag": "p",
+                "keywords": [
+                  "особенности доставки"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Узнайте о ключевых особенностях, которые стоит учитывать.",
+                "intent": "Дать пользователям представление о специфике услуги.",
+                "audiences": "Пользователи, интересующиеся деталями доставки.",
+                "selfPrompt": "Generate a paragraph discussing the unique features of the delivery service offered by Yandex Taxi.",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-2-2-4",
+                "tag": "table",
+                "keywords": [
+                  "информация о доставке",
+                  "таблица доставки"
+                ],
+                "taxonomy": "data-driven",
+                "attention": "Сравните различные аспекты доставки в таблице.",
+                "intent": "Предоставить пользователям структурированную информацию о доставке.",
+                "audiences": "Пользователи, желающие быстро получить информацию.",
+                "selfPrompt": "Generate a table that compares different aspects of the delivery service, including pricing, timeframes, and special conditions.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-2-2",
+                "tag": "h3",
+                "keywords": [
+                  "пошаговые рекомендации",
+                  "как заказать доставку"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Следуйте этим рекомендациям для успешного заказа.",
+                "intent": "Предоставить конкретные шаги для заказа доставки.",
+                "audiences": "Пользователи, желающие получить четкие инструкции.",
+                "selfPrompt": "Generate a subsection that provides step-by-step recommendations for ordering delivery through Yandex Taxi.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 250,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "инструкция по доставке"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Каждый шаг важен для успешного заказа.",
+                    "intent": "Объяснить пользователям, как правильно следовать шагам.",
+                    "audiences": "Пользователи, которые хотят детально изучить процесс.",
+                    "selfPrompt": "Generate a paragraph detailing the first step in the delivery ordering process.",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 130,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-2-2-2",
+                    "tag": "ul",
+                    "keywords": [
+                      "шаги заказа",
+                      "рекомендации по доставке"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Следуйте этим шагам для успешного заказа.",
+                    "intent": "Предоставить пользователям список шагов для заказа.",
+                    "audiences": "Пользователи, желающие получить четкие инструкции.",
+                    "selfPrompt": "Generate a list of steps to follow when ordering delivery through Yandex Taxi.",
+                    "additionalData": {
+                      "minWords": 40,
+                      "maxWords": 80,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-2-3",
+                    "tag": "p",
+                    "keywords": [
+                      "завершение заказа"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Убедитесь, что вы завершили заказ правильно.",
+                    "intent": "Объяснить пользователям, как завершить процесс заказа.",
+                    "audiences": "Пользователи, которые хотят убедиться в правильности своего заказа.",
+                    "selfPrompt": "Generate a paragraph explaining how to successfully complete the delivery order process.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 100,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -8378,5 +8534,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T19:00:13.514Z";
+export const lastUpdated = "2025-10-14T19:01:56.714Z";
 export const generatedBy = "menu-persist-api";
