@@ -8259,7 +8259,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-14T18:47:37.663Z",
-        "updatedAt": "2025-10-14T19:05:55.731Z",
+        "updatedAt": "2025-10-14T19:06:03.740Z",
         "order": 2,
         "description": "Узнайте, как заказать доставку через Яндекс Такси до двери с нашей пошаговой инструкцией. Просто следуйте рекомендациям и получите ваши посылки быстро и удобно!",
         "images": [
@@ -8559,7 +8559,8 @@ export const contentData = {
                   "minWords": 90,
                   "maxWords": 170,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-3-2",
@@ -8596,7 +8597,8 @@ export const contentData = {
                       "minWords": 75,
                       "maxWords": 140,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "ol-3-2-2",
@@ -8614,7 +8616,8 @@ export const contentData = {
                       "minWords": 50,
                       "maxWords": 90,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "code-3-2-3",
@@ -8632,11 +8635,14 @@ export const contentData = {
                       "minWords": 20,
                       "maxWords": 50,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "FAQ",
@@ -8981,5 +8987,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T19:06:03.090Z";
+export const lastUpdated = "2025-10-14T19:06:12.913Z";
 export const generatedBy = "menu-persist-api";
