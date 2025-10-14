@@ -10838,7 +10838,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-14T19:46:56.756Z",
-        "updatedAt": "2025-10-14T20:06:02.997Z",
+        "updatedAt": "2025-10-14T20:06:15.791Z",
         "order": 4,
         "badgeName": "Блог",
         "description": "Узнайте, какие классы есть в Яндекс Такси, их требования и тарифы. Получите полную информацию для выбора подходящего автомобиля!",
@@ -11144,7 +11144,8 @@ export const contentData = {
                   "minWords": 90,
                   "maxWords": 170,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-3-2",
@@ -11181,7 +11182,8 @@ export const contentData = {
                       "minWords": 75,
                       "maxWords": 140,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "ol-3-2-2",
@@ -11199,7 +11201,8 @@ export const contentData = {
                       "minWords": 50,
                       "maxWords": 90,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "code-3-2-3",
@@ -11217,11 +11220,14 @@ export const contentData = {
                       "minWords": 20,
                       "maxWords": 50,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "FAQ",
@@ -11563,5 +11569,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T20:06:15.269Z";
+export const lastUpdated = "2025-10-14T20:06:34.863Z";
 export const generatedBy = "menu-persist-api";
