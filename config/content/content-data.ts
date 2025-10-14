@@ -8998,7 +8998,7 @@ export const contentData = {
       },
       {
         "id": "mnu83moasgk98kx1uqt0qmsj",
-        "title": "какая страховка нужна для такси на личном авто самозанятом",
+        "title": "Страховка для такси на личном авто самозанятого: что знать?",
         "href": "/blog/blog/kakaya-strahovka-nuzhna-dlya-taksi-na-lichnom-avto-samozanyatom",
         "roles": [
           "guest"
@@ -9564,5 +9564,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T19:22:02.913Z";
+export const lastUpdated = "2025-10-14T19:22:15.461Z";
 export const generatedBy = "menu-persist-api";
