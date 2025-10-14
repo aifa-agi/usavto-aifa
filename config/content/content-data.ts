@@ -9521,7 +9521,7 @@ export const contentData = {
         "createdAt": "2025-10-14T19:12:30.467Z",
         "updatedAt": "2025-10-14T19:12:30.467Z",
         "order": 3,
-        "description": "какая страховка нужна для такси на личном авто самозанятом",
+        "description": "Узнайте, какая страховка нужна для такси на личном авто самозанятого! Получите актуальные советы по оформлению ОСАГО и ОСГОП. Начните работать безопасно!",
         "images": [
           {
             "id": "n0y3qaea079ymrze4251rbyq",
@@ -9564,5 +9564,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T19:22:15.461Z";
+export const lastUpdated = "2025-10-14T19:22:24.812Z";
 export const generatedBy = "menu-persist-api";
