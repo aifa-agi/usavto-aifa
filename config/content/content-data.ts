@@ -8259,7 +8259,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-14T18:47:37.663Z",
-        "updatedAt": "2025-10-14T19:00:14.219Z",
+        "updatedAt": "2025-10-14T19:01:57.444Z",
         "order": 2,
         "description": "Узнайте, как заказать доставку через Яндекс Такси до двери с нашей пошаговой инструкцией. Просто следуйте рекомендациям и получите ваши посылки быстро и удобно!",
         "images": [
@@ -8502,6 +8502,130 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "заказ доставки Яндекс Такси",
+              "практическое руководство",
+              "процесс оформления",
+              "доставка до двери",
+              "инструкция по использованию",
+              "пошаговые действия",
+              "оптимизация процесса"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, как эффективно оформить заказ доставки через Яндекс Такси с помощью нашего практического руководства.",
+            "intent": "Предоставить пользователям четкие шаги и рекомендации для успешного оформления заказа доставки через Яндекс Такси.",
+            "audiences": "Частные пользователи и владельцы малого бизнеса, стремящиеся оптимизировать процесс доставки.",
+            "selfPrompt": "Generate a detailed section providing practical guidance on how to effectively place an order for delivery through Yandex Taxi, including specific steps and tips for optimizing the process.",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-3-1",
+                "tag": "p",
+                "keywords": [
+                  "практическое руководство",
+                  "заказ доставки"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Это руководство поможет вам быстро и удобно оформить заказ.",
+                "intent": "Ввести читателя в процесс оформления заказа доставки через Яндекс Такси.",
+                "audiences": "Пользователи, желающие понять процесс заказа.",
+                "selfPrompt": "Generate an introductory paragraph that outlines the importance of understanding the ordering process for Yandex Taxi delivery.",
+                "additionalData": {
+                  "minWords": 90,
+                  "maxWords": 170,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-3-2",
+                "tag": "h3",
+                "keywords": [
+                  "шаги оформления заказа",
+                  "практические советы",
+                  "оптимизация процесса"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Следуйте этим шагам, чтобы успешно оформить заказ.",
+                "intent": "Предоставить конкретные шаги для оформления заказа доставки.",
+                "audiences": "Пользователи, которые хотят получить четкие инструкции.",
+                "selfPrompt": "Generate a section that outlines the specific steps involved in placing an order for delivery through Yandex Taxi, including practical tips for optimization.",
+                "additionalData": {
+                  "minWords": 180,
+                  "maxWords": 280,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "инструкция по заказу",
+                      "практические советы"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Эти советы помогут вам избежать распространенных ошибок.",
+                    "intent": "Объяснить важные аспекты оформления заказа.",
+                    "audiences": "Пользователи, которые хотят избежать ошибок при заказе.",
+                    "selfPrompt": "Generate a paragraph that discusses common mistakes to avoid when placing an order for Yandex Taxi delivery.",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 140,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-2-2",
+                    "tag": "ol",
+                    "keywords": [
+                      "шаги заказа",
+                      "порядок действий"
+                    ],
+                    "taxonomy": "actionable",
+                    "attention": "Следуйте этим шагам для успешного заказа.",
+                    "intent": "Предоставить пользователям четкий порядок действий.",
+                    "audiences": "Пользователи, желающие получить пошаговую инструкцию.",
+                    "selfPrompt": "Generate an ordered list of steps to follow when placing an order for delivery through Yandex Taxi.",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 90,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-3-2-3",
+                    "tag": "code",
+                    "keywords": [
+                      "пример кода",
+                      "инструкция"
+                    ],
+                    "taxonomy": "technical",
+                    "attention": "Пример кода для автоматизации процесса.",
+                    "intent": "Предоставить пример кода для автоматизации заказа.",
+                    "audiences": "Разработчики, желающие интегрировать процесс заказа.",
+                    "selfPrompt": "Generate a code snippet that illustrates how to automate the ordering process for Yandex Taxi delivery.",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 50,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -8534,5 +8658,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T19:01:56.714Z";
+export const lastUpdated = "2025-10-14T19:03:29.976Z";
 export const generatedBy = "menu-persist-api";
