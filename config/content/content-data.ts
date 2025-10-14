@@ -6825,7 +6825,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-14T16:33:14.979Z",
-        "updatedAt": "2025-10-14T16:33:14.979Z",
+        "updatedAt": "2025-10-14T16:54:59.293Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "какую машину купить для работы в такси комфорт",
@@ -6844,7 +6844,113 @@ export const contentData = {
         "intent": "Пользователи, ищущие информацию о том, какую машину купить для работы в такси комфорт в 2025 году, стремятся получить рекомендации по выбору подходящего автомобиля, который обеспечит комфорт и экономичность. На этой странице они должны изучить предложенные модели и их характеристики, чтобы принять обоснованное решение о покупке. Страница успешно удовлетворяет этот запрос, предоставляя подробные обзоры и критерии выбора автомобилей, соответствующих требованиям работы в такси комфорт-класса.",
         "taxonomy": "Страница \"Какую машину купить для работы в такси комфорт в 2025?\" относится к типу контента \"гид\" и занимает позицию в категории \"Автомобильная тематика\" с подкатегорией \"Такси\" и фокусом на \"Выбор транспорта\". Она служит кластерным контентом, поддерживающим более обширные темы, связанные с выбором автомобилей для такси, и усиливает семантическую структуру, подчеркивая авторитетность по вопросам выбора автомобилей для комфортного класса такси в 2025 году.",
         "attention": "Для захвата внимания в первые 3 секунды используйте яркий визуальный баннер с вопросом \"Какую машину купить для работы в такси комфорт в 2025?\" и привлекательным изображением популярной модели. Поддержите интерес с помощью четкой визуальной иерархии, разбивая контент на легко воспринимаемые блоки с ключевыми заголовками, и включите интерактивные элементы, такие как опросы или калькуляторы затрат, чтобы пользователи могли оценить свои потребности. Включите эмоциональные триггеры и реальные отзывы водителей, чтобы усилить доверие и вовлеченность, а также акцентируйте внимание на уникальных аспектах вашего контента, таких как актуальные законодательные изменения и их влияние на выбор автомобиля для такси.",
-        "audiences": "Этот контент предназначен для начинающих и опытных водителей такси, в возрасте 25-45 лет, которые ищут оптимальное решение для работы в классе \"комфорт\". Они стремятся выбрать автомобиль, который обеспечит не только комфорт для пассажиров, но и стабильный доход, и сталкиваются с трудностями в оценке различных моделей и их экономической целесообразности. Страница предлагает актуальную информацию о лучших автомобилях для такси в 2025 году, что поможет им сделать информированный выбор."
+        "audiences": "Этот контент предназначен для начинающих и опытных водителей такси, в возрасте 25-45 лет, которые ищут оптимальное решение для работы в классе \"комфорт\". Они стремятся выбрать автомобиль, который обеспечит не только комфорт для пассажиров, но и стабильный доход, и сталкиваются с трудностями в оценке различных моделей и их экономической целесообразности. Страница предлагает актуальную информацию о лучших автомобилях для такси в 2025 году, что поможет им сделать информированный выбор.",
+        "draftContentStructure": [
+          {
+            "id": "h2-1",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "какую машину купить для работы в такси комфорт",
+              "выбор автомобиля для такси",
+              "комфортные автомобили для такси",
+              "экономичность автомобилей",
+              "требования к автомобилям для такси",
+              "советы по выбору автомобиля"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, какие автомобили идеально подходят для работы в такси комфорт в 2025 году.",
+            "intent": "Предоставить читателям информацию о лучших автомобилях для работы в такси комфорт, их характеристиках и преимуществах.",
+            "audiences": "Начинающие и опытные водители такси, владельцы таксопарков.",
+            "selfPrompt": "Generate h2 in section 'Введение' of page 'Какую машину купить для работы в такси комфорт в 2025?'\n\nGOAL: Introduce the topic of selecting the best cars for comfort taxi work in 2025.\n\nAUDIENCE: Beginners and experienced taxi drivers | Level: Intermediate | Pain points: Difficulty in choosing the right vehicle for comfort taxi service.\n\nKEYWORDS TO INTEGRATE:\n['какую машину купить для работы в такси комфорт', 'выбор автомобиля для такси', 'комфортные автомобили для такси', 'экономичность автомобилей', 'требования к автомобилям для такси', 'советы по выбору автомобиля']\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 200, maxWords: 350 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: ## [H2 title]\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: [Подходящие автомобили для работы в такси комфорт, Особенности работы в такси и требования к автомобилю]\n- SECONDARY: Apply insights from External KB: [РЕСУРС 1]\n\nQUALITY CRITERIA:\n- Actionable (specific actions/recommendations)\n- Specific (avoid generic statements)\n- Data-backed (use facts/statistics from Knowledge Bases)\n- No fluff (eliminate filler content)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: This section introduces the essential criteria for selecting a taxi vehicle.\n- sourceHint: Internal KB section / External KB resource / user-provided content.\n- evidenceStrength: internal-tested.\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference parent page intent\n- Must set thematic direction for child h3 elements\n- Add interlink planning: internalLinks (2–3 anchors) to related site pages; optional externalLinks if allowed.\n- If FAQ/HowTo/Comparison: note schema readiness (FAQPage/HowTo).\n- selfPrompt MUST end with: \n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 200,
+              "maxWords": 350,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-1-1",
+                "tag": "p",
+                "keywords": [
+                  "выбор автомобиля",
+                  "такси комфорт",
+                  "2025 год"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Выбор автомобиля для работы в такси комфорт в 2025 году требует учета множества факторов.",
+                "intent": "Объяснить, какие факторы следует учитывать при выборе автомобиля для такси.",
+                "audiences": "Водители такси, владельцы таксопарков.",
+                "selfPrompt": "Generate p in section 'Введение' of page 'Какую машину купить для работы в такси комфорт в 2025?'\n\nGOAL: Explain the importance of selecting the right vehicle for comfort taxi service.\n\nAUDIENCE: Taxi drivers and fleet owners | Level: Intermediate | Pain points: Need for reliable and comfortable vehicles for passengers.\n\nKEYWORDS TO INTEGRATE:\n['выбор автомобиля', 'такси комфорт', '2025 год']\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 120, maxWords: 250 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: [P content]\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: [Подходящие автомобили для работы в такси комфорт]\n- SECONDARY: Apply insights from External KB: [РЕСУРС 1]\n\nQUALITY CRITERIA:\n- Actionable (specific actions/recommendations)\n- Specific (avoid generic statements)\n- Data-backed (use facts/statistics from Knowledge Bases)\n- No fluff (eliminate filler content)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: This paragraph highlights key considerations for vehicle selection.\n- sourceHint: Internal KB section / External KB resource / user-provided content.\n- evidenceStrength: internal-tested.\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Specify paragraph role: body\n- Include sourceHint if paragraph includes factual claims.",
+                "additionalData": {
+                  "minWords": 120,
+                  "maxWords": 250,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-2",
+                "tag": "p",
+                "keywords": [
+                  "комфортные автомобили",
+                  "экономичность",
+                  "требования"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Комфорт и экономичность - ключевые факторы выбора автомобиля для такси.",
+                "intent": "Подчеркнуть важность комфорта и экономичности в выборе автомобиля для такси.",
+                "audiences": "Водители такси, владельцы таксопарков.",
+                "selfPrompt": "Generate p in section 'Введение' of page 'Какую машину купить для работы в такси комфорт в 2025?'\n\nGOAL: Emphasize the importance of comfort and economy in vehicle selection for taxi service.\n\nAUDIENCE: Taxi drivers and fleet owners | Level: Intermediate | Pain points: Need for vehicles that provide comfort and are cost-effective.\n\nKEYWORDS TO INTEGRATE:\n['комфортные автомобили', 'экономичность', 'требования']\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 80, maxWords: 180 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: [P content]\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: [Подходящие автомобили для работы в такси комфорт]\n- SECONDARY: Apply insights from External KB: [РЕСУРС 1]\n\nQUALITY CRITERIA:\n- Actionable (specific actions/recommendations)\n- Specific (avoid generic statements)\n- Data-backed (use facts/statistics from Knowledge Bases)\n- No fluff (eliminate filler content)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: This paragraph discusses the balance between comfort and economy.\n- sourceHint: Internal KB section / External KB resource / user-provided content.\n- evidenceStrength: internal-tested.\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Specify paragraph role: body\n- Include sourceHint if paragraph includes factual claims.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 180,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-3",
+                "tag": "p",
+                "keywords": [
+                  "выбор",
+                  "такси"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Выбор автомобиля - это важный шаг для успешной работы в такси.",
+                "intent": "Подвести итог важности выбора автомобиля для работы в такси.",
+                "audiences": "Водители такси, владельцы таксопарков.",
+                "selfPrompt": "Generate p in section 'Введение' of page 'Какую машину купить для работы в такси комфорт в 2025?'\n\nGOAL: Summarize the importance of vehicle selection for taxi work.\n\nAUDIENCE: Taxi drivers and fleet owners | Level: Intermediate | Pain points: Need for reliable vehicles that meet taxi requirements.\n\nKEYWORDS TO INTEGRATE:\n['выбор', 'такси']\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 5, maxWords: 15 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: [P content]\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: [Подходящие автомобили для работы в такси комфорт]\n- SECONDARY: Apply insights from External KB: [РЕСУРС 1]\n\nQUALITY CRITERIA:\n- Actionable (specific actions/recommendations)\n- Specific (avoid generic statements)\n- Data-backed (use facts/statistics from Knowledge Bases)\n- No fluff (eliminate filler content)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: This paragraph emphasizes the significance of vehicle choice.\n- sourceHint: Internal KB section / External KB resource / user-provided content.\n- evidenceStrength: internal-tested.\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Specify paragraph role: conclusion\n- Include sourceHint if paragraph includes factual claims.",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "blockquote-1-4",
+                "tag": "blockquote",
+                "keywords": [
+                  "отзывы водителей",
+                  "выбор автомобиля"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Реальные отзывы водителей помогут вам сделать правильный выбор.",
+                "intent": "Поделиться мнением водителей о выборе автомобилей для такси.",
+                "audiences": "Водители такси, потенциальные покупатели автомобилей.",
+                "selfPrompt": "Generate blockquote in section 'Введение' of page 'Какую машину купить для работы в такси комфорт в 2025?'\n\nGOAL: Share drivers' opinions on vehicle selection for taxi service.\n\nAUDIENCE: Taxi drivers and potential car buyers | Level: Intermediate | Pain points: Need for reliable feedback on vehicle choices.\n\nKEYWORDS TO INTEGRATE:\n['отзывы водителей', 'выбор автомобиля']\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 25, maxWords: 50 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: > [Quote content]\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: [Подходящие автомобили для работы в такси комфорт]\n- SECONDARY: Apply insights from External KB: [РЕСУРС 1]\n\nQUALITY CRITERIA:\n- Actionable (specific actions/recommendations)\n- Specific (avoid generic statements)\n- Data-backed (use facts/statistics from Knowledge Bases)\n- No fluff (eliminate filler content)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: This blockquote provides insights from drivers on vehicle selection.\n- sourceHint: Internal KB section / External KB resource / user-provided content.\n- evidenceStrength: internal-tested.\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Specify quote source: Internal KB (expert opinion) / External KB (industry insight)\n- Define function: expert validation.",
+                "additionalData": {
+                  "minWords": 25,
+                  "maxWords": 50,
+                  "actualContent": ""
+                }
+              }
+            ]
+          }
+        ]
       }
     ],
     "order": 16
@@ -6875,5 +6981,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T16:54:58.146Z";
+export const lastUpdated = "2025-10-14T16:56:22.688Z";
 export const generatedBy = "menu-persist-api";
