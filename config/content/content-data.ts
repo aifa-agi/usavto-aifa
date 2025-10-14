@@ -8259,7 +8259,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-14T18:47:37.663Z",
-        "updatedAt": "2025-10-14T19:05:25.948Z",
+        "updatedAt": "2025-10-14T19:05:37.289Z",
         "order": 2,
         "description": "Узнайте, как заказать доставку через Яндекс Такси до двери с нашей пошаговой инструкцией. Просто следуйте рекомендациям и получите ваши посылки быстро и удобно!",
         "images": [
@@ -8325,7 +8325,8 @@ export const contentData = {
                   "minWords": 100,
                   "maxWords": 180,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-1-2",
@@ -8343,9 +8344,11 @@ export const contentData = {
                   "minWords": 60,
                   "maxWords": 120,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-2",
@@ -8939,7 +8942,7 @@ export const contentData = {
             ]
           }
         ],
-        "isReadyDraftForPerplexity": true
+        "isReadyDraftForPerplexity": false
       }
     ],
     "order": 16
@@ -8970,5 +8973,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T19:05:36.417Z";
+export const lastUpdated = "2025-10-14T19:05:54.769Z";
 export const generatedBy = "menu-persist-api";
