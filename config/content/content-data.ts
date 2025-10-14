@@ -5648,7 +5648,7 @@ export const contentData = {
     "pages": [
       {
         "id": "y6rma1thtgda26zl5ogwzl3x",
-        "title": "какую машину купить для работы в такси комфорт",
+        "title": "Какую машину купить для работы в такси комфорт в 2025?",
         "href": "/blog/kakuyu-mashinu-kupit-dlya-raboty-v-taksi-komfort",
         "roles": [
           "guest"
@@ -6871,5 +6871,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T16:48:58.386Z";
+export const lastUpdated = "2025-10-14T16:49:46.091Z";
 export const generatedBy = "menu-persist-api";
