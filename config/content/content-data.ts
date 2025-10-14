@@ -5661,7 +5661,7 @@ export const contentData = {
             "tag": "h2",
             "classification": "semantic",
             "keywords": [
-              "Generate 5-7 section-level keywords that introduce the topic, establish context, and set the foundation for the entire page"
+              "Generate 5-7 section-level keywords that introduce the topic and set context for child elements"
             ],
             "taxonomy": "",
             "attention": "",
@@ -5674,8 +5674,8 @@ export const contentData = {
             "designDescription": "",
             "connectedDesignSectionId": "",
             "additionalData": {
-              "minWords": 200,
-              "maxWords": 350,
+              "minWords": 150,
+              "maxWords": 250,
               "actualContent": ""
             },
             "realContentStructure": [
@@ -5689,8 +5689,8 @@ export const contentData = {
                 "audiences": "",
                 "selfPrompt": "",
                 "additionalData": {
-                  "minWords": 120,
-                  "maxWords": 250,
+                  "minWords": 100,
+                  "maxWords": 180,
                   "actualContent": ""
                 }
               },
@@ -5704,13 +5704,53 @@ export const contentData = {
                 "audiences": "",
                 "selfPrompt": "",
                 "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 120,
+                  "actualContent": ""
+                }
+              }
+            ]
+          },
+          {
+            "id": "h2-2",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "Generate 5-7 section-level keywords focused on technical concepts and foundational knowledge"
+            ],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "writingStyle": "",
+            "contentFormat": "",
+            "customRequirements": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 250,
+              "maxWords": 400,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-2-1",
+                "tag": "p",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
                   "minWords": 80,
-                  "maxWords": 180,
+                  "maxWords": 150,
                   "actualContent": ""
                 }
               },
               {
-                "id": "p-1-3",
+                "id": "p-2-2-3",
                 "tag": "p",
                 "keywords": [],
                 "taxonomy": "",
@@ -5725,8 +5765,8 @@ export const contentData = {
                 }
               },
               {
-                "id": "blockquote-1-4",
-                "tag": "blockquote",
+                "id": "table-2-2-4",
+                "tag": "table",
                 "keywords": [],
                 "taxonomy": "",
                 "attention": "",
@@ -5734,48 +5774,8 @@ export const contentData = {
                 "audiences": "",
                 "selfPrompt": "",
                 "additionalData": {
-                  "minWords": 25,
-                  "maxWords": 50,
-                  "actualContent": ""
-                }
-              }
-            ]
-          },
-          {
-            "id": "h2-2",
-            "tag": "h2",
-            "classification": "semantic",
-            "keywords": [
-              "Generate 5-7 section-level keywords focused on technical foundations, core concepts, and fundamental principles"
-            ],
-            "taxonomy": "",
-            "attention": "",
-            "intent": "",
-            "audiences": "",
-            "selfPrompt": "",
-            "writingStyle": "",
-            "contentFormat": "",
-            "customRequirements": "",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 400,
-              "maxWords": 600,
-              "actualContent": ""
-            },
-            "realContentStructure": [
-              {
-                "id": "p-2-1",
-                "tag": "p",
-                "keywords": [],
-                "taxonomy": "",
-                "attention": "",
-                "intent": "",
-                "audiences": "",
-                "selfPrompt": "",
-                "additionalData": {
-                  "minWords": 100,
-                  "maxWords": 200,
+                  "minWords": 80,
+                  "maxWords": 160,
                   "actualContent": ""
                 }
               },
@@ -5789,8 +5789,8 @@ export const contentData = {
                 "audiences": "",
                 "selfPrompt": "",
                 "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 300,
+                  "minWords": 150,
+                  "maxWords": 250,
                   "actualContent": ""
                 },
                 "realContentStructure": [
@@ -5805,13 +5805,13 @@ export const contentData = {
                     "selfPrompt": "",
                     "additionalData": {
                       "minWords": 70,
-                      "maxWords": 140,
+                      "maxWords": 130,
                       "actualContent": ""
                     }
                   },
                   {
-                    "id": "p-2-2-2",
-                    "tag": "p",
+                    "id": "ul-2-2-2",
+                    "tag": "ul",
                     "keywords": [],
                     "taxonomy": "",
                     "attention": "",
@@ -5819,8 +5819,8 @@ export const contentData = {
                     "audiences": "",
                     "selfPrompt": "",
                     "additionalData": {
-                      "minWords": 90,
-                      "maxWords": 180,
+                      "minWords": 40,
+                      "maxWords": 80,
                       "actualContent": ""
                     }
                   },
@@ -5834,100 +5834,8 @@ export const contentData = {
                     "audiences": "",
                     "selfPrompt": "",
                     "additionalData": {
-                      "minWords": 5,
-                      "maxWords": 15,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "table-2-2-4",
-                    "tag": "table",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
-                      "minWords": 80,
-                      "maxWords": 160,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              },
-              {
-                "id": "h3-2-3",
-                "tag": "h3",
-                "keywords": [],
-                "taxonomy": "",
-                "attention": "",
-                "intent": "",
-                "audiences": "",
-                "selfPrompt": "",
-                "additionalData": {
-                  "minWords": 100,
-                  "maxWords": 200,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-2-3-1",
-                    "tag": "p",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
-                      "minWords": 80,
-                      "maxWords": 160,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "ul-2-3-2",
-                    "tag": "ul",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
-                      "minWords": 40,
-                      "maxWords": 80,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "code-2-3-3",
-                    "tag": "code",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
-                      "minWords": 20,
-                      "maxWords": 50,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "p-2-3-4",
-                    "tag": "p",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
                       "minWords": 60,
-                      "maxWords": 120,
+                      "maxWords": 100,
                       "actualContent": ""
                     }
                   }
@@ -5940,776 +5848,7 @@ export const contentData = {
             "tag": "h2",
             "classification": "semantic",
             "keywords": [
-              "Generate 5-7 section-level keywords focused on implementation methodology, step-by-step processes, and practical execution"
-            ],
-            "taxonomy": "",
-            "attention": "",
-            "intent": "",
-            "audiences": "",
-            "selfPrompt": "",
-            "writingStyle": "",
-            "contentFormat": "",
-            "customRequirements": "",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 500,
-              "maxWords": 750,
-              "actualContent": ""
-            },
-            "realContentStructure": [
-              {
-                "id": "p-3-1",
-                "tag": "p",
-                "keywords": [],
-                "taxonomy": "",
-                "attention": "",
-                "intent": "",
-                "audiences": "",
-                "selfPrompt": "",
-                "additionalData": {
-                  "minWords": 5,
-                  "maxWords": 15,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "p-3-2",
-                "tag": "p",
-                "keywords": [],
-                "taxonomy": "",
-                "attention": "",
-                "intent": "",
-                "audiences": "",
-                "selfPrompt": "",
-                "additionalData": {
-                  "minWords": 110,
-                  "maxWords": 220,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "h3-3-3",
-                "tag": "h3",
-                "keywords": [],
-                "taxonomy": "",
-                "attention": "",
-                "intent": "",
-                "audiences": "",
-                "selfPrompt": "",
-                "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 350,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-3-3-1",
-                    "tag": "p",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
-                      "minWords": 85,
-                      "maxWords": 170,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "ol-3-3-2",
-                    "tag": "ol",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
-                      "minWords": 50,
-                      "maxWords": 100,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "h4-3-3-3",
-                    "tag": "h4",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
-                      "minWords": 120,
-                      "maxWords": 200,
-                      "actualContent": ""
-                    },
-                    "realContentStructure": [
-                      {
-                        "id": "p-3-3-3-1",
-                        "tag": "p",
-                        "keywords": [],
-                        "taxonomy": "",
-                        "attention": "",
-                        "intent": "",
-                        "audiences": "",
-                        "selfPrompt": "",
-                        "additionalData": {
-                          "minWords": 75,
-                          "maxWords": 150,
-                          "actualContent": ""
-                        }
-                      },
-                      {
-                        "id": "code-3-3-3-2",
-                        "tag": "code",
-                        "keywords": [],
-                        "taxonomy": "",
-                        "attention": "",
-                        "intent": "",
-                        "audiences": "",
-                        "selfPrompt": "",
-                        "additionalData": {
-                          "minWords": 25,
-                          "maxWords": 60,
-                          "actualContent": ""
-                        }
-                      },
-                      {
-                        "id": "p-3-3-3-3",
-                        "tag": "p",
-                        "keywords": [],
-                        "taxonomy": "",
-                        "attention": "",
-                        "intent": "",
-                        "audiences": "",
-                        "selfPrompt": "",
-                        "additionalData": {
-                          "minWords": 65,
-                          "maxWords": 130,
-                          "actualContent": ""
-                        }
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "h3-3-4",
-                "tag": "h3",
-                "keywords": [],
-                "taxonomy": "",
-                "attention": "",
-                "intent": "",
-                "audiences": "",
-                "selfPrompt": "",
-                "additionalData": {
-                  "minWords": 150,
-                  "maxWords": 250,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-3-4-1",
-                    "tag": "p",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
-                      "minWords": 95,
-                      "maxWords": 190,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "blockquote-3-4-2",
-                    "tag": "blockquote",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
-                      "minWords": 20,
-                      "maxWords": 45,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "ol-3-4-3",
-                    "tag": "ol",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
-                      "minWords": 60,
-                      "maxWords": 120,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "h2-4",
-            "tag": "h2",
-            "classification": "semantic",
-            "keywords": [
-              "Generate 5-7 section-level keywords focused on advanced concepts, optimization, edge cases, and expert-level techniques"
-            ],
-            "taxonomy": "",
-            "attention": "",
-            "intent": "",
-            "audiences": "",
-            "selfPrompt": "",
-            "writingStyle": "",
-            "contentFormat": "",
-            "customRequirements": "",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 450,
-              "maxWords": 650,
-              "actualContent": ""
-            },
-            "realContentStructure": [
-              {
-                "id": "p-4-1",
-                "tag": "p",
-                "keywords": [],
-                "taxonomy": "",
-                "attention": "",
-                "intent": "",
-                "audiences": "",
-                "selfPrompt": "",
-                "additionalData": {
-                  "minWords": 100,
-                  "maxWords": 200,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "h3-4-2",
-                "tag": "h3",
-                "keywords": [],
-                "taxonomy": "",
-                "attention": "",
-                "intent": "",
-                "audiences": "",
-                "selfPrompt": "",
-                "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 300,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-4-2-1",
-                    "tag": "p",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
-                      "minWords": 5,
-                      "maxWords": 15,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "p-4-2-2",
-                    "tag": "p",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
-                      "minWords": 90,
-                      "maxWords": 180,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "p-4-2-3",
-                    "tag": "p",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
-                      "minWords": 85,
-                      "maxWords": 170,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "ul-4-2-4",
-                    "tag": "ul",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
-                      "minWords": 45,
-                      "maxWords": 90,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              },
-              {
-                "id": "h3-4-3",
-                "tag": "h3",
-                "keywords": [],
-                "taxonomy": "",
-                "attention": "",
-                "intent": "",
-                "audiences": "",
-                "selfPrompt": "",
-                "additionalData": {
-                  "minWords": 250,
-                  "maxWords": 350,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-4-3-1",
-                    "tag": "p",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
-                      "minWords": 110,
-                      "maxWords": 220,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "p-4-3-2",
-                    "tag": "p",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
-                      "minWords": 80,
-                      "maxWords": 160,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "ol-4-3-3",
-                    "tag": "ol",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
-                      "minWords": 55,
-                      "maxWords": 110,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "blockquote-4-3-4",
-                    "tag": "blockquote",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
-                      "minWords": 18,
-                      "maxWords": 40,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "h2-5",
-            "tag": "h2",
-            "classification": "semantic",
-            "keywords": [
-              "Generate 5-7 section-level keywords focused on ongoing monitoring, maintenance practices, troubleshooting, and lifecycle management"
-            ],
-            "taxonomy": "",
-            "attention": "",
-            "intent": "",
-            "audiences": "",
-            "selfPrompt": "",
-            "writingStyle": "",
-            "contentFormat": "",
-            "customRequirements": "",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 400,
-              "maxWords": 550,
-              "actualContent": ""
-            },
-            "realContentStructure": [
-              {
-                "id": "p-5-1",
-                "tag": "p",
-                "keywords": [],
-                "taxonomy": "",
-                "attention": "",
-                "intent": "",
-                "audiences": "",
-                "selfPrompt": "",
-                "additionalData": {
-                  "minWords": 105,
-                  "maxWords": 210,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "p-5-2",
-                "tag": "p",
-                "keywords": [],
-                "taxonomy": "",
-                "attention": "",
-                "intent": "",
-                "audiences": "",
-                "selfPrompt": "",
-                "additionalData": {
-                  "minWords": 5,
-                  "maxWords": 15,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "h3-5-3",
-                "tag": "h3",
-                "keywords": [],
-                "taxonomy": "",
-                "attention": "",
-                "intent": "",
-                "audiences": "",
-                "selfPrompt": "",
-                "additionalData": {
-                  "minWords": 150,
-                  "maxWords": 250,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-5-3-1",
-                    "tag": "p",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
-                      "minWords": 80,
-                      "maxWords": 160,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "ul-5-3-2",
-                    "tag": "ul",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
-                      "minWords": 40,
-                      "maxWords": 80,
-                      "actualContent": ""
-                    }
-                  },
-                  {
-                    "id": "p-5-3-3",
-                    "tag": "p",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
-                      "minWords": 70,
-                      "maxWords": 140,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "FAQ",
-            "tag": "h2",
-            "classification": "semantic",
-            "keywords": [
-              "Generate 5-7 FAQ-related keywords tied to common user questions, concerns, and decision-making blockers"
-            ],
-            "taxonomy": "",
-            "attention": "",
-            "intent": "",
-            "audiences": "",
-            "selfPrompt": "",
-            "writingStyle": "",
-            "contentFormat": "",
-            "customRequirements": "",
-            "designDescription": "",
-            "connectedDesignSectionId": "",
-            "additionalData": {
-              "minWords": 450,
-              "maxWords": 600,
-              "actualContent": ""
-            },
-            "realContentStructure": [
-              {
-                "id": "p-FAQ",
-                "tag": "p",
-                "keywords": [],
-                "taxonomy": "",
-                "attention": "",
-                "intent": "",
-                "audiences": "",
-                "selfPrompt": "",
-                "additionalData": {
-                  "minWords": 95,
-                  "maxWords": 190,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "h3-FAQ-1",
-                "tag": "h3",
-                "keywords": [],
-                "taxonomy": "",
-                "attention": "",
-                "intent": "",
-                "audiences": "",
-                "selfPrompt": "",
-                "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 300,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-FAQ-1-1",
-                    "tag": "p",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
-                      "minWords": 75,
-                      "maxWords": 150,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              },
-              {
-                "id": "h3-FAQ-2",
-                "tag": "h3",
-                "keywords": [],
-                "taxonomy": "",
-                "attention": "",
-                "intent": "",
-                "audiences": "",
-                "selfPrompt": "",
-                "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 300,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-FAQ-2-1",
-                    "tag": "p",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
-                      "minWords": 75,
-                      "maxWords": 150,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              },
-              {
-                "id": "h3-FAQ-3",
-                "tag": "h3",
-                "keywords": [],
-                "taxonomy": "",
-                "attention": "",
-                "intent": "",
-                "audiences": "",
-                "selfPrompt": "",
-                "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 300,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-FAQ-3-1",
-                    "tag": "p",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
-                      "minWords": 75,
-                      "maxWords": 150,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              },
-              {
-                "id": "h3-FAQ-4",
-                "tag": "h3",
-                "keywords": [],
-                "taxonomy": "",
-                "attention": "",
-                "intent": "",
-                "audiences": "",
-                "selfPrompt": "",
-                "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 300,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-FAQ-4-1",
-                    "tag": "p",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
-                      "minWords": 75,
-                      "maxWords": 150,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              },
-              {
-                "id": "h3-FAQ-5",
-                "tag": "h3",
-                "keywords": [],
-                "taxonomy": "",
-                "attention": "",
-                "intent": "",
-                "audiences": "",
-                "selfPrompt": "",
-                "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 300,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-FAQ-5-1",
-                    "tag": "p",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
-                      "minWords": 75,
-                      "maxWords": 150,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              },
-              {
-                "id": "h3-FAQ-6",
-                "tag": "h3",
-                "keywords": [],
-                "taxonomy": "",
-                "attention": "",
-                "intent": "",
-                "audiences": "",
-                "selfPrompt": "",
-                "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 300,
-                  "actualContent": ""
-                },
-                "realContentStructure": [
-                  {
-                    "id": "p-FAQ-6-1",
-                    "tag": "p",
-                    "keywords": [],
-                    "taxonomy": "",
-                    "attention": "",
-                    "intent": "",
-                    "audiences": "",
-                    "selfPrompt": "",
-                    "additionalData": {
-                      "minWords": 75,
-                      "maxWords": 150,
-                      "actualContent": ""
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "h2-7",
-            "tag": "h2",
-            "classification": "semantic",
-            "keywords": [
-              "Generate 5-7 section-level keywords focused on synthesis, summary, key takeaways, comparisons, and calls-to-action"
+              "Generate 5-7 section-level keywords focused on implementation, process, and practical application"
             ],
             "taxonomy": "",
             "attention": "",
@@ -6728,7 +5867,7 @@ export const contentData = {
             },
             "realContentStructure": [
               {
-                "id": "p-7-1",
+                "id": "p-3-1",
                 "tag": "p",
                 "keywords": [],
                 "taxonomy": "",
@@ -6737,13 +5876,100 @@ export const contentData = {
                 "audiences": "",
                 "selfPrompt": "",
                 "additionalData": {
-                  "minWords": 60,
-                  "maxWords": 240,
+                  "minWords": 90,
+                  "maxWords": 170,
                   "actualContent": ""
                 }
               },
               {
-                "id": "p-7-2",
+                "id": "h3-3-2",
+                "tag": "h3",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 180,
+                  "maxWords": 280,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-2-1",
+                    "tag": "p",
+                    "keywords": [],
+                    "taxonomy": "",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "selfPrompt": "",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 140,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-2-2",
+                    "tag": "ol",
+                    "keywords": [],
+                    "taxonomy": "",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "selfPrompt": "",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 90,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-3-2-3",
+                    "tag": "code",
+                    "keywords": [],
+                    "taxonomy": "",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "selfPrompt": "",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 50,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "Generate 5-7 FAQ-related keywords tied to common user questions and concerns"
+            ],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "writingStyle": "",
+            "contentFormat": "",
+            "customRequirements": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
                 "tag": "p",
                 "keywords": [],
                 "taxonomy": "",
@@ -6752,44 +5978,182 @@ export const contentData = {
                 "audiences": "",
                 "selfPrompt": "",
                 "additionalData": {
-                  "minWords": 100,
-                  "maxWords": 200,
+                  "minWords": 70,
+                  "maxWords": 130,
                   "actualContent": ""
                 }
               },
               {
-                "id": "table-6-2-2",
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "keywords": [],
+                    "taxonomy": "",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "selfPrompt": "",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-2",
+                "tag": "h3",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "keywords": [],
+                    "taxonomy": "",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "selfPrompt": "",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-3",
+                "tag": "h3",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "keywords": [],
+                    "taxonomy": "",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "selfPrompt": "",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-4",
+                "tag": "h3",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [],
+                    "taxonomy": "",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "selfPrompt": "",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "h2-5",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "Generate 5-7 section-level keywords focused on synthesis, key takeaways, and next steps"
+            ],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "writingStyle": "",
+            "contentFormat": "",
+            "customRequirements": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 200,
+              "maxWords": 300,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-5-1",
+                "tag": "p",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-5-3",
                 "tag": "table",
-                "keywords": [],
-                "taxonomy": "",
-                "attention": "",
-                "intent": "",
-                "audiences": "",
-                "selfPrompt": "",
-                "additionalData": {
-                  "minWords": 200,
-                  "maxWords": 300,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "ul-7-3",
-                "tag": "ul",
-                "keywords": [],
-                "taxonomy": "",
-                "attention": "",
-                "intent": "",
-                "audiences": "",
-                "selfPrompt": "",
-                "additionalData": {
-                  "minWords": 60,
-                  "maxWords": 120,
-                  "actualContent": ""
-                }
-              },
-              {
-                "id": "p-7-4",
-                "tag": "p",
                 "keywords": [],
                 "taxonomy": "",
                 "attention": "",
@@ -6803,8 +6167,8 @@ export const contentData = {
                 }
               },
               {
-                "id": "blockquote-7-5",
-                "tag": "blockquote",
+                "id": "ul-5-2",
+                "tag": "ul",
                 "keywords": [],
                 "taxonomy": "",
                 "attention": "",
@@ -6812,8 +6176,23 @@ export const contentData = {
                 "audiences": "",
                 "selfPrompt": "",
                 "additionalData": {
-                  "minWords": 15,
-                  "maxWords": 35,
+                  "minWords": 50,
+                  "maxWords": 90,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-5-3",
+                "tag": "p",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
                   "actualContent": ""
                 }
               }
@@ -8351,5 +7730,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T17:45:50.267Z";
+export const lastUpdated = "2025-10-14T17:45:59.279Z";
 export const generatedBy = "menu-persist-api";
