@@ -9554,7 +9554,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-14T19:12:30.467Z",
-        "updatedAt": "2025-10-14T19:26:56.441Z",
+        "updatedAt": "2025-10-14T19:28:08.124Z",
         "order": 3,
         "description": "Узнайте, какая страховка нужна для такси на личном авто самозанятого! Получите актуальные советы по оформлению ОСАГО и ОСГОП. Начните работать безопасно!",
         "images": [
@@ -9641,6 +9641,161 @@ export const contentData = {
                 }
               }
             ]
+          },
+          {
+            "id": "h2-2",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "страхование для такси",
+              "ОСГОП",
+              "страховые полисы",
+              "требования к страховке",
+              "самозанятые таксисты",
+              "пассажирские перевозки",
+              "обязательное страхование"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, какие страховые полисы необходимы для работы самозанятыми таксистами и как их правильно оформить.",
+            "intent": "Объяснить, какие виды страхования нужны самозанятым таксистам и как их получить.",
+            "audiences": "Самозанятые водители такси, которые ищут информацию о необходимых страховках.",
+            "selfPrompt": "Generate h2 in section 'Требования к страховке для самозанятых таксистов' of page 'Страховка для такси на личном авто самозанятого: что знать?'  GOAL: Explain the types of insurance required for self-employed taxi drivers and how to obtain them.",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 250,
+              "maxWords": 400,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-2-1",
+                "tag": "p",
+                "keywords": [
+                  "страховые полисы",
+                  "ОСГОП"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Важно знать, какие полисы необходимы для легальной работы.",
+                "intent": "Предоставить информацию о необходимых страховых полисах.",
+                "audiences": "Самозанятые водители, которые ищут информацию о страховании.",
+                "selfPrompt": "Generate p in section 'Требования к страховке для самозанятых таксистов' of page 'Страховка для такси на личном авто самозанятого: что знать?'  GOAL: Provide information about the necessary insurance policies for self-employed taxi drivers.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-2-2-3",
+                "tag": "p",
+                "keywords": [
+                  "обязательное страхование"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Не забывайте о сроках оформления.",
+                "intent": "Подчеркнуть важность соблюдения сроков.",
+                "audiences": "Самозанятые водители, которые хотят избежать штрафов.",
+                "selfPrompt": "Generate p in section 'Требования к страховке для самозанятых таксистов' of page 'Страховка для такси на личном авто самозанятого: что знать?'  GOAL: Emphasize the importance of adhering to deadlines for insurance registration.",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-2-2-4",
+                "tag": "table",
+                "keywords": [
+                  "страховые полисы",
+                  "ОСГОП"
+                ],
+                "taxonomy": "data-driven",
+                "attention": "Сравнительная таблица полисов.",
+                "intent": "Предоставить наглядное сравнение различных страховых полисов.",
+                "audiences": "Самозанятые водители, которые хотят выбрать подходящий полис.",
+                "selfPrompt": "Generate table in section 'Требования к страховке для самозанятых таксистов' of page 'Страховка для такси на личном авто самозанятого: что знать?'  GOAL: Provide a comparative table of different insurance policies available for self-employed taxi drivers.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-2-2",
+                "tag": "h3",
+                "keywords": [
+                  "ОСГОП",
+                  "страховые требования"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Узнайте, как оформить ОСГОП.",
+                "intent": "Объяснить процесс оформления ОСГОП.",
+                "audiences": "Самозанятые водители, которые хотят узнать, как оформить ОСГОП.",
+                "selfPrompt": "Generate h3 in section 'Требования к страховке для самозанятых таксистов' of page 'Страховка для такси на личном авто самозанятого: что знать?'  GOAL: Explain the process of obtaining mandatory insurance for self-employed taxi drivers.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 250,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "оформление ОСГОП"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Следуйте этим шагам для успешного оформления.",
+                    "intent": "Предоставить пошаговую инструкцию по оформлению ОСГОП.",
+                    "audiences": "Самозанятые водители, которые ищут инструкции по оформлению ОСГОП.",
+                    "selfPrompt": "Generate p in section 'Как оформить ОСГОП' of page 'Страховка для такси на личном авто самозанятого: что знать?'  GOAL: Provide a step-by-step guide for obtaining mandatory insurance for self-employed taxi drivers.",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 130,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-2-2-2",
+                    "tag": "ul",
+                    "keywords": [
+                      "шаги оформления"
+                    ],
+                    "taxonomy": "actionable",
+                    "attention": "Следуйте этим шагам.",
+                    "intent": "Перечислить шаги для оформления ОСГОП.",
+                    "audiences": "Самозанятые водители, которые хотят получить ОСГОП.",
+                    "selfPrompt": "Generate ul in section 'Как оформить ОСГОП' of page 'Страховка для такси на личном авто самозанятого: что знать?'  GOAL: List the steps required to obtain mandatory insurance for self-employed taxi drivers.",
+                    "additionalData": {
+                      "minWords": 40,
+                      "maxWords": 80,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-2-3",
+                    "tag": "p",
+                    "keywords": [
+                      "сроки оформления"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Не забывайте о сроках.",
+                    "intent": "Подчеркнуть важность соблюдения сроков оформления.",
+                    "audiences": "Самозанятые водители, которые хотят избежать штрафов.",
+                    "selfPrompt": "Generate p in section 'Как оформить ОСГОП' of page 'Страховка для такси на личном авто самозанятого: что знать?'  GOAL: Emphasize the importance of adhering to deadlines for obtaining mandatory insurance.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 100,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -9673,5 +9828,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T19:28:07.670Z";
+export const lastUpdated = "2025-10-14T19:29:17.429Z";
 export const generatedBy = "menu-persist-api";
