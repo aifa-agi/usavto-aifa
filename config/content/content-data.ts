@@ -6825,7 +6825,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-14T16:33:14.979Z",
-        "updatedAt": "2025-10-14T17:02:13.196Z",
+        "updatedAt": "2025-10-14T17:03:10.408Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "какую машину купить для работы в такси комфорт",
@@ -8077,6 +8077,145 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-7",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "итоги выбора автомобиля для такси",
+              "рекомендации по покупке автомобиля",
+              "основные выводы по выбору такси",
+              "практические советы для водителей",
+              "долгосрочные преимущества автомобилей для такси",
+              "выбор автомобиля для комфортного такси",
+              "экономическая эффективность автомобилей"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Не упустите важные рекомендации, которые помогут вам сделать правильный выбор!",
+            "intent": "Подвести итоги и предоставить читателям ключевые выводы и рекомендации по выбору автомобиля для работы в такси комфорт.",
+            "audiences": "Водители такси, владельцы таксопарков | Уровень: начинающий/опытный | Проблемы: выбор подходящего автомобиля, экономия на обслуживании",
+            "selfPrompt": "Generate h2 in section 'Заключение' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Подвести итоги и предоставить рекомендации по выбору автомобиля для такси.  AUDIENCE: Водители такси и владельцы таксопарков, которые ищут советы по выбору автомобиля.",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-7-1",
+                "tag": "p",
+                "keywords": [
+                  "итоги выбора автомобиля",
+                  "рекомендации по выбору"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Подводя итоги, важно помнить о ключевых аспектах выбора автомобиля.",
+                "intent": "Суммировать основные выводы и рекомендации по выбору автомобиля для такси.",
+                "audiences": "Водители такси, владельцы таксопарков",
+                "selfPrompt": "Generate p in section 'Заключение' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Суммировать ключевые выводы и рекомендации по выбору автомобиля для такси.  AUDIENCE: Водители такси и владельцы таксопарков.",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 240,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-7-2",
+                "tag": "p",
+                "keywords": [
+                  "долгосрочные преимущества",
+                  "экономическая эффективность"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Не забывайте о долгосрочных преимуществах выбора правильного автомобиля.",
+                "intent": "Обсудить долгосрочные преимущества и экономическую эффективность выбора автомобиля для такси.",
+                "audiences": "Водители такси, владельцы таксопарков",
+                "selfPrompt": "Generate p in section 'Заключение' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Обсудить долгосрочные преимущества выбора автомобиля для такси.  AUDIENCE: Водители такси и владельцы таксопарков.",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 200,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-6-2-2",
+                "tag": "table",
+                "keywords": [
+                  "сравнение автомобилей",
+                  "выбор автомобиля для такси"
+                ],
+                "taxonomy": "data-driven",
+                "attention": "Сравнительная таблица поможет вам сделать осознанный выбор.",
+                "intent": "Предоставить сравнительную таблицу автомобилей, подходящих для работы в такси.",
+                "audiences": "Водители такси, владельцы таксопарков",
+                "selfPrompt": "Generate table in section 'Заключение' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Предоставить сравнительную таблицу автомобилей для такси.  AUDIENCE: Водители такси и владельцы таксопарков.",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-7-3",
+                "tag": "ul",
+                "keywords": [
+                  "практические советы",
+                  "рекомендации по выбору"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Следуйте этим практическим советам для успешного выбора автомобиля.",
+                "intent": "Предоставить список практических советов по выбору автомобиля для такси.",
+                "audiences": "Водители такси, владельцы таксопарков",
+                "selfPrompt": "Generate ul in section 'Заключение' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Предоставить практические советы по выбору автомобиля для такси.  AUDIENCE: Водители такси и владельцы таксопарков.",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 120,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-7-4",
+                "tag": "p",
+                "keywords": [
+                  "заключительные рекомендации",
+                  "выбор автомобиля"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Заключительные рекомендации помогут вам сделать правильный выбор.",
+                "intent": "Подвести итог и дать заключительные рекомендации по выбору автомобиля для такси.",
+                "audiences": "Водители такси, владельцы таксопарков",
+                "selfPrompt": "Generate p in section 'Заключение' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Подвести итог и дать заключительные рекомендации по выбору автомобиля для такси.  AUDIENCE: Водители такси и владельцы таксопарков.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "blockquote-7-5",
+                "tag": "blockquote",
+                "keywords": [
+                  "экспертное мнение",
+                  "выбор автомобиля для такси"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Мнение эксперта поможет вам в выборе.",
+                "intent": "Предоставить экспертное мнение о выборе автомобиля для такси.",
+                "audiences": "Водители такси, владельцы таксопарков",
+                "selfPrompt": "Generate blockquote in section 'Заключение' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Предоставить экспертное мнение о выборе автомобиля для такси.  AUDIENCE: Водители такси и владельцы таксопарков.",
+                "additionalData": {
+                  "minWords": 15,
+                  "maxWords": 35,
+                  "actualContent": ""
+                }
+              }
+            ]
           }
         ]
       }
@@ -8109,5 +8248,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T17:03:09.228Z";
+export const lastUpdated = "2025-10-14T17:03:27.532Z";
 export const generatedBy = "menu-persist-api";
