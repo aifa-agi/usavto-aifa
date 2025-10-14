@@ -7703,7 +7703,7 @@ export const contentData = {
       },
       {
         "id": "w2ejnt317ttr7m8tfsn99kwv",
-        "title": "как заказать доставку через яндекс такси до двери",
+        "title": "Как заказать доставку через Яндекс Такси до двери: Пошаговая инструкция",
         "href": "/blog/kak-zakazat-dostavku-cherez-yandeks-taksi-do-dveri",
         "roles": [
           "guest"
@@ -8269,5 +8269,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T18:55:24.809Z";
+export const lastUpdated = "2025-10-14T18:55:31.545Z";
 export const generatedBy = "menu-persist-api";
