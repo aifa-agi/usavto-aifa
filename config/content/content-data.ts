@@ -9554,7 +9554,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-14T19:12:30.467Z",
-        "updatedAt": "2025-10-14T19:28:08.124Z",
+        "updatedAt": "2025-10-14T19:29:18.167Z",
         "order": 3,
         "description": "Узнайте, какая страховка нужна для такси на личном авто самозанятого! Получите актуальные советы по оформлению ОСАГО и ОСГОП. Начните работать безопасно!",
         "images": [
@@ -9796,6 +9796,127 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "страхование для самозанятых таксистов",
+              "оформление ОСГОП",
+              "процесс получения страховки",
+              "практическое руководство по страхованию",
+              "требования к оформлению полисов"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, как правильно оформить страховку для работы в такси!",
+            "intent": "Объяснить процесс оформления обязательного страхования для самозанятых таксистов.",
+            "audiences": "Самозанятые водители такси | Уровень: начинающий | Беспокойства: соблюдение законодательства и получение необходимых полисов.",
+            "selfPrompt": "Generate h2 in section 'Процесс оформления страховки для самозанятых таксистов' of page 'Страховка для такси на личном авто самозанятого: что знать?'  GOAL: Explain the process of obtaining mandatory insurance for self-employed taxi drivers, including necessary steps and documentation.",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-3-1",
+                "tag": "p",
+                "keywords": [
+                  "оформление страховки",
+                  "самозанятые таксисты"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Понимание процесса оформления страховки поможет избежать штрафов.",
+                "intent": "Ввести читателя в процесс оформления страховки для самозанятых таксистов.",
+                "audiences": "Самозанятые водители такси | Уровень: начинающий | Беспокойства: как правильно оформить страховку.",
+                "selfPrompt": "Generate p in section 'Процесс оформления страховки для самозанятых таксистов' of page 'Страховка для такси на личном авто самозанятого: что знать?'  GOAL: Introduce the process of obtaining insurance for self-employed taxi drivers, emphasizing its importance.",
+                "additionalData": {
+                  "minWords": 90,
+                  "maxWords": 170,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-3-2",
+                "tag": "h3",
+                "keywords": [
+                  "документы для оформления страховки",
+                  "порядок получения ОСГОП"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Следуйте этим шагам, чтобы успешно оформить страховку.",
+                "intent": "Предоставить пошаговое руководство по оформлению страховки.",
+                "audiences": "Самозанятые водители такси | Уровень: начинающий | Беспокойства: как собрать необходимые документы.",
+                "selfPrompt": "Generate h3 in section 'Процесс оформления страховки для самозанятых таксистов' of page 'Страховка для такси на личном авто самозанятого: что знать?'  GOAL: Provide a step-by-step guide on how to obtain mandatory insurance for self-employed taxi drivers.",
+                "additionalData": {
+                  "minWords": 180,
+                  "maxWords": 280,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "необходимые документы",
+                      "оформление ОСГОП"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Соберите все необходимые документы для оформления страховки.",
+                    "intent": "Объяснить, какие документы нужны для оформления страховки.",
+                    "audiences": "Самозанятые водители такси | Уровень: начинающий | Беспокойства: какие документы собрать.",
+                    "selfPrompt": "Generate p in section 'Процесс оформления страховки для самозанятых таксистов' of page 'Страховка для такси на личном авто самозанятого: что знать?'  GOAL: Explain the necessary documents for obtaining insurance for self-employed taxi drivers.",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 140,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-2-2",
+                    "tag": "ol",
+                    "keywords": [
+                      "шаги оформления страховки",
+                      "порядок действий"
+                    ],
+                    "taxonomy": "actionable",
+                    "attention": "Следуйте этим шагам, чтобы успешно оформить страховку.",
+                    "intent": "Предоставить список шагов для оформления страховки.",
+                    "audiences": "Самозанятые водители такси | Уровень: начинающий | Беспокойства: как правильно оформить страховку.",
+                    "selfPrompt": "Generate ol in section 'Процесс оформления страховки для самозанятых таксистов' of page 'Страховка для такси на личном авто самозанятого: что знать?'  GOAL: List the steps to obtain mandatory insurance for self-employed taxi drivers.",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 90,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-3-2-3",
+                    "tag": "code",
+                    "keywords": [
+                      "пример документа",
+                      "шаблон страховки"
+                    ],
+                    "taxonomy": "technical",
+                    "attention": "Используйте этот шаблон для оформления страховки.",
+                    "intent": "Предоставить пример документа для оформления страховки.",
+                    "audiences": "Самозанятые водители такси | Уровень: начинающий | Беспокойства: как оформить документы.",
+                    "selfPrompt": "Generate code in section 'Процесс оформления страховки для самозанятых таксистов' of page 'Страховка для такси на личном авто самозанятого: что знать?'  GOAL: Provide a sample document template for obtaining insurance for self-employed taxi drivers.",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 50,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -9828,5 +9949,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T19:29:17.429Z";
+export const lastUpdated = "2025-10-14T19:30:21.357Z";
 export const generatedBy = "menu-persist-api";
