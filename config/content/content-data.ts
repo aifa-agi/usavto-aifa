@@ -6825,7 +6825,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-14T16:33:14.979Z",
-        "updatedAt": "2025-10-14T16:58:03.700Z",
+        "updatedAt": "2025-10-14T16:59:28.127Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "какую машину купить для работы в такси комфорт",
@@ -7450,6 +7450,231 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-4",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "выбор автомобилей для такси комфорт",
+              "оптимизация затрат на такси",
+              "советы по выбору автомобиля",
+              "практические рекомендации для водителей",
+              "проверенные модели для такси",
+              "экономическая эффективность автомобилей",
+              "требования к автомобилям для такси"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, как выбрать идеальный автомобиль для работы в такси комфорт, чтобы обеспечить максимальный комфорт и экономию.",
+            "intent": "Обсудить продвинутые рекомендации и стратегии выбора автомобилей для работы в такси комфорт.",
+            "audiences": "Водители такси, владельцы автопарков, начинающие водители | Уровень: средний | Болевые точки: выбор подходящего автомобиля, оптимизация затрат.",
+            "selfPrompt": "Generate h2 in section 'Рекомендации по выбору автомобилей для такси комфорт' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Обсудить продвинутые рекомендации и стратегии выбора автомобилей для работы в такси комфорт.  AUDIENCE: Водители такси, владельцы автопарков, начинающие водители.",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 450,
+              "maxWords": 650,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-4-1",
+                "tag": "p",
+                "keywords": [
+                  "выбор автомобиля",
+                  "такси комфорт"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Здесь вы найдете основные рекомендации по выбору автомобиля для работы в такси комфорт.",
+                "intent": "Ввести читателя в тему выбора автомобиля для такси комфорт.",
+                "audiences": "Водители такси, владельцы автопарков | Уровень: средний",
+                "selfPrompt": "Generate p in section 'Рекомендации по выбору автомобилей для такси комфорт' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Ввести читателя в тему выбора автомобиля для такси комфорт.",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 200,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-4-2",
+                "tag": "h3",
+                "keywords": [
+                  "практические советы по выбору автомобиля",
+                  "оптимизация затрат на такси"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Следуйте этим практическим советам для выбора автомобиля, который обеспечит комфорт и экономию.",
+                "intent": "Предоставить читателю практические советы по выбору автомобиля для работы в такси комфорт.",
+                "audiences": "Водители такси, владельцы автопарков | Уровень: средний",
+                "selfPrompt": "Generate h3 in section 'Рекомендации по выбору автомобилей для такси комфорт' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Предоставить читателю практические советы по выбору автомобиля для работы в такси комфорт.",
+                "additionalData": {
+                  "minWords": 200,
+                  "maxWords": 300,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-4-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "советы по выбору автомобиля"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Первый совет: учитывайте потребности ваших пассажиров.",
+                    "intent": "Предоставить первый совет по выбору автомобиля.",
+                    "audiences": "Водители такси | Уровень: средний",
+                    "selfPrompt": "Generate p in section 'Практические советы по выбору автомобиля' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Предоставить первый совет по выбору автомобиля.",
+                    "additionalData": {
+                      "minWords": 5,
+                      "maxWords": 15,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-4-2-2",
+                    "tag": "p",
+                    "keywords": [
+                      "экономия топлива"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Экономия топлива — важный аспект выбора автомобиля.",
+                    "intent": "Обсудить важность экономии топлива при выборе автомобиля.",
+                    "audiences": "Водители такси | Уровень: средний",
+                    "selfPrompt": "Generate p in section 'Практические советы по выбору автомобиля' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Обсудить важность экономии топлива при выборе автомобиля.",
+                    "additionalData": {
+                      "minWords": 90,
+                      "maxWords": 180,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-4-2-3",
+                    "tag": "p",
+                    "keywords": [
+                      "безопасность автомобиля"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Безопасность автомобиля — ключевой фактор.",
+                    "intent": "Обсудить важность безопасности автомобиля для водителей и пассажиров.",
+                    "audiences": "Водители такси | Уровень: средний",
+                    "selfPrompt": "Generate p in section 'Практические советы по выбору автомобиля' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Обсудить важность безопасности автомобиля.",
+                    "additionalData": {
+                      "minWords": 85,
+                      "maxWords": 170,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-4-2-4",
+                    "tag": "ul",
+                    "keywords": [
+                      "функции автомобиля"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Вот несколько функций, которые стоит учитывать при выборе автомобиля.",
+                    "intent": "Предоставить список функций, которые важны при выборе автомобиля.",
+                    "audiences": "Водители такси | Уровень: средний",
+                    "selfPrompt": "Generate ul in section 'Практические советы по выбору автомобиля' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Предоставить список функций, которые важны при выборе автомобиля.",
+                    "additionalData": {
+                      "minWords": 45,
+                      "maxWords": 90,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "h3-4-3",
+                "tag": "h3",
+                "keywords": [
+                  "выбор надежного автомобиля",
+                  "экономическая эффективность"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Выбор надежного автомобиля — залог успешной работы в такси.",
+                "intent": "Обсудить, как выбрать надежный и экономически эффективный автомобиль для работы в такси.",
+                "audiences": "Водители такси, владельцы автопарков | Уровень: средний",
+                "selfPrompt": "Generate h3 in section 'Рекомендации по выбору автомобилей для такси комфорт' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Обсудить, как выбрать надежный и экономически эффективный автомобиль для работы в такси.",
+                "additionalData": {
+                  "minWords": 250,
+                  "maxWords": 350,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-4-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "долговечность автомобиля"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Долговечность автомобиля — важный аспект.",
+                    "intent": "Обсудить долговечность автомобиля как критерий выбора.",
+                    "audiences": "Водители такси | Уровень: средний",
+                    "selfPrompt": "Generate p in section 'Выбор надежного автомобиля' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Обсудить долговечность автомобиля как критерий выбора.",
+                    "additionalData": {
+                      "minWords": 110,
+                      "maxWords": 220,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-4-3-2",
+                    "tag": "p",
+                    "keywords": [
+                      "обслуживание автомобиля"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Регулярное обслуживание — залог надежности.",
+                    "intent": "Обсудить важность регулярного обслуживания автомобиля.",
+                    "audiences": "Водители такси | Уровень: средний",
+                    "selfPrompt": "Generate p in section 'Выбор надежного автомобиля' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Обсудить важность регулярного обслуживания автомобиля.",
+                    "additionalData": {
+                      "minWords": 80,
+                      "maxWords": 160,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-4-3-3",
+                    "tag": "ol",
+                    "keywords": [
+                      "шаги выбора автомобиля"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Следуйте этим шагам для выбора надежного автомобиля.",
+                    "intent": "Предоставить пошаговое руководство по выбору надежного автомобиля.",
+                    "audiences": "Водители такси | Уровень: средний",
+                    "selfPrompt": "Generate ol in section 'Выбор надежного автомобиля' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Предоставить пошаговое руководство по выбору надежного автомобиля.",
+                    "additionalData": {
+                      "minWords": 55,
+                      "maxWords": 110,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "blockquote-4-3-4",
+                    "tag": "blockquote",
+                    "keywords": [
+                      "экспертное мнение"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Мнение эксперта о выборе автомобилей для такси.",
+                    "intent": "Предоставить экспертное мнение о выборе автомобилей.",
+                    "audiences": "Водители такси | Уровень: средний",
+                    "selfPrompt": "Generate blockquote in section 'Выбор надежного автомобиля' of page 'Какую машину купить для работы в такси комфорт в 2025?'  GOAL: Предоставить экспертное мнение о выборе автомобилей.",
+                    "additionalData": {
+                      "minWords": 18,
+                      "maxWords": 40,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -7482,5 +7707,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T16:59:27.090Z";
+export const lastUpdated = "2025-10-14T17:00:44.376Z";
 export const generatedBy = "menu-persist-api";
