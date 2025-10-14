@@ -156,7 +156,7 @@ export function PageListItem({
             categoryTitle={categoryTitle}
             setCategories={setCategories}
           />
-          <VectorStoreActionsDropdown
+          {/* <VectorStoreActionsDropdown
             singlePage={page}
             categoryTitle={categoryTitle}
             setCategories={setCategories}
@@ -175,7 +175,7 @@ export function PageListItem({
             singlePage={page}
             categoryTitle={categoryTitle}
             setCategories={setCategories}
-          />
+          /> */}
         </div>
       ) : (
         <div className="flex items-center gap-1">
