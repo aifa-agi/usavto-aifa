@@ -12,6 +12,7 @@ export const ALL_BADGES: BadgeName[] = [
   ,"Сервисы"
   , "Блог"
 ];
+ 
 
 export type BadgeName =
   | "Путевые"
