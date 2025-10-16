@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle, Sparkles } from "lucide-react";
 import { toast } from "sonner";
 import { SectionGenerationCard } from "./section-generation-card";
-import { useSystemInstructionGenerator } from "../(_hooks)/system-instruction-generator";
+import { useSystemInstructionGenerator } from "../(_hooks)/content-structer-prompt-generator";
 import { useStep5Save } from "../(_hooks)/use-step5-save";
 import { useStep5Finalize } from "../(_hooks)/use-step5-finalize";
 import type { RootContentStructure } from "@/app/@right/(_service)/(_types)/page-types";

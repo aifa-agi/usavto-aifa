@@ -40,9 +40,9 @@ import { PageNotFound } from "../../../page-not-found";
 import { ContentStructureStreamCard } from "./components/content-structure-stream-card";
 import { useNavigationMenu } from "@/app/@right/(_service)/(_context)/nav-bar-provider";
 import { findPageBySlug } from "../../../../(_utils)/page-helpers";
-import { useSystemInstructionGenerator } from "./(_hooks)/system-instruction-generator";
+import { useSystemInstructionGenerator } from "./(_hooks)/content-structer-prompt-generator";
 import { getPageTitleSafe } from "./(_utils)/step5-utils";
-import { DEFAULT_KNOWLEDGE_BASE_MIXING_INSTRUCTION } from "@/config/knowledge-base-prompts";
+import { DEFAULT_KNOWLEDGE_BASE_MIXING_INSTRUCTION } from "@/config/prompts/knowledge-base-prompts";
 
 interface AdminPageInfoProps {
   slug: string;

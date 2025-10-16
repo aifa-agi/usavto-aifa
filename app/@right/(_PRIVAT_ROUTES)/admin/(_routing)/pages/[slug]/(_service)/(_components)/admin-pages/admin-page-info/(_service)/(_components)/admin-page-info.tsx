@@ -37,7 +37,7 @@ import { KnowledgeBaseDisplay } from "./knowledge-base-display";
 import { PageImagesSection } from "./page-images-section";
 import { PageStructureSelectorCard } from "./page-structure-selector-card";
 import { useAdminPageData } from "../../../../../(_hooks)/use-admin-page-data";
-import type { FieldGenerationType } from "@/config/knowledge-base-prompts";
+import type { FieldGenerationType } from "@/config/prompts/knowledge-base-prompts";
 
 /**
  * Helper function to format category display name

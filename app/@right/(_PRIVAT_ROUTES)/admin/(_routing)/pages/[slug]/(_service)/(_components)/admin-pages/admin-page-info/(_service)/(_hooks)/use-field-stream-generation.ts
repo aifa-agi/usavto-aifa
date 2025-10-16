@@ -18,7 +18,7 @@ import {
   type FieldGenerationType,
   getFieldGenerationSystemInstruction,
   buildFieldGenerationPrompt,
-} from "@/config/knowledge-base-prompts";
+} from "@/config/prompts/knowledge-base-prompts";
 
 /**
  * Input parameters for starting field generation

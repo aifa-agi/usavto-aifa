@@ -17,7 +17,7 @@ import {
   FIELD_UI_CONFIG,
   FIELD_STATES_CLASSES,
 } from "../(_constants)/system-fields-config";
-import type { FieldGenerationType } from "@/config/knowledge-base-prompts";
+import type { FieldGenerationType } from "@/config/prompts/knowledge-base-prompts";
 
 /**
  * Props for EditableSystemField component

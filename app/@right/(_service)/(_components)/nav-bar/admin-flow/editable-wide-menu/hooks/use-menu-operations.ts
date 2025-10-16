@@ -6,10 +6,10 @@ import { arrayMove } from "@dnd-kit/sortable";
 import { MenuCategory } from "@/app/@right/(_service)/(_types)/menu-types";
 import { generateCuid } from "@/lib/utils/generateCuid";
 import { useDialogs } from "@/app/@right/(_service)/(_context)/dialogs";
-import { DEFAULT_CONTENT_STRUCTURE } from "@/config/default-page-structure-config";
+import { DEFAULT_CONTENT_STRUCTURE } from "@/config/page-structers/default-page-structure-config";
 import { transliterate } from "@/lib/utils/transliterate";
-import { MEDIUM_CONTENT_STRUCTURE } from "@/config/medium-page-structure-config";
-import { COMPACT_CONTENT_STRUCTURE } from "@/config/compact-page-structure-config";
+import { MEDIUM_CONTENT_STRUCTURE } from "@/config/page-structers/medium-page-structure-config";
+import { COMPACT_CONTENT_STRUCTURE } from "@/config/page-structers/compact-page-structure-config";
 
 // Экспортируем тип для ясности
 

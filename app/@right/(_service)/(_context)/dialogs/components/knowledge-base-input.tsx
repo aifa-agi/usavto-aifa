@@ -10,7 +10,7 @@ import { toast } from "sonner";
 import {
     generateInternalKnowledgePrompt,
     generateExternalKnowledgePrompt,
-} from "@/config/knowledge-base-prompts";
+} from "@/config/prompts/knowledge-base-prompts";
 
 interface KnowledgeBaseInputProps {
     knowledgeType: "internal" | "external";

@@ -12,13 +12,13 @@ import { toast } from 'sonner';
 import { useNavigationMenu } from '@/app/@right/(_service)/(_context)/nav-bar-provider';
 
 // Preset structures exported as arrays RootContentStructure[]
-import { COMPACT_CONTENT_STRUCTURE } from '@/config/compact-page-structure-config';
-import { MEDIUM_CONTENT_STRUCTURE } from '@/config/medium-page-structure-config';
-import { DEFAULT_CONTENT_STRUCTURE } from '@/config/default-page-structure-config';
+import { COMPACT_CONTENT_STRUCTURE } from '@/config/page-structers/compact-page-structure-config';
+import { MEDIUM_CONTENT_STRUCTURE } from '@/config/page-structers/medium-page-structure-config';
+import { DEFAULT_CONTENT_STRUCTURE } from '@/config/page-structers/default-page-structure-config';
 
 // Types
 import type { PageData, RootContentStructure } from '@/app/@right/(_service)/(_types)/page-types';
-import { LONG_READ_CONTENT_STRUCTURE } from '@/config/long-read-page-structure-config';
+import { LONG_READ_CONTENT_STRUCTURE } from '@/config/page-structers/long-read-page-structure-config';
 
 type StructureKey = 'compact' | 'medium' | 'expanded' | 'longread';
 

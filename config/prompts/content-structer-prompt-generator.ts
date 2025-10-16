@@ -1,9 +1,8 @@
-// @/app/@right/(_PRIVAT_ROUTES)/admin/(_routing)/pages/[slug]/(_service)/(_components)/admin-pages/steps/step5/(_hooks)/system-instruction-generator.ts
-
+// @/config/prompts/content-structer-prompt-generator.ts
 // claude 4,5
 import { MenuCategory } from "@/app/@right/(_service)/(_types)/menu-types";
 import { PageData, RootContentStructure } from "@/app/@right/(_service)/(_types)/page-types";
-import { DEFAULT_CONTENT_STRUCTURE } from "@/config/default-page-structure-config";
+import { DEFAULT_CONTENT_STRUCTURE } from "@/config/page-structers/default-page-structure-config";
 import { appConfig } from "@/config/appConfig";
 import { useMemo } from "react";
 
