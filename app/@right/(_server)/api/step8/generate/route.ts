@@ -9,6 +9,7 @@
 import { streamText } from "ai";
 import { openai } from "@ai-sdk/openai";
 import { requirePrivilegedUser } from "@/app/@right/(_service)/(_utils)/auth-helpers";
+import { DRAFT_MODEL } from "@/config/prompts/openai-model";
 
 // Optional: extend streaming time on Vercel
 export const maxDuration = 300;
@@ -47,7 +48,7 @@ export async function POST(req: Request) {
     console.log(`[${requestId}] 📝 Request data received`);
     console.log(`[${requestId}] 📝 System instruction length: ${system?.length ?? 0} characters`);
     console.log(`[${requestId}] 📝 Prompt length: ${prompt?.length ?? 0} characters`);
-    console.log(`[${requestId}] 📝 Model: ${model ?? "gpt-4.1-mini"}`);
+    console.log(`[${requestId}] 📝 Model: ${model ?? DRAFT_MODEL}`);
 
     // Validation
     if (!system || typeof system !== "string") {
@@ -88,11 +89,11 @@ export async function POST(req: Request) {
     console.log(`[${requestId}] 🤖 Max tokens: 30000`);
 
     const result = streamText({
-      model: openai(model ?? "gpt-4.1-mini"),
+      model: openai(DRAFT_MODEL),
       system,
       prompt,
-      temperature: 0.5,
-      maxTokens: 30000,
+      temperature: 0.6,
+      maxTokens: 16000,
     });
 
     console.log(`[${requestId}] 🌊 Streaming response initiated`);

@@ -2,6 +2,7 @@
 import { streamText } from "ai";
 import { openai } from "@ai-sdk/openai";
 import { requirePrivilegedUser } from "@/app/@right/(_service)/(_utils)/auth-helpers";
+import { STRUCTURE_MODEL } from "@/config/prompts/openai-model";
 
 export const maxDuration = 300;
 
@@ -93,12 +94,12 @@ export async function POST(req: Request) {
 
     console.log(`[${requestId}] ✅ Validation passed`);
 
-    // Stream with correct model: gpt-4.1-mini
+   
     try {
       console.log(`[${requestId}] 🤖 Initializing AI streaming...`);
 
       const result = streamText({
-        model: openai(model ?? "gpt-4.1"), // ✅ CORRECT MODEL
+        model: openai(STRUCTURE_MODEL), 
         system,
         prompt,
         temperature: 0.2,

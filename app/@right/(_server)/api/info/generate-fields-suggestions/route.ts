@@ -20,6 +20,7 @@
 import { streamText } from "ai";
 import { openai } from "@ai-sdk/openai";
 import { requirePrivilegedUser } from "@/app/@right/(_service)/(_utils)/auth-helpers";
+import { SUGGESTIONS_MODEL } from "@/config/prompts/openai-model";
 
 // Extend streaming time for longer generations
 export const maxDuration = 300;
@@ -168,7 +169,7 @@ export async function POST(req: Request) {
     // ========================================
 
     // Select model (default to gpt-4o-mini for cost efficiency)
-    const selectedModel = model || "gpt-4.1";
+    const selectedModel = SUGGESTIONS_MODEL;
 
     // Log generation start (optional, for debugging)
     console.log(`[${requestId}] 🤖 Starting AI field generation`);
