@@ -19,6 +19,7 @@
 
 import { streamText } from "ai";
 import { openai } from "@ai-sdk/openai";
+import { requirePrivilegedUser } from "@/app/@right/(_service)/(_utils)/auth-helpers";
 
 // Extend streaming time for longer generations
 export const maxDuration = 300;
@@ -37,8 +38,30 @@ type GenerateFieldRequestBody = {
  * POST handler for field generation streaming
  */
 
-
 export async function POST(req: Request) {
+  const requestId = crypto.randomUUID();
+
+  console.log(`\n${"=".repeat(70)}`);
+  console.log(`[${requestId}] 🚀 NEW REQUEST: Generate Fields Suggestions API`);
+  console.log(`${"=".repeat(70)}`);
+
+  // 🔐 AUTHORIZATION CHECK: Only privileged users can generate AI field suggestions
+  const authResult = await requirePrivilegedUser(
+    requestId,
+    "Only administrators, architects, and editors can generate AI-powered field suggestions"
+  );
+
+  if (!authResult.success) {
+    console.log(`${"=".repeat(70)}\n`);
+    return authResult.response;
+  }
+
+  const { session, userRole, isPrivileged } = authResult;
+
+  console.log(`[${requestId}] ✅ User authorized: ${session?.user?.email || "unknown"}`);
+  console.log(`[${requestId}] ✅ User role: ${userRole}`);
+  console.log(`[${requestId}] ✅ Proceeding with AI field generation...`);
+
   try {
     // Parse request body
     const body = await req.json() as GenerateFieldRequestBody;
@@ -50,6 +73,9 @@ export async function POST(req: Request) {
 
     // Validate system instruction
     if (!system || typeof system !== "string") {
+      console.error(`[${requestId}] ❌ Validation failed: Invalid system instruction`);
+      console.log(`${"=".repeat(70)}\n`);
+
       return new Response(
         JSON.stringify({
           error: "System instruction is required and must be a string",
@@ -66,6 +92,9 @@ export async function POST(req: Request) {
     }
 
     if (system.length < 50) {
+      console.error(`[${requestId}] ❌ Validation failed: System instruction too short (${system.length} chars)`);
+      console.log(`${"=".repeat(70)}\n`);
+
       return new Response(
         JSON.stringify({
           error: "System instruction is too short (minimum 50 characters)",
@@ -80,6 +109,9 @@ export async function POST(req: Request) {
 
     // Validate user prompt
     if (!prompt || typeof prompt !== "string") {
+      console.error(`[${requestId}] ❌ Validation failed: Invalid prompt`);
+      console.log(`${"=".repeat(70)}\n`);
+
       return new Response(
         JSON.stringify({
           error: "Prompt is required and must be a string",
@@ -96,6 +128,9 @@ export async function POST(req: Request) {
     }
 
     if (prompt.length < 10) {
+      console.error(`[${requestId}] ❌ Validation failed: Prompt too short (${prompt.length} chars)`);
+      console.log(`${"=".repeat(70)}\n`);
+
       return new Response(
         JSON.stringify({
           error: "Prompt is too short (minimum 10 characters)",
@@ -111,6 +146,9 @@ export async function POST(req: Request) {
 
     // Validate model (if provided)
     if (model && typeof model !== "string") {
+      console.error(`[${requestId}] ❌ Validation failed: Invalid model type`);
+      console.log(`${"=".repeat(70)}\n`);
+
       return new Response(
         JSON.stringify({
           error: "Model must be a string",
@@ -123,6 +161,8 @@ export async function POST(req: Request) {
       );
     }
 
+    console.log(`[${requestId}] ✅ Validation passed`);
+
     // ========================================
     // STREAM FIELD GENERATION
     // ========================================
@@ -131,10 +171,11 @@ export async function POST(req: Request) {
     const selectedModel = model || "gpt-4.1";
 
     // Log generation start (optional, for debugging)
-    console.log(`[Field Generation] Starting generation for field: ${fieldType || "unknown"}`);
-    console.log(`[Field Generation] Model: ${selectedModel}`);
-    console.log(`[Field Generation] System length: ${system.length} chars`);
-    console.log(`[Field Generation] Prompt length: ${prompt.length} chars`);
+    console.log(`[${requestId}] 🤖 Starting AI field generation`);
+    console.log(`[${requestId}] 🤖 Field type: ${fieldType || "unknown"}`);
+    console.log(`[${requestId}] 🤖 Model: ${selectedModel}`);
+    console.log(`[${requestId}] 🤖 System instruction length: ${system.length} chars`);
+    console.log(`[${requestId}] 🤖 Prompt length: ${prompt.length} chars`);
 
     // Stream text generation
     const result = streamText({
@@ -144,6 +185,9 @@ export async function POST(req: Request) {
       temperature: 0.7, // Balanced creativity for SEO content
       maxTokens: 500,   // Sufficient for all field types (title ~60 chars, description ~160 chars, others ~200-300)
     });
+
+    console.log(`[${requestId}] 🌊 Streaming response initiated`);
+    console.log(`${"=".repeat(70)}\n`);
 
     // Return Data Stream response (AI SDK v4 format)
     return result.toDataStreamResponse();
@@ -171,12 +215,14 @@ export async function POST(req: Request) {
     }
 
     // Log error for debugging
-    console.error("[Field Generation API] Error:", {
+    console.error(`[${requestId}] 💥 Field Generation API Error:`, {
       message: errorMessage,
       details: errorDetails,
       stack: errorStack,
       timestamp: new Date().toISOString(),
     });
+
+    console.log(`${"=".repeat(70)}\n`);
 
     // Return error response
     return new Response(

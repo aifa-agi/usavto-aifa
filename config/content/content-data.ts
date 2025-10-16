@@ -48,7 +48,7 @@ export const contentData = {
         "isAddedToPrompt": false,
         "isChatSynchronized": false,
         "type": "customCategorias",
-        "isPreviewComplited": true,
+        "isPreviewComplited": false,
         "title": "Как правильно делать путевые листы: полное руководство 2025",
         "description": "Узнайте, как правильно делать путевые листы в 2025 году! Полное руководство с актуальными требованиями, образцами и рекомендациями для успешного оформления.",
         "images": [
@@ -64,7 +64,822 @@ export const contentData = {
         "href": "/putevye-listy/kak-delat-putevye-listy",
         "hasBadge": true,
         "badgeName": "Путевые",
-        "updatedAt": "2025-10-14T20:29:09.520Z"
+        "updatedAt": "2025-10-16T19:56:20.654Z",
+        "draftContentStructure": [
+          {
+            "id": "ysoekcdvswnqtb39by4ohk8m",
+            "tag": "h2",
+            "status": "checked",
+            "additionalData": {
+              "minWords": 0,
+              "maxWords": 0,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "lsvmzz8tss5ivbqwmhwyk94f",
+                "tag": "p",
+                "status": "checked",
+                "additionalData": {
+                  "minWords": 0,
+                  "maxWords": 0,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "hntpnkwxendifuzurax6r7x3",
+                "tag": "h3",
+                "status": "checked",
+                "additionalData": {
+                  "minWords": 0,
+                  "maxWords": 0,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "cdtbk1nz8q8pd67ahcjfrmb3",
+                    "tag": "p",
+                    "status": "checked",
+                    "additionalData": {
+                      "minWords": 0,
+                      "maxWords": 0,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "z2kivrudlvy7cb3hid7u0tfi",
+                    "tag": "p",
+                    "status": "checked",
+                    "additionalData": {
+                      "minWords": 0,
+                      "maxWords": 0,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "svtgnfj74zjjxd3bw015bkix",
+                "tag": "h3",
+                "status": "checked",
+                "additionalData": {
+                  "minWords": 0,
+                  "maxWords": 0,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "ph9jqzv9oamkll8294b6bd8z",
+                    "tag": "p",
+                    "status": "checked",
+                    "additionalData": {
+                      "minWords": 0,
+                      "maxWords": 0,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "nlfyg32bnl3ciw61k2hq2xfp",
+                    "tag": "p",
+                    "status": "checked",
+                    "additionalData": {
+                      "minWords": 0,
+                      "maxWords": 0,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "v19se8j08o4drib4b68dxjz8",
+            "tag": "h2",
+            "status": "checked",
+            "additionalData": {
+              "minWords": 0,
+              "maxWords": 0,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "ibsx89aqij43j5uzv0mb95uo",
+                "tag": "p",
+                "status": "checked",
+                "additionalData": {
+                  "minWords": 0,
+                  "maxWords": 0,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "kvhsd94fcszbwq027cwojrap",
+                "tag": "h3",
+                "status": "checked",
+                "additionalData": {
+                  "minWords": 0,
+                  "maxWords": 0,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "lts6ljgaxtg7hnamtvnz75xm",
+                    "tag": "p",
+                    "status": "checked",
+                    "additionalData": {
+                      "minWords": 0,
+                      "maxWords": 0,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "wph344ug5lry3udmst03fjjs",
+                    "tag": "p",
+                    "status": "checked",
+                    "additionalData": {
+                      "minWords": 0,
+                      "maxWords": 0,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "g2t7crz2vuezs9zp5pp9zcbw",
+                "tag": "h3",
+                "status": "checked",
+                "additionalData": {
+                  "minWords": 0,
+                  "maxWords": 0,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "vh064tdud2a2pamskoyz0ssd",
+                    "tag": "p",
+                    "status": "checked",
+                    "additionalData": {
+                      "minWords": 0,
+                      "maxWords": 0,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "dostdmg7xlfm13akyqd5dwuv",
+                    "tag": "p",
+                    "status": "checked",
+                    "additionalData": {
+                      "minWords": 0,
+                      "maxWords": 0,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "ks8xcrvlde6b6scbaxpcm5hi",
+            "tag": "h2",
+            "status": "checked",
+            "additionalData": {
+              "minWords": 0,
+              "maxWords": 0,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "o1ygn0b8wwkzoefcm2jnhx72",
+                "tag": "p",
+                "status": "checked",
+                "additionalData": {
+                  "minWords": 0,
+                  "maxWords": 0,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "noftdy6o8vsvkn3x1fwul5sh",
+                "tag": "h3",
+                "status": "checked",
+                "additionalData": {
+                  "minWords": 0,
+                  "maxWords": 0,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "tw9i9dct2qbi3hps4stq3f62",
+                    "tag": "p",
+                    "status": "checked",
+                    "additionalData": {
+                      "minWords": 0,
+                      "maxWords": 0,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "z2jq9olx6u27amj8xvzx56cz",
+                    "tag": "p",
+                    "status": "checked",
+                    "additionalData": {
+                      "minWords": 0,
+                      "maxWords": 0,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "d3yqw4q95djlya2nxkp95t57",
+                "tag": "h3",
+                "status": "checked",
+                "additionalData": {
+                  "minWords": 0,
+                  "maxWords": 0,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "ffevr87evqx007ymgx620g7l",
+                    "tag": "p",
+                    "status": "checked",
+                    "additionalData": {
+                      "minWords": 0,
+                      "maxWords": 0,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "a7neymm82dmy0fbgsyr28jjp",
+                    "tag": "p",
+                    "status": "checked",
+                    "additionalData": {
+                      "minWords": 0,
+                      "maxWords": 0,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "isReadyDraftForPerplexity": true,
+        "sections": [
+          {
+            "id": "ysoekcdvswnqtb39by4ohk8m",
+            "tempMDXContent": "<h2 id=\"ysoekcdvswnqtb39by4ohk8m\">Как правильно делать путевые листы: основы и важные моменты</h2>\n<p id=\"lsvmzz8tss5ivbqwmhwyk94f\">Путевой лист — это не просто формальный документ, а важнейший элемент в организации транспортных перевозок. Он служит подтверждением того, что транспортное средство готово к эксплуатации и соответствует требованиям безопасности. Для водителей и компаний правильное оформление путевых листов помогает избежать штрафов, контролировать расход топлива и вести учет пробега. В условиях современных нормативов и постоянно меняющихся правил важно понимать, как именно правильно делать путевые листы, чтобы процесс был максимально эффективным и соответствовал законодательству. В этой статье мы подробно рассмотрим ключевые аспекты оформления путевых листов, объясним основные термины и расскажем о важных деталях, которые помогут избежать ошибок. Уже в следующем разделе вы узнаете о конкретных требованиях и образцах документов, что позволит применить полученные знания на практике.</p>"
+          },
+          {
+            "id": "v19se8j08o4drib4b68dxjz8",
+            "tempMDXContent": "<h2 id=\"v19se8j08o4drib4b68dxjz8\">Как правильно оформлять путевые листы: итоговые рекомендации и выводы</h2>\n<p id=\"ibsx89aqij43j5uzv0mb95uo\">Подводя итог, правильное оформление путевых листов является неотъемлемой частью эффективного управления транспортными средствами и соблюдения нормативных требований. Такой подход не только помогает избежать штрафных санкций, но и способствует оптимизации процессов учета, контроля расхода топлива и технического состояния автопарка. Важно помнить, что путевой лист — это не просто формальный документ, а ключевой инструмент, обеспечивающий прозрачность и безопасность перевозок. Современные требования к оформлению учитывают множество нюансов, поэтому регулярное обновление знаний и внимательное отношение к деталям помогут компаниям поддерживать высокий уровень ответственности и профессионализма. Применяя полученные рекомендации, вы сможете значительно упростить работу с документацией и повысить общую эффективность транспортного отдела.</p>\n<h3 id=\"kvhsd94fcszbwq027cwojrap\">\n  <p id=\"lts6ljgaxtg7hnamtvnz75xm\">Внедрение правильных практик оформления путевых листов способствует не только соблюдению законодательства, но и повышению доверия со стороны контролирующих органов и партнеров. Четкое понимание требований и последовательное их выполнение создают основу для стабильной работы и снижения рисков, связанных с нарушениями. Кроме того, автоматизация процессов оформления и контроля путевых листов позволяет минимизировать человеческий фактор и ускорить документооборот, что особенно важно в условиях динамичного рынка и растущих объемов перевозок.</p>\n  <p id=\"wph344ug5lry3udmst03fjjs\">Регулярный аудит и обучение сотрудников, ответственных за ведение путевых листов, гарантируют, что все изменения в законодательстве будут своевременно внедрены в практику. Это обеспечивает постоянную актуальность документации и готовность компании к проверкам. Использование современных цифровых решений и программных продуктов для оформления путевых листов открывает новые возможности для аналитики и планирования, что положительно сказывается на управлении ресурсами и снижении издержек.</p>\n</h3>\n<h3 id=\"g2t7crz2vuezs9zp5pp9zcbw\">\n  <p id=\"vh064tdud2a2pamskoyz0ssd\">В заключение, правильное ведение путевых листов — это комплексный процесс, который требует внимания к деталям, знания нормативов и внедрения эффективных инструментов контроля. Компании, которые серьезно относятся к этому аспекту, получают конкурентные преимущества за счет повышения прозрачности операций и снижения рисков. Такой подход способствует не только соблюдению законодательства, но и улучшению общей культуры безопасности и ответственности в транспортной сфере.</p>\n  <p id=\"dostdmg7xlfm13akyqd5dwuv\">Рассмотрите возможность интеграции современных технологий и регулярного обучения сотрудников для постоянного совершенствования процесса оформления путевых листов. Это позволит не только соответствовать текущим требованиям, но и быть готовыми к будущим изменениям, обеспечивая стабильное развитие и успех вашего бизнеса в 2025 году и далее.</p>\n</h3>"
+          }
+        ],
+        "aiRecommendContentStructure": [
+          {
+            "id": "h2-1",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "Generate 5-7 section-level keywords that introduce the topic and set context for child elements"
+            ],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "writingStyle": "",
+            "contentFormat": "",
+            "customRequirements": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 150,
+              "maxWords": 250,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-1-1",
+                "tag": "p",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 180,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-2",
+                "tag": "p",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 120,
+                  "actualContent": ""
+                }
+              }
+            ]
+          },
+          {
+            "id": "h2-2",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "Generate 5-7 section-level keywords focused on technical concepts and foundational knowledge"
+            ],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "writingStyle": "",
+            "contentFormat": "",
+            "customRequirements": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 250,
+              "maxWords": 400,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-2-1",
+                "tag": "p",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-2-2-3",
+                "tag": "p",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-2-2-4",
+                "tag": "table",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-2-2",
+                "tag": "h3",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 250,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-2-1",
+                    "tag": "p",
+                    "keywords": [],
+                    "taxonomy": "",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "selfPrompt": "",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 130,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-2-2-2",
+                    "tag": "ul",
+                    "keywords": [],
+                    "taxonomy": "",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "selfPrompt": "",
+                    "additionalData": {
+                      "minWords": 40,
+                      "maxWords": 80,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-2-3",
+                    "tag": "p",
+                    "keywords": [],
+                    "taxonomy": "",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "selfPrompt": "",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 100,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "Generate 5-7 section-level keywords focused on implementation, process, and practical application"
+            ],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "writingStyle": "",
+            "contentFormat": "",
+            "customRequirements": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-3-1",
+                "tag": "p",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 90,
+                  "maxWords": 170,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-3-2",
+                "tag": "h3",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 180,
+                  "maxWords": 280,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-2-1",
+                    "tag": "p",
+                    "keywords": [],
+                    "taxonomy": "",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "selfPrompt": "",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 140,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-2-2",
+                    "tag": "ol",
+                    "keywords": [],
+                    "taxonomy": "",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "selfPrompt": "",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 90,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-3-2-3",
+                    "tag": "code",
+                    "keywords": [],
+                    "taxonomy": "",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "selfPrompt": "",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 50,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "Generate 5-7 FAQ-related keywords tied to common user questions and concerns"
+            ],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "writingStyle": "",
+            "contentFormat": "",
+            "customRequirements": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "keywords": [],
+                    "taxonomy": "",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "selfPrompt": "",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-2",
+                "tag": "h3",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "keywords": [],
+                    "taxonomy": "",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "selfPrompt": "",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-3",
+                "tag": "h3",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "keywords": [],
+                    "taxonomy": "",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "selfPrompt": "",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-4",
+                "tag": "h3",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [],
+                    "taxonomy": "",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "selfPrompt": "",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "h2-5",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "Generate 5-7 section-level keywords focused on synthesis, key takeaways, and next steps"
+            ],
+            "taxonomy": "",
+            "attention": "",
+            "intent": "",
+            "audiences": "",
+            "selfPrompt": "",
+            "writingStyle": "",
+            "contentFormat": "",
+            "customRequirements": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 200,
+              "maxWords": 300,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-5-1",
+                "tag": "p",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-5-3",
+                "tag": "table",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-5-2",
+                "tag": "ul",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 50,
+                  "maxWords": 90,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-5-3",
+                "tag": "p",
+                "keywords": [],
+                "taxonomy": "",
+                "attention": "",
+                "intent": "",
+                "audiences": "",
+                "selfPrompt": "",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              }
+            ]
+          }
+        ]
       }
     ],
     "order": 15
@@ -313,5 +1128,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-14T20:31:10.242Z";
+export const lastUpdated = "2025-10-16T19:57:19.174Z";
 export const generatedBy = "menu-persist-api";

@@ -5,6 +5,7 @@ import { NextRequest, NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 import { generateCuid } from "@/lib/utils/generateCuid";
+import { requirePrivilegedUser } from "@/app/@right/(_service)/(_utils)/auth-helpers";
 
 // ============================================
 // CONFIGURATION
@@ -208,16 +209,39 @@ async function saveToFileSystem(
  * Comments in English: POST handler for direct file upload via FormData
  */
 export async function POST(request: NextRequest) {
-  try {
-    console.log("=== POST /api/upload ===");
-    console.log("[POST] Environment:", process.env.NODE_ENV);
+  const requestId = crypto.randomUUID();
 
+  console.log(`\n${"=".repeat(70)}`);
+  console.log(`[${requestId}] 🚀 NEW REQUEST: Image Upload API`);
+  console.log(`${"=".repeat(70)}`);
+  console.log(`[${requestId}] Environment: ${process.env.NODE_ENV}`);
+
+  // 🔐 AUTHORIZATION CHECK: Only privileged users can upload images
+  const authResult = await requirePrivilegedUser(
+    requestId,
+    "Only administrators, architects, and editors can upload images"
+  );
+
+  if (!authResult.success) {
+    console.log(`${"=".repeat(70)}\n`);
+    return authResult.response;
+  }
+
+  const { session, userRole, isPrivileged } = authResult;
+
+  console.log(`[${requestId}] ✅ User authorized: ${session?.user?.email || "unknown"}`);
+  console.log(`[${requestId}] ✅ User role: ${userRole}`);
+  console.log(`[${requestId}] ✅ Proceeding with image upload...`);
+
+  try {
     // Parse FormData
     const formData = await request.formData();
     const file = formData.get("file") as File | null;
 
     if (!file) {
-      console.error("[POST] No file provided in FormData");
+      console.error(`[${requestId}] ❌ No file provided in FormData`);
+      console.log(`${"=".repeat(70)}\n`);
+
       return NextResponse.json(
         {
           error: "No file provided. Use FormData with 'file' field.",
@@ -226,7 +250,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    console.log("[POST] File received:", {
+    console.log(`[${requestId}] 📁 File received:`, {
       name: file.name,
       type: file.type,
       size: file.size,
@@ -234,6 +258,9 @@ export async function POST(request: NextRequest) {
 
     // Validate content type
     if (!isContentTypeAllowed(file.type)) {
+      console.error(`[${requestId}] ❌ Invalid content type: ${file.type}`);
+      console.log(`${"=".repeat(70)}\n`);
+
       return NextResponse.json(
         {
           error: `Invalid content type: ${file.type}. Allowed: ${ALLOWED_CONTENT_TYPES.join(", ")}`,
@@ -244,6 +271,9 @@ export async function POST(request: NextRequest) {
 
     // Validate file size
     if (file.size > MAX_FILE_SIZE) {
+      console.error(`[${requestId}] ❌ File size exceeds limit: ${file.size} bytes`);
+      console.log(`${"=".repeat(70)}\n`);
+
       return NextResponse.json(
         {
           error: `File size (${file.size} bytes) exceeds maximum of ${MAX_FILE_SIZE / 1024 / 1024}MB`,
@@ -251,6 +281,8 @@ export async function POST(request: NextRequest) {
         { status: 400 }
       );
     }
+
+    console.log(`[${requestId}] ✅ Validation passed`);
 
     // Convert file to buffer
     const arrayBuffer = await file.arrayBuffer();
@@ -261,16 +293,19 @@ export async function POST(request: NextRequest) {
     const cuid = generateCuid();
     const filename = `${cuid}.${extension}`;
 
-    console.log("[POST] Generated filename:", filename);
+    console.log(`[${requestId}] 🔑 Generated filename: ${filename}`);
 
     // Upload based on environment
     let result: { success: boolean; url?: string; error?: string };
 
     if (isProduction()) {
-      console.log("[POST] PRODUCTION MODE: Uploading to GitHub");
+      console.log(`[${requestId}] 🌐 PRODUCTION MODE: Uploading to GitHub`);
 
       const { isValid, missingVars } = validateGitHubConfig();
       if (!isValid) {
+        console.error(`[${requestId}] ❌ Missing GitHub configuration: ${missingVars.join(", ")}`);
+        console.log(`${"=".repeat(70)}\n`);
+
         return NextResponse.json(
           {
             error: `Missing GitHub configuration: ${missingVars.join(", ")}`,
@@ -280,12 +315,17 @@ export async function POST(request: NextRequest) {
       }
 
       result = await uploadFileToGitHub(fileBuffer, `${UPLOAD_DIR}/${filename}`);
+      console.log(`[${requestId}] 🌐 GitHub upload result: ${result.success ? "SUCCESS" : "FAILED"}`);
     } else {
-      console.log("[POST] DEVELOPMENT MODE: Saving to filesystem");
+      console.log(`[${requestId}] 💾 DEVELOPMENT MODE: Saving to filesystem`);
       result = await saveToFileSystem(fileBuffer, filename);
+      console.log(`[${requestId}] 💾 Filesystem save result: ${result.success ? "SUCCESS" : "FAILED"}`);
     }
 
     if (!result.success) {
+      console.error(`[${requestId}] ❌ Upload failed: ${result.error}`);
+      console.log(`${"=".repeat(70)}\n`);
+
       return NextResponse.json(
         {
           error: result.error || "Upload failed",
@@ -294,7 +334,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    console.log("[POST] Upload successful:", result.url);
+    console.log(`[${requestId}] ✅ Upload successful: ${result.url}`);
 
     // Return response with file info
     const response = {
@@ -307,9 +347,16 @@ export async function POST(request: NextRequest) {
       environment: isProduction() ? "production" : "development",
     };
 
+    console.log(`[${requestId}] 🎯 Upload complete`);
+    console.log(`${"=".repeat(70)}\n`);
+
     return NextResponse.json(response, { status: 200 });
   } catch (error: any) {
-    console.error("[POST] Unexpected error:", error);
+    console.error(`[${requestId}] 💥 Unexpected error:`, error);
+    console.error(`[${requestId}] 💥 Error message:`, error.message);
+    console.error(`[${requestId}] 💥 Error stack:`, error.stack);
+    console.log(`${"=".repeat(70)}\n`);
+
     return NextResponse.json(
       {
         error: error.message || "Unknown error",

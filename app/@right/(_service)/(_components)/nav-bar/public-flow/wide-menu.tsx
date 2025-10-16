@@ -62,11 +62,17 @@ export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProp
   };
 
   const handleHomePageClick = () => {
-    router.refresh();
-    router.push("/home");
-    setIsOpen(false);
-  };
 
+    if (userType === 'admin' || userType === 'architect' || userType === 'editor') {
+      setIsOpen(false);
+      window.location.href = "/";
+
+    } else {
+      router.refresh();
+      router.push("/");
+      setIsOpen(false);
+    }
+  }
   const PageRow = ({ page }: { page: PageData }) => {
     const showBadge = page.hasBadge && page.badgeName;
 

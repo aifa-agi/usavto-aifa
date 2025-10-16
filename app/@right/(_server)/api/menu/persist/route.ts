@@ -1,4 +1,4 @@
-// @/app/@right/(_server)/api/menu/persist\route.ts
+// @/app/@right/(_server)/api/menu/persist/route.ts
 import { NextRequest, NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
@@ -7,6 +7,7 @@ import {
   MenuPersistResponse,
   OperationStatus,
 } from "@/app/@right/(_service)/(_types)/api-response-types";
+import { requirePrivilegedUser } from "@/app/@right/(_service)/(_utils)/auth-helpers";
 
 const DEFAULT_RELATIVE_PATH = "config/content/content-data.ts";
 
@@ -230,11 +231,40 @@ function saveToFileSystem(categories: any[]): MenuPersistResponse {
 }
 
 export async function POST(req: NextRequest) {
+  const requestId = crypto.randomUUID();
+
+  console.log(`\n${"=".repeat(70)}`);
+  console.log(`[${requestId}] 🚀 NEW REQUEST: Menu Persist API`);
+  console.log(`${"=".repeat(70)}`);
+
+  // 🔐 AUTHORIZATION CHECK: Only privileged users can persist menu configuration
+  const authResult = await requirePrivilegedUser(
+    requestId,
+    "Only administrators, architects, and editors can update menu configuration"
+  );
+
+  if (!authResult.success) {
+    console.log(`${"=".repeat(70)}\n`);
+    return authResult.response;
+  }
+
+  const { session, userRole, isPrivileged } = authResult;
+
+  console.log(`[${requestId}] ✅ User authorized: ${session?.user?.email || "unknown"}`);
+  console.log(`[${requestId}] ✅ User role: ${userRole}`);
+  console.log(`[${requestId}] ✅ Proceeding with menu persist operation...`);
+
   try {
     const body = await req.json();
     const { categories } = body;
 
+    console.log(`[${requestId}] 📝 Received menu data`);
+    console.log(`[${requestId}] 📝 Categories type: ${Array.isArray(categories) ? "array" : typeof categories}`);
+
     if (!Array.isArray(categories)) {
+      console.error(`[${requestId}] ❌ Validation failed: Categories is not an array`);
+      console.log(`${"=".repeat(70)}\n`);
+
       const validationResponse: MenuPersistResponse = {
         status: OperationStatus.VALIDATION_ERROR,
         message: "Invalid data format",
@@ -245,15 +275,27 @@ export async function POST(req: NextRequest) {
       return NextResponse.json(validationResponse, { status: 400 });
     }
 
+    console.log(`[${requestId}] ✅ Validation passed: ${categories.length} categories`);
+    console.log(`[${requestId}] 💾 Saving to filesystem...`);
+
     const localResult = saveToFileSystem(categories);
 
+    console.log(`[${requestId}] 💾 Filesystem result: ${localResult.status}`);
+
     if (isProduction()) {
+      console.log(`[${requestId}] 🌐 Production mode: Syncing to GitHub...`);
+
       const githubResult = await saveToGitHub(categories);
+
+      console.log(`[${requestId}] 🌐 GitHub result: ${githubResult.status}`);
 
       if (
         localResult.status === OperationStatus.SUCCESS &&
         githubResult.status !== OperationStatus.SUCCESS
       ) {
+        console.warn(`[${requestId}] ⚠️  Partial success: Saved locally but GitHub sync failed`);
+        console.log(`${"=".repeat(70)}\n`);
+
         return NextResponse.json({
           status: OperationStatus.SUCCESS,
           message: "Saved locally but GitHub sync failed",
@@ -264,13 +306,24 @@ export async function POST(req: NextRequest) {
 
       const httpStatus =
         githubResult.status === OperationStatus.SUCCESS ? 200 : 500;
+
+      console.log(`[${requestId}] 🎯 Final status: ${githubResult.status} (HTTP ${httpStatus})`);
+      console.log(`${"=".repeat(70)}\n`);
+
       return NextResponse.json(githubResult, { status: httpStatus });
     }
 
     const httpStatus =
       localResult.status === OperationStatus.SUCCESS ? 200 : 500;
+
+    console.log(`[${requestId}] 🎯 Final status: ${localResult.status} (HTTP ${httpStatus})`);
+    console.log(`${"=".repeat(70)}\n`);
+
     return NextResponse.json(localResult, { status: httpStatus });
   } catch (error: any) {
+    console.error(`[${requestId}] 💥 Unexpected error:`, error);
+    console.log(`${"=".repeat(70)}\n`);
+
     const errorResponse: MenuPersistResponse = {
       status: OperationStatus.UNKNOWN_ERROR,
       message: "An unexpected error occurred",

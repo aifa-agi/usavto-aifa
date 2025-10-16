@@ -23,7 +23,7 @@
 
 import * as React from "react";
 import { useStep8Guard } from "../(_hooks)/use-step8-guard";
-import { useStep8Prompt } from "../(_hooks)/use-step8-prompt";
+import { useStep8Prompt } from "../(_hooks)/content-draft-prompt-generator";
 import { useStep8Stream } from "../(_hooks)/use-step8-stream";
 import { useStep8Save } from "../(_hooks)/use-step8-save";
 import { toast } from "sonner";

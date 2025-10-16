@@ -2,6 +2,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { promises as fs } from 'fs';
 import path from 'path';
+import { requirePrivilegedUser } from "@/app/@right/(_service)/(_utils)/auth-helpers";
 
 interface ReadSectionsRequest {
   filePath: string;
@@ -208,12 +209,40 @@ function extractSectionsFromContent(fileContent: string, filePath: string): any[
  * POST endpoint для чтения секций из page.tsx файлов
  */
 export async function POST(request: NextRequest): Promise<NextResponse<ReadSectionsResponse>> {
+  const requestId = crypto.randomUUID();
+
+  console.log(`\n${"=".repeat(70)}`);
+  console.log(`[${requestId}] 🚀 NEW REQUEST: Sections Read API`);
+  console.log(`${"=".repeat(70)}`);
+
+  // 🔐 AUTHORIZATION CHECK: Only privileged users can read sections
+  const authResult = await requirePrivilegedUser(
+    requestId,
+    "Only administrators, architects, and editors can read page sections"
+  );
+
+  if (!authResult.success) {
+    console.log(`${"=".repeat(70)}\n`);
+    return authResult.response as NextResponse<ReadSectionsResponse>;
+  }
+
+  const { session, userRole, isPrivileged } = authResult;
+
+  console.log(`[${requestId}] ✅ User authorized: ${session?.user?.email || "unknown"}`);
+  console.log(`[${requestId}] ✅ User role: ${userRole}`);
+  console.log(`[${requestId}] ✅ Proceeding with sections read operation...`);
+
   try {
     // 1. Валидация входных данных
     const body: ReadSectionsRequest = await request.json();
     const { filePath } = body;
 
+    console.log(`[${requestId}] 📝 Request data:`, { filePath });
+
     if (!filePath) {
+      console.error(`[${requestId}] ❌ Validation failed: File path is required`);
+      console.log(`${"=".repeat(70)}\n`);
+
       return NextResponse.json({
         success: false,
         message: "File path is required"
@@ -223,31 +252,42 @@ export async function POST(request: NextRequest): Promise<NextResponse<ReadSecti
     // Валидация формата пути
     const pathRegex = /^[a-zA-Z0-9_-]+(?:\/[a-zA-Z0-9_-]+)*$/;
     if (!pathRegex.test(filePath)) {
+      console.error(`[${requestId}] ❌ Validation failed: Invalid file path format - "${filePath}"`);
+      console.log(`${"=".repeat(70)}\n`);
+
       return NextResponse.json({
         success: false,
         message: `Invalid file path format: "${filePath}"`
       }, { status: 400 });
     }
 
-    console.log(`🔍 Reading sections from: ${filePath}`);
+    console.log(`[${requestId}] ✅ Validation passed`);
+    console.log(`[${requestId}] 🔍 Reading sections from: ${filePath}`);
 
     // 2. Определение среды выполнения
     const { useLocal, source, reason } = detectEnvironment();
-    console.log(`🌍 Environment: ${reason}`);
+    console.log(`[${requestId}] 🌍 Environment: ${reason}`);
+    console.log(`[${requestId}] 🌍 Source: ${source}`);
 
     // 3. Загрузка содержимого файла
     let fileContent: string;
     
     try {
       if (useLocal) {
+        console.log(`[${requestId}] 📁 Reading from local filesystem...`);
         fileContent = await fetchFileContentFromLocal(filePath);
       } else {
+        console.log(`[${requestId}] 🌐 Fetching from GitHub API...`);
         fileContent = await fetchFileContentFromGitHub(filePath);
       }
+      console.log(`[${requestId}] ✅ File content loaded (${fileContent.length} bytes)`);
     } catch (fetchError: any) {
       // Если файл не найден - это не ошибка, возвращаем пустой массив
       if (fetchError.message.includes("not found")) {
-        console.warn(`📂 Page file not found: ${filePath}`);
+        console.warn(`[${requestId}] 📂 Page file not found: ${filePath}`);
+        console.log(`[${requestId}] 📂 Returning empty sections array`);
+        console.log(`${"=".repeat(70)}\n`);
+
         return NextResponse.json({
           success: true,
           message: `No page file found at path: ${filePath}`,
@@ -262,23 +302,27 @@ export async function POST(request: NextRequest): Promise<NextResponse<ReadSecti
     }
 
     // 4. Извлечение и парсинг секций
+    console.log(`[${requestId}] 🔍 Extracting sections from content...`);
     const sections = extractSectionsFromContent(fileContent, filePath);
 
     // 5. Логирование информации о секциях
-    console.log(`✅ Loaded ${sections.length} sections from ${source}`);
+    console.log(`[${requestId}] ✅ Loaded ${sections.length} sections from ${source}`);
     sections.forEach((section, idx) => {
-      console.log(`📋 Section ${idx}: id="${section.id}"`);
+      console.log(`[${requestId}] 📋 Section ${idx}: id="${section.id}"`);
       if (section.bodyContent?.content) {
         const contentTypes = section.bodyContent.content.map((item: any) => item.type);
-        console.log(`   Content types: [${contentTypes.join(', ')}]`);
+        console.log(`[${requestId}]    Content types: [${contentTypes.join(', ')}]`);
         
         if (contentTypes.includes('table')) {
-          console.log(`   🔍 TABLE detected in section "${section.id}"`);
+          console.log(`[${requestId}]    🔍 TABLE detected in section "${section.id}"`);
         }
       }
     });
 
     // 6. Возврат успешного результата
+    console.log(`[${requestId}] 🎯 Success: Returning ${sections.length} sections`);
+    console.log(`${"=".repeat(70)}\n`);
+
     return NextResponse.json({
       success: true,
       message: `Successfully loaded ${sections.length} sections from ${source}`,
@@ -289,7 +333,10 @@ export async function POST(request: NextRequest): Promise<NextResponse<ReadSecti
 
   } catch (error: any) {
     // Централизованная обработка ошибок
-    console.error("❌ Error in sections/read route:", error);
+    console.error(`[${requestId}] ❌ Error in sections/read route:`, error);
+    console.error(`[${requestId}] 💥 Error message:`, error.message);
+    console.error(`[${requestId}] 💥 Error stack:`, error.stack);
+    console.log(`${"=".repeat(70)}\n`);
     
     return NextResponse.json({
       success: false,

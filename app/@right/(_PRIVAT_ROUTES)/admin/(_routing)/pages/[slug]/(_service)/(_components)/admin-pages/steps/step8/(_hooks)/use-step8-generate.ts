@@ -24,7 +24,7 @@
 import * as React from "react";
 import { toast } from "sonner";
 import { useStep8Root } from "../(_contexts)/step8-root-context";
-import { useStep8Prompt } from "./use-step8-prompt";
+import { useStep8Prompt } from "./content-draft-prompt-generator";
 import { useStep8Guard } from "./use-step8-guard";
 import type {
   GenerationStatus,

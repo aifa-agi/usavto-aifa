@@ -1,34 +1,14 @@
+
+
+
+
 // File: @/app/@right/(_PRIVAT_ROUTES)/admin/(_routing)/pages/[slug]/(_service)/(_components)/admin-pages/steps/step8/(_hooks)/use-step8-prompt.ts
 "use client";
 
-/**
- * Step 8 - Enhanced Prompt Hook (CRITICAL FIX: H2 Generation):
- * Understanding of the task (step-by-step):
- * 1) Build a comprehensive SYSTEM instruction that includes:
- *    - ROLE & OBJECTIVES: Professional copywriter producing human-indistinguishable content.
- *    - STRICT STRUCTURE ENFORCEMENT: ALWAYS generate H2 tag first, then children with IDs.
- *    - SECTION NARRATIVE FLOW: First section = smooth introduction; Last section = smooth conclusion.
- *    - PAGE META CONTEXT: Full page metadata (title, description, keywords, intent, taxonomy, audiences, attention).
- *    - INTERNAL KNOWLEDGE BASE (TIER 1): Company expertise and proprietary insights (highest priority).
- *    - EXTERNAL KNOWLEDGE BASE (TIER 2): Market context and competitive intelligence.
- *    - COMPETITOR INSIGHTS: Actionable recommendations from competitor analysis.
- *    - SECTION BLUEPRINT: Serialized RootContentStructure with children, including writingStyle, contentFormat, customRequirements.
- *    - PAGE PROGRESS META: totalSections, completedSectionsIndexes (0-based), currentSectionIndex.
- *    - LANGUAGE CONTRACT: Enforce appConfig.lang with safe fallback.
- *    - HTML OUTPUT CONTRACT: Valid HTML, start with H2, then children elements.
- *    - CUSTOM REQUIREMENTS: Absolute priority override for section-specific instructions.
- *    - CHAIN COHERENCE: Inject previous HTML (read-only), explain WHY chain is included.
- *    - AVAILABLE IMAGES: List of images with IDs, alt text, URLs for content integration.
- *    - SEO 2025 BEST PRACTICES: E-E-A-T, natural language processing, entity optimization, LSI keywords, no keyword stuffing.
- *    - WORD COUNT POLICY: Apply to individual children elements, NOT entire section or H2.
- * 2) Build a concise USER seed from description/keywords/intent/audiences.
- * 3) Preserve existing streaming/one-shot flows; do not mutate PageData here.
- * 4) Keep hooks usage valid: do NOT call hooks inside callbacks; use closures from this hook scope only.
- */
+
 
 import * as React from "react";
 import { toast } from "sonner";
-import { useStep8Root } from "../(_contexts)/step8-root-context";
 import type {
   RootContentStructure,
   SectionInfo,
@@ -36,11 +16,12 @@ import type {
   CompetitorAnalysis,
   PageImages,
 } from "@/app/@right/(_service)/(_types)/page-types";
-import { STEP8_TEXTS } from "../(_constants)/step8-texts";
-import { STEP8_IDS } from "../(_constants)/step8-ids";
 
 // Optional app config import for language; keep safe fallback if not present.
 import { appConfig } from "@/config/appConfig";
+import { useStep8Root } from "@/app/@right/(_PRIVAT_ROUTES)/admin/(_routing)/pages/[slug]/(_service)/(_components)/admin-pages/steps/step8/(_contexts)/step8-root-context";
+import { STEP8_TEXTS } from "@/app/@right/(_PRIVAT_ROUTES)/admin/(_routing)/pages/[slug]/(_service)/(_components)/admin-pages/steps/step8/(_constants)/step8-texts";
+import { STEP8_IDS } from "@/app/@right/(_PRIVAT_ROUTES)/admin/(_routing)/pages/[slug]/(_service)/(_components)/admin-pages/steps/step8/(_constants)/step8-ids";
 
 export interface Step8PromptParts {
   system: string;
