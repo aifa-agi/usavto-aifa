@@ -2909,7 +2909,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T12:37:46.530Z",
-        "updatedAt": "2025-10-22T12:46:18.741Z",
+        "updatedAt": "2025-10-22T12:47:50.977Z",
         "order": 2,
         "description": "Узнайте, как получить лицензию на пассажирские перевозки такси в 2025 году: пошаговая инструкция, требования, документы и важные изменения.",
         "images": [
@@ -2996,6 +2996,164 @@ export const contentData = {
                 }
               }
             ]
+          },
+          {
+            "id": "h2-2",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "требования к перевозчикам",
+              "региональный реестр такси",
+              "правовое регулирование такси",
+              "условия допуска к перевозкам",
+              "регистрация транспортных средств",
+              "контроль соответствия",
+              "документы для допуска"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, какие базовые требования и правовые нормы действуют для допуска к пассажирским перевозкам такси в 2025 году, чтобы избежать ошибок на старте.",
+            "intent": "Дать читателю полное понимание технических, юридических и организационных основ допуска к деятельности по перевозке пассажиров легковым такси, включая актуальные требования, регистрацию в реестрах и контроль соответствия.",
+            "audiences": "Владельцы автомобилей, индивидуальные предприниматели, самозанятые и представители таксомоторных компаний, которые планируют начать или легализовать деятельность по перевозке пассажиров такси в 2025 году; уровень — начинающий/средний, заинтересованы в практических деталях и минимизации рисков.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see below)\n\nCONTEXT: Generate h2 section describing технические и правовые основы допуска к пассажирским перевозкам такси for page \"Лицензия на пассажирские перевозки такси: как получить в 2025 году\"\n\nGOAL: Объяснить читателю, какие требования предъявляются к перевозчикам, транспортным средствам и водителям для допуска к официальной деятельности такси в 2025 году, как устроено правовое регулирование и какие документы необходимы для регистрации в региональных реестрах.\n\nAUDIENCE: Владельцы авто, ИП, самозанятые, представители таксомоторных компаний | Level: начинающий/средний | Pain points: неясность требований, страх ошибок, желание избежать штрафов\n\nKEYWORDS TO INTEGRATE:\n[требования к перевозчикам, региональный реестр такси, правовое регулирование такси, условия допуска к перевозкам, регистрация транспортных средств, контроль соответствия, документы для допуска]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 250, maxWords: 400 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with nested paragraphs, table, h3, ul\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: юридическая поддержка, автоматизация оформления, контроль соответствия, регистрация в реестрах, медицинское сопровождение\n- SECONDARY: Apply insights from External KB: терминология (разрешение vs лицензия), закон № 580-ФЗ, региональные реестры, требования к перевозчикам и транспортным средствам\n\nQUALITY CRITERIA:\n- Actionable (пошаговые рекомендации)\n- Specific (конкретные требования и документы)\n- Data-backed (ссылки на законы, реестры)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальное описание требований и правовых норм допуска к перевозкам такси в 2025 году, с акцентом на регистрацию в реестрах и контроль соответствия.\n- sourceHint: Internal KB (регламент, автоматизация, юридическая поддержка), External KB (законодательство, терминология)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference parent page intent (гайд по получению допуска к перевозкам такси)\n- Must set тематическое направление для дочерних h3 (детализация требований и процедур)\n- Add interlink planning: internalLinks (например, на разделы «Документы для подачи», «Пошаговая инструкция», «Медицинские осмотры»); externalLinks (на закон № 580-ФЗ, если разрешено)\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 250,
+              "maxWords": 400,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-2-1",
+                "tag": "p",
+                "keywords": [
+                  "требования к перевозчикам",
+                  "правовое регулирование такси"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Поймите, почему важно соблюдать все требования для допуска к перевозкам.",
+                "intent": "Ввести читателя в тему нормативных требований и объяснить, как они влияют на возможность официально работать в такси.",
+                "audiences": "Начинающие перевозчики, ИП, самозанятые, автопарки; уровень — базовый.",
+                "selfPrompt": "CONTEXT: Generate intro paragraph for section on технические и правовые основы допуска к перевозкам такси.\nGOAL: Кратко объяснить, почему соблюдение требований — ключ к легальной работе и защите от штрафов.\nKEYWORDS: требования к перевозчикам, правовое регулирование такси\nWORD COUNT: minWords: 80, maxWords: 150\nROLE: intro\nsourceHint: Internal KB (регламент), External KB (закон № 580-ФЗ)\nsemanticFingerprint: Вводное объяснение важности соответствия требованиям для допуска к перевозкам.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-2-2-3",
+                "tag": "p",
+                "keywords": [
+                  "региональный реестр такси"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, что такое региональный реестр и почему он обязателен.",
+                "intent": "Кратко обозначить роль регионального реестра такси в процессе допуска.",
+                "audiences": "Владельцы авто и ИП, которые впервые сталкиваются с регистрацией.",
+                "selfPrompt": "CONTEXT: Generate short transition paragraph explaining роль регионального реестра такси.\nGOAL: Пояснить, что регистрация в реестре — обязательный этап допуска.\nKEYWORDS: региональный реестр такси\nWORD COUNT: minWords: 5, maxWords: 15\nROLE: transition\nsourceHint: External KB (региональные реестры)\nsemanticFingerprint: Краткое пояснение о значимости реестра.",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-2-2-4",
+                "tag": "table",
+                "keywords": [
+                  "условия допуска к перевозкам",
+                  "документы для допуска"
+                ],
+                "taxonomy": "Data-driven",
+                "attention": "Сравните ключевые условия и документы для допуска к перевозкам.",
+                "intent": "Дать наглядное сравнение основных условий и документов для разных категорий перевозчиков.",
+                "audiences": "ИП, самозанятые, представители автопарков; уровень — средний.",
+                "selfPrompt": "CONTEXT: Generate comparison table (3 columns × 4 rows) for условия допуска и документы для разных категорий перевозчиков.\nGOAL: Сравнить требования для ИП, самозанятых и организаций.\nKEYWORDS: условия допуска к перевозкам, документы для допуска\nTABLE SCHEMA: Категория перевозчика | Основные условия | Необходимые документы\nDATA TYPES: text | text | text\nDATA SOURCE: Internal KB (регламент), External KB (требования по закону)\nWORD COUNT: minWords: 80, maxWords: 160\nschemaReadiness: Dataset/Comparison\nsemanticFingerprint: Таблица-сравнение условий допуска для разных типов перевозчиков.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-2-2",
+                "tag": "h3",
+                "keywords": [
+                  "контроль соответствия",
+                  "регистрация транспортных средств",
+                  "медицинское сопровождение",
+                  "автоматизация оформления"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Пошагово разберитесь, как пройти все этапы допуска и избежать ошибок.",
+                "intent": "Детализировать процесс контроля соответствия требованиям, регистрации транспорта и организации медицинских осмотров для допуска к перевозкам.",
+                "audiences": "ИП, самозанятые, представители автопарков; уровень — средний; ищут практические шаги.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection under 'технические и правовые основы допуска к перевозкам такси' on контроль соответствия, регистрация транспорта и медицинское сопровождение.\nGOAL: Пошагово описать, как перевозчик подтверждает соответствие требованиям, регистрирует транспорт и организует медосмотры.\nKEYWORDS: контроль соответствия, регистрация транспортных средств, медицинское сопровождение, автоматизация оформления\nsemanticFingerprint: Детализация процедур контроля и регистрации для допуска к перевозкам.\ninternalLinks: на разделы «Медицинские осмотры», «Автоматизация документов», «Пошаговая инструкция»\nschemaReadiness: HowTo\nsourceHint: Internal KB (автоматизация, медосмотры), External KB (порядок регистрации)\nE-E-A-T: internal-tested\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 250,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "контроль соответствия",
+                      "регистрация транспортных средств"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Поймите, как проходит проверка соответствия и регистрация транспорта.",
+                    "intent": "Объяснить, как перевозчик подтверждает соответствие требованиям и регистрирует транспорт в реестре.",
+                    "audiences": "ИП, автопарки, самозанятые; уровень — средний.",
+                    "selfPrompt": "CONTEXT: Generate body paragraph for h3 on контроль соответствия и регистрация транспорта.\nGOAL: Описать этапы проверки и регистрации, дать советы по автоматизации.\nKEYWORDS: контроль соответствия, регистрация транспортных средств\nWORD COUNT: minWords: 70, maxWords: 130\nROLE: body\nsourceHint: Internal KB (автоматизация), External KB (регистрация в реестре)\nsemanticFingerprint: Описание этапов проверки и регистрации транспорта.",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 130,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-2-2-2",
+                    "tag": "ul",
+                    "keywords": [
+                      "медицинское сопровождение"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Проверьте, какие медицинские процедуры обязательны для допуска.",
+                    "intent": "Дать список обязательных медицинских процедур для допуска к перевозкам.",
+                    "audiences": "Водители, ИП, автопарки; уровень — начинающий.",
+                    "selfPrompt": "CONTEXT: Generate unordered list (4 items) of обязательные медицинские процедуры для допуска к перевозкам такси.\nGOAL: Перечислить ключевые медицинские требования.\nKEYWORDS: медицинское сопровождение\nLIST STRUCTURE: short bullets (5-10 words)\nsourceHint: Internal KB (медицинское сопровождение)\nsemanticFingerprint: Список обязательных медицинских процедур.",
+                    "additionalData": {
+                      "minWords": 40,
+                      "maxWords": 80,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-2-3",
+                    "tag": "p",
+                    "keywords": [
+                      "автоматизация оформления"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Узнайте, как автоматизация снижает риск ошибок и ускоряет процесс.",
+                    "intent": "Пояснить преимущества автоматизации оформления документов для допуска к перевозкам.",
+                    "audiences": "ИП, автопарки, агрегаторы; уровень — средний.",
+                    "selfPrompt": "CONTEXT: Generate conclusion paragraph for h3 on автоматизация оформления.\nGOAL: Объяснить, как автоматизация помогает избежать ошибок и ускоряет процесс допуска.\nKEYWORDS: автоматизация оформления\nWORD COUNT: minWords: 60, maxWords: 100\nROLE: conclusion\nsourceHint: Internal KB (автоматизация документов)\nsemanticFingerprint: Выгоды автоматизации оформления документов.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 100,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -3028,5 +3186,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T12:47:51.228Z";
+export const lastUpdated = "2025-10-22T12:48:44.864Z";
 export const generatedBy = "menu-persist-api";
