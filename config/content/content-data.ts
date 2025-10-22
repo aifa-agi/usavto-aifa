@@ -5467,7 +5467,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T13:22:57.559Z",
-        "updatedAt": "2025-10-22T13:39:26.454Z",
+        "updatedAt": "2025-10-22T13:40:37.958Z",
         "order": 4,
         "badgeName": "Блог",
         "description": "Узнайте, как сделать водительскую карту для тахографа: пошаговая инструкция, требования, список документов, сроки оформления. Получите карту быстро!",
@@ -6036,6 +6036,110 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-5",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "итоги оформления карты водителя",
+              "ключевые выводы по получению карты",
+              "рекомендации для водителей",
+              "следующие шаги после оформления",
+              "советы по использованию карты",
+              "контроль сроков действия карты",
+              "поддержка и обучение водителей",
+              "юридические консультации по тахографам"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Получите краткое резюме и практические рекомендации для успешного завершения процесса оформления карты и дальнейшей эксплуатации.",
+            "intent": "Синтезировать основные выводы инструкции, дать читателю четкие рекомендации по дальнейшим действиям и подчеркнуть важность правильного использования водительской карты для тахографа.",
+            "audiences": "Профессиональные водители, менеджеры автопарков, специалисты по транспорту, ИП-перевозчики; уровень: средний; решает вопросы уверенного завершения процесса и предотвращения ошибок в будущем.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 conclusion/summary section for page \"Как сделать водительскую карту для тахографа: пошаговая инструкция\"\n\nGOAL: Сформулировать итоговые выводы по теме оформления водительской карты для тахографа, выделить ключевые моменты, дать практические рекомендации по дальнейшим действиям, напомнить о необходимости соблюдения сроков и правильного использования карты, а также обозначить возможности для получения поддержки и консультаций.\n\nAUDIENCE: Профессиональные водители, менеджеры автопарков, специалисты по транспорту, ИП-перевозчики | Level: intermediate | Pain points: завершение процесса, уверенность в правильности действий, предотвращение ошибок, поддержка при возникновении вопросов.\n\nKEYWORDS TO INTEGRATE:\n[итоги оформления карты водителя, ключевые выводы по получению карты, рекомендации для водителей, следующие шаги после оформления, советы по использованию карты, контроль сроков действия карты, поддержка и обучение водителей, юридические консультации по тахографам]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 200, maxWords: 300 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 heading with summary, actionable table, bullet list of рекомендаций, заключительный абзац\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: выводы по процессу, поддержка, обучение, юридические консультации\n- SECONDARY: Apply insights from External KB: советы по контролю сроков, рекомендации по дальнейшим действиям\n\nQUALITY CRITERIA:\n- Actionable (конкретные рекомендации)\n- Specific (уникальные выводы по теме)\n- Data-backed (ссылки на этапы и сервисы поддержки)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Итоговый раздел, объединяющий ключевые выводы и рекомендации по дальнейшим шагам после оформления карты водителя для тахографа.\n- sourceHint: Internal KB (выводы, поддержка, обучение), External KB (советы по срокам и эксплуатации)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nINTERLINK PLANNING:\n- internalLinks: Руководство по тахографам, страница поддержки водителей, FAQ по транспортным документам\n- externalLinks: не использовать (приоритет внутренним ресурсам)\n\nSCHEMA READINESS:\n- HowTo/FAQPage (для структурированных данных)\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 200,
+              "maxWords": 300,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-5-1",
+                "tag": "p",
+                "keywords": [
+                  "итоги оформления карты водителя",
+                  "ключевые выводы по получению карты"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, какие шаги и решения наиболее важны для успешного завершения оформления карты.",
+                "intent": "Кратко подвести итоги инструкции, выделить главные моменты и подчеркнуть значимость соблюдения всех этапов.",
+                "audiences": "Водители, оформляющие карту впервые; специалисты по документообороту; уровень: средний; снимает неуверенность в правильности действий.",
+                "selfPrompt": "CONTEXT: Generate summary paragraph (intro/conclusion) for h2 section \"Итоги и рекомендации по оформлению карты водителя для тахографа\" on page \"Как сделать водительскую карту для тахографа: пошаговая инструкция\"\nGOAL: Подвести итог инструкции, выделить основные этапы и значимость каждого шага, подчеркнуть важность соблюдения рекомендаций.\nKEYWORDS: итоги оформления карты водителя, ключевые выводы по получению карты\nROLE: summary\nE-E-A-T: semanticFingerprint: Краткое резюме ключевых этапов и выводов по оформлению карты; sourceHint: Internal KB (выводы по процессу); evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-5-3",
+                "tag": "table",
+                "keywords": [
+                  "следующие шаги после оформления",
+                  "контроль сроков действия карты"
+                ],
+                "taxonomy": "Actionable",
+                "attention": "Получите наглядную таблицу с рекомендациями по дальнейшим действиям и контролю карты.",
+                "intent": "Предоставить структурированный план действий после получения карты, включая контроль сроков и обращение за поддержкой.",
+                "audiences": "Водители и менеджеры автопарков; уровень: средний; помогает не упустить важные моменты после оформления.",
+                "selfPrompt": "CONTEXT: Generate actionable table (2 columns × 4 rows) for h2 section \"Итоги и рекомендации по оформлению карты водителя для тахографа\" on page \"Как сделать водительскую карту для тахографа: пошаговая инструкция\"\nGOAL: Визуализировать ключевые рекомендации и следующие шаги после оформления карты, включая контроль сроков действия и обращения за поддержкой.\nCOLUMNS: Действие | Описание\nDATA TYPES: text | text\nKEYWORDS: следующие шаги после оформления, контроль сроков действия карты\nE-E-A-T: semanticFingerprint: Таблица с пошаговыми рекомендациями по дальнейшим действиям; sourceHint: Internal KB (рекомендации), External KB (советы по срокам); evidenceStrength: internal-tested | external-peer-reviewed.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-5-2",
+                "tag": "ul",
+                "keywords": [
+                  "рекомендации для водителей",
+                  "советы по использованию карты"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Ознакомьтесь с практическими советами для безопасного и эффективного использования карты.",
+                "intent": "Дать водителям и специалистам краткие, практические советы по эксплуатации и хранению карты.",
+                "audiences": "Водители, специалисты по транспорту; уровень: средний; помогает избежать ошибок при использовании карты.",
+                "selfPrompt": "CONTEXT: Generate bullet list (5 items, short bullets) for h2 section \"Итоги и рекомендации по оформлению карты водителя для тахографа\" on page \"Как сделать водительскую карту для тахографа: пошаговая инструкция\"\nGOAL: Перечислить основные рекомендации и советы по использованию и хранению карты водителя для тахографа.\nKEYWORDS: рекомендации для водителей, советы по использованию карты\nE-E-A-T: semanticFingerprint: Список практических советов по эксплуатации карты; sourceHint: Internal KB (советы по использованию), External KB (дополнительные рекомендации); evidenceStrength: internal-tested | external-peer-reviewed.",
+                "additionalData": {
+                  "minWords": 50,
+                  "maxWords": 90,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-5-3",
+                "tag": "p",
+                "keywords": [
+                  "поддержка и обучение водителей",
+                  "юридические консультации по тахографам"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, где получить помощь, обучение и консультации по вопросам тахографов и карт.",
+                "intent": "Порекомендовать ресурсы для получения дополнительной поддержки, обучения и юридических консультаций по вопросам эксплуатации карты.",
+                "audiences": "Водители, специалисты по транспорту, руководители автопарков; уровень: средний; облегчает поиск поддержки и повышения квалификации.",
+                "selfPrompt": "CONTEXT: Generate closing paragraph (call-to-action/support) for h2 section \"Итоги и рекомендации по оформлению карты водителя для тахографа\" on page \"Как сделать водительскую карту для тахографа: пошаговая инструкция\"\nGOAL: Подчеркнуть важность обращения за поддержкой, обучением и юридическими консультациями, дать ссылку на внутренние ресурсы.\nKEYWORDS: поддержка и обучение водителей, юридические консультации по тахографам\nROLE: conclusion/call-to-action\nE-E-A-T: semanticFingerprint: Заключительный призыв воспользоваться поддержкой и обучением; sourceHint: Internal KB (поддержка, обучение, юридические консультации); evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              }
+            ]
           }
         ]
       }
@@ -6068,5 +6172,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T13:40:38.531Z";
+export const lastUpdated = "2025-10-22T13:40:53.784Z";
 export const generatedBy = "menu-persist-api";
