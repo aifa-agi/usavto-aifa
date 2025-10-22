@@ -4179,7 +4179,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T12:59:57.568Z",
-        "updatedAt": "2025-10-22T13:11:06.919Z",
+        "updatedAt": "2025-10-22T13:12:35.169Z",
         "order": 3,
         "badgeName": "Блог",
         "description": "Узнайте, как аннулировать лицензию на такси в Москве самостоятельно: пошаговая инструкция, список документов, советы и нюансы. Быстро и без посредников!",
@@ -4548,6 +4548,206 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "часто задаваемые вопросы аннулирование лицензии такси",
+              "ошибки при аннулировании лицензии",
+              "сроки аннулирования разрешения",
+              "повторная подача заявления",
+              "госпошлина за аннулирование",
+              "отказ в аннулировании лицензии",
+              "документы для отказа от лицензии"
+            ],
+            "taxonomy": "FAQ",
+            "attention": "Ответы на самые частые вопросы помогут избежать ошибок и ускорят процесс самостоятельного аннулирования лицензии на такси в Москве.",
+            "intent": "Дать пользователю структурированные и практичные ответы на распространённые вопросы, возникающие при самостоятельном аннулировании лицензии на такси, чтобы снизить риски и повысить уверенность в правильности действий.",
+            "audiences": "Владельцы такси, индивидуальные предприниматели, водители, впервые сталкивающиеся с процедурой аннулирования лицензии; уровень — начинающий и средний; боль — страх ошибиться, потерять время или получить отказ.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 FAQ section for page \"Как аннулировать лицензию на такси в Москве самостоятельно: пошаговая инструкция\"\n\nGOAL: Сформировать блок с наиболее частыми вопросами и подробными ответами по теме самостоятельного аннулирования лицензии на такси в Москве, чтобы закрыть типичные возражения и снизить тревожность пользователя.\n\nAUDIENCE: Владельцы такси, ИП, водители | Уровень: начинающий/средний | Pain points: страх ошибок, нехватка информации, опасения по срокам и документам\n\nKEYWORDS TO INTEGRATE:\n[часто задаваемые вопросы аннулирование лицензии такси, ошибки при аннулировании лицензии, сроки аннулирования разрешения, повторная подача заявления, госпошлина за аннулирование, отказ в аннулировании лицензии, документы для отказа от лицензии]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: h2 with nested h3 for each FAQ, each with a p-answer\n\nWRITING STYLE: Story-driven, engaging storytelling approach\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: юридические консультации, сопровождение, требования к документам, интеграция с цифровыми сервисами\n- SECONDARY: Apply insights from External KB: типовые ошибки, сроки, порядок подачи, возможные причины отказа\n\nQUALITY CRITERIA:\n- Actionable (конкретные рекомендации)\n- Specific (без общих фраз)\n- Data-backed (факты из KB)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Каждый вопрос раскрывает уникальный аспект процесса аннулирования, не повторяя другие разделы.\n- sourceHint: Internal KB (юридические услуги, консультации), External KB (типовые проблемы и сроки)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nINTERLINK PLANNING: Включить 2-3 внутренних ссылки на разделы сайта о лицензировании такси, юридических услугах и цифровых сервисах.\nSCHEMA READINESS: FAQPage\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "keywords": [
+                  "часто задаваемые вопросы аннулирование лицензии такси"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Краткое введение к FAQ поможет быстро сориентироваться и найти нужный ответ.",
+                "intent": "Ввести пользователя в раздел FAQ, объяснить его пользу и структуру.",
+                "audiences": "Владельцы такси, ИП, водители, впервые сталкивающиеся с аннулированием лицензии.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for FAQ section on самостоятельное аннулирование лицензии на такси в Москве.\nGOAL: Объяснить, зачем нужен раздел FAQ, как им пользоваться, и какие вопросы здесь раскрываются.\nKEYWORDS: [часто задаваемые вопросы аннулирование лицензии такси]\nWORD COUNT: minWords: 70, maxWords: 130\nROLE: intro\nsourceHint: Internal KB (юридические консультации), External KB (типовые вопросы)\nsemanticFingerprint: Вводный абзац, поясняющий структуру и пользу FAQ для пользователя.\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "keywords": [
+                  "ошибки при аннулировании лицензии",
+                  "типичные проблемы при отказе от лицензии",
+                  "самостоятельная подача заявления"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, как избежать самых распространённых ошибок при аннулировании лицензии.",
+                "intent": "Разобрать основные ошибки и проблемы, с которыми сталкиваются при самостоятельном аннулировании лицензии на такси.",
+                "audiences": "Владельцы такси и ИП, впервые оформляющие отказ от лицензии; уровень — начинающий.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item for 'Какие ошибки чаще всего совершают при аннулировании лицензии на такси самостоятельно?'\nREFERENCE PARENT H2: FAQ\nGOAL: Подробно разобрать типичные ошибки (например, неполный пакет документов, неправильное заполнение заявления, пропуск сроков), дать советы по их предотвращению.\nKEYWORDS: [ошибки при аннулировании лицензии, типичные проблемы при отказе от лицензии, самостоятельная подача заявления]\nWORD COUNT: minWords: 150, maxWords: 220\nsemanticFingerprint: FAQ раскрывает ошибки и способы их избежать.\nsourceHint: Internal KB (юридические консультации), External KB (типовые ошибки)\nevidenceStrength: internal-tested\nINTERLINK: Внутренняя ссылка на раздел о юридических услугах по сопровождению аннулирования.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "keywords": [
+                      "ошибки при аннулировании лицензии"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Конкретные примеры ошибок помогут избежать проблем и ускорить процесс.",
+                    "intent": "Дать примеры ошибок и рекомендации по их предотвращению.",
+                    "audiences": "Владельцы такси, ИП, водители; уровень — начинающий.",
+                    "selfPrompt": "CONTEXT: Generate paragraph with examples of common mistakes when annulling a taxi license and practical tips to avoid them.\nROLE: body\nKEYWORDS: [ошибки при аннулировании лицензии]\nWORD COUNT: minWords: 60, maxWords: 120\nsourceHint: Internal KB (юридические консультации), External KB (ошибки пользователей)\nsemanticFingerprint: Перечисление ошибок и советы по их предотвращению.\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-2",
+                "tag": "h3",
+                "keywords": [
+                  "сроки аннулирования разрешения",
+                  "сколько времени занимает аннулирование",
+                  "обработка заявления на отказ"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Понимание сроков поможет правильно спланировать дальнейшие действия после подачи заявления.",
+                "intent": "Объяснить, сколько времени занимает процесс аннулирования лицензии и от чего зависят сроки.",
+                "audiences": "Владельцы такси, ИП, водители, планирующие продажу авто или прекращение деятельности.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item for 'Сколько времени занимает аннулирование лицензии на такси в Москве?'\nREFERENCE PARENT H2: FAQ\nGOAL: Указать стандартные сроки рассмотрения заявления, возможные задержки, влияние правильности документов.\nKEYWORDS: [сроки аннулирования разрешения, сколько времени занимает аннулирование, обработка заявления на отказ]\nWORD COUNT: minWords: 150, maxWords: 220\nsemanticFingerprint: FAQ раскрывает временные рамки и факторы, влияющие на скорость аннулирования.\nsourceHint: Internal KB (цифровые сервисы, сроки), External KB (стандартные сроки)\nevidenceStrength: internal-tested\nINTERLINK: Внутренняя ссылка на раздел о цифровых сервисах для ускорения процесса.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "сроки аннулирования разрешения"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Четкое понимание сроков поможет избежать неоправданных ожиданий.",
+                    "intent": "Дать конкретные сроки и пояснить, что может их ускорить или замедлить.",
+                    "audiences": "Владельцы такси, ИП, водители.",
+                    "selfPrompt": "CONTEXT: Generate paragraph with factual information about standard and maximum timeframes for taxi license annulment in Moscow.\nROLE: body\nKEYWORDS: [сроки аннулирования разрешения]\nWORD COUNT: minWords: 60, maxWords: 120\nsourceHint: Internal KB (цифровые сервисы), External KB (средние сроки)\nsemanticFingerprint: Конкретные сроки и рекомендации по ускорению процесса.\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-3",
+                "tag": "h3",
+                "keywords": [
+                  "госпошлина за аннулирование",
+                  "нужно ли платить за отказ от лицензии",
+                  "стоимость аннулирования разрешения"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, потребуется ли оплачивать госпошлину или другие сборы при аннулировании лицензии.",
+                "intent": "Разъяснить, взимается ли госпошлина за аннулирование лицензии на такси и какие расходы возможны.",
+                "audiences": "Владельцы такси, ИП, водители, планирующие бюджет процедуры.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item for 'Нужно ли платить госпошлину при аннулировании лицензии на такси?'\nREFERENCE PARENT H2: FAQ\nGOAL: Объяснить, предусмотрена ли госпошлина или иные сборы, и в каких случаях.\nKEYWORDS: [госпошлина за аннулирование, нужно ли платить за отказ от лицензии, стоимость аннулирования разрешения]\nWORD COUNT: minWords: 150, maxWords: 220\nsemanticFingerprint: FAQ раскрывает финансовые аспекты процедуры аннулирования.\nsourceHint: Internal KB (требования законодательства), External KB (стандартные сборы)\nevidenceStrength: internal-tested\nINTERLINK: Внутренняя ссылка на раздел о юридических расходах при работе такси.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "госпошлина за аннулирование"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Четкий ответ на вопрос о расходах поможет избежать неожиданных затрат.",
+                    "intent": "Дать однозначный ответ о наличии или отсутствии госпошлины.",
+                    "audiences": "Владельцы такси, ИП, водители.",
+                    "selfPrompt": "CONTEXT: Generate paragraph with clear statement about state fees for taxi license annulment, referencing current legislation.\nROLE: body\nKEYWORDS: [госпошлина за аннулирование]\nWORD COUNT: minWords: 60, maxWords: 120\nsourceHint: Internal KB (законодательство), External KB (стандартные сборы)\nsemanticFingerprint: Ответ о необходимости оплаты госпошлины.\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-4",
+                "tag": "h3",
+                "keywords": [
+                  "отказ в аннулировании лицензии",
+                  "повторная подача заявления",
+                  "причины отказа в аннулировании"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, что делать, если в аннулировании лицензии отказано, и как исправить ситуацию.",
+                "intent": "Объяснить причины возможного отказа в аннулировании лицензии и порядок повторной подачи заявления.",
+                "audiences": "Владельцы такси, ИП, водители, столкнувшиеся с отказом.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item for 'Что делать, если в аннулировании лицензии отказали?'\nREFERENCE PARENT H2: FAQ\nGOAL: Перечислить возможные причины отказа (ошибки в документах, несоответствие требованиям), дать пошаговые рекомендации по повторной подаче заявления.\nKEYWORDS: [отказ в аннулировании лицензии, повторная подача заявления, причины отказа в аннулировании]\nWORD COUNT: minWords: 150, maxWords: 220\nsemanticFingerprint: FAQ раскрывает действия при отказе и пути решения проблемы.\nsourceHint: Internal KB (юридические консультации), External KB (типовые причины отказа)\nevidenceStrength: internal-tested\nINTERLINK: Внутренняя ссылка на раздел о юридической поддержке при отказах.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "отказ в аннулировании лицензии"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Пошаговые рекомендации помогут быстро устранить причины отказа.",
+                    "intent": "Дать конкретные шаги по исправлению ошибок и повторной подаче заявления.",
+                    "audiences": "Владельцы такси, ИП, водители.",
+                    "selfPrompt": "CONTEXT: Generate paragraph with actionable steps for users who received a refusal to annul their taxi license, including error correction and resubmission process.\nROLE: body\nKEYWORDS: [отказ в аннулировании лицензии]\nWORD COUNT: minWords: 60, maxWords: 120\nsourceHint: Internal KB (юридические консультации), External KB (причины отказа)\nsemanticFingerprint: Инструкция по действиям при отказе.\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -4580,5 +4780,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T13:12:35.720Z";
+export const lastUpdated = "2025-10-22T13:14:10.121Z";
 export const generatedBy = "menu-persist-api";
