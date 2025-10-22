@@ -2909,7 +2909,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T12:37:46.530Z",
-        "updatedAt": "2025-10-22T12:48:44.612Z",
+        "updatedAt": "2025-10-22T12:49:51.495Z",
         "order": 2,
         "description": "Узнайте, как получить лицензию на пассажирские перевозки такси в 2025 году: пошаговая инструкция, требования, документы и важные изменения.",
         "images": [
@@ -3280,6 +3280,206 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "часто задаваемые вопросы такси",
+              "ответы на вопросы лицензирования",
+              "разрешение для такси 2025",
+              "практические советы для водителей",
+              "юридические нюансы перевозок",
+              "ошибки при оформлении разрешения",
+              "поддержка при получении лицензии"
+            ],
+            "taxonomy": "FAQ",
+            "attention": "Получите быстрые и точные ответы на самые частые вопросы о лицензировании такси в 2025 году, чтобы избежать ошибок и ускорить процесс оформления.",
+            "intent": "Собрать и структурировать ключевые вопросы и ответы, которые чаще всего возникают у водителей и предпринимателей при получении разрешения на пассажирские перевозки такси, предоставив практические разъяснения и советы.",
+            "audiences": "Владельцы автомобилей, индивидуальные предприниматели, самозанятые и представители таксомоторных компаний, которые впервые сталкиваются с процедурой лицензирования или хотят избежать типичных ошибок; уровень — начинающий и средний.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see below)\n\nCONTEXT: Generate h2 FAQ section for page \"Лицензия на пассажирские перевозки такси: как получить в 2025 году\"\n\nGOAL: Сконцентрировать наиболее частые и важные вопросы, возникающие у целевой аудитории при оформлении разрешения на перевозку пассажиров легковым такси, и дать на них подробные, практически полезные ответы, используя внутренний опыт и дополняя нейтральными отраслевыми фактами из внешних источников.\n\nAUDIENCE: Владельцы авто, ИП, самозанятые, представители таксомоторных компаний | Level: начинающий/средний | Pain points: неясности в процедуре, страх ошибок, желание ускорить процесс.\n\nKEYWORDS TO INTEGRATE:\n[часто задаваемые вопросы такси, ответы на вопросы лицензирования, разрешение для такси 2025, практические советы для водителей, юридические нюансы перевозок, ошибки при оформлении разрешения, поддержка при получении лицензии]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with nested H3 questions and P answers\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: юридическая поддержка, автоматизация, медицинское сопровождение, контроль транспорта\n- SECONDARY: Apply insights from External KB: типовые вопросы, ошибки, нюансы законодательства\n\nQUALITY CRITERIA:\n- Actionable (конкретные советы)\n- Specific (без общих фраз)\n- Data-backed (факты из KB)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Каждый вопрос раскрывает уникальный аспект процесса лицензирования, не пересекающийся с предыдущими разделами.\n- sourceHint: Internal KB (основные ответы), External KB (дополнительные разъяснения)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Вопросы должны охватывать типичные затруднения: сроки, ошибки, особенности для самозанятых, порядок действий при отказе, поддержка и сервисы.\n- Для каждого H3 — уникальный вопрос, для P — развернутый, практически полезный ответ.\n- Добавить рекомендации по внутренним сервисам поддержки (без рекламы конкурентов).\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "keywords": [
+                  "часто задаваемые вопросы такси"
+                ],
+                "taxonomy": "supporting",
+                "attention": "В этом разделе вы найдете ответы на самые актуальные вопросы по лицензированию такси.",
+                "intent": "Ввести пользователя в раздел FAQ, объяснить его пользу и структуру.",
+                "audiences": "Водители и предприниматели, которые ищут быстрые разъяснения по сложным вопросам лицензирования.",
+                "selfPrompt": "CONTEXT: Generate paragraph (intro) for FAQ section on \"Лицензия на пассажирские перевозки такси: как получить в 2025 году\". ROLE: Вводный абзац, объясняющий, что далее собраны ответы на самые частые вопросы, возникающие при получении разрешения на перевозки такси. KEYWORDS: [часто задаваемые вопросы такси]. WORD COUNT: minWords: 70, maxWords: 130. WRITING STYLE: Narrative. CONTENT FORMAT: Simple. E-E-A-T: semanticFingerprint: Краткое введение в FAQ, подчеркивающее практическую пользу. sourceHint: Internal KB (структура раздела), evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "keywords": [
+                  "ответы на вопросы лицензирования",
+                  "сроки получения разрешения",
+                  "статус заявки"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, сколько времени занимает оформление разрешения и как отследить статус заявки.",
+                "intent": "Дать четкий ответ на вопрос о сроках получения разрешения и возможностях отслеживания статуса.",
+                "audiences": "Владельцы авто и ИП, впервые подающие документы на разрешение.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ question: \"Сколько времени занимает получение разрешения на перевозку пассажиров такси и как узнать статус заявки?\" for section \"FAQ\". Build upon H2 intent by раскрывая временные рамки и процесс отслеживания. KEYWORDS: [ответы на вопросы лицензирования, сроки получения разрешения, статус заявки]. WORD COUNT: minWords: 150, maxWords: 220. WRITING STYLE: Narrative. CONTENT FORMAT: Simple. E-E-A-T: semanticFingerprint: Подробно раскрывает сроки и инструменты контроля статуса заявки. sourceHint: Internal KB (процедуры и сроки), External KB (типовые сроки). evidenceStrength: internal-tested | external-peer-reviewed. Interlink: Вставить ссылку на раздел с этапами оформления.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "keywords": [
+                      "сроки получения разрешения"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Пошагово разъясняет, как быстро можно получить разрешение и что влияет на сроки.",
+                    "intent": "Дать практическое объяснение сроков и способов проверки статуса заявки.",
+                    "audiences": "Водители и предприниматели, которым важно планировать запуск работы.",
+                    "selfPrompt": "CONTEXT: Generate paragraph (body) answering: \"Сколько времени занимает получение разрешения на перевозку пассажиров такси и как узнать статус заявки?\". ROLE: Подробный ответ с практическими советами, упоминанием автоматизации и сервисов отслеживания. KEYWORDS: [сроки получения разрешения]. WORD COUNT: minWords: 60, maxWords: 120. WRITING STYLE: Narrative. CONTENT FORMAT: Simple. E-E-A-T: semanticFingerprint: Практические сроки и инструменты отслеживания. sourceHint: Internal KB (автоматизация, поддержка), evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-2",
+                "tag": "h3",
+                "keywords": [
+                  "юридические нюансы перевозок",
+                  "ошибки при оформлении разрешения",
+                  "отказ в выдаче разрешения"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, какие ошибки чаще всего приводят к отказу и как их избежать.",
+                "intent": "Разъяснить основные причины отказа в выдаче разрешения и дать рекомендации по их предотвращению.",
+                "audiences": "Новички и опытные перевозчики, желающие избежать типичных ошибок.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ question: \"Какие ошибки чаще всего приводят к отказу в выдаче разрешения и как их избежать?\" for section \"FAQ\". Build upon H2 intent by раскрывая юридические нюансы и типовые ошибки. KEYWORDS: [юридические нюансы перевозок, ошибки при оформлении разрешения, отказ в выдаче разрешения]. WORD COUNT: minWords: 150, maxWords: 220. WRITING STYLE: Narrative. CONTENT FORMAT: Simple. E-E-A-T: semanticFingerprint: Подробно раскрывает причины отказа и пути их предотвращения. sourceHint: Internal KB (юридическая поддержка), External KB (типовые ошибки). evidenceStrength: internal-tested | external-peer-reviewed. Interlink: Вставить ссылку на раздел с требованиями к перевозчикам.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "ошибки при оформлении разрешения"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Дает конкретные советы по предотвращению отказа.",
+                    "intent": "Объяснить, как избежать типичных ошибок при подаче документов.",
+                    "audiences": "Все, кто впервые оформляет разрешение.",
+                    "selfPrompt": "CONTEXT: Generate paragraph (body) answering: \"Какие ошибки чаще всего приводят к отказу в выдаче разрешения и как их избежать?\". ROLE: Практический совет с примерами ошибок и рекомендациями по их предотвращению. KEYWORDS: [ошибки при оформлении разрешения]. WORD COUNT: minWords: 60, maxWords: 120. WRITING STYLE: Narrative. CONTENT FORMAT: Simple. E-E-A-T: semanticFingerprint: Список типовых ошибок и способы их избежать. sourceHint: Internal KB (юридическая поддержка), evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-3",
+                "tag": "h3",
+                "keywords": [
+                  "практические советы для водителей",
+                  "медицинское сопровождение такси",
+                  "техническое состояние автомобиля"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, как правильно организовать медицинские осмотры и технический контроль для успешного лицензирования.",
+                "intent": "Дать рекомендации по организации медицинских осмотров и технического контроля для соответствия требованиям разрешения.",
+                "audiences": "Владельцы автопарков, ИП, самозанятые, желающие минимизировать риски отказа.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ question: \"Какие требования к медицинским осмотрам и техническому состоянию автомобиля для получения разрешения?\" for section \"FAQ\". Build upon H2 intent by раскрывая практические аспекты медицинского и технического контроля. KEYWORDS: [практические советы для водителей, медицинское сопровождение такси, техническое состояние автомобиля]. WORD COUNT: minWords: 150, maxWords: 220. WRITING STYLE: Narrative. CONTENT FORMAT: Simple. E-E-A-T: semanticFingerprint: Практические рекомендации по медосмотрам и техконтролю. sourceHint: Internal KB (медицинское сопровождение, контроль транспорта), evidenceStrength: internal-tested. Interlink: Вставить ссылку на раздел о медицинском сопровождении.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "медицинское сопровождение такси"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Пошагово объясняет, как организовать необходимые проверки.",
+                    "intent": "Дать четкие рекомендации по организации медосмотров и техконтроля.",
+                    "audiences": "Все, кто хочет пройти лицензирование без проблем.",
+                    "selfPrompt": "CONTEXT: Generate paragraph (body) answering: \"Какие требования к медицинским осмотрам и техническому состоянию автомобиля для получения разрешения?\". ROLE: Практический совет с упором на сервисы автоматизации и телемедицину. KEYWORDS: [медицинское сопровождение такси]. WORD COUNT: minWords: 60, maxWords: 120. WRITING STYLE: Narrative. CONTENT FORMAT: Simple. E-E-A-T: semanticFingerprint: Практические шаги по организации контроля. sourceHint: Internal KB (медицинское сопровождение), evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-4",
+                "tag": "h3",
+                "keywords": [
+                  "поддержка при получении лицензии",
+                  "сервисы сопровождения",
+                  "юридическая консультация"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, где получить профессиональную поддержку и консультацию по вопросам лицензирования.",
+                "intent": "Пояснить, какие сервисы и специалисты могут помочь в оформлении разрешения и сопровождении процесса.",
+                "audiences": "Те, кто хочет минимизировать риски и ускорить оформление разрешения.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ question: \"Где получить поддержку и консультацию по вопросам лицензирования такси?\" for section \"FAQ\". Build upon H2 intent by раскрывая возможности профессионального сопровождения. KEYWORDS: [поддержка при получении лицензии, сервисы сопровождения, юридическая консультация]. WORD COUNT: minWords: 150, maxWords: 220. WRITING STYLE: Narrative. CONTENT FORMAT: Simple. E-E-A-T: semanticFingerprint: Описывает доступные сервисы поддержки и консультаций. sourceHint: Internal KB (юридическая поддержка, сервисы сопровождения), evidenceStrength: internal-tested. Interlink: Вставить ссылку на раздел о дополнительных услугах.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "сервисы сопровождения"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Дает конкретные рекомендации по обращению за помощью.",
+                    "intent": "Объяснить, как и где получить профессиональную поддержку при лицензировании.",
+                    "audiences": "Водители и компании, желающие ускорить процесс и избежать ошибок.",
+                    "selfPrompt": "CONTEXT: Generate paragraph (body) answering: \"Где получить поддержку и консультацию по вопросам лицензирования такси?\". ROLE: Практический совет с упором на внутренние сервисы и юридическую поддержку. KEYWORDS: [сервисы сопровождения]. WORD COUNT: minWords: 60, maxWords: 120. WRITING STYLE: Narrative. CONTENT FORMAT: Simple. E-E-A-T: semanticFingerprint: Практические рекомендации по получению поддержки. sourceHint: Internal KB (юридическая поддержка), evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -3312,5 +3512,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T12:49:51.950Z";
+export const lastUpdated = "2025-10-22T12:51:13.906Z";
 export const generatedBy = "menu-persist-api";
