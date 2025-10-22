@@ -5467,7 +5467,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T13:22:57.559Z",
-        "updatedAt": "2025-10-22T13:40:37.958Z",
+        "updatedAt": "2025-10-22T13:40:53.137Z",
         "order": 4,
         "badgeName": "Блог",
         "description": "Узнайте, как сделать водительскую карту для тахографа: пошаговая инструкция, требования, список документов, сроки оформления. Получите карту быстро!",
@@ -6141,7 +6141,8 @@ export const contentData = {
               }
             ]
           }
-        ]
+        ],
+        "isReadyDraftForPerplexity": true
       }
     ],
     "order": 16
@@ -6172,5 +6173,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T13:40:53.784Z";
+export const lastUpdated = "2025-10-22T13:41:04.344Z";
 export const generatedBy = "menu-persist-api";
