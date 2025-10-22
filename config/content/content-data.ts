@@ -2909,7 +2909,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T12:37:46.530Z",
-        "updatedAt": "2025-10-22T12:51:36.284Z",
+        "updatedAt": "2025-10-22T12:51:48.102Z",
         "order": 2,
         "description": "Узнайте, как получить лицензию на пассажирские перевозки такси в 2025 году: пошаговая инструкция, требования, документы и важные изменения.",
         "images": [
@@ -2975,7 +2975,8 @@ export const contentData = {
                   "minWords": 100,
                   "maxWords": 180,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-1-2",
@@ -2993,9 +2994,11 @@ export const contentData = {
                   "minWords": 60,
                   "maxWords": 120,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-2",
@@ -3564,7 +3567,7 @@ export const contentData = {
             ]
           }
         ],
-        "isReadyDraftForPerplexity": true
+        "isReadyDraftForPerplexity": false
       }
     ],
     "order": 16
@@ -3595,5 +3598,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T12:51:49.415Z";
+export const lastUpdated = "2025-10-22T12:51:56.446Z";
 export const generatedBy = "menu-persist-api";
