@@ -6757,7 +6757,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T13:48:40.293Z",
-        "updatedAt": "2025-10-22T14:02:32.485Z",
+        "updatedAt": "2025-10-22T14:04:05.195Z",
         "order": 5,
         "badgeName": "Блог",
         "description": "Магнитная обклейка машины Яндекс Такси — комплект под ключ: быстрая установка, прочные материалы, соответствие требованиям сервиса. Закажите сейчас!",
@@ -7337,6 +7337,112 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-5",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "итоги выбора магнитных комплектов",
+              "преимущества съемного брендирования",
+              "следующие шаги для заказа",
+              "быстрое оформление онлайн",
+              "инструкция по дальнейшим действиям",
+              "обратная связь клиентов",
+              "заказ магнитных комплектов для такси"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, как быстро перейти к заказу и получить максимум пользы от магнитного комплекта для оформления автомобиля под Яндекс Такси.",
+            "intent": "Суммировать ключевые преимущества, выделить основные выводы и предложить пользователю понятные шаги для оформления заказа магнитного комплекта для такси.",
+            "audiences": "Профессиональные водители, владельцы автопарков и индивидуальные предприниматели, которые хотят быстро и без лишних сложностей оформить автомобиль для работы в Яндекс Такси.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 conclusion/next steps section for page \"Магнитная обклейка машины Яндекс Такси — комплект под ключ\"\n\nGOAL: Подвести итог по теме магнитных комплектов для брендирования такси, выделить главные преимущества съемного решения, структурировать ключевые выводы и дать пользователю четкие рекомендации по дальнейшим действиям (оформление заказа, получение консультации, быстрая доставка). Включить таблицу с кратким сравнением преимуществ, список шагов для оформления заказа и финальный абзац с призывом к действию.\n\nAUDIENCE: Профессиональные водители, владельцы автопарков, ИП | Level: intermediate | Pain points: быстрое оформление, минимизация рисков, простота получения комплекта\n\nKEYWORDS TO INTEGRATE:\n[итоги выбора магнитных комплектов, преимущества съемного брендирования, следующие шаги для заказа, быстрое оформление онлайн, инструкция по дальнейшим действиям, обратная связь клиентов, заказ магнитных комплектов для такси]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 200, maxWords: 300 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: h2 heading with summary, table, list, and actionable paragraph\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Internal KB (нет информации — использовать только внешние данные)\n- SECONDARY: External KB (общие преимущества, шаги заказа, отзывы клиентов)\n\nQUALITY CRITERIA:\n- Actionable (четкие рекомендации)\n- Specific (конкретные шаги)\n- Data-backed (факты из External KB)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Финальный раздел, объединяющий выводы и дающий четкие рекомендации по заказу магнитного комплекта для Яндекс Такси.\n- sourceHint: External KB (industry summary)\n- evidenceStrength: external-peer-reviewed\n\nINTERLINK PLANNING:\n- internalLinks: страницы с калькулятором комплекта, формы заказа, инструкции по установке\n- externalLinks: не использовать\n\nSCHEMA READINESS: HowTo/FAQ (если применимо)\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 200,
+              "maxWords": 300,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-5-1",
+                "tag": "p",
+                "keywords": [
+                  "итоги выбора магнитных комплектов",
+                  "основные преимущества",
+                  "финальный вывод"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Получите краткое резюме по выгодам и уникальности съемного брендирования для такси.",
+                "intent": "Сформулировать итоговые выводы по теме, подчеркнуть ценность магнитных комплектов и подготовить пользователя к дальнейшим действиям.",
+                "audiences": "Водители и владельцы такси, рассматривающие покупку комплекта для оформления автомобиля.",
+                "selfPrompt": "CONTEXT: Generate summary paragraph for conclusion section \"Итоги и дальнейшие шаги\".\nGOAL: Кратко подвести итог преимуществ использования магнитных комплектов для брендирования такси, выделить, почему это оптимальное решение для целевой аудитории.\nKEYWORDS: [итоги выбора магнитных комплектов, основные преимущества, финальный вывод]\nROLE: summary\nE-E-A-T: semanticFingerprint: Итоговый абзац, резюмирующий ценность и выгоды съемного брендирования для такси. sourceHint: External KB. evidenceStrength: external-peer-reviewed.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-5-3",
+                "tag": "table",
+                "keywords": [
+                  "сравнение преимуществ",
+                  "быстрое оформление",
+                  "экономия времени"
+                ],
+                "taxonomy": "Comparison",
+                "attention": "Сравните ключевые выгоды магнитных комплектов с традиционными способами брендирования.",
+                "intent": "Визуально показать основные преимущества магнитных комплектов для такси по сравнению с альтернативами.",
+                "audiences": "Потенциальные покупатели, которые хотят быстро оценить плюсы решения.",
+                "selfPrompt": "CONTEXT: Generate comparison table (3 columns × 3 rows) for conclusion section \"Итоги и дальнейшие шаги\".\nGOAL: Сравнить преимущества магнитных комплектов с традиционными способами брендирования (например, пленка, обычные наклейки).\nCOLUMNS: [Критерий | Магнитный комплект | Традиционное брендирование]\nDATA TYPES: text\nKEYWORDS: [сравнение преимуществ, быстрое оформление, экономия времени]\nE-E-A-T: semanticFingerprint: Таблица, визуализирующая отличия и выгоды магнитного решения. sourceHint: External KB. evidenceStrength: external-peer-reviewed.\nSCHEMA READINESS: Comparison.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-5-2",
+                "tag": "ul",
+                "keywords": [
+                  "следующие шаги для заказа",
+                  "инструкция по оформлению",
+                  "быстрое оформление онлайн"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Следуйте простым шагам, чтобы оформить заказ и получить комплект в кратчайшие сроки.",
+                "intent": "Дать пользователю четкую и простую инструкцию по оформлению заказа магнитного комплекта.",
+                "audiences": "Пользователи, готовые к покупке и ожидающие понятных шагов.",
+                "selfPrompt": "CONTEXT: Generate actionable list (4 items) for conclusion section \"Итоги и дальнейшие шаги\".\nGOAL: Перечислить конкретные шаги для оформления заказа магнитного комплекта для такси.\nSTRUCTURE: короткие, четкие пункты (5-10 слов)\nKEYWORDS: [следующие шаги для заказа, инструкция по оформлению, быстрое оформление онлайн]\nE-E-A-T: semanticFingerprint: Список шагов для быстрого оформления заказа. sourceHint: External KB. evidenceStrength: external-peer-reviewed.",
+                "additionalData": {
+                  "minWords": 50,
+                  "maxWords": 90,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-5-3",
+                "tag": "p",
+                "keywords": [
+                  "обратная связь клиентов",
+                  "заказ магнитных комплектов для такси"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Убедитесь в надежности решения и сделайте первый шаг к оформлению заказа.",
+                "intent": "Вдохновить пользователя на действие, подчеркнув положительный опыт других клиентов и простоту оформления.",
+                "audiences": "Потенциальные клиенты, которым важно мнение других и легкость старта.",
+                "selfPrompt": "CONTEXT: Generate actionable closing paragraph for conclusion section \"Итоги и дальнейшие шаги\".\nGOAL: Мотивировать пользователя оформить заказ, опираясь на отзывы клиентов и простоту процесса.\nKEYWORDS: [обратная связь клиентов, заказ магнитных комплектов для такси]\nROLE: conclusion/CTA\nE-E-A-T: semanticFingerprint: Финальный призыв к действию с опорой на клиентский опыт. sourceHint: External KB. evidenceStrength: external-peer-reviewed.",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              }
+            ]
           }
         ]
       }
@@ -7369,5 +7475,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T14:04:06.326Z";
+export const lastUpdated = "2025-10-22T14:05:20.991Z";
 export const generatedBy = "menu-persist-api";
