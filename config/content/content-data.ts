@@ -1657,7 +1657,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T11:58:21.124Z",
-        "updatedAt": "2025-10-22T12:19:11.990Z",
+        "updatedAt": "2025-10-22T12:19:17.160Z",
         "order": 1,
         "description": "Узнайте, где и как быстро получить карту тахографа СКЗИ для водителя: актуальные требования, список документов, сроки и стоимость оформления.",
         "images": [
@@ -1787,7 +1787,8 @@ export const contentData = {
                 "attention": "Поймите, почему важно выбирать только официальные и аккредитованные центры для оформления карты.",
                 "intent": "Ввести пользователя в тему выбора места оформления карты, объяснить риски обращения в неофициальные организации.",
                 "audiences": "Водители и ИП, которые впервые сталкиваются с процедурой оформления карты; уровень: базовый.",
-                "selfPrompt": "CONTEXT: Generate intro paragraph for h2 'Где и как получить карту тахографа СКЗИ для водителя' on page 'Карта тахографа СКЗИ для водителя — где и как получить быстро'.\nGOAL: Кратко объяснить, почему важно выбирать только сертифицированные мастерские и аккредитованные центры для оформления карты, и какие риски связаны с обращением в неофициальные организации.\nKEYWORDS TO INTEGRATE: оформление карты водителя скзи, сертифицированные мастерские\nWORD COUNT: minWords: 80, maxWords: 150\nPARAGRAPH ROLE: intro\nsourceHint: Internal KB (рекомендации по выбору центра)\nevidenceStrength: internal-tested"
+                "selfPrompt": "CONTEXT: Generate intro paragraph for h2 'Где и как получить карту тахографа СКЗИ для водителя' on page 'Карта тахографа СКЗИ для водителя — где и как получить быстро'.\nGOAL: Кратко объяснить, почему важно выбирать только сертифицированные мастерские и аккредитованные центры для оформления карты, и какие риски связаны с обращением в неофициальные организации.\nKEYWORDS TO INTEGRATE: оформление карты водителя скзи, сертифицированные мастерские\nWORD COUNT: minWords: 80, maxWords: 150\nPARAGRAPH ROLE: intro\nsourceHint: Internal KB (рекомендации по выбору центра)\nevidenceStrength: internal-tested",
+                "status": "checked"
               },
               {
                 "id": "p-2-2-3",
@@ -1799,7 +1800,8 @@ export const contentData = {
                 "attention": "Узнайте, где найти список аккредитованных центров.",
                 "intent": "Дать ссылку или подсказку, где искать актуальный перечень аккредитованных центров.",
                 "audiences": "Водители, ищущие официальный источник информации; уровень: любой.",
-                "selfPrompt": "CONTEXT: Generate short transition paragraph for h2 'Где и как получить карту тахографа СКЗИ для водителя'.\nGOAL: Указать, где можно найти актуальный список аккредитованных центров для оформления карты.\nKEYWORDS TO INTEGRATE: аккредитованные центры\nWORD COUNT: minWords: 5, maxWords: 15\nPARAGRAPH ROLE: transition\nsourceHint: Internal KB (рекомендации по поиску официальных центров)\nevidenceStrength: internal-tested"
+                "selfPrompt": "CONTEXT: Generate short transition paragraph for h2 'Где и как получить карту тахографа СКЗИ для водителя'.\nGOAL: Указать, где можно найти актуальный список аккредитованных центров для оформления карты.\nKEYWORDS TO INTEGRATE: аккредитованные центры\nWORD COUNT: minWords: 5, maxWords: 15\nPARAGRAPH ROLE: transition\nsourceHint: Internal KB (рекомендации по поиску официальных центров)\nevidenceStrength: internal-tested",
+                "status": "checked"
               },
               {
                 "id": "table-2-2-4",
@@ -1812,7 +1814,8 @@ export const contentData = {
                 "attention": "Сравните основные типы организаций и их особенности для выбора оптимального способа оформления.",
                 "intent": "Дать пользователю структурированное сравнение типов организаций, где можно оформить карту, с указанием особенностей процедуры и требований.",
                 "audiences": "Водители и представители компаний, выбирающие способ оформления; уровень: средний.",
-                "selfPrompt": "CONTEXT: Generate comparison table for h2 'Где и как получить карту тахографа СКЗИ для водителя'.\nGOAL: Сравнить основные типы организаций (сертифицированные мастерские, аккредитованные центры, компании-посредники) по критериям: требования к документам, сроки, стоимость, необходимость личного присутствия, возможность онлайн-заявки.\nKEYWORDS TO INTEGRATE: процедура получения карты, оригиналы документов\nTABLE SCHEMA: 5 columns × 3 rows\nColumn headers: Тип организации | Требуемые документы | Сроки оформления | Стоимость | Особенности\nData types: text/text/text/number/text\nData source: Internal KB (рекомендации), External KB (детали процедуры)\nWORD COUNT: minWords: 80, maxWords: 160\nschema readiness: Comparison"
+                "selfPrompt": "CONTEXT: Generate comparison table for h2 'Где и как получить карту тахографа СКЗИ для водителя'.\nGOAL: Сравнить основные типы организаций (сертифицированные мастерские, аккредитованные центры, компании-посредники) по критериям: требования к документам, сроки, стоимость, необходимость личного присутствия, возможность онлайн-заявки.\nKEYWORDS TO INTEGRATE: процедура получения карты, оригиналы документов\nTABLE SCHEMA: 5 columns × 3 rows\nColumn headers: Тип организации | Требуемые документы | Сроки оформления | Стоимость | Особенности\nData types: text/text/text/number/text\nData source: Internal KB (рекомендации), External KB (детали процедуры)\nWORD COUNT: minWords: 80, maxWords: 160\nschema readiness: Comparison",
+                "status": "checked"
               },
               {
                 "id": "h3-2-2",
@@ -1838,7 +1841,8 @@ export const contentData = {
                     "attention": "Поймите, почему регистрация — первый и обязательный шаг.",
                     "intent": "Объяснить, зачем нужна регистрация водителя в системе центра и как она влияет на дальнейшие этапы.",
                     "audiences": "Водители, впервые оформляющие карту; уровень: базовый.",
-                    "selfPrompt": "CONTEXT: Generate intro paragraph for h3 'Пошаговая процедура оформления карты тахографа СКЗИ'.\nGOAL: Кратко объяснить, почему регистрация водителя — обязательный этап, и как она проходит.\nKEYWORDS TO INTEGRATE: регистрация водителя\nWORD COUNT: minWords: 70, maxWords: 130\nPARAGRAPH ROLE: intro\nsourceHint: Internal KB (процедура регистрации)\nevidenceStrength: internal-tested"
+                    "selfPrompt": "CONTEXT: Generate intro paragraph for h3 'Пошаговая процедура оформления карты тахографа СКЗИ'.\nGOAL: Кратко объяснить, почему регистрация водителя — обязательный этап, и как она проходит.\nKEYWORDS TO INTEGRATE: регистрация водителя\nWORD COUNT: minWords: 70, maxWords: 130\nPARAGRAPH ROLE: intro\nsourceHint: Internal KB (процедура регистрации)\nevidenceStrength: internal-tested",
+                    "status": "checked"
                   },
                   {
                     "id": "ul-2-2-2",
@@ -1850,7 +1854,8 @@ export const contentData = {
                     "attention": "Следуйте этим шагам, чтобы ускорить оформление карты.",
                     "intent": "Дать пошаговый чек-лист действий для быстрого и правильного оформления карты.",
                     "audiences": "Водители, которым важно не ошибиться и получить карту в кратчайшие сроки; уровень: любой.",
-                    "selfPrompt": "CONTEXT: Generate actionable checklist (ul) for h3 'Пошаговая процедура оформления карты тахографа СКЗИ'.\nGOAL: Сформулировать 5-7 коротких пунктов с конкретными действиями для ускорения оформления карты (подготовка документов, запись на прием, проверка статуса и т.д.).\nKEYWORDS TO INTEGRATE: сроки оформления\nLIST STRUCTURE: 6 items, короткие буллеты (5-10 слов)\nWORD COUNT: minWords: 40, maxWords: 80\nsourceHint: Internal KB (рекомендации по ускорению процесса)\nevidenceStrength: internal-tested"
+                    "selfPrompt": "CONTEXT: Generate actionable checklist (ul) for h3 'Пошаговая процедура оформления карты тахографа СКЗИ'.\nGOAL: Сформулировать 5-7 коротких пунктов с конкретными действиями для ускорения оформления карты (подготовка документов, запись на прием, проверка статуса и т.д.).\nKEYWORDS TO INTEGRATE: сроки оформления\nLIST STRUCTURE: 6 items, короткие буллеты (5-10 слов)\nWORD COUNT: minWords: 40, maxWords: 80\nsourceHint: Internal KB (рекомендации по ускорению процесса)\nevidenceStrength: internal-tested",
+                    "status": "checked"
                   },
                   {
                     "id": "p-2-2-3",
@@ -1862,11 +1867,14 @@ export const contentData = {
                     "attention": "Узнайте, когда требуется личное присутствие и как это влияет на сроки.",
                     "intent": "Пояснить, в каких случаях необходимо личное присутствие водителя и как это влияет на скорость оформления.",
                     "audiences": "Водители, планирующие оформление карты впервые; уровень: любой.",
-                    "selfPrompt": "CONTEXT: Generate concluding paragraph for h3 'Пошаговая процедура оформления карты тахографа СКЗИ'.\nGOAL: Объяснить, почему и когда требуется личное присутствие, и как это влияет на сроки получения карты.\nKEYWORDS TO INTEGRATE: личное присутствие\nWORD COUNT: minWords: 60, maxWords: 100\nPARAGRAPH ROLE: conclusion\nsourceHint: External KB (детали процедуры оформления)\nevidenceStrength: external-peer-reviewed"
+                    "selfPrompt": "CONTEXT: Generate concluding paragraph for h3 'Пошаговая процедура оформления карты тахографа СКЗИ'.\nGOAL: Объяснить, почему и когда требуется личное присутствие, и как это влияет на сроки получения карты.\nKEYWORDS TO INTEGRATE: личное присутствие\nWORD COUNT: minWords: 60, maxWords: 100\nPARAGRAPH ROLE: conclusion\nsourceHint: External KB (детали процедуры оформления)\nevidenceStrength: external-peer-reviewed",
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-3",
@@ -2327,5 +2335,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T12:19:17.248Z";
+export const lastUpdated = "2025-10-22T12:19:25.083Z";
 export const generatedBy = "menu-persist-api";
