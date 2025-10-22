@@ -1,5 +1,5 @@
 // Auto-generated SEO-optimized static page - do not edit manually
-// Generated on: 2025-10-22T13:20:46.555Z
+// Generated on: 2025-10-22T13:21:31.408Z
 // Source href: /blog/kak-annulirovat-litsenziyu-na-taksi-v-moskve-samostoyatelno
 // Page metadata: Как аннулировать лицензию на такси в Москве самостоятельно: пошаговая инструкция | 5 sections
 // FAQ sections detected: 4
@@ -44,7 +44,7 @@ const sections = [
           "content": [
             {
               "type": "text",
-              "text": "Как аннулировать лицензию на такси в Москве самостоятельно: первый шаг к юридической безопасности"
+              "text": "Как аннулировать лицензию на такси в Москве самостоятельно: первый шаг к юридической безопасности."
             }
           ]
         },
@@ -1473,8 +1473,8 @@ export default function Page() {
               "url": "/app-images/i3ouuvfn4s1908uq3z75bmqj.jpg",
               "alt": "как аннулировать лицензию на такси в москве самостоятельно"
             },
-            "datePublished": "2025-10-22T13:20:46.555Z",
-            "dateModified": "2025-10-22T13:20:46.555Z",
+            "datePublished": "2025-10-22T13:21:31.408Z",
+            "dateModified": "2025-10-22T13:21:31.408Z",
             "articleSection": "blog",
             "keywords": ["как аннулировать лицензию на такси в москве самостоятельно"],
             "mainEntityOfPage": {
