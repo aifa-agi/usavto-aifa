@@ -6725,7 +6725,7 @@ export const contentData = {
         "updatedAt": "2025-10-22T13:48:40.293Z",
         "order": 5,
         "badgeName": "Блог",
-        "description": "магнитная обклейка машины яндекс такси",
+        "description": "Магнитная обклейка машины Яндекс Такси — комплект под ключ: быстрая установка, прочные материалы, соответствие требованиям сервиса. Закажите сейчас!",
         "images": [
           {
             "id": "n5cd5obkt4vh1hno3hv83b4x",
@@ -6768,5 +6768,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T13:55:12.926Z";
+export const lastUpdated = "2025-10-22T13:55:18.723Z";
 export const generatedBy = "menu-persist-api";
