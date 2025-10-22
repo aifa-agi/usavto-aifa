@@ -1,5 +1,5 @@
 // Auto-generated SEO-optimized static page - do not edit manually
-// Generated on: 2025-10-22T12:23:07.183Z
+// Generated on: 2025-10-22T12:23:54.872Z
 // Source href: /blog/karta-tahografa-skzi-dlya-voditelya-gde-poluchit
 // Page metadata: Карта тахографа СКЗИ для водителя — где и как получить быстро | 5 sections
 // FAQ sections detected: 4
@@ -44,7 +44,7 @@ const sections = [
           "content": [
             {
               "type": "text",
-              "text": "Карта тахографа СКЗИ для водителя: где получить и как оформить быстро"
+              "text": "Карта тахографа СКЗИ для водителя: где получить и как оформить быстро."
             }
           ]
         },
@@ -1651,8 +1651,8 @@ export default function Page() {
               "url": "/app-images/fm568zu07cqi82ug1wgpypqc.jpg",
               "alt": "карта тахографа скзи для водителя где получить"
             },
-            "datePublished": "2025-10-22T12:23:07.183Z",
-            "dateModified": "2025-10-22T12:23:07.183Z",
+            "datePublished": "2025-10-22T12:23:54.873Z",
+            "dateModified": "2025-10-22T12:23:54.873Z",
             "articleSection": "blog",
             "keywords": ["карта тахографа скзи для водителя где получить"],
             "mainEntityOfPage": {
