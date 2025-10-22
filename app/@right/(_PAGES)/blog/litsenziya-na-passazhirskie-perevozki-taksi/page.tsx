@@ -1,5 +1,5 @@
 // Auto-generated SEO-optimized static page - do not edit manually
-// Generated on: 2025-10-22T12:56:24.137Z
+// Generated on: 2025-10-22T12:57:02.766Z
 // Source href: /blog/litsenziya-na-passazhirskie-perevozki-taksi
 // Page metadata: Лицензия на пассажирские перевозки такси: как получить в 2025 году | 5 sections
 // FAQ sections detected: 4
@@ -44,7 +44,7 @@ const sections = [
           "content": [
             {
               "type": "text",
-              "text": "Лицензия на пассажирские перевозки такси: зачем нужна и как оформить в 2025 году"
+              "text": "Лицензия на пассажирские перевозки такси: зачем нужна и как оформить в 2025 году."
             }
           ]
         },
@@ -1478,8 +1478,8 @@ export default function Page() {
               "url": "/app-images/aiydjkno50w66hbb4if16jzw.jpg",
               "alt": "лицензия на пассажирские перевозки такси"
             },
-            "datePublished": "2025-10-22T12:56:24.137Z",
-            "dateModified": "2025-10-22T12:56:24.137Z",
+            "datePublished": "2025-10-22T12:57:02.766Z",
+            "dateModified": "2025-10-22T12:57:02.766Z",
             "articleSection": "blog",
             "keywords": ["лицензия на пассажирские перевозки такси"],
             "mainEntityOfPage": {
