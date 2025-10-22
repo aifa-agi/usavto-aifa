@@ -4179,7 +4179,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T12:59:57.568Z",
-        "updatedAt": "2025-10-22T13:12:35.169Z",
+        "updatedAt": "2025-10-22T13:14:08.440Z",
         "order": 3,
         "badgeName": "Блог",
         "description": "Узнайте, как аннулировать лицензию на такси в Москве самостоятельно: пошаговая инструкция, список документов, советы и нюансы. Быстро и без посредников!",
@@ -4748,6 +4748,108 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-5",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "итоги аннулирования лицензии",
+              "выводы по самостоятельному отзыву разрешения",
+              "следующие шаги после аннулирования",
+              "рекомендации для бывших таксистов",
+              "юридическая безопасность после прекращения деятельности",
+              "оптимизация документооборота",
+              "поддержка при завершении перевозок"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, как грамотно завершить процесс аннулирования лицензии и что делать дальше для юридической безопасности.",
+            "intent": "Суммировать основные выводы, дать рекомендации по дальнейшим действиям и подчеркнуть важность соблюдения всех процедур после аннулирования лицензии.",
+            "audiences": "Владельцы такси, индивидуальные предприниматели, завершившие деятельность; пользователи, которые прошли процедуру аннулирования и хотят избежать ошибок в будущем.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 conclusion/summary section for page \"Как аннулировать лицензию на такси в Москве самостоятельно: пошаговая инструкция\"\n\nGOAL: Подвести итоги самостоятельного аннулирования лицензии на такси в Москве, выделить ключевые выводы, дать рекомендации по дальнейшим действиям и юридической безопасности, а также предложить дополнительные ресурсы для поддержки после завершения перевозок.\n\nAUDIENCE: Владельцы такси и ИП, завершившие деятельность | Level: intermediate | Pain points: неуверенность в дальнейших шагах, риски юридических ошибок, необходимость оптимизации документооборота\n\nKEYWORDS TO INTEGRATE:\n[итоги аннулирования лицензии, выводы по самостоятельному отзыву разрешения, следующие шаги после аннулирования, рекомендации для бывших таксистов, юридическая безопасность после прекращения деятельности, оптимизация документооборота, поддержка при завершении перевозок]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 200, maxWords: 300 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: # [Section Title] + supporting elements (p, table, ul, p)\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: юридическая поддержка при завершении перевозок, рекомендации по документообороту, консультации по дальнейшим действиям\n- SECONDARY: Apply insights from External KB: советы по юридической безопасности, типичные ошибки после аннулирования, рекомендации по хранению документов\n\nQUALITY CRITERIA:\n- Actionable (конкретные рекомендации и шаги)\n- Specific (избегать общих фраз)\n- Data-backed (использовать факты из Knowledge Bases)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальное заключение с акцентом на дальнейшие действия и юридическую безопасность после аннулирования лицензии.\n- sourceHint: Internal KB (рекомендации и поддержка после завершения деятельности)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nINTERLINK PLANNING:\n- internalLinks: [страница о юридических услугах для такси, гайд по регистрации ИП, раздел о документообороте]\n- externalLinks: при необходимости, только на официальные ресурсы\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 200,
+              "maxWords": 300,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-5-1",
+                "tag": "p",
+                "keywords": [
+                  "итоги аннулирования лицензии",
+                  "юридическая безопасность после прекращения деятельности"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Получите краткое резюме по завершению процедуры и важные напоминания о юридической безопасности.",
+                "intent": "Дать краткое заключение по успешному завершению процедуры и подчеркнуть важность соблюдения всех юридических формальностей.",
+                "audiences": "Бывшие владельцы лицензии, желающие убедиться в правильности завершения процесса.",
+                "selfPrompt": "CONTEXT: Generate summary paragraph (intro/conclusion) for section 'Итоги и рекомендации после аннулирования лицензии на такси' of page 'Как аннулировать лицензию на такси в Москве самостоятельно: пошаговая инструкция'.\nGOAL: Кратко подвести итоги самостоятельного аннулирования лицензии, напомнить о необходимости соблюдения юридических формальностей и хранения документов.\nKEYWORDS: итоги аннулирования лицензии, юридическая безопасность после прекращения деятельности\nWORD COUNT: minWords: 80, maxWords: 150\nPARAGRAPH ROLE: summary/conclusion\nsemanticFingerprint: Краткое резюме с акцентом на завершение процедуры и юридическую безопасность.\nsourceHint: Internal KB (рекомендации по завершению процедуры)\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-5-3",
+                "tag": "table",
+                "keywords": [
+                  "выводы по самостоятельному отзыву разрешения",
+                  "оптимизация документооборота"
+                ],
+                "taxonomy": "Data-driven",
+                "attention": "Сравните основные действия и рекомендации для дальнейших шагов после аннулирования.",
+                "intent": "Структурировать ключевые выводы и рекомендации по дальнейшим действиям в виде наглядной таблицы.",
+                "audiences": "Пользователи, предпочитающие визуальное представление информации; те, кто ищет быстрый чек-лист.",
+                "selfPrompt": "CONTEXT: Generate table (2 columns × 4 rows) summarizing key takeaways and next steps for section 'Итоги и рекомендации после аннулирования лицензии на такси' of page 'Как аннулировать лицензию на такси в Москве самостоятельно: пошаговая инструкция'.\nGOAL: Визуально представить основные выводы и рекомендации по дальнейшим действиям после аннулирования лицензии.\nKEYWORDS: выводы по самостоятельному отзыву разрешения, оптимизация документооборота\nTABLE SCHEMA: [Действие/Рекомендация | Описание/Пояснение], text/text\nDATA SOURCE: Internal KB (рекомендации по документообороту), External KB (типичные ошибки и советы)\nsemanticFingerprint: Таблица с четкими рекомендациями для дальнейших шагов.\nsourceHint: Internal KB (чек-лист действий после аннулирования)\nevidenceStrength: internal-tested | external-peer-reviewed\nSCHEMA READINESS: Dataset",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-5-2",
+                "tag": "ul",
+                "keywords": [
+                  "следующие шаги после аннулирования",
+                  "поддержка при завершении перевозок"
+                ],
+                "taxonomy": "Actionable",
+                "attention": "Получите список конкретных шагов для минимизации рисков после аннулирования лицензии.",
+                "intent": "Предоставить пользователю пошаговый список действий для безопасного завершения деятельности и получения поддержки.",
+                "audiences": "Владельцы такси и ИП, которым важно не упустить важные детали после аннулирования.",
+                "selfPrompt": "CONTEXT: Generate unordered list (5 items, short actionable points) for section 'Итоги и рекомендации после аннулирования лицензии на такси' of page 'Как аннулировать лицензию на такси в Москве самостоятельно: пошаговая инструкция'.\nGOAL: Дать конкретные шаги и советы по завершению деятельности и получению поддержки.\nKEYWORDS: следующие шаги после аннулирования, поддержка при завершении перевозок\nLIST PURPOSE: actionable steps (5 items, 10-15 words each)\nsemanticFingerprint: Список конкретных действий для минимизации рисков и получения поддержки.\nsourceHint: Internal KB (пошаговые рекомендации)\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 50,
+                  "maxWords": 90,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-5-3",
+                "tag": "p",
+                "keywords": [
+                  "рекомендации для бывших таксистов"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, где получить дополнительную консультацию и как обезопасить себя в будущем.",
+                "intent": "Порекомендовать пользователю обратиться за дополнительной поддержкой и напомнить о возможностях консультаций по юридическим вопросам.",
+                "audiences": "Бывшие таксисты, ИП, желающие получить консультацию или помощь после завершения перевозок.",
+                "selfPrompt": "CONTEXT: Generate closing paragraph (call to action/support) for section 'Итоги и рекомендации после аннулирования лицензии на такси' of page 'Как аннулировать лицензию на такси в Москве самостоятельно: пошаговая инструкция'.\nGOAL: Порекомендовать обратиться за консультацией или поддержкой, подчеркнуть важность юридической грамотности.\nKEYWORDS: рекомендации для бывших таксистов\nPARAGRAPH ROLE: call to action/support\nsemanticFingerprint: Заключительный призыв к получению поддержки и консультаций.\nsourceHint: Internal KB (дополнительные услуги и консультации)\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              }
+            ]
           }
         ]
       }
@@ -4780,5 +4882,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T13:14:10.121Z";
+export const lastUpdated = "2025-10-22T13:15:35.878Z";
 export const generatedBy = "menu-persist-api";
