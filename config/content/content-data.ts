@@ -5467,7 +5467,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T13:22:57.559Z",
-        "updatedAt": "2025-10-22T13:36:36.157Z",
+        "updatedAt": "2025-10-22T13:38:05.181Z",
         "order": 4,
         "badgeName": "Блог",
         "description": "Узнайте, как сделать водительскую карту для тахографа: пошаговая инструкция, требования, список документов, сроки оформления. Получите карту быстро!",
@@ -5710,6 +5710,132 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "процесс оформления карты водителя",
+              "пошаговая процедура подачи заявки",
+              "сертифицированная мастерская",
+              "необходимые документы для карты",
+              "заявление на выпуск карты",
+              "сроки изготовления карты",
+              "автоматизация оформления"
+            ],
+            "taxonomy": "HowTo",
+            "attention": "Узнайте, как самостоятельно и без ошибок пройти все этапы оформления водительской карты для тахографа, чтобы избежать задержек и получить карту в кратчайшие сроки.",
+            "intent": "Дать подробную, практическую инструкцию по оформлению водительской карты для тахографа, включая подготовку документов, выбор места подачи и особенности процесса.",
+            "audiences": "Профессиональные водители, менеджеры автопарков, индивидуальные предприниматели в сфере перевозок, специалисты по документообороту | Уровень: начинающий и средний | Проблемы: отсутствие опыта, страх ошибок, нехватка информации о процедуре.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 section detailing процесс оформления водительской карты для тахографа for page \"Как сделать водительскую карту для тахографа: пошаговая инструкция\"\n\nGOAL: Дать читателю пошаговую, практическую инструкцию по оформлению водительской карты для тахографа, включая подготовку документов, выбор сертифицированной мастерской, заполнение заявления, сроки и автоматизацию процесса.\n\nAUDIENCE: Профессиональные водители, менеджеры автопарков, ИП-перевозчики | Level: начинающий/средний | Pain points: не знают, с чего начать, боятся ошибок, хотят ускорить процесс.\n\nKEYWORDS TO INTEGRATE:\n[процесс оформления карты водителя, пошаговая процедура подачи заявки, сертифицированная мастерская, необходимые документы для карты, заявление на выпуск карты, сроки изготовления карты, автоматизация оформления]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with nested H3, P, OL, CODE as per structure\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: разделы о процессе оформления, автоматизации, поддержке и обучении\n- SECONDARY: Apply insights from External KB: требования к документам, порядок подачи, сроки изготовления\n\nQUALITY CRITERIA:\n- Actionable (конкретные шаги и рекомендации)\n- Specific (без общих фраз)\n- Data-backed (точные требования и этапы)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Подробная инструкция по самостоятельному оформлению водительской карты для тахографа с учетом всех этапов и нюансов.\n- sourceHint: Internal KB (процесс и автоматизация), External KB (документы и сроки)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference parent page intent (инструкция для самостоятельного оформления)\n- Must set тематическое направление для вложенных h3 (документы, этапы, автоматизация)\n- Add interlink planning: internalLinks (например, на страницу о поддержке USAUTO, обучении водителей, FAQ по тахографам)\n- Note schema readiness: HowTo\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-3-1",
+                "tag": "p",
+                "keywords": [
+                  "процесс оформления карты водителя",
+                  "пошаговая процедура подачи заявки"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "В этом абзаце вы узнаете, с чего начать оформление карты и как избежать типичных ошибок.",
+                "intent": "Ввести пользователя в практический процесс оформления карты, обозначить основные этапы и важность правильной подготовки.",
+                "audiences": "Водители и специалисты, которые впервые сталкиваются с оформлением карты | Уровень: начинающий | Проблемы: не знают, какие шаги предпринять.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for section \"процесс оформления карты водителя\" on page \"Как сделать водительскую карту для тахографа: пошаговая инструкция\"\nGOAL: Кратко обозначить, что будет рассмотрено в разделе, почему важно следовать пошаговой процедуре, и как это поможет избежать ошибок.\nKEYWORDS TO INTEGRATE: [процесс оформления карты водителя, пошаговая процедура подачи заявки]\nWORD COUNT: minWords: 90, maxWords: 170\nMARKDOWN/MDX SYNTAX: Paragraph (intro)\nROLE: intro\nsemanticFingerprint: Вводное описание этапов оформления карты водителя для тахографа.\nsourceHint: Internal KB (общий процесс), External KB (структура этапов)\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 90,
+                  "maxWords": 170,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-3-2",
+                "tag": "h3",
+                "keywords": [
+                  "сертифицированная мастерская",
+                  "необходимые документы для карты",
+                  "заявление на выпуск карты",
+                  "сроки изготовления карты",
+                  "автоматизация оформления"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Следуйте пошаговой инструкции, чтобы подготовить все документы и ускорить получение карты.",
+                "intent": "Детализировать каждый этап оформления водительской карты: от сбора документов до подачи заявления и получения результата.",
+                "audiences": "Водители, менеджеры автопарков, ИП | Уровень: средний | Проблемы: не знают, какие документы нужны, где и как подавать заявку.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection for H2 \"процесс оформления карты водителя\" on page \"Как сделать водительскую карту для тахографа: пошаговая инструкция\"\nGOAL: Подробно расписать каждый этап оформления карты водителя: какие документы нужны, куда обращаться, как правильно заполнить заявление, сколько ждать, и как автоматизировать процесс.\nKEYWORDS TO INTEGRATE: [сертифицированная мастерская, необходимые документы для карты, заявление на выпуск карты, сроки изготовления карты, автоматизация оформления]\nWORD COUNT: minWords: 180, maxWords: 280\nMARKDOWN/MDX SYNTAX: H3 with nested P, OL, CODE\nsemanticFingerprint: Пошаговая инструкция по подготовке и подаче документов на водительскую карту для тахографа.\nsourceHint: Internal KB (процесс, автоматизация), External KB (документы, сроки)\nevidenceStrength: internal-tested | external-peer-reviewed\ninterlink planning: internal link на страницу поддержки USAUTO, FAQ по тахографам.",
+                "additionalData": {
+                  "minWords": 180,
+                  "maxWords": 280,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "необходимые документы для карты",
+                      "заявление на выпуск карты"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Узнайте, какие документы нужно подготовить заранее, чтобы не столкнуться с отказом.",
+                    "intent": "Перечислить и объяснить, какие документы требуются для оформления карты и почему важно их подготовить заранее.",
+                    "audiences": "Водители, впервые оформляющие карту | Уровень: начинающий | Проблемы: не знают, какие документы нужны.",
+                    "selfPrompt": "CONTEXT: Generate paragraph listing and explaining необходимые документы для оформления водительской карты for H3 \"Пошаговая инструкция по подготовке и подаче документов на водительскую карту для тахографа\".\nGOAL: Перечислить полный список документов, объяснить их назначение и дать советы по подготовке.\nKEYWORDS TO INTEGRATE: [необходимые документы для карты, заявление на выпуск карты]\nWORD COUNT: minWords: 75, maxWords: 140\nMARKDOWN/MDX SYNTAX: Paragraph (body)\nROLE: body\nsemanticFingerprint: Перечень и назначение документов для оформления карты водителя.\nsourceHint: External KB (требования к документам), Internal KB (общие рекомендации)\nevidenceStrength: external-peer-reviewed",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 140,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-2-2",
+                    "tag": "ol",
+                    "keywords": [
+                      "сертифицированная мастерская",
+                      "сроки изготовления карты"
+                    ],
+                    "taxonomy": "HowTo",
+                    "attention": "Следуйте этим шагам, чтобы оформить карту быстро и без ошибок.",
+                    "intent": "Дать пользователю четкую последовательность действий для оформления карты, чтобы минимизировать риски и ускорить процесс.",
+                    "audiences": "Водители и специалисты по документообороту | Уровень: средний | Проблемы: боятся пропустить важный шаг.",
+                    "selfPrompt": "CONTEXT: Generate ordered list (5-7 пунктов) of пошаговых действий для оформления водительской карты for H3 \"Пошаговая инструкция по подготовке и подаче документов на водительскую карту для тахографа\".\nGOAL: Дать структурированный чек-лист действий: куда обращаться, как подавать документы, сколько ждать, что делать после получения.\nKEYWORDS TO INTEGRATE: [сертифицированная мастерская, сроки изготовления карты]\nWORD COUNT: minWords: 50, maxWords: 90\nMARKDOWN/MDX SYNTAX: Ordered List (5-7 detailed steps, 10-20 words per item)\nROLE: steps\nsemanticFingerprint: Четкая последовательность действий для оформления карты водителя.\nsourceHint: Internal KB (процесс), External KB (порядок подачи)\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 90,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-3-2-3",
+                    "tag": "code",
+                    "keywords": [
+                      "автоматизация оформления",
+                      "заявление на выпуск карты"
+                    ],
+                    "taxonomy": "technical",
+                    "attention": "Пример автоматизированного заполнения заявления поможет ускорить процесс.",
+                    "intent": "Показать, как можно автоматизировать заполнение заявления на карту с помощью цифровых инструментов.",
+                    "audiences": "Менеджеры автопарков, специалисты по документообороту | Уровень: средний | Проблемы: хотят ускорить и упростить процесс оформления.",
+                    "selfPrompt": "CONTEXT: Generate code block (JSON или шаблон формы) illustrating автоматизацию заполнения заявления на выпуск карты for H3 \"Пошаговая инструкция по подготовке и подаче документов на водительскую карту для тахографа\".\nGOAL: Привести пример автоматизированного шаблона заявления или структуры данных для подачи заявки через цифровую платформу.\nKEYWORDS TO INTEGRATE: [автоматизация оформления, заявление на выпуск карты]\nWORD COUNT: minWords: 20, maxWords: 50\nMARKDOWN/MDX SYNTAX: Code block (JSON или шаблон формы)\nROLE: example\nsemanticFingerprint: Пример автоматизации подачи заявления на карту водителя.\nsourceHint: Internal KB (автоматизация процессов)\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 50,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -5742,5 +5868,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T13:38:06.132Z";
+export const lastUpdated = "2025-10-22T13:39:27.090Z";
 export const generatedBy = "menu-persist-api";
