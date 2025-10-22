@@ -1657,7 +1657,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T11:58:21.124Z",
-        "updatedAt": "2025-10-22T12:15:18.686Z",
+        "updatedAt": "2025-10-22T12:16:17.478Z",
         "order": 1,
         "description": "Узнайте, где и как быстро получить карту тахографа СКЗИ для водителя: актуальные требования, список документов, сроки и стоимость оформления.",
         "images": [
@@ -1864,6 +1864,131 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "практические шаги получения карты",
+              "пакет документов для оформления",
+              "требования к заявителю",
+              "фото для карты тахографа",
+              "ИНН и СНИЛС водителя",
+              "проверка данных",
+              "ошибки при подаче заявки"
+            ],
+            "taxonomy": "HowTo",
+            "attention": "Изучите подробный разбор всех этапов оформления карты тахографа СКЗИ — от сбора документов до проверки заявки, чтобы избежать ошибок и ускорить процесс.",
+            "intent": "Дать водителю и транспортной компании пошаговую инструкцию по подготовке и подаче документов для оформления карты тахографа СКЗИ, с акцентом на нюансы и типичные ошибки.",
+            "audiences": "Профессиональные водители и представители автотранспортных компаний, которые хотят быстро и без ошибок подготовить документы для получения карты тахографа СКЗИ; уровень — базовый/средний; решает проблему неполного пакета документов, задержек и возвратов заявок.",
+            "selfPrompt": "CONTEXT: Generate h2 section focused on 'Практические шаги и подготовка документов для оформления карты тахографа СКЗИ' for page 'Карта тахографа СКЗИ для водителя — где и как получить быстро'.\nGOAL: Подробно описать, какие документы нужны для оформления карты тахографа СКЗИ, как их правильно подготовить, на что обратить внимание при подаче заявки, и какие ошибки чаще всего допускают водители. Дать практические советы по ускорению процесса и минимизации возвратов.\nAUDIENCE: Водители и представители транспортных компаний | Уровень: базовый/средний | Pain points: задержки из-за неполного пакета документов, ошибки в заявке, возвраты.\nKEYWORDS TO INTEGRATE: практические шаги получения карты, пакет документов для оформления, требования к заявителю, фото для карты тахографа, ИНН и СНИЛС водителя, проверка данных, ошибки при подаче заявки\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: h2 section with nested h3, p, ol, code as per structure\n\nWRITING STYLE: Story-driven, engaging storytelling approach\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Internal KB (рекомендации по обращению в аккредитованные центры, общий порядок действий)\n- SECONDARY: External KB (конкретный перечень документов, требования к фото, нюансы подачи заявки)\n\nQUALITY CRITERIA:\n- Actionable (чек-листы, конкретные советы)\n- Specific (точный перечень документов, требования к фото)\n- Data-backed (ссылки на нормативные требования, если есть)\n- No fluff (только практическая информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Пошаговая инструкция по подготовке и подаче документов для карты тахографа СКЗИ с разъяснением нюансов и типичных ошибок.\n- sourceHint: Internal KB (общие рекомендации), External KB (детализация перечня документов, требования к фото)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Обязательно добавить чек-лист документов (ol)\n- Включить мини-инструкцию по подготовке фото (code)\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-3-1",
+                "tag": "p",
+                "keywords": [
+                  "практические шаги получения карты",
+                  "пакет документов для оформления"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, как правильно подготовить документы для оформления карты тахографа СКЗИ с первого раза.",
+                "intent": "Ввести пользователя в тему подготовки документов, объяснить важность правильного сбора и проверки всех бумаг для ускорения процесса.",
+                "audiences": "Водители и менеджеры автопарков, которые хотят избежать возврата заявки из-за ошибок в документах.",
+                "selfPrompt": "CONTEXT: Generate intro paragraph for h2 'Практические шаги и подготовка документов для оформления карты тахографа СКЗИ' on page 'Карта тахографа СКЗИ для водителя — где и как получить быстро'.\nGOAL: Кратко объяснить, почему важно заранее собрать и проверить все документы для оформления карты тахографа СКЗИ, и как это влияет на скорость получения.\nAUDIENCE: Водители и представители транспортных компаний | Pain points: возвраты заявок, задержки из-за ошибок.\nKEYWORDS TO INTEGRATE: практические шаги получения карты, пакет документов для оформления\nWORD COUNT: minWords: 90, maxWords: 170\nROLE: intro\nsemanticFingerprint: Вводный абзац о важности правильной подготовки документов для карты тахографа СКЗИ.\nsourceHint: Internal KB (общие рекомендации), External KB (подтверждение перечня документов)\nevidenceStrength: internal-tested\n",
+                "additionalData": {
+                  "minWords": 90,
+                  "maxWords": 170,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-3-2",
+                "tag": "h3",
+                "keywords": [
+                  "требования к заявителю",
+                  "фото для карты тахографа",
+                  "ИНН и СНИЛС водителя",
+                  "проверка данных",
+                  "ошибки при подаче заявки"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Следуйте пошаговой инструкции, чтобы подготовить все документы и избежать типичных ошибок при оформлении карты тахографа СКЗИ.",
+                "intent": "Дать подробную инструкцию по подготовке и проверке всех необходимых документов для оформления карты тахографа СКЗИ, с разъяснением нюансов и частых ошибок.",
+                "audiences": "Водители и сотрудники транспортных компаний, которым важно быстро и без возвратов оформить карту тахографа СКЗИ; уровень — базовый/средний.",
+                "selfPrompt": "CONTEXT: Generate h3 section 'Пошаговая инструкция по подготовке документов и подаче заявки' under h2 'Практические шаги и подготовка документов для оформления карты тахографа СКЗИ' on page 'Карта тахографа СКЗИ для водителя — где и как получить быстро'.\nGOAL: Дать пошаговую инструкцию по подготовке документов, разъяснить требования к фото, ИНН, СНИЛС, и выделить частые ошибки при подаче заявки.\nAUDIENCE: Водители и представители транспортных компаний | Pain points: ошибки в документах, возвраты, задержки.\nKEYWORDS TO INTEGRATE: требования к заявителю, фото для карты тахографа, ИНН и СНИЛС водителя, проверка данных, ошибки при подаче заявки\nWORD COUNT: minWords: 180, maxWords: 280\nsemanticFingerprint: Пошаговая инструкция по подготовке и проверке документов для карты тахографа СКЗИ с акцентом на нюансы и ошибки.\nsourceHint: Internal KB (общие рекомендации), External KB (детализация требований к фото и документам)\nevidenceStrength: internal-tested | external-peer-reviewed\ninternalLinks: [\"/blog/tachograph-types\", \"/services/driver-docs\"],\nschemaReadiness: HowTo\n",
+                "additionalData": {
+                  "minWords": 180,
+                  "maxWords": 280,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "требования к заявителю",
+                      "проверка данных"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Узнайте, какие требования предъявляются к заявителю и почему важно проверить все данные перед подачей.",
+                    "intent": "Объяснить, кто может подать заявку на карту тахографа СКЗИ и какие данные должны быть без ошибок.",
+                    "audiences": "Водители и менеджеры автопарков, которым важно избежать возврата заявки.",
+                    "selfPrompt": "CONTEXT: Generate body paragraph for h3 'Пошаговая инструкция по подготовке документов и подаче заявки' under h2 'Практические шаги и подготовка документов для оформления карты тахографа СКЗИ'.\nGOAL: Описать требования к заявителю (гражданство, категория транспорта, действующее водительское удостоверение) и важность проверки всех персональных данных.\nAUDIENCE: Водители и представители транспортных компаний | Pain points: возвраты из-за ошибок в данных.\nKEYWORDS TO INTEGRATE: требования к заявителю, проверка данных\nWORD COUNT: minWords: 75, maxWords: 140\nROLE: body\nsemanticFingerprint: Пояснение требований к заявителю и необходимости проверки данных.\nsourceHint: Internal KB (общие рекомендации), External KB (детализация требований)\nevidenceStrength: internal-tested\n",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 140,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-2-2",
+                    "tag": "ol",
+                    "keywords": [
+                      "ИНН и СНИЛС водителя",
+                      "ошибки при подаче заявки"
+                    ],
+                    "taxonomy": "HowTo",
+                    "attention": "Проверьте, чтобы все документы были подготовлены заранее и соответствовали требованиям.",
+                    "intent": "Дать структурированный чек-лист документов для оформления карты тахографа СКЗИ, чтобы пользователь ничего не забыл.",
+                    "audiences": "Водители и сотрудники транспортных компаний, которым важно не упустить ни один документ.",
+                    "selfPrompt": "CONTEXT: Generate ordered list (ol) of 6-7 пунктов для h3 'Пошаговая инструкция по подготовке документов и подаче заявки' under h2 'Практические шаги и подготовка документов для оформления карты тахографа СКЗИ'.\nGOAL: Составить чек-лист всех необходимых документов (паспорт, регистрация, ИНН, СНИЛС, водительское удостоверение, фото, предыдущая карта при наличии), с кратким пояснением по каждому пункту.\nAUDIENCE: Водители и представители транспортных компаний | Pain points: забытые документы, возвраты.\nKEYWORDS TO INTEGRATE: ИНН и СНИЛС водителя, ошибки при подаче заявки\nWORD COUNT: minWords: 50, maxWords: 90\nSTRUCTURE: 6-7 пунктов, короткие пояснения (10-15 слов)\nsemanticFingerprint: Чек-лист документов для оформления карты тахографа СКЗИ.\nsourceHint: External KB (перечень документов), Internal KB (общие рекомендации)\nevidenceStrength: external-peer-reviewed\n",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 90,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-3-2-3",
+                    "tag": "code",
+                    "keywords": [
+                      "фото для карты тахографа"
+                    ],
+                    "taxonomy": "technical",
+                    "attention": "Убедитесь, что фото соответствует техническим требованиям, чтобы избежать возврата заявки.",
+                    "intent": "Дать пример технических требований к фотографии для карты тахографа СКЗИ.",
+                    "audiences": "Водители и сотрудники сервисных центров, оформляющие документы.",
+                    "selfPrompt": "CONTEXT: Generate code block (pseudo-JSON) for h3 'Пошаговая инструкция по подготовке документов и подаче заявки' under h2 'Практические шаги и подготовка документов для оформления карты тахографа СКЗИ'.\nGOAL: Привести пример технических требований к фото (размер, формат, цветность), чтобы пользователь мог подготовить правильное изображение.\nAUDIENCE: Водители и сотрудники сервисных центров | Pain points: возвраты из-за несоответствия фото.\nKEYWORDS TO INTEGRATE: фото для карты тахографа\nWORD COUNT: minWords: 20, maxWords: 50\nLANGUAGE: pseudo-JSON\nsemanticFingerprint: Пример технических требований к фото для карты тахографа СКЗИ.\nsourceHint: External KB (требования к фото)\nevidenceStrength: external-peer-reviewed\n",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 50,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1896,5 +2021,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T12:16:18.516Z";
+export const lastUpdated = "2025-10-22T12:17:39.311Z";
 export const generatedBy = "menu-persist-api";
