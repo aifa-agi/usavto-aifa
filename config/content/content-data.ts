@@ -1657,7 +1657,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T11:58:21.124Z",
-        "updatedAt": "2025-10-22T12:23:08.628Z",
+        "updatedAt": "2025-10-22T12:23:56.149Z",
         "order": 1,
         "description": "Узнайте, где и как быстро получить карту тахографа СКЗИ для водителя: актуальные требования, список документов, сроки и стоимость оформления.",
         "images": [
@@ -2379,5 +2379,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T12:23:09.367Z";
+export const lastUpdated = "2025-10-22T12:24:46.025Z";
 export const generatedBy = "menu-persist-api";
