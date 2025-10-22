@@ -1657,7 +1657,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T11:58:21.124Z",
-        "updatedAt": "2025-10-22T12:17:37.665Z",
+        "updatedAt": "2025-10-22T12:18:54.318Z",
         "order": 1,
         "description": "Узнайте, где и как быстро получить карту тахографа СКЗИ для водителя: актуальные требования, список документов, сроки и стоимость оформления.",
         "images": [
@@ -2189,6 +2189,108 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-5",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "итоги оформления карты водителя",
+              "рекомендации для водителей",
+              "следующие шаги после получения карты",
+              "советы по ускорению процесса",
+              "контроль документов и штрафов",
+              "интеграция с сервисами автоматизации",
+              "повышение эффективности перевозок"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, как быстро перейти к работе после оформления карты и какие сервисы помогут избежать ошибок и задержек.",
+            "intent": "Суммировать основные выводы по теме оформления карты тахографа СКЗИ для водителя, дать практические рекомендации и обозначить дальнейшие шаги для эффективной работы.",
+            "audiences": "Профессиональные водители и представители транспортных компаний, которые завершили или планируют оформление карты и хотят повысить эффективность документооборота и избежать типичных ошибок; уровень — средний.",
+            "selfPrompt": "CONTEXT: Generate h2 conclusion and next steps section for page 'Карта тахографа СКЗИ для водителя — где и как получить быстро'.\n\nGOAL: Подвести итоги по оформлению карты тахографа СКЗИ для водителя, выделить ключевые рекомендации, обозначить дальнейшие действия после получения карты и показать, как интеграция с современными сервисами (например, автоматизация документооборота, контроль штрафов, телемедицина) помогает повысить эффективность и снизить риски.\n\nAUDIENCE: Профессиональные водители и представители транспортных компаний, которые уже ознакомились с пошаговой инструкцией и FAQ, ищут способы ускорить процессы и минимизировать ошибки. Уровень: средний. Pain points: задержки, неполный пакет документов, риск штрафов, отсутствие автоматизации.\n\nKEYWORDS TO INTEGRATE:\n[итоги оформления карты водителя, рекомендации для водителей, следующие шаги после получения карты, советы по ускорению процесса, контроль документов и штрафов, интеграция с сервисами автоматизации, повышение эффективности перевозок]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 200, maxWords: 300 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: h2 section with summary, actionable table, checklist, and final paragraph.\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: рекомендации по обращению в аккредитованные центры, интеграция с сервисами автоматизации, контроль штрафов и документов, телемедицина\n- SECONDARY: Apply insights from External KB: советы по ускорению оформления, типовые действия после получения карты\n\nQUALITY CRITERIA:\n- Actionable (конкретные рекомендации и шаги)\n- Specific (без общих фраз)\n- Data-backed (использовать факты из KB)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Итоговый раздел с рекомендациями, следующими шагами и советами по интеграции сервисов для повышения эффективности перевозок.\n- sourceHint: Internal KB (рекомендации по сервисам и автоматизации) + External KB (советы по ускорению оформления)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Обязательно: краткое резюме, таблица с рекомендациями, чек-лист действий, заключительный абзац с призывом к действию или советом по интеграции сервисов.\n- В selfPrompt для дочерних элементов указывать их роль (summary/table/checklist/conclusion).\n- Добавить interlink planning: внутренние ссылки на разделы об автоматизации документооборота, контроле штрафов, медицинских осмотрах.\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 200,
+              "maxWords": 300,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-5-1",
+                "tag": "p",
+                "keywords": [
+                  "итоги оформления карты водителя",
+                  "рекомендации для водителей"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Быстро ознакомьтесь с основными выводами и советами по дальнейшим действиям.",
+                "intent": "Сделать краткое резюме ключевых моментов по оформлению карты и подчеркнуть важность дальнейших шагов.",
+                "audiences": "Водители и представители транспортных компаний, которые хотят убедиться, что ничего не упустили; уровень — средний.",
+                "selfPrompt": "CONTEXT: Generate summary paragraph (intro/summary role) for conclusion section 'Итоги и рекомендации по получению карты тахографа СКЗИ' of page 'Карта тахографа СКЗИ для водителя — где и как получить быстро'.\nGOAL: Кратко подвести итоги по оформлению карты тахографа СКЗИ, выделить главные рекомендации для водителей и транспортных компаний, подчеркнуть важность правильной подготовки документов и выбора официальных сервисов.\nKEYWORDS TO INTEGRATE: [итоги оформления карты водителя, рекомендации для водителей]\nWORD COUNT: minWords: 80, maxWords: 150\nMARKDOWN/MDX SYNTAX: Paragraph (summary)\nWRITING STYLE: Narrative\nCONTENT FORMAT: Simple\nE-E-A-T: semanticFingerprint: Краткое резюме итогов и советов; sourceHint: Internal KB (рекомендации); evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-5-3",
+                "tag": "table",
+                "keywords": [
+                  "следующие шаги после получения карты",
+                  "контроль документов и штрафов"
+                ],
+                "taxonomy": "Actionable",
+                "attention": "Используйте таблицу для быстрого ознакомления с ключевыми действиями после получения карты.",
+                "intent": "Предоставить структурированный список следующих шагов и сервисов, которые помогут водителю после оформления карты.",
+                "audiences": "Водители и логисты, которым важно не упустить важные действия после получения карты; уровень — средний.",
+                "selfPrompt": "CONTEXT: Generate actionable table (3 columns × 4 rows) for section 'Итоги и рекомендации по получению карты тахографа СКЗИ' of page 'Карта тахографа СКЗИ для водителя — где и как получить быстро'.\nGOAL: Систематизировать ключевые действия после получения карты: проверка корректности данных, интеграция с сервисами автоматизации, контроль штрафов, прохождение медицинских осмотров.\nKEYWORDS TO INTEGRATE: [следующие шаги после получения карты, контроль документов и штрафов]\nTABLE SCHEMA: [Действие | Описание | Рекомендованный сервис]; data types: text/text/text; data source: Internal KB (рекомендации по сервисам), External KB (общие действия)\nWORD COUNT: minWords: 80, maxWords: 160\nMARKDOWN/MDX SYNTAX: Table\nE-E-A-T: semanticFingerprint: Таблица с практическими шагами и сервисами; sourceHint: Internal KB + External KB; evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-5-2",
+                "tag": "ul",
+                "keywords": [
+                  "советы по ускорению процесса"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Следуйте этим советам, чтобы ускорить оформление и избежать ошибок.",
+                "intent": "Дать водителям и компаниям короткий чек-лист по ускорению процесса и минимизации рисков.",
+                "audiences": "Водители и менеджеры автопарков, стремящиеся к оперативности; уровень — средний.",
+                "selfPrompt": "CONTEXT: Generate checklist (ul, 5 items, short actionable points) for section 'Итоги и рекомендации по получению карты тахографа СКЗИ' of page 'Карта тахографа СКЗИ для водителя — где и как получить быстро'.\nGOAL: Сформулировать практические советы по ускорению оформления карты, минимизации ошибок и эффективному старту работы.\nKEYWORDS TO INTEGRATE: [советы по ускорению процесса]\nWORD COUNT: minWords: 50, maxWords: 90\nMARKDOWN/MDX SYNTAX: Unordered list (checklist)\nE-E-A-T: semanticFingerprint: Чек-лист ускорения и предотвращения ошибок; sourceHint: External KB (советы) + Internal KB (рекомендации); evidenceStrength: external-peer-reviewed.",
+                "additionalData": {
+                  "minWords": 50,
+                  "maxWords": 90,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-5-3",
+                "tag": "p",
+                "keywords": [
+                  "интеграция с сервисами автоматизации",
+                  "повышение эффективности перевозок"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, как современные сервисы помогут сделать работу с картой проще и безопаснее.",
+                "intent": "Побудить водителей и компании использовать дополнительные сервисы для повышения эффективности и снижения рисков.",
+                "audiences": "Владельцы автопарков и водители, заинтересованные в автоматизации и цифровых решениях; уровень — средний.",
+                "selfPrompt": "CONTEXT: Generate final paragraph (conclusion/call-to-action) for section 'Итоги и рекомендации по получению карты тахографа СКЗИ' of page 'Карта тахографа СКЗИ для водителя — где и как получить быстро'.\nGOAL: Подчеркнуть преимущества интеграции с сервисами автоматизации документооборота, контроля штрафов и телемедицины для повышения эффективности перевозок и минимизации юридических рисков.\nKEYWORDS TO INTEGRATE: [интеграция с сервисами автоматизации, повышение эффективности перевозок]\nWORD COUNT: minWords: 70, maxWords: 130\nMARKDOWN/MDX SYNTAX: Paragraph (conclusion/call-to-action)\nE-E-A-T: semanticFingerprint: Заключительный призыв к использованию сервисов для повышения эффективности; sourceHint: Internal KB (интеграция сервисов); evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              }
+            ]
           }
         ]
       }
@@ -2221,5 +2323,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T12:18:55.093Z";
+export const lastUpdated = "2025-10-22T12:19:03.056Z";
 export const generatedBy = "menu-persist-api";
