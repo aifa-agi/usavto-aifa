@@ -5442,6 +5442,9 @@ export const contentData = {
             "alt": "как сделать водительскую карту для тахографа",
             "href": "/app-images/wc9wtahdpoyemfblyq8etvw6.jpg"
           }
+        ],
+        "keywords": [
+          "как сделать водительскую карту для тахографа"
         ]
       }
     ],
@@ -5473,5 +5476,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T13:28:29.386Z";
+export const lastUpdated = "2025-10-22T13:28:43.324Z";
 export const generatedBy = "menu-persist-api";
