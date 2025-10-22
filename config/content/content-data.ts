@@ -2358,7 +2358,7 @@ export const contentData = {
         "roles": [
           "guest"
         ],
-        "hasBadge": false,
+        "hasBadge": true,
         "type": "customCategorias",
         "aiRecommendContentStructure": [
           {
@@ -2886,7 +2886,8 @@ export const contentData = {
         ],
         "keywords": [
           "лицензия на пассажирские перевозки такси"
-        ]
+        ],
+        "badgeName": "Блог"
       }
     ],
     "order": 16
@@ -2917,5 +2918,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T12:39:48.147Z";
+export const lastUpdated = "2025-10-22T12:40:00.236Z";
 export const generatedBy = "menu-persist-api";
