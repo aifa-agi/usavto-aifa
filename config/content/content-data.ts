@@ -5435,7 +5435,14 @@ export const contentData = {
         "updatedAt": "2025-10-22T13:22:57.559Z",
         "order": 4,
         "badgeName": "Блог",
-        "description": "как сделать водительскую карту для тахографа"
+        "description": "как сделать водительскую карту для тахографа",
+        "images": [
+          {
+            "id": "zk2y0gkksmgdu2vnceldi2rq",
+            "alt": "как сделать водительскую карту для тахографа",
+            "href": "/app-images/wc9wtahdpoyemfblyq8etvw6.jpg"
+          }
+        ]
       }
     ],
     "order": 16
@@ -5466,5 +5473,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T13:27:20.530Z";
+export const lastUpdated = "2025-10-22T13:28:29.386Z";
 export const generatedBy = "menu-persist-api";
