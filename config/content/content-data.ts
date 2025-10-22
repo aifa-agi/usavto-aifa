@@ -6757,7 +6757,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T13:48:40.293Z",
-        "updatedAt": "2025-10-22T14:01:05.637Z",
+        "updatedAt": "2025-10-22T14:02:32.485Z",
         "order": 5,
         "badgeName": "Блог",
         "description": "Магнитная обклейка машины Яндекс Такси — комплект под ключ: быстрая установка, прочные материалы, соответствие требованиям сервиса. Закажите сейчас!",
@@ -7125,6 +7125,218 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "часто задаваемые вопросы",
+              "магнитные наклейки для такси",
+              "правила эксплуатации",
+              "совместимость с автомобилями",
+              "срок службы магнитов",
+              "требования Яндекс Такси",
+              "уход за магнитными элементами"
+            ],
+            "taxonomy": "FAQ",
+            "attention": "Получите быстрые и точные ответы на самые распространённые вопросы о магнитных комплектах для Яндекс Такси — экономьте время и избегайте ошибок.",
+            "intent": "Дать пользователям исчерпывающие ответы на типовые вопросы по эксплуатации, совместимости и уходу за магнитными наклейками для Яндекс Такси, чтобы снять сомнения и облегчить принятие решения о покупке.",
+            "audiences": "Профессиональные водители Яндекс Такси, владельцы автопарков, индивидуальные предприниматели; уровень — базовый и средний; ищут практические разъяснения по применению магнитных комплектов и их соответствию требованиям сервиса.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 FAQ section for page \"Магнитная обклейка машины Яндекс Такси — комплект под ключ\"\n\nGOAL: Сформировать структурированный блок часто задаваемых вопросов, охватывающий эксплуатацию, уход, совместимость и требования к магнитным наклейкам для Яндекс Такси, чтобы снять типовые возражения и повысить доверие к продукту.\n\nAUDIENCE: Профессиональные водители, владельцы таксопарков, ИП; уровень — базовый/средний; болевые точки — сомнения в долговечности, совместимости, правилах ухода и легальности использования.\n\nKEYWORDS TO INTEGRATE:\n[часто задаваемые вопросы, магнитные наклейки для такси, правила эксплуатации, совместимость с автомобилями, срок службы магнитов, требования Яндекс Такси, уход за магнитными элементами]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: Use h2 for FAQ block, h3 for each question, p for each answer.\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Internal KB (нет информации — использовать только для проверки отсутствия конфликтов)\n- SECONDARY: External KB (общие сведения о материалах, сроках службы, совместимости, уходе, требованиях Яндекс Такси)\n\nQUALITY CRITERIA:\n- Actionable (конкретные рекомендации)\n- Specific (без общих фраз)\n- Data-backed (факты из External KB)\n- No fluff (никакой воды)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Каждый вопрос раскрывает уникальный аспект эксплуатации или выбора магнитных наклеек для Яндекс Такси, не пересекается с предыдущими разделами.\n- sourceHint: External KB (peer-reviewed industry FAQ)\n- evidenceStrength: external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Вопросы не должны дублировать темы предыдущих разделов (материалы, установка, комплектация, преимущества).\n- Каждый вопрос — отдельный h3, каждый ответ — отдельный p.\n- Включить план внутренних перелинковок: 2-3 ссылки на страницы с подробными инструкциями, обзорами или калькуляторами комплектов.\n- Готовность к FAQPage schema для расширенных сниппетов.\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "keywords": [
+                  "часто задаваемые вопросы"
+                ],
+                "taxonomy": "supporting",
+                "attention": "В этом разделе вы найдете быстрые ответы на самые популярные вопросы по магнитным наклейкам для Яндекс Такси.",
+                "intent": "Ввести пользователя в FAQ-блок, объяснив его пользу и структуру.",
+                "audiences": "Водители и владельцы такси, которые хотят быстро разобраться в нюансах использования магнитных комплектов.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for FAQ section on 'Магнитная обклейка машины Яндекс Такси — комплект под ключ'.\nGOAL: Кратко объяснить, что в этом разделе собраны ответы на самые частые вопросы по эксплуатации и выбору магнитных наклеек для Яндекс Такси.\nROLE: intro\nKEYWORDS: [часто задаваемые вопросы]\nWORD COUNT: minWords: 70, maxWords: 130\nsemanticFingerprint: Вводный абзац, поясняющий структуру и пользу FAQ-блока.\nsourceHint: External KB (industry FAQ best practices)\nevidenceStrength: external-peer-reviewed",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "keywords": [
+                  "правила эксплуатации",
+                  "магнитные наклейки для такси",
+                  "долговечность использования",
+                  "температурные ограничения",
+                  "уход за магнитами"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, как правильно эксплуатировать магнитные наклейки, чтобы они служили максимально долго.",
+                "intent": "Ответить на вопрос о правилах эксплуатации и условиях использования магнитных наклеек для такси.",
+                "audiences": "Водители такси, которые хотят избежать преждевременного износа магнитных элементов.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ question on 'правила эксплуатации магнитных наклеек' for section 'FAQ' of page 'Магнитная обклейка машины Яндекс Такси — комплект под ключ'.\nGOAL: Дать четкие рекомендации по эксплуатации магнитных наклеек для такси: температурные режимы, особенности ухода, что делать для продления срока службы.\nKEYWORDS: [правила эксплуатации, магнитные наклейки для такси, долговечность использования, температурные ограничения, уход за магнитами]\nsemanticFingerprint: Вопрос и ответ о правилах эксплуатации и уходе за магнитными наклейками.\ninternalLinks: страница с подробной инструкцией по уходу за магнитами, статья о сезонной эксплуатации.\nschemaReadiness: FAQPage\nsourceHint: External KB (industry FAQ)\nevidenceStrength: external-peer-reviewed",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "keywords": [
+                      "правила эксплуатации",
+                      "уход за магнитами"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Следуйте этим советам, чтобы ваши магнитные наклейки прослужили дольше.",
+                    "intent": "Дать конкретные советы по уходу и эксплуатации магнитных наклеек.",
+                    "audiences": "Водители такси, желающие продлить срок службы магнитных элементов.",
+                    "selfPrompt": "ROLE: body\nCONTEXT: Generate paragraph-answer to FAQ on 'правила эксплуатации магнитных наклеек для такси' (h3-FAQ-1).\nKEYWORDS: [правила эксплуатации, уход за магнитами]\nsourceHint: External KB (индустриальные рекомендации по эксплуатации магнитных наклеек)\nevidenceStrength: external-peer-reviewed\nsemanticFingerprint: Практические советы по эксплуатации и уходу за магнитными наклейками.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-2",
+                "tag": "h3",
+                "keywords": [
+                  "совместимость с автомобилями",
+                  "разные модели авто",
+                  "размеры магнитных наклеек",
+                  "индивидуальный подбор",
+                  "универсальность комплекта"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Проверьте, подойдет ли комплект магнитных наклеек именно для вашей модели автомобиля.",
+                "intent": "Разъяснить вопросы совместимости магнитных наклеек с различными моделями автомобилей и возможности индивидуального подбора.",
+                "audiences": "Владельцы разных марок и моделей авто, желающие убедиться в универсальности или необходимости индивидуального заказа.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ question on 'совместимость магнитных наклеек с автомобилями' for section 'FAQ' of page 'Магнитная обклейка машины Яндекс Такси — комплект под ключ'.\nGOAL: Объяснить, для каких моделей авто подходят стандартные комплекты, как осуществляется подбор размеров, возможен ли индивидуальный заказ.\nKEYWORDS: [совместимость с автомобилями, разные модели авто, размеры магнитных наклеек, индивидуальный подбор, универсальность комплекта]\nsemanticFingerprint: Вопрос и ответ о совместимости и подборе магнитных наклеек для разных автомобилей.\ninternalLinks: калькулятор подбора комплекта, страница с шаблонами для разных моделей.\nschemaReadiness: FAQPage\nsourceHint: External KB (industry FAQ)\nevidenceStrength: external-peer-reviewed",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "совместимость с автомобилями",
+                      "индивидуальный подбор"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Убедитесь, что комплект подойдет именно для вашего авто.",
+                    "intent": "Дать разъяснения по вопросам универсальности и индивидуального подбора магнитных наклеек.",
+                    "audiences": "Владельцы автомобилей разных марок, ищущие подходящий комплект.",
+                    "selfPrompt": "ROLE: body\nCONTEXT: Generate paragraph-answer to FAQ on 'совместимость магнитных наклеек с автомобилями' (FAQ-2).\nKEYWORDS: [совместимость с автомобилями, индивидуальный подбор]\nsourceHint: External KB (индустриальные рекомендации по подбору комплектов)\nevidenceStrength: external-peer-reviewed\nsemanticFingerprint: Практические рекомендации по подбору магнитных наклеек под конкретную модель авто.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-3",
+                "tag": "h3",
+                "keywords": [
+                  "срок службы магнитов",
+                  "устойчивость к погоде",
+                  "повторное использование",
+                  "износ магнитных элементов",
+                  "гарантия качества"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, сколько прослужит комплект магнитных наклеек и как часто его можно использовать повторно.",
+                "intent": "Ответить на вопросы о сроке службы, износостойкости и возможности многократного использования магнитных наклеек.",
+                "audiences": "Водители, заинтересованные в долговечности и экономичности комплекта.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ question on 'срок службы и повторное использование магнитных наклеек' for section 'FAQ' of page 'Магнитная обклейка машины Яндекс Такси — комплект под ключ'.\nGOAL: Объяснить, сколько служат магнитные наклейки, как часто их можно снимать и устанавливать, что влияет на износ.\nKEYWORDS: [срок службы магнитов, устойчивость к погоде, повторное использование, износ магнитных элементов, гарантия качества]\nsemanticFingerprint: Вопрос и ответ о долговечности и повторном использовании магнитных наклеек.\ninternalLinks: страница с гарантийными условиями, статья о тестах износостойкости.\nschemaReadiness: FAQPage\nsourceHint: External KB (industry FAQ)\nevidenceStrength: external-peer-reviewed",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "срок службы магнитов",
+                      "повторное использование"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Узнайте, как продлить срок службы магнитных наклеек.",
+                    "intent": "Дать разъяснения по сроку службы и возможностям повторного использования магнитных наклеек.",
+                    "audiences": "Водители, желающие получить максимальную отдачу от комплекта.",
+                    "selfPrompt": "ROLE: body\nCONTEXT: Generate paragraph-answer to FAQ on 'срок службы и повторное использование магнитных наклеек' (FAQ-3).\nKEYWORDS: [срок службы магнитов, повторное использование]\nsourceHint: External KB (индустриальные рекомендации по долговечности)\nevidenceStrength: external-peer-reviewed\nsemanticFingerprint: Практические советы по увеличению срока службы и повторному использованию магнитных наклеек.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-4",
+                "tag": "h3",
+                "keywords": [
+                  "требования Яндекс Такси",
+                  "легальность использования",
+                  "регламенты сервиса",
+                  "штрафы за несоответствие",
+                  "официальное брендирование"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Убедитесь, что ваш комплект соответствует всем требованиям Яндекс Такси и защищает от штрафов.",
+                "intent": "Разъяснить, как магнитные наклейки соответствуют официальным требованиям Яндекс Такси и что важно знать для легальной работы.",
+                "audiences": "Водители и ИП, которые хотят избежать штрафов и работать в рамках правил сервиса.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ question on 'требования Яндекс Такси к магнитным наклейкам' for section 'FAQ' of page 'Магнитная обклейка машины Яндекс Такси — комплект под ключ'.\nGOAL: Объяснить, как магнитные комплекты соответствуют регламенту Яндекс Такси, какие есть требования к оформлению, как избежать штрафов.\nKEYWORDS: [требования Яндекс Такси, легальность использования, регламенты сервиса, штрафы за несоответствие, официальное брендирование]\nsemanticFingerprint: Вопрос и ответ о соответствии магнитных наклеек требованиям Яндекс Такси и легальности использования.\ninternalLinks: страница с официальными требованиями Яндекс Такси, статья о штрафах и проверках.\nschemaReadiness: FAQPage\nsourceHint: External KB (industry FAQ)\nevidenceStrength: external-peer-reviewed",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "требования Яндекс Такси",
+                      "легальность использования"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Узнайте, как избежать штрафов и работать легально.",
+                    "intent": "Дать разъяснения по соответствию магнитных наклеек требованиям Яндекс Такси.",
+                    "audiences": "Водители, желающие быть уверенными в легальности брендирования.",
+                    "selfPrompt": "ROLE: body\nCONTEXT: Generate paragraph-answer to FAQ on 'требования Яндекс Такси к магнитным наклейкам' (FAQ-4).\nKEYWORDS: [требования Яндекс Такси, легальность использования]\nsourceHint: External KB (регламенты Яндекс Такси)\nevidenceStrength: external-peer-reviewed\nsemanticFingerprint: Практические рекомендации по легальному использованию магнитных наклеек для Яндекс Такси.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -7157,5 +7369,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T14:02:33.561Z";
+export const lastUpdated = "2025-10-22T14:04:06.326Z";
 export const generatedBy = "menu-persist-api";
