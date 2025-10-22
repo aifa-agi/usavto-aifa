@@ -5435,7 +5435,7 @@ export const contentData = {
         "updatedAt": "2025-10-22T13:22:57.559Z",
         "order": 4,
         "badgeName": "Блог",
-        "description": "как сделать водительскую карту для тахографа",
+        "description": "Узнайте, как сделать водительскую карту для тахографа: пошаговая инструкция, требования, список документов, сроки оформления. Получите карту быстро!",
         "images": [
           {
             "id": "zk2y0gkksmgdu2vnceldi2rq",
@@ -5478,5 +5478,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T13:32:44.989Z";
+export const lastUpdated = "2025-10-22T13:32:51.256Z";
 export const generatedBy = "menu-persist-api";
