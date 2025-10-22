@@ -4179,7 +4179,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T12:59:57.568Z",
-        "updatedAt": "2025-10-22T13:09:50.590Z",
+        "updatedAt": "2025-10-22T13:11:06.919Z",
         "order": 3,
         "badgeName": "Блог",
         "description": "Узнайте, как аннулировать лицензию на такси в Москве самостоятельно: пошаговая инструкция, список документов, советы и нюансы. Быстро и без посредников!",
@@ -4424,6 +4424,130 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "порядок аннулирования лицензии",
+              "процедура подачи заявления",
+              "шаги самостоятельного аннулирования",
+              "государственные органы Москва",
+              "документы для подачи",
+              "сроки рассмотрения заявления",
+              "цифровые сервисы для аннулирования"
+            ],
+            "taxonomy": "HowTo",
+            "attention": "Узнайте, как самостоятельно пройти все этапы аннулирования лицензии на такси в Москве без ошибок и задержек.",
+            "intent": "Дать пользователю подробную, практическую инструкцию по самостоятельному аннулированию лицензии на такси в Москве, включая все этапы, необходимые документы и особенности подачи заявления.",
+            "audiences": "Владельцы такси, индивидуальные предприниматели, юридические лица, желающие прекратить деятельность такси в Москве; уровень: начинающий и средний; боль: отсутствие опыта в юридических процедурах, страх ошибок, желание избежать посредников.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 section on 'Пошаговая инструкция по самостоятельному аннулированию лицензии на такси в Москве' for page 'Как аннулировать лицензию на такси в Москве самостоятельно: пошаговая инструкция'\n\nGOAL: Подробно и поэтапно объяснить, как самостоятельно аннулировать лицензию на такси в Москве, какие документы понадобятся, куда обращаться и как избежать типичных ошибок.\n\nAUDIENCE: Владельцы такси, ИП, юридические лица; уровень: начинающий/средний; боль: отсутствие опыта, страх ошибок, желание сэкономить на посредниках.\n\nKEYWORDS TO INTEGRATE:\n[порядок аннулирования лицензии, процедура подачи заявления, шаги самостоятельного аннулирования, государственные органы Москва, документы для подачи, сроки рассмотрения заявления, цифровые сервисы для аннулирования]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with nested H3, P, OL, CODE as per structure\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: юридические услуги по аннулированию лицензии, консультации и сопровождение, цифровые инструменты US AUTO\n- SECONDARY: Apply insights from External KB: порядок подачи заявления, перечень документов, сроки рассмотрения, типовые ошибки\n\nQUALITY CRITERIA:\n- Actionable (конкретные шаги и рекомендации)\n- Specific (без общих фраз)\n- Data-backed (факты и сроки из Knowledge Bases)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальная, структурированная инструкция по самостоятельному аннулированию лицензии на такси в Москве с учетом цифровых сервисов и юридических нюансов.\n- sourceHint: Internal KB (юридические услуги, цифровые инструменты), External KB (практические шаги, сроки)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference parent page intent\n- Must set thematic direction for child h3 elements\n- Add interlink planning: internalLinks (2–3 anchors) to related site pages (например, 'Как получить лицензию на такси', 'Юридические консультации для такси', 'Документы для перевозчиков'); optional externalLinks if allowed.\n- If HowTo: note schema readiness (HowTo)\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-3-1",
+                "tag": "p",
+                "keywords": [
+                  "порядок аннулирования лицензии",
+                  "государственные органы Москва"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Введение в процесс: что важно знать перед началом процедуры.",
+                "intent": "Кратко объяснить, почему важно следовать официальному порядку аннулирования лицензии и какие органы отвечают за рассмотрение заявлений в Москве.",
+                "audiences": "Владельцы такси и ИП, которые впервые сталкиваются с процедурой аннулирования; уровень: начинающий.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for h2 section 'Пошаговая инструкция по самостоятельному аннулированию лицензии на такси в Москве'.\nGOAL: Ввести пользователя в суть процесса, обозначить значимость правильного следования процедуре и взаимодействия с государственными органами Москвы.\nKEYWORDS: порядок аннулирования лицензии, государственные органы Москва\nWORD COUNT: minWords: 90, maxWords: 170\nROLE: intro\nsemanticFingerprint: Краткое введение в процесс самостоятельного аннулирования лицензии с акцентом на важность официальных процедур.\nsourceHint: Internal KB (юридические услуги), External KB (общие рекомендации)\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 90,
+                  "maxWords": 170,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-3-2",
+                "tag": "h3",
+                "keywords": [
+                  "процедура подачи заявления",
+                  "шаги самостоятельного аннулирования",
+                  "документы для подачи",
+                  "сроки рассмотрения заявления",
+                  "цифровые сервисы для аннулирования"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Следуйте пошаговой инструкции, чтобы быстро и без ошибок аннулировать лицензию.",
+                "intent": "Детализировать каждый этап самостоятельного аннулирования лицензии на такси в Москве, включая подготовку документов, подачу заявления и использование цифровых сервисов.",
+                "audiences": "Владельцы такси, ИП, юридические лица; уровень: начинающий/средний; боль: неуверенность в правильности действий, желание избежать ошибок.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection 'Пошаговая инструкция: этапы самостоятельного аннулирования лицензии' for h2 'Пошаговая инструкция по самостоятельному аннулированию лицензии на такси в Москве'.\nGOAL: Подробно расписать все этапы аннулирования лицензии, включая подготовку документов, обращение в органы, сроки рассмотрения и использование цифровых сервисов.\nKEYWORDS: процедура подачи заявления, шаги самостоятельного аннулирования, документы для подачи, сроки рассмотрения заявления, цифровые сервисы для аннулирования\nWORD COUNT: minWords: 180, maxWords: 280\nsemanticFingerprint: Структурированная инструкция с акцентом на цифровые инструменты и минимизацию ошибок.\nsourceHint: Internal KB (цифровые сервисы, юридические консультации), External KB (пошаговые действия, сроки)\nevidenceStrength: internal-tested | external-peer-reviewed\ninterlink planning: Вставить внутренние ссылки на страницы 'Документы для перевозчиков', 'Юридические консультации для такси', 'Как получить лицензию на такси'.",
+                "additionalData": {
+                  "minWords": 180,
+                  "maxWords": 280,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "процедура подачи заявления",
+                      "документы для подачи"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Узнайте, какие документы необходимы для начала процедуры.",
+                    "intent": "Объяснить, какие документы и сведения нужно подготовить для подачи заявления на аннулирование лицензии.",
+                    "audiences": "Владельцы такси и ИП, которые не уверены в перечне документов; уровень: начинающий.",
+                    "selfPrompt": "CONTEXT: Generate paragraph for h3 'Пошаговая инструкция: этапы самостоятельного аннулирования лицензии' (h2 'Пошаговая инструкция по самостоятельному аннулированию лицензии на такси в Москве').\nGOAL: Перечислить и кратко описать документы, необходимые для подачи заявления на аннулирование лицензии.\nKEYWORDS: процедура подачи заявления, документы для подачи\nWORD COUNT: minWords: 75, maxWords: 140\nROLE: body\nsemanticFingerprint: Перечень и краткое описание необходимых документов для аннулирования лицензии.\nsourceHint: Internal KB (документооборот), External KB (перечень документов)\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 140,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-2-2",
+                    "tag": "ol",
+                    "keywords": [
+                      "шаги самостоятельного аннулирования"
+                    ],
+                    "taxonomy": "HowTo",
+                    "attention": "Выполните каждый шаг, чтобы избежать ошибок и задержек.",
+                    "intent": "Дать пользователю четкую последовательность действий для самостоятельного аннулирования лицензии.",
+                    "audiences": "Владельцы такси, ИП; уровень: начинающий; боль: страх пропустить важный шаг.",
+                    "selfPrompt": "CONTEXT: Generate ordered list (5-7 пунктов) для h3 'Пошаговая инструкция: этапы самостоятельного аннулирования лицензии' (h2 'Пошаговая инструкция по самостоятельному аннулированию лицензии на такси в Москве').\nGOAL: Представить последовательные шаги процедуры аннулирования лицензии, от подготовки документов до получения подтверждения.\nKEYWORDS: шаги самостоятельного аннулирования\nWORD COUNT: minWords: 50, maxWords: 90\nSTRUCTURE: 5-7 коротких пунктов (5-15 слов)\nsemanticFingerprint: Четкая последовательность действий для самостоятельного аннулирования лицензии.\nsourceHint: Internal KB (порядок действий), External KB (практические шаги)\nevidenceStrength: internal-tested | external-peer-reviewed",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 90,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-3-2-3",
+                    "tag": "code",
+                    "keywords": [
+                      "цифровые сервисы для аннулирования"
+                    ],
+                    "taxonomy": "technical",
+                    "attention": "Пример заполнения электронного заявления через цифровой сервис.",
+                    "intent": "Показать пример заполнения электронного заявления на аннулирование лицензии через цифровую платформу.",
+                    "audiences": "Владельцы такси, ИП, использующие цифровые сервисы; уровень: средний.",
+                    "selfPrompt": "CONTEXT: Generate code snippet (JSON) for h3 'Пошаговая инструкция: этапы самостоятельного аннулирования лицензии' (h2 'Пошаговая инструкция по самостоятельному аннулированию лицензии на такси в Москве').\nGOAL: Показать пример структуры электронного заявления для подачи через цифровой сервис (например, через платформу US AUTO или госуслуги).\nKEYWORDS: цифровые сервисы для аннулирования\nWORD COUNT: minWords: 20, maxWords: 50\nLANGUAGE: JSON\nPURPOSE: пример заполнения электронного заявления\nsemanticFingerprint: Пример JSON-заявления для цифрового аннулирования лицензии.\nsourceHint: Internal KB (цифровые инструменты), External KB (структура заявлений)\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 50,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -4456,5 +4580,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T13:11:08.189Z";
+export const lastUpdated = "2025-10-22T13:12:35.720Z";
 export const generatedBy = "menu-persist-api";
