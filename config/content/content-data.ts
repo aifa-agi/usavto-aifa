@@ -2909,7 +2909,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T12:37:46.530Z",
-        "updatedAt": "2025-10-22T12:47:50.977Z",
+        "updatedAt": "2025-10-22T12:48:44.612Z",
         "order": 2,
         "description": "Узнайте, как получить лицензию на пассажирские перевозки такси в 2025 году: пошаговая инструкция, требования, документы и важные изменения.",
         "images": [
@@ -3154,6 +3154,132 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "процедура получения разрешения",
+              "этапы оформления",
+              "заявление на перевозки",
+              "подача документов",
+              "электронные сервисы подачи",
+              "практические шаги",
+              "автоматизация процесса"
+            ],
+            "taxonomy": "HowTo",
+            "attention": "Пошаговая инструкция поможет вам быстро и без ошибок пройти все этапы оформления разрешения на перевозку пассажиров легковым такси в 2025 году.",
+            "intent": "Дать читателю подробное, практическое руководство по всем этапам оформления разрешения на пассажирские перевозки такси, с акцентом на современные способы подачи документов и автоматизацию процесса.",
+            "audiences": "Владельцы автомобилей, индивидуальные предприниматели, самозанятые, планирующие легально работать в такси; уровень — начинающий и средний; ищут понятную, пошаговую инструкцию без юридических сложностей.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see below)\n\nCONTEXT: Generate h2 section describing практические этапы и процедуру получения разрешения на пассажирские перевозки такси for page \"Лицензия на пассажирские перевозки такси: как получить в 2025 году\"\n\nGOAL: Подробно и наглядно раскрыть, как на практике проходит оформление разрешения: от подготовки заявления до подачи документов через электронные сервисы, с учетом автоматизации и современных инструментов. Обеспечить читателю уверенность в каждом шаге процесса, показать преимущества использования специализированных платформ и сервисов для ускорения и упрощения процедуры.\n\nAUDIENCE: Владельцы автомобилей, ИП, самозанятые | Level: beginner/intermediate | Pain points: страх ошибок, нехватка времени, непонимание порядка действий\n\nKEYWORDS TO INTEGRATE:\n[процедура получения разрешения, этапы оформления, заявление на перевозки, подача документов, электронные сервисы подачи, практические шаги, автоматизация процесса]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with nested H3, P, OL, CODE as per structure\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: автоматизация оформления, поддержка подачи заявлений, интеграция с учетными системами, сопровождение процесса\n- SECONDARY: Apply insights from External KB: общие этапы подачи заявления, электронные сервисы, отсутствие госпошлины, типовые ошибки\n\nQUALITY CRITERIA:\n- Actionable (конкретные шаги)\n- Specific (без общих фраз)\n- Data-backed (факты из KB)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Подробная инструкция по практическим этапам оформления разрешения с учетом автоматизации и современных сервисов.\n- sourceHint: Internal KB (процесс автоматизации, сопровождение) + External KB (пошаговые этапы, электронные сервисы)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference parent page intent (полное руководство по получению разрешения)\n- Must set тематическое направление для H3 (детализация этапов)\n- Add interlink planning: internalLinks (инструкция по документообороту, калькулятор стоимости лицензии, чек-лист документов); externalLinks (официальные порталы госуслуг — опционально)\n- HowTo schema readiness: YES\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-3-1",
+                "tag": "p",
+                "keywords": [
+                  "процедура получения разрешения",
+                  "практические шаги"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, с чего начать оформление и как избежать типичных ошибок на старте.",
+                "intent": "Ввести пользователя в суть пошагового процесса получения разрешения, обозначить важность правильного старта и выбора оптимального способа подачи документов.",
+                "audiences": "Начинающие водители и предприниматели, которые впервые сталкиваются с процедурой оформления разрешения.",
+                "selfPrompt": "CONTEXT: Generate intro paragraph for section 'Практические этапы и процедура получения разрешения на перевозки такси'.\nGOAL: Кратко объяснить, почему важно следовать пошаговой инструкции и как современные сервисы и автоматизация помогают избежать ошибок и ускоряют процесс.\nKEYWORDS: [процедура получения разрешения, практические шаги]\nWORD COUNT: minWords: 90, maxWords: 170\nROLE: intro\nsourceHint: Internal KB (автоматизация, сопровождение), External KB (типовые ошибки)\nevidenceStrength: internal-tested\nsemanticFingerprint: Вводный абзац, мотивирующий к изучению пошаговой инструкции и использованию современных инструментов.",
+                "additionalData": {
+                  "minWords": 90,
+                  "maxWords": 170,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-3-2",
+                "tag": "h3",
+                "keywords": [
+                  "этапы оформления",
+                  "заявление на перевозки",
+                  "электронные сервисы подачи",
+                  "автоматизация процесса",
+                  "подача документов"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Следуйте подробному алгоритму — от подготовки заявления до получения разрешения.",
+                "intent": "Детализировать каждый этап оформления разрешения, показать последовательность действий, акцентировать внимание на возможностях автоматизации и электронных сервисах.",
+                "audiences": "Владельцы авто и ИП, которые хотят быстро и без ошибок пройти процесс подачи документов; уровень — средний.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection for H2 'Практические этапы и процедура получения разрешения на перевозки такси'.\nGOAL: Пошагово раскрыть все этапы оформления — от подготовки заявления до подачи через электронные сервисы, с советами по автоматизации и предотвращению ошибок.\nKEYWORDS: [этапы оформления, заявление на перевозки, электронные сервисы подачи, автоматизация процесса, подача документов]\nWORD COUNT: minWords: 180, maxWords: 280\nsemanticFingerprint: Подробный алгоритм действий с акцентом на современные способы подачи и автоматизацию.\nsourceHint: Internal KB (автоматизация, сопровождение), External KB (пошаговые этапы, электронные сервисы)\nevidenceStrength: internal-tested | external-peer-reviewed\ninterlink planning: internalLinks (чек-лист документов, калькулятор стоимости лицензии, инструкция по документообороту)\nHowTo schema readiness: YES\nREFERENCE: Builds upon H2 'Практические этапы и процедура получения разрешения на перевозки такси'.",
+                "additionalData": {
+                  "minWords": 180,
+                  "maxWords": 280,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "заявление на перевозки",
+                      "электронные сервисы подачи"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Поймите, как правильно подготовить заявление и выбрать способ подачи.",
+                    "intent": "Объяснить, как грамотно составить заявление и какие электронные сервисы доступны для подачи документов.",
+                    "audiences": "Пользователи, впервые оформляющие разрешение; уровень — начинающий.",
+                    "selfPrompt": "CONTEXT: Generate body paragraph for H3 'Пошаговый алгоритм оформления разрешения'.\nGOAL: Подробно описать подготовку заявления и выбор электронного сервиса для подачи документов, дать советы по предотвращению ошибок.\nKEYWORDS: [заявление на перевозки, электронные сервисы подачи]\nWORD COUNT: minWords: 75, maxWords: 140\nROLE: body\nsourceHint: Internal KB (интеграция с сервисами), External KB (доступные порталы)\nevidenceStrength: internal-tested\nsemanticFingerprint: Практические советы по подготовке заявления и выбору электронного сервиса.",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 140,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-2-2",
+                    "tag": "ol",
+                    "keywords": [
+                      "этапы оформления",
+                      "подача документов"
+                    ],
+                    "taxonomy": "HowTo",
+                    "attention": "Следуйте этим шагам, чтобы не упустить важные детали.",
+                    "intent": "Дать структурированный список основных этапов оформления разрешения, чтобы пользователь мог легко следовать инструкции.",
+                    "audiences": "Владельцы авто, ИП, самозанятые; уровень — любой; ценят структурированность.",
+                    "selfPrompt": "CONTEXT: Generate ordered list (5 steps) for H3 'Пошаговый алгоритм оформления разрешения'.\nGOAL: Перечислить ключевые этапы оформления разрешения — от сбора документов до получения результата.\nKEYWORDS: [этапы оформления, подача документов]\nITEMS: 5, structure: короткие пункты (5-10 слов)\nROLE: steps\nsourceHint: Internal KB (автоматизация этапов), External KB (общая последовательность)\nevidenceStrength: internal-tested\nsemanticFingerprint: Четкая последовательность действий для оформления разрешения.",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 90,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-3-2-3",
+                    "tag": "code",
+                    "keywords": [
+                      "автоматизация процесса",
+                      "электронные сервисы подачи"
+                    ],
+                    "taxonomy": "technical",
+                    "attention": "Увидьте пример автоматизации подачи заявления через API.",
+                    "intent": "Показать пример кода или конфигурации для автоматизированной подачи заявления через электронный сервис (например, через API госуслуг).",
+                    "audiences": "Технически подкованные предприниматели, интеграторы; уровень — средний и выше.",
+                    "selfPrompt": "CONTEXT: Generate code block (JSON snippet, 5-10 lines) for H3 'Пошаговый алгоритм оформления разрешения'.\nGOAL: Привести пример JSON-запроса для автоматизированной подачи заявления через электронный сервис.\nKEYWORDS: [автоматизация процесса, электронные сервисы подачи]\nLANGUAGE: JSON\nLENGTH: snippet (5-10 lines)\nROLE: example\nsourceHint: Internal KB (автоматизация, интеграция с сервисами)\nevidenceStrength: internal-tested\nsemanticFingerprint: Пример автоматизированной подачи заявления через API.",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 50,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -3186,5 +3312,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T12:48:44.864Z";
+export const lastUpdated = "2025-10-22T12:49:51.950Z";
 export const generatedBy = "menu-persist-api";
