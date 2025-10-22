@@ -6201,7 +6201,7 @@ export const contentData = {
       },
       {
         "id": "g4m56ff6s6uad5mtfgoidndn",
-        "title": "магнитная обклейка машины яндекс такси",
+        "title": "Магнитная обклейка машины Яндекс Такси — комплект под ключ",
         "href": "/blog/magnitnaya-obkleyka-mashiny-yandeks-taksi",
         "roles": [
           "guest"
@@ -6768,5 +6768,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T13:55:03.253Z";
+export const lastUpdated = "2025-10-22T13:55:12.926Z";
 export const generatedBy = "menu-persist-api";
