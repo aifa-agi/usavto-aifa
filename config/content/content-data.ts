@@ -6757,7 +6757,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T13:48:40.293Z",
-        "updatedAt": "2025-10-22T13:59:54.684Z",
+        "updatedAt": "2025-10-22T14:01:05.637Z",
         "order": 5,
         "badgeName": "Блог",
         "description": "Магнитная обклейка машины Яндекс Такси — комплект под ключ: быстрая установка, прочные материалы, соответствие требованиям сервиса. Закажите сейчас!",
@@ -7000,6 +7000,131 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "установка магнитных наклеек",
+              "пошаговая инструкция",
+              "монтаж брендирования",
+              "самостоятельная установка",
+              "без повреждения кузова",
+              "советы по эксплуатации",
+              "съемное оформление авто"
+            ],
+            "taxonomy": "HowTo",
+            "attention": "Узнайте, как быстро и безопасно установить магнитные элементы брендирования на свой автомобиль для Яндекс Такси самостоятельно, без риска повреждения лакокрасочного покрытия.",
+            "intent": "Дать пользователю подробную, пошаговую и практическую инструкцию по самостоятельной установке и эксплуатации магнитных наклеек для оформления автомобиля под требования Яндекс Такси.",
+            "audiences": "Профессиональные водители Яндекс.Такси, владельцы таксопарков и индивидуальные предприниматели с базовой технической грамотностью, заинтересованные в быстром, легальном и безопасном брендировании авто без обращения в сервис.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 section on 'пошаговая инструкция по установке и эксплуатации магнитных наклеек для Яндекс Такси' for page 'Магнитная обклейка машины Яндекс Такси — комплект под ключ'\n\nGOAL: Обеспечить пользователя подробной, структурированной и практической инструкцией по самостоятельному монтажу магнитных наклеек, включая советы по эксплуатации, предотвращению ошибок и сохранению внешнего вида автомобиля.\n\nAUDIENCE: Профессиональные водители и владельцы такси | Level: intermediate | Pain points: страх повредить кузов, неуверенность в правильности монтажа, желание избежать штрафов и сэкономить время.\n\nKEYWORDS TO INTEGRATE:\n[установка магнитных наклеек, пошаговая инструкция, монтаж брендирования, самостоятельная установка, без повреждения кузова, советы по эксплуатации, съемное оформление авто]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: h2 section with nested h3, p, ol, code as per structure\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Internal KB (нет информации — используем только внешние источники)\n- SECONDARY: External KB (индустриальный стандарт, советы по установке, типовые ошибки, рекомендации по эксплуатации)\n\nQUALITY CRITERIA:\n- Actionable (конкретные шаги и советы)\n- Specific (детализированные инструкции)\n- Data-backed (использовать проверенные советы и типовые сценарии)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальная, практическая инструкция по самостоятельному монтажу и эксплуатации магнитных наклеек для Яндекс Такси, без дублирования технических характеристик или описания комплекта.\n- sourceHint: External KB (индустриальные инструкции и советы)\n- evidenceStrength: external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference parent page intent (обеспечить легкое, быстрое и безопасное оформление авто под Яндекс Такси)\n- Must set thematic direction for child h3 elements (детализация процесса установки, советы по эксплуатации, типовые ошибки)\n- Add interlink planning: internalLinks (2–3 anchors) to related site pages (например, «Как выбрать комплект магнитной обклейки», «Требования Яндекс Такси к брендированию»); optional externalLinks (например, на официальный брендбук Яндекс Такси, если разрешено)\n- If HowTo: note schema readiness (HowToPage)\n- selfPrompt MUST end with: \n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)\n",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-3-1",
+                "tag": "p",
+                "keywords": [
+                  "установка магнитных наклеек",
+                  "самостоятельная установка"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Введение в процесс самостоятельной установки: почему это просто и безопасно.",
+                "intent": "Ввести пользователя в тему самостоятельного монтажа, снять опасения и подчеркнуть простоту процесса.",
+                "audiences": "Водители и владельцы такси, впервые сталкивающиеся с магнитным брендированием, ищущие уверенность и пошаговое руководство.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for h2 'пошаговая инструкция по установке и эксплуатации магнитных наклеек для Яндекс Такси'.\nGOAL: Объяснить, что самостоятельная установка магнитных наклеек — это просто, быстро и не требует специальных навыков, а также подчеркнуть безопасность для кузова автомобиля.\nKEYWORDS: установка магнитных наклеек, самостоятельная установка\nWORD COUNT: minWords: 90, maxWords: 170\nROLE: intro\nsemanticFingerprint: Вводный абзац, мотивирующий пользователя приступить к самостоятельному монтажу, без повторения технических характеристик.\nsourceHint: External KB (индустриальные советы)\nevidenceStrength: external-peer-reviewed",
+                "additionalData": {
+                  "minWords": 90,
+                  "maxWords": 170,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-3-2",
+                "tag": "h3",
+                "keywords": [
+                  "монтаж брендирования",
+                  "пошаговая инструкция",
+                  "без повреждения кузова",
+                  "советы по эксплуатации",
+                  "съемное оформление авто"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Следуйте подробной инструкции, чтобы быстро и аккуратно оформить автомобиль под Яндекс Такси без риска для лакокрасочного покрытия.",
+                "intent": "Дать пользователю структурированную, пошаговую инструкцию по монтажу и эксплуатации магнитных наклеек с акцентом на безопасность и долговечность.",
+                "audiences": "Владельцы и водители такси, желающие избежать ошибок при установке и продлить срок службы комплекта.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection 'Пошаговая инструкция и советы по эксплуатации' for h2 'пошаговая инструкция по установке и эксплуатации магнитных наклеек для Яндекс Такси'.\nGOAL: Дать детальную инструкцию по монтажу, дополненную советами по эксплуатации и предотвращению типовых ошибок.\nKEYWORDS: монтаж брендирования, пошаговая инструкция, без повреждения кузова, советы по эксплуатации, съемное оформление авто\nWORD COUNT: minWords: 180, maxWords: 280\nsemanticFingerprint: Структурированная инструкция и советы по безопасному монтажу и эксплуатации, не повторяющая вводный абзац.\nsourceHint: External KB (индустриальные инструкции)\nevidenceStrength: external-peer-reviewed\ninterlink planning: добавить внутренние ссылки на «Как выбрать комплект магнитной обклейки», «Требования Яндекс Такси к брендированию»\nschema readiness: HowToPage",
+                "additionalData": {
+                  "minWords": 180,
+                  "maxWords": 280,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "монтаж брендирования",
+                      "без повреждения кузова"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Краткое описание ключевых принципов безопасного монтажа.",
+                    "intent": "Пояснить важность аккуратности и соблюдения инструкции для сохранения внешнего вида автомобиля.",
+                    "audiences": "Водители, опасающиеся повредить лакокрасочное покрытие при установке.",
+                    "selfPrompt": "CONTEXT: Generate supporting paragraph for h3 'Пошаговая инструкция и советы по эксплуатации' (h2: 'пошаговая инструкция по установке и эксплуатации магнитных наклеек для Яндекс Такси').\nGOAL: Кратко объяснить, почему важно соблюдать аккуратность и как избежать повреждений.\nKEYWORDS: монтаж брендирования, без повреждения кузова\nWORD COUNT: minWords: 75, maxWords: 140\nROLE: body\nsemanticFingerprint: Подчеркивает важность аккуратности и следования инструкции, не дублируя шаги инструкции.\nsourceHint: External KB (советы по эксплуатации)\nevidenceStrength: external-peer-reviewed",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 140,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-2-2",
+                    "tag": "ol",
+                    "keywords": [
+                      "пошаговая инструкция",
+                      "советы по эксплуатации"
+                    ],
+                    "taxonomy": "HowTo",
+                    "attention": "Следуйте этим шагам для идеального результата.",
+                    "intent": "Дать пользователю четкую, пошаговую инструкцию по установке и эксплуатации магнитных наклеек.",
+                    "audiences": "Владельцы и водители такси, впервые сталкивающиеся с монтажом магнитных элементов.",
+                    "selfPrompt": "CONTEXT: Generate ordered list (6–8 шагов) for h3 'Пошаговая инструкция и советы по эксплуатации' (h2: 'пошаговая инструкция по установке и эксплуатации магнитных наклеек для Яндекс Такси').\nGOAL: Подробно расписать каждый этап установки и эксплуатации, чтобы пользователь мог легко следовать инструкции.\nKEYWORDS: пошаговая инструкция, советы по эксплуатации\nWORD COUNT: minWords: 50, maxWords: 90\nSTRUCTURE: 6–8 коротких пунктов (5–15 слов каждый)\nsemanticFingerprint: Четкая последовательность действий, не дублирующая вводные и пояснительные абзацы.\nsourceHint: External KB (индустриальные инструкции)\nevidenceStrength: external-peer-reviewed",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 90,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-3-2-3",
+                    "tag": "code",
+                    "keywords": [
+                      "съемное оформление авто"
+                    ],
+                    "taxonomy": "technical",
+                    "attention": "Пример короткой инструкции в формате чек-листа для быстрой проверки перед выездом.",
+                    "intent": "Дать пользователю наглядный, структурированный пример чек-листа для самостоятельной проверки установки.",
+                    "audiences": "Водители, желающие быстро убедиться в правильности монтажа перед началом смены.",
+                    "selfPrompt": "CONTEXT: Generate code block (pseudo-JSON чек-лист) for h3 'Пошаговая инструкция и советы по эксплуатации' (h2: 'пошаговая инструкция по установке и эксплуатации магнитных наклеек для Яндекс Такси').\nGOAL: Привести пример структурированного чек-листа для самостоятельной проверки правильности установки магнитных наклеек.\nKEYWORDS: съемное оформление авто\nWORD COUNT: minWords: 20, maxWords: 50\nLANGUAGE: JSON-подобный псевдокод\nsemanticFingerprint: Краткий чек-лист для быстрой проверки, не дублирующий текстовые инструкции.\nsourceHint: External KB (типовые чек-листы)\nevidenceStrength: external-peer-reviewed",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 50,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -7032,5 +7157,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T14:01:06.337Z";
+export const lastUpdated = "2025-10-22T14:02:33.561Z";
 export const generatedBy = "menu-persist-api";
