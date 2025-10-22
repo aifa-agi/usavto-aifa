@@ -1657,7 +1657,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T11:58:21.124Z",
-        "updatedAt": "2025-10-22T12:16:17.478Z",
+        "updatedAt": "2025-10-22T12:17:37.665Z",
         "order": 1,
         "description": "Узнайте, где и как быстро получить карту тахографа СКЗИ для водителя: актуальные требования, список документов, сроки и стоимость оформления.",
         "images": [
@@ -1989,6 +1989,206 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "часто задаваемые вопросы по карте тахографа",
+              "срок действия карты водителя",
+              "замена карты тахографа скзи",
+              "стоимость оформления карты",
+              "проблемы при получении карты",
+              "отслеживание статуса заявки",
+              "техническая поддержка водителей"
+            ],
+            "taxonomy": "FAQ",
+            "attention": "Ответы на самые частые вопросы помогут избежать ошибок и ускорить получение карты тахографа СКЗИ.",
+            "intent": "Собрать и структурировать ключевые вопросы и ответы, которые чаще всего возникают у водителей и представителей транспортных компаний при оформлении карты тахографа СКЗИ, чтобы снять типовые возражения и повысить уверенность в процессе.",
+            "audiences": "Профессиональные водители, индивидуальные предприниматели, логисты и представители автотранспортных компаний, которые впервые сталкиваются с оформлением карты тахографа СКЗИ или хотят избежать распространённых ошибок; уровень — базовый и средний.",
+            "selfPrompt": "CONTEXT: Generate h2 FAQ section for page 'Карта тахографа СКЗИ для водителя — где и как получить быстро'. GOAL: Сконцентрировать в одном разделе ответы на наиболее частые вопросы о получении, сроках, стоимости, замене и технических нюансах карты тахографа СКЗИ, чтобы пользователь мог быстро найти решение своей проблемы без обращения к сторонним ресурсам. AUDIENCE: Водители и представители транспортных компаний, которые ищут практические разъяснения и хотят избежать типичных ошибок; уровень — базовый/средний. KEYWORDS TO INTEGRATE: часто задаваемые вопросы по карте тахографа, срок действия карты водителя, замена карты тахографа скзи, стоимость оформления карты, проблемы при получении карты, отслеживание статуса заявки, техническая поддержка водителей. WORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED. MARKDOWN/MDX SYNTAX: h2 section with nested h3 and p elements for each FAQ. WRITING STYLE: Narrative - Story-driven, engaging storytelling approach. CONTENT FORMAT: Simple - Easy to understand, basic language. KNOWLEDGE SOURCES (PRIORITY ORDER): PRIMARY: Use facts from Internal KB (особенности оформления, рекомендации по обращению в аккредитованные центры, интеграция с сервисами контроля документов и медосмотров); SECONDARY: Apply insights from External KB (типовые вопросы, сроки, стоимость, технические детали оформления). QUALITY CRITERIA: Actionable, конкретные ответы, отсутствие воды, структурированность, отсутствие дублирования с предыдущими разделами. E-E-A-T ENHANCERS: semanticFingerprint: 'Собрание уникальных и практических ответов на ключевые вопросы по карте тахографа СКЗИ, не повторяющее предыдущие разделы.'; sourceHint: 'Internal KB (рекомендации, сервисы) + External KB (типовые вопросы, детали)'; evidenceStrength: 'internal-tested | external-peer-reviewed'. INTERLINK PLANNING: Вставить 2-3 внутренних ссылки на разделы о документах, сервисах автоматизации и контроле штрафов. SCHEMA READINESS: FAQPage. PAGE SETTINGS: Writing Style: Narrative; Content Format: Simple; Custom Requirements: Applied as PRIORITY OVERRIDE (see above).",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "keywords": [
+                  "часто задаваемые вопросы по карте тахографа"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Краткое введение объясняет, зачем читать этот раздел и как он поможет избежать типичных затруднений.",
+                "intent": "Ввести пользователя в раздел FAQ, обозначить его ценность и объяснить, какие вопросы будут рассмотрены.",
+                "audiences": "Водители и представители транспортных компаний, которые ищут быстрые и точные ответы на свои вопросы.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for FAQ section on 'Карта тахографа СКЗИ для водителя — где и как получить быстро'. GOAL: Кратко объяснить, что в этом разделе собраны самые частые вопросы и практические ответы по теме карты тахографа СКЗИ, чтобы пользователь мог быстро найти нужную информацию. KEYWORDS TO INTEGRATE: часто задаваемые вопросы по карте тахографа. WORD COUNT: minWords: 70, maxWords: 130. MARKDOWN/MDX SYNTAX: Paragraph (p). WRITING STYLE: Narrative. CONTENT FORMAT: Simple. E-E-A-T: semanticFingerprint: 'Вводный абзац, подчеркивающий практическую пользу FAQ.'; sourceHint: 'Internal KB (структура раздела)'.",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "keywords": [
+                  "срок действия карты водителя",
+                  "продление карты тахографа",
+                  "временные ограничения"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, как долго действует карта тахографа СКЗИ и когда нужно её обновлять.",
+                "intent": "Ответить на вопрос о сроке действия карты тахографа СКЗИ, условиях продления и особенностях замены.",
+                "audiences": "Водители и логисты, которым важно не пропустить срок замены карты и избежать штрафов.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item 'Какой срок действия у карты тахографа СКЗИ и когда её нужно менять?' for section 'FAQ' on page 'Карта тахографа СКЗИ для водителя — где и как получить быстро'. GOAL: Дать чёткий и практический ответ о сроке действия карты, особенностях продления и возможных рисках при просрочке. KEYWORDS TO INTEGRATE: срок действия карты водителя, продление карты тахографа, временные ограничения. WORD COUNT: minWords: 150, maxWords: 220. MARKDOWN/MDX SYNTAX: h3 with nested p. INTERLINK PLANNING: Вставить ссылку на раздел о документах для замены карты. E-E-A-T: semanticFingerprint: 'Разъяснение сроков действия и порядка продления карты тахографа СКЗИ.'; sourceHint: 'External KB (сроки), Internal KB (рекомендации по контролю сроков)'; evidenceStrength: 'external-peer-reviewed | internal-tested'.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "keywords": [
+                      "срок действия карты водителя"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Позволяет избежать просрочки и связанных с этим штрафов.",
+                    "intent": "Дать конкретную информацию о сроке действия карты и процедуре продления.",
+                    "audiences": "Водители, планирующие своевременную замену карты.",
+                    "selfPrompt": "CONTEXT: Generate paragraph explaining срок действия карты тахографа СКЗИ for h3 'Какой срок действия у карты тахографа СКЗИ и когда её нужно менять?'. ROLE: body. KEYWORDS TO INTEGRATE: срок действия карты водителя. WORD COUNT: minWords: 60, maxWords: 120. E-E-A-T: semanticFingerprint: 'Практическое пояснение по срокам действия и замене карты.'; sourceHint: 'External KB (сроки), Internal KB (рекомендации)'.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-2",
+                "tag": "h3",
+                "keywords": [
+                  "стоимость оформления карты",
+                  "госпошлина за карту тахографа",
+                  "дополнительные расходы"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Понимание стоимости поможет заранее подготовить бюджет и избежать неожиданных расходов.",
+                "intent": "Дать пользователю актуальную информацию о стоимости оформления карты тахографа СКЗИ, возможных дополнительных платежах и способах оплаты.",
+                "audiences": "Водители и бухгалтеры транспортных компаний, планирующие расходы на оформление документов.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item 'Сколько стоит оформление карты тахографа СКЗИ и какие расходы могут возникнуть?' for section 'FAQ' on page 'Карта тахографа СКЗИ для водителя — где и как получить быстро'. GOAL: Подробно раскрыть вопрос стоимости, госпошлины и возможных дополнительных расходов при оформлении карты. KEYWORDS TO INTEGRATE: стоимость оформления карты, госпошлина за карту тахографа, дополнительные расходы. WORD COUNT: minWords: 150, maxWords: 220. MARKDOWN/MDX SYNTAX: h3 with nested p. INTERLINK PLANNING: Вставить ссылку на калькулятор стоимости или раздел с тарифами. E-E-A-T: semanticFingerprint: 'Актуальная информация о расходах на оформление карты тахографа СКЗИ.'; sourceHint: 'External KB (стоимость), Internal KB (рекомендации по оптимизации расходов)'; evidenceStrength: 'external-peer-reviewed | internal-tested'.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "стоимость оформления карты"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Позволяет заранее рассчитать бюджет на оформление карты.",
+                    "intent": "Дать точную информацию о стоимости и возможных дополнительных расходах.",
+                    "audiences": "Водители и бухгалтеры, планирующие оформление карты.",
+                    "selfPrompt": "CONTEXT: Generate paragraph explaining стоимость оформления карты тахографа СКЗИ for h3 'Сколько стоит оформление карты тахографа СКЗИ и какие расходы могут возникнуть?'. ROLE: body. KEYWORDS TO INTEGRATE: стоимость оформления карты. WORD COUNT: minWords: 60, maxWords: 120. E-E-A-T: semanticFingerprint: 'Практическое пояснение по стоимости и дополнительным расходам.'; sourceHint: 'External KB (стоимость), Internal KB (советы по экономии)'.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-3",
+                "tag": "h3",
+                "keywords": [
+                  "замена карты тахографа скзи",
+                  "утеря или повреждение карты",
+                  "экстренное оформление"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Пошаговые действия при утере или повреждении карты помогут быстро восстановить документ и избежать простоя.",
+                "intent": "Объяснить, что делать при утере, повреждении или необходимости срочной замены карты тахографа СКЗИ.",
+                "audiences": "Водители и диспетчеры, столкнувшиеся с нештатной ситуацией и нуждающиеся в оперативном решении.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item 'Что делать при утере, повреждении или необходимости срочной замены карты тахографа СКЗИ?' for section 'FAQ' on page 'Карта тахографа СКЗИ для водителя — где и как получить быстро'. GOAL: Дать чёткую инструкцию по действиям в случае утери, повреждения или необходимости срочной замены карты. KEYWORDS TO INTEGRATE: замена карты тахографа скзи, утера или повреждение карты, экстренное оформление. WORD COUNT: minWords: 150, maxWords: 220. MARKDOWN/MDX SYNTAX: h3 with nested p. INTERLINK PLANNING: Вставить ссылку на раздел о документах для восстановления карты. E-E-A-T: semanticFingerprint: 'Пошаговая инструкция по восстановлению или экстренной замене карты тахографа СКЗИ.'; sourceHint: 'External KB (процедуры), Internal KB (рекомендации по минимизации простоев)'; evidenceStrength: 'external-peer-reviewed | internal-tested'.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "замена карты тахографа скзи"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Помогает быстро восстановить карту и избежать простоев.",
+                    "intent": "Дать чёткую инструкцию по восстановлению или экстренной замене карты.",
+                    "audiences": "Водители, столкнувшиеся с утерей или повреждением карты.",
+                    "selfPrompt": "CONTEXT: Generate paragraph explaining замена карты тахографа СКЗИ for h3 'Что делать при утере, повреждении или необходимости срочной замены карты тахографа СКЗИ?'. ROLE: body. KEYWORDS TO INTEGRATE: замена карты тахографа скзи. WORD COUNT: minWords: 60, maxWords: 120. E-E-A-T: semanticFingerprint: 'Пошаговое руководство по восстановлению карты.'; sourceHint: 'External KB (процедуры), Internal KB (советы по минимизации рисков)'.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-4",
+                "tag": "h3",
+                "keywords": [
+                  "отслеживание статуса заявки",
+                  "техническая поддержка водителей",
+                  "решение проблем при оформлении"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, как контролировать статус заявки и куда обращаться при технических сложностях.",
+                "intent": "Объяснить, как отследить статус оформления карты тахографа СКЗИ и куда обращаться при возникновении технических или организационных проблем.",
+                "audiences": "Водители и менеджеры автопарков, желающие контролировать процесс оформления и быстро решать возникающие вопросы.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item 'Как отследить статус заявки на карту тахографа СКЗИ и что делать при технических проблемах?' for section 'FAQ' on page 'Карта тахографа СКЗИ для водителя — где и как получить быстро'. GOAL: Дать инструкцию по отслеживанию статуса заявки и получению технической поддержки при оформлении карты. KEYWORDS TO INTEGRATE: отслеживание статуса заявки, техническая поддержка водителей, решение проблем при оформлении. WORD COUNT: minWords: 150, maxWords: 220. MARKDOWN/MDX SYNTAX: h3 with nested p. INTERLINK PLANNING: Вставить ссылку на сервисы контроля документов и поддержки. E-E-A-T: semanticFingerprint: 'Инструкция по отслеживанию статуса и получению поддержки при оформлении карты тахографа СКЗИ.'; sourceHint: 'External KB (процедуры отслеживания), Internal KB (сервисы поддержки)'; evidenceStrength: 'external-peer-reviewed | internal-tested'.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "отслеживание статуса заявки"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Позволяет контролировать процесс и оперативно решать проблемы.",
+                    "intent": "Дать инструкцию по отслеживанию статуса и получению поддержки.",
+                    "audiences": "Водители и менеджеры автопарков.",
+                    "selfPrompt": "CONTEXT: Generate paragraph explaining отслеживание статуса заявки for h3 'Как отследить статус заявки на карту тахографа СКЗИ и что делать при технических проблемах?'. ROLE: body. KEYWORDS TO INTEGRATE: отслеживание статуса заявки. WORD COUNT: minWords: 60, maxWords: 120. E-E-A-T: semanticFingerprint: 'Пошаговая инструкция по контролю статуса заявки и обращению за поддержкой.'; sourceHint: 'External KB (процедуры), Internal KB (сервисы поддержки)'.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -2021,5 +2221,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T12:17:39.311Z";
+export const lastUpdated = "2025-10-22T12:18:55.093Z";
 export const generatedBy = "menu-persist-api";
