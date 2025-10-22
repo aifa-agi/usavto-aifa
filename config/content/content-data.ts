@@ -2353,7 +2353,7 @@ export const contentData = {
       },
       {
         "id": "cy1jcnu3mm62d4544z7gojr9",
-        "title": "лицензия на пассажирские перевозки такси",
+        "title": "Лицензия на пассажирские перевозки такси: как получить в 2025 году",
         "href": "/blog/litsenziya-na-passazhirskie-perevozki-taksi",
         "roles": [
           "guest"
@@ -2955,5 +2955,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T12:43:52.384Z";
+export const lastUpdated = "2025-10-22T12:44:02.341Z";
 export const generatedBy = "menu-persist-api";
