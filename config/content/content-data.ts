@@ -2909,7 +2909,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T12:37:46.530Z",
-        "updatedAt": "2025-10-22T12:49:51.495Z",
+        "updatedAt": "2025-10-22T12:51:13.598Z",
         "order": 2,
         "description": "Узнайте, как получить лицензию на пассажирские перевозки такси в 2025 году: пошаговая инструкция, требования, документы и важные изменения.",
         "images": [
@@ -3480,6 +3480,88 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-5",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "итоги оформления разрешения",
+              "ключевые выводы по лицензированию",
+              "следующие шаги для водителей",
+              "контроль успешности процесса",
+              "советы по дальнейшим действиям",
+              "поддержка при запуске такси",
+              "резюме гайда по перевозкам"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Завершите знакомство с процессом получения разрешения, получите четкий план дальнейших действий и почувствуйте уверенность в легальном запуске такси.",
+            "intent": "Суммировать основные выводы гайда, выделить ключевые моменты и дать читателю конкретные рекомендации для успешного старта легальной деятельности в сфере такси.",
+            "audiences": "Владельцы автомобилей, ИП и самозанятые, которые прошли через этапы изучения требований и оформления разрешения и хотят убедиться, что ничего не упустили и готовы к запуску бизнеса.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see below)\n\nCONTEXT: Generate h2 итоговый раздел (заключение) для страницы \"Лицензия на пассажирские перевозки такси: как получить в 2025 году\"\n\nGOAL: Сформулировать краткое, но емкое резюме по теме оформления разрешения на перевозки легковым такси, выделить ключевые выводы, дать читателю чувство завершенности и уверенности, а также предложить конкретные следующие шаги для запуска легальной деятельности. Включить структурированную таблицу с основными этапами, чек-лист для самопроверки и финальный мотивирующий абзац.\n\nAUDIENCE: Владельцы авто, ИП, самозанятые | Уровень: начинающий/средний | Pain points: страх ошибок, неуверенность в правильности действий, желание избежать штрафов и запустить бизнес без лишних рисков\n\nKEYWORDS TO INTEGRATE:\n[итоги оформления разрешения, ключевые выводы по лицензированию, следующие шаги для водителей, контроль успешности процесса, советы по дальнейшим действиям, поддержка при запуске такси, резюме гайда по перевозкам]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 200, maxWords: 300 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: # Итоговый раздел (h2), с вложенными p, table, ul, p\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: разделы о поддержке, автоматизации, медицинском и техническом контроле, преимуществах платформы\n- SECONDARY: Apply insights from External KB: структурированные советы по итогам оформления, чек-листы, рекомендации по дальнейшим действиям\n\nQUALITY CRITERIA:\n- Actionable (четкие рекомендации)\n- Specific (конкретные этапы и советы)\n- Data-backed (ссылки на этапы и сервисы из гайда)\n- No fluff (только практическая польза)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Итоговый раздел, который подводит итог гайду, выделяет ключевые действия и мотивирует к запуску легального такси.\n- sourceHint: Синтез внутренних и внешних источников, акцент на собственных сервисах поддержки.\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Включить таблицу с этапами оформления и контрольными точками\n- Добавить чек-лист для самопроверки\n- Финальный абзац с призывом к действию и напоминанием о поддержке\n- План внутренних ссылок: на разделы о документах, автоматизации, медицинском сопровождении\n- Готовность к schema.org/HowTo (если применимо)\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 200,
+              "maxWords": 300,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-5-1",
+                "tag": "p",
+                "keywords": [
+                  "итоги оформления разрешения",
+                  "ключевые выводы по лицензированию"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Получите сжатое резюме и почувствуйте уверенность в своих действиях.",
+                "intent": "Ввести читателя в итоговый раздел, обозначить завершенность процесса и подчеркнуть главные достижения.",
+                "audiences": "Водители и предприниматели, завершившие изучение гайда и желающие убедиться в правильности своих шагов.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see below)\n\nCONTEXT: Generate p (intro/summary) in section \"Итоговый раздел\" of page \"Лицензия на пассажирские перевозки такси: как получить в 2025 году\"\n\nGOAL: Кратко подвести итог всему гайду, выделить главные достижения и создать ощущение завершенности и уверенности у читателя.\n\nAUDIENCE: Водители, ИП, самозанятые | Уровень: начинающий/средний | Pain points: неуверенность, страх ошибок\n\nKEYWORDS TO INTEGRATE:\n[итоги оформления разрешения, ключевые выводы по лицензированию]\n\nWORD COUNT: minWords: 80, maxWords: 150\n\nMARKDOWN/MDX SYNTAX: Обычный абзац (p)\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nsourceHint: Синтез внутренних и внешних источников, акцент на собственных сервисах поддержки.\nevidenceStrength: internal-tested\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Абзац-резюме, подчеркивающий завершенность и пользу гайда\n- Упоминание поддержки и автоматизации как преимуществ\n- Роль: intro/summary"
+              },
+              {
+                "id": "table-5-3",
+                "tag": "table",
+                "keywords": [
+                  "контроль успешности процесса",
+                  "этапы оформления разрешения"
+                ],
+                "taxonomy": "Data-driven",
+                "attention": "Проверьте, что вы не пропустили ни одного важного шага.",
+                "intent": "Дать читателю структурированную таблицу с основными этапами и контрольными точками для самопроверки.",
+                "audiences": "Владельцы авто, ИП, самозанятые, которым важно убедиться в правильности прохождения всех этапов.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see below)\n\nCONTEXT: Generate table (контрольный список этапов) in section \"Итоговый раздел\" of page \"Лицензия на пассажирские перевозки такси: как получить в 2025 году\"\n\nGOAL: Составить таблицу из 3 столбцов и 4-5 строк, где отражены ключевые этапы оформления разрешения, контрольные действия и ожидаемый результат для каждого шага.\n\nAUDIENCE: Водители, ИП, самозанятые | Уровень: начинающий/средний | Pain points: боязнь пропустить важный этап\n\nKEYWORDS TO INTEGRATE:\n[контроль успешности процесса, этапы оформления разрешения]\n\nWORD COUNT: minWords: 80, maxWords: 160\n\nMARKDOWN/MDX SYNTAX: | Этап | Контрольное действие | Ожидаемый результат |\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\ndata source: Internal KB (процесс автоматизации, поддержка), External KB (структура этапов)\nschema readiness: HowTo/Checklist\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- 3 столбца: Этап | Контрольное действие | Ожидаемый результат\n- 4-5 строк (основные этапы)\n- Данные: текст\n- Роль: контрольный чек-лист"
+              },
+              {
+                "id": "ul-5-2",
+                "tag": "ul",
+                "keywords": [
+                  "советы по дальнейшим действиям"
+                ],
+                "taxonomy": "Actionable",
+                "attention": "Воспользуйтесь практическими советами для успешного старта.",
+                "intent": "Предоставить читателю короткий чек-лист из 4-5 практических советов для дальнейших шагов после получения разрешения.",
+                "audiences": "Читатели, которые хотят не только получить разрешение, но и успешно стартовать в такси.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see below)\n\nCONTEXT: Generate ul (чек-лист советов) in section \"Итоговый раздел\" of page \"Лицензия на пассажирские перевозки такси: как получить в 2025 году\"\n\nGOAL: Составить список из 4-5 коротких, практических советов (по 10-15 слов), которые помогут читателю уверенно начать работу после получения разрешения.\n\nAUDIENCE: Водители, ИП, самозанятые | Уровень: начинающий/средний | Pain points: неуверенность в дальнейших шагах\n\nKEYWORDS TO INTEGRATE:\n[советы по дальнейшим действиям]\n\nWORD COUNT: minWords: 50, maxWords: 90\n\nMARKDOWN/MDX SYNTAX: Маркированный список (ul)\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nsourceHint: Внутренний опыт + структурные советы из внешних источников\nevidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- 4-5 пунктов, каждый — отдельный совет\n- Роль: actionable checklist"
+              },
+              {
+                "id": "p-5-3",
+                "tag": "p",
+                "keywords": [
+                  "поддержка при запуске такси",
+                  "резюме гайда по перевозкам"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Получите финальный мотивирующий посыл и напоминание о доступной поддержке.",
+                "intent": "Завершить раздел мотивирующим абзацем, подчеркнуть доступность поддержки и призвать к действию.",
+                "audiences": "Все, кто готов начать легальную деятельность и ищет уверенность в своих силах.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see below)\n\nCONTEXT: Generate p (заключение/призыв к действию) in section \"Итоговый раздел\" of page \"Лицензия на пассажирские перевозки такси: как получить в 2025 году\"\n\nGOAL: Завершить гайд мотивирующим абзацем, напомнить о доступности профессиональной поддержки и призвать к активным действиям.\n\nAUDIENCE: Водители, ИП, самозанятые | Уровень: начинающий/средний | Pain points: желание поддержки, мотивация\n\nKEYWORDS TO INTEGRATE:\n[поддержка при запуске такси, резюме гайда по перевозкам]\n\nWORD COUNT: minWords: 70, maxWords: 130\n\nMARKDOWN/MDX SYNTAX: Обычный абзац (p)\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nsourceHint: Внутренний опыт, акцент на сервисах поддержки\nevidenceStrength: internal-tested\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Мотивирующий финал\n- Призыв к действию и напоминание о поддержке\n- Роль: conclusion/call-to-action"
+              }
+            ]
           }
         ]
       }
@@ -3512,5 +3594,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T12:51:13.906Z";
+export const lastUpdated = "2025-10-22T12:51:37.535Z";
 export const generatedBy = "menu-persist-api";
