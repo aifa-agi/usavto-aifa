@@ -6757,7 +6757,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T13:48:40.293Z",
-        "updatedAt": "2025-10-22T13:58:02.499Z",
+        "updatedAt": "2025-10-22T13:59:54.684Z",
         "order": 5,
         "badgeName": "Блог",
         "description": "Магнитная обклейка машины Яндекс Такси — комплект под ключ: быстрая установка, прочные материалы, соответствие требованиям сервиса. Закажите сейчас!",
@@ -6844,6 +6844,162 @@ export const contentData = {
                 }
               }
             ]
+          },
+          {
+            "id": "h2-2",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "материалы магнитных наклеек",
+              "технология изготовления",
+              "износостойкость",
+              "толщина магнитного винила",
+              "пленка Oracal 641",
+              "долговечность",
+              "варианты комплектации"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, из каких материалов и по каким технологиям изготавливаются магнитные комплекты для Яндекс Такси, чтобы выбрать надежное и долговечное решение.",
+            "intent": "Дать пользователю подробное представление о технических характеристиках, материалах и вариантах комплектации магнитных наклеек для брендирования автомобиля под требования Яндекс Такси.",
+            "audiences": "Профессиональные водители Яндекс.Такси, владельцы автопарков, индивидуальные предприниматели с технической грамотностью, ищущие надежное и соответствующее стандартам решение для временного брендирования.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 section on \"материалы и комплектация магнитных наклеек для Яндекс Такси\" for page \"Магнитная обклейка машины Яндекс Такси — комплект под ключ\"\n\nGOAL: Подробно раскрыть технические аспекты — материалы, толщину, износостойкость, варианты комплектации и их соответствие требованиям Яндекс Такси, чтобы пользователь мог сделать осознанный выбор.\n\nAUDIENCE: Профессиональные водители, владельцы автопарков, ИП | Level: intermediate | Pain points: опасения по поводу долговечности, соответствия стандартам, простоты установки и снятия.\n\nKEYWORDS TO INTEGRATE:\n[материалы магнитных наклеек, технология изготовления, износостойкость, толщина магнитного винила, пленка Oracal 641, долговечность, варианты комплектации]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 250, maxWords: 400 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with nested paragraphs, table, h3, ul\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Internal KB (нет информации — используем внешние данные как external insight)\n- SECONDARY: External KB (описание материалов, состав комплекта, технические параметры)\n\nQUALITY CRITERIA:\n- Actionable (помогает выбрать подходящий комплект)\n- Specific (точные характеристики, варианты)\n- Data-backed (факты из внешнего KB)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальное раскрытие темы материалов, технологии и комплектации магнитных наклеек для Яндекс Такси.\n- sourceHint: External KB (peer-reviewed industry data)\n- evidenceStrength: external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Обеспечить отсутствие дублирования с предыдущим разделом (не повторять преимущества и общие описания)\n- Включить таблицу с характеристиками материалов и вариантов толщины\n- В h3 раскрыть состав комплекта с деталями по каждому элементу\n- В ul перечислить отличия вариантов комплектации\n- В selfPrompt для дочерних элементов указывать роль (intro/body/summary)\n\nINTERLINK PLANNING:\n- Внутренние ссылки: страницы о брендировании такси, аксессуарах для такси, инструкции по установке\n- Внешние ссылки: не использовать (приоритет внутренним материалам)\n- Schema readiness: Guide/HowTo (структурированные данные)\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 250,
+              "maxWords": 400,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-2-1",
+                "tag": "p",
+                "keywords": [
+                  "материалы магнитных наклеек",
+                  "технология изготовления"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Познакомьтесь с основными материалами и технологиями, которые обеспечивают надежность и долговечность магнитных наклеек.",
+                "intent": "Ввести пользователя в тему технических характеристик и объяснить, почему выбор материалов критичен для эксплуатации.",
+                "audiences": "Водители и владельцы такси, интересующиеся качеством и долговечностью брендирования.",
+                "selfPrompt": "CONTEXT: Generate intro paragraph for section \"материалы и комплектация магнитных наклеек для Яндекс Такси\". ROLE: intro. GOAL: Кратко объяснить, почему материалы и технология изготовления важны для надежности и долговечности комплекта. KEYWORDS: материалы магнитных наклеек, технология изготовления. WORD COUNT: minWords: 80, maxWords: 150. semanticFingerprint: Вводный абзац о значимости выбора материалов и технологий для магнитных наклеек. sourceHint: External KB (описание материалов). evidenceStrength: external-peer-reviewed.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-2-2-3",
+                "tag": "p",
+                "keywords": [
+                  "толщина магнитного винила"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, как толщина магнитного винила влияет на эксплуатационные свойства наклеек.",
+                "intent": "Кратко выделить значение толщины магнитного слоя для прочности и удобства использования.",
+                "audiences": "Пользователи, сравнивающие варианты комплектации по техническим параметрам.",
+                "selfPrompt": "CONTEXT: Generate short transition paragraph about \"толщина магнитного винила\" in section \"материалы и комплектация магнитных наклеек для Яндекс Такси\". ROLE: transition. GOAL: Подчеркнуть важность толщины магнитного винила для надежности крепления. KEYWORDS: толщина магнитного винила. WORD COUNT: minWords: 5, maxWords: 15. semanticFingerprint: Краткая связка о влиянии толщины на эксплуатацию. sourceHint: External KB (технические параметры). evidenceStrength: external-peer-reviewed.",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-2-2-4",
+                "tag": "table",
+                "keywords": [
+                  "пленка Oracal 641",
+                  "износостойкость"
+                ],
+                "taxonomy": "Data-driven",
+                "attention": "Сравните характеристики материалов и толщины для осознанного выбора комплекта.",
+                "intent": "Предоставить структурированное сравнение материалов, толщины и износостойкости магнитных наклеек.",
+                "audiences": "Владельцы автопарков и водители, выбирающие комплект по техническим характеристикам.",
+                "selfPrompt": "CONTEXT: Generate comparison table for \"материалы и варианты толщины магнитных наклеек\" in section \"материалы и комплектация магнитных наклеек для Яндекс Такси\". ROLE: data-driven. GOAL: Сравнить пленку Oracal 641, толщину магнитного винила (0.4 мм, 0.5 мм, 0.7 мм), износостойкость и срок службы. SCHEMA: 4 columns × 3 rows. HEADERS: Материал | Толщина | Износостойкость | Срок службы. DATA TYPES: text/number/text/text. DATA SOURCE: External KB (описание комплекта). semanticFingerprint: Таблица для сравнения технических характеристик материалов и вариантов толщины. sourceHint: External KB (peer-reviewed). evidenceStrength: external-peer-reviewed.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-2-2",
+                "tag": "h3",
+                "keywords": [
+                  "варианты комплектации",
+                  "состав комплекта",
+                  "долговечность"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Разберитесь, что входит в комплект магнитных наклеек и как выбрать оптимальный вариант для вашего автомобиля.",
+                "intent": "Детально раскрыть состав комплекта, особенности каждого элемента и их назначение для брендирования Яндекс Такси.",
+                "audiences": "Водители и владельцы такси, желающие узнать, что именно входит в комплект и как это влияет на долговечность и удобство.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection \"состав комплекта и варианты исполнения\" under h2 \"материалы и комплектация магнитных наклеек для Яндекс Такси\". GOAL: Подробно описать состав комплекта (логотипы, номера, шашки, ливреи, инструкция и др.), выделить отличия вариантов исполнения и их влияние на долговечность. KEYWORDS: варианты комплектации, состав комплекта, долговечность. WORD COUNT: minWords: 150, maxWords: 250. semanticFingerprint: Уникальное раскрытие состава комплекта и вариантов исполнения магнитных наклеек для Яндекс Такси. sourceHint: External KB (описание комплекта). evidenceStrength: external-peer-reviewed. INTERLINK: Внутренняя ссылка на страницу с инструкцией по установке.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 250,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "состав комплекта"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Узнайте, какие элементы входят в стандартный комплект магнитных наклеек.",
+                    "intent": "Ввести пользователя в структуру комплекта, обозначить ключевые элементы и их назначение.",
+                    "audiences": "Пользователи, желающие понять, что получают при покупке комплекта.",
+                    "selfPrompt": "CONTEXT: Generate body paragraph for h3 \"состав комплекта и варианты исполнения\". ROLE: body. GOAL: Кратко описать, какие элементы входят в комплект (логотипы, номера, шашки, ливреи, инструкция и др.). KEYWORDS: состав комплекта. WORD COUNT: minWords: 70, maxWords: 130. semanticFingerprint: Описание структуры комплекта магнитных наклеек. sourceHint: External KB (описание комплекта). evidenceStrength: external-peer-reviewed.",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 130,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-2-2-2",
+                    "tag": "ul",
+                    "keywords": [
+                      "варианты комплектации"
+                    ],
+                    "taxonomy": "List",
+                    "attention": "Сравните отличия между вариантами комплектации для разных моделей авто.",
+                    "intent": "Перечислить ключевые отличия вариантов комплектации (по количеству элементов, размерам, наличию дополнительных стикеров и т.д.).",
+                    "audiences": "Владельцы разных моделей авто, выбирающие подходящий комплект.",
+                    "selfPrompt": "CONTEXT: Generate unordered list (5 items) for h3 \"состав комплекта и варианты исполнения\". ROLE: features. GOAL: Перечислить отличия вариантов комплектации (размеры, количество элементов, дополнительные стикеры, индивидуальные шаблоны, инструкция). KEYWORDS: варианты комплектации. WORD COUNT: minWords: 40, maxWords: 80. semanticFingerprint: Список отличий вариантов комплектации магнитных наклеек. sourceHint: External KB (описание комплекта). evidenceStrength: external-peer-reviewed.",
+                    "additionalData": {
+                      "minWords": 40,
+                      "maxWords": 80,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-2-3",
+                    "tag": "p",
+                    "keywords": [
+                      "долговечность"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Поймите, как материалы и комплектация влияют на срок службы комплекта.",
+                    "intent": "Сделать вывод о долговечности комплекта в зависимости от выбранных материалов и вариантов исполнения.",
+                    "audiences": "Пользователи, ориентированные на длительное использование комплекта.",
+                    "selfPrompt": "CONTEXT: Generate summary paragraph for h3 \"состав комплекта и варианты исполнения\". ROLE: summary. GOAL: Подчеркнуть, как материалы и комплектация обеспечивают долговечность и соответствие требованиям Яндекс Такси. KEYWORDS: долговечность. WORD COUNT: minWords: 60, maxWords: 100. semanticFingerprint: Вывод о влиянии материалов и комплектации на долговечность. sourceHint: External KB (описание комплекта). evidenceStrength: external-peer-reviewed.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 100,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -6876,5 +7032,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T13:59:55.985Z";
+export const lastUpdated = "2025-10-22T14:01:06.337Z";
 export const generatedBy = "menu-persist-api";
