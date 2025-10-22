@@ -4179,7 +4179,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T12:59:57.568Z",
-        "updatedAt": "2025-10-22T13:15:48.123Z",
+        "updatedAt": "2025-10-22T13:15:55.181Z",
         "order": 3,
         "badgeName": "Блог",
         "description": "Узнайте, как аннулировать лицензию на такси в Москве самостоятельно: пошаговая инструкция, список документов, советы и нюансы. Быстро и без посредников!",
@@ -4610,7 +4610,8 @@ export const contentData = {
                   "minWords": 70,
                   "maxWords": 130,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-FAQ-1",
@@ -4646,9 +4647,11 @@ export const contentData = {
                       "minWords": 60,
                       "maxWords": 120,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "FAQ-2",
@@ -4684,9 +4687,11 @@ export const contentData = {
                       "minWords": 60,
                       "maxWords": 120,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "FAQ-3",
@@ -4722,9 +4727,11 @@ export const contentData = {
                       "minWords": 60,
                       "maxWords": 120,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "FAQ-4",
@@ -4760,11 +4767,14 @@ export const contentData = {
                       "minWords": 60,
                       "maxWords": 120,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-5",
@@ -4900,5 +4910,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T13:15:55.697Z";
+export const lastUpdated = "2025-10-22T13:16:02.504Z";
 export const generatedBy = "menu-persist-api";
