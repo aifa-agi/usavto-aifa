@@ -1,5 +1,5 @@
 // Auto-generated SEO-optimized static page - do not edit manually
-// Generated on: 2025-10-22T13:45:23.880Z
+// Generated on: 2025-10-22T13:46:05.351Z
 // Source href: /blog/kak-sdelat-voditelskuyu-kartu-dlya-tahografa
 // Page metadata: Как сделать водительскую карту для тахографа: пошаговая инструкция | 5 sections
 // FAQ sections detected: 4
@@ -44,7 +44,7 @@ const sections = [
           "content": [
             {
               "type": "text",
-              "text": "Что такое водительская карта для тахографа и зачем она нужна"
+              "text": "Что такое водительская карта для тахографа и зачем она нужна?"
             }
           ]
         },
@@ -1402,8 +1402,8 @@ export default function Page() {
               "url": "/app-images/wc9wtahdpoyemfblyq8etvw6.jpg",
               "alt": "как сделать водительскую карту для тахографа"
             },
-            "datePublished": "2025-10-22T13:45:23.880Z",
-            "dateModified": "2025-10-22T13:45:23.880Z",
+            "datePublished": "2025-10-22T13:46:05.351Z",
+            "dateModified": "2025-10-22T13:46:05.351Z",
             "articleSection": "blog",
             "keywords": ["как сделать водительскую карту для тахографа"],
             "mainEntityOfPage": {
