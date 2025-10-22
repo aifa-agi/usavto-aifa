@@ -6757,7 +6757,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T13:48:40.293Z",
-        "updatedAt": "2025-10-22T14:05:32.542Z",
+        "updatedAt": "2025-10-22T14:05:39.639Z",
         "order": 5,
         "badgeName": "Блог",
         "description": "Магнитная обклейка машины Яндекс Такси — комплект под ключ: быстрая установка, прочные материалы, соответствие требованиям сервиса. Закажите сейчас!",
@@ -7187,7 +7187,8 @@ export const contentData = {
                   "minWords": 70,
                   "maxWords": 130,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-FAQ-1",
@@ -7226,9 +7227,11 @@ export const contentData = {
                       "minWords": 60,
                       "maxWords": 120,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "FAQ-2",
@@ -7267,9 +7270,11 @@ export const contentData = {
                       "minWords": 60,
                       "maxWords": 120,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "FAQ-3",
@@ -7308,9 +7313,11 @@ export const contentData = {
                       "minWords": 60,
                       "maxWords": 120,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "FAQ-4",
@@ -7349,11 +7356,14 @@ export const contentData = {
                       "minWords": 60,
                       "maxWords": 120,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-5",
@@ -7493,5 +7503,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T14:05:40.634Z";
+export const lastUpdated = "2025-10-22T14:05:46.267Z";
 export const generatedBy = "menu-persist-api";
