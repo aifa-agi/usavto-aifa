@@ -2883,6 +2883,9 @@ export const contentData = {
             "alt": "лицензия на пассажирские перевозки такси",
             "href": "/app-images/aiydjkno50w66hbb4if16jzw.jpg"
           }
+        ],
+        "keywords": [
+          "лицензия на пассажирские перевозки такси"
         ]
       }
     ],
@@ -2914,5 +2917,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T12:39:33.149Z";
+export const lastUpdated = "2025-10-22T12:39:48.147Z";
 export const generatedBy = "menu-persist-api";
