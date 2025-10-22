@@ -4154,6 +4154,9 @@ export const contentData = {
             "alt": "как аннулировать лицензию на такси в москве самостоятельно",
             "href": "/app-images/i3ouuvfn4s1908uq3z75bmqj.jpg"
           }
+        ],
+        "keywords": [
+          "как аннулировать лицензию на такси в москве самостоятельно"
         ]
       }
     ],
@@ -4185,5 +4188,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T13:01:28.455Z";
+export const lastUpdated = "2025-10-22T13:01:44.851Z";
 export const generatedBy = "menu-persist-api";
