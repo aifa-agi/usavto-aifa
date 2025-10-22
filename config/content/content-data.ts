@@ -6757,7 +6757,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T13:48:40.293Z",
-        "updatedAt": "2025-10-22T14:05:39.639Z",
+        "updatedAt": "2025-10-22T22:48:41.826Z",
         "order": 5,
         "badgeName": "Блог",
         "description": "Магнитная обклейка машины Яндекс Такси — комплект под ключ: быстрая установка, прочные материалы, соответствие требованиям сервиса. Закажите сейчас!",
@@ -7411,7 +7411,8 @@ export const contentData = {
                   "minWords": 80,
                   "maxWords": 150,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "table-5-3",
@@ -7430,7 +7431,8 @@ export const contentData = {
                   "minWords": 80,
                   "maxWords": 160,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "ul-5-2",
@@ -7449,7 +7451,8 @@ export const contentData = {
                   "minWords": 50,
                   "maxWords": 90,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-5-3",
@@ -7467,12 +7470,14 @@ export const contentData = {
                   "minWords": 70,
                   "maxWords": 130,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           }
         ],
-        "isReadyDraftForPerplexity": false
+        "isReadyDraftForPerplexity": true
       }
     ],
     "order": 16
@@ -7503,5 +7508,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T22:48:43.161Z";
+export const lastUpdated = "2025-10-22T22:49:10.545Z";
 export const generatedBy = "menu-persist-api";
