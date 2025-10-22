@@ -1657,7 +1657,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T11:58:21.124Z",
-        "updatedAt": "2025-10-22T12:13:57.946Z",
+        "updatedAt": "2025-10-22T12:15:18.686Z",
         "order": 1,
         "description": "Узнайте, где и как быстро получить карту тахографа СКЗИ для водителя: актуальные требования, список документов, сроки и стоимость оформления.",
         "images": [
@@ -1743,6 +1743,127 @@ export const contentData = {
                 }
               }
             ]
+          },
+          {
+            "id": "h2-2",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "оформление карты водителя скзи",
+              "сертифицированные мастерские",
+              "аккредитованные центры",
+              "процедура получения карты",
+              "оригиналы документов",
+              "регистрация водителя",
+              "сроки оформления"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, где реально можно оформить карту тахографа СКЗИ и как выбрать подходящий центр для ускорения процесса.",
+            "intent": "Дать водителю и транспортной компании полную картину о местах и способах получения карты тахографа СКЗИ, выделить официальные и быстрые варианты оформления.",
+            "audiences": "Профессиональные водители, индивидуальные предприниматели, представители автотранспортных компаний; уровень: базовый/средний; решает проблему поиска надежного и быстрого способа оформления карты.",
+            "selfPrompt": "CONTEXT: Generate h2 section describing 'Где и как получить карту тахографа СКЗИ для водителя' for page 'Карта тахографа СКЗИ для водителя — где и как получить быстро'.\n\nGOAL: Объяснить, где именно можно получить карту тахографа СКЗИ, какие организации имеют право на оформление, как выбрать подходящий центр, и какие шаги ускоряют процесс. Дать читателю четкое понимание различий между сертифицированными мастерскими, аккредитованными центрами и компаниями-посредниками. Включить информацию о необходимости личного присутствия, особенностях подачи документов и возможностях отслеживания статуса заявки.\n\nAUDIENCE: Водители и представители транспортных компаний, которые хотят быстро и без ошибок оформить карту, минимизировать риски и избежать задержек.\n\nKEYWORDS TO INTEGRATE:\nоформление карты водителя скзи, сертифицированные мастерские, аккредитованные центры, процедура получения карты, оригиналы документов, регистрация водителя, сроки оформления\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 250, maxWords: 400 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with nested paragraphs, table, and h3 block.\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: рекомендации по обращению в специализированные организации, аккредитованные центры, особенности взаимодействия с сервисами\n- SECONDARY: Apply insights from External KB: требования к мастерским, список необходимых документов, детали процедуры оформления\n\nQUALITY CRITERIA:\n- Actionable (конкретные шаги и рекомендации)\n- Specific (точные названия типов организаций, особенности процедуры)\n- Data-backed (ссылки на нормативы, подтвержденные факты)\n- No fluff (никакой воды)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальное описание точек получения карты тахографа СКЗИ и процесса выбора подходящего центра.\n- sourceHint: Internal KB (рекомендации по выбору центра), External KB (детали процедуры оформления)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nINTERLINK PLANNING:\n- Внутренние ссылки: страницы о документах для карты, о штрафах за отсутствие карты, о сервисах автоматизации документооборота.\n- Внешние ссылки: только на официальные государственные ресурсы (если разрешено).\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 250,
+              "maxWords": 400,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-2-1",
+                "tag": "p",
+                "keywords": [
+                  "оформление карты водителя скзи",
+                  "сертифицированные мастерские"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Поймите, почему важно выбирать только официальные и аккредитованные центры для оформления карты.",
+                "intent": "Ввести пользователя в тему выбора места оформления карты, объяснить риски обращения в неофициальные организации.",
+                "audiences": "Водители и ИП, которые впервые сталкиваются с процедурой оформления карты; уровень: базовый.",
+                "selfPrompt": "CONTEXT: Generate intro paragraph for h2 'Где и как получить карту тахографа СКЗИ для водителя' on page 'Карта тахографа СКЗИ для водителя — где и как получить быстро'.\nGOAL: Кратко объяснить, почему важно выбирать только сертифицированные мастерские и аккредитованные центры для оформления карты, и какие риски связаны с обращением в неофициальные организации.\nKEYWORDS TO INTEGRATE: оформление карты водителя скзи, сертифицированные мастерские\nWORD COUNT: minWords: 80, maxWords: 150\nPARAGRAPH ROLE: intro\nsourceHint: Internal KB (рекомендации по выбору центра)\nevidenceStrength: internal-tested"
+              },
+              {
+                "id": "p-2-2-3",
+                "tag": "p",
+                "keywords": [
+                  "аккредитованные центры"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, где найти список аккредитованных центров.",
+                "intent": "Дать ссылку или подсказку, где искать актуальный перечень аккредитованных центров.",
+                "audiences": "Водители, ищущие официальный источник информации; уровень: любой.",
+                "selfPrompt": "CONTEXT: Generate short transition paragraph for h2 'Где и как получить карту тахографа СКЗИ для водителя'.\nGOAL: Указать, где можно найти актуальный список аккредитованных центров для оформления карты.\nKEYWORDS TO INTEGRATE: аккредитованные центры\nWORD COUNT: minWords: 5, maxWords: 15\nPARAGRAPH ROLE: transition\nsourceHint: Internal KB (рекомендации по поиску официальных центров)\nevidenceStrength: internal-tested"
+              },
+              {
+                "id": "table-2-2-4",
+                "tag": "table",
+                "keywords": [
+                  "процедура получения карты",
+                  "оригиналы документов"
+                ],
+                "taxonomy": "Data-driven",
+                "attention": "Сравните основные типы организаций и их особенности для выбора оптимального способа оформления.",
+                "intent": "Дать пользователю структурированное сравнение типов организаций, где можно оформить карту, с указанием особенностей процедуры и требований.",
+                "audiences": "Водители и представители компаний, выбирающие способ оформления; уровень: средний.",
+                "selfPrompt": "CONTEXT: Generate comparison table for h2 'Где и как получить карту тахографа СКЗИ для водителя'.\nGOAL: Сравнить основные типы организаций (сертифицированные мастерские, аккредитованные центры, компании-посредники) по критериям: требования к документам, сроки, стоимость, необходимость личного присутствия, возможность онлайн-заявки.\nKEYWORDS TO INTEGRATE: процедура получения карты, оригиналы документов\nTABLE SCHEMA: 5 columns × 3 rows\nColumn headers: Тип организации | Требуемые документы | Сроки оформления | Стоимость | Особенности\nData types: text/text/text/number/text\nData source: Internal KB (рекомендации), External KB (детали процедуры)\nWORD COUNT: minWords: 80, maxWords: 160\nschema readiness: Comparison"
+              },
+              {
+                "id": "h3-2-2",
+                "tag": "h3",
+                "keywords": [
+                  "регистрация водителя",
+                  "сроки оформления",
+                  "личное присутствие"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Пошагово разберитесь, как проходит процедура оформления карты в выбранном центре.",
+                "intent": "Дать подробную инструкцию по процессу оформления карты тахографа СКЗИ в выбранной организации, включая регистрацию, подачу документов и получение результата.",
+                "audiences": "Водители и ИП, которым важно быстро и без ошибок пройти процедуру; уровень: базовый/средний.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection 'Пошаговая процедура оформления карты тахографа СКЗИ' for h2 'Где и как получить карту тахографа СКЗИ для водителя'.\nGOAL: Подробно описать этапы оформления карты: регистрация, подача документов, ожидание, получение готовой карты. Указать, где требуется личное присутствие, какие документы нужны на каждом этапе, и как можно ускорить процесс.\nKEYWORDS TO INTEGRATE: регистрация водителя, сроки оформления, личное присутствие\nsemanticFingerprint: Пошаговая инструкция по оформлению карты в аккредитованном центре с акцентом на ускорение процесса.\nsourceHint: Internal KB (общие рекомендации), External KB (детали процедуры)\nevidenceStrength: internal-tested | external-peer-reviewed\ninterlink planning: ссылка на раздел о документах для карты, на страницу о штрафах за отсутствие карты\nWORD COUNT: minWords: 150, maxWords: 250\nschema readiness: HowTo",
+                "realContentStructure": [
+                  {
+                    "id": "p-2-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "регистрация водителя"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Поймите, почему регистрация — первый и обязательный шаг.",
+                    "intent": "Объяснить, зачем нужна регистрация водителя в системе центра и как она влияет на дальнейшие этапы.",
+                    "audiences": "Водители, впервые оформляющие карту; уровень: базовый.",
+                    "selfPrompt": "CONTEXT: Generate intro paragraph for h3 'Пошаговая процедура оформления карты тахографа СКЗИ'.\nGOAL: Кратко объяснить, почему регистрация водителя — обязательный этап, и как она проходит.\nKEYWORDS TO INTEGRATE: регистрация водителя\nWORD COUNT: minWords: 70, maxWords: 130\nPARAGRAPH ROLE: intro\nsourceHint: Internal KB (процедура регистрации)\nevidenceStrength: internal-tested"
+                  },
+                  {
+                    "id": "ul-2-2-2",
+                    "tag": "ul",
+                    "keywords": [
+                      "сроки оформления"
+                    ],
+                    "taxonomy": "Actionable",
+                    "attention": "Следуйте этим шагам, чтобы ускорить оформление карты.",
+                    "intent": "Дать пошаговый чек-лист действий для быстрого и правильного оформления карты.",
+                    "audiences": "Водители, которым важно не ошибиться и получить карту в кратчайшие сроки; уровень: любой.",
+                    "selfPrompt": "CONTEXT: Generate actionable checklist (ul) for h3 'Пошаговая процедура оформления карты тахографа СКЗИ'.\nGOAL: Сформулировать 5-7 коротких пунктов с конкретными действиями для ускорения оформления карты (подготовка документов, запись на прием, проверка статуса и т.д.).\nKEYWORDS TO INTEGRATE: сроки оформления\nLIST STRUCTURE: 6 items, короткие буллеты (5-10 слов)\nWORD COUNT: minWords: 40, maxWords: 80\nsourceHint: Internal KB (рекомендации по ускорению процесса)\nevidenceStrength: internal-tested"
+                  },
+                  {
+                    "id": "p-2-2-3",
+                    "tag": "p",
+                    "keywords": [
+                      "личное присутствие"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Узнайте, когда требуется личное присутствие и как это влияет на сроки.",
+                    "intent": "Пояснить, в каких случаях необходимо личное присутствие водителя и как это влияет на скорость оформления.",
+                    "audiences": "Водители, планирующие оформление карты впервые; уровень: любой.",
+                    "selfPrompt": "CONTEXT: Generate concluding paragraph for h3 'Пошаговая процедура оформления карты тахографа СКЗИ'.\nGOAL: Объяснить, почему и когда требуется личное присутствие, и как это влияет на сроки получения карты.\nKEYWORDS TO INTEGRATE: личное присутствие\nWORD COUNT: minWords: 60, maxWords: 100\nPARAGRAPH ROLE: conclusion\nsourceHint: External KB (детали процедуры оформления)\nevidenceStrength: external-peer-reviewed"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1775,5 +1896,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T12:15:19.105Z";
+export const lastUpdated = "2025-10-22T12:16:18.516Z";
 export const generatedBy = "menu-persist-api";
