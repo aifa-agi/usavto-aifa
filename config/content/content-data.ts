@@ -1101,7 +1101,7 @@ export const contentData = {
       },
       {
         "id": "dxt5sprnd3ufect5vq6egfo0",
-        "title": "карта тахографа скзи для водителя где получить",
+        "title": "Карта тахографа СКЗИ для водителя — где и как получить быстро",
         "href": "/blog/karta-tahografa-skzi-dlya-voditelya-gde-poluchit",
         "roles": [
           "guest"
@@ -1703,5 +1703,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T12:10:07.045Z";
+export const lastUpdated = "2025-10-22T12:10:19.269Z";
 export const generatedBy = "menu-persist-api";
