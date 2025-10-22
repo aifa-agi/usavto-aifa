@@ -1657,7 +1657,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T11:58:21.124Z",
-        "updatedAt": "2025-10-22T12:19:02.820Z",
+        "updatedAt": "2025-10-22T12:19:11.990Z",
         "order": 1,
         "description": "Узнайте, где и как быстро получить карту тахографа СКЗИ для водителя: актуальные требования, список документов, сроки и стоимость оформления.",
         "images": [
@@ -1722,7 +1722,8 @@ export const contentData = {
                   "minWords": 100,
                   "maxWords": 180,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-1-2",
@@ -1740,9 +1741,11 @@ export const contentData = {
                   "minWords": 60,
                   "maxWords": 120,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-2",
@@ -2293,7 +2296,7 @@ export const contentData = {
             ]
           }
         ],
-        "isReadyDraftForPerplexity": true
+        "isReadyDraftForPerplexity": false
       }
     ],
     "order": 16
@@ -2324,5 +2327,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T12:19:12.179Z";
+export const lastUpdated = "2025-10-22T12:19:17.248Z";
 export const generatedBy = "menu-persist-api";
