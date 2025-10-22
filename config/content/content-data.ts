@@ -4147,7 +4147,7 @@ export const contentData = {
         "updatedAt": "2025-10-22T12:59:57.568Z",
         "order": 3,
         "badgeName": "Блог",
-        "description": "как аннулировать лицензию на такси в москве самостоятельно",
+        "description": "Узнайте, как аннулировать лицензию на такси в Москве самостоятельно: пошаговая инструкция, список документов, советы и нюансы. Быстро и без посредников!",
         "images": [
           {
             "id": "fe7gvvjt6qxav02btsxvfd8y",
@@ -4190,5 +4190,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T13:05:37.407Z";
+export const lastUpdated = "2025-10-22T13:05:43.803Z";
 export const generatedBy = "menu-persist-api";
