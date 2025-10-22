@@ -6757,7 +6757,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T13:48:40.293Z",
-        "updatedAt": "2025-10-22T14:04:05.195Z",
+        "updatedAt": "2025-10-22T14:05:19.953Z",
         "order": 5,
         "badgeName": "Блог",
         "description": "Магнитная обклейка машины Яндекс Такси — комплект под ключ: быстрая установка, прочные материалы, соответствие требованиям сервиса. Закажите сейчас!",
@@ -6823,7 +6823,8 @@ export const contentData = {
                   "minWords": 100,
                   "maxWords": 180,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-1-2",
@@ -6841,9 +6842,11 @@ export const contentData = {
                   "minWords": 60,
                   "maxWords": 120,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-2",
@@ -7444,7 +7447,8 @@ export const contentData = {
               }
             ]
           }
-        ]
+        ],
+        "isReadyDraftForPerplexity": false
       }
     ],
     "order": 16
@@ -7475,5 +7479,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T14:05:20.991Z";
+export const lastUpdated = "2025-10-22T14:05:27.269Z";
 export const generatedBy = "menu-persist-api";
