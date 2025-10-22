@@ -2911,7 +2911,7 @@ export const contentData = {
         "createdAt": "2025-10-22T12:37:46.530Z",
         "updatedAt": "2025-10-22T12:37:46.530Z",
         "order": 2,
-        "description": "лицензия на пассажирские перевозки такси",
+        "description": "Узнайте, как получить лицензию на пассажирские перевозки такси в 2025 году: пошаговая инструкция, требования, документы и важные изменения.",
         "images": [
           {
             "id": "jx94s0rocklggh35z7phr6ud",
@@ -2955,5 +2955,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T12:44:02.341Z";
+export const lastUpdated = "2025-10-22T12:44:15.238Z";
 export const generatedBy = "menu-persist-api";
