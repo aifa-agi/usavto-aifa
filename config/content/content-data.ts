@@ -6757,7 +6757,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T13:48:40.293Z",
-        "updatedAt": "2025-10-22T13:48:40.293Z",
+        "updatedAt": "2025-10-22T13:58:02.499Z",
         "order": 5,
         "badgeName": "Блог",
         "description": "Магнитная обклейка машины Яндекс Такси — комплект под ключ: быстрая установка, прочные материалы, соответствие требованиям сервиса. Закажите сейчас!",
@@ -6776,7 +6776,76 @@ export const contentData = {
         "intent": "Пользователь заходит на страницу, чтобы быстро и удобно приобрести комплект магнитной обклейки для брендирования автомобиля под требования Яндекс Такси, без необходимости постоянной оклейки и с возможностью самостоятельной установки. Ожидаемое действие — выбрать подходящий комплект и оформить заказ онлайн или через контактную форму для быстрой доставки и получения инструкции по установке. Эта страница полностью удовлетворяет коммерческий запрос, предлагая готовые комплекты под ключ, подробное описание, преимущества, варианты для разных моделей авто и легкий способ оформления заказа.",
         "taxonomy": "Данная страница классифицируется как коммерческий продуктовый лендинг, предлагающий комплект магнитной обклейки для автомобилей Яндекс Такси «под ключ». В рамках иерархии контента она относится к категории «Товары» → «Автомобильные аксессуары» → «Брендирование такси» → «Магнитные наклейки» и выполняет роль кластерного контента, поддерживающего тематический кластер по брендированию такси и обеспечивающего транзакционный путь для целевой аудитории профессиональных водителей и владельцев автопарков. Семантически страница укрепляет авторитет по теме брендирования такси и отвечает коммерческому интенту, предоставляя готовое решение с возможностью заказа.",
         "attention": "Мгновенно захватите внимание водителя или владельца такси ярким визуальным баннером: «Комплект магнитной обклейки Яндекс Такси — готово за 20 минут, без следов и штрафов!». Для удержания интереса используйте четкую структуру с иконками, пошаговыми фото-инструкциями и онлайн-калькулятором комплекта, а для вовлечения добавьте быстрый заказ через мессенджеры и блок «Ваш автомобиль — наш шаблон за 1 день», выделяя простоту, скорость и гибкость под любую модель.",
-        "audiences": "Эта страница предназначена для профессиональных водителей Яндекс.Такси, владельцев таксопарков и индивидуальных предпринимателей в сфере пассажирских перевозок, которым требуется быстрое, соответствующее требованиям сервиса и легко устанавливаемое/снимаемое брендирование автомобиля. Аудитория испытывает потребность в легальном оформлении машины для работы в Яндекс.Такси без повреждения кузова, при этом ценит простоту монтажа, возможность многократного использования комплекта и соответствие брендбуку. Пользователи находятся на этапе осознанного выбора решения (consideration/decision), обладают базовой технической грамотностью и минимальным опытом работы с автотоварами."
+        "audiences": "Эта страница предназначена для профессиональных водителей Яндекс.Такси, владельцев таксопарков и индивидуальных предпринимателей в сфере пассажирских перевозок, которым требуется быстрое, соответствующее требованиям сервиса и легко устанавливаемое/снимаемое брендирование автомобиля. Аудитория испытывает потребность в легальном оформлении машины для работы в Яндекс.Такси без повреждения кузова, при этом ценит простоту монтажа, возможность многократного использования комплекта и соответствие брендбуку. Пользователи находятся на этапе осознанного выбора решения (consideration/decision), обладают базовой технической грамотностью и минимальным опытом работы с автотоварами.",
+        "draftContentStructure": [
+          {
+            "id": "h2-1",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "магнитная обклейка машины яндекс такси",
+              "брендирование такси",
+              "комплект под ключ",
+              "съемные магнитные наклейки",
+              "быстрая установка",
+              "соответствие требованиям сервиса",
+              "автомобильные аксессуары"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, как быстро и без лишних хлопот подготовить свой автомобиль к работе в Яндекс Такси с помощью магнитной обклейки — решение, которое экономит время и сохраняет кузов в идеальном состоянии.",
+            "intent": "Ввести пользователя в тему магнитной обклейки для Яндекс Такси, обозначить ключевые преимущества комплекта под ключ и объяснить, почему это оптимальный выбор для профессиональных водителей и владельцев автопарков.",
+            "audiences": "Профессиональные водители Яндекс.Такси, владельцы таксопарков, индивидуальные предприниматели в сфере пассажирских перевозок; уровень — базовая техническая грамотность; ищут быстрое, легальное и удобное решение для брендирования авто без повреждения кузова.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 introduction section for page \"Магнитная обклейка машины Яндекс Такси — комплект под ключ\"\n\nGOAL: Представить основную тему страницы, раскрыть ценность магнитной обклейки для Яндекс Такси, обозначить преимущества комплекта под ключ и заинтересовать целевую аудиторию продолжить чтение.\n\nAUDIENCE: Профессиональные водители Яндекс.Такси, владельцы таксопарков, ИП | Уровень: базовая техническая грамотность | Pain points: необходимость легального брендирования, простота установки, сохранность кузова, соответствие требованиям сервиса.\n\nKEYWORDS TO INTEGRATE:\n[магнитная обклейка машины яндекс такси, брендирование такси, комплект под ключ, съемные магнитные наклейки, быстрая установка, соответствие требованиям сервиса, автомобильные аксессуары]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 150, maxWords: 250 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: # [Section Title] + paragraphs\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Internal KB (нет информации — используем внешние данные как основу)\n- SECONDARY: External KB: описание продукта, преимущества, целевая аудитория, материалы, сценарии использования\n\nQUALITY CRITERIA:\n- Actionable (четко обозначить, что пользователь узнает и получит)\n- Specific (указать, что комплект под ключ — быстро, удобно, без следов)\n- Data-backed (использовать факты из внешнего KB: материалы, преимущества)\n- No fluff (только релевантная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Вводная секция, раскрывающая суть и преимущества магнитной обклейки Яндекс Такси, уникальность комплекта под ключ, без пересечений с последующими деталями.\n- sourceHint: External KB (industry standard, адаптировано под нейтральный стиль)\n- evidenceStrength: external-peer-reviewed\n\nINTERLINK PLANNING:\n- Внутренние ссылки: страницы о брендировании такси, аксессуарах для такси, инструкции по установке\n- Внешние ссылки: не использовать (приоритет внутренним материалам)\n\nSCHEMA READINESS:\n- Подходит для FAQPage/HowTo (если будут добавлены соответствующие секции)\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 150,
+              "maxWords": 250,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-1-1",
+                "tag": "p",
+                "keywords": [
+                  "магнитная обклейка машины яндекс такси",
+                  "брендирование такси"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Познакомьтесь с современным способом брендирования такси — быстро, удобно и без риска для кузова.",
+                "intent": "Вступительный абзац, который объясняет, что такое магнитная обклейка, и почему она актуальна для водителей Яндекс Такси.",
+                "audiences": "Водители и владельцы такси, ищущие легальное и простое решение для брендирования.",
+                "selfPrompt": "CONTEXT: Generate intro paragraph for h2 'Магнитная обклейка машины Яндекс Такси — комплект под ключ'.\nROLE: intro\nGOAL: Кратко рассказать, что такое магнитная обклейка для Яндекс Такси, почему она востребована, и обозначить основные выгоды для целевой аудитории.\nKEYWORDS: [магнитная обклейка машины яндекс такси, брендирование такси]\nWORD COUNT: minWords: 100, maxWords: 180\nE-E-A-T: semanticFingerprint — Вводное объяснение сути продукта и его актуальности; sourceHint — External KB, адаптация под нейтральный стиль; evidenceStrength — external-peer-reviewed.",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 180,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-2",
+                "tag": "p",
+                "keywords": [
+                  "комплект под ключ",
+                  "быстрая установка"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, как комплект под ключ экономит ваше время и силы, позволяя быстро приступить к работе.",
+                "intent": "Пояснить, что входит в комплект под ключ и как это облегчает процесс брендирования для пользователя.",
+                "audiences": "Водители и предприниматели, заинтересованные в быстром запуске работы в Яндекс Такси.",
+                "selfPrompt": "CONTEXT: Generate supporting paragraph for h2 'Магнитная обклейка машины Яндекс Такси — комплект под ключ'.\nROLE: body\nGOAL: Кратко описать преимущества комплекта под ключ: простота, скорость, самостоятельная установка, соответствие требованиям сервиса.\nKEYWORDS: [комплект под ключ, быстрая установка]\nWORD COUNT: minWords: 60, maxWords: 120\nE-E-A-T: semanticFingerprint — Описание преимуществ комплекта под ключ; sourceHint — External KB, адаптация под нейтральный стиль; evidenceStrength — external-peer-reviewed.",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 120,
+                  "actualContent": ""
+                }
+              }
+            ]
+          }
+        ]
       }
     ],
     "order": 16
@@ -6807,5 +6876,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T13:58:03.217Z";
+export const lastUpdated = "2025-10-22T13:59:55.985Z";
 export const generatedBy = "menu-persist-api";
