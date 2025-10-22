@@ -5467,7 +5467,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T13:22:57.559Z",
-        "updatedAt": "2025-10-22T13:38:05.181Z",
+        "updatedAt": "2025-10-22T13:39:26.454Z",
         "order": 4,
         "badgeName": "Блог",
         "description": "Узнайте, как сделать водительскую карту для тахографа: пошаговая инструкция, требования, список документов, сроки оформления. Получите карту быстро!",
@@ -5836,6 +5836,206 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "часто задаваемые вопросы по карте водителя",
+              "проблемы при получении карты",
+              "срок действия карты водителя",
+              "замена и восстановление карты",
+              "ошибки при оформлении карты",
+              "стоимость оформления карты водителя",
+              "требования к фото для карты"
+            ],
+            "taxonomy": "FAQ",
+            "attention": "Получите ответы на самые распространённые вопросы по оформлению и использованию водительской карты для тахографа.",
+            "intent": "Систематизировать и разъяснить ключевые вопросы, которые чаще всего возникают у водителей и транспортных компаний при оформлении и эксплуатации водительской карты для тахографа.",
+            "audiences": "Профессиональные водители, представители транспортных компаний, специалисты по документообороту, начинающие перевозчики, все, кто сталкивается с оформлением или заменой водительской карты.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 FAQ section for page \"Как сделать водительскую карту для тахографа: пошаговая инструкция\"\n\nGOAL: Сформировать структурированный раздел с ответами на наиболее частые вопросы, возникающие у водителей и представителей транспортных компаний по теме оформления, использования, замены и восстановления водительской карты для тахографа. Дать практические разъяснения по типичным проблемам, срокам, стоимости, требованиям к фото и действиям при утере или ошибках в документах.\n\nAUDIENCE: Профессиональные водители, представители транспортных компаний, специалисты по документообороту | Level: beginner/intermediate | Pain points: неясность процедуры, ошибки при подаче документов, вопросы по срокам и стоимости, сложности при замене карты\n\nKEYWORDS TO INTEGRATE:\n[часто задаваемые вопросы по карте водителя, проблемы при получении карты, срок действия карты водителя, замена и восстановление карты, ошибки при оформлении карты, стоимость оформления карты водителя, требования к фото для карты]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: h2 with nested h3 and p elements for each FAQ\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: юридическая поддержка, техническая поддержка, обучение, интеграция с системами учета, требования к карте\n- SECONDARY: Apply insights from External KB: распространённые вопросы пользователей, типовые ошибки, требования к фото, стоимость, сроки\n\nQUALITY CRITERIA:\n- Actionable (конкретные рекомендации)\n- Specific (без общих фраз)\n- Data-backed (факты из баз знаний)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Сборник практических ответов на ключевые вопросы по водительским картам для тахографа, не дублирующий основные инструкции и процедуры.\n- sourceHint: Internal KB (юридическая и техническая поддержка, обучение), External KB (частые вопросы, ошибки, требования к фото)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- В каждом h3 раскрывать отдельный вопрос, избегая пересечений с предыдущими разделами (инструкции, виды карт, пошаговые процедуры).\n- В каждом p давать конкретный, структурированный ответ с практическими советами.\n- Добавить рекомендации по внутренним ссылкам (например, на разделы о технической поддержке, обучении, юридических консультациях).\n- Готовность к FAQPage schema.\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "keywords": [
+                  "часто задаваемые вопросы по карте водителя"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Кратко ознакомьтесь с тем, какие вопросы чаще всего возникают у водителей по теме карт для тахографа.",
+                "intent": "Ввести пользователя в раздел FAQ, обозначить его практическую ценность и объяснить, почему важно знать ответы на эти вопросы.",
+                "audiences": "Водители, логисты, специалисты по документообороту, новички в транспортной сфере.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for FAQ section on водительские карты для тахографа. ROLE: intro. GOAL: Кратко объяснить, зачем нужен этот раздел и какие вопросы он поможет решить. KEYWORDS: [часто задаваемые вопросы по карте водителя]. SOURCE: Internal KB (юридическая поддержка, обучение), External KB (частые вопросы). E-E-A-T: semanticFingerprint: Вводное пояснение к разделу FAQ по картам водителя. evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "keywords": [
+                  "проблемы при получении карты",
+                  "ошибки при оформлении карты",
+                  "часто задаваемые вопросы по карте водителя"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, какие ошибки чаще всего допускаются при подаче документов и как их избежать.",
+                "intent": "Разобрать типичные проблемы и ошибки, возникающие при оформлении водительской карты, и дать рекомендации по их предотвращению.",
+                "audiences": "Водители, оформляющие карту впервые, сотрудники транспортных компаний, специалисты по документообороту.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ subsection on \"проблемы при получении карты\" under FAQ section. Reference parent H2: \"FAQ\". GOAL: Описать распространённые ошибки и проблемы при оформлении карты водителя для тахографа, дать советы по их предотвращению. KEYWORDS: [проблемы при получении карты, ошибки при оформлении карты, часто задаваемые вопросы по карте водителя]. Interlink: добавить ссылку на раздел о юридической поддержке. E-E-A-T: semanticFingerprint: Практические советы по предотвращению ошибок при подаче документов на карту водителя. evidenceStrength: internal-tested | external-peer-reviewed.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "keywords": [
+                      "ошибки при оформлении карты"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Избегайте типичных ошибок, чтобы ускорить получение карты.",
+                    "intent": "Дать конкретные примеры ошибок и рекомендации по их исправлению.",
+                    "audiences": "Водители, оформляющие карту впервые.",
+                    "selfPrompt": "ROLE: body. GOAL: Перечислить и объяснить типичные ошибки при оформлении карты водителя для тахографа, дать советы по их предотвращению. KEYWORDS: [ошибки при оформлении карты]. SOURCE: Internal KB (техническая поддержка, юридическая поддержка), External KB (частые ошибки). E-E-A-T: semanticFingerprint: Список и разъяснение ошибок при оформлении карты. evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-2",
+                "tag": "h3",
+                "keywords": [
+                  "срок действия карты водителя",
+                  "продление карты",
+                  "часто задаваемые вопросы по карте водителя"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, на какой срок выдается карта водителя и как своевременно продлить её действие.",
+                "intent": "Разъяснить вопросы о сроках действия карты водителя, правилах продления и действиях при истечении срока.",
+                "audiences": "Водители, менеджеры автопарков, специалисты по документообороту.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ subsection on \"срок действия карты водителя и продление\" under FAQ section. Reference parent H2: \"FAQ\". GOAL: Объяснить, сколько действует карта водителя для тахографа, когда и как её продлевать, что делать при истечении срока. KEYWORDS: [срок действия карты водителя, продление карты, часто задаваемые вопросы по карте водителя]. Interlink: добавить ссылку на раздел о технической поддержке или напоминаниях. E-E-A-T: semanticFingerprint: Разъяснение по срокам действия и продлению карты водителя. evidenceStrength: internal-tested | external-peer-reviewed.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "срок действия карты водителя"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Не пропустите срок продления карты, чтобы избежать штрафов.",
+                    "intent": "Дать чёткие рекомендации по срокам и процедуре продления карты.",
+                    "audiences": "Водители, менеджеры автопарков.",
+                    "selfPrompt": "ROLE: body. GOAL: Объяснить, каков срок действия карты водителя, когда и как её продлевать, что делать при истечении срока. KEYWORDS: [срок действия карты водителя]. SOURCE: Internal KB (техническая поддержка, интеграция с системами учета), External KB (частые вопросы о сроках). E-E-A-T: semanticFingerprint: Практические советы по продлению карты водителя. evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-3",
+                "tag": "h3",
+                "keywords": [
+                  "замена и восстановление карты",
+                  "утеря карты водителя",
+                  "часто задаваемые вопросы по карте водителя"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, что делать при утере или повреждении карты водителя для тахографа.",
+                "intent": "Дать пошаговые инструкции по замене или восстановлению карты водителя при утере, повреждении или изменении данных.",
+                "audiences": "Водители, специалисты по документообороту, представители автопарков.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ subsection on \"замена и восстановление карты водителя\" under FAQ section. Reference parent H2: \"FAQ\". GOAL: Объяснить, как действовать при утере, повреждении или необходимости замены карты водителя для тахографа. KEYWORDS: [замена и восстановление карты, утеря карты водителя, часто задаваемые вопросы по карте водителя]. Interlink: добавить ссылку на раздел о юридической поддержке. E-E-A-T: semanticFingerprint: Пошаговая инструкция по восстановлению или замене карты водителя. evidenceStrength: internal-tested | external-peer-reviewed.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "замена и восстановление карты"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Следуйте инструкции, чтобы быстро восстановить карту.",
+                    "intent": "Дать чёткую последовательность действий при утере или необходимости замены карты.",
+                    "audiences": "Водители, специалисты по документообороту.",
+                    "selfPrompt": "ROLE: body. GOAL: Описать пошаговые действия по восстановлению или замене карты водителя для тахографа. KEYWORDS: [замена и восстановление карты]. SOURCE: Internal KB (юридическая поддержка, техническая поддержка), External KB (частые вопросы о замене). E-E-A-T: semanticFingerprint: Инструкция по восстановлению карты водителя. evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-4",
+                "tag": "h3",
+                "keywords": [
+                  "стоимость оформления карты водителя",
+                  "требования к фото для карты",
+                  "часто задаваемые вопросы по карте водителя"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, сколько стоит оформление карты и какие требования предъявляются к фотографии.",
+                "intent": "Разъяснить вопросы о стоимости оформления карты водителя и требованиях к фотографии для документов.",
+                "audiences": "Водители, бухгалтеры, специалисты по документообороту.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ subsection on \"стоимость оформления и требования к фото\" under FAQ section. Reference parent H2: \"FAQ\". GOAL: Дать информацию о стоимости оформления карты водителя и требованиях к фотографии, чтобы избежать отказа в приёме документов. KEYWORDS: [стоимость оформления карты водителя, требования к фото для карты, часто задаваемые вопросы по карте водителя]. Interlink: добавить ссылку на раздел о подготовке документов. E-E-A-T: semanticFingerprint: Практические разъяснения по стоимости и фото для карты водителя. evidenceStrength: internal-tested | external-peer-reviewed.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "требования к фото для карты"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Подготовьте правильное фото и узнайте стоимость заранее.",
+                    "intent": "Дать чёткие требования к фото и ориентиры по стоимости оформления.",
+                    "audiences": "Водители, бухгалтеры.",
+                    "selfPrompt": "ROLE: body. GOAL: Перечислить требования к фотографии для карты водителя и дать ориентировочную стоимость оформления. KEYWORDS: [требования к фото для карты]. SOURCE: Internal KB (требования к документам), External KB (требования к фото, стоимость). E-E-A-T: semanticFingerprint: Конкретные требования к фото и стоимость оформления карты. evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -5868,5 +6068,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T13:39:27.090Z";
+export const lastUpdated = "2025-10-22T13:40:38.531Z";
 export const generatedBy = "menu-persist-api";
