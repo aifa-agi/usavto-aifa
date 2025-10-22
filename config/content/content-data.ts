@@ -2909,7 +2909,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T12:37:46.530Z",
-        "updatedAt": "2025-10-22T12:51:54.999Z",
+        "updatedAt": "2025-10-22T12:52:17.557Z",
         "order": 2,
         "description": "Узнайте, как получить лицензию на пассажирские перевозки такси в 2025 году: пошаговая инструкция, требования, документы и важные изменения.",
         "images": [
@@ -3211,7 +3211,8 @@ export const contentData = {
                   "minWords": 90,
                   "maxWords": 170,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-3-2",
@@ -3250,7 +3251,8 @@ export const contentData = {
                       "minWords": 75,
                       "maxWords": 140,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "ol-3-2-2",
@@ -3268,7 +3270,8 @@ export const contentData = {
                       "minWords": 50,
                       "maxWords": 90,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "code-3-2-3",
@@ -3286,11 +3289,14 @@ export const contentData = {
                       "minWords": 20,
                       "maxWords": 50,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "FAQ",
@@ -3606,5 +3612,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T12:52:18.983Z";
+export const lastUpdated = "2025-10-22T12:52:26.736Z";
 export const generatedBy = "menu-persist-api";
