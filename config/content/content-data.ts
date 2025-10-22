@@ -5467,7 +5467,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T13:22:57.559Z",
-        "updatedAt": "2025-10-22T13:34:50.233Z",
+        "updatedAt": "2025-10-22T13:36:36.157Z",
         "order": 4,
         "badgeName": "Блог",
         "description": "Узнайте, как сделать водительскую карту для тахографа: пошаговая инструкция, требования, список документов, сроки оформления. Получите карту быстро!",
@@ -5551,6 +5551,165 @@ export const contentData = {
                 }
               }
             ]
+          },
+          {
+            "id": "h2-2",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "виды карт для тахографа",
+              "СКЗИ",
+              "ЕСТР",
+              "назначение карты водителя",
+              "электронный носитель данных",
+              "контроль режима труда и отдыха",
+              "сертификация тахографа"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Поймите различия между типами карт для тахографа и их роль в обеспечении законности и безопасности перевозок.",
+            "intent": "Объяснить технические основы и назначение водительской карты для тахографа, а также различия между основными типами карт и их применимость в разных ситуациях.",
+            "audiences": "Профессиональные водители, специалисты по транспорту, логисты, владельцы автопарков; уровень: средний; боль: неясность в типах карт и требованиях к их использованию.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 section explaining технические основы и назначение водительской карты для тахографа for page \"Как сделать водительскую карту для тахографа: пошаговая инструкция\"\n\nGOAL: Дать читателю четкое понимание, что такое водительская карта для тахографа, зачем она нужна, какие бывают типы карт (СКЗИ и ЕСТР), как они связаны с законодательством и безопасностью перевозок. Объяснить, почему важно выбирать правильный тип карты и как это влияет на работу водителя и компании.\n\nAUDIENCE: Профессиональные водители, специалисты по транспорту, логисты, владельцы автопарков | Level: средний | Pain points: путаница в типах карт, риски штрафов, сложности с контролем режима труда и отдыха.\n\nKEYWORDS TO INTEGRATE:\n[виды карт для тахографа, СКЗИ, ЕСТР, назначение карты водителя, электронный носитель данных, контроль режима труда и отдыха, сертификация тахографа]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 250, maxWords: 400 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: # [Section Title]\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: [Водительская карта для тахографа: что это и зачем нужна; Требования к водительской карте и тахографу]\n- SECONDARY: Apply insights from External KB: [Введение и типы карт; различия между СКЗИ и ЕСТР]\n\nQUALITY CRITERIA:\n- Actionable (помогает выбрать нужный тип карты)\n- Specific (различия между картами, законодательные аспекты)\n- Data-backed (факты из KB)\n- No fluff\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальное раскрытие технической сути и классификации карт для тахографа, без повторения вводных тем.\n- sourceHint: Internal KB (техническое описание, требования), External KB (различия СКЗИ/ЕСТР)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference parent page intent\n- Must set thematic direction for child h3 elements (например, документы, процесс оформления)\n- Add interlink planning: internalLinks (например, \"Документы для оформления карты\", \"Интеграция с системами учета\", \"Юридическая поддержка\"); externalLinks (при необходимости, только на нормативные акты)\n- If FAQ/HowTo/Comparison: note schema readiness (HowTo)\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 250,
+              "maxWords": 400,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-2-1",
+                "tag": "p",
+                "keywords": [
+                  "виды карт для тахографа",
+                  "электронный носитель данных"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, что такое карта водителя и почему она важна для современного транспорта.",
+                "intent": "Ввести читателя в техническую суть карты водителя для тахографа и объяснить её роль в автоматизации контроля.",
+                "audiences": "Водители, специалисты по транспорту, начинающие логисты; уровень: начальный-средний; боль: неясность назначения карты.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for section on виды карт для тахографа in \"Как сделать водительскую карту для тахографа: пошаговая инструкция\".\nGOAL: Кратко объяснить, что такое карта водителя для тахографа, как она работает как электронный носитель данных, и почему она необходима для контроля режима труда и отдыха.\nKEYWORDS: виды карт для тахографа, электронный носитель данных\nWORD COUNT: minWords: 80, maxWords: 150\nROLE: intro\nsourceHint: Internal KB (описание карты и её функции)\nevidenceStrength: internal-tested\nsemanticFingerprint: Вводное объяснение сути и функций карты водителя для тахографа.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-2-2-3",
+                "tag": "p",
+                "keywords": [
+                  "контроль режима труда и отдыха"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Поймите, как карта помогает соблюдать законодательство и избегать штрафов.",
+                "intent": "Показать, как карта водителя обеспечивает автоматический контроль за режимом труда и отдыха, снижая риски нарушений.",
+                "audiences": "Водители, руководители автопарков; уровень: средний; боль: риски штрафов и нарушений.",
+                "selfPrompt": "CONTEXT: Generate short transition paragraph on контроль режима труда и отдыха for section on виды карт для тахографа.\nGOAL: Объяснить, что карта водителя — ключевой инструмент для автоматизации контроля режима труда и отдыха.\nKEYWORDS: контроль режима труда и отдыха\nWORD COUNT: minWords: 5, maxWords: 15\nROLE: transition\nsourceHint: Internal KB (роль карты в контроле)\nevidenceStrength: internal-tested\nsemanticFingerprint: Краткая связка о значении карты для соблюдения режима труда и отдыха.",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-2-2-4",
+                "tag": "table",
+                "keywords": [
+                  "СКЗИ",
+                  "ЕСТР"
+                ],
+                "taxonomy": "Comparison",
+                "attention": "Сравните основные характеристики и области применения карт СКЗИ и ЕСТР.",
+                "intent": "Дать наглядное сравнение двух типов карт для тахографа, чтобы пользователь мог выбрать подходящий вариант.",
+                "audiences": "Водители, логисты, владельцы автопарков; уровень: средний; боль: неясность различий между картами.",
+                "selfPrompt": "CONTEXT: Generate comparison table (2 columns × 4 rows) contrasting СКЗИ и ЕСТР карты for section on виды карт для тахографа.\nGOAL: Сравнить основные параметры: назначение, область применения, требования к оформлению, особенности использования.\nKEYWORDS: СКЗИ, ЕСТР\nTABLE SCHEMA: [Параметр | СКЗИ | ЕСТР], data types: text\nsourceHint: Internal KB (требования), External KB (различия СКЗИ/ЕСТР)\nevidenceStrength: internal-tested | external-peer-reviewed\nschemaReadiness: Comparison\nsemanticFingerprint: Табличное сравнение ключевых характеристик карт СКЗИ и ЕСТР.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-2-2",
+                "tag": "h3",
+                "keywords": [
+                  "сертификация тахографа",
+                  "назначение карты водителя",
+                  "требования к оборудованию",
+                  "безопасность данных",
+                  "автоматизация учета"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Узнайте, какие требования предъявляются к картам и тахографам для легального использования.",
+                "intent": "Раскрыть технические и юридические требования к картам и тахографам, объяснить важность сертификации и безопасности данных.",
+                "audiences": "Специалисты по транспорту, ИП-перевозчики, руководители автопарков; уровень: средний-эксперт; боль: риски использования несертифицированного оборудования.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection on сертификация тахографа и требования к картам within h2 'Виды и назначение карт для тахографа' for page 'Как сделать водительскую карту для тахографа: пошаговая инструкция'.\nGOAL: Подробно объяснить, почему тахографы и карты должны быть сертифицированы, какие стандарты применяются, и как это влияет на безопасность и автоматизацию учета.\nKEYWORDS: сертификация тахографа, назначение карты водителя, требования к оборудованию, безопасность данных, автоматизация учета\nsemanticFingerprint: Уникальное раскрытие темы сертификации и требований к картам/тахографам, без повторения вводных аспектов.\ninterlink planning: internalLinks (например, \"Интеграция с системами учета\", \"Юридическая поддержка\"); externalLinks (на нормативные акты при необходимости)\nsourceHint: Internal KB (требования к оборудованию, юридические аспекты), External KB (стандарты и практика)\nevidenceStrength: internal-tested | external-peer-reviewed\nschemaReadiness: HowTo\n\nPAGE SETTINGS:\n• Writing Style: Narrative\n• Content Format: Simple\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 250,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "сертификация тахографа",
+                      "требования к оборудованию"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Поймите, почему только сертифицированные устройства допускаются к эксплуатации.",
+                    "intent": "Объяснить, что сертификация тахографа и карты — обязательное требование для легального использования и защиты данных.",
+                    "audiences": "Водители, специалисты по транспорту; уровень: средний; боль: риски штрафов за несертифицированное оборудование.",
+                    "selfPrompt": "CONTEXT: Generate paragraph on сертификация тахографа и требования к оборудованию for h3 'Сертификация и требования'.\nGOAL: Объяснить, почему сертификация тахографа и карты обязательна, какие стандарты применяются, и как это влияет на легальность перевозок.\nKEYWORDS: сертификация тахографа, требования к оборудованию\nWORD COUNT: minWords: 70, maxWords: 130\nROLE: body\nsourceHint: Internal KB (требования к оборудованию)\nevidenceStrength: internal-tested\nsemanticFingerprint: Детальное раскрытие юридических и технических требований к тахографам и картам.",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 130,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-2-2-2",
+                    "tag": "ul",
+                    "keywords": [
+                      "безопасность данных"
+                    ],
+                    "taxonomy": "List",
+                    "attention": "Узнайте ключевые требования к безопасности и хранению информации.",
+                    "intent": "Перечислить основные требования к безопасности данных при использовании карт и тахографов.",
+                    "audiences": "Специалисты по транспорту, ИТ-администраторы; уровень: средний; боль: защита данных и соответствие стандартам.",
+                    "selfPrompt": "CONTEXT: Generate unordered list (4 items) of требования к безопасности данных for h3 'Сертификация и требования'.\nGOAL: Перечислить основные требования к безопасности данных при использовании карт и тахографов.\nKEYWORDS: безопасность данных\nLIST STRUCTURE: short bullets (5-10 words)\nsourceHint: Internal KB (требования к безопасности)\nevidenceStrength: internal-tested\nsemanticFingerprint: Список ключевых требований к защите информации.",
+                    "additionalData": {
+                      "minWords": 40,
+                      "maxWords": 80,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-2-3",
+                    "tag": "p",
+                    "keywords": [
+                      "автоматизация учета"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Поймите, как автоматизация упрощает контроль и отчетность.",
+                    "intent": "Показать, как автоматизация учета с помощью карт и тахографов облегчает работу водителей и компаний.",
+                    "audiences": "Владельцы автопарков, логисты; уровень: средний; боль: сложность ведения учета вручную.",
+                    "selfPrompt": "CONTEXT: Generate concluding paragraph on автоматизация учета for h3 'Сертификация и требования'.\nGOAL: Объяснить, как автоматизация учета с помощью карт и тахографов облегчает работу и снижает риски ошибок.\nKEYWORDS: автоматизация учета\nWORD COUNT: minWords: 60, maxWords: 100\nROLE: conclusion\nsourceHint: Internal KB (интеграция с системами учета)\nevidenceStrength: internal-tested\nsemanticFingerprint: Заключение о преимуществах автоматизации учета с помощью сертифицированных карт и тахографов.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 100,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -5583,5 +5742,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T13:36:36.940Z";
+export const lastUpdated = "2025-10-22T13:38:06.132Z";
 export const generatedBy = "menu-persist-api";
