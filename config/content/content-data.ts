@@ -6757,7 +6757,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T13:48:40.293Z",
-        "updatedAt": "2025-10-22T14:05:26.600Z",
+        "updatedAt": "2025-10-22T14:05:32.542Z",
         "order": 5,
         "badgeName": "Блог",
         "description": "Магнитная обклейка машины Яндекс Такси — комплект под ключ: быстрая установка, прочные материалы, соответствие требованиям сервиса. Закажите сейчас!",
@@ -7057,7 +7057,8 @@ export const contentData = {
                   "minWords": 90,
                   "maxWords": 170,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-3-2",
@@ -7096,7 +7097,8 @@ export const contentData = {
                       "minWords": 75,
                       "maxWords": 140,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "ol-3-2-2",
@@ -7114,7 +7116,8 @@ export const contentData = {
                       "minWords": 50,
                       "maxWords": 90,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "code-3-2-3",
@@ -7131,11 +7134,14 @@ export const contentData = {
                       "minWords": 20,
                       "maxWords": 50,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "FAQ",
@@ -7487,5 +7493,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T14:05:33.273Z";
+export const lastUpdated = "2025-10-22T14:05:40.634Z";
 export const generatedBy = "menu-persist-api";
