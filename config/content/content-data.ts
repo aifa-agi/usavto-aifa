@@ -6206,7 +6206,7 @@ export const contentData = {
         "roles": [
           "guest"
         ],
-        "hasBadge": false,
+        "hasBadge": true,
         "type": "customCategorias",
         "aiRecommendContentStructure": [
           {
@@ -6723,7 +6723,16 @@ export const contentData = {
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T13:48:40.293Z",
         "updatedAt": "2025-10-22T13:48:40.293Z",
-        "order": 5
+        "order": 5,
+        "badgeName": "Блог",
+        "description": "магнитная обклейка машины яндекс такси",
+        "images": [
+          {
+            "id": "n5cd5obkt4vh1hno3hv83b4x",
+            "alt": "магнитная обклейка машины яндекс такси",
+            "href": "/app-images/tdnwiggva2rmiyrpz2drxwax.jpg"
+          }
+        ]
       }
     ],
     "order": 16
@@ -6754,5 +6763,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T13:48:55.180Z";
+export const lastUpdated = "2025-10-22T13:50:44.219Z";
 export const generatedBy = "menu-persist-api";
