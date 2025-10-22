@@ -6732,6 +6732,9 @@ export const contentData = {
             "alt": "магнитная обклейка машины яндекс такси",
             "href": "/app-images/tdnwiggva2rmiyrpz2drxwax.jpg"
           }
+        ],
+        "keywords": [
+          "магнитная обклейка машины яндекс такси"
         ]
       }
     ],
@@ -6763,5 +6766,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T13:50:44.219Z";
+export const lastUpdated = "2025-10-22T13:50:56.934Z";
 export const generatedBy = "menu-persist-api";
