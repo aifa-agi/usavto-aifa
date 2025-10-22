@@ -6735,7 +6735,8 @@ export const contentData = {
         ],
         "keywords": [
           "магнитная обклейка машины яндекс такси"
-        ]
+        ],
+        "internalKnowledgeBase": "В базе знаний компании US AUTO отсутствует информация, касающаяся темы \"магнитная обклейка машины Яндекс Такси\" или подобных услуг по обклейке автомобилей магнитными материалами для Яндекс Такси. \n\nЕсли вам нужна помощь по другим вопросам, связанным с управлением автопарком, цифровыми решениями для такси или услугами компании US AUTO, я с радостью предоставлю подробную информацию."
       }
     ],
     "order": 16
@@ -6766,5 +6767,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T13:50:56.934Z";
+export const lastUpdated = "2025-10-22T13:52:16.643Z";
 export const generatedBy = "menu-persist-api";
