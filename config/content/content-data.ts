@@ -1659,7 +1659,7 @@ export const contentData = {
         "createdAt": "2025-10-22T11:58:21.124Z",
         "updatedAt": "2025-10-22T11:58:21.124Z",
         "order": 1,
-        "description": "карта тахографа скзи для водителя где получить",
+        "description": "Узнайте, где и как быстро получить карту тахографа СКЗИ для водителя: актуальные требования, список документов, сроки и стоимость оформления.",
         "images": [
           {
             "id": "rgeo7e7ykac8p1hso4dtr1fd",
@@ -1703,5 +1703,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T12:10:19.269Z";
+export const lastUpdated = "2025-10-22T12:11:15.334Z";
 export const generatedBy = "menu-persist-api";
