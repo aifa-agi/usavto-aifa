@@ -2909,7 +2909,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-22T12:37:46.530Z",
-        "updatedAt": "2025-10-22T12:37:46.530Z",
+        "updatedAt": "2025-10-22T12:46:18.741Z",
         "order": 2,
         "description": "Узнайте, как получить лицензию на пассажирские перевозки такси в 2025 году: пошаговая инструкция, требования, документы и важные изменения.",
         "images": [
@@ -2928,7 +2928,76 @@ export const contentData = {
         "intent": "Пользователи, попадая на эту страницу, ищут подробную, актуальную инструкцию по получению лицензии (разрешения) на пассажирские перевозки такси в 2025 году, чтобы легально работать таксистом как самозанятый, ИП или юрлицо. Ожидаемый результат — понять требования, собрать необходимые документы, узнать порядок подачи заявления и успешно получить разрешение на перевозку пассажиров легковым такси. Страница полностью удовлетворяет информационный запрос, предоставляя пошаговое руководство, список документов, объяснение изменений законодательства и ссылки на официальные ресурсы.",
         "taxonomy": "Данная страница представляет собой подробное практическое руководство (гайд) по получению лицензии на пассажирские перевозки такси в 2025 году. Она относится к категории «Бизнес > Транспортные услуги > Лицензирование такси» и выполняет функцию кластерного контента, поддерживающего основную (пиллар) тему легализации деятельности такси и связанных требований. Семантически страница укрепляет авторитет сайта в вопросах нормативного регулирования и практических аспектов оформления разрешений для таксомоторной деятельности.",
         "attention": "Начните страницу с яркого визуального блока с вопросом: «Хотите работать в такси легально в 2025 году?» и мгновенной кнопкой «Узнать, как получить лицензию». Используйте четкую пошаговую навигацию и инфографику для быстрой ориентации, а в ключевых разделах добавьте калькулятор стоимости и интерактивные чек-листы документов, чтобы читатель мог сразу применить информацию к своей ситуации. В отличие от конкурентов, делайте акцент на простоте, наглядности и интерактивности, чтобы пользователь не только нашёл ответ, но и получил ощущение полного контроля над процессом оформления лицензии.",
-        "audiences": "Страница предназначена для владельцев автомобилей, индивидуальных предпринимателей и самозанятых лиц в возрасте 25–55 лет, рассматривающих возможность официальной работы в такси или запуска собственного таксомоторного бизнеса в 2025 году. Эти пользователи ищут актуальную, пошаговую информацию о новых правилах лицензирования, требованиях к автомобилю и процедуре получения разрешения, чтобы легально осуществлять пассажирские перевозки, избежать штрафов и начать зарабатывать на такси. Контент ориентирован на людей с базовой или средней технической грамотностью, без глубоких знаний в области транспортного законодательства, но с явной мотивацией разобраться в нюансах официального оформления перевозок."
+        "audiences": "Страница предназначена для владельцев автомобилей, индивидуальных предпринимателей и самозанятых лиц в возрасте 25–55 лет, рассматривающих возможность официальной работы в такси или запуска собственного таксомоторного бизнеса в 2025 году. Эти пользователи ищут актуальную, пошаговую информацию о новых правилах лицензирования, требованиях к автомобилю и процедуре получения разрешения, чтобы легально осуществлять пассажирские перевозки, избежать штрафов и начать зарабатывать на такси. Контент ориентирован на людей с базовой или средней технической грамотностью, без глубоких знаний в области транспортного законодательства, но с явной мотивацией разобраться в нюансах официального оформления перевозок.",
+        "draftContentStructure": [
+          {
+            "id": "h2-1",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "лицензия на пассажирские перевозки такси",
+              "разрешение на такси",
+              "оформление лицензии",
+              "таксомоторная деятельность",
+              "2025 год",
+              "официальная работа в такси",
+              "пошаговая инструкция"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, как быстро и без ошибок получить лицензию на пассажирские перевозки такси в 2025 году — с учетом новых требований и практических советов.",
+            "intent": "Ввести пользователя в тему лицензирования такси, обозначить актуальность вопроса в 2025 году и показать преимущества легального оформления перевозок.",
+            "audiences": "Владельцы автомобилей, индивидуальные предприниматели, самозанятые, рассматривающие официальную работу в такси или запуск собственного таксомоторного бизнеса; уровень — начинающий и средний.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see below)\n\nCONTEXT: Generate h2 introduction section for page \"Лицензия на пассажирские перевозки такси: как получить в 2025 году\"\n\nGOAL: Обозначить ключевую тему страницы — получение лицензии на пассажирские перевозки такси в 2025 году; объяснить, почему это важно, какие выгоды дает легализация деятельности, и что пользователь найдет на странице (пошаговое руководство, документы, изменения законодательства).\n\nAUDIENCE: Владельцы авто, ИП, самозанятые, планирующие работать в такси | Level: начинающий/средний | Pain points: не знают, как оформить лицензию, боятся ошибок, хотят избежать штрафов и работать легально\n\nKEYWORDS TO INTEGRATE:\n[лицензия на пассажирские перевозки такси, разрешение на такси, оформление лицензии, таксомоторная деятельность, 2025 год, официальная работа в такси, пошаговая инструкция]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 150, maxWords: 250 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: # [H2] + 2 paragraphs (intro, value proposition)\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: вводная информация о лицензировании, преимущества автоматизации, поддержка оформления\n- SECONDARY: Apply insights from External KB: терминология (разрешение/лицензия), актуальность изменений 2025 года\n\nQUALITY CRITERIA:\n- Actionable (обещание конкретных шагов)\n- Specific (указание на новые правила и выгоды)\n- Data-backed (ссылки на законодательные изменения)\n- No fluff (только суть)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Вводный раздел раскрывает, зачем нужна лицензия на такси в 2025 году и как страница поможет пройти процесс оформления.\n- sourceHint: Internal KB (основные преимущества), External KB (терминология, изменения)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Сформировать доверие и заинтересовать пользователя пройти весь гайд\n- Добавить план внутренних ссылок: на разделы с требованиями, документами, калькулятором стоимости\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)\n",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 150,
+              "maxWords": 250,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-1-1",
+                "tag": "p",
+                "keywords": [
+                  "лицензия на пассажирские перевозки такси",
+                  "легальная работа в такси"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Поймите, почему лицензия — обязательное условие для работы в такси в 2025 году.",
+                "intent": "Ввести пользователя в тему, объяснить актуальность лицензирования и последствия отсутствия разрешения.",
+                "audiences": "Начинающие водители, ИП, самозанятые, которые хотят узнать, зачем нужна лицензия.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for h2 'Лицензия на пассажирские перевозки такси: как получить в 2025 году'.\nROLE: intro\nGOAL: Кратко объяснить, что без лицензии перевозки пассажиров в такси в 2025 году невозможны, и почему важно оформить разрешение официально.\nKEYWORDS: лицензия на пассажирские перевозки такси, легальная работа в такси\nWORD COUNT: minWords: 100, maxWords: 180\nKNOWLEDGE SOURCES: Internal KB (основы лицензирования), External KB (терминология, изменения 2025)\nsemanticFingerprint: Объясняет, зачем нужна лицензия для работы в такси в 2025 году.\nsourceHint: Internal KB, External KB\n",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 180,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-2",
+                "tag": "p",
+                "keywords": [
+                  "оформление лицензии",
+                  "пошаговая инструкция"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, как быстро и просто пройти процесс оформления лицензии с помощью нашего гайда.",
+                "intent": "Показать, что на странице пользователь найдет пошаговую инструкцию и практические советы для успешного получения лицензии.",
+                "audiences": "Потенциальные таксисты, владельцы авто, желающие оформить разрешение без ошибок.",
+                "selfPrompt": "CONTEXT: Generate value proposition paragraph for h2 'Лицензия на пассажирские перевозки такси: как получить в 2025 году'.\nROLE: value proposition/transition\nGOAL: Обещать читателю подробную, простую и актуальную инструкцию по оформлению лицензии, а также дополнительные инструменты (чек-листы, калькулятор).\nKEYWORDS: оформление лицензии, пошаговая инструкция\nWORD COUNT: minWords: 60, maxWords: 120\nKNOWLEDGE SOURCES: Internal KB (платформа и поддержка), External KB (структура гайда)\nsemanticFingerprint: Обещает читателю практическую пользу и простоту прохождения процесса оформления.\nsourceHint: Internal KB, External KB\n",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 120,
+                  "actualContent": ""
+                }
+              }
+            ]
+          }
+        ]
       }
     ],
     "order": 16
@@ -2959,5 +3028,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-22T12:46:19.070Z";
+export const lastUpdated = "2025-10-22T12:47:51.228Z";
 export const generatedBy = "menu-persist-api";
