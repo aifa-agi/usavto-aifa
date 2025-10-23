@@ -8035,6 +8035,9 @@ export const contentData = {
             "alt": "максимальный возраст авто для яндекс такси",
             "href": "/app-images/dy0qfze1990yy8p98385mfom.png"
           }
+        ],
+        "keywords": [
+          "максимальный возраст авто для яндекс такси"
         ]
       }
     ],
@@ -8066,5 +8069,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-23T18:16:27.880Z";
+export const lastUpdated = "2025-10-23T18:17:16.071Z";
 export const generatedBy = "menu-persist-api";
