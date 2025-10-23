@@ -8071,5 +8071,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-23T18:25:07.863Z";
+export const lastUpdated = "2025-10-23T18:25:53.412Z";
 export const generatedBy = "menu-persist-api";
