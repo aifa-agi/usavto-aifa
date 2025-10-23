@@ -8028,7 +8028,7 @@ export const contentData = {
         "updatedAt": "2025-10-23T18:12:06.292Z",
         "order": 6,
         "badgeName": "Блог",
-        "description": "максимальный возраст авто для яндекс такси",
+        "description": "Узнайте максимальный возраст авто для Яндекс Такси в 2024 году: актуальные требования, советы для водителей и нюансы по регионам. Проверьте свой автомобиль!",
         "images": [
           {
             "id": "uh01b2pkscgdisvik1szm8or",
@@ -8071,5 +8071,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-23T18:26:06.346Z";
+export const lastUpdated = "2025-10-23T18:26:23.684Z";
 export const generatedBy = "menu-persist-api";
