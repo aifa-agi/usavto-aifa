@@ -8060,7 +8060,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-23T18:12:06.292Z",
-        "updatedAt": "2025-10-23T18:28:44.040Z",
+        "updatedAt": "2025-10-23T18:29:45.511Z",
         "order": 6,
         "badgeName": "Блог",
         "description": "Узнайте максимальный возраст авто для Яндекс Такси в 2024 году: актуальные требования, советы для водителей и нюансы по регионам. Проверьте свой автомобиль!",
@@ -8146,6 +8146,129 @@ export const contentData = {
                 }
               }
             ]
+          },
+          {
+            "id": "h2-2",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "допустимый возраст автомобиля",
+              "ограничения по году выпуска",
+              "требования к автопарку",
+              "региональные различия Яндекс Такси",
+              "подходящие автомобили для такси",
+              "контроль технического состояния",
+              "документы для проверки авто"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, какие автомобили реально допускаются к работе в Яндекс Такси в 2024 году, как определяется возраст машины и почему важно учитывать региональные нюансы.",
+            "intent": "Детально раскрыть технические и регламентные критерии по возрасту автомобилей для Яндекс Такси, объяснить, как считается возраст авто, и показать, какие машины проходят проверку в разных регионах.",
+            "audiences": "Водители и владельцы автопарков, желающие подключиться к Яндекс Такси или обновить автопарк; уровень — средний, интересует практическая применимость и нюансы по регионам.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 section on 'допустимый возраст автомобиля и критерии допуска' for page 'Максимальный возраст авто для Яндекс Такси: актуальные требования 2024'.\n\nGOAL: Подробно раскрыть, какие автомобили допускаются к работе в Яндекс Такси по возрасту, как считается возраст по ПТС, какие есть региональные отличия, и какие документы или проверки требуются для подтверждения соответствия.\n\nAUDIENCE: Водители и представители автопарков, планирующие подключение или обновление транспорта; уровень — средний; болевая точка — риски отказа из-за возраста авто, непонимание нюансов по регионам.\n\nKEYWORDS TO INTEGRATE:\n[допустимый возраст автомобиля, ограничения по году выпуска, требования к автопарку, региональные различия Яндекс Такси, подходящие автомобили для такси, контроль технического состояния, документы для проверки авто]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 250, maxWords: 400 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with nested p, table, h3, ul elements as per structure\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: требования к автопарку, автоматизация контроля, документы, техническое состояние\n- SECONDARY: Apply insights from External KB: критерии Яндекс Такси по возрасту, учет года выпуска по ПТС, региональные различия\n\nQUALITY CRITERIA:\n- Actionable (пошаговые пояснения)\n- Specific (конкретные критерии и примеры)\n- Data-backed (ссылки на нормативы, таблица по регионам)\n- No fluff (только практическая информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: В этом разделе раскрываются технические и регламентные критерии допуска автомобилей по возрасту и региону для Яндекс Такси, с акцентом на практические нюансы.\n- sourceHint: Internal KB (требования к автопарку, автоматизация контроля), External KB (официальные критерии Яндекс Такси, региональные различия)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference parent page intent (информационный гид для водителей и автопарков)\n- Must set thematic direction for child h3 elements (региональные различия, документы, контроль)\n- Add interlink planning: internalLinks (страницы о документах для такси, обновлении автопарка, региональных требованиях); externalLinks (официальная база Яндекс Такси — только для справки)\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 250,
+              "maxWords": 400,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-2-1",
+                "tag": "p",
+                "keywords": [
+                  "допустимый возраст автомобиля",
+                  "ограничения по году выпуска"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Поймите, как определяется возраст автомобиля для допуска в сервис и почему это важно для успешного подключения.",
+                "intent": "Объяснить, как считается возраст автомобиля для Яндекс Такси, и почему этот критерий является ключевым для допуска.",
+                "audiences": "Водители и представители автопарков, которые хотят быстро проверить соответствие своего авто по году выпуска.",
+                "selfPrompt": "CONTEXT: Generate intro paragraph for section 'допустимый возраст автомобиля и критерии допуска'.\nROLE: intro\nGOAL: Кратко объяснить, как считается возраст авто (по ПТС), почему это важно для допуска в Яндекс Такси, и какие риски несоблюдения.\nKEYWORDS: допустимый возраст автомобиля, ограничения по году выпуска\nWORD COUNT: minWords: 80, maxWords: 150\nsemanticFingerprint: Вводный абзац раскрывает принцип расчёта возраста авто и его роль в допуске к работе в Яндекс Такси.\nsourceHint: Internal KB (требования к автопарку), External KB (методика Яндекс Такси)\nevidenceStrength: internal-tested | external-peer-reviewed"
+              },
+              {
+                "id": "p-2-2-3",
+                "tag": "p",
+                "keywords": [
+                  "региональные различия Яндекс Такси"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Коротко обозначьте, что требования могут отличаться по регионам — это важно для планирования.",
+                "intent": "Указать на существование региональных различий в требованиях к возрасту авто.",
+                "audiences": "Водители из разных регионов, которые хотят избежать ошибок при подключении.",
+                "selfPrompt": "CONTEXT: Generate short transition paragraph for section 'допустимый возраст автомобиля и критерии допуска'.\nROLE: transition\nGOAL: Кратко обозначить, что требования по возрасту авто могут отличаться в зависимости от региона.\nKEYWORDS: региональные различия Яндекс Такси\nWORD COUNT: minWords: 5, maxWords: 15\nsemanticFingerprint: Краткая связка, подчеркивающая важность учета региональных нюансов.\nsourceHint: External KB (региональные различия)\nevidenceStrength: external-peer-reviewed"
+              },
+              {
+                "id": "table-2-2-4",
+                "tag": "table",
+                "keywords": [
+                  "подходящие автомобили для такси",
+                  "региональные различия Яндекс Такси"
+                ],
+                "taxonomy": "Data-driven",
+                "attention": "Сравните требования по возрасту авто для разных регионов в удобной таблице.",
+                "intent": "Дать наглядное сравнение ограничений по возрасту авто в ключевых регионах.",
+                "audiences": "Владельцы автопарков и водители, планирующие работу в разных городах.",
+                "selfPrompt": "CONTEXT: Generate comparison table for section 'допустимый возраст автомобиля и критерии допуска'.\nSCHEMA: 3 columns × 4-5 rows\nHEADERS: Регион | Максимальный возраст авто | Примечания\nDATA TYPES: text/number/text\nDATA SOURCE: External KB (официальные критерии Яндекс Такси по регионам), Internal KB (если есть)\nWORD COUNT: minWords: 80, maxWords: 160\nsemanticFingerprint: Таблица визуализирует различия по регионам, облегчая сравнение для пользователя.\nschemaReadiness: Dataset/Comparison\nevidenceStrength: external-peer-reviewed"
+              },
+              {
+                "id": "h3-2-2",
+                "tag": "h3",
+                "keywords": [
+                  "контроль технического состояния",
+                  "документы для проверки авто",
+                  "автоматизация проверки",
+                  "подтверждение соответствия"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Узнайте, как быстро и корректно подтвердить соответствие авто требованиям по возрасту и техническому состоянию.",
+                "intent": "Пошагово объяснить, какие документы и проверки нужны для подтверждения возраста и технического состояния автомобиля.",
+                "audiences": "Водители и представители автопарков, которым важно пройти проверку с первого раза.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection 'контроль и подтверждение возраста авто' under h2 'допустимый возраст автомобиля и критерии допуска'.\nGOAL: Объяснить, какие документы нужны для подтверждения возраста авто, как проходит технический контроль, и как автоматизация (например, через US AUTO) помогает пройти проверку.\nKEYWORDS: контроль технического состояния, документы для проверки авто, автоматизация проверки, подтверждение соответствия\nWORD COUNT: minWords: 150, maxWords: 250\nsemanticFingerprint: Подраздел раскрывает процесс подтверждения возраста и технического состояния авто с акцентом на автоматизацию и документы.\ninterlinkPlanning: Вставить ссылку на страницу о документах для такси и автоматизации контроля.\nevidenceStrength: internal-tested | external-peer-reviewed",
+                "realContentStructure": [
+                  {
+                    "id": "p-2-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "контроль технического состояния",
+                      "автоматизация проверки"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Поймите, как автоматизация облегчает прохождение контроля и снижает риск отказа.",
+                    "intent": "Объяснить роль автоматизации и технического контроля в подтверждении соответствия авто.",
+                    "audiences": "Водители и автопарки, заинтересованные в упрощении процесса проверки.",
+                    "selfPrompt": "CONTEXT: Generate body paragraph for h3 'контроль и подтверждение возраста авто'.\nROLE: body\nGOAL: Показать, как автоматизация (например, через US AUTO) помогает пройти технический контроль и снизить риски.\nKEYWORDS: контроль технического состояния, автоматизация проверки\nWORD COUNT: minWords: 70, maxWords: 130\nsemanticFingerprint: Абзац раскрывает преимущества автоматизации контроля для допуска авто.\nsourceHint: Internal KB (автоматизация контроля, услуги US AUTO)\nevidenceStrength: internal-tested"
+                  },
+                  {
+                    "id": "ul-2-2-2",
+                    "tag": "ul",
+                    "keywords": [
+                      "документы для проверки авто"
+                    ],
+                    "taxonomy": "List",
+                    "attention": "Проверьте, какие документы понадобятся для подтверждения возраста и состояния авто.",
+                    "intent": "Дать список обязательных документов для проверки возраста и технического состояния.",
+                    "audiences": "Водители и представители автопарков, готовящие документы для проверки.",
+                    "selfPrompt": "CONTEXT: Generate unordered list for h3 'контроль и подтверждение возраста авто'.\nITEMS: 4-5 коротких пункта (5-10 слов)\nPURPOSE: Перечислить основные документы, необходимые для подтверждения возраста и состояния авто.\nKEYWORDS: документы для проверки авто\nWORD COUNT: minWords: 40, maxWords: 80\nsemanticFingerprint: Список конкретизирует, что нужно подготовить для успешного прохождения проверки.\nsourceHint: Internal KB (документы для такси), External KB (официальные требования)\nevidenceStrength: internal-tested | external-peer-reviewed"
+                  },
+                  {
+                    "id": "p-2-2-3",
+                    "tag": "p",
+                    "keywords": [
+                      "подтверждение соответствия"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Узнайте, как избежать типичных ошибок при подтверждении возраста авто.",
+                    "intent": "Дать советы по успешному прохождению проверки и подтверждению соответствия.",
+                    "audiences": "Водители, которые хотят избежать отказа из-за формальных ошибок.",
+                    "selfPrompt": "CONTEXT: Generate summary paragraph for h3 'контроль и подтверждение возраста авто'.\nROLE: summary\nGOAL: Дать советы по подтверждению возраста авто и минимизации рисков отказа.\nKEYWORDS: подтверждение соответствия\nWORD COUNT: minWords: 60, maxWords: 100\nsemanticFingerprint: Абзац подытоживает ключевые шаги и советы для успешного подтверждения возраста авто.\nsourceHint: Internal KB (советы по прохождению проверки)\nevidenceStrength: internal-tested"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -8178,5 +8301,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-23T18:29:47.536Z";
+export const lastUpdated = "2025-10-23T18:31:23.833Z";
 export const generatedBy = "menu-persist-api";
