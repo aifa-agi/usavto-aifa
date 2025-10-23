@@ -8060,7 +8060,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-23T18:12:06.292Z",
-        "updatedAt": "2025-10-23T18:32:49.940Z",
+        "updatedAt": "2025-10-23T18:34:04.047Z",
         "order": 6,
         "badgeName": "Блог",
         "description": "Узнайте максимальный возраст авто для Яндекс Такси в 2024 году: актуальные требования, советы для водителей и нюансы по регионам. Проверьте свой автомобиль!",
@@ -8595,6 +8595,109 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-5",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "итоги по возрасту авто для такси",
+              "выводы для водителей",
+              "практические рекомендации",
+              "следующие шаги для автопарков",
+              "обновление автопарка",
+              "контроль соответствия требованиям",
+              "планирование работы в Яндекс Такси"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Получите сжатое резюме ключевых моментов и практические шаги для успешной работы в Яндекс Такси с учётом возрастных ограничений авто.",
+            "intent": "Синтезировать основные выводы статьи, дать водителям и автопаркам чёткие рекомендации по дальнейшим действиям и подчеркнуть важность регулярного контроля соответствия требованиям.",
+            "audiences": "Водители и владельцы автопарков, планирующие подключение или обновление автомобилей для работы в Яндекс Такси; уровень — средний, заинтересованы в конкретных шагах и итогах.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 conclusion/summary section for page \"Максимальный возраст авто для Яндекс Такси: актуальные требования 2024\"\n\nGOAL: Суммировать ключевые выводы по теме возраста авто для Яндекс Такси, дать практические рекомендации и обозначить следующие шаги для водителей и автопарков, чтобы они могли уверенно планировать работу и обновление автопарка, не нарушая требований сервиса.\n\nAUDIENCE: Водители и представители автопарков | Level: intermediate | Pain points: неуверенность в соответствии авто, риск отказа при подключении, необходимость своевременного обновления автопарка.\n\nKEYWORDS TO INTEGRATE:\n[итоги по возрасту авто для такси, выводы для водителей, практические рекомендации, следующие шаги для автопарков, обновление автопарка, контроль соответствия требованиям, планирование работы в Яндекс Такси]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 200, maxWords: 300 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: h2 section with nested p, table, ul, p elements\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: [Автоматизация контроля технического состояния и медицинских осмотров, Требования к автопарку в пассажирских перевозках, Использование решений US AUTO в такси и пассажирском транспорте]\n- SECONDARY: Apply insights from External KB: [Обобщённые выводы по возрасту авто, советы по обновлению, рекомендации по планированию]\n\nQUALITY CRITERIA:\n- Actionable (конкретные рекомендации)\n- Specific (без общих фраз)\n- Data-backed (факты и выводы из базы знаний)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Сводный раздел с итогами, рекомендациями и планом действий для водителей и автопарков по теме возраста авто для Яндекс Такси.\n- sourceHint: Синтез на основе внутренних регламентов и отраслевых стандартов.\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nINTERLINK PLANNING:\n- Вставить 2-3 внутренних ссылки на страницы: \"Требования к автомобилям для такси\", \"Автоматизация контроля автопарка\", \"Пошаговая инструкция по подключению к Яндекс Такси\".\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 200,
+              "maxWords": 300,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-5-1",
+                "tag": "p",
+                "keywords": [
+                  "итоги по возрасту авто для такси",
+                  "ключевые выводы"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Сразу получите суть: что важно помнить о возрасте авто для работы в Яндекс Такси.",
+                "intent": "Дать краткое, но ёмкое резюме основных выводов статьи, чтобы пользователь мог быстро понять, что делать дальше.",
+                "audiences": "Водители и владельцы автопарков, которым важно быстро получить суть и принять решение.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate summary paragraph for conclusion section \"Итоги и рекомендации по возрасту авто для Яндекс Такси\".\n\nGOAL: Кратко изложить ключевые выводы по теме возраста авто для Яндекс Такси, подчеркнуть важность своевременного контроля и планирования обновления автопарка.\n\nKEYWORDS TO INTEGRATE: [итоги по возрасту авто для такси, ключевые выводы]\n\nWORD COUNT: minWords: 80, maxWords: 150\n\nMARKDOWN/MDX SYNTAX: paragraph (p)\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nE-E-A-T ENHANCERS: semanticFingerprint: Сжатое резюме итогов по возрасту авто для такси; sourceHint: синтез внутренних и внешних данных; evidenceStrength: internal-tested\n\nPAGE SETTINGS: Narrative, Simple, Custom Requirements applied.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-5-3",
+                "tag": "table",
+                "keywords": [
+                  "сравнение требований",
+                  "план обновления автопарка"
+                ],
+                "taxonomy": "Data-driven",
+                "attention": "Сравните основные параметры и сроки обновления автопарка для разных сценариев.",
+                "intent": "Визуализировать ключевые параметры и сроки, чтобы упростить планирование обновления автопарка и контроля соответствия.",
+                "audiences": "Руководители таксопарков и водители, которым важно видеть структурированную информацию для принятия решений.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate table for conclusion section \"Итоги и рекомендации по возрасту авто для Яндекс Такси\".\n\nGOAL: Сравнить основные параметры и сроки обновления автопарка для разных сценариев (личный автомобиль, автопарк, разные регионы), чтобы облегчить планирование.\n\nKEYWORDS TO INTEGRATE: [сравнение требований, план обновления автопарка]\n\nWORD COUNT: minWords: 80, maxWords: 160\n\nMARKDOWN/MDX SYNTAX: table (3 columns × 3-4 rows)\n- Колонки: \"Сценарий\", \"Рекомендуемый срок обновления\", \"Ключевые требования\"\n- Типы данных: text/text/text\n\nDATA SOURCE: Internal KB (рекомендации по контролю и обновлению), External KB (вариации по регионам)\n\nE-E-A-T ENHANCERS: semanticFingerprint: Таблица для быстрого сравнения сроков и требований; sourceHint: внутренние стандарты + отраслевые данные; evidenceStrength: internal-tested | external-peer-reviewed\n\nPAGE SETTINGS: Narrative, Simple, Custom Requirements applied.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-5-2",
+                "tag": "ul",
+                "keywords": [
+                  "практические рекомендации",
+                  "следующие шаги"
+                ],
+                "taxonomy": "Actionable",
+                "attention": "Воспользуйтесь конкретными шагами для поддержания соответствия и успешной работы.",
+                "intent": "Дать пользователям пошаговые рекомендации по дальнейшим действиям для поддержания соответствия и эффективной работы в Яндекс Такси.",
+                "audiences": "Водители и представители автопарков, которым нужны чёткие и простые шаги для внедрения.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate actionable bullet list for conclusion section \"Итоги и рекомендации по возрасту авто для Яндекс Такси\".\n\nGOAL: Дать 4-5 практических рекомендаций и следующих шагов для водителей и автопарков по контролю возраста авто, планированию обновления и использованию автоматизации.\n\nKEYWORDS TO INTEGRATE: [практические рекомендации, следующие шаги]\n\nWORD COUNT: minWords: 50, maxWords: 90\n\nMARKDOWN/MDX SYNTAX: ul (4-5 коротких пунктов по 10-15 слов)\n\nE-E-A-T ENHANCERS: semanticFingerprint: Чек-лист действий для поддержания соответствия; sourceHint: внутренние стандарты и best practices; evidenceStrength: internal-tested\n\nPAGE SETTINGS: Narrative, Simple, Custom Requirements applied.",
+                "additionalData": {
+                  "minWords": 50,
+                  "maxWords": 90,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-5-3",
+                "tag": "p",
+                "keywords": [
+                  "контроль соответствия требованиям",
+                  "планирование работы в Яндекс Такси"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Завершите чтение с чётким пониманием, как действовать дальше для стабильной работы.",
+                "intent": "Подвести итог, мотивировать к действию и подчеркнуть важность регулярного контроля и планирования для долгосрочного успеха.",
+                "audiences": "Все, кто планирует работать или уже работает в Яндекс Такси и хочет избежать ошибок.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate final motivational/conclusion paragraph for section \"Итоги и рекомендации по возрасту авто для Яндекс Такси\".\n\nGOAL: Завершить статью мотивирующим выводом, подчеркнуть важность регулярного контроля соответствия и планирования для стабильной работы в Яндекс Такси.\n\nKEYWORDS TO INTEGRATE: [контроль соответствия требованиям, планирование работы в Яндекс Такси]\n\nWORD COUNT: minWords: 70, maxWords: 130\n\nMARKDOWN/MDX SYNTAX: paragraph (p)\n\nE-E-A-T ENHANCERS: semanticFingerprint: Мотивационный вывод с призывом к действию; sourceHint: внутренние стандарты и отраслевой опыт; evidenceStrength: internal-tested\n\nPAGE SETTINGS: Narrative, Simple, Custom Requirements applied.",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              }
+            ]
           }
         ]
       }
@@ -8627,5 +8730,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-23T18:34:07.067Z";
+export const lastUpdated = "2025-10-23T18:34:26.081Z";
 export const generatedBy = "menu-persist-api";
