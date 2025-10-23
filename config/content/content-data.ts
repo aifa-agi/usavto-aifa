@@ -8060,7 +8060,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-23T18:12:06.292Z",
-        "updatedAt": "2025-10-23T18:35:21.936Z",
+        "updatedAt": "2025-10-23T18:35:44.641Z",
         "order": 6,
         "badgeName": "Блог",
         "description": "Узнайте максимальный возраст авто для Яндекс Такси в 2024 году: актуальные требования, советы для водителей и нюансы по регионам. Проверьте свой автомобиль!",
@@ -8668,7 +8668,8 @@ export const contentData = {
                   "minWords": 80,
                   "maxWords": 150,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "table-5-3",
@@ -8686,7 +8687,8 @@ export const contentData = {
                   "minWords": 80,
                   "maxWords": 160,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "ul-5-2",
@@ -8704,7 +8706,8 @@ export const contentData = {
                   "minWords": 50,
                   "maxWords": 90,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-5-3",
@@ -8722,12 +8725,14 @@ export const contentData = {
                   "minWords": 70,
                   "maxWords": 130,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           }
         ],
-        "isReadyDraftForPerplexity": false
+        "isReadyDraftForPerplexity": true
       }
     ],
     "order": 16
@@ -8758,5 +8763,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-23T18:35:48.268Z";
+export const lastUpdated = "2025-10-23T18:36:21.022Z";
 export const generatedBy = "menu-persist-api";
