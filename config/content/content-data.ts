@@ -8060,7 +8060,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-23T18:12:06.292Z",
-        "updatedAt": "2025-10-23T18:34:42.524Z",
+        "updatedAt": "2025-10-23T18:35:04.966Z",
         "order": 6,
         "badgeName": "Блог",
         "description": "Узнайте максимальный возраст авто для Яндекс Такси в 2024 году: актуальные требования, советы для водителей и нюансы по регионам. Проверьте свой автомобиль!",
@@ -8190,7 +8190,8 @@ export const contentData = {
                 "attention": "Поймите, как определяется возраст автомобиля для допуска в сервис и почему это важно для успешного подключения.",
                 "intent": "Объяснить, как считается возраст автомобиля для Яндекс Такси, и почему этот критерий является ключевым для допуска.",
                 "audiences": "Водители и представители автопарков, которые хотят быстро проверить соответствие своего авто по году выпуска.",
-                "selfPrompt": "CONTEXT: Generate intro paragraph for section 'допустимый возраст автомобиля и критерии допуска'.\nROLE: intro\nGOAL: Кратко объяснить, как считается возраст авто (по ПТС), почему это важно для допуска в Яндекс Такси, и какие риски несоблюдения.\nKEYWORDS: допустимый возраст автомобиля, ограничения по году выпуска\nWORD COUNT: minWords: 80, maxWords: 150\nsemanticFingerprint: Вводный абзац раскрывает принцип расчёта возраста авто и его роль в допуске к работе в Яндекс Такси.\nsourceHint: Internal KB (требования к автопарку), External KB (методика Яндекс Такси)\nevidenceStrength: internal-tested | external-peer-reviewed"
+                "selfPrompt": "CONTEXT: Generate intro paragraph for section 'допустимый возраст автомобиля и критерии допуска'.\nROLE: intro\nGOAL: Кратко объяснить, как считается возраст авто (по ПТС), почему это важно для допуска в Яндекс Такси, и какие риски несоблюдения.\nKEYWORDS: допустимый возраст автомобиля, ограничения по году выпуска\nWORD COUNT: minWords: 80, maxWords: 150\nsemanticFingerprint: Вводный абзац раскрывает принцип расчёта возраста авто и его роль в допуске к работе в Яндекс Такси.\nsourceHint: Internal KB (требования к автопарку), External KB (методика Яндекс Такси)\nevidenceStrength: internal-tested | external-peer-reviewed",
+                "status": "checked"
               },
               {
                 "id": "p-2-2-3",
@@ -8202,7 +8203,8 @@ export const contentData = {
                 "attention": "Коротко обозначьте, что требования могут отличаться по регионам — это важно для планирования.",
                 "intent": "Указать на существование региональных различий в требованиях к возрасту авто.",
                 "audiences": "Водители из разных регионов, которые хотят избежать ошибок при подключении.",
-                "selfPrompt": "CONTEXT: Generate short transition paragraph for section 'допустимый возраст автомобиля и критерии допуска'.\nROLE: transition\nGOAL: Кратко обозначить, что требования по возрасту авто могут отличаться в зависимости от региона.\nKEYWORDS: региональные различия Яндекс Такси\nWORD COUNT: minWords: 5, maxWords: 15\nsemanticFingerprint: Краткая связка, подчеркивающая важность учета региональных нюансов.\nsourceHint: External KB (региональные различия)\nevidenceStrength: external-peer-reviewed"
+                "selfPrompt": "CONTEXT: Generate short transition paragraph for section 'допустимый возраст автомобиля и критерии допуска'.\nROLE: transition\nGOAL: Кратко обозначить, что требования по возрасту авто могут отличаться в зависимости от региона.\nKEYWORDS: региональные различия Яндекс Такси\nWORD COUNT: minWords: 5, maxWords: 15\nsemanticFingerprint: Краткая связка, подчеркивающая важность учета региональных нюансов.\nsourceHint: External KB (региональные различия)\nevidenceStrength: external-peer-reviewed",
+                "status": "checked"
               },
               {
                 "id": "table-2-2-4",
@@ -8215,7 +8217,8 @@ export const contentData = {
                 "attention": "Сравните требования по возрасту авто для разных регионов в удобной таблице.",
                 "intent": "Дать наглядное сравнение ограничений по возрасту авто в ключевых регионах.",
                 "audiences": "Владельцы автопарков и водители, планирующие работу в разных городах.",
-                "selfPrompt": "CONTEXT: Generate comparison table for section 'допустимый возраст автомобиля и критерии допуска'.\nSCHEMA: 3 columns × 4-5 rows\nHEADERS: Регион | Максимальный возраст авто | Примечания\nDATA TYPES: text/number/text\nDATA SOURCE: External KB (официальные критерии Яндекс Такси по регионам), Internal KB (если есть)\nWORD COUNT: minWords: 80, maxWords: 160\nsemanticFingerprint: Таблица визуализирует различия по регионам, облегчая сравнение для пользователя.\nschemaReadiness: Dataset/Comparison\nevidenceStrength: external-peer-reviewed"
+                "selfPrompt": "CONTEXT: Generate comparison table for section 'допустимый возраст автомобиля и критерии допуска'.\nSCHEMA: 3 columns × 4-5 rows\nHEADERS: Регион | Максимальный возраст авто | Примечания\nDATA TYPES: text/number/text\nDATA SOURCE: External KB (официальные критерии Яндекс Такси по регионам), Internal KB (если есть)\nWORD COUNT: minWords: 80, maxWords: 160\nsemanticFingerprint: Таблица визуализирует различия по регионам, облегчая сравнение для пользователя.\nschemaReadiness: Dataset/Comparison\nevidenceStrength: external-peer-reviewed",
+                "status": "checked"
               },
               {
                 "id": "h3-2-2",
@@ -8243,7 +8246,8 @@ export const contentData = {
                     "attention": "Поймите, как автоматизация облегчает прохождение контроля и снижает риск отказа.",
                     "intent": "Объяснить роль автоматизации и технического контроля в подтверждении соответствия авто.",
                     "audiences": "Водители и автопарки, заинтересованные в упрощении процесса проверки.",
-                    "selfPrompt": "CONTEXT: Generate body paragraph for h3 'контроль и подтверждение возраста авто'.\nROLE: body\nGOAL: Показать, как автоматизация (например, через US AUTO) помогает пройти технический контроль и снизить риски.\nKEYWORDS: контроль технического состояния, автоматизация проверки\nWORD COUNT: minWords: 70, maxWords: 130\nsemanticFingerprint: Абзац раскрывает преимущества автоматизации контроля для допуска авто.\nsourceHint: Internal KB (автоматизация контроля, услуги US AUTO)\nevidenceStrength: internal-tested"
+                    "selfPrompt": "CONTEXT: Generate body paragraph for h3 'контроль и подтверждение возраста авто'.\nROLE: body\nGOAL: Показать, как автоматизация (например, через US AUTO) помогает пройти технический контроль и снизить риски.\nKEYWORDS: контроль технического состояния, автоматизация проверки\nWORD COUNT: minWords: 70, maxWords: 130\nsemanticFingerprint: Абзац раскрывает преимущества автоматизации контроля для допуска авто.\nsourceHint: Internal KB (автоматизация контроля, услуги US AUTO)\nevidenceStrength: internal-tested",
+                    "status": "checked"
                   },
                   {
                     "id": "ul-2-2-2",
@@ -8255,7 +8259,8 @@ export const contentData = {
                     "attention": "Проверьте, какие документы понадобятся для подтверждения возраста и состояния авто.",
                     "intent": "Дать список обязательных документов для проверки возраста и технического состояния.",
                     "audiences": "Водители и представители автопарков, готовящие документы для проверки.",
-                    "selfPrompt": "CONTEXT: Generate unordered list for h3 'контроль и подтверждение возраста авто'.\nITEMS: 4-5 коротких пункта (5-10 слов)\nPURPOSE: Перечислить основные документы, необходимые для подтверждения возраста и состояния авто.\nKEYWORDS: документы для проверки авто\nWORD COUNT: minWords: 40, maxWords: 80\nsemanticFingerprint: Список конкретизирует, что нужно подготовить для успешного прохождения проверки.\nsourceHint: Internal KB (документы для такси), External KB (официальные требования)\nevidenceStrength: internal-tested | external-peer-reviewed"
+                    "selfPrompt": "CONTEXT: Generate unordered list for h3 'контроль и подтверждение возраста авто'.\nITEMS: 4-5 коротких пункта (5-10 слов)\nPURPOSE: Перечислить основные документы, необходимые для подтверждения возраста и состояния авто.\nKEYWORDS: документы для проверки авто\nWORD COUNT: minWords: 40, maxWords: 80\nsemanticFingerprint: Список конкретизирует, что нужно подготовить для успешного прохождения проверки.\nsourceHint: Internal KB (документы для такси), External KB (официальные требования)\nevidenceStrength: internal-tested | external-peer-reviewed",
+                    "status": "checked"
                   },
                   {
                     "id": "p-2-2-3",
@@ -8267,11 +8272,14 @@ export const contentData = {
                     "attention": "Узнайте, как избежать типичных ошибок при подтверждении возраста авто.",
                     "intent": "Дать советы по успешному прохождению проверки и подтверждению соответствия.",
                     "audiences": "Водители, которые хотят избежать отказа из-за формальных ошибок.",
-                    "selfPrompt": "CONTEXT: Generate summary paragraph for h3 'контроль и подтверждение возраста авто'.\nROLE: summary\nGOAL: Дать советы по подтверждению возраста авто и минимизации рисков отказа.\nKEYWORDS: подтверждение соответствия\nWORD COUNT: minWords: 60, maxWords: 100\nsemanticFingerprint: Абзац подытоживает ключевые шаги и советы для успешного подтверждения возраста авто.\nsourceHint: Internal KB (советы по прохождению проверки)\nevidenceStrength: internal-tested"
+                    "selfPrompt": "CONTEXT: Generate summary paragraph for h3 'контроль и подтверждение возраста авто'.\nROLE: summary\nGOAL: Дать советы по подтверждению возраста авто и минимизации рисков отказа.\nKEYWORDS: подтверждение соответствия\nWORD COUNT: minWords: 60, maxWords: 100\nsemanticFingerprint: Абзац подытоживает ключевые шаги и советы для успешного подтверждения возраста авто.\nsourceHint: Internal KB (советы по прохождению проверки)\nevidenceStrength: internal-tested",
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-3",
@@ -8734,5 +8742,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-23T18:35:08.150Z";
+export const lastUpdated = "2025-10-23T18:35:16.168Z";
 export const generatedBy = "menu-persist-api";
