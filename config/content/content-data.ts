@@ -8060,7 +8060,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-23T18:12:06.292Z",
-        "updatedAt": "2025-10-23T18:29:45.511Z",
+        "updatedAt": "2025-10-23T18:31:21.120Z",
         "order": 6,
         "badgeName": "Блог",
         "description": "Узнайте максимальный возраст авто для Яндекс Такси в 2024 году: актуальные требования, советы для водителей и нюансы по регионам. Проверьте свой автомобиль!",
@@ -8269,6 +8269,131 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "проверка возраста автомобиля",
+              "процесс подтверждения соответствия",
+              "документы для Яндекс Такси",
+              "технический осмотр авто",
+              "автоматизация контроля автопарка",
+              "электронные сервисы проверки",
+              "инструкция для водителей"
+            ],
+            "taxonomy": "HowTo",
+            "attention": "Пошагово разберём, как проверить и подтвердить соответствие автомобиля требованиям Яндекс Такси по возрасту — с учётом нюансов оформления и современных инструментов автоматизации.",
+            "intent": "Дать водителям и таксопаркам практические инструкции и инструменты для самостоятельной проверки возраста авто и подтверждения его соответствия требованиям Яндекс Такси, чтобы избежать ошибок при подключении.",
+            "audiences": "Водители и представители таксопарков с базовым или средним опытом, которые хотят быстро и без ошибок проверить, подходит ли их автомобиль по возрасту для работы в Яндекс Такси и оформить необходимые документы.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 section on 'практическая инструкция по проверке возраста и подтверждению соответствия автомобиля требованиям Яндекс Такси' for page 'Максимальный возраст авто для Яндекс Такси: актуальные требования 2024'\n\nGOAL: Обеспечить читателя подробной, пошаговой инструкцией по самостоятельной проверке возраста автомобиля, подготовке документов и использованию автоматизированных сервисов для подтверждения соответствия требованиям Яндекс Такси. Включить конкретные действия, примеры электронных сервисов и советы по минимизации ошибок.\n\nAUDIENCE: Водители и представители таксопарков | Level: базовый/средний | Pain points: страх отказа при подключении, неуверенность в правильности расчёта возраста, сложности с документами.\n\nKEYWORDS TO INTEGRATE:\n[проверка возраста автомобиля, процесс подтверждения соответствия, документы для Яндекс Такси, технический осмотр авто, автоматизация контроля автопарка, электронные сервисы проверки, инструкция для водителей]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: h2 section with nested h3, p, ol, code as per structure\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: автоматизация контроля технического состояния и медицинских осмотров, требования к автопарку в пассажирских перевозках, использование решений US AUTO в такси\n- SECONDARY: Apply insights from External KB: пошаговые инструкции по проверке возраста авто, требования к документам, примеры электронных сервисов\n\nQUALITY CRITERIA:\n- Actionable (конкретные шаги и рекомендации)\n- Specific (без общих фраз)\n- Data-backed (факты и примеры из Knowledge Bases)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Пошаговая инструкция по самостоятельной проверке возраста авто и подтверждению соответствия требованиям Яндекс Такси с учётом автоматизации и цифровых сервисов.\n- sourceHint: Internal KB (процессы US AUTO), External KB (индустриальные инструкции)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nINTERLINK PLANNING:\n- Вставить ссылки на страницы: «Документы для подключения к Яндекс Такси», «Автоматизация контроля автопарка», «Технический осмотр для такси»\n- Schema readiness: HowTo\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-3-1",
+                "tag": "p",
+                "keywords": [
+                  "проверка возраста автомобиля",
+                  "инструкция для водителей"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, как быстро и самостоятельно убедиться, что ваш автомобиль соответствует возрастным требованиям Яндекс Такси.",
+                "intent": "Ввести пользователя в тему раздела, объяснить важность самостоятельной проверки возраста авто и обозначить, что далее будет пошаговая инструкция.",
+                "audiences": "Водители и представители таксопарков, которые впервые сталкиваются с процедурой проверки возраста авто.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for h2 section 'Практическая инструкция по проверке возраста и подтверждению соответствия автомобиля требованиям Яндекс Такси'.\nROLE: intro\nGOAL: Кратко объяснить, зачем важно проверить возраст авто перед подключением к Яндекс Такси и что даст эта инструкция.\nKEYWORDS: [проверка возраста автомобиля, инструкция для водителей]\nWORD COUNT: minWords: 90, maxWords: 170\nsemanticFingerprint: Вводное пояснение о необходимости проверки возраста авто для Яндекс Такси.\nsourceHint: Internal KB (процессы US AUTO), External KB (индустриальные инструкции)\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 90,
+                  "maxWords": 170,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-3-2",
+                "tag": "h3",
+                "keywords": [
+                  "процесс подтверждения соответствия",
+                  "документы для Яндекс Такси",
+                  "технический осмотр авто",
+                  "электронные сервисы проверки",
+                  "автоматизация контроля автопарка"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Следуйте пошаговой инструкции, чтобы избежать ошибок при проверке возраста и оформлении документов для Яндекс Такси.",
+                "intent": "Дать подробную, пошаговую инструкцию по проверке возраста автомобиля, подготовке документов и использованию автоматизированных сервисов для подтверждения соответствия.",
+                "audiences": "Водители и представители таксопарков, которые хотят минимизировать риск отказа при подключении и ускорить процесс проверки.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection for h2 'Практическая инструкция по проверке возраста и подтверждению соответствия автомобиля требованиям Яндекс Такси'.\nGOAL: Подробно описать пошаговый процесс проверки возраста авто, подготовки документов и использования электронных сервисов для подтверждения соответствия.\nKEYWORDS: [процесс подтверждения соответствия, документы для Яндекс Такси, технический осмотр авто, электронные сервисы проверки, автоматизация контроля автопарка]\nsemanticFingerprint: Пошаговая инструкция по подтверждению возраста авто и оформлению документов с акцентом на автоматизацию.\nsourceHint: Internal KB (автоматизация US AUTO), External KB (практические советы)\nevidenceStrength: internal-tested | external-peer-reviewed\nINTERLINK: Вставить ссылку на страницу «Документы для подключения к Яндекс Такси»\nWORD COUNT: minWords: 180, maxWords: 280",
+                "additionalData": {
+                  "minWords": 180,
+                  "maxWords": 280,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "процесс подтверждения соответствия",
+                      "электронные сервисы проверки"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Пояснение, почему важно использовать современные сервисы и автоматизацию для проверки возраста авто.",
+                    "intent": "Объяснить преимущества автоматизации и электронных сервисов при подтверждении возраста автомобиля для Яндекс Такси.",
+                    "audiences": "Водители, желающие ускорить и упростить процесс проверки.",
+                    "selfPrompt": "CONTEXT: Generate supporting paragraph for h3 'Пошаговая инструкция по проверке возраста и подтверждению соответствия'.\nROLE: body\nGOAL: Объяснить, как автоматизация и электронные сервисы помогают быстро проверить возраст авто и подготовить документы.\nKEYWORDS: [процесс подтверждения соответствия, электронные сервисы проверки]\nsemanticFingerprint: Обоснование пользы автоматизации и цифровых инструментов для проверки возраста авто.\nsourceHint: Internal KB (автоматизация контроля), External KB (индустриальные советы)\nevidenceStrength: internal-tested\nWORD COUNT: minWords: 75, maxWords: 140",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 140,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-2-2",
+                    "tag": "ol",
+                    "keywords": [
+                      "документы для Яндекс Такси",
+                      "технический осмотр авто"
+                    ],
+                    "taxonomy": "HowTo",
+                    "attention": "Выполните все шаги, чтобы гарантировать успешную проверку возраста и оформление документов.",
+                    "intent": "Дать структурированный список шагов для самостоятельной проверки возраста авто и подготовки документов для Яндекс Такси.",
+                    "audiences": "Водители и представители таксопарков, которым нужна пошаговая инструкция.",
+                    "selfPrompt": "CONTEXT: Generate ordered list (5-6 шагов) for h3 'Пошаговая инструкция по проверке возраста и подтверждению соответствия'.\nROLE: steps\nGOAL: Перечислить последовательные действия: от проверки года выпуска по ПТС до загрузки документов в электронный сервис.\nKEYWORDS: [документы для Яндекс Такси, технический осмотр авто]\nsemanticFingerprint: Чёткая последовательность действий для проверки возраста и оформления документов.\nsourceHint: Internal KB (процессы US AUTO), External KB (индустриальные инструкции)\nevidenceStrength: internal-tested\nWORD COUNT: minWords: 50, maxWords: 90\nSTRUCTURE: 5-6 коротких пунктов (5-15 слов каждый)",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 90,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-3-2-3",
+                    "tag": "code",
+                    "keywords": [
+                      "автоматизация контроля автопарка"
+                    ],
+                    "taxonomy": "technical",
+                    "attention": "Пример кода для автоматизированной проверки возраста автомобиля по дате выпуска.",
+                    "intent": "Дать пример кода или алгоритма, который поможет автоматизировать проверку возраста авто для Яндекс Такси.",
+                    "audiences": "Технические специалисты автопарков, интеграторы, желающие внедрить автоматическую проверку.",
+                    "selfPrompt": "CONTEXT: Generate code snippet (Python или JavaScript) for h3 'Пошаговая инструкция по проверке возраста и подтверждению соответствия'.\nGOAL: Показать, как автоматически рассчитать возраст автомобиля по году выпуска и сравнить с лимитом Яндекс Такси.\nKEYWORDS: [автоматизация контроля автопарка]\nsemanticFingerprint: Пример кода для автоматизации проверки возраста авто.\nsourceHint: Internal KB (технические решения US AUTO)\nevidenceStrength: internal-tested\nWORD COUNT: minWords: 20, maxWords: 50\nLANGUAGE: Python или JavaScript\nLENGTH: короткий сниппет (5-10 строк)",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 50,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -8301,5 +8426,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-23T18:31:23.833Z";
+export const lastUpdated = "2025-10-23T18:32:51.944Z";
 export const generatedBy = "menu-persist-api";
