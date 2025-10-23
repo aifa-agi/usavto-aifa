@@ -8060,7 +8060,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-23T18:12:06.292Z",
-        "updatedAt": "2025-10-23T18:31:21.120Z",
+        "updatedAt": "2025-10-23T18:32:49.940Z",
         "order": 6,
         "badgeName": "Блог",
         "description": "Узнайте максимальный возраст авто для Яндекс Такси в 2024 году: актуальные требования, советы для водителей и нюансы по регионам. Проверьте свой автомобиль!",
@@ -8394,6 +8394,207 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "часто задаваемые вопросы по возрасту авто",
+              "ограничения для водителей Яндекс Такси",
+              "исключения из правил по возрасту",
+              "региональные особенности требований",
+              "советы по обновлению автопарка",
+              "разрешённые марки и модели",
+              "ответы на вопросы водителей"
+            ],
+            "taxonomy": "FAQ",
+            "attention": "Получите быстрые и точные ответы на самые частые вопросы о возрасте автомобиля для работы в Яндекс Такси, чтобы избежать ошибок и уверенно подключиться к сервису.",
+            "intent": "Собрать и структурировать ключевые вопросы и ответы, которые чаще всего возникают у водителей и владельцев автопарков по теме возраста авто для Яндекс Такси, с учётом нюансов, исключений и практических советов.",
+            "audiences": "Водители такси, представители автопарков, кандидаты на подключение к Яндекс Такси; уровень — базовый и средний; ищут быстрые решения и разъяснения по сложным ситуациям.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 FAQ section for page \"Максимальный возраст авто для Яндекс Такси: актуальные требования 2024\"\n\nGOAL: Сконцентрировать в одном разделе наиболее частые и важные вопросы по возрасту авто для Яндекс Такси, дать чёткие и лаконичные ответы, раскрыть исключения, региональные особенности, советы по обновлению автопарка и нюансы, которые не были рассмотрены в предыдущих разделах.\n\nAUDIENCE: Водители и владельцы автопарков, планирующие подключение или обновление транспорта; уровень — базовый/средний; хотят быстро получить практические ответы на типовые и нестандартные вопросы.\n\nKEYWORDS TO INTEGRATE:\n[часто задаваемые вопросы по возрасту авто, ограничения для водителей Яндекс Такси, исключения из правил по возрасту, региональные особенности требований, советы по обновлению автопарка, разрешённые марки и модели, ответы на вопросы водителей]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 heading with nested H3 for each FAQ, each with a paragraph answer\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: требования к автопарку, автоматизация контроля, особенности работы с агрегаторами\n- SECONDARY: Apply insights from External KB: официальные ответы Яндекс Такси, разъяснения по регионам, советы по обновлению авто\n\nQUALITY CRITERIA:\n- Actionable (конкретные рекомендации)\n- Specific (без общих фраз)\n- Data-backed (факты и примеры)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Каждый вопрос раскрывает отдельный аспект, не пересекающийся с предыдущими разделами (исключения, региональные различия, советы по обновлению, нестандартные ситуации).\n- sourceHint: Синтез информации из внутренней базы и официальных разъяснений Яндекс Такси.\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nINTERLINK PLANNING: Включить ссылки на основные страницы по условиям работы в такси, обновлению автопарка, региональным требованиям.\n\nSCHEMA READINESS: FAQPage (готово для разметки FAQ)\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "keywords": [
+                  "часто задаваемые вопросы по возрасту авто",
+                  "ответы на вопросы водителей"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Краткое введение к разделу FAQ, объясняющее, почему важно знать нюансы по возрасту авто для Яндекс Такси.",
+                "intent": "Ввести пользователя в раздел FAQ, обозначить его пользу и объяснить, какие вопросы будут рассмотрены.",
+                "audiences": "Водители, представители автопарков, ищущие быстрые ответы на типовые вопросы.",
+                "selfPrompt": "CONTEXT: Generate intro paragraph for FAQ section on 'Максимальный возраст авто для Яндекс Такси: актуальные требования 2024'.\nROLE: Вводный абзац, объясняющий структуру и пользу раздела FAQ.\nKEYWORDS: часто задаваемые вопросы по возрасту авто, ответы на вопросы водителей (NO sibling duplication).\nWORD COUNT: minWords: 70, maxWords: 130.\nMARKDOWN: Paragraph.\nsemanticFingerprint: Вводит FAQ как инструмент для быстрого поиска ответов по возрасту авто.\nsourceHint: Internal KB (структурирование вопросов), External KB (типовые вопросы).\nevidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "keywords": [
+                  "исключения из правил по возрасту",
+                  "специальные случаи допуска",
+                  "часто задаваемые вопросы по возрасту авто"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, в каких случаях допускаются исключения из стандартных требований по возрасту автомобиля.",
+                "intent": "Раскрыть, существуют ли исключения из правил по возрасту авто для Яндекс Такси и как ими воспользоваться.",
+                "audiences": "Водители и автопарки, чьи авто близки к предельному возрасту или попадают под особые условия.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item on 'исключения из правил по возрасту' for section 'FAQ' of page 'Максимальный возраст авто для Яндекс Такси: актуальные требования 2024'.\nBuilds on H2 FAQ intent, раскрывает специальные случаи допуска.\nKEYWORDS: исключения из правил по возрасту, специальные случаи допуска, часто задаваемые вопросы по возрасту авто (NO sibling duplication).\nWORD COUNT: minWords: 150, maxWords: 220.\nsemanticFingerprint: Описывает исключения и редкие ситуации по возрасту авто.\nsourceHint: Internal KB (регламентные исключения), External KB (официальные ответы).\nevidenceStrength: internal-tested | external-peer-reviewed.\nINTERLINK: Страница с условиями работы в такси.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "keywords": [
+                      "исключения из правил по возрасту"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Детализирует, когда и как можно получить исключение по возрасту авто.",
+                    "intent": "Дать конкретный ответ и примеры по исключениям из возрастных ограничений.",
+                    "audiences": "Водители, автопарки с нестандартными ситуациями.",
+                    "selfPrompt": "ROLE: Ответ на FAQ о специальных случаях допуска по возрасту авто.\nKEYWORDS: исключения из правил по возрасту (NO sibling duplication).\nWORD COUNT: minWords: 60, maxWords: 120.\nsemanticFingerprint: Приводит примеры и условия исключений.\nsourceHint: Internal KB (регламент), External KB (разъяснения).\nevidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-2",
+                "tag": "h3",
+                "keywords": [
+                  "региональные особенности требований",
+                  "различия по городам",
+                  "часто задаваемые вопросы по возрасту авто"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Проверьте, отличаются ли требования по возрасту авто для Яндекс Такси в вашем регионе.",
+                "intent": "Объяснить, как и почему требования по возрасту авто могут различаться в зависимости от региона или города.",
+                "audiences": "Водители и автопарки из разных регионов, планирующие подключение к Яндекс Такси.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item on 'региональные особенности требований' for section 'FAQ' of page 'Максимальный возраст авто для Яндекс Такси: актуальные требования 2024'.\nBuilds on H2 FAQ intent, раскрывает различия по регионам.\nKEYWORDS: региональные особенности требований, различия по городам, часто задаваемые вопросы по возрасту авто (NO sibling duplication).\nWORD COUNT: minWords: 150, maxWords: 220.\nsemanticFingerprint: Описывает, как требования по возрасту авто меняются в зависимости от региона.\nsourceHint: Internal KB (общие принципы), External KB (официальные списки по регионам).\nevidenceStrength: internal-tested | external-peer-reviewed.\nINTERLINK: Страница с региональными условиями подключения.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "региональные особенности требований"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Дает конкретные примеры различий по регионам.",
+                    "intent": "Дать чёткий ответ, как узнать требования по возрасту авто в своём регионе.",
+                    "audiences": "Водители из регионов, автопарки с географическим охватом.",
+                    "selfPrompt": "ROLE: Ответ на FAQ о региональных различиях по возрасту авто.\nKEYWORDS: региональные особенности требований (NO sibling duplication).\nWORD COUNT: minWords: 60, maxWords: 120.\nsemanticFingerprint: Приводит примеры и способы проверки.\nsourceHint: Internal KB (принципы), External KB (официальные списки).\nevidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-3",
+                "tag": "h3",
+                "keywords": [
+                  "советы по обновлению автопарка",
+                  "оптимальный момент для замены авто",
+                  "часто задаваемые вопросы по возрасту авто"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, когда лучше всего обновлять автомобиль, чтобы не потерять доступ к заказам Яндекс Такси.",
+                "intent": "Дать практические рекомендации по своевременной замене или обновлению автомобиля для продолжения работы в Яндекс Такси.",
+                "audiences": "Водители, автопарки, планирующие долгосрочную работу с агрегатором.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item on 'советы по обновлению автопарка' for section 'FAQ' of page 'Максимальный возраст авто для Яндекс Такси: актуальные требования 2024'.\nBuilds on H2 FAQ intent, раскрывает оптимальные стратегии обновления транспорта.\nKEYWORDS: советы по обновлению автопарка, оптимальный момент для замены авто, часто задаваемые вопросы по возрасту авто (NO sibling duplication).\nWORD COUNT: minWords: 150, maxWords: 220.\nsemanticFingerprint: Даёт советы по планированию обновления авто.\nsourceHint: Internal KB (автоматизация контроля, рекомендации), External KB (практические советы).\nevidenceStrength: internal-tested | external-peer-reviewed.\nINTERLINK: Страница с советами по обновлению автопарка.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "советы по обновлению автопарка"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Дает конкретные рекомендации по срокам и признакам необходимости замены авто.",
+                    "intent": "Объяснить, как не пропустить момент для обновления машины и избежать простоя.",
+                    "audiences": "Водители, автопарки, планирующие долгосрочную работу.",
+                    "selfPrompt": "ROLE: Ответ на FAQ о сроках и признаках необходимости обновления авто.\nKEYWORDS: советы по обновлению автопарка (NO sibling duplication).\nWORD COUNT: minWords: 60, maxWords: 120.\nsemanticFingerprint: Даёт практические шаги и признаки.\nsourceHint: Internal KB (рекомендации), External KB (советы водителей).\nevidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-4",
+                "tag": "h3",
+                "keywords": [
+                  "разрешённые марки и модели",
+                  "список подходящих автомобилей",
+                  "часто задаваемые вопросы по возрасту авто"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Проверьте, какие марки и модели автомобилей чаще всего допускаются к работе в Яндекс Такси с учётом возраста.",
+                "intent": "Дать ориентир по выбору автомобиля: какие марки и модели чаще всего соответствуют требованиям по возрасту и проходят проверку.",
+                "audiences": "Водители, автопарки, выбирающие автомобиль для подключения к Яндекс Такси.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item on 'разрешённые марки и модели' for section 'FAQ' of page 'Максимальный возраст авто для Яндекс Такси: актуальные требования 2024'.\nBuilds on H2 FAQ intent, раскрывает список популярных и разрешённых авто.\nKEYWORDS: разрешённые марки и модели, список подходящих автомобилей, часто задаваемые вопросы по возрасту авто (NO sibling duplication).\nWORD COUNT: minWords: 150, maxWords: 220.\nsemanticFingerprint: Даёт ориентир по выбору авто для подключения.\nsourceHint: Internal KB (общие критерии), External KB (официальные списки моделей).\nevidenceStrength: internal-tested | external-peer-reviewed.\nINTERLINK: Страница с полным списком разрешённых авто.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "разрешённые марки и модели"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Дает примеры наиболее часто одобряемых моделей.",
+                    "intent": "Объяснить, как выбрать подходящий автомобиль по марке и модели с учётом возраста.",
+                    "audiences": "Водители, автопарки на этапе выбора авто.",
+                    "selfPrompt": "ROLE: Ответ на FAQ о популярных и разрешённых марках/моделях авто.\nKEYWORDS: разрешённые марки и модели (NO sibling duplication).\nWORD COUNT: minWords: 60, maxWords: 120.\nsemanticFingerprint: Даёт примеры и критерии выбора.\nsourceHint: Internal KB (критерии), External KB (официальные списки).\nevidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -8426,5 +8627,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-23T18:32:51.944Z";
+export const lastUpdated = "2025-10-23T18:34:07.067Z";
 export const generatedBy = "menu-persist-api";
