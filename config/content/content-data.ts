@@ -2273,6 +2273,9 @@ export const contentData = {
             "alt": "инструкция диспетчера автомобильного транспорта",
             "href": "/app-images/uosqlgxkjmuykbyc7r905nn7.jpg"
           }
+        ],
+        "keywords": [
+          "инструкция диспетчера автомобильного транспорта"
         ]
       }
     ],
@@ -2304,5 +2307,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T19:28:14.861Z";
+export const lastUpdated = "2025-10-24T19:28:28.496Z";
 export const generatedBy = "menu-persist-api";
