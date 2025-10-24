@@ -3595,7 +3595,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-24T19:39:39.400Z",
-        "updatedAt": "2025-10-24T19:50:16.574Z",
+        "updatedAt": "2025-10-24T19:51:48.442Z",
         "order": 3,
         "badgeName": "Блог",
         "description": "Узнайте, как запустить Яндекс Такси в своем городе: пошаговая инструкция, юридические нюансы, советы по подключению и старту бизнеса. Начните свой успех!",
@@ -3682,6 +3682,163 @@ export const contentData = {
                 }
               }
             ]
+          },
+          {
+            "id": "h2-2",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "организация таксопарка",
+              "требования к автопарку",
+              "документы для Яндекс Такси",
+              "маршрутные листы",
+              "автоматизация автопарка",
+              "медицинские осмотры водителей",
+              "технический контроль транспорта"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, какие технические и организационные шаги необходимы для запуска таксопарка под Яндекс Такси — от подготовки автопарка до автоматизации документооборота.",
+            "intent": "Дать читателю полное понимание технических и организационных требований для запуска таксопарка и подключения к Яндекс Такси, включая подготовку автопарка, оформление документов и внедрение автоматизации.",
+            "audiences": "Начинающие и действующие предприниматели, владельцы ИП или ООО, рассматривающие запуск или масштабирование таксопарка через Яндекс Такси; уровень — средний, интересуются практическими аспектами организации и управления автопарком.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 section on \"Технические и организационные требования для запуска таксопарка под Яндекс Такси\" for page \"Как запустить Яндекс Такси в своем городе: пошаговая инструкция и советы\"\n\nGOAL: Подробно раскрыть технические и организационные аспекты подготовки автопарка, оформления маршрутных листов, внедрения автоматизации, медицинского и технического контроля для соответствия требованиям Яндекс Такси и успешного старта бизнеса.\n\nAUDIENCE: Предприниматели, владельцы ИП/ООО, планирующие запуск или развитие таксопарка; уровень — средний; ищут конкретные требования, инструменты автоматизации и способы минимизации рисков.\n\nKEYWORDS TO INTEGRATE:\n[организация таксопарка, требования к автопарку, документы для Яндекс Такси, маршрутные листы, автоматизация автопарка, медицинские осмотры водителей, технический контроль транспорта]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 250, maxWords: 400 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with nested p, table, h3, ul as per structure\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Internal KB (разделы о партнерстве с Яндекс Такси, автоматизации автопарка, медицинском и техническом контроле)\n- SECONDARY: External KB (индустриальные стандарты, общие требования рынка, советы по минимизации вложений)\n\nQUALITY CRITERIA:\n- Actionable (пошаговые рекомендации)\n- Specific (конкретные требования и инструменты)\n- Data-backed (факты и статистика из Knowledge Bases)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальный разбор технических и организационных требований для запуска таксопарка под Яндекс Такси, включая автоматизацию документооборота и медицинский контроль.\n- sourceHint: Internal KB (экспертный опыт работы с такси и агрегаторами), External KB (рыночные стандарты)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nINTERLINK PLANNING: Включить 2-3 внутренних ссылки на страницы о франшизе Яндекс Такси, автоматизации автопарка и юридических аспектах запуска такси.\nSCHEMA READINESS: HowTo/Guide\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)\n",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 250,
+              "maxWords": 400,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-2-1",
+                "tag": "p",
+                "keywords": [
+                  "организация таксопарка",
+                  "требования к автопарку"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Поймите, почему правильная организация автопарка — ключ к успешному старту.",
+                "intent": "Ввести читателя в тему организационных и технических требований, объяснить их важность для запуска таксопарка под Яндекс Такси.",
+                "audiences": "Предприниматели, планирующие открыть таксопарк; уровень — средний; ищут структурированное объяснение базовых требований.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for section 'Технические и организационные требования для запуска таксопарка под Яндекс Такси'.\nROLE: intro\nKEYWORDS: организация таксопарка, требования к автопарку\nGOAL: Кратко обозначить, что запуск таксопарка требует соблюдения ряда технических и организационных условий, и объяснить, почему это важно для успешного подключения к Яндекс Такси.\nSOURCE: Internal KB (опыт работы с такси и агрегаторами).\nsemanticFingerprint: Вводное пояснение о значимости технической и организационной подготовки автопарка.\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-2-2-3",
+                "tag": "p",
+                "keywords": [
+                  "документы для Яндекс Такси"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, какие документы обязательны для старта.",
+                "intent": "Кратко выделить важность правильного оформления документов для работы с Яндекс Такси.",
+                "audiences": "Владельцы ИП/ООО, готовящие документы для запуска таксопарка.",
+                "selfPrompt": "CONTEXT: Generate short transition paragraph on необходимость оформления документов для Яндекс Такси.\nROLE: transition\nKEYWORDS: документы для Яндекс Такси\nGOAL: Подчеркнуть, что без корректных документов невозможно начать работу с агрегатором.\nSOURCE: Internal KB (требования к документации).\nsemanticFingerprint: Краткое напоминание о важности документов.\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-2-2-4",
+                "tag": "table",
+                "keywords": [
+                  "маршрутные листы",
+                  "автоматизация автопарка"
+                ],
+                "taxonomy": "Data-driven",
+                "attention": "Сравните ручное и автоматизированное оформление маршрутных листов.",
+                "intent": "Показать преимущества автоматизации документооборота на примере оформления маршрутных листов.",
+                "audiences": "Руководители автопарков, ищущие способы оптимизации документооборота.",
+                "selfPrompt": "CONTEXT: Generate comparison table (3 columns × 3 rows) contrasting ручное и автоматизированное оформление маршрутных листов для таксопарка.\nCOLUMNS: Способ оформления | Время на 1 лист | Риск ошибок\nDATA TYPES: text | number | text\nKEYWORDS: маршрутные листы, автоматизация автопарка\nGOAL: Наглядно показать, как автоматизация (например, через платформу US AUTO) экономит время и снижает ошибки по сравнению с ручным оформлением.\nSOURCE: Internal KB (описание конструктора маршрутных листов), External KB (общие данные по рынку).\nschemaReadiness: Dataset/Comparison\nevidenceStrength: internal-tested | external-peer-reviewed\nsemanticFingerprint: Табличное сравнение эффективности ручного и автоматизированного документооборота.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-2-2",
+                "tag": "h3",
+                "keywords": [
+                  "медицинские осмотры водителей",
+                  "технический контроль транспорта",
+                  "безопасность перевозок",
+                  "аутсорсинг контроля"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Узнайте, как обеспечить безопасность и соответствие требованиям через медицинский и технический контроль.",
+                "intent": "Дать практические рекомендации по организации медицинских осмотров водителей и технического контроля транспорта для соответствия стандартам Яндекс Такси.",
+                "audiences": "Владельцы автопарков, управляющие, ответственные за безопасность и соответствие требованиям.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection on 'Медицинский и технический контроль: как соответствовать стандартам Яндекс Такси' within section 'Технические и организационные требования для запуска таксопарка под Яндекс Такси'.\nGOAL: Объяснить, как организовать предрейсовые и послерейсовые медицинские осмотры, технический контроль транспорта, а также рассмотреть возможности аутсорсинга и телемедицины для повышения эффективности.\nKEYWORDS: медицинские осмотры водителей, технический контроль транспорта, безопасность перевозок, аутсорсинг контроля\nAUDIENCE: Руководители автопарков, ответственные за безопасность; уровень — средний.\nsemanticFingerprint: Практические шаги по обеспечению медицинского и технического контроля в таксопарке для соответствия требованиям Яндекс Такси.\nINTERLINK: Внутренняя ссылка на страницу о телемедицине и автоматизации контроля.\nevidenceStrength: internal-tested | external-peer-reviewed\nSCHEMA: HowTo/Guide\nPAGE SETTINGS: Writing Style: Narrative; Content Format: Simple; Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 250,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "медицинские осмотры водителей"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Поймите, почему медицинские осмотры обязательны для такси.",
+                    "intent": "Объяснить, зачем нужны предрейсовые и послерейсовые медицинские осмотры водителей и как их организовать.",
+                    "audiences": "Владельцы автопарков, ответственные за здоровье водителей.",
+                    "selfPrompt": "CONTEXT: Generate paragraph explaining the necessity and organization of medical check-ups for taxi drivers.\nROLE: body\nKEYWORDS: медицинские осмотры водителей\nGOAL: Показать, что регулярные медицинские осмотры — обязательное требование для работы с Яндекс Такси, и описать варианты их организации (в том числе телемедицина).\nSOURCE: Internal KB (услуги телемедицины, аутсорсинг медперсонала).\nsemanticFingerprint: Практическое объяснение важности и способов организации медицинских осмотров.\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 130,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-2-2-2",
+                    "tag": "ul",
+                    "keywords": [
+                      "технический контроль транспорта"
+                    ],
+                    "taxonomy": "Actionable",
+                    "attention": "Следуйте этим шагам для технического контроля автопарка.",
+                    "intent": "Дать пошаговый список действий по организации технического контроля транспорта.",
+                    "audiences": "Управляющие автопарков, технические специалисты.",
+                    "selfPrompt": "CONTEXT: Generate unordered list (4-5 items) of actionable steps for implementing technical control of vehicles in a taxi fleet.\nKEYWORDS: технический контроль транспорта\nGOAL: Кратко перечислить ключевые этапы и требования к техническому контролю для соответствия стандартам Яндекс Такси.\nLIST STRUCTURE: short bullets (5-10 words)\nSOURCE: Internal KB (услуги технических контролеров), External KB (рыночные стандарты).\nsemanticFingerprint: Чек-лист по техническому контролю транспорта для таксопарка.\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 40,
+                      "maxWords": 80,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-2-3",
+                    "tag": "p",
+                    "keywords": [
+                      "аутсорсинг контроля"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Узнайте, как аутсорсинг может снизить затраты и риски.",
+                    "intent": "Пояснить преимущества аутсорсинга медицинского и технического контроля для автопарка.",
+                    "audiences": "Владельцы и управляющие автопарков, ищущие способы оптимизации расходов.",
+                    "selfPrompt": "CONTEXT: Generate paragraph on the benefits of outsourcing medical and technical control for taxi fleets.\nROLE: conclusion\nKEYWORDS: аутсорсинг контроля\nGOAL: Объяснить, как аутсорсинг позволяет снизить административные расходы и повысить надежность контроля.\nSOURCE: Internal KB (услуги аутсорсинга), External KB (общие советы по оптимизации).\nsemanticFingerprint: Заключение о выгоде аутсорсинга контроля для таксопарка.\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 100,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -3714,5 +3871,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T20:07:15.379Z";
+export const lastUpdated = "2025-10-24T20:08:44.438Z";
 export const generatedBy = "menu-persist-api";
