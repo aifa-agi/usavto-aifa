@@ -601,6 +601,7 @@ export async function POST(
     console.error(`[${requestId}] 💥 ERROR: ${msg}`);
     console.log(`${"=".repeat(70)}\n`);
     
+    
     return NextResponse.json({
       success: false,
       message: "Failed to update system prompt",
