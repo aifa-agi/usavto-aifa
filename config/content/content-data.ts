@@ -2298,7 +2298,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-24T19:11:16.273Z",
-        "updatedAt": "2025-10-24T19:22:48.412Z",
+        "updatedAt": "2025-10-24T19:24:04.368Z",
         "order": 2,
         "badgeName": "Блог",
         "description": "Инструкция диспетчера автомобильного транспорта: образец, структура, основные обязанности, права и ответственность. Скачать шаблон для оформления!",
@@ -2876,6 +2876,108 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-5",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "итоги внедрения инструкции",
+              "выводы по оформлению",
+              "рекомендации для диспетчеров",
+              "следующие шаги",
+              "повышение эффективности автотранспорта",
+              "стандартизация кадровых процессов",
+              "юридическая безопасность"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Получите краткое резюме ключевых выводов и практические рекомендации для успешного внедрения инструкции диспетчера автомобильного транспорта.",
+            "intent": "Синтезировать основные выводы статьи, выделить практические рекомендации и обозначить дальнейшие шаги для читателей, стремящихся повысить эффективность и юридическую защищённость транспортного подразделения.",
+            "audiences": "Руководители автотранспортных компаний, HR-менеджеры, специалисты по кадрам и диспетчеры, заинтересованные в стандартизации процессов и минимизации рисков.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate H2 conclusion/summary section for page \"Инструкция диспетчера автомобильного транспорта — образец, структура, обязанности\"\n\nGOAL: Подвести итоги, выделить ключевые выводы по теме инструкции диспетчера автомобильного транспорта, дать практические рекомендации и обозначить следующие шаги для внедрения и совершенствования кадровых процессов в транспортной компании.\n\nAUDIENCE: Руководители транспортных организаций, HR-менеджеры, диспетчеры | Level: intermediate | Pain points: необходимость стандартизации, юридическая защищённость, повышение эффективности работы автопарка.\n\nKEYWORDS TO INTEGRATE:\n[итоги внедрения инструкции, выводы по оформлению, рекомендации для диспетчеров, следующие шаги, повышение эффективности автотранспорта, стандартизация кадровых процессов, юридическая безопасность]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 200, maxWords: 300 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 heading with summary, actionable table, bullet list of рекомендаций, финальный абзац с call-to-action.\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: summary of dispatcher instruction benefits, automation, legal compliance, process optimization\n- SECONDARY: Apply insights from External KB: industry best practices, typical mistakes, value of стандартизация\n\nQUALITY CRITERIA:\n- Actionable (чёткие рекомендации)\n- Specific (конкретные шаги)\n- Data-backed (факты и преимущества из KB)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Синтезирует ключевые выводы и рекомендации по внедрению и использованию инструкции диспетчера автотранспорта, не дублируя предыдущие разделы.\n- sourceHint: Internal KB summary, External KB best practices\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nINTERLINK PLANNING:\n- Internal links: шаблоны кадровых документов, автоматизация автотранспортных процессов, юридическая поддержка\n- External links: не использовать (приоритет внутренним ресурсам)\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 200,
+              "maxWords": 300,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-5-1",
+                "tag": "p",
+                "keywords": [
+                  "итоги внедрения инструкции",
+                  "повышение эффективности автотранспорта"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, как внедрение структурированной инструкции помогает оптимизировать работу автопарка и минимизировать риски.",
+                "intent": "Дать краткое вступление к итоговому разделу, подчеркнув значимость стандартизации и автоматизации процессов для автотранспортных компаний.",
+                "audiences": "Руководители и специалисты по кадрам, заинтересованные в повышении эффективности и юридической защищённости.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate introductory paragraph for conclusion section \"Итоги и рекомендации по внедрению инструкции диспетчера автотранспорта\"\n\nGOAL: Кратко обозначить, почему стандартизация и внедрение инструкции критичны для эффективности автопарка и снижения юридических рисков.\n\nAUDIENCE: Руководители, HR, диспетчеры | Level: intermediate | Pain points: неэффективность, юридические риски\n\nKEYWORDS TO INTEGRATE: [итоги внедрения инструкции, повышение эффективности автотранспорта]\n\nWORD COUNT: minWords: 80, maxWords: 150\n\nMARKDOWN/MDX SYNTAX: Paragraph (intro/body)\n\nWRITING STYLE: Narrative\nCONTENT FORMAT: Simple\n\nE-E-A-T: semanticFingerprint: Вводит в итоговый раздел, подчеркивая ценность внедрения инструкции для автотранспортных компаний.\nsourceHint: Internal KB summary\n",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-5-3",
+                "tag": "table",
+                "keywords": [
+                  "стандартизация кадровых процессов",
+                  "юридическая безопасность"
+                ],
+                "taxonomy": "Data-driven",
+                "attention": "Сравните преимущества внедрения инструкции и возможные риски при её отсутствии.",
+                "intent": "Визуализировать основные плюсы стандартизации и автоматизации кадровых процессов для автотранспортных организаций.",
+                "audiences": "HR-менеджеры, руководители, диспетчеры, принимающие решения о внедрении новых стандартов.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate comparison table for conclusion section \"Итоги и рекомендации по внедрению инструкции диспетчера автотранспорта\"\n\nGOAL: Сравнить преимущества внедрения инструкции и риски при её отсутствии для автотранспортной компании.\n\nKEYWORDS TO INTEGRATE: [стандартизация кадровых процессов, юридическая безопасность]\n\nTABLE SCHEMA: 3 columns × 4 rows\nHeaders: \"Критерий\" | \"С инструкцией\" | \"Без инструкции\"\nData types: text | text | text\nData source: Internal KB (benefits, risks), External KB (best practices)\n\nWORD COUNT: minWords: 80, maxWords: 160\n\nE-E-A-T: semanticFingerprint: Таблица сравнивает выгоды и риски, усиливая выводы раздела.\nsourceHint: Internal KB, External KB best practices\n",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-5-2",
+                "tag": "ul",
+                "keywords": [
+                  "рекомендации для диспетчеров"
+                ],
+                "taxonomy": "Actionable",
+                "attention": "Следуйте этим практическим советам для успешного внедрения и адаптации инструкции.",
+                "intent": "Дать читателю конкретные рекомендации и шаги для внедрения и адаптации инструкции диспетчера под нужды своей организации.",
+                "audiences": "Диспетчеры, HR-менеджеры, руководители, внедряющие новые процессы.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate actionable bullet list for conclusion section \"Итоги и рекомендации по внедрению инструкции диспетчера автотранспорта\"\n\nGOAL: Сформулировать 4-5 практических рекомендации для внедрения и адаптации инструкции диспетчера.\n\nKEYWORDS TO INTEGRATE: [рекомендации для диспетчеров]\n\nLIST STRUCTURE: 5 items, короткие и конкретные советы (10-20 слов)\n\nWORD COUNT: minWords: 50, maxWords: 90\n\nE-E-A-T: semanticFingerprint: Дает конкретные шаги для внедрения, не повторяя предыдущие разделы.\nsourceHint: Internal KB, External KB best practices\n",
+                "additionalData": {
+                  "minWords": 50,
+                  "maxWords": 90,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-5-3",
+                "tag": "p",
+                "keywords": [
+                  "следующие шаги",
+                  "повышение эффективности автотранспорта"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, как перейти от теории к практике и получить максимальную отдачу от внедрения инструкции.",
+                "intent": "Завершить раздел призывом к действию, мотивировать читателя использовать полученные знания для оптимизации работы автотранспортного подразделения.",
+                "audiences": "Все, кто заинтересован в развитии и совершенствовании процессов автотранспортной компании.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate final call-to-action paragraph for conclusion section \"Итоги и рекомендации по внедрению инструкции диспетчера автотранспорта\"\n\nGOAL: Мотивировать читателя применить рекомендации, воспользоваться шаблонами и инструментами для повышения эффективности автопарка.\n\nKEYWORDS TO INTEGRATE: [следующие шаги, повышение эффективности автотранспорта]\n\nWORD COUNT: minWords: 70, maxWords: 130\n\nE-E-A-T: semanticFingerprint: Призывает к действию, подчеркивая ценность внедрения инструкции.\nsourceHint: Internal KB, user action\n",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              }
+            ]
           }
         ]
       }
@@ -2908,5 +3010,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T19:39:31.236Z";
+export const lastUpdated = "2025-10-24T19:39:48.612Z";
 export const generatedBy = "menu-persist-api";
