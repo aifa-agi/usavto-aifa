@@ -1010,7 +1010,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-24T18:41:03.217Z",
-        "updatedAt": "2025-10-24T18:57:03.789Z",
+        "updatedAt": "2025-10-24T18:58:20.331Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Найдите работу в такси онлайн — свежие вакансии водителей с удобным поиском, гибким графиком и актуальными предложениями. Начните зарабатывать уже сегодня!",
@@ -1578,6 +1578,109 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-5",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "итоги поиска работы в такси",
+              "ключевые преимущества трудоустройства",
+              "следующие шаги для водителей",
+              "выводы по онлайн вакансиям",
+              "рекомендации для соискателей",
+              "подведение итогов трудоустройства",
+              "дальнейшие действия водителя"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, как быстро перейти от поиска к успешному трудоустройству и начать зарабатывать уже сегодня.",
+            "intent": "Суммировать основные выводы страницы, подчеркнуть преимущества современных сервисов для водителей такси и дать пользователю чёткие рекомендации для дальнейших действий.",
+            "audiences": "Соискатели работы водителем такси, которые изучили страницу и готовы сделать следующий шаг к трудоустройству; уровень — начинающий и средний; решает вопрос уверенности в выборе и дальнейших шагах.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 conclusion/summary section for page \"Найти работу в такси — свежие вакансии для водителей онлайн\"\n\nGOAL: Подвести итоги, выделить ключевые преимущества современных инструментов поиска работы в такси, дать рекомендации для дальнейших действий и мотивировать пользователя воспользоваться сервисом для быстрого трудоустройства.\n\nAUDIENCE: Соискатели работы водителем такси, которые ознакомились с предложениями и хотят понять, как быстро начать работать; уровень — начинающий и средний; решает вопрос уверенности в выборе и дальнейших шагах.\n\nKEYWORDS TO INTEGRATE:\n[итоги поиска работы в такси, ключевые преимущества трудоустройства, следующие шаги для водителей, выводы по онлайн вакансиям, рекомендации для соискателей, подведение итогов трудоустройства, дальнейшие действия водителя]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 200, maxWords: 300 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: # [Section Title] + supporting blocks (p, ul, table)\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: преимущества платформы, автоматизация, поддержка водителей, юридическая и медицинская помощь, интеграция с агрегаторами\n- SECONDARY: Apply insights from External KB: общие рекомендации по поиску работы, советы по выбору вакансий, важность современных сервисов\n\nQUALITY CRITERIA:\n- Actionable (чёткие рекомендации и шаги)\n- Specific (конкретные преимущества и выводы)\n- Data-backed (факты и советы из Knowledge Bases)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Синтезирует ключевые выводы страницы и мотивирует к действию, не повторяя детали предыдущих разделов.\n- sourceHint: Internal KB (основные преимущества и сервисы), External KB (общие советы и рекомендации)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Обязательно сделать отсылку к предыдущим разделам (инструменты, процесс, FAQ)\n- Включить таблицу с кратким сравнением преимуществ\n- В списке выделить конкретные шаги для пользователя\n- В заключительном абзаце мотивировать к действию и напомнить о простоте онлайн-поиска\n- Добавить interlink planning: внутренние ссылки на разделы «Технологии и сервисы», «Пошаговый процесс», «FAQ»\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 200,
+              "maxWords": 300,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-5-1",
+                "tag": "p",
+                "keywords": [
+                  "итоги поиска работы в такси",
+                  "ключевые преимущества трудоустройства"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Получите краткое резюме преимуществ и возможностей, которые открывает современный поиск работы в такси.",
+                "intent": "Ввести пользователя в итоговый раздел, обозначить, что он узнал и какие возможности теперь доступны.",
+                "audiences": "Водители, завершившие ознакомление с сервисом; уровень — начинающий и средний; ищут уверенность в следующем шаге.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for conclusion section \"Итоги и рекомендации по поиску работы в такси\".\nGOAL: Кратко резюмировать основные преимущества и возможности, которые пользователь получил, изучив страницу.\nAUDIENCE: Водители, завершившие ознакомление с сервисом; уровень — начинающий и средний.\nKEYWORDS TO INTEGRATE: [итоги поиска работы в такси, ключевые преимущества трудоустройства]\nWORD COUNT: minWords: 80, maxWords: 150\nMARKDOWN/MDX SYNTAX: Paragraph (intro)\nWRITING STYLE: Narrative\nCONTENT FORMAT: Simple\nE-E-A-T: semanticFingerprint: Вводит в итоговый раздел, подчеркивает ценность изученного; sourceHint: Internal KB summary; evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-5-3",
+                "tag": "table",
+                "keywords": [
+                  "выводы по онлайн вакансиям",
+                  "преимущества современных сервисов"
+                ],
+                "taxonomy": "Comparison",
+                "attention": "Сравните ключевые преимущества онлайн-сервисов для водителей такси.",
+                "intent": "Дать пользователю наглядное сравнение преимуществ современных платформ и сервисов для трудоустройства водителей.",
+                "audiences": "Водители, выбирающие между традиционным и онлайн поиском работы; уровень — начинающий и средний.",
+                "selfPrompt": "CONTEXT: Generate comparison table (3 columns × 3 rows) for conclusion section \"Итоги и рекомендации по поиску работы в такси\".\nGOAL: Визуально показать преимущества современных онлайн-сервисов для поиска работы водителем такси.\nAUDIENCE: Водители, выбирающие между традиционным и онлайн поиском работы; уровень — начинающий и средний.\nKEYWORDS TO INTEGRATE: [выводы по онлайн вакансиям, преимущества современных сервисов]\nTABLE SCHEMA: 3 columns (Параметр | Современные сервисы | Обычный поиск), 3 rows (Скорость оформления, Поддержка и обучение, Юридическая и медицинская помощь)\nDATA SOURCE: Internal KB (основные преимущества), External KB (общие сравнения)\nWORD COUNT: minWords: 80, maxWords: 160\nE-E-A-T: semanticFingerprint: Таблица сравнения преимуществ онлайн-сервисов; sourceHint: Internal KB + industry standard; evidenceStrength: internal-tested | external-peer-reviewed.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-5-2",
+                "tag": "ul",
+                "keywords": [
+                  "следующие шаги для водителей",
+                  "рекомендации для соискателей"
+                ],
+                "taxonomy": "Actionable",
+                "attention": "Следуйте этим шагам, чтобы быстро начать работать и зарабатывать.",
+                "intent": "Дать пользователю чёткие, пошаговые рекомендации для быстрого старта после изучения страницы.",
+                "audiences": "Водители, готовые к действиям после ознакомления с информацией; уровень — начинающий и средний.",
+                "selfPrompt": "CONTEXT: Generate actionable unordered list (4 items) for conclusion section \"Итоги и рекомендации по поиску работы в такси\".\nGOAL: Дать конкретные рекомендации и следующие шаги для водителей, готовых начать работу.\nAUDIENCE: Водители, готовые к действиям; уровень — начинающий и средний.\nKEYWORDS TO INTEGRATE: [следующие шаги для водителей, рекомендации для соискателей]\nLIST STRUCTURE: 4 коротких, чётких шага (по 10-15 слов)\nWORD COUNT: minWords: 50, maxWords: 90\nE-E-A-T: semanticFingerprint: Чёткие рекомендации для быстрого старта; sourceHint: Internal KB (пошаговые действия); evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 50,
+                  "maxWords": 90,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-5-3",
+                "tag": "p",
+                "keywords": [
+                  "подведение итогов трудоустройства",
+                  "дальнейшие действия водителя"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Не упустите шанс начать карьеру в такси уже сегодня — действуйте прямо сейчас!",
+                "intent": "Завершить раздел мотивирующим посланием, подчеркнуть простоту и доступность онлайн-поиска работы.",
+                "audiences": "Потенциальные водители, которым важно получить завершающий импульс для принятия решения; уровень — начинающий и средний.",
+                "selfPrompt": "CONTEXT: Generate motivational closing paragraph for conclusion section \"Итоги и рекомендации по поиску работы в такси\".\nGOAL: Мотивировать пользователя сделать первый шаг к трудоустройству, подчеркнуть простоту и выгоду онлайн-сервиса.\nAUDIENCE: Потенциальные водители, которым нужен завершающий импульс; уровень — начинающий и средний.\nKEYWORDS TO INTEGRATE: [подведение итогов трудоустройства, дальнейшие действия водителя]\nWORD COUNT: minWords: 70, maxWords: 130\nMARKDOWN/MDX SYNTAX: Paragraph (conclusion)\nE-E-A-T: semanticFingerprint: Мотивирует к действию, завершает страницу; sourceHint: Internal KB (мотивация и call-to-action); evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              }
+            ]
           }
         ]
       }
@@ -1610,5 +1713,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T19:13:47.021Z";
+export const lastUpdated = "2025-10-24T19:14:03.931Z";
 export const generatedBy = "menu-persist-api";
