@@ -197,86 +197,112 @@ export function useStep13Cleanup({ pageData, slug }: UseStep13CleanupProps): Use
     });
   }, [cleanupProcess.fields]);
 
-  /**
-   * Executes the complete cleanup sequence
-   */
-  const executeCleanupSequence = React.useCallback(async (): Promise<boolean> => {
-    if (!pageData) return false;
+ /**
+ * Executes the complete cleanup sequence with two-stage update:
+ * 1) First update: Apply cleaned data
+ * 2) Second update (after 500ms): Set isPublished to true
+ */
+const executeCleanupSequence = React.useCallback(async (): Promise<boolean> => {
+  if (!pageData) return false;
 
-    try {
-      // Validate required fields before cleanup
-      const validation = validateRequiredFields(pageData);
-      if (!validation.isValid) {
-        toast.error(STEP13_TEXTS.errors.missingPageData, {
-          id: STEP13_IDS.toasts.cleanupError,
-          description: `Missing fields: ${validation.missingFields.join(', ')}`
-        });
-        return false;
-      }
-
-      // Create backup for rollback
-      backupRef.current = deepCloneCategories(categories);
-
-      // Show start toast
-      toast.loading(STEP13_TEXTS.cleanup.states.active, {
-        id: STEP13_IDS.toasts.cleanupStart,
-      });
-
-      // Execute field animations sequentially
-      for (let i = 0; i < cleanupProcess.fields.length; i++) {
-        await animateFieldCleanup(i);
-      }
-
-      // Perform actual data cleanup
-      const cleanedData = cleanupPageData(pageData);
-      const updatedCategories = replacePageInCategories(categories, cleanedData as PageData);
-      
-      // Optimistically update UI
-      setCategories(updatedCategories);
-      
-      // Persist changes
-      const error = await updateCategories();
-      
-      if (error) {
-        throw new Error("Failed to save cleaned data");
-      }
-
-      // Generate success message
-      const summary = getCleanupSummary(pageData);
-      const successMessage = generateSuccessMessage(summary.totalPreserved, summary.totalRemoved);
-
-      // Show success toast
-      toast.success(STEP13_TEXTS.success.cleanupCompleted, {
-        id: STEP13_IDS.toasts.cleanupSuccess,
-        description: successMessage
-      });
-
-      return true;
-
-    } catch (error) {
-      console.error("Cleanup error:", error);
-      
-      // Rollback on error
-      if (backupRef.current) {
-        setCategories(backupRef.current);
-        toast.warning(STEP13_TEXTS.cleanup.states.error, {
-          id: STEP13_IDS.toasts.cleanupRollback,
-          description: "Changes have been rolled back"
-        });
-      }
-
-      // Show error toast
-      toast.error(STEP13_TEXTS.errors.cleanupFailed, {
+  try {
+    // Validate required fields before cleanup
+    const validation = validateRequiredFields(pageData);
+    if (!validation.isValid) {
+      toast.error(STEP13_TEXTS.errors.missingPageData, {
         id: STEP13_IDS.toasts.cleanupError,
-        description: STEP13_TEXTS.errors.descriptions.cleanupFailed
+        description: `Missing fields: ${validation.missingFields.join(', ')}`
       });
-
       return false;
-    } finally {
-      // Clear start loading toast
-      toast.dismiss(STEP13_IDS.toasts.cleanupStart);
     }
-  }, [pageData, categories, setCategories, updateCategories, cleanupProcess.fields, animateFieldCleanup]);
+
+    // Create backup for rollback
+    backupRef.current = deepCloneCategories(categories);
+
+    // Show start toast
+    toast.loading(STEP13_TEXTS.cleanup.states.active, {
+      id: STEP13_IDS.toasts.cleanupStart,
+    });
+
+    // Execute field animations sequentially
+    for (let i = 0; i < cleanupProcess.fields.length; i++) {
+      await animateFieldCleanup(i);
+    }
+
+    // ============================================================
+    // STAGE 1: Cleanup and first update
+    // ============================================================
+    const cleanedData = cleanupPageData(pageData);
+    const updatedCategories = replacePageInCategories(categories, cleanedData as PageData);
+    
+    // Optimistically update UI with cleaned data
+    setCategories(updatedCategories);
+    
+    // Persist first changes
+    const firstError = await updateCategories();
+    
+    if (firstError) {
+      throw new Error("Failed to save cleaned data (first stage)");
+    }
+
+    // ============================================================
+    // STAGE 2: Delay 500ms, then set isPublished to true
+    // ============================================================
+    await new Promise(resolve => setTimeout(resolve, 500));
+
+    const publishedData: PageData = {
+      ...cleanedData as PageData,
+      isPublished: true
+    };
+
+    const publishedCategories = replacePageInCategories(updatedCategories, publishedData);
+    
+    // Optimistically update UI with published status
+    setCategories(publishedCategories);
+    
+    // Persist second changes
+    const secondError = await updateCategories();
+    
+    if (secondError) {
+      throw new Error("Failed to publish page (second stage)");
+    }
+
+    // Generate success message
+    const summary = getCleanupSummary(pageData);
+    const successMessage = generateSuccessMessage(summary.totalPreserved, summary.totalRemoved);
+
+    // Show success toast
+    toast.success(STEP13_TEXTS.success.cleanupCompleted, {
+      id: STEP13_IDS.toasts.cleanupSuccess,
+      description: successMessage
+    });
+
+    return true;
+
+  } catch (error) {
+    console.error("Cleanup error:", error);
+    
+    // Rollback on error
+    if (backupRef.current) {
+      setCategories(backupRef.current);
+      toast.warning(STEP13_TEXTS.cleanup.states.error, {
+        id: STEP13_IDS.toasts.cleanupRollback,
+        description: "Changes have been rolled back"
+      });
+    }
+
+    // Show error toast
+    toast.error(STEP13_TEXTS.errors.cleanupFailed, {
+      id: STEP13_IDS.toasts.cleanupError,
+      description: STEP13_TEXTS.errors.descriptions.cleanupFailed
+    });
+
+    return false;
+  } finally {
+    // Clear start loading toast
+    toast.dismiss(STEP13_IDS.toasts.cleanupStart);
+  }
+}, [pageData, categories, setCategories, updateCategories, cleanupProcess.fields, animateFieldCleanup]);
 
   /**
    * Starts the cleanup process
