@@ -8060,7 +8060,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-24T17:56:34.960Z",
-        "updatedAt": "2025-10-24T18:14:03.669Z",
+        "updatedAt": "2025-10-24T18:14:37.766Z",
         "order": 6,
         "badgeName": "Блог",
         "description": "Узнайте, на каких машинах можно таксовать в Яндекс: актуальные требования, список подходящих моделей по тарифам и годам. Проверьте свой авто!",
@@ -8126,7 +8126,8 @@ export const contentData = {
                   "minWords": 100,
                   "maxWords": 180,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-1-2",
@@ -8144,9 +8145,11 @@ export const contentData = {
                   "minWords": 60,
                   "maxWords": 120,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-2",
@@ -8671,7 +8674,8 @@ export const contentData = {
               }
             ]
           }
-        ]
+        ],
+        "isReadyDraftForPerplexity": false
       }
     ],
     "order": 16
@@ -8702,5 +8706,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T18:30:05.155Z";
+export const lastUpdated = "2025-10-24T18:30:12.822Z";
 export const generatedBy = "menu-persist-api";
