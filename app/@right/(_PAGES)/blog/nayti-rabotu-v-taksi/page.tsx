@@ -1,5 +1,5 @@
 // Auto-generated SEO-optimized static page - do not edit manually
-// Generated on: 2025-10-24T19:18:55.600Z
+// Generated on: 2025-10-24T19:19:39.129Z
 // Source href: /blog/nayti-rabotu-v-taksi
 // Page metadata: Найти работу в такси — свежие вакансии для водителей онлайн | 5 sections
 // FAQ sections detected: 4
@@ -44,7 +44,7 @@ const sections = [
           "content": [
             {
               "type": "text",
-              "text": "Как быстро найти работу в такси онлайн: свежие вакансии и удобные инструменты"
+              "text": "Как быстро найти работу в такси онлайн: свежие вакансии и удобные инструменты."
             }
           ]
         },
@@ -1534,8 +1534,8 @@ export default function Page() {
               "url": "/app-images/dskw5mwpqeoj9t3v14bpainc.jpg",
               "alt": "найти работу в такси"
             },
-            "datePublished": "2025-10-24T19:18:55.600Z",
-            "dateModified": "2025-10-24T19:18:55.600Z",
+            "datePublished": "2025-10-24T19:19:39.129Z",
+            "dateModified": "2025-10-24T19:19:39.129Z",
             "articleSection": "blog",
             "keywords": ["найти работу в такси"],
             "mainEntityOfPage": {
