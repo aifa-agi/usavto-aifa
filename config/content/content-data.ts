@@ -2298,7 +2298,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-24T19:11:16.273Z",
-        "updatedAt": "2025-10-24T19:11:16.273Z",
+        "updatedAt": "2025-10-24T19:18:19.183Z",
         "order": 2,
         "badgeName": "Блог",
         "description": "Инструкция диспетчера автомобильного транспорта: образец, структура, основные обязанности, права и ответственность. Скачать шаблон для оформления!",
@@ -2317,7 +2317,76 @@ export const contentData = {
         "intent": "Пользователь заходит на страницу, чтобы получить подробную и структурированную инструкцию диспетчера автомобильного транспорта, ознакомиться с обязанностями, правами, ответственностью и скачать или адаптировать образец для своей организации. Ожидаемый результат — понимание содержания должностной инструкции и возможность быстро использовать готовый шаблон или составить собственный документ в соответствии с профессиональными стандартами. Страница полностью удовлетворяет информационный запрос, предоставляя образец, разъяснения по структуре и советы по оформлению инструкции.",
         "taxonomy": "Данная страница представляет собой структурированный гайд с образцом и разъяснениями по составлению должностной инструкции диспетчера автомобильного транспорта, относящийся к категории \"Кадровые документы\" в разделе \"Автомобильный транспорт\" > \"Должностные инструкции\". В иерархии контента страница выполняет функцию кластерного материала, поддерживающего основную (пилларную) статью о кадровых документах для транспортных организаций и усиливающего тематическую авторитетность ресурса по вопросам трудового регулирования и управления автотранспортом.",
         "attention": "С первых секунд используйте лаконичный визуальный блок с главными обязанностями и структурой инструкции диспетчера, чтобы сразу ответить на ключевой поисковый запрос пользователя. Далее обеспечьте удержание внимания через пошаговую инфографику, интерактивные примеры и быстрые подсказки, выделяя уникальные нюансы и юридические лайфхаки, что выгодно отличает страницу от сухих PDF и типовых текстовых справочников конкурентов.",
-        "audiences": "Данная страница предназначена для руководителей транспортных компаний, HR-менеджеров, специалистов по кадрам и диспетчеров автомобильного транспорта с базовым или средним опытом работы, которые нуждаются в четкой, структурированной инструкции для оформления, обновления или внедрения должностных обязанностей диспетчера. Они сталкиваются с необходимостью соответствовать профстандартам, минимизировать юридические риски и повысить эффективность работы автотранспортного подразделения, поэтому ищут практические образцы и рекомендации по составлению должностных инструкций. Страница актуальна для пользователей на стадии поиска готовых решений и стандартизации внутренних процессов, обладающих базовыми знаниями в транспортной логистике и кадровом делопроизводстве."
+        "audiences": "Данная страница предназначена для руководителей транспортных компаний, HR-менеджеров, специалистов по кадрам и диспетчеров автомобильного транспорта с базовым или средним опытом работы, которые нуждаются в четкой, структурированной инструкции для оформления, обновления или внедрения должностных обязанностей диспетчера. Они сталкиваются с необходимостью соответствовать профстандартам, минимизировать юридические риски и повысить эффективность работы автотранспортного подразделения, поэтому ищут практические образцы и рекомендации по составлению должностных инструкций. Страница актуальна для пользователей на стадии поиска готовых решений и стандартизации внутренних процессов, обладающих базовыми знаниями в транспортной логистике и кадровом делопроизводстве.",
+        "draftContentStructure": [
+          {
+            "id": "h2-1",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "инструкция диспетчера автомобильного транспорта",
+              "должностная инструкция",
+              "основные обязанности диспетчера",
+              "структура инструкции",
+              "образец инструкции",
+              "транспортная компания",
+              "кадровые документы"
+            ],
+            "taxonomy": "Guide",
+            "attention": "С первых секунд получите четкое представление о ключевых обязанностях и структуре инструкции диспетчера автомобильного транспорта, чтобы сразу понять ценность страницы и быстро приступить к работе с образцом.",
+            "intent": "Ввести пользователя в тему должностной инструкции диспетчера автомобильного транспорта, обозначить актуальность, основные задачи и преимущества использования структурированного образца для транспортных компаний.",
+            "audiences": "Руководители транспортных компаний, HR-менеджеры, специалисты по кадрам, диспетчеры с базовым и средним опытом, заинтересованные в стандартизации и оптимизации кадровых процессов.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate H2 introduction section for page \"Инструкция диспетчера автомобильного транспорта — образец, структура, обязанности\"\n\nGOAL: Дать краткое, но емкое введение в тему, объяснить, зачем нужна инструкция диспетчера автомобильного транспорта, какие задачи она решает, и почему важно использовать структурированный и актуальный образец. Подчеркнуть ценность страницы для целевой аудитории и обозначить, что пользователь найдет здесь не только шаблон, но и разъяснения по структуре и оформлению.\n\nAUDIENCE: Руководители транспортных компаний, HR-менеджеры, специалисты по кадрам, диспетчеры | Level: базовый/средний | Pain points: поиск актуального образца, соответствие профстандартам, снижение юридических рисков, повышение эффективности документооборота.\n\nKEYWORDS TO INTEGRATE:\n[инструкция диспетчера автомобильного транспорта, должностная инструкция, основные обязанности диспетчера, структура инструкции, образец инструкции, транспортная компания, кадровые документы]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 150, maxWords: 250 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: # H2 heading, followed by 2 intro paragraphs (see child elements)\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: роль и задачи диспетчера, значимость инструкции, преимущества автоматизации и стандартизации\n- SECONDARY: Apply insights from External KB: юридическая значимость, соответствие профстандартам, гибкость оформления\n\nQUALITY CRITERIA:\n- Actionable (четко обозначить, что пользователь получит)\n- Specific (указать, что будет образец и разъяснения)\n- Data-backed (ссылаться на профстандарты, если уместно)\n- No fluff (никакой воды)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Введение, раскрывающее ценность инструкции и страницы для кадрового документооборота в автотранспортных компаниях.\n- sourceHint: Internal KB (роль, задачи, преимущества) + External KB (юридическая значимость, профстандарты)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference parent page intent\n- Must preview основные разделы и выгоды для пользователя\n- Add interlink planning: internalLinks (2–3 anchors) to смежные страницы о кадровых документах, профстандартах, автоматизации документооборота\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)\n",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 150,
+              "maxWords": 250,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-1-1",
+                "tag": "p",
+                "keywords": [
+                  "инструкция диспетчера автомобильного транспорта",
+                  "должностная инструкция"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, почему четкая инструкция — ключ к эффективной работе диспетчера и снижению рисков.",
+                "intent": "Вступительный абзац, который объясняет значимость должностной инструкции диспетчера для транспортных компаний и кадровых специалистов.",
+                "audiences": "Руководители, HR-менеджеры, диспетчеры, специалисты по кадрам, ищущие надежный и современный образец.",
+                "selfPrompt": "CONTEXT: Generate intro paragraph (p) for H2 \"Инструкция диспетчера автомобильного транспорта — образец, структура, обязанности\"\nROLE: Введение, раскрывающее, почему инструкция диспетчера — это не просто формальность, а инструмент для оптимизации работы автотранспортного подразделения и защиты интересов компании.\nKEYWORDS: инструкция диспетчера автомобильного транспорта, должностная инструкция\nWORD COUNT: minWords: 100, maxWords: 180\nMARKDOWN/MDX SYNTAX: Paragraph\nKNOWLEDGE SOURCES: Internal KB (роль, задачи, преимущества), External KB (юридическая значимость, профстандарты)\nsemanticFingerprint: Вступление, подчеркивающее практическую и юридическую ценность инструкции.\nsourceHint: Internal KB + External KB\n",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 180,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-2",
+                "tag": "p",
+                "keywords": [
+                  "структура инструкции",
+                  "образец инструкции"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, как быстро получить готовый образец и адаптировать его под задачи вашей компании.",
+                "intent": "Второй абзац, который кратко анонсирует структуру инструкции, наличие образца и дополнительные разъяснения, чтобы мотивировать пользователя изучить материал дальше.",
+                "audiences": "HR-менеджеры, руководители, диспетчеры, которым важно быстро внедрить или обновить кадровые документы.",
+                "selfPrompt": "CONTEXT: Generate supporting paragraph (p) for H2 \"Инструкция диспетчера автомобильного транспорта — образец, структура, обязанности\"\nROLE: Кратко анонсировать, что на странице представлен структурированный образец инструкции, разъяснения по разделам и советы по оформлению, чтобы пользователь сразу понял ценность материала.\nKEYWORDS: структура инструкции, образец инструкции\nWORD COUNT: minWords: 60, maxWords: 120\nMARKDOWN/MDX SYNTAX: Paragraph\nKNOWLEDGE SOURCES: Internal KB (структура, автоматизация), External KB (гибкость оформления, профстандарты)\nsemanticFingerprint: Анонс содержания страницы и обещание практической пользы.\nsourceHint: Internal KB + External KB\n",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 120,
+                  "actualContent": ""
+                }
+              }
+            ]
+          }
+        ]
       }
     ],
     "order": 16
@@ -2348,5 +2417,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T19:33:45.965Z";
+export const lastUpdated = "2025-10-24T19:35:18.315Z";
 export const generatedBy = "menu-persist-api";
