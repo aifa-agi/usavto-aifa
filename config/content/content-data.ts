@@ -2298,7 +2298,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-24T19:11:16.273Z",
-        "updatedAt": "2025-10-24T19:20:55.851Z",
+        "updatedAt": "2025-10-24T19:22:48.412Z",
         "order": 2,
         "badgeName": "Блог",
         "description": "Инструкция диспетчера автомобильного транспорта: образец, структура, основные обязанности, права и ответственность. Скачать шаблон для оформления!",
@@ -2668,6 +2668,214 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "часто задаваемые вопросы",
+              "ответы на вопросы",
+              "оформление должностной инструкции",
+              "права и ответственность диспетчера",
+              "юридические аспекты автотранспорта",
+              "электронные документы",
+              "автоматизация процессов"
+            ],
+            "taxonomy": "FAQ",
+            "attention": "В этом разделе собраны самые актуальные и практические ответы на вопросы, которые возникают при составлении и внедрении инструкции диспетчера автотранспорта.",
+            "intent": "Дать читателю быстрые и развернутые ответы на типовые вопросы по теме инструкции диспетчера, чтобы снять сомнения и ускорить внедрение документа в компании.",
+            "audiences": "Руководители автотранспортных предприятий, HR-менеджеры, диспетчеры, специалисты по кадровому делопроизводству с базовым и средним опытом, ищущие практические разъяснения и решения по оформлению и применению инструкции.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate H2 FAQ section for page \"Инструкция диспетчера автомобильного транспорта — образец, структура, обязанности\"\n\nGOAL: Сформировать структурированный блок часто задаваемых вопросов, охватывающий юридические, организационные и технические аспекты оформления и применения инструкции диспетчера автотранспорта, с акцентом на практические советы и современные решения (электронные формы, автоматизация, интеграция с системами учета).\n\nAUDIENCE: Руководители транспортных компаний, HR-менеджеры, диспетчеры | Level: базовый/средний | Pain points: неуверенность в правильности оформления, вопросы по правам и ответственности, сложности с внедрением электронных документов, минимизация юридических рисков.\n\nKEYWORDS TO INTEGRATE:\n[часто задаваемые вопросы, ответы на вопросы, оформление должностной инструкции, права и ответственность диспетчера, юридические аспекты автотранспорта, электронные документы, автоматизация процессов]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 heading with nested H3 questions and answers (paragraphs)\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: юридические аспекты, автоматизация, электронные формы, контроль прав и ответственности\n- SECONDARY: Apply insights from External KB: типовые вопросы, отраслевые стандарты, нюансы оформления\n\nQUALITY CRITERIA:\n- Actionable (конкретные рекомендации)\n- Specific (развернутые ответы)\n- Data-backed (ссылки на нормативы, примеры из практики)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: FAQ-блок, раскрывающий уникальные нюансы внедрения и применения инструкции диспетчера автотранспорта.\n- sourceHint: Internal KB (практика и автоматизация) + External KB (отраслевые вопросы)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Включить 4-5 наиболее частых и значимых вопроса, не дублирующих темы предыдущих разделов\n- Для каждого вопроса — развернутый, но лаконичный ответ с практическим советом\n- Добавить рекомендации по использованию электронных форм и автоматизации\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "keywords": [
+                  "часто задаваемые вопросы"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Краткое введение поможет быстро сориентироваться в содержании FAQ и найти нужный ответ.",
+                "intent": "Ввести пользователя в раздел FAQ, объяснить его структуру и пользу для решения практических задач.",
+                "audiences": "Диспетчеры и кадровики, которым важно быстро получить ответы на типовые вопросы.",
+                "selfPrompt": "CONTEXT: Generate intro paragraph for FAQ section 'FAQ' of page 'Инструкция диспетчера автомобильного транспорта — образец, структура, обязанности'.\nGOAL: Кратко объяснить, что в этом разделе собраны ответы на самые частые вопросы по теме инструкции диспетчера автотранспорта, и как ими пользоваться.\nAUDIENCE: Диспетчеры, HR-менеджеры | Level: базовый/средний | Pain points: нехватка времени на поиск информации.\nKEYWORDS TO INTEGRATE: [часто задаваемые вопросы]\nWORD COUNT: minWords: 70, maxWords: 130\nMARKDOWN/MDX SYNTAX: Paragraph\nWRITING STYLE: Story-driven, engaging storytelling approach\nCONTENT FORMAT: Easy to understand, basic language\nE-E-A-T: semanticFingerprint: Вводный абзац для FAQ; sourceHint: Internal KB; evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "keywords": [
+                  "ответы на вопросы",
+                  "юридические аспекты автотранспорта",
+                  "регламентация обязанностей",
+                  "трудовое законодательство",
+                  "профстандарты"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, как правильно регламентировать обязанности диспетчера с учетом действующего законодательства.",
+                "intent": "Дать развернутый ответ на вопрос о юридических основах и стандартах при составлении инструкции.",
+                "audiences": "Руководители и кадровики, которые хотят избежать юридических ошибок при оформлении документа.",
+                "selfPrompt": "CONTEXT: Generate H3 FAQ question 'Какие юридические требования нужно учитывать при составлении инструкции диспетчера автотранспорта?' for section 'FAQ' of page 'Инструкция диспетчера автомобильного транспорта — образец, структура, обязанности'.\nGOAL: Подробно раскрыть юридические аспекты, на которые стоит опираться при составлении инструкции, включая профстандарты, ТК РФ, внутренние регламенты.\nAUDIENCE: Руководители, HR-менеджеры | Level: intermediate | Pain points: страх нарушить закон, неуверенность в актуальности документа.\nKEYWORDS TO INTEGRATE: [ответы на вопросы, юридические аспекты автотранспорта, регламентация обязанностей, трудовое законодательство, профстандарты]\nWORD COUNT: minWords: 150, maxWords: 220\nMARKDOWN/MDX SYNTAX: H3 heading + paragraph answer\nE-E-A-T: semanticFingerprint: Юридические требования к инструкции; sourceHint: Internal KB + External KB (отраслевые стандарты); evidenceStrength: internal-tested | external-peer-reviewed.\nInterlink planning: Вставить ссылку на статью о профстандартах и кадровых документах.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "keywords": [
+                      "юридические аспекты автотранспорта"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Ответ содержит конкретные рекомендации по соблюдению законодательства.",
+                    "intent": "Дать практические советы по юридически корректному оформлению инструкции.",
+                    "audiences": "HR-менеджеры, руководители автотранспортных предприятий.",
+                    "selfPrompt": "CONTEXT: Generate supporting paragraph for H3 'Какие юридические требования нужно учитывать при составлении инструкции диспетчера автотранспорта?'.\nGOAL: Перечислить основные нормативные акты и стандарты, на которые нужно опираться.\nKEYWORDS TO INTEGRATE: [юридические аспекты автотранспорта]\nWORD COUNT: minWords: 60, maxWords: 120\nE-E-A-T: semanticFingerprint: Перечень нормативных актов; sourceHint: Internal KB; evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-2",
+                "tag": "h3",
+                "keywords": [
+                  "оформление должностной инструкции",
+                  "структура документа",
+                  "разделы инструкции",
+                  "практические рекомендации",
+                  "адаптация шаблона"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Пошаговая инструкция по составлению и адаптации документа под специфику вашей организации.",
+                "intent": "Дать четкий алгоритм действий по оформлению инструкции и адаптации шаблона.",
+                "audiences": "Диспетчеры, кадровики, которым важно быстро и правильно оформить документ.",
+                "selfPrompt": "CONTEXT: Generate H3 FAQ question 'Как правильно оформить и структурировать должностную инструкцию диспетчера?' for section 'FAQ' of page 'Инструкция диспетчера автомобильного транспорта — образец, структура, обязанности'.\nGOAL: Описать оптимальную структуру инструкции, дать советы по адаптации шаблона и выделить ключевые разделы.\nAUDIENCE: Диспетчеры, HR-менеджеры | Level: базовый/средний | Pain points: неуверенность в структуре, страх упустить важные пункты.\nKEYWORDS TO INTEGRATE: [оформление должностной инструкции, структура документа, разделы инструкции, практические рекомендации, адаптация шаблона]\nWORD COUNT: minWords: 150, maxWords: 220\nMARKDOWN/MDX SYNTAX: H3 heading + paragraph answer\nE-E-A-T: semanticFingerprint: Практический алгоритм оформления; sourceHint: Internal KB + External KB (отраслевые рекомендации); evidenceStrength: internal-tested | external-peer-reviewed.\nInterlink planning: Вставить ссылку на шаблон инструкции и статью о кадровых документах.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "структура документа"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Ответ содержит пошаговый алгоритм и советы по адаптации.",
+                    "intent": "Дать конкретные шаги по структурированию и оформлению инструкции.",
+                    "audiences": "Кадровики, диспетчеры, руководители.",
+                    "selfPrompt": "CONTEXT: Generate supporting paragraph for H3 'Как правильно оформить и структурировать должностную инструкцию диспетчера?'.\nGOAL: Перечислить основные разделы и дать советы по их заполнению.\nKEYWORDS TO INTEGRATE: [структура документа]\nWORD COUNT: minWords: 60, maxWords: 120\nE-E-A-T: semanticFingerprint: Список ключевых разделов; sourceHint: Internal KB; evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-3",
+                "tag": "h3",
+                "keywords": [
+                  "права и ответственность диспетчера",
+                  "границы ответственности",
+                  "типичные ошибки",
+                  "контроль исполнения",
+                  "юридическая защита"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, как четко разграничить права и ответственность диспетчера для минимизации рисков.",
+                "intent": "Разъяснить, какие права и обязанности закреплять в инструкции и как избежать типичных ошибок.",
+                "audiences": "Руководители, диспетчеры, HR-менеджеры, заинтересованные в юридической защите.",
+                "selfPrompt": "CONTEXT: Generate H3 FAQ question 'Какие права и ответственность должен содержать документ, чтобы защитить интересы компании и диспетчера?' for section 'FAQ' of page 'Инструкция диспетчера автомобильного транспорта — образец, структура, обязанности'.\nGOAL: Подробно раскрыть, как формулировать права и ответственность, чтобы избежать спорных ситуаций и защитить обе стороны.\nAUDIENCE: Руководители, диспетчеры | Level: intermediate | Pain points: страх юридических споров, неясные формулировки.\nKEYWORDS TO INTEGRATE: [права и ответственность диспетчера, границы ответственности, типичные ошибки, контроль исполнения, юридическая защита]\nWORD COUNT: minWords: 150, maxWords: 220\nMARKDOWN/MDX SYNTAX: H3 heading + paragraph answer\nE-E-A-T: semanticFingerprint: Практические рекомендации по формулировке прав и ответственности; sourceHint: Internal KB + External KB (отраслевые кейсы); evidenceStrength: internal-tested | external-peer-reviewed.\nInterlink planning: Вставить ссылку на статью о юридической ответственности диспетчера.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "границы ответственности"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Ответ содержит примеры формулировок и советы по разграничению ответственности.",
+                    "intent": "Дать рекомендации по корректному закреплению прав и ответственности.",
+                    "audiences": "HR-менеджеры, руководители, диспетчеры.",
+                    "selfPrompt": "CONTEXT: Generate supporting paragraph for H3 'Какие права и ответственность должен содержать документ, чтобы защитить интересы компании и диспетчера?'.\nGOAL: Привести примеры формулировок и объяснить, как избежать типичных ошибок.\nKEYWORDS TO INTEGRATE: [границы ответственности]\nWORD COUNT: minWords: 60, maxWords: 120\nE-E-A-T: semanticFingerprint: Примеры формулировок; sourceHint: Internal KB; evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-4",
+                "tag": "h3",
+                "keywords": [
+                  "электронные документы",
+                  "автоматизация процессов",
+                  "интеграция с учетными системами",
+                  "современные инструменты диспетчера",
+                  "цифровизация автотранспорта"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, как ускорить оформление и повысить точность работы с помощью электронных инструментов.",
+                "intent": "Показать преимущества использования электронных форм и автоматизации для диспетчерской работы.",
+                "audiences": "Диспетчеры, руководители, заинтересованные в цифровизации процессов.",
+                "selfPrompt": "CONTEXT: Generate H3 FAQ question 'Какие преимущества дает использование электронных форм и автоматизации при оформлении инструкции и работе диспетчера?' for section 'FAQ' of page 'Инструкция диспетчера автомобильного транспорта — образец, структура, обязанности'.\nGOAL: Объяснить, как электронные инструменты и автоматизация упрощают оформление, снижают ошибки и интегрируются с учетными системами.\nAUDIENCE: Диспетчеры, руководители | Level: intermediate | Pain points: трудоемкость ручного оформления, ошибки в документах.\nKEYWORDS TO INTEGRATE: [электронные документы, автоматизация процессов, интеграция с учетными системами, современные инструменты диспетчера, цифровизация автотранспорта]\nWORD COUNT: minWords: 150, maxWords: 220\nMARKDOWN/MDX SYNTAX: H3 heading + paragraph answer\nE-E-A-T: semanticFingerprint: Преимущества цифровых инструментов для диспетчера; sourceHint: Internal KB (USAUTO, автоматизация); evidenceStrength: internal-tested.\nInterlink planning: Вставить ссылку на статью о цифровизации автотранспортных процессов.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "интеграция с учетными системами"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Ответ раскрывает, как автоматизация экономит время и снижает риски ошибок.",
+                    "intent": "Дать конкретные примеры преимуществ электронных форм и интеграции.",
+                    "audiences": "Диспетчеры, руководители автотранспортных компаний.",
+                    "selfPrompt": "CONTEXT: Generate supporting paragraph for H3 'Какие преимущества дает использование электронных форм и автоматизации при оформлении инструкции и работе диспетчера?'.\nGOAL: Привести примеры автоматизации и интеграции с учетными системами.\nKEYWORDS TO INTEGRATE: [интеграция с учетными системами]\nWORD COUNT: minWords: 60, maxWords: 120\nE-E-A-T: semanticFingerprint: Примеры автоматизации; sourceHint: Internal KB; evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -2700,5 +2908,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T19:38:15.179Z";
+export const lastUpdated = "2025-10-24T19:39:31.236Z";
 export const generatedBy = "menu-persist-api";
