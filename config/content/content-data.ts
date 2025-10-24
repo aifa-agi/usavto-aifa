@@ -454,7 +454,7 @@ export const contentData = {
       },
       {
         "id": "jv9wciyhbyncymqyi1uflgdn",
-        "title": "найти работу в такси",
+        "title": "Найти работу в такси — свежие вакансии для водителей онлайн",
         "href": "/blog/nayti-rabotu-v-taksi",
         "roles": [
           "guest"
@@ -1021,5 +1021,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T19:04:40.533Z";
+export const lastUpdated = "2025-10-24T19:04:53.258Z";
 export const generatedBy = "menu-persist-api";
