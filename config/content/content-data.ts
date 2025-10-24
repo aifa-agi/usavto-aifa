@@ -2298,7 +2298,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-24T19:11:16.273Z",
-        "updatedAt": "2025-10-24T19:24:28.005Z",
+        "updatedAt": "2025-10-24T19:24:36.157Z",
         "order": 2,
         "badgeName": "Блог",
         "description": "Инструкция диспетчера автомобильного транспорта: образец, структура, основные обязанности, права и ответственность. Скачать шаблон для оформления!",
@@ -2600,7 +2600,8 @@ export const contentData = {
                   "minWords": 90,
                   "maxWords": 170,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-3-2",
@@ -2639,7 +2640,8 @@ export const contentData = {
                       "minWords": 75,
                       "maxWords": 140,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "ol-3-2-2",
@@ -2657,7 +2659,8 @@ export const contentData = {
                       "minWords": 50,
                       "maxWords": 90,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "code-3-2-3",
@@ -2674,11 +2677,14 @@ export const contentData = {
                       "minWords": 20,
                       "maxWords": 50,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "FAQ",
@@ -3022,5 +3028,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T19:40:02.996Z";
+export const lastUpdated = "2025-10-24T19:40:11.632Z";
 export const generatedBy = "menu-persist-api";
