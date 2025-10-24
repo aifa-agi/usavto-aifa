@@ -64,7 +64,7 @@ export const contentData = {
         "href": "/putevye-listy/kak-delat-putevye-listy",
         "hasBadge": true,
         "badgeName": "Путевые",
-        "updatedAt": "2025-10-24T18:41:55.815Z"
+        "updatedAt": "2025-10-24T19:46:57.647Z"
       }
     ],
     "order": 15
@@ -481,5 +481,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T18:46:07.312Z";
+export const lastUpdated = "2025-10-24T19:50:17.701Z";
 export const generatedBy = "menu-persist-api";

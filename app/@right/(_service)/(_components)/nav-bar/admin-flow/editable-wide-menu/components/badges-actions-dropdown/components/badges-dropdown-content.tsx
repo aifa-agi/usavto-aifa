@@ -60,7 +60,7 @@ export function BadgesDropdownContent({
 
       <DropdownMenuLabel>Badge</DropdownMenuLabel>
       <div className="max-h-[100px] overflow-y-auto custom-scrollbar">
-        <DropdownMenuGroup>
+        <DropdownMenuGroup >
           {ALL_BADGES.map((badge) => (
             <BadgeItemRow
               key={badge}

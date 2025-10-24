@@ -136,6 +136,10 @@ async function readMenuFromLocal(requestId: string): Promise<string> {
  * Read menu from GitHub API with full rate limit tracking
  * Returns both content and rate limit information for admin visibility
  */
+/**
+ * Read menu from GitHub API with support for files up to 100MB
+ * For files > 1MB, uses raw media type to bypass base64 encoding limit
+ */
 async function readMenuFromGitHub(requestId: string): Promise<{
   content: string;
   rateLimitInfo: RateLimitInfo;
@@ -154,10 +158,11 @@ async function readMenuFromGitHub(requestId: string): Promise<{
   const startTime = Date.now();
   
   try {
+    // ВАЖНО: используем raw media type для поддержки файлов > 1MB (до 100MB)
     const res = await fetch(apiUrl, {
       headers: {
         Authorization: `Bearer ${GITHUB_TOKEN}`,
-        Accept: "application/vnd.github.v3+json",
+        Accept: "application/vnd.github.raw+json", // изменено с "application/vnd.github.v3+json"
         "User-Agent": "NextJS-App",
       },
       cache: "no-store",
@@ -165,7 +170,7 @@ async function readMenuFromGitHub(requestId: string): Promise<{
     
     const duration = Date.now() - startTime;
     
-    // Extract rate limit information from GitHub response headers
+    // Extract rate limit information
     const rateLimitRemaining = res.headers.get("x-ratelimit-remaining");
     const rateLimitTotal = res.headers.get("x-ratelimit-limit");
     const rateLimitUsed = res.headers.get("x-ratelimit-used");
@@ -178,7 +183,6 @@ async function readMenuFromGitHub(requestId: string): Promise<{
     const resetDate = new Date(resetTimestamp);
     const percentUsed = total > 0 ? Math.round((used / total) * 100) : 0;
     
-    // Calculate human-readable time until reset
     const now = Date.now();
     const msUntilReset = resetTimestamp - now;
     const minutesUntilReset = Math.ceil(msUntilReset / 60000);
@@ -226,18 +230,12 @@ async function readMenuFromGitHub(requestId: string): Promise<{
       throw new Error(`GitHub API error: ${res.status} - ${text}`);
     }
     
-    const json = (await res.json()) as { content?: string; encoding?: string };
-    
-    if (!json.content) {
-      console.error(`[${requestId}] ❌ No content in GitHub response`);
-      throw new Error("No content found in GitHub file response");
-    }
-    
-    const content = Buffer.from(json.content, "base64").toString("utf-8");
+    // При использовании raw media type ответ приходит как plain text, не JSON
+    const content = await res.text();
     
     console.log(`[${requestId}] ✅ GITHUB READ SUCCESS`);
     console.log(`[${requestId}] 📊 Content length: ${content.length} bytes`);
-    console.log(`[${requestId}] 📊 Encoding: ${json.encoding || "unknown"}`);
+    console.log(`[${requestId}] 📊 Using raw media type (supports files up to 100MB)`);
     
     return {
       content,
@@ -250,6 +248,7 @@ async function readMenuFromGitHub(requestId: string): Promise<{
     throw err;
   }
 }
+
 
 function extractAndParseMenuCategories(source: string): unknown[] {
   const patterns = [

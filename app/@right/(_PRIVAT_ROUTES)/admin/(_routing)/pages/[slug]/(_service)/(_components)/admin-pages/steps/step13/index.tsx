@@ -3,8 +3,15 @@
 "use client";
 
 /**
- * Step13Main:
- * FIXED: Moved all hooks before conditional returns to avoid React hooks rule violation
+ * Step13Main - Simplified version:
+ * Understanding of the task (step-by-step):
+ * 1) Keep header content as is (Step13HeaderCard)
+ * 2) Remove Status Card (Step13StatusCard) - redundant
+ * 3) Remove Reports Card (Step13ReportsCard) - redundant
+ * 4) Remove Cleanup Card (Step13CleanupCard) - functionality moved to deploy button
+ * 5) Integrate cleanup logic into Deploy Card button
+ * 6) Show progress bar during cleanup, then redirect to admin/vercel-deploy
+ * 7) Apply custom button styles: bg-orange-500 hover:bg-orange-600 text-white animate-pulse-strong shadow-md max-w-[240px] truncate
  */
 
 import * as React from "react";
@@ -15,23 +22,20 @@ import { LoadingSpinner } from "@/components/ui/loading-spinner";
 import type { Step13Props } from "./(_types)/step13-types";
 
 // Import utilities
-
-// Import all step13 components
-import { Step13HeaderCard } from "./(_components)/step13-header-card";
-import { Step13CleanupCard } from "./(_components)/step13-cleanup-card";
-import { Step13StatusCard } from "./(_components)/step13-status-card";
-import { Step13ReportsCard } from "./(_components)/step13-reports-card";
-import { Step13DeployCard } from "./(_components)/step13-deploy-card";
-
-// Import constants
-import { STEP13_IDS } from "./(_constants)/step13-ids";
-import { STEP13_TEXTS } from "./(_constants)/step13-texts";
 import { findPageBySlug } from "../../../../(_utils)/page-helpers";
 import { PageData } from "@/app/@right/(_service)/(_types)/page-types";
 import { PageNotFound } from "../../../page-not-found";
 
+// Import components
+import { Step13HeaderCard } from "./(_components)/step13-header-card";
+import { Step13DeployWithCleanupCard } from "./(_components)/step13-deploy-with-cleanup-card";
+
+// Import constants
+import { STEP13_IDS } from "./(_constants)/step13-ids";
+import { STEP13_TEXTS } from "./(_constants)/step13-texts";
+
 /**
- * Main Step 13 Component - FIXED hooks order
+ * Main Step 13 Component - Simplified Version
  */
 export function Step13Main({ slug }: Step13Props) {
   // CRITICAL: ALL HOOKS MUST BE CALLED BEFORE ANY CONDITIONAL RETURNS
@@ -67,7 +71,6 @@ export function Step13Main({ slug }: Step13Props) {
     }, 0);
   }, [categories]);
 
-
   // NOW SAFE TO DO CONDITIONAL RETURNS (after all hooks)
 
   // Loading state - show spinner while navigation data loads
@@ -89,7 +92,6 @@ export function Step13Main({ slug }: Step13Props) {
     return <PageNotFound slug={slug} />;
   }
 
-
   // Main render (pageData guaranteed to exist here)
   return (
     <div
@@ -108,40 +110,16 @@ export function Step13Main({ slug }: Step13Props) {
         <Step13HeaderCard pageData={pageData} />
       </section>
 
-      {/* Main Content Grid - Responsive Layout */}
-      <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
-        {/* Left Column - Primary Actions */}
-        <div className="space-y-6">
-          {/* Data Cleanup Section */}
-          <section aria-labelledby="step13-cleanup">
-            <Step13CleanupCard
-              pageData={pageData}
-              slug={slug}
-            />
-          </section>
-
-          {/* Data Status Section */}
-          <section aria-labelledby="step13-status">
-            <Step13StatusCard pageData={pageData} />
-          </section>
+      {/* Deploy with Cleanup Card - Centered */}
+      <section aria-labelledby="step13-deploy-cleanup" className="flex justify-center">
+        <div className="w-full max-w-2xl">
+          <Step13DeployWithCleanupCard
+            pageData={pageData}
+            slug={slug}
+            totalPagesCount={totalPagesCount}
+          />
         </div>
-
-        {/* Right Column - Secondary Actions */}
-        <div className="space-y-6">
-          {/* Reports Management Section */}
-          <section aria-labelledby="step13-reports">
-            <Step13ReportsCard pageData={pageData} />
-          </section>
-
-          {/* Deploy Management Section */}
-          <section aria-labelledby="step13-deploy">
-            <Step13DeployCard
-              pageData={pageData}
-              totalPagesCount={totalPagesCount}
-            />
-          </section>
-        </div>
-      </div>
+      </section>
 
       {/* Footer Information */}
       <footer className="mt-8 p-4 rounded-md bg-neutral-100/50 dark:bg-neutral-800/50 border border-neutral-200/50 dark:border-neutral-700/50">
@@ -160,8 +138,7 @@ export function Step13Main({ slug }: Step13Props) {
               Step 13 Complete
             </p>
             <p className="text-xs text-muted-foreground">
-              Final step completed successfully. You can now deploy your content or return to make additional changes.
-              All temporary data can be safely cleaned to optimize performance.
+              Final step completed successfully. Click "Go to Deploy" to clean temporary data and proceed to deployment.
             </p>
           </div>
         </div>
@@ -179,7 +156,6 @@ export function Step13Main({ slug }: Step13Props) {
             <p><strong>Total Pages:</strong> {totalPagesCount}</p>
             <p><strong>User Role:</strong> {role}</p>
             <p><strong>Is Preview Completed:</strong> {pageData?.isPreviewComplited ? "Yes" : "No"}</p>
-            <p><strong>Final Report Count:</strong> {pageData?.finalReport?.length || 0}</p>
           </div>
         </details>
       )}

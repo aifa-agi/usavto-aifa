@@ -42,26 +42,9 @@ const CloudSlashIcon = () => (
  * Replace hardcoded text with t('offlineMessage')
  */
 export function OfflinePlaceholder() {
-  const { resolvedTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
 
-  // Prevent hydration mismatch
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
-  // Determine current theme (default to dark on server)
-  const currentTheme = mounted ? (resolvedTheme as "dark" | "light") || "dark" : "dark";
 
-  // Get theme-specific error illustration (using 500 error illustration for offline state)
-  const illustrationPath = getErrorIllustration("500", currentTheme);
-
-  // ✅ Validate path before rendering
-  const illustrationSrc = illustrationPath &&
-    typeof illustrationPath === 'string' &&
-    illustrationPath.length > 0
-    ? illustrationPath
-    : null;
 
   // TODO: Replace with translation function
   // const { t } = useTranslation();
@@ -72,19 +55,7 @@ export function OfflinePlaceholder() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-background text-foreground p-6">
       <div className="text-center max-w-md">
-        {/* Error illustration (theme-aware) */}
-        {illustrationSrc && (
-          <div className="mb-8">
-            <Image
-              src={illustrationSrc}
-              alt="Offline illustration"
-              width={300}
-              height={300}
-              priority
-              className="mx-auto"
-            />
-          </div>
-        )}
+
 
         {/* Offline message with icon */}
         <div className="flex items-center justify-center mb-4">
