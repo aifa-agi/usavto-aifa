@@ -2298,7 +2298,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-24T19:11:16.273Z",
-        "updatedAt": "2025-10-24T19:19:51.589Z",
+        "updatedAt": "2025-10-24T19:20:55.851Z",
         "order": 2,
         "badgeName": "Блог",
         "description": "Инструкция диспетчера автомобильного транспорта: образец, структура, основные обязанности, права и ответственность. Скачать шаблон для оформления!",
@@ -2542,6 +2542,132 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "практическое внедрение инструкции",
+              "процесс оформления документа",
+              "шаблон должностной инструкции",
+              "юридические нюансы оформления",
+              "адаптация под организацию",
+              "стандартизация процессов",
+              "минимизация юридических рисков",
+              "электронные формы документов"
+            ],
+            "taxonomy": "HowTo",
+            "attention": "Пошагово разберём, как грамотно внедрить и оформить должностную инструкцию диспетчера с учётом современных требований и юридических нюансов.",
+            "intent": "Дать читателю подробный алгоритм внедрения и оформления должностной инструкции диспетчера, включая адаптацию шаблона под специфику компании и рекомендации по юридической корректности.",
+            "audiences": "Руководители автотранспортных предприятий, HR-менеджеры, специалисты по кадрам, диспетчеры с опытом и без, заинтересованные в стандартизации и минимизации рисков.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate H2 section focused on практическое внедрение и оформление должностной инструкции диспетчера for page \"Инструкция диспетчера автомобильного транспорта — образец, структура, обязанности\"\n\nGOAL: Подробно раскрыть процесс внедрения, оформления и адаптации должностной инструкции диспетчера, дать рекомендации по юридическим аспектам, показать, как использовать шаблон и электронные инструменты для ускорения и стандартизации процедуры.\n\nAUDIENCE: Руководители транспортных компаний, HR-менеджеры, кадровики, диспетчеры | Level: intermediate | Pain points: сложность оформления, риск ошибок, необходимость соответствия стандартам\n\nKEYWORDS TO INTEGRATE:\n[практическое внедрение инструкции, процесс оформления документа, шаблон должностной инструкции, юридические нюансы оформления, адаптация под организацию, стандартизация процессов, минимизация юридических рисков, электронные формы документов]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with nested H3, P, OL, CODE as per structure\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: разделы о внедрении, автоматизации, юридических аспектах, работе с шаблонами\n- SECONDARY: Apply insights from External KB: структура типовых инструкций, юридические комментарии, советы по адаптации\n\nQUALITY CRITERIA:\n- Actionable (конкретные шаги и рекомендации)\n- Specific (без общих фраз)\n- Data-backed (ссылки на стандарты, примеры)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Пошаговое руководство по внедрению и оформлению инструкции с учётом юридических и организационных нюансов.\n- sourceHint: Internal KB (методика внедрения, автоматизация USAUTO), External KB (структура, юридические требования)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference previous sections (роль, функции) и логически продолжать их\n- Дать ссылку на скачивание шаблона и на раздел о цифровых инструментах (internalLinks)\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-3-1",
+                "tag": "p",
+                "keywords": [
+                  "практическое внедрение инструкции",
+                  "процесс оформления документа"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, как быстро и без ошибок внедрить должностную инструкцию в вашей компании.",
+                "intent": "Ввести читателя в тему раздела, обозначить важность правильного оформления и внедрения инструкции для минимизации рисков.",
+                "audiences": "HR-менеджеры, руководители автотранспортных предприятий, диспетчеры (начальный и средний уровень), заинтересованные в стандартизации процессов.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for section on внедрение и оформление инструкции диспетчера. ROLE: intro. GOAL: Объяснить, почему важно уделять внимание процессу внедрения и правильному оформлению должностной инструкции, обозначить риски при формальном подходе. KEYWORDS: [практическое внедрение инструкции, процесс оформления документа]. SOURCE: Internal KB (методика внедрения), External KB (юридические нюансы). semanticFingerprint: Краткое введение в значимость корректного внедрения инструкции. evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 90,
+                  "maxWords": 170,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-3-2",
+                "tag": "h3",
+                "keywords": [
+                  "шаблон должностной инструкции",
+                  "юридические нюансы оформления",
+                  "адаптация под организацию",
+                  "электронные формы документов",
+                  "стандартизация процессов"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Пошаговая инструкция по оформлению и адаптации шаблона под ваши задачи.",
+                "intent": "Дать подробный алгоритм действий по оформлению и внедрению инструкции, включая юридические аспекты и использование электронных инструментов.",
+                "audiences": "Кадровики, HR-менеджеры, руководители автотранспортных подразделений, диспетчеры, внедряющие новые стандарты.",
+                "selfPrompt": "CONTEXT: Generate H3 subsection in 'практическое внедрение и оформление должностной инструкции диспетчера'. GOAL: Пошагово раскрыть процесс оформления, адаптации и внедрения инструкции, выделить юридические нюансы и преимущества электронных форм. KEYWORDS: [шаблон должностной инструкции, юридические нюансы оформления, адаптация под организацию, электронные формы документов, стандартизация процессов]. semanticFingerprint: Алгоритм внедрения с акцентом на адаптацию и юридическую корректность. sourceHint: Internal KB (шаблоны, автоматизация), External KB (структура, юридические требования). evidenceStrength: internal-tested | external-peer-reviewed. Interlink: добавить ссылку на скачивание шаблона и на раздел о цифровых инструментах.",
+                "additionalData": {
+                  "minWords": 180,
+                  "maxWords": 280,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "шаблон должностной инструкции",
+                      "юридические нюансы оформления"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Поймите, какие юридические детали важно учесть при оформлении.",
+                    "intent": "Объяснить, почему важно использовать актуальный шаблон и учитывать юридические требования при оформлении инструкции.",
+                    "audiences": "HR-менеджеры, кадровики, руководители, диспетчеры (средний уровень).",
+                    "selfPrompt": "CONTEXT: Generate paragraph (body) for H3 'оформление и адаптация шаблона'. ROLE: body. GOAL: Пояснить, как выбрать и адаптировать шаблон, какие юридические нюансы учесть, чтобы инструкция была легитимной и защищала интересы компании. KEYWORDS: [шаблон должностной инструкции, юридические нюансы оформления]. sourceHint: Internal KB (шаблоны, автоматизация), External KB (юридические требования). semanticFingerprint: Пояснение важности корректного шаблона и юридической чистоты. evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 140,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-2-2",
+                    "tag": "ol",
+                    "keywords": [
+                      "адаптация под организацию",
+                      "стандартизация процессов"
+                    ],
+                    "taxonomy": "Actionable",
+                    "attention": "Следуйте этим шагам для быстрой и корректной адаптации инструкции.",
+                    "intent": "Дать пошаговый алгоритм внедрения и адаптации инструкции под специфику компании.",
+                    "audiences": "Кадровики, руководители, диспетчеры (начальный и средний уровень).",
+                    "selfPrompt": "CONTEXT: Generate ordered list (5-6 шагов) для H3 'оформление и адаптация шаблона'. PURPOSE: Алгоритм внедрения и адаптации инструкции под организацию. STRUCTURE: 5-6 коротких пунктов (по 10-20 слов). KEYWORDS: [адаптация под организацию, стандартизация процессов]. sourceHint: Internal KB (методика внедрения), External KB (практические советы). semanticFingerprint: Чёткая последовательность действий для внедрения инструкции. evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 90,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-3-2-3",
+                    "tag": "code",
+                    "keywords": [
+                      "электронные формы документов"
+                    ],
+                    "taxonomy": "technical",
+                    "attention": "Пример автоматизации оформления с помощью электронных форм.",
+                    "intent": "Показать наглядный пример автоматизации оформления должностной инструкции с помощью электронных инструментов.",
+                    "audiences": "HR-менеджеры, специалисты по автоматизации, диспетчеры, внедряющие цифровые решения.",
+                    "selfPrompt": "CONTEXT: Generate code block (JSON или шаблон формы) для H3 'оформление и адаптация шаблона'. PURPOSE: Пример структуры электронной формы или JSON-шаблона для автоматизации оформления инструкции. LENGTH: snippet (5-10 строк). KEYWORDS: [электронные формы документов]. sourceHint: Internal KB (USAUTO, автоматизация). semanticFingerprint: Пример цифрового шаблона для ускорения оформления. evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 50,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -2574,5 +2700,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T19:36:22.578Z";
+export const lastUpdated = "2025-10-24T19:38:15.179Z";
 export const generatedBy = "menu-persist-api";
