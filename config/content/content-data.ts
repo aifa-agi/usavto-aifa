@@ -3570,6 +3570,9 @@ export const contentData = {
             "alt": "как запустить яндекс такси в своем городе",
             "href": "/app-images/ljiwzyt04r36kbyrvxdr2jlj.png"
           }
+        ],
+        "keywords": [
+          "как запустить яндекс такси в своем городе"
         ]
       }
     ],
@@ -3601,5 +3604,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T19:57:37.979Z";
+export const lastUpdated = "2025-10-24T19:57:48.471Z";
 export const generatedBy = "menu-persist-api";
