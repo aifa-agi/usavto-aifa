@@ -1,5 +1,5 @@
 // Auto-generated SEO-optimized static page - do not edit manually
-// Generated on: 2025-10-24T20:15:59.006Z
+// Generated on: 2025-10-24T20:16:25.640Z
 // Source href: /blog/kak-zapustit-yandeks-taksi-v-svoem-gorode
 // Page metadata: Как запустить Яндекс Такси в своем городе: пошаговая инструкция и советы | 5 sections
 // FAQ sections detected: 4
@@ -44,7 +44,7 @@ const sections = [
           "content": [
             {
               "type": "text",
-              "text": "Как запустить Яндекс Такси в своем городе: практический стартовый гид"
+              "text": "Как запустить Яндекс Такси в своем городе: практический стартовый гид."
             }
           ]
         },
@@ -1467,8 +1467,8 @@ export default function Page() {
               "url": "/app-images/ljiwzyt04r36kbyrvxdr2jlj.png",
               "alt": "как запустить яндекс такси в своем городе"
             },
-            "datePublished": "2025-10-24T20:15:59.006Z",
-            "dateModified": "2025-10-24T20:15:59.006Z",
+            "datePublished": "2025-10-24T20:16:25.640Z",
+            "dateModified": "2025-10-24T20:16:25.640Z",
             "articleSection": "blog",
             "keywords": ["как запустить яндекс такси в своем городе"],
             "mainEntityOfPage": {
