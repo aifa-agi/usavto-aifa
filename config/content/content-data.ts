@@ -3039,7 +3039,7 @@ export const contentData = {
       },
       {
         "id": "mn787yuw9brh0z38c0j3zuq0",
-        "title": "как запустить яндекс такси в своем городе",
+        "title": "Как запустить Яндекс Такси в своем городе: пошаговая инструкция и советы",
         "href": "/blog/kak-zapustit-yandeks-taksi-v-svoem-gorode",
         "roles": [
           "guest"
@@ -3606,5 +3606,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T20:02:36.890Z";
+export const lastUpdated = "2025-10-24T20:02:48.793Z";
 export const generatedBy = "menu-persist-api";
