@@ -239,11 +239,11 @@ const executeCleanupSequence = React.useCallback(async (): Promise<boolean> => {
     setCategories(updatedCategories);
     
     // Persist first changes
-    const firstError = await updateCategories();
+    // const firstError = await updateCategories();
     
-    if (firstError) {
-      throw new Error("Failed to save cleaned data (first stage)");
-    }
+    // if (firstError) {
+    //   throw new Error("Failed to save cleaned data (first stage)");
+    // }
 
     // ============================================================
     // STAGE 2: Delay 500ms, then set isPublished to true
