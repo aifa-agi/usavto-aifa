@@ -3595,7 +3595,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-24T19:39:39.400Z",
-        "updatedAt": "2025-10-24T19:54:39.746Z",
+        "updatedAt": "2025-10-24T19:56:10.359Z",
         "order": 3,
         "badgeName": "Блог",
         "description": "Узнайте, как запустить Яндекс Такси в своем городе: пошаговая инструкция, юридические нюансы, советы по подключению и старту бизнеса. Начните свой успех!",
@@ -4164,6 +4164,108 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-5",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "итоги запуска Яндекс Такси",
+              "ключевые выводы для предпринимателей",
+              "следующие шаги после старта",
+              "советы по развитию такси бизнеса",
+              "ошибки при открытии такси сервиса",
+              "рекомендации по масштабированию",
+              "успешный опыт запуска агрегатора"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Получите сжатое резюме, практические советы и четкие рекомендации для уверенного старта и дальнейшего развития сервиса такси в вашем городе.",
+            "intent": "Синтезировать основные выводы, выделить ключевые рекомендации и предложить конкретные следующие шаги для читателей, завершивших изучение инструкции по запуску Яндекс Такси.",
+            "audiences": "Начинающие и действующие предприниматели, владельцы ИП/ООО, рассматривающие запуск или развитие бизнеса такси; пользователи, которые хотят получить структурированное резюме и план дальнейших действий.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 conclusion/summary section for page \"Как запустить Яндекс Такси в своем городе: пошаговая инструкция и советы\"\n\nGOAL: Сформулировать итоговые выводы по запуску сервиса Яндекс Такси, выделить ключевые рекомендации, ошибки, а также предложить читателю конкретные следующие шаги для успешного старта и масштабирования бизнеса. Обеспечить уникальность раздела за счет синтеза информации из предыдущих секций, не повторяя их напрямую, и добавить ценность через структурированное резюме и actionable советы.\n\nAUDIENCE: Предприниматели, владельцы ИП/ООО, инвесторы | Level: beginner/intermediate | Pain points: Неуверенность в последовательности действий, страх ошибок, желание получить четкий план развития.\n\nKEYWORDS TO INTEGRATE:\n[итоги запуска Яндекс Такси, ключевые выводы для предпринимателей, следующие шаги после старта, советы по развитию такси бизнеса, ошибки при открытии такси сервиса, рекомендации по масштабированию, успешный опыт запуска агрегатора]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 200, maxWords: 300 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: h2 section with nested p, table, ul, p elements\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: опыт запуска такси, автоматизация, ошибки и рекомендации, развитие автопарка\n- SECONDARY: Apply insights from External KB: советы по масштабированию, типовые ошибки, успешные кейсы\n\nQUALITY CRITERIA:\n- Actionable (конкретные рекомендации и шаги)\n- Specific (без общих фраз)\n- Data-backed (факты и выводы из KB)\n- No fluff (только ценная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Синтезирует ключевые выводы и рекомендации по запуску и развитию Яндекс Такси, не повторяя предыдущие разделы.\n- sourceHint: Internal KB (экспертные выводы), External KB (индустриальные советы)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nINTERLINK PLANNING: Включить 2-3 внутренних ссылки на страницы о франшизе, автоматизации автопарка, юридических нюансах.\nSCHEMA READINESS: HowTo/FAQPage (если применимо)\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 200,
+              "maxWords": 300,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-5-1",
+                "tag": "p",
+                "keywords": [
+                  "итоги запуска Яндекс Такси",
+                  "ключевые выводы для предпринимателей"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, какие главные выводы и инсайты помогут вам избежать ошибок и ускорить запуск сервиса.",
+                "intent": "Кратко подвести итоги всего руководства, выделить основные успехи и сложности, с которыми сталкиваются предприниматели при запуске Яндекс Такси.",
+                "audiences": "Предприниматели, которые завершили изучение инструкции и хотят получить сжатое резюме для уверенного старта.",
+                "selfPrompt": "CONTEXT: Generate summary paragraph (intro) for h2 section \"Итоги и рекомендации по запуску Яндекс Такси: ключевые выводы и следующие шаги\" on page \"Как запустить Яндекс Такси в своем городе: пошаговая инструкция и советы\"\nGOAL: Сформулировать краткое резюме ключевых выводов по запуску Яндекс Такси, подчеркнуть ценность структурированного подхода и важность соблюдения всех этапов.\nAUDIENCE: Предприниматели, владельцы ИП/ООО | Level: beginner/intermediate | Pain points: Неуверенность в правильности действий, желание избежать ошибок.\nKEYWORDS TO INTEGRATE: [итоги запуска Яндекс Такси, ключевые выводы для предпринимателей]\nWORD COUNT: minWords: 80, maxWords: 150\nMARKDOWN/MDX SYNTAX: paragraph (intro)\nsemanticFingerprint: Подводит итог всему гайду, выделяя главные уроки и инсайты.\nsourceHint: Internal KB (экспертные выводы), External KB (индустриальные советы)\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-5-3",
+                "tag": "table",
+                "keywords": [
+                  "ошибки при открытии такси сервиса",
+                  "рекомендации по масштабированию"
+                ],
+                "taxonomy": "Data-driven",
+                "attention": "Сравните типовые ошибки и лучшие практики для успешного развития такси бизнеса.",
+                "intent": "Структурировать основные ошибки и рекомендации по масштабированию сервиса такси в виде наглядной таблицы.",
+                "audiences": "Владельцы таксопарков, планирующие развитие или масштабирование бизнеса.",
+                "selfPrompt": "CONTEXT: Generate comparison table for h2 section \"Итоги и рекомендации по запуску Яндекс Такси: ключевые выводы и следующие шаги\" on page \"Как запустить Яндекс Такси в своем городе: пошаговая инструкция и советы\"\nGOAL: Сравнить типовые ошибки при запуске такси сервиса и лучшие рекомендации по масштабированию, используя опыт Internal KB и индустриальные советы External KB.\nAUDIENCE: Владельцы таксопарков, предприниматели | Level: intermediate | Pain points: Страх повторить чужие ошибки, поиск эффективных стратегий роста.\nKEYWORDS TO INTEGRATE: [ошибки при открытии такси сервиса, рекомендации по масштабированию]\nWORD COUNT: minWords: 80, maxWords: 160\nMARKDOWN/MDX SYNTAX: table (2 columns × 4-5 rows)\nColumn headers: Ошибка | Рекомендация\nData types: text | text\nsemanticFingerprint: Сравнивает ошибки и рекомендации для минимизации рисков и успешного роста.\nsourceHint: Internal KB (ошибки и best practices), External KB (индустриальные советы)\nevidenceStrength: internal-tested | external-peer-reviewed\nSCHEMA READINESS: Dataset/Comparison",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-5-2",
+                "tag": "ul",
+                "keywords": [
+                  "следующие шаги после старта",
+                  "советы по развитию такси бизнеса"
+                ],
+                "taxonomy": "Actionable",
+                "attention": "Получите конкретный чек-лист действий для успешного развития сервиса после запуска.",
+                "intent": "Дать читателю структурированный список следующих шагов и советов для развития и масштабирования такси бизнеса после запуска.",
+                "audiences": "Предприниматели, которые уже запустили сервис и ищут пути дальнейшего роста.",
+                "selfPrompt": "CONTEXT: Generate actionable checklist (ul) for h2 section \"Итоги и рекомендации по запуску Яндекс Такси: ключевые выводы и следующие шаги\" on page \"Как запустить Яндекс Такси в своем городе: пошаговая инструкция и советы\"\nGOAL: Составить список из 5-7 конкретных шагов и советов для развития бизнеса после запуска Яндекс Такси, используя best practices Internal KB и индустриальные инсайты External KB.\nAUDIENCE: Предприниматели, владельцы таксопарков | Level: intermediate | Pain points: Не знают, как масштабировать сервис, ищут проверенные советы.\nKEYWORDS TO INTEGRATE: [следующие шаги после старта, советы по развитию такси бизнеса]\nWORD COUNT: minWords: 50, maxWords: 90\nMARKDOWN/MDX SYNTAX: ul (5-7 пунктов, короткие и конкретные)\nsemanticFingerprint: Дает actionable чек-лист для развития сервиса после запуска.\nsourceHint: Internal KB (пошаговые рекомендации), External KB (индустриальные советы)\nevidenceStrength: internal-tested | external-peer-reviewed",
+                "additionalData": {
+                  "minWords": 50,
+                  "maxWords": 90,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-5-3",
+                "tag": "p",
+                "keywords": [
+                  "успешный опыт запуска агрегатора"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Вдохновитесь реальными примерами и настройтесь на уверенный старт.",
+                "intent": "Завершить раздел мотивирующим выводом, подчеркнуть возможность успешного запуска сервиса и пригласить к дальнейшим действиям.",
+                "audiences": "Все читатели, которые хотят получить заряд уверенности и мотивации для старта.",
+                "selfPrompt": "CONTEXT: Generate motivational closing paragraph for h2 section \"Итоги и рекомендации по запуску Яндекс Такси: ключевые выводы и следующие шаги\" on page \"Как запустить Яндекс Такси в своем городе: пошаговая инструкция и советы\"\nGOAL: Завершить раздел вдохновляющим посылом, подчеркнуть, что успешный запуск агрегатора возможен при грамотном подходе и использовании экспертных советов.\nAUDIENCE: Все предприниматели, рассматривающие запуск сервиса | Level: beginner/intermediate | Pain points: Неуверенность, страх ошибок, поиск поддержки.\nKEYWORDS TO INTEGRATE: [успешный опыт запуска агрегатора]\nWORD COUNT: minWords: 70, maxWords: 130\nMARKDOWN/MDX SYNTAX: paragraph (conclusion)\nsemanticFingerprint: Мотивирует к действию, завершая гайд на позитивной ноте.\nsourceHint: Internal KB (реальные кейсы, экспертные выводы)\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              }
+            ]
           }
         ]
       }
@@ -4196,5 +4298,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T20:11:37.306Z";
+export const lastUpdated = "2025-10-24T20:11:55.754Z";
 export const generatedBy = "menu-persist-api";
