@@ -1010,7 +1010,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-24T18:41:03.217Z",
-        "updatedAt": "2025-10-24T18:52:31.841Z",
+        "updatedAt": "2025-10-24T18:54:03.541Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Найдите работу в такси онлайн — свежие вакансии водителей с удобным поиском, гибким графиком и актуальными предложениями. Начните зарабатывать уже сегодня!",
@@ -1096,6 +1096,165 @@ export const contentData = {
                 }
               }
             ]
+          },
+          {
+            "id": "h2-2",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "работа в такси онлайн",
+              "электронные маршрутные листы",
+              "интеграция с агрегаторами",
+              "автоматизация документооборота",
+              "удалённые медосмотры",
+              "юридическая поддержка водителей",
+              "повышение эффективности такси"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, как современные технологии и сервисы делают работу водителем такси проще, безопаснее и выгоднее.",
+            "intent": "Показать, какие цифровые инструменты и сервисы доступны водителям такси для упрощения работы, повышения дохода и минимизации бюрократии.",
+            "audiences": "Водители такси и соискатели с базовым или средним опытом, ищущие современные и удобные решения для эффективной работы и быстрого трудоустройства.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 section on \"Технологии и сервисы для водителей такси\" for page \"Найти работу в такси — свежие вакансии для водителей онлайн\"\n\nGOAL: Раскрыть, как современные цифровые сервисы (электронные маршрутные листы, интеграция с агрегаторами, автоматизация документооборота, удалённые медосмотры, юридическая поддержка) помогают водителям такси работать проще, быстрее и безопаснее. Объяснить преимущества автоматизации и поддержки для соискателей и действующих водителей. Избегать повторения тематики поиска вакансий и преимуществ онлайн-поиска (уже раскрыто в предыдущем разделе).\n\nAUDIENCE: Водители такси и соискатели | Level: beginner/intermediate | Pain points: сложность оформления документов, поиск надёжных сервисов, желание повысить доход и снизить риски\n\nKEYWORDS TO INTEGRATE:\n[работа в такси онлайн, электронные маршрутные листы, интеграция с агрегаторами, автоматизация документооборота, удалённые медосмотры, юридическая поддержка водителей, повышение эффективности такси]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 250, maxWords: 400 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with nested p, table, h3, ul as per structure\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Internal KB (автоматизация, электронные маршрутные листы, интеграция, медосмотры, юридическая поддержка)\n- SECONDARY: External KB (общие тенденции, примеры цифровых сервисов, но без упоминания конкурентов)\n\nQUALITY CRITERIA:\n- Actionable (показывать, как сервисы реально упрощают работу)\n- Specific (конкретные функции и преимущества)\n- Data-backed (факты из Internal KB, подтверждённые отраслевыми тенденциями)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальный обзор цифровых сервисов и технологий для водителей такси, не повторяющий тему поиска вакансий.\n- sourceHint: Internal KB (US AUTO: автоматизация, электронные документы, медосмотры, юридическая поддержка)\n- evidenceStrength: internal-tested\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference parent page intent (поиск и эффективная работа в такси)\n- Must set тематическое направление для child h3 (детализация сервисов)\n- Add interlink planning: internalLinks (например, на страницу «Обучение водителей», «Юридическая поддержка», «Интеграция с агрегаторами»)\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 250,
+              "maxWords": 400,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-2-1",
+                "tag": "p",
+                "keywords": [
+                  "работа в такси онлайн",
+                  "автоматизация документооборота"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Современные сервисы позволяют водителям экономить время и избегать бумажной рутины.",
+                "intent": "Ввести пользователя в тему цифровых инструментов, которые делают работу водителя такси проще и эффективнее.",
+                "audiences": "Водители такси, ищущие способы оптимизации работы и снижения бюрократии.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for h2 \"Технологии и сервисы для водителей такси\". GOAL: Кратко объяснить, как цифровые сервисы (электронные документы, автоматизация) меняют повседневную работу водителя такси, делая её проще и удобнее. ROLE: intro. KEYWORDS: [работа в такси онлайн, автоматизация документооборота]. SOURCE: Internal KB (автоматизация, электронные документы). E-E-A-T: semanticFingerprint: Вступление о роли технологий в работе такси. evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-2-2-3",
+                "tag": "p",
+                "keywords": [
+                  "электронные маршрутные листы"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Электронные документы экономят время и упрощают проверки.",
+                "intent": "Пояснить, как электронные маршрутные листы с QR-кодами облегчают работу и контроль для водителей.",
+                "audiences": "Водители такси, желающие минимизировать бумажную работу и ускорить проверки.",
+                "selfPrompt": "CONTEXT: Generate short paragraph for h2 \"Технологии и сервисы для водителей такси\". GOAL: Объяснить преимущество электронных маршрутных листов с QR-кодом для водителей и инспекторов. ROLE: body/transition. KEYWORDS: [электронные маршрутные листы]. SOURCE: Internal KB (электронные документы). E-E-A-T: semanticFingerprint: Краткое пояснение о пользе электронных маршрутных листов. evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-2-2-4",
+                "tag": "table",
+                "keywords": [
+                  "интеграция с агрегаторами",
+                  "удалённые медосмотры"
+                ],
+                "taxonomy": "Data-driven",
+                "attention": "Сравните ключевые функции сервисов для водителей такси.",
+                "intent": "Дать наглядное сравнение основных цифровых сервисов и их преимуществ для водителей.",
+                "audiences": "Водители такси, выбирающие подходящие инструменты для работы.",
+                "selfPrompt": "CONTEXT: Generate comparison table for h2 \"Технологии и сервисы для водителей такси\". GOAL: Сравнить 3-4 ключевых цифровых сервиса (электронные маршрутные листы, интеграция с агрегаторами, удалённые медосмотры, юридическая поддержка) по основным функциям и выгодам. SCHEMA: 4 columns × 4 rows. HEADERS: Сервис | Основная функция | Преимущество | Для кого. DATA TYPES: text. DATA SOURCE: Internal KB (описание сервисов). E-E-A-T: semanticFingerprint: Таблица сравнения сервисов для водителей такси. evidenceStrength: internal-tested. SCHEMA READINESS: Dataset/Comparison.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-2-2",
+                "tag": "h3",
+                "keywords": [
+                  "юридическая поддержка водителей",
+                  "повышение эффективности такси",
+                  "дистанционные медосмотры",
+                  "автоматизация процессов",
+                  "интеграция с корпоративными системами"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Узнайте, как получить максимум пользы от современных сервисов для водителей такси.",
+                "intent": "Детализировать, как водители такси могут использовать юридическую поддержку, медосмотры и интеграцию для повышения эффективности и безопасности работы.",
+                "audiences": "Водители такси, желающие снизить риски, повысить доход и работать с минимальными затратами времени.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection for h2 \"Технологии и сервисы для водителей такси\". GOAL: Показать на конкретных примерах, как юридическая поддержка, дистанционные медосмотры и интеграция с корпоративными системами помогают водителям такси работать эффективнее и безопаснее. REFERENCE PARENT: [Технологии и сервисы для водителей такси]. KEYWORDS: [юридическая поддержка водителей, повышение эффективности такси, дистанционные медосмотры, автоматизация процессов, интеграция с корпоративными системами]. semanticFingerprint: Практические советы по использованию сервисов для повышения эффективности и безопасности. interlink planning: internalLinks (на страницы «Юридическая поддержка», «Медицинское сопровождение», «Интеграция с агрегаторами»). E-E-A-T: evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 250,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "юридическая поддержка водителей",
+                      "автоматизация процессов"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Юридическая поддержка помогает избежать штрафов и сэкономить деньги.",
+                    "intent": "Объяснить, как юридическая поддержка и автоматизация процессов защищают интересы водителей и экономят ресурсы.",
+                    "audiences": "Водители такси, сталкивающиеся с административными вопросами и штрафами.",
+                    "selfPrompt": "CONTEXT: Generate paragraph for h3 \"Как использовать сервисы для повышения эффективности\". GOAL: Описать, как юридическая поддержка и автоматизация помогают водителям такси решать административные вопросы и снижать расходы. REFERENCE PARENT: [Как использовать сервисы для повышения эффективности]. KEYWORDS: [юридическая поддержка водителей, автоматизация процессов]. ROLE: body. SOURCE: Internal KB (юридическая поддержка, автоматизация). E-E-A-T: semanticFingerprint: Практическая польза юридической поддержки и автоматизации. evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 130,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-2-2-2",
+                    "tag": "ul",
+                    "keywords": [
+                      "дистанционные медосмотры"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Преимущества дистанционных медосмотров для водителей.",
+                    "intent": "Перечислить основные плюсы удалённых медицинских осмотров для таксистов.",
+                    "audiences": "Водители такси, желающие экономить время на медосмотрах.",
+                    "selfPrompt": "CONTEXT: Generate unordered list for h3 \"Как использовать сервисы для повышения эффективности\". GOAL: Составить 3-4 пункта о преимуществах дистанционных медосмотров для водителей такси. ITEMS: 3-4, short bullets (5-10 words). KEYWORDS: [дистанционные медосмотры]. ROLE: features/benefits. SOURCE: Internal KB (медицинское сопровождение). E-E-A-T: semanticFingerprint: Список преимуществ дистанционных медосмотров. evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 40,
+                      "maxWords": 80,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-2-3",
+                    "tag": "p",
+                    "keywords": [
+                      "интеграция с корпоративными системами"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Интеграция с системами агрегаторов ускоряет получение заказов.",
+                    "intent": "Пояснить, как интеграция с агрегаторами и корпоративными системами помогает водителям быстрее получать заказы и управлять рабочим временем.",
+                    "audiences": "Водители такси, работающие через агрегаторы или корпоративные платформы.",
+                    "selfPrompt": "CONTEXT: Generate paragraph for h3 \"Как использовать сервисы для повышения эффективности\". GOAL: Объяснить, как интеграция с агрегаторами и корпоративными системами помогает водителям такси быстрее получать заказы и управлять графиком. REFERENCE PARENT: [Как использовать сервисы для повышения эффективности]. KEYWORDS: [интеграция с корпоративными системами]. ROLE: body/conclusion. SOURCE: Internal KB (интеграция с агрегаторами). E-E-A-T: semanticFingerprint: Практическая польза интеграции для водителей. evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 100,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1128,5 +1287,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T19:09:30.076Z";
+export const lastUpdated = "2025-10-24T19:11:07.263Z";
 export const generatedBy = "menu-persist-api";
