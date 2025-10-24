@@ -3595,7 +3595,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-24T19:39:39.400Z",
-        "updatedAt": "2025-10-24T19:51:48.442Z",
+        "updatedAt": "2025-10-24T19:53:17.405Z",
         "order": 3,
         "badgeName": "Блог",
         "description": "Узнайте, как запустить Яндекс Такси в своем городе: пошаговая инструкция, юридические нюансы, советы по подключению и старту бизнеса. Начните свой успех!",
@@ -3839,6 +3839,131 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "реализация сервиса такси",
+              "этапы запуска Яндекс Такси",
+              "практические шаги для открытия",
+              "подключение водителей",
+              "организация процессов",
+              "минимизация рисков при запуске",
+              "инструкции для партнеров"
+            ],
+            "taxonomy": "HowTo",
+            "attention": "Получите пошаговый алгоритм запуска Яндекс Такси в вашем городе с акцентом на практические действия, минимизацию ошибок и эффективную организацию процессов.",
+            "intent": "Дать читателю четкую, структурированную и практическую инструкцию по запуску сервиса Яндекс Такси — от первых шагов до подключения водителей и настройки внутренних процессов.",
+            "audiences": "Начинающие и действующие предприниматели, владельцы ИП/ООО, рассматривающие запуск или расширение бизнеса такси через Яндекс Такси; уровень — базовый и средний, с потребностью в пошаговых действиях и минимизации рисков.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 section on \"Пошаговая инструкция по запуску Яндекс Такси: от заявки до первых поездок\" for page \"Как запустить Яндекс Такси в своем городе: пошаговая инструкция и советы\"\n\nGOAL: Предоставить читателю подробную, структурированную и практическую инструкцию по запуску Яндекс Такси в своем городе, включая подготовку документов, подачу заявки, подключение водителей, организацию процессов и минимизацию рисков.\n\nAUDIENCE: Предприниматели, владельцы ИП/ООО, желающие открыть сервис такси под Яндекс Такси; уровень — базовый/средний; боль — отсутствие четкого алгоритма, страх ошибок, нехватка практических советов.\n\nKEYWORDS TO INTEGRATE:\n[реализация сервиса такси, этапы запуска Яндекс Такси, практические шаги для открытия, подключение водителей, организация процессов, минимизация рисков при запуске, инструкции для партнеров]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with nested H3, P, OL, CODE as per structure\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: автоматизация документооборота, подключение водителей, оформление документов, опыт партнерства\n- SECONDARY: Apply insights from External KB: пошаговые алгоритмы, советы по подключению, минимизация вложений\n\nQUALITY CRITERIA:\n- Actionable (конкретные шаги и рекомендации)\n- Specific (без общих фраз)\n- Data-backed (факты и советы из баз знаний)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальный алгоритм запуска Яндекс Такси с акцентом на практические шаги и минимизацию ошибок.\n- sourceHint: Internal KB (практика US AUTO), External KB (структура пошаговых гайдов)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nINTERLINK PLANNING:\n- Вставить 2-3 внутренних ссылки на страницы: \"Документы для таксопарка\", \"Автоматизация автопарка\", \"Ошибки при запуске такси бизнеса\"\n- Schema readiness: HowTo\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-3-1",
+                "tag": "p",
+                "keywords": [
+                  "реализация сервиса такси",
+                  "этапы запуска Яндекс Такси"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Введение в практическую часть: почему важно следовать четкой инструкции и как избежать типовых ошибок.",
+                "intent": "Объяснить значимость пошагового подхода и подготовить читателя к изучению алгоритма запуска сервиса.",
+                "audiences": "Предприниматели, впервые запускающие сервис такси; уровень — базовый; боль — страх ошибок и неуверенность в действиях.",
+                "selfPrompt": "CONTEXT: Generate intro paragraph for h2 section \"Пошаговая инструкция по запуску Яндекс Такси: от заявки до первых поездок\". GOAL: Ввести читателя в практическую часть, объяснить важность четкой последовательности действий и подготовить к изучению пошагового алгоритма. KEYWORDS: реализация сервиса такси, этапы запуска Яндекс Такси. ROLE: intro. E-E-A-T: semanticFingerprint: Подчеркивает важность структурированного подхода для успешного запуска. sourceHint: Internal KB (опыт US AUTO), evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 90,
+                  "maxWords": 170,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-3-2",
+                "tag": "h3",
+                "keywords": [
+                  "практические шаги для открытия",
+                  "подключение водителей",
+                  "организация процессов",
+                  "минимизация рисков при запуске",
+                  "инструкции для партнеров"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Пошаговый алгоритм: от подачи заявки до первых заказов — с акцентом на практические детали и автоматизацию.",
+                "intent": "Детализировать последовательные шаги запуска Яндекс Такси, раскрывая нюансы подключения, организации процессов и минимизации рисков.",
+                "audiences": "Владельцы ИП/ООО, желающие быстро и без ошибок запустить сервис; уровень — средний; боль — нехватка практических инструкций.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection \"Пошаговый алгоритм запуска: ключевые этапы и автоматизация\" under h2 \"Пошаговая инструкция по запуску Яндекс Такси: от заявки до первых поездок\". GOAL: Дать структурированный список ключевых этапов запуска сервиса, раскрыть детали подключения водителей, автоматизации документооборота и минимизации рисков. KEYWORDS: практические шаги для открытия, подключение водителей, организация процессов, минимизация рисков при запуске, инструкции для партнеров. semanticFingerprint: Уникальный алгоритм с акцентом на автоматизацию и снижение ошибок. sourceHint: Internal KB (алгоритмы US AUTO), External KB (структура пошаговых гайдов). evidenceStrength: internal-tested | external-peer-reviewed. Interlink: добавить ссылку на \"Автоматизация автопарка\".",
+                "additionalData": {
+                  "minWords": 180,
+                  "maxWords": 280,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "практические шаги для открытия",
+                      "инструкции для партнеров"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Краткое описание логики пошагового алгоритма и его преимуществ для предпринимателя.",
+                    "intent": "Ввести читателя в структуру пошагового алгоритма, объяснить, как он помогает избежать ошибок и ускоряет запуск.",
+                    "audiences": "Предприниматели, ищущие практическое руководство; уровень — базовый/средний.",
+                    "selfPrompt": "CONTEXT: Generate intro paragraph for h3 \"Пошаговый алгоритм запуска: ключевые этапы и автоматизация\". GOAL: Объяснить, почему важно следовать алгоритму, и как это помогает минимизировать риски. KEYWORDS: практические шаги для открытия, инструкции для партнеров. ROLE: intro. E-E-A-T: semanticFingerprint: Обоснование необходимости четкой структуры действий. sourceHint: Internal KB, evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 140,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-2-2",
+                    "tag": "ol",
+                    "keywords": [
+                      "организация процессов",
+                      "подключение водителей"
+                    ],
+                    "taxonomy": "HowTo",
+                    "attention": "Четкая последовательность действий для запуска сервиса — от регистрации до первых заказов.",
+                    "intent": "Дать читателю структурированный список ключевых этапов запуска Яндекс Такси с акцентом на автоматизацию и подключение водителей.",
+                    "audiences": "Владельцы ИП/ООО, желающие быстро стартовать; уровень — средний.",
+                    "selfPrompt": "CONTEXT: Generate ordered list (7 items) for h3 \"Пошаговый алгоритм запуска: ключевые этапы и автоматизация\". GOAL: Перечислить основные этапы запуска сервиса: регистрация, оформление документов, подключение к Яндекс Такси, подбор и подключение водителей, автоматизация документооборота, настройка выплат, запуск первых заказов. KEYWORDS: организация процессов, подключение водителей. STRUCTURE: 7 коротких пунктов (по 10-20 слов). E-E-A-T: semanticFingerprint: Практический чек-лист для быстрого старта. sourceHint: Internal KB (алгоритмы US AUTO), evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 90,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-3-2-3",
+                    "tag": "code",
+                    "keywords": [
+                      "минимизация рисков при запуске"
+                    ],
+                    "taxonomy": "technical",
+                    "attention": "Пример автоматизации: шаблон для массового оформления маршрутных листов.",
+                    "intent": "Показать, как автоматизация документооборота помогает снизить риски и ускорить запуск.",
+                    "audiences": "Технические специалисты и владельцы автопарков, заинтересованные в автоматизации; уровень — средний.",
+                    "selfPrompt": "CONTEXT: Generate code block (JSON snippet, 8-10 lines) for h3 \"Пошаговый алгоритм запуска: ключевые этапы и автоматизация\". GOAL: Привести пример шаблона для массового оформления маршрутных листов или интеграции с платформой управления автопарком. KEYWORDS: минимизация рисков при запуске. LANGUAGE: JSON. PURPOSE: пример автоматизации документооборота. E-E-A-T: semanticFingerprint: Демонстрация технической реализации автоматизации. sourceHint: Internal KB (интеграция US AUTO), evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 50,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -3871,5 +3996,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T20:08:44.438Z";
+export const lastUpdated = "2025-10-24T20:10:06.745Z";
 export const generatedBy = "menu-persist-api";
