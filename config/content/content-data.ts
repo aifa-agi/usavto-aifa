@@ -978,7 +978,7 @@ export const contentData = {
         "updatedAt": "2025-10-24T18:41:03.217Z",
         "order": 1,
         "badgeName": "Блог",
-        "description": "найти работу в такси",
+        "description": "Найдите работу в такси онлайн — свежие вакансии водителей с удобным поиском, гибким графиком и актуальными предложениями. Начните зарабатывать уже сегодня!",
         "images": [
           {
             "id": "optste2qs7f279om6yqp77il",
@@ -1021,5 +1021,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T19:04:53.258Z";
+export const lastUpdated = "2025-10-24T19:04:57.754Z";
 export const generatedBy = "menu-persist-api";
