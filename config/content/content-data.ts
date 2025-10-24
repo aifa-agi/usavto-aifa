@@ -3595,7 +3595,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-24T19:39:39.400Z",
-        "updatedAt": "2025-10-24T19:53:17.405Z",
+        "updatedAt": "2025-10-24T19:54:39.746Z",
         "order": 3,
         "badgeName": "Блог",
         "description": "Узнайте, как запустить Яндекс Такси в своем городе: пошаговая инструкция, юридические нюансы, советы по подключению и старту бизнеса. Начните свой успех!",
@@ -3964,6 +3964,206 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "частые вопросы по запуску Яндекс Такси",
+              "юридические аспекты такси",
+              "финансовые расчеты для таксопарка",
+              "требования к водителям",
+              "онлайн сервисы для автопарка",
+              "дистанционный медосмотр",
+              "подключение к агрегатору"
+            ],
+            "taxonomy": "FAQ",
+            "attention": "Ответы на самые частые и важные вопросы помогут избежать ошибок и ускорить старт бизнеса.",
+            "intent": "Собрать и структурировать ключевые вопросы, которые чаще всего возникают у предпринимателей при запуске Яндекс Такси в своем городе, и дать на них экспертные, практические ответы.",
+            "audiences": "Начинающие и действующие предприниматели, владельцы ИП/ООО, рассматривающие запуск или расширение бизнеса такси; лица, ищущие конкретные разъяснения по юридическим, техническим и организационным нюансам.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 FAQ section for page \"Как запустить Яндекс Такси в своем городе: пошаговая инструкция и советы\"\n\nGOAL: Сформировать структурированный блок часто задаваемых вопросов (FAQ), охватывающий юридические, технические, финансовые и организационные аспекты запуска Яндекс Такси. Ответы должны быть основаны на внутренней экспертизе (Internal KB), с добавлением ценных, но нейтральных инсайтов из внешних источников (External KB), без упоминания или продвижения конкурентов. Каждый вопрос должен раскрывать отдельную боль или сомнение целевой аудитории, не дублируя темы предыдущих разделов. Включить E-E-A-T элементы: уникальное позиционирование, источник информации, уровень доказательности. Обеспечить органичное включение ключевых слов, избегая их повторения среди соседних элементов. Добавить рекомендации по внутренней перелинковке (например, на разделы о документации, автоматизации автопарка, медицинском сопровождении).\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "keywords": [
+                  "ответы на вопросы по запуску такси"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Краткое введение объясняет, почему важно изучить FAQ перед стартом.",
+                "intent": "Ввести пользователя в раздел FAQ, объяснить его ценность и как он поможет избежать типичных ошибок.",
+                "audiences": "Предприниматели, которые хотят быстро разобраться в ключевых нюансах запуска сервиса.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for FAQ section of page \"Как запустить Яндекс Такси в своем городе: пошаговая инструкция и советы\". GOAL: Объяснить, зачем читать FAQ, как он помогает минимизировать риски и ускоряет процесс запуска. KEYWORDS TO INTEGRATE: ответы на вопросы по запуску такси. WORD COUNT: minWords: 70, maxWords: 130. MARKDOWN/MDX SYNTAX: Paragraph. WRITING STYLE: Narrative. CONTENT FORMAT: Simple. QUALITY CRITERIA: Кратко, по делу, с акцентом на пользу для читателя. E-E-A-T: semanticFingerprint: Введение в FAQ, уникальность — мотивация к изучению раздела; sourceHint: Internal KB; evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "keywords": [
+                  "регистрация ИП или ООО",
+                  "лицензия на такси",
+                  "юридические требования"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, какие документы и разрешения необходимы для легального запуска сервиса.",
+                "intent": "Дать развернутый ответ на вопрос о юридических шагах и документах для запуска Яндекс Такси.",
+                "audiences": "Владельцы малого бизнеса, новички в сфере такси, ищущие пошаговую юридическую инструкцию.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item on 'Какие юридические документы и разрешения нужны для запуска Яндекс Такси?' (parent H2: FAQ) for page 'Как запустить Яндекс Такси в своем городе: пошаговая инструкция и советы'. GOAL: Подробно раскрыть юридические требования, опираясь на внутреннюю экспертизу (Internal KB), с добавлением нейтральных внешних фактов. KEYWORDS TO INTEGRATE: регистрация ИП или ООО, лицензия на такси, юридические требования. WORD COUNT: minWords: 150, maxWords: 220. MARKDOWN/MDX SYNTAX: H3 + supporting paragraph. WRITING STYLE: Narrative. CONTENT FORMAT: Simple. QUALITY CRITERIA: Четко, структурировано, с акцентом на практические шаги. E-E-A-T: semanticFingerprint: Юридические требования для старта; sourceHint: Internal KB, External KB (общие нормы); evidenceStrength: internal-tested. Interlink: добавить ссылку на раздел о документах для Яндекс Такси.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "keywords": [
+                      "оформление разрешения на перевозки"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Пошаговое объяснение процесса получения разрешения.",
+                    "intent": "Детализировать этапы оформления разрешения и регистрации для запуска такси.",
+                    "audiences": "Предприниматели, не знакомые с процедурой лицензирования.",
+                    "selfPrompt": "CONTEXT: Generate paragraph explaining the process of obtaining a taxi license and registering as ИП/ООО (parent H3: 'Какие юридические документы и разрешения нужны для запуска Яндекс Такси?'). KEYWORDS TO INTEGRATE: оформление разрешения на перевозки. WORD COUNT: minWords: 60, maxWords: 120. MARKDOWN/MDX SYNTAX: Paragraph. WRITING STYLE: Narrative. CONTENT FORMAT: Simple. QUALITY CRITERIA: Практическая инструкция, без воды. E-E-A-T: semanticFingerprint: Пошаговое оформление разрешения; sourceHint: Internal KB; evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-2",
+                "tag": "h3",
+                "keywords": [
+                  "расчет инвестиций",
+                  "минимальные вложения",
+                  "финансовая модель такси"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Поймите, сколько реально потребуется вложить и как рассчитать окупаемость.",
+                "intent": "Ответить на вопрос о стартовых инвестициях и финансовых расчетах для запуска Яндекс Такси.",
+                "audiences": "Инвесторы, предприниматели, планирующие бюджетирование нового бизнеса.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item on 'Сколько нужно вложить для запуска Яндекс Такси и как рассчитать рентабельность?' (parent H2: FAQ) for page 'Как запустить Яндекс Такси в своем городе: пошаговая инструкция и советы'. GOAL: Дать конкретные ориентиры по инвестициям и расчету финансовой модели, используя внутренние данные и общие рыночные стандарты. KEYWORDS TO INTEGRATE: расчет инвестиций, минимальные вложения, финансовая модель такси. WORD COUNT: minWords: 150, maxWords: 220. MARKDOWN/MDX SYNTAX: H3 + supporting paragraph. WRITING STYLE: Narrative. CONTENT FORMAT: Simple. QUALITY CRITERIA: Четко, с примерами и советами по расчету. E-E-A-T: semanticFingerprint: Финансовые ориентиры для старта; sourceHint: Internal KB, External KB (рыночные данные); evidenceStrength: internal-tested. Interlink: добавить ссылку на калькулятор прибыли или раздел о финансовых расчетах.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "пример расчета доходности"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Показать на примере, как рассчитать доходность.",
+                    "intent": "Дать практический пример расчета рентабельности таксопарка.",
+                    "audiences": "Люди, впервые сталкивающиеся с финансовым планированием в такси.",
+                    "selfPrompt": "CONTEXT: Generate paragraph with a sample calculation of taxi park profitability (parent H3: 'Сколько нужно вложить для запуска Яндекс Такси и как рассчитать рентабельность?'). KEYWORDS TO INTEGRATE: пример расчета доходности. WORD COUNT: minWords: 60, maxWords: 120. MARKDOWN/MDX SYNTAX: Paragraph. WRITING STYLE: Narrative. CONTENT FORMAT: Simple. QUALITY CRITERIA: Конкретика, понятный пример. E-E-A-T: semanticFingerprint: Пример расчета доходности; sourceHint: Internal KB, External KB (рыночные данные); evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-3",
+                "tag": "h3",
+                "keywords": [
+                  "требования к водителям",
+                  "медицинские осмотры онлайн",
+                  "контроль персонала"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, какие требования предъявляются к водителям и как автоматизировать контроль.",
+                "intent": "Разъяснить требования к водителям, особенности медицинских осмотров и способы автоматизации контроля.",
+                "audiences": "Руководители автопарков, HR-специалисты, владельцы такси-бизнеса.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item on 'Какие требования предъявляются к водителям и как организовать медосмотры?' (parent H2: FAQ) for page 'Как запустить Яндекс Такси в своем городе: пошаговая инструкция и советы'. GOAL: Подробно раскрыть требования к водителям, особенности проведения медосмотров (в том числе дистанционно), опираясь на внутреннюю экспертизу. KEYWORDS TO INTEGRATE: требования к водителям, медицинские осмотры онлайн, контроль персонала. WORD COUNT: minWords: 150, maxWords: 220. MARKDOWN/MDX SYNTAX: H3 + supporting paragraph. WRITING STYLE: Narrative. CONTENT FORMAT: Simple. QUALITY CRITERIA: Практические советы, современные решения. E-E-A-T: semanticFingerprint: Требования и автоматизация контроля водителей; sourceHint: Internal KB; evidenceStrength: internal-tested. Interlink: добавить ссылку на раздел о медицинском сопровождении и автоматизации автопарка.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "телемедицина для такси"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Преимущества внедрения телемедицины для автопарка.",
+                    "intent": "Пояснить, как телемедицина упрощает и ускоряет медосмотры водителей.",
+                    "audiences": "Владельцы автопарков, заинтересованные в автоматизации.",
+                    "selfPrompt": "CONTEXT: Generate paragraph about the benefits of telemedicine for taxi driver medical checks (parent H3: 'Какие требования предъявляются к водителям и как организовать медосмотры?'). KEYWORDS TO INTEGRATE: телемедицина для такси. WORD COUNT: minWords: 60, maxWords: 120. MARKDOWN/MDX SYNTAX: Paragraph. WRITING STYLE: Narrative. CONTENT FORMAT: Simple. QUALITY CRITERIA: Практическая польза, конкретные преимущества. E-E-A-T: semanticFingerprint: Телемедицина для контроля водителей; sourceHint: Internal KB; evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-4",
+                "tag": "h3",
+                "keywords": [
+                  "автоматизация автопарка",
+                  "онлайн сервисы для такси",
+                  "контроль штрафов"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, как современные сервисы помогают управлять автопарком эффективнее.",
+                "intent": "Ответить на вопрос о возможностях автоматизации процессов в таксопарке и преимуществах использования облачных решений.",
+                "audiences": "Владельцы автопарков, операторы, ищущие способы оптимизации управления.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item on 'Какие сервисы и инструменты помогут автоматизировать управление автопарком?' (parent H2: FAQ) for page 'Как запустить Яндекс Такси в своем городе: пошаговая инструкция и советы'. GOAL: Описать преимущества автоматизации, интеграции с бухгалтерией, контроля штрафов и других функций, используя внутреннюю экспертизу. KEYWORDS TO INTEGRATE: автоматизация автопарка, онлайн сервисы для такси, контроль штрафов. WORD COUNT: minWords: 150, maxWords: 220. MARKDOWN/MDX SYNTAX: H3 + supporting paragraph. WRITING STYLE: Narrative. CONTENT FORMAT: Simple. QUALITY CRITERIA: Практические рекомендации, современные решения. E-E-A-T: semanticFingerprint: Автоматизация и цифровые инструменты для такси; sourceHint: Internal KB; evidenceStrength: internal-tested. Interlink: добавить ссылку на раздел об автоматизации автопарка и интеграции с бухгалтерией.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "массовая печать маршрутных листов"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Преимущества автоматизации документооборота.",
+                    "intent": "Пояснить, как массовая печать маршрутных листов экономит время и снижает ошибки.",
+                    "audiences": "Операторы автопарков, заинтересованные в оптимизации документооборота.",
+                    "selfPrompt": "CONTEXT: Generate paragraph about the benefits of bulk printing of waybills for taxi fleets (parent H3: 'Какие сервисы и инструменты помогут автоматизировать управление автопарком?'). KEYWORDS TO INTEGRATE: массовая печать маршрутных листов. WORD COUNT: minWords: 60, maxWords: 120. MARKDOWN/MDX SYNTAX: Paragraph. WRITING STYLE: Narrative. CONTENT FORMAT: Simple. QUALITY CRITERIA: Конкретные преимущества, практическая польза. E-E-A-T: semanticFingerprint: Массовая печать как инструмент оптимизации; sourceHint: Internal KB; evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -3996,5 +4196,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T20:10:06.745Z";
+export const lastUpdated = "2025-10-24T20:11:37.306Z";
 export const generatedBy = "menu-persist-api";
