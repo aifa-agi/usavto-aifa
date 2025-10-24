@@ -2298,7 +2298,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-24T19:11:16.273Z",
-        "updatedAt": "2025-10-24T19:18:19.183Z",
+        "updatedAt": "2025-10-24T19:19:51.589Z",
         "order": 2,
         "badgeName": "Блог",
         "description": "Инструкция диспетчера автомобильного транспорта: образец, структура, основные обязанности, права и ответственность. Скачать шаблон для оформления!",
@@ -2385,6 +2385,163 @@ export const contentData = {
                 }
               }
             ]
+          },
+          {
+            "id": "h2-2",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "роль диспетчера автотранспорта",
+              "функции диспетчера",
+              "планирование перевозок",
+              "контроль маршрутов",
+              "взаимодействие с водителями",
+              "оптимизация автопарка",
+              "требования к квалификации"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, какие ключевые задачи и функции выполняет диспетчер автотранспорта, чтобы грамотно выстроить работу автопарка и избежать типовых ошибок.",
+            "intent": "Детально раскрыть профессиональную роль, основные функции и требования к диспетчеру автомобильного транспорта, чтобы читатель мог понять специфику и значимость этой должности для эффективной работы транспортного подразделения.",
+            "audiences": "Руководители транспортных компаний, HR-менеджеры, специалисты по кадрам, диспетчеры с базовым и средним опытом, заинтересованные в стандартизации обязанностей и оптимизации процессов.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate H2 section describing the профессиональная роль, ключевые функции и требования к диспетчеру автомобильного транспорта for page \"Инструкция диспетчера автомобильного транспорта — образец, структура, обязанности\"\n\nGOAL: Дать читателю полное представление о профессиональной роли диспетчера, его функциях, задачах и требованиях, чтобы обеспечить понимание специфики должности и её значения для автотранспортного предприятия.\n\nAUDIENCE: Руководители транспортных компаний, HR-менеджеры, специалисты по кадрам, диспетчеры | Level: базовый/средний | Pain points: неясность обязанностей, риск ошибок при распределении задач, необходимость соответствия профстандартам.\n\nKEYWORDS TO INTEGRATE:\n[роль диспетчера автотранспорта, функции диспетчера, планирование перевозок, контроль маршрутов, взаимодействие с водителями, оптимизация автопарка, требования к квалификации]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 250, maxWords: 400 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with nested paragraphs, table, H3, UL as per structure\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: [Роль и задачи диспетчера, Планирование маршрутов, Взаимодействие с водителями, Оптимизация автопарка]\n- SECONDARY: Apply insights from External KB: [Общие положения, Функции, Требования к квалификации, Особенности оформления]\n\nQUALITY CRITERIA:\n- Actionable (конкретные функции и требования)\n- Specific (детализация обязанностей)\n- Data-backed (с опорой на профстандарты и реальные задачи)\n- No fluff (без воды)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Раскрывает уникальную профессиональную роль и задачи диспетчера автотранспорта, не повторяя вводную секцию.\n- sourceHint: Internal KB (основное), External KB (дополнение по квалификации)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference previous section for контекст (вводная часть уже раскрыта)\n- Set тематическое направление для раскрытия обязанностей и структуры документа в следующих разделах\n- Add interlink planning: internalLinks (например, на статьи о профстандартах, автоматизации автопарка, кадровых документах)\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)\n",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 250,
+              "maxWords": 400,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-2-1",
+                "tag": "p",
+                "keywords": [
+                  "роль диспетчера автотранспорта",
+                  "функции диспетчера"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Поймите, почему именно эта должность критична для стабильной работы автопарка.",
+                "intent": "Ввести читателя в специфику профессии диспетчера автотранспорта, обозначить его место и значение в структуре транспортной компании.",
+                "audiences": "HR-менеджеры, руководители, диспетчеры-новички, заинтересованные в понимании сути профессии.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for section 'роль, функции и требования к диспетчеру автотранспорта'.\nGOAL: Кратко описать, зачем нужен диспетчер, его место в транспортной структуре и почему эта роль важна.\nKEYWORDS: роль диспетчера автотранспорта, функции диспетчера\nWORD COUNT: minWords: 80, maxWords: 150\nPARAGRAPH ROLE: intro\nsemanticFingerprint: Вводит в тему, раскрывая значимость профессии диспетчера для автотранспортных предприятий.\nsourceHint: Internal KB (роль и задачи диспетчера)\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-2-2-3",
+                "tag": "p",
+                "keywords": [
+                  "планирование перевозок"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, как планирование влияет на эффективность автопарка.",
+                "intent": "Показать, что грамотное планирование — одна из ключевых задач диспетчера.",
+                "audiences": "Диспетчеры, логисты, руководители автотранспортных отделов.",
+                "selfPrompt": "CONTEXT: Generate short transition paragraph highlighting the значение планирования перевозок в работе диспетчера.\nGOAL: Связать роль диспетчера с его функцией планирования маршрутов.\nKEYWORDS: планирование перевозок\nWORD COUNT: minWords: 5, maxWords: 15\nPARAGRAPH ROLE: transition\nsemanticFingerprint: Кратко подчеркивает важность планирования как части обязанностей диспетчера.\nsourceHint: Internal KB (планирование маршрутов)\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-2-2-4",
+                "tag": "table",
+                "keywords": [
+                  "контроль маршрутов",
+                  "оптимизация автопарка"
+                ],
+                "taxonomy": "Data-driven",
+                "attention": "Сравните ключевые функции диспетчера для разных типов автотранспортных предприятий.",
+                "intent": "Структурировать основные функции диспетчера по направлениям деятельности для быстрой ориентации читателя.",
+                "audiences": "HR-менеджеры, руководители, специалисты по оптимизации автопарка.",
+                "selfPrompt": "CONTEXT: Generate comparative table (3 columns × 4 rows) summarizing ключевые функции диспетчера автотранспорта по направлениям: планирование, контроль, взаимодействие, оптимизация.\nGOAL: Дать наглядное представление о распределении функций диспетчера.\nKEYWORDS: контроль маршрутов, оптимизация автопарка\nTABLE SCHEMA: [Функция] | [Описание] | [Практическая значимость]; data types: text | text | text\nDATA SOURCE: Internal KB (функции диспетчера), External KB (дополнение по практике)\nsemanticFingerprint: Таблица систематизирует функции диспетчера, облегчая сравнение и внедрение в инструкцию.\nsourceHint: Internal KB (основное), External KB (структура типовых функций)\nevidenceStrength: internal-tested | external-peer-reviewed",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-2-2",
+                "tag": "h3",
+                "keywords": [
+                  "взаимодействие с водителями",
+                  "требования к квалификации",
+                  "профессиональные навыки"
+                ],
+                "taxonomy": "Guide",
+                "attention": "Узнайте, какие навыки и квалификация необходимы современному диспетчеру автотранспорта.",
+                "intent": "Раскрыть требования к квалификации и профессиональным навыкам диспетчера, чтобы помочь работодателям и соискателям оценить соответствие должности.",
+                "audiences": "HR-менеджеры, кандидаты на должность диспетчера, специалисты по обучению персонала.",
+                "selfPrompt": "CONTEXT: Generate H3 subsection under 'роль, функции и требования к диспетчеру автотранспорта' focusing on требования к квалификации и профессиональным навыкам.\nGOAL: Подробно описать, какие знания, умения и личные качества требуются для успешной работы диспетчером.\nKEYWORDS: взаимодействие с водителями, требования к квалификации, профессиональные навыки\nsemanticFingerprint: Уникально раскрывает требования к квалификации и навыкам, не повторяя общие функции.\nsourceHint: Internal KB (взаимодействие с водителями), External KB (требования к квалификации)\nevidenceStrength: internal-tested | external-peer-reviewed\ninterlink planning: internal link to article on профстандарты диспетчера, external link (if allowed) to профстандарт РФ\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 250,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "требования к квалификации",
+                      "профессиональные навыки"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Проверьте, соответствуют ли ваши навыки современным требованиям к диспетчерам.",
+                    "intent": "Описать базовые требования к образованию и опыту работы для диспетчера автотранспорта.",
+                    "audiences": "Кандидаты на должность, HR-менеджеры, специалисты по обучению.",
+                    "selfPrompt": "CONTEXT: Generate paragraph describing базовые требования к квалификации диспетчера автотранспорта.\nGOAL: Дать четкое понимание, какое образование и опыт требуются для работы диспетчером.\nKEYWORDS: требования к квалификации, профессиональные навыки\nWORD COUNT: minWords: 70, maxWords: 130\nPARAGRAPH ROLE: body\nsemanticFingerprint: Конкретизирует требования к образованию и опыту, не повторяя функции.\nsourceHint: External KB (требования к квалификации), Internal KB (уточнение по навыкам)\nevidenceStrength: external-peer-reviewed | internal-tested",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 130,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-2-2-2",
+                    "tag": "ul",
+                    "keywords": [
+                      "взаимодействие с водителями"
+                    ],
+                    "taxonomy": "Actionable",
+                    "attention": "Оцените, какие навыки особенно важны для эффективного взаимодействия с водителями.",
+                    "intent": "Перечислить ключевые профессиональные и личные качества, необходимые диспетчеру для успешной работы с водителями и коллективом.",
+                    "audiences": "Диспетчеры, HR-менеджеры, специалисты по обучению.",
+                    "selfPrompt": "CONTEXT: Generate unordered list (5 items) of ключевых профессиональных и личных качеств диспетчера автотранспорта.\nGOAL: Сделать акцент на soft и hard skills, необходимых для эффективного взаимодействия с водителями.\nKEYWORDS: взаимодействие с водителями\nLIST STRUCTURE: short bullets (5-10 words)\nsemanticFingerprint: Список выделяет навыки, не повторяя требования к квалификации.\nsourceHint: Internal KB (взаимодействие с водителями)\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 40,
+                      "maxWords": 80,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-2-3",
+                    "tag": "p",
+                    "keywords": [
+                      "профессиональные навыки"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Узнайте, как развитие профессиональных навыков влияет на карьерный рост диспетчера.",
+                    "intent": "Пояснить, почему постоянное развитие профессиональных навыков важно для успешной работы диспетчером.",
+                    "audiences": "Диспетчеры, специалисты по обучению, руководители.",
+                    "selfPrompt": "CONTEXT: Generate concluding paragraph on the importance of continuous professional development for диспетчеров автотранспорта.\nGOAL: Мотивировать к развитию навыков и обучению.\nKEYWORDS: профессиональные навыки\nWORD COUNT: minWords: 60, maxWords: 100\nPARAGRAPH ROLE: conclusion\nsemanticFingerprint: Делает акцент на развитии, не повторяя предыдущие пункты.\nsourceHint: Internal KB (практика развития навыков)\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 100,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -2417,5 +2574,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T19:35:18.315Z";
+export const lastUpdated = "2025-10-24T19:36:22.578Z";
 export const generatedBy = "menu-persist-api";
