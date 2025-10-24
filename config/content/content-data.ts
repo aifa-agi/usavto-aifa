@@ -978,7 +978,14 @@ export const contentData = {
         "updatedAt": "2025-10-24T18:41:03.217Z",
         "order": 1,
         "badgeName": "Блог",
-        "description": "найти работу в такси"
+        "description": "найти работу в такси",
+        "images": [
+          {
+            "id": "optste2qs7f279om6yqp77il",
+            "alt": "найти работу в такси",
+            "href": "/app-images/dskw5mwpqeoj9t3v14bpainc.jpg"
+          }
+        ]
       }
     ],
     "order": 16
@@ -1009,5 +1016,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T19:00:09.628Z";
+export const lastUpdated = "2025-10-24T19:01:28.338Z";
 export const generatedBy = "menu-persist-api";
