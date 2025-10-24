@@ -122,7 +122,7 @@ async function extractPageContent(href: string): Promise<PageContentExtractionRe
       const absolutePath = path.join(process.cwd(), relativePath);
       fileContent = await fs.readFile(absolutePath, "utf-8");
     }
-    
+     
     // ✅ PRESERVED: Существующая логика парсинга секций
     const sectionsMatch = fileContent.match(/const\s+sections\s*=\s*(\[[\s\S]*?\]);/);
     
