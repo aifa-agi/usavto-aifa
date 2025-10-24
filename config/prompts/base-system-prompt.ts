@@ -1,5 +1,5 @@
 // @/config/prompts/base-system-prompt.ts
-// Auto-generated file - Last updated: 2025-10-24T14:19:08.199Z
+// Auto-generated file - Last updated: 2025-10-24T16:13:08.326Z
 
 import { SystemPromptCollection } from "@/types/system-prompt-types";
 import { appConfig } from "@/config/appConfig";
@@ -77,12 +77,12 @@ Focus on creating summaries that enable chatbot to:
 - Match user intent with page content`;
 
 // ============ CUSTOM BASE INSTRUCTION (highest priority) ============
-export const CUSTOM_BASE_INSTRUCTION = `You are an AI consultant chatbot for \\\\\\\\\\\\\\\${appConfig.short_name}.
+export const CUSTOM_BASE_INSTRUCTION = `You are an AI consultant chatbot for \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\${appConfig.short_name}.
 
 # Company Information
-- Company Name: \\\\\\\\\\\\\\\${appConfig.name}
-- Description: \\\\\\\\\\\\\\\${appConfig.description}
-- Website: \\\\\\\\\\\\\\\${appConfig.url}
+- Company Name: \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\${appConfig.name}
+- Description: \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\${appConfig.description}
+- Website: \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\${appConfig.url}
 
 # Your Role and Responsibilities
 Your primary purpose is to assist clients by providing accurate and helpful answers to their questions based on the internal knowledge base provided below.
@@ -118,7 +118,7 @@ Your primary purpose is to assist clients by providing accurate and helpful answ
 - Keep responses relevant to the company's scope of services
 - Be concise while ensuring completeness
 
-Remember: Your goal is to represent \\\\\\\\\\\\\\\${appConfig.short_name} professionally while helping users find the information they need efficiently and effectively.`;
+Remember: Your goal is to represent \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\${appConfig.short_name} professionally while helping users find the information they need efficiently and effectively.`;
 
 
 // ============ INTERNAL COMPANY KNOWLEDGE BASE (manually managed) ============
@@ -143,12 +143,12 @@ export const INTERNAL_COMPANY_KB_TOKENS = internalKnowledgeTokens;
 export const systemPromptData: SystemPromptCollection = [];
 
 // ============ FINAL COMBINED PROMPT ============
-export const BUSINESS_KNOWLEDGE_BASE = `You are an AI consultant chatbot for \\\\\\\${appConfig.short_name}.
+export const BUSINESS_KNOWLEDGE_BASE = `You are an AI consultant chatbot for \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\${appConfig.short_name}.
 
 # Company Information
-- Company Name: \\\\\\\${appConfig.name}
-- Description: \\\\\\\${appConfig.description}
-- Website: \\\\\\\${appConfig.url}
+- Company Name: \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\${appConfig.name}
+- Description: \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\${appConfig.description}
+- Website: \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\${appConfig.url}
 
 # Your Role and Responsibilities
 Your primary purpose is to assist clients by providing accurate and helpful answers to their questions based on the internal knowledge base provided below.
@@ -184,7 +184,7 @@ Your primary purpose is to assist clients by providing accurate and helpful answ
 - Keep responses relevant to the company's scope of services
 - Be concise while ensuring completeness
 
-Remember: Your goal is to represent \\\\\\\${appConfig.short_name} professionally while helping users find the information they need efficiently and effectively.
+Remember: Your goal is to represent \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\${appConfig.short_name} professionally while helping users find the information they need efficiently and effectively.
 --- Internal Company Knowledge Base ---
 
 БАЗА ЗНАНИЙ - ОТВЕТЫ НА ВОПРОСЫ О БИЗНЕСЕ:
@@ -1171,12 +1171,12 @@ The comprehensive digital ecosystem creates synergistic effects where optimizati
 // Total knowledge base entries: 0
 // 
 // TOKEN BREAKDOWN:
-// - Custom instruction tokens: 491
+// - Custom instruction tokens: 521
 // - Dynamic page tokens: 0
-// - Subtotal (without internal KB): 491
+// - Subtotal (without internal KB): 521
 // - Internal company KB tokens: ${INTERNAL_COMPANY_KB_TOKENS} (added separately by token-utils)
 // 
 // IMPORTANT: totalTokenCount in SystemPromptConfig does NOT include INTERNAL_COMPANY_KB_TOKENS
 // Internal KB tokens are added during calculations in token-utils.ts
 // 
-// Last updated: 2025-10-24T14:19:08.199Z
+// Last updated: 2025-10-24T16:13:08.326Z

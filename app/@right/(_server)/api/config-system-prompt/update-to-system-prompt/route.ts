@@ -69,27 +69,130 @@ function resolveLocalAbsolutePath(relPath: string): string {
   return normalized;
 }
 
-// -------------------- Read Current Config --------------------
+// -------------------- Read Current Config (Direct - no self-fetch) --------------------
 
-async function readCurrentConfig(): Promise<SystemPromptConfig> {
-  const apiUrl = `${process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000"}/api/config-system-prompt`;
+async function readPromptFromLocal(filePath: string): Promise<string> {
+  const absolute = resolveLocalAbsolutePath(filePath);
+  try {
+    return await fs.readFile(absolute, "utf-8");
+  } catch (err: any) {
+    if (err?.code === "ENOENT") {
+      throw new Error("System prompt file not found in local filesystem");
+    }
+    throw err;
+  }
+}
+
+async function readPromptFromGitHub(filePath: string): Promise<string> {
+  if (!GITHUB_TOKEN || !GITHUB_REPO) {
+    throw new Error("GitHub configuration missing (GITHUB_TOKEN or GITHUB_REPO)");
+  }
   
-  const response = await fetch(apiUrl, {
-    method: "GET",
+  const apiUrl = `https://api.github.com/repos/${GITHUB_REPO}/contents/${filePath}`;
+  console.log(`[GitHub Read] 📡 Fetching from: ${apiUrl}`);
+  
+  const res = await fetch(apiUrl, {
+    headers: {
+      Authorization: `Bearer ${GITHUB_TOKEN}`,
+      Accept: "application/vnd.github.v3+json",
+      "User-Agent": "NextJS-App",
+    },
     cache: "no-store",
   });
   
-  if (!response.ok) {
-    throw new Error(`Failed to read current config: ${response.status}`);
+  console.log(`[GitHub Read] 📊 Response status: ${res.status}`);
+  
+  if (!res.ok) {
+    if (res.status === 404) {
+      throw new Error("System prompt file not found in GitHub repository");
+    }
+    const text = await res.text();
+    console.error(`[GitHub Read] ❌ API Error: ${res.status} - ${text}`);
+    throw new Error(`GitHub API error: ${res.status} - ${text}`);
   }
   
-  const result = await response.json();
+  const json = (await res.json()) as { content?: string; encoding?: string };
   
-  if (!result.success || !result.data) {
-    throw new Error("Failed to parse current config");
+  if (!json.content) {
+    throw new Error("No content found in GitHub file response");
   }
   
-  return result.data as SystemPromptConfig;
+  const decoded = Buffer.from(json.content, "base64").toString("utf-8");
+  console.log(`[GitHub Read] ✅ Successfully read ${decoded.length} bytes`);
+  
+  return decoded;
+}
+
+function parseSystemPromptConfigFromSource(source: string): SystemPromptConfig {
+  // Извлекаем CUSTOM_BASE_INSTRUCTION
+  const customPattern = /export\s+const\s+CUSTOM_BASE_INSTRUCTION\s*=\s*`([\s\S]*?)`;/;
+  const customMatch = source.match(customPattern);
+  
+  if (!customMatch || !customMatch[1]) {
+    throw new Error("Could not find CUSTOM_BASE_INSTRUCTION in source file");
+  }
+  
+  const customContent = customMatch[1].trim();
+  const customTokenCount = Math.ceil(customContent.length / 4);
+  
+  // Извлекаем systemPromptData
+  const dataPattern = /export\s+const\s+systemPromptData\s*:\s*SystemPromptCollection\s*=\s*(\[[\s\S]*?\]);/;
+  const dataMatch = source.match(dataPattern);
+  
+  let knowledgeBase: SystemPromptCollection = [];
+  
+  if (dataMatch && dataMatch[1]) {
+    try {
+      knowledgeBase = JSON.parse(dataMatch[1]) as SystemPromptCollection;
+    } catch (err) {
+      console.warn("[Parse Config] Failed to parse systemPromptData, using empty array");
+    }
+  }
+  
+  const knowledgeBaseTokens = knowledgeBase.reduce((sum, entry) => sum + entry.tokenCount, 0);
+  
+  return {
+    customInstruction: {
+      content: customContent,
+      tokenCount: customTokenCount,
+      lastUpdated: new Date().toISOString()
+    },
+    knowledgeBase,
+    totalTokenCount: customTokenCount + knowledgeBaseTokens
+  };
+}
+
+async function readCurrentConfig(): Promise<SystemPromptConfig> {
+  const environment = getEnvMode();
+  const filePath = DEFAULT_PROMPT_FILE_PATH;
+  
+  console.log(`[Read Config] 🔧 Environment: ${environment}`);
+  console.log(`[Read Config] 🔧 GITHUB_TOKEN exists: ${!!GITHUB_TOKEN}`);
+  console.log(`[Read Config] 🔧 GITHUB_REPO: ${GITHUB_REPO || "NOT SET"}`);
+  
+  try {
+    let rawContent = "";
+    
+    if (environment === "production") {
+      console.log(`[Read Config] 🌐 Reading from GitHub...`);
+      rawContent = await readPromptFromGitHub(filePath);
+    } else {
+      console.log(`[Read Config] 📁 Reading from local filesystem...`);
+      rawContent = await readPromptFromLocal(filePath);
+    }
+    
+    const config = parseSystemPromptConfigFromSource(rawContent);
+    
+    console.log(`[Read Config] ✅ Config loaded successfully`);
+    console.log(`[Read Config] 📊 Entries: ${config.knowledgeBase.length}`);
+    console.log(`[Read Config] 📊 Total tokens: ${config.totalTokenCount}`);
+    
+    return config;
+    
+  } catch (error: any) {
+    console.error(`[Read Config] 💥 Error:`, error);
+    throw error;
+  }
 }
 
 // -------------------- Generate Entry from Page Metadata --------------------
@@ -279,12 +382,19 @@ async function writeToLocalFileSystem(config: SystemPromptConfig): Promise<void>
 
 async function writeToGitHub(config: SystemPromptConfig): Promise<void> {
   if (!GITHUB_TOKEN || !GITHUB_REPO) {
-    throw new Error("GitHub configuration missing");
+    throw new Error("GitHub configuration missing (GITHUB_TOKEN or GITHUB_REPO)");
   }
   
   const fileContent = generateSystemPromptFile(config);
   
+  console.log(`[GitHub Write] 🔧 Repository: ${GITHUB_REPO}`);
+  console.log(`[GitHub Write] 🔧 Branch: ${GITHUB_BRANCH}`);
+  console.log(`[GitHub Write] 🔧 File path: ${DEFAULT_PROMPT_FILE_PATH}`);
+  
+  // 1. GET: получаем SHA текущего файла (для обновления)
   const getUrl = `https://api.github.com/repos/${GITHUB_REPO}/contents/${DEFAULT_PROMPT_FILE_PATH}`;
+  console.log(`[GitHub Write] 📡 Getting current file SHA...`);
+  
   const getRes = await fetch(getUrl, {
     headers: {
       Authorization: `Bearer ${GITHUB_TOKEN}`,
@@ -297,9 +407,15 @@ async function writeToGitHub(config: SystemPromptConfig): Promise<void> {
   if (getRes.ok) {
     const data = await getRes.json();
     sha = data.sha;
+    console.log(`[GitHub Write] ✅ Found existing file with SHA: ${sha?.substring(0, 7)}...`);
+  } else {
+    console.log(`[GitHub Write] ℹ️  File doesn't exist yet, will create new`);
   }
   
+  // 2. PUT: создаём/обновляем файл
   const putUrl = `https://api.github.com/repos/${GITHUB_REPO}/contents/${DEFAULT_PROMPT_FILE_PATH}`;
+  console.log(`[GitHub Write] 📤 Committing to GitHub...`);
+  
   const putRes = await fetch(putUrl, {
     method: "PUT",
     headers: {
@@ -318,8 +434,14 @@ async function writeToGitHub(config: SystemPromptConfig): Promise<void> {
   
   if (!putRes.ok) {
     const errorData = await putRes.json().catch(() => ({}));
-    throw new Error(`GitHub API error: ${putRes.status} - ${errorData.message || "Unknown"}`);
+    console.error(`[GitHub Write] ❌ API Error: ${putRes.status}`);
+    console.error(`[GitHub Write] ❌ Error details:`, errorData);
+    throw new Error(`GitHub API error: ${putRes.status} - ${errorData.message || "Unknown error"}`);
   }
+  
+  const result = await putRes.json();
+  console.log(`[GitHub Write] ✅ Successfully committed`);
+  console.log(`[GitHub Write] 📝 Commit SHA: ${result.commit?.sha?.substring(0, 7) || "unknown"}`);
 }
 
 // -------------------- POST Handler --------------------
@@ -449,12 +571,19 @@ export async function POST(
     console.log(`[${requestId}]    - Config tokens (without internal KB): ${formatTokenUsage(updatedConfig.totalTokenCount)}`);
     console.log(`[${requestId}]    - Total with internal KB: ${formatTokenUsage(updatedConfig.totalTokenCount + INTERNAL_COMPANY_KB_TOKENS)}`);
     
-    console.log(`[${requestId}] 💾 Writing to filesystem...`);
-    await writeToLocalFileSystem(updatedConfig);
+    // ✅ ИСПРАВЛЕНО: Правильная логика записи
+    console.log(`[${requestId}] 💾 Writing to storage...`);
     
     if (environment === "production") {
-      console.log(`[${requestId}] 🌐 Syncing to GitHub...`);
+      // ✅ В production пишем ТОЛЬКО в GitHub
+      console.log(`[${requestId}] 🌐 Writing to GitHub...`);
       await writeToGitHub(updatedConfig);
+      console.log(`[${requestId}] ✅ Successfully committed to GitHub`);
+    } else {
+      // ✅ В development пишем ТОЛЬКО локально
+      console.log(`[${requestId}] 📁 Writing to local filesystem...`);
+      await writeToLocalFileSystem(updatedConfig);
+      console.log(`[${requestId}] ✅ Successfully written to local file`);
     }
     
     console.log(`[${requestId}] 🎉 SUCCESS`);
