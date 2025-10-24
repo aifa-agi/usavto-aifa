@@ -3563,7 +3563,7 @@ export const contentData = {
         "updatedAt": "2025-10-24T19:39:39.400Z",
         "order": 3,
         "badgeName": "Блог",
-        "description": "как запустить яндекс такси в своем городе",
+        "description": "Узнайте, как запустить Яндекс Такси в своем городе: пошаговая инструкция, юридические нюансы, советы по подключению и старту бизнеса. Начните свой успех!",
         "images": [
           {
             "id": "kdsn46zakp6nhdh41x4b0cnr",
@@ -3606,5 +3606,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T20:02:48.793Z";
+export const lastUpdated = "2025-10-24T20:02:59.443Z";
 export const generatedBy = "menu-persist-api";
