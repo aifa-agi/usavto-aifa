@@ -1,5 +1,5 @@
 // Auto-generated SEO-optimized static page - do not edit manually
-// Generated on: 2025-10-22T22:53:21.821Z
+// Generated on: 2025-10-24T18:04:32.526Z
 // Source href: /blog/magnitnaya-obkleyka-mashiny-yandeks-taksi
 // Page metadata: Магнитная обклейка машины Яндекс Такси — комплект под ключ | 5 sections
 // FAQ sections detected: 4
@@ -1475,8 +1475,8 @@ export default function Page() {
               "url": "/app-images/tdnwiggva2rmiyrpz2drxwax.jpg",
               "alt": "магнитная обклейка машины яндекс такси"
             },
-            "datePublished": "2025-10-22T22:53:21.821Z",
-            "dateModified": "2025-10-22T22:53:21.821Z",
+            "datePublished": "2025-10-24T18:04:32.526Z",
+            "dateModified": "2025-10-24T18:04:32.526Z",
             "articleSection": "blog",
             "keywords": ["магнитная обклейка машины яндекс такси"],
             "mainEntityOfPage": {
