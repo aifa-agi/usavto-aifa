@@ -1,7 +1,7 @@
 // @/config/appConfig.ts
 // Comments in English: Single source of truth for SEO/PWA. Everything reads from here.
 
-const site_url = "https://usavtopro.ru";
+const site_url = "https://putevye-listy.ru";
 
 export const appConfig: AppConfig = {
   name: "USAUTO Путевые листы",

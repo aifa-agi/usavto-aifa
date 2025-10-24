@@ -78,7 +78,7 @@ export default async function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Toaster position="top-center" />
+
           <SessionProvider>
             <OnlineStatusProvider>
               <LanguageProvider>
@@ -148,7 +148,7 @@ export default async function RootLayout({
             )}
           </SessionProvider>
         </ThemeProvider>
-
+        <Toaster position="top-center" />
       </body>
     </html>
   );

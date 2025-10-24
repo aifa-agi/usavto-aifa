@@ -1,3 +1,6 @@
+// @/app/@right/(_PRIVAT_ROUTES)/admin/(_routing)/vercel-deploy/page.tsx
+
+
 "use client";
 
 // Manual Vercel deployment management page

@@ -160,13 +160,13 @@ export function PageListItem({
             singlePage={page}
             categoryTitle={categoryTitle}
             setCategories={setCategories}
-          />
+          /> */}
           <AddToPromptActionsDropdown
             singlePage={page}
             categoryTitle={categoryTitle}
             setCategories={setCategories}
           />
-          <ChatSynchroniseActionDropdown
+          {/* <ChatSynchroniseActionDropdown
             singlePage={page}
             categoryTitle={categoryTitle}
             setCategories={setCategories}

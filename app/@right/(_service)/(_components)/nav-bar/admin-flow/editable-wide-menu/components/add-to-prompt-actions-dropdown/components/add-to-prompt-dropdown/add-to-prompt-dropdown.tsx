@@ -4,10 +4,10 @@
 
 import React from "react";
 
-import { AddToPromptActionsDropdownProps } from "../types";
-import { AddToPromptTriggerButton } from "./add-to-prompt-trigger-button";
-import { AddToPromptDropdownContent } from "./add-to-prompt-dropdown-content";
-import { useAddToPromptLogic } from "../hooks/use-add-to-prompt-logic";
+import { AddToPromptActionsDropdownProps } from "../../types";
+import { AddToPromptTriggerButton } from "../add-to-prompt-trigger-button";
+import { AddToPromptDropdownContent } from "../add-to-prompt-dropdown-content";
+import { useAddToPromptLogic } from "../../hooks/use-add-to-prompt-logic";
 import {
   DropdownMenu,
   DropdownMenuTrigger,

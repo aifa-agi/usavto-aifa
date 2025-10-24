@@ -178,31 +178,7 @@ export function PageActionsMenu({
         <span>{hasKeywordsData ? "Edit Keywords" : "Add Keywords"}</span>
       </DropdownMenuItem>
 
-      <DropdownMenuSeparator />
 
-      <DropdownMenuItem
-        onClick={handlePageBodyClick}
-        className={cn(
-          "flex items-center",
-          isClickable ? "cursor-pointer" : "cursor-default",
-          isBlocked && "text-yellow-600 dark:text-yellow-400"
-        )}
-      >
-        <span
-          className={cn(
-            "inline-block w-1 h-1 mr-3 rounded-full",
-            getIndicatorColorClass()
-          )}
-          style={{
-            width: "4px",
-            height: "4px",
-            minWidth: "4px",
-            minHeight: "4px",
-          }}
-        />
-        <span className="flex-1">{getButtonMessage()}</span>
-        {isBlocked && <AlertCircle className="w-3 h-3 ml-2 text-yellow-500" />}
-      </DropdownMenuItem>
 
       <DropdownMenuSeparator />
 
@@ -278,6 +254,32 @@ export function PageActionsMenu({
         {isKnowledgeBlocked && (
           <AlertCircle className="w-3 h-3 ml-2 text-yellow-500" />
         )}
+      </DropdownMenuItem>
+
+      <DropdownMenuSeparator />
+
+      <DropdownMenuItem
+        onClick={handlePageBodyClick}
+        className={cn(
+          "flex items-center",
+          isClickable ? "cursor-pointer" : "cursor-default",
+          isBlocked && "text-yellow-600 dark:text-yellow-400"
+        )}
+      >
+        <span
+          className={cn(
+            "inline-block w-1 h-1 mr-3 rounded-full",
+            getIndicatorColorClass()
+          )}
+          style={{
+            width: "4px",
+            height: "4px",
+            minWidth: "4px",
+            minHeight: "4px",
+          }}
+        />
+        <span className="flex-1">{getButtonMessage()}</span>
+        {isBlocked && <AlertCircle className="w-3 h-3 ml-2 text-yellow-500" />}
       </DropdownMenuItem>
     </>
   );

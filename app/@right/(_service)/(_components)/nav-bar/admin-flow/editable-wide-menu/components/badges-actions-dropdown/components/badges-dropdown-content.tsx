@@ -40,7 +40,7 @@ export function BadgesDropdownContent({
 
   return (
     <DropdownMenuContent align="end" className="min-w-[190px]">
-      <DropdownMenuLabel>Roles</DropdownMenuLabel>
+      {/* <DropdownMenuLabel>Roles</DropdownMenuLabel>
       <div className="max-h-[100px] overflow-y-auto custom-scrollbar">
         <DropdownMenuGroup>
           {ALL_ROLES.map((role) => (
@@ -52,7 +52,7 @@ export function BadgesDropdownContent({
             />
           ))}
         </DropdownMenuGroup>
-      </div>
+      </div> */}
 
 
       <DropdownMenuSeparator />
@@ -73,7 +73,7 @@ export function BadgesDropdownContent({
       </div>
 
 
-      <DropdownMenuSeparator />
+      {/* <DropdownMenuSeparator />
       {categoryTitle !== "home" && (
         <>
           <DropdownMenuLabel>Page Type</DropdownMenuLabel>
@@ -90,7 +90,7 @@ export function BadgesDropdownContent({
             </DropdownMenuGroup>
           </div>
         </>
-      )}
+      )} */}
     </DropdownMenuContent>
   );
 }

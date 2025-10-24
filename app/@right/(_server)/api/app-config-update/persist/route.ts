@@ -671,7 +671,7 @@ export async function POST(req: NextRequest) {
     return authResult.response;
   }
 
-  const { session, userRole, isPrivileged } = authResult;
+  const { session, userRole} = authResult;
 
   console.log(`[${requestId}] ✅ User authorized: ${session?.user?.email || "unknown"}`);
   console.log(`[${requestId}] ✅ User role: ${userRole}`);
