@@ -2298,7 +2298,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-24T19:11:16.273Z",
-        "updatedAt": "2025-10-24T19:24:04.368Z",
+        "updatedAt": "2025-10-24T19:24:21.799Z",
         "order": 2,
         "badgeName": "Блог",
         "description": "Инструкция диспетчера автомобильного транспорта: образец, структура, основные обязанности, права и ответственность. Скачать шаблон для оформления!",
@@ -2364,7 +2364,8 @@ export const contentData = {
                   "minWords": 100,
                   "maxWords": 180,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-1-2",
@@ -2382,9 +2383,11 @@ export const contentData = {
                   "minWords": 60,
                   "maxWords": 120,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-2",
@@ -2979,7 +2982,8 @@ export const contentData = {
               }
             ]
           }
-        ]
+        ],
+        "isReadyDraftForPerplexity": false
       }
     ],
     "order": 16
@@ -3010,5 +3014,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T19:39:48.612Z";
+export const lastUpdated = "2025-10-24T19:39:54.875Z";
 export const generatedBy = "menu-persist-api";
