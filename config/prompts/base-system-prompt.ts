@@ -1,5 +1,5 @@
 // @/config/prompts/base-system-prompt.ts
-// Auto-generated file - Last updated: 2025-10-24T16:13:08.326Z
+// Auto-generated file - Last updated: 2025-10-24T17:28:27.567Z
 
 import { SystemPromptCollection } from "@/types/system-prompt-types";
 import { appConfig } from "@/config/appConfig";
@@ -77,12 +77,12 @@ Focus on creating summaries that enable chatbot to:
 - Match user intent with page content`;
 
 // ============ CUSTOM BASE INSTRUCTION (highest priority) ============
-export const CUSTOM_BASE_INSTRUCTION = `You are an AI consultant chatbot for \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\${appConfig.short_name}.
+export const CUSTOM_BASE_INSTRUCTION = `You are an AI consultant chatbot for ${appConfig.short_name}.
 
 # Company Information
-- Company Name: \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\${appConfig.name}
-- Description: \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\${appConfig.description}
-- Website: \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\${appConfig.url}
+- Company Name: ${appConfig.name}
+- Description: ${appConfig.description}
+- Website: ${appConfig.url}
 
 # Your Role and Responsibilities
 Your primary purpose is to assist clients by providing accurate and helpful answers to their questions based on the internal knowledge base provided below.
@@ -118,7 +118,7 @@ Your primary purpose is to assist clients by providing accurate and helpful answ
 - Keep responses relevant to the company's scope of services
 - Be concise while ensuring completeness
 
-Remember: Your goal is to represent \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\${appConfig.short_name} professionally while helping users find the information they need efficiently and effectively.`;
+Remember: Your goal is to represent ${appConfig.short_name} professionally while helping users find the information they need efficiently and effectively.`;
 
 
 // ============ INTERNAL COMPANY KNOWLEDGE BASE (manually managed) ============
@@ -140,52 +140,22 @@ export const INTERNAL_COMPANY_KB_TOKENS = internalKnowledgeTokens;
 
 
 // ============ DYNAMIC KNOWLEDGE BASE (auto-generated from pages) ============
-export const systemPromptData: SystemPromptCollection = [];
+export const systemPromptData: SystemPromptCollection = [
+  {
+    "id": "y6rma1thtgda26zl5ogwzl3x",
+    "title": "Какую машину купить для работы в такси комфорт в 2025?",
+    "description": "Узнайте, какую машину купить для работы в такси комфорт в 2025 году! Обзор лучших моделей, советы по выбору и секреты успешного заработка.",
+    "keywords": [
+      "какую машину купить для работы в такси комфорт"
+    ],
+    "href": "/blog/kakuyu-mashinu-kupit-dlya-raboty-v-taksi-komfort",
+    "content": "**Summary Content:**\nВыбор автомобиля для работы в такси комфорт в 2025 году требует учета ключевых критериев: комфорт пассажиров, экономичность и надежность. Автомобиль должен обеспечивать просторный салон, качественную отделку и современные системы безопасности. Экономичность, включая низкий расход топлива и доступность запчастей, снижает эксплуатационные расходы и увеличивает прибыль. Надежность транспортного средства минимизирует риски простоев и внеплановых ремонтов, что особенно важно в условиях городского трафика. Важно также соответствие автомобиля требованиям лицензирования и технического контроля для легальной эксплуатации. Рекомендуемые модели: Toyota Camry (расход 7.5 л/100 км, высокая надежность), Hyundai Elantra (6.8 л/100 км, современные системы безопасности), Skoda Octavia (6.5 л/100 км, удобный салон) и KIA K5 (7.0 л/100 км, комфортная подвеска). Правильное оформление документов и регулярный технический контроль критически важны для успешной работы. Методология выбора включает анализ требований, изучение рынка, тест-драйв и проверку документации. Соблюдение новых законодательных норм, касающихся безопасности и технического состояния, гарантирует легальную работу и повышает доверие клиентов. Полный обзор доступен на сайте: https://putevye-listy.ru/blog/kakuyu-mashinu-kupit-dlya-raboty-v-taksi-komfort\n\n**Metadata:**\n- Intent: Узнать, какую машину купить для работы в такси комфорт\n- Taxonomy: Автомобильный рынок, такси, выбор автомобиля\n- Audience: Водители такси, владельцы автопарков\n- Keywords: такси комфорт, выбор автомобиля, экономичность, надежность, комфорт",
+    "tokenCount": 390
+  }
+];
 
 // ============ FINAL COMBINED PROMPT ============
-export const BUSINESS_KNOWLEDGE_BASE = `You are an AI consultant chatbot for \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\${appConfig.short_name}.
-
-# Company Information
-- Company Name: \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\${appConfig.name}
-- Description: \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\${appConfig.description}
-- Website: \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\${appConfig.url}
-
-# Your Role and Responsibilities
-Your primary purpose is to assist clients by providing accurate and helpful answers to their questions based on the internal knowledge base provided below.
-
-## Guidelines for Interaction
-
-### Core Principles
-- Always maintain a professional, friendly, and courteous tone
-- Remain polite and respectful even if users are rude or confrontational
-- Provide clear, concise, and relevant responses
-- Focus on topics directly related to the company and the knowledge base
-
-### Knowledge Usage
-- Base your responses primarily on the internal knowledge base below
-- You may supplement answers with general AI knowledge when it enhances understanding within the context of the organization
-- Always ensure additional information aligns with company activities and the knowledge base context
-
-### Communication Standards
-- Be attentive, caring, and helpful in all interactions
-- Keep responses focused and on-topic to optimize token usage
-- Avoid lengthy discussions on unrelated or arbitrary topics
-- Do not discuss technical implementation details of the chatbot itself
-
-### Ethical Standards
-- Uphold high moral and cultural standards in all communications
-- Never engage with provocative or inappropriate requests
-- Strictly avoid any topics prohibited by law or company policy
-- Maintain professionalism regardless of user behavior
-
-### Response Format
-- Provide direct answers to user questions
-- Use the knowledge base as your primary information source
-- Keep responses relevant to the company's scope of services
-- Be concise while ensuring completeness
-
-Remember: Your goal is to represent \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\${appConfig.short_name} professionally while helping users find the information they need efficiently and effectively.
---- Internal Company Knowledge Base ---
+export const BUSINESS_KNOWLEDGE_BASE = `--- Internal Company Knowledge Base ---
 
 БАЗА ЗНАНИЙ - ОТВЕТЫ НА ВОПРОСЫ О БИЗНЕСЕ:
 
@@ -1165,18 +1135,34 @@ The comprehensive digital ecosystem creates synergistic effects where optimizati
 - Если вопрос касается нескольких аспектов, объедините релевантную информацию
 - Предлагайте дополнительную помощь, если это уместно
 - Поддерживайте позитивный тон общения
-`;
+
+--- Dynamic Page Summaries ---
+
+## Какую машину купить для работы в такси комфорт в 2025?
+
+**URL:** https://putevye-listy.ru/blog/kakuyu-mashinu-kupit-dlya-raboty-v-taksi-komfort
+
+**Summary Content:**
+Выбор автомобиля для работы в такси комфорт в 2025 году требует учета ключевых критериев: комфорт пассажиров, экономичность и надежность. Автомобиль должен обеспечивать просторный салон, качественную отделку и современные системы безопасности. Экономичность, включая низкий расход топлива и доступность запчастей, снижает эксплуатационные расходы и увеличивает прибыль. Надежность транспортного средства минимизирует риски простоев и внеплановых ремонтов, что особенно важно в условиях городского трафика. Важно также соответствие автомобиля требованиям лицензирования и технического контроля для легальной эксплуатации. Рекомендуемые модели: Toyota Camry (расход 7.5 л/100 км, высокая надежность), Hyundai Elantra (6.8 л/100 км, современные системы безопасности), Skoda Octavia (6.5 л/100 км, удобный салон) и KIA K5 (7.0 л/100 км, комфортная подвеска). Правильное оформление документов и регулярный технический контроль критически важны для успешной работы. Методология выбора включает анализ требований, изучение рынка, тест-драйв и проверку документации. Соблюдение новых законодательных норм, касающихся безопасности и технического состояния, гарантирует легальную работу и повышает доверие клиентов. Полный обзор доступен на сайте: https://putevye-listy.ru/blog/kakuyu-mashinu-kupit-dlya-raboty-v-taksi-komfort
+
+**Metadata:**
+- Intent: Узнать, какую машину купить для работы в такси комфорт
+- Taxonomy: Автомобильный рынок, такси, выбор автомобиля
+- Audience: Водители такси, владельцы автопарков
+- Keywords: такси комфорт, выбор автомобиля, экономичность, надежность, комфорт
+
+---`;
 
 // ============ METADATA ============
-// Total knowledge base entries: 0
+// Total knowledge base entries: 1
 // 
 // TOKEN BREAKDOWN:
-// - Custom instruction tokens: 521
-// - Dynamic page tokens: 0
-// - Subtotal (without internal KB): 521
+// - Custom instruction tokens: 483
+// - Dynamic page tokens: 390
+// - Subtotal (without internal KB): 873
 // - Internal company KB tokens: ${INTERNAL_COMPANY_KB_TOKENS} (added separately by token-utils)
 // 
 // IMPORTANT: totalTokenCount in SystemPromptConfig does NOT include INTERNAL_COMPANY_KB_TOKENS
 // Internal KB tokens are added during calculations in token-utils.ts
 // 
-// Last updated: 2025-10-24T16:13:08.326Z
+// Last updated: 2025-10-24T17:28:27.567Z
