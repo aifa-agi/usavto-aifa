@@ -8060,7 +8060,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-24T17:56:34.960Z",
-        "updatedAt": "2025-10-24T18:12:59.670Z",
+        "updatedAt": "2025-10-24T18:14:03.669Z",
         "order": 6,
         "badgeName": "Блог",
         "description": "Узнайте, на каких машинах можно таксовать в Яндекс: актуальные требования, список подходящих моделей по тарифам и годам. Проверьте свой авто!",
@@ -8568,6 +8568,108 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-5",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "итоги выбора автомобиля для Яндекс Такси",
+              "ключевые выводы по требованиям",
+              "рекомендации по подбору авто",
+              "следующие шаги для водителей",
+              "советы по успешному подключению",
+              "поддержка и ресурсы для таксистов",
+              "финальные рекомендации"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Прочитайте этот раздел, чтобы получить сжатые выводы, практические рекомендации и четкий план действий для успешного старта работы в Яндекс Такси.",
+            "intent": "Суммировать основные выводы гайда, дать читателю уверенность в выборе автомобиля и предоставить конкретные шаги для дальнейших действий.",
+            "audiences": "Водители, рассматривающие работу в Яндекс Такси, и те, кто выбирает или проверяет автомобиль на соответствие требованиям; уровень — начинающий и средний; решает задачу уверенного старта и минимизации ошибок при подключении.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 итоговый/заключительный раздел для страницы \"На каких машинах можно таксовать в Яндекс: требования, список моделей\"\n\nGOAL: Сформулировать ключевые выводы по теме, дать читателю краткое резюме, выделить практические рекомендации и предложить конкретные следующие шаги для успешного выбора и подключения автомобиля к Яндекс Такси.\n\nAUDIENCE: Водители, которые хотят быстро понять, подходит ли их авто, и получить четкий план действий для старта работы; уровень — начинающий/средний; pain points: неуверенность в требованиях, страх ошибиться при выборе, желание избежать бюрократии.\n\nKEYWORDS TO INTEGRATE:\n[итоги выбора автомобиля для Яндекс Такси, ключевые выводы по требованиям, рекомендации по подбору авто, следующие шаги для водителей, советы по успешному подключению, поддержка и ресурсы для таксистов, финальные рекомендации]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 200, maxWords: 300 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with summary, actionable table, bullet list, and motivational closing paragraph.\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: [итоги по требованиям, рекомендации по выбору, автоматизация документов, поддержка водителей]\n- SECONDARY: Apply insights from External KB: [советы по проверке авто, типичные ошибки, ресурсы для водителей]\n\nQUALITY CRITERIA:\n- Actionable (четкие рекомендации и шаги)\n- Specific (конкретные советы и ресурсы)\n- Data-backed (ссылки на внутренние и внешние источники, если применимо)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Финальное резюме с акцентом на практические шаги и поддержку водителей Яндекс Такси, без повторения предыдущих разделов.\n- sourceHint: Синтез внутренней экспертизы и отраслевых советов.\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nINTERLINK PLANNING:\n- Вставить 2-3 внутренних ссылки на страницы: \"Как подключиться к Яндекс Такси\", \"Документы для такси\", \"Лучшие автомобили для такси 2025\"\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 200,
+              "maxWords": 300,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-5-1",
+                "tag": "p",
+                "keywords": [
+                  "итоги выбора автомобиля для Яндекс Такси",
+                  "ключевые выводы по требованиям"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Прочитайте этот абзац, чтобы быстро понять, какие главные выводы и рекомендации вытекают из всего гайда.",
+                "intent": "Дать краткое резюме основных выводов по выбору и требованиям к автомобилям для Яндекс Такси.",
+                "audiences": "Водители, которые хотят быстро получить суть и понять, что делать дальше; уровень — начинающий/средний.",
+                "selfPrompt": "CONTEXT: Generate summary paragraph for h2 \"Итоги и рекомендации по выбору автомобиля для Яндекс Такси\". GOAL: Кратко изложить ключевые выводы и подчеркнуть важность соблюдения требований для успешной работы. KEYWORDS: [итоги выбора автомобиля для Яндекс Такси, ключевые выводы по требованиям]. ROLE: summary. E-E-A-T: semanticFingerprint: Сжатое резюме без повторения предыдущих разделов; sourceHint: внутренний опыт и анализ отрасли; evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-5-3",
+                "tag": "table",
+                "keywords": [
+                  "рекомендации по подбору авто",
+                  "следующие шаги для водителей"
+                ],
+                "taxonomy": "Actionable",
+                "attention": "Используйте эту таблицу как чек-лист для выбора и подготовки автомобиля к работе в Яндекс Такси.",
+                "intent": "Дать структурированный и наглядный список практических рекомендаций и шагов для водителей.",
+                "audiences": "Водители, которым нужен пошаговый план действий; уровень — начинающий/средний.",
+                "selfPrompt": "CONTEXT: Generate actionable table (3 columns × 4 rows) for h2 \"Итоги и рекомендации по выбору автомобиля для Яндекс Такси\". GOAL: Визуализировать основные рекомендации и следующие шаги для водителя. HEADERS: [Шаг | Описание | Ресурсы/Поддержка]. DATA TYPES: text/text/text. DATA SOURCE: Internal KB (рекомендации, автоматизация, поддержка), External KB (советы по проверке авто). E-E-A-T: semanticFingerprint: Таблица с четкими шагами и ссылками на ресурсы; sourceHint: внутренний опыт + отраслевые советы; evidenceStrength: internal-tested | external-peer-reviewed.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-5-2",
+                "tag": "ul",
+                "keywords": [
+                  "советы по успешному подключению",
+                  "поддержка и ресурсы для таксистов"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Ознакомьтесь с этими советами, чтобы избежать типичных ошибок и ускорить подключение к сервису.",
+                "intent": "Предоставить читателю короткий список практических советов и ресурсов для поддержки.",
+                "audiences": "Водители, которые хотят быстро подключиться и избежать ошибок; уровень — начинающий.",
+                "selfPrompt": "CONTEXT: Generate bullet list (5 items, 10-15 words each) for h2 \"Итоги и рекомендации по выбору автомобиля для Яндекс Такси\". GOAL: Дать полезные советы и указать на ресурсы поддержки. KEYWORDS: [советы по успешному подключению, поддержка и ресурсы для таксистов]. PURPOSE: tips/resources. E-E-A-T: semanticFingerprint: Список с акцентом на поддержку и предотвращение ошибок; sourceHint: внутренний опыт + отраслевые советы; evidenceStrength: internal-tested | external-peer-reviewed.",
+                "additionalData": {
+                  "minWords": 50,
+                  "maxWords": 90,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-5-3",
+                "tag": "p",
+                "keywords": [
+                  "финальные рекомендации"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Прочитайте этот абзац, чтобы получить мотивацию и уверенность для старта работы в Яндекс Такси.",
+                "intent": "Завершить раздел мотивирующим посланием и призывом к действию.",
+                "audiences": "Водители, которым нужна поддержка и уверенность для первого шага; уровень — начинающий.",
+                "selfPrompt": "CONTEXT: Generate motivational closing paragraph for h2 \"Итоги и рекомендации по выбору автомобиля для Яндекс Такси\". GOAL: Вдохновить читателя сделать первый шаг и воспользоваться поддержкой. KEYWORDS: [финальные рекомендации]. ROLE: conclusion/motivation. E-E-A-T: semanticFingerprint: Мотивационный финал с призывом к действию; sourceHint: внутренний опыт; evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              }
+            ]
           }
         ]
       }
@@ -8600,5 +8702,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T18:29:31.169Z";
+export const lastUpdated = "2025-10-24T18:30:05.155Z";
 export const generatedBy = "menu-persist-api";
