@@ -1,5 +1,5 @@
 // @/config/prompts/base-system-prompt.ts
-// Auto-generated file - Last updated: 2025-10-24T17:37:17.812Z
+// Auto-generated file - Last updated: 2025-10-24T18:42:21.067Z
 
 import { SystemPromptCollection } from "@/types/system-prompt-types";
 import { appConfig } from "@/config/appConfig";
@@ -140,19 +140,7 @@ export const INTERNAL_COMPANY_KB_TOKENS = internalKnowledgeTokens;
 
 
 // ============ DYNAMIC KNOWLEDGE BASE (auto-generated from pages) ============
-export const systemPromptData: SystemPromptCollection = [
-  {
-    "id": "y6rma1thtgda26zl5ogwzl3x",
-    "title": "Какую машину купить для работы в такси комфорт в 2025?",
-    "description": "Узнайте, какую машину купить для работы в такси комфорт в 2025 году! Обзор лучших моделей, советы по выбору и секреты успешного заработка.",
-    "keywords": [
-      "какую машину купить для работы в такси комфорт"
-    ],
-    "href": "/blog/kakuyu-mashinu-kupit-dlya-raboty-v-taksi-komfort",
-    "content": "**Summary Content:**\nВыбор автомобиля для работы в такси комфорт в 2025 году требует учета ключевых критериев: комфорт пассажиров, экономичность и надежность. Автомобили должны иметь просторный салон, качественную отделку и современные системы безопасности. Экономичность, включая низкий расход топлива и доступность запчастей, снижает эксплуатационные расходы. Надежность автомобилей минимизирует простои и внеплановые ремонты. Важно также соответствие требованиям лицензирования и технического контроля для легальной эксплуатации. Рекомендуемые модели: Toyota Camry, Hyundai Elantra, Skoda Octavia, KIA K5. Правильное оформление документов и регулярное техническое обслуживание критически важны для успешной работы. Следует учитывать изменения в законодательстве, касающиеся безопасности и технического состояния автомобилей. Для оптимизации затрат важно использовать цифровые системы учета и контроля. Полный обзор доступен на [https://putevye-listy.ru/blog/kakuyu-mashinu-kupit-dlya-raboty-v-taksi-komfort](https://putevye-listy.ru/blog/kakuyu-mashinu-kupit-dlya-raboty-v-taksi-komfort).\n\n**Metadata:**\n- Intent: Узнать, какую машину купить для работы в такси комфорт в 2025 году\n- Taxonomy: Автомобильный рынок, такси, выбор автомобиля\n- Audience: Водители такси, владельцы таксопарков, потенциальные покупатели автомобилей\n- Keywords: такси комфорт, выбор автомобиля, экономичность, надежность, лицензирование",
-    "tokenCount": 337
-  }
-];
+export const systemPromptData: SystemPromptCollection = [];
 
 // ============ FINAL COMBINED PROMPT ============
 export const BUSINESS_KNOWLEDGE_BASE = `--- Internal Company Knowledge Base ---
@@ -1134,35 +1122,18 @@ The comprehensive digital ecosystem creates synergistic effects where optimizati
 - При ответе всегда ссылайтесь на конкретную информацию из базы знаний
 - Если вопрос касается нескольких аспектов, объедините релевантную информацию
 - Предлагайте дополнительную помощь, если это уместно
-- Поддерживайте позитивный тон общения
-
---- Dynamic Page Summaries ---
-
-## Какую машину купить для работы в такси комфорт в 2025?
-
-**URL:** https://putevye-listy.ru/blog/kakuyu-mashinu-kupit-dlya-raboty-v-taksi-komfort
-
-**Summary Content:**
-Выбор автомобиля для работы в такси комфорт в 2025 году требует учета ключевых критериев: комфорт пассажиров, экономичность и надежность. Автомобили должны иметь просторный салон, качественную отделку и современные системы безопасности. Экономичность, включая низкий расход топлива и доступность запчастей, снижает эксплуатационные расходы. Надежность автомобилей минимизирует простои и внеплановые ремонты. Важно также соответствие требованиям лицензирования и технического контроля для легальной эксплуатации. Рекомендуемые модели: Toyota Camry, Hyundai Elantra, Skoda Octavia, KIA K5. Правильное оформление документов и регулярное техническое обслуживание критически важны для успешной работы. Следует учитывать изменения в законодательстве, касающиеся безопасности и технического состояния автомобилей. Для оптимизации затрат важно использовать цифровые системы учета и контроля. Полный обзор доступен на [https://putevye-listy.ru/blog/kakuyu-mashinu-kupit-dlya-raboty-v-taksi-komfort](https://putevye-listy.ru/blog/kakuyu-mashinu-kupit-dlya-raboty-v-taksi-komfort).
-
-**Metadata:**
-- Intent: Узнать, какую машину купить для работы в такси комфорт в 2025 году
-- Taxonomy: Автомобильный рынок, такси, выбор автомобиля
-- Audience: Водители такси, владельцы таксопарков, потенциальные покупатели автомобилей
-- Keywords: такси комфорт, выбор автомобиля, экономичность, надежность, лицензирование
-
----`;
+- Поддерживайте позитивный тон общения`;
 
 // ============ METADATA ============
-// Total knowledge base entries: 1
+// Total knowledge base entries: 0
 // 
 // TOKEN BREAKDOWN:
 // - Custom instruction tokens: 483
-// - Dynamic page tokens: 337
-// - Subtotal (without internal KB): 820
+// - Dynamic page tokens: 0
+// - Subtotal (without internal KB): 483
 // - Internal company KB tokens: ${INTERNAL_COMPANY_KB_TOKENS} (added separately by token-utils)
 // 
 // IMPORTANT: totalTokenCount in SystemPromptConfig does NOT include INTERNAL_COMPANY_KB_TOKENS
 // Internal KB tokens are added during calculations in token-utils.ts
 // 
-// Last updated: 2025-10-24T17:37:17.812Z
+// Last updated: 2025-10-24T18:42:21.067Z
