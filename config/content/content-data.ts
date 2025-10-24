@@ -3595,7 +3595,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-24T19:39:39.400Z",
-        "updatedAt": "2025-10-24T19:56:28.649Z",
+        "updatedAt": "2025-10-24T19:56:42.963Z",
         "order": 3,
         "badgeName": "Блог",
         "description": "Узнайте, как запустить Яндекс Такси в своем городе: пошаговая инструкция, юридические нюансы, советы по подключению и старту бизнеса. Начните свой успех!",
@@ -3661,7 +3661,8 @@ export const contentData = {
                   "minWords": 100,
                   "maxWords": 180,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-1-2",
@@ -3679,9 +3680,11 @@ export const contentData = {
                   "minWords": 60,
                   "maxWords": 120,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-2",
@@ -4268,7 +4271,7 @@ export const contentData = {
             ]
           }
         ],
-        "isReadyDraftForPerplexity": true
+        "isReadyDraftForPerplexity": false
       }
     ],
     "order": 16
@@ -4299,5 +4302,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T20:12:09.927Z";
+export const lastUpdated = "2025-10-24T20:12:17.824Z";
 export const generatedBy = "menu-persist-api";
