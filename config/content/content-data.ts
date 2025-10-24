@@ -8035,6 +8035,9 @@ export const contentData = {
             "alt": "на каких машинах можно таксовать в яндекс",
             "href": "/app-images/gffkgb2gnpnbpimit3roy244.png"
           }
+        ],
+        "keywords": [
+          "на каких машинах можно таксовать в яндекс"
         ]
       }
     ],
@@ -8066,5 +8069,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T18:16:55.575Z";
+export const lastUpdated = "2025-10-24T18:17:08.547Z";
 export const generatedBy = "menu-persist-api";
