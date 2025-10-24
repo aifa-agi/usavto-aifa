@@ -1742,7 +1742,7 @@ export const contentData = {
       },
       {
         "id": "youa4f6dbs007uqyf6x7kncj",
-        "title": "инструкция диспетчера автомобильного транспорта",
+        "title": "Инструкция диспетчера автомобильного транспорта — образец, структура, обязанности",
         "href": "/blog/instruktsiya-dispetchera-avtomobilnogo-transporta",
         "roles": [
           "guest"
@@ -2309,5 +2309,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T19:31:21.470Z";
+export const lastUpdated = "2025-10-24T19:31:29.659Z";
 export const generatedBy = "menu-persist-api";
