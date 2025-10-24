@@ -8060,7 +8060,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-24T17:56:34.960Z",
-        "updatedAt": "2025-10-24T18:14:53.857Z",
+        "updatedAt": "2025-10-24T18:15:00.575Z",
         "order": 6,
         "badgeName": "Блог",
         "description": "Узнайте, на каких машинах можно таксовать в Яндекс: актуальные требования, список подходящих моделей по тарифам и годам. Проверьте свой авто!",
@@ -8486,7 +8486,8 @@ export const contentData = {
                 "attention": "Узнайте, какие нюансы чаще всего вызывают вопросы у водителей.",
                 "intent": "Ввести пользователя в раздел FAQ, объяснить его пользу и структуру.",
                 "audiences": "Водители, ищущие быстрые разъяснения по сложным моментам допуска и эксплуатации.",
-                "selfPrompt": "CONTEXT: Generate introductory paragraph for FAQ section on \"На каких машинах можно таксовать в Яндекс: требования, список моделей\". GOAL: Кратко объяснить, что в этом разделе собраны ответы на самые частые вопросы по нюансам допуска, регистрации, смены авто и документов в Яндекс Такси. AUDIENCE: Водители и кандидаты | Level: beginner/intermediate | Pain points: быстро найти разъяснения по сложным моментам. KEYWORDS: [ответы на вопросы о Яндекс Такси]. WORD COUNT: minWords: 70, maxWords: 130. ROLE: intro. sourceHint: Internal KB (структура FAQ), External KB (типовые вопросы)."
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for FAQ section on \"На каких машинах можно таксовать в Яндекс: требования, список моделей\". GOAL: Кратко объяснить, что в этом разделе собраны ответы на самые частые вопросы по нюансам допуска, регистрации, смены авто и документов в Яндекс Такси. AUDIENCE: Водители и кандидаты | Level: beginner/intermediate | Pain points: быстро найти разъяснения по сложным моментам. KEYWORDS: [ответы на вопросы о Яндекс Такси]. WORD COUNT: minWords: 70, maxWords: 130. ROLE: intro. sourceHint: Internal KB (структура FAQ), External KB (типовые вопросы).",
+                "status": "checked"
               },
               {
                 "id": "h3-FAQ-1",
@@ -8508,9 +8509,11 @@ export const contentData = {
                     "keywords": [
                       "допуск авто с дубликатом ПТС"
                     ],
-                    "selfPrompt": "CONTEXT: Generate paragraph answering if a car with a duplicate or electronic PTS can be registered for Yandex Taxi. ROLE: body. KEYWORDS: [допуск авто с дубликатом ПТС]. sourceHint: Internal KB (документальные требования), External KB (разъяснения по ПТС). WORD COUNT: minWords: 60, maxWords: 120."
+                    "selfPrompt": "CONTEXT: Generate paragraph answering if a car with a duplicate or electronic PTS can be registered for Yandex Taxi. ROLE: body. KEYWORDS: [допуск авто с дубликатом ПТС]. sourceHint: Internal KB (документальные требования), External KB (разъяснения по ПТС). WORD COUNT: minWords: 60, maxWords: 120.",
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "FAQ-2",
@@ -8532,9 +8535,11 @@ export const contentData = {
                     "keywords": [
                       "порядок смены автомобиля"
                     ],
-                    "selfPrompt": "CONTEXT: Generate paragraph explaining the process and requirements for changing a car in Yandex Taxi. ROLE: body. KEYWORDS: [порядок смены автомобиля]. sourceHint: Internal KB (процедуры смены), External KB (разъяснения по смене авто). WORD COUNT: minWords: 60, maxWords: 120."
+                    "selfPrompt": "CONTEXT: Generate paragraph explaining the process and requirements for changing a car in Yandex Taxi. ROLE: body. KEYWORDS: [порядок смены автомобиля]. sourceHint: Internal KB (процедуры смены), External KB (разъяснения по смене авто). WORD COUNT: minWords: 60, maxWords: 120.",
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "FAQ-3",
@@ -8556,9 +8561,11 @@ export const contentData = {
                     "keywords": [
                       "арендованный автомобиль для такси"
                     ],
-                    "selfPrompt": "CONTEXT: Generate paragraph explaining if and how a rented car can be used for Yandex Taxi. ROLE: body. KEYWORDS: [арендованный автомобиль для такси]. sourceHint: Internal KB (условия допуска), External KB (разъяснения по аренде). WORD COUNT: minWords: 60, maxWords: 120."
+                    "selfPrompt": "CONTEXT: Generate paragraph explaining if and how a rented car can be used for Yandex Taxi. ROLE: body. KEYWORDS: [арендованный автомобиль для такси]. sourceHint: Internal KB (условия допуска), External KB (разъяснения по аренде). WORD COUNT: minWords: 60, maxWords: 120.",
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "FAQ-4",
@@ -8580,11 +8587,14 @@ export const contentData = {
                     "keywords": [
                       "устранение причин отказа"
                     ],
-                    "selfPrompt": "CONTEXT: Generate paragraph explaining what to do if a car is rejected for Yandex Taxi. ROLE: body. KEYWORDS: [устранение причин отказа]. sourceHint: Internal KB (причины отказа), External KB (разъяснения по отказам). WORD COUNT: minWords: 60, maxWords: 120."
+                    "selfPrompt": "CONTEXT: Generate paragraph explaining what to do if a car is rejected for Yandex Taxi. ROLE: body. KEYWORDS: [устранение причин отказа]. sourceHint: Internal KB (причины отказа), External KB (разъяснения по отказам). WORD COUNT: minWords: 60, maxWords: 120.",
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-5",
@@ -8720,5 +8730,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T18:30:27.910Z";
+export const lastUpdated = "2025-10-24T18:30:38.267Z";
 export const generatedBy = "menu-persist-api";
