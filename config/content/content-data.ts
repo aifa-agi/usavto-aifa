@@ -3595,7 +3595,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-24T19:39:39.400Z",
-        "updatedAt": "2025-10-24T19:56:50.589Z",
+        "updatedAt": "2025-10-24T19:56:56.901Z",
         "order": 3,
         "badgeName": "Блог",
         "description": "Узнайте, как запустить Яндекс Такси в своем городе: пошаговая инструкция, юридические нюансы, советы по подключению и старту бизнеса. Начните свой успех!",
@@ -3896,7 +3896,8 @@ export const contentData = {
                   "minWords": 90,
                   "maxWords": 170,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-3-2",
@@ -3935,7 +3936,8 @@ export const contentData = {
                       "minWords": 75,
                       "maxWords": 140,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "ol-3-2-2",
@@ -3953,7 +3955,8 @@ export const contentData = {
                       "minWords": 50,
                       "maxWords": 90,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "code-3-2-3",
@@ -3970,11 +3973,14 @@ export const contentData = {
                       "minWords": 20,
                       "maxWords": 50,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "FAQ",
@@ -4310,5 +4316,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T20:12:23.825Z";
+export const lastUpdated = "2025-10-24T20:12:30.598Z";
 export const generatedBy = "menu-persist-api";
