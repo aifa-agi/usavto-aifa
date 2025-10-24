@@ -1010,7 +1010,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-24T18:41:03.217Z",
-        "updatedAt": "2025-10-24T18:58:55.864Z",
+        "updatedAt": "2025-10-24T18:59:02.898Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Найдите работу в такси онлайн — свежие вакансии водителей с удобным поиском, гибким графиком и актуальными предложениями. Начните зарабатывать уже сегодня!",
@@ -1440,7 +1440,8 @@ export const contentData = {
                   "minWords": 70,
                   "maxWords": 130,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-FAQ-1",
@@ -1476,9 +1477,11 @@ export const contentData = {
                       "minWords": 60,
                       "maxWords": 120,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "FAQ-2",
@@ -1514,9 +1517,11 @@ export const contentData = {
                       "minWords": 60,
                       "maxWords": 120,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "FAQ-3",
@@ -1552,9 +1557,11 @@ export const contentData = {
                       "minWords": 60,
                       "maxWords": 120,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "FAQ-4",
@@ -1590,11 +1597,14 @@ export const contentData = {
                       "minWords": 60,
                       "maxWords": 120,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-5",
@@ -1731,5 +1741,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T19:14:29.521Z";
+export const lastUpdated = "2025-10-24T19:14:35.386Z";
 export const generatedBy = "menu-persist-api";
