@@ -2266,7 +2266,7 @@ export const contentData = {
         "updatedAt": "2025-10-24T19:11:16.273Z",
         "order": 2,
         "badgeName": "Блог",
-        "description": "инструкция диспетчера автомобильного транспорта",
+        "description": "Инструкция диспетчера автомобильного транспорта: образец, структура, основные обязанности, права и ответственность. Скачать шаблон для оформления!",
         "images": [
           {
             "id": "qp260ioslp19bnawn36eaezr",
@@ -2309,5 +2309,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T19:31:29.659Z";
+export const lastUpdated = "2025-10-24T19:31:35.394Z";
 export const generatedBy = "menu-persist-api";
