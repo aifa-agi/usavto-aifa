@@ -1010,7 +1010,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-24T18:41:03.217Z",
-        "updatedAt": "2025-10-24T18:41:03.217Z",
+        "updatedAt": "2025-10-24T18:52:31.841Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Найдите работу в такси онлайн — свежие вакансии водителей с удобным поиском, гибким графиком и актуальными предложениями. Начните зарабатывать уже сегодня!",
@@ -1029,7 +1029,75 @@ export const contentData = {
         "intent": "Пользователь заходит на страницу, чтобы быстро найти свежие вакансии работы в такси и подобрать подходящую позицию водителя с возможностью откликнуться онлайн. Ожидаемое действие — выбрать актуальное предложение и отправить заявку или связаться с работодателем через удобную форму. Страница полностью удовлетворяет поисковый запрос, предоставляя обновлённый список вакансий, фильтры по условиям и городам, а также инструменты для мгновенного отклика на интересующую работу.",
         "taxonomy": "Данная страница является агрегатором вакансий (формат: онлайн-каталог/список вакансий) для поиска работы водителем такси, позволяя пользователям оперативно находить свежие предложения в различных городах и у разных компаний. Она входит в категорию \"Работа\" → \"Вакансии\" → \"Водитель такси\" и служит кластерным контентом, поддерживающим тематический кластер о трудоустройстве в транспортной сфере. Страница усиливает топическую авторитетность ресурса по теме поиска работы водителем такси, предоставляя пользователям актуальные инструменты и сведения для трудоустройства.",
         "attention": "В первые три секунды используем короткий, визуально выделенный call-to-action «Найдите работу в такси за 1 минуту — свежие вакансии онлайн», подкреплённый иконкой такси и кнопкой «Начать поиск». Для удержания внимания внедряем четкую структуру: быстрый фильтр вакансий, интерактивную карту городов, карусель с лучшими предложениями и отзывы водителей, чередуя визуальные блоки с лаконичными описаниями. Основной триггер — мгновенный доступ к актуальным вакансиям без регистрации, что позволяет выделиться среди конкурентов, где поиск сложнее и медленнее.",
-        "audiences": "Этот контент предназначен для взрослых мужчин и женщин в возрасте 25–55 лет, ищущих работу водителем такси в России, Украине, Испании или других странах Европы, независимо от уровня стажа, но обладающих водительскими правами и базовым опытом вождения. Аудитория мотивирована стабильным доходом, гибким графиком и возможностью быстрого трудоустройства, сталкивается с трудностями поиска актуальных вакансий, надежных работодателей и подключения к агрегаторам. Страница актуальна для пользователей на стадии активного поиска работы, которые уверенно пользуются интернетом и готовы рассмотреть разные варианты занятости в сфере пассажирских перевозок."
+        "audiences": "Этот контент предназначен для взрослых мужчин и женщин в возрасте 25–55 лет, ищущих работу водителем такси в России, Украине, Испании или других странах Европы, независимо от уровня стажа, но обладающих водительскими правами и базовым опытом вождения. Аудитория мотивирована стабильным доходом, гибким графиком и возможностью быстрого трудоустройства, сталкивается с трудностями поиска актуальных вакансий, надежных работодателей и подключения к агрегаторам. Страница актуальна для пользователей на стадии активного поиска работы, которые уверенно пользуются интернетом и готовы рассмотреть разные варианты занятости в сфере пассажирских перевозок.",
+        "draftContentStructure": [
+          {
+            "id": "h2-1",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "найти работу в такси",
+              "вакансии водителей такси",
+              "поиск работы онлайн",
+              "гибкий график такси",
+              "актуальные предложения такси",
+              "быстрое трудоустройство",
+              "работа водителем"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, как быстро и удобно найти свежие вакансии работы в такси онлайн — начните зарабатывать уже сегодня!",
+            "intent": "Ввести пользователя в тему поиска работы в такси, обозначить преимущества онлайн-поиска и объяснить, как страница поможет быстро подобрать актуальные вакансии водителя.",
+            "audiences": "Взрослые мужчины и женщины 25–55 лет, ищущие работу водителем такси в России, Украине, Испании и Европе; уровень — начинающий и средний; заинтересованы в стабильном доходе, гибком графике и быстром трудоустройстве.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 introduction section for page \"Найти работу в такси — свежие вакансии для водителей онлайн\"\n\nGOAL: Представить тему поиска работы в такси, объяснить преимущества онлайн-каталога вакансий, обозначить, что пользователь получит быстрый доступ к актуальным предложениям и инструментам для отклика.\n\nAUDIENCE: Взрослые мужчины и женщины 25–55 лет, ищущие работу водителем такси в России, Украине, Испании и Европе | Level: начинающий/средний | Pain points: сложно найти свежие вакансии, нужен быстрый отклик, важно доверие к работодателю.\n\nKEYWORDS TO INTEGRATE:\n[найти работу в такси, вакансии водителей такси, поиск работы онлайн, гибкий график такси, актуальные предложения такси, быстрое трудоустройство, работа водителем]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 150, maxWords: 250 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: # (h2) for section heading, paragraphs for intro and context\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: преимущества платформы, автоматизация поиска, поддержка водителей, быстрый отклик, интеграция с агрегаторами\n- SECONDARY: Apply insights from External KB: распространённость онлайн-платформ, востребованность профессии, удобство поиска по городам\n\nQUALITY CRITERIA:\n- Actionable (показывает, что делать дальше)\n- Specific (уникальные преимущества страницы)\n- Data-backed (факты о скорости поиска, актуальности вакансий)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Вводная секция раскрывает уникальные преимущества поиска работы в такси через онлайн-каталог, подчёркивая скорость и удобство.\n- sourceHint: Internal KB (описание платформы, преимущества для водителей)\n- evidenceStrength: internal-tested\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference parent page intent\n- Must preview ключевые возможности страницы (фильтры, карта городов, быстрый отклик)\n- Add interlink planning: internalLinks (например, «Как пройти обучение водителю такси», «Преимущества работы через агрегаторы»)\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 150,
+              "maxWords": 250,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-1-1",
+                "tag": "p",
+                "keywords": [
+                  "найти работу в такси",
+                  "поиск работы онлайн"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Показывает, почему поиск работы в такси онлайн — это быстро, удобно и выгодно.",
+                "intent": "Ввести пользователя в тему, объяснить преимущества онлайн-поиска вакансий водителя такси и обозначить уникальность страницы.",
+                "audiences": "Ищущие работу водители такси, начинающие и опытные, заинтересованные в быстром трудоустройстве.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph (role: intro) for h2 section \"Найти работу в такси — свежие вакансии для водителей онлайн\".\nGOAL: Кратко объяснить, почему онлайн-поиск работы в такси — это современно, быстро и удобно; подчеркнуть, что страница даёт мгновенный доступ к актуальным вакансиям.\nKEYWORDS TO INTEGRATE: [найти работу в такси, поиск работы онлайн]\nWORD COUNT: minWords: 100, maxWords: 180\nMARKDOWN/MDX SYNTAX: Paragraph\nKNOWLEDGE SOURCES: PRIMARY — Internal KB (автоматизация поиска, поддержка водителей); SECONDARY — External KB (масштаб онлайн-платформ)\nsemanticFingerprint: Вводный абзац раскрывает суть и преимущества онлайн-поиска работы в такси.\nsourceHint: Internal KB\n",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 180,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-2",
+                "tag": "p",
+                "keywords": [
+                  "актуальные предложения такси"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Показывает, что пользователь найдёт только свежие и проверенные вакансии с возможностью быстрого отклика.",
+                "intent": "Уточнить, что страница содержит только актуальные предложения работы в такси и инструменты для мгновенного отклика.",
+                "audiences": "Водители, которым важно быстро найти подходящую вакансию и получить ответ от работодателя.",
+                "selfPrompt": "CONTEXT: Generate supporting paragraph (role: body) for h2 section \"Найти работу в такси — свежие вакансии для водителей онлайн\".\nGOAL: Подчеркнуть, что на странице собраны только актуальные предложения, есть фильтры, карта городов и быстрый отклик.\nKEYWORDS TO INTEGRATE: [актуальные предложения такси]\nWORD COUNT: minWords: 60, maxWords: 120\nMARKDOWN/MDX SYNTAX: Paragraph\nKNOWLEDGE SOURCES: PRIMARY — Internal KB (актуальность вакансий, фильтры, инструменты отклика); SECONDARY — External KB (опыт других платформ)\nsemanticFingerprint: Абзац уточняет уникальные инструменты и свежесть предложений на странице.\nsourceHint: Internal KB\n",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 120,
+                  "actualContent": ""
+                }
+              }
+            ]
+          }
+        ]
       }
     ],
     "order": 16
@@ -1060,5 +1128,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T19:07:59.935Z";
+export const lastUpdated = "2025-10-24T19:09:30.076Z";
 export const generatedBy = "menu-persist-api";
