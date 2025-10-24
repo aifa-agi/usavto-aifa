@@ -1010,7 +1010,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-24T18:41:03.217Z",
-        "updatedAt": "2025-10-24T18:54:03.541Z",
+        "updatedAt": "2025-10-24T18:55:40.612Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Найдите работу в такси онлайн — свежие вакансии водителей с удобным поиском, гибким графиком и актуальными предложениями. Начните зарабатывать уже сегодня!",
@@ -1255,6 +1255,129 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "оформление на работу в такси",
+              "процесс трудоустройства водителя",
+              "требования к кандидатам",
+              "документы для работы в такси",
+              "пошаговая инструкция подачи заявки",
+              "онлайн отклик на вакансию",
+              "подключение к таксомоторному парку"
+            ],
+            "taxonomy": "HowTo",
+            "attention": "Узнайте, как быстро и правильно пройти все этапы оформления и начать работать водителем такси без лишних задержек.",
+            "intent": "Дать пользователю подробную, пошаговую инструкцию по процессу трудоустройства в такси: от подачи заявки до выхода на линию, с акцентом на онлайн-оформление и минимизацию бюрократии.",
+            "audiences": "Соискатели работы водителем такси, которые хотят понять, как устроиться на работу быстро и без сложностей; уровень — начинающий и средний; решает проблему неясности процесса и страха перед бумажной волокитой.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 section on 'Пошаговый процесс трудоустройства в такси' for page 'Найти работу в такси — свежие вакансии для водителей онлайн'\n\nGOAL: Подробно описать, как устроиться на работу водителем такси — какие этапы нужно пройти, какие документы подготовить, как подать заявку онлайн, как быстро подключиться к парку и выйти на линию. Сделать акцент на простоте и скорости оформления через современные сервисы (электронные документы, интеграция с агрегаторами, онлайн-медосмотры), используя внутренние преимущества платформы (например, автоматизация, поддержка, юридическая помощь). Добавить полезные советы по подготовке документов и прохождению проверки. Включить пошаговую инструкцию и примерный сценарий оформления.\n\nAUDIENCE: Соискатели работы водителем такси | Level: начинающий/средний | Pain points: неясность процесса, страх бюрократии, желание быстро начать зарабатывать\n\nKEYWORDS TO INTEGRATE:\n[оформление на работу в такси, процесс трудоустройства водителя, требования к кандидатам, документы для работы в такси, пошаговая инструкция подачи заявки, онлайн отклик на вакансию, подключение к таксомоторному парку]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with nested H3, P, OL, CODE as per structure\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: автоматизация оформления, поддержка водителей, электронные документы, интеграция с агрегаторами, юридическая помощь\n- SECONDARY: Apply insights from External KB: общие требования к водителям, примеры этапов оформления, советы по подготовке документов\n\nQUALITY CRITERIA:\n- Actionable (конкретные шаги и рекомендации)\n- Specific (без общих фраз)\n- Data-backed (факты из Knowledge Bases)\n- No fluff (никакой воды)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальный разбор процесса трудоустройства водителя такси с акцентом на онлайн-оформление и минимизацию бюрократии.\n- sourceHint: Internal KB (процедуры оформления, сервисы поддержки) + External KB (стандартные требования рынка)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference parent page intent (быстрое трудоустройство, онлайн-подача заявки)\n- Must set тематическое направление для вложенных h3 (детализация этапов оформления)\n- Add interlink planning: внутренние ссылки на страницы 'Документы для работы в такси', 'Юридическая поддержка водителей', 'Интеграция с агрегаторами'\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-3-1",
+                "tag": "p",
+                "keywords": [
+                  "оформление на работу в такси",
+                  "требования к кандидатам"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Поймите, какие базовые требования предъявляются к водителям и почему важно подготовить документы заранее.",
+                "intent": "Ввести пользователя в тему оформления на работу в такси, обозначить ключевые требования и объяснить, как подготовиться к процессу.",
+                "audiences": "Кандидаты на позицию водителя такси, которые впервые сталкиваются с процессом трудоустройства; уровень — начинающий.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for section 'Пошаговый процесс трудоустройства в такси' (h2-3) of page 'Найти работу в такси — свежие вакансии для водителей онлайн'.\nGOAL: Кратко объяснить, с чего начинается оформление на работу в такси, какие требования предъявляются к кандидатам и почему важно заранее подготовить документы. Указать, что современные сервисы позволяют упростить этот процесс.\nKEYWORDS TO INTEGRATE: [оформление на работу в такси, требования к кандидатам]\nWORD COUNT: minWords: 90, maxWords: 170\nMARKDOWN/MDX SYNTAX: Paragraph\nWRITING STYLE: Story-driven, engaging storytelling approach\nCONTENT FORMAT: Simple\nsourceHint: Internal KB (процедуры оформления, требования) + External KB (общие требования рынка)\nevidenceStrength: internal-tested\nsemanticFingerprint: Вводный обзор требований и стартовых шагов для оформления на работу в такси.",
+                "additionalData": {
+                  "minWords": 90,
+                  "maxWords": 170,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-3-2",
+                "tag": "h3",
+                "keywords": [
+                  "процесс трудоустройства водителя",
+                  "документы для работы в такси",
+                  "онлайн отклик на вакансию",
+                  "подключение к таксомоторному парку",
+                  "пошаговая инструкция подачи заявки"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Следуйте пошаговой инструкции, чтобы быстро пройти все этапы оформления и выйти на линию без лишних задержек.",
+                "intent": "Детализировать каждый этап процесса трудоустройства водителем такси — от подачи заявки до выхода на линию, с акцентом на онлайн-инструменты и автоматизацию.",
+                "audiences": "Соискатели, которые хотят получить чёткую инструкцию по трудоустройству; уровень — начинающий/средний; решает проблему запутанности процесса.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection 'Пошаговая инструкция оформления и выхода на линию' for h2 'Пошаговый процесс трудоустройства в такси'.\nGOAL: Дать подробную, структурированную инструкцию по всем этапам оформления на работу в такси: сбор документов, подача заявки онлайн, прохождение проверки, подключение к парку, выход на линию. Сделать акцент на автоматизации, электронных сервисах и поддержке, используя преимущества платформы (например, быстрое оформление маршрутных листов, онлайн-медосмотры, юридическая помощь). Включить список шагов и пример автоматизированного сценария.\nKEYWORDS TO INTEGRATE: [процесс трудоустройства водителя, документы для работы в такси, онлайн отклик на вакансию, подключение к таксомоторному парку, пошаговая инструкция подачи заявки]\nWORD COUNT: minWords: 180, maxWords: 280\nMARKDOWN/MDX SYNTAX: H3 with nested P, OL, CODE\nWRITING STYLE: Story-driven, engaging storytelling approach\nCONTENT FORMAT: Simple\nsemanticFingerprint: Уникальная, структурированная инструкция по трудоустройству водителя такси с акцентом на онлайн-оформление и минимизацию бюрократии.\nsourceHint: Internal KB (процедуры, автоматизация, поддержка) + External KB (стандартные этапы оформления)\nevidenceStrength: internal-tested | external-peer-reviewed\ninterlink planning: Внутренние ссылки на 'Документы для работы в такси', 'Юридическая поддержка водителей', 'Интеграция с агрегаторами'.",
+                "additionalData": {
+                  "minWords": 180,
+                  "maxWords": 280,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "документы для работы в такси"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Узнайте, какие документы понадобятся для подачи заявки и как их подготовить заранее.",
+                    "intent": "Объяснить, какие документы требуются для оформления на работу в такси, и дать советы по их подготовке.",
+                    "audiences": "Кандидаты, которые не уверены, какие документы нужны для трудоустройства; уровень — начинающий.",
+                    "selfPrompt": "CONTEXT: Generate paragraph for h3 'Пошаговая инструкция оформления и выхода на линию' (h3-3-2) of h2 'Пошаговый процесс трудоустройства в такси'.\nGOAL: Перечислить основные документы, которые понадобятся для подачи заявки на работу в такси, и дать советы по их подготовке. Указать, что часть документов можно загрузить онлайн.\nKEYWORDS TO INTEGRATE: [документы для работы в такси]\nWORD COUNT: minWords: 75, maxWords: 140\nMARKDOWN/MDX SYNTAX: Paragraph\nWRITING STYLE: Story-driven, engaging storytelling approach\nCONTENT FORMAT: Simple\nsourceHint: Internal KB (требования к документам) + External KB (стандартные требования)\nevidenceStrength: internal-tested\nsemanticFingerprint: Перечень и советы по подготовке документов для трудоустройства водителем такси.",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 140,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-2-2",
+                    "tag": "ol",
+                    "keywords": [
+                      "пошаговая инструкция подачи заявки"
+                    ],
+                    "taxonomy": "HowTo",
+                    "attention": "Следуйте этим шагам, чтобы оформить заявку и выйти на линию максимально быстро.",
+                    "intent": "Дать структурированный список шагов по оформлению на работу в такси — от подачи заявки до выхода на линию.",
+                    "audiences": "Соискатели, которым нужна чёткая последовательность действий; уровень — начинающий.",
+                    "selfPrompt": "CONTEXT: Generate ordered list (6-7 шагов) for h3 'Пошаговая инструкция оформления и выхода на линию' (h3-3-2) of h2 'Пошаговый процесс трудоустройства в такси'.\nGOAL: Сформулировать пошаговую инструкцию: 1) Подготовка документов, 2) Подача заявки онлайн, 3) Прохождение проверки, 4) Получение доступа к платформе, 5) Прохождение медосмотра (онлайн), 6) Получение маршрутного листа, 7) Выход на линию. Каждый пункт — 15-25 слов, конкретно и по делу.\nKEYWORDS TO INTEGRATE: [пошаговая инструкция подачи заявки]\nWORD COUNT: minWords: 50, maxWords: 90\nMARKDOWN/MDX SYNTAX: Ordered List (OL)\nWRITING STYLE: Story-driven, engaging storytelling approach\nCONTENT FORMAT: Simple\nsourceHint: Internal KB (процедуры оформления, автоматизация) + External KB (стандартные этапы)\nevidenceStrength: internal-tested\nsemanticFingerprint: Чёткая последовательность шагов для оформления и выхода на линию.",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 90,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-3-2-3",
+                    "tag": "code",
+                    "keywords": [
+                      "онлайн отклик на вакансию"
+                    ],
+                    "taxonomy": "technical",
+                    "attention": "Посмотрите пример автоматизированного сценария подачи заявки через онлайн-платформу.",
+                    "intent": "Показать пример кода или псевдокода для автоматизированной подачи заявки на работу в такси через онлайн-форму.",
+                    "audiences": "Технически подкованные соискатели или представители автопарков, интересующиеся автоматизацией; уровень — средний.",
+                    "selfPrompt": "CONTEXT: Generate code snippet (JSON или псевдокод, 5-10 строк) for h3 'Пошаговая инструкция оформления и выхода на линию' (h3-3-2) of h2 'Пошаговый процесс трудоустройства в такси'.\nGOAL: Показать пример структуры онлайн-заявки или автоматизированного запроса на подключение к таксомоторному парку (например, через API или форму).\nKEYWORDS TO INTEGRATE: [онлайн отклик на вакансию]\nWORD COUNT: minWords: 20, maxWords: 50\nMARKDOWN/MDX SYNTAX: Code block (JSON или псевдокод)\nWRITING STYLE: Story-driven, engaging storytelling approach\nCONTENT FORMAT: Simple\nsourceHint: Internal KB (интеграция с агрегаторами, автоматизация подачи заявок)\nevidenceStrength: internal-tested\nsemanticFingerprint: Пример автоматизированной подачи заявки на работу в такси через онлайн-платформу.",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 50,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1287,5 +1410,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T19:11:07.263Z";
+export const lastUpdated = "2025-10-24T19:12:30.441Z";
 export const generatedBy = "menu-persist-api";
