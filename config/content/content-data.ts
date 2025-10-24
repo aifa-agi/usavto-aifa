@@ -3595,7 +3595,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-24T19:39:39.400Z",
-        "updatedAt": "2025-10-24T19:39:39.400Z",
+        "updatedAt": "2025-10-24T19:50:16.574Z",
         "order": 3,
         "badgeName": "Блог",
         "description": "Узнайте, как запустить Яндекс Такси в своем городе: пошаговая инструкция, юридические нюансы, советы по подключению и старту бизнеса. Начните свой успех!",
@@ -3614,7 +3614,76 @@ export const contentData = {
         "intent": "Пользователь заходит на страницу, чтобы получить подробную пошаговую инструкцию и практические советы по запуску сервиса Яндекс Такси в своем городе, включая юридические, организационные и финансовые нюансы. Ожидаемое действие — изучить руководство, узнать требования и этапы подключения, после чего приступить к подготовке документов и подаче заявки на партнерство или франшизу. Страница полностью закрывает информационный запрос, предоставляя конкретные шаги, рекомендации по минимизации рисков и сравнение возможностей сотрудничества с Яндекс Такси.",
         "taxonomy": "Данная страница представляет собой подробный практический гайд (руководство) с пошаговой инструкцией по запуску сервиса Яндекс Такси в новом городе. Она входит в категорию \"Бизнес и предпринимательство\" с подкатегорией \"Открытие и управление таксопарком/франшизой\", выступая как кластерный материал, поддерживающий основное (пилларное) содержимое о бизнес-моделях такси и партнерства с агрегаторами. Контент усиливает тематическую экспертизу сайта по вопросам запуска транспортного бизнеса и франшиз Яндекс Такси, обеспечивая практическую ценность для целевой аудитории предпринимателей и инвесторов.",
         "attention": "Откройте страницу с интерактивным калькулятором потенциальной прибыли и ярким заголовком «Запусти Яндекс Такси в своем городе за 30 дней — подробный пошаговый план», чтобы мгновенно зацепить внимание; удерживайте интерес визуальными блоками-инструкциям, чек-листами и выделением ключевых ошибок старта, а также встраивайте быстрые ответы на частые вопросы и реальные кейсы успеха, чтобы обеспечить ощущение экспертной поддержки и уникальности опыта по сравнению с шаблонными текстами конкурентов.",
-        "audiences": "Эта страница предназначена для начинающих и действующих предпринимателей, владельцев ИП или ООО, которые рассматривают запуск или расширение бизнеса такси в своем городе через подключение к Яндекс.Такси, франшизу или партнерскую программу. Основная аудитория сталкивается с вопросами юридического оформления, требований к автопарку и водителям, минимизации рисков и расчета рентабельности, а также ищет пошаговые инструкции и практические советы для уверенного старта или масштабирования бизнеса на рынке пассажирских перевозок. Контент особенно актуален для людей с базовым или средним уровнем технической и бизнес-компетенции, находящихся на стадии активного изучения и подготовки к запуску сервиса."
+        "audiences": "Эта страница предназначена для начинающих и действующих предпринимателей, владельцев ИП или ООО, которые рассматривают запуск или расширение бизнеса такси в своем городе через подключение к Яндекс.Такси, франшизу или партнерскую программу. Основная аудитория сталкивается с вопросами юридического оформления, требований к автопарку и водителям, минимизации рисков и расчета рентабельности, а также ищет пошаговые инструкции и практические советы для уверенного старта или масштабирования бизнеса на рынке пассажирских перевозок. Контент особенно актуален для людей с базовым или средним уровнем технической и бизнес-компетенции, находящихся на стадии активного изучения и подготовки к запуску сервиса.",
+        "draftContentStructure": [
+          {
+            "id": "h2-1",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "как запустить яндекс такси в своем городе",
+              "пошаговая инструкция",
+              "открытие такси бизнес",
+              "юридические нюансы",
+              "подключение к Яндекс Такси",
+              "старт бизнеса такси",
+              "рекомендации для предпринимателей"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, как быстро и правильно запустить Яндекс Такси в своем городе, чтобы избежать ошибок и повысить шансы на успех.",
+            "intent": "Ввести пользователя в тему запуска Яндекс Такси, обозначить ценность пошагового руководства и подготовить к изучению ключевых этапов и советов.",
+            "audiences": "Начинающие и действующие предприниматели, владельцы ИП или ООО, рассматривающие запуск или расширение бизнеса такси через Яндекс Такси; уровень — базовый и средний.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 introduction section for page \"Как запустить Яндекс Такси в своем городе: пошаговая инструкция и советы\"\n\nGOAL: Представить основную тему страницы, объяснить, почему запуск Яндекс Такси — актуальная и перспективная бизнес-идея, и что пользователь получит конкретные, проверенные шаги и советы для старта.\n\nAUDIENCE: Предприниматели, владельцы ИП/ООО, инвесторы | Level: beginner/intermediate | Pain points: неуверенность в юридических и организационных нюансах, поиск пошагового плана, минимизация рисков.\n\nKEYWORDS TO INTEGRATE:\n[как запустить яндекс такси в своем городе, пошаговая инструкция, открытие такси бизнес, юридические нюансы, подключение к Яндекс Такси, старт бизнеса такси, рекомендации для предпринимателей]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 150, maxWords: 250 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: # H2 heading, followed by 2 intro paragraphs\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: опыт партнерства с Яндекс Такси, оформление автопарка, автоматизация документооборота, юридические требования\n- SECONDARY: Apply insights from External KB: рыночные тренды, преимущества партнерства, минимизация вложений, актуальные советы по запуску\n\nQUALITY CRITERIA:\n- Actionable (обещание конкретных шагов)\n- Specific (указание на уникальные преимущества и экспертизу)\n- Data-backed (упоминание опыта и технологий)\n- No fluff (только релевантная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Вводная секция, раскрывающая уникальность и практическую ценность гайда по запуску Яндекс Такси в городе.\n- sourceHint: Internal KB (экспертиза и опыт работы с такси), External KB (рыночные тренды и советы)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nINTERLINK PLANNING: Включить ссылки на страницы о бизнес-моделях такси, юридическом оформлении ИП/ООО, автоматизации автопарка.\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 150,
+              "maxWords": 250,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-1-1",
+                "tag": "p",
+                "keywords": [
+                  "как запустить яндекс такси в своем городе",
+                  "открытие такси бизнес"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Погрузитесь в актуальную тему запуска Яндекс Такси и узнайте, почему сейчас самое время начать.",
+                "intent": "Вступительный абзац, который формирует интерес к теме и объясняет, почему запуск Яндекс Такси — перспективное направление для бизнеса.",
+                "audiences": "Предприниматели, желающие открыть или масштабировать такси-бизнес; уровень — начинающий/средний.",
+                "selfPrompt": "CONTEXT: Generate intro paragraph (role: intro) for h2 section \"Как запустить Яндекс Такси в своем городе: пошаговая инструкция и советы\"\nGOAL: Заинтересовать пользователя, обозначить актуальность темы и перспективы запуска Яндекс Такси.\nKEYWORDS: как запустить яндекс такси в своем городе, открытие такси бизнес\nWORD COUNT: minWords: 100, maxWords: 180\nMARKDOWN/MDX SYNTAX: Paragraph\nKNOWLEDGE SOURCES: Internal KB (опыт партнерства, экспертиза), External KB (рыночные тренды)\nsemanticFingerprint: Вводный абзац, раскрывающий актуальность и преимущества запуска Яндекс Такси.\nsourceHint: Internal KB, External KB\n",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 180,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-2",
+                "tag": "p",
+                "keywords": [
+                  "пошаговая инструкция",
+                  "юридические нюансы"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, какие шаги и документы необходимы для уверенного старта и минимизации рисков.",
+                "intent": "Кратко анонсировать структуру гайда, пообещать конкретные шаги, советы и разъяснения юридических нюансов.",
+                "audiences": "Владельцы ИП/ООО, ищущие понятный и структурированный план запуска такси-бизнеса.",
+                "selfPrompt": "CONTEXT: Generate transition/preview paragraph (role: transition/preview) for h2 section \"Как запустить Яндекс Такси в своем городе: пошаговая инструкция и советы\"\nGOAL: Кратко рассказать, что пользователь получит на странице — пошаговую инструкцию, юридические советы, рекомендации по подключению и минимизации рисков.\nKEYWORDS: пошаговая инструкция, юридические нюансы\nWORD COUNT: minWords: 60, maxWords: 120\nMARKDOWN/MDX SYNTAX: Paragraph\nKNOWLEDGE SOURCES: Internal KB (документооборот, юридические требования), External KB (структура гайда, советы)\nsemanticFingerprint: Абзац-анонс, раскрывающий структуру и ценность гайда для пользователя.\nsourceHint: Internal KB, External KB\n",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 120,
+                  "actualContent": ""
+                }
+              }
+            ]
+          }
+        ]
       }
     ],
     "order": 16
@@ -3645,5 +3714,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T20:05:43.525Z";
+export const lastUpdated = "2025-10-24T20:07:15.379Z";
 export const generatedBy = "menu-persist-api";
