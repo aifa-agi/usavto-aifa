@@ -12,8 +12,17 @@ import {
 import { PageMetadataForPrompt, TOKEN_LIMIT_EXCEEDED } from "@/types/system-prompt-types";
 import { PageData } from "@/app/@right/(_service)/(_types)/page-types";
 import { MenuCategory } from "@/app/@right/(_service)/(_types)/menu-types";
-// ✅ НОВОЕ: Импорт лимита токенов для отображения
 import { SYSTEM_PROMPT_MAX_TOKENS } from "@/config/prompts/base-system-prompt";
+
+// Безопасный импорт токенов internal KB
+let INTERNAL_COMPANY_KB_TOKENS = 0;
+
+try {
+  const internalKB = require("@/config/prompts/internal-company-knowledge-base");
+  INTERNAL_COMPANY_KB_TOKENS = internalKB.INTERNAL_COMPANY_KNOWLEDGE_BASE_TOKENS || 0;
+} catch (error) {
+  // Internal KB отсутствует - используем 0
+}
 
 interface UseAddToPromptLogicProps {
   singlePage: PageData;
@@ -55,6 +64,35 @@ export function useAddToPromptLogic({
       href: singlePage.href || "",
     };
   }, [singlePage.id, singlePage.title, singlePage.description, singlePage.keywords, singlePage.href]);
+
+  // ✅ НОВОЕ: Функция для сохранения меню в файловую систему/GitHub
+  const persistMenu = useCallback(async (updatedCategories: MenuCategory[]) => {
+    try {
+      console.log("[Menu Persist] Saving updated menu...");
+      
+      const response = await fetch("/api/menu/persist", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ categories: updatedCategories }),
+      });
+      
+      const result = await response.json();
+      
+      if (!response.ok || result.status !== "success") {
+        console.error("[Menu Persist] Failed:", result.message);
+        // Не показываем toast об ошибке чтобы не перегружать пользователя
+        // Главная операция (system prompt) уже завершена успешно
+        return;
+      }
+      
+      console.log("[Menu Persist] ✅ Menu saved successfully");
+    } catch (err: any) {
+      console.error("[Menu Persist] Error:", err.message);
+      // Тихо игнорируем ошибку - главная операция уже завершена
+    }
+  }, []);
 
   const syncToBackend = useCallback(async (shouldAdd: boolean) => {
     const now = Date.now();
@@ -119,42 +157,47 @@ export function useAddToPromptLogic({
         throw new Error(result.message || "Failed to update system prompt");
       }
       
-      // ✅ НОВОЕ: Success с детальной статистикой токенов
+      // Success toast
       if (shouldAdd) {
-        // Найти добавленную страницу в обновлённом конфиге
         const addedEntry = result.data?.knowledgeBase?.find((entry: any) => entry.id === singlePage.id);
         const pageTokens = addedEntry?.tokenCount || 0;
-        const totalTokens = result.data?.totalTokenCount || 0;
-        const usagePercentage = ((totalTokens / SYSTEM_PROMPT_MAX_TOKENS) * 100).toFixed(1);
+        const totalTokensFromAPI = result.data?.totalTokenCount || 0;
+        const totalTokensWithInternalKB = totalTokensFromAPI + INTERNAL_COMPANY_KB_TOKENS;
+        const usagePercentage = ((totalTokensWithInternalKB / SYSTEM_PROMPT_MAX_TOKENS) * 100).toFixed(1);
         
         toast.success("System Instruction Added", {
           description: `Page "${singlePage.title}" successfully added.
           
 📊 Token Usage:
 • This page: ${pageTokens.toLocaleString()} tokens
-• Total used: ${totalTokens.toLocaleString()} / ${SYSTEM_PROMPT_MAX_TOKENS.toLocaleString()} tokens (${usagePercentage}%)
-• Remaining: ${(SYSTEM_PROMPT_MAX_TOKENS - totalTokens).toLocaleString()} tokens`,
+• Total used: ${totalTokensWithInternalKB.toLocaleString()} / ${SYSTEM_PROMPT_MAX_TOKENS.toLocaleString()} tokens (${usagePercentage}%)
+• Remaining: ${(SYSTEM_PROMPT_MAX_TOKENS - totalTokensWithInternalKB).toLocaleString()} tokens`,
           duration: 8000,
         });
       } else {
-        const totalTokens = result.data?.totalTokenCount || 0;
-        const usagePercentage = ((totalTokens / SYSTEM_PROMPT_MAX_TOKENS) * 100).toFixed(1);
+        const totalTokensFromAPI = result.data?.totalTokenCount || 0;
+        const totalTokensWithInternalKB = totalTokensFromAPI + INTERNAL_COMPANY_KB_TOKENS;
+        const usagePercentage = ((totalTokensWithInternalKB / SYSTEM_PROMPT_MAX_TOKENS) * 100).toFixed(1);
         
         toast.success("System Instruction Removed", {
           description: `Page "${singlePage.title}" has been removed.
           
 📊 Token Usage:
-• Total used: ${totalTokens.toLocaleString()} / ${SYSTEM_PROMPT_MAX_TOKENS.toLocaleString()} tokens (${usagePercentage}%)
-• Remaining: ${(SYSTEM_PROMPT_MAX_TOKENS - totalTokens).toLocaleString()} tokens`,
+• Total used: ${totalTokensWithInternalKB.toLocaleString()} / ${SYSTEM_PROMPT_MAX_TOKENS.toLocaleString()} tokens (${usagePercentage}%)
+• Remaining: ${(SYSTEM_PROMPT_MAX_TOKENS - totalTokensWithInternalKB).toLocaleString()} tokens`,
           duration: 6000,
         });
       }
       
-      console.log(
-        `[API Success] ${shouldAdd ? "Added to" : "Removed from"} system prompt:`,
-        singlePage.id
-      );
+      console.log(`[API Success] ${shouldAdd ? "Added to" : "Removed from"} system prompt:`, singlePage.id);
       console.log("[API Response]", result.data);
+      
+      // ✅ НОВОЕ: Сохраняем обновлённое меню с новым флагом
+      setCategories((currentCategories) => {
+        // Вызываем persist с актуальным состоянием меню
+        persistMenu(currentCategories);
+        return currentCategories;
+      });
       
     } catch (err: any) {
       if (loadingToastId) {
@@ -188,7 +231,7 @@ export function useAddToPromptLogic({
     } finally {
       setIsUpdating(false);
     }
-  }, [extractPageMetadata, singlePage.id, singlePage.title, categoryTitle, setCategories]);
+  }, [extractPageMetadata, singlePage.id, singlePage.title, categoryTitle, setCategories, persistMenu]);
 
   useEffect(() => {
     if (shouldAutoRemoveFromPrompt(singlePage)) {

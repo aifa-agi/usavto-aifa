@@ -1,4 +1,5 @@
-// @/app/@right/(_server)/api/config-system-prompt/update-to-system-prompt
+// @/app/@right/(_server)/api/config-system-prompt/update-to-system-prompt/route.ts
+
 import { NextRequest, NextResponse } from "next/server";
 import { promises as fs } from "fs";
 import path from "path";
@@ -13,13 +14,26 @@ import {
 } from "@/types/system-prompt-types";
 import { extractAndGenerateContent } from "@/lib/extract-page-content";
 import { calculateTokenUsage, wouldExceedLimit, formatTokenUsage } from "@/lib/token-utils";
+import { prepareContentForCodeGeneration } from "@/lib/escape-utils";
 import { appConfig } from "@/config/appConfig";
-// ✅ НОВОЕ: Импортируем настройки из конфига
 import { 
   SYSTEM_PROMPT_MAX_TOKENS, 
   SYSTEM_PROMPT_WARNING_THRESHOLD,
   AI_SUMMARY_SYSTEM_INSTRUCTION 
 } from "@/config/prompts/base-system-prompt";
+
+// ✅ НОВОЕ: Безопасный импорт внутренней базы знаний компании
+let INTERNAL_COMPANY_KB = "";
+let INTERNAL_COMPANY_KB_TOKENS = 0;
+
+try {
+  const internalKB = require("@/config/prompts/internal-company-knowledge-base");
+  INTERNAL_COMPANY_KB = internalKB.INTERNAL_COMPANY_KNOWLEDGE_BASE || "";
+  INTERNAL_COMPANY_KB_TOKENS = internalKB.INTERNAL_COMPANY_KNOWLEDGE_BASE_TOKENS || 0;
+  console.log(`[Config] ✅ Loaded internal company KB: ${INTERNAL_COMPANY_KB_TOKENS} tokens`);
+} catch (error) {
+  console.warn("[Config] ⚠️  internal-company-knowledge-base.ts not found. Continuing without it.");
+}
 
 // -------------------- Config --------------------
 
@@ -112,44 +126,105 @@ async function generateSystemPromptFromPage(
 
 // -------------------- Generate Final String --------------------
 
+/**
+ * ✅ Генерирует BUSINESS_KNOWLEDGE_BASE строку
+ * 
+ * ВАЖНО: Экранирует все специальные символы для безопасной вставки в template literal
+ */
 function generateBusinessKnowledgeBase(config: SystemPromptConfig): string {
   console.log("[Generate String] Formatting BUSINESS_KNOWLEDGE_BASE");
   
   const customPart = config.customInstruction.content;
   
-  const knowledgePart = config.knowledgeBase.length > 0
+  // ✅ БЕЗОПАСНО: Экранируем internal KB перед вставкой
+  const internalKBPart = INTERNAL_COMPANY_KB 
+    ? `\n--- Internal Company Knowledge Base ---\n\n${prepareContentForCodeGeneration(INTERNAL_COMPANY_KB, { 
+        sanitize: true, 
+        validate: true, 
+        throwOnUnsafe: false 
+      })}\n` 
+    : "";
+  
+  const dynamicPagesPart = config.knowledgeBase.length > 0
     ? config.knowledgeBase
         .map(entry => {
           const absoluteUrl = `${appConfig.url}${entry.href}`;
+          
+          // ✅ БЕЗОПАСНО: Экранируем контент каждой страницы
+          const safeContent = prepareContentForCodeGeneration(entry.content, {
+            sanitize: true,
+            validate: true,
+            throwOnUnsafe: false
+          });
           
           return `## ${entry.title}
 
 **URL:** ${absoluteUrl}
 
-${entry.content}
+${safeContent}
 
 ---`;
         })
         .join("\n\n")
-    : "No knowledge base entries available yet. Please add pages through the admin panel.";
+    : "";
   
-  return `${customPart}
-
---- Internal Knowledge Base ---
-
-${knowledgePart}`;
+  return `${customPart}${internalKBPart}${dynamicPagesPart ? `\n--- Dynamic Page Summaries ---\n\n${dynamicPagesPart}` : ""}`;
 }
 
 // -------------------- Generate File Content --------------------
 
+/**
+ * ✅ Генерирует содержимое файла base-system-prompt.ts
+ * 
+ * ВАЖНО: 
+ * - Internal KB токены НЕ включаются в totalTokenCount
+ * - Весь пользовательский контент экранируется для безопасности
+ * - Предотвращает legacy octal escapes, template injection, и другие уязвимости
+ */
 function generateSystemPromptFile(config: SystemPromptConfig): string {
   const timestamp = new Date().toISOString();
   const businessKnowledgeBase = generateBusinessKnowledgeBase(config);
   const formattedKnowledgeBase = JSON.stringify(config.knowledgeBase, null, 2);
-  const totalTokens = config.knowledgeBase.reduce((sum, entry) => sum + entry.tokenCount, 0);
   
-  // ✅ НОВОЕ: Экранируем AI_SUMMARY_SYSTEM_INSTRUCTION для шаблонной строки
-  const escapedAiInstruction = AI_SUMMARY_SYSTEM_INSTRUCTION.replace(/`/g, '\\`').replace(/\$/g, '\\$');
+  // ✅ ВАЖНО: totalTokens включает ТОЛЬКО customInstruction + dynamicPages
+  // Internal KB токены НЕ включены здесь
+  const customInstructionTokens = config.customInstruction.tokenCount;
+  const dynamicPagesTokens = config.knowledgeBase.reduce((sum, entry) => sum + entry.tokenCount, 0);
+  const totalTokensWithoutInternalKB = customInstructionTokens + dynamicPagesTokens;
+  
+  // ✅ БЕЗОПАСНО: Экранируем AI instruction
+  const escapedAiInstruction = prepareContentForCodeGeneration(AI_SUMMARY_SYSTEM_INSTRUCTION, {
+    sanitize: false, // AI instruction уже безопасна
+    validate: true,
+    throwOnUnsafe: false
+  });
+  
+  // ✅ БЕЗОПАСНО: Экранируем custom instruction
+  const escapedCustomInstruction = prepareContentForCodeGeneration(config.customInstruction.content, {
+    sanitize: true,
+    validate: true,
+    throwOnUnsafe: false
+  });
+  
+  // ✅ НОВОЕ: Генерируем код для динамического импорта internal KB
+  const internalKBImportCode = `
+// ============ INTERNAL COMPANY KNOWLEDGE BASE (manually managed) ============
+// This section is imported from a separate file and included in the final prompt
+// If the file is missing, this will be an empty string (project won't break)
+let internalKnowledgeBase = "";
+let internalKnowledgeTokens = 0;
+
+try {
+  const { INTERNAL_COMPANY_KNOWLEDGE_BASE, INTERNAL_COMPANY_KNOWLEDGE_BASE_TOKENS } = require("./internal-company-knowledge-base");
+  internalKnowledgeBase = INTERNAL_COMPANY_KNOWLEDGE_BASE || "";
+  internalKnowledgeTokens = INTERNAL_COMPANY_KNOWLEDGE_BASE_TOKENS || 0;
+} catch (error) {
+  console.warn("[Config] internal-company-knowledge-base.ts not found or invalid. Continuing without it.");
+}
+
+export const INTERNAL_COMPANY_KB = internalKnowledgeBase;
+export const INTERNAL_COMPANY_KB_TOKENS = internalKnowledgeTokens;
+`;
   
   return `// @/config/prompts/base-system-prompt.ts
 // Auto-generated file - Last updated: ${timestamp}
@@ -165,7 +240,9 @@ export const SYSTEM_PROMPT_WARNING_THRESHOLD = ${SYSTEM_PROMPT_WARNING_THRESHOLD
 export const AI_SUMMARY_SYSTEM_INSTRUCTION = \`${escapedAiInstruction}\`;
 
 // ============ CUSTOM BASE INSTRUCTION (highest priority) ============
-export const CUSTOM_BASE_INSTRUCTION = \`${config.customInstruction.content}\`;
+export const CUSTOM_BASE_INSTRUCTION = \`${escapedCustomInstruction}\`;
+
+${internalKBImportCode}
 
 // ============ DYNAMIC KNOWLEDGE BASE (auto-generated from pages) ============
 export const systemPromptData: SystemPromptCollection = ${formattedKnowledgeBase};
@@ -175,7 +252,16 @@ export const BUSINESS_KNOWLEDGE_BASE = \`${businessKnowledgeBase}\`;
 
 // ============ METADATA ============
 // Total knowledge base entries: ${config.knowledgeBase.length}
-// Total tokens: ${totalTokens}
+// 
+// TOKEN BREAKDOWN:
+// - Custom instruction tokens: ${customInstructionTokens}
+// - Dynamic page tokens: ${dynamicPagesTokens}
+// - Subtotal (without internal KB): ${totalTokensWithoutInternalKB}
+// - Internal company KB tokens: \${INTERNAL_COMPANY_KB_TOKENS} (added separately by token-utils)
+// 
+// IMPORTANT: totalTokenCount in SystemPromptConfig does NOT include INTERNAL_COMPANY_KB_TOKENS
+// Internal KB tokens are added during calculations in token-utils.ts
+// 
 // Last updated: ${timestamp}
 `;
 }
@@ -282,8 +368,13 @@ export async function POST(
     const currentConfig = await readCurrentConfig();
     console.log(`[${requestId}] ✅ Loaded ${currentConfig.knowledgeBase.length} entries`);
     
+    // ✅ ВАЖНО: calculateTokenUsage добавляет internal KB токены автоматически
     const currentUsage = calculateTokenUsage(currentConfig);
-    console.log(`[${requestId}] 📊 Current usage: ${formatTokenUsage(currentUsage.currentTokens)}`);
+    console.log(`[${requestId}] 📊 Current usage: ${formatTokenUsage(currentUsage.currentTokens)} / ${formatTokenUsage(currentUsage.maxTokens)}`);
+    console.log(`[${requestId}] 📊 Breakdown:`);
+    console.log(`[${requestId}]    - Config (custom + pages): ${formatTokenUsage(currentConfig.totalTokenCount)}`);
+    console.log(`[${requestId}]    - Internal KB: ${formatTokenUsage(INTERNAL_COMPANY_KB_TOKENS)}`);
+    console.log(`[${requestId}]    - Total: ${formatTokenUsage(currentUsage.currentTokens)}`);
     
     let updatedKnowledgeBase: SystemPromptCollection;
     
@@ -292,19 +383,20 @@ export async function POST(
       const newEntry = await generateSystemPromptFromPage(pageMetadata);
       console.log(`[${requestId}] ✅ Generated (${newEntry.tokenCount} tokens)`);
       
-      const projectedTokens = currentUsage.currentTokens + newEntry.tokenCount;
-      
+      // ✅ ВАЖНО: wouldExceedLimit учитывает internal KB автоматически
       if (wouldExceedLimit(currentUsage.currentTokens, newEntry.tokenCount)) {
+        const projectedTokens = currentUsage.currentTokens + newEntry.tokenCount;
+        
         console.error(`[${requestId}] ❌ TOKEN LIMIT EXCEEDED`);
-        console.error(`[${requestId}]    Current:   ${currentUsage.currentTokens.toLocaleString()} tokens`);
-        console.error(`[${requestId}]    Attempted: ${newEntry.tokenCount.toLocaleString()} tokens`);
-        console.error(`[${requestId}]    Projected: ${projectedTokens.toLocaleString()} tokens`);
-        console.error(`[${requestId}]    Limit:     ${currentUsage.maxTokens.toLocaleString()} tokens`);
+        console.error(`[${requestId}]    Current:   ${formatTokenUsage(currentUsage.currentTokens)}`);
+        console.error(`[${requestId}]    Attempted: ${formatTokenUsage(newEntry.tokenCount)}`);
+        console.error(`[${requestId}]    Projected: ${formatTokenUsage(projectedTokens)}`);
+        console.error(`[${requestId}]    Limit:     ${formatTokenUsage(currentUsage.maxTokens)}`);
         console.log(`${"=".repeat(70)}\n`);
         
         return NextResponse.json<TokenLimitExceededResponse>({
           success: false,
-          message: "You have reached the limit for pages in system instructions. If you need more information, use vector database integration.",
+          message: `You have reached the limit for pages in system instructions. Current: ${formatTokenUsage(currentUsage.currentTokens)}, Attempted: ${formatTokenUsage(newEntry.tokenCount)}, Projected: ${formatTokenUsage(projectedTokens)}, Limit: ${formatTokenUsage(currentUsage.maxTokens)}. If you need more information, use vector database integration.`,
           error: TOKEN_LIMIT_EXCEEDED,
           tokenUsage: {
             current: currentUsage.currentTokens,
@@ -317,8 +409,9 @@ export async function POST(
         }, { status: 400 });
       }
       
+      const projectedTokens = currentUsage.currentTokens + newEntry.tokenCount;
       console.log(`[${requestId}] ✅ Token limit check passed`);
-      console.log(`[${requestId}]    Projected: ${projectedTokens.toLocaleString()} / ${currentUsage.maxTokens.toLocaleString()} tokens`);
+      console.log(`[${requestId}]    Projected: ${formatTokenUsage(projectedTokens)} / ${formatTokenUsage(currentUsage.maxTokens)} tokens`);
       
       const existingIndex = currentConfig.knowledgeBase.findIndex(e => e.id === pageMetadata.id);
       if (existingIndex >= 0) {
@@ -343,6 +436,7 @@ export async function POST(
       console.log(`[${requestId}] ➖ Removed entry`);
     }
     
+    // ✅ ВАЖНО: totalTokenCount НЕ включает internal KB
     const knowledgeBaseTokens = updatedKnowledgeBase.reduce((sum, e) => sum + e.tokenCount, 0);
     const updatedConfig: SystemPromptConfig = {
       customInstruction: currentConfig.customInstruction,
@@ -350,7 +444,10 @@ export async function POST(
       totalTokenCount: currentConfig.customInstruction.tokenCount + knowledgeBaseTokens
     };
     
-    console.log(`[${requestId}] 📊 New totals: ${updatedConfig.knowledgeBase.length} entries, ${updatedConfig.totalTokenCount} tokens`);
+    console.log(`[${requestId}] 📊 New totals:`);
+    console.log(`[${requestId}]    - Entries: ${updatedConfig.knowledgeBase.length}`);
+    console.log(`[${requestId}]    - Config tokens (without internal KB): ${formatTokenUsage(updatedConfig.totalTokenCount)}`);
+    console.log(`[${requestId}]    - Total with internal KB: ${formatTokenUsage(updatedConfig.totalTokenCount + INTERNAL_COMPANY_KB_TOKENS)}`);
     
     console.log(`[${requestId}] 💾 Writing to filesystem...`);
     await writeToLocalFileSystem(updatedConfig);
