@@ -2293,7 +2293,7 @@ export const contentData = {
             ]
           }
         ],
-        "isPublished": false,
+        "isPublished": true,
         "isAddedToPrompt": false,
         "isVectorConnected": false,
         "isChatSynchronized": false,
@@ -3066,5 +3066,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T19:45:17.177Z";
+export const lastUpdated = "2025-10-24T19:47:40.149Z";
 export const generatedBy = "menu-persist-api";
