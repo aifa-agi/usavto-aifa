@@ -1010,7 +1010,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-24T18:41:03.217Z",
-        "updatedAt": "2025-10-24T18:58:48.756Z",
+        "updatedAt": "2025-10-24T18:58:55.864Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Найдите работу в такси онлайн — свежие вакансии водителей с удобным поиском, гибким графиком и актуальными предложениями. Начните зарабатывать уже сегодня!",
@@ -1312,7 +1312,8 @@ export const contentData = {
                   "minWords": 90,
                   "maxWords": 170,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-3-2",
@@ -1350,7 +1351,8 @@ export const contentData = {
                       "minWords": 75,
                       "maxWords": 140,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "ol-3-2-2",
@@ -1367,7 +1369,8 @@ export const contentData = {
                       "minWords": 50,
                       "maxWords": 90,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "code-3-2-3",
@@ -1384,11 +1387,14 @@ export const contentData = {
                       "minWords": 20,
                       "maxWords": 50,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "FAQ",
@@ -1725,5 +1731,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T19:14:22.526Z";
+export const lastUpdated = "2025-10-24T19:14:29.521Z";
 export const generatedBy = "menu-persist-api";
