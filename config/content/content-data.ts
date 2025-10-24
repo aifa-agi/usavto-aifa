@@ -2298,7 +2298,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-24T19:11:16.273Z",
-        "updatedAt": "2025-10-24T19:28:55.793Z",
+        "updatedAt": "2025-10-24T19:29:37.203Z",
         "order": 2,
         "badgeName": "Блог",
         "description": "Инструкция диспетчера автомобильного транспорта: образец, структура, основные обязанности, права и ответственность. Скачать шаблон для оформления!",
@@ -3066,5 +3066,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T19:44:23.139Z";
+export const lastUpdated = "2025-10-24T19:45:17.177Z";
 export const generatedBy = "menu-persist-api";
