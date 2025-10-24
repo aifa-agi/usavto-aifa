@@ -8028,7 +8028,7 @@ export const contentData = {
         "updatedAt": "2025-10-24T17:56:34.960Z",
         "order": 6,
         "badgeName": "Блог",
-        "description": "на каких машинах можно таксовать в яндекс",
+        "description": "Узнайте, на каких машинах можно таксовать в Яндекс: актуальные требования, список подходящих моделей по тарифам и годам. Проверьте свой авто!",
         "images": [
           {
             "id": "fgwtemfmgw9jud5czi6wtm6p",
@@ -8071,5 +8071,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T18:21:33.944Z";
+export const lastUpdated = "2025-10-24T18:21:39.533Z";
 export const generatedBy = "menu-persist-api";
