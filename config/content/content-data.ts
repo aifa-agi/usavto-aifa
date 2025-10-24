@@ -1010,7 +1010,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-24T18:41:03.217Z",
-        "updatedAt": "2025-10-24T18:55:40.612Z",
+        "updatedAt": "2025-10-24T18:57:03.789Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Найдите работу в такси онлайн — свежие вакансии водителей с удобным поиском, гибким графиком и актуальными предложениями. Начните зарабатывать уже сегодня!",
@@ -1378,6 +1378,206 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "часто задаваемые вопросы такси",
+              "условия работы водителем",
+              "оплата и график в такси",
+              "подключение к сервису такси",
+              "медицинские осмотры водителей",
+              "юридическая поддержка таксистов",
+              "онлайн оформление документов"
+            ],
+            "taxonomy": "FAQ",
+            "attention": "Ответы на самые популярные вопросы помогут быстро разобраться в нюансах работы водителем такси и избежать типичных ошибок.",
+            "intent": "Дать пользователям исчерпывающие ответы на ключевые вопросы о трудоустройстве, условиях и особенностях работы в такси, чтобы снять основные барьеры и повысить доверие к сервису.",
+            "audiences": "Взрослые мужчины и женщины 25–55 лет, рассматривающие работу водителем такси, ищущие подробности о процессе трудоустройства, оплате, медицинских и юридических аспектах, а также о возможностях онлайн-оформления.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 FAQ section for page \"Найти работу в такси — свежие вакансии для водителей онлайн\"\n\nGOAL: Сформировать структурированный блок часто задаваемых вопросов, раскрывающий ключевые моменты трудоустройства, условий работы, оплаты, медицинских и юридических аспектов, а также онлайн-сервисов для водителей такси. Ответы должны быть максимально полезными, конкретными и опираться на внутренние преимущества платформы (автоматизация, поддержка, интеграция, телемедицина), с добавлением общих отраслевых фактов без продвижения конкурентов.\n\nAUDIENCE: Взрослые соискатели работы в такси | Уровень: начинающий/средний | Pain points: неясность условий, страх бюрократии, вопросы по оплате и безопасности\n\nKEYWORDS TO INTEGRATE:\n[часто задаваемые вопросы такси, условия работы водителем, оплата и график в такси, подключение к сервису такси, медицинские осмотры водителей, юридическая поддержка таксистов, онлайн оформление документов]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 heading with nested H3 questions and answers (FAQ schema readiness)\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Internal KB (поддержка, автоматизация, телемедицина, юридическая помощь, интеграция)\n- SECONDARY: External KB (общие условия, типовые вопросы, отраслевые стандарты)\n\nQUALITY CRITERIA:\n- Actionable (конкретные рекомендации)\n- Specific (детальные ответы)\n- Data-backed (факты из KB)\n- No fluff (без воды)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Каждый вопрос раскрывает отдельный аспект трудоустройства или работы в такси, не повторяя темы других разделов.\n- sourceHint: Internal KB (основные ответы), External KB (дополнительные детали)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Вопросы должны охватывать: условия работы, оплату, подключение, медосмотры, юридическую поддержку, онлайн-документы\n- В конце блока — призыв обратиться за дополнительной консультацией или воспользоваться сервисом\n- FAQPage schema readiness\n- Interlink planning: внутренние ссылки на разделы «Технологии и сервисы», «Пошаговый процесс трудоустройства»\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "keywords": [
+                  "часто задаваемые вопросы такси"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Краткое введение объясняет, почему важно заранее знать ответы на популярные вопросы о работе в такси.",
+                "intent": "Ввести пользователя в раздел FAQ, подчеркнуть ценность получения достоверной информации перед трудоустройством.",
+                "audiences": "Новички и опытные водители, которые хотят быстро разобраться в нюансах работы в такси.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for FAQ section on 'Найти работу в такси — свежие вакансии для водителей онлайн'.\nGOAL: Кратко объяснить, зачем читать этот раздел, и как он поможет избежать ошибок при трудоустройстве.\nKEYWORDS: [часто задаваемые вопросы такси]\nWORD COUNT: minWords: 70, maxWords: 130\nROLE: intro\nsemanticFingerprint: Вводный абзац, мотивирующий изучить ответы на частые вопросы о работе в такси.\nsourceHint: Internal KB (основные причины), External KB (типовые вопросы)\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "keywords": [
+                  "условия работы водителем",
+                  "график смен",
+                  "требования к стажу"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, какие условия и график работы доступны водителям такси.",
+                "intent": "Ответить на вопросы о типовых условиях работы, сменности, требованиях к опыту и особенностях графика.",
+                "audiences": "Соискатели, интересующиеся деталями рабочего процесса и возможностями выбора смен.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ question on 'условия работы водителем такси' for section 'FAQ'.\nGOAL: Подробно раскрыть, какие условия и график работы предлагаются, есть ли гибкость, требования к опыту.\nKEYWORDS: [условия работы водителем, график смен, требования к стажу]\nWORD COUNT: minWords: 150, maxWords: 220\nsemanticFingerprint: Вопрос раскрывает особенности графика и условий работы, не затрагивая оплату или оформление.\nsourceHint: Internal KB (гибкий график, поддержка), External KB (отраслевые стандарты)\nevidenceStrength: internal-tested\nInterlink: Раздел «Технологии и сервисы для водителей такси»",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "keywords": [
+                      "условия работы водителем"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Детальный ответ помогает понять, как устроен рабочий процесс и сменность.",
+                    "intent": "Дать конкретные примеры графиков и условий, чтобы пользователь мог оценить, подходит ли ему такой формат.",
+                    "audiences": "Кандидаты, выбирающие между разными вариантами занятости.",
+                    "selfPrompt": "CONTEXT: Generate answer paragraph for FAQ question 'условия работы водителем такси'.\nGOAL: Описать варианты графика, требования к стажу, особенности сменности.\nKEYWORDS: [условия работы водителем]\nWORD COUNT: minWords: 60, maxWords: 120\nROLE: body\nsemanticFingerprint: Ответ раскрывает детали графика и условий, не повторяя темы оплаты или оформления.\nsourceHint: Internal KB (гибкость графика), External KB (типовые условия)\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-2",
+                "tag": "h3",
+                "keywords": [
+                  "оплата и график в такси",
+                  "система начисления дохода",
+                  "выплаты водителям"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Поймите, как формируется заработок и когда происходят выплаты водителям такси.",
+                "intent": "Объяснить, как рассчитывается доход, какие бывают системы оплаты и как быстро водитель получает деньги.",
+                "audiences": "Кандидаты, для которых важна прозрачность и скорость выплат.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ question on 'оплата и график в такси' for section 'FAQ'.\nGOAL: Подробно раскрыть, как начисляется оплата, как часто происходят выплаты, есть ли бонусы или премии.\nKEYWORDS: [оплата и график в такси, система начисления дохода, выплаты водителям]\nWORD COUNT: minWords: 150, maxWords: 220\nsemanticFingerprint: Вопрос раскрывает финансовую сторону работы, не затрагивая оформление или условия труда.\nsourceHint: Internal KB (автоматизация выплат), External KB (отраслевые практики)\nevidenceStrength: internal-tested\nInterlink: Раздел «Пошаговый процесс трудоустройства в такси»",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "оплата и график в такси"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Ответ помогает понять, как быстро можно получить заработанные средства.",
+                    "intent": "Дать прозрачное описание системы начисления дохода и сроков выплат.",
+                    "audiences": "Водители, для которых важна финансовая стабильность.",
+                    "selfPrompt": "CONTEXT: Generate answer paragraph for FAQ question 'оплата и график в такси'.\nGOAL: Описать, как формируется доход, когда и как происходят выплаты, есть ли дополнительные бонусы.\nKEYWORDS: [оплата и график в такси]\nWORD COUNT: minWords: 60, maxWords: 120\nROLE: body\nsemanticFingerprint: Ответ раскрывает детали выплат и системы дохода, не повторяя темы условий труда.\nsourceHint: Internal KB (автоматизация выплат), External KB (стандартные схемы)\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-3",
+                "tag": "h3",
+                "keywords": [
+                  "подключение к сервису такси",
+                  "онлайн оформление документов",
+                  "интеграция с агрегаторами"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, как быстро и просто подключиться к сервису такси и оформить все документы онлайн.",
+                "intent": "Пояснить процесс подключения к платформе, необходимые шаги и преимущества онлайн-оформления.",
+                "audiences": "Потенциальные водители, желающие минимизировать бюрократию и быстро начать работу.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ question on 'подключение к сервису такси и онлайн оформление документов' for section 'FAQ'.\nGOAL: Подробно раскрыть, как происходит подключение, какие документы нужны, как работает онлайн-оформление и интеграция с агрегаторами.\nKEYWORDS: [подключение к сервису такси, онлайн оформление документов, интеграция с агрегаторами]\nWORD COUNT: minWords: 150, maxWords: 220\nsemanticFingerprint: Вопрос раскрывает процесс подключения и оформления, не затрагивая оплату или условия труда.\nsourceHint: Internal KB (автоматизация, интеграция), External KB (общие требования)\nevidenceStrength: internal-tested\nInterlink: Раздел «Пошаговый процесс трудоустройства в такси»",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "подключение к сервису такси"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Ответ помогает понять, как быстро начать работать без лишней бюрократии.",
+                    "intent": "Дать чёткую инструкцию по подключению и оформлению документов онлайн.",
+                    "audiences": "Кандидаты, ценящие скорость и простоту процесса.",
+                    "selfPrompt": "CONTEXT: Generate answer paragraph for FAQ question 'подключение к сервису такси и онлайн оформление документов'.\nGOAL: Описать пошагово процесс подключения, какие документы нужны, как работает онлайн-оформление.\nKEYWORDS: [подключение к сервису такси]\nWORD COUNT: minWords: 60, maxWords: 120\nROLE: body\nsemanticFingerprint: Ответ раскрывает детали подключения и оформления, не повторяя темы выплат или условий труда.\nsourceHint: Internal KB (автоматизация, интеграция), External KB (стандартные требования)\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-4",
+                "tag": "h3",
+                "keywords": [
+                  "медицинские осмотры водителей",
+                  "телемедицина для такси",
+                  "юридическая поддержка таксистов"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Разберитесь, как проходят медосмотры и какую юридическую поддержку получают водители такси.",
+                "intent": "Объяснить, как организованы медицинские проверки (в том числе дистанционно), и какие юридические сервисы доступны водителям.",
+                "audiences": "Водители, заботящиеся о здоровье и правовой защите.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ question on 'медицинские осмотры и юридическая поддержка водителей такси' for section 'FAQ'.\nGOAL: Подробно раскрыть, как проходят медосмотры (включая телемедицину), и какие юридические услуги доступны для защиты интересов водителей.\nKEYWORDS: [медицинские осмотры водителей, телемедицина для такси, юридическая поддержка таксистов]\nWORD COUNT: minWords: 150, maxWords: 220\nsemanticFingerprint: Вопрос раскрывает медицинские и юридические аспекты, не затрагивая оформление или оплату.\nsourceHint: Internal KB (телемедицина, юридическая поддержка), External KB (отраслевые практики)\nevidenceStrength: internal-tested\nInterlink: Раздел «Технологии и сервисы для водителей такси»",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "медицинские осмотры водителей"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Ответ помогает понять, как легко и быстро пройти медосмотр и получить юридическую помощь.",
+                    "intent": "Дать чёткое описание процесса медосмотров и возможностей юридической поддержки.",
+                    "audiences": "Водители, для которых важны здоровье и правовая защищённость.",
+                    "selfPrompt": "CONTEXT: Generate answer paragraph for FAQ question 'медицинские осмотры и юридическая поддержка водителей такси'.\nGOAL: Описать, как проходят медосмотры (включая телемедицину), и какие юридические услуги доступны.\nKEYWORDS: [медицинские осмотры водителей]\nWORD COUNT: minWords: 60, maxWords: 120\nROLE: body\nsemanticFingerprint: Ответ раскрывает детали медосмотров и юридической поддержки, не повторяя темы оформления или выплат.\nsourceHint: Internal KB (телемедицина, юридическая поддержка), External KB (стандартные практики)\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1410,5 +1610,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T19:12:30.441Z";
+export const lastUpdated = "2025-10-24T19:13:47.021Z";
 export const generatedBy = "menu-persist-api";
