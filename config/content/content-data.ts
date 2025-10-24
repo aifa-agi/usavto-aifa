@@ -8060,7 +8060,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-24T17:56:34.960Z",
-        "updatedAt": "2025-10-24T18:11:30.985Z",
+        "updatedAt": "2025-10-24T18:12:59.670Z",
         "order": 6,
         "badgeName": "Блог",
         "description": "Узнайте, на каких машинах можно таксовать в Яндекс: актуальные требования, список подходящих моделей по тарифам и годам. Проверьте свой авто!",
@@ -8429,6 +8429,145 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "часто задаваемые вопросы Яндекс Такси",
+              "разрешённые авто для такси",
+              "ограничения по маркам и моделям",
+              "дополнительные условия допуска",
+              "регистрация автомобиля для такси",
+              "замена автомобиля в сервисе",
+              "требования к документам водителя"
+            ],
+            "taxonomy": "FAQ",
+            "attention": "Быстро найдите ответы на самые частые вопросы о допуске автомобилей и нюансах работы в Яндекс Такси.",
+            "intent": "Собрать и структурировать ответы на ключевые вопросы пользователей о правилах допуска автомобилей, особенностях регистрации и нюансах эксплуатации в Яндекс Такси.",
+            "audiences": "Водители с разным уровнем опыта, рассматривающие подключение к Яндекс Такси или желающие уточнить детали допуска и эксплуатации автомобиля.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 FAQ section for page \"На каких машинах можно таксовать в Яндекс: требования, список моделей\"\n\nGOAL: Дать читателю структурированный блок с ответами на наиболее частые вопросы, связанные с допуском автомобилей, регистрацией, заменой машины, требованиями к документам и особенностями эксплуатации в Яндекс Такси. Включить только уникальные вопросы, не дублирующие темы предыдущих разделов, и раскрыть детали, которые часто вызывают затруднения у водителей.\n\nAUDIENCE: Водители Яндекс Такси и кандидаты | Level: beginner/intermediate | Pain points: неясность по нюансам допуска, смене авто, документам, особенностям эксплуатации\n\nKEYWORDS TO INTEGRATE:\n[часто задаваемые вопросы Яндекс Такси, разрешённые авто для такси, ограничения по маркам и моделям, дополнительные условия допуска, регистрация автомобиля для такси, замена автомобиля в сервисе, требования к документам водителя]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: h2 with nested h3 and p elements for each FAQ\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: требования к регистрации, документальное сопровождение, нюансы допуска\n- SECONDARY: Apply insights from External KB: типовые вопросы водителей, дополнительные условия допуска, примеры ситуаций\n\nQUALITY CRITERIA:\n- Actionable (конкретные рекомендации и разъяснения)\n- Specific (уникальные детали, не повторяющие предыдущие разделы)\n- Data-backed (ссылки на официальные требования и практические кейсы)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальный блок с ответами на вопросы, не раскрытые в предыдущих разделах, с акцентом на нюансы допуска, смены авто и документов.\n- sourceHint: Internal KB (официальные требования и процессы), External KB (типовые вопросы и ситуации)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Для каждого h3: отдельный вопрос, не дублирующий темы предыдущих разделов\n- Для каждого p: лаконичный, но подробный ответ с практическими советами\n- Добавить interlink planning: 2-3 внутренних ссылки на разделы сайта (например, подробные инструкции по регистрации, смене авто, оформлению документов)\n- FAQPage schema readiness: отметить, что блок подходит для разметки FAQPage\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "keywords": [
+                  "ответы на вопросы о Яндекс Такси"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Узнайте, какие нюансы чаще всего вызывают вопросы у водителей.",
+                "intent": "Ввести пользователя в раздел FAQ, объяснить его пользу и структуру.",
+                "audiences": "Водители, ищущие быстрые разъяснения по сложным моментам допуска и эксплуатации.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for FAQ section on \"На каких машинах можно таксовать в Яндекс: требования, список моделей\". GOAL: Кратко объяснить, что в этом разделе собраны ответы на самые частые вопросы по нюансам допуска, регистрации, смены авто и документов в Яндекс Такси. AUDIENCE: Водители и кандидаты | Level: beginner/intermediate | Pain points: быстро найти разъяснения по сложным моментам. KEYWORDS: [ответы на вопросы о Яндекс Такси]. WORD COUNT: minWords: 70, maxWords: 130. ROLE: intro. sourceHint: Internal KB (структура FAQ), External KB (типовые вопросы)."
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "keywords": [
+                  "можно ли подключить авто с неоригинальным ПТС",
+                  "условия допуска по документам",
+                  "регистрация автомобиля для такси"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Разберитесь, какие документы нужны для допуска автомобиля в Яндекс Такси.",
+                "intent": "Ответить на вопрос о возможности допуска автомобиля с неоригинальным ПТС и разъяснить требования к документам.",
+                "audiences": "Водители, которые не уверены, подходит ли их комплект документов для регистрации авто в сервисе.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item for question: \"Можно ли подключить автомобиль с неоригинальным ПТС?\" in section \"FAQ\". GOAL: Дать разъяснение по условиям допуска авто с дубликатом ПТС или электронным ПТС, указать, какие документы обязательны для регистрации. AUDIENCE: Водители, не уверенные в комплекте документов | Level: beginner/intermediate. KEYWORDS: [можно ли подключить авто с неоригинальным ПТС, условия допуска по документам, регистрация автомобиля для такси]. semanticFingerprint: Уникальный разбор допуска авто с дубликатом/электронным ПТС. sourceHint: Internal KB (документальные требования), External KB (типовые вопросы). evidenceStrength: internal-tested. Interlink: ссылка на подробную инструкцию по регистрации авто. WORD COUNT: minWords: 150, maxWords: 220.",
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "keywords": [
+                      "допуск авто с дубликатом ПТС"
+                    ],
+                    "selfPrompt": "CONTEXT: Generate paragraph answering if a car with a duplicate or electronic PTS can be registered for Yandex Taxi. ROLE: body. KEYWORDS: [допуск авто с дубликатом ПТС]. sourceHint: Internal KB (документальные требования), External KB (разъяснения по ПТС). WORD COUNT: minWords: 60, maxWords: 120."
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-2",
+                "tag": "h3",
+                "keywords": [
+                  "замена автомобиля в Яндекс Такси",
+                  "процедура смены авто",
+                  "ограничения по смене машины"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, как быстро и без ошибок сменить автомобиль в сервисе.",
+                "intent": "Дать пошаговое разъяснение по процедуре замены автомобиля, включая ограничения и необходимые действия.",
+                "audiences": "Водители, планирующие сменить свой автомобиль и продолжить работу в Яндекс Такси.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item for question: \"Как происходит замена автомобиля в Яндекс Такси?\" in section \"FAQ\". GOAL: Подробно описать процедуру смены авто, какие документы нужны, какие ограничения существуют, как быстро происходит обновление данных. AUDIENCE: Водители, планирующие смену авто | Level: beginner/intermediate. KEYWORDS: [замена автомобиля в Яндекс Такси, процедура смены авто, ограничения по смене машины]. semanticFingerprint: Пошаговая инструкция по смене авто с учётом всех нюансов. sourceHint: Internal KB (процедуры смены), External KB (типовые вопросы). evidenceStrength: internal-tested. Interlink: ссылка на инструкцию по смене авто. WORD COUNT: minWords: 150, maxWords: 220.",
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "порядок смены автомобиля"
+                    ],
+                    "selfPrompt": "CONTEXT: Generate paragraph explaining the process and requirements for changing a car in Yandex Taxi. ROLE: body. KEYWORDS: [порядок смены автомобиля]. sourceHint: Internal KB (процедуры смены), External KB (разъяснения по смене авто). WORD COUNT: minWords: 60, maxWords: 120."
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-3",
+                "tag": "h3",
+                "keywords": [
+                  "можно ли работать на арендованном авто",
+                  "условия аренды для такси",
+                  "требования к арендованным автомобилям"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, разрешена ли работа в Яндекс Такси на арендованной машине и какие условия действуют.",
+                "intent": "Разъяснить, допускается ли использование арендованных автомобилей, и какие требования предъявляются к таким авто.",
+                "audiences": "Водители, не имеющие собственного авто и рассматривающие аренду для работы в Яндекс Такси.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item for question: \"Можно ли работать в Яндекс Такси на арендованном автомобиле?\" in section \"FAQ\". GOAL: Объяснить условия допуска арендованных авто, какие документы нужны, есть ли ограничения по типу аренды. AUDIENCE: Водители без собственного авто | Level: beginner/intermediate. KEYWORDS: [можно ли работать на арендованном авто, условия аренды для такси, требования к арендованным автомобилям]. semanticFingerprint: Разъяснение по аренде авто для работы в сервисе. sourceHint: Internal KB (условия допуска), External KB (типовые вопросы). evidenceStrength: internal-tested. Interlink: ссылка на раздел об аренде авто для такси. WORD COUNT: minWords: 150, maxWords: 220.",
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "арендованный автомобиль для такси"
+                    ],
+                    "selfPrompt": "CONTEXT: Generate paragraph explaining if and how a rented car can be used for Yandex Taxi. ROLE: body. KEYWORDS: [арендованный автомобиль для такси]. sourceHint: Internal KB (условия допуска), External KB (разъяснения по аренде). WORD COUNT: minWords: 60, maxWords: 120."
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-4",
+                "tag": "h3",
+                "keywords": [
+                  "что делать при отказе в допуске",
+                  "причины отказа в регистрации авто",
+                  "решение проблем с допуском"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, как действовать, если ваш автомобиль не прошёл проверку или был отклонён сервисом.",
+                "intent": "Дать практические рекомендации по действиям в случае отказа в допуске автомобиля, разъяснить возможные причины и пути их устранения.",
+                "audiences": "Водители, столкнувшиеся с отказом в регистрации или допуске автомобиля в Яндекс Такси.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item for question: \"Что делать, если автомобиль не прошёл проверку или был отклонён?\" in section \"FAQ\". GOAL: Объяснить основные причины отказа, как их устранить, куда обращаться за разъяснениями и повторной проверкой. AUDIENCE: Водители, столкнувшиеся с отказом | Level: beginner/intermediate. KEYWORDS: [что делать при отказе в допуске, причины отказа в регистрации авто, решение проблем с допуском]. semanticFingerprint: Практические шаги при отказе в допуске автомобиля. sourceHint: Internal KB (причины отказа), External KB (типовые ситуации). evidenceStrength: internal-tested. Interlink: ссылка на раздел с инструкцией по устранению отказов. WORD COUNT: minWords: 150, maxWords: 220.",
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "устранение причин отказа"
+                    ],
+                    "selfPrompt": "CONTEXT: Generate paragraph explaining what to do if a car is rejected for Yandex Taxi. ROLE: body. KEYWORDS: [устранение причин отказа]. sourceHint: Internal KB (причины отказа), External KB (разъяснения по отказам). WORD COUNT: minWords: 60, maxWords: 120."
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -8461,5 +8600,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T18:28:27.935Z";
+export const lastUpdated = "2025-10-24T18:29:31.169Z";
 export const generatedBy = "menu-persist-api";
