@@ -1,5 +1,5 @@
 // Auto-generated SEO-optimized static page - do not edit manually
-// Generated on: 2025-10-24T19:44:21.072Z
+// Generated on: 2025-10-24T19:45:02.335Z
 // Source href: /blog/instruktsiya-dispetchera-avtomobilnogo-transporta
 // Page metadata: Инструкция диспетчера автомобильного транспорта — образец, структура, обязанности | 5 sections
 // FAQ sections detected: 4
@@ -44,7 +44,7 @@ const sections = [
           "content": [
             {
               "type": "text",
-              "text": "Инструкция диспетчера автотранспорта: ключ к эффективной работе и снижению рисков"
+              "text": "Инструкция диспетчера автотранспорта: ключ к эффективной работе и снижению рисков."
             }
           ]
         },
@@ -1512,8 +1512,8 @@ export default function Page() {
               "url": "/app-images/uosqlgxkjmuykbyc7r905nn7.jpg",
               "alt": "инструкция диспетчера автомобильного транспорта"
             },
-            "datePublished": "2025-10-24T19:44:21.072Z",
-            "dateModified": "2025-10-24T19:44:21.072Z",
+            "datePublished": "2025-10-24T19:45:02.335Z",
+            "dateModified": "2025-10-24T19:45:02.335Z",
             "articleSection": "blog",
             "keywords": ["инструкция диспетчера автомобильного транспорта"],
             "mainEntityOfPage": {
