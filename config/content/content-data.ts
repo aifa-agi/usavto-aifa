@@ -8060,7 +8060,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-24T17:56:34.960Z",
-        "updatedAt": "2025-10-24T18:10:23.513Z",
+        "updatedAt": "2025-10-24T18:11:30.985Z",
         "order": 6,
         "badgeName": "Блог",
         "description": "Узнайте, на каких машинах можно таксовать в Яндекс: актуальные требования, список подходящих моделей по тарифам и годам. Проверьте свой авто!",
@@ -8304,6 +8304,131 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "процесс подключения к Яндекс Такси",
+              "оформление документов для такси",
+              "технический осмотр автомобиля",
+              "медицинские осмотры водителей",
+              "автоматизация путевых листов",
+              "цифровые сервисы для такси",
+              "контроль соответствия требованиям"
+            ],
+            "taxonomy": "HowTo",
+            "attention": "Пошагово разберитесь, как подготовить автомобиль и документы для легального выхода на линию в Яндекс Такси, используя современные цифровые решения.",
+            "intent": "Дать читателю подробную инструкцию по подготовке автомобиля и водителя к работе в Яндекс Такси, включая оформление документов, прохождение осмотров и использование автоматизированных сервисов.",
+            "audiences": "Водители и владельцы автомобилей, рассматривающие подключение к Яндекс Такси; уровень — начинающий и средний; ищут практические шаги для быстрого старта без ошибок и штрафов.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 section on практические шаги и процесс подготовки автомобиля и водителя к работе в Яндекс Такси for page \"На каких машинах можно таксовать в Яндекс: требования, список моделей\"\n\nGOAL: Подробно описать, как проходит процесс подготовки автомобиля и водителя к работе в Яндекс Такси: какие документы нужны, как проходят технические и медицинские осмотры, как автоматизировать оформление путевых листов и контроль за соответствием требованиям. Объяснить преимущества цифровых платформ (например, USAUTO) для минимизации рисков и экономии времени.\n\nAUDIENCE: Водители и владельцы авто, желающие подключиться к Яндекс Такси | Уровень: начинающий/средний | Pain points: страх ошибок, боязнь штрафов, нехватка времени на бумажную волокиту.\n\nKEYWORDS TO INTEGRATE:\n[процесс подключения к Яндекс Такси, оформление документов для такси, технический осмотр автомобиля, медицинские осмотры водителей, автоматизация путевых листов, цифровые сервисы для такси, контроль соответствия требованиям]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: h2 section with nested h3, p, ol, code as per structure\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: требования к документам, автоматизация через платформу USAUTO, медицинские и технические осмотры\n- SECONDARY: Apply insights from External KB: общие шаги подключения, стандартные процедуры оформления\n\nQUALITY CRITERIA:\n- Actionable (чёткие шаги и рекомендации)\n- Specific (без общих фраз)\n- Data-backed (факты и примеры из KB)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальный раздел, раскрывающий именно процесс подготовки и оформления для допуска к работе в Яндекс Такси с акцентом на цифровые решения.\n- sourceHint: Internal KB (процедуры, автоматизация), External KB (стандарты рынка)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nINTERLINK PLANNING:\n- internalLinks: страница о лицензировании такси, гайд по медицинским осмотрам, инструкция по цифровым платформам для такси\n- externalLinks: не использовать (приоритет внутренним материалам)\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)\n",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-3-1",
+                "tag": "p",
+                "keywords": [
+                  "процесс подключения к Яндекс Такси",
+                  "оформление документов для такси"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, с чего начать подготовку автомобиля и документов для выхода на линию.",
+                "intent": "Ввести пользователя в тему пошаговой подготовки к работе в Яндекс Такси, обозначить важность правильного оформления документов и соблюдения процедур.",
+                "audiences": "Водители, впервые сталкивающиеся с процедурой подключения к сервису; уровень — начинающий.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for section on процесс подготовки автомобиля и водителя к работе в Яндекс Такси.\nGOAL: Кратко объяснить, почему важно соблюдать все этапы подготовки и как это влияет на легальность и безопасность работы.\nROLE: intro\nKEYWORDS: процесс подключения к Яндекс Такси, оформление документов для такси\nWORD COUNT: minWords: 90, maxWords: 170\nsemanticFingerprint: Вводный абзац, подчеркивающий значимость соблюдения всех процедур для успешного старта.\nsourceHint: Internal KB (процедуры подключения)\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 90,
+                  "maxWords": 170,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-3-2",
+                "tag": "h3",
+                "keywords": [
+                  "технический осмотр автомобиля",
+                  "медицинские осмотры водителей",
+                  "автоматизация путевых листов",
+                  "цифровые сервисы для такси",
+                  "контроль соответствия требованиям"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Следуйте пошаговой инструкции, чтобы быстро и без ошибок пройти все этапы допуска к работе.",
+                "intent": "Дать подробную инструкцию по прохождению технических и медицинских осмотров, а также автоматизации оформления документов для работы в Яндекс Такси.",
+                "audiences": "Водители и владельцы авто, желающие упростить и ускорить процесс допуска; уровень — средний.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection on \"Пошаговая инструкция: подготовка автомобиля и документов\" under h2 \"Практические шаги и процесс подготовки автомобиля и водителя к работе в Яндекс Такси\".\nGOAL: Раскрыть конкретные шаги: технический и медицинский осмотр, оформление путевых листов, использование цифровых платформ для автоматизации.\nREFERENCE: Builds upon h2-3 intent.\nKEYWORDS: технический осмотр автомобиля, медицинские осмотры водителей, автоматизация путевых листов, цифровые сервисы для такси, контроль соответствия требованиям\nWORD COUNT: minWords: 180, maxWords: 280\nsemanticFingerprint: Подробная инструкция по подготовке авто и документов с акцентом на цифровые решения.\nsourceHint: Internal KB (процедуры, автоматизация), External KB (стандартные шаги)\nevidenceStrength: internal-tested\nINTERLINK: Внутренняя ссылка на статью о цифровых сервисах для такси.",
+                "additionalData": {
+                  "minWords": 180,
+                  "maxWords": 280,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "технический осмотр автомобиля",
+                      "медицинские осмотры водителей"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Поймите, почему регулярные осмотры — залог безопасности и легальности.",
+                    "intent": "Объяснить важность и порядок прохождения технических и медицинских осмотров для допуска к работе.",
+                    "audiences": "Водители, желающие избежать штрафов и простоев; уровень — средний.",
+                    "selfPrompt": "CONTEXT: Generate paragraph explaining the necessity and process of technical and medical checks for taxi drivers.\nROLE: body\nKEYWORDS: технический осмотр автомобиля, медицинские осмотры водителей\nWORD COUNT: minWords: 75, maxWords: 140\nsemanticFingerprint: Абзац, раскрывающий обязательность и этапы осмотров для допуска.\nsourceHint: Internal KB (осмотры, требования)\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 140,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-2-2",
+                    "tag": "ol",
+                    "keywords": [
+                      "автоматизация путевых листов",
+                      "цифровые сервисы для такси"
+                    ],
+                    "taxonomy": "Actionable",
+                    "attention": "Воспользуйтесь этим списком для быстрого старта без ошибок.",
+                    "intent": "Дать пошаговую последовательность действий по подготовке документов и прохождению процедур.",
+                    "audiences": "Водители, которым нужна чёткая инструкция; уровень — начинающий.",
+                    "selfPrompt": "CONTEXT: Generate ordered list (5 steps) outlining the process of preparing documents and passing checks for Яндекс Такси.\nROLE: steps\nKEYWORDS: автоматизация путевых листов, цифровые сервисы для такси\nWORD COUNT: minWords: 50, maxWords: 90\nList items: 5, each 10-20 words, actionable steps.\nsemanticFingerprint: Список конкретных шагов для допуска к работе.\nsourceHint: Internal KB (процедуры), External KB (стандартные шаги)\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 90,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-3-2-3",
+                    "tag": "code",
+                    "keywords": [
+                      "контроль соответствия требованиям"
+                    ],
+                    "taxonomy": "technical",
+                    "attention": "Пример автоматизации: как цифровая платформа помогает отслеживать статус документов.",
+                    "intent": "Показать на примере кода, как работает автоматизированная проверка соответствия документов и осмотров.",
+                    "audiences": "Владельцы автопарков и ИП, интересующиеся цифровыми решениями; уровень — средний.",
+                    "selfPrompt": "CONTEXT: Generate code snippet (JSON or pseudo-code) demonstrating automated document status check for taxi compliance.\nROLE: example\nKEYWORDS: контроль соответствия требованиям\nWORD COUNT: minWords: 20, maxWords: 50\nCode: 5-10 lines, показывает структуру автоматизированной проверки.\nsemanticFingerprint: Пример кода для автоматизации контроля допуска.\nsourceHint: Internal KB (цифровые решения)\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 50,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -8336,5 +8461,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T18:26:58.331Z";
+export const lastUpdated = "2025-10-24T18:28:27.935Z";
 export const generatedBy = "menu-persist-api";
