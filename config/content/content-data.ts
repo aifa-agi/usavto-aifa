@@ -985,6 +985,9 @@ export const contentData = {
             "alt": "найти работу в такси",
             "href": "/app-images/dskw5mwpqeoj9t3v14bpainc.jpg"
           }
+        ],
+        "keywords": [
+          "найти работу в такси"
         ]
       }
     ],
@@ -1016,5 +1019,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-24T19:01:28.338Z";
+export const lastUpdated = "2025-10-24T19:01:47.590Z";
 export const generatedBy = "menu-persist-api";
