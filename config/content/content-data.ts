@@ -1094,7 +1094,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-25T17:06:21.698Z",
-        "updatedAt": "2025-10-25T17:20:12.763Z",
+        "updatedAt": "2025-10-25T17:20:27.977Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как обратиться в службу поддержки Яндекс Такси: актуальные телефоны, онлайн-чат, приложение и советы для быстрого решения любых вопросов!",
@@ -1735,7 +1735,8 @@ export const contentData = {
               }
             ]
           }
-        ]
+        ],
+        "isReadyDraftForPerplexity": true
       }
     ],
     "order": 16
@@ -1766,5 +1767,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T17:35:53.584Z";
+export const lastUpdated = "2025-10-25T17:36:01.198Z";
 export const generatedBy = "menu-persist-api";
