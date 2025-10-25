@@ -1150,7 +1150,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-25T18:10:38.573Z",
-        "updatedAt": "2025-10-25T18:27:22.529Z",
+        "updatedAt": "2025-10-25T18:27:28.375Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, какой опыт вождения нужен для работы в Яндекс Такси: требования к стажу, советы новичкам и альтернативные варианты. Подайте заявку сейчас!",
@@ -1580,7 +1580,8 @@ export const contentData = {
                   "minWords": 70,
                   "maxWords": 130,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-FAQ-1",
@@ -1608,9 +1609,11 @@ export const contentData = {
                       "старт без стажа",
                       "варианты для новичков"
                     ],
-                    "selfPrompt": "CONTEXT: Generate answer paragraph for FAQ 'Можно ли работать в Яндекс Такси без стажа?'\nROLE: body\nGOAL: Дать чёткий ответ, что формально требуется стаж, но есть альтернативные пути (обучение, курьерство, временные схемы через партнёров), с actionable советом для новичков.\nKEYWORDS: [старт без стажа, варианты для новичков]\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Практический совет для новичков без стажа, не повторяя формальные требования.\nsourceHint: Internal KB (поддержка и обучение), External KB (советы для новичков)\nevidenceStrength: internal-tested"
+                    "selfPrompt": "CONTEXT: Generate answer paragraph for FAQ 'Можно ли работать в Яндекс Такси без стажа?'\nROLE: body\nGOAL: Дать чёткий ответ, что формально требуется стаж, но есть альтернативные пути (обучение, курьерство, временные схемы через партнёров), с actionable советом для новичков.\nKEYWORDS: [старт без стажа, варианты для новичков]\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Практический совет для новичков без стажа, не повторяя формальные требования.\nsourceHint: Internal KB (поддержка и обучение), External KB (советы для новичков)\nevidenceStrength: internal-tested",
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "FAQ-2",
@@ -1638,9 +1641,11 @@ export const contentData = {
                       "расчёт стажа",
                       "подтверждение водительских данных"
                     ],
-                    "selfPrompt": "CONTEXT: Generate answer paragraph for FAQ 'Как считается стаж вождения для Яндекс Такси?'\nROLE: body\nGOAL: Дать чёткий ответ, что стаж считается по дате выдачи прав категории B, какие документы нужны, и как проходит проверка.\nKEYWORDS: [расчёт стажа, подтверждение водительских данных]\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Практическое разъяснение расчёта стажа и подтверждающих документов.\nsourceHint: Internal KB (регламент стажа), External KB (процедура проверки)\nevidenceStrength: internal-tested"
+                    "selfPrompt": "CONTEXT: Generate answer paragraph for FAQ 'Как считается стаж вождения для Яндекс Такси?'\nROLE: body\nGOAL: Дать чёткий ответ, что стаж считается по дате выдачи прав категории B, какие документы нужны, и как проходит проверка.\nKEYWORDS: [расчёт стажа, подтверждение водительских данных]\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Практическое разъяснение расчёта стажа и подтверждающих документов.\nsourceHint: Internal KB (регламент стажа), External KB (процедура проверки)\nevidenceStrength: internal-tested",
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "FAQ-3",
@@ -1668,9 +1673,11 @@ export const contentData = {
                       "регулярные медосмотры",
                       "повышение квалификации"
                     ],
-                    "selfPrompt": "CONTEXT: Generate answer paragraph for FAQ 'Есть ли дополнительные требования к водителям Яндекс Такси кроме стажа?'\nROLE: body\nGOAL: Дать чёткий перечень дополнительных требований: медосмотры, обучение, техническое состояние авто, дисциплина.\nKEYWORDS: [регулярные медосмотры, повышение квалификации]\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Практический список дополнительных требований для водителей.\nsourceHint: Internal KB (медосмотры, обучение), External KB (советы по подготовке)\nevidenceStrength: internal-tested"
+                    "selfPrompt": "CONTEXT: Generate answer paragraph for FAQ 'Есть ли дополнительные требования к водителям Яндекс Такси кроме стажа?'\nROLE: body\nGOAL: Дать чёткий перечень дополнительных требований: медосмотры, обучение, техническое состояние авто, дисциплина.\nKEYWORDS: [регулярные медосмотры, повышение квалификации]\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Практический список дополнительных требований для водителей.\nsourceHint: Internal KB (медосмотры, обучение), External KB (советы по подготовке)\nevidenceStrength: internal-tested",
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "FAQ-4",
@@ -1698,11 +1705,14 @@ export const contentData = {
                       "чек-лист для новичков",
                       "быстрый старт в Яндекс Такси"
                     ],
-                    "selfPrompt": "CONTEXT: Generate answer paragraph for FAQ 'Какие советы помогут новичкам быстро пройти все этапы допуска и избежать ошибок?'\nROLE: body\nGOAL: Дать 3-5 actionable совета: подготовить документы заранее, пройти онлайн-обучение, выбрать проверенный парк, использовать поддержку, не затягивать с медосмотром.\nKEYWORDS: [чек-лист для новичков, быстрый старт в Яндекс Такси]\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Практический чек-лист для быстрого старта и минимизации ошибок.\nsourceHint: Internal KB (чек-листы и поддержка), External KB (ошибки новичков)\nevidenceStrength: internal-tested"
+                    "selfPrompt": "CONTEXT: Generate answer paragraph for FAQ 'Какие советы помогут новичкам быстро пройти все этапы допуска и избежать ошибок?'\nROLE: body\nGOAL: Дать 3-5 actionable совета: подготовить документы заранее, пройти онлайн-обучение, выбрать проверенный парк, использовать поддержку, не затягивать с медосмотром.\nKEYWORDS: [чек-лист для новичков, быстрый старт в Яндекс Такси]\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Практический чек-лист для быстрого старта и минимизации ошибок.\nsourceHint: Internal KB (чек-листы и поддержка), External KB (ошибки новичков)\nevidenceStrength: internal-tested",
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-5",
@@ -1838,5 +1848,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T18:42:53.955Z";
+export const lastUpdated = "2025-10-25T18:43:02.194Z";
 export const generatedBy = "menu-persist-api";
