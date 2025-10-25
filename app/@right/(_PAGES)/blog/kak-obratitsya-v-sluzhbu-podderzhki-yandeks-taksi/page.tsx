@@ -1,5 +1,5 @@
 // Auto-generated SEO-optimized static page - do not edit manually
-// Generated on: 2025-10-25T17:41:30.703Z
+// Generated on: 2025-10-25T17:42:06.805Z
 // Source href: /blog/kak-obratitsya-v-sluzhbu-podderzhki-yandeks-taksi
 // Page metadata: Как обратиться в службу поддержки Яндекс Такси — все способы связи | 5 sections
 // FAQ sections detected: 4
@@ -44,7 +44,7 @@ const sections = [
           "content": [
             {
               "type": "text",
-              "text": "Как обратиться в службу поддержки Яндекс Такси: все способы и советы"
+              "text": "Как обратиться в службу поддержки Яндекс Такси: все способы и советы."
             }
           ]
         },
@@ -1715,8 +1715,8 @@ export default function Page() {
               "url": "/app-images/m94rwz7kkdo5g2s8s23v178m.png",
               "alt": " как обратиться в службу поддержки яндекс такси"
             },
-            "datePublished": "2025-10-25T17:41:30.703Z",
-            "dateModified": "2025-10-25T17:41:30.703Z",
+            "datePublished": "2025-10-25T17:42:06.805Z",
+            "dateModified": "2025-10-25T17:42:06.805Z",
             "articleSection": "blog",
             "keywords": [" как обратиться в службу поддержки яндекс такси"],
             "mainEntityOfPage": {
