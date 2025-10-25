@@ -1150,7 +1150,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-25T18:10:38.573Z",
-        "updatedAt": "2025-10-25T18:21:40.871Z",
+        "updatedAt": "2025-10-25T18:23:08.167Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, какой опыт вождения нужен для работы в Яндекс Такси: требования к стажу, советы новичкам и альтернативные варианты. Подайте заявку сейчас!",
@@ -1393,6 +1393,130 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "практические шаги для водителей",
+              "процедура допуска к работе",
+              "проверка документов Яндекс Такси",
+              "алгоритм подачи заявки",
+              "медицинские осмотры для такси",
+              "онлайн обучение водителей",
+              "автоматизация контроля водителей"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Пошаговая инструкция и реальные сценарии: как пройти проверку, какие этапы предстоят и как ускорить старт работы в Яндекс Такси.",
+            "intent": "Дать читателю подробный, практический алгоритм действий для успешного допуска к работе в Яндекс Такси, включая проверку документов, медицинские требования, обучение и автоматизацию контроля.",
+            "audiences": "Кандидаты на работу в Яндекс Такси с минимальным или средним опытом, которые хотят понять, как реально проходит процесс допуска и что нужно сделать для быстрого старта.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 section focused on практические шаги и алгоритм допуска к работе в Яндекс Такси for page \"Какой опыт вождения нужен для работы в Яндекс Такси: требования и советы\"\n\nGOAL: Дать подробную, структурированную инструкцию по прохождению всех этапов допуска к работе в Яндекс Такси: от подачи заявки и проверки документов до прохождения медицинских осмотров и обучения, с акцентом на автоматизацию и поддержку со стороны платформы.\n\nAUDIENCE: Кандидаты на работу в Яндекс Такси | Level: beginner/intermediate | Pain points: неясность этапов допуска, страх ошибок, желание ускорить процесс\n\nKEYWORDS TO INTEGRATE:\n[практические шаги для водителей, процедура допуска к работе, проверка документов Яндекс Такси, алгоритм подачи заявки, медицинские осмотры для такси, онлайн обучение водителей, автоматизация контроля водителей]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with nested h3, p, ol, code as per structure\n\nWRITING STYLE: Story-driven, engaging storytelling approach\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: обучение и сопровождение водителей, медицинские и технические требования, автоматизация контроля\n- SECONDARY: Apply insights from External KB: стандартные этапы допуска, алгоритмы подачи заявки, советы по ускорению процесса\n\nQUALITY CRITERIA:\n- Actionable (пошаговые инструкции)\n- Specific (точные этапы и требования)\n- Data-backed (ссылки на регламенты, внутренние сервисы)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: \"Пошаговый алгоритм допуска к работе в Яндекс Такси с акцентом на автоматизацию и поддержку.\"\n- sourceHint: \"Internal KB: обучение, медосмотры, автоматизация; External KB: стандартные этапы допуска\"\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference previous sections (требования и стаж) как базу\n- Должен задавать практический вектор для следующих разделов (альтернативные пути, советы)\n- Interlink planning: внутренние ссылки на страницы о медицинских осмотрах, обучении водителей, автоматизации контроля\n- Schema readiness: HowToPage (структурированные шаги)\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-3-1",
+                "tag": "p",
+                "keywords": [
+                  "процесс допуска к работе",
+                  "этапы проверки водителя"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, как на практике выглядит путь от подачи заявки до допуска к работе в Яндекс Такси.",
+                "intent": "Ввести пользователя в практический процесс допуска, обозначить основные этапы и их последовательность.",
+                "audiences": "Новички и кандидаты, которые хотят понять, что их ждёт после подачи заявки.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate introductory paragraph for h2 section \"Пошаговый алгоритм допуска к работе в Яндекс Такси\"\nGOAL: Кратко описать общий процесс допуска к работе, обозначить ключевые этапы (подача заявки, проверка документов, медосмотр, обучение, автоматизация контроля).\nAUDIENCE: Новички, кандидаты | Level: beginner/intermediate | Pain points: неясность этапов\nKEYWORDS TO INTEGRATE: [процесс допуска к работе, этапы проверки водителя]\nWORD COUNT: minWords: 90, maxWords: 170\nMARKDOWN/MDX SYNTAX: Paragraph (intro)\nWRITING STYLE: Narrative\nCONTENT FORMAT: Simple\nsourceHint: Internal KB (алгоритм допуска, сопровождение водителей)\nevidenceStrength: internal-tested\nsemanticFingerprint: \"Введение в практический алгоритм допуска к работе в Яндекс Такси.\"\nPAGE SETTINGS: Writing Style: Narrative, Content Format: Simple, Custom Requirements: Applied",
+                "additionalData": {
+                  "minWords": 90,
+                  "maxWords": 170,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-3-2",
+                "tag": "h3",
+                "keywords": [
+                  "алгоритм подачи заявки",
+                  "онлайн регистрация водителя",
+                  "медицинский осмотр для такси",
+                  "обучение и тестирование",
+                  "автоматизированный контроль допуска"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Следуйте подробному алгоритму — от регистрации до допуска: что делать на каждом этапе и как избежать ошибок.",
+                "intent": "Дать подробную, пошаговую инструкцию по прохождению всех этапов допуска к работе в Яндекс Такси, включая автоматизацию и поддержку.",
+                "audiences": "Кандидаты и действующие водители, которым важно быстро и без ошибок пройти все этапы допуска.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h3 subsection for h2 \"Пошаговый алгоритм допуска к работе в Яндекс Такси\"\nGOAL: Подробно расписать каждый этап допуска: онлайн регистрация, проверка документов, медосмотр, обучение, автоматизация контроля. Дать советы по ускорению процесса и минимизации ошибок.\nAUDIENCE: Кандидаты, водители | Level: beginner/intermediate | Pain points: сложность процесса, страх ошибок\nKEYWORDS TO INTEGRATE: [алгоритм подачи заявки, онлайн регистрация водителя, медицинский осмотр для такси, обучение и тестирование, автоматизированный контроль допуска]\nWORD COUNT: minWords: 180, maxWords: 280\nMARKDOWN/MDX SYNTAX: H3 with nested p, ol, code\nWRITING STYLE: Narrative\nCONTENT FORMAT: Simple\nsemanticFingerprint: \"Детализированный алгоритм допуска с акцентом на автоматизацию и поддержку.\"\nsourceHint: Internal KB (алгоритм, автоматизация), External KB (стандартные этапы)\nevidenceStrength: internal-tested | external-peer-reviewed\nInterlink planning: внутренние ссылки на страницы о медосмотрах, обучении, автоматизации\nPAGE SETTINGS: Writing Style: Narrative, Content Format: Simple, Custom Requirements: Applied",
+                "additionalData": {
+                  "minWords": 180,
+                  "maxWords": 280,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "регистрация в системе",
+                      "первичная проверка данных"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Поймите, как начинается процесс допуска и что важно на старте.",
+                    "intent": "Объяснить, как проходит регистрация и первичная проверка данных кандидата.",
+                    "audiences": "Кандидаты, которые впервые сталкиваются с процессом допуска.",
+                    "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate paragraph for h3 \"Пошаговый алгоритм допуска к работе в Яндекс Такси\"\nGOAL: Описать этап регистрации и первичной проверки данных, выделить важные нюансы.\nAUDIENCE: Кандидаты | Level: beginner/intermediate | Pain points: неясность старта\nKEYWORDS TO INTEGRATE: [регистрация в системе, первичная проверка данных]\nWORD COUNT: minWords: 75, maxWords: 140\nMARKDOWN/MDX SYNTAX: Paragraph (body)\nWRITING STYLE: Narrative\nCONTENT FORMAT: Simple\nsourceHint: Internal KB (регистрация, сопровождение)\nevidenceStrength: internal-tested\nsemanticFingerprint: \"Пояснение этапа регистрации и проверки данных.\"\nPAGE SETTINGS: Writing Style: Narrative, Content Format: Simple, Custom Requirements: Applied",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 140,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-2-2",
+                    "tag": "ol",
+                    "keywords": [
+                      "этапы допуска в Яндекс Такси"
+                    ],
+                    "taxonomy": "HowTo",
+                    "attention": "Следуйте этим шагам для успешного допуска.",
+                    "intent": "Дать структурированный список ключевых этапов допуска к работе в Яндекс Такси.",
+                    "audiences": "Кандидаты, которым нужна пошаговая инструкция.",
+                    "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate ordered list for h3 \"Пошаговый алгоритм допуска к работе в Яндекс Такси\"\nGOAL: Перечислить 5-7 ключевых этапов допуска: регистрация, проверка документов, медосмотр, обучение, тестирование, автоматизация контроля, финальный допуск.\nAUDIENCE: Кандидаты | Level: beginner/intermediate | Pain points: неясность последовательности\nKEYWORDS TO INTEGRATE: [этапы допуска в Яндекс Такси]\nWORD COUNT: minWords: 50, maxWords: 90\nMARKDOWN/MDX SYNTAX: Ordered list, 5-7 пунктов, каждый по 10-15 слов\nWRITING STYLE: Narrative\nCONTENT FORMAT: Simple\nsourceHint: Internal KB (алгоритм допуска), External KB (стандартные этапы)\nevidenceStrength: internal-tested | external-peer-reviewed\nsemanticFingerprint: \"Структурированный список этапов допуска.\"\nPAGE SETTINGS: Writing Style: Narrative, Content Format: Simple, Custom Requirements: Applied",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 90,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-3-2-3",
+                    "tag": "code",
+                    "keywords": [
+                      "пример автоматизации допуска"
+                    ],
+                    "taxonomy": "technical",
+                    "attention": "Увидьте, как автоматизация помогает ускорить процесс допуска.",
+                    "intent": "Показать пример автоматизированного контроля допуска с помощью цифровых инструментов.",
+                    "audiences": "Технически ориентированные кандидаты и парки, интересующиеся автоматизацией.",
+                    "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate code block for h3 \"Пошаговый алгоритм допуска к работе в Яндекс Такси\"\nGOAL: Привести короткий пример (псевдокод или JSON) автоматизации допуска водителя: проверка документов, медосмотра, обучения.\nAUDIENCE: Технически ориентированные кандидаты, парки | Level: intermediate | Pain points: ручная проверка, ошибки\nKEYWORDS TO INTEGRATE: [пример автоматизации допуска]\nWORD COUNT: minWords: 20, maxWords: 50\nMARKDOWN/MDX SYNTAX: Code block (JSON или псевдокод, 5-10 строк)\nWRITING STYLE: Narrative (для комментариев)\nCONTENT FORMAT: Simple\nsourceHint: Internal KB (автоматизация контроля)\nevidenceStrength: internal-tested\nsemanticFingerprint: \"Пример автоматизации допуска водителя.\"\nPAGE SETTINGS: Writing Style: Narrative, Content Format: Simple, Custom Requirements: Applied",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 50,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1425,5 +1549,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T18:38:33.892Z";
+export const lastUpdated = "2025-10-25T18:40:50.782Z";
 export const generatedBy = "menu-persist-api";
