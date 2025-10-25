@@ -1094,7 +1094,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-25T17:06:21.698Z",
-        "updatedAt": "2025-10-25T17:17:14.401Z",
+        "updatedAt": "2025-10-25T17:18:44.493Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как обратиться в службу поддержки Яндекс Такси: актуальные телефоны, онлайн-чат, приложение и советы для быстрого решения любых вопросов!",
@@ -1461,6 +1461,196 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "часто задаваемые вопросы яндекс такси",
+              "решение типичных проблем поддержки",
+              "информация о статусе обращения",
+              "время ответа службы поддержки",
+              "ошибки при обращении в поддержку",
+              "повторное обращение в яндекс такси",
+              "советы по взаимодействию с поддержкой"
+            ],
+            "taxonomy": "FAQ",
+            "attention": "Быстро найдите ответы на самые частые вопросы о взаимодействии с поддержкой Яндекс Такси — экономьте время и избегайте типичных ошибок.",
+            "intent": "Собрать и структурировать наиболее распространённые вопросы пользователей о взаимодействии с поддержкой Яндекс Такси, чтобы помочь им самостоятельно решить типовые ситуации и повысить эффективность обращения.",
+            "audiences": "Пассажиры и водители Яндекс Такси, которые сталкиваются с повторяющимися вопросами или проблемами при обращении в поддержку; уровень — начинающий и средний; боль — долгое ожидание ответа, неясность статуса обращения, ошибки при заполнении заявки.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 FAQ section for page \"Как обратиться в службу поддержки Яндекс Такси — все способы связи\"\n\nGOAL: Сформировать структурированный раздел с ответами на самые распространённые вопросы пользователей о взаимодействии с поддержкой Яндекс Такси, чтобы повысить самостоятельность пользователей, снизить нагрузку на операторов и ускорить решение типовых проблем.\n\nAUDIENCE: Пассажиры и водители Яндекс Такси | Level: начинающий/средний | Pain points: долгое ожидание ответа, неясность статуса обращения, ошибки при заполнении заявки\n\nKEYWORDS TO INTEGRATE:\n[часто задаваемые вопросы яндекс такси, решение типичных проблем поддержки, информация о статусе обращения, время ответа службы поддержки, ошибки при обращении в поддержку, повторное обращение в яндекс такси, советы по взаимодействию с поддержкой]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with nested H3 for each FAQ, each with a paragraph answer\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: рекомендации по коммуникации с поддержкой, важность прозрачности, цифровые каналы обращения\n- SECONDARY: Apply insights from External KB: типовые вопросы пользователей, советы по ускорению ответа, частые ошибки\n\nQUALITY CRITERIA:\n- Actionable (конкретные советы и ответы)\n- Specific (без общих фраз)\n- Data-backed (факты и рекомендации из KB)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Сборник конкретных ответов на частые вопросы по взаимодействию с поддержкой Яндекс Такси, не дублирует инструкции или обзоры каналов связи.\n- sourceHint: Internal KB (экспертные рекомендации), External KB (актуальные вопросы пользователей)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Для каждого H3: уникальный вопрос, не повторяющий темы предыдущих разделов\n- Для каждого P: краткий, конкретный и полезный ответ\n- FAQPage schema readiness: да\n- В конце selfPrompt: \n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "keywords": [
+                  "часто задаваемые вопросы яндекс такси",
+                  "решение типичных проблем поддержки"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Этот абзац поможет быстро сориентироваться в разделе FAQ и понять, как использовать ответы для самостоятельного решения вопросов.",
+                "intent": "Ввести пользователя в раздел FAQ, объяснить его структуру и пользу для самостоятельного поиска решений.",
+                "audiences": "Пользователи, которые хотят быстро найти ответ на свой вопрос без обращения к оператору; уровень — начинающий.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for FAQ section (role: intro)\nGOAL: Кратко объяснить, что в этом разделе собраны ответы на самые частые вопросы по поддержке Яндекс Такси, и как им пользоваться.\nKEYWORDS: часто задаваемые вопросы яндекс такси, решение типичных проблем поддержки (no sibling overlap)\nWORD COUNT: minWords: 70, maxWords: 130\nsemanticFingerprint: Вводный абзац, поясняющий структуру и пользу FAQ для самостоятельного поиска решений.\nsourceHint: Internal KB (структурирование поддержки), External KB (популярные вопросы)\nevidenceStrength: internal-tested\n",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "keywords": [
+                  "статус обращения в поддержку",
+                  "отслеживание решения проблемы",
+                  "информация о статусе обращения",
+                  "ожидание ответа поддержки",
+                  "FAQ яндекс такси"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, как проверить статус вашего обращения и когда ждать ответа от поддержки.",
+                "intent": "Ответить на вопрос о том, как пользователь может узнать статус своего обращения и сколько обычно занимает ожидание ответа.",
+                "audiences": "Пользователи, ожидающие решения своей проблемы; уровень — начинающий; боль — неясность сроков и статуса.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item for question 'Как узнать статус обращения в поддержку и сколько ждать ответа?' (parent H2: FAQ)\nGOAL: Дать чёткий и конкретный ответ о способах отслеживания статуса обращения и средних сроках ответа поддержки Яндекс Такси.\nKEYWORDS: статус обращения в поддержку, отслеживание решения проблемы, информация о статусе обращения, ожидание ответа поддержки, FAQ яндекс такси (no sibling overlap)\nWORD COUNT: minWords: 150, maxWords: 220\nsemanticFingerprint: Ответ на вопрос о статусе и сроках рассмотрения обращений в поддержку Яндекс Такси.\nsourceHint: Internal KB (процедуры коммуникации), External KB (средние сроки ответа)\nevidenceStrength: internal-tested | external-peer-reviewed\ninterlink planning: Вставить ссылку на раздел с инструкцией по обращению.\n",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "keywords": [
+                      "статус обращения в поддержку",
+                      "отслеживание решения проблемы"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Этот ответ поможет пользователю самостоятельно контролировать процесс рассмотрения обращения.",
+                    "intent": "Дать конкретные шаги по проверке статуса обращения и объяснить, как долго ждать ответа.",
+                    "audiences": "Пользователи, ожидающие обратной связи от поддержки.",
+                    "selfPrompt": "CONTEXT: Generate paragraph answer for FAQ 'Как узнать статус обращения в поддержку и сколько ждать ответа?'\nROLE: body\nKEYWORDS: статус обращения в поддержку, отслеживание решения проблемы (no sibling overlap)\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Пошаговое объяснение проверки статуса обращения и сроков ответа.\nsourceHint: Internal KB (процедуры), External KB (средние сроки)\nevidenceStrength: internal-tested\n"
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-2",
+                "tag": "h3",
+                "keywords": [
+                  "ошибки при обращении в поддержку",
+                  "корректное заполнение заявки",
+                  "типичные проблемы пользователей",
+                  "FAQ поддержка яндекс такси"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Избегайте распространённых ошибок при обращении — получите больше шансов на быстрое решение вопроса.",
+                "intent": "Объяснить, какие ошибки чаще всего совершают пользователи при обращении в поддержку и как их избежать.",
+                "audiences": "Пользователи, впервые обращающиеся в поддержку; уровень — начинающий; боль — отказ в рассмотрении заявки из-за ошибок.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item for question 'Какие ошибки чаще всего допускают при обращении в поддержку?' (parent H2: FAQ)\nGOAL: Перечислить типичные ошибки при заполнении обращения в поддержку Яндекс Такси и дать советы по их предотвращению.\nKEYWORDS: ошибки при обращении в поддержку, корректное заполнение заявки, типичные проблемы пользователей, FAQ поддержка яндекс такси (no sibling overlap)\nWORD COUNT: minWords: 150, maxWords: 220\nsemanticFingerprint: Ответ на вопрос о типичных ошибках при обращении в поддержку и способах их избежать.\nsourceHint: Internal KB (рекомендации по коммуникации), External KB (частые ошибки пользователей)\nevidenceStrength: internal-tested | external-peer-reviewed\ninterlink planning: Вставить ссылку на раздел с пошаговой инструкцией обращения.\n",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "ошибки при обращении в поддержку",
+                      "корректное заполнение заявки"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Этот ответ поможет избежать отказа в рассмотрении обращения из-за ошибок.",
+                    "intent": "Дать конкретные рекомендации по правильному заполнению заявки и предотвращению типичных ошибок.",
+                    "audiences": "Пользователи, впервые обращающиеся в поддержку.",
+                    "selfPrompt": "CONTEXT: Generate paragraph answer for FAQ 'Какие ошибки чаще всего допускают при обращении в поддержку?'\nROLE: body\nKEYWORDS: ошибки при обращении в поддержку, корректное заполнение заявки (no sibling overlap)\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Перечень типичных ошибок и советы по их предотвращению.\nsourceHint: Internal KB (рекомендации), External KB (ошибки пользователей)\nevidenceStrength: internal-tested\n"
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-3",
+                "tag": "h3",
+                "keywords": [
+                  "повторное обращение в яндекс такси",
+                  "что делать если не ответили",
+                  "эскалация обращения",
+                  "FAQ повторная заявка"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, как действовать, если не получили ответа на своё обращение — не оставайтесь без поддержки.",
+                "intent": "Дать инструкцию, что делать пользователю, если он не получил ответа на своё обращение или проблема не решена.",
+                "audiences": "Пользователи, не получившие ответа или неудовлетворённые решением; уровень — начинающий/средний.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item for question 'Что делать, если не пришёл ответ или проблема не решена?' (parent H2: FAQ)\nGOAL: Дать чёткую инструкцию по повторному обращению, эскалации и альтернативным действиям при отсутствии ответа от поддержки Яндекс Такси.\nKEYWORDS: повторное обращение в яндекс такси, что делать если не ответили, эскалация обращения, FAQ повторная заявка (no sibling overlap)\nWORD COUNT: minWords: 150, maxWords: 220\nsemanticFingerprint: Ответ на вопрос о действиях при отсутствии ответа или нерешённой проблеме.\nsourceHint: Internal KB (процедуры повторного обращения), External KB (советы пользователей)\nevidenceStrength: internal-tested | external-peer-reviewed\ninterlink planning: Вставить ссылку на раздел с контактами альтернативных каналов.\n",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "повторное обращение в яндекс такси",
+                      "что делать если не ответили"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Этот ответ поможет не остаться без решения и ускорить повторное рассмотрение обращения.",
+                    "intent": "Дать чёткие шаги по повторному обращению и эскалации вопроса.",
+                    "audiences": "Пользователи, не получившие ответа.",
+                    "selfPrompt": "CONTEXT: Generate paragraph answer for FAQ 'Что делать, если не пришёл ответ или проблема не решена?'\nROLE: body\nKEYWORDS: повторное обращение в яндекс такси, что делать если не ответили (no sibling overlap)\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Инструкция по повторному обращению и эскалации.\nsourceHint: Internal KB (процедуры), External KB (советы пользователей)\nevidenceStrength: internal-tested\n"
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-4",
+                "tag": "h3",
+                "keywords": [
+                  "советы по взаимодействию с поддержкой",
+                  "эффективная коммуникация с оператором",
+                  "быстрое решение вопроса",
+                  "FAQ советы поддержки"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, как повысить шансы на быстрое и успешное решение вашего вопроса при обращении в поддержку.",
+                "intent": "Дать пользователю практические советы по эффективному взаимодействию с поддержкой Яндекс Такси для ускорения решения вопроса.",
+                "audiences": "Пользователи, желающие получить быстрый и качественный ответ; уровень — любой.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item for question 'Как повысить эффективность обращения в поддержку?' (parent H2: FAQ)\nGOAL: Дать конкретные советы по формулировке обращения, предоставлению информации и коммуникации с оператором для быстрого решения вопроса.\nKEYWORDS: советы по взаимодействию с поддержкой, эффективная коммуникация с оператором, быстрое решение вопроса, FAQ советы поддержки (no sibling overlap)\nWORD COUNT: minWords: 150, maxWords: 220\nsemanticFingerprint: Практические советы по эффективному взаимодействию с поддержкой Яндекс Такси.\nsourceHint: Internal KB (экспертные рекомендации), External KB (советы пользователей)\nevidenceStrength: internal-tested | external-peer-reviewed\ninterlink planning: Вставить ссылку на раздел с общими рекомендациями по обращению.\n",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "советы по взаимодействию с поддержкой",
+                      "эффективная коммуникация с оператором"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Этот ответ поможет повысить шансы на быстрое и успешное решение вопроса.",
+                    "intent": "Дать конкретные рекомендации по формулировке обращения и взаимодействию с оператором.",
+                    "audiences": "Пользователи, желающие ускорить решение вопроса.",
+                    "selfPrompt": "CONTEXT: Generate paragraph answer for FAQ 'Как повысить эффективность обращения в поддержку?'\nROLE: body\nKEYWORDS: советы по взаимодействию с поддержкой, эффективная коммуникация с оператором (no sibling overlap)\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Конкретные советы по коммуникации для быстрого решения вопроса.\nsourceHint: Internal KB (экспертные рекомендации), External KB (советы пользователей)\nevidenceStrength: internal-tested\n"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1493,5 +1683,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T17:34:09.944Z";
+export const lastUpdated = "2025-10-25T17:35:38.306Z";
 export const generatedBy = "menu-persist-api";
