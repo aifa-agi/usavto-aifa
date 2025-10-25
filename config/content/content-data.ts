@@ -1178,7 +1178,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-25T18:48:46.586Z",
-        "updatedAt": "2025-10-25T19:00:52.045Z",
+        "updatedAt": "2025-10-25T19:02:08.433Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Конфигуратор Яндекс Такси 2024: быстрый подбор авто по актуальным требованиям и тарифам. Проверяйте соответствие и подключайтесь выгодно!",
@@ -1265,6 +1265,166 @@ export const contentData = {
                 }
               }
             ]
+          },
+          {
+            "id": "h2-2",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "подбор автомобиля для яндекс такси",
+              "требования к моделям 2024",
+              "допустимые марки авто",
+              "ограничения по возрасту автомобиля",
+              "соответствие тарифам яндекс такси",
+              "региональные особенности",
+              "интерактивная проверка авто"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, какие автомобили подходят для подключения к Яндекс Такси в 2024 году, и проверьте соответствие вашей машины актуальным требованиям сервиса.",
+            "intent": "Дать пользователю структурированное понимание критериев отбора автомобилей для Яндекс Такси в 2024 году, включая допустимые марки, возрастные ограничения и нюансы по тарифам и регионам.",
+            "audiences": "Водители и владельцы таксопарков с базовым и средним опытом, которые хотят быстро определить, подходит ли их автомобиль для работы в Яндекс Такси и избежать ошибок при подключении.",
+            "selfPrompt": "CONTEXT: Generate h2 section outlining технические и регламентные критерии отбора автомобилей для работы в Яндекс Такси в 2024 году для страницы \"Конфигуратор Яндекс Такси 2024 — подбор авто и требования\".\n\nGOAL: Предоставить пользователю структурированную информацию о том, какие автомобили допускаются к работе в Яндекс Такси в 2024 году, с учётом марок, моделей, года выпуска, технических требований и особенностей по тарифам и регионам.\n\nAUDIENCE: Водители и владельцы таксопарков | Level: intermediate | Pain points: Неуверенность в соответствии авто требованиям, риск отказа при подключении, нехватка актуальной информации по моделям и тарифам.\n\nKEYWORDS TO INTEGRATE:\n[подбор автомобиля для яндекс такси, требования к моделям 2024, допустимые марки авто, ограничения по возрасту автомобиля, соответствие тарифам яндекс такси, региональные особенности, интерактивная проверка авто]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 250, maxWords: 400 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with nested paragraphs, table, h3, ul.\n\nWRITING STYLE: Story-driven, engaging storytelling approach\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Internal KB (разделы о критериях отбора, требованиях к моделям, тарифах, региональных нюансах)\n- SECONDARY: External KB (структура классификаторов, примеры таблиц, региональные фильтры)\n\nQUALITY CRITERIA:\n- Actionable (пошаговые рекомендации, примеры)\n- Specific (конкретные марки, года, тарифы)\n- Data-backed (факты из базы знаний)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальный раздел, раскрывающий технические и регламентные критерии допуска авто в Яндекс Такси 2024, с акцентом на марки, возраст и тарифные нюансы.\n- sourceHint: Internal KB (разделы по требованиям и классификаторам), External KB (структура таблиц и фильтров)\n- evidenceStrength: internal-tested\n\nINTERLINK PLANNING:\n- internalLinks: [\"Требования к водителям Яндекс Такси\", \"Как подключить авто к Яндекс Такси\", \"Тарифы Яндекс Такси 2024\"]\n- externalLinks: при необходимости, на официальный классификатор Яндекс Такси\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 250,
+              "maxWords": 400,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-2-1",
+                "tag": "p",
+                "keywords": [
+                  "подбор автомобиля для яндекс такси",
+                  "допустимые марки авто"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Проверьте, входит ли ваша марка и модель в список разрешённых для работы в Яндекс Такси.",
+                "intent": "Кратко ввести пользователя в тему критериев отбора авто, подчеркнув важность правильного выбора для успешного подключения.",
+                "audiences": "Водители, желающие быстро узнать, подходит ли их автомобиль.",
+                "selfPrompt": "CONTEXT: Generate intro paragraph for section on критерии отбора автомобилей для Яндекс Такси 2024.\nGOAL: Кратко объяснить, почему важно знать требования к маркам и моделям авто для подключения к Яндекс Такси.\nAUDIENCE: Водители | Level: intermediate | Pain points: Неуверенность в соответствии авто.\nKEYWORDS: [подбор автомобиля для яндекс такси, допустимые марки авто]\nWORD COUNT: minWords: 80, maxWords: 150\nROLE: intro\nsourceHint: Internal KB (разделы по требованиям)\nevidenceStrength: internal-tested\nsemanticFingerprint: Вводный абзац, мотивирующий пользователя проверить соответствие своего авто.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-2-2-3",
+                "tag": "p",
+                "keywords": [
+                  "ограничения по возрасту автомобиля"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, не превышает ли возраст вашего авто допустимый порог.",
+                "intent": "Кратко выделить важность возрастных ограничений для допуска автомобиля к работе.",
+                "audiences": "Владельцы авто старше 3-5 лет, желающие избежать отказа.",
+                "selfPrompt": "CONTEXT: Generate short transition paragraph on возрастные ограничения автомобилей для Яндекс Такси.\nGOAL: Подчеркнуть, что возраст авто — критичный параметр допуска.\nAUDIENCE: Владельцы авто | Level: intermediate | Pain points: Риск отказа из-за возраста.\nKEYWORDS: [ограничения по возрасту автомобиля]\nWORD COUNT: minWords: 5, maxWords: 15\nROLE: transition\nsourceHint: Internal KB (возрастные требования)\nevidenceStrength: internal-tested\nsemanticFingerprint: Краткая связка о значимости возраста авто.",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-2-2-4",
+                "tag": "table",
+                "keywords": [
+                  "требования к моделям 2024",
+                  "соответствие тарифам яндекс такси"
+                ],
+                "taxonomy": "Data-driven",
+                "attention": "Сравните требования к моделям и возрасту авто по основным тарифам и регионам.",
+                "intent": "Дать пользователю наглядную таблицу с актуальными требованиями к моделям, годам выпуска и тарифам Яндекс Такси.",
+                "audiences": "Водители и таксопарки, выбирающие авто под конкретный тариф.",
+                "selfPrompt": "CONTEXT: Generate comparison table for требования к моделям и возрасту авто по тарифам Яндекс Такси 2024.\nGOAL: Визуализировать соответствие популярных моделей авто требованиям разных тарифов и регионов.\nAUDIENCE: Водители, таксопарки | Level: intermediate | Pain points: Сложность сопоставления требований.\nKEYWORDS: [требования к моделям 2024, соответствие тарифам яндекс такси]\nTABLE SCHEMA: 4 columns × 5-7 rows; Headers: Модель авто | Год выпуска (мин.) | Тариф | Региональные ограничения; Data types: text/number/text/text; Data source: Internal KB (актуальные требования), External KB (структура таблиц)\nWORD COUNT: minWords: 80, maxWords: 160\nschemaReadiness: Dataset/Comparison\nevidenceStrength: internal-tested\nsemanticFingerprint: Таблица-сравнение требований по моделям и тарифам.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-2-2",
+                "tag": "h3",
+                "keywords": [
+                  "региональные особенности",
+                  "интерактивная проверка авто",
+                  "фильтрация по тарифу",
+                  "актуальные примеры моделей",
+                  "проверка соответствия"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Используйте интерактивные фильтры для быстрой проверки соответствия вашего авто по городу и тарифу.",
+                "intent": "Показать, как с помощью конфигуратора можно быстро проверить соответствие автомобиля требованиям Яндекс Такси с учётом города и тарифа.",
+                "audiences": "Водители и таксопарки, желающие ускорить процесс проверки и избежать ошибок.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection on использовании интерактивных фильтров и проверки авто по региону и тарифу для раздела \"Критерии отбора автомобилей для Яндекс Такси 2024\".\nGOAL: Объяснить, как работает интерактивная проверка авто по городу и тарифу, и почему это выгодно пользователю.\nAUDIENCE: Водители, таксопарки | Level: intermediate | Pain points: Долгий ручной поиск, риск ошибки.\nKEYWORDS: [региональные особенности, интерактивная проверка авто, фильтрация по тарифу, актуальные примеры моделей, проверка соответствия]\nWORD COUNT: minWords: 150, maxWords: 250\nsemanticFingerprint: Подраздел о преимуществах и механике интерактивной проверки авто через конфигуратор.\ninterlink planning: [\"Как подключить авто к Яндекс Такси\", \"Тарифы Яндекс Такси 2024\"]\nsourceHint: Internal KB (описание функционала конфигуратора), External KB (примеры фильтров)\nevidenceStrength: internal-tested\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 250,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "региональные особенности",
+                      "фильтрация по тарифу"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Учитывайте специфику требований в вашем городе и по выбранному тарифу.",
+                    "intent": "Объяснить, почему важно учитывать региональные различия и тарифные нюансы при подборе авто.",
+                    "audiences": "Водители, подключающие авто в разных регионах.",
+                    "selfPrompt": "CONTEXT: Generate paragraph on важности региональных особенностей и фильтрации по тарифу для проверки авто.\nGOAL: Пояснить, что требования могут отличаться по городам и тарифам, и это критично для допуска.\nAUDIENCE: Водители | Level: intermediate | Pain points: Ошибки из-за незнания региональных нюансов.\nKEYWORDS: [региональные особенности, фильтрация по тарифу]\nWORD COUNT: minWords: 70, maxWords: 130\nROLE: body\nsourceHint: Internal KB (региональные требования)\nevidenceStrength: internal-tested\nsemanticFingerprint: Пояснение о важности региональных и тарифных фильтров.",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 130,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-2-2-2",
+                    "tag": "ul",
+                    "keywords": [
+                      "интерактивная проверка авто"
+                    ],
+                    "taxonomy": "Actionable",
+                    "attention": "Следуйте этим шагам для быстрой проверки соответствия вашего авто.",
+                    "intent": "Дать пользователю пошаговую инструкцию по использованию интерактивного конфигуратора.",
+                    "audiences": "Водители, впервые использующие онлайн-инструменты проверки.",
+                    "selfPrompt": "CONTEXT: Generate actionable ul list (4-5 items) with шаги по использованию интерактивной проверки авто в конфигураторе.\nGOAL: Пошагово объяснить, как проверить авто по фильтрам города и тарифа.\nAUDIENCE: Водители | Level: intermediate | Pain points: Не знают, как пользоваться конфигуратором.\nKEYWORDS: [интерактивная проверка авто]\nLIST STRUCTURE: 4-5 коротких пунктов (5-10 слов)\nROLE: steps\nsourceHint: Internal KB (описание интерфейса)\nevidenceStrength: internal-tested\nsemanticFingerprint: Список шагов для быстрой проверки авто.",
+                    "additionalData": {
+                      "minWords": 40,
+                      "maxWords": 80,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-2-3",
+                    "tag": "p",
+                    "keywords": [
+                      "актуальные примеры моделей",
+                      "проверка соответствия"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Посмотрите примеры популярных моделей, которые уже успешно подключены.",
+                    "intent": "Привести примеры моделей, которые соответствуют требованиям и успешно используются в Яндекс Такси.",
+                    "audiences": "Водители, выбирающие новое авто для подключения.",
+                    "selfPrompt": "CONTEXT: Generate paragraph with актуальные примеры моделей авто, прошедших проверку соответствия.\nGOAL: Дать пользователю уверенность, показав реальные примеры подходящих моделей.\nAUDIENCE: Водители | Level: intermediate | Pain points: Сомнения в выборе модели.\nKEYWORDS: [актуальные примеры моделей, проверка соответствия]\nWORD COUNT: minWords: 60, maxWords: 100\nROLE: summary\nsourceHint: Internal KB (статистика подключённых авто)\nevidenceStrength: internal-tested\nsemanticFingerprint: Примеры моделей, успешно прошедших проверку.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 100,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1297,5 +1457,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T19:17:33.893Z";
+export const lastUpdated = "2025-10-25T19:20:11.095Z";
 export const generatedBy = "menu-persist-api";
