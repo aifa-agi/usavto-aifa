@@ -1094,7 +1094,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-25T17:06:21.698Z",
-        "updatedAt": "2025-10-25T17:16:17.550Z",
+        "updatedAt": "2025-10-25T17:17:14.401Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как обратиться в службу поддержки Яндекс Такси: актуальные телефоны, онлайн-чат, приложение и советы для быстрого решения любых вопросов!",
@@ -1336,6 +1336,131 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "пошаговая инструкция обращения",
+              "процесс подачи обращения",
+              "подготовка к обращению",
+              "документы для поддержки",
+              "эффективное взаимодействие с поддержкой",
+              "решение сложных ситуаций",
+              "советы по ускорению ответа"
+            ],
+            "taxonomy": "HowTo",
+            "attention": "Узнайте, как правильно и быстро оформить обращение в поддержку Яндекс Такси, чтобы получить максимально оперативный и точный ответ.",
+            "intent": "Дать пользователю практическую инструкцию по подготовке и отправке обращения в службу поддержки Яндекс Такси, включая сбор необходимых данных, оформление запроса и рекомендации для ускорения решения проблемы.",
+            "audiences": "Пассажиры и водители Яндекс Такси, которые столкнулись с проблемой и хотят повысить эффективность своего обращения в поддержку; уровень — начинающий и средний пользователь, заинтересованный в быстром результате.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 section focused on практические шаги и рекомендации по подготовке и отправке обращения в поддержку Яндекс Такси для страницы \"Как обратиться в службу поддержки Яндекс Такси — все способы связи\"\n\nGOAL: Подробно описать процесс подготовки к обращению, какие данные и документы собрать, как правильно оформить запрос, чтобы повысить шансы на быстрое и точное решение проблемы. Включить советы по эффективному взаимодействию с поддержкой и ускорению ответа.\n\nAUDIENCE: Пассажиры и водители Яндекс Такси | Level: начинающий/средний | Pain points: не знают, как правильно обратиться, теряют время из-за неполных данных, хотят получить быстрый ответ.\n\nKEYWORDS TO INTEGRATE:\n[пошаговая инструкция обращения, процесс подачи обращения, подготовка к обращению, документы для поддержки, эффективное взаимодействие с поддержкой, решение сложных ситуаций, советы по ускорению ответа]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with nested H3, P, OL, CODE as per structure\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: Блок 1 (общие рекомендации), Блок 2 (прозрачность и честность), Блок 3 (цифровые каналы)\n- SECONDARY: Apply insights from External KB: советы по ускорению ответа, специфика подачи обращения, примеры эффективных обращений\n\nQUALITY CRITERIA:\n- Actionable (конкретные шаги и рекомендации)\n- Specific (что подготовить, как оформить)\n- Data-backed (основано на опыте и отраслевых стандартах)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Пошаговая инструкция по подготовке и отправке обращения в поддержку Яндекс Такси с советами по ускорению ответа.\n- sourceHint: Internal KB (рекомендации по обращению в поддержку), External KB (советы по ускорению ответа)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference previous sections (обзор каналов связи) и не дублировать их.\n- Дать уникальную ценность: именно процесс и подготовка обращения, а не сами каналы.\n- В selfPrompt для вложенных элементов уточнять их роль (интро, список шагов, пример оформления обращения).\n- Добавить interlink planning: внутренние ссылки на FAQ по типовым проблемам, инструкции по использованию приложения.\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)\n",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-3-1",
+                "tag": "p",
+                "keywords": [
+                  "подготовка к обращению",
+                  "документы для поддержки"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Перед обращением важно собрать все необходимые данные и документы для ускорения решения вопроса.",
+                "intent": "Объяснить пользователю, почему важно заранее подготовить информацию и какие данные понадобятся для обращения в поддержку.",
+                "audiences": "Пользователи, которые впервые сталкиваются с обращением в поддержку и хотят избежать задержек из-за неполных данных.",
+                "selfPrompt": "CONTEXT: Generate intro paragraph in section \"Пошаговая инструкция обращения\". ROLE: Вводный абзац, объясняющий важность подготовки к обращению в поддержку Яндекс Такси. KEYWORDS: подготовка к обращению, документы для поддержки. WORD COUNT: minWords: 90, maxWords: 170. MARKDOWN: Paragraph. SOURCE: Internal KB (Блок 1, Блок 2). semanticFingerprint: Важность сбора информации и документов до обращения. sourceHint: Internal KB. evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 90,
+                  "maxWords": 170,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-3-2",
+                "tag": "h3",
+                "keywords": [
+                  "процесс подачи обращения",
+                  "эффективное взаимодействие с поддержкой",
+                  "решение сложных ситуаций",
+                  "советы по ускорению ответа",
+                  "структура обращения"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Следуйте пошаговой инструкции, чтобы ваше обращение было рассмотрено максимально быстро и результативно.",
+                "intent": "Дать подробную инструкцию по оформлению и отправке обращения в поддержку Яндекс Такси, включая советы по формулировке запроса и ускорению ответа.",
+                "audiences": "Пользователи, которые хотят получить быстрый и точный ответ от поддержки; уровень — начинающий/средний.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection in h2 \"Пошаговая инструкция обращения\". Раскройте процесс подачи обращения в поддержку Яндекс Такси: как структурировать запрос, какие детали указать, как повысить эффективность коммуникации. Укажите советы по ускорению ответа и решению сложных ситуаций. KEYWORDS: процесс подачи обращения, эффективное взаимодействие с поддержкой, решение сложных ситуаций, советы по ускорению ответа, структура обращения. semanticFingerprint: Пошаговая инструкция оформления обращения и рекомендации для повышения эффективности. interlink planning: внутренние ссылки на FAQ по типовым проблемам, инструкции по использованию приложения. evidenceStrength: internal-tested | external-peer-reviewed.",
+                "additionalData": {
+                  "minWords": 180,
+                  "maxWords": 280,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "структура обращения",
+                      "формулировка запроса"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Четкая структура обращения помогает поддержке быстрее понять и решить ваш вопрос.",
+                    "intent": "Пояснить, как правильно формулировать и структурировать обращение для максимальной эффективности.",
+                    "audiences": "Пользователи, которые не уверены, как описать свою проблему для поддержки.",
+                    "selfPrompt": "CONTEXT: Generate body paragraph in h3 \"Пошаговая инструкция подачи обращения\". ROLE: Объяснить, как структурировать обращение и какие детали обязательно указать. KEYWORDS: структура обращения, формулировка запроса. WORD COUNT: minWords: 75, maxWords: 140. MARKDOWN: Paragraph. SOURCE: Internal KB (Блок 2), External KB (советы по формулировке). semanticFingerprint: Рекомендации по структуре и формулировке обращения. sourceHint: Internal KB + External KB. evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 140,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-2-2",
+                    "tag": "ol",
+                    "keywords": [
+                      "пошаговая инструкция обращения"
+                    ],
+                    "taxonomy": "Actionable",
+                    "attention": "Выполните эти шаги, чтобы ваше обращение было рассмотрено максимально быстро.",
+                    "intent": "Дать пользователю четкую последовательность действий для подачи обращения в поддержку.",
+                    "audiences": "Пользователи, которым нужна простая и понятная инструкция.",
+                    "selfPrompt": "CONTEXT: Generate ordered list (5-7 шагов) в h3 \"Пошаговая инструкция подачи обращения\". ROLE: Actionable steps. KEYWORDS: пошаговая инструкция обращения. STRUCTURE: 5-7 коротких пунктов (по 10-20 слов). SOURCE: Internal KB (Блок 1, Блок 3), External KB (советы по ускорению ответа). semanticFingerprint: Конкретные шаги для успешного обращения. sourceHint: Internal KB + External KB. evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 90,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-3-2-3",
+                    "tag": "code",
+                    "keywords": [
+                      "пример обращения",
+                      "шаблон сообщения"
+                    ],
+                    "taxonomy": "technical",
+                    "attention": "Используйте готовый шаблон обращения для ускорения процесса.",
+                    "intent": "Дать пользователю пример или шаблон обращения, который можно скопировать и использовать при обращении в поддержку.",
+                    "audiences": "Пользователи, которые хотят быстро оформить обращение без ошибок.",
+                    "selfPrompt": "CONTEXT: Generate code block (text template) в h3 \"Пошаговая инструкция подачи обращения\". ROLE: Пример оформления обращения (шаблон сообщения для поддержки). KEYWORDS: пример обращения, шаблон сообщения. LANGUAGE: plain text. LENGTH: 5-10 строк. SOURCE: Internal KB (Блок 2), External KB (примеры эффективных обращений). semanticFingerprint: Готовый шаблон для обращения в поддержку. sourceHint: Internal KB + External KB. evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 50,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1368,5 +1493,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T17:32:39.864Z";
+export const lastUpdated = "2025-10-25T17:34:09.944Z";
 export const generatedBy = "menu-persist-api";
