@@ -1122,7 +1122,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-25T17:37:16.248Z",
-        "updatedAt": "2025-10-25T17:53:50.961Z",
+        "updatedAt": "2025-10-25T17:55:30.334Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как самозанятому получить лицензию для работы в такси: пошаговая инструкция, список документов, требования и советы для быстрого оформления!",
@@ -1627,6 +1627,108 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-5",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "итоги оформления лицензии такси",
+              "ключевые выводы для самозанятых",
+              "следующие шаги после получения разрешения",
+              "советы по дальнейшей работе в такси",
+              "контроль документов и безопасности",
+              "рекомендации по легальной деятельности",
+              "поддержка и сервисы для таксистов"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Завершите оформление лицензии уверенно: получите краткое резюме, полезные советы и список дальнейших действий для успешного старта работы в такси.",
+            "intent": "Систематизировать основные выводы пошаговой инструкции, дать читателю четкое понимание дальнейших шагов и мотивировать к легальному и безопасному началу работы в такси как самозанятый.",
+            "audiences": "Самозанятые водители, завершившие изучение инструкции и готовые приступить к официальной работе в такси; уровень — начинающий и средний; испытывают потребность в структурированном резюме и практических советах для уверенного старта.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 conclusion and next steps section for page \"Как самозанятому получить лицензию для работы в такси: пошаговая инструкция\"\n\nGOAL: Сформулировать итоговые выводы, обобщить ключевые моменты инструкции, предложить конкретные дальнейшие шаги и советы для самозанятых, которые планируют начать легальную деятельность в такси. Включить структурированную таблицу с итогами, чек-лист действий и финальный мотивирующий абзац. Обеспечить уникальность раздела, не дублируя темы и ключевые слова предыдущих секций.\n\nAUDIENCE: Самозанятые водители, которые прошли инструкцию и готовы к практическим действиям | Level: beginner/intermediate | Pain points: неуверенность в последовательности действий, страх ошибок, желание избежать штрафов и начать работу быстро.\n\nKEYWORDS TO INTEGRATE:\n[итоги оформления лицензии такси, ключевые выводы для самозанятых, следующие шаги после получения разрешения, советы по дальнейшей работе в такси, контроль документов и безопасности, рекомендации по легальной деятельности, поддержка и сервисы для таксистов]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 200, maxWords: 300 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: h2 heading with summary, table, checklist, and motivational paragraph\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: разделы по юридическим требованиям, поддержке, сервисам для такси\n- SECONDARY: Apply insights from External KB: структурированные советы, чек-листы, рекомендации по дальнейшим шагам\n\nQUALITY CRITERIA:\n- Actionable (конкретные рекомендации и шаги)\n- Specific (без общих фраз)\n- Data-backed (факты и советы из Knowledge Bases)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальное резюме и практические рекомендации для самозанятых таксистов, завершающее инструкцию.\n- sourceHint: Internal KB (основные выводы и сервисы), External KB (чек-листы и советы)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nINTERLINK PLANNING:\n- Включить 2-3 внутренних ссылки на страницы: \"Преимущества легализации работы в такси\", \"Обзор сервисов для таксистов\", \"Частые ошибки при оформлении документов\"\n- Готовность к разметке HowTo/FAQ для расширенных сниппетов\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)\n",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 200,
+              "maxWords": 300,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-5-1",
+                "tag": "p",
+                "keywords": [
+                  "итоги оформления лицензии такси",
+                  "ключевые выводы для самозанятых"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Получите сжатое резюме основных этапов и преимуществ самостоятельного оформления лицензии для такси.",
+                "intent": "Дать краткое, но ёмкое резюме ключевых шагов и итогов прохождения процедуры получения лицензии для самозанятых.",
+                "audiences": "Самозанятые водители, которые хотят убедиться, что ничего не упустили; уровень — начинающий.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate summary paragraph for conclusion section \"Итоги и дальнейшие шаги для самозанятых таксистов\" of page \"Как самозанятому получить лицензию для работы в такси: пошаговая инструкция\"\n\nGOAL: Кратко обобщить основные этапы и преимущества самостоятельного оформления лицензии для такси, подчеркнуть важность соблюдения всех требований и аккуратного ведения документации.\n\nAUDIENCE: Самозанятые водители | Level: beginner | Pain points: страх ошибок, желание убедиться в правильности действий\n\nKEYWORDS TO INTEGRATE:\n[итоги оформления лицензии такси, ключевые выводы для самозанятых]\n\nWORD COUNT: minWords: 80, maxWords: 150\n\nMARKDOWN/MDX SYNTAX: paragraph (intro/summary)\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Internal KB (юридические требования, поддержка)\n- SECONDARY: External KB (структурированные советы)\n\nE-E-A-T ENHANCERS:\n- semanticFingerprint: Сжатое резюме итогов оформления лицензии для самозанятых.\n- sourceHint: Internal KB (резюме), External KB (дополнительные советы)\n- evidenceStrength: internal-tested\n\nPAGE SETTINGS:\n• Writing Style: Narrative\n• Content Format: Simple\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)\n",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-5-3",
+                "tag": "table",
+                "keywords": [
+                  "следующие шаги после получения разрешения",
+                  "контроль документов и безопасности"
+                ],
+                "taxonomy": "Actionable",
+                "attention": "Проверьте, все ли действия выполнены: используйте таблицу для самопроверки и планирования дальнейших шагов.",
+                "intent": "Предоставить структурированную таблицу с основными действиями и рекомендациями для самозанятых после получения лицензии.",
+                "audiences": "Самозанятые таксисты, которым важно не упустить важные детали после оформления разрешения; уровень — начинающий/средний.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate actionable table for section \"Итоги и дальнейшие шаги для самозанятых таксистов\" of page \"Как самозанятому получить лицензию для работы в такси: пошаговая инструкция\"\n\nGOAL: Составить таблицу (3 столбца × 4-5 строк) с основными действиями после получения лицензии: действие, цель, полезный совет/сервис. Включить пункты по контролю документов, прохождению медосмотров, использованию сервисов для такси и поддержке.\n\nAUDIENCE: Самозанятые таксисты | Level: beginner/intermediate | Pain points: неуверенность в дальнейших шагах, желание избежать ошибок\n\nKEYWORDS TO INTEGRATE:\n[следующие шаги после получения разрешения, контроль документов и безопасности]\n\nWORD COUNT: minWords: 80, maxWords: 160\n\nMARKDOWN/MDX SYNTAX: table (3 columns: Действие | Цель | Совет/Сервис)\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Internal KB (контроль документов, сервисы)\n- SECONDARY: External KB (чек-листы, рекомендации)\n\nE-E-A-T ENHANCERS:\n- semanticFingerprint: Таблица с ключевыми действиями и советами для самозанятых после получения лицензии.\n- sourceHint: Internal KB (рекомендации), External KB (структура чек-листа)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nPAGE SETTINGS:\n• Writing Style: Narrative\n• Content Format: Simple\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)\n",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-5-2",
+                "tag": "ul",
+                "keywords": [
+                  "советы по дальнейшей работе в такси"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Воспользуйтесь практическими советами для успешного и безопасного старта работы в такси.",
+                "intent": "Дать краткий чек-лист из 4-5 практических советов для самозанятых таксистов по началу легальной работы и минимизации рисков.",
+                "audiences": "Самозанятые водители, которые хотят повысить уверенность и избежать типичных ошибок; уровень — начинающий.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate checklist ul for section \"Итоги и дальнейшие шаги для самозанятых таксистов\" of page \"Как самозанятому получить лицензию для работы в такси: пошаговая инструкция\"\n\nGOAL: Составить список из 4-5 коротких, практических советов для самозанятых таксистов по дальнейшей работе, безопасности и использованию сервисов поддержки.\n\nAUDIENCE: Самозанятые водители | Level: beginner | Pain points: неуверенность, страх ошибок, желание работать легально\n\nKEYWORDS TO INTEGRATE:\n[советы по дальнейшей работе в такси]\n\nWORD COUNT: minWords: 50, maxWords: 90\n\nMARKDOWN/MDX SYNTAX: ul (4-5 bullets, 10-15 words each)\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Internal KB (советы по сервисам, безопасности)\n- SECONDARY: External KB (чек-листы, практические рекомендации)\n\nE-E-A-T ENHANCERS:\n- semanticFingerprint: Чек-лист с практическими советами для самозанятых таксистов.\n- sourceHint: Internal KB (советы), External KB (структура чек-листа)\n- evidenceStrength: internal-tested\n\nPAGE SETTINGS:\n• Writing Style: Narrative\n• Content Format: Simple\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)\n",
+                "additionalData": {
+                  "minWords": 50,
+                  "maxWords": 90,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-5-3",
+                "tag": "p",
+                "keywords": [
+                  "рекомендации по легальной деятельности",
+                  "поддержка и сервисы для таксистов"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Завершите путь к легальной работе с уверенностью: воспользуйтесь поддержкой и современными сервисами для таксистов.",
+                "intent": "Мотивировать читателя к дальнейшему развитию, подчеркнуть важность легальной деятельности и напомнить о доступных сервисах поддержки для таксистов.",
+                "audiences": "Самозанятые водители, которые хотят чувствовать уверенность и получать поддержку на каждом этапе работы; уровень — начинающий/средний.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate motivational and supportive paragraph for section \"Итоги и дальнейшие шаги для самозанятых таксистов\" of page \"Как самозанятому получить лицензию для работы в такси: пошаговая инструкция\"\n\nGOAL: Завершить инструкцию мотивирующим абзацем, подчеркнуть преимущества легальной работы, напомнить о доступных сервисах поддержки и призвать к дальнейшему развитию.\n\nAUDIENCE: Самозанятые водители | Level: beginner/intermediate | Pain points: неуверенность, желание поддержки\n\nKEYWORDS TO INTEGRATE:\n[рекомендации по легальной деятельности, поддержка и сервисы для таксистов]\n\nWORD COUNT: minWords: 70, maxWords: 130\n\nMARKDOWN/MDX SYNTAX: paragraph (conclusion/motivation)\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Internal KB (поддержка, сервисы)\n- SECONDARY: External KB (мотивационные советы)\n\nE-E-A-T ENHANCERS:\n- semanticFingerprint: Мотивационный абзац с акцентом на поддержку и развитие самозанятых таксистов.\n- sourceHint: Internal KB (сервисы), External KB (мотивация)\n- evidenceStrength: internal-tested\n\nPAGE SETTINGS:\n• Writing Style: Narrative\n• Content Format: Simple\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)\n",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              }
+            ]
           }
         ]
       }
@@ -1659,5 +1761,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T18:10:55.993Z";
+export const lastUpdated = "2025-10-25T18:11:06.746Z";
 export const generatedBy = "menu-persist-api";
