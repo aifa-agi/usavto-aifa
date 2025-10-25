@@ -543,7 +543,7 @@ export const contentData = {
         "roles": [
           "guest"
         ],
-        "hasBadge": false,
+        "hasBadge": true,
         "type": "customCategorias",
         "aiRecommendContentStructure": [
           {
@@ -1060,7 +1060,19 @@ export const contentData = {
         "isChatSynchronized": false,
         "createdAt": "2025-10-25T17:06:21.698Z",
         "updatedAt": "2025-10-25T17:06:21.698Z",
-        "order": 1
+        "order": 1,
+        "badgeName": "Блог",
+        "description": "как обратиться в службу поддержки яндекс такси",
+        "images": [
+          {
+            "id": "zuq8ig2a4twkfaet7yiln7pt",
+            "alt": " как обратиться в службу поддержки яндекс такси",
+            "href": "/app-images/m94rwz7kkdo5g2s8s23v178m.png"
+          }
+        ],
+        "keywords": [
+          " как обратиться в службу поддержки яндекс такси"
+        ]
       }
     ],
     "order": 16
@@ -1091,5 +1103,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T17:22:28.330Z";
+export const lastUpdated = "2025-10-25T17:23:59.549Z";
 export const generatedBy = "menu-persist-api";
