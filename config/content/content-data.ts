@@ -1150,7 +1150,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-25T18:10:38.573Z",
-        "updatedAt": "2025-10-25T18:25:25.128Z",
+        "updatedAt": "2025-10-25T18:26:42.600Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, какой опыт вождения нужен для работы в Яндекс Такси: требования к стажу, советы новичкам и альтернативные варианты. Подайте заявку сейчас!",
@@ -1686,6 +1686,108 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-5",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "итоги по требованиям к водителям Яндекс Такси",
+              "ключевые выводы для соискателей",
+              "следующие шаги для начинающих водителей",
+              "резюме по стажу и допуску к работе",
+              "практические рекомендации для старта",
+              "выбор оптимального пути трудоустройства",
+              "советы по успешному началу карьеры"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Завершите знакомство с требованиями и получите чёткий план действий для успешного старта в Яндекс Такси.",
+            "intent": "Суммировать основные выводы статьи, выделить ключевые рекомендации и предложить читателю конкретные шаги для дальнейших действий.",
+            "audiences": "Потенциальные и начинающие водители такси (уровень: начинающий), которым важно понять, как использовать полученную информацию для быстрого и безопасного старта работы.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 conclusion and actionable next steps section for page \"Какой опыт вождения нужен для работы в Яндекс Такси: требования и советы\"\n\nGOAL: Сконцентрировать основные выводы по теме, дать структурированное резюме по требованиям и возможностям для водителей, а также предложить конкретные шаги для старта и повышения шансов на успешное трудоустройство.\n\nAUDIENCE: Новички и потенциальные водители Яндекс Такси | Уровень: начинающий | Pain points: неуверенность в требованиях, страх отказа, желание быстро начать работу\n\nKEYWORDS TO INTEGRATE:\n[итоги по требованиям к водителям Яндекс Такси, ключевые выводы для соискателей, следующие шаги для начинающих водителей, резюме по стажу и допуску к работе, практические рекомендации для старта, выбор оптимального пути трудоустройства, советы по успешному началу карьеры]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 200, maxWords: 300 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: h2 heading with summary, table, actionable list, and final motivational paragraph\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: [Обобщение требований, поддержка и сопровождение, обучение и контроль, рекомендации по старту]\n- SECONDARY: Apply insights from External KB: [Стандартные требования рынка, советы по альтернативным вариантам, типичные ошибки новичков]\n\nQUALITY CRITERIA:\n- Actionable (чёткие шаги и рекомендации)\n- Specific (без общих фраз)\n- Data-backed (с опорой на факты из KB)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Итоговый раздел, который объединяет ключевые выводы и даёт практические шаги для старта в Яндекс Такси, не повторяя детали предыдущих секций.\n- sourceHint: Синтез внутренней экспертизы и рыночных стандартов.\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Обязательно сделать акцент на самостоятельной оценке готовности, возможностях для новичков и поддержке со стороны сервисов.\n- Включить таблицу с кратким сравнением путей старта (через стаж, обучение, альтернативные роли).\n- Список конкретных шагов для быстрого допуска к работе.\n- Финальный абзац с мотивацией и призывом к действию.\n- Добавить рекомендации по внутренним ссылкам: [Как пройти медосмотр для такси], [Обучение и лицензирование водителей], [Пошаговая инструкция по регистрации в Яндекс Такси].\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)\n",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 200,
+              "maxWords": 300,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-5-1",
+                "tag": "p",
+                "keywords": [
+                  "итоги по требованиям к водителям Яндекс Такси",
+                  "ключевые выводы для соискателей"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Получите сжатое резюме по основным требованиям и возможностям для старта.",
+                "intent": "Ввести читателя в итоговый раздел, обозначить цель — подвести итоги и выделить главное.",
+                "audiences": "Новички, которые хотят быстро понять, что делать дальше.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for conclusion section summarizing the main requirements and opportunities for starting работу в Яндекс Такси.\nGOAL: Кратко обозначить, что читатель найдёт в финальном разделе — основные выводы и практические рекомендации.\nAUDIENCE: Начинающие водители, ищущие чёткое резюме.\nKEYWORDS TO INTEGRATE: [итоги по требованиям к водителям Яндекс Такси, ключевые выводы для соискателей]\nWORD COUNT: minWords: 80, maxWords: 150\nMARKDOWN/MDX SYNTAX: Paragraph (intro)\nWRITING STYLE: Narrative\nCONTENT FORMAT: Simple\nsemanticFingerprint: Вводный абзац, который подготавливает к итогам и дальнейшим шагам.\nsourceHint: Синтез внутренней экспертизы и рыночных стандартов.\nevidenceStrength: internal-tested\n",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-5-3",
+                "tag": "table",
+                "keywords": [
+                  "резюме по стажу и допуску к работе",
+                  "выбор оптимального пути трудоустройства"
+                ],
+                "taxonomy": "Comparison",
+                "attention": "Сравните основные пути старта и выберите подходящий вариант.",
+                "intent": "Дать наглядное сравнение разных вариантов начала работы в Яндекс Такси с учётом стажа, обучения и альтернативных ролей.",
+                "audiences": "Потенциальные водители, выбирающие оптимальный путь трудоустройства.",
+                "selfPrompt": "CONTEXT: Generate comparison table for conclusion section summarizing main entry paths into Яндекс Такси (по стажу, через обучение, альтернативные роли).\nGOAL: Сравнить варианты старта по ключевым параметрам: требования, скорость допуска, дополнительные условия.\nAUDIENCE: Новички, выбирающие стратегию входа.\nKEYWORDS TO INTEGRATE: [резюме по стажу и допуску к работе, выбор оптимального пути трудоустройства]\nWORD COUNT: minWords: 80, maxWords: 160\nMARKDOWN/MDX SYNTAX: Table (3 columns × 4 rows)\nColumn headers: Вариант | Требования | Преимущества\nData types: text/text/text\nsourceHint: Internal KB (основные требования), External KB (альтернативные пути)\nsemanticFingerprint: Таблица, сравнивающая три основных сценария старта для водителя.\nevidenceStrength: internal-tested | external-peer-reviewed\n",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-5-2",
+                "tag": "ul",
+                "keywords": [
+                  "следующие шаги для начинающих водителей",
+                  "практические рекомендации для старта"
+                ],
+                "taxonomy": "Actionable",
+                "attention": "Воспользуйтесь пошаговым чек-листом для быстрого допуска к работе.",
+                "intent": "Дать читателю конкретный список действий для успешного старта в Яндекс Такси.",
+                "audiences": "Начинающие водители, которым нужен чёткий план.",
+                "selfPrompt": "CONTEXT: Generate actionable checklist (ul) for conclusion section with 5-6 коротких пунктов, что делать дальше для допуска к работе в Яндекс Такси.\nGOAL: Сформировать пошаговый план для быстрого старта.\nAUDIENCE: Новички, которым важна структурированность.\nKEYWORDS TO INTEGRATE: [следующие шаги для начинающих водителей, практические рекомендации для старта]\nWORD COUNT: minWords: 50, maxWords: 90\nMARKDOWN/MDX SYNTAX: Unordered list (5-6 items, короткие пункты)\nsourceHint: Internal KB (алгоритм допуска), External KB (типовые советы)\nsemanticFingerprint: Чек-лист с конкретными шагами для допуска к работе.\nevidenceStrength: internal-tested\n",
+                "additionalData": {
+                  "minWords": 50,
+                  "maxWords": 90,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-5-3",
+                "tag": "p",
+                "keywords": [
+                  "советы по успешному началу карьеры"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Получите мотивацию и напутствие для уверенного старта.",
+                "intent": "Завершить статью мотивирующим абзацем, подчеркнуть поддержку и возможности для роста.",
+                "audiences": "Все читатели, которым важно получить уверенность и поддержку.",
+                "selfPrompt": "CONTEXT: Generate final motivational paragraph for conclusion section, encouraging readers to использовать полученные знания и не бояться начинать карьеру в Яндекс Такси.\nGOAL: Завершить статью позитивно, дать напутствие и призыв к действию.\nAUDIENCE: Все потенциальные водители, нуждающиеся в поддержке.\nKEYWORDS TO INTEGRATE: [советы по успешному началу карьеры]\nWORD COUNT: minWords: 70, maxWords: 130\nMARKDOWN/MDX SYNTAX: Paragraph (conclusion)\nsourceHint: Internal KB (поддержка и сопровождение), External KB (мотивационные советы)\nsemanticFingerprint: Мотивационный финал, который подчеркивает поддержку и возможности.\nevidenceStrength: internal-tested\n",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              }
+            ]
           }
         ]
       }
@@ -1718,5 +1820,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T18:42:08.208Z";
+export const lastUpdated = "2025-10-25T18:42:22.309Z";
 export const generatedBy = "menu-persist-api";
