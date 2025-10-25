@@ -1122,7 +1122,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-25T17:37:16.248Z",
-        "updatedAt": "2025-10-25T17:37:16.248Z",
+        "updatedAt": "2025-10-25T17:47:15.675Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как самозанятому получить лицензию для работы в такси: пошаговая инструкция, список документов, требования и советы для быстрого оформления!",
@@ -1141,7 +1141,76 @@ export const contentData = {
         "intent": "Пользователь заходит на страницу, чтобы узнать, как самозанятому официально получить лицензию для работы в такси, какие документы и шаги для этого необходимы, и как самостоятельно пройти все этапы оформления. Ожидаемое действие — ознакомиться с пошаговой инструкцией и подготовить полный комплект документов для подачи заявки на лицензию через региональные органы или онлайн-сервисы. Страница закрывает информационный запрос, предоставляя практическое руководство и актуальные требования, чтобы пользователь мог без посредников оформить разрешение и начать легальную деятельность таксиста.",
         "taxonomy": "Данная страница представляет собой подробную пошаговую инструкцию (гайд) для самозанятых по получению лицензии на работу в такси, относящуюся к категории \"Юридические вопросы и оформление документов\" с подкатегорией \"Лицензии и разрешения для такси\". Она выполняет функцию кластерного контента, поддерживающего основную (пиллар) страницу о легализации деятельности самозанятых в сфере такси, и укрепляет тематический авторитет сайта по вопросам оформления разрешительной документации для работы таксистом.",
         "attention": "Стартуем с броского визуального блока с ключевым вопросом («Хотите работать в такси как самозанятый? Узнайте, как быстро оформить лицензию — без штрафов и лишних трат!») и интерактивной кнопкой «Пошаговая инструкция». Для удержания внимания используем инфографику с дорожной картой процесса, чек-листы для самопроверки и всплывающие подсказки с региональными нюансами, подчеркивая наглядность и простоту — в отличие от перегруженных текстом конкурентов, делаем акцент на практические действия и быстрый доступ к нужным документам.",
-        "audiences": "Этот материал предназначен для граждан России в возрасте 25–50 лет, которые рассматривают или уже выбрали путь самостоятельного заработка в такси как самозанятые, но не имеют глубокого опыта в юридических или административных процедурах. Они мотивированы желанием легально выйти на рынок такси, столкнувшись с неясностями при оформлении лицензии, сборе документов и взаимодействии с агрегаторами и госорганами, испытывают страх получить штраф или отказ из-за незнания нюансов законодательства. Страница предоставляет им пошаговую, практическую инструкцию, чтобы минимизировать бюрократические сложности и быстро начать официальную работу."
+        "audiences": "Этот материал предназначен для граждан России в возрасте 25–50 лет, которые рассматривают или уже выбрали путь самостоятельного заработка в такси как самозанятые, но не имеют глубокого опыта в юридических или административных процедурах. Они мотивированы желанием легально выйти на рынок такси, столкнувшись с неясностями при оформлении лицензии, сборе документов и взаимодействии с агрегаторами и госорганами, испытывают страх получить штраф или отказ из-за незнания нюансов законодательства. Страница предоставляет им пошаговую, практическую инструкцию, чтобы минимизировать бюрократические сложности и быстро начать официальную работу.",
+        "draftContentStructure": [
+          {
+            "id": "h2-1",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "как самозанятому получить лицензию для работы в такси",
+              "лицензия на такси для самозанятых",
+              "пошаговая инструкция",
+              "официальное оформление",
+              "документы для лицензии такси",
+              "легальная работа в такси",
+              "регистрация самозанятых"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, как быстро и без ошибок получить лицензию для работы в такси как самозанятый — пошаговая инструкция с практическими советами и актуальными требованиями.",
+            "intent": "Ввести пользователя в тему получения лицензии для работы в такси самозанятым, обозначить ценность пошагового руководства и подготовить к самостоятельному прохождению всех этапов оформления.",
+            "audiences": "Граждане России 25–50 лет, рассматривающие или выбравшие путь самозанятости в такси, не имеющие опыта в юридических процедурах, ищущие простое и понятное руководство для легального старта.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 introduction section for page \"Как самозанятому получить лицензию для работы в такси: пошаговая инструкция\"\n\nGOAL: Представить основную тему страницы, объяснить, почему важно получить лицензию для работы в такси как самозанятый, и показать, что пользователь получит пошаговую, простую и актуальную инструкцию для самостоятельного оформления.\n\nAUDIENCE: Граждане РФ, начинающие или планирующие работать в такси как самозанятые | Level: beginner | Pain points: страх ошибок, незнание нюансов, боязнь штрафов, нехватка практической информации\n\nKEYWORDS TO INTEGRATE:\n[как самозанятому получить лицензию для работы в такси, лицензия на такси для самозанятых, пошаговая инструкция, официальное оформление, документы для лицензии такси, легальная работа в такси, регистрация самозанятых]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 150, maxWords: 250 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 heading with two introductory paragraphs\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: юридические требования, поддержка US AUTO, преимущества легализации\n- SECONDARY: Apply insights from External KB: актуальные требования, самостоятельное оформление, основные этапы\n\nQUALITY CRITERIA:\n- Actionable (обещание практических шагов)\n- Specific (чётко обозначить, что будет рассмотрено)\n- Data-backed (ссылки на требования законодательства)\n- No fluff (без воды)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Вводная часть, раскрывающая ценность легального оформления лицензии для самозанятых и обещающая подробную инструкцию.\n- sourceHint: Internal KB (основные требования и поддержка) + External KB (индустриальные стандарты оформления)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference parent page intent\n- Must set thematic direction for child h3 elements\n- Add interlink planning: internalLinks (например, на страницу о легализации самозанятых и на FAQ по документам для такси)\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 150,
+              "maxWords": 250,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-1-1",
+                "tag": "p",
+                "keywords": [
+                  "лицензия на такси для самозанятых",
+                  "официальное оформление"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Понимание важности легального оформления для самозанятых водителей такси.",
+                "intent": "Объяснить, почему получение лицензии — ключевой шаг для легальной и безопасной работы в такси как самозанятый.",
+                "audiences": "Начинающие самозанятые водители, которые хотят избежать штрафов и работать официально.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph (role: intro) for h2 section \"Как самозанятому получить лицензию для работы в такси: пошаговая инструкция\"\nGOAL: Кратко объяснить, почему лицензия необходима для самозанятых в такси, и обозначить преимущества официального оформления.\nKEYWORDS: лицензия на такси для самозанятых, официальное оформление\nWORD COUNT: minWords: 100, maxWords: 180\nSOURCE: Internal KB (юридические требования, поддержка US AUTO)\nsemanticFingerprint: Вводный абзац, раскрывающий значимость лицензирования для легальной работы.\nsourceHint: Internal KB\n",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 180,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-2",
+                "tag": "p",
+                "keywords": [
+                  "пошаговая инструкция",
+                  "документы для лицензии такси"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Обещание подробной, простой и актуальной инструкции для самостоятельного оформления лицензии.",
+                "intent": "Сообщить пользователю, что на странице он найдёт пошаговое руководство и список необходимых документов для быстрого получения лицензии.",
+                "audiences": "Самозанятые без опыта оформления документов, ищущие практическое руководство.",
+                "selfPrompt": "CONTEXT: Generate second introductory paragraph (role: transition/preview) for h2 section \"Как самозанятому получить лицензию для работы в такси: пошаговая инструкция\"\nGOAL: Обозначить структуру и ценность гайда — пользователь узнает все этапы, требования и получит чек-лист документов.\nKEYWORDS: пошаговая инструкция, документы для лицензии такси\nWORD COUNT: minWords: 60, maxWords: 120\nSOURCE: Internal KB (структура инструкции) + External KB (актуальные требования)\nsemanticFingerprint: Абзац-предварительный просмотр, обещающий простую и подробную инструкцию.\nsourceHint: Internal KB + External KB\n",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 120,
+                  "actualContent": ""
+                }
+              }
+            ]
+          }
+        ]
       }
     ],
     "order": 16
@@ -1172,5 +1241,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T18:02:41.177Z";
+export const lastUpdated = "2025-10-25T18:06:07.642Z";
 export const generatedBy = "menu-persist-api";
