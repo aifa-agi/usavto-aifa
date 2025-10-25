@@ -1122,7 +1122,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-25T17:37:16.248Z",
-        "updatedAt": "2025-10-25T17:56:09.497Z",
+        "updatedAt": "2025-10-25T17:56:17.108Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как самозанятому получить лицензию для работы в такси: пошаговая инструкция, список документов, требования и советы для быстрого оформления!",
@@ -1700,7 +1700,8 @@ export const contentData = {
                   "minWords": 80,
                   "maxWords": 150,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "table-5-3",
@@ -1718,7 +1719,8 @@ export const contentData = {
                   "minWords": 80,
                   "maxWords": 160,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "ul-5-2",
@@ -1735,7 +1737,8 @@ export const contentData = {
                   "minWords": 50,
                   "maxWords": 90,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-5-3",
@@ -1753,12 +1756,14 @@ export const contentData = {
                   "minWords": 70,
                   "maxWords": 130,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           }
         ],
-        "isReadyDraftForPerplexity": false
+        "isReadyDraftForPerplexity": true
       }
     ],
     "order": 16
@@ -1789,5 +1794,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T18:11:42.718Z";
+export const lastUpdated = "2025-10-25T18:12:59.333Z";
 export const generatedBy = "menu-persist-api";
