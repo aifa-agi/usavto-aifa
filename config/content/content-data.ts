@@ -1122,7 +1122,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-25T17:37:16.248Z",
-        "updatedAt": "2025-10-25T17:55:58.738Z",
+        "updatedAt": "2025-10-25T17:56:09.497Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как самозанятому получить лицензию для работы в такси: пошаговая инструкция, список документов, требования и советы для быстрого оформления!",
@@ -1525,7 +1525,8 @@ export const contentData = {
                   "minWords": 70,
                   "maxWords": 130,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-FAQ-1",
@@ -1552,9 +1553,11 @@ export const contentData = {
                     "keywords": [
                       "сроки оформления лицензии"
                     ],
-                    "selfPrompt": "CONTEXT: Generate answer paragraph for question \"Сколько времени занимает оформление разрешения для самозанятого водителя такси?\" in FAQ section.\nParagraph role: body\nKEYWORDS TO INTEGRATE: [сроки оформления лицензии]\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Ответ содержит средние сроки и советы по ускорению.\nsourceHint: Internal KB (опыт сопровождения заявок)\nevidenceStrength: internal-tested"
+                    "selfPrompt": "CONTEXT: Generate answer paragraph for question \"Сколько времени занимает оформление разрешения для самозанятого водителя такси?\" in FAQ section.\nParagraph role: body\nKEYWORDS TO INTEGRATE: [сроки оформления лицензии]\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Ответ содержит средние сроки и советы по ускорению.\nsourceHint: Internal KB (опыт сопровождения заявок)\nevidenceStrength: internal-tested",
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "FAQ-2",
@@ -1581,9 +1584,11 @@ export const contentData = {
                     "keywords": [
                       "госпошлина за лицензию"
                     ],
-                    "selfPrompt": "CONTEXT: Generate answer paragraph for question \"Сколько стоит получение разрешения для работы в такси?\" in FAQ section.\nParagraph role: body\nKEYWORDS TO INTEGRATE: [госпошлина за лицензию]\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Ответ содержит сумму госпошлины и предупреждение о дополнительных расходах.\nsourceHint: Internal KB (юридические консультации)\nevidenceStrength: internal-tested"
+                    "selfPrompt": "CONTEXT: Generate answer paragraph for question \"Сколько стоит получение разрешения для работы в такси?\" in FAQ section.\nParagraph role: body\nKEYWORDS TO INTEGRATE: [госпошлина за лицензию]\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Ответ содержит сумму госпошлины и предупреждение о дополнительных расходах.\nsourceHint: Internal KB (юридические консультации)\nevidenceStrength: internal-tested",
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "FAQ-3",
@@ -1610,9 +1615,11 @@ export const contentData = {
                     "keywords": [
                       "техническое состояние машины"
                     ],
-                    "selfPrompt": "CONTEXT: Generate answer paragraph for question \"Какие требования предъявляются к автомобилю для получения разрешения на такси?\" in FAQ section.\nParagraph role: body\nKEYWORDS TO INTEGRATE: [техническое состояние машины]\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Ответ содержит список технических и визуальных требований.\nsourceHint: Internal KB (регламент лицензирования)\nevidenceStrength: internal-tested"
+                    "selfPrompt": "CONTEXT: Generate answer paragraph for question \"Какие требования предъявляются к автомобилю для получения разрешения на такси?\" in FAQ section.\nParagraph role: body\nKEYWORDS TO INTEGRATE: [техническое состояние машины]\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Ответ содержит список технических и визуальных требований.\nsourceHint: Internal KB (регламент лицензирования)\nevidenceStrength: internal-tested",
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "FAQ-4",
@@ -1639,11 +1646,14 @@ export const contentData = {
                     "keywords": [
                       "ошибки при подаче документов"
                     ],
-                    "selfPrompt": "CONTEXT: Generate answer paragraph for question \"Какие ошибки чаще всего приводят к отказу в выдаче разрешения и как их избежать?\" in FAQ section.\nParagraph role: body\nKEYWORDS TO INTEGRATE: [ошибки при подаче документов]\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Ответ содержит перечень ошибок и рекомендации по их предотвращению.\nsourceHint: Internal KB (опыт сопровождения заявок, телемедицина)\nevidenceStrength: internal-tested"
+                    "selfPrompt": "CONTEXT: Generate answer paragraph for question \"Какие ошибки чаще всего приводят к отказу в выдаче разрешения и как их избежать?\" in FAQ section.\nParagraph role: body\nKEYWORDS TO INTEGRATE: [ошибки при подаче документов]\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Ответ содержит перечень ошибок и рекомендации по их предотвращению.\nsourceHint: Internal KB (опыт сопровождения заявок, телемедицина)\nevidenceStrength: internal-tested",
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-5",
@@ -1779,5 +1789,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T18:11:35.002Z";
+export const lastUpdated = "2025-10-25T18:11:42.718Z";
 export const generatedBy = "menu-persist-api";
