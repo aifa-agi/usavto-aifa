@@ -1178,7 +1178,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-25T18:48:46.586Z",
-        "updatedAt": "2025-10-25T19:02:08.433Z",
+        "updatedAt": "2025-10-25T19:04:45.329Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Конфигуратор Яндекс Такси 2024: быстрый подбор авто по актуальным требованиям и тарифам. Проверяйте соответствие и подключайтесь выгодно!",
@@ -1425,6 +1425,132 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "пошаговая инструкция подключения",
+              "процесс проверки автомобиля",
+              "использование конфигуратора",
+              "алгоритм подбора авто",
+              "онлайн сервис для таксопарков",
+              "интеграция с платформой US AUTO",
+              "оптимизация документооборота"
+            ],
+            "taxonomy": "HowTo",
+            "attention": "Узнайте, как быстро и без ошибок подобрать и проверить автомобиль для Яндекс Такси с помощью современного конфигуратора — пошаговая инструкция и практические советы.",
+            "intent": "Дать пользователю подробную, практическую инструкцию по использованию конфигуратора для проверки и подбора автомобиля, чтобы минимизировать ошибки и ускорить процесс подключения к Яндекс Такси.",
+            "audiences": "Водители и владельцы таксопарков с базовым или средним опытом, желающие самостоятельно и быстро пройти процедуру проверки и подбора авто для работы в Яндекс Такси, повысить эффективность документооборота и избежать отказов.",
+            "selfPrompt": "CONTEXT: Generate h2 section describing практический процесс использования конфигуратора для подбора и проверки автомобиля для Яндекс Такси 2024 на странице \"Конфигуратор Яндекс Такси 2024 — подбор авто и требования\".\n\nGOAL: Дать читателю пошаговую инструкцию по применению конфигуратора US AUTO, показать, как проходит проверка авто, какие этапы включает алгоритм подбора, и как интеграция с платформой помогает избежать ошибок и ускорить подключение.\n\nAUDIENCE: Водители и таксопарки | Уровень: базовый/средний | Pain points: сложность ручной проверки, риск отказа, затраты времени на оформление.\n\nKEYWORDS TO INTEGRATE:\n[пошаговая инструкция подключения, процесс проверки автомобиля, использование конфигуратора, алгоритм подбора авто, онлайн сервис для таксопарков, интеграция с платформой US AUTO, оптимизация документооборота]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with nested H3, P, OL, CODE as per structure\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Internal KB (разделы о функционале конфигуратора, автоматизации, интеграции US AUTO)\n- SECONDARY: External KB (индустриальные стандарты алгоритмов подбора, примеры конкурентов)\n\nQUALITY CRITERIA:\n- Actionable (конкретные шаги, рекомендации)\n- Specific (без общих фраз)\n- Data-backed (факты из KB)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Пошаговый разбор процесса использования конфигуратора US AUTO для проверки и подбора авто, с акцентом на автоматизацию и интеграцию.\n- sourceHint: Internal KB (разделы 2, 3, 4, 9)\n- evidenceStrength: internal-tested\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Сформировать внутренние ссылки на разделы сайта: «Автоматизация таксопарка», «Требования к автомобилям Яндекс Такси», «Инструкция по подключению»\n- Подготовить структуру для HowTo schema (разметка для расширенных сниппетов)\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-3-1",
+                "tag": "p",
+                "keywords": [
+                  "процесс проверки автомобиля",
+                  "использование конфигуратора"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Поймите, как конфигуратор упрощает и ускоряет процесс проверки авто для Яндекс Такси.",
+                "intent": "Ввести пользователя в практический процесс работы с конфигуратором, обозначить основные этапы и преимущества автоматизации.",
+                "audiences": "Водители и таксопарки, впервые использующие онлайн-сервисы для отбора авто.",
+                "selfPrompt": "CONTEXT: Generate intro paragraph for section on практическое использование конфигуратора для подбора и проверки авто.\nGOAL: Кратко объяснить, как конфигуратор помогает пройти проверку автомобиля для Яндекс Такси, какие задачи решает и почему это выгодно.\nAUDIENCE: Новички и опытные водители | Pain points: ручная проверка, риск ошибок.\nKEYWORDS: процесс проверки автомобиля, использование конфигуратора\nWORD COUNT: minWords: 90, maxWords: 170\nROLE: intro\nsourceHint: Internal KB (разделы 2, 3)\nevidenceStrength: internal-tested\nsemanticFingerprint: Вводное описание пользы автоматизации проверки авто через конфигуратор.",
+                "additionalData": {
+                  "minWords": 90,
+                  "maxWords": 170,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-3-2",
+                "tag": "h3",
+                "keywords": [
+                  "алгоритм подбора авто",
+                  "онлайн сервис для таксопарков",
+                  "интеграция с платформой US AUTO",
+                  "оптимизация документооборота",
+                  "пошаговая инструкция подключения"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Следуйте пошаговой инструкции — подключите авто к Яндекс Такси быстро и без ошибок.",
+                "intent": "Дать подробную, структурированную инструкцию по использованию конфигуратора US AUTO для подбора и проверки автомобиля, включая интеграцию с платформой и оптимизацию документооборота.",
+                "audiences": "Владельцы таксопарков и водители, желающие автоматизировать процесс подключения авто и снизить риск отказа.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection with подробная пошаговая инструкция по использованию конфигуратора US AUTO для подбора и проверки автомобиля для Яндекс Такси.\nGOAL: Пошагово описать алгоритм работы с сервисом, показать интеграцию с платформой и автоматизацию документооборота.\nAUDIENCE: Таксопарки и водители | Level: intermediate | Pain points: сложность ручного оформления, ошибки в документах.\nKEYWORDS: алгоритм подбора авто, онлайн сервис для таксопарков, интеграция с платформой US AUTO, оптимизация документооборота, пошаговая инструкция подключения\nWORD COUNT: minWords: 180, maxWords: 280\nsemanticFingerprint: Детализированная инструкция по этапам работы с конфигуратором US AUTO для отбора и проверки авто.\nsourceHint: Internal KB (разделы 2, 3, 4, 9)\nevidenceStrength: internal-tested\ninterlink planning: Вставить ссылки на «Автоматизация таксопарка», «Инструкция по подключению».\nPrepare context for child ol (шаги) и code (пример автоматизации).",
+                "additionalData": {
+                  "minWords": 180,
+                  "maxWords": 280,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "алгоритм подбора авто",
+                      "интеграция с платформой US AUTO"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Узнайте, как интеграция с платформой US AUTO делает процесс подбора авто максимально простым.",
+                    "intent": "Объяснить, почему автоматизация и интеграция с платформой US AUTO критичны для быстрого и точного подбора авто.",
+                    "audiences": "Владельцы таксопарков, ищущие способы ускорить процессы.",
+                    "selfPrompt": "CONTEXT: Generate supporting paragraph for h3 'Пошаговая инструкция использования конфигуратора'.\nGOAL: Объяснить роль интеграции и автоматизации в процессе подбора авто.\nAUDIENCE: Таксопарки | Pain points: ручная работа, ошибки.\nKEYWORDS: алгоритм подбора авто, интеграция с платформой US AUTO\nWORD COUNT: minWords: 75, maxWords: 140\nROLE: body\nsourceHint: Internal KB (разделы 3, 4)\nevidenceStrength: internal-tested\nsemanticFingerprint: Краткое пояснение преимуществ интеграции US AUTO для отбора авто.",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 140,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-2-2",
+                    "tag": "ol",
+                    "keywords": [
+                      "пошаговая инструкция подключения",
+                      "оптимизация документооборота"
+                    ],
+                    "taxonomy": "HowTo",
+                    "attention": "Следуйте этим шагам для быстрой и корректной проверки авто.",
+                    "intent": "Дать пользователю четкую последовательность действий для работы с конфигуратором.",
+                    "audiences": "Водители и администраторы таксопарков, желающие избежать ошибок.",
+                    "selfPrompt": "CONTEXT: Generate ordered list (5-6 шагов) для пошаговой инструкции по использованию конфигуратора US AUTO.\nGOAL: Четко структурировать процесс — от ввода данных до получения результата.\nAUDIENCE: Водители и таксопарки | Pain points: неочевидность этапов.\nKEYWORDS: пошаговая инструкция подключения, оптимизация документооборота\nWORD COUNT: minWords: 50, maxWords: 90\nList purpose: steps, each пункт 10-20 слов, без дублирования с sibling elements.\nsourceHint: Internal KB (раздел 3)\nevidenceStrength: internal-tested\nsemanticFingerprint: Список конкретных шагов для использования конфигуратора.",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 90,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-3-2-3",
+                    "tag": "code",
+                    "keywords": [
+                      "интеграция с платформой US AUTO",
+                      "онлайн сервис для таксопарков"
+                    ],
+                    "taxonomy": "technical",
+                    "attention": "Посмотрите пример автоматизации — как выглядит интеграция на практике.",
+                    "intent": "Показать пример кода или конфигурации, иллюстрирующий автоматизацию процесса отбора авто через платформу US AUTO.",
+                    "audiences": "Технические специалисты таксопарков, интеграторы.",
+                    "selfPrompt": "CONTEXT: Generate code snippet (JSON или псевдокод) для иллюстрации автоматизации интеграции с платформой US AUTO.\nGOAL: Показать, как можно автоматизировать передачу данных или проверку авто через API/интерфейс.\nAUDIENCE: Техспециалисты | Pain points: отсутствие примеров.\nKEYWORDS: интеграция с платформой US AUTO, онлайн сервис для таксопарков\nWORD COUNT: minWords: 20, maxWords: 50\nCode purpose: пример конфигурации/запроса/ответа, 5-10 строк.\nsourceHint: Internal KB (раздел 3)\nevidenceStrength: internal-tested\nsemanticFingerprint: Пример кода для автоматизации отбора авто через US AUTO.",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 50,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1457,5 +1583,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T19:20:11.095Z";
+export const lastUpdated = "2025-10-25T19:23:47.345Z";
 export const generatedBy = "menu-persist-api";
