@@ -1178,7 +1178,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-25T18:48:46.586Z",
-        "updatedAt": "2025-10-25T19:08:21.407Z",
+        "updatedAt": "2025-10-25T19:09:32.738Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Конфигуратор Яндекс Такси 2024: быстрый подбор авто по актуальным требованиям и тарифам. Проверяйте соответствие и подключайтесь выгодно!",
@@ -1552,7 +1552,216 @@ export const contentData = {
               }
             ]
           },
-          null,
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "часто задаваемые вопросы",
+              "подключение к сервису",
+              "требования к авто для такси",
+              "ошибки при выборе автомобиля",
+              "документы для регистрации",
+              "техническое состояние машины",
+              "поддержка водителей"
+            ],
+            "taxonomy": "FAQ",
+            "attention": "Ответы на самые распространённые вопросы помогут быстро разобраться в нюансах выбора и подключения автомобиля для работы в Яндекс Такси через конфигуратор.",
+            "intent": "Дать пользователям структурированные и исчерпывающие ответы на ключевые вопросы, возникающие при подборе и подключении автомобиля к Яндекс Такси с помощью конфигуратора.",
+            "audiences": "Водители и владельцы таксопарков с базовым и средним опытом, которые сталкиваются с типичными затруднениями при проверке соответствия авто и оформлении документов.",
+            "selfPrompt": "CONTEXT: Generate h2 FAQ section for page \"Конфигуратор Яндекс Такси 2024 — подбор авто и требования\". GOAL: Сформировать блок часто задаваемых вопросов, который закрывает основные возражения и сомнения пользователей, связанные с процессом подбора, проверки и подключения автомобиля к Яндекс Такси через конфигуратор. AUDIENCE: Водители и владельцы таксопарков, уровень: базовый/средний, pain points: неуверенность в требованиях, сложности с документами, страх отказа. KEYWORDS TO INTEGRATE: часто задаваемые вопросы, подключение к сервису, требования к авто для такси, ошибки при выборе автомобиля, документы для регистрации, техническое состояние машины, поддержка водителей. WORD COUNT: minWords: 300, maxWords: 450. MARKDOWN/MDX SYNTAX: H2 FAQ section with nested H3 questions and answers. WRITING STYLE: Narrative - Story-driven, engaging storytelling approach. CONTENT FORMAT: Simple - Easy to understand, basic language. KNOWLEDGE SOURCES: PRIMARY: Internal KB (разделы о функционале, преимуществах, типичных ошибках и поддержке), SECONDARY: External KB (индустриальные стандарты, типовые вопросы пользователей). QUALITY CRITERIA: Actionable, specific, data-backed, no fluff. E-E-A-T ENHANCERS: semanticFingerprint: Уникальный FAQ-блок, который отвечает на реальные вопросы пользователей по теме конфигуратора Яндекс Такси 2024; sourceHint: Internal KB + обобщённые внешние вопросы; evidenceStrength: internal-tested. INTERLINK PLANNING: Включить 2-3 внутренних ссылки на страницы с подробными инструкциями, требованиями и поддержкой. SCHEMA READINESS: FAQPage. PAGE SETTINGS: Writing Style: Narrative; Content Format: Simple; Custom Requirements: Applied as PRIORITY OVERRIDE.",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "keywords": [
+                  "часто задаваемые вопросы"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Быстрое введение в раздел FAQ помогает пользователю сориентироваться и найти ответы на волнующие вопросы.",
+                "intent": "Кратко объяснить, зачем нужен раздел FAQ и как он помогает пользователю избежать типичных ошибок при подключении к Яндекс Такси.",
+                "audiences": "Водители и таксопарки, которые впервые сталкиваются с конфигуратором или испытывают трудности с требованиями.",
+                "selfPrompt": "CONTEXT: Generate paragraph (intro) for FAQ section. ROLE: Вступление. GOAL: Кратко объяснить, что в этом разделе собраны ответы на самые частые вопросы по теме подбора и подключения авто к Яндекс Такси через конфигуратор. KEYWORDS: часто задаваемые вопросы. WORD COUNT: minWords: 70, maxWords: 130. MARKDOWN: Paragraph. WRITING STYLE: Narrative. CONTENT FORMAT: Simple. sourceHint: Internal KB (разделы поддержки).",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "keywords": [
+                  "подключение к сервису",
+                  "регистрация автомобиля",
+                  "процесс подачи заявки",
+                  "часто задаваемые вопросы",
+                  "поддержка водителей"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, как быстро и без ошибок зарегистрировать свой автомобиль для работы в Яндекс Такси.",
+                "intent": "Пошагово разъяснить процесс регистрации автомобиля через конфигуратор и дать советы по ускорению подключения.",
+                "audiences": "Водители, впервые подключающие авто к сервису, ищущие простую инструкцию.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ question: \"Как зарегистрировать автомобиль для работы в Яндекс Такси через конфигуратор?\" in section \"FAQ\". GOAL: Подробно описать процесс регистрации, выделить ключевые шаги и возможные сложности. KEYWORDS: подключение к сервису, регистрация автомобиля, процесс подачи заявки, поддержка водителей, часто задаваемые вопросы. WORD COUNT: minWords: 150, maxWords: 220. MARKDOWN: H3 + answer paragraph. WRITING STYLE: Narrative. CONTENT FORMAT: Simple. semanticFingerprint: Подробная инструкция по регистрации авто через конфигуратор. sourceHint: Internal KB (процесс регистрации), External KB (типовые вопросы). evidenceStrength: internal-tested. INTERLINK: Внутренняя ссылка на страницу с подробной инструкцией по регистрации.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "keywords": [
+                      "регистрация автомобиля",
+                      "процесс подачи заявки"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Пошаговое объяснение поможет избежать ошибок при регистрации.",
+                    "intent": "Дать чёткую и понятную инструкцию по регистрации автомобиля через конфигуратор.",
+                    "audiences": "Водители, которые впервые проходят процедуру регистрации.",
+                    "selfPrompt": "CONTEXT: Generate paragraph (body) for FAQ question \"Как зарегистрировать автомобиль для работы в Яндекс Такси через конфигуратор?\". ROLE: Основной ответ. KEYWORDS: регистрация автомобиля, процесс подачи заявки. WORD COUNT: minWords: 60, maxWords: 120. MARKDOWN: Paragraph. WRITING STYLE: Narrative. CONTENT FORMAT: Simple. sourceHint: Internal KB (инструкция по регистрации).",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-2",
+                "tag": "h3",
+                "keywords": [
+                  "требования к авто для такси",
+                  "техническое состояние машины",
+                  "возраст автомобиля",
+                  "часто задаваемые вопросы",
+                  "допуск к работе"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Проверьте, соответствует ли ваш автомобиль техническим и возрастным требованиям для допуска к работе.",
+                "intent": "Разъяснить основные технические и возрастные требования к автомобилям для работы в Яндекс Такси.",
+                "audiences": "Владельцы авто, которые не уверены в соответствии своего транспорта требованиям сервиса.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ question: \"Какие технические и возрастные требования предъявляются к автомобилям для работы в Яндекс Такси?\" in section \"FAQ\". GOAL: Перечислить ключевые требования, объяснить их важность и дать советы по проверке соответствия. KEYWORDS: требования к авто для такси, техническое состояние машины, возраст автомобиля, допуск к работе, часто задаваемые вопросы. WORD COUNT: minWords: 150, maxWords: 220. MARKDOWN: H3 + answer paragraph. WRITING STYLE: Narrative. CONTENT FORMAT: Simple. semanticFingerprint: Сводка основных технических и возрастных требований к авто. sourceHint: Internal KB (разделы требований), External KB (индустриальные стандарты). evidenceStrength: internal-tested. INTERLINK: Внутренняя ссылка на страницу с полным списком требований.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "техническое состояние машины",
+                      "возраст автомобиля"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Чёткое понимание требований поможет избежать отказа при подключении.",
+                    "intent": "Дать конкретные параметры по техническому состоянию и возрасту авто.",
+                    "audiences": "Водители, которые хотят заранее проверить соответствие.",
+                    "selfPrompt": "CONTEXT: Generate paragraph (body) for FAQ question \"Какие технические и возрастные требования предъявляются к автомобилям для работы в Яндекс Такси?\". ROLE: Основной ответ. KEYWORDS: техническое состояние машины, возраст автомобиля. WORD COUNT: minWords: 60, maxWords: 120. MARKDOWN: Paragraph. WRITING STYLE: Narrative. CONTENT FORMAT: Simple. sourceHint: Internal KB (требования к авто).",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-3",
+                "tag": "h3",
+                "keywords": [
+                  "ошибки при выборе автомобиля",
+                  "типичные причины отказа",
+                  "проверка соответствия",
+                  "часто задаваемые вопросы"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Избегайте распространённых ошибок при выборе и проверке автомобиля для работы в сервисе.",
+                "intent": "Предупредить пользователей о типичных ошибках и причинах отказа при подключении автомобиля к Яндекс Такси.",
+                "audiences": "Водители, которые хотят повысить шансы успешного подключения.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ question: \"Какие ошибки чаще всего приводят к отказу в подключении автомобиля?\" in section \"FAQ\". GOAL: Перечислить основные ошибки, дать рекомендации по их предотвращению. KEYWORDS: ошибки при выборе автомобиля, типичные причины отказа, проверка соответствия, часто задаваемые вопросы. WORD COUNT: minWords: 150, maxWords: 220. MARKDOWN: H3 + answer paragraph. WRITING STYLE: Narrative. CONTENT FORMAT: Simple. semanticFingerprint: Перечень типичных ошибок и советов по их предотвращению. sourceHint: Internal KB (разделы об ошибках), External KB (частые вопросы пользователей). evidenceStrength: internal-tested. INTERLINK: Внутренняя ссылка на страницу с советами по проверке авто.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "типичные причины отказа",
+                      "проверка соответствия"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Знание ошибок поможет пройти проверку с первого раза.",
+                    "intent": "Объяснить, какие ошибки чаще всего встречаются и как их избежать.",
+                    "audiences": "Водители, которые хотят подготовиться к проверке.",
+                    "selfPrompt": "CONTEXT: Generate paragraph (body) for FAQ question \"Какие ошибки чаще всего приводят к отказу в подключении автомобиля?\". ROLE: Основной ответ. KEYWORDS: типичные причины отказа, проверка соответствия. WORD COUNT: minWords: 60, maxWords: 120. MARKDOWN: Paragraph. WRITING STYLE: Narrative. CONTENT FORMAT: Simple. sourceHint: Internal KB (ошибки при подключении).",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-4",
+                "tag": "h3",
+                "keywords": [
+                  "документы для регистрации",
+                  "поддержка водителей",
+                  "онлайн-консультация",
+                  "часто задаваемые вопросы"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, какие документы понадобятся и где получить поддержку при возникновении вопросов.",
+                "intent": "Перечислить необходимые документы для регистрации и объяснить, как получить консультацию или помощь.",
+                "audiences": "Водители и таксопарки, которые готовят документы или столкнулись с затруднениями.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ question: \"Какие документы нужны для регистрации и где получить поддержку?\" in section \"FAQ\". GOAL: Дать полный список документов, объяснить, как обратиться за помощью. KEYWORDS: документы для регистрации, поддержка водителей, онлайн-консультация, часто задаваемые вопросы. WORD COUNT: minWords: 150, maxWords: 220. MARKDOWN: H3 + answer paragraph. WRITING STYLE: Narrative. CONTENT FORMAT: Simple. semanticFingerprint: Список документов и способы получения поддержки. sourceHint: Internal KB (разделы о документах и поддержке), External KB (типовые вопросы). evidenceStrength: internal-tested. INTERLINK: Внутренняя ссылка на страницу поддержки и FAQ.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "документы для регистрации",
+                      "онлайн-консультация"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Подготовьте документы заранее и знайте, куда обратиться за помощью.",
+                    "intent": "Дать список документов и объяснить, как получить консультацию.",
+                    "audiences": "Водители, которые готовят документы или нуждаются в поддержке.",
+                    "selfPrompt": "CONTEXT: Generate paragraph (body) for FAQ question \"Какие документы нужны для регистрации и где получить поддержку?\". ROLE: Основной ответ. KEYWORDS: документы для регистрации, онлайн-консультация. WORD COUNT: minWords: 60, maxWords: 120. MARKDOWN: Paragraph. WRITING STYLE: Narrative. CONTENT FORMAT: Simple. sourceHint: Internal KB (документы и поддержка).",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          },
           {
             "id": "h2-5",
             "tag": "h2",
@@ -1686,5 +1895,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T19:24:58.733Z";
+export const lastUpdated = "2025-10-25T19:25:11.849Z";
 export const generatedBy = "menu-persist-api";
