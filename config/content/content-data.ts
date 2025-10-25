@@ -1094,7 +1094,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-25T17:06:21.698Z",
-        "updatedAt": "2025-10-25T17:20:48.172Z",
+        "updatedAt": "2025-10-25T17:20:52.787Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как обратиться в службу поддержки Яндекс Такси: актуальные телефоны, онлайн-чат, приложение и советы для быстрого решения любых вопросов!",
@@ -1524,7 +1524,8 @@ export const contentData = {
                   "minWords": 70,
                   "maxWords": 130,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-FAQ-1",
@@ -1558,9 +1559,11 @@ export const contentData = {
                     "attention": "Этот ответ поможет пользователю самостоятельно контролировать процесс рассмотрения обращения.",
                     "intent": "Дать конкретные шаги по проверке статуса обращения и объяснить, как долго ждать ответа.",
                     "audiences": "Пользователи, ожидающие обратной связи от поддержки.",
-                    "selfPrompt": "CONTEXT: Generate paragraph answer for FAQ 'Как узнать статус обращения в поддержку и сколько ждать ответа?'\nROLE: body\nKEYWORDS: статус обращения в поддержку, отслеживание решения проблемы (no sibling overlap)\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Пошаговое объяснение проверки статуса обращения и сроков ответа.\nsourceHint: Internal KB (процедуры), External KB (средние сроки)\nevidenceStrength: internal-tested\n"
+                    "selfPrompt": "CONTEXT: Generate paragraph answer for FAQ 'Как узнать статус обращения в поддержку и сколько ждать ответа?'\nROLE: body\nKEYWORDS: статус обращения в поддержку, отслеживание решения проблемы (no sibling overlap)\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Пошаговое объяснение проверки статуса обращения и сроков ответа.\nsourceHint: Internal KB (процедуры), External KB (средние сроки)\nevidenceStrength: internal-tested\n",
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "FAQ-2",
@@ -1593,9 +1596,11 @@ export const contentData = {
                     "attention": "Этот ответ поможет избежать отказа в рассмотрении обращения из-за ошибок.",
                     "intent": "Дать конкретные рекомендации по правильному заполнению заявки и предотвращению типичных ошибок.",
                     "audiences": "Пользователи, впервые обращающиеся в поддержку.",
-                    "selfPrompt": "CONTEXT: Generate paragraph answer for FAQ 'Какие ошибки чаще всего допускают при обращении в поддержку?'\nROLE: body\nKEYWORDS: ошибки при обращении в поддержку, корректное заполнение заявки (no sibling overlap)\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Перечень типичных ошибок и советы по их предотвращению.\nsourceHint: Internal KB (рекомендации), External KB (ошибки пользователей)\nevidenceStrength: internal-tested\n"
+                    "selfPrompt": "CONTEXT: Generate paragraph answer for FAQ 'Какие ошибки чаще всего допускают при обращении в поддержку?'\nROLE: body\nKEYWORDS: ошибки при обращении в поддержку, корректное заполнение заявки (no sibling overlap)\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Перечень типичных ошибок и советы по их предотвращению.\nsourceHint: Internal KB (рекомендации), External KB (ошибки пользователей)\nevidenceStrength: internal-tested\n",
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "FAQ-3",
@@ -1628,9 +1633,11 @@ export const contentData = {
                     "attention": "Этот ответ поможет не остаться без решения и ускорить повторное рассмотрение обращения.",
                     "intent": "Дать чёткие шаги по повторному обращению и эскалации вопроса.",
                     "audiences": "Пользователи, не получившие ответа.",
-                    "selfPrompt": "CONTEXT: Generate paragraph answer for FAQ 'Что делать, если не пришёл ответ или проблема не решена?'\nROLE: body\nKEYWORDS: повторное обращение в яндекс такси, что делать если не ответили (no sibling overlap)\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Инструкция по повторному обращению и эскалации.\nsourceHint: Internal KB (процедуры), External KB (советы пользователей)\nevidenceStrength: internal-tested\n"
+                    "selfPrompt": "CONTEXT: Generate paragraph answer for FAQ 'Что делать, если не пришёл ответ или проблема не решена?'\nROLE: body\nKEYWORDS: повторное обращение в яндекс такси, что делать если не ответили (no sibling overlap)\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Инструкция по повторному обращению и эскалации.\nsourceHint: Internal KB (процедуры), External KB (советы пользователей)\nevidenceStrength: internal-tested\n",
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "FAQ-4",
@@ -1663,11 +1670,14 @@ export const contentData = {
                     "attention": "Этот ответ поможет повысить шансы на быстрое и успешное решение вопроса.",
                     "intent": "Дать конкретные рекомендации по формулировке обращения и взаимодействию с оператором.",
                     "audiences": "Пользователи, желающие ускорить решение вопроса.",
-                    "selfPrompt": "CONTEXT: Generate paragraph answer for FAQ 'Как повысить эффективность обращения в поддержку?'\nROLE: body\nKEYWORDS: советы по взаимодействию с поддержкой, эффективная коммуникация с оператором (no sibling overlap)\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Конкретные советы по коммуникации для быстрого решения вопроса.\nsourceHint: Internal KB (экспертные рекомендации), External KB (советы пользователей)\nevidenceStrength: internal-tested\n"
+                    "selfPrompt": "CONTEXT: Generate paragraph answer for FAQ 'Как повысить эффективность обращения в поддержку?'\nROLE: body\nKEYWORDS: советы по взаимодействию с поддержкой, эффективная коммуникация с оператором (no sibling overlap)\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Конкретные советы по коммуникации для быстрого решения вопроса.\nsourceHint: Internal KB (экспертные рекомендации), External KB (советы пользователей)\nevidenceStrength: internal-tested\n",
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-5",
@@ -1784,5 +1794,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T17:36:18.248Z";
+export const lastUpdated = "2025-10-25T17:36:23.840Z";
 export const generatedBy = "menu-persist-api";
