@@ -1146,7 +1146,14 @@ export const contentData = {
         "updatedAt": "2025-10-25T18:48:46.586Z",
         "order": 1,
         "badgeName": "Блог",
-        "description": "конфигуратор яндекс такси 2024"
+        "description": "конфигуратор яндекс такси 2024",
+        "images": [
+          {
+            "id": "e6dvvk4yec84uzt0xt6f47a2",
+            "alt": " конфигуратор яндекс такси 2024",
+            "href": "/app-images/nhacjp13u25fxf214906c70a.png"
+          }
+        ]
       }
     ],
     "order": 16
@@ -1177,5 +1184,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T19:06:15.060Z";
+export const lastUpdated = "2025-10-25T19:06:50.092Z";
 export const generatedBy = "menu-persist-api";
