@@ -594,7 +594,7 @@ export const contentData = {
       },
       {
         "id": "et4udpm37n9yudp4kzohjt6p",
-        "title": "какой опыт вождения нужен для работы в такси яндекс",
+        "title": "Какой опыт вождения нужен для работы в Яндекс Такси: требования и советы",
         "href": "/blog/kakoy-opyt-vozhdeniya-nuzhen-dlya-raboty-v-taksi-yandeks",
         "roles": [
           "guest"
@@ -1161,5 +1161,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T18:32:22.426Z";
+export const lastUpdated = "2025-10-25T18:32:31.241Z";
 export const generatedBy = "menu-persist-api";
