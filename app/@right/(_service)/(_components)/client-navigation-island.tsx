@@ -6,7 +6,7 @@ import { NavigationSection } from "../(_utils)/navigation-utils";
 import { Button } from "@/components/ui/button";
 
 export interface ClientNavigationIslandProps {
-    sections: NavigationSection[];
+    navigationSections: NavigationSection[];
     trackActive?: boolean;
     className?: string;
 }
@@ -17,13 +17,13 @@ const OBSERVER_OPTIONS: IntersectionObserverInit = {
 };
 
 export function ClientNavigationIsland({
-    sections,
+    navigationSections,
     trackActive = true,
     className = "",
 }: ClientNavigationIslandProps) {
     const [activeSection, setActiveSection] = useState<string | null>(null);
 
-    if (!sections || sections.length === 0) {
+    if (!navigationSections || navigationSections.length === 0) {
         return null;
     }
 
@@ -38,8 +38,8 @@ export function ClientNavigationIsland({
             });
         }, OBSERVER_OPTIONS);
 
-        sections.forEach(({ id }) => {
-            const element = document.getElementById(id);
+        navigationSections.forEach(({ humanizedPath }) => {
+            const element = document.getElementById(humanizedPath);
             if (element) {
                 observer.observe(element);
             }
@@ -48,7 +48,7 @@ export function ClientNavigationIsland({
         return () => {
             observer.disconnect();
         };
-    }, [sections, trackActive]);
+    }, [navigationSections, trackActive]);
 
     return (
         <div
@@ -61,12 +61,12 @@ export function ClientNavigationIsland({
         >
             <div className="overflow-x-auto custom-scrollbar">
                 <div className="flex gap-4 min-w-fit bg-background py-2">
-                    {sections.map(({ id, shortTitle, h2Title }) => {
-                        const isActive = trackActive && activeSection === id;
+                    {navigationSections.map(({ humanizedPath, shortTitle, h2Title }) => {
+                        const isActive = trackActive && activeSection === humanizedPath;
 
                         return (
                             <Button
-                                key={id}
+                                key={humanizedPath}
                                 asChild
                                 variant={isActive ? "default" : "outline"}
                                 size="sm"
@@ -77,7 +77,7 @@ export function ClientNavigationIsland({
                 `}
                             >
                                 <a
-                                    href={`#${id}`}
+                                    href={`#${humanizedPath}`}
                                     title={h2Title}
                                     aria-current={isActive ? "location" : undefined}
                                 >

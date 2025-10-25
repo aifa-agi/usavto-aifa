@@ -15,7 +15,7 @@ export interface StaticSectionProps {
     /** The section content to render */
     section: ExtendedSection;
     /** Optional ID to add to H2 heading for anchor navigation */
-    sectionId?: string;
+    humanizedPath?: string;
     /** Index of the section (used for fallback keys) */
     index: number;
 }
@@ -40,7 +40,7 @@ export interface StaticSectionProps {
  */
 export function StaticSection({
     section,
-    sectionId,
+    humanizedPath,
     index,
 }: StaticSectionProps) {
     // Extract body content from section
@@ -50,7 +50,7 @@ export function StaticSection({
     if (!bodyContent) {
         return (
             <div
-                id={sectionId}
+                id={humanizedPath}
                 className="static-section empty-section p-4 bg-gray-50 dark:bg-gray-900/50 rounded border border-gray-200 dark:border-gray-800"
             >
                 <p className="text-sm text-gray-500 dark:text-gray-400 italic">
@@ -63,11 +63,11 @@ export function StaticSection({
     // Validate TipTap document structure
     if (!isValidTipTapDocument(bodyContent)) {
         console.error(
-            `[StaticSection] Invalid TipTap document for section ${sectionId || index}`
+            `[StaticSection] Invalid TipTap document for section ${humanizedPath || index}`
         );
         return (
             <div
-                id={sectionId}
+                id={humanizedPath}
                 className="static-section error-section p-4 bg-red-50 dark:bg-red-900/20 rounded border border-red-200 dark:border-red-800"
             >
                 <p className="text-sm text-red-800 dark:text-red-200">
@@ -80,12 +80,12 @@ export function StaticSection({
     // Render TipTap document to React elements
     const renderedContent = renderTipTapDocument(
         bodyContent as TipTapDocument,
-        sectionId
+        humanizedPath
     );
 
     return (
         <section
-            id={sectionId ? `section-wrapper-${sectionId}` : undefined}
+            id={humanizedPath ? `section-wrapper-${humanizedPath}` : undefined}
             className="static-section relative"
             data-section-index={index}
         >

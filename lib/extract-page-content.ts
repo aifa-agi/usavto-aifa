@@ -2,8 +2,18 @@
 
 import { promises as fs } from "fs";
 import path from "path";
-import { PageMetadataForPrompt } from "@/types/system-prompt-types";
-import { generateAISummary, extractTextFromSections } from "@/lib/generate-ai-summary";
+import type { 
+  PageMetadataForPrompt, 
+  SectionSummary 
+} from "@/types/system-prompt-types";
+import { 
+  generateSectionAISummary,
+  extractTextFromSections 
+} from "@/lib/generate-ai-summary";
+import {
+  processSectionAnchorData,
+  constructSectionAbsoluteUrl
+} from "@/lib/section-anchor-utils";
 import { appConfig } from "@/config/appConfig";
 
 // ============ CONFIGURATION ============
@@ -20,26 +30,26 @@ interface PageContentExtractionResult {
   error?: string;
 }
 
-interface GeneratedContent {
-  content: string;
-  tokenCount: number;
+interface GeneratedSectionsContent {
+  sections: SectionSummary[];
+  totalTokenCount: number;
 }
 
-// ============ GITHUB INTEGRATION (NEW) ============
+// ============ GITHUB INTEGRATION ============
 
 /**
- * ✅ NEW: Извлекает содержимое файла из GitHub через REST API
+ * Extracts file content from GitHub via REST API (production environment)
  * 
- * @param relativePath - Относительный путь к файлу в репозитории (например, "app/@right/(_PAGES)/about/page.tsx")
- * @returns Содержимое файла в виде строки
- * @throws Error если файл не найден или произошла ошибка API
+ * @param relativePath - Relative path to file in repository (e.g., "app/@right/(_PAGES)/about/page.tsx")
+ * @returns File content as string
+ * @throws Error if file not found or API error occurs
  */
 async function readFileFromGitHub(relativePath: string): Promise<string> {
   if (!GITHUB_TOKEN || !GITHUB_REPO) {
     throw new Error("GitHub configuration missing (GITHUB_TOKEN or GITHUB_REPO)");
   }
   
-  // Убираем ведущий слэш если есть
+  // Remove leading slash if present
   const cleanPath = relativePath.startsWith("/") ? relativePath.slice(1) : relativePath;
   
   const apiUrl = `https://api.github.com/repos/${GITHUB_REPO}/contents/${cleanPath}`;
@@ -85,7 +95,7 @@ async function readFileFromGitHub(relativePath: string): Promise<string> {
     console.warn(`[GitHub Read] ⚠️  Unexpected encoding: ${json.encoding}, expected base64`);
   }
   
-  // ✅ Декодируем Base64 контент
+  // Decode Base64 content
   const decoded = Buffer.from(json.content, "base64").toString("utf-8");
   
   console.log(`[GitHub Read] ✅ Successfully read ${decoded.length} bytes (original size: ${json.size || "unknown"})`);
@@ -93,14 +103,13 @@ async function readFileFromGitHub(relativePath: string): Promise<string> {
   return decoded;
 }
 
-// ============ EXISTING CODE (PRESERVED) ============
+// ============ PAGE CONTENT EXTRACTION ============
 
 /**
- * ✅ EXISTING: Извлекает содержимое страницы из файловой системы (development)
- * или из GitHub (production)
+ * Extracts page content from local filesystem (development) or GitHub (production)
  * 
- * @param href - Путь к странице (например, "/about")
- * @returns Результат извлечения с массивом секций или ошибкой
+ * @param href - Page path (e.g., "/about")
+ * @returns Extraction result with sections array or error
  */
 async function extractPageContent(href: string): Promise<PageContentExtractionResult> {
   try {
@@ -113,17 +122,15 @@ async function extractPageContent(href: string): Promise<PageContentExtractionRe
     let fileContent: string;
     
     if (environment === "production") {
-      // ✅ NEW: Используем GitHub API в продакшн
       console.log("[Extract Content] 🌐 Production mode - reading from GitHub");
       fileContent = await readFileFromGitHub(relativePath);
     } else {
-      // ✅ PRESERVED: Существующая логика для development
       console.log("[Extract Content] 📁 Development mode - reading from local filesystem");
       const absolutePath = path.join(process.cwd(), relativePath);
       fileContent = await fs.readFile(absolutePath, "utf-8");
     }
      
-    // ✅ PRESERVED: Существующая логика парсинга секций
+    // Parse sections array from file content
     const sectionsMatch = fileContent.match(/const\s+sections\s*=\s*(\[[\s\S]*?\]);/);
     
     if (!sectionsMatch || !sectionsMatch[1]) {
@@ -144,74 +151,150 @@ async function extractPageContent(href: string): Promise<PageContentExtractionRe
   }
 }
 
-// ============ EXISTING CODE (PRESERVED) ============
+// ============ SECTION-BASED CONTENT GENERATION ============
 
 /**
- * ✅ EXISTING: Генерирует резюме контента страницы
+ * Generates AI summaries for each section individually with anchor links
+ * Replaces single-page summary approach with granular section-level summaries
+ * 
+ * @param pageMetadata - Page metadata for context
+ * @param sections - Array of page sections with bodyContent
+ * @returns Array of section summaries with total token count
  */
-export async function generateContentSummary(
+export async function generateSectionBasedContent(
   pageMetadata: PageMetadataForPrompt,
   sections?: any[]
-): Promise<GeneratedContent> {
+): Promise<GeneratedSectionsContent> {
   
   if (!sections || sections.length === 0) {
-    console.warn("[Generate Content] No sections available, using metadata only");
+    console.warn("[Generate Sections] No sections available, returning empty array");
     
-    const fallbackContent = `${pageMetadata.title}
-
-${pageMetadata.description}
-
-URL: ${appConfig.url}${pageMetadata.href}
-
-Keywords: ${pageMetadata.keywords.join(", ")}`;
-
     return {
-      content: fallbackContent,
-      tokenCount: Math.ceil(fallbackContent.length / 4),
+      sections: [],
+      totalTokenCount: 0,
     };
   }
 
-  // Extract text from sections
-  const sectionsText = extractTextFromSections(sections);
-  
-  console.log(`[Generate Content] Extracted ${sectionsText.length} characters from sections`);
+  console.log(`[Generate Sections] Processing ${sections.length} sections for: ${pageMetadata.title}`);
 
-  // Generate AI summary
-  const aiResult = await generateAISummary({
-    pageTitle: pageMetadata.title,
-    pageDescription: pageMetadata.description,
-    pageKeywords: pageMetadata.keywords,
-    sectionsContent: sectionsText,
-    pageUrl: `${appConfig.url}${pageMetadata.href}`,
-  });
+  const sectionSummaries: SectionSummary[] = [];
+  let totalTokens = 0;
+
+  for (let index = 0; index < sections.length; index++) {
+    const section = sections[index];
+    
+    console.log(`[Generate Sections] 📝 Processing section ${index + 1}/${sections.length}`);
+
+    // Step 1: Extract H2 title and generate anchor slug
+    const anchorData = processSectionAnchorData(section);
+    
+    if (!anchorData) {
+      console.warn(`[Generate Sections] ⚠️  Section ${index + 1} has no H2 heading, skipping`);
+      continue;
+    }
+
+    const { h2Title, humanizedPath } = anchorData;
+
+    // Step 2: Build absolute URL with anchor
+    const absoluteUrl = constructSectionAbsoluteUrl(
+      appConfig.url,
+      pageMetadata.href,
+      humanizedPath
+    );
+
+    // Step 3: Extract text content from this section only
+    const sectionText = extractTextFromSections([section]);
+
+    if (!sectionText || sectionText.trim().length === 0) {
+      console.warn(`[Generate Sections] ⚠️  Section ${index + 1} has no text content, skipping`);
+      continue;
+    }
+
+    // Step 4: Generate AI summary for this section
+    try {
+      const aiResult = await generateSectionAISummary({
+        sectionText,
+        h2Title,
+        pageMetadata,
+        absoluteUrl,
+      });
+
+      // Step 5: Create section summary object
+      const sectionSummary: SectionSummary = {
+        sectionId: section.id || `section-${index}`,
+        humanizedPath,
+        h2Title,
+        content: aiResult.summary,
+        tokenCount: aiResult.tokenCount,
+        absoluteUrl,
+      };
+
+      sectionSummaries.push(sectionSummary);
+      totalTokens += aiResult.tokenCount;
+
+      console.log(`[Generate Sections] ✅ Section ${index + 1}: "${h2Title}" - ${aiResult.tokenCount} tokens`);
+
+    } catch (error: any) {
+      console.error(`[Generate Sections] ❌ Failed to generate summary for section ${index + 1}:`, error.message);
+      
+      // Create fallback summary
+      const fallbackSummary: SectionSummary = {
+        sectionId: section.id || `section-${index}`,
+        humanizedPath,
+        h2Title,
+        content: `${h2Title}\n\n${sectionText.slice(0, 300)}...\n\nMore information: ${absoluteUrl}`,
+        tokenCount: Math.ceil(sectionText.slice(0, 300).length / 4),
+        absoluteUrl,
+      };
+
+      sectionSummaries.push(fallbackSummary);
+      totalTokens += fallbackSummary.tokenCount;
+    }
+  }
+
+  console.log(`[Generate Sections] ✅ Generated ${sectionSummaries.length} section summaries`);
+  console.log(`[Generate Sections] 📊 Total tokens: ${totalTokens}`);
 
   return {
-    content: aiResult.summary,
-    tokenCount: aiResult.tokenCount,
+    sections: sectionSummaries,
+    totalTokenCount: totalTokens,
   };
 }
 
+// ============ MAIN EXPORT FUNCTION ============
+
 /**
- * ✅ EXISTING: Основная функция для извлечения и генерации контента
+ * Main function for extracting page content and generating section-based summaries
+ * Orchestrates the entire process from file extraction to AI summary generation
+ * 
+ * @param pageMetadata - Page metadata (title, description, keywords, href)
+ * @returns Array of section summaries with total token count
  */
-export async function extractAndGenerateContent(
+export async function extractAndGenerateSectionContent(
   pageMetadata: PageMetadataForPrompt
-): Promise<GeneratedContent> {
-  console.log(`\n[Extract & Generate] Processing page: ${pageMetadata.href}`);
+): Promise<GeneratedSectionsContent> {
+  console.log(`\n[Extract & Generate Sections] 🚀 Processing page: ${pageMetadata.href}`);
   
+  // Step 1: Extract sections from page file
   const extractionResult = await extractPageContent(pageMetadata.href);
   
   if (!extractionResult.success) {
-    console.warn(`[Extract & Generate] Could not extract sections: ${extractionResult.error}`);
-    console.warn(`[Extract & Generate] Using metadata only for content generation`);
+    console.warn(`[Extract & Generate Sections] ⚠️  Could not extract sections: ${extractionResult.error}`);
+    console.warn(`[Extract & Generate Sections] ⚠️  Returning empty sections array`);
+    
+    return {
+      sections: [],
+      totalTokenCount: 0,
+    };
   }
   
-  const generatedContent = await generateContentSummary(
+  // Step 2: Generate section-based summaries
+  const generatedContent = await generateSectionBasedContent(
     pageMetadata,
     extractionResult.sections
   );
   
-  console.log(`[Extract & Generate] ✅ Generated content: ${generatedContent.tokenCount} tokens`);
+  console.log(`[Extract & Generate Sections] ✅ Complete: ${generatedContent.sections.length} sections, ${generatedContent.totalTokenCount} total tokens`);
   
   return generatedContent;
 }

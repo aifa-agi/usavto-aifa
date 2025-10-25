@@ -12,17 +12,17 @@ import {
   TOKEN_LIMIT_EXCEEDED,
   TokenLimitExceededResponse
 } from "@/types/system-prompt-types";
-import { extractAndGenerateContent } from "@/lib/extract-page-content";
+import { extractAndGenerateSectionContent } from "@/lib/extract-page-content";
 import { calculateTokenUsage, wouldExceedLimit, formatTokenUsage } from "@/lib/token-utils";
 import { prepareContentForCodeGeneration } from "@/lib/escape-utils";
 import { appConfig } from "@/config/appConfig";
 import { 
   SYSTEM_PROMPT_MAX_TOKENS, 
   SYSTEM_PROMPT_WARNING_THRESHOLD,
-  AI_SUMMARY_SYSTEM_INSTRUCTION 
 } from "@/config/prompts/base-system-prompt";
 
-// ✅ НОВОЕ: Безопасный импорт внутренней базы знаний компании
+// ============ INTERNAL COMPANY KNOWLEDGE BASE ============
+// Safe import of internal company knowledge base
 let INTERNAL_COMPANY_KB = "";
 let INTERNAL_COMPANY_KB_TOKENS = 0;
 
@@ -35,7 +35,7 @@ try {
   console.warn("[Config] ⚠️  internal-company-knowledge-base.ts not found. Continuing without it.");
 }
 
-// -------------------- Config --------------------
+// ============ CONFIGURATION ============
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const GITHUB_REPO = process.env.GITHUB_REPO;
@@ -43,7 +43,7 @@ const GITHUB_BRANCH = process.env.GITHUB_BRANCH || "main";
 const DEFAULT_PROMPT_FILE_PATH = "config/prompts/base-system-prompt.ts";
 const PROJECT_ROOT = process.cwd();
 
-// -------------------- Types --------------------
+// ============ TYPES ============
 
 interface AddToSystemPromptResponse {
   success: boolean;
@@ -53,7 +53,7 @@ interface AddToSystemPromptResponse {
   error?: string;
 }
 
-// -------------------- Helpers --------------------
+// ============ HELPERS ============
 
 function getEnvMode(): "development" | "production" {
   return process.env.NODE_ENV === "production" ? "production" : "development";
@@ -69,7 +69,7 @@ function resolveLocalAbsolutePath(relPath: string): string {
   return normalized;
 }
 
-// -------------------- Read Current Config (Direct - no self-fetch) --------------------
+// ============ READ CURRENT CONFIG ============
 
 async function readPromptFromLocal(filePath: string): Promise<string> {
   const absolute = resolveLocalAbsolutePath(filePath);
@@ -124,7 +124,7 @@ async function readPromptFromGitHub(filePath: string): Promise<string> {
 }
 
 function parseSystemPromptConfigFromSource(source: string): SystemPromptConfig {
-  // Извлекаем CUSTOM_BASE_INSTRUCTION
+  // Extract CUSTOM_BASE_INSTRUCTION
   const customPattern = /export\s+const\s+CUSTOM_BASE_INSTRUCTION\s*=\s*`([\s\S]*?)`;/;
   const customMatch = source.match(customPattern);
   
@@ -135,7 +135,7 @@ function parseSystemPromptConfigFromSource(source: string): SystemPromptConfig {
   const customContent = customMatch[1].trim();
   const customTokenCount = Math.ceil(customContent.length / 4);
   
-  // Извлекаем systemPromptData
+  // Extract systemPromptData
   const dataPattern = /export\s+const\s+systemPromptData\s*:\s*SystemPromptCollection\s*=\s*(\[[\s\S]*?\]);/;
   const dataMatch = source.match(dataPattern);
   
@@ -149,7 +149,8 @@ function parseSystemPromptConfigFromSource(source: string): SystemPromptConfig {
     }
   }
   
-  const knowledgeBaseTokens = knowledgeBase.reduce((sum, entry) => sum + entry.tokenCount, 0);
+  // Calculate total tokens from sections
+  const knowledgeBaseTokens = knowledgeBase.reduce((sum, entry) => sum + entry.totalTokenCount, 0);
   
   return {
     customInstruction: {
@@ -195,7 +196,7 @@ async function readCurrentConfig(): Promise<SystemPromptConfig> {
   }
 }
 
-// -------------------- Generate Entry from Page Metadata --------------------
+// ============ GENERATE ENTRY FROM PAGE METADATA ============
 
 async function generateSystemPromptFromPage(
   pageMetadata: PageMetadataForPrompt
@@ -210,11 +211,11 @@ async function generateSystemPromptFromPage(
   console.log("5️⃣  Href:       ", pageMetadata.href);
   console.log("=".repeat(70) + "\n");
   
-  console.log("🔍 Extracting content from page file...");
+  console.log("🔍 Extracting and generating section-based content...");
   
-  const { content, tokenCount } = await extractAndGenerateContent(pageMetadata);
+  const { sections, totalTokenCount } = await extractAndGenerateSectionContent(pageMetadata);
   
-  console.log(`✅ Content generated: ${tokenCount} tokens\n`);
+  console.log(`✅ Generated ${sections.length} section summaries: ${totalTokenCount} total tokens\n`);
   
   return {
     id: pageMetadata.id,
@@ -222,27 +223,53 @@ async function generateSystemPromptFromPage(
     description: pageMetadata.description,
     keywords: pageMetadata.keywords,
     href: pageMetadata.href,
-    content,
-    tokenCount,
+    sections,
+    totalTokenCount,
   };
 }
 
-// -------------------- Generate Final String --------------------
+// ============ GENERATE BUSINESS KNOWLEDGE BASE STRING ============
 
 /**
- * ✅ ИСПРАВЛЕНО: Генерирует BUSINESS_KNOWLEDGE_BASE БЕЗ customInstruction
+ * Generates BUSINESS_KNOWLEDGE_BASE string WITHOUT custom instruction
+ * Includes internal KB + section-based page summaries with anchor links
  * 
- * ВАЖНО: 
- * - НЕ включает CUSTOM_BASE_INSTRUCTION (он экспортируется отдельно)
- * - Экранирует только пользовательский контент (internal KB + pages)
- * - Возвращает ТОЛЬКО internal KB + dynamic pages
+ * IMPORTANT: 
+ * - Does NOT include CUSTOM_BASE_INSTRUCTION (exported separately)
+ * - Escapes only user-generated content (internal KB + pages)
+ * - Returns ONLY internal KB + dynamic sections
  */
 function generateBusinessKnowledgeBase(config: SystemPromptConfig): string {
   console.log("[Generate String] Formatting BUSINESS_KNOWLEDGE_BASE");
   
   let result = "";
+
+  // Section-based page summaries
+  const dynamicPagesPart = config.knowledgeBase.length > 0
+    ? `--- The most up-to-date information  ( When answering, always show the full anchor link that follows More information )---\n\n` + config.knowledgeBase
+        .map(entry => {
+          const pageHeader = `## ${entry.title}\n\n**Page URL:** ${appConfig.url}${entry.href}\n`;
+          
+          const sectionsFormatted = entry.sections
+            .map(section => {
+              // Escape section content safely
+              const safeContent = prepareContentForCodeGeneration(section.content, {
+                sanitize: true,
+                validate: true,
+                throwOnUnsafe: false
+              });
+              
+              return `### ${section.h2Title}\n\n${safeContent}\n`;
+            })
+            .join("\n");
+          
+          return `${pageHeader}\n${sectionsFormatted}\n---`;
+        })
+        .join("\n\n")
+    : "";
   
-  // ✅ БЕЗОПАСНО: Экранируем internal KB перед вставкой
+  
+  // Internal company knowledge base (if exists)
   const internalKBPart = INTERNAL_COMPANY_KB 
     ? `--- Internal Company Knowledge Base ---\n\n${prepareContentForCodeGeneration(INTERNAL_COMPANY_KB, { 
         sanitize: true, 
@@ -251,44 +278,21 @@ function generateBusinessKnowledgeBase(config: SystemPromptConfig): string {
       })}\n\n` 
     : "";
   
-  const dynamicPagesPart = config.knowledgeBase.length > 0
-    ? `--- Dynamic Page Summaries ---\n\n` + config.knowledgeBase
-        .map(entry => {
-          const absoluteUrl = `${appConfig.url}${entry.href}`;
-          
-          // ✅ БЕЗОПАСНО: Экранируем контент каждой страницы
-          const safeContent = prepareContentForCodeGeneration(entry.content, {
-            sanitize: true,
-            validate: true,
-            throwOnUnsafe: false
-          });
-          
-          return `## ${entry.title}
-
-**URL:** ${absoluteUrl}
-
-${safeContent}
-
----`;
-        })
-        .join("\n\n")
-    : "";
   
-  // ✅ ИСПРАВЛЕНО: ОБЪЕДИНЯЕМ БЕЗ customPart
-  result = internalKBPart + dynamicPagesPart;
+  // Combine without custom instruction
+  result =  dynamicPagesPart + internalKBPart;
   
   return result.trim();
 }
 
-// -------------------- Generate File Content --------------------
+// ============ GENERATE FILE CONTENT ============
 
 /**
- * ✅ ИСПРАВЛЕНО: Генерирует содержимое файла base-system-prompt.ts
+ * Generates complete base-system-prompt.ts file content
  * 
- * ВАЖНО:
- * - CUSTOM_BASE_INSTRUCTION НЕ экранируется (содержит ${} для интерполяции)
- * - AI_SUMMARY_SYSTEM_INSTRUCTION НЕ экранируется (системная инструкция)
- * - BUSINESS_KNOWLEDGE_BASE экранируется (пользовательский контент)
+ * IMPORTANT:
+ * - CUSTOM_BASE_INSTRUCTION NOT escaped (contains ${} for interpolation)
+ * - BUSINESS_KNOWLEDGE_BASE escaped (user-generated content)
  */
 function generateSystemPromptFile(config: SystemPromptConfig): string {
   const timestamp = new Date().toISOString();
@@ -296,14 +300,11 @@ function generateSystemPromptFile(config: SystemPromptConfig): string {
   const formattedKnowledgeBase = JSON.stringify(config.knowledgeBase, null, 2);
   
   const customInstructionTokens = config.customInstruction.tokenCount;
-  const dynamicPagesTokens = config.knowledgeBase.reduce((sum, entry) => sum + entry.tokenCount, 0);
+  const dynamicPagesTokens = config.knowledgeBase.reduce((sum, entry) => sum + entry.totalTokenCount, 0);
   const totalTokensWithoutInternalKB = customInstructionTokens + dynamicPagesTokens;
   
-  // ✅ ИСПРАВЛЕНО: НЕ экранируем (содержит ${} для интерполяции с appConfig)
+  // Do NOT escape custom instruction (contains ${} for interpolation with appConfig)
   const customInstruction = config.customInstruction.content;
-  
-  // ✅ ИСПРАВЛЕНО: НЕ экранируем (системная инструкция, уже безопасна)
-  const aiInstruction = AI_SUMMARY_SYSTEM_INSTRUCTION;
   
   const internalKBImportCode = `
 // ============ INTERNAL COMPANY KNOWLEDGE BASE (manually managed) ============
@@ -334,15 +335,12 @@ import { appConfig } from "@/config/appConfig";
 export const SYSTEM_PROMPT_MAX_TOKENS = ${SYSTEM_PROMPT_MAX_TOKENS};
 export const SYSTEM_PROMPT_WARNING_THRESHOLD = ${SYSTEM_PROMPT_WARNING_THRESHOLD};
 
-// ============ SAMMARY PROMPT CONFIGURATION ============
-export const AI_SUMMARY_SYSTEM_INSTRUCTION = \`${aiInstruction}\`;
-
 // ============ CUSTOM BASE INSTRUCTION (highest priority) ============
 export const CUSTOM_BASE_INSTRUCTION = \`${customInstruction}\`;
 
 ${internalKBImportCode}
 
-// ============ DYNAMIC KNOWLEDGE BASE (auto-generated from pages) ============
+// ============ DYNAMIC KNOWLEDGE BASE (section-based, auto-generated from pages) ============
 export const systemPromptData: SystemPromptCollection = ${formattedKnowledgeBase};
 
 // ============ FINAL COMBINED PROMPT ============
@@ -350,10 +348,11 @@ export const BUSINESS_KNOWLEDGE_BASE = \`${businessKnowledgeBase}\`;
 
 // ============ METADATA ============
 // Total knowledge base entries: ${config.knowledgeBase.length}
+// Total sections across all pages: ${config.knowledgeBase.reduce((sum, e) => sum + e.sections.length, 0)}
 // 
 // TOKEN BREAKDOWN:
 // - Custom instruction tokens: ${customInstructionTokens}
-// - Dynamic page tokens: ${dynamicPagesTokens}
+// - Dynamic page tokens (section-based): ${dynamicPagesTokens}
 // - Subtotal (without internal KB): ${totalTokensWithoutInternalKB}
 // - Internal company KB tokens: \${INTERNAL_COMPANY_KB_TOKENS} (added separately by token-utils)
 // 
@@ -364,7 +363,7 @@ export const BUSINESS_KNOWLEDGE_BASE = \`${businessKnowledgeBase}\`;
 `;
 }
 
-// -------------------- Write Operations --------------------
+// ============ WRITE OPERATIONS ============
 
 async function writeToLocalFileSystem(config: SystemPromptConfig): Promise<void> {
   const filePath = resolveLocalAbsolutePath(DEFAULT_PROMPT_FILE_PATH);
@@ -386,7 +385,7 @@ async function writeToGitHub(config: SystemPromptConfig): Promise<void> {
   console.log(`[GitHub Write] 🔧 Branch: ${GITHUB_BRANCH}`);
   console.log(`[GitHub Write] 🔧 File path: ${DEFAULT_PROMPT_FILE_PATH}`);
   
-  // 1. GET: получаем SHA текущего файла (для обновления)
+  // 1. GET: Get current file SHA for update
   const getUrl = `https://api.github.com/repos/${GITHUB_REPO}/contents/${DEFAULT_PROMPT_FILE_PATH}`;
   console.log(`[GitHub Write] 📡 Getting current file SHA...`);
   
@@ -407,7 +406,7 @@ async function writeToGitHub(config: SystemPromptConfig): Promise<void> {
     console.log(`[GitHub Write] ℹ️  File doesn't exist yet, will create new`);
   }
   
-  // 2. PUT: создаём/обновляем файл
+  // 2. PUT: Create/update file
   const putUrl = `https://api.github.com/repos/${GITHUB_REPO}/contents/${DEFAULT_PROMPT_FILE_PATH}`;
   console.log(`[GitHub Write] 📤 Committing to GitHub...`);
   
@@ -415,12 +414,12 @@ async function writeToGitHub(config: SystemPromptConfig): Promise<void> {
     method: "PUT",
     headers: {
       Authorization: `Bearer ${GITHUB_TOKEN}`,
-      Accept: "application/vnd.github.v3+json",
+      Accept: "application/vnd.github.v3+json", 
       "Content-Type": "application/json",
       "User-Agent": "NextJS-App",
     },
     body: JSON.stringify({
-      message: `Update system prompt - ${new Date().toISOString()}`,
+      message: `Update system prompt (section-based) - ${new Date().toISOString()}`,
       content: Buffer.from(fileContent, "utf-8").toString("base64"),
       branch: GITHUB_BRANCH,
       ...(sha && { sha }),
@@ -439,7 +438,9 @@ async function writeToGitHub(config: SystemPromptConfig): Promise<void> {
   console.log(`[GitHub Write] 📝 Commit SHA: ${result.commit?.sha?.substring(0, 7) || "unknown"}`);
 }
 
-// -------------------- POST Handler --------------------
+// ============ POST HANDLER ============
+
+// ============ POST HANDLER ============
 
 export async function POST(
   req: NextRequest
@@ -448,7 +449,7 @@ export async function POST(
   const environment = getEnvMode();
   
   console.log(`\n${"=".repeat(70)}`);
-  console.log(`[${requestId}] 🚀 Update System Prompt Entry`);
+  console.log(`[${requestId}] 🚀 Update System Prompt Entry (Section-Based)`);
   console.log(`${"=".repeat(70)}`);
   
   try {
@@ -485,7 +486,7 @@ export async function POST(
     const currentConfig = await readCurrentConfig();
     console.log(`[${requestId}] ✅ Loaded ${currentConfig.knowledgeBase.length} entries`);
     
-    // ✅ ВАЖНО: calculateTokenUsage добавляет internal KB токены автоматически
+    // calculateTokenUsage adds internal KB tokens automatically
     const currentUsage = calculateTokenUsage(currentConfig);
     console.log(`[${requestId}] 📊 Current usage: ${formatTokenUsage(currentUsage.currentTokens)} / ${formatTokenUsage(currentUsage.maxTokens)}`);
     console.log(`[${requestId}] 📊 Breakdown:`);
@@ -494,30 +495,32 @@ export async function POST(
     console.log(`[${requestId}]    - Total: ${formatTokenUsage(currentUsage.currentTokens)}`);
     
     let updatedKnowledgeBase: SystemPromptCollection;
+    let addedSectionsCount = 0; // ✅ Track sections count outside the if block
     
     if (action === "add") {
-      console.log(`[${requestId}] ➕ Generating entry for page...`);
+      console.log(`[${requestId}] ➕ Generating section-based entry for page...`);
       const newEntry = await generateSystemPromptFromPage(pageMetadata);
-      console.log(`[${requestId}] ✅ Generated (${newEntry.tokenCount} tokens)`);
+      addedSectionsCount = newEntry.sections.length; // ✅ Store count
+      console.log(`[${requestId}] ✅ Generated ${newEntry.sections.length} sections (${newEntry.totalTokenCount} tokens)`);
       
-      // ✅ ВАЖНО: wouldExceedLimit учитывает internal KB автоматически
-      if (wouldExceedLimit(currentUsage.currentTokens, newEntry.tokenCount)) {
-        const projectedTokens = currentUsage.currentTokens + newEntry.tokenCount;
+      // wouldExceedLimit considers internal KB automatically
+      if (wouldExceedLimit(currentUsage.currentTokens, newEntry.totalTokenCount)) {
+        const projectedTokens = currentUsage.currentTokens + newEntry.totalTokenCount;
         
         console.error(`[${requestId}] ❌ TOKEN LIMIT EXCEEDED`);
         console.error(`[${requestId}]    Current:   ${formatTokenUsage(currentUsage.currentTokens)}`);
-        console.error(`[${requestId}]    Attempted: ${formatTokenUsage(newEntry.tokenCount)}`);
+        console.error(`[${requestId}]    Attempted: ${formatTokenUsage(newEntry.totalTokenCount)}`);
         console.error(`[${requestId}]    Projected: ${formatTokenUsage(projectedTokens)}`);
         console.error(`[${requestId}]    Limit:     ${formatTokenUsage(currentUsage.maxTokens)}`);
         console.log(`${"=".repeat(70)}\n`);
         
         return NextResponse.json<TokenLimitExceededResponse>({
           success: false,
-          message: `You have reached the limit for pages in system instructions. Current: ${formatTokenUsage(currentUsage.currentTokens)}, Attempted: ${formatTokenUsage(newEntry.tokenCount)}, Projected: ${formatTokenUsage(projectedTokens)}, Limit: ${formatTokenUsage(currentUsage.maxTokens)}. If you need more information, use vector database integration.`,
+          message: `You have reached the limit for pages in system instructions. Current: ${formatTokenUsage(currentUsage.currentTokens)}, Attempted: ${formatTokenUsage(newEntry.totalTokenCount)}, Projected: ${formatTokenUsage(projectedTokens)}, Limit: ${formatTokenUsage(currentUsage.maxTokens)}. If you need more information, use vector database integration.`,
           error: TOKEN_LIMIT_EXCEEDED,
           tokenUsage: {
             current: currentUsage.currentTokens,
-            attempted: newEntry.tokenCount,
+            attempted: newEntry.totalTokenCount,
             projected: projectedTokens,
             limit: currentUsage.maxTokens,
             code: TOKEN_LIMIT_EXCEEDED,
@@ -526,7 +529,7 @@ export async function POST(
         }, { status: 400 });
       }
       
-      const projectedTokens = currentUsage.currentTokens + newEntry.tokenCount;
+      const projectedTokens = currentUsage.currentTokens + newEntry.totalTokenCount;
       console.log(`[${requestId}] ✅ Token limit check passed`);
       console.log(`[${requestId}]    Projected: ${formatTokenUsage(projectedTokens)} / ${formatTokenUsage(currentUsage.maxTokens)} tokens`);
       
@@ -553,8 +556,8 @@ export async function POST(
       console.log(`[${requestId}] ➖ Removed entry`);
     }
     
-    // ✅ ВАЖНО: totalTokenCount НЕ включает internal KB
-    const knowledgeBaseTokens = updatedKnowledgeBase.reduce((sum, e) => sum + e.tokenCount, 0);
+    // totalTokenCount does NOT include internal KB
+    const knowledgeBaseTokens = updatedKnowledgeBase.reduce((sum, e) => sum + e.totalTokenCount, 0);
     const updatedConfig: SystemPromptConfig = {
       customInstruction: currentConfig.customInstruction,
       knowledgeBase: updatedKnowledgeBase,
@@ -563,19 +566,17 @@ export async function POST(
     
     console.log(`[${requestId}] 📊 New totals:`);
     console.log(`[${requestId}]    - Entries: ${updatedConfig.knowledgeBase.length}`);
+    console.log(`[${requestId}]    - Sections: ${updatedConfig.knowledgeBase.reduce((sum, e) => sum + e.sections.length, 0)}`);
     console.log(`[${requestId}]    - Config tokens (without internal KB): ${formatTokenUsage(updatedConfig.totalTokenCount)}`);
     console.log(`[${requestId}]    - Total with internal KB: ${formatTokenUsage(updatedConfig.totalTokenCount + INTERNAL_COMPANY_KB_TOKENS)}`);
     
-    // ✅ ИСПРАВЛЕНО: Правильная логика записи
     console.log(`[${requestId}] 💾 Writing to storage...`);
     
     if (environment === "production") {
-      // ✅ В production пишем ТОЛЬКО в GitHub
       console.log(`[${requestId}] 🌐 Writing to GitHub...`);
       await writeToGitHub(updatedConfig);
       console.log(`[${requestId}] ✅ Successfully committed to GitHub`);
     } else {
-      // ✅ В development пишем ТОЛЬКО локально
       console.log(`[${requestId}] 📁 Writing to local filesystem...`);
       await writeToLocalFileSystem(updatedConfig);
       console.log(`[${requestId}] ✅ Successfully written to local file`);
@@ -584,9 +585,12 @@ export async function POST(
     console.log(`[${requestId}] 🎉 SUCCESS`);
     console.log(`${"=".repeat(70)}\n`);
     
+    // ✅ FIXED: Use addedSectionsCount instead of newEntry.sections.length
     return NextResponse.json({
       success: true,
-      message: `Successfully ${action === "add" ? "added" : "removed"} system prompt entry`,
+      message: action === "add" 
+        ? `Successfully added system prompt entry with ${addedSectionsCount} sections`
+        : `Successfully removed system prompt entry`,
       data: updatedConfig,
       environment,
     });
@@ -604,3 +608,4 @@ export async function POST(
     }, { status: 500 });
   }
 }
+

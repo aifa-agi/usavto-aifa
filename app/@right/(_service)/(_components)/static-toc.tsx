@@ -12,7 +12,7 @@ import { NavigationSection } from "../(_utils)/navigation-utils";
 
 export interface StaticTOCProps {
     /** Array of navigation sections extracted from content */
-    sections: NavigationSection[];
+    navigationSections?: NavigationSection[];
     /** Optional heading text for TOC (defaults to "Contents") */
     heading?: string;
 }
@@ -28,17 +28,17 @@ export interface StaticTOCProps {
  * - Pure anchor links for instant browser-native navigation
  * - Works without JavaScript (progressive enhancement)
  * - Sticky positioning on desktop (2xl+)
- * - Hidden when no navigable sections exist
+ * - Hidden when no navigable navigationSection exist
  * - Accessible with proper semantic HTML
  * - SEO-friendly (crawlable links)
  * 
- * @param sections - Navigation sections with IDs and titles
+ * @param navigationSections? - Navigation snavigationSection with IDs and titles
  * @param heading - Optional custom heading (default: "Contents")
  * @returns Rendered TOC navigation
  */
-export function StaticTOC({ sections, heading = "Contents" }: StaticTOCProps) {
-    // Hide TOC if no sections available
-    if (!sections || sections.length === 0) {
+export function StaticTOC({ navigationSections, heading = "Contents" }: StaticTOCProps) {
+    // Hide TOC if no navigationSection available
+    if (!navigationSections || navigationSections.length === 0) {
         return null;
     }
 
@@ -55,10 +55,10 @@ export function StaticTOC({ sections, heading = "Contents" }: StaticTOCProps) {
 
             {/* Navigation Links */}
             <ul className="space-y-1" role="list">
-                {sections.map(({ id, h2Title }) => (
-                    <li key={id}>
+                {navigationSections.map(({ humanizedPath, h2Title }) => (
+                    <li key={humanizedPath}>
                         <a
-                            href={`#${id}`}
+                            href={`#${humanizedPath}`}
                             className="
                 block text-sm text-muted-foreground 
                 hover:text-foreground 
@@ -89,8 +89,8 @@ export function StaticTOC({ sections, heading = "Contents" }: StaticTOCProps) {
  * CompactTOC - Condensed version for narrow sidebars
  * Shows only first 30 characters of each title
  */
-export function CompactTOC({ sections, heading = "Contents" }: StaticTOCProps) {
-    if (!sections || sections.length === 0) {
+export function CompactTOC({ navigationSections, heading = "Contents" }: StaticTOCProps) {
+    if (!navigationSections || navigationSections.length === 0) {
         return null;
     }
 
@@ -105,16 +105,16 @@ export function CompactTOC({ sections, heading = "Contents" }: StaticTOCProps) {
             </h3>
 
             <ul className="space-y-0.5" role="list">
-                {sections.map(({ id, h2Title }) => {
+                {navigationSections.map(({ humanizedPath, h2Title }) => {
                     // Truncate long titles
                     const displayTitle = h2Title.length > 30
                         ? `${h2Title.substring(0, 30)}...`
                         : h2Title;
 
                     return (
-                        <li key={id}>
+                        <li key={humanizedPath}>
                             <a
-                                href={`#${id}`}
+                                href={`#${humanizedPath}`}
                                 className="
                   block text-xs text-muted-foreground 
                   hover:text-foreground 
@@ -144,8 +144,8 @@ export function CompactTOC({ sections, heading = "Contents" }: StaticTOCProps) {
  * NumberedTOC - Version with section numbers
  * Useful for formal documents or tutorials
  */
-export function NumberedTOC({ sections, heading = "Contents" }: StaticTOCProps) {
-    if (!sections || sections.length === 0) {
+export function NumberedTOC({ navigationSections, heading = "Contents" }: StaticTOCProps) {
+    if (!navigationSections || navigationSections.length === 0) {
         return null;
     }
 
@@ -160,13 +160,13 @@ export function NumberedTOC({ sections, heading = "Contents" }: StaticTOCProps) 
             </h3>
 
             <ol className="space-y-1 list-none" role="list">
-                {sections.map(({ id, h2Title }, index) => (
-                    <li key={id} className="flex items-start">
+                {navigationSections.map(({ humanizedPath, h2Title }, index) => (
+                    <li key={humanizedPath} className="flex items-start">
                         <span className="text-xs text-muted-foreground mr-2 mt-1 font-mono flex-shrink-0">
                             {String(index + 1).padStart(2, '0')}.
                         </span>
                         <a
-                            href={`#${id}`}
+                            href={`#${humanizedPath}`}
                             className="
                 flex-1 text-sm text-muted-foreground 
                 hover:text-foreground 
@@ -198,8 +198,8 @@ export function NumberedTOC({ sections, heading = "Contents" }: StaticTOCProps) 
  * Note: Actual collapse functionality requires client-side wrapper
  * This provides the HTML structure only
  */
-export function CollapsibleTOCStatic({ sections, heading = "Contents" }: StaticTOCProps) {
-    if (!sections || sections.length === 0) {
+export function CollapsibleTOCStatic({ navigationSections, heading = "Contents" }: StaticTOCProps) {
+    if (!navigationSections || navigationSections.length === 0) {
         return null;
     }
 
@@ -228,10 +228,10 @@ export function CollapsibleTOCStatic({ sections, heading = "Contents" }: StaticT
             </summary>
 
             <ul className="space-y-1 mt-3" role="list">
-                {sections.map(({ id, h2Title }) => (
-                    <li key={id}>
+                {navigationSections.map(({ humanizedPath, h2Title }) => (
+                    <li key={humanizedPath}>
                         <a
-                            href={`#${id}`}
+                            href={`#${humanizedPath}`}
                             className="
                 block text-sm text-muted-foreground 
                 hover:text-foreground 

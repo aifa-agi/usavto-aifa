@@ -132,7 +132,7 @@ export default function ServerContentRenderer({
     const navigationSections = extractNavigationSections(sections);
 
     // Collect section IDs for client interactivity island
-    const sectionIds = navigationSections.map(nav => nav.id);
+    const sectionIds = navigationSections.map(nav => nav.humanizedPath);
 
     return (
         <div className="content-renderer">
@@ -160,7 +160,7 @@ export default function ServerContentRenderer({
                             {/* Content container with conditional padding */}
                             <div className="2xl:px-[.8rem] 2xl:pb-10 2xl:md:px-8">
                                 {/* Client Navigation Island - Mobile navigation buttons */}
-                                <ClientNavigationIsland sections={navigationSections} />
+                                <ClientNavigationIsland navigationSections={navigationSections} />
 
                                 {/* Render all content sections */}
                                 {sections.map((section, index) => {
@@ -174,7 +174,7 @@ export default function ServerContentRenderer({
                                             {/* Static section component - server-rendered */}
                                             <StaticSection
                                                 section={section}
-                                                sectionId={navigationSection?.id}
+                                                humanizedPath={navigationSection?.humanizedPath}
                                                 index={index}
                                             />
 
@@ -188,7 +188,7 @@ export default function ServerContentRenderer({
 
                         {/* Sidebar Table of Contents - visible only on 2xl+ screens */}
                         <div className="sticky top-20 col-span-1 mt-52 hidden 2xl:flex flex-col divide-y divide-muted self-start pb-24">
-                            <StaticTOC sections={navigationSections} />
+                            <StaticTOC navigationSections={navigationSections} />
                         </div>
                     </MaxWidthWrapper>
                 </div>

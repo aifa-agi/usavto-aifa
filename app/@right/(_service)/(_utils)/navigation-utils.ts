@@ -15,7 +15,7 @@ import { extractTextFromNode, generateSectionId } from "../(_components)/server-
  */
 export interface NavigationSection {
   /** Unique ID for the section (used in anchor links) */
-  id: string;
+  humanizedPath: string;
   /** Full H2 heading text */
   h2Title: string;
   /** Short version for mobile navigation buttons */
@@ -116,7 +116,7 @@ export function extractNavigationSections(
 
     // Create navigation section entry
     navigationSections.push({
-      id: anchorId,
+      humanizedPath: anchorId,
       h2Title,
       shortTitle: generateShortTitle(h2Title)
     });
@@ -158,7 +158,7 @@ export function createNavigationMap(
   const map = new Map<string, NavigationSection>();
 
   navigationSections.forEach(navSection => {
-    map.set(navSection.id, navSection);
+    map.set(navSection.humanizedPath, navSection);
   });
 
   return map;
@@ -172,7 +172,7 @@ export function getNavigationSectionById(
   sectionId: string
 ): NavigationSection | null {
   const navigationSections = extractNavigationSections(sections);
-  return navigationSections.find(nav => nav.id === sectionId) || null;
+  return navigationSections.find(nav => nav.humanizedPath === sectionId) || null;
 }
 
 // ============================================
@@ -223,8 +223,8 @@ export function validateUniqueIds(sections: NavigationSection[]): {
   const idCounts = new Map<string, number>();
   
   sections.forEach(section => {
-    const count = idCounts.get(section.id) || 0;
-    idCounts.set(section.id, count + 1);
+    const count = idCounts.get(section.humanizedPath) || 0;
+    idCounts.set(section.humanizedPath, count + 1);
   });
 
   const duplicates = Array.from(idCounts.entries())

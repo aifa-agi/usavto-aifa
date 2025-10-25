@@ -433,20 +433,20 @@ export function renderTipTapNode(
  */
 export function renderTipTapDocument(
   document: TipTapDocument,
-  sectionId?: string
+  humanizedPath?: string
 ): React.ReactNode[] {
   if (!document?.content) {
     return [];
   }
 
-  // Track if we've added the sectionId to an H2 yet
+  // Track if we've added the humanizedPath to an H2 yet
   let h2IdApplied = false;
 
   return document.content.map((node, index) => {
-    // Apply sectionId to first H2 heading only
-    if (node.type === "heading" && node.attrs?.level === 2 && !h2IdApplied && sectionId) {
+    // Apply humanizedPath to first H2 heading only
+    if (node.type === "heading" && node.attrs?.level === 2 && !h2IdApplied && humanizedPath) {
       h2IdApplied = true;
-      return renderTipTapNode(node, index, sectionId);
+      return renderTipTapNode(node, index, humanizedPath);
     }
 
     return renderTipTapNode(node, index);
@@ -474,7 +474,7 @@ export function isValidTipTapDocument(doc: any): doc is TipTapDocument {
  */
 export function safeRenderTipTapDocument(
   document: any,
-  sectionId?: string
+  humanizedPath: string
 ): React.ReactNode[] {
   if (!isValidTipTapDocument(document)) {
     console.error("[ServerRender] Invalid TipTap document structure");
@@ -487,5 +487,5 @@ export function safeRenderTipTapDocument(
     ];
   }
 
-  return renderTipTapDocument(document, sectionId);
+  return renderTipTapDocument(document, humanizedPath);
 }

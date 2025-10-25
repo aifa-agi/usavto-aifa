@@ -1,9 +1,53 @@
 // @/types/system-prompt-types.ts
 
+
+/**
+ * Section Summary Interface
+ * Represents a single section within a page with its own summary and anchor link
+ * Enables precise navigation to specific content sections
+ */
+export interface SectionSummary {
+  /** Original section ID from page sections array (e.g., "h2-1", "h2-2") */
+  sectionId: string;
+  
+  /** 
+   * Humanized anchor path (URL-safe slug)
+   * Generated from H2 title using transliteration and slugification
+   * Example: "kak-pravilno-delat-putevye-listy-v-2025"
+   */
+  humanizedPath: string;
+  
+  /** 
+   * H2 heading text extracted from section content
+   * Used as section title in knowledge base
+   */
+  h2Title: string;
+  
+  /** 
+   * AI-generated summary for this specific section
+   * Includes auto-appended reference link at the end
+   */
+  content: string;
+  
+  /** 
+   * Token count for this section's summary
+   * Used for granular token budget management
+   */
+  tokenCount: number;
+  
+  /** 
+   * Absolute URL with anchor to this section
+   * Format: https://domain.com/page-path#humanized-path
+   * Auto-appended to summary content as "More information: {url}"
+   */
+  absoluteUrl: string;
+}
+
+
 /**
  * System Instruction Entry Interface
  * Represents a single knowledge base entry extracted from a page
- * This data will be transformed into a text string for the AI chatbot
+ * Now supports section-level granularity for precise chatbot navigation
  */
 export interface SystemPromptEntry {
   /** Unique identifier from the source page */
@@ -22,25 +66,27 @@ export interface SystemPromptEntry {
   href: string;
   
   /** 
-   * Generated content summary
-   * This is a condensed version of the page content
-   * optimized for AI chatbot context understanding
+   * Array of section summaries
+   * Each section has its own AI-generated summary and anchor link
+   * Replaces the previous single "content" field
    */
-  content: string;
+  sections: SectionSummary[];
   
   /**
-   * Token count for this entry
-   * Calculated by AI model after content generation
+   * Total token count across all sections
+   * Sum of all section tokenCounts
    * Used for ordering and optimization of final BUSINESS_KNOWLEDGE_BASE
    */
-  tokenCount: number;
+  totalTokenCount: number;
 }
+
 
 /**
  * Array of system prompt entries
  * This represents the raw data structure before string generation
  */
 export type SystemPromptCollection = SystemPromptEntry[];
+
 
 /**
  * Custom Base Instruction
@@ -67,6 +113,7 @@ export interface CustomBaseInstruction {
   lastUpdated: string;
 }
 
+
 /**
  * Complete System Prompt Configuration
  * Combines custom base instruction with dynamic knowledge base
@@ -81,6 +128,7 @@ export interface SystemPromptConfig {
   /** Total token count (custom + all entries) */
   totalTokenCount: number;
 }
+
 
 /**
  * Page metadata for system prompt generation
@@ -103,6 +151,7 @@ export interface PageMetadataForPrompt {
   href: string;
 }
 
+
 /**
  * API Request payload for adding/removing system prompt entry
  * Updated to include page metadata
@@ -114,6 +163,7 @@ export interface AddToSystemPromptRequest {
   /** Page metadata (required for "add" action) */
   pageMetadata?: PageMetadataForPrompt;
 }
+
 
 /**
  * Token usage information
@@ -136,10 +186,12 @@ export interface TokenUsageInfo {
   isApproachingLimit: boolean;
 }
 
+
 /**
  * Error code for token limit exceeded
  */
 export const TOKEN_LIMIT_EXCEEDED = "TOKEN_LIMIT_EXCEEDED" as const;
+
 
 /**
  * Token limit error details
@@ -161,6 +213,7 @@ export interface TokenLimitErrorDetails {
   /** Error code for identification */
   code: typeof TOKEN_LIMIT_EXCEEDED;
 }
+
 
 /**
  * Extended API response for token limit errors
