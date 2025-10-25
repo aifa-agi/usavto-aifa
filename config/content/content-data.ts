@@ -1117,7 +1117,15 @@ export const contentData = {
         "createdAt": "2025-10-25T18:10:38.573Z",
         "updatedAt": "2025-10-25T18:10:38.573Z",
         "order": 1,
-        "badgeName": "Блог"
+        "badgeName": "Блог",
+        "description": "какой опыт вождения нужен для работы в такси яндекс",
+        "images": [
+          {
+            "id": "k5dn05woujdmwl4q8ln6z28u",
+            "alt": " какой опыт вождения нужен для работы в такси яндекс",
+            "href": "/app-images/qibymkco19nvgqsqsat2ft4j.png"
+          }
+        ]
       }
     ],
     "order": 16
@@ -1148,5 +1156,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T18:27:01.975Z";
+export const lastUpdated = "2025-10-25T18:27:45.220Z";
 export const generatedBy = "menu-persist-api";
