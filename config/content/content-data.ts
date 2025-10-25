@@ -1090,7 +1090,14 @@ export const contentData = {
         "updatedAt": "2025-10-25T17:37:16.248Z",
         "order": 1,
         "badgeName": "Блог",
-        "description": "как самозанятому получить лицензию для работы в такси"
+        "description": "как самозанятому получить лицензию для работы в такси",
+        "images": [
+          {
+            "id": "hk8s4s2wkosqpryjuyv11yyu",
+            "alt": "как самозанятому получить лицензию для работы в такси",
+            "href": "/app-images/ux6ez5f9kzqqjj4cmj4m5pkd.jpg"
+          }
+        ]
       }
     ],
     "order": 16
@@ -1121,5 +1128,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T17:54:10.022Z";
+export const lastUpdated = "2025-10-25T17:55:04.423Z";
 export const generatedBy = "menu-persist-api";
