@@ -566,7 +566,7 @@ export const contentData = {
       },
       {
         "id": "t4e8mphmddqe6bhon5eomr0j",
-        "title": "как самозанятому получить лицензию для работы в такси",
+        "title": "Как самозанятому получить лицензию для работы в такси: пошаговая инструкция",
         "href": "/blog/kak-samozanyatomu-poluchit-litsenziyu-dlya-raboty-v-taksi",
         "roles": [
           "guest"
@@ -1133,5 +1133,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T17:59:22.526Z";
+export const lastUpdated = "2025-10-25T17:59:32.509Z";
 export const generatedBy = "menu-persist-api";
