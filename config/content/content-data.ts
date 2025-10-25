@@ -1122,7 +1122,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-25T17:37:16.248Z",
-        "updatedAt": "2025-10-25T17:55:30.334Z",
+        "updatedAt": "2025-10-25T17:55:41.073Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как самозанятому получить лицензию для работы в такси: пошаговая инструкция, список документов, требования и советы для быстрого оформления!",
@@ -1188,7 +1188,8 @@ export const contentData = {
                   "minWords": 100,
                   "maxWords": 180,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-1-2",
@@ -1206,9 +1207,11 @@ export const contentData = {
                   "minWords": 60,
                   "maxWords": 120,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-2",
@@ -1730,7 +1733,8 @@ export const contentData = {
               }
             ]
           }
-        ]
+        ],
+        "isReadyDraftForPerplexity": false
       }
     ],
     "order": 16
@@ -1761,5 +1765,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T18:11:06.746Z";
+export const lastUpdated = "2025-10-25T18:11:16.240Z";
 export const generatedBy = "menu-persist-api";
