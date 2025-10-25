@@ -1146,7 +1146,7 @@ export const contentData = {
         "updatedAt": "2025-10-25T18:48:46.586Z",
         "order": 1,
         "badgeName": "Блог",
-        "description": "конфигуратор яндекс такси 2024",
+        "description": "Конфигуратор Яндекс Такси 2024: быстрый подбор авто по актуальным требованиям и тарифам. Проверяйте соответствие и подключайтесь выгодно!",
         "images": [
           {
             "id": "e6dvvk4yec84uzt0xt6f47a2",
@@ -1189,5 +1189,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T19:13:27.396Z";
+export const lastUpdated = "2025-10-25T19:13:31.970Z";
 export const generatedBy = "menu-persist-api";
