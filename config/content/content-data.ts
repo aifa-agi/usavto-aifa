@@ -1150,7 +1150,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-25T18:10:38.573Z",
-        "updatedAt": "2025-10-25T18:10:38.573Z",
+        "updatedAt": "2025-10-25T18:19:53.492Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, какой опыт вождения нужен для работы в Яндекс Такси: требования к стажу, советы новичкам и альтернативные варианты. Подайте заявку сейчас!",
@@ -1169,7 +1169,76 @@ export const contentData = {
         "intent": "Пользователь заходит на эту страницу, чтобы узнать, какой минимальный опыт вождения и стаж требуются для работы в Яндекс Такси, а также какие есть альтернативные варианты для новичков. Ожидаемое действие — ознакомиться с официальными требованиями и советами, чтобы понять, подходит ли их опыт для трудоустройства или как можно начать карьеру через другие сервисы Яндекс. Страница полностью закрывает информационный запрос, давая чёткие ответы по стажу, процедуре проверки, вариантам для новичков и практическим рекомендациям для успешного старта.",
         "taxonomy": "Эта страница представляет собой информационный гайд (guide), структурированный в формате советов и требований, посвящённый вопросу необходимого опыта вождения для трудоустройства в Яндекс Такси. Она относится к категории «Трудоустройство» с подкатегорией «Работа водителем в сервисах такси», выполняя роль кластерного контента, связанного с основными (пиллар) материалами о работе в Яндекс Такси и трудоустройстве водителей. Семантически страница усиливает авторитет ресурса в области пошаговых инструкций и практических рекомендаций для соискателей, ориентируясь на вопросы стажа, проверки документов и альтернативных путей входа в экосистему Яндекс.",
         "attention": "С первых секунд используем короткий, визуально выделенный блок-ответ с точной цифрой стажа, чтобы моментально закрыть главный вопрос пользователя; далее — динамичная структура со схемами, чек-листами и интерактивными подсказками для разных ситуаций (стаж/нет стажа), а также выделенные советы и реальные сценарии, что удерживает внимание и помогает сразу найти свой путь. В отличие от конкурентов, делаем акцент на быстрых практических решениях (пошаговые инструкции, калькуляторы допуска) и визуальном ориентировании, снижая «информационный шум» и повышая доверие через лаконичную навигацию и экспертные инсайды.",
-        "audiences": "Этот контент предназначен для начинающих и потенциальных водителей (18–40 лет), рассматривающих работу в Яндекс Такси, которые имеют минимальный или средний водительский опыт и задаются вопросом о требованиях к стажу и возможностях трудоустройства при недостатке опыта. Они ищут понятные пошаговые инструкции, разъяснения формальных правил и советы по старту, чтобы избежать ошибок и выбрать оптимальную стратегию входа в сферу пассажирских перевозок или доставки. Материал актуален для пользователей с базовым техническим уровнем, ограниченными знаниями специфики работы в такси и высоким интересом к быстрому старту работы в экосистеме Яндекса."
+        "audiences": "Этот контент предназначен для начинающих и потенциальных водителей (18–40 лет), рассматривающих работу в Яндекс Такси, которые имеют минимальный или средний водительский опыт и задаются вопросом о требованиях к стажу и возможностях трудоустройства при недостатке опыта. Они ищут понятные пошаговые инструкции, разъяснения формальных правил и советы по старту, чтобы избежать ошибок и выбрать оптимальную стратегию входа в сферу пассажирских перевозок или доставки. Материал актуален для пользователей с базовым техническим уровнем, ограниченными знаниями специфики работы в такси и высоким интересом к быстрому старту работы в экосистеме Яндекса.",
+        "draftContentStructure": [
+          {
+            "id": "h2-1",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "какой опыт вождения нужен для работы в такси яндекс",
+              "стаж вождения для Яндекс Такси",
+              "требования к водителям такси",
+              "минимальный опыт вождения",
+              "работа в Яндекс Такси",
+              "условия трудоустройства водителей",
+              "советы для новичков"
+            ],
+            "taxonomy": "Guide",
+            "attention": "С первых секунд пользователь получает чёткий ответ на главный вопрос о стаже и требованиях, что позволяет быстро понять, подходит ли его опыт для работы в Яндекс Такси.",
+            "intent": "Ввести пользователя в тему, обозначить ключевые требования к опыту вождения для работы в Яндекс Такси и объяснить, почему важно знать эти правила перед подачей заявки.",
+            "audiences": "Начинающие и потенциальные водители (18–40 лет) с минимальным или средним опытом, которые хотят узнать о требованиях к стажу и возможностях трудоустройства в Яндекс Такси.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 introduction section for page \"Какой опыт вождения нужен для работы в Яндекс Такси: требования и советы\"\n\nGOAL: Дать краткое, но ёмкое введение в тему, объяснить, почему опыт вождения важен для работы в Яндекс Такси, и обозначить, что пользователь найдёт на странице — требования, советы, альтернативы для новичков.\n\nAUDIENCE: Новички и потенциальные водители | Level: beginner/intermediate | Pain points: Неясность требований к стажу, страх отказа, желание быстро начать работу\n\nKEYWORDS TO INTEGRATE:\n[какой опыт вождения нужен для работы в такси яндекс, стаж вождения для Яндекс Такси, требования к водителям такси, минимальный опыт вождения, работа в Яндекс Такси, условия трудоустройства водителей, советы для новичков]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 150, maxWords: 250 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 heading with two introductory paragraphs\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: требования к стажу, официальные правила, поддержка водителей\n- SECONDARY: Apply insights from External KB: формальные сроки стажа, распространённые вопросы, советы новичкам\n\nQUALITY CRITERIA:\n- Actionable (чётко обозначить, что узнает пользователь)\n- Specific (указать, что речь о Яндекс Такси, не обобщать)\n- Data-backed (использовать точные цифры стажа, если уместно)\n- No fluff (никакой воды)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Введение, раскрывающее суть требований к опыту вождения для Яндекс Такси и ценность дальнейшего чтения.\n- sourceHint: Internal KB (основные требования), External KB (стандартные сроки стажа)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- В первом абзаце — сразу дать короткий ответ на главный вопрос (минимальный стаж)\n- Во втором — обозначить структуру и пользу страницы\n- Interlink planning: В дальнейшем предусмотреть ссылки на разделы о документах, медицинских требованиях, альтернативных вариантах\n- Schema readiness: FAQPage (если в дальнейшем будут вопросы-ответы)\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 150,
+              "maxWords": 250,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-1-1",
+                "tag": "p",
+                "keywords": [
+                  "стаж вождения для Яндекс Такси",
+                  "минимальный опыт вождения"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Пользователь сразу получает точный ответ на главный вопрос о минимальном стаже.",
+                "intent": "Дать краткий и точный ответ на вопрос о минимальном опыте вождения для работы в Яндекс Такси, чтобы пользователь с первых секунд понял, подходит ли его стаж.",
+                "audiences": "Потенциальные водители, которые хотят узнать, соответствует ли их стаж требованиям Яндекс Такси.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate introductory paragraph in h2 section \"Какой опыт вождения нужен для работы в Яндекс Такси: требования и советы\"\n\nGOAL: Сразу дать короткий и конкретный ответ на вопрос о минимальном стаже вождения для работы в Яндекс Такси, используя данные из Internal KB и подтверждая отраслевыми стандартами из External KB.\n\nAUDIENCE: Новички, которые хотят быстро узнать, подходит ли их опыт | Level: beginner/intermediate\n\nKEYWORDS TO INTEGRATE:\n[стаж вождения для Яндекс Такси, минимальный опыт вождения]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 100, maxWords: 180 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: Paragraph (intro)\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Internal KB (требования к стажу)\n- SECONDARY: External KB (стандартные сроки стажа)\n\nQUALITY CRITERIA:\n- Actionable (даёт точный ответ)\n- Specific (цифра стажа)\n- Data-backed (ссылка на официальные требования)\n- No fluff\n\nE-E-A-T ENHANCERS:\n- semanticFingerprint: Краткий ответ на минимальный стаж для Яндекс Такси.\n- sourceHint: Internal KB (официальные требования), External KB (отраслевые стандарты)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Указать минимальный стаж (например, 1–3 года)\n- Не использовать общие фразы, только по теме",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 180,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-2",
+                "tag": "p",
+                "keywords": [
+                  "условия трудоустройства водителей",
+                  "советы для новичков"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Показывает, что на странице есть не только требования, но и практические советы и альтернативные пути для новичков.",
+                "intent": "Обозначить структуру и пользу страницы, объяснить, что пользователь найдёт подробные инструкции, советы и альтернативные варианты для старта в Яндекс Такси.",
+                "audiences": "Новички и водители с небольшим стажем, ищущие пошаговые инструкции и практические рекомендации.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate second introductory paragraph in h2 section \"Какой опыт вождения нужен для работы в Яндекс Такси: требования и советы\"\n\nGOAL: Кратко рассказать, что пользователь найдёт на странице: требования, советы, альтернативы для новичков, чтобы мотивировать к дальнейшему чтению.\n\nAUDIENCE: Новички и водители с небольшим стажем | Level: beginner/intermediate\n\nKEYWORDS TO INTEGRATE:\n[условия трудоустройства водителей, советы для новичков]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 60, maxWords: 120 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: Paragraph (transition/preview)\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Internal KB (структура гайда, поддержка водителей)\n- SECONDARY: External KB (советы и альтернативы для новичков)\n\nQUALITY CRITERIA:\n- Actionable (мотивирует читать дальше)\n- Specific (упоминание советов и альтернатив)\n- No fluff\n\nE-E-A-T ENHANCERS:\n- semanticFingerprint: Краткий анонс структуры и пользы страницы для новичков.\n- sourceHint: Internal KB (структура и поддержка), External KB (советы для новичков)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Указать, что есть советы и альтернативы для тех, у кого нет стажа",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 120,
+                  "actualContent": ""
+                }
+              }
+            ]
+          }
+        ]
       }
     ],
     "order": 16
@@ -1200,5 +1269,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T18:35:18.862Z";
+export const lastUpdated = "2025-10-25T18:37:06.352Z";
 export const generatedBy = "menu-persist-api";
