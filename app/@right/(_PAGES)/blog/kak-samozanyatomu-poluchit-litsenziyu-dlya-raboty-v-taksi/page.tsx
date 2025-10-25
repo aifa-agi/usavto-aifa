@@ -1,5 +1,5 @@
 // Auto-generated SEO-optimized static page - do not edit manually
-// Generated on: 2025-10-25T18:17:36.026Z
+// Generated on: 2025-10-25T18:18:23.363Z
 // Source href: /blog/kak-samozanyatomu-poluchit-litsenziyu-dlya-raboty-v-taksi
 // Page metadata: Как самозанятому получить лицензию для работы в такси: пошаговая инструкция | 5 sections
 // FAQ sections detected: 4
@@ -44,7 +44,7 @@ const sections = [
           "content": [
             {
               "type": "text",
-              "text": "Как самозанятому получить лицензию для работы в такси: основные шаги и преимущества"
+              "text": "Как самозанятому получить лицензию для работы в такси: основные шаги и преимущества."
             }
           ]
         },
@@ -1583,8 +1583,8 @@ export default function Page() {
               "url": "/app-images/ux6ez5f9kzqqjj4cmj4m5pkd.jpg",
               "alt": "как самозанятому получить лицензию для работы в такси"
             },
-            "datePublished": "2025-10-25T18:17:36.026Z",
-            "dateModified": "2025-10-25T18:17:36.026Z",
+            "datePublished": "2025-10-25T18:18:23.363Z",
+            "dateModified": "2025-10-25T18:18:23.363Z",
             "articleSection": "blog",
             "keywords": ["как самозанятому получить лицензию для работы в такси"],
             "mainEntityOfPage": {
