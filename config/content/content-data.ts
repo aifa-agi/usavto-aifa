@@ -1178,7 +1178,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-25T18:48:46.586Z",
-        "updatedAt": "2025-10-25T19:09:46.183Z",
+        "updatedAt": "2025-10-25T19:09:58.460Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Конфигуратор Яндекс Такси 2024: быстрый подбор авто по актуальным требованиям и тарифам. Проверяйте соответствие и подключайтесь выгодно!",
@@ -1244,7 +1244,8 @@ export const contentData = {
                   "minWords": 100,
                   "maxWords": 180,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-1-2",
@@ -1262,9 +1263,11 @@ export const contentData = {
                   "minWords": 60,
                   "maxWords": 120,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-2",
@@ -1865,7 +1868,7 @@ export const contentData = {
             ]
           }
         ],
-        "isReadyDraftForPerplexity": true
+        "isReadyDraftForPerplexity": false
       }
     ],
     "order": 16
@@ -1896,5 +1899,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T19:25:23.973Z";
+export const lastUpdated = "2025-10-25T19:25:32.031Z";
 export const generatedBy = "menu-persist-api";
