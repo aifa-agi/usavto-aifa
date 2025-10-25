@@ -1178,7 +1178,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-25T18:48:46.586Z",
-        "updatedAt": "2025-10-25T19:04:45.329Z",
+        "updatedAt": "2025-10-25T19:08:21.407Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Конфигуратор Яндекс Такси 2024: быстрый подбор авто по актуальным требованиям и тарифам. Проверяйте соответствие и подключайтесь выгодно!",
@@ -1551,6 +1551,109 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          null,
+          {
+            "id": "h2-5",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "итоги выбора автомобиля для такси",
+              "ключевые выводы по требованиям 2024",
+              "следующие шаги для водителей",
+              "рекомендации по подключению",
+              "выгоды использования цифровых инструментов",
+              "советы по успешному старту",
+              "поддержка для новых пользователей"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, как быстро перейти к успешной работе в Яндекс Такси с помощью современных инструментов и актуальных рекомендаций.",
+            "intent": "Суммировать основные выводы страницы, выделить преимущества использования конфигуратора и дать пользователю чёткие рекомендации для дальнейших действий.",
+            "audiences": "Водители и владельцы таксопарков, которые завершили подбор автомобиля и хотят уверенно подключиться к Яндекс Такси, минимизируя риски отказа и максимизируя выгоду.",
+            "selfPrompt": "CONTEXT: Generate h2 conclusion/next steps section for page \"Конфигуратор Яндекс Такси 2024 — подбор авто и требования\"\n\nGOAL: Синтезировать ключевые выводы по подбору автомобиля для Яндекс Такси в 2024 году, подчеркнуть преимущества использования цифрового конфигуратора, дать конкретные рекомендации для дальнейших шагов и мотивировать пользователя к действию.\n\nAUDIENCE: Водители и владельцы таксопарков | Level: intermediate | Pain points: неуверенность в соответствии авто, страх отказа при подключении, желание быстро стартовать и избежать ошибок.\n\nKEYWORDS TO INTEGRATE:\n[итоги выбора автомобиля для такси, ключевые выводы по требованиям 2024, следующие шаги для водителей, рекомендации по подключению, выгоды использования цифровых инструментов, советы по успешному старту, поддержка для новых пользователей]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 200, maxWords: 300 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: h2 section with nested p, table, ul, p elements\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: разделы 2, 3, 4, 9 (выгоды, рекомендации, цифровые инструменты)\n- SECONDARY: Apply insights from External KB: советы по успешному подключению, поддержка пользователей\n\nQUALITY CRITERIA:\n- Actionable (чёткие рекомендации)\n- Specific (конкретные выгоды и шаги)\n- Data-backed (факты и преимущества из базы знаний)\n- No fluff (без воды)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Финальное резюме с акцентом на практические шаги и преимущества цифрового конфигуратора для Яндекс Такси.\n- sourceHint: Internal KB (выгоды, рекомендации, поддержка)\n- evidenceStrength: internal-tested\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Ссылка на внутренние страницы: \"Подключение к Яндекс Такси: пошаговая инструкция\", \"Требования к автомобилям для такси 2024\"\n- Мотивационный призыв к действию\n- Готовность к schema.org/HowTo или FAQPage (если применимо)\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 200,
+              "maxWords": 300,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-5-1",
+                "tag": "p",
+                "keywords": [
+                  "итоги выбора автомобиля для такси",
+                  "выгоды использования цифровых инструментов"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Получите краткое резюме и почувствуйте уверенность в своём выборе.",
+                "intent": "Сделать краткое, мотивирующее вступление к заключению, подчеркнув ценность цифрового подхода и уверенность пользователя в правильности выбора.",
+                "audiences": "Водители и таксопарки, завершившие подбор авто и ищущие подтверждение правильности своих действий.",
+                "selfPrompt": "CONTEXT: Generate paragraph (intro/summary) for conclusion section \"Итоги и рекомендации по выбору авто для Яндекс Такси 2024\"\nGOAL: Кратко подвести итог успешного использования конфигуратора, подчеркнуть уверенность пользователя и выгоды цифрового инструмента.\nKEYWORDS: [итоги выбора автомобиля для такси, выгоды использования цифровых инструментов]\nWORD COUNT: minWords: 80, maxWords: 150\nROLE: intro/summary\nsourceHint: Internal KB (выгоды, резюме)\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-5-3",
+                "tag": "table",
+                "keywords": [
+                  "ключевые выводы по требованиям 2024",
+                  "рекомендации по подключению"
+                ],
+                "taxonomy": "Data-driven",
+                "attention": "Сравните основные требования и рекомендации в удобной таблице.",
+                "intent": "Визуально структурировать ключевые выводы и рекомендации по требованиям 2024 года для быстрого ознакомления.",
+                "audiences": "Пользователи, предпочитающие структурированную информацию и быстрый анализ.",
+                "selfPrompt": "CONTEXT: Generate table (3 columns × 4 rows) summarizing key takeaways and recommendations for \"Итоги и рекомендации по выбору авто для Яндекс Такси 2024\"\nGOAL: Сравнить основные требования, выгоды и рекомендации для водителей в 2024 году.\nKEYWORDS: [ключевые выводы по требованиям 2024, рекомендации по подключению]\nTABLE SCHEMA: [Критерий] | [Краткое описание] | [Рекомендация]\nDATA TYPES: text | text | text\nsourceHint: Internal KB (требования, рекомендации)\nevidenceStrength: internal-tested\nschemaReadiness: Dataset\nWORD COUNT: minWords: 80, maxWords: 160",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-5-2",
+                "tag": "ul",
+                "keywords": [
+                  "следующие шаги для водителей",
+                  "советы по успешному старту"
+                ],
+                "taxonomy": "Actionable",
+                "attention": "Воспользуйтесь пошаговыми советами для быстрого старта и успешного подключения.",
+                "intent": "Дать пользователю конкретный список следующих шагов и советов для успешного старта в Яндекс Такси.",
+                "audiences": "Водители, готовые к подключению и желающие избежать ошибок на старте.",
+                "selfPrompt": "CONTEXT: Generate unordered list (5 items) of actionable next steps and tips for \"Итоги и рекомендации по выбору авто для Яндекс Такси 2024\"\nGOAL: Дать чёткие шаги и советы для быстрого и успешного подключения к сервису.\nKEYWORDS: [следующие шаги для водителей, советы по успешному старту]\nLIST STRUCTURE: short actionable bullets (10-20 words each)\nsourceHint: Internal KB (рекомендации, поддержка)\nevidenceStrength: internal-tested\nWORD COUNT: minWords: 50, maxWords: 90",
+                "additionalData": {
+                  "minWords": 50,
+                  "maxWords": 90,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-5-3",
+                "tag": "p",
+                "keywords": [
+                  "поддержка для новых пользователей"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, где получить помощь и дополнительные ресурсы для успешного старта.",
+                "intent": "Завершить раздел призывом к действию, указать на доступную поддержку и внутренние ресурсы для новых пользователей.",
+                "audiences": "Новые водители и таксопарки, которым важно знать, где получить помощь и дополнительную информацию.",
+                "selfPrompt": "CONTEXT: Generate paragraph (conclusion/call-to-action) for \"Итоги и рекомендации по выбору авто для Яндекс Такси 2024\"\nGOAL: Мотивировать пользователя воспользоваться поддержкой, перейти к дополнительным материалам и сделать первый шаг к успешной работе.\nKEYWORDS: [поддержка для новых пользователей]\nROLE: conclusion/call-to-action\nsourceHint: Internal KB (поддержка, ресурсы)\nevidenceStrength: internal-tested\nWORD COUNT: minWords: 70, maxWords: 130",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              }
+            ]
           }
         ]
       }
@@ -1583,5 +1686,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T19:23:47.345Z";
+export const lastUpdated = "2025-10-25T19:24:58.733Z";
 export const generatedBy = "menu-persist-api";
