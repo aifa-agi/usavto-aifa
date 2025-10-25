@@ -538,7 +538,7 @@ export const contentData = {
       },
       {
         "id": "llplb940g8fn37u072m7nfeo",
-        "title": "как обратиться в службу поддержки яндекс такси",
+        "title": "Как обратиться в службу поддержки Яндекс Такси — все способы связи",
         "href": "/blog/kak-obratitsya-v-sluzhbu-podderzhki-yandeks-taksi",
         "roles": [
           "guest"
@@ -1105,5 +1105,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T17:27:21.174Z";
+export const lastUpdated = "2025-10-25T17:27:31.343Z";
 export const generatedBy = "menu-persist-api";
