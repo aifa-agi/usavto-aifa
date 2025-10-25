@@ -1094,7 +1094,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-25T17:06:21.698Z",
-        "updatedAt": "2025-10-25T17:14:40.442Z",
+        "updatedAt": "2025-10-25T17:16:17.550Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как обратиться в службу поддержки Яндекс Такси: актуальные телефоны, онлайн-чат, приложение и советы для быстрого решения любых вопросов!",
@@ -1180,6 +1180,162 @@ export const contentData = {
                 }
               }
             ]
+          },
+          {
+            "id": "h2-2",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "каналы связи яндекс такси",
+              "официальные способы обращения",
+              "поддержка через приложение",
+              "онлайн-чат яндекс такси",
+              "горячая линия яндекс такси",
+              "электронная почта поддержки",
+              "альтернативные способы связи"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Выберите наиболее удобный канал связи с поддержкой Яндекс Такси — подробная таблица и советы помогут быстро решить вашу проблему.",
+            "intent": "Дать пользователю структурированный обзор всех официальных и альтернативных каналов связи с поддержкой Яндекс Такси, чтобы он мог выбрать оптимальный способ обращения для своей ситуации.",
+            "audiences": "Пассажиры и водители Яндекс Такси, ищущие быстрый и эффективный способ связаться с поддержкой по различным вопросам; пользователи с базовым и средним уровнем цифровой грамотности.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 section providing полный обзор всех каналов связи с поддержкой Яндекс Такси для страницы \"Как обратиться в службу поддержки Яндекс Такси — все способы связи\"\n\nGOAL: Систематизировать и описать все официальные и дополнительные способы обращения в поддержку Яндекс Такси, выделить преимущества и особенности каждого канала, чтобы пользователь мог быстро выбрать подходящий вариант.\n\nAUDIENCE: Пассажиры и водители Яндекс Такси | Уровень: начинающий/средний | Pain points: Не знают, какой канал связи выбрать, хотят быстро получить ответ, ищут актуальные контакты и инструкции.\n\nKEYWORDS TO INTEGRATE:\n[каналы связи яндекс такси, официальные способы обращения, поддержка через приложение, онлайн-чат яндекс такси, горячая линия яндекс такси, электронная почта поддержки, альтернативные способы связи]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 250, maxWords: 400 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with nested paragraphs, table, and H3 subsection\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: Блок 1 (общие рекомендации по обращению), Блок 3 (использование цифровых каналов)\n- SECONDARY: Apply insights from External KB: список номеров, советы по выбору канала, особенности работы чата и горячей линии\n\nQUALITY CRITERIA:\n- Actionable (пошаговые рекомендации, таблица для выбора)\n- Specific (указать, для каких случаев подходит каждый канал)\n- Data-backed (актуальные контакты, особенности каналов)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальный структурированный обзор всех каналов связи с поддержкой Яндекс Такси с акцентом на выбор оптимального способа.\n- sourceHint: Internal KB (рекомендации по каналам) + External KB (актуальные контакты, советы)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nINTERLINK PLANNING: Внутренние ссылки на разделы с инструкциями по каждому каналу, FAQ по поддержке, советы по ускорению ответа.\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 250,
+              "maxWords": 400,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-2-1",
+                "tag": "p",
+                "keywords": [
+                  "каналы связи яндекс такси",
+                  "официальные способы обращения"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, какие способы связи доступны для разных ситуаций.",
+                "intent": "Кратко представить пользователю идею о многообразии каналов связи с поддержкой Яндекс Такси и их назначении.",
+                "audiences": "Пользователи, которые впервые сталкиваются с необходимостью обращения в поддержку.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for section 'Обзор всех каналов связи с поддержкой Яндекс Такси'.\nGOAL: Кратко объяснить, что существует несколько официальных и альтернативных способов связи с поддержкой Яндекс Такси, каждый из которых подходит для разных ситуаций.\nAUDIENCE: Новые пользователи, ищущие быстрый старт.\nKEYWORDS: каналы связи яндекс такси, официальные способы обращения\nWORD COUNT: minWords: 80, maxWords: 150\nMARKDOWN: Paragraph (intro)\nROLE: intro\nsemanticFingerprint: Вводное пояснение о разнообразии каналов связи.\nsourceHint: Internal KB (общие рекомендации), External KB (структура каналов)\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-2-2-3",
+                "tag": "p",
+                "keywords": [
+                  "поддержка через приложение"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Быстрый совет по выбору самого оперативного канала.",
+                "intent": "Дать краткую рекомендацию о том, какой канал связи чаще всего обеспечивает самый быстрый отклик.",
+                "audiences": "Пользователи, которым важно получить ответ максимально быстро.",
+                "selfPrompt": "CONTEXT: Generate short transition paragraph highlighting наиболее быстрый канал связи с поддержкой Яндекс Такси.\nGOAL: Подчеркнуть, что обращение через приложение или онлайн-чат обычно обеспечивает самый быстрый отклик.\nAUDIENCE: Пользователи, которым важна скорость ответа.\nKEYWORDS: поддержка через приложение\nWORD COUNT: minWords: 5, maxWords: 15\nMARKDOWN: Short paragraph (transition)\nROLE: transition\nsemanticFingerprint: Краткий совет по выбору самого оперативного канала.\nsourceHint: External KB (советы по скорости отклика)\nevidenceStrength: external-peer-reviewed",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-2-2-4",
+                "tag": "table",
+                "keywords": [
+                  "онлайн-чат яндекс такси",
+                  "горячая линия яндекс такси"
+                ],
+                "taxonomy": "Data-driven",
+                "attention": "Сравните все способы связи по удобству, времени ответа и назначению.",
+                "intent": "Предоставить пользователю наглядную таблицу сравнения всех каналов связи с поддержкой Яндекс Такси по ключевым параметрам.",
+                "audiences": "Пользователи, предпочитающие структурированную информацию для быстрого выбора.",
+                "selfPrompt": "CONTEXT: Generate comparison table of all official and альтернативные каналы связи с поддержкой Яндекс Такси.\nGOAL: В таблице отразить: название канала, способ обращения (телефон/чат/почта/приложение), время отклика, особенности/назначение.\nAUDIENCE: Все пользователи, ищущие быстрый выбор.\nKEYWORDS: онлайн-чат яндекс такси, горячая линия яндекс такси\nWORD COUNT: minWords: 80, maxWords: 160\nMARKDOWN: Table (4 columns × 5-6 rows)\nHEADERS: Канал | Как обратиться | Время ответа | Особенности\nDATA TYPES: text/text/text/text\nsourceHint: Internal KB (структура каналов), External KB (актуальные контакты, советы)\nschema readiness: ComparisonTable\nevidenceStrength: internal-tested + external-peer-reviewed\nsemanticFingerprint: Таблица для сравнения всех каналов связи по ключевым параметрам.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-2-2",
+                "tag": "h3",
+                "keywords": [
+                  "электронная почта поддержки",
+                  "альтернативные способы связи",
+                  "социальные сети поддержки"
+                ],
+                "taxonomy": "Guide",
+                "attention": "Узнайте о дополнительных и нестандартных способах обращения в поддержку Яндекс Такси.",
+                "intent": "Рассказать о менее очевидных, но полезных каналах связи с поддержкой Яндекс Такси, включая электронную почту и социальные сети.",
+                "audiences": "Пользователи, которым не подошли стандартные способы связи или требуется альтернативный канал.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection on альтернативные и дополнительные способы связи с поддержкой Яндекс Такси (электронная почта, соцсети, формы обратной связи).\nREFERENCE PARENT H2: 'Обзор всех каналов связи с поддержкой Яндекс Такси'\nGOAL: Описать, когда и зачем использовать альтернативные способы связи, их плюсы и минусы.\nAUDIENCE: Пользователи, которым не подошли стандартные каналы или требуется письменное подтверждение.\nKEYWORDS: электронная почта поддержки, альтернативные способы связи, социальные сети поддержки\nWORD COUNT: minWords: 150, maxWords: 250\nMARKDOWN: H3 with nested paragraphs and list\nsemanticFingerprint: Подробный разбор альтернативных каналов связи с поддержкой Яндекс Такси.\nsourceHint: Internal KB (рекомендации по каналам), External KB (перечень альтернатив)\nevidenceStrength: internal-tested + external-peer-reviewed\nINTERLINK PLANNING: Внутренняя ссылка на FAQ по нестандартным обращениям.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 250,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "электронная почта поддержки"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Когда стоит использовать электронную почту для обращения.",
+                    "intent": "Пояснить, в каких случаях электронная почта поддержки Яндекс Такси наиболее эффективна.",
+                    "audiences": "Пользователи, которым требуется письменное подтверждение или вложения.",
+                    "selfPrompt": "CONTEXT: Generate paragraph explaining when and why to use электронная почта поддержки Яндекс Такси.\nREFERENCE PARENT H3: 'Альтернативные и дополнительные способы связи'\nGOAL: Объяснить преимущества и ограничения обращения по email.\nAUDIENCE: Пользователи, которым важно письменное подтверждение или отправка документов.\nKEYWORDS: электронная почта поддержки\nWORD COUNT: minWords: 70, maxWords: 130\nMARKDOWN: Paragraph (body)\nROLE: body\nsemanticFingerprint: Пояснение о применимости email для поддержки.\nsourceHint: Internal KB (опыт обращения), External KB (контакты email)\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 130,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-2-2-2",
+                    "tag": "ul",
+                    "keywords": [
+                      "альтернативные способы связи"
+                    ],
+                    "taxonomy": "List",
+                    "attention": "Список дополнительных каналов связи для нестандартных случаев.",
+                    "intent": "Перечислить альтернативные способы связи с поддержкой Яндекс Такси, которые могут быть полезны в особых ситуациях.",
+                    "audiences": "Пользователи, ищущие нестандартные пути обращения.",
+                    "selfPrompt": "CONTEXT: Generate unordered list (3-5 items) of альтернативные способы связи с поддержкой Яндекс Такси (соцсети, формы обратной связи, мессенджеры).\nREFERENCE PARENT H3: 'Альтернативные и дополнительные способы связи'\nGOAL: Дать краткий перечень дополнительных каналов с коротким описанием каждого.\nAUDIENCE: Пользователи, которым не подошли стандартные способы.\nKEYWORDS: альтернативные способы связи\nWORD COUNT: minWords: 40, maxWords: 80\nMARKDOWN: UL (3-5 bullets, 10-15 words each)\nsemanticFingerprint: Список дополнительных каналов связи.\nsourceHint: External KB (перечень каналов)\nevidenceStrength: external-peer-reviewed",
+                    "additionalData": {
+                      "minWords": 40,
+                      "maxWords": 80,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-2-3",
+                    "tag": "p",
+                    "keywords": [
+                      "социальные сети поддержки"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Пояснение о роли социальных сетей в коммуникации с поддержкой.",
+                    "intent": "Объяснить, как и когда можно использовать социальные сети для обращения в поддержку Яндекс Такси.",
+                    "audiences": "Пользователи, активно использующие соцсети для коммуникации.",
+                    "selfPrompt": "CONTEXT: Generate paragraph on the use of социальные сети для обращения в поддержку Яндекс Такси.\nREFERENCE PARENT H3: 'Альтернативные и дополнительные способы связи'\nGOAL: Объяснить преимущества и ограничения обращения через соцсети.\nAUDIENCE: Пользователи, предпочитающие цифровые каналы.\nKEYWORDS: социальные сети поддержки\nWORD COUNT: minWords: 60, maxWords: 100\nMARKDOWN: Paragraph (body)\nROLE: body\nsemanticFingerprint: Пояснение о применимости соцсетей для связи с поддержкой.\nsourceHint: External KB (советы по соцсетям)\nevidenceStrength: external-peer-reviewed",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 100,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1212,5 +1368,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T17:31:42.989Z";
+export const lastUpdated = "2025-10-25T17:32:39.864Z";
 export const generatedBy = "menu-persist-api";
