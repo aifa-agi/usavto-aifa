@@ -1,5 +1,5 @@
 // Auto-generated SEO-optimized static page - do not edit manually
-// Generated on: 2025-10-25T18:47:55.108Z
+// Generated on: 2025-10-25T18:48:49.062Z
 // Source href: /blog/kakoy-opyt-vozhdeniya-nuzhen-dlya-raboty-v-taksi-yandeks
 // Page metadata: Какой опыт вождения нужен для работы в Яндекс Такси: требования и советы | 5 sections
 // FAQ sections detected: 4
@@ -44,7 +44,7 @@ const sections = [
           "content": [
             {
               "type": "text",
-              "text": "Какой опыт вождения нужен для работы в Яндекс Такси: требования и ключевые правила"
+              "text": "Какой опыт вождения нужен для работы в Яндекс Такси: требования и ключевые правила."
             }
           ]
         },
@@ -1475,8 +1475,8 @@ export default function Page() {
               "url": "/app-images/qibymkco19nvgqsqsat2ft4j.png",
               "alt": " какой опыт вождения нужен для работы в такси яндекс"
             },
-            "datePublished": "2025-10-25T18:47:55.108Z",
-            "dateModified": "2025-10-25T18:47:55.108Z",
+            "datePublished": "2025-10-25T18:48:49.062Z",
+            "dateModified": "2025-10-25T18:48:49.062Z",
             "articleSection": "blog",
             "keywords": [" какой опыт вождения нужен для работы в такси яндекс"],
             "mainEntityOfPage": {
