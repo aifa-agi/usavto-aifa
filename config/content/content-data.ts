@@ -569,7 +569,7 @@ export const contentData = {
         "roles": [
           "guest"
         ],
-        "isPublished": false,
+        "isPublished": true,
         "isVectorConnected": false,
         "isAddedToPrompt": false,
         "isChatSynchronized": false,
@@ -621,5 +621,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T18:18:37.998Z";
+export const lastUpdated = "2025-10-25T18:19:10.600Z";
 export const generatedBy = "menu-persist-api";
