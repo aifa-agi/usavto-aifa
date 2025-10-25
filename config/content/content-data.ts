@@ -1153,6 +1153,9 @@ export const contentData = {
             "alt": " конфигуратор яндекс такси 2024",
             "href": "/app-images/nhacjp13u25fxf214906c70a.png"
           }
+        ],
+        "keywords": [
+          " конфигуратор яндекс такси 2024"
         ]
       }
     ],
@@ -1184,5 +1187,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T19:06:50.092Z";
+export const lastUpdated = "2025-10-25T19:07:05.085Z";
 export const generatedBy = "menu-persist-api";
