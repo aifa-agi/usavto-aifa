@@ -1122,7 +1122,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-25T17:37:16.248Z",
-        "updatedAt": "2025-10-25T17:55:41.073Z",
+        "updatedAt": "2025-10-25T17:55:50.614Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как самозанятому получить лицензию для работы в такси: пошаговая инструкция, список документов, требования и советы для быстрого оформления!",
@@ -1253,7 +1253,8 @@ export const contentData = {
                 "attention": "Понимание базовых требований поможет избежать отказа в лицензии и штрафов.",
                 "intent": "Ввести пользователя в суть юридических и технических условий, необходимых для старта процесса лицензирования.",
                 "audiences": "Самозанятые, которые впервые сталкиваются с оформлением разрешительных документов; уровень — начинающий.",
-                "selfPrompt": "CONTEXT: Generate introductory paragraph for section \"Базовые требования и условия для получения лицензии такси самозанятым\". GOAL: Кратко объяснить, почему важно знать все требования заранее и как это влияет на успешность получения лицензии. KEYWORDS: требования к лицензии такси, условия для самозанятых водителей. ROLE: intro. SOURCE: Internal KB (юридические требования), External KB (общие условия). semanticFingerprint: Вводное пояснение о важности соблюдения всех требований для успешного лицензирования. evidenceStrength: internal-tested."
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for section \"Базовые требования и условия для получения лицензии такси самозанятым\". GOAL: Кратко объяснить, почему важно знать все требования заранее и как это влияет на успешность получения лицензии. KEYWORDS: требования к лицензии такси, условия для самозанятых водителей. ROLE: intro. SOURCE: Internal KB (юридические требования), External KB (общие условия). semanticFingerprint: Вводное пояснение о важности соблюдения всех требований для успешного лицензирования. evidenceStrength: internal-tested.",
+                "status": "checked"
               },
               {
                 "id": "p-2-2-3",
@@ -1265,7 +1266,8 @@ export const contentData = {
                 "attention": "Краткое напоминание о необходимости официальной регистрации автомобиля.",
                 "intent": "Сделать акцент на обязательности регистрации транспортного средства для работы в такси.",
                 "audiences": "Самозанятые, не знакомые с процедурой регистрации авто для такси.",
-                "selfPrompt": "CONTEXT: Generate short transition paragraph on регистрация транспортного средства. GOAL: Подчеркнуть, что без регистрации автомобиля получить лицензию невозможно. KEYWORDS: регистрация транспортного средства. ROLE: transition. SOURCE: Internal KB (регистрация авто), External KB (реестр перевозчиков). semanticFingerprint: Краткая связка о необходимости регистрации авто. evidenceStrength: internal-tested."
+                "selfPrompt": "CONTEXT: Generate short transition paragraph on регистрация транспортного средства. GOAL: Подчеркнуть, что без регистрации автомобиля получить лицензию невозможно. KEYWORDS: регистрация транспортного средства. ROLE: transition. SOURCE: Internal KB (регистрация авто), External KB (реестр перевозчиков). semanticFingerprint: Краткая связка о необходимости регистрации авто. evidenceStrength: internal-tested.",
+                "status": "checked"
               },
               {
                 "id": "table-2-2-4",
@@ -1278,7 +1280,8 @@ export const contentData = {
                 "attention": "Сравните ключевые требования к водителю и автомобилю для получения лицензии.",
                 "intent": "Структурировать основные требования законодательства к самозанятым и их транспортным средствам для наглядности.",
                 "audiences": "Самозанятые, которым важно быстро свериться с перечнем требований.",
-                "selfPrompt": "CONTEXT: Generate comparison table (3 columns × 4 rows) for section \"Базовые требования и условия для получения лицензии такси самозанятым\". GOAL: В таблице отразить: 1) Требования к водителю, 2) Требования к автомобилю, 3) Документы для подачи. HEADERS: Категория | Основные требования | Примечания. DATA TYPES: text. SOURCE: Internal KB (юридические требования, правила перевозок), External KB (реестр перевозчиков, законодательные нормы). semanticFingerprint: Таблица-сводка по ключевым требованиям для лицензирования. evidenceStrength: internal-tested | external-peer-reviewed."
+                "selfPrompt": "CONTEXT: Generate comparison table (3 columns × 4 rows) for section \"Базовые требования и условия для получения лицензии такси самозанятым\". GOAL: В таблице отразить: 1) Требования к водителю, 2) Требования к автомобилю, 3) Документы для подачи. HEADERS: Категория | Основные требования | Примечания. DATA TYPES: text. SOURCE: Internal KB (юридические требования, правила перевозок), External KB (реестр перевозчиков, законодательные нормы). semanticFingerprint: Таблица-сводка по ключевым требованиям для лицензирования. evidenceStrength: internal-tested | external-peer-reviewed.",
+                "status": "checked"
               },
               {
                 "id": "h3-2-2",
@@ -1311,7 +1314,8 @@ export const contentData = {
                     "attention": "Понимание процедуры проверки поможет избежать возврата документов.",
                     "intent": "Объяснить, почему важно заранее проверить соответствие всем требованиям перед подачей заявки.",
                     "audiences": "Самозанятые, впервые оформляющие лицензию.",
-                    "selfPrompt": "CONTEXT: Generate body paragraph for h3 \"Проверка соответствия и подготовка документов для регистрации\". GOAL: Объяснить важность самопроверки перед подачей документов в реестр перевозчиков. KEYWORDS: реестр перевозчиков, проверка соответствия. ROLE: body. SOURCE: Internal KB (процедура проверки), External KB (стандарты подачи). semanticFingerprint: Обоснование необходимости самопроверки. evidenceStrength: internal-tested."
+                    "selfPrompt": "CONTEXT: Generate body paragraph for h3 \"Проверка соответствия и подготовка документов для регистрации\". GOAL: Объяснить важность самопроверки перед подачей документов в реестр перевозчиков. KEYWORDS: реестр перевозчиков, проверка соответствия. ROLE: body. SOURCE: Internal KB (процедура проверки), External KB (стандарты подачи). semanticFingerprint: Обоснование необходимости самопроверки. evidenceStrength: internal-tested.",
+                    "status": "checked"
                   },
                   {
                     "id": "ul-2-2-2",
@@ -1323,7 +1327,8 @@ export const contentData = {
                     "attention": "Список поможет быстро подготовить все необходимые документы.",
                     "intent": "Предоставить структурированный чек-лист документов для подачи заявки на лицензию.",
                     "audiences": "Самозанятые, готовящие пакет документов.",
-                    "selfPrompt": "CONTEXT: Generate unordered list (5 items) for h3 \"Проверка соответствия и подготовка документов для регистрации\". GOAL: Перечислить основные документы, которые понадобятся для подачи заявки. KEYWORDS: документы для регистрации автомобиля. STRUCTURE: short bullets (5-10 words). SOURCE: Internal KB (перечень документов), External KB (стандарты подачи). semanticFingerprint: Чек-лист документов для регистрации. evidenceStrength: internal-tested."
+                    "selfPrompt": "CONTEXT: Generate unordered list (5 items) for h3 \"Проверка соответствия и подготовка документов для регистрации\". GOAL: Перечислить основные документы, которые понадобятся для подачи заявки. KEYWORDS: документы для регистрации автомобиля. STRUCTURE: short bullets (5-10 words). SOURCE: Internal KB (перечень документов), External KB (стандарты подачи). semanticFingerprint: Чек-лист документов для регистрации. evidenceStrength: internal-tested.",
+                    "status": "checked"
                   },
                   {
                     "id": "p-2-2-3",
@@ -1335,11 +1340,14 @@ export const contentData = {
                     "attention": "Финальное напоминание о необходимости соблюдения всех условий.",
                     "intent": "Суммировать важность соблюдения всех условий допуска для успешного лицензирования.",
                     "audiences": "Самозанятые, завершающие подготовку к подаче документов.",
-                    "selfPrompt": "CONTEXT: Generate summary paragraph for h3 \"Проверка соответствия и подготовка документов для регистрации\". GOAL: Подчеркнуть, что соблюдение всех условий — залог успешного получения лицензии. KEYWORDS: условия допуска. ROLE: summary. SOURCE: Internal KB (условия допуска), External KB (стандарты допуска). semanticFingerprint: Итоговое напоминание о важности полного соответствия. evidenceStrength: internal-tested."
+                    "selfPrompt": "CONTEXT: Generate summary paragraph for h3 \"Проверка соответствия и подготовка документов для регистрации\". GOAL: Подчеркнуть, что соблюдение всех условий — залог успешного получения лицензии. KEYWORDS: условия допуска. ROLE: summary. SOURCE: Internal KB (условия допуска), External KB (стандарты допуска). semanticFingerprint: Итоговое напоминание о важности полного соответствия. evidenceStrength: internal-tested.",
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-3",
@@ -1765,5 +1773,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T18:11:16.240Z";
+export const lastUpdated = "2025-10-25T18:11:24.286Z";
 export const generatedBy = "menu-persist-api";
