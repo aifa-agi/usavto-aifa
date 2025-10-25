@@ -1097,6 +1097,9 @@ export const contentData = {
             "alt": "как самозанятому получить лицензию для работы в такси",
             "href": "/app-images/ux6ez5f9kzqqjj4cmj4m5pkd.jpg"
           }
+        ],
+        "keywords": [
+          "как самозанятому получить лицензию для работы в такси"
         ]
       }
     ],
@@ -1128,5 +1131,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T17:55:04.423Z";
+export const lastUpdated = "2025-10-25T17:55:17.456Z";
 export const generatedBy = "menu-persist-api";
