@@ -1122,7 +1122,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-25T17:37:16.248Z",
-        "updatedAt": "2025-10-25T17:50:42.052Z",
+        "updatedAt": "2025-10-25T17:52:30.454Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как самозанятому получить лицензию для работы в такси: пошаговая инструкция, список документов, требования и советы для быстрого оформления!",
@@ -1337,6 +1337,132 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "оформление лицензии такси",
+              "пошаговый процесс подачи заявки",
+              "документы для лицензии самозанятому",
+              "онлайн оформление разрешения",
+              "государственные услуги для такси",
+              "проверка статуса лицензии",
+              "самостоятельное получение лицензии"
+            ],
+            "taxonomy": "HowTo",
+            "attention": "Подробная и наглядная инструкция по самостоятельному оформлению лицензии для работы в такси — без посредников и лишних затрат.",
+            "intent": "Дать пользователю практический, пошаговый алгоритм действий для самостоятельного получения лицензии на работу в такси, включая подготовку документов, подачу заявки и контроль статуса.",
+            "audiences": "Самозанятые граждане России, начинающие водители такси без опыта в юридических процедурах, желающие быстро и легально оформить разрешение на перевозку пассажиров.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 section detailing the full пошаговый процесс оформления лицензии для работы в такси самозанятым for page \"Как самозанятому получить лицензию для работы в такси: пошаговая инструкция\"\n\nGOAL: Обеспечить читателя подробной, структурированной и понятной инструкцией по самостоятельному оформлению лицензии такси, с акцентом на подготовку документов, подачу заявки через госуслуги или региональные органы, а также контроль статуса разрешения.\n\nAUDIENCE: Самозанятые водители, начинающие таксисты | Level: beginner/intermediate | Pain points: страх ошибиться в документах, не знать последовательность шагов, опасение получить отказ или штраф\n\nKEYWORDS TO INTEGRATE:\n[оформление лицензии такси, пошаговый процесс подачи заявки, документы для лицензии самозанятому, онлайн оформление разрешения, государственные услуги для такси, проверка статуса лицензии, самостоятельное получение лицензии]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: h2 section with nested h3, p, ol, code as per structure\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: Юридические требования, Помощь в оформлении лицензии, Ведение документации\n- SECONDARY: Apply insights from External KB: Порядок подачи заявки, онлайн-сервисы, советы по самостоятельному оформлению\n\nQUALITY CRITERIA:\n- Actionable (конкретные шаги и рекомендации)\n- Specific (без общих фраз, только практические детали)\n- Data-backed (ссылки на законодательство, госуслуги)\n- No fluff (никакой воды)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Пошаговая инструкция по самостоятельному оформлению лицензии такси для самозанятых с акцентом на онлайн-подачу и контроль статуса.\n- sourceHint: Internal KB (процедура оформления, документы), External KB (детали подачи через госуслуги)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference previous sections (требования и условия) и строить на их основе\n- Включить план внутренних ссылок: [Как выбрать автомобиль для такси], [Обзор сервисов для самозанятых], [Частые ошибки при оформлении лицензии]\n- HowTo schema readiness: отметить структуру для разметки\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-3-1",
+                "tag": "p",
+                "keywords": [
+                  "оформление лицензии такси",
+                  "самостоятельное получение лицензии"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Введение в практический процесс: почему важно следовать пошаговой инструкции и как это экономит время и снижает риски.",
+                "intent": "Кратко объяснить, зачем нужна четкая последовательность действий при оформлении лицензии такси и как самостоятельный подход помогает избежать ошибок.",
+                "audiences": "Самозанятые водители, впервые сталкивающиеся с бюрократическими процедурами.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for section 'Пошаговый процесс оформления лицензии такси для самозанятых' on page 'Как самозанятому получить лицензию для работы в такси: пошаговая инструкция'.\nGOAL: Объяснить важность пошагового подхода и самостоятельного оформления, мотивировать пользователя к действию.\nKEYWORDS: оформление лицензии такси, самостоятельное получение лицензии\nWORD COUNT: minWords: 90, maxWords: 170\nPARAGRAPH ROLE: intro\nsemanticFingerprint: Вводит пользователя в практический раздел, подчеркивая ценность самостоятельного оформления.\nsourceHint: Internal KB (процедура оформления)\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 90,
+                  "maxWords": 170,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-3-2",
+                "tag": "h3",
+                "keywords": [
+                  "подача заявки на лицензию",
+                  "онлайн оформление разрешения",
+                  "государственные услуги для такси",
+                  "проверка статуса лицензии",
+                  "электронные сервисы"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Пошаговая инструкция: от сбора документов до получения разрешения через онлайн-сервисы и личный кабинет.",
+                "intent": "Детализировать каждый этап процесса подачи заявки на лицензию такси для самозанятых, включая онлайн-инструменты и контроль статуса.",
+                "audiences": "Самозанятые, желающие быстро и без ошибок пройти процедуру оформления лицензии через интернет.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection 'Подача заявки и контроль статуса лицензии через онлайн-сервисы' under h2 'Пошаговый процесс оформления лицензии такси для самозанятых' for page 'Как самозанятому получить лицензию для работы в такси: пошаговая инструкция'.\nGOAL: Подробно описать все этапы подачи заявки на лицензию такси, включая подготовку документов, заполнение формы на портале госуслуг, загрузку файлов, отслеживание статуса и получение результата.\nKEYWORDS: подача заявки на лицензию, онлайн оформление разрешения, государственные услуги для такси, проверка статуса лицензии, электронные сервисы\nWORD COUNT: minWords: 180, maxWords: 280\nsemanticFingerprint: Раскрывает цифровой путь оформления лицензии такси для самозанятых — от подачи до получения.\nsourceHint: Internal KB (документы и этапы), External KB (онлайн-сервисы, советы)\nevidenceStrength: internal-tested | external-peer-reviewed\nINTERLINK PLANNING: [Как выбрать автомобиль для такси], [Частые ошибки при оформлении лицензии]\nHowTo schema readiness: suitable for HowTo rich result.",
+                "additionalData": {
+                  "minWords": 180,
+                  "maxWords": 280,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "подача заявки на лицензию",
+                      "электронные сервисы"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Объяснение, почему онлайн-подача экономит время и снижает вероятность ошибок.",
+                    "intent": "Ввести пользователя в преимущества и особенности подачи заявки на лицензию через электронные сервисы.",
+                    "audiences": "Самозанятые, не знакомые с госуслугами.",
+                    "selfPrompt": "CONTEXT: Generate body paragraph introducing the benefits and general process of online application for taxi license under h3 'Подача заявки и контроль статуса лицензии через онлайн-сервисы'.\nGOAL: Объяснить, почему онлайн-подача — оптимальный путь для самозанятых, и как это упрощает процесс.\nKEYWORDS: подача заявки на лицензию, электронные сервисы\nWORD COUNT: minWords: 75, maxWords: 140\nPARAGRAPH ROLE: body\nsemanticFingerprint: Мотивирует использовать онлайн-сервисы для ускорения процесса.\nsourceHint: Internal KB (советы), External KB (статистика онлайн-подач)\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 140,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-2-2",
+                    "tag": "ol",
+                    "keywords": [
+                      "шаги подачи заявки",
+                      "онлайн оформление разрешения"
+                    ],
+                    "taxonomy": "HowTo",
+                    "attention": "Четкая последовательность действий для самостоятельного оформления лицензии через интернет.",
+                    "intent": "Дать пользователю структурированный список шагов для подачи заявки на лицензию такси онлайн.",
+                    "audiences": "Самозанятые, предпочитающие пошаговые инструкции.",
+                    "selfPrompt": "CONTEXT: Generate ordered list (6 steps) detailing the process of online taxi license application under h3 'Подача заявки и контроль статуса лицензии через онлайн-сервисы'.\nGOAL: Перечислить все ключевые этапы — от сбора документов до получения результата.\nKEYWORDS: шаги подачи заявки, онлайн оформление разрешения\nWORD COUNT: minWords: 50, maxWords: 90\nLIST PURPOSE: steps\nsemanticFingerprint: Дает четкую дорожную карту для самостоятельного оформления лицензии.\nsourceHint: Internal KB (порядок действий), External KB (детали интерфейса)\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 90,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-3-2-3",
+                    "tag": "code",
+                    "keywords": [
+                      "пример заполнения заявки",
+                      "форма госуслуг"
+                    ],
+                    "taxonomy": "technical",
+                    "attention": "Пример заполнения ключевых полей заявки для минимизации ошибок.",
+                    "intent": "Показать наглядный пример (шаблон) заполнения электронной формы заявки на лицензию такси.",
+                    "audiences": "Самозанятые, впервые сталкивающиеся с госуслугами.",
+                    "selfPrompt": "CONTEXT: Generate code block (JSON snippet) showing sample data for online taxi license application form under h3 'Подача заявки и контроль статуса лицензии через онлайн-сервисы'.\nGOAL: Дать шаблон для правильного заполнения заявки, чтобы избежать типовых ошибок.\nKEYWORDS: пример заполнения заявки, форма госуслуг\nWORD COUNT: minWords: 20, maxWords: 50\nCODE PURPOSE: example/instruction\nLANGUAGE: JSON\nsemanticFingerprint: Дает практический шаблон для заполнения электронной формы.\nsourceHint: Internal KB (образец заявки), External KB (интерфейс госуслуг)\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 50,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1369,5 +1495,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T18:07:56.426Z";
+export const lastUpdated = "2025-10-25T18:09:16.612Z";
 export const generatedBy = "menu-persist-api";
