@@ -1122,7 +1122,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-25T17:37:16.248Z",
-        "updatedAt": "2025-10-25T17:47:15.675Z",
+        "updatedAt": "2025-10-25T17:50:42.052Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как самозанятому получить лицензию для работы в такси: пошаговая инструкция, список документов, требования и советы для быстрого оформления!",
@@ -1209,6 +1209,134 @@ export const contentData = {
                 }
               }
             ]
+          },
+          {
+            "id": "h2-2",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "требования к лицензии такси",
+              "условия для самозанятых водителей",
+              "регистрация транспортного средства",
+              "законодательство о такси",
+              "реестр перевозчиков",
+              "правила пассажирских перевозок",
+              "документы для регистрации автомобиля"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, какие юридические и технические требования необходимо выполнить самозанятому для получения лицензии на работу в такси — без ошибок и неожиданных отказов.",
+            "intent": "Дать полное представление о базовых требованиях и условиях, которые должен выполнить самозанятый для легального получения лицензии на перевозку пассажиров в такси.",
+            "audiences": "Самозанятые граждане России, планирующие официально работать в такси; уровень — начинающий; испытывают неуверенность в юридических нюансах и хотят избежать ошибок при подготовке документов.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 section on \"Базовые требования и условия для получения лицензии такси самозанятым\" for page \"Как самозанятому получить лицензию для работы в такси: пошаговая инструкция\"\n\nGOAL: Подробно раскрыть юридические, технические и организационные требования, предъявляемые к самозанятым водителям и их транспортным средствам для получения лицензии на перевозку пассажиров. Объяснить, какие документы и условия обязательны, какие нюансы законодательства действуют в 2024 году, и как избежать типичных ошибок при подготовке к лицензированию.\n\nAUDIENCE: Самозанятые водители, новички в юридических вопросах, желающие легально работать в такси и минимизировать риск отказа или штрафа.\n\nKEYWORDS TO INTEGRATE:\n[требования к лицензии такси, условия для самозанятых водителей, регистрация транспортного средства, законодательство о такси, реестр перевозчиков, правила пассажирских перевозок, документы для регистрации автомобиля]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 250, maxWords: 400 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: # (h2) section with nested paragraphs, table, h3, ul\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: юридические требования для работы в такси самозанятым, помощь в оформлении лицензии, ведение документации, медицинские требования\n- SECONDARY: Apply insights from External KB: требования к регистрации, реестр перевозчиков, законодательные нюансы\n\nQUALITY CRITERIA:\n- Actionable (конкретные требования и рекомендации)\n- Specific (без общих фраз)\n- Data-backed (ссылки на законы, нормативы)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальное раскрытие всех базовых требований и условий для самозанятых, желающих получить лицензию на такси, с акцентом на юридическую чистоту и минимизацию рисков.\n- sourceHint: Internal KB (юридические требования, поддержка US AUTO), External KB (реестр перевозчиков, законодательные нормы)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference parent page intent: дать практическое руководство по подготовке к лицензированию\n- Must set тематическое направление для h3: раскрытие детальных требований к водителю и автомобилю\n- Add interlink planning: internalLinks (например, \"Как выбрать автомобиль для такси\", \"Документы для самозанятых таксистов\"), externalLinks (только на официальные госресурсы, если разрешено)\n- Note schema readiness: HowTo/FAQPage (если применимо)\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 250,
+              "maxWords": 400,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-2-1",
+                "tag": "p",
+                "keywords": [
+                  "требования к лицензии такси",
+                  "условия для самозанятых водителей"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Понимание базовых требований поможет избежать отказа в лицензии и штрафов.",
+                "intent": "Ввести пользователя в суть юридических и технических условий, необходимых для старта процесса лицензирования.",
+                "audiences": "Самозанятые, которые впервые сталкиваются с оформлением разрешительных документов; уровень — начинающий.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for section \"Базовые требования и условия для получения лицензии такси самозанятым\". GOAL: Кратко объяснить, почему важно знать все требования заранее и как это влияет на успешность получения лицензии. KEYWORDS: требования к лицензии такси, условия для самозанятых водителей. ROLE: intro. SOURCE: Internal KB (юридические требования), External KB (общие условия). semanticFingerprint: Вводное пояснение о важности соблюдения всех требований для успешного лицензирования. evidenceStrength: internal-tested."
+              },
+              {
+                "id": "p-2-2-3",
+                "tag": "p",
+                "keywords": [
+                  "регистрация транспортного средства"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Краткое напоминание о необходимости официальной регистрации автомобиля.",
+                "intent": "Сделать акцент на обязательности регистрации транспортного средства для работы в такси.",
+                "audiences": "Самозанятые, не знакомые с процедурой регистрации авто для такси.",
+                "selfPrompt": "CONTEXT: Generate short transition paragraph on регистрация транспортного средства. GOAL: Подчеркнуть, что без регистрации автомобиля получить лицензию невозможно. KEYWORDS: регистрация транспортного средства. ROLE: transition. SOURCE: Internal KB (регистрация авто), External KB (реестр перевозчиков). semanticFingerprint: Краткая связка о необходимости регистрации авто. evidenceStrength: internal-tested."
+              },
+              {
+                "id": "table-2-2-4",
+                "tag": "table",
+                "keywords": [
+                  "законодательство о такси",
+                  "правила пассажирских перевозок"
+                ],
+                "taxonomy": "Data-driven",
+                "attention": "Сравните ключевые требования к водителю и автомобилю для получения лицензии.",
+                "intent": "Структурировать основные требования законодательства к самозанятым и их транспортным средствам для наглядности.",
+                "audiences": "Самозанятые, которым важно быстро свериться с перечнем требований.",
+                "selfPrompt": "CONTEXT: Generate comparison table (3 columns × 4 rows) for section \"Базовые требования и условия для получения лицензии такси самозанятым\". GOAL: В таблице отразить: 1) Требования к водителю, 2) Требования к автомобилю, 3) Документы для подачи. HEADERS: Категория | Основные требования | Примечания. DATA TYPES: text. SOURCE: Internal KB (юридические требования, правила перевозок), External KB (реестр перевозчиков, законодательные нормы). semanticFingerprint: Таблица-сводка по ключевым требованиям для лицензирования. evidenceStrength: internal-tested | external-peer-reviewed."
+              },
+              {
+                "id": "h3-2-2",
+                "tag": "h3",
+                "keywords": [
+                  "реестр перевозчиков",
+                  "документы для регистрации автомобиля",
+                  "проверка соответствия",
+                  "условия допуска"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Пошагово разберём, как самозанятому проверить соответствие всем условиям и подготовить документы для подачи заявки.",
+                "intent": "Детализировать процесс проверки соответствия требованиям и подготовки документов для регистрации в реестре перевозчиков.",
+                "audiences": "Самозанятые, готовящиеся к подаче документов; уровень — начинающий/средний.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection \"Проверка соответствия и подготовка документов для регистрации\" for parent h2 \"Базовые требования и условия для получения лицензии такси самозанятым\". GOAL: Пошагово объяснить, как самозанятому убедиться в соответствии всем условиям и собрать необходимые документы для подачи в реестр перевозчиков. KEYWORDS: реестр перевозчиков, документы для регистрации автомобиля, проверка соответствия, условия допуска. semanticFingerprint: Пошаговая инструкция по самопроверке и подготовке документов для реестра перевозчиков. interlink planning: internalLink (\"Чек-лист документов для такси\"), externalLink (официальный сайт госуслуг, если разрешено). evidenceStrength: internal-tested | external-peer-reviewed.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 250,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "реестр перевозчиков",
+                      "проверка соответствия"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Понимание процедуры проверки поможет избежать возврата документов.",
+                    "intent": "Объяснить, почему важно заранее проверить соответствие всем требованиям перед подачей заявки.",
+                    "audiences": "Самозанятые, впервые оформляющие лицензию.",
+                    "selfPrompt": "CONTEXT: Generate body paragraph for h3 \"Проверка соответствия и подготовка документов для регистрации\". GOAL: Объяснить важность самопроверки перед подачей документов в реестр перевозчиков. KEYWORDS: реестр перевозчиков, проверка соответствия. ROLE: body. SOURCE: Internal KB (процедура проверки), External KB (стандарты подачи). semanticFingerprint: Обоснование необходимости самопроверки. evidenceStrength: internal-tested."
+                  },
+                  {
+                    "id": "ul-2-2-2",
+                    "tag": "ul",
+                    "keywords": [
+                      "документы для регистрации автомобиля"
+                    ],
+                    "taxonomy": "Actionable",
+                    "attention": "Список поможет быстро подготовить все необходимые документы.",
+                    "intent": "Предоставить структурированный чек-лист документов для подачи заявки на лицензию.",
+                    "audiences": "Самозанятые, готовящие пакет документов.",
+                    "selfPrompt": "CONTEXT: Generate unordered list (5 items) for h3 \"Проверка соответствия и подготовка документов для регистрации\". GOAL: Перечислить основные документы, которые понадобятся для подачи заявки. KEYWORDS: документы для регистрации автомобиля. STRUCTURE: short bullets (5-10 words). SOURCE: Internal KB (перечень документов), External KB (стандарты подачи). semanticFingerprint: Чек-лист документов для регистрации. evidenceStrength: internal-tested."
+                  },
+                  {
+                    "id": "p-2-2-3",
+                    "tag": "p",
+                    "keywords": [
+                      "условия допуска"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Финальное напоминание о необходимости соблюдения всех условий.",
+                    "intent": "Суммировать важность соблюдения всех условий допуска для успешного лицензирования.",
+                    "audiences": "Самозанятые, завершающие подготовку к подаче документов.",
+                    "selfPrompt": "CONTEXT: Generate summary paragraph for h3 \"Проверка соответствия и подготовка документов для регистрации\". GOAL: Подчеркнуть, что соблюдение всех условий — залог успешного получения лицензии. KEYWORDS: условия допуска. ROLE: summary. SOURCE: Internal KB (условия допуска), External KB (стандарты допуска). semanticFingerprint: Итоговое напоминание о важности полного соответствия. evidenceStrength: internal-tested."
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1241,5 +1369,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T18:06:07.642Z";
+export const lastUpdated = "2025-10-25T18:07:56.426Z";
 export const generatedBy = "menu-persist-api";
