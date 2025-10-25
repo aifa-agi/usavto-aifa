@@ -1122,7 +1122,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-25T17:37:16.248Z",
-        "updatedAt": "2025-10-25T17:52:30.454Z",
+        "updatedAt": "2025-10-25T17:53:50.961Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как самозанятому получить лицензию для работы в такси: пошаговая инструкция, список документов, требования и советы для быстрого оформления!",
@@ -1463,6 +1463,170 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "часто задаваемые вопросы по лицензии такси",
+              "разрешение для самозанятых водителей",
+              "сроки оформления лицензии",
+              "стоимость получения разрешения",
+              "требования к автомобилю для такси",
+              "медицинские осмотры водителей",
+              "ошибки при подаче документов"
+            ],
+            "taxonomy": "FAQ",
+            "attention": "Ответы на самые частые вопросы помогут избежать ошибок и ускорить процесс получения разрешения для работы в такси.",
+            "intent": "Дать пользователям быстрые и точные ответы на распространённые вопросы, возникающие при самостоятельном оформлении лицензии для работы в такси как самозанятый.",
+            "audiences": "Самозанятые водители такси, новички в юридических процедурах, лица, планирующие легализовать деятельность в такси; уровень: начинающий/средний; боль: неуверенность в деталях процесса, страх ошибок и штрафов.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 FAQ section for page \"Как самозанятому получить лицензию для работы в такси: пошаговая инструкция\"\n\nGOAL: Сформировать структурированный блок с ответами на наиболее частые вопросы, возникающие у самозанятых при оформлении лицензии на такси, чтобы повысить уверенность пользователя и снизить риск ошибок.\n\nAUDIENCE: Самозанятые водители, начинающие и опытные, которые впервые сталкиваются с процедурой лицензирования; уровень: начинающий/средний; боль: неясность отдельных этапов, страх отказа, желание избежать штрафов.\n\nKEYWORDS TO INTEGRATE:\n[часто задаваемые вопросы по лицензии такси, разрешение для самозанятых водителей, сроки оформления лицензии, стоимость получения разрешения, требования к автомобилю для такси, медицинские осмотры водителей, ошибки при подаче документов]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: Use h2 for FAQ block, h3 for each question, p for each answer.\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: юридические требования, сопровождение US AUTO, медицинские осмотры, ведение документации\n- SECONDARY: Apply insights from External KB: типовые вопросы пользователей, сроки, стоимость, ошибки\n\nQUALITY CRITERIA:\n- Actionable (конкретные рекомендации)\n- Specific (без общих фраз)\n- Data-backed (факты из KB)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Блок FAQ раскрывает практические детали, которые не были рассмотрены в предыдущих разделах, и помогает закрыть оставшиеся вопросы пользователя.\n- sourceHint: Internal KB (юридические и медицинские требования), External KB (типовые вопросы и ошибки)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Для каждого h3: уникальный вопрос, не повторяющий темы предыдущих разделов\n- Для каждого p: краткий, конкретный ответ с actionable советом\n- Interlink planning: добавить 2-3 внутренних ссылки на разделы сайта о документах, медицинских услугах, юридическом сопровождении\n- Schema readiness: FAQPage\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "keywords": [
+                  "часто задаваемые вопросы по лицензии такси"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Краткое введение объясняет, почему важно ознакомиться с FAQ перед подачей документов.",
+                "intent": "Ввести пользователя в раздел FAQ и подчеркнуть пользу от изучения типовых вопросов.",
+                "audiences": "Самозанятые, впервые оформляющие разрешение; уровень: начинающий; боль: неуверенность в деталях.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for FAQ section on \"Как самозанятому получить лицензию для работы в такси: пошаговая инструкция\".\nGOAL: Кратко объяснить, зачем читать FAQ, и как это поможет избежать ошибок при оформлении лицензии.\nKEYWORDS TO INTEGRATE: [часто задаваемые вопросы по лицензии такси]\nWORD COUNT: minWords: 70, maxWords: 130\nMARKDOWN/MDX SYNTAX: Paragraph (p)\nWRITING STYLE: Narrative\nCONTENT FORMAT: Simple\nsemanticFingerprint: Вводный абзац мотивирует пользователя изучить FAQ для повышения уверенности.\nsourceHint: Internal KB (опыт сопровождения клиентов)\nevidenceStrength: internal-tested\nParagraph role: intro",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "keywords": [
+                  "разрешение для самозанятых водителей",
+                  "сроки оформления лицензии",
+                  "процесс рассмотрения заявки"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, сколько времени реально занимает оформление разрешения и как ускорить процесс.",
+                "intent": "Дать чёткий ответ о сроках получения разрешения для самозанятого водителя такси.",
+                "audiences": "Самозанятые, планирующие начать работу в такси; уровень: начинающий; боль: неясность сроков, страх задержек.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ question on \"Сколько времени занимает оформление разрешения для самозанятого водителя такси?\" for section \"FAQ\".\nGOAL: Дать конкретный ответ о средних сроках рассмотрения заявки и совет по ускорению процесса.\nKEYWORDS TO INTEGRATE: [разрешение для самозанятых водителей, сроки оформления лицензии, процесс рассмотрения заявки]\nWORD COUNT: minWords: 150, maxWords: 220\nMARKDOWN/MDX SYNTAX: h3 for question, p for answer\nWRITING STYLE: Narrative\nCONTENT FORMAT: Simple\nsemanticFingerprint: Вопрос раскрывает реальные сроки и факторы, влияющие на скорость оформления.\nsourceHint: Internal KB (статистика сопровождения заявок), External KB (типовые сроки)\nevidenceStrength: internal-tested | external-peer-reviewed\nInterlink planning: ссылка на раздел о пошаговом процессе оформления\nSchema readiness: FAQPage",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "keywords": [
+                      "сроки оформления лицензии"
+                    ],
+                    "selfPrompt": "CONTEXT: Generate answer paragraph for question \"Сколько времени занимает оформление разрешения для самозанятого водителя такси?\" in FAQ section.\nParagraph role: body\nKEYWORDS TO INTEGRATE: [сроки оформления лицензии]\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Ответ содержит средние сроки и советы по ускорению.\nsourceHint: Internal KB (опыт сопровождения заявок)\nevidenceStrength: internal-tested"
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-2",
+                "tag": "h3",
+                "keywords": [
+                  "стоимость получения разрешения",
+                  "госпошлина за лицензию",
+                  "дополнительные расходы"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Проверьте, какие расходы вас ожидают при самостоятельном оформлении разрешения.",
+                "intent": "Разъяснить, сколько стоит получение разрешения для работы в такси и какие есть обязательные и необязательные платежи.",
+                "audiences": "Самозанятые, планирующие бюджет на оформление; уровень: начинающий; боль: страх скрытых расходов.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ question on \"Сколько стоит получение разрешения для работы в такси?\" for section \"FAQ\".\nGOAL: Дать прозрачную информацию о госпошлине и возможных дополнительных расходах.\nKEYWORDS TO INTEGRATE: [стоимость получения разрешения, госпошлина за лицензию, дополнительные расходы]\nWORD COUNT: minWords: 150, maxWords: 220\nMARKDOWN/MDX SYNTAX: h3 for question, p for answer\nWRITING STYLE: Narrative\nCONTENT FORMAT: Simple\nsemanticFingerprint: Вопрос раскрывает структуру расходов и предупреждает о возможных дополнительных платежах.\nsourceHint: Internal KB (юридические консультации), External KB (типовые тарифы)\nevidenceStrength: internal-tested | external-peer-reviewed\nInterlink planning: ссылка на раздел о документах и юридических услугах\nSchema readiness: FAQPage",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "госпошлина за лицензию"
+                    ],
+                    "selfPrompt": "CONTEXT: Generate answer paragraph for question \"Сколько стоит получение разрешения для работы в такси?\" in FAQ section.\nParagraph role: body\nKEYWORDS TO INTEGRATE: [госпошлина за лицензию]\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Ответ содержит сумму госпошлины и предупреждение о дополнительных расходах.\nsourceHint: Internal KB (юридические консультации)\nevidenceStrength: internal-tested"
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-3",
+                "tag": "h3",
+                "keywords": [
+                  "требования к автомобилю для такси",
+                  "техническое состояние машины",
+                  "цвет и маркировка такси"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Проверьте, подходит ли ваш автомобиль для получения разрешения на работу в такси.",
+                "intent": "Дать чёткий перечень требований к автомобилю, который может быть использован для работы в такси самозанятым.",
+                "audiences": "Самозанятые, владеющие личным авто; уровень: начинающий; боль: неуверенность в соответствии машины требованиям.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ question on \"Какие требования предъявляются к автомобилю для получения разрешения на такси?\" for section \"FAQ\".\nGOAL: Перечислить основные технические и визуальные требования к транспортному средству.\nKEYWORDS TO INTEGRATE: [требования к автомобилю для такси, техническое состояние машины, цвет и маркировка такси]\nWORD COUNT: minWords: 150, maxWords: 220\nMARKDOWN/MDX SYNTAX: h3 for question, p for answer\nWRITING STYLE: Narrative\nCONTENT FORMAT: Simple\nsemanticFingerprint: Вопрос раскрывает полный перечень требований к авто для такси.\nsourceHint: Internal KB (регламент лицензирования), External KB (типовые требования)\nevidenceStrength: internal-tested | external-peer-reviewed\nInterlink planning: ссылка на раздел о регистрации транспортного средства\nSchema readiness: FAQPage",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "техническое состояние машины"
+                    ],
+                    "selfPrompt": "CONTEXT: Generate answer paragraph for question \"Какие требования предъявляются к автомобилю для получения разрешения на такси?\" in FAQ section.\nParagraph role: body\nKEYWORDS TO INTEGRATE: [техническое состояние машины]\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Ответ содержит список технических и визуальных требований.\nsourceHint: Internal KB (регламент лицензирования)\nevidenceStrength: internal-tested"
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-4",
+                "tag": "h3",
+                "keywords": [
+                  "медицинские осмотры водителей",
+                  "ошибки при подаче документов",
+                  "отказ в выдаче разрешения"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, какие ошибки чаще всего приводят к отказу и как их избежать.",
+                "intent": "Объяснить, какие типичные ошибки допускают самозанятые при подаче документов и как пройти медицинский осмотр без проблем.",
+                "audiences": "Самозанятые, впервые оформляющие разрешение; уровень: начинающий; боль: страх отказа из-за ошибок или медосмотра.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ question on \"Какие ошибки чаще всего приводят к отказу в выдаче разрешения и как их избежать?\" for section \"FAQ\".\nGOAL: Перечислить основные ошибки при подаче документов и дать совет по прохождению медицинского осмотра.\nKEYWORDS TO INTEGRATE: [медицинские осмотры водителей, ошибки при подаче документов, отказ в выдаче разрешения]\nWORD COUNT: minWords: 150, maxWords: 220\nMARKDOWN/MDX SYNTAX: h3 for question, p for answer\nWRITING STYLE: Narrative\nCONTENT FORMAT: Simple\nsemanticFingerprint: Вопрос раскрывает причины отказа и способы их избежать.\nsourceHint: Internal KB (опыт сопровождения заявок, телемедицина), External KB (типовые ошибки)\nevidenceStrength: internal-tested | external-peer-reviewed\nInterlink planning: ссылка на раздел о медицинских услугах и сопровождении\nSchema readiness: FAQPage",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "ошибки при подаче документов"
+                    ],
+                    "selfPrompt": "CONTEXT: Generate answer paragraph for question \"Какие ошибки чаще всего приводят к отказу в выдаче разрешения и как их избежать?\" in FAQ section.\nParagraph role: body\nKEYWORDS TO INTEGRATE: [ошибки при подаче документов]\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Ответ содержит перечень ошибок и рекомендации по их предотвращению.\nsourceHint: Internal KB (опыт сопровождения заявок, телемедицина)\nevidenceStrength: internal-tested"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1495,5 +1659,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T18:09:16.612Z";
+export const lastUpdated = "2025-10-25T18:10:55.993Z";
 export const generatedBy = "menu-persist-api";
