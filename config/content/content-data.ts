@@ -1094,7 +1094,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-25T17:06:21.698Z",
-        "updatedAt": "2025-10-25T17:18:44.493Z",
+        "updatedAt": "2025-10-25T17:20:12.763Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как обратиться в службу поддержки Яндекс Такси: актуальные телефоны, онлайн-чат, приложение и советы для быстрого решения любых вопросов!",
@@ -1651,6 +1651,89 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-5",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "итоги обращения в поддержку",
+              "выводы по каналам связи",
+              "рекомендации для пользователей",
+              "следующие шаги после обращения",
+              "советы по эффективному взаимодействию",
+              "резюме по поддержке Яндекс Go",
+              "дальнейшие действия пользователя"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, как быстро и эффективно завершить обращение в поддержку Яндекс Go и получить максимальную пользу от предоставленных рекомендаций.",
+            "intent": "Синтезировать ключевые выводы по теме обращения в поддержку Яндекс Такси, дать пользователю четкие рекомендации и обозначить дальнейшие шаги для самостоятельного решения вопросов.",
+            "audiences": "Пассажиры и водители Яндекс Go, которые уже ознакомились с инструкциями по обращению в поддержку и хотят получить краткое резюме, советы и рекомендации для успешного завершения процесса.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 conclusion/summary section for page \"Как обратиться в службу поддержки Яндекс Такси — все способы связи\"\n\nGOAL: Сформулировать краткое, структурированное резюме по всем рассмотренным способам обращения в поддержку Яндекс Такси, выделить ключевые выводы, дать рекомендации по дальнейшим действиям пользователя и подчеркнуть ценность грамотного взаимодействия с сервисом поддержки.\n\nAUDIENCE: Пассажиры и водители Яндекс Go | Level: beginner/intermediate | Pain points: Неуверенность в выборе канала связи, желание быстро получить помощь, необходимость знать, что делать после обращения.\n\nKEYWORDS TO INTEGRATE:\n[итоги обращения в поддержку, выводы по каналам связи, рекомендации для пользователей, следующие шаги после обращения, советы по эффективному взаимодействию, резюме по поддержке Яндекс Go, дальнейшие действия пользователя]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 200, maxWords: 300 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: # [Section Title] (h2)\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: рекомендации по завершению обращения, важность прозрачности, советы по дальнейшим действиям\n- SECONDARY: Apply insights from External KB: типовые сценарии завершения обращения, советы по отслеживанию статуса, рекомендации по повторному обращению\n\nQUALITY CRITERIA:\n- Actionable (четкие рекомендации и шаги)\n- Specific (конкретные советы по завершению обращения)\n- Data-backed (использовать подтвержденные практики из KB)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальное резюме по итогам обращения в поддержку Яндекс Такси с акцентом на дальнейшие действия пользователя.\n- sourceHint: Internal KB (рекомендации и опыт поддержки), External KB (индустриальные советы)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference previous sections for continuity\n- Must provide actionable next steps\n- Add interlink planning: internalLinks (например, на разделы о безопасности поездок, возвратах, других сервисах поддержки)\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 200,
+              "maxWords": 300,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-5-1",
+                "tag": "p",
+                "keywords": [
+                  "итоги обращения в поддержку",
+                  "резюме по поддержке Яндекс Go"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Получите краткое резюме по всем рассмотренным способам обращения и их эффективности.",
+                "intent": "Сформулировать краткое обобщение основных выводов по теме обращения в поддержку Яндекс Такси.",
+                "audiences": "Пользователи, которые хотят быстро вспомнить ключевые моменты и понять, что делать дальше.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate paragraph (intro/summary) in section \"Итоги и рекомендации по обращению в поддержку Яндекс Такси\" of page \"Как обратиться в службу поддержки Яндекс Такси — все способы связи\"\n\nGOAL: Кратко подытожить основные выводы по теме обращения в поддержку, выделить ценность грамотного выбора канала связи и подчеркнуть важность подготовки к обращению.\n\nAUDIENCE: Пассажиры и водители Яндекс Go | Level: beginner/intermediate | Pain points: Неуверенность в итогах обращения, желание получить четкое резюме.\n\nKEYWORDS TO INTEGRATE: [итоги обращения в поддержку, резюме по поддержке Яндекс Go]\n\nWORD COUNT: minWords: 80, maxWords: 150\n\nMARKDOWN/MDX SYNTAX: Paragraph (intro/summary)\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Internal KB (рекомендации по завершению обращения)\n- SECONDARY: External KB (индустриальные советы по итогам обращения)\n\nQUALITY CRITERIA:\n- Actionable summary\n- No fluff\n\nE-E-A-T ENHANCERS:\n- semanticFingerprint: Краткое резюме итогов обращения в поддержку Яндекс Такси.\n- sourceHint: Internal KB summary\n- evidenceStrength: internal-tested\n\nParagraph role: summary"
+              },
+              {
+                "id": "table-5-3",
+                "tag": "table",
+                "keywords": [
+                  "выводы по каналам связи",
+                  "эффективность способов обращения"
+                ],
+                "taxonomy": "Data-driven",
+                "attention": "Сравните основные каналы обращения по ключевым параметрам для выбора оптимального варианта.",
+                "intent": "Представить сравнительную таблицу по эффективности и особенностям различных способов обращения в поддержку Яндекс Go.",
+                "audiences": "Пользователи, выбирающие наиболее подходящий канал связи для своих задач.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate table in section \"Итоги и рекомендации по обращению в поддержку Яндекс Такси\" of page \"Как обратиться в службу поддержки Яндекс Такси — все способы связи\"\n\nGOAL: Сравнить основные каналы обращения в поддержку по параметрам: скорость ответа, удобство, доступность, рекомендуемые сценарии использования.\n\nAUDIENCE: Пассажиры и водители Яндекс Go | Level: beginner/intermediate | Pain points: Неуверенность в выборе канала связи.\n\nKEYWORDS TO INTEGRATE: [выводы по каналам связи, эффективность способов обращения]\n\nWORD COUNT: minWords: 80, maxWords: 160\n\nMARKDOWN/MDX SYNTAX: Table (3 columns × 4 rows)\n- Колонки: Канал связи | Время ответа | Рекомендации по использованию\n- Data types: text/text/text\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Internal KB (опыт поддержки, советы по каналам)\n- SECONDARY: External KB (статистика и индустриальные советы)\n\nQUALITY CRITERIA:\n- Data-backed\n- Actionable comparison\n\nE-E-A-T ENHANCERS:\n- semanticFingerprint: Табличное сравнение каналов обращения в поддержку Яндекс Go.\n- sourceHint: Internal KB + External KB (peer-reviewed)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nTable schema readiness: Comparison"
+              },
+              {
+                "id": "ul-5-2",
+                "tag": "ul",
+                "keywords": [
+                  "рекомендации для пользователей",
+                  "следующие шаги после обращения"
+                ],
+                "taxonomy": "Actionable",
+                "attention": "Следуйте этим простым советам для успешного завершения обращения и получения результата.",
+                "intent": "Дать пользователю конкретные рекомендации и дальнейшие действия после обращения в поддержку.",
+                "audiences": "Пользователи, которые хотят повысить эффективность взаимодействия с поддержкой и быстро получить результат.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate unordered list (4-5 items) in section \"Итоги и рекомендации по обращению в поддержку Яндекс Такси\" of page \"Как обратиться в службу поддержки Яндекс Такси — все способы связи\"\n\nGOAL: Перечислить практические рекомендации и следующие шаги для пользователя после отправки обращения в поддержку.\n\nAUDIENCE: Пассажиры и водители Яндекс Go | Level: beginner/intermediate | Pain points: Не знают, что делать после обращения, хотят ускорить решение.\n\nKEYWORDS TO INTEGRATE: [рекомендации для пользователей, следующие шаги после обращения]\n\nWORD COUNT: minWords: 50, maxWords: 90\n\nMARKDOWN/MDX SYNTAX: Unordered list (4-5 short actionable items)\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Internal KB (пошаговые рекомендации)\n- SECONDARY: External KB (индустриальные советы)\n\nQUALITY CRITERIA:\n- Actionable\n- No fluff\n\nE-E-A-T ENHANCERS:\n- semanticFingerprint: Список конкретных рекомендаций после обращения в поддержку Яндекс Такси.\n- sourceHint: Internal KB\n- evidenceStrength: internal-tested\n\nList purpose: steps/tips"
+              },
+              {
+                "id": "p-5-3",
+                "tag": "p",
+                "keywords": [
+                  "советы по эффективному взаимодействию",
+                  "дальнейшие действия пользователя"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, как повысить шансы на быстрое и успешное решение вашего вопроса.",
+                "intent": "Завершить раздел мотивирующим выводом и напоминанием о важности активного и честного взаимодействия с поддержкой.",
+                "audiences": "Пользователи, стремящиеся к максимальной эффективности при обращении в поддержку.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate paragraph (conclusion/motivation) in section \"Итоги и рекомендации по обращению в поддержку Яндекс Такси\" of page \"Как обратиться в службу поддержки Яндекс Такси — все способы связи\"\n\nGOAL: Завершить раздел мотивирующим советом, подчеркнуть важность честности, прозрачности и активности при взаимодействии с поддержкой Яндекс Go.\n\nAUDIENCE: Пассажиры и водители Яндекс Go | Level: beginner/intermediate | Pain points: Хотят повысить шансы на быстрое решение вопроса.\n\nKEYWORDS TO INTEGRATE: [советы по эффективному взаимодействию, дальнейшие действия пользователя]\n\nWORD COUNT: minWords: 70, maxWords: 130\n\nMARKDOWN/MDX SYNTAX: Paragraph (conclusion/motivation)\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Internal KB (важность прозрачности и честности)\n- SECONDARY: External KB (индустриальные советы по мотивации)\n\nQUALITY CRITERIA:\n- Motivational\n- Actionable\n\nE-E-A-T ENHANCERS:\n- semanticFingerprint: Мотивационный вывод о важности честного и активного взаимодействия с поддержкой.\n- sourceHint: Internal KB\n- evidenceStrength: internal-tested\n\nParagraph role: conclusion"
+              }
+            ]
           }
         ]
       }
@@ -1683,5 +1766,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T17:35:38.306Z";
+export const lastUpdated = "2025-10-25T17:35:53.584Z";
 export const generatedBy = "menu-persist-api";
