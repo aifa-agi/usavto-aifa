@@ -1089,7 +1089,8 @@ export const contentData = {
         "createdAt": "2025-10-25T17:37:16.248Z",
         "updatedAt": "2025-10-25T17:37:16.248Z",
         "order": 1,
-        "badgeName": "Блог"
+        "badgeName": "Блог",
+        "description": "как самозанятому получить лицензию для работы в такси"
       }
     ],
     "order": 16
@@ -1120,5 +1121,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T17:53:57.939Z";
+export const lastUpdated = "2025-10-25T17:54:10.022Z";
 export const generatedBy = "menu-persist-api";
