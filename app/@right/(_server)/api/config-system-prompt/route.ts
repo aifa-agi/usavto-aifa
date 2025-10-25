@@ -5,14 +5,14 @@ import { promises as fs } from "fs";
 import path from "path";
 import { SystemPromptConfig, CustomBaseInstruction, SystemPromptCollection } from "@/types/system-prompt-types";
 
-// -------------------- Config --------------------
+// ============ CONFIGURATION ============
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const GITHUB_REPO = process.env.GITHUB_REPO;
 const DEFAULT_PROMPT_FILE_PATH = "config/prompts/base-system-prompt.ts";
 const PROJECT_ROOT = process.cwd();
 
-// -------------------- Types --------------------
+// ============ TYPES ============
 
 interface SystemPromptReadResponse {
   success: boolean;
@@ -22,7 +22,7 @@ interface SystemPromptReadResponse {
   environment?: "development" | "production";
 }
 
-// -------------------- Helpers --------------------
+// ============ HELPERS ============
 
 function getEnvMode(): "development" | "production" {
   return process.env.NODE_ENV === "production" ? "production" : "development";
@@ -110,20 +110,19 @@ function parseSystemPromptData(source: string): SystemPromptCollection {
 }
 
 /**
- * ✅ Извлекает значение INTERNAL_COMPANY_KB_TOKENS из файла
+ * Extracts INTERNAL_COMPANY_KB_TOKENS value from file
  * 
- * ВАЖНО: Эта функция ТОЛЬКО читает значение из файла для логирования
- * и информационных целей. Она НЕ должна добавлять это значение к totalTokenCount.
- * 
- * Расчёт общих токенов с internal KB происходит в token-utils.ts
+ * IMPORTANT: This function ONLY reads the value for logging purposes
+ * It does NOT add this value to totalTokenCount
+ * Total token calculation with internal KB happens in token-utils.ts
  */
 function extractInternalKBTokens(source: string): number {
-  // Ищем экспортированную переменную INTERNAL_COMPANY_KB_TOKENS
+  // Look for exported INTERNAL_COMPANY_KB_TOKENS variable
   const pattern = /export\s+const\s+INTERNAL_COMPANY_KB_TOKENS\s*=\s*(\d+);/;
   const match = source.match(pattern);
   
   if (!match || !match[1]) {
-    // Если не найдено, пытаемся найти inline значение из внутреннего кода
+    // If not found, try to find inline value from internal code
     const inlinePattern = /internalKnowledgeTokens\s*=\s*INTERNAL_COMPANY_KNOWLEDGE_BASE_TOKENS\s*\|\|\s*(\d+)/;
     const inlineMatch = source.match(inlinePattern);
     
@@ -132,7 +131,7 @@ function extractInternalKBTokens(source: string): number {
       return parseInt(inlineMatch[1], 10);
     }
     
-    // Если internal KB не найден, возвращаем 0 (файл может отсутствовать)
+    // If internal KB not found, return 0 (file might be missing)
     console.log(`[Extract Internal KB] No internal KB found, returning 0`);
     return 0;
   }
@@ -143,35 +142,46 @@ function extractInternalKBTokens(source: string): number {
 }
 
 /**
- * ✅ Парсит конфигурацию системного промпта
+ * Parses system prompt configuration from source file
  * 
- * КРИТИЧЕСКИ ВАЖНО:
- * - totalTokenCount включает ТОЛЬКО customInstruction + knowledgeBase (динамические страницы)
- * - totalTokenCount НЕ включает INTERNAL_COMPANY_KB_TOKENS
- * - Internal KB токены добавляются отдельно в token-utils.ts при расчётах
+ * CRITICALLY IMPORTANT:
+ * - totalTokenCount includes ONLY customInstruction + knowledgeBase (dynamic pages)
+ * - totalTokenCount does NOT include INTERNAL_COMPANY_KB_TOKENS
+ * - Internal KB tokens are added separately in token-utils.ts during calculations
  * 
- * Это предотвращает двойной подсчёт internal KB токенов
+ * This prevents double-counting of internal KB tokens
  */
 function parseSystemPromptConfig(source: string): SystemPromptConfig {
   const customInstruction = extractCustomInstruction(source);
   const knowledgeBase = parseSystemPromptData(source);
   
-  // ✅ Извлекаем internal KB токены ТОЛЬКО для логирования
+  // Extract internal KB tokens ONLY for logging
   const internalKBTokens = extractInternalKBTokens(source);
   
-  // ✅ ВАЖНО: НЕ включаем internalKBTokens в totalTokenCount
-  // Потому что token-utils.ts добавит их сам при расчётах
-  const knowledgeBaseTokens = knowledgeBase.reduce((sum, entry) => sum + entry.tokenCount, 0);
+  // ✅ FIXED: Use totalTokenCount instead of tokenCount
+  // Calculate tokens from all sections across all pages
+  const knowledgeBaseTokens = knowledgeBase.reduce((sum, entry) => {
+    // New structure: entry has totalTokenCount (sum of all section tokens)
+    return sum + (entry.totalTokenCount || 0);
+  }, 0);
+  
   const totalTokenCount = customInstruction.tokenCount + knowledgeBaseTokens;
   
-  console.log(`[Config Parse] Token breakdown:`);
-  console.log(`  - Custom instruction: ${customInstruction.tokenCount}`);
-  console.log(`  - Dynamic pages: ${knowledgeBaseTokens}`);
-  console.log(`  - Subtotal (without internal KB): ${totalTokenCount}`);
-  console.log(`  - Internal company KB (separate): ${internalKBTokens}`);
-  console.log(`  - Grand total (will be calculated by token-utils): ${totalTokenCount + internalKBTokens}`);
+  // Calculate total sections for logging
+  const totalSections = knowledgeBase.reduce((sum, entry) => {
+    return sum + (entry.sections?.length || 0);
+  }, 0);
   
-  // ✅ ПРОВЕРКА: убеждаемся, что totalTokenCount не содержит internal KB
+  console.log(`[Config Parse] Token breakdown:`);
+  console.log(`  - Custom instruction: ${customInstruction.tokenCount} tokens`);
+  console.log(`  - Dynamic pages: ${knowledgeBase.length} pages`);
+  console.log(`  - Dynamic sections: ${totalSections} sections`);
+  console.log(`  - Dynamic pages tokens: ${knowledgeBaseTokens} tokens`);
+  console.log(`  - Subtotal (without internal KB): ${totalTokenCount} tokens`);
+  console.log(`  - Internal company KB (separate): ${internalKBTokens} tokens`);
+  console.log(`  - Grand total (calculated by token-utils): ${totalTokenCount + internalKBTokens} tokens`);
+  
+  // Validation check
   if (totalTokenCount > 20000 && knowledgeBase.length === 0) {
     console.warn(`[Config Parse] ⚠️  WARNING: totalTokenCount suspiciously high (${totalTokenCount}) with 0 dynamic pages!`);
     console.warn(`[Config Parse] ⚠️  This might indicate internal KB was incorrectly added to totalTokenCount`);
@@ -180,11 +190,11 @@ function parseSystemPromptConfig(source: string): SystemPromptConfig {
   return {
     customInstruction,
     knowledgeBase,
-    totalTokenCount // ← БЕЗ internal KB
+    totalTokenCount // WITHOUT internal KB
   };
 }
 
-// -------------------- HTTP handler --------------------
+// ============ HTTP HANDLER ============
 
 export async function GET(
   req: NextRequest
