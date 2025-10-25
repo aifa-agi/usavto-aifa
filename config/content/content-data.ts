@@ -1150,7 +1150,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-25T18:10:38.573Z",
-        "updatedAt": "2025-10-25T18:23:08.167Z",
+        "updatedAt": "2025-10-25T18:25:25.128Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, какой опыт вождения нужен для работы в Яндекс Такси: требования к стажу, советы новичкам и альтернативные варианты. Подайте заявку сейчас!",
@@ -1517,6 +1517,175 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "часто задаваемые вопросы по стажу такси",
+              "минимальный водительский опыт для Яндекс",
+              "альтернативные варианты для новичков",
+              "проверка водительских данных Яндекс",
+              "работа в такси без стажа",
+              "советы по трудоустройству водителей",
+              "дополнительные требования для такси"
+            ],
+            "taxonomy": "FAQ",
+            "attention": "Быстрые и точные ответы на самые популярные вопросы о стаже и возможностях работы в Яндекс Такси для разных ситуаций.",
+            "intent": "Собрать и структурировать ключевые вопросы и ответы, которые чаще всего возникают у соискателей при рассмотрении работы в Яндекс Такси, чтобы закрыть типовые возражения и дать практические разъяснения.",
+            "audiences": "Потенциальные и начинающие водители такси, которые ищут быстрые разъяснения по требованиям к стажу, возможностям для новичков и особенностям трудоустройства; уровень — начинающий/средний.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 FAQ section for page \"Какой опыт вождения нужен для работы в Яндекс Такси: требования и советы\"\n\nGOAL: Дать структурированные, лаконичные и полезные ответы на самые частые вопросы о стаже, альтернативных вариантах и особенностях допуска к работе в Яндекс Такси, не повторяя ранее раскрытые темы (формальные требования, алгоритм допуска, документы, медосмотры и обучение).\n\nAUDIENCE: Новички и потенциальные водители, которые хотят быстро получить ответы на типовые вопросы по стажу, альтернативам и нюансам трудоустройства; уровень — начинающий/средний; pain points — неуверенность в соответствии требованиям, страх отказа, поиск быстрых решений.\n\nKEYWORDS TO INTEGRATE:\n[часто задаваемые вопросы по стажу такси, минимальный водительский опыт для Яндекс, альтернативные варианты для новичков, проверка водительских данных Яндекс, работа в такси без стажа, советы по трудоустройству водителей, дополнительные требования для такси]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: h2 with nested h3 for each FAQ, each with a p-answer\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: требования к стажу, поддержка водителей, обучение, медосмотры, альтернативные варианты\n- SECONDARY: Apply insights from External KB: частые вопросы соискателей, реальные сценарии, советы для новичков\n\nQUALITY CRITERIA:\n- Actionable (конкретные ответы и рекомендации)\n- Specific (без общих фраз)\n- Data-backed (только проверенные факты)\n- No fluff (никакой воды)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Секция агрегирует уникальные вопросы, не раскрытые в предыдущих разделах, и даёт быстрые решения для разных кейсов.\n- sourceHint: Internal KB (основные требования, поддержка, обучение) + External KB (реальные вопросы и сценарии)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Для каждого h3: уникальный вопрос, не дублирующий предыдущие разделы\n- Для каждого p: чёткий, лаконичный ответ с actionable советом\n- Interlink planning: 2-3 внутренних ссылки на страницы о лицензировании, обучении, поддержке водителей\n- Schema readiness: FAQPage\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "keywords": [
+                  "ответы на вопросы о стаже",
+                  "разъяснения для водителей"
+                ],
+                "taxonomy": "supporting",
+                "attention": "В этом разделе вы найдёте быстрые ответы на самые частые вопросы по стажу и трудоустройству.",
+                "intent": "Кратко объяснить, что в этом разделе собраны ключевые вопросы и ответы для быстрого ориентирования новичков.",
+                "audiences": "Потенциальные водители, ищущие быстрые разъяснения по стажу и возможностям работы.",
+                "selfPrompt": "CONTEXT: Generate intro paragraph for FAQ section (role: intro)\nGOAL: Объяснить, что далее идут ответы на самые частые вопросы по стажу и трудоустройству в Яндекс Такси, чтобы пользователь мог быстро найти нужную информацию.\nKEYWORDS: [ответы на вопросы о стаже, разъяснения для водителей]\nWORD COUNT: minWords: 70, maxWords: 130\nMARKDOWN/MDX SYNTAX: p\nsemanticFingerprint: Вводный абзац, поясняющий структуру FAQ и его пользу для новичков.\nsourceHint: Internal KB (структура поддержки водителей)\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "keywords": [
+                  "работа в такси без опыта",
+                  "альтернативные пути для новичков",
+                  "начало карьеры в Яндекс"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, можно ли начать работать в Яндекс Такси без большого стажа и какие есть альтернативы.",
+                "intent": "Ответить на вопрос о возможностях трудоустройства для водителей с минимальным или отсутствующим стажем.",
+                "audiences": "Новички без стажа, ищущие варианты старта в Яндекс экосистеме.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item for 'Можно ли работать в Яндекс Такси без стажа? Какие есть альтернативы для новичков?'\nGOAL: Дать конкретный ответ о возможностях для водителей без стажа, упомянуть альтернативные пути (например, курьерство, обучение, временная работа через партнёров).\nKEYWORDS: [работа в такси без опыта, альтернативные пути для новичков, начало карьеры в Яндекс]\nWORD COUNT: minWords: 150, maxWords: 220\nsemanticFingerprint: FAQ раскрывает реальные сценарии для водителей без стажа, не дублируя формальные требования.\nsourceHint: Internal KB (альтернативные варианты), External KB (реальные кейсы)\nevidenceStrength: internal-tested | external-peer-reviewed\nInterlink planning: ссылка на страницу о работе курьером, обучение водителей.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "keywords": [
+                      "старт без стажа",
+                      "варианты для новичков"
+                    ],
+                    "selfPrompt": "CONTEXT: Generate answer paragraph for FAQ 'Можно ли работать в Яндекс Такси без стажа?'\nROLE: body\nGOAL: Дать чёткий ответ, что формально требуется стаж, но есть альтернативные пути (обучение, курьерство, временные схемы через партнёров), с actionable советом для новичков.\nKEYWORDS: [старт без стажа, варианты для новичков]\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Практический совет для новичков без стажа, не повторяя формальные требования.\nsourceHint: Internal KB (поддержка и обучение), External KB (советы для новичков)\nevidenceStrength: internal-tested"
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-2",
+                "tag": "h3",
+                "keywords": [
+                  "проверка водительских данных",
+                  "как считается стаж для такси",
+                  "дата выдачи прав"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Поймите, как именно считается стаж вождения для допуска к работе и какие документы важны.",
+                "intent": "Разъяснить процедуру расчёта стажа и проверки водительских данных для допуска к работе.",
+                "audiences": "Водители, не уверенные, подходит ли их стаж для работы в такси.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item for 'Как считается стаж вождения для Яндекс Такси? Какие документы нужны для подтверждения?'\nGOAL: Подробно объяснить, по каким критериям считается стаж (дата выдачи прав, категория), какие документы требуются для подтверждения, и как проходит проверка.\nKEYWORDS: [проверка водительских данных, как считается стаж для такси, дата выдачи прав]\nWORD COUNT: minWords: 150, maxWords: 220\nsemanticFingerprint: FAQ раскрывает нюансы расчёта стажа и проверки документов, не повторяя общий алгоритм допуска.\nsourceHint: Internal KB (процедура проверки), External KB (разъяснения по дате выдачи)\nevidenceStrength: internal-tested | external-peer-reviewed\nInterlink planning: ссылка на страницу о документах для лицензии.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "расчёт стажа",
+                      "подтверждение водительских данных"
+                    ],
+                    "selfPrompt": "CONTEXT: Generate answer paragraph for FAQ 'Как считается стаж вождения для Яндекс Такси?'\nROLE: body\nGOAL: Дать чёткий ответ, что стаж считается по дате выдачи прав категории B, какие документы нужны, и как проходит проверка.\nKEYWORDS: [расчёт стажа, подтверждение водительских данных]\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Практическое разъяснение расчёта стажа и подтверждающих документов.\nsourceHint: Internal KB (регламент стажа), External KB (процедура проверки)\nevidenceStrength: internal-tested"
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-3",
+                "tag": "h3",
+                "keywords": [
+                  "дополнительные требования для водителей",
+                  "медицинские осмотры для такси",
+                  "повышение квалификации"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, какие ещё требования предъявляются к водителям помимо стажа.",
+                "intent": "Раскрыть дополнительные требования к водителям такси: медосмотры, обучение, техническое состояние автомобиля.",
+                "audiences": "Водители, которые хотят быть уверены в полном соответствии всем требованиям.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item for 'Есть ли дополнительные требования к водителям Яндекс Такси кроме стажа?'\nGOAL: Перечислить и объяснить дополнительные требования: регулярные медосмотры, обучение, техническое состояние авто, дисциплина.\nKEYWORDS: [дополнительные требования для водителей, медицинские осмотры для такси, повышение квалификации]\nWORD COUNT: minWords: 150, maxWords: 220\nsemanticFingerprint: FAQ раскрывает дополнительные требования, не повторяя алгоритм допуска и документы.\nsourceHint: Internal KB (медосмотры, обучение), External KB (советы по подготовке)\nevidenceStrength: internal-tested | external-peer-reviewed\nInterlink planning: ссылка на страницу о телемедицине и обучении водителей.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "регулярные медосмотры",
+                      "повышение квалификации"
+                    ],
+                    "selfPrompt": "CONTEXT: Generate answer paragraph for FAQ 'Есть ли дополнительные требования к водителям Яндекс Такси кроме стажа?'\nROLE: body\nGOAL: Дать чёткий перечень дополнительных требований: медосмотры, обучение, техническое состояние авто, дисциплина.\nKEYWORDS: [регулярные медосмотры, повышение квалификации]\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Практический список дополнительных требований для водителей.\nsourceHint: Internal KB (медосмотры, обучение), External KB (советы по подготовке)\nevidenceStrength: internal-tested"
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-4",
+                "tag": "h3",
+                "keywords": [
+                  "советы по успешному старту в такси",
+                  "ошибки новичков в Яндекс",
+                  "практические рекомендации для водителей"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Получите практические советы, как избежать ошибок и быстро начать работать в Яндекс Такси.",
+                "intent": "Дать actionable рекомендации для новичков по успешному старту, минимизации ошибок и быстрому прохождению допуска.",
+                "audiences": "Начинающие водители, которые хотят избежать типичных ошибок и быстрее пройти все этапы допуска.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item for 'Какие советы помогут новичкам быстро пройти все этапы допуска и избежать ошибок?'\nGOAL: Дать 3-5 конкретных actionable совета для новичков: как подготовить документы, пройти медосмотр, выбрать парк, пройти обучение и избежать типичных ошибок.\nKEYWORDS: [советы по успешному старту в такси, ошибки новичков в Яндекс, практические рекомендации для водителей]\nWORD COUNT: minWords: 150, maxWords: 220\nsemanticFingerprint: FAQ с уникальными практическими советами для быстрого старта, не повторяя общий алгоритм допуска.\nsourceHint: Internal KB (поддержка и сопровождение), External KB (ошибки новичков)\nevidenceStrength: internal-tested | external-peer-reviewed\nInterlink planning: ссылка на страницу с чек-листом для водителей.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "чек-лист для новичков",
+                      "быстрый старт в Яндекс Такси"
+                    ],
+                    "selfPrompt": "CONTEXT: Generate answer paragraph for FAQ 'Какие советы помогут новичкам быстро пройти все этапы допуска и избежать ошибок?'\nROLE: body\nGOAL: Дать 3-5 actionable совета: подготовить документы заранее, пройти онлайн-обучение, выбрать проверенный парк, использовать поддержку, не затягивать с медосмотром.\nKEYWORDS: [чек-лист для новичков, быстрый старт в Яндекс Такси]\nWORD COUNT: minWords: 60, maxWords: 120\nsemanticFingerprint: Практический чек-лист для быстрого старта и минимизации ошибок.\nsourceHint: Internal KB (чек-листы и поддержка), External KB (ошибки новичков)\nevidenceStrength: internal-tested"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1549,5 +1718,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T18:40:50.782Z";
+export const lastUpdated = "2025-10-25T18:42:08.208Z";
 export const generatedBy = "menu-persist-api";
