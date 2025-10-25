@@ -622,7 +622,7 @@ export const contentData = {
       },
       {
         "id": "uh788ebljiz1n4hg9gpje0jm",
-        "title": "конфигуратор яндекс такси 2024",
+        "title": "Конфигуратор Яндекс Такси 2024 — подбор авто и требования",
         "href": "/blog/konfigurator-yandeks-taksi-2024",
         "roles": [
           "guest"
@@ -1189,5 +1189,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-25T19:13:15.925Z";
+export const lastUpdated = "2025-10-25T19:13:27.396Z";
 export const generatedBy = "menu-persist-api";
