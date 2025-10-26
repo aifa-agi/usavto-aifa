@@ -1318,7 +1318,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-26T17:27:34.902Z",
-        "updatedAt": "2025-10-26T17:39:55.366Z",
+        "updatedAt": "2025-10-26T17:40:40.116Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как подключить свою машину к Яндекс Такси: пошаговая инструкция, условия, варианты сотрудничества и советы для быстрого старта работы.",
@@ -1902,6 +1902,109 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-5",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "итоги подключения к Яндекс Такси",
+              "ключевые выводы для водителей",
+              "следующие шаги после регистрации",
+              "советы для успешного старта",
+              "резюме инструкции",
+              "перспективы заработка",
+              "поддержка новых водителей"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Завершите знакомство с процессом подключения к Яндекс Такси, получите практические рекомендации и четкие шаги для уверенного старта.",
+            "intent": "Подвести итог пошаговой инструкции, выделить основные выводы, дать мотивацию и практические рекомендации для самостоятельного старта работы с Яндекс Такси.",
+            "audiences": "Владельцы автомобилей, рассматривающие работу в такси; новички без опыта; те, кто ищет уверенности и поддержки на старте.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 conclusion/summary section for page \"Как подключить свою машину к Яндекс Такси: пошаговая инструкция и условия\"\n\nGOAL: Синтезировать ключевые выводы из предыдущих разделов, дать пользователю структурированное резюме, выделить преимущества самостоятельного подключения, обозначить следующие шаги и мотивировать к действию. Включить таблицу с кратким сравнением вариантов старта, список советов для успешного начала и финальный абзац с призывом к действию. Обеспечить уникальность смыслового наполнения относительно предыдущих разделов (без дублирования ключевых слов и тем). Подчеркнуть экспертность и практический опыт компании US AUTO, интегрировать нейтральные отраслевые инсайты из внешних источников (без упоминания конкурентов).\n\nAUDIENCE: Владельцы авто, новички в такси, ищущие уверенности и пошаговой поддержки | Level: beginner/intermediate | Pain points: страх ошибок, неуверенность в документах, желание быстро стартовать\n\nKEYWORDS TO INTEGRATE:\n[итоги подключения к Яндекс Такси, ключевые выводы для водителей, следующие шаги после регистрации, советы для успешного старта, резюме инструкции, перспективы заработка, поддержка новых водителей]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 200, maxWords: 300 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: h2 heading, followed by p, table, ul, p blocks as per structure\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: опыт US AUTO, рекомендации по старту, автоматизация, поддержка новичков\n- SECONDARY: Apply insights from External KB: отраслевые советы, типовые ошибки, варианты старта\n\nQUALITY CRITERIA:\n- Actionable (конкретные рекомендации)\n- Specific (без общих фраз)\n- Data-backed (факты/советы из KB)\n- No fluff (только ценная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Итоговый раздел с акцентом на практические шаги, мотивацию и поддержку новых водителей, без повторения тем предыдущих секций.\n- sourceHint: Internal KB (экспертный опыт US AUTO) + External KB (отраслевые советы)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nINTERLINK PLANNING: Включить 2-3 внутренних ссылки на страницы: подробная инструкция по регистрации, сравнение вариантов работы, советы по увеличению дохода.\n\nSCHEMA READINESS: HowTo/FAQPage (если применимо)\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 200,
+              "maxWords": 300,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-5-1",
+                "tag": "p",
+                "keywords": [
+                  "итоги подключения к Яндекс Такси",
+                  "резюме инструкции"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Кратко подытожьте весь путь подключения и подчеркните основные преимущества самостоятельного старта.",
+                "intent": "Сформулировать сжатое резюме ключевых этапов и выгод, чтобы пользователь почувствовал уверенность в своих действиях.",
+                "audiences": "Новички, желающие быстро понять суть процесса и получить мотивацию к действию.",
+                "selfPrompt": "CONTEXT: Generate summary paragraph for conclusion section \"Итоги и рекомендации по самостоятельному подключению автомобиля к Яндекс Такси\".\nGOAL: Кратко подытожить основные этапы и преимущества самостоятельного подключения, подчеркнуть экспертность и поддержку US AUTO, мотивировать к действию.\nKEYWORDS: [итоги подключения к Яндекс Такси, резюме инструкции]\nWORD COUNT: minWords: 80, maxWords: 150\nROLE: summary/intro paragraph\nSOURCE: Internal KB (опыт US AUTO), External KB (отраслевые советы)\nsemanticFingerprint: Сжатое резюме ключевых этапов и выгод самостоятельного подключения.\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-5-3",
+                "tag": "table",
+                "keywords": [
+                  "сравнение вариантов старта",
+                  "перспективы заработка"
+                ],
+                "taxonomy": "Comparison",
+                "attention": "Визуально сравните основные варианты начала работы и их преимущества.",
+                "intent": "Дать пользователю структурированное сравнение возможных путей старта, чтобы облегчить выбор оптимального варианта.",
+                "audiences": "Владельцы авто, выбирающие между разными способами подключения; те, кто хочет оценить перспективы заработка.",
+                "selfPrompt": "CONTEXT: Generate comparison table for conclusion section \"Итоги и рекомендации по самостоятельному подключению автомобиля к Яндекс Такси\".\nGOAL: Сравнить основные варианты старта (самозанятый, ИП, через парк) по ключевым параметрам: скорость оформления, уровень дохода, юридическая ответственность, поддержка.\nKEYWORDS: [сравнение вариантов старта, перспективы заработка]\nTABLE SCHEMA: 4 columns × 3 rows; headers: Вариант | Скорость старта | Доход | Особенности\nDATA SOURCE: Internal KB (экспертный опыт), External KB (отраслевые инсайты)\nsemanticFingerprint: Таблица для быстрого сравнения путей старта и их особенностей.\nevidenceStrength: internal-tested | external-peer-reviewed\nSCHEMA READINESS: ComparisonTable",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-5-2",
+                "tag": "ul",
+                "keywords": [
+                  "советы для успешного старта",
+                  "поддержка новых водителей"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Получите практические советы, которые помогут избежать ошибок и быстро начать зарабатывать.",
+                "intent": "Предоставить пользователю конкретные рекомендации и лайфхаки для уверенного и безопасного старта.",
+                "audiences": "Новички в такси, желающие избежать типичных ошибок и получить поддержку.",
+                "selfPrompt": "CONTEXT: Generate actionable tips list for conclusion section \"Итоги и рекомендации по самостоятельному подключению автомобиля к Яндекс Такси\".\nGOAL: Дать 5-6 практических советов для успешного старта, основанных на опыте US AUTO и отраслевых инсайтах (без повторения советов из FAQ).\nKEYWORDS: [советы для успешного старта, поддержка новых водителей]\nLIST STRUCTURE: 6 bullets, 15-25 words each, actionable and specific\nSOURCE: Internal KB (экспертные рекомендации), External KB (типовые ошибки и лайфхаки)\nsemanticFingerprint: Список конкретных советов для быстрого и безопасного старта.\nevidenceStrength: internal-tested | external-peer-reviewed",
+                "additionalData": {
+                  "minWords": 50,
+                  "maxWords": 90,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-5-3",
+                "tag": "p",
+                "keywords": [
+                  "следующие шаги после регистрации",
+                  "ключевые выводы для водителей"
+                ],
+                "taxonomy": "Actionable",
+                "attention": "Завершите инструкцию четким призывом к действию и напоминанием о доступной поддержке.",
+                "intent": "Сформулировать мотивирующее заключение с призывом к самостоятельному старту и напоминанием о возможностях поддержки.",
+                "audiences": "Потенциальные водители, которым важно чувствовать уверенность и знать, куда обратиться за помощью.",
+                "selfPrompt": "CONTEXT: Generate final motivational paragraph for conclusion section \"Итоги и рекомендации по самостоятельному подключению автомобиля к Яндекс Такси\".\nGOAL: Подчеркнуть, что пользователь готов к самостоятельному старту, напомнить о поддержке и пригласить к дальнейшим действиям (например, расчет дохода, консультация).\nKEYWORDS: [следующие шаги после регистрации, ключевые выводы для водителей]\nROLE: motivational/conclusion paragraph\nSOURCE: Internal KB (опыт и поддержка US AUTO), External KB (отраслевые рекомендации)\nsemanticFingerprint: Мотивационный финал с акцентом на поддержку и дальнейшие шаги.\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              }
+            ]
           }
         ]
       }
@@ -1934,5 +2037,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T17:56:04.327Z";
+export const lastUpdated = "2025-10-26T17:56:19.827Z";
 export const generatedBy = "menu-persist-api";
