@@ -43,14 +43,22 @@ const PurePreviewMessage = ({
   reload: UseChatHelpers["reload"];
   isReadonly: boolean;
   requiresScrollPadding: boolean;
-  setInput: UseChatHelpers["setInput"];
-  status: UseChatHelpers["status"];
+  /**
+   * OPTIONAL: Function to set the input value (for suggestion buttons)
+   * If not provided, suggestions won't be rendered
+   */
+  setInput?: UseChatHelpers["setInput"];
+  /**
+   * OPTIONAL: Chat status for determining if suggestions should be disabled
+   * Defaults to "ready" if not provided
+   */
+  status?: UseChatHelpers["status"];
 }) => {
   const [mode, setMode] = useState<"view" | "edit">("view");
   const { t } = useTranslation();
 
-  // Determine if suggestions should be disabled
-  const disableSuggestions = status !== "ready";
+  // Determine if suggestions should be disabled (safe default)
+  const disableSuggestions = status ? status !== "ready" : false;
 
   return (
     <AnimatePresence>
@@ -128,7 +136,9 @@ const PurePreviewMessage = ({
                       >
                         <Markdown
                           onSuggestionClick={
-                            message.role === "assistant" ? setInput : undefined
+                            message.role === "assistant" && setInput
+                              ? setInput
+                              : undefined
                           }
                           disableSuggestions={disableSuggestions}
                         >
@@ -156,7 +166,6 @@ const PurePreviewMessage = ({
                 }
               }
 
-              // Убираем всю обработку tool-invocation так как инструменты не используются
               return null;
             })}
 
