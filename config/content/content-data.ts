@@ -1318,7 +1318,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-26T17:27:34.902Z",
-        "updatedAt": "2025-10-26T17:38:11.118Z",
+        "updatedAt": "2025-10-26T17:38:59.988Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как подключить свою машину к Яндекс Такси: пошаговая инструкция, условия, варианты сотрудничества и советы для быстрого старта работы.",
@@ -1564,6 +1564,131 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "процесс подключения к сервису",
+              "этапы регистрации автомобиля",
+              "практическая реализация",
+              "инструкция по подключению",
+              "онлайн оформление",
+              "интеграция с платформой",
+              "алгоритм действий"
+            ],
+            "taxonomy": "HowTo",
+            "attention": "Пошаговый разбор процесса подключения вашей машины к Яндекс Такси с акцентом на практические действия и автоматизацию.",
+            "intent": "Детально объяснить пользователю, как реализовать подключение автомобиля к Яндекс Такси на практике, с учетом всех этапов, нюансов и современных инструментов автоматизации.",
+            "audiences": "Владельцы личных автомобилей, желающие самостоятельно пройти процесс регистрации и подключения к агрегатору; преимущественно начинающие, ищущие подробную, понятную и безопасную инструкцию.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 section focused on 'Пошаговый процесс подключения автомобиля к Яндекс Такси' for page 'Как подключить свою машину к Яндекс Такси: пошаговая инструкция и условия'.\n\nGOAL: Дать пользователю структурированную, подробную и простую для повторения инструкцию по подключению машины к Яндекс Такси, раскрыть этапы регистрации, онлайн-оформления, интеграции с платформой, а также показать, как автоматизация (например, через платформу US AUTO) упрощает процесс и снижает риски ошибок.\n\nAUDIENCE: Владельцы авто без опыта работы в такси | Уровень: начинающий | Pain points: страх ошибок, нехватка информации, опасения юридических сложностей.\n\nKEYWORDS TO INTEGRATE:\n[процесс подключения к сервису, этапы регистрации автомобиля, практическая реализация, инструкция по подключению, онлайн оформление, интеграция с платформой, алгоритм действий]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with nested H3, P, OL, CODE as per structure\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: опыт US AUTO по автоматизации подключения, этапы регистрации, интеграция с платформой, практические советы\n- SECONDARY: Apply insights from External KB: общие шаги регистрации, онлайн оформление, алгоритмы действий\n\nQUALITY CRITERIA:\n- Actionable (пошаговые действия, рекомендации)\n- Specific (конкретные этапы, инструменты)\n- Data-backed (факты, подтвержденные опытом компании)\n- No fluff (никакой воды)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальный разбор реального процесса подключения с акцентом на автоматизацию и минимизацию ошибок.\n- sourceHint: Internal KB (US AUTO практика), External KB (общие алгоритмы)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference parent page intent (самостоятельное подключение, безопасность, простота)\n- Must set тематическое направление для H3: 'Пошаговая инструкция подключения'\n- Add interlink planning: internalLinks (например, на страницу о документах для такси, калькулятор дохода, FAQ по работе в Яндекс Такси)\n- Note schema readiness: HowTo (структура подходит для разметки HowTo)\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-3-1",
+                "tag": "p",
+                "keywords": [
+                  "процесс подключения к сервису",
+                  "инструкция по подключению"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Краткое введение в практический алгоритм подключения, чтобы пользователь сразу понял, что делать дальше.",
+                "intent": "Ввести пользователя в суть пошагового процесса и объяснить, почему важно следовать проверенному алгоритму.",
+                "audiences": "Новички, впервые подключающие авто к агрегатору; водители, опасающиеся ошибок.",
+                "selfPrompt": "CONTEXT: Generate intro paragraph for section 'Пошаговый процесс подключения автомобиля к Яндекс Такси'.\nROLE: Введение, объясняющее важность четкого следования этапам и преимущества автоматизации.\nKEYWORDS: процесс подключения к сервису, инструкция по подключению (no sibling overlap).\nWORD COUNT: minWords: 90, maxWords: 170.\nSOURCE: Internal KB (опыт US AUTO), External KB (общие рекомендации).\nsemanticFingerprint: Вводит пользователя в практическую часть гайда, подчеркивая важность пошагового подхода.\nsourceHint: Internal KB.\nevidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 90,
+                  "maxWords": 170,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-3-2",
+                "tag": "h3",
+                "keywords": [
+                  "этапы регистрации автомобиля",
+                  "онлайн оформление",
+                  "алгоритм действий",
+                  "интеграция с платформой",
+                  "практическая реализация"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Пошаговая инструкция с конкретными действиями и советами для самостоятельного подключения.",
+                "intent": "Разбить процесс подключения на четкие этапы, дать подробную инструкцию с примерами и лайфхаками.",
+                "audiences": "Владельцы авто, желающие быстро и без ошибок пройти регистрацию; пользователи с базовой цифровой грамотностью.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection 'Пошаговая инструкция подключения' under h2 'Пошаговый процесс подключения автомобиля к Яндекс Такси'.\nGOAL: Подробно расписать каждый этап регистрации и подключения, включая онлайн оформление, интеграцию с платформой, автоматизацию (например, через US AUTO), и дать практические советы по минимизации ошибок.\nKEYWORDS: этапы регистрации автомобиля, онлайн оформление, алгоритм действий, интеграция с платформой, практическая реализация (no sibling overlap).\nWORD COUNT: minWords: 180, maxWords: 280.\nsemanticFingerprint: Дает уникальный, структурированный алгоритм действий для самостоятельного подключения.\nsourceHint: Internal KB (практика US AUTO), External KB (шаги регистрации).\nevidenceStrength: internal-tested | external-peer-reviewed.\nInterlink: Вставить ссылку на страницу с калькулятором дохода или FAQ по регистрации.\nSchema readiness: HowTo.",
+                "additionalData": {
+                  "minWords": 180,
+                  "maxWords": 280,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "этапы регистрации автомобиля",
+                      "алгоритм действий"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Объясняет, почему важно не пропускать этапы и как избежать типичных ошибок.",
+                    "intent": "Дать краткое описание логики пошагового подключения и подготовить к детальному разбору.",
+                    "audiences": "Пользователи, впервые сталкивающиеся с регистрацией в агрегаторе.",
+                    "selfPrompt": "CONTEXT: Generate body paragraph for h3 'Пошаговая инструкция подключения' (h2: 'Пошаговый процесс подключения автомобиля к Яндекс Такси').\nROLE: Пояснение, зачем нужен четкий алгоритм и как он помогает избежать ошибок.\nKEYWORDS: этапы регистрации автомобиля, алгоритм действий (no sibling overlap).\nWORD COUNT: minWords: 75, maxWords: 140.\nsourceHint: Internal KB (опыт US AUTO).\nevidenceStrength: internal-tested.\nsemanticFingerprint: Подчеркивает ценность структурированного подхода и минимизации рисков.",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 140,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-2-2",
+                    "tag": "ol",
+                    "keywords": [
+                      "онлайн оформление",
+                      "интеграция с платформой"
+                    ],
+                    "taxonomy": "HowTo",
+                    "attention": "Пошаговый список действий для самостоятельного подключения — от онлайн-заявки до интеграции с платформой.",
+                    "intent": "Дать пользователю четкий, воспроизводимый алгоритм подключения с акцентом на онлайн оформление и автоматизацию.",
+                    "audiences": "Владельцы авто, желающие быстро пройти процесс без посредников.",
+                    "selfPrompt": "CONTEXT: Generate ordered list (5-7 шагов) for h3 'Пошаговая инструкция подключения' (h2: 'Пошаговый процесс подключения автомобиля к Яндекс Такси').\nROLE: Список конкретных шагов: онлайн оформление, загрузка документов, интеграция с платформой, подтверждение данных, автоматизация путевых листов и т.д.\nKEYWORDS: онлайн оформление, интеграция с платформой (no sibling overlap).\nWORD COUNT: minWords: 50, maxWords: 90.\nsourceHint: Internal KB (алгоритм US AUTO), External KB (общие шаги).\nevidenceStrength: internal-tested | external-peer-reviewed.\nsemanticFingerprint: Дает уникальный, воспроизводимый алгоритм подключения.",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 90,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-3-2-3",
+                    "tag": "code",
+                    "keywords": [
+                      "практическая реализация"
+                    ],
+                    "taxonomy": "technical",
+                    "attention": "Пример автоматизации оформления путевого листа через API или платформу.",
+                    "intent": "Показать, как технически реализуется автоматизация одного из этапов подключения (например, генерация путевого листа через платформу).",
+                    "audiences": "Владельцы авто, интересующиеся цифровыми инструментами; начинающие ИП.",
+                    "selfPrompt": "CONTEXT: Generate code block (JSON или псевдокод, 5-10 строк) for h3 'Пошаговая инструкция подключения' (h2: 'Пошаговый процесс подключения автомобиля к Яндекс Такси').\nROLE: Пример автоматизации — например, JSON-запрос для генерации путевого листа через платформу US AUTO или интеграцию с сервисом.\nKEYWORDS: практическая реализация (no sibling overlap).\nWORD COUNT: minWords: 20, maxWords: 50.\nsourceHint: Internal KB (техническая реализация US AUTO).\nevidenceStrength: internal-tested.\nsemanticFingerprint: Демонстрирует техническую сторону автоматизации процесса подключения.",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 50,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1596,5 +1721,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T17:54:24.037Z";
+export const lastUpdated = "2025-10-26T17:55:19.618Z";
 export const generatedBy = "menu-persist-api";
