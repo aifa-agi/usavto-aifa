@@ -1230,7 +1230,7 @@ export const contentData = {
         "updatedAt": "2025-10-26T16:48:26.310Z",
         "order": 1,
         "badgeName": "Блог",
-        "description": "критерии машин для яндекс такси",
+        "description": "Узнайте актуальные критерии машин для Яндекс Такси в 2024 году: требования по моделям, возрасту, тарифам и полный список авто. Проверьте свой автомобиль!",
         "images": [
           {
             "id": "zbicwwp6q4g3cwret547wuq2",
@@ -1273,5 +1273,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T17:08:26.476Z";
+export const lastUpdated = "2025-10-26T17:08:30.511Z";
 export const generatedBy = "menu-persist-api";
