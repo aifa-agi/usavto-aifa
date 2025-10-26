@@ -1262,7 +1262,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-26T16:48:26.310Z",
-        "updatedAt": "2025-10-26T16:56:56.928Z",
+        "updatedAt": "2025-10-26T16:57:39.946Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте актуальные критерии машин для Яндекс Такси в 2024 году: требования по моделям, возрасту, тарифам и полный список авто. Проверьте свой автомобиль!",
@@ -1509,6 +1509,130 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "подходящие автомобили для яндекс такси",
+              "список моделей для такси 2024",
+              "допустимые марки авто",
+              "категории тарифов яндекс такси",
+              "фильтрация по моделям",
+              "проверка автомобиля для подключения",
+              "обновления требований 2024"
+            ],
+            "taxonomy": "List",
+            "attention": "В этом разделе вы найдете актуальный и полный список моделей автомобилей, которые допускаются к работе в Яндекс Такси в 2024 году, с возможностью быстрой проверки и фильтрации по категориям и тарифам.",
+            "intent": "Предоставить пользователю структурированный перечень допустимых моделей автомобилей для Яндекс Такси с учетом последних изменений и особенностей по тарифам, чтобы упростить выбор и проверку соответствия.",
+            "audiences": "Водители такси и владельцы автопарков, которые хотят быстро узнать, подходит ли их автомобиль для работы в Яндекс Такси в 2024 году, а также подобрать оптимальную модель для подключения; уровень — средний, ориентированы на практическое применение информации.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 section presenting the актуальный список моделей автомобилей, подходящих для работы в Яндекс Такси в 2024 году, for page \"Критерии машин для Яндекс Такси: требования, список моделей 2024\"\n\nGOAL: Дать пользователю структурированный, легко воспринимаемый перечень допустимых моделей авто с возможностью фильтрации по категориям и тарифам, а также объяснить, как проверить соответствие своего автомобиля.\n\nAUDIENCE: Водители такси и владельцы автопарков | Level: intermediate | Pain points: Неуверенность в допустимости своей машины, сложности с выбором подходящей модели, боязнь изменений в требованиях.\n\nKEYWORDS TO INTEGRATE:\n[подходящие автомобили для яндекс такси, список моделей для такси 2024, допустимые марки авто, категории тарифов яндекс такси, фильтрация по моделям, проверка автомобиля для подключения, обновления требований 2024]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with nested H3, P, OL, CODE as per structure\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: перечень моделей, критерии допуска, особенности по тарифам\n- SECONDARY: Apply insights from External KB: структура списков, фильтрация, обновления по годам, примеры моделей\n\nQUALITY CRITERIA:\n- Actionable (пошаговая инструкция по проверке авто)\n- Specific (точные марки, модели, категории)\n- Data-backed (актуальные требования 2024)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Содержит уникальный, актуальный список моделей авто для Яндекс Такси 2024 с возможностью фильтрации и проверки.\n- sourceHint: Internal KB (актуальные требования и список моделей), External KB (структура и фильтрация)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference parent page intent (помочь пользователю быстро проверить и выбрать авто)\n- Must set тематическое направление для дочерних элементов (H3: как пользоваться списком, фильтрация, примеры)\n- Add interlink planning: internalLinks (например, на страницу о подключении к Яндекс Такси, на FAQ по тарифам); externalLinks — только на официальные источники при необходимости.\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-3-1",
+                "tag": "p",
+                "keywords": [
+                  "подходящие автомобили для яндекс такси",
+                  "обновления требований 2024"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "В этом абзаце пользователь узнает, почему важно сверяться с актуальным списком моделей и как часто обновляются требования.",
+                "intent": "Объяснить значимость актуального списка моделей для Яндекс Такси и предупредить о возможных изменениях в требованиях.",
+                "audiences": "Водители и автопарки, которые хотят избежать ошибок при выборе автомобиля и быть уверенными в соответствии требованиям сервиса.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for section 'актуальный список моделей автомобилей для Яндекс Такси 2024'.\nGOAL: Кратко объяснить, почему важно сверяться с актуальным списком моделей, как часто обновляются требования, и что это дает пользователю.\nAUDIENCE: Водители и автопарки | Level: intermediate | Pain points: боязнь ошибиться с выбором, неуверенность в актуальности данных.\nKEYWORDS TO INTEGRATE: [подходящие автомобили для яндекс такси, обновления требований 2024]\nWORD COUNT: minWords: 90, maxWords: 170\nMARKDOWN/MDX SYNTAX: Paragraph (intro)\nsemanticFingerprint: Подчеркивает важность регулярной проверки списка моделей для такси.\nsourceHint: Internal KB (актуальность требований), External KB (обновления по годам)\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 90,
+                  "maxWords": 170,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-3-2",
+                "tag": "h3",
+                "keywords": [
+                  "список моделей для такси 2024",
+                  "категории тарифов яндекс такси",
+                  "фильтрация по моделям",
+                  "проверка автомобиля для подключения",
+                  "допустимые марки авто"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Пошаговая инструкция и рекомендации по использованию списка моделей: как быстро найти свою машину, отфильтровать по тарифу и проверить соответствие.",
+                "intent": "Научить пользователя пользоваться списком моделей: фильтровать по категориям, находить нужную марку и проверять соответствие для подключения.",
+                "audiences": "Водители и владельцы автопарков, которым важно быстро и без ошибок определить, подходит ли их автомобиль для Яндекс Такси.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection for H2 'актуальный список моделей автомобилей для Яндекс Такси 2024'.\nGOAL: Дать пошаговую инструкцию по использованию списка моделей: как искать, фильтровать по тарифам, проверять соответствие.\nAUDIENCE: Водители и автопарки | Level: intermediate | Pain points: сложность поиска нужной информации, боязнь ошибиться при выборе.\nKEYWORDS TO INTEGRATE: [список моделей для такси 2024, категории тарифов яндекс такси, фильтрация по моделям, проверка автомобиля для подключения, допустимые марки авто]\nWORD COUNT: minWords: 180, maxWords: 280\nMARKDOWN/MDX SYNTAX: H3 with nested P, OL, CODE\nsemanticFingerprint: Пошаговая инструкция по работе со списком моделей для такси с фильтрацией по тарифам и проверкой.\nsourceHint: Internal KB (структура списка, критерии), External KB (примеры фильтрации, структура)\nevidenceStrength: internal-tested | external-peer-reviewed\ninterlink planning: Вставить ссылку на страницу FAQ по тарифам и на инструкцию по подключению к Яндекс Такси.",
+                "additionalData": {
+                  "minWords": 180,
+                  "maxWords": 280,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "фильтрация по моделям",
+                      "категории тарифов яндекс такси"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Поясняет, как работает фильтрация по категориям и тарифам, чтобы пользователь мог быстро найти нужную модель.",
+                    "intent": "Объяснить принцип фильтрации списка моделей по категориям и тарифам, чтобы ускорить поиск подходящего автомобиля.",
+                    "audiences": "Водители и автопарки, которые хотят быстро сориентироваться в большом списке моделей.",
+                    "selfPrompt": "CONTEXT: Generate supporting paragraph for H3 'Пошаговая инструкция по использованию списка моделей'.\nGOAL: Объяснить, как работает фильтрация по категориям и тарифам, и почему это удобно.\nAUDIENCE: Водители и автопарки | Level: intermediate | Pain points: долгий поиск нужной информации.\nKEYWORDS TO INTEGRATE: [фильтрация по моделям, категории тарифов яндекс такси]\nWORD COUNT: minWords: 75, maxWords: 140\nMARKDOWN/MDX SYNTAX: Paragraph (body)\nsemanticFingerprint: Раскрывает принцип фильтрации списка моделей по категориям и тарифам.\nsourceHint: External KB (структура фильтрации)\nevidenceStrength: external-peer-reviewed",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 140,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-2-2",
+                    "tag": "ol",
+                    "keywords": [
+                      "проверка автомобиля для подключения"
+                    ],
+                    "taxonomy": "Actionable",
+                    "attention": "Пошаговый список действий для самостоятельной проверки автомобиля на соответствие требованиям Яндекс Такси.",
+                    "intent": "Дать пользователю четкую последовательность шагов для проверки своей машины по списку моделей.",
+                    "audiences": "Водители, которые хотят быстро убедиться в возможности подключения своего авто.",
+                    "selfPrompt": "CONTEXT: Generate ordered list (5 steps) for H3 'Пошаговая инструкция по использованию списка моделей'.\nGOAL: Дать пошаговую инструкцию по самостоятельной проверке автомобиля на соответствие требованиям Яндекс Такси.\nAUDIENCE: Водители | Level: intermediate | Pain points: неуверенность в правильности проверки.\nKEYWORDS TO INTEGRATE: [проверка автомобиля для подключения]\nWORD COUNT: minWords: 50, maxWords: 90\nMARKDOWN/MDX SYNTAX: Ordered list (5 short actionable steps)\nsemanticFingerprint: Пошаговая инструкция для самостоятельной проверки авто по списку моделей.\nsourceHint: Internal KB (алгоритм проверки)\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 90,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-3-2-3",
+                    "tag": "code",
+                    "keywords": [
+                      "список моделей для такси 2024"
+                    ],
+                    "taxonomy": "technical",
+                    "attention": "Пример кода или псевдокода для автоматизированной проверки модели автомобиля по базе данных Яндекс Такси.",
+                    "intent": "Показать, как можно реализовать автоматическую проверку модели автомобиля для Яндекс Такси с помощью кода.",
+                    "audiences": "Владельцы автопарков и технические специалисты, желающие автоматизировать процесс проверки.",
+                    "selfPrompt": "CONTEXT: Generate code snippet (JSON or pseudo-code) for H3 'Пошаговая инструкция по использованию списка моделей'.\nGOAL: Показать пример автоматизированной проверки модели автомобиля по базе допустимых моделей Яндекс Такси.\nAUDIENCE: Владельцы автопарков, технические специалисты | Level: intermediate | Pain points: ручная проверка занимает много времени.\nKEYWORDS TO INTEGRATE: [список моделей для такси 2024]\nWORD COUNT: minWords: 20, maxWords: 50\nMARKDOWN/MDX SYNTAX: Code block (JSON or pseudo-code, 5-10 lines)\nsemanticFingerprint: Пример кода для автоматизации проверки модели авто по списку.\nsourceHint: Internal KB (структура списка моделей)\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 50,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1541,5 +1665,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T17:13:04.079Z";
+export const lastUpdated = "2025-10-26T17:14:00.277Z";
 export const generatedBy = "menu-persist-api";
