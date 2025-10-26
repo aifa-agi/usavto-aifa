@@ -1293,6 +1293,9 @@ export const contentData = {
             "alt": " как подключить свою машину к яндекс такси",
             "href": "/app-images/lqleuahb5bpfyt4bboh5lom0.jpg"
           }
+        ],
+        "keywords": [
+          " как подключить свою машину к яндекс такси"
         ]
       }
     ],
@@ -1324,5 +1327,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T17:47:28.082Z";
+export const lastUpdated = "2025-10-26T17:47:39.679Z";
 export const generatedBy = "menu-persist-api";
