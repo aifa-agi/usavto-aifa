@@ -1181,6 +1181,9 @@ export const contentData = {
             "alt": "какой автомобиль подходит для яндекс такси",
             "href": "/app-images/pb8uv0hvtj0bgqlbpqpcmo4u.png"
           }
+        ],
+        "keywords": [
+          "какой автомобиль подходит для яндекс такси"
         ]
       }
     ],
@@ -1212,5 +1215,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T16:20:34.074Z";
+export const lastUpdated = "2025-10-26T16:20:48.804Z";
 export const generatedBy = "menu-persist-api";
