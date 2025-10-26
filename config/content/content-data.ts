@@ -1318,7 +1318,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-26T17:27:34.902Z",
-        "updatedAt": "2025-10-26T17:38:59.988Z",
+        "updatedAt": "2025-10-26T17:39:55.366Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как подключить свою машину к Яндекс Такси: пошаговая инструкция, условия, варианты сотрудничества и советы для быстрого старта работы.",
@@ -1689,6 +1689,219 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "часто задаваемые вопросы",
+              "подключение автомобиля к агрегатору",
+              "юридические нюансы такси",
+              "доход водителя",
+              "ошибки при регистрации",
+              "поддержка водителей",
+              "советы по началу работы"
+            ],
+            "taxonomy": "FAQ",
+            "attention": "Быстрые и точные ответы на самые популярные вопросы помогут избежать ошибок и ускорят старт работы в Яндекс Такси.",
+            "intent": "Дать пользователям структурированные и проверенные ответы на ключевые вопросы, возникающие при самостоятельном подключении автомобиля к Яндекс Такси, чтобы снять опасения и повысить уверенность в процессе.",
+            "audiences": "Владельцы личных автомобилей, новички в сфере такси, потенциальные водители с базовым уровнем цифровой грамотности, ищущие практические разъяснения и поддержку.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 FAQ section for page \"Как подключить свою машину к Яндекс Такси: пошаговая инструкция и условия\"\n\nGOAL: Сформировать раздел с наиболее актуальными и часто задаваемыми вопросами по теме самостоятельного подключения автомобиля к Яндекс Такси, раскрывая юридические, технические и организационные нюансы, которые не были подробно рассмотрены в предыдущих разделах.\n\nAUDIENCE: Владельцы личных авто, новички в такси, желающие быстро разобраться в деталях подключения и избежать типичных ошибок | Level: beginner/intermediate | Pain points: страх юридических ошибок, неуверенность в документах, непонимание этапов, поиск поддержки\n\nKEYWORDS TO INTEGRATE:\n[часто задаваемые вопросы, подключение автомобиля к агрегатору, юридические нюансы такси, доход водителя, ошибки при регистрации, поддержка водителей, советы по началу работы]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: h2 with nested h3 and p elements for each FAQ\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: опыт компании US AUTO, юридические и технические нюансы, автоматизация документооборота, поддержка водителей\n- SECONDARY: Apply insights from External KB: типовые вопросы пользователей, советы по началу работы, распространённые ошибки\n\nQUALITY CRITERIA:\n- Actionable (конкретные рекомендации)\n- Specific (без общих фраз)\n- Data-backed (факты и примеры)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Раздел FAQ раскрывает уникальные вопросы, не дублируя предыдущие этапы инструкции, и фокусируется на реальных ситуациях и поддержке.\n- sourceHint: Internal KB (экспертные ответы US AUTO) + External KB (типовые вопросы рынка)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- В каждом h3 — отдельный вопрос, в p — развернутый, но лаконичный ответ с actionable советом.\n- Добавить внутренние ссылки на релевантные разделы сайта (например, подробности о документах, автоматизации, поддержке).\n- Структура готова для FAQPage schema.\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "keywords": [
+                  "часто задаваемые вопросы",
+                  "подключение автомобиля к агрегатору"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Этот абзац объясняет, почему важно ознакомиться с FAQ перед началом работы.",
+                "intent": "Ввести пользователя в раздел FAQ, подчеркнув ценность быстрых и точных ответов для успешного старта.",
+                "audiences": "Новички в такси, владельцы авто, ищущие поддержку и разъяснения.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for FAQ section on 'Как подключить свою машину к Яндекс Такси'.\nGOAL: Кратко объяснить, зачем читать FAQ, как это поможет избежать ошибок и ускорить подключение.\nKEYWORDS: часто задаваемые вопросы, подключение автомобиля к агрегатору\nWORD COUNT: minWords: 70, maxWords: 130\nROLE: intro\nsourceHint: Internal KB (экспертный опыт US AUTO)\nsemanticFingerprint: Вводный абзац мотивирует пользователя изучить FAQ для уверенного старта.",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "keywords": [
+                  "юридические нюансы такси",
+                  "ошибки при регистрации",
+                  "часто задаваемые вопросы",
+                  "подключение автомобиля к агрегатору",
+                  "поддержка водителей"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Ответ на один из самых частых вопросов о юридических тонкостях подключения.",
+                "intent": "Разъяснить юридические нюансы и распространённые ошибки при регистрации автомобиля для работы в Яндекс Такси.",
+                "audiences": "Владельцы авто, не имеющие опыта в оформлении документов для такси.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item for 'юридические нюансы такси' in section 'FAQ' of 'Как подключить свою машину к Яндекс Такси'.\nGOAL: Дать чёткий и практичный ответ на вопрос о юридических ошибках и нюансах при регистрации.\nKEYWORDS: юридические нюансы такси, ошибки при регистрации, часто задаваемые вопросы, подключение автомобиля к агрегатору, поддержка водителей\nWORD COUNT: minWords: 150, maxWords: 220\nsemanticFingerprint: Этот вопрос раскрывает юридические подводные камни, не затронутые в инструкциях.\ninterlink planning: Внутренняя ссылка на раздел о документах и автоматизации.\nsourceHint: Internal KB (экспертное мнение US AUTO), External KB (типовые ошибки рынка)",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "keywords": [
+                      "юридические нюансы такси",
+                      "ошибки при регистрации"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Практический совет по избежанию юридических ошибок.",
+                    "intent": "Дать actionable совет по правильному оформлению документов и предотвращению штрафов.",
+                    "audiences": "Пользователи, опасающиеся юридических сложностей.",
+                    "selfPrompt": "CONTEXT: Generate answer paragraph for FAQ item on 'юридические нюансы такси'.\nROLE: body\nKEYWORDS: юридические нюансы такси, ошибки при регистрации\nWORD COUNT: minWords: 60, maxWords: 120\nsourceHint: Internal KB (опыт US AUTO), External KB (типовые ошибки)\nsemanticFingerprint: Ответ содержит конкретные рекомендации по юридической безопасности.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-2",
+                "tag": "h3",
+                "keywords": [
+                  "доход водителя",
+                  "советы по началу работы",
+                  "часто задаваемые вопросы",
+                  "подключение автомобиля к агрегатору",
+                  "поддержка водителей"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Ответ на вопрос о реальном доходе и факторах, влияющих на заработок.",
+                "intent": "Объяснить, как формируется доход водителя и какие советы помогут увеличить заработок на старте.",
+                "audiences": "Потенциальные водители, интересующиеся финансовой стороной работы.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item for 'доход водителя' in section 'FAQ' of 'Как подключить свою машину к Яндекс Такси'.\nGOAL: Дать разъяснение по расчету дохода и советы для увеличения заработка.\nKEYWORDS: доход водителя, советы по началу работы, часто задаваемые вопросы, подключение автомобиля к агрегатору, поддержка водителей\nWORD COUNT: minWords: 150, maxWords: 220\nsemanticFingerprint: Вопрос раскрывает реальные сценарии дохода и лайфхаки для новичков.\ninterlink planning: Внутренняя ссылка на калькулятор дохода и раздел о вариантах сотрудничества.\nsourceHint: Internal KB (аналитика US AUTO), External KB (калькуляторы и советы)",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "доход водителя",
+                      "советы по началу работы"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Практические рекомендации по увеличению дохода.",
+                    "intent": "Дать actionable советы по оптимизации графика и расходов.",
+                    "audiences": "Новички, желающие быстро выйти на стабильный доход.",
+                    "selfPrompt": "CONTEXT: Generate answer paragraph for FAQ item on 'доход водителя'.\nROLE: body\nKEYWORDS: доход водителя, советы по началу работы\nWORD COUNT: minWords: 60, maxWords: 120\nsourceHint: Internal KB (аналитика US AUTO), External KB (советы рынка)\nsemanticFingerprint: Ответ содержит конкретные лайфхаки по заработку.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-3",
+                "tag": "h3",
+                "keywords": [
+                  "поддержка водителей",
+                  "технические вопросы эксплуатации",
+                  "часто задаваемые вопросы",
+                  "подключение автомобиля к агрегатору",
+                  "советы по началу работы"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Ответ на вопрос о технической поддержке и решении проблем в процессе работы.",
+                "intent": "Разъяснить, как получить оперативную поддержку и решить технические вопросы при работе с Яндекс Такси.",
+                "audiences": "Водители, столкнувшиеся с техническими или организационными трудностями.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item for 'поддержка водителей' in section 'FAQ' of 'Как подключить свою машину к Яндекс Такси'.\nGOAL: Дать чёткий ответ о каналах поддержки и типовых решениях проблем.\nKEYWORDS: поддержка водителей, технические вопросы эксплуатации, часто задаваемые вопросы, подключение автомобиля к агрегатору, советы по началу работы\nWORD COUNT: minWords: 150, maxWords: 220\nsemanticFingerprint: Вопрос раскрывает реальные сценарии обращения за поддержкой и типовые решения.\ninterlink planning: Внутренняя ссылка на раздел о поддержке и автоматизации.\nsourceHint: Internal KB (опыт поддержки US AUTO), External KB (стандартные вопросы поддержки)",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "поддержка водителей",
+                      "технические вопросы эксплуатации"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Пошаговая инструкция по обращению за поддержкой.",
+                    "intent": "Дать actionable инструкцию по получению помощи и решению проблем.",
+                    "audiences": "Водители, столкнувшиеся с техническими трудностями.",
+                    "selfPrompt": "CONTEXT: Generate answer paragraph for FAQ item on 'поддержка водителей'.\nROLE: body\nKEYWORDS: поддержка водителей, технические вопросы эксплуатации\nWORD COUNT: minWords: 60, maxWords: 120\nsourceHint: Internal KB (служба поддержки US AUTO), External KB (стандартные сценарии)\nsemanticFingerprint: Ответ содержит конкретные шаги по обращению за поддержкой.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-4",
+                "tag": "h3",
+                "keywords": [
+                  "советы по началу работы",
+                  "типичные ошибки новичков",
+                  "часто задаваемые вопросы",
+                  "подключение автомобиля к агрегатору",
+                  "юридические нюансы такси"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Ответ на вопрос о типичных ошибках и лайфхаках для успешного старта.",
+                "intent": "Предупредить о распространённых ошибках новичков и дать советы для быстрого и безопасного старта.",
+                "audiences": "Новички, опасающиеся сделать ошибку при подключении.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item for 'типичные ошибки новичков' in section 'FAQ' of 'Как подключить свою машину к Яндекс Такси'.\nGOAL: Дать actionable советы по избежанию ошибок и успешному старту.\nKEYWORDS: советы по началу работы, типичные ошибки новичков, часто задаваемые вопросы, подключение автомобиля к агрегатору, юридические нюансы такси\nWORD COUNT: minWords: 150, maxWords: 220\nsemanticFingerprint: Вопрос раскрывает реальные сценарии ошибок и лайфхаки для их предотвращения.\ninterlink planning: Внутренняя ссылка на раздел о документах и поддержке.\nsourceHint: Internal KB (опыт US AUTO), External KB (типовые ошибки рынка)",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "советы по началу работы",
+                      "типичные ошибки новичков"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Конкретные лайфхаки для предотвращения ошибок.",
+                    "intent": "Дать actionable советы по безопасному старту и предотвращению типичных ошибок.",
+                    "audiences": "Новички, желающие избежать проблем при подключении.",
+                    "selfPrompt": "CONTEXT: Generate answer paragraph for FAQ item on 'типичные ошибки новичков'.\nROLE: body\nKEYWORDS: советы по началу работы, типичные ошибки новичков\nWORD COUNT: minWords: 60, maxWords: 120\nsourceHint: Internal KB (опыт US AUTO), External KB (ошибки рынка)\nsemanticFingerprint: Ответ содержит конкретные лайфхаки для новичков.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1721,5 +1934,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T17:55:19.618Z";
+export const lastUpdated = "2025-10-26T17:56:04.327Z";
 export const generatedBy = "menu-persist-api";
