@@ -1,5 +1,5 @@
 // Auto-generated SEO-optimized static page - do not edit manually
-// Generated on: 2025-10-26T17:37:24.644Z
+// Generated on: 2025-10-26T17:38:04.460Z
 // Source href: /blog/kak-zaregistrirovat-avto-v-taksi
 // Page metadata: Как зарегистрировать авто в такси: пошаговая инструкция 2024 | 5 sections
 // FAQ sections detected: 4
@@ -44,7 +44,7 @@ const sections = [
           "content": [
             {
               "type": "text",
-              "text": "Как зарегистрировать авто в такси: актуальные шаги и требования 2024"
+              "text": "Как зарегистрировать авто в такси: актуальные шаги и требования 2025."
             }
           ]
         },
@@ -1742,8 +1742,8 @@ export default function Page() {
               "url": "/app-images/gmrdwmgfgm2zbfqfi8b8acy1.jpg",
               "alt": "как зарегистрировать авто в такси"
             },
-            "datePublished": "2025-10-26T17:37:24.644Z",
-            "dateModified": "2025-10-26T17:37:24.644Z",
+            "datePublished": "2025-10-26T17:38:04.460Z",
+            "dateModified": "2025-10-26T17:38:04.460Z",
             "articleSection": "blog",
             "keywords": ["как зарегистрировать авто в такси"],
             "mainEntityOfPage": {
