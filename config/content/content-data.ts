@@ -678,7 +678,7 @@ export const contentData = {
       },
       {
         "id": "avlfyb4nimzrm80h6wh27934",
-        "title": "как получить разрешение на такси на свой автомобиль самозанятому в яндекс такси",
+        "title": "Как получить разрешение на такси самозанятому в Яндекс Такси",
         "href": "/blog/kak-poluchit-razreshenie-na-taksi-na-svoy-avtomobil-samozanyatomu-v-yandeks-taksi",
         "roles": [
           "guest"
@@ -1245,5 +1245,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T16:46:59.532Z";
+export const lastUpdated = "2025-10-26T16:47:09.590Z";
 export const generatedBy = "menu-persist-api";
