@@ -251,7 +251,7 @@ export const contentData = {
         "keywords": [
           "какая страховка нужна для такси на личном авто самозанятом"
         ],
-        "href": "/blog/blog/kakaya-strahovka-nuzhna-dlya-taksi-na-lichnom-avto-samozanyatom",
+        "href": "/blog/kakaya-strahovka-nuzhna-dlya-taksi-na-lichnom-avto-samozanyatom",
         "hasBadge": true,
         "badgeName": "Блог",
         "updatedAt": "2025-10-24T18:43:23.024Z"
