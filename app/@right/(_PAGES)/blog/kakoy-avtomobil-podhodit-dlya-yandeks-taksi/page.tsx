@@ -1,5 +1,5 @@
 // Auto-generated SEO-optimized static page - do not edit manually
-// Generated on: 2025-10-26T16:32:29.697Z
+// Generated on: 2025-10-26T16:33:03.595Z
 // Source href: /blog/kakoy-avtomobil-podhodit-dlya-yandeks-taksi
 // Page metadata: Какой автомобиль подходит для Яндекс Такси: требования, список моделей | 5 sections
 // FAQ sections detected: 4
@@ -44,7 +44,7 @@ const sections = [
           "content": [
             {
               "type": "text",
-              "text": "Какой автомобиль подходит для Яндекс Такси: требования, критерии и список моделей"
+              "text": "Какой автомобиль подходит для Яндекс Такси: требования, критерии и список моделей."
             }
           ]
         },
@@ -1500,8 +1500,8 @@ export default function Page() {
               "url": "/app-images/pb8uv0hvtj0bgqlbpqpcmo4u.png",
               "alt": "какой автомобиль подходит для яндекс такси"
             },
-            "datePublished": "2025-10-26T16:32:29.697Z",
-            "dateModified": "2025-10-26T16:32:29.697Z",
+            "datePublished": "2025-10-26T16:33:03.595Z",
+            "dateModified": "2025-10-26T16:33:03.595Z",
             "articleSection": "blog",
             "keywords": ["какой автомобиль подходит для яндекс такси"],
             "mainEntityOfPage": {
