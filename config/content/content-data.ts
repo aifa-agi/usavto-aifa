@@ -1206,7 +1206,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-26T16:03:09.843Z",
-        "updatedAt": "2025-10-26T16:13:38.360Z",
+        "updatedAt": "2025-10-26T16:13:52.219Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, какой автомобиль подходит для Яндекс Такси: требования к моделям, список подходящих авто по тарифам, советы по выбору и проверке.",
@@ -1875,7 +1875,8 @@ export const contentData = {
               }
             ]
           }
-        ]
+        ],
+        "isReadyDraftForPerplexity": true
       }
     ],
     "order": 16
@@ -1906,5 +1907,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T16:29:16.548Z";
+export const lastUpdated = "2025-10-26T16:29:27.244Z";
 export const generatedBy = "menu-persist-api";
