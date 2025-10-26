@@ -1234,7 +1234,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-26T16:26:27.424Z",
-        "updatedAt": "2025-10-26T16:37:19.360Z",
+        "updatedAt": "2025-10-26T16:38:13.117Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как получить разрешение на такси на свой автомобиль самозанятому в Яндекс Такси: пошаговая инструкция, требования, советы. Начните работать легально!",
@@ -1750,6 +1750,108 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-5",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "итоги оформления разрешения для самозанятых",
+              "ключевые выводы по легализации такси",
+              "следующие шаги для водителей",
+              "советы по успешному старту в Яндекс Такси",
+              "резюме процесса получения разрешения",
+              "дальнейшие действия после оформления",
+              "поддержка и ресурсы для самозанятых"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, как быстро перейти от оформления разрешения к успешной работе в Яндекс Такси и избежать типичных ошибок на старте.",
+            "intent": "Систематизировать основные выводы из гайда, дать читателю четкое понимание дальнейших шагов после получения разрешения и мотивировать к действию.",
+            "audiences": "Самозанятые водители, завершившие или планирующие оформление разрешения, ищущие структурированное резюме и практические рекомендации для старта работы.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 conclusion/summary section for page \"Как получить разрешение на такси самозанятому в Яндекс Такси\"\n\nGOAL: Подвести итоги гайда, выделить ключевые моменты процесса получения разрешения для самозанятых, дать структурированное резюме и список следующих шагов для успешного старта работы в Яндекс Такси. Обеспечить мотивацию к действию и указать, где искать дополнительную поддержку или ресурсы.\n\nAUDIENCE: Самозанятые водители, которые завершили или только планируют оформление разрешения | Level: beginner/intermediate | Pain points: неуверенность в дальнейших действиях, страх ошибок, нехватка поддержки.\n\nKEYWORDS TO INTEGRATE:\n[итоги оформления разрешения для самозанятых, ключевые выводы по легализации такси, следующие шаги для водителей, советы по успешному старту в Яндекс Такси, резюме процесса получения разрешения, дальнейшие действия после оформления, поддержка и ресурсы для самозанятых]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 200, maxWords: 300 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: # Итоги и следующие шаги (h2)\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: [резюме требований, автоматизация, поддержка, советы по старту]\n- SECONDARY: Apply insights from External KB: [индустриальные советы, типовые ошибки, поддержка сообществ]\n\nQUALITY CRITERIA:\n- Actionable (четкие рекомендации)\n- Specific (без общих фраз)\n- Data-backed (с опорой на факты из гайда)\n- No fluff (никакой воды)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Сводит воедино ключевые выводы и дает план дальнейших действий для самозанятых после получения разрешения.\n- sourceHint: Синтез внутренних и внешних источников, без повторения предыдущих разделов.\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Содержит краткое резюме, таблицу итогов, список следующих шагов и заключительный мотивирующий абзац.\n- В selfPrompt для дочерних элементов указывать их роль (резюме, таблица, список, мотивация).\n- Добавить interlink planning: внутренние ссылки на разделы о регистрации, автоматизации, поддержке водителей.\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 200,
+              "maxWords": 300,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-5-1",
+                "tag": "p",
+                "keywords": [
+                  "итоги оформления разрешения для самозанятых",
+                  "ключевые выводы по легализации такси"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Быстро освежите в памяти главные этапы и преимущества легального оформления.",
+                "intent": "Кратко резюмировать основные этапы и преимущества получения разрешения для самозанятых водителей.",
+                "audiences": "Водители, завершившие изучение гайда, которым важно структурировать полученные знания.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate summary paragraph (intro) for section \"Итоги и следующие шаги\" of page \"Как получить разрешение на такси самозанятому в Яндекс Такси\"\n\nGOAL: Кратко и структурированно подвести итоги гайда, выделить главные этапы и преимущества легализации работы в такси для самозанятых.\n\nAUDIENCE: Самозанятые водители | Level: beginner/intermediate | Pain points: неуверенность в правильности действий.\n\nKEYWORDS TO INTEGRATE: [итоги оформления разрешения для самозанятых, ключевые выводы по легализации такси]\n\nWORD COUNT: minWords: 80, maxWords: 150\n\nMARKDOWN/MDX SYNTAX: Paragraph (p)\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES: PRIMARY: Internal KB (резюме требований, преимущества легализации); SECONDARY: External KB (индустриальные советы)\n\nE-E-A-T: semanticFingerprint: Резюмирует ключевые этапы и преимущества легализации для самозанятых; sourceHint: синтез внутренних и внешних источников; evidenceStrength: internal-tested\n\nPAGE SETTINGS: Writing Style: Narrative; Content Format: Simple; Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-5-3",
+                "tag": "table",
+                "keywords": [
+                  "резюме процесса получения разрешения",
+                  "дальнейшие действия после оформления"
+                ],
+                "taxonomy": "Data-driven",
+                "attention": "Сравните этапы и действия для быстрого старта работы в Яндекс Такси.",
+                "intent": "Визуально структурировать ключевые этапы, документы и дальнейшие действия для самозанятых после получения разрешения.",
+                "audiences": "Водители, предпочитающие наглядные схемы и чек-листы для контроля процесса.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate summary table for section \"Итоги и следующие шаги\" of page \"Как получить разрешение на такси самозанятому в Яндекс Такси\"\n\nGOAL: Составить наглядную таблицу с этапами, необходимыми документами и следующими действиями после получения разрешения для самозанятых.\n\nAUDIENCE: Самозанятые водители | Level: beginner/intermediate | Pain points: необходимость быстро сориентироваться в последовательности шагов.\n\nKEYWORDS TO INTEGRATE: [резюме процесса получения разрешения, дальнейшие действия после оформления]\n\nWORD COUNT: minWords: 80, maxWords: 160\n\nMARKDOWN/MDX SYNTAX: Table (3 columns × 4-5 rows):\n- Column headers: Этап | Документы | Следующий шаг\n- Data types: text\n- Data source: Internal KB (основные этапы, документы, действия), External KB (дополнительные советы)\n- Schema readiness: Dataset\n\nE-E-A-T: semanticFingerprint: Таблица структурирует этапы и действия для быстрого старта; sourceHint: Internal KB + industry best practices; evidenceStrength: internal-tested\n\nPAGE SETTINGS: Writing Style: Narrative; Content Format: Simple; Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-5-2",
+                "tag": "ul",
+                "keywords": [
+                  "следующие шаги для водителей",
+                  "советы по успешному старту в Яндекс Такси"
+                ],
+                "taxonomy": "Actionable",
+                "attention": "Получите конкретный список шагов для уверенного старта работы после оформления разрешения.",
+                "intent": "Дать водителю четкий список действий и советов для успешного начала работы в Яндекс Такси после получения разрешения.",
+                "audiences": "Самозанятые, которые хотят избежать ошибок и быстро приступить к работе.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate actionable checklist (ul) for section \"Итоги и следующие шаги\" of page \"Как получить разрешение на такси самозанятому в Яндекс Такси\"\n\nGOAL: Сформировать список из 5-7 конкретных шагов и советов для самозанятых водителей, чтобы успешно начать работу после получения разрешения.\n\nAUDIENCE: Самозанятые водители | Level: beginner/intermediate | Pain points: страх ошибок, нехватка пошаговых инструкций.\n\nKEYWORDS TO INTEGRATE: [следующие шаги для водителей, советы по успешному старту в Яндекс Такси]\n\nWORD COUNT: minWords: 50, maxWords: 90\n\nMARKDOWN/MDX SYNTAX: Unordered list (ul), 5-7 пунктов, короткие и четкие формулировки (10-20 слов)\n\nE-E-A-T: semanticFingerprint: Чек-лист для быстрого старта после получения разрешения; sourceHint: Internal KB + industry tips; evidenceStrength: internal-tested\n\nPAGE SETTINGS: Writing Style: Narrative; Content Format: Simple; Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+                "additionalData": {
+                  "minWords": 50,
+                  "maxWords": 90,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-5-3",
+                "tag": "p",
+                "keywords": [
+                  "поддержка и ресурсы для самозанятых"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, где найти помощь и дополнительные ресурсы для уверенного развития в такси.",
+                "intent": "Завершить раздел мотивирующим абзацем с акцентом на доступные ресурсы, поддержку и важность постоянного развития для самозанятых.",
+                "audiences": "Водители, которым нужна поддержка и дополнительные источники информации для дальнейшего роста.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate motivational closing paragraph for section \"Итоги и следующие шаги\" of page \"Как получить разрешение на такси самозанятому в Яндекс Такси\"\n\nGOAL: Завершить гайд мотивирующим посланием, указать на доступные ресурсы, сообщества и сервисы поддержки для самозанятых водителей.\n\nAUDIENCE: Самозанятые водители | Level: beginner/intermediate | Pain points: нехватка поддержки, желание развиваться.\n\nKEYWORDS TO INTEGRATE: [поддержка и ресурсы для самозанятых]\n\nWORD COUNT: minWords: 70, maxWords: 130\n\nMARKDOWN/MDX SYNTAX: Paragraph (p)\n\nE-E-A-T: semanticFingerprint: Мотивация и указание на ресурсы для дальнейшего развития; sourceHint: Internal KB (поддержка, ресурсы), External KB (сообщества, советы); evidenceStrength: internal-tested\n\nPAGE SETTINGS: Writing Style: Narrative; Content Format: Simple; Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              }
+            ]
           }
         ]
       }
@@ -1782,5 +1884,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T16:53:37.434Z";
+export const lastUpdated = "2025-10-26T16:53:50.047Z";
 export const generatedBy = "menu-persist-api";
