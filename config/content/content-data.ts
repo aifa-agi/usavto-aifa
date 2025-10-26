@@ -1262,7 +1262,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-26T16:48:26.310Z",
-        "updatedAt": "2025-10-26T16:57:39.946Z",
+        "updatedAt": "2025-10-26T16:58:36.058Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте актуальные критерии машин для Яндекс Такси в 2024 году: требования по моделям, возрасту, тарифам и полный список авто. Проверьте свой автомобиль!",
@@ -1633,6 +1633,206 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "частые вопросы яндекс такси",
+              "ответы для водителей",
+              "подключение автомобиля к сервису",
+              "ограничения по моделям",
+              "региональные особенности",
+              "документы для допуска",
+              "изменения в правилах 2024"
+            ],
+            "taxonomy": "FAQ",
+            "attention": "В этом разделе собраны самые актуальные и частые вопросы водителей о критериях допуска автомобилей к Яндекс Такси в 2024 году — с подробными и понятными ответами.",
+            "intent": "Дать пользователям быстрые и точные ответы на распространённые вопросы по требованиям, процедурам и нюансам допуска автомобилей к работе в Яндекс Такси, чтобы снять основные сомнения и ускорить принятие решения.",
+            "audiences": "Водители такси и владельцы автопарков с базовым и средним опытом, которые ищут практические разъяснения по новым правилам, документам и особенностям допуска автомобилей к сервису.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 FAQ section for page \"Критерии машин для Яндекс Такси: требования, список моделей 2024\"\n\nGOAL: Сконцентрировать в одном разделе ответы на самые частые вопросы водителей и владельцев автопарков по критериям допуска, документам, ограничениям по моделям и региональным особенностям работы в Яндекс Такси в 2024 году. Обеспечить структурированность, лаконичность и практическую пользу для пользователя, избегая повторов тем из предыдущих разделов.\n\nAUDIENCE: Водители такси и владельцы автопарков | Level: beginner/intermediate | Pain points: неясность новых требований, страх отказа в допуске, сложности с документами, региональные различия.\n\nKEYWORDS TO INTEGRATE:\n[частые вопросы яндекс такси, ответы для водителей, подключение автомобиля к сервису, ограничения по моделям, региональные особенности, документы для допуска, изменения в правилах 2024]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 heading with nested H3 for each FAQ, each with a paragraph answer.\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: требования к автомобилям, оформление документов, региональные нюансы, изменения 2024\n- SECONDARY: Apply insights from External KB: типовые вопросы пользователей, дополнительные разъяснения по процедурам\n\nQUALITY CRITERIA:\n- Actionable (конкретные разъяснения)\n- Specific (без общих фраз)\n- Data-backed (с опорой на актуальные правила)\n- No fluff (без воды)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Сборник уникальных, практически значимых ответов на вопросы, не дублирующих основные критерии и списки моделей.\n- sourceHint: Internal KB (основные требования и нюансы) + External KB (типовые вопросы пользователей)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Для каждого H3: уникальный вопрос, не повторяющий темы предыдущих разделов.\n- Для каждого P: чёткий, лаконичный ответ с опорой на актуальные требования.\n- В конце каждого ответа — при необходимости ссылка на релевантный раздел сайта (internalLinks).\n- FAQPage schema readiness: да, подходит для разметки FAQ.\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)\n",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "keywords": [
+                  "частые вопросы яндекс такси"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Краткое введение к разделу FAQ, объясняющее, почему важно знать ответы на эти вопросы.",
+                "intent": "Ввести пользователя в раздел FAQ, подчеркнув его практическую пользу и актуальность для водителей.",
+                "audiences": "Водители такси, ищущие быстрые разъяснения по новым правилам и процедурам.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for FAQ section on page \"Критерии машин для Яндекс Такси: требования, список моделей 2024\". GOAL: Кратко объяснить, зачем нужен раздел FAQ, и как он поможет водителям быстро разобраться в нюансах допуска автомобиля к Яндекс Такси. KEYWORDS: [частые вопросы яндекс такси]. Paragraph role: intro. SourceHint: Internal KB (актуальные вопросы водителей).",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "keywords": [
+                  "ограничения по моделям",
+                  "допустимые авто для подключения",
+                  "FAQ по выбору автомобиля"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, какие модели автомобилей чаще всего не допускаются к работе и почему.",
+                "intent": "Ответить на вопрос о причинах отказа в подключении определённых моделей автомобилей к Яндекс Такси.",
+                "audiences": "Водители, выбирающие или обновляющие автомобиль для работы в сервисе.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item for section 'FAQ' on page \"Критерии машин для Яндекс Такси: требования, список моделей 2024\". GOAL: Объяснить, по каким причинам определённые модели авто не допускаются к работе в Яндекс Такси, и как проверить свою машину. KEYWORDS: [ограничения по моделям, допустимые авто для подключения, FAQ по выбору автомобиля]. semanticFingerprint: Уникальный разбор причин отказа по моделям, не повторяющий основной список. Interlink: ссылка на раздел с перечнем моделей. SourceHint: Internal KB (критерии допуска), External KB (типовые вопросы пользователей). evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "keywords": [
+                      "ограничения по моделям"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Чёткий ответ с примерами причин отказа по моделям.",
+                    "intent": "Дать практическое объяснение, почему определённые автомобили не проходят допуск.",
+                    "audiences": "Водители, сомневающиеся в соответствии своей машины.",
+                    "selfPrompt": "CONTEXT: Generate paragraph answer for FAQ 'ограничения по моделям' in section 'FAQ'. Paragraph role: body. KEYWORDS: [ограничения по моделям]. SourceHint: Internal KB (критерии), External KB (разъяснения).",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-2",
+                "tag": "h3",
+                "keywords": [
+                  "региональные особенности допуска",
+                  "различия по регионам",
+                  "FAQ по требованиям в регионах"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Проверьте, как требования к автомобилям могут отличаться в вашем регионе.",
+                "intent": "Разъяснить, почему и как требования к автомобилям для Яндекс Такси различаются в зависимости от региона.",
+                "audiences": "Водители из разных регионов России, планирующие подключение к сервису.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item for section 'FAQ' on page \"Критерии машин для Яндекс Такси: требования, список моделей 2024\". GOAL: Объяснить региональные различия в критериях допуска автомобилей, дать совет по проверке актуальных правил для своего города. KEYWORDS: [региональные особенности допуска, различия по регионам, FAQ по требованиям в регионах]. semanticFingerprint: Уникальное пояснение о региональных нюансах, не повторяющее основной раздел требований. Interlink: ссылка на раздел с региональными критериями. SourceHint: Internal KB (региональные правила), External KB (типовые вопросы). evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "региональные особенности допуска"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Ответ с примерами региональных различий и советом по проверке.",
+                    "intent": "Дать водителю понимание, как узнать актуальные требования для своего региона.",
+                    "audiences": "Водители, не уверенные в правилах своего города.",
+                    "selfPrompt": "CONTEXT: Generate paragraph answer for FAQ 'региональные особенности допуска' in section 'FAQ'. Paragraph role: body. KEYWORDS: [региональные особенности допуска]. SourceHint: Internal KB (региональные нюансы), External KB (разъяснения).",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-3",
+                "tag": "h3",
+                "keywords": [
+                  "документы для допуска",
+                  "оформление путевого листа",
+                  "FAQ по документам"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, какие документы обязательны для допуска автомобиля к работе в Яндекс Такси.",
+                "intent": "Дать полный перечень и разъяснения по обязательным документам для допуска автомобиля к сервису.",
+                "audiences": "Водители и ИП, оформляющие документы для работы в такси.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item for section 'FAQ' on page \"Критерии машин для Яндекс Такси: требования, список моделей 2024\". GOAL: Перечислить и разъяснить, какие документы требуются для допуска автомобиля, с акцентом на оформление путевого листа и медосмотра. KEYWORDS: [документы для допуска, оформление путевого листа, FAQ по документам]. semanticFingerprint: Уникальный разбор по документам, не повторяющий основной раздел требований. Interlink: ссылка на раздел о документах. SourceHint: Internal KB (документы и оформление), External KB (типовые вопросы). evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "документы для допуска"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Чёткий ответ с перечнем и пояснениями по документам.",
+                    "intent": "Дать водителю уверенность в правильности оформления документов.",
+                    "audiences": "Водители, оформляющие документы для допуска.",
+                    "selfPrompt": "CONTEXT: Generate paragraph answer for FAQ 'документы для допуска' in section 'FAQ'. Paragraph role: body. KEYWORDS: [документы для допуска]. SourceHint: Internal KB (документы), External KB (разъяснения).",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-4",
+                "tag": "h3",
+                "keywords": [
+                  "изменения в правилах 2024",
+                  "новые требования яндекс такси",
+                  "FAQ по обновлениям"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, какие ключевые изменения в требованиях к автомобилям вступили в силу в 2024 году.",
+                "intent": "Пояснить основные нововведения и изменения в правилах допуска автомобилей к Яндекс Такси в 2024 году.",
+                "audiences": "Водители, следящие за изменениями в законодательстве и правилах сервиса.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item for section 'FAQ' on page \"Критерии машин для Яндекс Такси: требования, список моделей 2024\". GOAL: Кратко и понятно разъяснить, какие новые требования и изменения вступили в силу в 2024 году, и как они влияют на допуск автомобилей. KEYWORDS: [изменения в правилах 2024, новые требования яндекс такси, FAQ по обновлениям]. semanticFingerprint: Уникальное пояснение по обновлениям, не повторяющее основной раздел изменений. Interlink: ссылка на раздел с новыми требованиями. SourceHint: Internal KB (новые правила), External KB (разъяснения). evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "изменения в правилах 2024"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Ответ с акцентом на ключевые нововведения и их влияние на водителей.",
+                    "intent": "Дать водителю понимание, что изменилось и как это влияет на его работу.",
+                    "audiences": "Водители, желающие быть в курсе последних изменений.",
+                    "selfPrompt": "CONTEXT: Generate paragraph answer for FAQ 'изменения в правилах 2024' in section 'FAQ'. Paragraph role: body. KEYWORDS: [изменения в правилах 2024]. SourceHint: Internal KB (новые требования), External KB (разъяснения).",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1665,5 +1865,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T17:14:00.277Z";
+export const lastUpdated = "2025-10-26T17:14:41.984Z";
 export const generatedBy = "menu-persist-api";
