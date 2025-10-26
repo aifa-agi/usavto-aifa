@@ -1174,7 +1174,14 @@ export const contentData = {
         "updatedAt": "2025-10-26T16:03:09.843Z",
         "order": 1,
         "badgeName": "Блог",
-        "description": "какой автомобиль подходит для яндекс такси"
+        "description": "какой автомобиль подходит для яндекс такси",
+        "images": [
+          {
+            "id": "sc33a5g1fkjcwaivpfkseval",
+            "alt": "какой автомобиль подходит для яндекс такси",
+            "href": "/app-images/pb8uv0hvtj0bgqlbpqpcmo4u.png"
+          }
+        ]
       }
     ],
     "order": 16
@@ -1205,5 +1212,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T16:19:59.409Z";
+export const lastUpdated = "2025-10-26T16:20:34.074Z";
 export const generatedBy = "menu-persist-api";
