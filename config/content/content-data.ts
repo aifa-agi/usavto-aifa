@@ -1206,7 +1206,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-26T16:03:09.843Z",
-        "updatedAt": "2025-10-26T16:12:01.453Z",
+        "updatedAt": "2025-10-26T16:12:54.162Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, какой автомобиль подходит для Яндекс Такси: требования к моделям, список подходящих авто по тарифам, советы по выбору и проверке.",
@@ -1571,6 +1571,206 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "часто задаваемые вопросы яндекс такси",
+              "разрешённые авто для такси",
+              "ограничения по маркам и моделям",
+              "требования к документам водителя",
+              "обновления правил яндекс такси",
+              "проверка соответствия автомобиля",
+              "советы по выбору машины для такси"
+            ],
+            "taxonomy": "FAQ",
+            "attention": "Ответы на самые частые вопросы помогут быстро разобраться в нюансах допуска автомобиля к работе в Яндекс Такси и избежать типичных ошибок.",
+            "intent": "Дать пользователям структурированные и экспертные ответы на ключевые вопросы, возникающие при выборе и проверке автомобиля для Яндекс Такси.",
+            "audiences": "Водители и предприниматели, рассматривающие работу в Яндекс Такси, ищущие быстрые и точные разъяснения по требованиям и процедурам допуска автомобиля.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 FAQ section for the page \"Какой автомобиль подходит для Яндекс Такси: требования, список моделей\"\n\nGOAL: Сформировать блок часто задаваемых вопросов, раскрывающий типичные сомнения и нюансы, которые не были подробно рассмотрены в предыдущих разделах, с акцентом на практические аспекты допуска автомобиля, обновлениях правил и советах по проверке соответствия.\n\nAUDIENCE: Водители и индивидуальные предприниматели, уровень — средний, боль — неуверенность в нюансах допуска, страх ошибиться при выборе авто или оформлении документов.\n\nKEYWORDS TO INTEGRATE:\n[часто задаваемые вопросы яндекс такси, разрешённые авто для такси, ограничения по маркам и моделям, требования к документам водителя, обновления правил яндекс такси, проверка соответствия автомобиля, советы по выбору машины для такси]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with nested H3 for each FAQ, each with a supporting paragraph.\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: требования к автомобилю, оптимальные модели, влияние выбора авто, советы по проверке\n- SECONDARY: Apply insights from External KB: официальные критерии, обновления, самостоятельная проверка авто\n\nQUALITY CRITERIA:\n- Actionable (конкретные разъяснения и рекомендации)\n- Specific (без общих фраз)\n- Data-backed (ссылки на официальные требования и свежие изменения)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Блок FAQ раскрывает практические вопросы, которые не дублируют основные требования и списки моделей, а помогают разобраться в деталях допуска и обновлениях.\n- sourceHint: Internal KB (основные требования, советы), External KB (актуальные изменения, примеры вопросов пользователей)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Каждый H3 — отдельный вопрос, не повторяющий темы предыдущих разделов (например, нюансы по документам, частые ошибки, обновления, самостоятельная проверка).\n- Каждый H3 содержит уникальный semanticFingerprint и план внутренней перелинковки (например, на разделы о требованиях, списке моделей, советах по выбору).\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "keywords": [
+                  "часто задаваемые вопросы яндекс такси"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Краткое введение объясняет, почему важно ознакомиться с FAQ перед выбором автомобиля для работы в сервисе.",
+                "intent": "Ввести пользователя в раздел FAQ, подчеркнув его практическую ценность для принятия решений.",
+                "audiences": "Водители, впервые рассматривающие работу в Яндекс Такси, и опытные таксисты, желающие уточнить детали.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for FAQ section on \"Какой автомобиль подходит для Яндекс Такси: требования, список моделей\". ROLE: intro. GOAL: Объяснить, что в этом разделе собраны самые частые вопросы и ответы по нюансам допуска автомобиля, которые не были раскрыты ранее. KEYWORDS: [часто задаваемые вопросы яндекс такси]. SOURCE: Internal KB (советы, типичные вопросы), External KB (примеры пользовательских вопросов). semanticFingerprint: Вводный абзац мотивирует изучить FAQ для уверенного выбора и оформления авто. evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "keywords": [
+                  "разрешённые авто для такси",
+                  "ограничения по маркам и моделям",
+                  "проверка соответствия автомобиля"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, как самостоятельно проверить, подходит ли ваш автомобиль для работы в Яндекс Такси.",
+                "intent": "Объяснить процедуру самостоятельной проверки автомобиля на соответствие требованиям сервиса.",
+                "audiences": "Владельцы авто, не уверенные в допуске своей модели к работе в Яндекс Такси.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ subsection for 'FAQ' — Вопрос: Как узнать, подходит ли мой автомобиль для Яндекс Такси? GOAL: Подробно описать, как проверить соответствие авто по марке, году выпуска, типу кузова и другим критериям, используя официальные инструменты и советы из Internal KB. KEYWORDS: [разрешённые авто для такси, ограничения по маркам и моделям, проверка соответствия автомобиля]. semanticFingerprint: Раскрывает алгоритм самостоятельной проверки допуска авто, не дублируя общий список моделей. Interlink: Вставить ссылку на раздел со списком моделей. evidenceStrength: internal-tested | external-peer-reviewed.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "keywords": [
+                      "проверка соответствия автомобиля"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Пошаговая инструкция по самостоятельной проверке автомобиля на соответствие.",
+                    "intent": "Дать пользователю конкретные шаги и ресурсы для проверки допуска авто.",
+                    "audiences": "Водители, желающие быстро узнать о возможности работы на своей машине.",
+                    "selfPrompt": "CONTEXT: Generate paragraph for h3 'Как узнать, подходит ли мой автомобиль для Яндекс Такси?'. ROLE: body. GOAL: Дать пошаговую инструкцию по самостоятельной проверке автомобиля (по марке, году, кузову, стоимости) с упоминанием официальных инструментов и советов. KEYWORDS: [проверка соответствия автомобиля]. SOURCE: Internal KB (алгоритм проверки), External KB (ссылка на классификатор, примеры). semanticFingerprint: Практическая инструкция по самостоятельной проверке допуска. evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-2",
+                "tag": "h3",
+                "keywords": [
+                  "требования к документам водителя",
+                  "оформление автомобиля для такси",
+                  "юридические нюансы работы"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Разберитесь, какие документы нужны для допуска автомобиля и водителя к работе в Яндекс Такси.",
+                "intent": "Дать разъяснения по списку обязательных документов и юридическим аспектам оформления автомобиля для такси.",
+                "audiences": "Водители и ИП, впервые оформляющие авто для работы в агрегаторе.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ subsection for 'FAQ' — Вопрос: Какие документы нужны для допуска автомобиля и водителя к работе в Яндекс Такси? GOAL: Перечислить и объяснить основные документы, которые требуются для оформления машины и допуска к работе, с акцентом на юридические нюансы. KEYWORDS: [требования к документам водителя, оформление автомобиля для такси, юридические нюансы работы]. semanticFingerprint: Раскрывает список документов и юридические требования, не повторяя общий раздел о требованиях. Interlink: Вставить ссылку на раздел о документах и регистрации. evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "требования к документам водителя"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Четкий список документов и пояснения по их оформлению.",
+                    "intent": "Помочь пользователю подготовить все необходимые документы для допуска к работе.",
+                    "audiences": "Начинающие водители и ИП, оформляющие авто для такси.",
+                    "selfPrompt": "CONTEXT: Generate paragraph for h3 'Какие документы нужны для допуска автомобиля и водителя к работе в Яндекс Такси?'. ROLE: body. GOAL: Перечислить документы (ПТС, ОСАГО, лицензия, регистрация на ИП/юрлицо и др.), дать краткие пояснения по каждому. KEYWORDS: [требования к документам водителя]. SOURCE: Internal KB (перечень документов), External KB (актуальные требования). semanticFingerprint: Список и пояснения по документам для допуска. evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-3",
+                "tag": "h3",
+                "keywords": [
+                  "обновления правил яндекс такси",
+                  "изменения в требованиях к авто",
+                  "актуальная информация для водителей"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, как отслеживать свежие изменения в правилах допуска автомобилей к работе в Яндекс Такси.",
+                "intent": "Пояснить, где и как получать актуальные сведения об изменениях в требованиях и списках моделей.",
+                "audiences": "Водители, желающие быть в курсе последних изменений и не пропустить важные обновления.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ subsection for 'FAQ' — Вопрос: Как узнать об изменениях в требованиях и списках разрешённых автомобилей? GOAL: Объяснить, где публикуются обновления, как подписаться на уведомления, почему важно регулярно проверять информацию. KEYWORDS: [обновления правил яндекс такси, изменения в требованиях к авто, актуальная информация для водителей]. semanticFingerprint: Раскрывает способы отслеживания изменений, не повторяя общий раздел о требованиях. Interlink: Вставить ссылку на официальный источник обновлений. evidenceStrength: external-peer-reviewed.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "обновления правил яндекс такси"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Пошаговая инструкция по отслеживанию изменений и подписке на обновления.",
+                    "intent": "Дать пользователю инструменты для своевременного получения актуальной информации.",
+                    "audiences": "Водители, стремящиеся не пропустить важные изменения.",
+                    "selfPrompt": "CONTEXT: Generate paragraph for h3 'Как узнать об изменениях в требованиях и списках разрешённых автомобилей?'. ROLE: body. GOAL: Описать, где искать обновления (официальный сайт, рассылки, личный кабинет), как подписаться на уведомления. KEYWORDS: [обновления правил яндекс такси]. SOURCE: External KB (официальные источники обновлений). semanticFingerprint: Практическая инструкция по отслеживанию изменений. evidenceStrength: external-peer-reviewed.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-4",
+                "tag": "h3",
+                "keywords": [
+                  "советы по выбору машины для такси",
+                  "частые ошибки при выборе авто",
+                  "рекомендации опытных водителей"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Избегайте типичных ошибок при выборе автомобиля для работы в Яндекс Такси, следуя советам экспертов.",
+                "intent": "Дать практические советы и предостережения по выбору автомобиля, основанные на опыте водителей и экспертов.",
+                "audiences": "Новички и опытные водители, желающие сделать оптимальный выбор авто для такси.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ subsection for 'FAQ' — Вопрос: Какие ошибки чаще всего совершают при выборе автомобиля для Яндекс Такси и как их избежать? GOAL: Перечислить распространённые ошибки (выбор слишком старого авто, игнорирование расходов на обслуживание, неправильная оценка класса), дать рекомендации по их предотвращению. KEYWORDS: [советы по выбору машины для такси, частые ошибки при выборе авто, рекомендации опытных водителей]. semanticFingerprint: Практические советы и предостережения, не дублирующие разделы о требованиях и моделях. Interlink: Вставить ссылку на раздел с советами по выбору авто. evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "советы по выбору машины для такси"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Конкретные рекомендации и предостережения для уверенного выбора автомобиля.",
+                    "intent": "Помочь пользователю избежать типичных ошибок и выбрать оптимальное авто для работы.",
+                    "audiences": "Водители, планирующие покупку или обновление автомобиля для такси.",
+                    "selfPrompt": "CONTEXT: Generate paragraph for h3 'Какие ошибки чаще всего совершают при выборе автомобиля для Яндекс Такси и как их избежать?'. ROLE: body. GOAL: Перечислить 2-3 частые ошибки и дать советы по их предотвращению, с опорой на опыт экспертов и водителей. KEYWORDS: [советы по выбору машины для такси]. SOURCE: Internal KB (советы, опыт), External KB (ошибки пользователей). semanticFingerprint: Конкретные советы для предотвращения ошибок при выборе авто. evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1603,5 +1803,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T16:28:18.310Z";
+export const lastUpdated = "2025-10-26T16:29:02.648Z";
 export const generatedBy = "menu-persist-api";
