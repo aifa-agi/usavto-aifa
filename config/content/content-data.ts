@@ -1258,7 +1258,7 @@ export const contentData = {
         "updatedAt": "2025-10-26T17:07:45.493Z",
         "order": 1,
         "badgeName": "Блог",
-        "description": "как зарегистрировать авто в такси",
+        "description": "Узнайте, как зарегистрировать авто в такси в 2024 году: пошаговая инструкция, список документов, советы по лицензии и онлайн-подаче заявки. Начните работать легально!",
         "images": [
           {
             "id": "evkqs2jgcfmogpeirhmnds6h",
@@ -1301,5 +1301,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T17:27:49.862Z";
+export const lastUpdated = "2025-10-26T17:27:55.171Z";
 export const generatedBy = "menu-persist-api";
