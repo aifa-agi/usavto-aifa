@@ -1234,7 +1234,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-26T16:26:27.424Z",
-        "updatedAt": "2025-10-26T16:33:57.970Z",
+        "updatedAt": "2025-10-26T16:34:53.711Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как получить разрешение на такси на свой автомобиль самозанятому в Яндекс Такси: пошаговая инструкция, требования, советы. Начните работать легально!",
@@ -1321,6 +1321,130 @@ export const contentData = {
                 }
               }
             ]
+          },
+          {
+            "id": "h2-2",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "условия получения разрешения на такси",
+              "статус самозанятого водителя",
+              "регистрация автомобиля для такси",
+              "юридические требования к самозанятым",
+              "путевые листы для такси",
+              "медицинский осмотр водителя",
+              "технический контроль автомобиля"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Разберём ключевые условия и требования для самозанятых, чтобы избежать ошибок при оформлении разрешения и подготовить все документы с первого раза.",
+            "intent": "Дать читателю полное понимание базовых условий и требований для получения разрешения на такси самозанятым, включая юридические нюансы, статус автомобиля и обязательные процедуры.",
+            "audiences": "Самозанятые водители с минимальным или средним опытом, планирующие работать в Яндекс Такси на собственном авто и желающие разобраться в юридических и технических требованиях.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 section on \"Основные условия и требования для получения разрешения на такси самозанятым\" for page \"Как получить разрешение на такси самозанятому в Яндекс Такси\"\n\nGOAL: Подробно раскрыть, какие условия и требования предъявляются к самозанятым водителям и их автомобилям для получения разрешения на такси, включая юридические аспекты, статус самозанятого, оформление путевых листов, прохождение медосмотра и техконтроля.\n\nAUDIENCE: Самозанятые водители | Level: beginner/intermediate | Pain points: неясность требований, страх ошибок, боязнь штрафов\n\nKEYWORDS TO INTEGRATE:\n[условия получения разрешения на такси, статус самозанятого водителя, регистрация автомобиля для такси, юридические требования к самозанятым, путевые листы для такси, медицинский осмотр водителя, технический контроль автомобиля]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 250, maxWords: 400 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: # H2 heading with supporting paragraphs, table, h3, ul\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: требования к разрешению, оформление путевых листов, медосмотр, техконтроль, автоматизация\n- SECONDARY: Apply insights from External KB: общие требования к регистрации, советы по подготовке документов\n\nQUALITY CRITERIA:\n- Actionable (конкретные требования и шаги)\n- Specific (без общих фраз)\n- Data-backed (ссылки на законодательство, внутренние стандарты)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальный разбор условий и требований для самозанятых, отличающийся от вводной части и других разделов.\n- sourceHint: Internal KB (company expertise) + External KB (индустриальные стандарты)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Обязательно выделить отличия для самозанятых (статус, оформление авто)\n- Включить таблицу с основными требованиями\n- В h3 раскрыть детали по документам и процедурам\n- В списке — ключевые нюансы и советы\n- Включить 2-3 внутренних перелинковки на смежные гайды (например, «Как оформить путевой лист», «Медосмотр для такси»)\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 250,
+              "maxWords": 400,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-2-1",
+                "tag": "p",
+                "keywords": [
+                  "условия получения разрешения на такси",
+                  "статус самозанятого водителя"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Понимание базовых условий поможет избежать ошибок и ускорить процесс оформления.",
+                "intent": "Ввести читателя в суть ключевых условий для самозанятых, выделить важность статуса и правильной регистрации.",
+                "audiences": "Начинающие самозанятые водители, которые впервые сталкиваются с оформлением разрешения.",
+                "selfPrompt": "CONTEXT: Generate intro paragraph for section \"Основные условия и требования для получения разрешения на такси самозанятым\". ROLE: Intro. GOAL: Кратко объяснить, почему важно знать все условия и требования заранее, чтобы не получить отказ или штраф. KEYWORDS: условия получения разрешения на такси, статус самозанятого водителя. WORD COUNT: minWords: 80, maxWords: 150. E-E-A-T: semanticFingerprint: Вводный обзор условий для самозанятых; sourceHint: Internal KB; evidenceStrength: internal-tested."
+              },
+              {
+                "id": "p-2-2-3",
+                "tag": "p",
+                "keywords": [
+                  "регистрация автомобиля для такси"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Уточните, на кого должен быть зарегистрирован автомобиль для легальной работы.",
+                "intent": "Кратко выделить ключевой юридический нюанс — требования к регистрации автомобиля.",
+                "audiences": "Самозанятые, не уверенные в правильности оформления авто.",
+                "selfPrompt": "CONTEXT: Generate short paragraph (transition) on требование регистрации автомобиля для такси. ROLE: Transition. GOAL: Подчеркнуть, что авто должно быть оформлено на самозанятого или ИП. KEYWORDS: регистрация автомобиля для такси. WORD COUNT: minWords: 5, maxWords: 15. E-E-A-T: semanticFingerprint: Юридический нюанс регистрации; sourceHint: Internal KB; evidenceStrength: internal-tested."
+              },
+              {
+                "id": "table-2-2-4",
+                "tag": "table",
+                "keywords": [
+                  "юридические требования к самозанятым",
+                  "основные требования для такси"
+                ],
+                "taxonomy": "Data-driven",
+                "attention": "Визуально сравните основные требования для самозанятых водителей.",
+                "intent": "Дать читателю структурированную таблицу с основными требованиями к разрешению на такси.",
+                "audiences": "Водители, предпочитающие наглядную информацию.",
+                "selfPrompt": "CONTEXT: Generate table (3 columns × 4 rows) with headers: Требование | Описание | Примечание. DATA: юридические требования к самозанятым, основные требования для такси. Columns: text/text/text. Source: Internal KB + External KB (общие стандарты). E-E-A-T: semanticFingerprint: Таблица требований для самозанятых; sourceHint: Internal KB; evidenceStrength: internal-tested. WORD COUNT: minWords: 80, maxWords: 160."
+              },
+              {
+                "id": "h3-2-2",
+                "tag": "h3",
+                "keywords": [
+                  "путевые листы для такси",
+                  "медицинский осмотр водителя",
+                  "технический контроль автомобиля",
+                  "автоматизация оформления документов"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Узнайте, какие документы и процедуры обязательны для получения разрешения и как их упростить.",
+                "intent": "Подробно раскрыть, какие документы и процедуры (путевые листы, медосмотр, техконтроль) необходимы для получения разрешения, а также как автоматизировать их оформление.",
+                "audiences": "Самозанятые, которые хотят быстро и без ошибок подготовить документы.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection \"Документы и процедуры: что обязательно для самозанятых\" under h2 \"Основные условия и требования для получения разрешения на такси самозанятым\". GOAL: Раскрыть детали по путевым листам, медосмотру, техконтролю, автоматизации. KEYWORDS: путевые листы для такси, медицинский осмотр водителя, технический контроль автомобиля, автоматизация оформления документов. Inherit 2 keywords from h2. Provide 1 internal link to смежный гайд (например, «Как оформить путевой лист»). E-E-A-T: semanticFingerprint: Детализация процедур и документов для разрешения; sourceHint: Internal KB; evidenceStrength: internal-tested. WORD COUNT: minWords: 150, maxWords: 250.",
+                "realContentStructure": [
+                  {
+                    "id": "p-2-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "путевые листы для такси",
+                      "автоматизация оформления документов"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Путевые листы — ключ к легальной работе, а автоматизация экономит время.",
+                    "intent": "Объяснить, почему путевые листы обязательны и как автоматизация помогает избежать ошибок.",
+                    "audiences": "Водители, желающие минимизировать бюрократию.",
+                    "selfPrompt": "CONTEXT: Generate paragraph explaining importance of путевые листы and benefits of автоматизация оформления документов. ROLE: Body. KEYWORDS: путевые листы для такси, автоматизация оформления документов. WORD COUNT: minWords: 70, maxWords: 130. E-E-A-T: semanticFingerprint: Важность путевых листов и автоматизации; sourceHint: Internal KB; evidenceStrength: internal-tested."
+                  },
+                  {
+                    "id": "ul-2-2-2",
+                    "tag": "ul",
+                    "keywords": [
+                      "медицинский осмотр водителя",
+                      "технический контроль автомобиля"
+                    ],
+                    "taxonomy": "List",
+                    "attention": "Проверьте, что все обязательные процедуры выполнены.",
+                    "intent": "Список ключевых процедур: медосмотр и техконтроль, которые нельзя пропустить.",
+                    "audiences": "Водители, готовящие документы к подаче.",
+                    "selfPrompt": "CONTEXT: Generate unordered list (3-4 items) of обязательные процедуры для самозанятых: медосмотр, техконтроль, отметки в путевом листе. KEYWORDS: медицинский осмотр водителя, технический контроль автомобиля. Short bullets (5-10 words). WORD COUNT: minWords: 40, maxWords: 80. E-E-A-T: semanticFingerprint: Список обязательных процедур; sourceHint: Internal KB; evidenceStrength: internal-tested."
+                  },
+                  {
+                    "id": "p-2-2-3",
+                    "tag": "p",
+                    "keywords": [
+                      "советы по подготовке документов"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Следуйте советам, чтобы ускорить процесс и избежать ошибок.",
+                    "intent": "Дать практические советы по подготовке документов и прохождению процедур.",
+                    "audiences": "Самозанятые, стремящиеся к быстрому и успешному оформлению.",
+                    "selfPrompt": "CONTEXT: Generate paragraph with actionable tips for preparing documents and passing procedures. ROLE: Conclusion. KEYWORDS: советы по подготовке документов. WORD COUNT: minWords: 60, maxWords: 100. E-E-A-T: semanticFingerprint: Практические советы по подготовке; sourceHint: Internal KB + External KB; evidenceStrength: internal-tested."
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1353,5 +1477,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T16:50:17.843Z";
+export const lastUpdated = "2025-10-26T16:51:36.716Z";
 export const generatedBy = "menu-persist-api";
