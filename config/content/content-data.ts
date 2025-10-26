@@ -706,7 +706,7 @@ export const contentData = {
       },
       {
         "id": "vjdwza1l4j7cd225nlezt93x",
-        "title": "критерии машин для яндекс такси",
+        "title": "Критерии машин для Яндекс Такси: требования, список моделей 2024",
         "href": "/blog/kriterii-mashin-dlya-yandeks-taksi",
         "roles": [
           "guest"
@@ -1273,5 +1273,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T17:08:17.645Z";
+export const lastUpdated = "2025-10-26T17:08:26.476Z";
 export const generatedBy = "menu-persist-api";
