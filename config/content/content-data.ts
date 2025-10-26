@@ -1290,7 +1290,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-26T17:07:45.493Z",
-        "updatedAt": "2025-10-26T17:07:45.493Z",
+        "updatedAt": "2025-10-26T17:14:33.715Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как зарегистрировать авто в такси в 2024 году: пошаговая инструкция, список документов, советы по лицензии и онлайн-подаче заявки. Начните работать легально!",
@@ -1309,7 +1309,76 @@ export const contentData = {
         "intent": "Пользователь заходит на страницу, чтобы получить подробную и актуальную пошаговую инструкцию по регистрации своего автомобиля для работы в такси в 2024 году, включая полный список документов, требования и возможные причины отказа. Ожидаемое действие — ознакомиться с алгоритмом регистрации, подготовить необходимые документы и выполнить процедуру через Госуслуги или МФЦ. Страница полностью закрывает информационный запрос, предоставляя структурированное руководство и ответы на частые вопросы для самостоятельного оформления.",
         "taxonomy": "Данная страница представляет собой пошаговую инструкцию-руководство (гайд) по регистрации автомобиля для работы в такси, входит в категорию «Авто» — подкатегорию «Регистрация и лицензирование такси». Она относится к кластерному контенту, поддерживающему основную статью-пиллар о работе в такси, и укрепляет тематический авторитет сайта по юридическим и практическим вопросам выхода на рынок таксомоторных услуг.",
         "attention": "Моментально захватите внимание ярким, лаконичным блоком с ключевой фразой «Как зарегистрировать авто в такси — пошагово и без ошибок в 2024», подкрепленным визуальным чек-листом этапов и кнопкой «Начать регистрацию». Для удержания интереса используйте четкую визуальную иерархию (инфографика шагов, выделенные советы, быстрые ответы на частые вопросы), а также внедрите интерактивный «путь пользователя» — динамический калькулятор или мини-тест на готовность к регистрации, что выделит страницу на фоне сухих текстовых инструкций конкурентов.",
-        "audiences": "Эта страница предназначена для взрослых владельцев личных автомобилей в возрасте 25–50 лет, рассматривающих работу в такси (как самостоятельные водители, самозанятые или ИП) и нуждающихся в пошаговой, актуальной инструкции по официальной регистрации авто для агрегаторов или частного извоза. Аудитория испытывает трудности с пониманием регламентов, сбором документов и прохождением бюрократических процедур, мотивирована легализовать деятельность и избежать штрафов. Пользователи обладают базовой технической грамотностью и средним уровнем понимания государственных сервисов, находятся на стадии активного поиска практического решения с готовностью приступить к оформлению."
+        "audiences": "Эта страница предназначена для взрослых владельцев личных автомобилей в возрасте 25–50 лет, рассматривающих работу в такси (как самостоятельные водители, самозанятые или ИП) и нуждающихся в пошаговой, актуальной инструкции по официальной регистрации авто для агрегаторов или частного извоза. Аудитория испытывает трудности с пониманием регламентов, сбором документов и прохождением бюрократических процедур, мотивирована легализовать деятельность и избежать штрафов. Пользователи обладают базовой технической грамотностью и средним уровнем понимания государственных сервисов, находятся на стадии активного поиска практического решения с готовностью приступить к оформлению.",
+        "draftContentStructure": [
+          {
+            "id": "h2-1",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "как зарегистрировать авто в такси",
+              "регистрация автомобиля для такси",
+              "пошаговая инструкция",
+              "документы для регистрации такси",
+              "лицензия на такси",
+              "онлайн регистрация авто",
+              "работа в такси 2024"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, как быстро и без ошибок зарегистрировать свой автомобиль для работы в такси в 2024 году — пошаговая инструкция с актуальными требованиями и советами.",
+            "intent": "Ввести пользователя в тему регистрации автомобиля для работы в такси, обозначить ценность инструкции и подготовить к дальнейшему изучению этапов процесса.",
+            "audiences": "Владельцы автомобилей 25–50 лет, рассматривающие работу в такси и нуждающиеся в понятном, актуальном руководстве по легализации деятельности.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 introduction section for page \"Как зарегистрировать авто в такси: пошаговая инструкция 2024\"\n\nGOAL: Представить основную тему страницы, объяснить, почему важно правильно зарегистрировать авто для такси, и кратко анонсировать структуру пошагового руководства. Обеспечить доверие и мотивацию к прочтению.\n\nAUDIENCE: Взрослые владельцы авто, планирующие работать в такси | Level: beginner/intermediate | Pain points: страх ошибок, непонимание регламентов, желание избежать штрафов\n\nKEYWORDS TO INTEGRATE:\n[как зарегистрировать авто в такси, регистрация автомобиля для такси, пошаговая инструкция, документы для регистрации такси, лицензия на такси, онлайн регистрация авто, работа в такси 2024]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 150, maxWords: 250 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: # [H2] + paragraphs\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: [регистрация автомобиля в такси: основные требования и этапы, юридические аспекты регистрации]\n- SECONDARY: Apply insights from External KB: [акценты на онлайн-регистрации, причины отказа, актуальность 2024]\n\nQUALITY CRITERIA:\n- Actionable (чётко обозначить пользу)\n- Specific (указать, что будет рассмотрено)\n- Data-backed (ссылки на новые требования 2024)\n- No fluff (только по делу)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальное введение, раскрывающее цель и пользу инструкции, без дублирования смыслов следующих разделов.\n- sourceHint: Internal KB (основные требования и этапы регистрации), External KB (актуальность онлайн-регистрации, причины отказа)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Обеспечить плавный переход к следующему разделу (структуре этапов)\n- Добавить план внутренних ссылок: [Как получить лицензию на такси, Документы для водителя такси, Проверка авто на соответствие требованиям]\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)\n",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 150,
+              "maxWords": 250,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-1-1",
+                "tag": "p",
+                "keywords": [
+                  "как зарегистрировать авто в такси",
+                  "регистрация автомобиля для такси"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Поймите, почему правильная регистрация авто — ключ к легальной и безопасной работе в такси.",
+                "intent": "Ввести пользователя в тему, обозначить актуальность и пользу легализации работы в такси в 2024 году.",
+                "audiences": "Владельцы авто, желающие начать работать в такси, ищущие понятную и актуальную инструкцию.",
+                "selfPrompt": "CONTEXT: Generate intro paragraph (p) for h2 'Как зарегистрировать авто в такси: пошаговая инструкция 2024'.\nGOAL: Кратко объяснить, зачем нужна регистрация авто для такси, почему это важно для легальной работы и как изменились требования в 2024 году.\nAUDIENCE: Новички и опытные водители, желающие легализовать деятельность | Pain points: страх ошибок, незнание новых правил.\nKEYWORDS: как зарегистрировать авто в такси, регистрация автомобиля для такси\nWORD COUNT: minWords: 100, maxWords: 180\nROLE: intro\nsourceHint: Internal KB (основные требования), External KB (актуальность 2024)\nsemanticFingerprint: Вводный абзац, раскрывающий значимость правильной регистрации авто для такси в 2024 году.\nevidenceStrength: internal-tested\n",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 180,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-2",
+                "tag": "p",
+                "keywords": [
+                  "пошаговая инструкция",
+                  "документы для регистрации такси"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, какие этапы и документы понадобятся для успешной регистрации — всё по шагам и без лишних сложностей.",
+                "intent": "Кратко анонсировать структуру пошагового руководства и мотивировать пользователя к дальнейшему изучению.",
+                "audiences": "Владельцы авто, готовые приступить к оформлению, ищущие чёткий план действий.",
+                "selfPrompt": "CONTEXT: Generate transition/preview paragraph (p) for h2 'Как зарегистрировать авто в такси: пошаговая инструкция 2024'.\nGOAL: Анонсировать, что далее пользователь получит подробную пошаговую инструкцию, узнает о необходимых документах и сможет избежать типичных ошибок.\nAUDIENCE: Водители, готовые к оформлению | Pain points: неуверенность в последовательности действий.\nKEYWORDS: пошаговая инструкция, документы для регистрации такси\nWORD COUNT: minWords: 60, maxWords: 120\nROLE: transition/preview\nsourceHint: Internal KB (этапы регистрации), External KB (структура онлайн-регистрации)\nsemanticFingerprint: Переходный абзац, подготавливающий к изучению структуры и этапов регистрации.\nevidenceStrength: internal-tested\n",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 120,
+                  "actualContent": ""
+                }
+              }
+            ]
+          }
+        ]
       }
     ],
     "order": 16
@@ -1340,5 +1409,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T17:29:57.829Z";
+export const lastUpdated = "2025-10-26T17:30:56.809Z";
 export const generatedBy = "menu-persist-api";
