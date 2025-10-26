@@ -1234,7 +1234,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-26T16:26:27.424Z",
-        "updatedAt": "2025-10-26T16:36:12.598Z",
+        "updatedAt": "2025-10-26T16:37:19.360Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как получить разрешение на такси на свой автомобиль самозанятому в Яндекс Такси: пошаговая инструкция, требования, советы. Начните работать легально!",
@@ -1550,6 +1550,206 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "часто задаваемые вопросы по разрешению на такси",
+              "проблемы при оформлении разрешения",
+              "сроки рассмотрения заявления",
+              "отказ в выдаче разрешения",
+              "штрафы за отсутствие разрешения",
+              "особенности для самозанятых водителей",
+              "онлайн сервисы для оформления"
+            ],
+            "taxonomy": "FAQ",
+            "attention": "В этом разделе собраны самые актуальные вопросы и ответы, которые помогут избежать ошибок и получить разрешение на такси максимально быстро и без лишних сложностей.",
+            "intent": "Дать пользователю быстрые и точные ответы на типовые вопросы, возникающие при самостоятельном оформлении разрешения на такси для самозанятых в Яндекс Такси.",
+            "audiences": "Самозанятые водители такси, новички в сфере пассажирских перевозок, пользователи, столкнувшиеся с трудностями при оформлении разрешения или желающие узнать нюансы процесса.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 FAQ section for page \"Как получить разрешение на такси самозанятому в Яндекс Такси\"\n\nGOAL: Сформировать структурированный блок часто задаваемых вопросов и ответов, охватывающий типовые проблемы, сроки, причины отказа, штрафы и особенности оформления разрешения для самозанятых. Ответы должны быть основаны на актуальных требованиях законодательства, опыте оформления через Госуслуги/МФЦ и реальных кейсах водителей. Не повторять темы и ключевые слова из предыдущих разделов, использовать только новые аспекты и формулировки.\n\nAUDIENCE: Самозанятые водители, начинающие и опытные, которые хотят быстро разобраться в нюансах оформления разрешения и избежать типичных ошибок. Уровень: начальный-средний. Pain points: непонимание сроков, страх отказа, опасения по поводу штрафов, неуверенность в правильности действий.\n\nKEYWORDS TO INTEGRATE:\n[часто задаваемые вопросы по разрешению на такси, проблемы при оформлении разрешения, сроки рассмотрения заявления, отказ в выдаче разрешения, штрафы за отсутствие разрешения, особенности для самозанятых водителей, онлайн сервисы для оформления]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 heading with nested H3 for each FAQ, each H3 with a supporting paragraph.\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: требования, оформление, автоматизация, ошибки, ответственность\n- SECONDARY: Apply insights from External KB: типовые вопросы пользователей, статистика отказов, советы по ускорению процесса\n\nQUALITY CRITERIA:\n- Actionable (конкретные рекомендации)\n- Specific (без общих фраз)\n- Data-backed (ссылки на законодательство, реальные сроки)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальный блок с ответами на вопросы, не раскрытые в предыдущих разделах, с акцентом на реальные проблемы и решения.\n- sourceHint: Internal KB (основное), External KB (дополнение)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Каждый H3 — отдельный вопрос, каждый P — развернутый ответ с примерами или ссылками на сервисы.\n- Включить 2-3 внутренних перелинковки на смежные статьи (например, о регистрации самозанятого, автоматизации путевых листов, штрафах за отсутствие разрешения).\n- FAQPage schema readiness: отметить возможность разметки для расширенных сниппетов.\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)\n",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "keywords": [
+                  "часто задаваемые вопросы по разрешению на такси"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Краткое введение к блоку FAQ, объясняющее, почему важно знать ответы на типовые вопросы перед оформлением разрешения.",
+                "intent": "Ввести пользователя в раздел FAQ, обозначить его пользу и актуальность для самозанятых водителей.",
+                "audiences": "Новички и опытные самозанятые водители, которые хотят быстро получить ответы на свои вопросы.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for FAQ section 'FAQ' on page 'Как получить разрешение на такси самозанятому в Яндекс Такси'.\nGOAL: Кратко объяснить, зачем читать FAQ, какие вопросы здесь раскрываются, и как это поможет избежать ошибок при оформлении разрешения.\nKEYWORDS TO INTEGRATE: [часто задаваемые вопросы по разрешению на такси]\nWORD COUNT: minWords: 70, maxWords: 130\nMARKDOWN/MDX SYNTAX: Paragraph\nWRITING STYLE: Narrative\nCONTENT FORMAT: Simple\nsemanticFingerprint: Вводный абзац, мотивирующий изучить FAQ для экономии времени и предотвращения ошибок.\nsourceHint: Internal KB (основное), External KB (дополнение)\nevidenceStrength: internal-tested\n",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "keywords": [
+                  "проблемы при оформлении разрешения",
+                  "ошибки в заявлении",
+                  "отказ в выдаче разрешения"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, какие ошибки чаще всего приводят к отказу и как их избежать.",
+                "intent": "Ответить на вопрос о причинах отказа в выдаче разрешения и дать рекомендации по их предотвращению.",
+                "audiences": "Самозанятые водители, которые впервые подают заявление или уже столкнулись с отказом.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item for 'FAQ' section: 'Какие ошибки чаще всего приводят к отказу в выдаче разрешения на такси?'\nGOAL: Подробно раскрыть основные причины отказа, дать советы по их предотвращению, опираясь на внутренний опыт и типовые ошибки из внешних источников.\nKEYWORDS TO INTEGRATE: [проблемы при оформлении разрешения, ошибки в заявлении, отказ в выдаче разрешения]\nWORD COUNT: minWords: 150, maxWords: 220\nMARKDOWN/MDX SYNTAX: H3 heading + supporting paragraph\nWRITING STYLE: Narrative\nCONTENT FORMAT: Simple\nsemanticFingerprint: Анализ типовых ошибок и причин отказа при оформлении разрешения для самозанятых.\nsourceHint: Internal KB (основное), External KB (дополнение)\nevidenceStrength: internal-tested\ninternalLinks: ['/blog/samozanyatyy-taksi-oshibki', '/blog/putevye-listy-dlya-taksi']\n",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "keywords": [
+                      "ошибки в заявлении"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Детальный разбор ошибок, которые чаще всего допускают самозанятые при подаче заявления.",
+                    "intent": "Дать конкретные примеры ошибок и объяснить, как их избежать.",
+                    "audiences": "Водители, впервые оформляющие разрешение.",
+                    "selfPrompt": "CONTEXT: Generate paragraph for FAQ item 'Какие ошибки чаще всего приводят к отказу в выдаче разрешения на такси?' (h3-FAQ-1)\nGOAL: Перечислить распространённые ошибки, дать советы по их предотвращению, сослаться на внутренний опыт и статистику отказов.\nKEYWORDS TO INTEGRATE: [ошибки в заявлении]\nWORD COUNT: minWords: 60, maxWords: 120\nMARKDOWN/MDX SYNTAX: Paragraph\nWRITING STYLE: Narrative\nCONTENT FORMAT: Simple\nsemanticFingerprint: Список типовых ошибок и рекомендации по их предотвращению.\nsourceHint: Internal KB (основное), External KB (дополнение)\nevidenceStrength: internal-tested\n",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-2",
+                "tag": "h3",
+                "keywords": [
+                  "сроки рассмотрения заявления",
+                  "ожидание разрешения",
+                  "онлайн сервисы для оформления"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, сколько времени занимает оформление разрешения и как ускорить процесс.",
+                "intent": "Дать пользователю четкое понимание сроков рассмотрения заявления и способов ускорения процедуры.",
+                "audiences": "Водители, которые хотят быстро начать работать и минимизировать время ожидания.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item for 'FAQ' section: 'Сколько времени занимает оформление разрешения на такси и можно ли ускорить процесс?'\nGOAL: Описать стандартные сроки рассмотрения, возможные задержки и способы ускорения оформления (например, через онлайн сервисы или автоматизацию).\nKEYWORDS TO INTEGRATE: [сроки рассмотрения заявления, ожидание разрешения, онлайн сервисы для оформления]\nWORD COUNT: minWords: 150, maxWords: 220\nMARKDOWN/MDX SYNTAX: H3 heading + supporting paragraph\nWRITING STYLE: Narrative\nCONTENT FORMAT: Simple\nsemanticFingerprint: Разъяснение сроков и советов по ускорению получения разрешения.\nsourceHint: Internal KB (основное), External KB (дополнение)\nevidenceStrength: internal-tested\ninternalLinks: ['/blog/avtomatizatsiya-putevykh-listov', '/blog/registratsiya-samozanyatogo']\n",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "ожидание разрешения"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Практические советы по сокращению времени ожидания разрешения.",
+                    "intent": "Пояснить, как действовать, чтобы ускорить процесс оформления.",
+                    "audiences": "Водители, которым важно быстро начать работу.",
+                    "selfPrompt": "CONTEXT: Generate paragraph for FAQ item 'Сколько времени занимает оформление разрешения на такси и можно ли ускорить процесс?' (FAQ-2)\nGOAL: Дать конкретные сроки, описать факторы, влияющие на скорость, и предложить способы ускорения (например, онлайн оформление, автоматизация).\nKEYWORDS TO INTEGRATE: [ожидание разрешения]\nWORD COUNT: minWords: 60, maxWords: 120\nMARKDOWN/MDX SYNTAX: Paragraph\nWRITING STYLE: Narrative\nCONTENT FORMAT: Simple\nsemanticFingerprint: Практические рекомендации по ускорению получения разрешения.\nsourceHint: Internal KB (основное), External KB (дополнение)\nevidenceStrength: internal-tested\n",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-3",
+                "tag": "h3",
+                "keywords": [
+                  "штрафы за отсутствие разрешения",
+                  "ответственность самозанятого водителя",
+                  "контроль со стороны агрегаторов"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, какие штрафы и последствия грозят за работу без разрешения на такси.",
+                "intent": "Разъяснить ответственность и возможные санкции за отсутствие разрешения у самозанятого водителя.",
+                "audiences": "Водители, которые сомневаются, стоит ли оформлять разрешение, и хотят понять риски.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item for 'FAQ' section: 'Какая ответственность и штрафы предусмотрены за работу без разрешения на такси?'\nGOAL: Подробно описать административную ответственность, размеры штрафов, последствия для самозанятых и роль агрегаторов в контроле.\nKEYWORDS TO INTEGRATE: [штрафы за отсутствие разрешения, ответственность самозанятого водителя, контроль со стороны агрегаторов]\nWORD COUNT: minWords: 150, maxWords: 220\nMARKDOWN/MDX SYNTAX: H3 heading + supporting paragraph\nWRITING STYLE: Narrative\nCONTENT FORMAT: Simple\nsemanticFingerprint: Разъяснение санкций и штрафов для самозанятых водителей без разрешения.\nsourceHint: Internal KB (основное), External KB (дополнение)\nevidenceStrength: internal-tested\ninternalLinks: ['/blog/shtrafy-za-taksi-bez-razresheniya', '/blog/zakon-o-taksi']\n",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "ответственность самозанятого водителя"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Конкретные примеры штрафов и последствий для самозанятых.",
+                    "intent": "Дать водителю чёткое понимание рисков и необходимости легализации.",
+                    "audiences": "Водители, которые хотят избежать штрафов и проблем с законом.",
+                    "selfPrompt": "CONTEXT: Generate paragraph for FAQ item 'Какая ответственность и штрафы предусмотрены за работу без разрешения на такси?' (FAQ-3)\nGOAL: Привести примеры штрафов, объяснить, как агрегаторы контролируют наличие разрешения, и почему важно работать легально.\nKEYWORDS TO INTEGRATE: [ответственность самозанятого водителя]\nWORD COUNT: minWords: 60, maxWords: 120\nMARKDOWN/MDX SYNTAX: Paragraph\nWRITING STYLE: Narrative\nCONTENT FORMAT: Simple\nsemanticFingerprint: Примеры штрафов и объяснение важности легализации.\nsourceHint: Internal KB (основное), External KB (дополнение)\nevidenceStrength: internal-tested\n",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-4",
+                "tag": "h3",
+                "keywords": [
+                  "особенности для самозанятых водителей",
+                  "онлайн сервисы для оформления",
+                  "автоматизация документов"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, какие сервисы и инструменты помогут самозанятым быстро оформить разрешение и избежать бюрократии.",
+                "intent": "Рассказать о современных онлайн сервисах и автоматизации, которые упрощают оформление разрешения для самозанятых.",
+                "audiences": "Самозанятые, которые ценят время и хотят минимизировать бумажную работу.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item for 'FAQ' section: 'Какие онлайн сервисы и инструменты помогут самозанятому быстро оформить разрешение на такси?'\nGOAL: Описать преимущества автоматизации, перечислить полезные сервисы, дать советы по их использованию, опираясь на внутренний опыт и внешние рекомендации.\nKEYWORDS TO INTEGRATE: [особенности для самозанятых водителей, онлайн сервисы для оформления, автоматизация документов]\nWORD COUNT: minWords: 150, maxWords: 220\nMARKDOWN/MDX SYNTAX: H3 heading + supporting paragraph\nWRITING STYLE: Narrative\nCONTENT FORMAT: Simple\nsemanticFingerprint: Обзор сервисов и инструментов для автоматизации оформления разрешения.\nsourceHint: Internal KB (основное), External KB (дополнение)\nevidenceStrength: internal-tested\ninternalLinks: ['/blog/avtomatizatsiya-putevykh-listov', '/blog/servisy-dlya-taksi']\n",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "автоматизация документов"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Практические рекомендации по выбору и использованию сервисов для автоматизации.",
+                    "intent": "Дать самозанятым инструменты для упрощения оформления разрешения.",
+                    "audiences": "Водители, которые хотят сократить время и снизить риск ошибок.",
+                    "selfPrompt": "CONTEXT: Generate paragraph for FAQ item 'Какие онлайн сервисы и инструменты помогут самозанятому быстро оформить разрешение на такси?' (FAQ-4)\nGOAL: Перечислить сервисы, объяснить их преимущества, дать советы по автоматизации оформления документов.\nKEYWORDS TO INTEGRATE: [автоматизация документов]\nWORD COUNT: minWords: 60, maxWords: 120\nMARKDOWN/MDX SYNTAX: Paragraph\nWRITING STYLE: Narrative\nCONTENT FORMAT: Simple\nsemanticFingerprint: Практические советы по автоматизации оформления разрешения.\nsourceHint: Internal KB (основное), External KB (дополнение)\nevidenceStrength: internal-tested\n",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1582,5 +1782,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T16:52:43.463Z";
+export const lastUpdated = "2025-10-26T16:53:37.434Z";
 export const generatedBy = "menu-persist-api";
