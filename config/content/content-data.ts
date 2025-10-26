@@ -762,7 +762,7 @@ export const contentData = {
       },
       {
         "id": "mvaoq2em7oy0rvdmb4ytmmnb",
-        "title": "как подключить свою машину к яндекс такси",
+        "title": "Как подключить свою машину к Яндекс Такси: пошаговая инструкция и условия",
         "href": "/blog/kak-podklyuchit-svoyu-mashinu-k-yandeks-taksi",
         "roles": [
           "guest"
@@ -1329,5 +1329,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T17:50:35.246Z";
+export const lastUpdated = "2025-10-26T17:50:43.492Z";
 export const generatedBy = "menu-persist-api";
