@@ -1234,7 +1234,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-26T16:26:27.424Z",
-        "updatedAt": "2025-10-26T16:34:53.711Z",
+        "updatedAt": "2025-10-26T16:36:12.598Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как получить разрешение на такси на свой автомобиль самозанятому в Яндекс Такси: пошаговая инструкция, требования, советы. Начните работать легально!",
@@ -1445,6 +1445,111 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "пошаговый процесс оформления разрешения",
+              "самостоятельное получение разрешения через Госуслуги",
+              "документы для подачи заявления",
+              "онлайн оформление разрешения на такси",
+              "алгоритм действий для самозанятых",
+              "практические советы по оформлению",
+              "ошибки при подаче документов"
+            ],
+            "taxonomy": "HowTo",
+            "attention": "В этом разделе вы получите подробную, практическую инструкцию по самостоятельному оформлению разрешения на такси для самозанятого через онлайн-сервисы, с акцентом на реальные шаги и нюансы процесса.",
+            "intent": "Дать читателю четкий, структурированный алгоритм действий для самостоятельного получения разрешения на такси, включая подготовку документов, подачу заявления через Госуслуги или МФЦ и практические советы по успешному прохождению процедуры.",
+            "audiences": "Самозанятые водители такси с минимальным или средним опытом, которые хотят быстро и без ошибок получить разрешение на перевозку пассажиров на собственном автомобиле через Яндекс Такси.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 section on 'Пошаговая инструкция: как оформить разрешение на такси самозанятому через Госуслуги или МФЦ' for page 'Как получить разрешение на такси самозанятому в Яндекс Такси'\n\nGOAL: Предоставить подробный, структурированный и максимально практичный алгоритм самостоятельного оформления разрешения на такси для самозанятых, с учетом актуальных требований 2025 года, особенностей подачи через Госуслуги и МФЦ, а также распространённых ошибок и лайфхаков.\n\nAUDIENCE: Самозанятые водители, начинающие и с небольшим опытом | Level: beginner/intermediate | Pain points: боязнь бюрократии, страх отказа, нехватка информации о документах и этапах, желание ускорить процесс.\n\nKEYWORDS TO INTEGRATE:\n[пошаговый процесс оформления разрешения, самостоятельное получение разрешения через Госуслуги, документы для подачи заявления, онлайн оформление разрешения на такси, алгоритм действий для самозанятых, практические советы по оформлению, ошибки при подаче документов]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: h2 section with nested h3, p, ol, code as per structure\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: [процедура оформления разрешения, автоматизация подачи документов, требования к путевым листам]\n- SECONDARY: Apply insights from External KB: [инструкция по подаче заявления через Госуслуги, советы по заполнению, типовые ошибки]\n\nQUALITY CRITERIA:\n- Actionable (пошаговые действия, конкретные советы)\n- Specific (точные формулировки, ссылки на сервисы)\n- Data-backed (актуальные требования, подтвержденные источниками)\n- No fluff (никакой «воды»)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальный, практический алгоритм самостоятельного оформления разрешения на такси для самозанятых через Госуслуги или МФЦ, с учетом новых требований и автоматизации.\n- sourceHint: Internal KB (основной алгоритм), External KB (дополнительные советы и ошибки)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nINTERLINK PLANNING: Включить ссылки на страницы о регистрации самозанятого, подготовке автомобиля, автоматизации путевых листов.\n\nSCHEMA READINESS: HowToPage (структурированные шаги)\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-3-1",
+                "tag": "p",
+                "keywords": [
+                  "алгоритм подачи заявления",
+                  "онлайн сервисы для оформления"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Краткое введение в пошаговый процесс, чтобы пользователь сразу понял, что его ждет простая и понятная инструкция.",
+                "intent": "Ввести пользователя в суть раздела, обозначить, что далее будет представлен подробный алгоритм самостоятельного оформления разрешения на такси для самозанятых.",
+                "audiences": "Новички и водители с небольшим опытом, которые боятся запутаться в этапах оформления.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate intro paragraph for h2 'Пошаговая инструкция: как оформить разрешение на такси самозанятому через Госуслуги или МФЦ' on page 'Как получить разрешение на такси самозанятому в Яндекс Такси'\n\nGOAL: Кратко объяснить, что далее будет пошаговый, простой и современный алгоритм оформления разрешения на такси для самозанятых через онлайн-сервисы, с акцентом на практичность и отсутствие лишней бюрократии.\n\nAUDIENCE: Самозанятые водители, начинающие | Level: beginner | Pain points: страх сложностей, нехватка информации.\n\nKEYWORDS TO INTEGRATE: [алгоритм подачи заявления, онлайн сервисы для оформления]\nWORD COUNT: minWords: 90, maxWords: 170\nMARKDOWN/MDX SYNTAX: paragraph\nWRITING STYLE: Story-driven, engaging storytelling approach\nCONTENT FORMAT: Easy to understand, basic language\nsourceHint: Internal KB (структура процесса), External KB (акцент на онлайн-сервисы)\nevidenceStrength: internal-tested\nsemanticFingerprint: Вводный абзац, мотивирующий к самостоятельному прохождению всех этапов оформления разрешения."
+              },
+              {
+                "id": "h3-3-2",
+                "tag": "h3",
+                "keywords": [
+                  "этапы оформления разрешения",
+                  "документы для подачи",
+                  "подача заявления через Госуслуги",
+                  "ошибки при оформлении"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Подробная инструкция с конкретными шагами, списком документов и советами по успешному прохождению процедуры.",
+                "intent": "Детализировать каждый этап оформления разрешения на такси для самозанятого, включая подготовку документов, онлайн-подачу и проверку статуса.",
+                "audiences": "Самозанятые водители, которые хотят избежать ошибок и ускорить процесс получения разрешения.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h3 subsection 'Пошаговый алгоритм: подготовка документов, подача заявления и получение разрешения' under h2 'Пошаговая инструкция: как оформить разрешение на такси самозанятому через Госуслуги или МФЦ' for page 'Как получить разрешение на такси самозанятому в Яндекс Такси'\n\nGOAL: Подробно расписать этапы оформления разрешения на такси для самозанятого: какие документы нужны, как их подготовить, как подать заявление через Госуслуги или МФЦ, как проверить статус и получить результат. Включить советы по автоматизации и типичные ошибки.\n\nAUDIENCE: Самозанятые водители | Level: beginner/intermediate | Pain points: неуверенность в правильности действий, страх отказа, нехватка времени.\n\nKEYWORDS TO INTEGRATE: [этапы оформления разрешения, документы для подачи, подача заявления через Госуслуги, ошибки при оформлении]\nWORD COUNT: minWords: 180, maxWords: 280\nMARKDOWN/MDX SYNTAX: h3 with nested p, ol, code\nWRITING STYLE: Story-driven, engaging storytelling approach\nCONTENT FORMAT: Easy to understand, basic language\nsourceHint: Internal KB (основные этапы и документы), External KB (инструкция по Госуслугам, ошибки)\nevidenceStrength: internal-tested | external-peer-reviewed\nsemanticFingerprint: Подробная инструкция по всем этапам оформления разрешения для самозанятых, включая автоматизацию и лайфхаки.\nINTERLINK PLANNING: Включить ссылку на страницу о подготовке автомобиля и автоматизации путевых листов.",
+                "additionalData": {
+                  "minWords": 180,
+                  "maxWords": 280,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "перечень необходимых документов",
+                      "подготовка заявления"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Пояснение, какие документы и данные понадобятся для старта процедуры.",
+                    "intent": "Дать пользователю четкое понимание, что нужно подготовить до подачи заявления, чтобы не столкнуться с отказом.",
+                    "audiences": "Водители, впервые оформляющие разрешение, которые не уверены в перечне документов.",
+                    "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate paragraph under h3 'Пошаговый алгоритм: подготовка документов, подача заявления и получение разрешения' for h2 'Пошаговая инструкция: как оформить разрешение на такси самозанятому через Госуслуги или МФЦ'\n\nGOAL: Перечислить и кратко описать все необходимые документы и данные для подачи заявления на разрешение, с акцентом на актуальные требования 2025 года.\n\nAUDIENCE: Самозанятые водители | Level: beginner | Pain points: страх забыть важный документ, неуверенность в актуальности списка.\n\nKEYWORDS TO INTEGRATE: [перечень необходимых документов, подготовка заявления]\nWORD COUNT: minWords: 75, maxWords: 140\nMARKDOWN/MDX SYNTAX: paragraph\nWRITING STYLE: Story-driven, engaging storytelling approach\nCONTENT FORMAT: Easy to understand, basic language\nsourceHint: Internal KB (актуальный список документов), External KB (советы по подготовке)\nevidenceStrength: internal-tested\nsemanticFingerprint: Краткий и актуальный список документов для подачи заявления на разрешение."
+                  },
+                  {
+                    "id": "ol-3-2-2",
+                    "tag": "ol",
+                    "keywords": [
+                      "шаги подачи заявления",
+                      "онлайн оформление через Госуслуги"
+                    ],
+                    "taxonomy": "HowTo",
+                    "attention": "Пошаговый список действий, чтобы пользователь не запутался и не пропустил ни одного этапа.",
+                    "intent": "Дать пользователю четкую последовательность действий для самостоятельного оформления разрешения через Госуслуги или МФЦ.",
+                    "audiences": "Водители, которые хотят быстро и без ошибок пройти процедуру.",
+                    "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate ordered list (6-8 шагов) under h3 'Пошаговый алгоритм: подготовка документов, подача заявления и получение разрешения' for h2 'Пошаговая инструкция: как оформить разрешение на такси самозанятому через Госуслуги или МФЦ'\n\nGOAL: Сформировать подробный, но лаконичный чек-лист шагов по оформлению разрешения: от сбора документов до получения результата, с акцентом на онлайн-подачу и автоматизацию.\n\nAUDIENCE: Самозанятые водители | Level: beginner/intermediate | Pain points: боязнь пропустить этап, желание ускорить процесс.\n\nKEYWORDS TO INTEGRATE: [шаги подачи заявления, онлайн оформление через Госуслуги]\nWORD COUNT: minWords: 50, maxWords: 90\nMARKDOWN/MDX SYNTAX: ordered list (ol), 6-8 пунктов, каждый пункт — 1-2 предложения\nWRITING STYLE: Story-driven, engaging storytelling approach\nCONTENT FORMAT: Easy to understand, basic language\nsourceHint: Internal KB (алгоритм действий), External KB (инструкция по Госуслугам)\nevidenceStrength: internal-tested | external-peer-reviewed\nsemanticFingerprint: Четкий чек-лист всех этапов оформления разрешения для самозанятых."
+                  },
+                  {
+                    "id": "code-3-2-3",
+                    "tag": "code",
+                    "keywords": [
+                      "пример заполнения заявления",
+                      "шаблон для Госуслуг"
+                    ],
+                    "taxonomy": "technical",
+                    "attention": "Пример кода или шаблона для самостоятельного заполнения заявления онлайн.",
+                    "intent": "Дать пользователю наглядный пример, как правильно заполнить заявление на разрешение через Госуслуги.",
+                    "audiences": "Водители, которые боятся ошибиться при заполнении онлайн-формы.",
+                    "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate code block (пример JSON/текстового шаблона) under h3 'Пошаговый алгоритм: подготовка документов, подача заявления и получение разрешения' for h2 'Пошаговая инструкция: как оформить разрешение на такси самозанятому через Госуслуги или МФЦ'\n\nGOAL: Показать пример заполнения онлайн-заявления или шаблон для Госуслуг, чтобы пользователь мог свериться и избежать ошибок.\n\nAUDIENCE: Самозанятые водители | Level: beginner | Pain points: страх ошибиться в форме, неуверенность в правильности заполнения.\n\nKEYWORDS TO INTEGRATE: [пример заполнения заявления, шаблон для Госуслуг]\nWORD COUNT: minWords: 20, maxWords: 50\nMARKDOWN/MDX SYNTAX: code block (JSON или текстовый шаблон)\nWRITING STYLE: Story-driven, engaging storytelling approach\nCONTENT FORMAT: Easy to understand, basic language\nsourceHint: Internal KB (шаблон заявления), External KB (примеры заполнения)\nevidenceStrength: internal-tested\nsemanticFingerprint: Пример или шаблон для самостоятельного заполнения заявления на разрешение."
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1477,5 +1582,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T16:51:36.716Z";
+export const lastUpdated = "2025-10-26T16:52:43.463Z";
 export const generatedBy = "menu-persist-api";
