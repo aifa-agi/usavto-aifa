@@ -1290,7 +1290,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-26T17:07:45.493Z",
-        "updatedAt": "2025-10-26T17:16:26.145Z",
+        "updatedAt": "2025-10-26T17:17:29.713Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как зарегистрировать авто в такси в 2024 году: пошаговая инструкция, список документов, советы по лицензии и онлайн-подаче заявки. Начните работать легально!",
@@ -1642,6 +1642,206 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "частые вопросы о регистрации такси",
+              "проблемы при оформлении лицензии",
+              "отказ в регистрации автомобиля",
+              "сроки рассмотрения заявки",
+              "дополнительные требования для такси",
+              "ошибки при подаче документов",
+              "разъяснения по путевым листам"
+            ],
+            "taxonomy": "FAQ",
+            "attention": "Получите быстрые и точные ответы на самые распространённые вопросы о регистрации автомобиля для работы в такси — избежите ошибок и ускорите процесс оформления.",
+            "intent": "Дать пользователю структурированные и достоверные ответы на ключевые вопросы, возникающие при регистрации автомобиля в такси, чтобы снять сомнения и помочь избежать типичных ошибок.",
+            "audiences": "Владельцы автомобилей, планирующие работать в такси, которые сталкиваются с неясностями в процессе регистрации, оформлении документов и получении лицензии; уровень — начинающий и средний.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 FAQ section for page \"Как зарегистрировать авто в такси: пошаговая инструкция 2024\"\n\nGOAL: Сформировать блок часто задаваемых вопросов, который закрывает типовые сомнения и проблемы пользователей, связанные с регистрацией автомобиля для работы в такси, включая причины отказа, сроки, ошибки в документах и дополнительные требования.\n\nAUDIENCE: Владельцы авто, рассматривающие работу в такси, уровень — начинающий/средний, испытывающие трудности с бюрократией и поиском достоверной информации.\n\nKEYWORDS TO INTEGRATE:\n[частые вопросы о регистрации такси, проблемы при оформлении лицензии, отказ в регистрации автомобиля, сроки рассмотрения заявки, дополнительные требования для такси, ошибки при подаче документов, разъяснения по путевым листам]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: # [FAQ] (h2)\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: юридические аспекты регистрации, оформление путевых листов, медицинские осмотры, основные требования\n- SECONDARY: Apply insights from External KB: причины отказа, сроки рассмотрения, ошибки в документах, специфика подачи через Госуслуги\n\nQUALITY CRITERIA:\n- Actionable (конкретные рекомендации и разъяснения)\n- Specific (ответы на реальные вопросы пользователей)\n- Data-backed (с опорой на нормативные требования и практику)\n- No fluff (никакой воды)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Данный раздел содержит уникальные ответы на часто задаваемые вопросы по регистрации авто в такси, не повторяя информацию из предыдущих разделов.\n- sourceHint: Internal KB (юридические и технические требования), External KB (практические вопросы и причины отказа)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- В каждом h3 — отдельный вопрос, раскрывающий уникальный аспект (например, причины отказа, сроки, ошибки, дополнительные требования)\n- В каждом p — лаконичный, но полный ответ, с практическими советами\n- Включить план внутренних перелинковок: 2–3 анкоры на страницы о лицензировании, путевых листах, медицинских осмотрах\n- Подготовить раздел к разметке FAQPage для расширенных сниппетов\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)\n",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "keywords": [
+                  "частые вопросы о регистрации такси"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Краткое введение к блоку FAQ поможет быстро сориентироваться и найти нужный ответ.",
+                "intent": "Ввести пользователя в раздел FAQ, объяснить его пользу и структуру.",
+                "audiences": "Владельцы авто, которые ищут быстрые ответы на типовые вопросы по регистрации такси.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for FAQ section on 'Как зарегистрировать авто в такси: пошаговая инструкция 2024'.\nGOAL: Кратко объяснить, что в этом разделе собраны самые частые вопросы и ответы по регистрации авто для такси, чтобы пользователь мог быстро найти решение своей проблемы.\nAUDIENCE: Новички и опытные водители, которым важно быстро разобраться в нюансах оформления.\nKEYWORDS TO INTEGRATE: [частые вопросы о регистрации такси]\nWORD COUNT: minWords: 70, maxWords: 130\nMARKDOWN/MDX SYNTAX: Paragraph\nWRITING STYLE: Narrative\nCONTENT FORMAT: Simple\nE-E-A-T: semanticFingerprint: Вводный абзац к FAQ, не дублирует другие разделы; sourceHint: Internal KB (структура раздела); evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "keywords": [
+                  "проблемы при оформлении лицензии",
+                  "ошибки при подаче документов",
+                  "частые вопросы о регистрации такси"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, какие ошибки чаще всего приводят к отказу в регистрации такси и как их избежать.",
+                "intent": "Объяснить основные ошибки при подаче документов на регистрацию автомобиля в такси и дать рекомендации по их предотвращению.",
+                "audiences": "Владельцы авто, впервые оформляющие документы для такси, которые опасаются отказа из-за ошибок.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item for 'FAQ' section: 'Какие ошибки чаще всего допускают при подаче документов на регистрацию авто в такси?'\nGOAL: Перечислить и объяснить типовые ошибки при оформлении документов для регистрации такси, дать советы по их предотвращению.\nAUDIENCE: Новички, которые впервые сталкиваются с бюрократией.\nKEYWORDS TO INTEGRATE: [проблемы при оформлении лицензии, ошибки при подаче документов, частые вопросы о регистрации такси]\nWORD COUNT: minWords: 150, maxWords: 220\nMARKDOWN/MDX SYNTAX: ### [Вопрос] (h3) + p (ответ)\nE-E-A-T: semanticFingerprint: Вопрос-ответ по ошибкам в документах для регистрации такси; sourceHint: Internal KB (требования к документам), External KB (типовые ошибки); evidenceStrength: internal-tested | external-peer-reviewed.\nInterlink planning: Внутренняя ссылка на страницу о документах для лицензии такси.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "keywords": [
+                      "ошибки при подаче документов"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Практические советы помогут избежать отказа из-за ошибок в документах.",
+                    "intent": "Дать конкретные рекомендации по правильному заполнению и подаче документов.",
+                    "audiences": "Владельцы авто, оформляющие документы для такси.",
+                    "selfPrompt": "CONTEXT: Generate paragraph with actionable tips on avoiding document errors for taxi registration.\nGOAL: Дать лаконичный и полезный ответ, как избежать типовых ошибок при подаче документов на регистрацию авто в такси.\nKEYWORDS TO INTEGRATE: [ошибки при подаче документов]\nWORD COUNT: minWords: 60, maxWords: 120\nMARKDOWN/MDX SYNTAX: Paragraph\nE-E-A-T: semanticFingerprint: Практические советы по корректному оформлению документов; sourceHint: Internal KB (документы), External KB (ошибки); evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-2",
+                "tag": "h3",
+                "keywords": [
+                  "отказ в регистрации автомобиля",
+                  "причины отказа при оформлении такси",
+                  "частые вопросы о регистрации такси"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Поймите, по каким причинам могут отказать в регистрации автомобиля для такси и как этого избежать.",
+                "intent": "Разъяснить основные причины отказа в регистрации автомобиля для работы в такси и дать рекомендации по их устранению.",
+                "audiences": "Владельцы авто, которые получили отказ или хотят заранее избежать проблем с регистрацией.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item for 'FAQ' section: 'Почему могут отказать в регистрации автомобиля для такси?'\nGOAL: Перечислить и объяснить основные причины отказа в регистрации авто для такси, дать рекомендации по их устранению.\nAUDIENCE: Водители, которые столкнулись с отказом или хотят избежать ошибок.\nKEYWORDS TO INTEGRATE: [отказ в регистрации автомобиля, причины отказа при оформлении такси, частые вопросы о регистрации такси]\nWORD COUNT: minWords: 150, maxWords: 220\nMARKDOWN/MDX SYNTAX: ### [Вопрос] (h3) + p (ответ)\nE-E-A-T: semanticFingerprint: Вопрос-ответ по причинам отказа в регистрации такси; sourceHint: Internal KB (требования к авто), External KB (причины отказа); evidenceStrength: internal-tested | external-peer-reviewed.\nInterlink planning: Внутренняя ссылка на страницу о технических требованиях к автомобилю.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "причины отказа при оформлении такси"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Узнайте, как избежать отказа и ускорить процесс регистрации.",
+                    "intent": "Дать конкретные рекомендации по устранению причин отказа.",
+                    "audiences": "Владельцы авто, получившие отказ или желающие его избежать.",
+                    "selfPrompt": "CONTEXT: Generate paragraph with actionable advice on avoiding registration refusal for taxi.\nGOAL: Кратко и понятно объяснить, что делать при отказе и как его избежать.\nKEYWORDS TO INTEGRATE: [причины отказа при оформлении такси]\nWORD COUNT: minWords: 60, maxWords: 120\nMARKDOWN/MDX SYNTAX: Paragraph\nE-E-A-T: semanticFingerprint: Практические рекомендации по устранению причин отказа; sourceHint: Internal KB (требования), External KB (причины отказа); evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-3",
+                "tag": "h3",
+                "keywords": [
+                  "сроки рассмотрения заявки",
+                  "регистрация авто для такси сроки",
+                  "частые вопросы о регистрации такси"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, сколько времени занимает регистрация автомобиля для работы в такси и от чего зависят сроки.",
+                "intent": "Разъяснить пользователю, каковы стандартные сроки рассмотрения заявки на регистрацию авто для такси и что может повлиять на их увеличение.",
+                "audiences": "Владельцы авто, планирующие работу в такси и рассчитывающие сроки оформления.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item for 'FAQ' section: 'Сколько времени занимает регистрация автомобиля для такси?'\nGOAL: Объяснить стандартные сроки регистрации авто для такси и факторы, влияющие на их изменение.\nAUDIENCE: Водители, которым важно быстро приступить к работе.\nKEYWORDS TO INTEGRATE: [сроки рассмотрения заявки, регистрация авто для такси сроки, частые вопросы о регистрации такси]\nWORD COUNT: minWords: 150, maxWords: 220\nMARKDOWN/MDX SYNTAX: ### [Вопрос] (h3) + p (ответ)\nE-E-A-T: semanticFingerprint: Вопрос-ответ по срокам регистрации авто для такси; sourceHint: Internal KB (процедура регистрации), External KB (сроки рассмотрения); evidenceStrength: internal-tested | external-peer-reviewed.\nInterlink planning: Внутренняя ссылка на страницу о регистрации через Госуслуги.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "регистрация авто для такси сроки"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Планируйте процесс регистрации с учётом реальных сроков.",
+                    "intent": "Дать пользователю чёткое понимание временных рамок регистрации.",
+                    "audiences": "Владельцы авто, которым важно быстро начать работу.",
+                    "selfPrompt": "CONTEXT: Generate paragraph with clear explanation of registration timeframes for taxi.\nGOAL: Кратко и понятно описать сроки регистрации авто для такси и возможные задержки.\nKEYWORDS TO INTEGRATE: [регистрация авто для такси сроки]\nWORD COUNT: minWords: 60, maxWords: 120\nMARKDOWN/MDX SYNTAX: Paragraph\nE-E-A-T: semanticFingerprint: Чёткое разъяснение сроков регистрации; sourceHint: Internal KB (процедура), External KB (сроки); evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-4",
+                "tag": "h3",
+                "keywords": [
+                  "дополнительные требования для такси",
+                  "разъяснения по путевым листам",
+                  "частые вопросы о регистрации такси"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте о дополнительных требованиях к автомобилю и водителю для работы в такси, чтобы избежать штрафов.",
+                "intent": "Разъяснить пользователю, какие дополнительные требования предъявляются к автомобилю и водителю при регистрации в такси, включая оформление путевых листов и медицинские осмотры.",
+                "audiences": "Владельцы авто, которые хотят полностью соответствовать законодательству и избежать штрафов.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item for 'FAQ' section: 'Какие дополнительные требования предъявляются к автомобилю и водителю для работы в такси?'\nGOAL: Перечислить и объяснить дополнительные требования к авто и водителю, включая путевые листы, медосмотры, техническое состояние.\nAUDIENCE: Водители, желающие работать легально и без штрафов.\nKEYWORDS TO INTEGRATE: [дополнительные требования для такси, разъяснения по путевым листам, частые вопросы о регистрации такси]\nWORD COUNT: minWords: 150, maxWords: 220\nMARKDOWN/MDX SYNTAX: ### [Вопрос] (h3) + p (ответ)\nE-E-A-T: semanticFingerprint: Вопрос-ответ по дополнительным требованиям для такси; sourceHint: Internal KB (путевые листы, медосмотры), External KB (разъяснения); evidenceStrength: internal-tested | external-peer-reviewed.\nInterlink planning: Внутренняя ссылка на страницу о путевых листах и медицинских осмотрах.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "разъяснения по путевым листам"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Избегайте штрафов, соблюдая все дополнительные требования.",
+                    "intent": "Дать чёткое разъяснение по дополнительным требованиям к авто и водителю.",
+                    "audiences": "Владельцы авто, желающие работать легально.",
+                    "selfPrompt": "CONTEXT: Generate paragraph with clear explanation of additional requirements for taxi registration.\nGOAL: Кратко и понятно разъяснить, какие дополнительные требования предъявляются к авто и водителю для работы в такси.\nKEYWORDS TO INTEGRATE: [разъяснения по путевым листам]\nWORD COUNT: minWords: 60, maxWords: 120\nMARKDOWN/MDX SYNTAX: Paragraph\nE-E-A-T: semanticFingerprint: Чёткое разъяснение дополнительных требований; sourceHint: Internal KB (путевые листы, медосмотры); evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1674,5 +1874,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T17:32:53.894Z";
+export const lastUpdated = "2025-10-26T17:33:59.760Z";
 export const generatedBy = "menu-persist-api";
