@@ -1290,7 +1290,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-26T17:07:45.493Z",
-        "updatedAt": "2025-10-26T17:19:09.316Z",
+        "updatedAt": "2025-10-26T17:19:13.800Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как зарегистрировать авто в такси в 2024 году: пошаговая инструкция, список документов, советы по лицензии и онлайн-подаче заявки. Начните работать легально!",
@@ -1588,7 +1588,8 @@ export const contentData = {
                 "attention": "Узнайте, с чего начать и как избежать типичных ошибок при регистрации авто для такси.",
                 "intent": "Ввести пользователя в общий порядок действий, обозначить ключевые этапы и подготовить к детальному разбору каждого шага.",
                 "audiences": "Автовладельцы, впервые сталкивающиеся с регистрацией в такси, ищущие понятную и логичную последовательность действий.",
-                "selfPrompt": "CONTEXT: Generate intro paragraph for h2 'Пошаговая инструкция по регистрации автомобиля в такси'.\nGOAL: Кратко описать общий алгоритм регистрации, обозначить важность последовательности шагов и подготовить к дальнейшему изучению подробностей.\nAUDIENCE: Новички, желающие избежать ошибок | Level: beginner/intermediate\nKEYWORDS: алгоритм регистрации автомобиля, инструкция по регистрации такси\nWORD COUNT: minWords: 90, maxWords: 170\nMARKDOWN/MDX SYNTAX: paragraph\nROLE: intro\nsemanticFingerprint: Вводный абзац, формирующий ожидания от инструкции и подчеркивающий важность пошагового подхода.\nsourceHint: Internal KB (структура процесса)\nevidenceStrength: internal-tested"
+                "selfPrompt": "CONTEXT: Generate intro paragraph for h2 'Пошаговая инструкция по регистрации автомобиля в такси'.\nGOAL: Кратко описать общий алгоритм регистрации, обозначить важность последовательности шагов и подготовить к дальнейшему изучению подробностей.\nAUDIENCE: Новички, желающие избежать ошибок | Level: beginner/intermediate\nKEYWORDS: алгоритм регистрации автомобиля, инструкция по регистрации такси\nWORD COUNT: minWords: 90, maxWords: 170\nMARKDOWN/MDX SYNTAX: paragraph\nROLE: intro\nsemanticFingerprint: Вводный абзац, формирующий ожидания от инструкции и подчеркивающий важность пошагового подхода.\nsourceHint: Internal KB (структура процесса)\nevidenceStrength: internal-tested",
+                "status": "checked"
               },
               {
                 "id": "h3-3-2",
@@ -1622,7 +1623,8 @@ export const contentData = {
                     "attention": "Узнайте, как правильно заполнить заявление и какие данные подготовить для онлайн-подачи.",
                     "intent": "Объяснить, как подготовить и заполнить заявление для регистрации авто в такси через Госуслуги, на что обратить внимание при загрузке документов.",
                     "audiences": "Пользователи портала Госуслуги, впервые подающие заявление на регистрацию такси.",
-                    "selfPrompt": "CONTEXT: Generate paragraph for h3 'Подача заявления и прохождение этапов регистрации'.\nGOAL: Описать подготовку и заполнение заявления через Госуслуги, дать советы по корректной загрузке документов.\nAUDIENCE: Новички в онлайн-сервисах | Level: beginner/intermediate\nKEYWORDS: подача заявления через Госуслуги, онлайн оформление такси\nWORD COUNT: minWords: 75, maxWords: 140\nMARKDOWN/MDX SYNTAX: paragraph\nROLE: body\nsemanticFingerprint: Практические рекомендации по заполнению заявления и загрузке документов на Госуслугах.\nsourceHint: External KB (практические советы), Internal KB (требования к документам)\nevidenceStrength: external-peer-reviewed"
+                    "selfPrompt": "CONTEXT: Generate paragraph for h3 'Подача заявления и прохождение этапов регистрации'.\nGOAL: Описать подготовку и заполнение заявления через Госуслуги, дать советы по корректной загрузке документов.\nAUDIENCE: Новички в онлайн-сервисах | Level: beginner/intermediate\nKEYWORDS: подача заявления через Госуслуги, онлайн оформление такси\nWORD COUNT: minWords: 75, maxWords: 140\nMARKDOWN/MDX SYNTAX: paragraph\nROLE: body\nsemanticFingerprint: Практические рекомендации по заполнению заявления и загрузке документов на Госуслугах.\nsourceHint: External KB (практические советы), Internal KB (требования к документам)\nevidenceStrength: external-peer-reviewed",
+                    "status": "checked"
                   },
                   {
                     "id": "ol-3-2-2",
@@ -1635,7 +1637,8 @@ export const contentData = {
                     "attention": "Следуйте этим шагам, чтобы не пропустить ни одного важного этапа регистрации.",
                     "intent": "Дать пользователю четкую последовательность действий для регистрации автомобиля в такси через МФЦ или Госуслуги.",
                     "audiences": "Автовладельцы, предпочитающие структурированные инструкции.",
-                    "selfPrompt": "CONTEXT: Generate ordered list for h3 'Подача заявления и прохождение этапов регистрации'.\nGOAL: Перечислить 5-7 ключевых шагов процесса регистрации авто в такси через Госуслуги и МФЦ.\nAUDIENCE: Пользователи, которым важна пошаговая структура | Level: intermediate\nKEYWORDS: практические шаги регистрации, регистрация авто через МФЦ\nWORD COUNT: minWords: 50, maxWords: 90\nMARKDOWN/MDX SYNTAX: ordered list (5-7 пунктов, каждый по 10-20 слов)\nROLE: steps\nsemanticFingerprint: Лаконичный список всех этапов регистрации с акцентом на последовательность и полноту.\nsourceHint: Internal KB (основные этапы), External KB (нюансы подачи)\nevidenceStrength: internal-tested"
+                    "selfPrompt": "CONTEXT: Generate ordered list for h3 'Подача заявления и прохождение этапов регистрации'.\nGOAL: Перечислить 5-7 ключевых шагов процесса регистрации авто в такси через Госуслуги и МФЦ.\nAUDIENCE: Пользователи, которым важна пошаговая структура | Level: intermediate\nKEYWORDS: практические шаги регистрации, регистрация авто через МФЦ\nWORD COUNT: minWords: 50, maxWords: 90\nMARKDOWN/MDX SYNTAX: ordered list (5-7 пунктов, каждый по 10-20 слов)\nROLE: steps\nsemanticFingerprint: Лаконичный список всех этапов регистрации с акцентом на последовательность и полноту.\nsourceHint: Internal KB (основные этапы), External KB (нюансы подачи)\nevidenceStrength: internal-tested",
+                    "status": "checked"
                   },
                   {
                     "id": "code-3-2-3",
@@ -1648,11 +1651,14 @@ export const contentData = {
                     "attention": "Используйте этот пример для корректного заполнения электронного заявления.",
                     "intent": "Показать пример заполнения электронного заявления на регистрацию авто в такси для Госуслуг.",
                     "audiences": "Пользователи, испытывающие трудности с оформлением онлайн-заявок.",
-                    "selfPrompt": "CONTEXT: Generate code block for h3 'Подача заявления и прохождение этапов регистрации'.\nGOAL: Привести пример JSON-заполнения или шаблона электронного заявления для Госуслуг (snippet 5-10 строк).\nAUDIENCE: Пользователи, которым нужен наглядный пример | Level: intermediate\nKEYWORDS: цифровые сервисы для такси, пример заполнения заявления\nWORD COUNT: minWords: 20, maxWords: 50\nMARKDOWN/MDX SYNTAX: code block (JSON или текстовый шаблон)\nROLE: example\nsemanticFingerprint: Мини-шаблон для самостоятельного заполнения заявления на Госуслугах.\nsourceHint: External KB (пример оформления), Internal KB (структура заявления)\nevidenceStrength: external-peer-reviewed"
+                    "selfPrompt": "CONTEXT: Generate code block for h3 'Подача заявления и прохождение этапов регистрации'.\nGOAL: Привести пример JSON-заполнения или шаблона электронного заявления для Госуслуг (snippet 5-10 строк).\nAUDIENCE: Пользователи, которым нужен наглядный пример | Level: intermediate\nKEYWORDS: цифровые сервисы для такси, пример заполнения заявления\nWORD COUNT: minWords: 20, maxWords: 50\nMARKDOWN/MDX SYNTAX: code block (JSON или текстовый шаблон)\nROLE: example\nsemanticFingerprint: Мини-шаблон для самостоятельного заполнения заявления на Госуслугах.\nsourceHint: External KB (пример оформления), Internal KB (структура заявления)\nevidenceStrength: external-peer-reviewed",
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "FAQ",
@@ -1988,5 +1994,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T17:34:38.000Z";
+export const lastUpdated = "2025-10-26T17:34:42.364Z";
 export const generatedBy = "menu-persist-api";
