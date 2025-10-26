@@ -1,5 +1,5 @@
 // Auto-generated SEO-optimized static page - do not edit manually
-// Generated on: 2025-10-26T16:57:45.814Z
+// Generated on: 2025-10-26T16:58:17.492Z
 // Source href: /blog/kak-poluchit-razreshenie-na-taksi-na-svoy-avtomobil-samozanyatomu-v-yandeks-taksi
 // Page metadata: Как получить разрешение на такси самозанятому в Яндекс Такси | 5 sections
 // FAQ sections detected: 4
@@ -44,7 +44,7 @@ const sections = [
           "content": [
             {
               "type": "text",
-              "text": "Как получить разрешение на такси для самозанятых: требования и простая инструкция"
+              "text": "Как получить разрешение на такси для самозанятых: требования и простая инструкция."
             }
           ]
         },
@@ -1617,8 +1617,8 @@ export default function Page() {
               "url": "/app-images/dnm6q9kzij5qz4661trsyuub.jpg",
               "alt": "как получить разрешение на такси на свой автомобиль самозанятому в яндекс такси"
             },
-            "datePublished": "2025-10-26T16:57:45.814Z",
-            "dateModified": "2025-10-26T16:57:45.814Z",
+            "datePublished": "2025-10-26T16:58:17.492Z",
+            "dateModified": "2025-10-26T16:58:17.492Z",
             "articleSection": "blog",
             "keywords": ["как получить разрешение на такси на свой автомобиль самозанятому в яндекс такси"],
             "mainEntityOfPage": {
