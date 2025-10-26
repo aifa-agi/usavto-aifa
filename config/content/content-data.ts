@@ -1290,7 +1290,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-26T17:07:45.493Z",
-        "updatedAt": "2025-10-26T17:14:33.715Z",
+        "updatedAt": "2025-10-26T17:15:32.660Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как зарегистрировать авто в такси в 2024 году: пошаговая инструкция, список документов, советы по лицензии и онлайн-подаче заявки. Начните работать легально!",
@@ -1377,6 +1377,165 @@ export const contentData = {
                 }
               }
             ]
+          },
+          {
+            "id": "h2-2",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "требования к автомобилю для такси",
+              "юридические аспекты регистрации",
+              "реестр такси",
+              "техническое состояние автомобиля",
+              "безопасность перевозок",
+              "регистрация на ИП или юрлицо",
+              "пакет документов для такси"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, какие требования предъявляются к автомобилю и владельцу для легальной работы в такси в 2024 году — не пропустите важные нюансы, чтобы избежать отказа и штрафов.",
+            "intent": "Дать пользователю полное понимание всех технических и юридических требований к автомобилю и владельцу для регистрации в такси, чтобы подготовиться к процессу без ошибок.",
+            "audiences": "Владельцы личных автомобилей, рассматривающие работу в такси, уровень — начинающий/средний, испытывающие сложности с юридическими и техническими нюансами регистрации.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 section on 'Требования к автомобилю и владельцу для регистрации в такси' for page 'Как зарегистрировать авто в такси: пошаговая инструкция 2024'.\n\nGOAL: Подробно раскрыть все технические и юридические требования к автомобилю и его владельцу для легальной регистрации в такси, включая регистрацию на ИП/юрлицо, соответствие техническим стандартам, внесение в реестр такси, обеспечение безопасности перевозок и подготовку полного пакета документов.\n\nAUDIENCE: Владельцы авто, планирующие работать в такси, уровень — начинающий/средний, испытывающие трудности с пониманием регламентов и подготовкой документов.\n\nKEYWORDS TO INTEGRATE:\n[требования к автомобилю для такси, юридические аспекты регистрации, реестр такси, техническое состояние автомобиля, безопасность перевозок, регистрация на ИП или юрлицо, пакет документов для такси]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 250, maxWords: 400 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with nested p, table, h3, ul elements as per structure.\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: требования к авто, юридические аспекты, реестр такси, техническое состояние, безопасность, документы\n- SECONDARY: Apply insights from External KB: специфика процедуры, причины отказа, перечень документов\n\nQUALITY CRITERIA:\n- Actionable (конкретные требования и рекомендации)\n- Specific (точные формулировки и перечни)\n- Data-backed (факты и нормативы из Knowledge Bases)\n- No fluff (никакой воды)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальный раздел, раскрывающий все требования к авто и владельцу для допуска к работе в такси, без пересечений с вводной частью.\n- sourceHint: Internal KB (основные требования, юридические аспекты), External KB (дополнительные детали по процедуре и причинам отказа)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference parent page intent (подготовка к регистрации, избежание ошибок)\n- Must set тематическое направление для дочерних h3 (например, подробности по документам, техническим параметрам)\n- Add interlink planning: internalLinks (например, на статью о лицензии такси, о путевых листах, о медицинских осмотрах); externalLinks — только на официальные ресурсы при необходимости.\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)\n",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 250,
+              "maxWords": 400,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-2-1",
+                "tag": "p",
+                "keywords": [
+                  "требования к автомобилю для такси",
+                  "техническое состояние автомобиля"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Поймите, почему важно соответствовать техническим стандартам для допуска к работе в такси.",
+                "intent": "Объяснить пользователю значимость соблюдения технических требований к автомобилю для легальной работы в такси.",
+                "audiences": "Владельцы авто, которые не уверены, подходит ли их транспорт для такси, уровень — начинающий.",
+                "selfPrompt": "CONTEXT: Generate intro paragraph for section 'Требования к автомобилю и владельцу для регистрации в такси'.\nGOAL: Кратко объяснить, почему технические требования к автомобилю — это основа безопасности и допуска к работе в такси.\nKEYWORDS: требования к автомобилю для такси, техническое состояние автомобиля\nWORD COUNT: minWords: 80, maxWords: 150\nMARKDOWN: Paragraph (intro/body)\nROLE: intro\nsemanticFingerprint: Вводный абзац, раскрывающий значимость технических требований для допуска к работе в такси.\nsourceHint: Internal KB (технические требования)\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-2-2-3",
+                "tag": "p",
+                "keywords": [
+                  "реестр такси"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, почему внесение в реестр такси — обязательный этап.",
+                "intent": "Кратко обозначить важность внесения автомобиля в реестр такси для легальной деятельности.",
+                "audiences": "Владельцы авто, не знакомые с процедурой внесения в реестр, уровень — начинающий.",
+                "selfPrompt": "CONTEXT: Generate short transition paragraph for section 'Требования к автомобилю и владельцу для регистрации в такси'.\nGOAL: Пояснить, что внесение в реестр такси — обязательное условие для легальной работы.\nKEYWORDS: реестр такси\nWORD COUNT: minWords: 5, maxWords: 15\nMARKDOWN: Short paragraph (transition)\nROLE: transition\nsemanticFingerprint: Краткий переход к теме реестра такси.\nsourceHint: Internal KB (реестр такси)\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-2-2-4",
+                "tag": "table",
+                "keywords": [
+                  "пакет документов для такси"
+                ],
+                "taxonomy": "Data-driven",
+                "attention": "Сравните полный перечень документов для регистрации авто в такси по категориям.",
+                "intent": "Дать пользователю структурированный список документов, необходимых для регистрации автомобиля в такси.",
+                "audiences": "Владельцы авто, готовящие документы для регистрации, уровень — начинающий/средний.",
+                "selfPrompt": "CONTEXT: Generate table for section 'Требования к автомобилю и владельцу для регистрации в такси'.\nGOAL: Составить таблицу (3 столбца × 5-7 строк):\n- Столбцы: Документ | Для кого требуется | Примечание\n- Типы данных: text | text | text\n- Источник: Internal KB (основные документы), External KB (дополнительные детали)\n- schema readiness: Dataset\nKEYWORDS: пакет документов для такси\nWORD COUNT: minWords: 80, maxWords: 160\nsemanticFingerprint: Таблица, структурирующая документы для регистрации авто в такси.\nsourceHint: Internal KB (документы), External KB (перечень)\nevidenceStrength: internal-tested | external-peer-reviewed",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-2-2",
+                "tag": "h3",
+                "keywords": [
+                  "юридические аспекты регистрации",
+                  "регистрация на ИП или юрлицо",
+                  "безопасность перевозок",
+                  "контроль транспортного средства",
+                  "отказ в регистрации"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Разберитесь в юридических нюансах и причинах отказа, чтобы избежать ошибок при регистрации.",
+                "intent": "Пошагово объяснить юридические аспекты регистрации автомобиля в такси, включая оформление на ИП/юрлицо, контроль безопасности и возможные причины отказа.",
+                "audiences": "Автовладельцы, не знакомые с юридическими деталями регистрации, уровень — начинающий/средний.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection 'Юридические аспекты и причины отказа' for parent H2 'Требования к автомобилю и владельцу для регистрации в такси'.\nGOAL: Подробно раскрыть юридические требования: регистрация на ИП/юрлицо, контроль безопасности, причины отказа в регистрации.\nKEYWORDS: юридические аспекты регистрации, регистрация на ИП или юрлицо, безопасность перевозок, контроль транспортного средства, отказ в регистрации\nWORD COUNT: minWords: 150, maxWords: 250\nMARKDOWN: H3 section with nested p, ul elements\nsemanticFingerprint: Уникальный подраздел, раскрывающий юридические детали и причины отказа, не дублирует технические требования.\nsourceHint: Internal KB (юридические аспекты), External KB (причины отказа)\nevidenceStrength: internal-tested | external-peer-reviewed\ninterlink planning: внутренние ссылки на статьи о лицензии, путевых листах, медицинских осмотрах.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 250,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "юридические аспекты регистрации",
+                      "регистрация на ИП или юрлицо"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Поймите, почему регистрация на ИП или юрлицо — ключевой юридический шаг.",
+                    "intent": "Объяснить, почему автомобиль для такси должен быть зарегистрирован на ИП или юридическое лицо.",
+                    "audiences": "Автовладельцы, не знакомые с юридическими требованиями, уровень — начинающий.",
+                    "selfPrompt": "CONTEXT: Generate paragraph for h3 'Юридические аспекты и причины отказа' (parent H2 'Требования к автомобилю и владельцу для регистрации в такси').\nGOAL: Кратко объяснить, почему регистрация на ИП или юрлицо обязательна для допуска к работе в такси.\nKEYWORDS: юридические аспекты регистрации, регистрация на ИП или юрлицо\nWORD COUNT: minWords: 70, maxWords: 130\nMARKDOWN: Paragraph (body)\nROLE: body\nsemanticFingerprint: Абзац, раскрывающий юридическую необходимость регистрации на ИП/юрлицо.\nsourceHint: Internal KB (юридические аспекты)\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 130,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-2-2-2",
+                    "tag": "ul",
+                    "keywords": [
+                      "контроль транспортного средства",
+                      "безопасность перевозок"
+                    ],
+                    "taxonomy": "Actionable",
+                    "attention": "Проверьте, какие юридические требования и проверки обязательны для допуска к работе.",
+                    "intent": "Дать список ключевых юридических требований и проверок для регистрации автомобиля в такси.",
+                    "audiences": "Автовладельцы, готовящиеся к регистрации, уровень — начинающий/средний.",
+                    "selfPrompt": "CONTEXT: Generate unordered list for h3 'Юридические аспекты и причины отказа' (parent H2 'Требования к автомобилю и владельцу для регистрации в такси').\nGOAL: Составить список (5-6 пунктов) юридических требований и проверок: контроль транспортного средства, безопасность перевозок и др.\nKEYWORDS: контроль транспортного средства, безопасность перевозок\nWORD COUNT: minWords: 40, maxWords: 80\nMARKDOWN: UL (short actionable points)\nROLE: actionable\nsemanticFingerprint: Список ключевых юридических требований и проверок для допуска к работе в такси.\nsourceHint: Internal KB (контроль, безопасность)\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 40,
+                      "maxWords": 80,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-2-3",
+                    "tag": "p",
+                    "keywords": [
+                      "отказ в регистрации"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Узнайте, по каким причинам могут отказать в регистрации автомобиля для такси.",
+                    "intent": "Объяснить основные причины отказа в регистрации автомобиля для работы в такси.",
+                    "audiences": "Автовладельцы, желающие избежать ошибок при подаче документов, уровень — начинающий/средний.",
+                    "selfPrompt": "CONTEXT: Generate paragraph for h3 'Юридические аспекты и причины отказа' (parent H2 'Требования к автомобилю и владельцу для регистрации в такси').\nGOAL: Кратко перечислить и объяснить основные причины отказа в регистрации автомобиля для такси.\nKEYWORDS: отказ в регистрации\nWORD COUNT: minWords: 60, maxWords: 100\nMARKDOWN: Paragraph (body/conclusion)\nROLE: body/conclusion\nsemanticFingerprint: Абзац, раскрывающий причины отказа в регистрации авто для такси.\nsourceHint: External KB (причины отказа)\nevidenceStrength: external-peer-reviewed",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 100,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1409,5 +1568,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T17:30:56.809Z";
+export const lastUpdated = "2025-10-26T17:31:50.417Z";
 export const generatedBy = "menu-persist-api";
