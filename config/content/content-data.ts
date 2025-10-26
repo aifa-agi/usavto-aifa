@@ -1262,7 +1262,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-26T16:48:26.310Z",
-        "updatedAt": "2025-10-26T16:59:28.224Z",
+        "updatedAt": "2025-10-26T16:59:38.197Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте актуальные критерии машин для Яндекс Такси в 2024 году: требования по моделям, возрасту, тарифам и полный список авто. Проверьте свой автомобиль!",
@@ -1328,7 +1328,8 @@ export const contentData = {
                   "minWords": 100,
                   "maxWords": 180,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-1-2",
@@ -1346,9 +1347,11 @@ export const contentData = {
                   "minWords": 60,
                   "maxWords": 120,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-2",
@@ -1939,7 +1942,7 @@ export const contentData = {
             ]
           }
         ],
-        "isReadyDraftForPerplexity": true
+        "isReadyDraftForPerplexity": false
       }
     ],
     "order": 16
@@ -1970,5 +1973,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T17:15:02.437Z";
+export const lastUpdated = "2025-10-26T17:15:07.412Z";
 export const generatedBy = "menu-persist-api";
