@@ -1290,7 +1290,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-26T17:07:45.493Z",
-        "updatedAt": "2025-10-26T17:17:29.713Z",
+        "updatedAt": "2025-10-26T17:18:35.583Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как зарегистрировать авто в такси в 2024 году: пошаговая инструкция, список документов, советы по лицензии и онлайн-подаче заявки. Начните работать легально!",
@@ -1842,6 +1842,108 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-5",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "итоги регистрации такси",
+              "основные выводы",
+              "следующие шаги для водителя",
+              "советы по легализации перевозок",
+              "подготовка к работе в такси",
+              "завершение оформления",
+              "рекомендации для новых таксистов"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, как быстро перейти от теории к практике: что делать после успешной регистрации автомобиля для работы в такси и как избежать типичных ошибок на старте.",
+            "intent": "Синтезировать ключевые выводы из инструкции, дать пользователю четкое понимание дальнейших действий и мотивировать к легальному началу работы в такси.",
+            "audiences": "Владельцы автомобилей, завершившие или завершающие процесс регистрации авто для такси, ищущие практические рекомендации и уверенность в дальнейших шагах; уровень — начинающий/средний, мотивированы к легализации деятельности.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 conclusion/next steps section for page \"Как зарегистрировать авто в такси: пошаговая инструкция 2024\"\n\nGOAL: Суммировать основные выводы по регистрации авто для работы в такси, дать пользователю четкие рекомендации по дальнейшим действиям, подчеркнуть преимущества легализации и мотивировать к самостоятельному завершению процесса. Не повторять пошаговую инструкцию, а сделать акцент на итогах, советах и уверенности в дальнейших шагах.\n\nAUDIENCE: Владельцы авто, завершившие или завершающие регистрацию, ищущие практические рекомендации; уровень — начинающий/средний; боль — неуверенность в правильности оформления, страх ошибок.\n\nKEYWORDS TO INTEGRATE:\n[итоги регистрации такси, основные выводы, следующие шаги для водителя, советы по легализации перевозок, подготовка к работе в такси, завершение оформления, рекомендации для новых таксистов]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 200, maxWords: 300 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 heading with summary/conclusion content, table for итоговые рекомендации, UL for actionable next steps, closing motivational paragraph.\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: [Регистрация автомобиля в такси: основные требования и этапы, Юридические аспекты регистрации автомобиля в такси, Оформление путевых листов для такси, Медицинские осмотры водителей такси]\n- SECONDARY: Apply insights from External KB: [итоговые советы, структурированные рекомендации, типичные ошибки после регистрации]\n\nQUALITY CRITERIA:\n- Actionable (конкретные рекомендации)\n- Specific (без общих фраз)\n- Data-backed (ссылки на этапы и требования)\n- No fluff (никакой воды)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Итоговый раздел, объединяющий ключевые выводы и дающий четкие рекомендации для новых таксистов.\n- sourceHint: Синтез внутренних требований и внешних советов по завершению регистрации.\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Суммировать ключевые этапы, не повторяя инструкцию\n- Дать структурированные рекомендации в таблице\n- Сформулировать список следующих шагов для пользователя\n- Завершить мотивирующим абзацем\n- Добавить interlink planning: внутренние ссылки на разделы «Лицензирование такси», «Проверка авто перед выходом на линию», «Ошибки при оформлении документов»\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 200,
+              "maxWords": 300,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-5-1",
+                "tag": "p",
+                "keywords": [
+                  "итоги регистрации такси",
+                  "основные выводы"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Получите краткое резюме всех ключевых этапов и преимуществ легализации работы в такси.",
+                "intent": "Ввести пользователя в итоговый раздел, подчеркнуть ценность завершения регистрации и легального статуса.",
+                "audiences": "Водители, завершившие оформление документов, ищущие подтверждение правильности своих действий.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate summary paragraph (intro) for conclusion section \"Итоги и следующие шаги после регистрации авто в такси\" on page \"Как зарегистрировать авто в такси: пошаговая инструкция 2024\"\n\nGOAL: Кратко подвести итог всему процессу регистрации, подчеркнуть, что пользователь теперь готов к легальной работе в такси, и обозначить ценность соблюдения всех требований.\n\nAUDIENCE: Новые таксисты, завершившие оформление; уровень — начинающий/средний; боль — неуверенность в правильности действий.\n\nKEYWORDS TO INTEGRATE: [итоги регистрации такси, основные выводы]\n\nWORD COUNT: minWords: 80, maxWords: 150\n\nMARKDOWN/MDX SYNTAX: Paragraph (intro/summary)\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES: PRIMARY: Internal KB (итоги этапов регистрации, преимущества легализации)\n\nE-E-A-T ENHANCERS: semanticFingerprint: Краткое резюме итогов регистрации и ценности легального статуса. sourceHint: Внутренняя экспертиза. evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-5-3",
+                "tag": "table",
+                "keywords": [
+                  "советы по легализации перевозок",
+                  "завершение оформления"
+                ],
+                "taxonomy": "Actionable",
+                "attention": "Сравните ключевые рекомендации и ошибки, чтобы избежать проблем на старте.",
+                "intent": "Дать пользователю структурированные советы и предостережения для успешного старта работы в такси после регистрации.",
+                "audiences": "Владельцы авто, готовящиеся к выходу на линию; уровень — начинающий.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate actionable recommendations table for conclusion section \"Итоги и следующие шаги после регистрации авто в такси\" on page \"Как зарегистрировать авто в такси: пошаговая инструкция 2024\"\n\nGOAL: Сформировать таблицу (2-3 колонки × 3-4 строки) с ключевыми советами по легализации перевозок и типичными ошибками, которых стоит избегать после завершения оформления.\n\nAUDIENCE: Новые таксисты, готовящиеся к работе; уровень — начинающий; боль — страх ошибок на старте.\n\nKEYWORDS TO INTEGRATE: [советы по легализации перевозок, завершение оформления]\n\nWORD COUNT: minWords: 80, maxWords: 160\n\nMARKDOWN/MDX SYNTAX: Table (3 columns × 4 rows): «Рекомендация» | «Пояснение» | «Частая ошибка»; текст/текст/текст\n\nKNOWLEDGE SOURCES: PRIMARY: Internal KB (советы по легализации, типичные ошибки); SECONDARY: External KB (структура рекомендаций)\n\nE-E-A-T ENHANCERS: semanticFingerprint: Таблица с советами и ошибками для новых таксистов. sourceHint: Синтез внутренних и внешних советов. evidenceStrength: internal-tested | external-peer-reviewed.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-5-2",
+                "tag": "ul",
+                "keywords": [
+                  "следующие шаги для водителя",
+                  "подготовка к работе в такси"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Получите четкий список действий для уверенного старта после регистрации.",
+                "intent": "Дать пользователю пошаговый чек-лист дальнейших действий после завершения регистрации автомобиля для такси.",
+                "audiences": "Владельцы авто, завершившие регистрацию, ищущие конкретные шаги для выхода на линию.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate actionable next steps UL (5 items) for conclusion section \"Итоги и следующие шаги после регистрации авто в такси\" on page \"Как зарегистрировать авто в такси: пошаговая инструкция 2024\"\n\nGOAL: Сформировать список из 5 конкретных шагов, которые водитель должен выполнить после регистрации авто для такси (например: пройти медосмотр, получить путевой лист, подключиться к агрегатору и т.д.).\n\nAUDIENCE: Новые таксисты, завершившие оформление; уровень — начинающий; боль — неясность дальнейших действий.\n\nKEYWORDS TO INTEGRATE: [следующие шаги для водителя, подготовка к работе в такси]\n\nWORD COUNT: minWords: 50, maxWords: 90\n\nMARKDOWN/MDX SYNTAX: UL (5 short actionable items, 10-15 words each)\n\nKNOWLEDGE SOURCES: PRIMARY: Internal KB (чек-лист действий после регистрации)\n\nE-E-A-T ENHANCERS: semanticFingerprint: Чек-лист действий для новых таксистов. sourceHint: Внутренняя экспертиза. evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 50,
+                  "maxWords": 90,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-5-3",
+                "tag": "p",
+                "keywords": [
+                  "рекомендации для новых таксистов"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Завершите чтение мотивирующим посылом — вы готовы к легальной и успешной работе в такси!",
+                "intent": "Мотивировать пользователя завершить оформление и уверенно начать работу, подчеркнуть поддержку и доступность дальнейших ресурсов.",
+                "audiences": "Владельцы авто, сомневающиеся в своих силах, нуждающиеся в поддержке и дополнительной информации.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate closing motivational paragraph for conclusion section \"Итоги и следующие шаги после регистрации авто в такси\" on page \"Как зарегистрировать авто в такси: пошаговая инструкция 2024\"\n\nGOAL: Завершить раздел мотивирующим посланием, подчеркнуть, что пользователь готов к легальной работе, и предложить обратиться к дополнительным ресурсам сайта (например, разделы о лицензировании, проверке авто, ошибках при оформлении).\n\nAUDIENCE: Новые таксисты, нуждающиеся в поддержке; уровень — начинающий; боль — страх ошибок, неуверенность.\n\nKEYWORDS TO INTEGRATE: [рекомендации для новых таксистов]\n\nWORD COUNT: minWords: 70, maxWords: 130\n\nMARKDOWN/MDX SYNTAX: Paragraph (motivational/conclusion)\n\nKNOWLEDGE SOURCES: PRIMARY: Internal KB (мотивация, поддержка, ссылки на ресурсы)\n\nE-E-A-T ENHANCERS: semanticFingerprint: Мотивационный финал с призывом к действию и поддержкой. sourceHint: Внутренняя экспертиза. evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              }
+            ]
           }
         ]
       }
@@ -1874,5 +1976,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T17:33:59.760Z";
+export const lastUpdated = "2025-10-26T17:34:13.670Z";
 export const generatedBy = "menu-persist-api";
