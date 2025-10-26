@@ -1206,7 +1206,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-26T16:03:09.843Z",
-        "updatedAt": "2025-10-26T16:14:12.311Z",
+        "updatedAt": "2025-10-26T16:14:16.641Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, какой автомобиль подходит для Яндекс Такси: требования к моделям, список подходящих авто по тарифам, советы по выбору и проверке.",
@@ -1633,7 +1633,8 @@ export const contentData = {
                   "minWords": 70,
                   "maxWords": 130,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-FAQ-1",
@@ -1669,9 +1670,11 @@ export const contentData = {
                       "minWords": 60,
                       "maxWords": 120,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "FAQ-2",
@@ -1707,9 +1710,11 @@ export const contentData = {
                       "minWords": 60,
                       "maxWords": 120,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "FAQ-3",
@@ -1745,9 +1750,11 @@ export const contentData = {
                       "minWords": 60,
                       "maxWords": 120,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               },
               {
                 "id": "FAQ-4",
@@ -1783,11 +1790,14 @@ export const contentData = {
                       "minWords": 60,
                       "maxWords": 120,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-5",
@@ -1924,5 +1934,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T16:29:40.845Z";
+export const lastUpdated = "2025-10-26T16:29:46.598Z";
 export const generatedBy = "menu-persist-api";
