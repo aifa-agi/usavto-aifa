@@ -1286,7 +1286,7 @@ export const contentData = {
         "updatedAt": "2025-10-26T17:27:34.902Z",
         "order": 1,
         "badgeName": "Блог",
-        "description": "как подключить свою машину к яндекс такси",
+        "description": "Узнайте, как подключить свою машину к Яндекс Такси: пошаговая инструкция, условия, варианты сотрудничества и советы для быстрого старта работы.",
         "images": [
           {
             "id": "cbcxwtv7wv7e40vfwud3eyyz",
@@ -1329,5 +1329,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T17:50:43.492Z";
+export const lastUpdated = "2025-10-26T17:50:47.497Z";
 export const generatedBy = "menu-persist-api";
