@@ -1,5 +1,5 @@
 // Auto-generated SEO-optimized static page - do not edit manually
-// Generated on: 2025-10-26T17:18:04.618Z
+// Generated on: 2025-10-26T17:18:29.689Z
 // Source href: /blog/kriterii-mashin-dlya-yandeks-taksi
 // Page metadata: Критерии машин для Яндекс Такси: требования, список моделей 2024 | 5 sections
 // FAQ sections detected: 4
@@ -44,7 +44,7 @@ const sections = [
           "content": [
             {
               "type": "text",
-              "text": "Критерии машин для Яндекс Такси 2024: требования, список и нюансы"
+              "text": "Критерии машин для Яндекс Такси 2024: требования, список и нюансы."
             }
           ]
         },
@@ -1776,8 +1776,8 @@ export default function Page() {
               "url": "/app-images/uak7r3iemaepe4hyanxnum4y.jpg",
               "alt": "критерии машин для яндекс такси"
             },
-            "datePublished": "2025-10-26T17:18:04.618Z",
-            "dateModified": "2025-10-26T17:18:04.618Z",
+            "datePublished": "2025-10-26T17:18:29.689Z",
+            "dateModified": "2025-10-26T17:18:29.689Z",
             "articleSection": "blog",
             "keywords": ["критерии машин для яндекс такси"],
             "mainEntityOfPage": {
