@@ -1234,7 +1234,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-26T16:26:27.424Z",
-        "updatedAt": "2025-10-26T16:38:39.370Z",
+        "updatedAt": "2025-10-26T16:38:49.097Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как получить разрешение на такси на свой автомобиль самозанятому в Яндекс Такси: пошаговая инструкция, требования, советы. Начните работать легально!",
@@ -1497,7 +1497,8 @@ export const contentData = {
                 "attention": "Краткое введение в пошаговый процесс, чтобы пользователь сразу понял, что его ждет простая и понятная инструкция.",
                 "intent": "Ввести пользователя в суть раздела, обозначить, что далее будет представлен подробный алгоритм самостоятельного оформления разрешения на такси для самозанятых.",
                 "audiences": "Новички и водители с небольшим опытом, которые боятся запутаться в этапах оформления.",
-                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate intro paragraph for h2 'Пошаговая инструкция: как оформить разрешение на такси самозанятому через Госуслуги или МФЦ' on page 'Как получить разрешение на такси самозанятому в Яндекс Такси'\n\nGOAL: Кратко объяснить, что далее будет пошаговый, простой и современный алгоритм оформления разрешения на такси для самозанятых через онлайн-сервисы, с акцентом на практичность и отсутствие лишней бюрократии.\n\nAUDIENCE: Самозанятые водители, начинающие | Level: beginner | Pain points: страх сложностей, нехватка информации.\n\nKEYWORDS TO INTEGRATE: [алгоритм подачи заявления, онлайн сервисы для оформления]\nWORD COUNT: minWords: 90, maxWords: 170\nMARKDOWN/MDX SYNTAX: paragraph\nWRITING STYLE: Story-driven, engaging storytelling approach\nCONTENT FORMAT: Easy to understand, basic language\nsourceHint: Internal KB (структура процесса), External KB (акцент на онлайн-сервисы)\nevidenceStrength: internal-tested\nsemanticFingerprint: Вводный абзац, мотивирующий к самостоятельному прохождению всех этапов оформления разрешения."
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate intro paragraph for h2 'Пошаговая инструкция: как оформить разрешение на такси самозанятому через Госуслуги или МФЦ' on page 'Как получить разрешение на такси самозанятому в Яндекс Такси'\n\nGOAL: Кратко объяснить, что далее будет пошаговый, простой и современный алгоритм оформления разрешения на такси для самозанятых через онлайн-сервисы, с акцентом на практичность и отсутствие лишней бюрократии.\n\nAUDIENCE: Самозанятые водители, начинающие | Level: beginner | Pain points: страх сложностей, нехватка информации.\n\nKEYWORDS TO INTEGRATE: [алгоритм подачи заявления, онлайн сервисы для оформления]\nWORD COUNT: minWords: 90, maxWords: 170\nMARKDOWN/MDX SYNTAX: paragraph\nWRITING STYLE: Story-driven, engaging storytelling approach\nCONTENT FORMAT: Easy to understand, basic language\nsourceHint: Internal KB (структура процесса), External KB (акцент на онлайн-сервисы)\nevidenceStrength: internal-tested\nsemanticFingerprint: Вводный абзац, мотивирующий к самостоятельному прохождению всех этапов оформления разрешения.",
+                "status": "checked"
               },
               {
                 "id": "h3-3-2",
@@ -1530,7 +1531,8 @@ export const contentData = {
                     "attention": "Пояснение, какие документы и данные понадобятся для старта процедуры.",
                     "intent": "Дать пользователю четкое понимание, что нужно подготовить до подачи заявления, чтобы не столкнуться с отказом.",
                     "audiences": "Водители, впервые оформляющие разрешение, которые не уверены в перечне документов.",
-                    "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate paragraph under h3 'Пошаговый алгоритм: подготовка документов, подача заявления и получение разрешения' for h2 'Пошаговая инструкция: как оформить разрешение на такси самозанятому через Госуслуги или МФЦ'\n\nGOAL: Перечислить и кратко описать все необходимые документы и данные для подачи заявления на разрешение, с акцентом на актуальные требования 2025 года.\n\nAUDIENCE: Самозанятые водители | Level: beginner | Pain points: страх забыть важный документ, неуверенность в актуальности списка.\n\nKEYWORDS TO INTEGRATE: [перечень необходимых документов, подготовка заявления]\nWORD COUNT: minWords: 75, maxWords: 140\nMARKDOWN/MDX SYNTAX: paragraph\nWRITING STYLE: Story-driven, engaging storytelling approach\nCONTENT FORMAT: Easy to understand, basic language\nsourceHint: Internal KB (актуальный список документов), External KB (советы по подготовке)\nevidenceStrength: internal-tested\nsemanticFingerprint: Краткий и актуальный список документов для подачи заявления на разрешение."
+                    "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate paragraph under h3 'Пошаговый алгоритм: подготовка документов, подача заявления и получение разрешения' for h2 'Пошаговая инструкция: как оформить разрешение на такси самозанятому через Госуслуги или МФЦ'\n\nGOAL: Перечислить и кратко описать все необходимые документы и данные для подачи заявления на разрешение, с акцентом на актуальные требования 2025 года.\n\nAUDIENCE: Самозанятые водители | Level: beginner | Pain points: страх забыть важный документ, неуверенность в актуальности списка.\n\nKEYWORDS TO INTEGRATE: [перечень необходимых документов, подготовка заявления]\nWORD COUNT: minWords: 75, maxWords: 140\nMARKDOWN/MDX SYNTAX: paragraph\nWRITING STYLE: Story-driven, engaging storytelling approach\nCONTENT FORMAT: Easy to understand, basic language\nsourceHint: Internal KB (актуальный список документов), External KB (советы по подготовке)\nevidenceStrength: internal-tested\nsemanticFingerprint: Краткий и актуальный список документов для подачи заявления на разрешение.",
+                    "status": "checked"
                   },
                   {
                     "id": "ol-3-2-2",
@@ -1543,7 +1545,8 @@ export const contentData = {
                     "attention": "Пошаговый список действий, чтобы пользователь не запутался и не пропустил ни одного этапа.",
                     "intent": "Дать пользователю четкую последовательность действий для самостоятельного оформления разрешения через Госуслуги или МФЦ.",
                     "audiences": "Водители, которые хотят быстро и без ошибок пройти процедуру.",
-                    "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate ordered list (6-8 шагов) under h3 'Пошаговый алгоритм: подготовка документов, подача заявления и получение разрешения' for h2 'Пошаговая инструкция: как оформить разрешение на такси самозанятому через Госуслуги или МФЦ'\n\nGOAL: Сформировать подробный, но лаконичный чек-лист шагов по оформлению разрешения: от сбора документов до получения результата, с акцентом на онлайн-подачу и автоматизацию.\n\nAUDIENCE: Самозанятые водители | Level: beginner/intermediate | Pain points: боязнь пропустить этап, желание ускорить процесс.\n\nKEYWORDS TO INTEGRATE: [шаги подачи заявления, онлайн оформление через Госуслуги]\nWORD COUNT: minWords: 50, maxWords: 90\nMARKDOWN/MDX SYNTAX: ordered list (ol), 6-8 пунктов, каждый пункт — 1-2 предложения\nWRITING STYLE: Story-driven, engaging storytelling approach\nCONTENT FORMAT: Easy to understand, basic language\nsourceHint: Internal KB (алгоритм действий), External KB (инструкция по Госуслугам)\nevidenceStrength: internal-tested | external-peer-reviewed\nsemanticFingerprint: Четкий чек-лист всех этапов оформления разрешения для самозанятых."
+                    "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate ordered list (6-8 шагов) under h3 'Пошаговый алгоритм: подготовка документов, подача заявления и получение разрешения' for h2 'Пошаговая инструкция: как оформить разрешение на такси самозанятому через Госуслуги или МФЦ'\n\nGOAL: Сформировать подробный, но лаконичный чек-лист шагов по оформлению разрешения: от сбора документов до получения результата, с акцентом на онлайн-подачу и автоматизацию.\n\nAUDIENCE: Самозанятые водители | Level: beginner/intermediate | Pain points: боязнь пропустить этап, желание ускорить процесс.\n\nKEYWORDS TO INTEGRATE: [шаги подачи заявления, онлайн оформление через Госуслуги]\nWORD COUNT: minWords: 50, maxWords: 90\nMARKDOWN/MDX SYNTAX: ordered list (ol), 6-8 пунктов, каждый пункт — 1-2 предложения\nWRITING STYLE: Story-driven, engaging storytelling approach\nCONTENT FORMAT: Easy to understand, basic language\nsourceHint: Internal KB (алгоритм действий), External KB (инструкция по Госуслугам)\nevidenceStrength: internal-tested | external-peer-reviewed\nsemanticFingerprint: Четкий чек-лист всех этапов оформления разрешения для самозанятых.",
+                    "status": "checked"
                   },
                   {
                     "id": "code-3-2-3",
@@ -1556,11 +1559,14 @@ export const contentData = {
                     "attention": "Пример кода или шаблона для самостоятельного заполнения заявления онлайн.",
                     "intent": "Дать пользователю наглядный пример, как правильно заполнить заявление на разрешение через Госуслуги.",
                     "audiences": "Водители, которые боятся ошибиться при заполнении онлайн-формы.",
-                    "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate code block (пример JSON/текстового шаблона) under h3 'Пошаговый алгоритм: подготовка документов, подача заявления и получение разрешения' for h2 'Пошаговая инструкция: как оформить разрешение на такси самозанятому через Госуслуги или МФЦ'\n\nGOAL: Показать пример заполнения онлайн-заявления или шаблон для Госуслуг, чтобы пользователь мог свериться и избежать ошибок.\n\nAUDIENCE: Самозанятые водители | Level: beginner | Pain points: страх ошибиться в форме, неуверенность в правильности заполнения.\n\nKEYWORDS TO INTEGRATE: [пример заполнения заявления, шаблон для Госуслуг]\nWORD COUNT: minWords: 20, maxWords: 50\nMARKDOWN/MDX SYNTAX: code block (JSON или текстовый шаблон)\nWRITING STYLE: Story-driven, engaging storytelling approach\nCONTENT FORMAT: Easy to understand, basic language\nsourceHint: Internal KB (шаблон заявления), External KB (примеры заполнения)\nevidenceStrength: internal-tested\nsemanticFingerprint: Пример или шаблон для самостоятельного заполнения заявления на разрешение."
+                    "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate code block (пример JSON/текстового шаблона) under h3 'Пошаговый алгоритм: подготовка документов, подача заявления и получение разрешения' for h2 'Пошаговая инструкция: как оформить разрешение на такси самозанятому через Госуслуги или МФЦ'\n\nGOAL: Показать пример заполнения онлайн-заявления или шаблон для Госуслуг, чтобы пользователь мог свериться и избежать ошибок.\n\nAUDIENCE: Самозанятые водители | Level: beginner | Pain points: страх ошибиться в форме, неуверенность в правильности заполнения.\n\nKEYWORDS TO INTEGRATE: [пример заполнения заявления, шаблон для Госуслуг]\nWORD COUNT: minWords: 20, maxWords: 50\nMARKDOWN/MDX SYNTAX: code block (JSON или текстовый шаблон)\nWRITING STYLE: Story-driven, engaging storytelling approach\nCONTENT FORMAT: Easy to understand, basic language\nsourceHint: Internal KB (шаблон заявления), External KB (примеры заполнения)\nevidenceStrength: internal-tested\nsemanticFingerprint: Пример или шаблон для самостоятельного заполнения заявления на разрешение.",
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "FAQ",
@@ -1896,5 +1902,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T16:54:14.481Z";
+export const lastUpdated = "2025-10-26T16:54:23.670Z";
 export const generatedBy = "menu-persist-api";
