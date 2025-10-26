@@ -1237,6 +1237,9 @@ export const contentData = {
             "alt": "критерии машин для яндекс такси",
             "href": "/app-images/uak7r3iemaepe4hyanxnum4y.jpg"
           }
+        ],
+        "keywords": [
+          "критерии машин для яндекс такси"
         ]
       }
     ],
@@ -1268,5 +1271,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T17:05:35.513Z";
+export const lastUpdated = "2025-10-26T17:05:47.284Z";
 export const generatedBy = "menu-persist-api";
