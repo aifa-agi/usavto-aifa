@@ -1,5 +1,5 @@
 // Auto-generated SEO-optimized static page - do not edit manually
-// Generated on: 2025-10-26T18:01:41.289Z
+// Generated on: 2025-10-26T18:02:08.827Z
 // Source href: /blog/kak-podklyuchit-svoyu-mashinu-k-yandeks-taksi
 // Page metadata: Как подключить свою машину к Яндекс Такси: пошаговая инструкция и условия | 5 sections
 // FAQ sections detected: 4
@@ -44,7 +44,7 @@ const sections = [
           "content": [
             {
               "type": "text",
-              "text": "Как подключить свою машину к Яндекс Такси: подробный гайд и условия"
+              "text": "Как подключить свою машину к Яндекс Такси: подробный гайд и условия."
             }
           ]
         },
@@ -1705,8 +1705,8 @@ export default function Page() {
               "url": "/app-images/lqleuahb5bpfyt4bboh5lom0.jpg",
               "alt": " как подключить свою машину к яндекс такси"
             },
-            "datePublished": "2025-10-26T18:01:41.289Z",
-            "dateModified": "2025-10-26T18:01:41.289Z",
+            "datePublished": "2025-10-26T18:02:08.827Z",
+            "dateModified": "2025-10-26T18:02:08.827Z",
             "articleSection": "blog",
             "keywords": [" как подключить свою машину к яндекс такси"],
             "mainEntityOfPage": {
