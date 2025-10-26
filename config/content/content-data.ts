@@ -1230,7 +1230,14 @@ export const contentData = {
         "updatedAt": "2025-10-26T16:48:26.310Z",
         "order": 1,
         "badgeName": "Блог",
-        "description": "критерии машин для яндекс такси"
+        "description": "критерии машин для яндекс такси",
+        "images": [
+          {
+            "id": "zbicwwp6q4g3cwret547wuq2",
+            "alt": "критерии машин для яндекс такси",
+            "href": "/app-images/uak7r3iemaepe4hyanxnum4y.jpg"
+          }
+        ]
       }
     ],
     "order": 16
@@ -1261,5 +1268,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T17:05:02.621Z";
+export const lastUpdated = "2025-10-26T17:05:35.513Z";
 export const generatedBy = "menu-persist-api";
