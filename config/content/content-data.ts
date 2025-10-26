@@ -1258,7 +1258,14 @@ export const contentData = {
         "updatedAt": "2025-10-26T17:07:45.493Z",
         "order": 1,
         "badgeName": "Блог",
-        "description": "как зарегистрировать авто в такси"
+        "description": "как зарегистрировать авто в такси",
+        "images": [
+          {
+            "id": "evkqs2jgcfmogpeirhmnds6h",
+            "alt": "как зарегистрировать авто в такси",
+            "href": "/app-images/gmrdwmgfgm2zbfqfi8b8acy1.jpg"
+          }
+        ]
       }
     ],
     "order": 16
@@ -1289,5 +1296,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T17:24:42.183Z";
+export const lastUpdated = "2025-10-26T17:25:04.623Z";
 export const generatedBy = "menu-persist-api";
