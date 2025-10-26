@@ -1209,6 +1209,9 @@ export const contentData = {
             "alt": "как получить разрешение на такси на свой автомобиль самозанятому в яндекс такси",
             "href": "/app-images/dnm6q9kzij5qz4661trsyuub.jpg"
           }
+        ],
+        "keywords": [
+          "как получить разрешение на такси на свой автомобиль самозанятому в яндекс такси"
         ]
       }
     ],
@@ -1240,5 +1243,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T16:43:37.187Z";
+export const lastUpdated = "2025-10-26T16:43:57.979Z";
 export const generatedBy = "menu-persist-api";
