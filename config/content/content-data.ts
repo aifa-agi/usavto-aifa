@@ -1234,7 +1234,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-26T16:26:27.424Z",
-        "updatedAt": "2025-10-26T16:38:34.790Z",
+        "updatedAt": "2025-10-26T16:38:39.370Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как получить разрешение на такси на свой автомобиль самозанятому в Яндекс Такси: пошаговая инструкция, требования, советы. Начните работать легально!",
@@ -1365,7 +1365,8 @@ export const contentData = {
                 "attention": "Понимание базовых условий поможет избежать ошибок и ускорить процесс оформления.",
                 "intent": "Ввести читателя в суть ключевых условий для самозанятых, выделить важность статуса и правильной регистрации.",
                 "audiences": "Начинающие самозанятые водители, которые впервые сталкиваются с оформлением разрешения.",
-                "selfPrompt": "CONTEXT: Generate intro paragraph for section \"Основные условия и требования для получения разрешения на такси самозанятым\". ROLE: Intro. GOAL: Кратко объяснить, почему важно знать все условия и требования заранее, чтобы не получить отказ или штраф. KEYWORDS: условия получения разрешения на такси, статус самозанятого водителя. WORD COUNT: minWords: 80, maxWords: 150. E-E-A-T: semanticFingerprint: Вводный обзор условий для самозанятых; sourceHint: Internal KB; evidenceStrength: internal-tested."
+                "selfPrompt": "CONTEXT: Generate intro paragraph for section \"Основные условия и требования для получения разрешения на такси самозанятым\". ROLE: Intro. GOAL: Кратко объяснить, почему важно знать все условия и требования заранее, чтобы не получить отказ или штраф. KEYWORDS: условия получения разрешения на такси, статус самозанятого водителя. WORD COUNT: minWords: 80, maxWords: 150. E-E-A-T: semanticFingerprint: Вводный обзор условий для самозанятых; sourceHint: Internal KB; evidenceStrength: internal-tested.",
+                "status": "checked"
               },
               {
                 "id": "p-2-2-3",
@@ -1377,7 +1378,8 @@ export const contentData = {
                 "attention": "Уточните, на кого должен быть зарегистрирован автомобиль для легальной работы.",
                 "intent": "Кратко выделить ключевой юридический нюанс — требования к регистрации автомобиля.",
                 "audiences": "Самозанятые, не уверенные в правильности оформления авто.",
-                "selfPrompt": "CONTEXT: Generate short paragraph (transition) on требование регистрации автомобиля для такси. ROLE: Transition. GOAL: Подчеркнуть, что авто должно быть оформлено на самозанятого или ИП. KEYWORDS: регистрация автомобиля для такси. WORD COUNT: minWords: 5, maxWords: 15. E-E-A-T: semanticFingerprint: Юридический нюанс регистрации; sourceHint: Internal KB; evidenceStrength: internal-tested."
+                "selfPrompt": "CONTEXT: Generate short paragraph (transition) on требование регистрации автомобиля для такси. ROLE: Transition. GOAL: Подчеркнуть, что авто должно быть оформлено на самозанятого или ИП. KEYWORDS: регистрация автомобиля для такси. WORD COUNT: minWords: 5, maxWords: 15. E-E-A-T: semanticFingerprint: Юридический нюанс регистрации; sourceHint: Internal KB; evidenceStrength: internal-tested.",
+                "status": "checked"
               },
               {
                 "id": "table-2-2-4",
@@ -1390,7 +1392,8 @@ export const contentData = {
                 "attention": "Визуально сравните основные требования для самозанятых водителей.",
                 "intent": "Дать читателю структурированную таблицу с основными требованиями к разрешению на такси.",
                 "audiences": "Водители, предпочитающие наглядную информацию.",
-                "selfPrompt": "CONTEXT: Generate table (3 columns × 4 rows) with headers: Требование | Описание | Примечание. DATA: юридические требования к самозанятым, основные требования для такси. Columns: text/text/text. Source: Internal KB + External KB (общие стандарты). E-E-A-T: semanticFingerprint: Таблица требований для самозанятых; sourceHint: Internal KB; evidenceStrength: internal-tested. WORD COUNT: minWords: 80, maxWords: 160."
+                "selfPrompt": "CONTEXT: Generate table (3 columns × 4 rows) with headers: Требование | Описание | Примечание. DATA: юридические требования к самозанятым, основные требования для такси. Columns: text/text/text. Source: Internal KB + External KB (общие стандарты). E-E-A-T: semanticFingerprint: Таблица требований для самозанятых; sourceHint: Internal KB; evidenceStrength: internal-tested. WORD COUNT: minWords: 80, maxWords: 160.",
+                "status": "checked"
               },
               {
                 "id": "h3-2-2",
@@ -1418,7 +1421,8 @@ export const contentData = {
                     "attention": "Путевые листы — ключ к легальной работе, а автоматизация экономит время.",
                     "intent": "Объяснить, почему путевые листы обязательны и как автоматизация помогает избежать ошибок.",
                     "audiences": "Водители, желающие минимизировать бюрократию.",
-                    "selfPrompt": "CONTEXT: Generate paragraph explaining importance of путевые листы and benefits of автоматизация оформления документов. ROLE: Body. KEYWORDS: путевые листы для такси, автоматизация оформления документов. WORD COUNT: minWords: 70, maxWords: 130. E-E-A-T: semanticFingerprint: Важность путевых листов и автоматизации; sourceHint: Internal KB; evidenceStrength: internal-tested."
+                    "selfPrompt": "CONTEXT: Generate paragraph explaining importance of путевые листы and benefits of автоматизация оформления документов. ROLE: Body. KEYWORDS: путевые листы для такси, автоматизация оформления документов. WORD COUNT: minWords: 70, maxWords: 130. E-E-A-T: semanticFingerprint: Важность путевых листов и автоматизации; sourceHint: Internal KB; evidenceStrength: internal-tested.",
+                    "status": "checked"
                   },
                   {
                     "id": "ul-2-2-2",
@@ -1431,7 +1435,8 @@ export const contentData = {
                     "attention": "Проверьте, что все обязательные процедуры выполнены.",
                     "intent": "Список ключевых процедур: медосмотр и техконтроль, которые нельзя пропустить.",
                     "audiences": "Водители, готовящие документы к подаче.",
-                    "selfPrompt": "CONTEXT: Generate unordered list (3-4 items) of обязательные процедуры для самозанятых: медосмотр, техконтроль, отметки в путевом листе. KEYWORDS: медицинский осмотр водителя, технический контроль автомобиля. Short bullets (5-10 words). WORD COUNT: minWords: 40, maxWords: 80. E-E-A-T: semanticFingerprint: Список обязательных процедур; sourceHint: Internal KB; evidenceStrength: internal-tested."
+                    "selfPrompt": "CONTEXT: Generate unordered list (3-4 items) of обязательные процедуры для самозанятых: медосмотр, техконтроль, отметки в путевом листе. KEYWORDS: медицинский осмотр водителя, технический контроль автомобиля. Short bullets (5-10 words). WORD COUNT: minWords: 40, maxWords: 80. E-E-A-T: semanticFingerprint: Список обязательных процедур; sourceHint: Internal KB; evidenceStrength: internal-tested.",
+                    "status": "checked"
                   },
                   {
                     "id": "p-2-2-3",
@@ -1443,11 +1448,14 @@ export const contentData = {
                     "attention": "Следуйте советам, чтобы ускорить процесс и избежать ошибок.",
                     "intent": "Дать практические советы по подготовке документов и прохождению процедур.",
                     "audiences": "Самозанятые, стремящиеся к быстрому и успешному оформлению.",
-                    "selfPrompt": "CONTEXT: Generate paragraph with actionable tips for preparing documents and passing procedures. ROLE: Conclusion. KEYWORDS: советы по подготовке документов. WORD COUNT: minWords: 60, maxWords: 100. E-E-A-T: semanticFingerprint: Практические советы по подготовке; sourceHint: Internal KB + External KB; evidenceStrength: internal-tested."
+                    "selfPrompt": "CONTEXT: Generate paragraph with actionable tips for preparing documents and passing procedures. ROLE: Conclusion. KEYWORDS: советы по подготовке документов. WORD COUNT: minWords: 60, maxWords: 100. E-E-A-T: semanticFingerprint: Практические советы по подготовке; sourceHint: Internal KB + External KB; evidenceStrength: internal-tested.",
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-3",
@@ -1888,5 +1896,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T16:54:04.231Z";
+export const lastUpdated = "2025-10-26T16:54:14.481Z";
 export const generatedBy = "menu-persist-api";
