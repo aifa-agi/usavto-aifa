@@ -1206,7 +1206,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-26T16:03:09.843Z",
-        "updatedAt": "2025-10-26T16:03:09.843Z",
+        "updatedAt": "2025-10-26T16:10:20.708Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, какой автомобиль подходит для Яндекс Такси: требования к моделям, список подходящих авто по тарифам, советы по выбору и проверке.",
@@ -1225,7 +1225,76 @@ export const contentData = {
         "intent": "Пользователь заходит на страницу, чтобы узнать, какие автомобили соответствуют требованиям Яндекс Такси, и выбрать подходящую модель для работы в сервисе. Ожидаемое действие — ознакомиться с критериями отбора, просмотреть актуальный список одобренных моделей и определить, подходит ли его автомобиль или какой лучше приобрести. Страница закрывает поисковый запрос, предоставляя официальные требования, список автомобилей по классам и практические советы по выбору и проверке авто для Яндекс Такси.",
         "taxonomy": "Эта страница представляет собой подробное руководство (guide) по требованиям к автомобилям для работы в Яндекс Такси, включает перечень подходящих моделей и критерии отбора по тарифам сервиса. В структуре контента она относится к категории \"Работа и карьера\" > \"Такси и агрегаторы\" > \"Требования и подбор автомобиля\", выполняя роль кластерного материала, поддерживающего основную страницу (пиллар) о трудоустройстве в Яндекс Такси и связанных сервисах. Тематически страница укрепляет авторитет ресурса в вопросах нормативных требований, практических советов и актуальной информации для водителей и владельцев автопарков.",
         "attention": "Захватите внимание мгновенным интерактивным тестом «Подходит ли ваш авто для Яндекс Такси?», визуально выделив его вверху страницы, чтобы пользователь сразу начал вовлекаться. Для удержания интереса используйте четкую инфографику требований, динамические списки моделей по тарифам и персонализированные подсказки по выгодному выбору авто, выделяя практические советы и свежие изменения в правилах — тем самым обеспечьте быстрое получение ответа и ощущение экспертной поддержки, чего не хватает у конкурентов.",
-        "audiences": "Данная страница предназначена для водителей и индивидуальных предпринимателей в возрасте 25–45 лет, рассматривающих возможность работы или расширения деятельности в Яндекс Такси и заинтересованных в выборе или покупке автомобиля, соответствующего требованиям сервиса. Аудитория стремится повысить доход и снизить риски, и ищет актуальную, практическую информацию о критериях отбора автомобилей, списке подходящих моделей и нюансах по тарифам, чтобы принять взвешенное решение на этапе рассмотрения и выбора. Пользователи обладают средним техническим уровнем и базовыми знаниями о такси-рынке, но нуждаются в структурированной, экспертной информации для уверенного старта или обновления автопарка."
+        "audiences": "Данная страница предназначена для водителей и индивидуальных предпринимателей в возрасте 25–45 лет, рассматривающих возможность работы или расширения деятельности в Яндекс Такси и заинтересованных в выборе или покупке автомобиля, соответствующего требованиям сервиса. Аудитория стремится повысить доход и снизить риски, и ищет актуальную, практическую информацию о критериях отбора автомобилей, списке подходящих моделей и нюансах по тарифам, чтобы принять взвешенное решение на этапе рассмотрения и выбора. Пользователи обладают средним техническим уровнем и базовыми знаниями о такси-рынке, но нуждаются в структурированной, экспертной информации для уверенного старта или обновления автопарка.",
+        "draftContentStructure": [
+          {
+            "id": "h2-1",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "какой автомобиль подходит для яндекс такси",
+              "требования к автомобилю яндекс такси",
+              "выбор авто для работы в такси",
+              "список моделей для яндекс такси",
+              "условия для водителей",
+              "критерии отбора автомобилей",
+              "работа в яндекс такси"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Начните с интерактивного теста и получите быстрый ответ — подходит ли ваш автомобиль для Яндекс Такси, чтобы сразу понять перспективы работы и избежать ошибок при выборе машины.",
+            "intent": "Ввести пользователя в тему, обозначить ключевые вопросы о требованиях к автомобилям для Яндекс Такси и объяснить, какую пользу он получит, ознакомившись с материалом.",
+            "audiences": "Водители и индивидуальные предприниматели, рассматривающие работу или расширение автопарка в Яндекс Такси; уровень — средний, ищут структурированную и актуальную информацию для принятия решения.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 introduction for the page \"Какой автомобиль подходит для Яндекс Такси: требования, список моделей\".\n\nGOAL: Представить основную тему страницы, обозначить ключевые вопросы (требования к автомобилям, список моделей, советы по выбору), объяснить, какую пользу получит пользователь, и создать мотивацию для дальнейшего чтения.\n\nAUDIENCE: Водители и ИП, планирующие работу в Яндекс Такси | Level: intermediate | Pain points: неуверенность в требованиях, страх ошибиться при выборе авто, желание повысить доход.\n\nKEYWORDS TO INTEGRATE:\n[какой автомобиль подходит для яндекс такси, требования к автомобилю яндекс такси, выбор авто для работы в такси, список моделей для яндекс такси, условия для водителей, критерии отбора автомобилей, работа в яндекс такси]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 150, maxWords: 250 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: # [H2 Title] + 2 intro paragraphs\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: требования к автомобилю, оптимальные модели, влияние выбора авто\n- SECONDARY: Apply insights from External KB: официальные критерии, акцент на самостоятельной проверке, актуальность данных\n\nQUALITY CRITERIA:\n- Actionable (чётко обозначить, что узнает пользователь)\n- Specific (указать, что будет список моделей и советы)\n- Data-backed (ссылаться на официальные требования и опыт водителей)\n- No fluff (никакой воды)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальное введение, раскрывающее ценность страницы и мотивирующее к изучению.\n- sourceHint: Internal KB (основные требования и советы), External KB (акцент на проверке и актуальности)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Дать краткий анонс структуры: требования, список моделей, советы по выбору\n- Указать, что информация актуальна и проверена\n- Включить мотивационный посыл для перехода к тесту или основному контенту\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 150,
+              "maxWords": 250,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-1-1",
+                "tag": "p",
+                "keywords": [
+                  "какой автомобиль подходит для яндекс такси",
+                  "требования к автомобилю яндекс такси"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, как быстро определить, подходит ли ваш автомобиль для Яндекс Такси, и получите экспертные рекомендации по выбору.",
+                "intent": "Дать краткое объяснение, почему важно знать требования к автомобилю для работы в Яндекс Такси, и обозначить ценность дальнейшего чтения.",
+                "audiences": "Водители и ИП, которые хотят понять, соответствует ли их авто требованиям сервиса; уровень — средний.",
+                "selfPrompt": "CONTEXT: Generate intro paragraph (role: intro) for h2 \"Какой автомобиль подходит для Яндекс Такси: требования, список моделей\".\nGOAL: Кратко объяснить, почему важно знать требования к автомобилю для Яндекс Такси, и обозначить ценность дальнейшего чтения.\nKEYWORDS: [какой автомобиль подходит для яндекс такси, требования к автомобилю яндекс такси]\nWORD COUNT: minWords: 100, maxWords: 180\nMARKDOWN/MDX SYNTAX: Paragraph\nKNOWLEDGE SOURCES: Internal KB (требования, влияние выбора авто), External KB (акцент на самостоятельной проверке)\nsemanticFingerprint: Мотивационное вступление, объясняющее, зачем читать материал.\nsourceHint: Internal KB + External KB (industry standard)\nevidenceStrength: internal-tested\n",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 180,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-2",
+                "tag": "p",
+                "keywords": [
+                  "список моделей для яндекс такси",
+                  "выбор авто для работы в такси"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Получите структурированный список моделей и советы, чтобы сделать выгодный выбор автомобиля для Яндекс Такси.",
+                "intent": "Анонсировать, что пользователь найдёт на странице: список моделей, критерии отбора, советы по выбору и проверке авто.",
+                "audiences": "Водители и ИП, которые ищут конкретные рекомендации и актуальные списки моделей для работы в Яндекс Такси.",
+                "selfPrompt": "CONTEXT: Generate supporting paragraph (role: preview) for h2 \"Какой автомобиль подходит для Яндекс Такси: требования, список моделей\".\nGOAL: Анонсировать структуру страницы: список моделей, критерии отбора, советы по выбору и проверке авто.\nKEYWORDS: [список моделей для яндекс такси, выбор авто для работы в такси]\nWORD COUNT: minWords: 60, maxWords: 120\nMARKDOWN/MDX SYNTAX: Paragraph\nKNOWLEDGE SOURCES: Internal KB (оптимальные модели, советы по выбору), External KB (актуальность данных, самостоятельная проверка)\nsemanticFingerprint: Краткий анонс структуры и пользы для пользователя.\nsourceHint: Internal KB + External KB (peer-reviewed)\nevidenceStrength: internal-tested\n",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 120,
+                  "actualContent": ""
+                }
+              }
+            ]
+          }
+        ]
       }
     ],
     "order": 16
@@ -1256,5 +1325,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T16:25:45.023Z";
+export const lastUpdated = "2025-10-26T16:26:37.958Z";
 export const generatedBy = "menu-persist-api";
