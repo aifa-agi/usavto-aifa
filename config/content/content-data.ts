@@ -1206,7 +1206,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-26T16:03:09.843Z",
-        "updatedAt": "2025-10-26T16:10:20.708Z",
+        "updatedAt": "2025-10-26T16:11:13.855Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, какой автомобиль подходит для Яндекс Такси: требования к моделям, список подходящих авто по тарифам, советы по выбору и проверке.",
@@ -1293,6 +1293,161 @@ export const contentData = {
                 }
               }
             ]
+          },
+          {
+            "id": "h2-2",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "официальные требования яндекс такси",
+              "возраст автомобиля для такси",
+              "техническое состояние авто",
+              "класс автомобиля для сервиса",
+              "тип кузова для такси",
+              "регистрация автомобиля для работы",
+              "документы для такси"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, каким критериям должен соответствовать автомобиль для допуска к работе в Яндекс Такси, чтобы избежать отказа и повысить шансы на успешное подключение.",
+            "intent": "Подробно раскрыть официальные требования к автомобилям для работы в Яндекс Такси, чтобы пользователь мог самостоятельно оценить соответствие своей машины или выбрать подходящую модель.",
+            "audiences": "Водители и индивидуальные предприниматели, рассматривающие работу в Яндекс Такси, а также владельцы автопарков, желающие понять нормативные критерии допуска авто; уровень — средний, заинтересованы в практических деталях и актуальных правилах.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 section detailing официальные требования к автомобилю для работы в Яндекс Такси for the page \"Какой автомобиль подходит для Яндекс Такси: требования, список моделей\".\n\nGOAL: Дать пользователю структурированное и полное представление о технических, юридических и эксплуатационных критериях допуска автомобиля к работе в сервисе Яндекс Такси, чтобы он мог быстро проверить соответствие своего авто или выбрать подходящую модель.\n\nAUDIENCE: Водители, ИП, владельцы автопарков | Level: intermediate | Pain points: Неясность требований, страх отказа, желание избежать ошибок при выборе авто.\n\nKEYWORDS TO INTEGRATE:\n[официальные требования яндекс такси, возраст автомобиля для такси, техническое состояние авто, класс автомобиля для сервиса, тип кузова для такси, регистрация автомобиля для работы, документы для такси]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 250, maxWords: 400 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with nested paragraphs, table, and H3 as per structure.\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: Требования к автомобилю для работы в Яндекс Такси\n- SECONDARY: Apply insights from External KB: pro.yandex.ru/knowledge-base/taxi/tariffs/auto-list (для уточнения критериев и формулировок)\n\nQUALITY CRITERIA:\n- Actionable (чёткие критерии, которые можно проверить)\n- Specific (конкретные параметры: возраст, класс, кузов, документы)\n- Data-backed (ссылки на официальные источники, если уместно)\n- No fluff (без воды, только суть)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальное описание всех официальных требований к авто для допуска в Яндекс Такси, с акцентом на практическую применимость.\n- sourceHint: Internal KB (company expertise) + уточняющие детали из официального ресурса Яндекс Такси.\n- evidenceStrength: internal-tested | external-peer-reviewed (официальные регламенты сервиса).\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Дать краткое вводное пояснение (p-2-1), затем визуально выделить основные критерии в таблице (table-2-2-4), после чего раскрыть детали и нюансы в h3-2-2.\n- В selfPrompt для дочерних элементов указывать роль (intro, data, explanation).\n- Добавить interlink planning: внутренние ссылки на страницы о подключении к Яндекс Такси и о документах для водителей.\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)\n",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 250,
+              "maxWords": 400,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-2-1",
+                "tag": "p",
+                "keywords": [
+                  "официальные требования яндекс такси"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Поймите, почему важно заранее проверить соответствие авто всем критериям сервиса.",
+                "intent": "Ввести пользователя в суть раздела, объяснив значимость соблюдения официальных требований для допуска к работе.",
+                "audiences": "Водители и ИП, которые хотят избежать ошибок при подключении к Яндекс Такси; уровень — средний.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for section 'Официальные требования к автомобилю для Яндекс Такси'.\nGOAL: Кратко объяснить, почему важно знать и соблюдать официальные требования к автомобилю для допуска к работе в сервисе.\nROLE: intro\nKEYWORDS: [официальные требования яндекс такси]\nWORD COUNT: minWords: 80, maxWords: 150\nMARKDOWN: Paragraph\nSOURCE: Internal KB (company expertise)\nsemanticFingerprint: Объяснение значимости предварительной проверки соответствия авто требованиям сервиса.\nsourceHint: Internal KB\n",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-2-2-3",
+                "tag": "p",
+                "keywords": [
+                  "возраст автомобиля для такси"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, почему возраст авто критичен для допуска.",
+                "intent": "Кратко выделить один из ключевых критериев — возраст автомобиля, и его влияние на решение сервиса.",
+                "audiences": "Владельцы авто, не уверенные в допустимом возрасте машины для работы в такси.",
+                "selfPrompt": "CONTEXT: Generate short paragraph highlighting the importance of vehicle age as a requirement for Яндекс Такси.\nGOAL: Подчеркнуть, что возраст автомобиля — один из основных критериев допуска.\nROLE: transition\nKEYWORDS: [возраст автомобиля для такси]\nWORD COUNT: minWords: 5, maxWords: 15\nMARKDOWN: Short paragraph\nSOURCE: Internal KB + уточнение из External KB (pro.yandex.ru)\nsemanticFingerprint: Краткое выделение возраста авто как ключевого параметра.\nsourceHint: Internal KB, External KB\n",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-2-2-4",
+                "tag": "table",
+                "keywords": [
+                  "техническое состояние авто",
+                  "класс автомобиля для сервиса"
+                ],
+                "taxonomy": "Data-driven",
+                "attention": "Сравните основные критерии допуска авто в удобной таблице.",
+                "intent": "Визуализировать ключевые требования к автомобилю для Яндекс Такси по основным параметрам.",
+                "audiences": "Потенциальные водители и владельцы автопарков, которым важно быстро сравнить критерии.",
+                "selfPrompt": "CONTEXT: Generate comparison table summarizing key requirements for vehicles in Яндекс Такси.\nGOAL: Систематизировать критерии (возраст, техническое состояние, класс, кузов, регистрация, документы) в удобной для восприятия форме.\nSCHEMA: 2 columns × 6 rows\nHEADERS: Критерий | Требование\nDATA TYPES: text | text\nSOURCE: Internal KB (primary), уточнение формулировок из External KB (pro.yandex.ru)\nsemanticFingerprint: Таблица с основными параметрами допуска авто в сервис.\nsourceHint: Internal KB, External KB\nschemaReadiness: Dataset/Comparison\nKEYWORDS: [техническое состояние авто, класс автомобиля для сервиса]\nWORD COUNT: minWords: 80, maxWords: 160\n",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-2-2",
+                "tag": "h3",
+                "keywords": [
+                  "тип кузова для такси",
+                  "регистрация автомобиля для работы",
+                  "документы для такси"
+                ],
+                "taxonomy": "Guide",
+                "attention": "Разберитесь в нюансах по типу кузова, регистрации и документам для допуска.",
+                "intent": "Раскрыть детали и возможные подводные камни по дополнительным критериям: тип кузова, регистрация, документы.",
+                "audiences": "Водители, которые хотят избежать отказа из-за формальных нюансов; уровень — средний.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection for 'Официальные требования к автомобилю для Яндекс Такси' focusing on тип кузова, регистрация и документы.\nGOAL: Подробно объяснить, какие типы кузова допускаются, как должна быть оформлена регистрация, и какие документы необходимы для допуска авто к работе в сервисе.\nREFERENCE PARENT H2: 'Официальные требования к автомобилю для Яндекс Такси'\nsemanticFingerprint: Детализация формальных и технических нюансов, которые часто вызывают вопросы у водителей.\nsourceHint: Internal KB, уточнение из External KB (pro.yandex.ru)\nevidenceStrength: internal-tested | external-peer-reviewed\ninterlinkPlanning: Внутренняя ссылка на страницу о документах для водителей Яндекс Такси.\nKEYWORDS: [тип кузова для такси, регистрация автомобиля для работы, документы для такси]\nWORD COUNT: minWords: 150, maxWords: 250\n",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 250,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "тип кузова для такси"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Узнайте, какие кузова допускаются и почему это важно.",
+                    "intent": "Объяснить, какие типы кузова подходят для Яндекс Такси и почему сервис ограничивает выбор.",
+                    "audiences": "Водители, выбирающие или покупающие авто для работы в такси.",
+                    "selfPrompt": "CONTEXT: Generate paragraph explaining allowed vehicle body types for Яндекс Такси.\nGOAL: Подчеркнуть, что чаще всего допускаются седаны и универсалы, а кроссоверы и минивэны — только при соблюдении дополнительных условий.\nROLE: explanation\nKEYWORDS: [тип кузова для такси]\nWORD COUNT: minWords: 70, maxWords: 130\nMARKDOWN: Paragraph\nSOURCE: Internal KB\nsemanticFingerprint: Разъяснение ограничений по типу кузова для допуска в сервис.\nsourceHint: Internal KB\n",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 130,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-2-2-2",
+                    "tag": "ul",
+                    "keywords": [
+                      "регистрация автомобиля для работы"
+                    ],
+                    "taxonomy": "Actionable",
+                    "attention": "Проверьте, как должна быть оформлена регистрация авто.",
+                    "intent": "Дать пошаговый список требований к регистрации автомобиля для допуска к работе в Яндекс Такси.",
+                    "audiences": "ИП и владельцы авто, оформляющие машину для такси.",
+                    "selfPrompt": "CONTEXT: Generate unordered list of registration requirements for vehicles in Яндекс Такси.\nGOAL: Перечислить основные пункты: оформление на ИП или юрлицо, наличие разрешения на перевозку, соответствие ПТС и СТС.\nITEM COUNT: 3-4\nSTRUCTURE: short bullets (5-10 words)\nKEYWORDS: [регистрация автомобиля для работы]\nWORD COUNT: minWords: 40, maxWords: 80\nMARKDOWN: Unordered list\nSOURCE: Internal KB\nsemanticFingerprint: Чек-лист по регистрации авто для допуска в сервис.\nsourceHint: Internal KB\n",
+                    "additionalData": {
+                      "minWords": 40,
+                      "maxWords": 80,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-2-3",
+                    "tag": "p",
+                    "keywords": [
+                      "документы для такси"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Убедитесь, что у вас есть все необходимые документы.",
+                    "intent": "Объяснить, какие документы обязательны для допуска автомобиля к работе в Яндекс Такси.",
+                    "audiences": "Водители, готовящие пакет документов для подключения к сервису.",
+                    "selfPrompt": "CONTEXT: Generate paragraph listing required documents for vehicle approval in Яндекс Такси.\nGOAL: Перечислить основные документы: свидетельство о регистрации, разрешение на перевозку, страховка, диагностическая карта.\nROLE: summary\nKEYWORDS: [документы для такси]\nWORD COUNT: minWords: 60, maxWords: 100\nMARKDOWN: Paragraph\nSOURCE: Internal KB\nsemanticFingerprint: Список обязательных документов для допуска авто к работе в сервисе.\nsourceHint: Internal KB\n",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 100,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1325,5 +1480,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T16:26:37.958Z";
+export const lastUpdated = "2025-10-26T16:27:25.610Z";
 export const generatedBy = "menu-persist-api";
