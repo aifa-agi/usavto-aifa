@@ -1234,7 +1234,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-26T16:26:27.424Z",
-        "updatedAt": "2025-10-26T16:26:27.424Z",
+        "updatedAt": "2025-10-26T16:33:57.970Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как получить разрешение на такси на свой автомобиль самозанятому в Яндекс Такси: пошаговая инструкция, требования, советы. Начните работать легально!",
@@ -1253,7 +1253,76 @@ export const contentData = {
         "intent": "Пользователь заходит на эту страницу, чтобы узнать, как самозанятому водителю получить официальное разрешение на работу в Яндекс Такси на собственном автомобиле. Ожидаемый результат — получить пошаговую инструкцию и перечень необходимых документов для самостоятельного оформления разрешения через Госуслуги или МФЦ. Страница полностью удовлетворяет информационный запрос, предоставляя актуальные требования, юридические нюансы и практические советы для успешного получения разрешения.",
         "taxonomy": "Данная страница является практическим пошаговым руководством (гайдом), относящимся к категории «Юридические и административные вопросы» с подкатегорией «Оформление разрешений и лицензий для такси» и специализацией на самозанятых водителях в Яндекс Такси. В структуре контента она выступает как кластерная страница, поддерживающая более широкие материалы о работе самозанятым в такси и легализации деятельности через получение разрешения. Тематически страница усиливает авторитет ресурса по вопросам регистрации, получения разрешений и навигации по законодательству для самозанятых в сфере такси-агрегаторов.",
         "attention": "С первых секунд используем яркий инфографический блок «5 шагов к разрешению для самозанятых в Яндекс Такси» с визуальной шкалой прогресса и выделением выгоды (бесплатно, быстро, онлайн), затем плавно ведём пользователя через пошаговую анимацию, закрепляя внимание интерактивными подсказками и встроенным калькулятором шансов на одобрение; ключевой акцент — уникальная простота и лаконичность инструкции без перегруза юридическими терминами и «водой».",
-        "audiences": "Страница предназначена для взрослых мужчин и женщин в возрасте 25–50 лет, работающих или планирующих работать самозанятыми водителями такси на собственном автомобиле через Яндекс Такси, с минимальным или средним опытом в сфере перевозок и базовыми знаниями цифровых сервисов. Эти пользователи ищут подробную, пошаговую инструкцию по самостоятельному и законному получению разрешения на такси, чтобы избежать бюрократических ошибок, быстро начать работу и не столкнуться с штрафами или отказами из-за незнания новых требований законодательства. Контент особенно актуален для тех, кто находится на этапе осознанного выбора и подготовки к оформлению документов, уже ознакомлен с общими условиями работы, но испытывает затруднения в понимании деталей и алгоритма действий."
+        "audiences": "Страница предназначена для взрослых мужчин и женщин в возрасте 25–50 лет, работающих или планирующих работать самозанятыми водителями такси на собственном автомобиле через Яндекс Такси, с минимальным или средним опытом в сфере перевозок и базовыми знаниями цифровых сервисов. Эти пользователи ищут подробную, пошаговую инструкцию по самостоятельному и законному получению разрешения на такси, чтобы избежать бюрократических ошибок, быстро начать работу и не столкнуться с штрафами или отказами из-за незнания новых требований законодательства. Контент особенно актуален для тех, кто находится на этапе осознанного выбора и подготовки к оформлению документов, уже ознакомлен с общими условиями работы, но испытывает затруднения в понимании деталей и алгоритма действий.",
+        "draftContentStructure": [
+          {
+            "id": "h2-1",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "как получить разрешение на такси на свой автомобиль самозанятому в яндекс такси",
+              "разрешение на такси для самозанятых",
+              "пошаговая инструкция",
+              "требования к разрешению",
+              "легализация деятельности такси",
+              "документы для такси",
+              "работа в Яндекс Такси"
+            ],
+            "taxonomy": "Guide",
+            "attention": "С первых секунд пользователь получает наглядное представление о процессе получения разрешения для самозанятых в Яндекс Такси, узнаёт ключевые выгоды и понимает, что инструкция проста и актуальна.",
+            "intent": "Ввести пользователя в тему, обозначить важность легального оформления разрешения на такси для самозанятых в Яндекс Такси, а также кратко рассказать, что будет рассмотрено в гайде.",
+            "audiences": "Взрослые мужчины и женщины 25–50 лет, планирующие или уже работающие самозанятыми водителями такси на собственном автомобиле через Яндекс Такси, с минимальным или средним опытом, ищущие простую и понятную инструкцию.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 introduction section for page \"Как получить разрешение на такси самозанятому в Яндекс Такси\"\n\nGOAL: Представить основную тему страницы, объяснить значимость получения разрешения для самозанятых, обозначить выгоды и кратко анонсировать структуру гайда.\n\nAUDIENCE: Водители-самозанятые, планирующие работать в Яндекс Такси | Level: beginner/intermediate | Pain points: неуверенность в юридических нюансах, страх ошибок, желание быстро и легально начать работу\n\nKEYWORDS TO INTEGRATE:\n[как получить разрешение на такси на свой автомобиль самозанятому в яндекс такси, разрешение на такси для самозанятых, пошаговая инструкция, требования к разрешению, легализация деятельности такси, документы для такси, работа в Яндекс Такси]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 150, maxWords: 250 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: # [H2 Title] + 2 intro paragraphs\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: требования к разрешению, оформление документов, актуальные юридические нюансы\n- SECONDARY: Apply insights from External KB: структура пошаговой инструкции, акцент на самостоятельности, выгоды легализации\n\nQUALITY CRITERIA:\n- Actionable (чётко обозначить, что пользователь узнает)\n- Specific (без воды, только суть)\n- Data-backed (упоминание актуальных требований)\n- No fluff (никаких общих фраз)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Введение, раскрывающее ценность легального оформления разрешения для самозанятых в Яндекс Такси и анонсирующее пошаговый гайд.\n- sourceHint: Internal KB (требования, документы), External KB (структура гайда)\n- evidenceStrength: internal-tested\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference parent page intent\n- Must set thematic direction for child h3 elements\n- Add interlink planning: internalLinks (например, на разделы о документах, медицинских осмотрах, автоматизации оформления)\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 150,
+              "maxWords": 250,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-1-1",
+                "tag": "p",
+                "keywords": [
+                  "разрешение на такси для самозанятых",
+                  "легализация деятельности такси"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Пользователь сразу понимает, почему разрешение важно и какие преимущества даёт легальная работа.",
+                "intent": "Кратко объяснить, почему получение разрешения на такси — ключевой шаг для самозанятых, и подчеркнуть актуальность темы.",
+                "audiences": "Начинающие и действующие самозанятые водители, которые хотят избежать штрафов и работать легально.",
+                "selfPrompt": "CONTEXT: Generate intro paragraph (role: intro) for h2 'Как получить разрешение на такси самозанятому в Яндекс Такси'.\nGOAL: Объяснить значимость разрешения для самозанятых, обозначить выгоды легализации.\nKEYWORDS: разрешение на такси для самозанятых, легализация деятельности такси\nWORD COUNT: minWords: 100, maxWords: 180\nMARKDOWN: Paragraph\nWRITING STYLE: Narrative\nCONTENT FORMAT: Simple\nKNOWLEDGE SOURCES: Internal KB (требования, выгоды), External KB (акцент на самостоятельности)\nE-E-A-T: semanticFingerprint: Вводный абзац о важности разрешения для самозанятых; sourceHint: Internal KB; evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 180,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-2",
+                "tag": "p",
+                "keywords": [
+                  "пошаговая инструкция",
+                  "документы для такси"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Пользователь узнаёт, что получит чёткую и простую инструкцию без лишней бюрократии.",
+                "intent": "Анонсировать структуру гайда и пообещать простоту и наглядность дальнейших шагов.",
+                "audiences": "Потенциальные водители, которые боятся сложностей и хотят быстро разобраться в процессе.",
+                "selfPrompt": "CONTEXT: Generate transition/preview paragraph (role: transition) for h2 'Как получить разрешение на такси самозанятому в Яндекс Такси'.\nGOAL: Кратко анонсировать пошаговую инструкцию и простоту оформления.\nKEYWORDS: пошаговая инструкция, документы для такси\nWORD COUNT: minWords: 60, maxWords: 120\nMARKDOWN: Paragraph\nWRITING STYLE: Narrative\nCONTENT FORMAT: Simple\nKNOWLEDGE SOURCES: Internal KB (структура процесса), External KB (анонс пошагового гайда)\nE-E-A-T: semanticFingerprint: Анонс простого и наглядного гайда; sourceHint: Internal KB + External KB; evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 120,
+                  "actualContent": ""
+                }
+              }
+            ]
+          }
+        ]
       }
     ],
     "order": 16
@@ -1284,5 +1353,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T16:49:22.077Z";
+export const lastUpdated = "2025-10-26T16:50:17.843Z";
 export const generatedBy = "menu-persist-api";
