@@ -62,17 +62,10 @@ export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProp
   };
 
   const handleHomePageClick = () => {
+    router.push("/home");
+    setIsOpen(false);
+  };
 
-    if (userType === 'admin' || userType === 'architect' || userType === 'editor') {
-      setIsOpen(false);
-      window.location.href = "/";
-
-    } else {
-      router.refresh();
-      router.push("/");
-      setIsOpen(false);
-    }
-  }
   const PageRow = ({ page }: { page: PageData }) => {
     const showBadge = page.hasBadge && page.badgeName;
 
@@ -106,17 +99,37 @@ export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProp
     return template.replace("{count}", String(count));
   };
 
-  const MoreRow = ({ remaining }: { remaining: number }) => {
+  // ============ ИЗМЕНЁННЫЙ КОД НАЧАЛО ============
+  const MoreRow = ({
+    remaining,
+    categoryTitle
+  }: {
+    remaining: number;
+    categoryTitle: string;
+  }) => {
     const label = buildMoreLabel(remaining);
+
+    const handleMoreClick = () => {
+      setActiveCategoryTitle(categoryTitle);
+    };
+
     return (
-      <li aria-disabled className="text-gray-400 select-none">
-        <div className="flex items-center justify-between">
-          <span className="flex-grow overflow-hidden whitespace-nowrap text-ellipsis">{label}</span>
+      <li>
+        <button
+          type="button"
+          onClick={handleMoreClick}
+          className="flex items-center justify-between text-white hover:text-gray-300 transition-colors duration-200 cursor-pointer w-full text-left"
+        >
+          <span className="flex-grow overflow-hidden whitespace-nowrap text-ellipsis">
+            {label}
+          </span>
           <span className="ml-3" />
-        </div>
+        </button>
+        <Separator className="bg-gray-500 my-2" />
       </li>
     );
   };
+  // ============ ИЗМЕНЁННЫЙ КОД КОНЕЦ ============
 
   const DefaultExpandedAll = () => {
     return (
@@ -156,7 +169,14 @@ export default function WideMenu({ isOpen, setIsOpen, categories }: WideMenuProp
                 {visiblePages.map((p) => (
                   <PageRow key={p.id} page={p} />
                 ))}
-                {remaining > 0 && <MoreRow remaining={remaining} />}
+                {/* ============ ИЗМЕНЁННЫЙ КОД НАЧАЛО ============ */}
+                {remaining > 0 && (
+                  <MoreRow
+                    remaining={remaining}
+                    categoryTitle={category.title}
+                  />
+                )}
+                {/* ============ ИЗМЕНЁННЫЙ КОД КОНЕЦ ============ */}
               </ul>
             </div>
           );

@@ -19,6 +19,10 @@ interface MessagesProps {
   reload: UseChatHelpers["reload"];
   isReadonly: boolean;
   isArtifactVisible: boolean;
+  /**
+   * Function to set the input value (passed down to messages for suggestion buttons)
+   */
+  setInput: UseChatHelpers["setInput"];
 }
 
 function PureMessages({
@@ -29,6 +33,7 @@ function PureMessages({
   setMessages,
   reload,
   isReadonly,
+  setInput,
 }: MessagesProps) {
   const {
     containerRef: messagesContainerRef,
@@ -65,6 +70,8 @@ function PureMessages({
           requiresScrollPadding={
             hasSentMessage && index === messages.length - 1
           }
+          setInput={setInput}
+          status={status}
         />
       ))}
 

@@ -32,6 +32,8 @@ const PurePreviewMessage = ({
   reload,
   isReadonly,
   requiresScrollPadding,
+  setInput,
+  status,
 }: {
   chatId: string;
   message: UIMessage;
@@ -41,9 +43,14 @@ const PurePreviewMessage = ({
   reload: UseChatHelpers["reload"];
   isReadonly: boolean;
   requiresScrollPadding: boolean;
+  setInput: UseChatHelpers["setInput"];
+  status: UseChatHelpers["status"];
 }) => {
   const [mode, setMode] = useState<"view" | "edit">("view");
   const { t } = useTranslation();
+
+  // Determine if suggestions should be disabled
+  const disableSuggestions = status !== "ready";
 
   return (
     <AnimatePresence>
@@ -119,7 +126,14 @@ const PurePreviewMessage = ({
                             message.role === "user",
                         })}
                       >
-                        <Markdown>{sanitizeText(part.text)}</Markdown>
+                        <Markdown
+                          onSuggestionClick={
+                            message.role === "assistant" ? setInput : undefined
+                          }
+                          disableSuggestions={disableSuggestions}
+                        >
+                          {sanitizeText(part.text)}
+                        </Markdown>
                       </div>
                     </div>
                   );
@@ -171,6 +185,7 @@ export const PreviewMessage = memo(
       return false;
     if (!equal(prevProps.message.parts, nextProps.message.parts)) return false;
     if (!equal(prevProps.vote, nextProps.vote)) return false;
+    if (prevProps.status !== nextProps.status) return false;
 
     return true;
   }

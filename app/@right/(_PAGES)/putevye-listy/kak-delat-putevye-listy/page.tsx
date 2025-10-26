@@ -987,18 +987,7 @@ const sections = [
             }
           ]
         },
-        {
-          "type": "codeBlock",
-          "attrs": {
-            "language": null
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "# Пример автоматизации оформления путевых листов с помощью Python и API системы\nimport requests\n\ndata = {\n    \"organization\": \"ООО Транспорт\",\n    \"vehicle\": {\"plate\": \"А123ВС77\", \"odometer_start\": 12500},\n    \"driver\": {\"name\": \"Иванов И.И.\", \"license\": \"1234567890\", \"snils\": \"112-233-445 95\"},\n    \"trip_type\": \"коммерческая\",\n    \"medical_check\": True,\n    \"technical_check\": True\n}\n\nresponse = requests.post(\"https://api.usauto.ru/waybills/create\", json=data)\nif response.status_code == 201:\n    print(\"Путевой лист успешно создан\")\nelse:\n    print(\"Ошибка создания путевого листа:\", response.text)"
-            }
-          ]
-        },
+
         {
           "type": "paragraph",
           "attrs": {

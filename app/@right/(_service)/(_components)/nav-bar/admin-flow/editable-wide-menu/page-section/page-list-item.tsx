@@ -156,11 +156,11 @@ export function PageListItem({
             categoryTitle={categoryTitle}
             setCategories={setCategories}
           />
-          {/* <VectorStoreActionsDropdown
+          <VectorStoreActionsDropdown
             singlePage={page}
             categoryTitle={categoryTitle}
             setCategories={setCategories}
-          /> */}
+          />
           <AddToPromptActionsDropdown
             singlePage={page}
             categoryTitle={categoryTitle}

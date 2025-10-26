@@ -3,39 +3,32 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import React, { memo } from "react";
+import React, { memo, useState } from "react";
 import ReactMarkdown, { type Components } from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { CodeBlock } from "../../app/@left/(_public)/(_CHAT)/(chat)/(_service)/(_components)/code-block";
+import { DefaultSuggestionButton } from "./default-suggestion-button";
+import { suggestedActions } from "@/config/chat-config/start-suggestions-buttons";
+import { SuggestionButton } from "@/app/@left/(_public)/(_CHAT)/(chat)/(_service)/(_components)/suggestion-button";
 
 /**
  * Check if URL is internal (same application)
- * Compares against current hostname AND production domain from config
- * Works in both development (localhost) and production
  */
 function checkIfInternalLink(href: string): boolean {
-  // Relative paths are always internal
-  if (href.startsWith('/')) {
+  if (href.startsWith("/")) {
     return true;
   }
 
   try {
     const url = new URL(href);
     const currentHostname = window.location.hostname;
+    const productionDomain = extractDomainFromUrl("https://putevye-listy.ru");
 
-    // Extract production domain from any URL format
-    // Examples: https://putevye-listy.ru or http://localhost:3000
-    const productionDomain = extractDomainFromUrl('https://putevye-listy.ru'); // ⚠️ REPLACE with appConfig.url
-
-    // Check if URL matches:
-    // 1. Current hostname (works in both dev and prod)
-    // 2. Production domain (works in dev when clicking prod links)
-    // 3. Localhost variants (works in dev)
     return (
       url.hostname === currentHostname ||
       url.hostname === productionDomain ||
-      url.hostname === 'localhost' ||
-      url.hostname === '127.0.0.1'
+      url.hostname === "localhost" ||
+      url.hostname === "127.0.0.1"
     );
   } catch {
     return false;
@@ -44,14 +37,13 @@ function checkIfInternalLink(href: string): boolean {
 
 /**
  * Extract domain from full URL
- * Example: https://putevye-listy.ru/path → putevye-listy.ru
  */
 function extractDomainFromUrl(fullUrl: string): string {
   try {
     const url = new URL(fullUrl);
     return url.hostname;
   } catch {
-    return '';
+    return "";
   }
 }
 
@@ -62,15 +54,15 @@ function extractRelativePathFromUrl(href: string): {
   relativePath: string;
   hash: string;
 } {
-  if (href.startsWith('/')) {
-    const hashIndex = href.indexOf('#');
+  if (href.startsWith("/")) {
+    const hashIndex = href.indexOf("#");
     if (hashIndex !== -1) {
       return {
         relativePath: href.substring(0, hashIndex),
         hash: href.substring(hashIndex),
       };
     }
-    return { relativePath: href, hash: '' };
+    return { relativePath: href, hash: "" };
   }
 
   try {
@@ -80,18 +72,32 @@ function extractRelativePathFromUrl(href: string): {
       hash: url.hash,
     };
   } catch {
-    return { relativePath: href, hash: '' };
+    return { relativePath: href, hash: "" };
   }
 }
 
 /**
- * Custom link component for chat markdown
- * Displays absolute URLs but navigates using relative paths
+ * Parse suggestions from markdown text
  */
+function parseSuggestions(text: string): {
+  cleanText: string;
+  suggestions: string[];
+} {
+  const suggestionRegex = /\[suggestion:(.*?)\]/g;
+  const suggestions: string[] = [];
+
+  let match;
+  while ((match = suggestionRegex.exec(text)) !== null) {
+    suggestions.push(match[1].trim());
+  }
+
+  const cleanText = text.replace(suggestionRegex, "").trim();
+
+  return { cleanText, suggestions };
+}
+
 /**
  * Custom link component for chat markdown
- * Displays link text (children) instead of full URL
- * Navigates using Next.js router for internal links
  */
 function ChatLinkComponent({
   href,
@@ -107,20 +113,17 @@ function ChatLinkComponent({
 
     if (isInternalLink) {
       e.preventDefault();
-
       const { relativePath, hash } = extractRelativePathFromUrl(href);
-
       router.push(relativePath + hash);
 
       if (hash) {
         setTimeout(() => {
           const elementId = hash.substring(1);
           const element = document.getElementById(elementId);
-
           if (element) {
             element.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start',
+              behavior: "smooth",
+              block: "start",
             });
           }
         }, 300);
@@ -139,18 +142,15 @@ function ChatLinkComponent({
       rel={isExternal ? "noopener noreferrer" : undefined}
       {...props}
     >
-      {children} {/* ← Это отображает текст ссылки, а не URL */}
+      {children}
     </a>
   );
 }
 
-
 const components: Partial<Components> = {
   // @ts-expect-error
   code: CodeBlock,
-
   pre: ({ children }) => <>{children}</>,
-
   ol: ({ node, children, ...props }) => {
     return (
       <ol className="list-decimal list-outside ml-4" {...props}>
@@ -158,7 +158,6 @@ const components: Partial<Components> = {
       </ol>
     );
   },
-
   ul: ({ node, children, ...props }) => {
     return (
       <ul className="list-disc list-outside ml-4" {...props}>
@@ -166,7 +165,6 @@ const components: Partial<Components> = {
       </ul>
     );
   },
-
   li: ({ node, children, ...props }) => {
     return (
       <li className="py-1" {...props}>
@@ -174,7 +172,6 @@ const components: Partial<Components> = {
       </li>
     );
   },
-
   strong: ({ node, children, ...props }) => {
     return (
       <span className="font-semibold" {...props}>
@@ -182,12 +179,9 @@ const components: Partial<Components> = {
       </span>
     );
   },
-
   a: ({ node, ...props }) => {
-
     return <ChatLinkComponent {...props} />;
   },
-
   h1: ({ node, children, ...props }) => {
     return (
       <h1 className="text-3xl font-semibold mt-6 mb-2" {...props}>
@@ -195,7 +189,6 @@ const components: Partial<Components> = {
       </h1>
     );
   },
-
   h2: ({ node, children, ...props }) => {
     return (
       <h2 className="text-2xl font-semibold mt-6 mb-2" {...props}>
@@ -203,7 +196,6 @@ const components: Partial<Components> = {
       </h2>
     );
   },
-
   h3: ({ node, children, ...props }) => {
     return (
       <h3 className="text-xl font-semibold mt-6 mb-2" {...props}>
@@ -211,7 +203,6 @@ const components: Partial<Components> = {
       </h3>
     );
   },
-
   h4: ({ node, children, ...props }) => {
     return (
       <h4 className="text-lg font-semibold mt-6 mb-2" {...props}>
@@ -219,7 +210,6 @@ const components: Partial<Components> = {
       </h4>
     );
   },
-
   h5: ({ node, children, ...props }) => {
     return (
       <h5 className="text-base font-semibold mt-6 mb-2" {...props}>
@@ -227,7 +217,6 @@ const components: Partial<Components> = {
       </h5>
     );
   },
-
   h6: ({ node, children, ...props }) => {
     return (
       <h6 className="text-sm font-semibold mt-6 mb-2" {...props}>
@@ -235,7 +224,6 @@ const components: Partial<Components> = {
       </h6>
     );
   },
-
   p: ({ node, children, ...props }) => {
     return <div {...props}>{children}</div>;
   },
@@ -243,15 +231,94 @@ const components: Partial<Components> = {
 
 const remarkPlugins = [remarkGfm];
 
-const NonMemoizedMarkdown = ({ children }: { children: string }) => {
+interface MarkdownProps {
+  children: string;
+  onSuggestionClick?: (text: string) => void;
+  disableSuggestions?: boolean;
+}
+
+const NonMemoizedMarkdown = ({
+  children,
+  onSuggestionClick,
+  disableSuggestions = false,
+}: MarkdownProps) => {
+  const { cleanText, suggestions } = parseSuggestions(children);
+  const [mode, setMode] = useState<"ai" | "default">("ai");
+
+  const handleDefaultSuggestionClick = (action: string) => {
+    if (onSuggestionClick) {
+      onSuggestionClick(action);
+      // Automatically switch back to AI mode after sending message
+      setMode("ai");
+    }
+  };
+
   return (
-    <ReactMarkdown remarkPlugins={remarkPlugins} components={components}>
-      {children}
-    </ReactMarkdown>
+    <>
+      <ReactMarkdown remarkPlugins={remarkPlugins} components={components}>
+        {cleanText}
+      </ReactMarkdown>
+
+      {onSuggestionClick && (
+        <>
+          {mode === "ai" && suggestions.length > 0 && (
+            <>
+              {/* AI-generated suggestions */}
+              <div className="flex flex-row flex-wrap gap-2 mt-3 min-w-0">
+                {suggestions.map((suggestion, index) => (
+                  <SuggestionButton
+                    key={`${suggestion}-${index}`}
+                    text={suggestion}
+                    onClick={onSuggestionClick}
+                    disabled={disableSuggestions}
+                  />
+                ))}
+              </div>
+
+              {/* Toggle to default suggestions */}
+              <button
+                className="text-sm text-muted-foreground hover:text-foreground underline cursor-pointer  text-left"
+                onClick={() => setMode("default")}
+              >
+                Start over
+              </button>
+            </>
+          )}
+
+          {mode === "default" && (
+            <>
+              {/* Default suggestions (grid layout) */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-3 w-full">
+                {suggestedActions.map((action, index) => (
+                  <DefaultSuggestionButton
+                    key={`${action.title}-${index}`}
+                    title={action.title}
+                    label={action.label}
+                    action={action.action}
+                    onClick={handleDefaultSuggestionClick}
+                    disabled={disableSuggestions}
+                  />
+                ))}
+              </div>
+
+              {/* Toggle back to AI suggestions */}
+              <button
+                className="text-sm text-muted-foreground hover:text-foreground underline cursor-pointer  text-left"
+                onClick={() => setMode("ai")}
+              >
+                Back to chat
+              </button>
+            </>
+          )}
+        </>
+      )}
+    </>
   );
 };
 
 export const Markdown = memo(
   NonMemoizedMarkdown,
-  (prevProps, nextProps) => prevProps.children === nextProps.children
+  (prevProps, nextProps) =>
+    prevProps.children === nextProps.children &&
+    prevProps.disableSuggestions === nextProps.disableSuggestions
 );

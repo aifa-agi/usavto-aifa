@@ -2,9 +2,9 @@
 "use client";
 
 interface CodeBlockProps {
-  node: any;
-  inline: boolean;
-  className: string;
+  node?: any;
+  inline?: boolean;
+  className?: string;
   children: any;
 }
 
@@ -17,13 +17,16 @@ export function CodeBlock({
 }: CodeBlockProps) {
   if (!inline) {
     return (
-      <div className="not-prose flex flex-col">
-        <pre
-          {...props}
-          className={`text-sm w-full overflow-x-auto dark:bg-zinc-900 p-4 border border-zinc-200 dark:border-zinc-700 rounded-xl dark:text-zinc-50 text-zinc-900`}
-        >
-          <code className="whitespace-pre-wrap break-words">{children}</code>
-        </pre>
+      <div className="not-prose flex flex-col min-w-0 my-4">
+        {/* Wrapper для горизонтальной прокрутки */}
+        <div className="overflow-x-auto rounded-xl border border-zinc-200 dark:border-zinc-700">
+          <pre
+            {...props}
+            className="text-sm w-full dark:bg-zinc-900 bg-white p-4 m-0 dark:text-zinc-50 text-zinc-900"
+          >
+            <code className="whitespace-pre">{children}</code>
+          </pre>
+        </div>
       </div>
     );
   } else {

@@ -1,3 +1,5 @@
+// @/config/chat-config/start-suggestions-buttons.ts
+
 export const suggestedActions = [
     {
       title: "Чем занимается ЮС АВТО?",

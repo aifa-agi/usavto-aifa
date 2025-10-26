@@ -2,7 +2,7 @@
 
 import type { ArtifactKind } from "@/app/@left/(_public)/(_CHAT)/(chat)/(_service)/(_components)/artifact";
 import type { Geo } from "@vercel/functions";
-import { BUSINESS_KNOWLEDGE_BASE } from "@/config/prompts/base-system-prompt";
+import { BUSINESS_KNOWLEDGE_BASE, SUGGESTIONS_INSTRUCTION } from "@/config/prompts/base-system-prompt";
 export const artifactsPrompt = `
 Artifacts is a special user interface mode that helps users with writing, editing, and other content creation tasks. When artifact is open, it is on the right side of the screen, while the conversation is on the left side. When creating or updating documents, changes are reflected in real-time on the artifacts and visible to the user.
 
@@ -105,12 +105,8 @@ export const systemPrompt = (options: {
     );
     return `${basePromptForReasoning}\n\n${requestPrompt}`;
   } else {
-    console.log(
-      "// @/lib/ai/prompts.ts prompt for search:",
-      `${BUSINESS_KNOWLEDGE_BASE}`
-    );
-    return `${BUSINESS_KNOWLEDGE_BASE}`;
-    //return `${basePromptWithSearch}\n\n${requestPrompt}\n\n${artifactsPrompt}`;
+    
+    return `${SUGGESTIONS_INSTRUCTION}\n\n${BUSINESS_KNOWLEDGE_BASE}`;
   }
 };
 
