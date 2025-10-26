@@ -1265,6 +1265,9 @@ export const contentData = {
             "alt": "как зарегистрировать авто в такси",
             "href": "/app-images/gmrdwmgfgm2zbfqfi8b8acy1.jpg"
           }
+        ],
+        "keywords": [
+          "как зарегистрировать авто в такси"
         ]
       }
     ],
@@ -1296,5 +1299,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T17:25:04.623Z";
+export const lastUpdated = "2025-10-26T17:25:16.033Z";
 export const generatedBy = "menu-persist-api";
