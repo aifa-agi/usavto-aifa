@@ -1318,7 +1318,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-26T17:27:34.902Z",
-        "updatedAt": "2025-10-26T17:37:21.315Z",
+        "updatedAt": "2025-10-26T17:38:11.118Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как подключить свою машину к Яндекс Такси: пошаговая инструкция, условия, варианты сотрудничества и советы для быстрого старта работы.",
@@ -1405,6 +1405,165 @@ export const contentData = {
                 }
               }
             ]
+          },
+          {
+            "id": "h2-2",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "требования к автомобилю",
+              "документы для такси",
+              "техническое состояние машины",
+              "юридическое оформление",
+              "путевой лист",
+              "безопасность перевозок",
+              "автоматизация документооборота"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, какие требования предъявляются к автомобилю и документам для подключения к Яндекс Такси, чтобы избежать ошибок и штрафов на старте.",
+            "intent": "Дать пользователю полное представление о технических, юридических и документальных требованиях к автомобилю для успешного подключения к Яндекс Такси, а также показать современные способы автоматизации оформления документов.",
+            "audiences": "Владельцы личных автомобилей, рассматривающие работу в такси, начинающие водители без опыта в таксомоторном бизнесе, желающие быстро и правильно подготовить машину и документы для подключения.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 section on 'Требования к автомобилю и документам для подключения к Яндекс Такси' for page 'Как подключить свою машину к Яндекс Такси: пошаговая инструкция и условия'\n\nGOAL: Подробно раскрыть технические, юридические и документальные требования к автомобилю для подключения к Яндекс Такси, объяснить важность правильного оформления путевых листов и показать преимущества автоматизации документооборота. Включить таблицу для визуального сравнения требований и список ключевых документов. Обеспечить уникальность темы по сравнению с предыдущим разделом (не повторять вводные и общие условия подключения).\n\nAUDIENCE: Владельцы автомобилей, начинающие водители, уровень — базовый/средний, боль — страх ошибиться в документах, получить штраф или потратить лишнее время.\n\nKEYWORDS TO INTEGRATE:\n[требования к автомобилю, документы для такси, техническое состояние машины, юридическое оформление, путевой лист, безопасность перевозок, автоматизация документооборота]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 250, maxWords: 400 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with nested paragraphs, table, h3, ul\n\nWRITING STYLE: Story-driven, engaging storytelling approach\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Internal KB (требования к автомобилю, оформление путевых листов, автоматизация US AUTO)\n- SECONDARY: External KB (общие требования агрегаторов, визуальные сравнения)\n\nQUALITY CRITERIA:\n- Actionable (чек-лист документов, таблица требований)\n- Specific (примеры, ссылки на законодательство)\n- Data-backed (факты из Internal KB, подтверждение из External KB)\n- No fluff (только практическая польза)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальный разбор требований к авто и документам для Яндекс Такси с акцентом на автоматизацию и предотвращение ошибок.\n- sourceHint: Internal KB (опыт US AUTO, требования 2025 года), External KB (индустриальные стандарты)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- H2: Сформировать тематическую основу для всех вложенных элементов, подготовить пользователя к следующему шагу — процессу регистрации.\n- Включить interlink planning: внутренние ссылки на разделы о регистрации, автоматизации, штрафах.\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 250,
+              "maxWords": 400,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-2-1",
+                "tag": "p",
+                "keywords": [
+                  "требования к автомобилю",
+                  "техническое состояние машины"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Поймите, почему важно соответствовать техническим и юридическим требованиям для успешного старта.",
+                "intent": "Ввести пользователя в тему требований к автомобилю и объяснить, как это влияет на возможность подключения к Яндекс Такси.",
+                "audiences": "Владельцы авто, не знакомые с нюансами работы в такси, ищущие простое объяснение.",
+                "selfPrompt": "CONTEXT: Generate intro paragraph for section 'Требования к автомобилю и документам для подключения к Яндекс Такси'.\nGOAL: Кратко объяснить, почему важно соответствовать техническим и юридическим требованиям для подключения к агрегатору, и какие риски несет их несоблюдение.\nKEYWORDS: требования к автомобилю, техническое состояние машины\nROLE: intro\nWORD COUNT: minWords: 80, maxWords: 150\nE-E-A-T: semanticFingerprint: Вводное объяснение значимости требований; sourceHint: Internal KB; evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-2-2-3",
+                "tag": "p",
+                "keywords": [
+                  "юридическое оформление"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, какие документы нужно подготовить заранее.",
+                "intent": "Кратко обозначить необходимость юридического оформления и сбора документов для подключения.",
+                "audiences": "Начинающие водители, не имеющие опыта оформления документов для такси.",
+                "selfPrompt": "CONTEXT: Generate short transition paragraph in section 'Требования к автомобилю и документам для подключения к Яндекс Такси'.\nGOAL: Подчеркнуть важность юридического оформления и подготовки документов.\nKEYWORDS: юридическое оформление\nROLE: transition\nWORD COUNT: minWords: 5, maxWords: 15\nE-E-A-T: semanticFingerprint: Краткий переход к теме документов; sourceHint: Internal KB; evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-2-2-4",
+                "tag": "table",
+                "keywords": [
+                  "документы для такси",
+                  "путевой лист"
+                ],
+                "taxonomy": "Data-driven",
+                "attention": "Сравните требования к документам и техническому состоянию для быстрой самопроверки.",
+                "intent": "Визуально представить основные требования к автомобилю и перечень обязательных документов для подключения к Яндекс Такси.",
+                "audiences": "Владельцы авто, желающие быстро проверить соответствие требованиям.",
+                "selfPrompt": "CONTEXT: Generate comparison table for section 'Требования к автомобилю и документам для подключения к Яндекс Такси'.\nGOAL: Сравнить ключевые требования к автомобилю и список обязательных документов (3 столбца: Категория | Требование | Примечание), 5-6 строк. Включить путевой лист, техосмотр, медосмотр, регистрация авто, страховка.\nKEYWORDS: документы для такси, путевой лист\nSCHEMA: 3 columns × 5-6 rows; headers: Категория | Требование | Примечание; data types: text/text/text; data source: Internal KB, актуальные требования 2025 года.\nWORD COUNT: minWords: 80, maxWords: 160\nE-E-A-T: semanticFingerprint: Таблица для быстрой проверки соответствия; sourceHint: Internal KB; evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-2-2",
+                "tag": "h3",
+                "keywords": [
+                  "автоматизация документооборота",
+                  "безопасность перевозок",
+                  "цифровые решения",
+                  "ошибки при оформлении"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Узнайте, как автоматизация помогает избежать ошибок и ускоряет оформление документов для такси.",
+                "intent": "Показать преимущества автоматизации оформления путевых листов и других документов для такси, объяснить, как это снижает риски и экономит время.",
+                "audiences": "Владельцы авто, желающие минимизировать бюрократию и повысить безопасность перевозок.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection 'Автоматизация оформления документов: как избежать ошибок и ускорить процесс' under h2 'Требования к автомобилю и документам для подключения к Яндекс Такси'.\nGOAL: Объяснить, как современные цифровые решения (например, платформа US AUTO) позволяют быстро и без ошибок оформлять путевые листы и другие документы, снизить риск штрафов и повысить безопасность перевозок. Включить список преимуществ автоматизации и практические советы.\nKEYWORDS: автоматизация документооборота, безопасность перевозок, цифровые решения, ошибки при оформлении\nE-E-A-T: semanticFingerprint: Практическое руководство по автоматизации документооборота для такси; sourceHint: Internal KB (опыт US AUTO), External KB (индустриальные стандарты); evidenceStrength: internal-tested | external-peer-reviewed.\nINTERLINK: Внутренняя ссылка на раздел об автоматизации путевых листов и интеграции с системами такси.\nWORD COUNT: minWords: 150, maxWords: 250\n\nPrepare context for child p/ul/p elements.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 250,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "автоматизация документооборота",
+                      "цифровые решения"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Поймите, как цифровые инструменты упрощают оформление документов для такси.",
+                    "intent": "Ввести пользователя в тему автоматизации документооборота и объяснить её преимущества для водителей.",
+                    "audiences": "Владельцы авто, не знакомые с цифровыми решениями для такси.",
+                    "selfPrompt": "CONTEXT: Generate intro paragraph for h3 'Автоматизация оформления документов: как избежать ошибок и ускорить процесс'.\nGOAL: Кратко объяснить, почему автоматизация документооборота становится стандартом в такси и какие задачи она решает.\nKEYWORDS: автоматизация документооборота, цифровые решения\nROLE: intro\nWORD COUNT: minWords: 70, maxWords: 130\nE-E-A-T: semanticFingerprint: Вводное объяснение пользы автоматизации; sourceHint: Internal KB; evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 130,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-2-2-2",
+                    "tag": "ul",
+                    "keywords": [
+                      "ошибки при оформлении",
+                      "безопасность перевозок"
+                    ],
+                    "taxonomy": "Actionable",
+                    "attention": "Получите список преимуществ автоматизации для вашего бизнеса.",
+                    "intent": "Дать пользователю конкретные преимущества автоматизации оформления документов для такси.",
+                    "audiences": "Владельцы авто, желающие минимизировать ошибки и повысить безопасность.",
+                    "selfPrompt": "CONTEXT: Generate unordered list (5 items) for h3 'Автоматизация оформления документов: как избежать ошибок и ускорить процесс'.\nGOAL: Перечислить ключевые преимущества автоматизации: экономия времени, снижение ошибок, соответствие законодательству, интеграция с системами такси, повышение безопасности перевозок.\nKEYWORDS: ошибки при оформлении, безопасность перевозок\nSTRUCTURE: 5 коротких пунктов (5-10 слов)\nWORD COUNT: minWords: 40, maxWords: 80\nE-E-A-T: semanticFingerprint: Список преимуществ автоматизации; sourceHint: Internal KB; evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 40,
+                      "maxWords": 80,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-2-3",
+                    "tag": "p",
+                    "keywords": [
+                      "автоматизация документооборота"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Узнайте, как начать использовать автоматизацию уже сегодня.",
+                    "intent": "Дать практический совет по внедрению автоматизации оформления документов для такси.",
+                    "audiences": "Владельцы авто, готовые внедрять новые решения.",
+                    "selfPrompt": "CONTEXT: Generate concluding paragraph for h3 'Автоматизация оформления документов: как избежать ошибок и ускорить процесс'.\nGOAL: Кратко объяснить, как начать использовать автоматизацию (например, через платформу US AUTO) и где получить дополнительную информацию.\nKEYWORDS: автоматизация документооборота\nROLE: conclusion\nWORD COUNT: minWords: 60, maxWords: 100\nE-E-A-T: semanticFingerprint: Практический совет по внедрению автоматизации; sourceHint: Internal KB; evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 100,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1437,5 +1596,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T17:53:35.231Z";
+export const lastUpdated = "2025-10-26T17:54:24.037Z";
 export const generatedBy = "menu-persist-api";
