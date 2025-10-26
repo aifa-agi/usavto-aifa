@@ -1234,7 +1234,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-26T16:26:27.424Z",
-        "updatedAt": "2025-10-26T16:38:25.495Z",
+        "updatedAt": "2025-10-26T16:38:34.790Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как получить разрешение на такси на свой автомобиль самозанятому в Яндекс Такси: пошаговая инструкция, требования, советы. Начните работать легально!",
@@ -1300,7 +1300,8 @@ export const contentData = {
                   "minWords": 100,
                   "maxWords": 180,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-1-2",
@@ -1318,9 +1319,11 @@ export const contentData = {
                   "minWords": 60,
                   "maxWords": 120,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-2",
@@ -1854,7 +1857,7 @@ export const contentData = {
             ]
           }
         ],
-        "isReadyDraftForPerplexity": true
+        "isReadyDraftForPerplexity": false
       }
     ],
     "order": 16
@@ -1885,5 +1888,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T16:53:59.023Z";
+export const lastUpdated = "2025-10-26T16:54:04.231Z";
 export const generatedBy = "menu-persist-api";
