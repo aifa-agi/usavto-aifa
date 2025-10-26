@@ -1202,7 +1202,14 @@ export const contentData = {
         "updatedAt": "2025-10-26T16:26:27.424Z",
         "order": 1,
         "badgeName": "Блог",
-        "description": "как получить разрешение на такси на свой автомобиль самозанятому в яндекс такси"
+        "description": "как получить разрешение на такси на свой автомобиль самозанятому в яндекс такси",
+        "images": [
+          {
+            "id": "t6apl79r78c0ts6oq6fmh0lg",
+            "alt": "как получить разрешение на такси на свой автомобиль самозанятому в яндекс такси",
+            "href": "/app-images/dnm6q9kzij5qz4661trsyuub.jpg"
+          }
+        ]
       }
     ],
     "order": 16
@@ -1233,5 +1240,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T16:43:03.351Z";
+export const lastUpdated = "2025-10-26T16:43:37.187Z";
 export const generatedBy = "menu-persist-api";
