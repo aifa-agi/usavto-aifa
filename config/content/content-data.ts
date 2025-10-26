@@ -1262,7 +1262,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-26T16:48:26.310Z",
-        "updatedAt": "2025-10-26T16:56:05.499Z",
+        "updatedAt": "2025-10-26T16:56:56.928Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте актуальные критерии машин для Яндекс Такси в 2024 году: требования по моделям, возрасту, тарифам и полный список авто. Проверьте свой автомобиль!",
@@ -1349,6 +1349,166 @@ export const contentData = {
                 }
               }
             ]
+          },
+          {
+            "id": "h2-2",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "допуск автомобиля к работе в такси",
+              "официальные требования яндекс такси",
+              "технический осмотр такси",
+              "регистрация автомобиля для такси",
+              "медицинский осмотр водителя",
+              "путевой лист такси",
+              "безопасность перевозок"
+            ],
+            "taxonomy": "Guide",
+            "attention": "В этом разделе вы найдете полный перечень технических и юридических критериев, необходимых для допуска автомобиля к работе в Яндекс Такси в 2024 году, с акцентом на практические детали и свежие изменения.",
+            "intent": "Детально раскрыть официальные требования и критерии допуска автомобиля к работе в Яндекс Такси, чтобы пользователь мог быстро проверить соответствие своего авто и избежать ошибок при подключении.",
+            "audiences": "Водители такси и владельцы автопарков с базовым и средним опытом, которые хотят убедиться, что их автомобиль соответствует всем актуальным требованиям Яндекс Такси и законодательства для легальной работы.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 section detailing технические и юридические критерии допуска автомобиля к работе в Яндекс Такси for page \"Критерии машин для Яндекс Такси: требования, список моделей 2024\"\n\nGOAL: Дать пользователю структурированный и полный перечень официальных требований к автомобилю для допуска в Яндекс Такси, включая техническое состояние, документы, возраст, регистрацию, медицинские и путевые листы, с акцентом на свежие изменения и практические детали.\n\nAUDIENCE: Водители такси и владельцы автопарков | Level: intermediate | Pain points: Неуверенность в актуальности требований, боязнь отказа при подключении, риски штрафов\n\nKEYWORDS TO INTEGRATE:\n[допуск автомобиля к работе в такси, официальные требования яндекс такси, технический осмотр такси, регистрация автомобиля для такси, медицинский осмотр водителя, путевой лист такси, безопасность перевозок]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 250, maxWords: 400 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: ## [Section Title]\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: критерии машин для Яндекс Такси, оформление путевых листов, медицинские осмотры, технический контроль\n- SECONDARY: Apply insights from External KB: официальные критерии Яндекс Такси, параметры допуска, обновления 2024 года\n\nQUALITY CRITERIA:\n- Actionable (чек-листы, таблицы, конкретные требования)\n- Specific (точные параметры, ссылки на документы)\n- Data-backed (ссылаемся на нормативы и свежие изменения)\n- No fluff (только практическая информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальный структурированный перечень критериев допуска автомобиля в Яндекс Такси 2024, с акцентом на свежие изменения и юридические нюансы.\n- sourceHint: Internal KB (company expertise) + External KB (официальные требования Яндекс Такси)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference parent page intent (помочь пользователю проверить соответствие авто)\n- Must set тематическое направление для child h3 (детализация по документам, процедурам)\n- Add interlink planning: internalLinks (например, на страницу о подключении к Яндекс Такси, на FAQ по документам)\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 250,
+              "maxWords": 400,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-2-1",
+                "tag": "p",
+                "keywords": [
+                  "допуск автомобиля к работе в такси",
+                  "технический осмотр такси"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Поясняет, почему важно следовать всем критериям допуска для легальной и безопасной работы.",
+                "intent": "Ввести пользователя в суть требований, объяснить их значимость для допуска к заказам и предотвращения штрафов.",
+                "audiences": "Водители, которые впервые подключаются к сервису или обновляют авто, ищут практическое объяснение.",
+                "selfPrompt": "CONTEXT: Generate intro paragraph for section 'Технические и юридические критерии допуска автомобиля к работе в Яндекс Такси'.\nGOAL: Объяснить, почему соблюдение всех критериев допуска критично для работы в такси, и как это влияет на безопасность и доход.\nKEYWORDS: допуск автомобиля к работе в такси, технический осмотр такси\nWORD COUNT: minWords: 80, maxWords: 150\nROLE: intro\nsourceHint: Internal KB (company expertise)\nsemanticFingerprint: Объяснение значения комплексного соответствия авто требованиям Яндекс Такси.\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-2-2-3",
+                "tag": "p",
+                "keywords": [
+                  "официальные требования яндекс такси"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Краткий переход к таблице критериев.",
+                "intent": "Сделать переход от вводного абзаца к структурированной таблице критериев.",
+                "audiences": "Пользователи, предпочитающие визуальное представление информации.",
+                "selfPrompt": "CONTEXT: Generate transition paragraph (5-15 words) to introduce the upcoming table of критерии допуска.\nGOAL: Подчеркнуть, что далее представлен полный список официальных требований.\nKEYWORDS: официальные требования яндекс такси\nWORD COUNT: minWords: 5, maxWords: 15\nROLE: transition\nsourceHint: Internal KB\nsemanticFingerprint: Краткое подведение к таблице критериев.\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-2-2-4",
+                "tag": "table",
+                "keywords": [
+                  "регистрация автомобиля для такси",
+                  "путевой лист такси"
+                ],
+                "taxonomy": "Data-driven",
+                "attention": "В таблице собраны все ключевые критерии допуска автомобиля к работе в Яндекс Такси.",
+                "intent": "Дать пользователю наглядную и структурированную таблицу с основными критериями допуска.",
+                "audiences": "Водители и автопарки, которым важно быстро сверить параметры своего авто.",
+                "selfPrompt": "CONTEXT: Generate table (4 columns × 6-8 rows) summarizing ключевые критерии допуска автомобиля к работе в Яндекс Такси.\nGOAL: Визуализировать основные требования: тип авто, возраст, техосмотр, регистрация, путевой лист, медосмотр, и др.\nKEYWORDS: регистрация автомобиля для такси, путевой лист такси\nTABLE SCHEMA: [Критерий | Описание | Документ/подтверждение | Примечание] | text/text/text/text\nData source: Internal KB (company expertise), External KB (официальные требования)\nSchema readiness: Dataset/Comparison\nWORD COUNT: minWords: 80, maxWords: 160\nsemanticFingerprint: Таблица с полным перечнем критериев допуска авто в Яндекс Такси 2024.\nevidenceStrength: internal-tested | external-peer-reviewed",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-2-2",
+                "tag": "h3",
+                "keywords": [
+                  "медицинский осмотр водителя",
+                  "технический контроль автомобиля",
+                  "юридические документы для такси",
+                  "автоматизация оформления документов",
+                  "штрафы за нарушения"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Раздел подробно раскрывает, как правильно оформить документы и пройти все проверки для допуска автомобиля к работе.",
+                "intent": "Пошагово объяснить, какие документы и процедуры необходимы для допуска автомобиля и водителя к работе в Яндекс Такси, и как избежать типичных ошибок.",
+                "audiences": "Водители и менеджеры автопарков, которые хотят минимизировать риски отказа и штрафов, повысить скорость оформления.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection under 'Технические и юридические критерии допуска автомобиля к работе в Яндекс Такси' focusing on оформление документов, медосмотры и технический контроль.\nGOAL: Дать пошаговую инструкцию по оформлению путевых листов, прохождению медосмотров и техконтроля, с акцентом на автоматизацию и предотвращение штрафов.\nKEYWORDS: медицинский осмотр водителя, технический контроль автомобиля, юридические документы для такси, автоматизация оформления документов, штрафы за нарушения\nsemanticFingerprint: Детализированная инструкция по оформлению документов и прохождению обязательных процедур для допуска авто и водителя.\ninterlink planning: internalLinks (на страницу о путевых листах, на FAQ по штрафам)\nsourceHint: Internal KB (company expertise), External KB (индустриальные стандарты)\nevidenceStrength: internal-tested | external-peer-reviewed\n\nPrepare context for child h4/p/ul elements.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 250,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "медицинский осмотр водителя",
+                      "технический контроль автомобиля"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Поясняет, почему регулярные проверки и оформление документов обязательны.",
+                    "intent": "Объяснить, как регулярные медосмотры и техконтроль обеспечивают безопасность и соответствие закону.",
+                    "audiences": "Водители, которые хотят понять, зачем нужны все проверки и как их пройти без ошибок.",
+                    "selfPrompt": "CONTEXT: Generate body paragraph for h3 'Оформление документов, медосмотры и технический контроль'.\nGOAL: Объяснить роль медосмотров и техконтроля для допуска к работе, ссылаясь на требования Яндекс Такси и законодательства.\nKEYWORDS: медицинский осмотр водителя, технический контроль автомобиля\nWORD COUNT: minWords: 70, maxWords: 130\nROLE: body\nsourceHint: Internal KB\nsemanticFingerprint: Обоснование важности регулярных проверок для допуска к работе.\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 130,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-2-2-2",
+                    "tag": "ul",
+                    "keywords": [
+                      "юридические документы для такси"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Список всех обязательных документов и процедур для допуска.",
+                    "intent": "Дать пользователю чек-лист документов и процедур, необходимых для допуска автомобиля и водителя.",
+                    "audiences": "Водители и администраторы автопарков, которым нужен быстрый чек-лист.",
+                    "selfPrompt": "CONTEXT: Generate unordered list (5-7 items) for h3 'Оформление документов, медосмотры и технический контроль'.\nGOAL: Составить чек-лист обязательных документов и процедур: путевой лист, медосмотр, техконтроль, регистрация, страховка и др.\nKEYWORDS: юридические документы для такси\nList structure: short bullets (5-10 words)\nWORD COUNT: minWords: 40, maxWords: 80\nList purpose: requirements\nsourceHint: Internal KB, External KB\nsemanticFingerprint: Чек-лист всех обязательных документов и процедур допуска.\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 40,
+                      "maxWords": 80,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-2-3",
+                    "tag": "p",
+                    "keywords": [
+                      "автоматизация оформления документов",
+                      "штрафы за нарушения"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Раскрывает преимущества автоматизации и предупреждает о рисках ошибок.",
+                    "intent": "Пояснить, как автоматизация помогает избежать ошибок и штрафов при оформлении документов для допуска.",
+                    "audiences": "Водители и владельцы автопарков, которые хотят упростить процессы и снизить риски.",
+                    "selfPrompt": "CONTEXT: Generate concluding paragraph for h3 'Оформление документов, медосмотры и технический контроль'.\nGOAL: Объяснить преимущества автоматизации оформления документов и предупредить о штрафах за ошибки.\nKEYWORDS: автоматизация оформления документов, штрафы за нарушения\nWORD COUNT: minWords: 60, maxWords: 100\nROLE: conclusion\nsourceHint: Internal KB, External KB\nsemanticFingerprint: Выгоды автоматизации и риски штрафов при ошибках в документах.\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 100,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1381,5 +1541,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T17:12:20.998Z";
+export const lastUpdated = "2025-10-26T17:13:04.079Z";
 export const generatedBy = "menu-persist-api";
