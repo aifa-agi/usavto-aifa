@@ -650,7 +650,7 @@ export const contentData = {
       },
       {
         "id": "sb1ka49a64uhel3playbdc7k",
-        "title": "какой автомобиль подходит для яндекс такси",
+        "title": "Какой автомобиль подходит для Яндекс Такси: требования, список моделей",
         "href": "/blog/kakoy-avtomobil-podhodit-dlya-yandeks-taksi",
         "roles": [
           "guest"
@@ -1217,5 +1217,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T16:23:24.432Z";
+export const lastUpdated = "2025-10-26T16:23:34.445Z";
 export const generatedBy = "menu-persist-api";
