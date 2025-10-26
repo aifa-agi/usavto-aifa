@@ -1262,7 +1262,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-26T16:48:26.310Z",
-        "updatedAt": "2025-10-26T16:58:36.058Z",
+        "updatedAt": "2025-10-26T16:59:17.771Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте актуальные критерии машин для Яндекс Такси в 2024 году: требования по моделям, возрасту, тарифам и полный список авто. Проверьте свой автомобиль!",
@@ -1833,6 +1833,110 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-5",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "итоги требований для такси",
+              "выводы по выбору автомобиля",
+              "следующие шаги для водителей",
+              "советы по подготовке авто",
+              "поддержка при подключении",
+              "обновления критериев 2024",
+              "проверка соответствия авто",
+              "информация для автопарков"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Завершите знакомство с критериями Яндекс Такси — получите краткие выводы, советы и рекомендации для успешного выбора и подключения автомобиля в 2024 году.",
+            "intent": "Суммировать основные выводы по критериям отбора автомобилей для Яндекс Такси, дать пользователю четкие рекомендации и обозначить дальнейшие шаги для проверки и подготовки авто.",
+            "audiences": "Водители такси и владельцы автопарков, которые хотят быстро понять, соответствует ли их автомобиль требованиям Яндекс Такси и что делать дальше для успешного подключения.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 заключительный раздел (выводы и рекомендации) for page \"Критерии машин для Яндекс Такси: требования, список моделей 2024\"\n\nGOAL: Сконцентрировать в одном разделе основные выводы по критериям отбора, дать краткие рекомендации по дальнейшим действиям, подчеркнуть важность регулярной проверки соответствия автомобиля и документов, а также обозначить, где пользователь может получить дополнительную поддержку или консультацию. Раздел должен органично завершать материал, не повторяя предыдущие секции, и мотивировать пользователя к действию (проверить авто, обратиться за помощью, следить за обновлениями).\n\nAUDIENCE: Водители такси и владельцы автопарков | Level: intermediate | Pain points: неуверенность в соответствии авто, страх пропустить важные изменения, желание быстро подключиться к сервису\n\nKEYWORDS TO INTEGRATE:\n[итоги требований для такси, выводы по выбору автомобиля, следующие шаги для водителей, советы по подготовке авто, поддержка при подключении, обновления критериев 2024, проверка соответствия авто, информация для автопарков]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 200, maxWords: 300 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with nested p, table, ul, p elements\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: выводы по критериям, рекомендации по подготовке авто, поддержка водителей\n- SECONDARY: Apply insights from External KB: советы по проверке авто, актуальность обновлений, действия после проверки\n\nQUALITY CRITERIA:\n- Actionable (конкретные рекомендации)\n- Specific (без общих фраз)\n- Data-backed (факты и советы из KB)\n- No fluff (никакой воды)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальное резюме выводов и шагов для водителей и автопарков, не повторяющее предыдущие разделы.\n- sourceHint: Синтез внутренних и внешних знаний, без продвижения конкурентов.\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Подчеркнуть важность регулярной проверки критериев и документов\n- Дать 3-5 конкретных шага для водителя/автопарка\n- В таблице — краткое сравнение: что делать, если авто не соответствует\n- В списке — советы по подготовке и поддержке\n- В заключительном абзаце — призыв к действию и ссылка на внутренние ресурсы\n\nInterlink planning: Вставить 2-3 внутренних ссылки на страницы: \"Подключение к Яндекс Такси\", \"Документы для такси\", \"Обновления требований 2024\".\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)\n",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 200,
+              "maxWords": 300,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-5-1",
+                "tag": "p",
+                "keywords": [
+                  "итоги требований для такси",
+                  "выводы по выбору автомобиля"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Получите сжатое резюме по основным критериям и их значению для успешной работы в такси.",
+                "intent": "Кратко подытожить ключевые моменты по требованиям к автомобилям и их важность для допуска к заказам.",
+                "audiences": "Водители и владельцы автопарков, которым важно быстро понять суть критериев и принять решение.",
+                "selfPrompt": "CONTEXT: Generate p (intro/summary) in section \"Заключение: выводы и рекомендации для водителей и автопарков\" of page \"Критерии машин для Яндекс Такси: требования, список моделей 2024\"\nGOAL: Кратко резюмировать основные выводы по критериям отбора, подчеркнуть их роль для допуска к заказам и стабильного дохода.\nKEYWORDS TO INTEGRATE: [итоги требований для такси, выводы по выбору автомобиля]\nWORD COUNT: minWords: 80, maxWords: 150\nROLE: summary\nsemanticFingerprint: Сжатое резюме выводов по критериям допуска авто в Яндекс Такси.\nsourceHint: Internal KB (выводы по критериям)\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-5-3",
+                "tag": "table",
+                "keywords": [
+                  "следующие шаги для водителей",
+                  "проверка соответствия авто"
+                ],
+                "taxonomy": "Comparison",
+                "attention": "Сравните свои действия в зависимости от результата проверки автомобиля.",
+                "intent": "Дать пользователю наглядную таблицу с вариантами действий: что делать, если авто соответствует или не соответствует критериям.",
+                "audiences": "Водители и автопарки, которые хотят быстро понять дальнейшие шаги после проверки авто.",
+                "selfPrompt": "CONTEXT: Generate table (3 columns × 2 rows) in section \"Заключение: выводы и рекомендации для водителей и автопарков\" of page \"Критерии машин для Яндекс Такси: требования, список моделей 2024\"\nGOAL: В таблице сравнить действия: если авто соответствует критериям и если не соответствует (например: подключение, обновление, обращение за консультацией).\nKEYWORDS TO INTEGRATE: [следующие шаги для водителей, проверка соответствия авто]\nTABLE SCHEMA: 3 columns (Ситуация | Рекомендация | Дополнительные ресурсы), 2 rows (соответствует/не соответствует)\nData types: text/text/text\nsourceHint: Internal KB (рекомендации по действиям), External KB (советы по проверке)\nevidenceStrength: internal-tested | external-peer-reviewed\nschemaReadiness: Comparison",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-5-2",
+                "tag": "ul",
+                "keywords": [
+                  "советы по подготовке авто",
+                  "поддержка при подключении"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Следуйте этим советам для успешной подготовки и подключения автомобиля.",
+                "intent": "Дать 4-5 конкретных совета по подготовке авто и получению поддержки при подключении к Яндекс Такси.",
+                "audiences": "Водители и автопарки, которым нужны практические рекомендации для успешного старта.",
+                "selfPrompt": "CONTEXT: Generate ul (5 items, короткие советы) in section \"Заключение: выводы и рекомендации для водителей и автопарков\" of page \"Критерии машин для Яндекс Такси: требования, список моделей 2024\"\nGOAL: Дать 5 практических советов по подготовке авто и получению поддержки (например: следить за обновлениями, использовать автоматизированные сервисы, обращаться за консультацией).\nKEYWORDS TO INTEGRATE: [советы по подготовке авто, поддержка при подключении]\nLIST STRUCTURE: 5 коротких пунктов (5-10 слов)\nsourceHint: Internal KB (советы по подготовке), External KB (поддержка водителей)\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 50,
+                  "maxWords": 90,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-5-3",
+                "tag": "p",
+                "keywords": [
+                  "обновления критериев 2024",
+                  "информация для автопарков"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Не пропустите важные обновления и воспользуйтесь дополнительными ресурсами для автопарков.",
+                "intent": "Завершить раздел призывом к действию: следить за обновлениями, использовать внутренние ресурсы и обращаться за консультацией.",
+                "audiences": "Водители и владельцы автопарков, которые хотят быть в курсе изменений и получать поддержку.",
+                "selfPrompt": "CONTEXT: Generate p (заключение/призыв к действию) in section \"Заключение: выводы и рекомендации для водителей и автопарков\" of page \"Критерии машин для Яндекс Такси: требования, список моделей 2024\"\nGOAL: Подчеркнуть важность отслеживания обновлений критериев, предложить внутренние ресурсы и консультации для автопарков.\nKEYWORDS TO INTEGRATE: [обновления критериев 2024, информация для автопарков]\nROLE: conclusion/call to action\nsemanticFingerprint: Призыв к действию и ссылки на внутренние ресурсы для поддержки водителей и автопарков.\nsourceHint: Internal KB (поддержка, ресурсы)\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              }
+            ]
           }
         ]
       }
@@ -1865,5 +1969,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T17:14:41.984Z";
+export const lastUpdated = "2025-10-26T17:14:52.498Z";
 export const generatedBy = "menu-persist-api";
