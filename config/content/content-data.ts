@@ -655,7 +655,7 @@ export const contentData = {
         "roles": [
           "guest"
         ],
-        "hasBadge": false,
+        "hasBadge": true,
         "type": "customCategorias",
         "aiRecommendContentStructure": [
           {
@@ -1172,7 +1172,8 @@ export const contentData = {
         "isChatSynchronized": false,
         "createdAt": "2025-10-26T16:03:09.843Z",
         "updatedAt": "2025-10-26T16:03:09.843Z",
-        "order": 1
+        "order": 1,
+        "badgeName": "Блог"
       }
     ],
     "order": 16
@@ -1203,5 +1204,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T16:19:35.405Z";
+export const lastUpdated = "2025-10-26T16:19:45.696Z";
 export const generatedBy = "menu-persist-api";
