@@ -1318,7 +1318,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-26T17:27:34.902Z",
-        "updatedAt": "2025-10-26T17:27:34.902Z",
+        "updatedAt": "2025-10-26T17:37:21.315Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как подключить свою машину к Яндекс Такси: пошаговая инструкция, условия, варианты сотрудничества и советы для быстрого старта работы.",
@@ -1337,7 +1337,76 @@ export const contentData = {
         "intent": "Пользователь заходит на эту страницу, чтобы узнать, как подключить свою машину к Яндекс Такси и какие требования и этапы для этого существуют. Ожидаемый результат — ознакомиться с пошаговой инструкцией, условиями и вариантами подключения, чтобы выбрать подходящий способ и начать процесс регистрации. Страница полностью закрывает информационный запрос, четко объясняя все шаги и предоставляя понятные инструкции для самостоятельного подключения автомобиля к сервису.",
         "taxonomy": "Эта страница является подробным пошаговым гайдом (guide) по подключению личного автомобиля к сервису Яндекс Такси и относится к категории \"Работа и заработок\" с подкатегорией \"Работа водителем/такси\". Она выступает как кластерный контент, поддерживающий основную (пиллар) страницу о возможностях и условиях работы в Яндекс Такси, и усиливает тематическую авторитетность сайта по вопросу самостоятельного подключения к агрегатору такси.",
         "attention": "Сразу захватываем внимание ярким интерактивным калькулятором дохода и броским заголовком «Подключите свою машину к Яндекс Такси за 15 минут»; далее ведём пользователя по четким, визуально разбитым шагам с инфографикой и динамическими подсказками. Для удержания интереса используем быстрые ответы на частые вопросы, визуальные сравнения вариантов подключения и микровзаимодействия, а в отличие от конкурентов акцентируем реальные сценарии и лайфхаки от действующих водителей, чтобы превратить инструкцию в личный опыт пользователя.",
-        "audiences": "Эта страница предназначена для владельцев личных автомобилей в возрасте 22–45 лет, рассматривающих возможность начать зарабатывать с помощью Яндекс Такси — как основной работой, так и подработкой, часто без опыта работы в такси. Аудитория ищет пошаговую, понятную инструкцию по подключению и регистрации, чтобы разобраться в условиях, вариантах сотрудничества (самозанятость, ИП, через парк) и избежать юридических или финансовых ошибок на старте. Контент актуален для пользователей с базовым уровнем цифровой грамотности, не требующий глубоких знаний в таксомоторном бизнесе."
+        "audiences": "Эта страница предназначена для владельцев личных автомобилей в возрасте 22–45 лет, рассматривающих возможность начать зарабатывать с помощью Яндекс Такси — как основной работой, так и подработкой, часто без опыта работы в такси. Аудитория ищет пошаговую, понятную инструкцию по подключению и регистрации, чтобы разобраться в условиях, вариантах сотрудничества (самозанятость, ИП, через парк) и избежать юридических или финансовых ошибок на старте. Контент актуален для пользователей с базовым уровнем цифровой грамотности, не требующий глубоких знаний в таксомоторном бизнесе.",
+        "draftContentStructure": [
+          {
+            "id": "h2-1",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "как подключить свою машину к яндекс такси",
+              "пошаговая инструкция",
+              "условия подключения",
+              "варианты сотрудничества",
+              "регистрация автомобиля",
+              "работа в яндекс такси",
+              "требования к водителям"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, как быстро и без ошибок подключить свой автомобиль к Яндекс Такси — подробная инструкция, реальные советы и актуальные условия для самостоятельного старта.",
+            "intent": "Ввести пользователя в тему самостоятельного подключения машины к Яндекс Такси, обозначить ценность пошагового гайда и подготовить к дальнейшему изучению инструкции.",
+            "audiences": "Владельцы личных автомобилей 22–45 лет, рассматривающие работу или подработку в Яндекс Такси, без опыта в таксомоторном бизнесе, ищущие понятные и актуальные инструкции.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 introduction section for page \"Как подключить свою машину к Яндекс Такси: пошаговая инструкция и условия\"\n\nGOAL: Представить основную тему страницы, объяснить, зачем и кому полезен этот гайд, обозначить ключевые преимущества самостоятельного подключения и кратко анонсировать структуру дальнейших шагов.\n\nAUDIENCE: Владельцы личных автомобилей, новички в сфере такси, желающие понять процесс подключения к Яндекс Такси | Level: beginner | Pain points: страх ошибок, непонимание условий, поиск простых решений\n\nKEYWORDS TO INTEGRATE:\n[как подключить свою машину к яндекс такси, пошаговая инструкция, условия подключения, варианты сотрудничества, регистрация автомобиля, работа в яндекс такси, требования к водителям]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 150, maxWords: 250 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: # (h2) for section heading, followed by paragraphs\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: опыт компании US AUTO, требования к автомобилю, оформление документов\n- SECONDARY: Apply insights from External KB: наличие калькулятора дохода, индивидуальные условия, варианты подключения\n\nQUALITY CRITERIA:\n- Actionable (показывает, что пользователь получит конкретные шаги)\n- Specific (уточняет, что инструкция актуальна и учитывает реальные сценарии)\n- Data-backed (ссылается на опыт и проверенные решения)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальное введение, раскрывающее ценность и актуальность гайда для самостоятельного подключения к Яндекс Такси.\n- sourceHint: Internal KB (опыт US AUTO) + External KB (структура официальных страниц)\n- evidenceStrength: internal-tested\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference parent page intent\n- Must preview what user will learn on the page\n- Add interlink planning: internalLinks (на пиллар-страницу о работе в Яндекс Такси, на FAQ по документам)\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)\n",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 150,
+              "maxWords": 250,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-1-1",
+                "tag": "p",
+                "keywords": [
+                  "как подключить свою машину к яндекс такси",
+                  "пошаговая инструкция"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Погрузитесь в тему с первых строк: почему подключение к Яндекс Такси — это просто и выгодно именно сейчас.",
+                "intent": "Кратко объяснить, зачем владельцу автомобиля рассмотреть самостоятельное подключение к Яндекс Такси и какие преимущества дает этот гайд.",
+                "audiences": "Владельцы авто, новички в такси, ищущие быстрый старт и понятные инструкции.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for h2 'Как подключить свою машину к Яндекс Такси: пошаговая инструкция и условия'.\nROLE: intro\nGOAL: Заинтересовать пользователя, объяснить актуальность темы и обозначить, что инструкция поможет избежать ошибок и быстро начать работу.\nKEYWORDS TO INTEGRATE: [как подключить свою машину к яндекс такси, пошаговая инструкция]\nWORD COUNT: minWords: 100, maxWords: 180\nSOURCE: Internal KB (опыт US AUTO), External KB (актуальность темы)\nE-E-A-T: semanticFingerprint: Вступительный абзац, раскрывающий ценность самостоятельного подключения и уникальность подхода US AUTO.\nsourceHint: Internal KB\n",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 180,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-2",
+                "tag": "p",
+                "keywords": [
+                  "условия подключения",
+                  "варианты сотрудничества"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, что вас ждет дальше: какие шаги предстоит пройти и как выбрать оптимальный вариант подключения.",
+                "intent": "Анонсировать структуру гайда, обозначить, что пользователь узнает о требованиях, вариантах сотрудничества и получит пошаговую инструкцию.",
+                "audiences": "Потенциальные водители, желающие понять процесс и условия подключения.",
+                "selfPrompt": "CONTEXT: Generate preview paragraph for h2 'Как подключить свою машину к Яндекс Такси: пошаговая инструкция и условия'.\nROLE: transition\nGOAL: Кратко перечислить, какие темы и этапы будут раскрыты в гайде, чтобы пользователь понимал структуру и ценность дальнейшего чтения.\nKEYWORDS TO INTEGRATE: [условия подключения, варианты сотрудничества]\nWORD COUNT: minWords: 60, maxWords: 120\nSOURCE: Internal KB (структура процесса), External KB (наличие калькулятора, индивидуальные условия)\nE-E-A-T: semanticFingerprint: Анонс ключевых разделов и преимуществ пошагового подхода.\nsourceHint: Internal KB + External KB\n",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 120,
+                  "actualContent": ""
+                }
+              }
+            ]
+          }
+        ]
       }
     ],
     "order": 16
@@ -1368,5 +1437,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T17:52:45.345Z";
+export const lastUpdated = "2025-10-26T17:53:35.231Z";
 export const generatedBy = "menu-persist-api";
