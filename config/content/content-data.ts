@@ -1318,7 +1318,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-26T17:27:34.902Z",
-        "updatedAt": "2025-10-26T17:40:40.116Z",
+        "updatedAt": "2025-10-26T17:40:55.583Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как подключить свою машину к Яндекс Такси: пошаговая инструкция, условия, варианты сотрудничества и советы для быстрого старта работы.",
@@ -2006,7 +2006,8 @@ export const contentData = {
               }
             ]
           }
-        ]
+        ],
+        "isReadyDraftForPerplexity": true
       }
     ],
     "order": 16
@@ -2037,5 +2038,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T17:56:19.827Z";
+export const lastUpdated = "2025-10-26T17:56:31.105Z";
 export const generatedBy = "menu-persist-api";
