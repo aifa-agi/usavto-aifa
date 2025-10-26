@@ -1286,7 +1286,14 @@ export const contentData = {
         "updatedAt": "2025-10-26T17:27:34.902Z",
         "order": 1,
         "badgeName": "Блог",
-        "description": "как подключить свою машину к яндекс такси"
+        "description": "как подключить свою машину к яндекс такси",
+        "images": [
+          {
+            "id": "cbcxwtv7wv7e40vfwud3eyyz",
+            "alt": " как подключить свою машину к яндекс такси",
+            "href": "/app-images/lqleuahb5bpfyt4bboh5lom0.jpg"
+          }
+        ]
       }
     ],
     "order": 16
@@ -1317,5 +1324,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T17:46:50.145Z";
+export const lastUpdated = "2025-10-26T17:47:28.082Z";
 export const generatedBy = "menu-persist-api";
