@@ -1202,7 +1202,7 @@ export const contentData = {
         "updatedAt": "2025-10-26T16:26:27.424Z",
         "order": 1,
         "badgeName": "Блог",
-        "description": "как получить разрешение на такси на свой автомобиль самозанятому в яндекс такси",
+        "description": "Узнайте, как получить разрешение на такси на свой автомобиль самозанятому в Яндекс Такси: пошаговая инструкция, требования, советы. Начните работать легально!",
         "images": [
           {
             "id": "t6apl79r78c0ts6oq6fmh0lg",
@@ -1245,5 +1245,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T16:47:09.590Z";
+export const lastUpdated = "2025-10-26T16:47:13.894Z";
 export const generatedBy = "menu-persist-api";
