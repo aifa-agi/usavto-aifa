@@ -1290,7 +1290,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-26T17:07:45.493Z",
-        "updatedAt": "2025-10-26T17:15:32.660Z",
+        "updatedAt": "2025-10-26T17:16:26.145Z",
         "order": 1,
         "badgeName": "Блог",
         "description": "Узнайте, как зарегистрировать авто в такси в 2024 году: пошаговая инструкция, список документов, советы по лицензии и онлайн-подаче заявки. Начните работать легально!",
@@ -1536,6 +1536,112 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "пошаговый процесс регистрации такси",
+              "подача заявления через Госуслуги",
+              "регистрация авто через МФЦ",
+              "алгоритм регистрации автомобиля",
+              "инструкция по регистрации такси",
+              "онлайн оформление такси",
+              "практические шаги регистрации"
+            ],
+            "taxonomy": "HowTo",
+            "attention": "Следуйте подробной инструкции, чтобы быстро и без ошибок пройти все этапы регистрации автомобиля для работы в такси в 2024 году.",
+            "intent": "Дать пользователю структурированный и понятный алгоритм действий для самостоятельной регистрации автомобиля в такси, включая выбор способа подачи заявления и пошаговое выполнение процедуры.",
+            "audiences": "Владельцы автомобилей, желающие легально работать в такси, обладающие базовой технической грамотностью и нуждающиеся в практическом руководстве по регистрации через Госуслуги или МФЦ.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 section on 'Пошаговая инструкция по регистрации автомобиля в такси' for page 'Как зарегистрировать авто в такси: пошаговая инструкция 2024'\n\nGOAL: Предоставить читателю подробный, структурированный и практический алгоритм регистрации автомобиля для работы в такси, с акцентом на онлайн-подачу через Госуслуги и альтернативу через МФЦ. Включить все ключевые этапы, необходимые действия, советы по заполнению заявления и нюансы, которые помогут избежать ошибок.\n\nAUDIENCE: Владельцы авто, рассматривающие работу в такси | Level: intermediate | Pain points: страх ошибок, неуверенность в последовательности действий, нехватка информации о цифровых сервисах.\n\nKEYWORDS TO INTEGRATE:\n[пошаговый процесс регистрации такси, подача заявления через Госуслуги, регистрация авто через МФЦ, алгоритм регистрации автомобиля, инструкция по регистрации такси, онлайн оформление такси, практические шаги регистрации]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: h2 section with nested h3, p, ol, code as per structure\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: этапы регистрации, юридические и технические требования, особенности подачи заявления\n- SECONDARY: Apply insights from External KB: специфика подачи через Госуслуги, возможные причины отказа, практические советы\n\nQUALITY CRITERIA:\n- Actionable (чёткие шаги и рекомендации)\n- Specific (без общих фраз)\n- Data-backed (факты и нюансы из KB)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальная инструкция по самостоятельной регистрации авто в такси с учетом современных цифровых сервисов и требований 2024 года.\n- sourceHint: Internal KB (основной алгоритм), External KB (детали онлайн-подачи)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference parent page intent\n- Must set тематическое направление для вложенных h3 (детализация этапов)\n- Add interlink planning: internalLinks (например, «Как получить лицензию на такси», «Частые ошибки при регистрации такси»)\n- selfPrompt MUST end with: \n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-3-1",
+                "tag": "p",
+                "keywords": [
+                  "алгоритм регистрации автомобиля",
+                  "инструкция по регистрации такси"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, с чего начать и как избежать типичных ошибок при регистрации авто для такси.",
+                "intent": "Ввести пользователя в общий порядок действий, обозначить ключевые этапы и подготовить к детальному разбору каждого шага.",
+                "audiences": "Автовладельцы, впервые сталкивающиеся с регистрацией в такси, ищущие понятную и логичную последовательность действий.",
+                "selfPrompt": "CONTEXT: Generate intro paragraph for h2 'Пошаговая инструкция по регистрации автомобиля в такси'.\nGOAL: Кратко описать общий алгоритм регистрации, обозначить важность последовательности шагов и подготовить к дальнейшему изучению подробностей.\nAUDIENCE: Новички, желающие избежать ошибок | Level: beginner/intermediate\nKEYWORDS: алгоритм регистрации автомобиля, инструкция по регистрации такси\nWORD COUNT: minWords: 90, maxWords: 170\nMARKDOWN/MDX SYNTAX: paragraph\nROLE: intro\nsemanticFingerprint: Вводный абзац, формирующий ожидания от инструкции и подчеркивающий важность пошагового подхода.\nsourceHint: Internal KB (структура процесса)\nevidenceStrength: internal-tested"
+              },
+              {
+                "id": "h3-3-2",
+                "tag": "h3",
+                "keywords": [
+                  "подача заявления через Госуслуги",
+                  "регистрация авто через МФЦ",
+                  "онлайн оформление такси",
+                  "практические шаги регистрации",
+                  "цифровые сервисы для такси"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Следуйте пошаговой инструкции для успешной подачи заявления и прохождения всех этапов регистрации.",
+                "intent": "Детализировать каждый шаг процесса регистрации автомобиля для такси, выделить особенности подачи через Госуслуги и МФЦ, дать практические советы по заполнению и отслеживанию статуса.",
+                "audiences": "Владельцы авто, готовые к самостоятельному оформлению, желающие быстро и корректно пройти процедуру регистрации.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection for h2 'Пошаговая инструкция по регистрации автомобиля в такси' — 'Подача заявления и прохождение этапов регистрации'.\nGOAL: Пошагово расписать процесс подачи заявления через Госуслуги и МФЦ, выделить ключевые действия, дать советы по заполнению и отслеживанию статуса, предупредить о возможных сложностях.\nAUDIENCE: Автовладельцы, готовые к самостоятельному оформлению | Level: intermediate\nKEYWORDS: подача заявления через Госуслуги, регистрация авто через МФЦ, онлайн оформление такси, практические шаги регистрации, цифровые сервисы для такси\nWORD COUNT: minWords: 180, maxWords: 280\nMARKDOWN/MDX SYNTAX: h3 with nested p, ol, code\nsemanticFingerprint: Детализированный разбор всех этапов подачи заявления и прохождения регистрации через цифровые и офлайн сервисы.\nsourceHint: Internal KB (основные этапы), External KB (нюансы онлайн-подачи, советы)\nevidenceStrength: internal-tested | external-peer-reviewed\ninterlink planning: Вставить ссылку на статью «Как получить лицензию на такси»",
+                "additionalData": {
+                  "minWords": 180,
+                  "maxWords": 280,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "подача заявления через Госуслуги",
+                      "онлайн оформление такси"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Узнайте, как правильно заполнить заявление и какие данные подготовить для онлайн-подачи.",
+                    "intent": "Объяснить, как подготовить и заполнить заявление для регистрации авто в такси через Госуслуги, на что обратить внимание при загрузке документов.",
+                    "audiences": "Пользователи портала Госуслуги, впервые подающие заявление на регистрацию такси.",
+                    "selfPrompt": "CONTEXT: Generate paragraph for h3 'Подача заявления и прохождение этапов регистрации'.\nGOAL: Описать подготовку и заполнение заявления через Госуслуги, дать советы по корректной загрузке документов.\nAUDIENCE: Новички в онлайн-сервисах | Level: beginner/intermediate\nKEYWORDS: подача заявления через Госуслуги, онлайн оформление такси\nWORD COUNT: minWords: 75, maxWords: 140\nMARKDOWN/MDX SYNTAX: paragraph\nROLE: body\nsemanticFingerprint: Практические рекомендации по заполнению заявления и загрузке документов на Госуслугах.\nsourceHint: External KB (практические советы), Internal KB (требования к документам)\nevidenceStrength: external-peer-reviewed"
+                  },
+                  {
+                    "id": "ol-3-2-2",
+                    "tag": "ol",
+                    "keywords": [
+                      "практические шаги регистрации",
+                      "регистрация авто через МФЦ"
+                    ],
+                    "taxonomy": "HowTo",
+                    "attention": "Следуйте этим шагам, чтобы не пропустить ни одного важного этапа регистрации.",
+                    "intent": "Дать пользователю четкую последовательность действий для регистрации автомобиля в такси через МФЦ или Госуслуги.",
+                    "audiences": "Автовладельцы, предпочитающие структурированные инструкции.",
+                    "selfPrompt": "CONTEXT: Generate ordered list for h3 'Подача заявления и прохождение этапов регистрации'.\nGOAL: Перечислить 5-7 ключевых шагов процесса регистрации авто в такси через Госуслуги и МФЦ.\nAUDIENCE: Пользователи, которым важна пошаговая структура | Level: intermediate\nKEYWORDS: практические шаги регистрации, регистрация авто через МФЦ\nWORD COUNT: minWords: 50, maxWords: 90\nMARKDOWN/MDX SYNTAX: ordered list (5-7 пунктов, каждый по 10-20 слов)\nROLE: steps\nsemanticFingerprint: Лаконичный список всех этапов регистрации с акцентом на последовательность и полноту.\nsourceHint: Internal KB (основные этапы), External KB (нюансы подачи)\nevidenceStrength: internal-tested"
+                  },
+                  {
+                    "id": "code-3-2-3",
+                    "tag": "code",
+                    "keywords": [
+                      "цифровые сервисы для такси",
+                      "пример заполнения заявления"
+                    ],
+                    "taxonomy": "technical",
+                    "attention": "Используйте этот пример для корректного заполнения электронного заявления.",
+                    "intent": "Показать пример заполнения электронного заявления на регистрацию авто в такси для Госуслуг.",
+                    "audiences": "Пользователи, испытывающие трудности с оформлением онлайн-заявок.",
+                    "selfPrompt": "CONTEXT: Generate code block for h3 'Подача заявления и прохождение этапов регистрации'.\nGOAL: Привести пример JSON-заполнения или шаблона электронного заявления для Госуслуг (snippet 5-10 строк).\nAUDIENCE: Пользователи, которым нужен наглядный пример | Level: intermediate\nKEYWORDS: цифровые сервисы для такси, пример заполнения заявления\nWORD COUNT: minWords: 20, maxWords: 50\nMARKDOWN/MDX SYNTAX: code block (JSON или текстовый шаблон)\nROLE: example\nsemanticFingerprint: Мини-шаблон для самостоятельного заполнения заявления на Госуслугах.\nsourceHint: External KB (пример оформления), Internal KB (структура заявления)\nevidenceStrength: external-peer-reviewed"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1568,5 +1674,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-26T17:31:50.417Z";
+export const lastUpdated = "2025-10-26T17:32:53.894Z";
 export const generatedBy = "menu-persist-api";
