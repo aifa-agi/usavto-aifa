@@ -27,6 +27,7 @@ import { appConfig } from "@/config/appConfig";
 import { NavBar } from "./@right/(_service)/(_components)/nav-bar/nav-bar";
 import { NavigationMenuProvider } from "./@right/(_service)/(_context)/nav-bar-provider";
 import { CookieBanner } from "@/app/(_service)/(_components)/cookie-banner";
+import { MobileDrawerWrapper } from "./@left/(_service)/(_components)/mobile-drawer-wrapper";
 
 
 
@@ -117,21 +118,22 @@ export default async function RootLayout({
 
                     {/* === MOBILE LAYOUT === */}
                     <div className="w-full md:hidden relative">
-                      {left}
-                      <div className="border-l overflow-hidden border-secondary">
-                        <RightDrawerBar>
-                          <NavigationMenuProvider>
-                            <div className="flex flex-col h-svh pb-6">
-                              <NavBar />
-                              <main className="flex-1 overflow-y-auto hide-scrollbar">
-                                {right}
-                              </main>
-                              <CookieBanner />
-                            </div>
-                          </NavigationMenuProvider>
-                        </RightDrawerBar>
-
-                      </div>
+                      <MobileDrawerWrapper>
+                        {left}
+                        <div className="border-l overflow-hidden border-secondary">
+                          <RightDrawerBar>
+                            <NavigationMenuProvider>
+                              <div className="flex flex-col h-svh pb-6">
+                                <NavBar />
+                                <main className="flex-1 overflow-y-auto hide-scrollbar">
+                                  {right}
+                                </main>
+                                <CookieBanner />
+                              </div>
+                            </NavigationMenuProvider>
+                          </RightDrawerBar>
+                        </div>
+                      </MobileDrawerWrapper>
                     </div>
 
 
