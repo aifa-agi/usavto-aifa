@@ -1,5 +1,5 @@
 // Auto-generated SEO-optimized static page - do not edit manually
-// Generated on: 2025-10-28T13:17:07.836Z
+// Generated on: 2025-10-28T13:17:38.369Z
 // Source href: /blog/kak-svyazatsya-so-sluzhboy-podderzhki-yandeks-taksi
 // Page metadata: Как связаться со службой поддержки Яндекс Такси — все способы | 5 sections
 // FAQ sections detected: 4
@@ -44,7 +44,7 @@ const sections = [
           "content": [
             {
               "type": "text",
-              "text": "Все способы связи со службой поддержки Яндекс Такси: инструкция для решения любых вопросов"
+              "text": "Все способы связи со службой поддержки Яндекс Такси: инструкция для решения любых вопросов."
             }
           ]
         },
@@ -1715,8 +1715,8 @@ export default function Page() {
               "url": "/app-images/mzyr7j4sp3nt8yoztbmdert7.png",
               "alt": "как связаться со службой поддержки яндекс такси"
             },
-            "datePublished": "2025-10-28T13:17:07.836Z",
-            "dateModified": "2025-10-28T13:17:07.836Z",
+            "datePublished": "2025-10-28T13:17:38.369Z",
+            "dateModified": "2025-10-28T13:17:38.369Z",
             "articleSection": "blog",
             "keywords": ["как связаться со службой поддержки яндекс такси"],
             "mainEntityOfPage": {
