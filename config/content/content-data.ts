@@ -2094,7 +2094,7 @@ export const contentData = {
       },
       {
         "id": "r9sspmiqq6z2kcqa16g9iwuk",
-        "title": "как устроиться в бизнес такси в москве",
+        "title": "Как устроиться в бизнес такси в Москве: требования, доход, старт",
         "href": "/blog/kak-ustroitsya-v-biznes-taksi-v-moskve",
         "roles": [
           "guest"
@@ -2661,5 +2661,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T13:37:19.834Z";
+export const lastUpdated = "2025-10-28T13:37:30.392Z";
 export const generatedBy = "menu-persist-api";
