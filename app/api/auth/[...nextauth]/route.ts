@@ -2,4 +2,4 @@
 export {
   GET,
   POST,
-} from "@/app/@left/(_public)/(_AUTH)/(_service)/(_actions)/auth";
+} from "@/app/@left/(_sub_domains)/(_AUTH)/(_service)/(_actions)/auth";

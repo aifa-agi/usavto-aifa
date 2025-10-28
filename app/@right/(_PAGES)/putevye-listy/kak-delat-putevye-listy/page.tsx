@@ -1727,6 +1727,7 @@ export async function generateMetadata(): Promise<Metadata> {
 // ============================================
 
 export default function Page() {
+
   return (
     <article className="page-content">
       <div className="container max-w-screen-2xl pt-6 px-4 md:pt-10">

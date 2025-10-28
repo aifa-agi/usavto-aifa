@@ -32,8 +32,8 @@ import { UseChatHelpers } from "@ai-sdk/react";
 import {
   artifactDefinitions,
   ArtifactKind,
-} from "@/app/@left/(_public)/(_CHAT)/(chat)/(_service)/(_components)/artifact";
-import { ArtifactToolbarItem } from "@/app/@left/(_public)/(_CHAT)/(chat)/(_service)/(_components)/create-artifact";
+} from "@/app/@left/(_sub_domains)/(_CHAT)/(chat)/(_service)/(_components)/artifact";
+import { ArtifactToolbarItem } from "@/app/@left/(_sub_domains)/(_CHAT)/(chat)/(_service)/(_components)/create-artifact";
 
 type ToolProps = {
   description: string;
@@ -382,19 +382,19 @@ const PureToolbar = ({
           isToolbarVisible
             ? selectedTool === "adjust-reading-level"
               ? {
-                  opacity: 1,
-                  y: 0,
-                  height: 6 * 43,
-                  transition: { delay: 0 },
-                  scale: 0.95,
-                }
+                opacity: 1,
+                y: 0,
+                height: 6 * 43,
+                transition: { delay: 0 },
+                scale: 0.95,
+              }
               : {
-                  opacity: 1,
-                  y: 0,
-                  height: toolsByArtifactKind.length * 50,
-                  transition: { delay: 0 },
-                  scale: 1,
-                }
+                opacity: 1,
+                y: 0,
+                height: toolsByArtifactKind.length * 50,
+                transition: { delay: 0 },
+                scale: 1,
+              }
             : { opacity: 1, y: 0, height: 54, transition: { delay: 0 } }
         }
         exit={{ opacity: 0, y: -20, transition: { duration: 0.1 } }}

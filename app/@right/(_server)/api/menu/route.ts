@@ -2,7 +2,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { promises as fs } from "fs";
 import path from "path";
-import { auth } from "@/app/@left/(_public)/(_AUTH)/(_service)/(_actions)/auth";
+import { auth } from "@/app/@left/(_sub_domains)/(_AUTH)/(_service)/(_actions)/auth";
 
 /**
  * Menu read route with role-based data source selection and rate limit tracking

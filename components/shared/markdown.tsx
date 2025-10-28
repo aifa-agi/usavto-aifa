@@ -6,10 +6,10 @@ import { useRouter } from "next/navigation";
 import React, { memo, useState } from "react";
 import ReactMarkdown, { type Components } from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { CodeBlock } from "../../app/@left/(_public)/(_CHAT)/(chat)/(_service)/(_components)/code-block";
+import { CodeBlock } from "../../app/@left/(_sub_domains)/(_CHAT)/(chat)/(_service)/(_components)/code-block";
 import { DefaultSuggestionButton } from "./default-suggestion-button";
 import { suggestedActions } from "@/config/chat-config/start-suggestions-buttons";
-import { SuggestionButton } from "@/app/@left/(_public)/(_CHAT)/(chat)/(_service)/(_components)/suggestion-button";
+import { SuggestionButton } from "@/app/@left/(_sub_domains)/(_CHAT)/(chat)/(_service)/(_components)/suggestion-button";
 
 /**
  * Check if URL is internal (same application)

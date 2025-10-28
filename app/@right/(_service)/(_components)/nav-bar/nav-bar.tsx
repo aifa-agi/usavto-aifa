@@ -1,6 +1,6 @@
 // @/app/@right/(_service)/(_components)/nav-bar/nav-bar.tsx
 
-import { auth } from "@/app/@left/(_public)/(_AUTH)/(_service)/(_actions)/auth";
+import { auth } from "@/app/@left/(_sub_domains)/(_AUTH)/(_service)/(_actions)/auth";
 import StaticNavBar from "./public-flow/static-nav-bar";
 import EditableNavBar from "./admin-flow/editable-nav-bar";
 // check

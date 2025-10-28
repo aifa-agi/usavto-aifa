@@ -1,6 +1,7 @@
 // @/app/@right/(_service)/(_components)/mobile-drawer-wrapper.tsx
 "use client";
 
+import { useScrollToAnchor } from "@/hooks/use-scroll-to-anchor";
 import { useAutoOpenDrawer } from "@/hooks/use-auto-open-drawer";
 import { ReactNode } from "react";
 

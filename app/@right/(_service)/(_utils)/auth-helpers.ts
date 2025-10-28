@@ -14,7 +14,7 @@
  */
 
 import { NextResponse } from "next/server";
-import { auth } from "@/app/@left/(_public)/(_AUTH)/(_service)/(_actions)/auth";
+import { auth } from "@/app/@left/(_sub_domains)/(_AUTH)/(_service)/(_actions)/auth";
 
 // -------------------- Types --------------------
 

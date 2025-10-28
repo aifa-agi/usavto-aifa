@@ -27,6 +27,5 @@ export default function robots(): MetadataRoute.Robots {
       },
     ],
     sitemap: appConfig.seo.sitemapUrl,
-    // host: new URL(appConfig.url).host, // uncomment if you want explicit Host
   };
 }
