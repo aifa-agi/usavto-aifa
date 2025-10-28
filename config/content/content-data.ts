@@ -2645,7 +2645,8 @@ export const contentData = {
         "createdAt": "2025-10-28T13:59:00.177Z",
         "updatedAt": "2025-10-28T13:59:00.177Z",
         "order": 2,
-        "badgeName": "Блог"
+        "badgeName": "Блог",
+        "description": "какие машины подходят под бизнес в яндекс такси"
       }
     ],
     "order": 16
@@ -2676,5 +2677,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T13:59:28.428Z";
+export const lastUpdated = "2025-10-28T13:59:38.311Z";
 export const generatedBy = "menu-persist-api";
