@@ -2650,7 +2650,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-28T13:25:43.804Z",
-        "updatedAt": "2025-10-28T13:48:00.809Z",
+        "updatedAt": "2025-10-28T13:48:09.951Z",
         "order": 2,
         "badgeName": "Блог",
         "description": "Узнайте, как устроиться в бизнес такси в Москве: требования к водителям и авто, доход до 180 тыс ₽, обучение, аренда, подключение к Яндекс Такси.",
@@ -2786,7 +2786,8 @@ export const contentData = {
                   "minWords": 80,
                   "maxWords": 150,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-2-2-3",
@@ -2803,7 +2804,8 @@ export const contentData = {
                   "minWords": 5,
                   "maxWords": 15,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "table-2-2-4",
@@ -2821,7 +2823,8 @@ export const contentData = {
                   "minWords": 80,
                   "maxWords": 160,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-2-2",
@@ -2859,7 +2862,8 @@ export const contentData = {
                       "minWords": 70,
                       "maxWords": 130,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "ul-2-2-2",
@@ -2876,7 +2880,8 @@ export const contentData = {
                       "minWords": 40,
                       "maxWords": 80,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "p-2-2-3",
@@ -2893,11 +2898,14 @@ export const contentData = {
                       "minWords": 60,
                       "maxWords": 100,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-3",
@@ -3357,5 +3365,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T13:48:09.777Z";
+export const lastUpdated = "2025-10-28T13:48:14.794Z";
 export const generatedBy = "menu-persist-api";
