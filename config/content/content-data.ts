@@ -2650,7 +2650,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-28T13:25:43.804Z",
-        "updatedAt": "2025-10-28T13:42:15.154Z",
+        "updatedAt": "2025-10-28T13:43:40.081Z",
         "order": 2,
         "badgeName": "Блог",
         "description": "Узнайте, как устроиться в бизнес такси в Москве: требования к водителям и авто, доход до 180 тыс ₽, обучение, аренда, подключение к Яндекс Такси.",
@@ -2895,6 +2895,130 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "этапы трудоустройства в бизнес такси",
+              "процесс подключения к сервису",
+              "пошаговая инструкция для водителя",
+              "регистрация в агрегаторе",
+              "оформление документов онлайн",
+              "обучение и экзамены для бизнес-такси",
+              "старт работы через Яндекс Про"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Пошаговая инструкция: как быстро и правильно начать работать в бизнес-такси Москвы — от регистрации до первых заказов.",
+            "intent": "Дать читателю подробный, практический алгоритм действий для успешного старта в бизнес-такси, включая регистрацию, оформление документов, прохождение обучения и подключение к агрегатору.",
+            "audiences": "Мужчины 25–45 лет с опытом вождения от 3 лет, рассматривающие переход в премиальный сегмент такси, нуждающиеся в четкой и понятной инструкции по началу работы.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 section on 'Пошаговый процесс устройства и подключения к бизнес-такси' for page 'Как устроиться в бизнес такси в Москве: требования, доход, старт'\n\nGOAL: Подробно описать этапы и последовательность действий для старта работы в бизнес-такси Москвы: от регистрации и подачи заявки до прохождения обучения, оформления документов и выхода на линию через агрегаторы (например, Яндекс Про). Обеспечить практическую ценность, сделать акцент на цифровых решениях и автоматизации, показать, как избежать типичных ошибок и ускорить процесс.\n\nAUDIENCE: Мужчины 25–45 лет, опытные водители, ищущие понятную и быструю схему старта в премиальном сегменте такси | Level: intermediate | Pain points: страх сложностей с документами, непонимание этапов подключения, желание быстро выйти на линию.\n\nKEYWORDS TO INTEGRATE:\n[этапы трудоустройства в бизнес такси, процесс подключения к сервису, пошаговая инструкция для водителя, регистрация в агрегаторе, оформление документов онлайн, обучение и экзамены для бизнес-такси, старт работы через Яндекс Про]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: h2 section with nested h3, p, ol, code as per structure\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: автоматизация документооборота, цифровые решения, образовательные программы, опыт подключения водителей\n- SECONDARY: Apply insights from External KB: стандартные этапы регистрации, требования агрегаторов, экзамены, аренда авто\n\nQUALITY CRITERIA:\n- Actionable (конкретные шаги)\n- Specific (без общих фраз)\n- Data-backed (цифры, сроки, примеры)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальная инструкция по быстрому старту в бизнес-такси Москвы с акцентом на цифровые сервисы и обучение.\n- sourceHint: Internal KB (US AUTO опыт, автоматизация, обучение) + External KB (общие требования агрегаторов)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference parent page intent\n- Must set thematic direction for child h3 elements\n- Add interlink planning: internalLinks (например, «Обучение водителей бизнес-такси», «Документы для работы в такси»)\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-3-1",
+                "tag": "p",
+                "keywords": [
+                  "этапы трудоустройства в бизнес такси",
+                  "регистрация в агрегаторе"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, с чего начать путь в бизнес-такси: первый шаг — регистрация и подача заявки.",
+                "intent": "Ввести читателя в суть пошагового процесса устройства, объяснить, почему важно следовать алгоритму и как регистрация облегчает старт.",
+                "audiences": "Водители, впервые рассматривающие бизнес-такси, которым нужна уверенность в правильности своих действий.",
+                "selfPrompt": "CONTEXT: Generate intro paragraph for h2 'Пошаговый процесс устройства и подключения к бизнес-такси' on page 'Как устроиться в бизнес такси в Москве: требования, доход, старт'.\nGOAL: Кратко объяснить, почему важно следовать четкой инструкции при устройстве в бизнес-такси, и как регистрация в агрегаторе становится отправной точкой.\nROLE: intro\nKEYWORDS: этапы трудоустройства в бизнес такси, регистрация в агрегаторе\nWORD COUNT: minWords: 90, maxWords: 170\nE-E-A-T: semanticFingerprint: Вводный абзац, подчеркивающий важность пошагового подхода и цифровых решений для быстрого старта. sourceHint: Internal KB (опыт подключения водителей). evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 90,
+                  "maxWords": 170,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-3-2",
+                "tag": "h3",
+                "keywords": [
+                  "пошаговая инструкция для водителя",
+                  "оформление документов онлайн",
+                  "обучение и экзамены для бизнес-такси",
+                  "старт работы через Яндекс Про",
+                  "процесс подключения к сервису"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Следуйте подробной инструкции — от подачи заявки до выхода на линию и получения первых заказов.",
+                "intent": "Дать детальный, практический алгоритм действий для подключения к бизнес-такси, включая оформление документов, обучение и старт работы.",
+                "audiences": "Водители, которые хотят быстро и без ошибок пройти все этапы подключения к бизнес-такси.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection 'Пошаговая инструкция: как подключиться к бизнес-такси и выйти на линию' for h2 'Пошаговый процесс устройства и подключения к бизнес-такси' on page 'Как устроиться в бизнес такси в Москве: требования, доход, старт'.\nGOAL: Подробно расписать каждый этап подключения: подача заявки, оформление документов онлайн, прохождение обучения, сдача экзамена, подключение к сервису (например, Яндекс Про), выход на линию.\nKEYWORDS: пошаговая инструкция для водителя, оформление документов онлайн, обучение и экзамены для бизнес-такси, старт работы через Яндекс Про, процесс подключения к сервису\nWORD COUNT: minWords: 180, maxWords: 280\nE-E-A-T: semanticFingerprint: Детализированная инструкция по подключению к бизнес-такси с акцентом на цифровые сервисы и обучение. sourceHint: Internal KB (автоматизация, обучение), External KB (стандартные этапы агрегаторов). evidenceStrength: internal-tested | external-peer-reviewed.\nInterlink planning: Вставить ссылки на разделы «Обучение водителей бизнес-такси», «Документы для работы в такси».",
+                "additionalData": {
+                  "minWords": 180,
+                  "maxWords": 280,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "оформление документов онлайн",
+                      "обучение и экзамены для бизнес-такси"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Узнайте, как быстро пройти оформление документов и обучение для старта.",
+                    "intent": "Объяснить важность правильного оформления документов и прохождения обучения для допуска к работе.",
+                    "audiences": "Водители, которые опасаются бюрократии и хотят упростить процесс.",
+                    "selfPrompt": "CONTEXT: Generate supporting paragraph for h3 'Пошаговая инструкция: как подключиться к бизнес-такси и выйти на линию' (h2 'Пошаговый процесс устройства и подключения к бизнес-такси').\nGOAL: Пояснить, как автоматизация и онлайн-сервисы ускоряют оформление документов и обучение, минимизируя ошибки и задержки.\nROLE: body\nKEYWORDS: оформление документов онлайн, обучение и экзамены для бизнес-такси\nWORD COUNT: minWords: 75, maxWords: 140\nE-E-A-T: semanticFingerprint: Практическое объяснение преимуществ цифровых решений для оформления и обучения. sourceHint: Internal KB (облачная платформа, обучение). evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 140,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-2-2",
+                    "tag": "ol",
+                    "keywords": [
+                      "процесс подключения к сервису"
+                    ],
+                    "taxonomy": "HowTo",
+                    "attention": "Пошаговый чек-лист: не пропустите ни одного этапа подключения!",
+                    "intent": "Дать водителю четкий список последовательных шагов для подключения к бизнес-такси.",
+                    "audiences": "Водители, которым нужен структурированный план действий.",
+                    "selfPrompt": "CONTEXT: Generate ordered list (6–8 пунктов) for h3 'Пошаговая инструкция: как подключиться к бизнес-такси и выйти на линию' (h2 'Пошаговый процесс устройства и подключения к бизнес-такси').\nGOAL: Сформировать пошаговый чек-лист: 1. Подача заявки, 2. Проверка документов, 3. Медосмотр, 4. Обучение, 5. Экзамен, 6. Подключение к сервису, 7. Получение путевого листа, 8. Выход на линию.\nSTRUCTURE: Краткие пункты (5–15 слов), каждый шаг — отдельный пункт.\nKEYWORDS: процесс подключения к сервису\nWORD COUNT: minWords: 50, maxWords: 90\nE-E-A-T: semanticFingerprint: Структурированный чек-лист этапов подключения к бизнес-такси. sourceHint: Internal KB (опыт подключения), External KB (стандартные этапы). evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 90,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-3-2-3",
+                    "tag": "code",
+                    "keywords": [
+                      "старт работы через Яндекс Про"
+                    ],
+                    "taxonomy": "technical",
+                    "attention": "Пример автоматизированного оформления путевого листа для быстрого старта.",
+                    "intent": "Показать, как с помощью цифровых решений можно быстро оформить путевой лист и выйти на линию.",
+                    "audiences": "Водители, ценящие технологии и желающие ускорить старт.",
+                    "selfPrompt": "CONTEXT: Generate code block (JSON или псевдокод) для h3 'Пошаговая инструкция: как подключиться к бизнес-такси и выйти на линию' (h2 'Пошаговый процесс устройства и подключения к бизнес-такси').\nGOAL: Привести пример автоматического создания электронного путевого листа через облачную платформу (пример JSON-запроса или ответа).\nLANGUAGE: JSON\nPURPOSE: snippet (5–10 lines)\nKEYWORDS: старт работы через Яндекс Про\nWORD COUNT: minWords: 20, maxWords: 50\nE-E-A-T: semanticFingerprint: Пример цифрового оформления путевого листа для старта в бизнес-такси. sourceHint: Internal KB (облачная платформа). evidenceStrength: internal-tested.",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 50,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -2927,5 +3051,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T13:43:39.871Z";
+export const lastUpdated = "2025-10-28T13:46:24.439Z";
 export const generatedBy = "menu-persist-api";
