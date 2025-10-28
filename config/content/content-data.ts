@@ -2625,6 +2625,9 @@ export const contentData = {
             "alt": "как устроиться в бизнес такси в москве",
             "href": "/app-images/jqx4patm54denzgusqq1wj2f.webp"
           }
+        ],
+        "keywords": [
+          "как устроиться в бизнес такси в москве"
         ]
       }
     ],
@@ -2656,5 +2659,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T13:32:07.566Z";
+export const lastUpdated = "2025-10-28T13:32:25.246Z";
 export const generatedBy = "menu-persist-api";
