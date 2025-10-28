@@ -2706,7 +2706,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-28T15:57:22.042Z",
-        "updatedAt": "2025-10-28T16:16:30.018Z",
+        "updatedAt": "2025-10-28T16:16:53.656Z",
         "order": 2,
         "badgeName": "Блог",
         "description": "Узнайте, как отменить лицензию на такси на Госуслугах: пошаговая инструкция, необходимые документы и советы для быстрого аннулирования онлайн.",
@@ -3380,7 +3380,8 @@ export const contentData = {
               }
             ]
           }
-        ]
+        ],
+        "isReadyDraftForPerplexity": true
       }
     ],
     "order": 16
@@ -3411,5 +3412,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T16:16:53.451Z";
+export const lastUpdated = "2025-10-28T16:17:34.705Z";
 export const generatedBy = "menu-persist-api";
