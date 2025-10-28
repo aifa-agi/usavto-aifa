@@ -2650,7 +2650,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-28T13:25:43.804Z",
-        "updatedAt": "2025-10-28T13:25:43.804Z",
+        "updatedAt": "2025-10-28T13:40:49.702Z",
         "order": 2,
         "badgeName": "Блог",
         "description": "Узнайте, как устроиться в бизнес такси в Москве: требования к водителям и авто, доход до 180 тыс ₽, обучение, аренда, подключение к Яндекс Такси.",
@@ -2669,7 +2669,76 @@ export const contentData = {
         "intent": "Пользователь приходит на страницу, чтобы узнать, как устроиться на работу в бизнес-такси в Москве, какие требования предъявляются к водителям и автомобилям, а также какой доход можно ожидать. Ожидаемое действие — ознакомиться с условиями, преимуществами и этапами трудоустройства, чтобы принять решение о подаче заявки или начале работы. Страница полностью закрывает информационный запрос, предоставляя пошаговое руководство, список требований, описание зарплат и варианты старта через сервисы (например, Яндекс Такси, Яндекс Про).",
         "taxonomy": "Эта страница представляет собой подробное руководство (guide) по трудоустройству в бизнес-такси в Москве, структурированное как кластерный контент, поддерживающий основную тему \"Работа в такси\" в разделе \"Карьерные возможности\" — \"Транспорт и логистика\". Материал раскрывает требования, условия, доход, стартовые шаги и особенности работы через сервисы Яндекс Такси и Яндекс Про, усиливая тематическую авторитетность сайта по вопросам карьерного роста и профессионального входа в премиальный сегмент такси.",
         "attention": "Захватите внимание конкретным обещанием дохода в первые секунды (\"Зарабатывайте до 180 000 ₽ в месяц в бизнес такси Москвы — узнайте, как попасть в премиальный сегмент!\"), сразу предлагая интерактивный калькулятор дохода и визуальные блоки с требованиями и шагами старта. Для удержания интереса используйте четкую структуру, быстрые ответы на частые вопросы и пошаговые инструкции, делая акцент на реальных преимуществах и поддержке, чтобы выделиться среди перегруженных текстом конкурентов.",
-        "audiences": "Страница предназначена для мужчин 25–45 лет с опытом вождения от 3 лет, рассматривающих переход в сферу бизнес-такси в Москве или повышение класса работы, заинтересованных в стабильном высоком доходе (130–180 тыс ₽/мес и выше) и гибком графике. Основная аудитория — водители с базовыми или средними знаниями о премиальных требованиях агрегаторов (Яндекс Такси, Яндекс Про), стремящиеся понять условия, требования к водителю и автомобилю, а также порядок старта и перспективы работы в бизнес-классе. Контент актуален для тех, кто находится на стадии активного поиска новой работы или смены сегмента в такси и нуждается в чёткой информации о стандартах, доходах, обучении и процессе подключения."
+        "audiences": "Страница предназначена для мужчин 25–45 лет с опытом вождения от 3 лет, рассматривающих переход в сферу бизнес-такси в Москве или повышение класса работы, заинтересованных в стабильном высоком доходе (130–180 тыс ₽/мес и выше) и гибком графике. Основная аудитория — водители с базовыми или средними знаниями о премиальных требованиях агрегаторов (Яндекс Такси, Яндекс Про), стремящиеся понять условия, требования к водителю и автомобилю, а также порядок старта и перспективы работы в бизнес-классе. Контент актуален для тех, кто находится на стадии активного поиска новой работы или смены сегмента в такси и нуждается в чёткой информации о стандартах, доходах, обучении и процессе подключения.",
+        "draftContentStructure": [
+          {
+            "id": "h2-1",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "как устроиться в бизнес такси в москве",
+              "работа в бизнес такси",
+              "требования к водителям",
+              "доход в бизнес такси",
+              "старт в премиальном такси",
+              "условия трудоустройства",
+              "Яндекс Такси подключение"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, как зарабатывать до 180 000 ₽ в месяц в бизнес такси Москвы — пошаговое руководство для успешного старта.",
+            "intent": "Ввести пользователя в тему устройства в бизнес такси в Москве, обозначить ключевые преимущества и объяснить, почему эта сфера привлекательна для водителей, желающих повысить доход и перейти в премиальный сегмент.",
+            "audiences": "Мужчины 25–45 лет с опытом вождения от 3 лет, рассматривающие переход в бизнес-такси Москвы или повышение класса работы; водители, заинтересованные в стабильном высоком доходе и гибком графике.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 introduction section for page \"Как устроиться в бизнес такси в Москве: требования, доход, старт\"\n\nGOAL: Представить основную тему страницы, обозначить выгоды и перспективы работы в бизнес такси Москвы, а также заинтересовать пользователя подробным разбором этапов трудоустройства и преимуществ премиального сегмента.\n\nAUDIENCE: Мужчины 25–45 лет с опытом вождения от 3 лет, рассматривающие переход в бизнес-такси Москвы или повышение класса работы; уровень — средний; pain points: недостаток информации о требованиях, доходах и процессе старта, желание повысить заработок и перейти в премиум-сегмент.\n\nKEYWORDS TO INTEGRATE:\n[как устроиться в бизнес такси в москве, работа в бизнес такси, требования к водителям, доход в бизнес такси, старт в премиальном такси, условия трудоустройства, Яндекс Такси подключение]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 150, maxWords: 250 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with two introductory paragraphs\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Использовать факты из Internal KB: история компании, образовательные программы, требования к водителям и авто, цифровые решения, преимущества работы через сервисы US AUTO\n- SECONDARY: Применять инсайты из External KB: статистика доходов, типы автомобилей, общие требования агрегаторов\n\nQUALITY CRITERIA:\n- Actionable (чётко обозначить выгоды и следующий шаг)\n- Specific (конкретные цифры, условия, преимущества)\n- Data-backed (использовать реальные данные из KB)\n- No fluff (никакой воды)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Вводная секция раскрывает уникальные преимущества старта в бизнес такси Москвы, акцентируя внимание на доходах, требованиях и поддержке.\n- sourceHint: Internal KB (опыт компании, образовательные программы, требования 2025 года) + External KB (статистика доходов, типы авто)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Сформировать доверие и интерес с первых строк\n- Кратко обозначить, что пользователь узнает на странице\n- Добавить план внутренних ссылок: \"Работа в такси\", \"Преимущества Яндекс Такси\", \"Документы для такси\"\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)\n",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 150,
+              "maxWords": 250,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-1-1",
+                "tag": "p",
+                "keywords": [
+                  "как устроиться в бизнес такси в москве",
+                  "работа в бизнес такси"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Начните путь к доходу до 180 000 ₽ в месяц — премиальный сегмент такси открыт для новых водителей.",
+                "intent": "Вступительно рассказать о возможностях и преимуществах работы в бизнес такси Москвы, обозначить перспективы для водителей.",
+                "audiences": "Водители с опытом от 3 лет, ищущие стабильный высокий доход и карьерный рост в премиальном сегменте такси.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph (role: intro) for h2 section \"Как устроиться в бизнес такси в Москве: требования, доход, старт\"\nGOAL: Кратко и ярко представить тему страницы, обозначить выгоды и заинтересовать пользователя продолжить чтение.\nKEYWORDS TO INTEGRATE: [как устроиться в бизнес такси в москве, работа в бизнес такси]\nWORD COUNT: minWords: 100, maxWords: 180\nMARKDOWN/MDX SYNTAX: Paragraph\nWRITING STYLE: Narrative\nCONTENT FORMAT: Simple\nKNOWLEDGE SOURCES: Internal KB (опыт компании, преимущества работы, образовательные программы), External KB (статистика доходов, типы авто)\nsemanticFingerprint: Вводный абзац раскрывает основные преимущества и доходы в бизнес такси Москвы.\nsourceHint: Internal KB + External KB\n",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 180,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-2",
+                "tag": "p",
+                "keywords": [
+                  "требования к водителям",
+                  "условия трудоустройства"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, какие требования предъявляются и как быстро начать работать в бизнес такси.",
+                "intent": "Дать пользователю понять, что на странице он получит пошаговое руководство по требованиям, условиям и этапам старта.",
+                "audiences": "Водители, которые ищут подробную и актуальную информацию о трудоустройстве в премиальный сегмент такси.",
+                "selfPrompt": "CONTEXT: Generate supporting paragraph (role: transition/body) for h2 section \"Как устроиться в бизнес такси в Москве: требования, доход, старт\"\nGOAL: Обозначить, что далее пользователь узнает о требованиях, условиях и этапах старта в бизнес такси Москвы.\nKEYWORDS TO INTEGRATE: [требования к водителям, условия трудоустройства]\nWORD COUNT: minWords: 60, maxWords: 120\nMARKDOWN/MDX SYNTAX: Paragraph\nWRITING STYLE: Narrative\nCONTENT FORMAT: Simple\nKNOWLEDGE SOURCES: Internal KB (требования 2025 года, цифровые решения), External KB (общие требования агрегаторов)\nsemanticFingerprint: Абзац формирует ожидания пользователя по содержанию страницы и обещает подробное руководство.\nsourceHint: Internal KB + External KB\n",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 120,
+                  "actualContent": ""
+                }
+              }
+            ]
+          }
+        ]
       }
     ],
     "order": 16
@@ -2700,5 +2769,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T13:40:49.495Z";
+export const lastUpdated = "2025-10-28T13:42:14.998Z";
 export const generatedBy = "menu-persist-api";
