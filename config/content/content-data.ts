@@ -2678,7 +2678,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-28T13:59:00.177Z",
-        "updatedAt": "2025-10-28T14:11:36.112Z",
+        "updatedAt": "2025-10-28T14:13:22.493Z",
         "order": 2,
         "badgeName": "Блог",
         "description": "Узнайте, какие машины подходят под бизнес в Яндекс Такси: критерии, возраст, модели и классы авто. Подберите оптимальный вариант для успешной работы!",
@@ -3019,6 +3019,210 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "часто задаваемые вопросы по бизнес-тарифу",
+              "FAQ по автомобилям для Яндекс Такси",
+              "дополнительные требования к авто",
+              "разрешённые марки для такси",
+              "региональные особенности допуска",
+              "оформление документов для такси",
+              "подключение к Яндекс Такси"
+            ],
+            "taxonomy": "FAQ",
+            "attention": "В этом разделе собраны самые частые вопросы и ответы, которые помогут быстро разобраться в нюансах допуска автомобилей к бизнес-тарифу Яндекс Такси.",
+            "intent": "Дать пользователям быстрые и точные ответы на распространённые вопросы по выбору, оформлению и эксплуатации автомобилей для работы в бизнес-классе Яндекс Такси.",
+            "audiences": "Владельцы и водители автомобилей, представители автопарков, ищущие оперативные разъяснения по требованиям и процессу подключения к бизнес-тарифу Яндекс Такси; уровень — базовый и средний.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 FAQ section for page \"Какие машины подходят под бизнес в Яндекс Такси: критерии и модели\"\n\nGOAL: Сконцентрировать в одном разделе ответы на наиболее частые вопросы пользователей о требованиях, особенностях допуска, региональных нюансах и процессе подключения автомобилей к бизнес-тарифу Яндекс Такси.\n\nAUDIENCE: Водители и владельцы авто, представители автопарков | Level: beginner/intermediate | Pain points: неясность по требованиям, опасения отказа, поиск быстрых решений\n\nKEYWORDS TO INTEGRATE:\n[часто задаваемые вопросы по бизнес-тарифу, FAQ по автомобилям для Яндекс Такси, дополнительные требования к авто, разрешённые марки для такси, региональные особенности допуска, оформление документов для такси, подключение к Яндекс Такси]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 heading with nested H3 questions and answer paragraphs\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: критерии выбора, особенности эксплуатации, рекомендации по управлению автопарком\n- SECONDARY: Apply insights from External KB: общие требования, региональные и тарифные нюансы, примеры моделей\n\nQUALITY CRITERIA:\n- Actionable (конкретные рекомендации)\n- Specific (без общих фраз)\n- Data-backed (факты и ссылки на требования)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: FAQ-узел с уникальными вопросами, не дублирующими предыдущие разделы, с акцентом на практические нюансы допуска и оформления.\n- sourceHint: Internal KB (основные требования), External KB (региональные и тарифные различия)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Каждый вопрос должен быть уникальным и не повторять темы предыдущих разделов.\n- Добавить рекомендации по внутренним ссылкам: например, на разделы о документах, критериях допуска, списке моделей.\n- FAQPage schema readiness: отметить возможность разметки для расширенных сниппетов.\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "keywords": [
+                  "часто задаваемые вопросы по бизнес-тарифу"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Быстро ознакомьтесь с ответами на самые важные вопросы по подключению и эксплуатации авто в бизнес-классе Яндекс Такси.",
+                "intent": "Ввести пользователя в раздел FAQ, объяснив его пользу и структуру.",
+                "audiences": "Водители и владельцы авто, ищущие быстрые разъяснения; уровень — базовый/средний.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for FAQ section on 'Какие машины подходят под бизнес в Яндекс Такси: критерии и модели'.\nGOAL: Кратко объяснить, что в этом разделе собраны ответы на самые частые вопросы по бизнес-тарифу Яндекс Такси.\nKEYWORDS: [часто задаваемые вопросы по бизнес-тарифу]\nROLE: intro\nsourceHint: Internal KB (структура и назначение FAQ)\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "keywords": [
+                  "FAQ по автомобилям для Яндекс Такси",
+                  "разрешённые марки для такси",
+                  "дополнительные требования к авто",
+                  "список разрешённых моделей"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, какие марки и модели чаще всего допускаются к бизнес-тарифу и как проверить соответствие.",
+                "intent": "Ответить на вопрос о том, как узнать, подходит ли конкретная марка и модель автомобиля для работы в бизнес-классе Яндекс Такси.",
+                "audiences": "Владельцы авто, рассматривающие подключение; уровень — базовый.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item 'Какие марки и модели автомобилей чаще всего допускаются к бизнес-тарифу Яндекс Такси?' for section 'FAQ'.\nGOAL: Дать чёткий ответ с примерами разрешённых марок, объяснить, где проверить актуальный список.\nKEYWORDS: [FAQ по автомобилям для Яндекс Такси, разрешённые марки для такси, дополнительные требования к авто, список разрешённых моделей]\nsemanticFingerprint: Уникальный ответ с акцентом на источники проверки и примеры марок.\nsourceHint: Internal KB (рекомендации по моделям), External KB (классификатор, ссылки на списки)\nevidenceStrength: internal-tested | external-peer-reviewed\nInterlink: Ссылка на раздел о моделях и классах авто.\nFAQPage schema readiness: yes.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "keywords": [
+                      "разрешённые марки для такси"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Проверьте, входит ли ваш автомобиль в актуальный список разрешённых моделей для бизнес-тарифа.",
+                    "intent": "Дать конкретный ответ с рекомендацией по проверке марки и модели.",
+                    "audiences": "Владельцы авто, ищущие быстрый способ проверки допуска.",
+                    "selfPrompt": "CONTEXT: Generate answer paragraph for FAQ 'Какие марки и модели автомобилей чаще всего допускаются к бизнес-тарифу Яндекс Такси?'.\nROLE: body\nKEYWORDS: [разрешённые марки для такси]\nsourceHint: Internal KB (основные модели), External KB (классификатор)\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-2",
+                "tag": "h3",
+                "keywords": [
+                  "региональные особенности допуска",
+                  "FAQ по требованиям к авто",
+                  "различия по регионам",
+                  "условия допуска в разных городах"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, как требования к автомобилям могут отличаться в зависимости от региона или города.",
+                "intent": "Разъяснить, существуют ли региональные особенности допуска автомобилей к бизнес-тарифу Яндекс Такси и как их учесть.",
+                "audiences": "Владельцы и водители авто из разных регионов РФ; уровень — базовый/средний.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item 'Есть ли региональные особенности допуска автомобилей к бизнес-тарифу Яндекс Такси?' for section 'FAQ'.\nGOAL: Объяснить, как и почему требования могут отличаться по регионам, где искать актуальную информацию.\nKEYWORDS: [региональные особенности допуска, FAQ по требованиям к авто, различия по регионам, условия допуска в разных городах]\nsemanticFingerprint: Уникальный ответ с акцентом на региональные различия и источники информации.\nsourceHint: External KB (региональные нюансы), Internal KB (общие критерии)\nevidenceStrength: external-peer-reviewed | internal-tested\nInterlink: Ссылка на раздел о критериях допуска.\nFAQPage schema readiness: yes.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "различия по регионам"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Проверьте, действуют ли в вашем регионе особые требования к автомобилям для бизнес-тарифа.",
+                    "intent": "Дать краткое пояснение о региональных различиях и способах их проверки.",
+                    "audiences": "Владельцы авто из разных регионов, ищущие актуальную информацию.",
+                    "selfPrompt": "CONTEXT: Generate answer paragraph for FAQ 'Есть ли региональные особенности допуска автомобилей к бизнес-тарифу Яндекс Такси?'.\nROLE: body\nKEYWORDS: [различия по регионам]\nsourceHint: External KB (региональные требования)\nevidenceStrength: external-peer-reviewed",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-3",
+                "tag": "h3",
+                "keywords": [
+                  "оформление документов для такси",
+                  "FAQ по подключению к Яндекс Такси",
+                  "необходимые документы для допуска",
+                  "процесс регистрации авто"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, какие документы и шаги нужны для официального допуска автомобиля к работе в бизнес-классе Яндекс Такси.",
+                "intent": "Пояснить, какие документы и процедуры требуются для оформления автомобиля и водителя для работы по бизнес-тарифу.",
+                "audiences": "Водители и владельцы авто, впервые подключающиеся к сервису; уровень — базовый.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item 'Какие документы и шаги нужны для допуска автомобиля к бизнес-тарифу Яндекс Такси?' for section 'FAQ'.\nGOAL: Дать пошаговый список документов и процедур, необходимых для официального допуска.\nKEYWORDS: [оформление документов для такси, FAQ по подключению к Яндекс Такси, необходимые документы для допуска, процесс регистрации авто]\nsemanticFingerprint: Уникальный ответ с акцентом на список документов и этапы оформления.\nsourceHint: Internal KB (оформление, путевые листы, медосмотры), External KB (общие требования)\nevidenceStrength: internal-tested | external-peer-reviewed\nInterlink: Ссылка на раздел о документах и регистрации.\nFAQPage schema readiness: yes.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "необходимые документы для допуска"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Подготовьте все документы заранее, чтобы ускорить процесс подключения.",
+                    "intent": "Дать краткий перечень документов и шагов для допуска.",
+                    "audiences": "Водители и владельцы авто, впервые оформляющие допуск.",
+                    "selfPrompt": "CONTEXT: Generate answer paragraph for FAQ 'Какие документы и шаги нужны для допуска автомобиля к бизнес-тарифу Яндекс Такси?'.\nROLE: body\nKEYWORDS: [необходимые документы для допуска]\nsourceHint: Internal KB (документы и оформление)\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-4",
+                "tag": "h3",
+                "keywords": [
+                  "подключение к Яндекс Такси",
+                  "FAQ по эксплуатации авто",
+                  "требования к техническому состоянию",
+                  "советы по успешному подключению"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Получите советы по подготовке автомобиля и водителя для успешного подключения к бизнес-тарифу Яндекс Такси.",
+                "intent": "Дать практические рекомендации по подготовке авто и водителя для успешного прохождения допуска и начала работы.",
+                "audiences": "Водители и владельцы авто, желающие повысить шансы на успешное подключение; уровень — базовый/средний.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ item 'Как повысить шансы на успешное подключение автомобиля к бизнес-тарифу Яндекс Такси?' for section 'FAQ'.\nGOAL: Дать советы по подготовке авто и водителя, чтобы избежать отказа при подключении.\nKEYWORDS: [подключение к Яндекс Такси, FAQ по эксплуатации авто, требования к техническому состоянию, советы по успешному подключению]\nsemanticFingerprint: Уникальный ответ с акцентом на практические советы и типичные ошибки.\nsourceHint: Internal KB (рекомендации по эксплуатации), External KB (типовые требования)\nevidenceStrength: internal-tested | external-peer-reviewed\nInterlink: Ссылка на раздел о технических требованиях и эксплуатации.\nFAQPage schema readiness: yes.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "советы по успешному подключению"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Следуйте этим советам, чтобы быстро пройти подключение и начать зарабатывать.",
+                    "intent": "Дать конкретные рекомендации по подготовке авто и водителя.",
+                    "audiences": "Водители и владельцы авто, готовящиеся к подключению.",
+                    "selfPrompt": "CONTEXT: Generate answer paragraph for FAQ 'Как повысить шансы на успешное подключение автомобиля к бизнес-тарифу Яндекс Такси?'.\nROLE: body\nKEYWORDS: [советы по успешному подключению]\nsourceHint: Internal KB (практические советы)\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -3051,5 +3255,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T14:13:23.428Z";
+export const lastUpdated = "2025-10-28T14:15:10.939Z";
 export const generatedBy = "menu-persist-api";
