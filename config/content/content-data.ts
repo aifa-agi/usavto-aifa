@@ -2622,7 +2622,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-28T12:57:50.634Z",
-        "updatedAt": "2025-10-28T13:10:02.595Z",
+        "updatedAt": "2025-10-28T13:11:40.169Z",
         "order": 2,
         "badgeName": "Блог",
         "description": "Узнайте, как связаться со службой поддержки Яндекс Такси: все способы связи, инструкции для пассажиров и водителей, быстрые решения вопросов!",
@@ -2993,6 +2993,211 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "часто задаваемые вопросы яндекс такси",
+              "решение типичных проблем",
+              "инструкция для пользователей",
+              "восстановление доступа к аккаунту",
+              "забытые вещи в такси",
+              "ошибка оплаты поездки",
+              "связь с поддержкой при сбоях"
+            ],
+            "taxonomy": "FAQ",
+            "attention": "Быстрые ответы на самые частые вопросы пользователей Яндекс Такси — экономьте время и решайте проблемы за минуты.",
+            "intent": "Дать пользователям структурированные и лаконичные ответы на самые распространённые вопросы по взаимодействию с поддержкой Яндекс Такси, чтобы они могли самостоятельно решить типовые ситуации без лишних ожиданий.",
+            "audiences": "Пассажиры и водители Яндекс Такси, которые столкнулись с типичными затруднениями (забытые вещи, сбои оплаты, проблемы с аккаунтом) и хотят быстро получить проверенную информацию и инструкции по самостоятельному решению.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see below)\n\nCONTEXT: Generate h2 FAQ section for page \"Как связаться со службой поддержки Яндекс Такси — все способы\"\n\nGOAL: Сформировать блок часто задаваемых вопросов и ответов, который позволит пользователям быстро находить решения типовых проблем, связанных с использованием Яндекс Такси и обращением в службу поддержки. Вопросы должны охватывать наиболее частые сценарии: забытые вещи, восстановление доступа, ошибки оплаты, технические сбои, и порядок обращения в поддержку. Ответы должны быть простыми, структурированными, с акцентом на самостоятельное решение и минимизацию времени ожидания.\n\nAUDIENCE: Пассажиры и водители Яндекс Такси | Level: beginner/intermediate | Pain points: потеря времени на поиск информации, неочевидные шаги обращения, стресс из-за неразрешённых ситуаций\n\nKEYWORDS TO INTEGRATE:\n[часто задаваемые вопросы яндекс такси, решение типичных проблем, инструкция для пользователей, восстановление доступа к аккаунту, забытые вещи в такси, ошибка оплаты поездки, связь с поддержкой при сбоях]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 heading with nested H3 questions and concise answers in paragraphs.\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: [Рекомендации по эффективному обращению в службу поддержки, Основные способы связи, Важность своевременной поддержки]\n- SECONDARY: Apply insights from External KB: [структура FAQ с официального сайта, типовые сценарии из Sravni.ru и других ресурсов]\n\nQUALITY CRITERIA:\n- Actionable (конкретные шаги решения)\n- Specific (без общих фраз)\n- Data-backed (использовать проверенные инструкции)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Каждый вопрос уникален, не дублирует темы предыдущих разделов, раскрывает отдельный сценарий обращения.\n- sourceHint: Internal KB (основные рекомендации) + External KB (структура FAQ, сценарии)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- В каждом H3 — отдельный вопрос, в p — структурированный ответ с конкретными действиями.\n- Включить внутренние ссылки на подробные инструкции или смежные статьи (например, «Что делать, если забыли вещь?»).\n- Готовность к FAQPage schema для расширенных сниппетов.\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "keywords": [
+                  "быстрые ответы на вопросы",
+                  "самостоятельное решение проблем"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Узнайте, как быстро решить типовые вопросы без ожидания ответа оператора.",
+                "intent": "Ввести пользователя в раздел FAQ, объяснить его пользу и как им пользоваться для самостоятельного поиска решения.",
+                "audiences": "Пользователи, которые хотят сэкономить время и получить ответ на свой вопрос без обращения в поддержку.",
+                "selfPrompt": "CONTEXT: Generate intro paragraph for FAQ section. ROLE: intro. Explain, что в этом разделе собраны самые частые вопросы и ответы по Яндекс Такси, чтобы пользователь мог быстро найти решение своей проблемы самостоятельно. Упомянуть, что ответы основаны на опыте поддержки и официальных инструкциях. KEYWORDS: быстрые ответы на вопросы, самостоятельное решение проблем. sourceHint: Internal KB (рекомендации по обращению) + External KB (структура FAQ).",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "keywords": [
+                  "забытые вещи в такси",
+                  "возврат утерянных предметов",
+                  "инструкция для пассажиров"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Пошаговая инструкция: что делать, если забыли вещь в Яндекс Такси.",
+                "intent": "Дать пользователю чёткий алгоритм действий при утере вещей в такси, чтобы ускорить возврат.",
+                "audiences": "Пассажиры, которые забыли личные вещи в автомобиле и хотят быстро их вернуть.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ question 'Что делать, если я забыл(а) вещь в такси?' for FAQ section. Build upon H2 intent. Дать подробный, но лаконичный ответ с конкретными шагами: где искать раздел в приложении, как оставить заявку, что подготовить. semanticFingerprint: уникальный сценарий возврата забытых вещей. internalLinks: ссылка на статью о возврате забытых вещей. KEYWORDS: забытые вещи в такси, возврат утерянных предметов, инструкция для пассажиров.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "keywords": [
+                      "пошаговая инструкция возврата",
+                      "контакт с водителем"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Следуйте инструкции, чтобы повысить шанс вернуть забытое.",
+                    "intent": "Дать краткую, пошаговую инструкцию по возврату забытых вещей через приложение или поддержку.",
+                    "audiences": "Пассажиры, которые ищут быстрый способ вернуть утерянное.",
+                    "selfPrompt": "ROLE: body. Опишите, как через приложение найти раздел для забытых вещей, какие данные указать, как связаться с водителем или поддержкой. Упомянуть, что важно действовать быстро. KEYWORDS: пошаговая инструкция возврата, контакт с водителем. sourceHint: Internal KB (алгоритм обращения) + External KB (официальный FAQ).",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-2",
+                "tag": "h3",
+                "keywords": [
+                  "ошибка оплаты поездки",
+                  "проблемы с платежами",
+                  "возврат средств"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Что делать, если списание прошло неверно или возникла ошибка оплаты?",
+                "intent": "Объяснить пользователю, как действовать при ошибках оплаты или неверном списании средств, чтобы быстро вернуть деньги.",
+                "audiences": "Пассажиры и водители, столкнувшиеся с ошибками оплаты или возвратами.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ question 'Как поступить, если возникла ошибка оплаты или неверное списание?' for FAQ section. Build upon H2 intent. Дать чёткий алгоритм: где найти чек, как обратиться в поддержку, какие данные подготовить. semanticFingerprint: уникальный сценарий по ошибкам оплаты. internalLinks: ссылка на статью о возвратах и ошибках оплаты. KEYWORDS: ошибка оплаты поездки, проблемы с платежами, возврат средств.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "проверка чека",
+                      "запрос возврата"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Следуйте инструкции для быстрого возврата средств.",
+                    "intent": "Дать пользователю пошаговую инструкцию по самостоятельному решению проблемы с оплатой.",
+                    "audiences": "Пользователи, столкнувшиеся с ошибкой оплаты.",
+                    "selfPrompt": "ROLE: body. Опишите, как проверить чек в приложении, что делать при ошибке, как оформить запрос на возврат через поддержку. KEYWORDS: проверка чека, запрос возврата. sourceHint: Internal KB (рекомендации по обращению) + External KB (раздел FAQ по оплате).",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-3",
+                "tag": "h3",
+                "keywords": [
+                  "восстановление доступа к аккаунту",
+                  "проблемы с входом",
+                  "смена номера телефона"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Пошаговая инструкция: как восстановить доступ к аккаунту Яндекс Такси.",
+                "intent": "Дать пользователю понятный алгоритм восстановления доступа при утере пароля или смене номера.",
+                "audiences": "Пользователи, которые не могут войти в аккаунт или сменили номер телефона.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ question 'Как восстановить доступ к аккаунту, если не получается войти?' for FAQ section. Build upon H2 intent. Дать подробную инструкцию: как восстановить пароль, что делать при смене номера, когда обращаться в поддержку. semanticFingerprint: уникальный сценарий восстановления доступа. internalLinks: ссылка на статью о восстановлении доступа. KEYWORDS: восстановление доступа к аккаунту, проблемы с входом, смена номера телефона.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "пошаговое восстановление",
+                      "подтверждение личности"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Следуйте инструкции для быстрого восстановления доступа.",
+                    "intent": "Дать чёткую инструкцию по восстановлению доступа через приложение или поддержку.",
+                    "audiences": "Пользователи с проблемами входа.",
+                    "selfPrompt": "ROLE: body. Опишите, как восстановить пароль через приложение, что делать при смене номера, когда обращаться в поддержку. KEYWORDS: пошаговое восстановление, подтверждение личности. sourceHint: Internal KB (алгоритм обращения) + External KB (FAQ по аккаунтам).",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-4",
+                "tag": "h3",
+                "keywords": [
+                  "технические сбои приложения",
+                  "проблемы с заказом такси",
+                  "решение технических проблем"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Что делать, если приложение Яндекс Такси не работает или возникают сбои?",
+                "intent": "Объяснить пользователю, как самостоятельно устранить технические проблемы с приложением или заказом.",
+                "audiences": "Пользователи, столкнувшиеся с техническими сбоями или ошибками в приложении.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ question 'Что делать при технических сбоях или ошибках в приложении?' for FAQ section. Build upon H2 intent. Дать конкретные шаги: перезапуск, обновление, обращение в поддержку. semanticFingerprint: уникальный сценарий по техническим сбоям. internalLinks: ссылка на статью о технических проблемах. KEYWORDS: технические сбои приложения, проблемы с заказом такси, решение технических проблем.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "перезапуск приложения",
+                      "обновление программы"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Выполните простые шаги для устранения сбоя.",
+                    "intent": "Дать пользователю пошаговую инструкцию по устранению технических проблем до обращения в поддержку.",
+                    "audiences": "Пользователи с техническими трудностями.",
+                    "selfPrompt": "ROLE: body. Опишите, как перезапустить приложение, проверить обновления, когда обращаться в поддержку. KEYWORDS: перезапуск приложения, обновление программы. sourceHint: Internal KB (рекомендации по техническим вопросам) + External KB (FAQ по сбоям).",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -3025,5 +3230,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T13:11:39.910Z";
+export const lastUpdated = "2025-10-28T13:12:53.083Z";
 export const generatedBy = "menu-persist-api";
