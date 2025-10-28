@@ -2706,7 +2706,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-28T15:57:22.042Z",
-        "updatedAt": "2025-10-28T15:57:22.042Z",
+        "updatedAt": "2025-10-28T16:07:51.329Z",
         "order": 2,
         "badgeName": "Блог",
         "description": "Узнайте, как отменить лицензию на такси на Госуслугах: пошаговая инструкция, необходимые документы и советы для быстрого аннулирования онлайн.",
@@ -2725,7 +2725,76 @@ export const contentData = {
         "intent": "Пользователь заходит на страницу, чтобы узнать, как самостоятельно отменить лицензию на такси через портал Госуслуги, и получить пошаговую инструкцию для быстрого и корректного выполнения процедуры. Ожидаемым действием является ознакомление с подробным руководством и применение его для подачи заявления об аннулировании лицензии онлайн. Эта страница полностью закрывает поисковый запрос, предоставляя четкую, актуальную и практическую инструкцию по отмене лицензии на такси через Госуслуги.",
         "taxonomy": "Данная страница представляет собой пошаговую инструкцию (гайд) по отмене лицензии на такси через портал Госуслуги и относится к категории \"Государственные услуги → Лицензии → Прекращение действия лицензии\". Она выступает кластерным (поддерживающим) контентом для основной темы о лицензировании такси, обеспечивая практическое руководство в рамках семантического кластера по административным процедурам и укрепляя авторитет ресурса в вопросах госуслуг для владельцев такси.",
         "attention": "Мгновенно захватываем внимание ярким, конкретным заголовком в формате “Отмена лицензии такси на Госуслугах за 5 минут: подробная инструкция с шагами и скриншотами”, поддерживаем визуальной инфографикой и чек-листом на первом экране. Для удержания интереса используем четкую структуру шагов с интерактивными подсказками, быстрыми ответами на частые вопросы и выделением типичных ошибок, что отличает страницу от сухих или перегруженных аналогов и помогает пользователю быстро достигнуть результата.",
-        "audiences": "Эта страница предназначена для индивидуальных предпринимателей, владельцев такси и профессиональных водителей в возрасте 25–55 лет со средним уровнем цифровой грамотности, которые уже имеют лицензию на такси и сталкиваются с необходимостью самостоятельно отменить её через портал Госуслуг. Аудитория ищет чёткую, пошаговую инструкцию из-за нехватки времени, опасений совершить ошибку и желания избежать лишних бюрократических сложностей, чтобы быстро и официально закрыть лицензию без посредников и юридических нюансов."
+        "audiences": "Эта страница предназначена для индивидуальных предпринимателей, владельцев такси и профессиональных водителей в возрасте 25–55 лет со средним уровнем цифровой грамотности, которые уже имеют лицензию на такси и сталкиваются с необходимостью самостоятельно отменить её через портал Госуслуг. Аудитория ищет чёткую, пошаговую инструкцию из-за нехватки времени, опасений совершить ошибку и желания избежать лишних бюрократических сложностей, чтобы быстро и официально закрыть лицензию без посредников и юридических нюансов.",
+        "draftContentStructure": [
+          {
+            "id": "h2-1",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "как отменить лицензию на такси на госуслугах",
+              "отмена лицензии такси онлайн",
+              "пошаговая инструкция",
+              "аннулирование лицензии через госуслуги",
+              "документы для отмены лицензии",
+              "госуслуги такси",
+              "прекращение действия лицензии"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, как быстро и без ошибок отменить лицензию на такси через Госуслуги — подробная инструкция с практическими советами.",
+            "intent": "Ввести пользователя в тему отмены лицензии на такси через Госуслуги, обозначить ценность пошагового руководства и подготовить к дальнейшему изучению инструкции.",
+            "audiences": "Индивидуальные предприниматели, владельцы такси и профессиональные водители с базовым и средним уровнем цифровой грамотности, которые хотят самостоятельно аннулировать лицензию без посредников.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 introduction section for page \"Как отменить лицензию на такси на Госуслугах: пошаговая инструкция\"\n\nGOAL: Представить основную тему — отмену лицензии на такси через Госуслуги, объяснить, почему это важно, и что пользователь получит на странице. Установить доверие и обозначить структуру гайда.\n\nAUDIENCE: Индивидуальные предприниматели, владельцы такси, водители | Level: beginner/intermediate | Pain points: нехватка времени, страх ошибок, желание избежать бюрократии\n\nKEYWORDS TO INTEGRATE:\n[как отменить лицензию на такси на госуслугах, отмена лицензии такси онлайн, пошаговая инструкция, аннулирование лицензии через госуслуги, документы для отмены лицензии, госуслуги такси, прекращение действия лицензии]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 150, maxWords: 250 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: # H2 heading with 2 intro paragraphs\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: определение лицензии, причины отмены, преимущества онлайн-процедуры\n- SECONDARY: Apply insights from External KB: общая легкость процедуры, отсутствие необходимости личного визита\n\nQUALITY CRITERIA:\n- Actionable (чёткое обещание пользы)\n- Specific (конкретные ожидания от гайда)\n- Data-backed (ссылки на преимущества онлайн-отмены)\n- No fluff (никакой воды)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Введение, раскрывающее ценность и уникальность инструкции по отмене лицензии на такси через Госуслуги.\n- sourceHint: Internal KB (основной контент), External KB (дополнение по простоте процедуры)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nINTERLINK PLANNING: Внутренние ссылки на статьи о лицензировании такси, прекращении деятельности ИП, советы по работе с Госуслугами.\nSCHEMA READINESS: HowToPage (для пошаговой инструкции)\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 150,
+              "maxWords": 250,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-1-1",
+                "tag": "p",
+                "keywords": [
+                  "отмена лицензии такси онлайн",
+                  "госуслуги такси"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Пользователь сразу понимает, что сможет быстро и самостоятельно отменить лицензию онлайн.",
+                "intent": "Кратко объяснить, почему отмена лицензии на такси через Госуслуги — актуальная и востребованная задача для владельцев такси.",
+                "audiences": "Владельцы такси, ИП, водители, которые ищут простой и быстрый способ аннулировать лицензию.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph (role: intro) for h2 section \"Как отменить лицензию на такси на Госуслугах: пошаговая инструкция\".\nGOAL: Объяснить, почему отмена лицензии на такси через Госуслуги — актуальный и востребованный процесс, подчеркнуть удобство онлайн-подачи заявления.\nKEYWORDS: [отмена лицензии такси онлайн, госуслуги такси]\nWORD COUNT: minWords: 100, maxWords: 180\nMARKDOWN/MDX SYNTAX: Paragraph\nWRITING STYLE: Narrative\nCONTENT FORMAT: Simple\nKNOWLEDGE SOURCES: Internal KB (основные причины отмены лицензии, преимущества онлайн-процедуры), External KB (простота и скорость процедуры)\nE-E-A-T: semanticFingerprint: Вступительный абзац, раскрывающий актуальность темы и преимущества онлайн-отмены лицензии. sourceHint: Internal KB + External KB. evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 180,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-2",
+                "tag": "p",
+                "keywords": [
+                  "пошаговая инструкция",
+                  "документы для отмены лицензии"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Пользователь узнает, что на странице представлен полный гайд с шагами и списком документов.",
+                "intent": "Кратко анонсировать структуру и пользу инструкции: что пользователь узнает и какие шаги сможет пройти.",
+                "audiences": "Пользователи, которые хотят получить четкую инструкцию и избежать ошибок при отмене лицензии.",
+                "selfPrompt": "CONTEXT: Generate second introductory paragraph (role: preview) for h2 section \"Как отменить лицензию на такси на Госуслугах: пошаговая инструкция\".\nGOAL: Анонсировать структуру гайда — пошаговые действия, список необходимых документов, советы и предупреждения.\nKEYWORDS: [пошаговая инструкция, документы для отмены лицензии]\nWORD COUNT: minWords: 60, maxWords: 120\nMARKDOWN/MDX SYNTAX: Paragraph\nWRITING STYLE: Narrative\nCONTENT FORMAT: Simple\nKNOWLEDGE SOURCES: Internal KB (структура инструкции, список документов), External KB (указание на простоту и скорость процедуры)\nE-E-A-T: semanticFingerprint: Абзац-превью, обещающий подробную инструкцию и практические советы. sourceHint: Internal KB + External KB. evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 120,
+                  "actualContent": ""
+                }
+              }
+            ]
+          }
+        ]
       }
     ],
     "order": 16
@@ -2756,5 +2825,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T16:07:51.024Z";
+export const lastUpdated = "2025-10-28T16:11:37.194Z";
 export const generatedBy = "menu-persist-api";
