@@ -2678,7 +2678,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-28T13:59:00.177Z",
-        "updatedAt": "2025-10-28T14:09:29.594Z",
+        "updatedAt": "2025-10-28T14:11:36.112Z",
         "order": 2,
         "badgeName": "Блог",
         "description": "Узнайте, какие машины подходят под бизнес в Яндекс Такси: критерии, возраст, модели и классы авто. Подберите оптимальный вариант для успешной работы!",
@@ -2894,6 +2894,131 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "подходящие автомобили для бизнес-тарифа",
+              "классы авто в Яндекс Такси",
+              "список моделей для бизнес-класса",
+              "оснащение автомобилей для такси",
+              "требования к комплектации",
+              "выбор авто для бизнес-такси",
+              "рекомендации по моделям"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, какие конкретные модели и классы автомобилей чаще всего выбирают для работы по бизнес-тарифу в Яндекс Такси, чтобы сделать обоснованный выбор и повысить свои шансы на успешное подключение.",
+            "intent": "Дать пользователю практический список моделей и классов автомобилей, которые реально подходят для работы по бизнес-тарифу в Яндекс Такси, с акцентом на комплектацию и особенности выбора.",
+            "audiences": "Владельцы и водители автомобилей, рассматривающие подключение к бизнес-тарифу Яндекс Такси; представители автопарков; пользователи с базовым и средним знанием рынка такси, желающие подобрать оптимальный автомобиль для стабильного заработка.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 section on 'Модели и классы автомобилей для бизнеса в Яндекс Такси' for page 'Какие машины подходят под бизнес в Яндекс Такси: критерии и модели'\n\nGOAL: Представить читателю структурированный обзор наиболее востребованных моделей и классов автомобилей, подходящих для работы по бизнес-тарифу в Яндекс Такси, с акцентом на комплектацию, оснащение и рекомендации по выбору.\n\nAUDIENCE: Владельцы и водители авто, автопарки | Level: базовый/средний | Pain points: не знают, какие модели реально допускаются, опасаются ошибиться с выбором, хотят повысить доходность.\n\nKEYWORDS TO INTEGRATE:\n[подходящие автомобили для бизнес-тарифа, классы авто в Яндекс Такси, список моделей для бизнес-класса, оснащение автомобилей для такси, требования к комплектации, выбор авто для бизнес-такси, рекомендации по моделям]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with nested H3, P, OL, CODE as per structure\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: [Типы автомобилей, подходящих для Яндекс Такси; Рекомендации по управлению автопарком такси]\n- SECONDARY: Apply insights from External KB: [Классификатор моделей и классов; Примеры моделей для бизнес-тарифа]\n\nQUALITY CRITERIA:\n- Actionable (конкретные модели и классы)\n- Specific (без общих фраз, только актуальные примеры)\n- Data-backed (факты из KB, без рекламы конкурентов)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальный список моделей и классов авто для бизнес-тарифа Яндекс Такси с рекомендациями по комплектации.\n- sourceHint: Internal KB (основной), External KB (дополнение, без рекламы).\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference parent page intent (выбор авто для бизнес-тарифа)\n- Must set тематическое направление для вложенных h3 (разбор классов, примеры моделей, нюансы комплектации)\n- Add interlink planning: internalLinks (2–3 anchors) to related site pages (например, «Как подключить авто к Яндекс Такси», «Преимущества бизнес-тарифа»); optional externalLinks (на классификатор Яндекс Такси, если допустимо)\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-3-1",
+                "tag": "p",
+                "keywords": [
+                  "подходящие автомобили для бизнес-тарифа",
+                  "оснащение автомобилей для такси"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Познакомьтесь с основными классами и особенностями автомобилей, которые чаще всего выбирают для работы по бизнес-тарифу в Яндекс Такси.",
+                "intent": "Ввести пользователя в тему выбора класса и модели автомобиля для бизнес-тарифа, обозначить значимость правильного оснащения и комплектации.",
+                "audiences": "Водители и владельцы авто, которые хотят понять, какие классы и оснащение актуальны для бизнес-тарифа.",
+                "selfPrompt": "CONTEXT: Generate paragraph (intro/body) for h2 'Модели и классы автомобилей для бизнеса в Яндекс Такси'.\nGOAL: Кратко объяснить, почему важно выбирать подходящий класс и комплектацию авто для бизнес-тарифа, и как это влияет на доходность и комфорт работы.\nKEYWORDS: [подходящие автомобили для бизнес-тарифа, оснащение автомобилей для такси]\nWORD COUNT: minWords: 90, maxWords: 170\nROLE: Introductory paragraph, sourceHint: Internal KB (основные критерии выбора авто для такси)\nsemanticFingerprint: Вводное пояснение о значении класса и оснащения авто для бизнес-тарифа.\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 90,
+                  "maxWords": 170,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-3-2",
+                "tag": "h3",
+                "keywords": [
+                  "классы авто в Яндекс Такси",
+                  "список моделей для бизнес-класса",
+                  "рекомендации по моделям",
+                  "требования к комплектации",
+                  "выбор авто для бизнес-такси"
+                ],
+                "taxonomy": "List",
+                "attention": "Получите конкретный список моделей и классов автомобилей, которые чаще всего допускаются к бизнес-тарифу Яндекс Такси.",
+                "intent": "Дать пользователю структурированный перечень классов и моделей автомобилей, подходящих для бизнес-тарифа, с рекомендациями по комплектации.",
+                "audiences": "Владельцы авто и автопарков, которые хотят быстро подобрать подходящую модель для подключения к бизнес-тарифу.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection for h2 'Модели и классы автомобилей для бизнеса в Яндекс Такси'.\nGOAL: Представить список классов и моделей автомобилей, которые чаще всего допускаются к бизнес-тарифу Яндекс Такси, с краткими рекомендациями по комплектации.\nKEYWORDS: [классы авто в Яндекс Такси, список моделей для бизнес-класса, рекомендации по моделям, требования к комплектации, выбор авто для бизнес-такси]\nWORD COUNT: minWords: 180, maxWords: 280\nsemanticFingerprint: Список и разбор классов/моделей авто для бизнес-тарифа с рекомендациями по комплектации.\nsourceHint: Internal KB (основные модели и классы), External KB (дополнение по примерам)\nevidenceStrength: internal-tested | external-peer-reviewed\ninternalLinks: «Как подключить авто к Яндекс Такси», «Преимущества бизнес-тарифа»\nschemaReadiness: List/FAQPage",
+                "additionalData": {
+                  "minWords": 180,
+                  "maxWords": 280,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "классы авто в Яндекс Такси",
+                      "выбор авто для бизнес-такси"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Узнайте, какие классы автомобилей чаще всего выбирают для бизнес-тарифа и почему это важно.",
+                    "intent": "Объяснить различия между классами автомобилей для бизнес-тарифа и их влияние на доходность и комфорт.",
+                    "audiences": "Водители и владельцы авто, которые хотят понять разницу между классами и сделать правильный выбор.",
+                    "selfPrompt": "CONTEXT: Generate paragraph (body) for h3 'Список и разбор классов/моделей авто для бизнес-тарифа'.\nGOAL: Кратко описать основные классы автомобилей для бизнес-тарифа Яндекс Такси и их ключевые особенности.\nKEYWORDS: [классы авто в Яндекс Такси, выбор авто для бизнес-такси]\nWORD COUNT: minWords: 75, maxWords: 140\nROLE: Body paragraph, sourceHint: Internal KB (раздел о типах авто для Яндекс Такси)\nsemanticFingerprint: Краткое описание классов авто для бизнес-тарифа.\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 140,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-2-2",
+                    "tag": "ol",
+                    "keywords": [
+                      "список моделей для бизнес-класса",
+                      "рекомендации по моделям"
+                    ],
+                    "taxonomy": "List",
+                    "attention": "Сравните конкретные модели автомобилей, которые чаще всего допускаются к бизнес-тарифу.",
+                    "intent": "Дать пользователю структурированный список моделей автомобилей, подходящих для бизнес-тарифа, с краткими пояснениями.",
+                    "audiences": "Владельцы авто и автопарков, ищущие конкретные примеры для выбора.",
+                    "selfPrompt": "CONTEXT: Generate ordered list (5–7 items) for h3 'Список и разбор классов/моделей авто для бизнес-тарифа'.\nGOAL: Перечислить наиболее популярные модели автомобилей для бизнес-тарифа Яндекс Такси с краткими пояснениями по каждой.\nKEYWORDS: [список моделей для бизнес-класса, рекомендации по моделям]\nWORD COUNT: minWords: 50, maxWords: 90\nSTRUCTURE: 5–7 коротких пунктов (10–15 слов на пункт)\nsourceHint: Internal KB (основные модели), External KB (дополнение по примерам)\nsemanticFingerprint: Список моделей для бизнес-тарифа с краткими пояснениями.\nevidenceStrength: internal-tested | external-peer-reviewed",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 90,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-3-2-3",
+                    "tag": "code",
+                    "keywords": [
+                      "требования к комплектации"
+                    ],
+                    "taxonomy": "technical",
+                    "attention": "Посмотрите пример минимальных требований к комплектации автомобиля для бизнес-тарифа.",
+                    "intent": "Показать наглядный пример (в формате JSON или YAML), какие параметры и опции должны быть у автомобиля для допуска к бизнес-тарифу.",
+                    "audiences": "Владельцы и представители автопарков, которым важно быстро проверить соответствие комплектации.",
+                    "selfPrompt": "CONTEXT: Generate code block (JSON/YAML) for h3 'Список и разбор классов/моделей авто для бизнес-тарифа'.\nGOAL: Привести пример минимальных требований к комплектации автомобиля для бизнес-тарифа Яндекс Такси (например, кондиционер, кожаный салон, 4 двери и т.д.)\nKEYWORDS: [требования к комплектации]\nWORD COUNT: minWords: 20, maxWords: 50\nLANGUAGE: JSON\nROLE: Пример конфигурации, sourceHint: Internal KB (требования к комплектации)\nsemanticFingerprint: Пример минимальных требований к комплектации авто для бизнес-тарифа.\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 50,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -2926,5 +3051,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T14:11:35.957Z";
+export const lastUpdated = "2025-10-28T14:13:23.428Z";
 export const generatedBy = "menu-persist-api";
