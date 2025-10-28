@@ -2122,7 +2122,7 @@ export const contentData = {
       },
       {
         "id": "da0wb85t5pgzu8508v6eudxj",
-        "title": "какие машины подходят под бизнес в яндекс такси",
+        "title": "Какие машины подходят под бизнес в Яндекс Такси: критерии и модели",
         "href": "/blog/kakie-mashiny-podhodyat-pod-biznes-v-yandeks-taksi",
         "roles": [
           "guest"
@@ -2689,5 +2689,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T14:04:11.811Z";
+export const lastUpdated = "2025-10-28T14:04:21.678Z";
 export const generatedBy = "menu-persist-api";
