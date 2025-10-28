@@ -2681,6 +2681,9 @@ export const contentData = {
             "alt": "как отменить лицензию на такси на госуслугах",
             "href": "/app-images/ym4cj5ehq7tml6a9o4m4w52n.jpg"
           }
+        ],
+        "keywords": [
+          "как отменить лицензию на такси на госуслугах"
         ]
       }
     ],
@@ -2712,5 +2715,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T16:00:28.772Z";
+export const lastUpdated = "2025-10-28T16:00:43.721Z";
 export const generatedBy = "menu-persist-api";
