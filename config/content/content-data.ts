@@ -2706,7 +2706,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-28T15:57:22.042Z",
-        "updatedAt": "2025-10-28T16:11:32.302Z",
+        "updatedAt": "2025-10-28T16:12:50.118Z",
         "order": 2,
         "badgeName": "Блог",
         "description": "Узнайте, как отменить лицензию на такси на Госуслугах: пошаговая инструкция, необходимые документы и советы для быстрого аннулирования онлайн.",
@@ -2951,6 +2951,132 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "отмена лицензии такси через портал",
+              "подача заявления онлайн",
+              "процедура аннулирования лицензии",
+              "шаги для аннулирования лицензии",
+              "документы для подачи заявления",
+              "инструкция по отмене лицензии",
+              "регламент подачи заявления"
+            ],
+            "taxonomy": "HowTo",
+            "attention": "Пошаговая инструкция по самостоятельной подаче заявления на аннулирование лицензии на такси через портал Госуслуги — без ошибок и лишних бюрократических сложностей.",
+            "intent": "Дать пользователю подробное, практическое руководство по самостоятельной отмене лицензии на такси через Госуслуги, с акцентом на последовательность действий и нюансы подачи заявления онлайн.",
+            "audiences": "Индивидуальные предприниматели, владельцы такси и водители с опытом работы, которые хотят быстро и корректно аннулировать лицензию через интернет без привлечения посредников.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 section detailing практическую инструкцию по отмене лицензии на такси через портал Госуслуги for page \"Как отменить лицензию на такси на Госуслугах: пошаговая инструкция\"\n\nGOAL: Предоставить пользователю структурированную, понятную и пошаговую инструкцию по подаче заявления на аннулирование лицензии на такси через Госуслуги, включая подготовку документов, заполнение формы и отправку заявления онлайн.\n\nAUDIENCE: Индивидуальные предприниматели, владельцы такси, водители | Level: intermediate | Pain points: страх совершить ошибку, нехватка времени, желание избежать бюрократии\n\nKEYWORDS TO INTEGRATE:\n[отмена лицензии такси через портал, подача заявления онлайн, процедура аннулирования лицензии, шаги для аннулирования лицензии, документы для подачи заявления, инструкция по отмене лицензии, регламент подачи заявления]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with nested H3, P, OL, CODE as per structure\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: Пошаговая инструкция по отмене лицензии на такси через Госуслуги, Необходимые документы для подачи заявления\n- SECONDARY: Apply insights from External KB: Процесс аннулирования — сбор документов и подача заявления (Serves-gibdd), напоминания о работе портала (Госуслуги)\n\nQUALITY CRITERIA:\n- Actionable (конкретные шаги и рекомендации)\n- Specific (без общих фраз)\n- Data-backed (использовать факты из KB)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальная, структурированная инструкция по отмене лицензии на такси через Госуслуги с акцентом на онлайн-подачу заявления и подготовку документов.\n- sourceHint: Internal KB (инструкция, документы), External KB (дополнительные советы по процедуре)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference parent page intent (руководство по отмене лицензии онлайн)\n- Must set тематическое направление для h3: подробный разбор этапов подачи заявления\n- Add interlink planning: internalLinks (например, на страницу о продлении лицензии, FAQ по Госуслугам, инструкции по регистрации ИП)\n- Note schema readiness: HowTo\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-3-1",
+                "tag": "p",
+                "keywords": [
+                  "отмена лицензии такси через портал",
+                  "онлайн заявление"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Введение в процесс: почему отмена лицензии через Госуслуги — это быстро и удобно.",
+                "intent": "Кратко объяснить преимущества и общую суть подачи заявления на аннулирование лицензии через портал Госуслуги.",
+                "audiences": "Владельцы такси, ИП, водители, которые впервые сталкиваются с процедурой онлайн-отмены лицензии.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for section on отмена лицензии такси через портал Госуслуги.\nGOAL: Кратко описать, почему подача заявления онлайн — это современно, быстро и удобно, и как этот способ помогает избежать лишней бюрократии.\nROLE: intro\nKEYWORDS: [отмена лицензии такси через портал, онлайн заявление]\nWORD COUNT: minWords: 90, maxWords: 170\nSOURCE: Internal KB (инструкция), External KB (общие преимущества онлайн-процедур)\nsemanticFingerprint: Вводное объяснение преимуществ онлайн-подачи заявления на аннулирование лицензии.\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 90,
+                  "maxWords": 170,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-3-2",
+                "tag": "h3",
+                "keywords": [
+                  "подача заявления онлайн",
+                  "шаги для аннулирования лицензии",
+                  "регламент подачи заявления",
+                  "инструкция по отмене лицензии",
+                  "документы для подачи заявления"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Пошаговый разбор процесса подачи заявления на аннулирование лицензии на такси через Госуслуги.",
+                "intent": "Детализировать каждый этап подачи заявления на аннулирование лицензии через портал Госуслуги, чтобы пользователь не допустил ошибок.",
+                "audiences": "Пользователи, которые хотят самостоятельно пройти процедуру аннулирования лицензии онлайн и избежать типичных ошибок.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection for h2 'Пошаговая инструкция по отмене лицензии на такси через Госуслуги' with focus on подробный разбор этапов подачи заявления.\nGOAL: Подробно описать каждый шаг — от авторизации до отправки заявления и ожидания результата, включая подготовку документов.\nREFERENCE: Parent H2: 'Пошаговая инструкция по отмене лицензии на такси через Госуслуги'\nKEYWORDS: [подача заявления онлайн, шаги для аннулирования лицензии, регламент подачи заявления, инструкция по отмене лицензии, документы для подачи заявления]\nWORD COUNT: minWords: 180, maxWords: 280\nsemanticFingerprint: Подробная инструкция по каждому этапу подачи заявления на аннулирование лицензии через Госуслуги.\ninterlink planning: Вставить внутренние ссылки на FAQ по Госуслугам, страницу о продлении лицензии, инструкции по регистрации ИП.\nevidenceStrength: internal-tested | external-peer-reviewed",
+                "additionalData": {
+                  "minWords": 180,
+                  "maxWords": 280,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "шаги для аннулирования лицензии",
+                      "регламент подачи заявления"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Объяснение важности последовательного выполнения всех шагов для успешной подачи заявления.",
+                    "intent": "Дать пользователю уверенность в правильности своих действий, подчеркнув, что соблюдение последовательности шагов уменьшает риск отказа.",
+                    "audiences": "Пользователи, которые опасаются сделать ошибку при заполнении заявления.",
+                    "selfPrompt": "CONTEXT: Generate supporting paragraph for h3 'Пошаговый разбор процесса подачи заявления на аннулирование лицензии на такси через Госуслуги'.\nGOAL: Объяснить, почему важно следовать каждому шагу инструкции и как это влияет на успешность процедуры.\nROLE: transition/body\nKEYWORDS: [шаги для аннулирования лицензии, регламент подачи заявления]\nWORD COUNT: minWords: 75, maxWords: 140\nsourceHint: Internal KB (инструкция), External KB (советы по последовательности)\nsemanticFingerprint: Подчеркивание важности соблюдения последовательности шагов для успешной подачи заявления.\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 140,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-2-2",
+                    "tag": "ol",
+                    "keywords": [
+                      "инструкция по отмене лицензии",
+                      "документы для подачи заявления"
+                    ],
+                    "taxonomy": "HowTo",
+                    "attention": "Конкретные шаги для самостоятельной подачи заявления на аннулирование лицензии через Госуслуги.",
+                    "intent": "Дать пользователю четкий алгоритм действий, чтобы он мог быстро и без ошибок пройти процедуру онлайн.",
+                    "audiences": "Владельцы такси и ИП, которым нужна структурированная инструкция.",
+                    "selfPrompt": "CONTEXT: Generate ordered list (6–8 шагов) для h3 'Пошаговый разбор процесса подачи заявления на аннулирование лицензии на такси через Госуслуги'.\nGOAL: Перечислить все этапы — от входа на портал до ожидания решения, включая подготовку и загрузку документов.\nITEM COUNT: 6–8, структура: короткие, но информативные пункты (20–30 слов)\nKEYWORDS: [инструкция по отмене лицензии, документы для подачи заявления]\nWORD COUNT: minWords: 50, maxWords: 90\nsourceHint: Internal KB (инструкция), External KB (дополнительные советы)\nsemanticFingerprint: Пошаговый алгоритм действий для отмены лицензии через Госуслуги.\nevidenceStrength: internal-tested | external-peer-reviewed",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 90,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-3-2-3",
+                    "tag": "code",
+                    "keywords": [
+                      "пример заполнения заявления",
+                      "онлайн форма госуслуги"
+                    ],
+                    "taxonomy": "technical",
+                    "attention": "Пример правильного заполнения онлайн-заявления для аннулирования лицензии.",
+                    "intent": "Показать пользователю образец заполнения формы, чтобы снизить риск ошибок при подаче заявления.",
+                    "audiences": "Пользователи, которые не уверены, как правильно заполнить онлайн-форму.",
+                    "selfPrompt": "CONTEXT: Generate code block (JSON-образец) для h3 'Пошаговый разбор процесса подачи заявления на аннулирование лицензии на такси через Госуслуги'.\nGOAL: Привести пример заполнения онлайн-заявления (ключевые поля: номер лицензии, ИП, причина отмены).\nLANGUAGE: JSON, длина: snippet (5–10 строк)\nKEYWORDS: [пример заполнения заявления, онлайн форма госуслуги]\nsourceHint: Internal KB (пример формы), External KB (общие рекомендации)\nsemanticFingerprint: Пример JSON-заполнения онлайн-заявления для аннулирования лицензии.\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 50,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -2983,5 +3109,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T16:12:50.492Z";
+export const lastUpdated = "2025-10-28T16:14:47.130Z";
 export const generatedBy = "menu-persist-api";
