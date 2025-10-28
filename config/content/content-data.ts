@@ -2650,7 +2650,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-28T13:25:43.804Z",
-        "updatedAt": "2025-10-28T13:47:30.259Z",
+        "updatedAt": "2025-10-28T13:47:51.871Z",
         "order": 2,
         "badgeName": "Блог",
         "description": "Узнайте, как устроиться в бизнес такси в Москве: требования к водителям и авто, доход до 180 тыс ₽, обучение, аренда, подключение к Яндекс Такси.",
@@ -3322,7 +3322,8 @@ export const contentData = {
               }
             ]
           }
-        ]
+        ],
+        "isReadyDraftForPerplexity": true
       }
     ],
     "order": 16
@@ -3353,5 +3354,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T13:47:51.624Z";
+export const lastUpdated = "2025-10-28T13:48:00.603Z";
 export const generatedBy = "menu-persist-api";
