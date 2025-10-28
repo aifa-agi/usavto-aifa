@@ -2673,7 +2673,8 @@ export const contentData = {
         "createdAt": "2025-10-28T15:57:22.042Z",
         "updatedAt": "2025-10-28T15:57:22.042Z",
         "order": 2,
-        "badgeName": "Блог"
+        "badgeName": "Блог",
+        "description": "как отменить лицензию на такси на госуслугах"
       }
     ],
     "order": 16
@@ -2704,5 +2705,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T15:58:20.597Z";
+export const lastUpdated = "2025-10-28T15:58:32.546Z";
 export const generatedBy = "menu-persist-api";
