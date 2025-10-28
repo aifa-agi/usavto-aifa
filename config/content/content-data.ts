@@ -2706,7 +2706,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-28T15:57:22.042Z",
-        "updatedAt": "2025-10-28T16:07:51.329Z",
+        "updatedAt": "2025-10-28T16:11:32.302Z",
         "order": 2,
         "badgeName": "Блог",
         "description": "Узнайте, как отменить лицензию на такси на Госуслугах: пошаговая инструкция, необходимые документы и советы для быстрого аннулирования онлайн.",
@@ -2793,6 +2793,164 @@ export const contentData = {
                 }
               }
             ]
+          },
+          {
+            "id": "h2-2",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "лицензия на такси",
+              "аннулирование лицензии",
+              "основания для прекращения лицензии",
+              "причины отмены лицензии",
+              "правовые аспекты лицензирования",
+              "добровольное прекращение деятельности",
+              "юридические нюансы аннулирования"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Поймите, когда и почему необходимо аннулировать лицензию на такси, чтобы избежать штрафов и юридических проблем.",
+            "intent": "Объяснить пользователю, что такое лицензия на такси, в каких случаях и по каким причинам требуется её отмена, а также обозначить правовые основания и последствия аннулирования.",
+            "audiences": "Индивидуальные предприниматели, владельцы такси, профессиональные водители с базовым и средним уровнем цифровой грамотности, которые хотят разобраться в юридических основаниях и причинах отмены лицензии.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 section explaining суть лицензии на такси, причины и основания для её аннулирования для страницы \"Как отменить лицензию на такси на Госуслугах: пошаговая инструкция\"\n\nGOAL: Дать пользователю чёткое понимание, что такое лицензия на такси, в каких случаях требуется её отмена, какие существуют основания и последствия аннулирования, чтобы подготовить к дальнейшим шагам инструкции.\n\nAUDIENCE: Индивидуальные предприниматели, владельцы такси, водители | Level: intermediate | Pain points: неясность юридических оснований, страх штрафов, желание избежать ошибок\n\nKEYWORDS TO INTEGRATE:\n[лицензия на такси, аннулирование лицензии, основания для прекращения лицензии, причины отмены лицензии, правовые аспекты лицензирования, добровольное прекращение деятельности, юридические нюансы аннулирования]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 250, maxWords: 400 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: # H2 section with nested paragraphs, table, and h3\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: \"Что такое лицензия на такси и зачем её отменять\"\n- SECONDARY: Apply insights from External KB: причины аннулирования, юридические нюансы, добровольное/принудительное прекращение\n\nQUALITY CRITERIA:\n- Actionable (конкретные причины и последствия)\n- Specific (различие между добровольным и принудительным аннулированием)\n- Data-backed (ссылки на законодательство, если уместно)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Объясняет, что такое лицензия на такси, когда и почему её нужно аннулировать, с акцентом на юридические основания и последствия.\n- sourceHint: Internal KB (основное), External KB (дополнительные причины и нюансы)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference parent page intent (дать базу для дальнейших шагов инструкции)\n- Set тематическое направление для child h3 (детализация оснований и последствий)\n- Interlink planning: internalLinks (например, на статью о получении лицензии на такси, на раздел о штрафах за отсутствие лицензии); externalLinks (на официальный портал Госуслуг, если допустимо)\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 250,
+              "maxWords": 400,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-2-1",
+                "tag": "p",
+                "keywords": [
+                  "лицензия на такси",
+                  "правовые аспекты лицензирования"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, что представляет собой лицензия на такси и почему важно правильно оформить её аннулирование.",
+                "intent": "Дать определение лицензии на такси и объяснить её роль для легальной деятельности перевозчика.",
+                "audiences": "Владельцы такси и ИП, которые впервые сталкиваются с процедурой аннулирования лицензии.",
+                "selfPrompt": "CONTEXT: Generate paragraph (intro/body) for section 'Что такое лицензия на такси и основания для её аннулирования'.\nGOAL: Кратко объяснить, что такое лицензия на такси, зачем она нужна, и почему важно соблюдать юридические процедуры при её отмене.\nKEYWORDS: лицензия на такси, правовые аспекты лицензирования\nWORD COUNT: minWords: 80, maxWords: 150\nROLE: intro/body\nsourceHint: Internal KB (основное определение лицензии)\nevidenceStrength: internal-tested\nsemanticFingerprint: Дает базовое определение лицензии на такси и подчеркивает её юридическую значимость.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-2-2-3",
+                "tag": "p",
+                "keywords": [
+                  "аннулирование лицензии"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Кратко обозначьте, что аннулирование лицензии — это официальный процесс.",
+                "intent": "Сделать переход к причинам и основаниям для аннулирования лицензии.",
+                "audiences": "Пользователи, которым важно понять, что процедура аннулирования формализована.",
+                "selfPrompt": "CONTEXT: Generate short transition paragraph for section 'Что такое лицензия на такси и основания для её аннулирования'.\nGOAL: Кратко связать определение лицензии с необходимостью официального аннулирования.\nKEYWORDS: аннулирование лицензии\nWORD COUNT: minWords: 5, maxWords: 15\nROLE: transition\nsourceHint: Internal KB\nsemanticFingerprint: Переход от определения лицензии к причинам её аннулирования.",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-2-2-4",
+                "tag": "table",
+                "keywords": [
+                  "основания для прекращения лицензии"
+                ],
+                "taxonomy": "Data-driven",
+                "attention": "Сравните основные основания для добровольного и принудительного аннулирования лицензии.",
+                "intent": "Структурировать и наглядно показать основные причины прекращения действия лицензии на такси.",
+                "audiences": "Владельцы такси, ИП, которым важно быстро сориентироваться в основаниях для аннулирования.",
+                "selfPrompt": "CONTEXT: Generate table (3 columns × 4 rows) for section 'Что такое лицензия на такси и основания для её аннулирования'.\nGOAL: Сравнить основания для добровольного и принудительного аннулирования лицензии.\nKEYWORDS: основания для прекращения лицензии\nTABLE SCHEMA: Причина | Тип аннулирования | Краткое описание\nDATA SOURCE: Internal KB (основные причины), External KB (детализация добровольного/принудительного)\nWORD COUNT: minWords: 80, maxWords: 160\nschemaReadiness: Dataset/Comparison\nevidenceStrength: internal-tested | external-peer-reviewed\nsemanticFingerprint: Таблица, структурирующая основания для прекращения лицензии на такси.",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-2-2",
+                "tag": "h3",
+                "keywords": [
+                  "причины отмены лицензии",
+                  "добровольное прекращение деятельности",
+                  "юридические нюансы аннулирования",
+                  "последствия аннулирования",
+                  "правовые аспекты лицензирования"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Разберитесь в деталях: когда и по каким причинам стоит инициировать аннулирование лицензии.",
+                "intent": "Детализировать основные причины и юридические нюансы, связанные с добровольным и принудительным аннулированием лицензии на такси.",
+                "audiences": "Владельцы такси, ИП, водители, которые хотят избежать ошибок и штрафов при прекращении деятельности.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection for h2 'Что такое лицензия на такси и основания для её аннулирования'.\nGOAL: Подробно раскрыть причины, по которым может быть инициировано аннулирование лицензии, и юридические нюансы процедуры.\nKEYWORDS: причины отмены лицензии, добровольное прекращение деятельности, юридические нюансы аннулирования, последствия аннулирования, правовые аспекты лицензирования\nsemanticFingerprint: Раскрывает конкретные причины и юридические детали аннулирования лицензии на такси, отличая добровольные и принудительные основания.\nsourceHint: Internal KB (основные причины), External KB (нюансы и примеры)\nevidenceStrength: internal-tested | external-peer-reviewed\ninterlink planning: internal link на статью о штрафах за отсутствие лицензии, на раздел о получении лицензии\nschemaReadiness: HowTo\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 250,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "причины отмены лицензии",
+                      "добровольное прекращение деятельности"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Узнайте, в каких случаях вы сами можете инициировать отмену лицензии.",
+                    "intent": "Объяснить, что такое добровольное аннулирование лицензии и когда оно применяется.",
+                    "audiences": "Владельцы такси, ИП, которые планируют прекратить деятельность по собственной инициативе.",
+                    "selfPrompt": "CONTEXT: Generate paragraph (body) for h3 'Причины и нюансы аннулирования лицензии'.\nGOAL: Описать добровольные основания для отмены лицензии (прекращение деятельности, смена направления бизнеса и др.).\nKEYWORDS: причины отмены лицензии, добровольное прекращение деятельности\nWORD COUNT: minWords: 70, maxWords: 130\nROLE: body\nsourceHint: Internal KB (основные причины), External KB (дополнительные примеры)\nevidenceStrength: internal-tested\nsemanticFingerprint: Описывает добровольные причины для аннулирования лицензии на такси.",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 130,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-2-2-2",
+                    "tag": "ul",
+                    "keywords": [
+                      "юридические нюансы аннулирования"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Изучите ключевые юридические моменты, чтобы избежать ошибок.",
+                    "intent": "Перечислить основные юридические нюансы, которые важно учесть при аннулировании лицензии.",
+                    "audiences": "Владельцы такси, ИП, которые хотят провести процедуру корректно.",
+                    "selfPrompt": "CONTEXT: Generate unordered list (4-5 items, 20-30 words each) for h3 'Причины и нюансы аннулирования лицензии'.\nGOAL: Перечислить юридические нюансы и требования при аннулировании лицензии.\nKEYWORDS: юридические нюансы аннулирования\nLIST PURPOSE: tips/requirements\nWORD COUNT: minWords: 40, maxWords: 80\nsourceHint: Internal KB (основные требования), External KB (нюансы)\nevidenceStrength: internal-tested | external-peer-reviewed\nsemanticFingerprint: Список юридических нюансов, которые важно учесть при аннулировании лицензии.",
+                    "additionalData": {
+                      "minWords": 40,
+                      "maxWords": 80,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-2-3",
+                    "tag": "p",
+                    "keywords": [
+                      "последствия аннулирования"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Поймите, к чему приведёт аннулирование лицензии для вашего бизнеса.",
+                    "intent": "Объяснить, какие последствия наступают после официального аннулирования лицензии на такси.",
+                    "audiences": "Владельцы такси и ИП, которые хотят избежать штрафов и юридических рисков.",
+                    "selfPrompt": "CONTEXT: Generate paragraph (conclusion/summary) for h3 'Причины и нюансы аннулирования лицензии'.\nGOAL: Кратко описать последствия аннулирования лицензии (запрет деятельности, уведомление сотрудников и клиентов и др.).\nKEYWORDS: последствия аннулирования\nWORD COUNT: minWords: 60, maxWords: 100\nROLE: conclusion/summary\nsourceHint: Internal KB (последствия), External KB (дополнительные детали)\nevidenceStrength: internal-tested\nsemanticFingerprint: Кратко описывает последствия аннулирования лицензии для бизнеса.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 100,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -2825,5 +2983,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T16:11:37.194Z";
+export const lastUpdated = "2025-10-28T16:12:50.492Z";
 export const generatedBy = "menu-persist-api";
