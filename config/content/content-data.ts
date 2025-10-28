@@ -2150,7 +2150,7 @@ export const contentData = {
       },
       {
         "id": "iqk9qc7bghq63uusp0kdqvsm",
-        "title": "как отменить лицензию на такси на госуслугах",
+        "title": "Как отменить лицензию на такси на Госуслугах: пошаговая инструкция",
         "href": "/blog/kak-otmenit-litsenziyu-na-taksi-na-gosuslugah",
         "roles": [
           "guest"
@@ -2717,5 +2717,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T16:04:59.278Z";
+export const lastUpdated = "2025-10-28T16:05:09.788Z";
 export const generatedBy = "menu-persist-api";
