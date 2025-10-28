@@ -2678,7 +2678,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-28T13:59:00.177Z",
-        "updatedAt": "2025-10-28T14:07:58.230Z",
+        "updatedAt": "2025-10-28T14:09:29.594Z",
         "order": 2,
         "badgeName": "Блог",
         "description": "Узнайте, какие машины подходят под бизнес в Яндекс Такси: критерии, возраст, модели и классы авто. Подберите оптимальный вариант для успешной работы!",
@@ -2765,6 +2765,135 @@ export const contentData = {
                 }
               }
             ]
+          },
+          {
+            "id": "h2-2",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "допуск автомобилей в яндекс такси",
+              "основные критерии отбора",
+              "технические требования к авто",
+              "регистрация автомобиля для такси",
+              "комплектация и безопасность",
+              "экономичность эксплуатации",
+              "требования к юридическим лицам"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, какие технические и юридические критерии определяют возможность допуска автомобиля к работе в Яндекс Такси по бизнес-тарифу.",
+            "intent": "Детально раскрыть основные критерии и требования, которым должен соответствовать автомобиль для допуска к работе в Яндекс Такси, чтобы пользователь мог быстро оценить перспективы подключения своего авто.",
+            "audiences": "Владельцы автомобилей и представители таксопарков с базовым или средним знанием рынка такси, желающие понять, какие параметры авто критичны для допуска к бизнес-тарифу Яндекс Такси.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 section on \"Ключевые критерии допуска автомобилей к бизнесу в Яндекс Такси\" for page \"Какие машины подходят под бизнес в Яндекс Такси: критерии и модели\"\n\nGOAL: Подробно раскрыть технические, юридические и эксплуатационные требования, предъявляемые к автомобилям для допуска к бизнес-тарифу Яндекс Такси, чтобы пользователь мог самостоятельно оценить соответствие своего авто и избежать ошибок при выборе.\n\nAUDIENCE: Владельцы авто и таксопарков | Level: beginner/intermediate | Pain points: Неясность требований, риск отказа при подключении, желание выбрать оптимальный вариант\n\nKEYWORDS TO INTEGRATE:\n[допуск автомобилей в яндекс такси, основные критерии отбора, технические требования к авто, регистрация автомобиля для такси, комплектация и безопасность, экономичность эксплуатации, требования к юридическим лицам]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 250, maxWords: 400 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with nested paragraphs, table, and H3 with substructure\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Internal KB (критерии выбора машин, особенности эксплуатации, рекомендации по управлению автопарком)\n- SECONDARY: External KB (общие требования Яндекс Такси, классификатор, региональные особенности)\n\nQUALITY CRITERIA:\n- Actionable (чёткие критерии и рекомендации)\n- Specific (конкретные параметры и примеры)\n- Data-backed (факты из KB)\n- No fluff\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Систематизация ключевых критериев допуска авто в Яндекс Такси с акцентом на бизнес-тариф.\n- sourceHint: Internal KB (основные требования), External KB (стандарты сервиса)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference parent page intent\n- Must set thematic direction for child h3 elements (детализация критериев, примеры)\n- Add interlink planning: internalLinks (например, на разделы о медицинских осмотрах, путевых листах, подключении к сервису); externalLinks (только на официальные источники Яндекс Такси при необходимости)\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 250,
+              "maxWords": 400,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-2-1",
+                "tag": "p",
+                "keywords": [
+                  "допуск автомобилей в яндекс такси",
+                  "технические требования к авто"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Поймите, почему именно эти критерии определяют возможность работы в бизнес-тарифе Яндекс Такси.",
+                "intent": "Ввести пользователя в суть критериев допуска, объяснив их значимость для успешной работы и минимизации рисков.",
+                "audiences": "Владельцы авто, желающие подключиться к Яндекс Такси; уровень: начинающий/средний; боль: неясность требований.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for section \"Ключевые критерии допуска автомобилей к бизнесу в Яндекс Такси\". ROLE: intro. GOAL: Кратко объяснить, почему сервис предъявляет строгие критерии к авто, и как это влияет на успешность работы. KEYWORDS: допуск автомобилей в яндекс такси, технические требования к авто. SOURCE: Internal KB (критерии выбора машин), External KB (общие требования сервиса). semanticFingerprint: Обоснование важности критериев допуска для стабильной работы в бизнес-тарифе. evidenceStrength: internal-tested."
+              },
+              {
+                "id": "p-2-2-3",
+                "tag": "p",
+                "keywords": [
+                  "комплектация и безопасность"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, как комплектация и безопасность влияют на решение о допуске.",
+                "intent": "Кратко выделить роль оснащения и безопасности автомобиля в процессе допуска.",
+                "audiences": "Владельцы авто, интересующиеся деталями допуска; уровень: средний.",
+                "selfPrompt": "CONTEXT: Generate short transition paragraph for section \"Ключевые критерии допуска автомобилей к бизнесу в Яндекс Такси\". ROLE: transition. GOAL: Подчеркнуть значимость комплектации и безопасности как обязательных параметров. KEYWORDS: комплектация и безопасность. semanticFingerprint: Комплектация и безопасность — ключевые параметры допуска. evidenceStrength: internal-tested."
+              },
+              {
+                "id": "table-2-2-4",
+                "tag": "table",
+                "keywords": [
+                  "основные критерии отбора",
+                  "регистрация автомобиля для такси"
+                ],
+                "taxonomy": "Data-driven",
+                "attention": "Сравните ключевые критерии допуска по основным параметрам для быстрой самопроверки.",
+                "intent": "Предоставить наглядную таблицу с основными критериями допуска автомобиля к бизнес-тарифу Яндекс Такси.",
+                "audiences": "Владельцы авто и таксопарков, желающие быстро свериться с требованиями; уровень: любой.",
+                "selfPrompt": "CONTEXT: Generate table (3 columns × 4-5 rows) for section \"Ключевые критерии допуска автомобилей к бизнесу в Яндекс Такси\". HEADERS: Критерий | Требование | Комментарий. DATA TYPES: text/text/text. DATA SOURCE: Internal KB (критерии выбора, регистрация), External KB (стандарты сервиса). semanticFingerprint: Таблица для быстрой проверки соответствия авто основным критериям допуска. evidenceStrength: internal-tested | external-peer-reviewed. schemaReadiness: Dataset/Comparison."
+              },
+              {
+                "id": "h3-2-2",
+                "tag": "h3",
+                "keywords": [
+                  "экономичность эксплуатации",
+                  "требования к юридическим лицам",
+                  "регистрация автомобиля для такси",
+                  "технические требования к авто",
+                  "основные критерии отбора"
+                ],
+                "taxonomy": "Guide",
+                "attention": "Разберитесь в деталях: какие параметры авто и документы критичны для допуска к бизнес-тарифу.",
+                "intent": "Детализировать ключевые критерии допуска: экономичность, регистрация, юридические требования, техническое состояние.",
+                "audiences": "Владельцы авто и представители таксопарков, желающие понять детали допуска; уровень: средний.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection \"Детализация критериев допуска: экономичность, регистрация, юридические требования\" under h2 \"Ключевые критерии допуска автомобилей к бизнесу в Яндекс Такси\". GOAL: Подробно раскрыть, какие параметры авто и документы критичны для допуска к бизнес-тарифу, с примерами и советами. KEYWORDS: экономичность эксплуатации, требования к юридическим лицам, регистрация автомобиля для такси, технические требования к авто, основные критерии отбора. semanticFingerprint: Детализация критериев допуска с акцентом на экономичность, регистрацию и юридические нюансы. evidenceStrength: internal-tested | external-peer-reviewed. interlink planning: internal link на раздел о регистрации авто, путевых листах, медицинских осмотрах. Prepare context for child elements (пояснения, список требований, рекомендации).",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 250,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "экономичность эксплуатации",
+                      "технические требования к авто"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Поймите, почему экономичность и техническое состояние — основа допуска.",
+                    "intent": "Объяснить, как экономичность и техническое состояние влияют на выбор и допуск автомобиля.",
+                    "audiences": "Владельцы авто, желающие снизить расходы и повысить шансы допуска; уровень: любой.",
+                    "selfPrompt": "CONTEXT: Generate body paragraph for h3 \"Детализация критериев допуска: экономичность, регистрация, юридические требования\". ROLE: body. GOAL: Пояснить, почему экономичность и техническое состояние — ключевые параметры допуска. KEYWORDS: экономичность эксплуатации, технические требования к авто. semanticFingerprint: Экономичность и техническое состояние как основа допуска. evidenceStrength: internal-tested."
+                  },
+                  {
+                    "id": "ul-2-2-2",
+                    "tag": "ul",
+                    "keywords": [
+                      "требования к юридическим лицам"
+                    ],
+                    "taxonomy": "List",
+                    "attention": "Проверьте, все ли юридические требования соблюдены для допуска.",
+                    "intent": "Сформировать список ключевых юридических требований для допуска автомобиля к бизнес-тарифу.",
+                    "audiences": "Владельцы авто и таксопарков, оформляющие документы; уровень: любой.",
+                    "selfPrompt": "CONTEXT: Generate unordered list (4-5 items, 10-20 words each) for h3 \"Детализация критериев допуска: экономичность, регистрация, юридические требования\". PURPOSE: Перечислить основные юридические требования (регистрация, документы, техосмотр, страховка и др.). KEYWORDS: требования к юридическим лицам. semanticFingerprint: Список юридических требований для допуска авто. evidenceStrength: internal-tested."
+                  },
+                  {
+                    "id": "p-2-2-3",
+                    "tag": "p",
+                    "keywords": [
+                      "регистрация автомобиля для такси"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Узнайте, как правильно оформить регистрацию для допуска.",
+                    "intent": "Дать рекомендации по оформлению регистрации автомобиля для работы в бизнес-тарифе Яндекс Такси.",
+                    "audiences": "Владельцы авто, оформляющие документы для допуска; уровень: любой.",
+                    "selfPrompt": "CONTEXT: Generate concluding paragraph for h3 \"Детализация критериев допуска: экономичность, регистрация, юридические требования\". ROLE: conclusion. GOAL: Дать советы по регистрации автомобиля для допуска к бизнес-тарифу. KEYWORDS: регистрация автомобиля для такси. semanticFingerprint: Практические советы по регистрации авто для допуска. evidenceStrength: internal-tested."
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -2797,5 +2926,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T14:09:29.304Z";
+export const lastUpdated = "2025-10-28T14:11:35.957Z";
 export const generatedBy = "menu-persist-api";
