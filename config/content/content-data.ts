@@ -2622,7 +2622,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-28T12:57:50.634Z",
-        "updatedAt": "2025-10-28T13:14:01.778Z",
+        "updatedAt": "2025-10-28T13:14:07.892Z",
         "order": 2,
         "badgeName": "Блог",
         "description": "Узнайте, как связаться со службой поддержки Яндекс Такси: все способы связи, инструкции для пассажиров и водителей, быстрые решения вопросов!",
@@ -3271,7 +3271,8 @@ export const contentData = {
                   "minWords": 80,
                   "maxWords": 150,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "table-5-3",
@@ -3289,7 +3290,8 @@ export const contentData = {
                   "minWords": 80,
                   "maxWords": 160,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "ul-5-2",
@@ -3307,7 +3309,8 @@ export const contentData = {
                   "minWords": 50,
                   "maxWords": 90,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-5-3",
@@ -3324,12 +3327,14 @@ export const contentData = {
                   "minWords": 70,
                   "maxWords": 130,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           }
         ],
-        "isReadyDraftForPerplexity": false
+        "isReadyDraftForPerplexity": true
       }
     ],
     "order": 16
@@ -3360,5 +3365,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T13:14:07.579Z";
+export const lastUpdated = "2025-10-28T13:14:33.329Z";
 export const generatedBy = "menu-persist-api";
