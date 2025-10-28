@@ -2706,7 +2706,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-28T15:57:22.042Z",
-        "updatedAt": "2025-10-28T16:14:47.202Z",
+        "updatedAt": "2025-10-28T16:16:30.018Z",
         "order": 2,
         "badgeName": "Блог",
         "description": "Узнайте, как отменить лицензию на такси на Госуслугах: пошаговая инструкция, необходимые документы и советы для быстрого аннулирования онлайн.",
@@ -3277,6 +3277,108 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-5",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "итоги отмены лицензии такси",
+              "ключевые выводы по аннулированию",
+              "следующие шаги после отмены лицензии",
+              "рекомендации для владельцев такси",
+              "завершение процедуры онлайн",
+              "советы по дальнейшим действиям",
+              "официальное закрытие лицензии"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Получите краткое резюме, практические рекомендации и четкий план дальнейших действий после успешной отмены лицензии на такси через Госуслуги.",
+            "intent": "Систематизировать основные выводы, дать пользователю уверенность в завершении процесса и предложить конкретные шаги для дальнейших действий после аннулирования лицензии.",
+            "audiences": "Владельцы такси, индивидуальные предприниматели и водители, завершившие процедуру отмены лицензии онлайн и нуждающиеся в четких рекомендациях по дальнейшим действиям; уровень — средний, акцент на практическую пользу и минимизацию бюрократических рисков.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 conclusion/summary section for page \"Как отменить лицензию на такси на Госуслугах: пошаговая инструкция\"\n\nGOAL: Сформулировать итоговые выводы по теме отмены лицензии на такси через Госуслуги, обобщить ключевые моменты, дать пользователю чувство завершенности и предложить четкие дальнейшие шаги. Включить структурированную таблицу итогов, список практических советов и завершающий абзац с акцентом на официальное закрытие лицензии и минимизацию возможных ошибок.\n\nAUDIENCE: Владельцы такси, ИП, водители, завершившие процедуру отмены лицензии | Level: intermediate | Pain points: неуверенность в правильности завершения процесса, страх упустить важные действия, желание избежать штрафов и бюрократии.\n\nKEYWORDS TO INTEGRATE:\n[итоги отмены лицензии такси, ключевые выводы по аннулированию, следующие шаги после отмены лицензии, рекомендации для владельцев такси, завершение процедуры онлайн, советы по дальнейшим действиям, официальное закрытие лицензии]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 200, maxWords: 300 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: h2 section with nested p, table, ul, p elements\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: рекомендации после отмены лицензии, уведомление сотрудников и клиентов, завершение деятельности\n- SECONDARY: Apply insights from External KB: советы по минимизации рисков, важность официального закрытия, типичные ошибки\n\nQUALITY CRITERIA:\n- Actionable (конкретные рекомендации и шаги)\n- Specific (без общих фраз)\n- Data-backed (факты и советы из Knowledge Bases)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Итоговый раздел, который подводит черту под процессом отмены лицензии и дает четкие рекомендации по дальнейшим действиям, не повторяя предыдущие разделы.\n- sourceHint: Internal KB (основные выводы и рекомендации), External KB (дополнительные советы и типичные ошибки)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Обязательно включить структурированную таблицу с итогами, список практических советов и заключительный абзац с акцентом на официальное завершение процесса.\n- В selfPrompt для дочерних элементов указывать роль (summary, checklist, actionable steps, closing statement).\n- Добавить 2-3 внутренних ссылки на смежные материалы сайта (например, \"Как получить новую лицензию\", \"Ответственность за работу без лицензии\").\n- Готовность к разметке HowTo/FAQPage для расширенных сниппетов.\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 200,
+              "maxWords": 300,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-5-1",
+                "tag": "p",
+                "keywords": [
+                  "итоги отмены лицензии такси",
+                  "ключевые выводы по аннулированию"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, какие шаги и решения были наиболее важными на пути к успешной отмене лицензии.",
+                "intent": "Кратко подвести итоги процедуры отмены лицензии, выделить основные моменты и дать пользователю уверенность в правильности выполненных действий.",
+                "audiences": "Владельцы такси и ИП, завершившие процедуру аннулирования; уровень — средний; ценят структурированное резюме.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate summary paragraph for conclusion section \"Итоги и дальнейшие действия после отмены лицензии на такси\"\n\nGOAL: Кратко резюмировать ключевые этапы и выводы по отмене лицензии на такси через Госуслуги, подчеркнуть завершенность процесса и важность соблюдения всех шагов.\n\nROLE: summary\n\nKEYWORDS TO INTEGRATE: [итоги отмены лицензии такси, ключевые выводы по аннулированию]\n\nWORD COUNT: minWords: 80, maxWords: 150\n\nsemanticFingerprint: Сводка итогов отмены лицензии с акцентом на завершенность и правильность действий.\nsourceHint: Internal KB (основные выводы), External KB (дополнительные советы)\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-5-3",
+                "tag": "table",
+                "keywords": [
+                  "завершение процедуры онлайн",
+                  "официальное закрытие лицензии"
+                ],
+                "taxonomy": "Data-driven",
+                "attention": "Сравните основные этапы и результаты отмены лицензии в структурированном виде.",
+                "intent": "Визуализировать ключевые этапы и результаты отмены лицензии, чтобы пользователь мог быстро свериться с выполненными действиями.",
+                "audiences": "Пользователи, предпочитающие структурированные данные и визуальные резюме; уровень — средний.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate summary table for conclusion section \"Итоги и дальнейшие действия после отмены лицензии на такси\"\n\nGOAL: Представить основные этапы и результаты отмены лицензии на такси в виде таблицы для быстрой сверки и контроля завершенности процесса.\n\nTABLE SCHEMA: 3 columns × 4 rows\nHeaders: Этап | Описание | Результат\nData types: text | text | text\nData source: Internal KB (основные этапы), External KB (типичные результаты)\n\nKEYWORDS TO INTEGRATE: [завершение процедуры онлайн, официальное закрытие лицензии]\n\nWORD COUNT: minWords: 80, maxWords: 160\n\nsemanticFingerprint: Таблица, структурирующая ключевые этапы и результаты отмены лицензии.\nsourceHint: Internal KB (шаги и результаты), External KB (дополнительные рекомендации)\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-5-2",
+                "tag": "ul",
+                "keywords": [
+                  "следующие шаги после отмены лицензии",
+                  "советы по дальнейшим действиям"
+                ],
+                "taxonomy": "Actionable",
+                "attention": "Следуйте этим практическим советам, чтобы избежать ошибок и завершить процесс без лишних рисков.",
+                "intent": "Дать пользователю конкретные рекомендации и действия, которые необходимо выполнить после официальной отмены лицензии.",
+                "audiences": "Владельцы такси и ИП, желающие минимизировать риски и не упустить важные детали; уровень — средний.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate actionable checklist (ul) for conclusion section \"Итоги и дальнейшие действия после отмены лицензии на такси\"\n\nGOAL: Сформулировать 5–6 практических советов и следующих шагов для владельцев такси после отмены лицензии, чтобы минимизировать риски и избежать ошибок.\n\nLIST STRUCTURE: 6 items, короткие и конкретные пункты (10–20 слов)\n\nKEYWORDS TO INTEGRATE: [следующие шаги после отмены лицензии, советы по дальнейшим действиям]\n\nWORD COUNT: minWords: 50, maxWords: 90\n\nsemanticFingerprint: Чек-лист с практическими советами по завершению процесса и дальнейшим действиям.\nsourceHint: Internal KB (рекомендации), External KB (типичные ошибки и советы)\nevidenceStrength: internal-tested | external-peer-reviewed",
+                "additionalData": {
+                  "minWords": 50,
+                  "maxWords": 90,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-5-3",
+                "tag": "p",
+                "keywords": [
+                  "рекомендации для владельцев такси"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Получите завершающее напутствие и мотивацию для дальнейших действий без лишних рисков.",
+                "intent": "Завершить раздел мотивирующим абзацем, подчеркнуть важность официального закрытия лицензии и предложить обратиться к дополнительным материалам для дальнейшего развития бизнеса.",
+                "audiences": "Владельцы такси, ИП, водители, ценящие поддержку и уверенность в правильности своих действий; уровень — средний.",
+                "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate closing statement paragraph for conclusion section \"Итоги и дальнейшие действия после отмены лицензии на такси\"\n\nGOAL: Завершить раздел мотивирующим и поддерживающим абзацем, подчеркнуть важность официального завершения процесса и предложить перейти к смежным материалам (например, \"Как получить новую лицензию\", \"Ответственность за работу без лицензии\").\n\nROLE: closing statement\n\nKEYWORDS TO INTEGRATE: [рекомендации для владельцев такси]\n\nWORD COUNT: minWords: 70, maxWords: 130\n\nsemanticFingerprint: Мотивационное заключение с призывом к дальнейшим действиям и ссылками на смежные темы.\nsourceHint: Internal KB (поддержка и рекомендации), External KB (дополнительные советы)\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              }
+            ]
           }
         ]
       }
@@ -3309,5 +3411,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T16:16:29.982Z";
+export const lastUpdated = "2025-10-28T16:16:53.451Z";
 export const generatedBy = "menu-persist-api";
