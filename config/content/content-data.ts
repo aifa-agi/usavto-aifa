@@ -2706,7 +2706,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-28T15:57:22.042Z",
-        "updatedAt": "2025-10-28T16:17:40.133Z",
+        "updatedAt": "2025-10-28T16:17:45.282Z",
         "order": 2,
         "badgeName": "Блог",
         "description": "Узнайте, как отменить лицензию на такси на Госуслугах: пошаговая инструкция, необходимые документы и советы для быстрого аннулирования онлайн.",
@@ -3008,7 +3008,8 @@ export const contentData = {
                   "minWords": 90,
                   "maxWords": 170,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-3-2",
@@ -3047,7 +3048,8 @@ export const contentData = {
                       "minWords": 75,
                       "maxWords": 140,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "ol-3-2-2",
@@ -3065,7 +3067,8 @@ export const contentData = {
                       "minWords": 50,
                       "maxWords": 90,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "code-3-2-3",
@@ -3083,11 +3086,14 @@ export const contentData = {
                       "minWords": 20,
                       "maxWords": 50,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "FAQ",
@@ -3423,5 +3429,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T16:17:45.273Z";
+export const lastUpdated = "2025-10-28T16:17:50.870Z";
 export const generatedBy = "menu-persist-api";
