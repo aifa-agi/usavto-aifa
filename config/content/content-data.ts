@@ -2674,7 +2674,14 @@ export const contentData = {
         "updatedAt": "2025-10-28T15:57:22.042Z",
         "order": 2,
         "badgeName": "Блог",
-        "description": "как отменить лицензию на такси на госуслугах"
+        "description": "как отменить лицензию на такси на госуслугах",
+        "images": [
+          {
+            "id": "pdvbxdafurnsbkz5f839145w",
+            "alt": "как отменить лицензию на такси на госуслугах",
+            "href": "/app-images/ym4cj5ehq7tml6a9o4m4w52n.jpg"
+          }
+        ]
       }
     ],
     "order": 16
@@ -2705,5 +2712,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T15:58:32.546Z";
+export const lastUpdated = "2025-10-28T16:00:28.772Z";
 export const generatedBy = "menu-persist-api";
