@@ -1,5 +1,5 @@
 // Auto-generated SEO-optimized static page - do not edit manually
-// Generated on: 2025-10-28T14:18:55.415Z
+// Generated on: 2025-10-28T14:19:41.486Z
 // Source href: /blog/kakie-mashiny-podhodyat-pod-biznes-v-yandeks-taksi
 // Page metadata: Какие машины подходят под бизнес в Яндекс Такси: критерии и модели | 5 sections
 // FAQ sections detected: 4
@@ -44,7 +44,7 @@ const sections = [
           "content": [
             {
               "type": "text",
-              "text": "Какие машины подходят под бизнес в Яндекс Такси: критерии, возраст и модели"
+              "text": "Какие машины подходят под бизнес в Яндекс Такси: критерии, возраст и модели."
             }
           ]
         },
@@ -1583,8 +1583,8 @@ export default function Page() {
               "url": "/app-images/li7ks6ghir4oz1onaj0ltoeg.webp",
               "alt": " какие машины подходят под бизнес в яндекс такси"
             },
-            "datePublished": "2025-10-28T14:18:55.415Z",
-            "dateModified": "2025-10-28T14:18:55.415Z",
+            "datePublished": "2025-10-28T14:19:41.486Z",
+            "dateModified": "2025-10-28T14:19:41.486Z",
             "articleSection": "blog",
             "keywords": [" какие машины подходят под бизнес в яндекс такси"],
             "mainEntityOfPage": {
