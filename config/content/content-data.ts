@@ -2590,7 +2590,7 @@ export const contentData = {
         "updatedAt": "2025-10-28T12:57:50.634Z",
         "order": 2,
         "badgeName": "Блог",
-        "description": "как связаться со службой поддержки яндекс такси",
+        "description": "Узнайте, как связаться со службой поддержки Яндекс Такси: все способы связи, инструкции для пассажиров и водителей, быстрые решения вопросов!",
         "images": [
           {
             "id": "v6n3qjq6ovt2xykrzarorhhr",
@@ -2633,5 +2633,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T13:04:19.973Z";
+export const lastUpdated = "2025-10-28T13:04:25.179Z";
 export const generatedBy = "menu-persist-api";
