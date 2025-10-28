@@ -2674,7 +2674,7 @@ export const contentData = {
         "updatedAt": "2025-10-28T15:57:22.042Z",
         "order": 2,
         "badgeName": "Блог",
-        "description": "как отменить лицензию на такси на госуслугах",
+        "description": "Узнайте, как отменить лицензию на такси на Госуслугах: пошаговая инструкция, необходимые документы и советы для быстрого аннулирования онлайн.",
         "images": [
           {
             "id": "pdvbxdafurnsbkz5f839145w",
@@ -2717,5 +2717,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T16:05:09.788Z";
+export const lastUpdated = "2025-10-28T16:05:15.532Z";
 export const generatedBy = "menu-persist-api";
