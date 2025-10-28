@@ -2618,7 +2618,14 @@ export const contentData = {
         "updatedAt": "2025-10-28T13:25:43.804Z",
         "order": 2,
         "badgeName": "Блог",
-        "description": "как устроиться в бизнес такси в москве"
+        "description": "как устроиться в бизнес такси в москве",
+        "images": [
+          {
+            "id": "gac4j49n5wvfojf2v2xahuzo",
+            "alt": "как устроиться в бизнес такси в москве",
+            "href": "/app-images/jqx4patm54denzgusqq1wj2f.webp"
+          }
+        ]
       }
     ],
     "order": 16
@@ -2649,5 +2656,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T13:30:32.933Z";
+export const lastUpdated = "2025-10-28T13:32:07.566Z";
 export const generatedBy = "menu-persist-api";
