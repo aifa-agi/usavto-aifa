@@ -2650,7 +2650,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-28T13:25:43.804Z",
-        "updatedAt": "2025-10-28T13:46:24.671Z",
+        "updatedAt": "2025-10-28T13:47:30.259Z",
         "order": 2,
         "badgeName": "Блог",
         "description": "Узнайте, как устроиться в бизнес такси в Москве: требования к водителям и авто, доход до 180 тыс ₽, обучение, аренда, подключение к Яндекс Такси.",
@@ -3219,6 +3219,108 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-5",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "итоги устройства в бизнес-такси",
+              "ключевые выводы для водителей",
+              "следующие шаги для кандидатов",
+              "перспективы работы в премиум такси",
+              "советы по успешному старту",
+              "резюме преимуществ бизнес-такси",
+              "план действий после ознакомления"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Получите сжатое резюме, практические рекомендации и четкий план дальнейших действий для успешного старта в бизнес-такси Москвы.",
+            "intent": "Синтезировать основные выводы статьи, выделить преимущества и предоставить читателю конкретные шаги для перехода к трудоустройству в бизнес-такси.",
+            "audiences": "Мужчины 25–45 лет с опытом вождения, рассматривающие смену сферы или повышение класса работы, ищущие структурированное резюме и мотивацию для старта.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 conclusion/summary section for page \"Как устроиться в бизнес такси в Москве: требования, доход, старт\"\n\nGOAL: Системно подвести итоги, выделить ключевые преимущества работы в бизнес-такси, дать читателю мотивацию и четкие рекомендации для дальнейших шагов. Обеспечить уникальность раздела за счет акцента на синтезе, actionable советах и перспективе профессионального роста, не повторяя темы предыдущих секций (требования, процесс, FAQ). Включить таблицу с кратким сравнением преимуществ, список конкретных шагов и финальный мотивирующий абзац.\n\nAUDIENCE: Водители с опытом, рассматривающие переход в премиум-сегмент такси | Level: intermediate | Pain points: неуверенность в старте, поиск четких шагов, желание понять выгоды\n\nKEYWORDS TO INTEGRATE:\n[итоги устройства в бизнес-такси, ключевые выводы для водителей, следующие шаги для кандидатов, перспективы работы в премиум такси, советы по успешному старту, резюме преимуществ бизнес-такси, план действий после ознакомления]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 200, maxWords: 300 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: h2 heading, followed by summary paragraph, comparison table, actionable list, and final motivational paragraph.\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: опыт компании, образовательные программы, цифровые решения, преимущества легального старта\n- SECONDARY: Apply insights from External KB: статистика доходов, типовые перспективы, советы по дальнейшим шагам\n\nQUALITY CRITERIA:\n- Actionable (четкие рекомендации)\n- Specific (конкретные выгоды и шаги)\n- Data-backed (факты и сравнения)\n- No fluff (без общих фраз)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Синтезирует основные преимущества и шаги для успешного старта в бизнес-такси, не повторяя детали требований или процесса подключения.\n- sourceHint: Internal KB (опыт, преимущества, рекомендации), External KB (статистика, перспективы)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nINTERLINK PLANNING: Включить 2 внутренних ссылки: на страницу с подробным описанием обучения для водителей и на калькулятор дохода в бизнес-такси.\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)\n",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 200,
+              "maxWords": 300,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-5-1",
+                "tag": "p",
+                "keywords": [
+                  "итоги устройства в бизнес-такси",
+                  "ключевые выводы для водителей"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, почему бизнес-такси — это реальная возможность для карьерного и финансового роста.",
+                "intent": "Ввести читателя в итоговый раздел, кратко обобщить основные преимущества и смысловые акценты статьи.",
+                "audiences": "Водители, ищущие уверенность в выборе премиального сегмента такси; уровень — intermediate.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph for the conclusion section summarizing the main takeaways of the article on устройство в бизнес-такси в Москве.\nGOAL: Кратко обобщить ключевые преимущества и смысловые акценты, не повторяя детали требований и процесса подключения.\nROLE: intro\nKEYWORDS: итоги устройства в бизнес-такси, ключевые выводы для водителей\nWORD COUNT: minWords: 80, maxWords: 150\nsemanticFingerprint: Вводит в итоговый раздел, подчеркивая ценность перехода в бизнес-такси.\nsourceHint: Internal KB (опыт, преимущества)\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-5-3",
+                "tag": "table",
+                "keywords": [
+                  "резюме преимуществ бизнес-такси",
+                  "перспективы работы в премиум такси"
+                ],
+                "taxonomy": "Comparison",
+                "attention": "Сравните ключевые плюсы бизнес-такси с другими сегментами для осознанного выбора.",
+                "intent": "Визуально показать основные преимущества и перспективы работы в бизнес-такси по сравнению с другими вариантами.",
+                "audiences": "Водители, выбирающие между сегментами такси; уровень — intermediate.",
+                "selfPrompt": "CONTEXT: Generate comparison table (3 columns × 3-4 rows) summarizing the main advantages and perspectives of business-taxi versus other taxi segments.\nGOAL: Визуально выделить ключевые плюсы и перспективы работы в бизнес-такси.\nSCHEMA: [Параметр] | [Бизнес-такси] | [Обычное такси]\nDATA TYPES: text/number\nKEYWORDS: резюме преимуществ бизнес-такси, перспективы работы в премиум такси\nWORD COUNT: minWords: 80, maxWords: 160\nsemanticFingerprint: Сравнивает выгоды бизнес-такси с обычным сегментом для принятия решения.\nsourceHint: Internal KB (преимущества), External KB (статистика)\nevidenceStrength: internal-tested | external-peer-reviewed\nschemaReadiness: ComparisonTable",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "ul-5-2",
+                "tag": "ul",
+                "keywords": [
+                  "следующие шаги для кандидатов",
+                  "советы по успешному старту"
+                ],
+                "taxonomy": "Actionable",
+                "attention": "Получите конкретный план действий для быстрого и легального старта в бизнес-такси.",
+                "intent": "Дать читателю четкий, пошаговый список дальнейших действий для перехода к трудоустройству.",
+                "audiences": "Кандидаты, готовые к активным действиям; уровень — intermediate.",
+                "selfPrompt": "CONTEXT: Generate actionable unordered list (5 items, 1-2 предложения на пункт) with next steps and practical tips for candidates after reading the article.\nGOAL: Дать четкий план действий для быстрого старта в бизнес-такси.\nSTRUCTURE: 5 пунктов, каждый — конкретный шаг или совет\nKEYWORDS: следующие шаги для кандидатов, советы по успешному старту\nWORD COUNT: minWords: 50, maxWords: 90\nsemanticFingerprint: Содержит уникальные рекомендации, не повторяя FAQ или процесс подключения.\nsourceHint: Internal KB (рекомендации), External KB (советы)\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 50,
+                  "maxWords": 90,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-5-3",
+                "tag": "p",
+                "keywords": [
+                  "план действий после ознакомления"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Завершите чтение мотивирующим посылом и призывом к действию.",
+                "intent": "Вдохновить читателя на активные шаги, подчеркнуть перспективы и поддержать уверенность в выборе.",
+                "audiences": "Водители, нуждающиеся в мотивации для перехода в премиум-сегмент.",
+                "selfPrompt": "CONTEXT: Generate motivational closing paragraph for the conclusion section, encouraging the reader to take action and highlighting the long-term benefits of business-taxi.\nGOAL: Вдохновить и поддержать уверенность в выборе, завершить статью сильным посылом.\nROLE: conclusion\nKEYWORDS: план действий после ознакомления\nWORD COUNT: minWords: 70, maxWords: 130\nsemanticFingerprint: Завершает статью мотивирующим посланием, не повторяя детали предыдущих разделов.\nsourceHint: Internal KB (мотивация, перспективы)\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              }
+            ]
           }
         ]
       }
@@ -3251,5 +3353,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T13:47:29.963Z";
+export const lastUpdated = "2025-10-28T13:47:51.624Z";
 export const generatedBy = "menu-persist-api";
