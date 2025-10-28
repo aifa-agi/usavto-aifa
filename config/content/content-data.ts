@@ -2650,7 +2650,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-28T13:25:43.804Z",
-        "updatedAt": "2025-10-28T13:40:49.702Z",
+        "updatedAt": "2025-10-28T13:42:15.154Z",
         "order": 2,
         "badgeName": "Блог",
         "description": "Узнайте, как устроиться в бизнес такси в Москве: требования к водителям и авто, доход до 180 тыс ₽, обучение, аренда, подключение к Яндекс Такси.",
@@ -2737,6 +2737,164 @@ export const contentData = {
                 }
               }
             ]
+          },
+          {
+            "id": "h2-2",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "требования к автомобилям бизнес такси",
+              "медицинское освидетельствование водителей",
+              "электронные путевые листы",
+              "документы для работы в такси",
+              "автоматизация документооборота",
+              "условия допуска к перевозкам",
+              "техническое состояние авто"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, какие документы и технические требования необходимы для легального и успешного старта в бизнес-такси Москвы — без ошибок и штрафов.",
+            "intent": "Дать подробное описание всех обязательных требований к автомобилю и водителю для работы в бизнес-такси Москвы, включая медицинские, технические и документальные аспекты, а также показать, как автоматизация и цифровые решения упрощают процесс допуска.",
+            "audiences": "Водители с опытом от 3 лет, рассматривающие переход в премиальный сегмент такси, желающие понять, какие документы и условия необходимы для старта и как избежать бюрократических сложностей.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 section on 'Требования к автомобилю и водителю для работы в бизнес-такси Москвы' for page 'Как устроиться в бизнес такси в Москве: требования, доход, старт'.\n\nGOAL: Подробно раскрыть все технические, медицинские и документальные требования к автомобилю и водителю для допуска к работе в бизнес-такси Москвы, объяснить роль электронных путевых листов и автоматизации документооборота, а также показать, как соблюдение этих требований помогает избежать штрафов и ускоряет старт.\n\nAUDIENCE: Водители с опытом от 3 лет, рассматривающие переход в премиальный сегмент такси | Уровень: intermediate | Pain points: страх ошибок в документах, незнание новых требований 2025 года, опасения по поводу медосмотров и технических проверок.\n\nKEYWORDS TO INTEGRATE:\n[требования к автомобилям бизнес такси, медицинское освидетельствование водителей, электронные путевые листы, документы для работы в такси, автоматизация документооборота, условия допуска к перевозкам, техническое состояние авто]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 250, maxWords: 400 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with nested paragraphs, table, and h3 block as per structure\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Internal KB: требования к водителю и авто, оформление путевых листов, автоматизация документооборота, медицинское сопровождение\n- SECONDARY: External KB: стандартные требования к премиальным авто, дресс-код, техническое состояние, возраст авто\n\nQUALITY CRITERIA:\n- Actionable (пошаговые рекомендации)\n- Specific (точные требования и документы)\n- Data-backed (факты и примеры из Internal KB)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальный разбор требований к авто и водителю для бизнес-такси Москвы с акцентом на автоматизацию и цифровые решения.\n- sourceHint: Internal KB (экспертные инструкции US AUTO), External KB (отраслевые стандарты)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Обязательно раскрыть роль электронных путевых листов и автоматизации\n- Указать отличия требований для бизнес-класса\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)\n",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 250,
+              "maxWords": 400,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-2-1",
+                "tag": "p",
+                "keywords": [
+                  "требования к автомобилям бизнес такси",
+                  "медицинское освидетельствование водителей"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Поймите, почему строгие требования к авто и здоровью водителя — залог допуска к премиальному сегменту.",
+                "intent": "Ввести читателя в тему раздела, обозначить важность соответствия всем требованиям для старта в бизнес-такси.",
+                "audiences": "Водители, которые впервые сталкиваются с премиальными стандартами и хотят избежать ошибок при оформлении.",
+                "selfPrompt": "CONTEXT: Generate intro paragraph for section 'Требования к автомобилю и водителю для работы в бизнес-такси Москвы'.\nROLE: Intro\nGOAL: Объяснить, почему выполнение всех требований — основа легальной и успешной работы в бизнес-такси Москвы, и как это влияет на скорость старта и отсутствие штрафов.\nKEYWORDS: требования к автомобилям бизнес такси, медицинское освидетельствование водителей\nWORD COUNT: minWords: 80, maxWords: 150\nsemanticFingerprint: Вводная о значимости комплексного соответствия требованиям для допуска к бизнес-такси.\nsourceHint: Internal KB (экспертные инструкции US AUTO)\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 150,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-2-2-3",
+                "tag": "p",
+                "keywords": [
+                  "электронные путевые листы"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Узнайте, как цифровые решения ускоряют оформление документов.",
+                "intent": "Кратко выделить роль электронных путевых листов и автоматизации документооборота для водителей бизнес-такси.",
+                "audiences": "Водители, желающие минимизировать бумажную работу и ускорить старт.",
+                "selfPrompt": "CONTEXT: Generate short transition paragraph on роль электронных путевых листов для допуска к работе.\nROLE: Transition\nGOAL: Подчеркнуть, что автоматизация и цифровые решения позволяют быстро и без ошибок оформлять документы для работы в бизнес-такси.\nKEYWORDS: электронные путевые листы\nWORD COUNT: minWords: 5, maxWords: 15\nsemanticFingerprint: Краткий переход к преимуществам цифрового документооборота.\nsourceHint: Internal KB (облачная платформа US AUTO)\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 5,
+                  "maxWords": 15,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "table-2-2-4",
+                "tag": "table",
+                "keywords": [
+                  "документы для работы в такси",
+                  "условия допуска к перевозкам"
+                ],
+                "taxonomy": "Data-driven",
+                "attention": "Сравните требования к водителю и автомобилю для бизнес-такси в удобной таблице.",
+                "intent": "Структурировать основные требования к водителю и автомобилю для бизнес-такси Москвы в виде таблицы для быстрого сравнения и проверки.",
+                "audiences": "Водители, которым важно быстро свериться с полным списком требований.",
+                "selfPrompt": "CONTEXT: Generate comparison table for 'Требования к водителю и автомобилю для бизнес-такси Москвы'.\nSCHEMA: 2 columns × 6-8 rows\nHEADERS: 'Требование' | 'Описание/Комментарий'\nDATA TYPES: text\nDATA SOURCE: Internal KB (основные требования), External KB (отраслевые стандарты)\nGOAL: Дать наглядное сравнение всех ключевых требований для допуска к работе в бизнес-такси.\nKEYWORDS: документы для работы в такси, условия допуска к перевозкам\nWORD COUNT: minWords: 80, maxWords: 160\nsemanticFingerprint: Таблица с полным перечнем требований к водителю и авто для бизнес-такси.\nsourceHint: Internal KB + External KB\nevidenceStrength: internal-tested | external-peer-reviewed\nschemaReadiness: Dataset/Comparison",
+                "additionalData": {
+                  "minWords": 80,
+                  "maxWords": 160,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-2-2",
+                "tag": "h3",
+                "keywords": [
+                  "автоматизация документооборота",
+                  "техническое состояние авто",
+                  "электронные путевые листы",
+                  "медицинское освидетельствование"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Пошагово разберитесь, как быстро пройти все проверки и оформить документы для старта.",
+                "intent": "Дать практическое руководство по прохождению медицинских осмотров, технических проверок и оформлению документов с помощью цифровых сервисов.",
+                "audiences": "Водители, которые хотят ускорить процесс допуска и минимизировать бюрократию.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection 'Пошаговый порядок допуска к работе: медосмотр, техосмотр, оформление документов' under h2 'Требования к автомобилю и водителю для работы в бизнес-такси Москвы'.\nGOAL: Дать пошаговую инструкцию по прохождению всех обязательных процедур для допуска к работе в бизнес-такси, с акцентом на автоматизацию и цифровые решения.\nKEYWORDS: автоматизация документооборота, техническое состояние авто, электронные путевые листы, медицинское освидетельствование\nWORD COUNT: minWords: 150, maxWords: 250\nsemanticFingerprint: Пошаговое руководство по быстрому и корректному прохождению всех проверок и оформлению документов для бизнес-такси.\nsourceHint: Internal KB (экспертные инструкции US AUTO), External KB (отраслевые стандарты)\nevidenceStrength: internal-tested | external-peer-reviewed\ninterlinkPlanning: Внутренняя ссылка на страницу 'Документы для такси', 'Медицинские осмотры для водителей', 'Автоматизация такси'.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 250,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-2-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "медицинское освидетельствование",
+                      "техническое состояние авто"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Поймите, почему медосмотр и техосмотр — обязательные этапы допуска.",
+                    "intent": "Объяснить, зачем нужны медосмотр и техосмотр для допуска к работе, и как их пройти без задержек.",
+                    "audiences": "Водители, опасающиеся задержек из-за бюрократии.",
+                    "selfPrompt": "CONTEXT: Generate body paragraph for h3 'Пошаговый порядок допуска к работе: медосмотр, техосмотр, оформление документов'.\nROLE: Body\nGOAL: Объяснить, как и почему проходят медосмотр и техосмотр, какие документы требуются, и как избежать ошибок.\nKEYWORDS: медицинское освидетельствование, техническое состояние авто\nWORD COUNT: minWords: 70, maxWords: 130\nsemanticFingerprint: Практические советы по прохождению медосмотра и техосмотра для бизнес-такси.\nsourceHint: Internal KB (экспертные инструкции US AUTO)\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 70,
+                      "maxWords": 130,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ul-2-2-2",
+                    "tag": "ul",
+                    "keywords": [
+                      "автоматизация документооборота"
+                    ],
+                    "taxonomy": "Actionable",
+                    "attention": "Следуйте этим шагам, чтобы ускорить оформление допуска.",
+                    "intent": "Дать список конкретных шагов для быстрого прохождения всех процедур допуска с помощью цифровых решений.",
+                    "audiences": "Водители, которым важно быстро и без ошибок пройти все этапы допуска.",
+                    "selfPrompt": "CONTEXT: Generate actionable list (5-6 пунктов) для h3 'Пошаговый порядок допуска к работе: медосмотр, техосмотр, оформление документов'.\nSTRUCTURE: Краткие, четкие пункты (5-10 слов)\nPURPOSE: Пошаговые действия для допуска к работе в бизнес-такси\nKEYWORDS: автоматизация документооборота\nWORD COUNT: minWords: 40, maxWords: 80\nsemanticFingerprint: Чек-лист действий для быстрого допуска к работе в бизнес-такси.\nsourceHint: Internal KB (экспертные инструкции US AUTO)\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 40,
+                      "maxWords": 80,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "p-2-2-3",
+                    "tag": "p",
+                    "keywords": [
+                      "электронные путевые листы"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Узнайте, как электронные путевые листы экономят ваше время.",
+                    "intent": "Пояснить, как использование электронных путевых листов и облачных сервисов снижает риск ошибок и ускоряет старт.",
+                    "audiences": "Водители, ценящие скорость и удобство оформления документов.",
+                    "selfPrompt": "CONTEXT: Generate conclusion paragraph for h3 'Пошаговый порядок допуска к работе: медосмотр, техосмотр, оформление документов'.\nROLE: Conclusion\nGOAL: Подчеркнуть преимущества электронных путевых листов и автоматизации для быстрого допуска к работе.\nKEYWORDS: электронные путевые листы\nWORD COUNT: minWords: 60, maxWords: 100\nsemanticFingerprint: Заключение о выгоде цифровых решений для допуска к бизнес-такси.\nsourceHint: Internal KB (облачная платформа US AUTO)\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 100,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -2769,5 +2927,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T13:42:14.998Z";
+export const lastUpdated = "2025-10-28T13:43:39.871Z";
 export const generatedBy = "menu-persist-api";
