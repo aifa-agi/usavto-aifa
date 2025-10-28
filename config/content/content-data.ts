@@ -2618,7 +2618,7 @@ export const contentData = {
         "updatedAt": "2025-10-28T13:25:43.804Z",
         "order": 2,
         "badgeName": "Блог",
-        "description": "как устроиться в бизнес такси в москве",
+        "description": "Узнайте, как устроиться в бизнес такси в Москве: требования к водителям и авто, доход до 180 тыс ₽, обучение, аренда, подключение к Яндекс Такси.",
         "images": [
           {
             "id": "gac4j49n5wvfojf2v2xahuzo",
@@ -2661,5 +2661,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T13:37:30.392Z";
+export const lastUpdated = "2025-10-28T13:37:35.109Z";
 export const generatedBy = "menu-persist-api";
