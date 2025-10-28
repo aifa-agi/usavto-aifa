@@ -2622,7 +2622,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-28T12:57:50.634Z",
-        "updatedAt": "2025-10-28T13:13:43.729Z",
+        "updatedAt": "2025-10-28T13:13:50.995Z",
         "order": 2,
         "badgeName": "Блог",
         "description": "Узнайте, как связаться со службой поддержки Яндекс Такси: все способы связи, инструкции для пассажиров и водителей, быстрые решения вопросов!",
@@ -2757,7 +2757,8 @@ export const contentData = {
                   "minWords": 80,
                   "maxWords": 150,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "p-2-2-3",
@@ -2774,7 +2775,8 @@ export const contentData = {
                   "minWords": 5,
                   "maxWords": 15,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "table-2-2-4",
@@ -2792,7 +2794,8 @@ export const contentData = {
                   "minWords": 80,
                   "maxWords": 160,
                   "actualContent": ""
-                }
+                },
+                "status": "checked"
               },
               {
                 "id": "h3-2-2",
@@ -2831,7 +2834,8 @@ export const contentData = {
                       "minWords": 70,
                       "maxWords": 130,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "ul-2-2-2",
@@ -2848,7 +2852,8 @@ export const contentData = {
                       "minWords": 40,
                       "maxWords": 80,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   },
                   {
                     "id": "p-2-2-3",
@@ -2866,11 +2871,14 @@ export const contentData = {
                       "minWords": 60,
                       "maxWords": 100,
                       "actualContent": ""
-                    }
+                    },
+                    "status": "checked"
                   }
-                ]
+                ],
+                "status": "checked"
               }
-            ]
+            ],
+            "status": "checked"
           },
           {
             "id": "h2-3",
@@ -3336,5 +3344,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T13:13:50.880Z";
+export const lastUpdated = "2025-10-28T13:13:55.977Z";
 export const generatedBy = "menu-persist-api";
