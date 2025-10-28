@@ -2646,7 +2646,7 @@ export const contentData = {
         "updatedAt": "2025-10-28T13:59:00.177Z",
         "order": 2,
         "badgeName": "Блог",
-        "description": "какие машины подходят под бизнес в яндекс такси",
+        "description": "Узнайте, какие машины подходят под бизнес в Яндекс Такси: критерии, возраст, модели и классы авто. Подберите оптимальный вариант для успешной работы!",
         "images": [
           {
             "id": "odt8eddaet0f0gv13fp7rtu6",
@@ -2689,5 +2689,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T14:04:21.678Z";
+export const lastUpdated = "2025-10-28T14:04:26.400Z";
 export const generatedBy = "menu-persist-api";
