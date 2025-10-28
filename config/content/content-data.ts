@@ -2590,7 +2590,14 @@ export const contentData = {
         "updatedAt": "2025-10-28T12:57:50.634Z",
         "order": 2,
         "badgeName": "Блог",
-        "description": "как связаться со службой поддержки яндекс такси"
+        "description": "как связаться со службой поддержки яндекс такси",
+        "images": [
+          {
+            "id": "v6n3qjq6ovt2xykrzarorhhr",
+            "alt": "как связаться со службой поддержки яндекс такси",
+            "href": "/app-images/mzyr7j4sp3nt8yoztbmdert7.png"
+          }
+        ]
       }
     ],
     "order": 16
@@ -2621,5 +2628,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T13:00:00.176Z";
+export const lastUpdated = "2025-10-28T13:00:45.667Z";
 export const generatedBy = "menu-persist-api";
