@@ -2622,7 +2622,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-28T12:57:50.634Z",
-        "updatedAt": "2025-10-28T13:09:04.199Z",
+        "updatedAt": "2025-10-28T13:10:02.595Z",
         "order": 2,
         "badgeName": "Блог",
         "description": "Узнайте, как связаться со службой поддержки Яндекс Такси: все способы связи, инструкции для пассажиров и водителей, быстрые решения вопросов!",
@@ -2868,6 +2868,131 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "h2-3",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "пошаговая инструкция обращения",
+              "решение частых проблем",
+              "алгоритм обращения в поддержку",
+              "подготовка к обращению",
+              "быстрое получение ответа",
+              "эффективное взаимодействие с поддержкой",
+              "советы для пользователей"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте, как правильно и быстро обратиться в поддержку Яндекс Такси: подробная инструкция и советы для мгновенного решения вашей ситуации.",
+            "intent": "Дать пользователю практическое руководство по эффективному обращению в службу поддержки Яндекс Такси, чтобы ускорить решение его вопроса и повысить шансы на получение квалифицированной помощи с первого раза.",
+            "audiences": "Пассажиры и водители Яндекс Такси, которые столкнулись с проблемой или вопросом и хотят получить быстрый и результативный ответ от поддержки; уровень владения: начинающий и средний; боль: долгое ожидание ответа, неполные инструкции, повторные обращения.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see below)\n\nCONTEXT: Generate h2 section 'Пошаговая инструкция: как правильно обратиться в поддержку Яндекс Такси' for page 'Как связаться со службой поддержки Яндекс Такси — все способы'\n\nGOAL: Предоставить читателю структурированный, практический алгоритм обращения в службу поддержки Яндекс Такси, включая подготовку информации, выбор подходящего канала, формулировку запроса и советы для ускорения ответа. Обеспечить уникальную ценность за счет интеграции внутренних рекомендаций и внешних лайфхаков, избегая повторов предыдущих разделов.\n\nAUDIENCE: Пассажиры и водители Яндекс Такси | Level: beginner/intermediate | Pain points: долгое ожидание ответа, неэффективное общение с поддержкой, повторные обращения.\n\nKEYWORDS TO INTEGRATE:\n[пошаговая инструкция обращения, решение частых проблем, алгоритм обращения в поддержку, подготовка к обращению, быстрое получение ответа, эффективное взаимодействие с поддержкой, советы для пользователей]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 section with nested H3, paragraphs, ordered list, and code block as per structure.\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: рекомендации по эффективному обращению, важность подготовки информации, алгоритм обращения\n- SECONDARY: Apply insights from External KB: структурированные инструкции, лайфхаки по ускорению ответа, примеры формулировок\n\nQUALITY CRITERIA:\n- Actionable (конкретные шаги и советы)\n- Specific (без общих фраз)\n- Data-backed (с опорой на внутренние и внешние источники)\n- No fluff (никакой воды)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Пошаговый алгоритм обращения в поддержку Яндекс Такси с советами по ускорению ответа, уникальный для этой страницы.\n- sourceHint: Internal KB (рекомендации, алгоритм), External KB (структура, примеры)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference parent page intent (практическое руководство для быстрого решения проблем)\n- Must set тематическое направление для дочерних элементов (детализация шагов, примеры формулировок)\n- Add interlink planning: internalLinks (например, на FAQ по Яндекс Такси, статью о безопасности поездок, инструкцию по возврату забытых вещей)\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-3-1",
+                "tag": "p",
+                "keywords": [
+                  "пошаговая инструкция обращения",
+                  "подготовка к обращению"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Перед обращением в поддержку важно правильно подготовиться — это поможет получить ответ быстрее.",
+                "intent": "Объяснить, почему важно заранее подготовить информацию и четко сформулировать проблему перед обращением в поддержку.",
+                "audiences": "Пользователи Яндекс Такси, которые хотят ускорить решение своей проблемы; уровень: начинающий.",
+                "selfPrompt": "CONTEXT: Generate intro paragraph for section 'Пошаговая инструкция: как правильно обратиться в поддержку Яндекс Такси'.\nGOAL: Объяснить важность подготовки к обращению в поддержку и кратко обозначить, что будет рассмотрено далее.\nKEYWORDS: [пошаговая инструкция обращения, подготовка к обращению]\nWORD COUNT: minWords: 90, maxWords: 170\nROLE: intro\nsemanticFingerprint: Вступление, подчеркивающее значимость подготовки к обращению в поддержку.\nsourceHint: Internal KB (рекомендации по подготовке), External KB (общие советы)\nevidenceStrength: internal-tested",
+                "additionalData": {
+                  "minWords": 90,
+                  "maxWords": 170,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-3-2",
+                "tag": "h3",
+                "keywords": [
+                  "алгоритм обращения в поддержку",
+                  "решение частых проблем",
+                  "быстрое получение ответа",
+                  "эффективное взаимодействие с поддержкой",
+                  "советы для пользователей"
+                ],
+                "taxonomy": "HowTo",
+                "attention": "Следуйте пошаговой инструкции, чтобы получить помощь максимально быстро и без лишних задержек.",
+                "intent": "Детализировать пошаговый алгоритм обращения в поддержку Яндекс Такси, включая подготовку данных, выбор канала и формулировку запроса.",
+                "audiences": "Пользователи Яндекс Такси, которым нужна конкретная инструкция для обращения; уровень: начинающий/средний.",
+                "selfPrompt": "CONTEXT: Generate h3 subsection 'Пошаговый алгоритм обращения в поддержку' for parent H2 'Пошаговая инструкция: как правильно обратиться в поддержку Яндекс Такси'.\nGOAL: Дать подробный, структурированный алгоритм обращения в поддержку Яндекс Такси с советами по ускорению ответа.\nKEYWORDS: [алгоритм обращения в поддержку, решение частых проблем, быстрое получение ответа, эффективное взаимодействие с поддержкой, советы для пользователей]\nsemanticFingerprint: Детальный алгоритм обращения в поддержку с практическими советами, уникальный для этой страницы.\ninterlink planning: Вставить внутреннюю ссылку на FAQ по Яндекс Такси или статью о возврате забытых вещей.\nschema readiness: HowTo\nsourceHint: Internal KB (алгоритм, советы), External KB (структура, примеры)\nevidenceStrength: internal-tested | external-peer-reviewed",
+                "additionalData": {
+                  "minWords": 180,
+                  "maxWords": 280,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-3-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "алгоритм обращения в поддержку",
+                      "решение частых проблем"
+                    ],
+                    "taxonomy": "Supporting",
+                    "attention": "Перед началом обращения важно знать, какие данные понадобятся и как правильно сформулировать запрос.",
+                    "intent": "Объяснить, какие сведения нужно подготовить и почему это важно для быстрого решения проблемы.",
+                    "audiences": "Пользователи, которые впервые обращаются в поддержку или сталкивались с задержками в ответе.",
+                    "selfPrompt": "CONTEXT: Generate body paragraph for h3 'Пошаговый алгоритм обращения в поддержку' (H2: 'Пошаговая инструкция: как правильно обратиться в поддержку Яндекс Такси').\nGOAL: Объяснить, какие данные и детали нужно подготовить перед обращением, чтобы ускорить решение проблемы.\nKEYWORDS: [алгоритм обращения в поддержку, решение частых проблем]\nROLE: body\nsemanticFingerprint: Практические советы по подготовке информации для обращения в поддержку.\nsourceHint: Internal KB (рекомендации), External KB (структурированные советы)\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 75,
+                      "maxWords": 140,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "ol-3-2-2",
+                    "tag": "ol",
+                    "keywords": [
+                      "быстрое получение ответа",
+                      "эффективное взаимодействие с поддержкой"
+                    ],
+                    "taxonomy": "Actionable",
+                    "attention": "Следуйте этим шагам, чтобы ваше обращение было рассмотрено максимально быстро.",
+                    "intent": "Дать пользователю четкий пошаговый алгоритм действий при обращении в поддержку.",
+                    "audiences": "Пользователи, которым нужна конкретная последовательность действий.",
+                    "selfPrompt": "CONTEXT: Generate ordered list (5-7 пунктов) для h3 'Пошаговый алгоритм обращения в поддержку' (H2: 'Пошаговая инструкция: как правильно обратиться в поддержку Яндекс Такси').\nGOAL: Представить пошаговый алгоритм обращения в поддержку Яндекс Такси, включая подготовку данных, выбор канала, формулировку запроса и ожидание ответа.\nKEYWORDS: [быстрое получение ответа, эффективное взаимодействие с поддержкой]\nList purpose: steps\nItem count: 5-7, short и понятные пункты (10-20 слов)\nsemanticFingerprint: Четкая последовательность действий для обращения в поддержку.\nsourceHint: Internal KB (алгоритм), External KB (структура)\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 50,
+                      "maxWords": 90,
+                      "actualContent": ""
+                    }
+                  },
+                  {
+                    "id": "code-3-2-3",
+                    "tag": "code",
+                    "keywords": [
+                      "советы для пользователей"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Используйте пример формулировки обращения, чтобы ваше сообщение было максимально понятным для поддержки.",
+                    "intent": "Показать пример правильной формулировки обращения в поддержку для ускорения ответа.",
+                    "audiences": "Пользователи, которым сложно четко описать свою проблему.",
+                    "selfPrompt": "CONTEXT: Generate code block (language: plain text) for h3 'Пошаговый алгоритм обращения в поддержку' (H2: 'Пошаговая инструкция: как правильно обратиться в поддержку Яндекс Такси').\nGOAL: Привести пример шаблона или формулировки обращения в поддержку Яндекс Такси.\nKEYWORDS: [советы для пользователей]\nCode purpose: пример обращения\nLength: 3-5 строк\nsemanticFingerprint: Пример обращения, который поможет ускорить ответ поддержки.\nsourceHint: Internal KB (рекомендации), External KB (примеры формулировок)\nevidenceStrength: internal-tested",
+                    "additionalData": {
+                      "minWords": 20,
+                      "maxWords": 50,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -2900,5 +3025,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T13:10:02.369Z";
+export const lastUpdated = "2025-10-28T13:11:39.910Z";
 export const generatedBy = "menu-persist-api";
