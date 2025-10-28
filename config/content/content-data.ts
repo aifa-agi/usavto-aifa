@@ -2646,7 +2646,14 @@ export const contentData = {
         "updatedAt": "2025-10-28T13:59:00.177Z",
         "order": 2,
         "badgeName": "Блог",
-        "description": "какие машины подходят под бизнес в яндекс такси"
+        "description": "какие машины подходят под бизнес в яндекс такси",
+        "images": [
+          {
+            "id": "odt8eddaet0f0gv13fp7rtu6",
+            "alt": " какие машины подходят под бизнес в яндекс такси",
+            "href": "/app-images/li7ks6ghir4oz1onaj0ltoeg.webp"
+          }
+        ]
       }
     ],
     "order": 16
@@ -2677,5 +2684,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T13:59:38.311Z";
+export const lastUpdated = "2025-10-28T14:00:09.677Z";
 export const generatedBy = "menu-persist-api";
