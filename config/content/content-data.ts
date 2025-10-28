@@ -2597,6 +2597,9 @@ export const contentData = {
             "alt": "как связаться со службой поддержки яндекс такси",
             "href": "/app-images/mzyr7j4sp3nt8yoztbmdert7.png"
           }
+        ],
+        "keywords": [
+          "как связаться со службой поддержки яндекс такси"
         ]
       }
     ],
@@ -2628,5 +2631,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T13:00:45.667Z";
+export const lastUpdated = "2025-10-28T13:00:58.446Z";
 export const generatedBy = "menu-persist-api";
