@@ -2622,7 +2622,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-28T12:57:50.634Z",
-        "updatedAt": "2025-10-28T12:57:50.634Z",
+        "updatedAt": "2025-10-28T13:07:29.205Z",
         "order": 2,
         "badgeName": "Блог",
         "description": "Узнайте, как связаться со службой поддержки Яндекс Такси: все способы связи, инструкции для пассажиров и водителей, быстрые решения вопросов!",
@@ -2641,7 +2641,75 @@ export const contentData = {
         "intent": "Пользователь заходит на страницу, чтобы быстро узнать все актуальные способы связаться со службой поддержки Яндекс Такси для решения своей проблемы или получения консультации. Ожидаемое действие — выбрать наиболее удобный способ связи (через приложение, сайт, телефон или форму обратной связи) и воспользоваться им для обращения в поддержку. Страница полностью удовлетворяет поисковый запрос, предоставляя структурированные инструкции и контакты для оперативного обращения.",
         "taxonomy": "Эта страница представляет собой практическое руководство (guide) из категории \"Служба поддержки\" с подкатегорией \"Яндекс.Такси — способы связи\", являясь кластерным контентом, поддерживающим основной справочный материал о сервисе. Она обеспечивает тематическую связность с другими статьями о взаимодействии с Яндекс.Такси, способствует формированию экспертности сайта в области пользовательской поддержки и коммуникаций с сервисами такси.",
         "attention": "Мгновенно привлеките внимание ярким, визуальным чек-листом «Все способы связи с поддержкой Яндекс Такси за 30 секунд», затем удерживайте аудиторию с помощью четкой структуры, интерактивных кнопок для перехода к нужному способу, и быстрых FAQ в формате раскрывающихся блоков. Используйте персонализированные сценарии (например, «Забыли вещь?», «Проблема с оплатой?») и реальные цитаты пользователей, чтобы вызвать доверие и помочь быстро найти нужный ответ, выгодно отличаясь от сухих и перегруженных справочных страниц конкурентов.",
-        "audiences": "Данная страница предназначена для взрослых пользователей Яндекс.Такси (пассажиров и водителей) любого уровня опыта, которые столкнулись с проблемой или вопросом при использовании сервиса и ищут быстрый, понятный способ связаться со службой поддержки. Аудитория испытывает неудобства из-за отсутствия явных телефонных номеров и разрозненной информации о каналах связи, и мотивирована быстро решить свою проблему с поездкой, оплатой, безопасностью или техническими сбоями. Контент наиболее актуален для пользователей на стадии поиска решения конкретной проблемы, обладающих базовым уровнем владения интернетом и мобильными приложениями, но не обладающих глубокими техническими знаниями."
+        "audiences": "Данная страница предназначена для взрослых пользователей Яндекс.Такси (пассажиров и водителей) любого уровня опыта, которые столкнулись с проблемой или вопросом при использовании сервиса и ищут быстрый, понятный способ связаться со службой поддержки. Аудитория испытывает неудобства из-за отсутствия явных телефонных номеров и разрозненной информации о каналах связи, и мотивирована быстро решить свою проблему с поездкой, оплатой, безопасностью или техническими сбоями. Контент наиболее актуален для пользователей на стадии поиска решения конкретной проблемы, обладающих базовым уровнем владения интернетом и мобильными приложениями, но не обладающих глубокими техническими знаниями.",
+        "draftContentStructure": [
+          {
+            "id": "h2-1",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "как связаться со службой поддержки яндекс такси",
+              "служба поддержки яндекс такси",
+              "способы связи с поддержкой",
+              "контакты яндекс такси",
+              "инструкция для обращения в поддержку",
+              "решение проблем с яндекс такси",
+              "поддержка пассажиров и водителей"
+            ],
+            "taxonomy": "Guide",
+            "attention": "Узнайте все актуальные способы связи со службой поддержки Яндекс Такси и получите быстрые инструкции для решения любых вопросов.",
+            "intent": "Ввести пользователя в тему, обозначить важность эффективной связи с поддержкой Яндекс Такси и кратко рассказать, какие способы обращения будут рассмотрены далее.",
+            "audiences": "Пассажиры и водители Яндекс Такси, ищущие быстрый и понятный способ связаться со службой поддержки для решения проблем или получения консультации; уровень — начинающий и средний пользователь мобильных сервисов.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see below)\n\nCONTEXT: Generate h2 introduction section for page \"Как связаться со службой поддержки Яндекс Такси — все способы\"\n\nGOAL: Представить тему страницы, объяснить, почему важно знать все способы связи с поддержкой Яндекс Такси, и заинтересовать пользователя дальнейшим изучением инструкции.\n\nAUDIENCE: Пассажиры и водители Яндекс Такси | Уровень: начинающий/средний | Pain points: отсутствие явных контактов, срочная необходимость решения проблемы, неуверенность в выборе канала связи.\n\nKEYWORDS TO INTEGRATE:\n[как связаться со службой поддержки яндекс такси, служба поддержки яндекс такси, способы связи с поддержкой, контакты яндекс такси, инструкция для обращения в поддержку, решение проблем с яндекс такси, поддержка пассажиров и водителей]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 150, maxWords: 250 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: # [H2 heading] + 2 intro paragraphs\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: контактная информация, основные способы связи, рекомендации по обращению\n- SECONDARY: Apply insights from External KB: структура справочных разделов, сценарии обращения, типовые вопросы\n\nQUALITY CRITERIA:\n- Actionable (обещание пользы и практической ценности)\n- Specific (указание, что будут рассмотрены все способы связи)\n- Data-backed (упоминание, что информация актуальна и проверена)\n- No fluff (никакой воды, только по делу)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Уникальное вводное описание, подчеркивающее экспертность и полноту информации о способах связи с поддержкой Яндекс Такси.\n- sourceHint: Internal KB (company expertise) + структурные элементы из External KB (категории обращений).\n- evidenceStrength: internal-tested\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Must reference parent page intent\n- Must set thematic direction for child h3 elements\n- Add interlink planning: внутренние ссылки на статьи о возврате забытых вещей, решении проблем с оплатой, безопасности поездок\n- selfPrompt MUST end with:\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)\n",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 150,
+              "maxWords": 250,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-1-1",
+                "tag": "p",
+                "keywords": [
+                  "служба поддержки яндекс такси",
+                  "инструкция для обращения в поддержку"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Пользователь сразу понимает, что найдет здесь все способы связи с поддержкой Яндекс Такси.",
+                "intent": "Кратко объяснить, почему важно знать, как быстро связаться со службой поддержки Яндекс Такси, и обозначить ценность представленной информации.",
+                "audiences": "Пассажиры и водители Яндекс Такси, которые столкнулись с проблемой и ищут быстрый способ обращения в поддержку.",
+                "selfPrompt": "CONTEXT: Generate introductory paragraph (role: intro) for h2 section \"Как связаться со службой поддержки Яндекс Такси — все способы\".\nGOAL: Объяснить, почему важно знать все способы связи с поддержкой Яндекс Такси, и заинтересовать пользователя дальнейшим чтением.\nAUDIENCE: Пассажиры и водители, уровень — начинающий/средний, pain points — не знают, куда обратиться, срочно нужна помощь.\nKEYWORDS TO INTEGRATE: [служба поддержки яндекс такси, инструкция для обращения в поддержку]\nWORD COUNT: minWords: 100, maxWords: 180\nMARKDOWN/MDX SYNTAX: Paragraph\nWRITING STYLE: Narrative\nCONTENT FORMAT: Simple\nKNOWLEDGE SOURCES: Internal KB (контактная информация, рекомендации), External KB (структура справочных разделов)\nQUALITY CRITERIA: Actionable, specific, no fluff\nE-E-A-T ENHANCERS: semanticFingerprint: Вводное объяснение важности темы; sourceHint: Internal KB; evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 100,
+                  "maxWords": 180,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "p-1-2",
+                "tag": "p",
+                "keywords": [
+                  "решение проблем с яндекс такси"
+                ],
+                "taxonomy": "Supporting",
+                "attention": "Пользователь узнает, что на странице представлены все актуальные способы связи и сценарии обращения.",
+                "intent": "Кратко анонсировать, какие способы связи и типовые сценарии обращения будут подробно рассмотрены в следующих разделах.",
+                "audiences": "Пользователи Яндекс Такси, которые хотят быстро найти подходящий канал связи для своей ситуации.",
+                "selfPrompt": "CONTEXT: Generate transition/preview paragraph (role: transition) for h2 section \"Как связаться со службой поддержки Яндекс Такси — все способы\".\nGOAL: Кратко перечислить, какие способы связи и сценарии обращения будут рассмотрены далее, чтобы пользователь понимал структуру и ценность страницы.\nAUDIENCE: Пассажиры и водители, ищущие быстрый способ решения своей проблемы.\nKEYWORDS TO INTEGRATE: [решение проблем с яндекс такси]\nWORD COUNT: minWords: 60, maxWords: 120\nMARKDOWN/MDX SYNTAX: Paragraph\nWRITING STYLE: Narrative\nCONTENT FORMAT: Simple\nKNOWLEDGE SOURCES: Internal KB (основные способы связи), External KB (категории обращений)\nQUALITY CRITERIA: Specific, actionable, no fluff\nE-E-A-T ENHANCERS: semanticFingerprint: Анонс структуры и сценариев; sourceHint: Internal KB + External KB; evidenceStrength: internal-tested.",
+                "additionalData": {
+                  "minWords": 60,
+                  "maxWords": 120,
+                  "actualContent": ""
+                }
+              }
+            ]
+          }
+        ]
       }
     ],
     "order": 16
@@ -2672,5 +2740,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T13:07:29.008Z";
+export const lastUpdated = "2025-10-28T13:09:03.976Z";
 export const generatedBy = "menu-persist-api";
