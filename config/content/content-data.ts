@@ -2650,7 +2650,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-28T13:25:43.804Z",
-        "updatedAt": "2025-10-28T13:43:40.081Z",
+        "updatedAt": "2025-10-28T13:46:24.671Z",
         "order": 2,
         "badgeName": "Блог",
         "description": "Узнайте, как устроиться в бизнес такси в Москве: требования к водителям и авто, доход до 180 тыс ₽, обучение, аренда, подключение к Яндекс Такси.",
@@ -3019,6 +3019,206 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "частые вопросы бизнес такси",
+              "условия работы водителем",
+              "аренда авто для такси",
+              "медицинские осмотры такси",
+              "документы для бизнес такси",
+              "график и выплаты в такси",
+              "обучение для водителей"
+            ],
+            "taxonomy": "FAQ",
+            "attention": "Быстро получите ответы на самые важные вопросы о старте и работе в бизнес-такси Москвы.",
+            "intent": "Собрать и структурировать наиболее частые вопросы и ответы, чтобы развеять сомнения и помочь кандидатам принять решение о трудоустройстве в бизнес-такси.",
+            "audiences": "Водители с опытом от 3 лет, рассматривающие переход в бизнес-такси, ищущие конкретные разъяснения по условиям, требованиям, процессу старта и нюансам работы.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 FAQ section for page \"Как устроиться в бизнес такси в Москве: требования, доход, старт\"\n\nGOAL: Сконцентрировать ответы на наиболее частые и волнующие вопросы потенциальных водителей бизнес-такси Москвы, чтобы снять барьеры и повысить доверие к процессу трудоустройства.\n\nAUDIENCE: Мужчины 25–45 лет с опытом вождения от 3 лет, рассматривающие смену сегмента или старт в премиальном такси | Level: intermediate | Pain points: неясность требований, опасения по поводу документов, медосмотров, аренды авто, графика и дохода.\n\nKEYWORDS TO INTEGRATE:\n[частые вопросы бизнес такси, условия работы водителем, аренда авто для такси, медицинские осмотры такси, документы для бизнес такси, график и выплаты в такси, обучение для водителей]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 heading with nested H3 for each FAQ, each with supporting paragraphs.\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: требования, документы, медосмотры, автоматизация, обучение, опыт компании\n- SECONDARY: Apply insights from External KB: типовые вопросы, статистика, детали по аренде, графику, выплатам\n\nQUALITY CRITERIA:\n- Actionable (конкретные ответы)\n- Specific (без общих фраз)\n- Data-backed (факты и цифры из KB)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Собрание ключевых FAQ по бизнес-такси с акцентом на реальные условия и нюансы старта.\n- sourceHint: Internal KB (основное), External KB (дополнение)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Каждый H3 — отдельный вопрос, раскрывающий уникальный аспект (без дублирования предыдущих секций)\n- Включить план внутренних ссылок на страницы: обучение водителей, аренда авто, оформление документов\n- Готовность к FAQPage schema\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "keywords": [
+                  "частые вопросы бизнес такси"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Узнайте ответы на самые популярные вопросы о старте и работе в бизнес-такси.",
+                "intent": "Ввести пользователя в раздел FAQ, объяснив его пользу и структуру.",
+                "audiences": "Водители, которые хотят быстро получить разъяснения по ключевым аспектам работы в бизнес-такси.",
+                "selfPrompt": "CONTEXT: Generate intro paragraph for FAQ section on странице 'Как устроиться в бизнес такси в Москве: требования, доход, старт'.\nGOAL: Кратко объяснить, зачем нужен раздел FAQ и какие вопросы здесь раскрываются.\nKEYWORDS: частые вопросы бизнес такси\nROLE: intro\nsourceHint: Internal KB (структура FAQ, пользовательские сценарии)\nevidenceStrength: internal-tested\nsemanticFingerprint: Вводный абзац, подчеркивающий ценность быстрых ответов для кандидатов.",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "keywords": [
+                  "условия работы водителем",
+                  "график и выплаты в такси",
+                  "ежедневные выплаты"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Поймите, как устроен график, выплаты и гибкость работы в бизнес-такси.",
+                "intent": "Разъяснить, как формируется рабочий график, как происходят выплаты и насколько реально совмещать работу с личной жизнью.",
+                "audiences": "Водители, интересующиеся стабильностью дохода и возможностью гибкого графика.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ 'Какой график работы и как происходят выплаты в бизнес-такси?' for FAQ section.\nGOAL: Подробно раскрыть особенности графика, варианты смен, систему выплат (ежедневные/еженедельные), а также плюсы гибкости.\nKEYWORDS: условия работы водителем, график и выплаты в такси, ежедневные выплаты\nsemanticFingerprint: FAQ о графике и выплатах, с акцентом на гибкость и прозрачность.\nsourceHint: Internal KB (условия работы, выплаты), External KB (варианты графика)\nevidenceStrength: internal-tested\ninterlink planning: Вставить ссылку на страницу 'условия работы в такси'.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "keywords": [
+                      "график и выплаты в такси"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Узнайте, как быстро и удобно получать заработанные средства.",
+                    "intent": "Дать конкретный ответ о частоте и способах выплат, а также о возможностях выбора графика.",
+                    "audiences": "Водители, которым важна финансовая стабильность и гибкость.",
+                    "selfPrompt": "CONTEXT: Generate supporting paragraph for FAQ о графике и выплатах.\nROLE: body\nKEYWORDS: график и выплаты в такси\nsourceHint: Internal KB (описание выплат), External KB (стандартные схемы выплат)\nevidenceStrength: internal-tested\nsemanticFingerprint: Конкретика по выплатам и сменам, без дублирования других FAQ.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-2",
+                "tag": "h3",
+                "keywords": [
+                  "аренда авто для такси",
+                  "условия аренды автомобиля",
+                  "работа без собственного авто"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, можно ли работать в бизнес-такси без личного автомобиля и как устроена аренда.",
+                "intent": "Объяснить, как устроена аренда автомобилей для бизнес-такси, какие условия и преимущества доступны водителям без собственного авто.",
+                "audiences": "Кандидаты, не имеющие собственного автомобиля, но желающие работать в премиальном сегменте.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ 'Можно ли работать в бизнес-такси без собственного автомобиля?' for FAQ section.\nGOAL: Подробно раскрыть условия аренды, стоимость, преимущества и процесс получения авто для работы.\nKEYWORDS: аренда авто для такси, условия аренды автомобиля, работа без собственного авто\nsemanticFingerprint: FAQ о возможностях старта без личного авто, с акцентом на аренду.\nsourceHint: Internal KB (аренда, партнерские условия), External KB (стандартные ставки)\nevidenceStrength: internal-tested\ninterlink planning: Вставить ссылку на страницу 'аренда авто для такси'.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "аренда авто для такси"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Получите информацию о доступных вариантах аренды и их преимуществах.",
+                    "intent": "Дать конкретный ответ о том, как начать работать без личного авто, и на что обратить внимание при аренде.",
+                    "audiences": "Водители без собственного автомобиля, ищущие выгодные условия старта.",
+                    "selfPrompt": "CONTEXT: Generate supporting paragraph for FAQ об аренде авто.\nROLE: body\nKEYWORDS: аренда авто для такси\nsourceHint: Internal KB (условия аренды), External KB (стандартные ставки)\nevidenceStrength: internal-tested\nsemanticFingerprint: Практические детали аренды, без повторения других FAQ.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-3",
+                "tag": "h3",
+                "keywords": [
+                  "медицинские осмотры такси",
+                  "телемедицина для водителей",
+                  "предрейсовый контроль здоровья"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Разберитесь, как проходят медицинские осмотры и как их упростить с помощью цифровых решений.",
+                "intent": "Объяснить, как организованы медицинские осмотры для водителей бизнес-такси, включая современные цифровые сервисы и телемедицину.",
+                "audiences": "Водители, обеспокоенные сложностью и частотой медосмотров, желающие упростить процесс.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ 'Как проходят медицинские осмотры для водителей бизнес-такси?' for FAQ section.\nGOAL: Подробно раскрыть процесс медосмотров, преимущества телемедицины и автоматизации.\nKEYWORDS: медицинские осмотры такси, телемедицина для водителей, предрейсовый контроль здоровья\nsemanticFingerprint: FAQ о цифровых и традиционных медосмотрах, с акцентом на удобство.\nsourceHint: Internal KB (телемедицина, автоматизация), External KB (стандартные процедуры)\nevidenceStrength: internal-tested\ninterlink planning: Вставить ссылку на страницу 'медицинское сопровождение такси'.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "медицинские осмотры такси"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Узнайте, как сделать медосмотры быстрыми и удобными.",
+                    "intent": "Дать конкретный ответ о современных возможностях прохождения медосмотров для такси.",
+                    "audiences": "Водители, желающие минимизировать время на обязательные процедуры.",
+                    "selfPrompt": "CONTEXT: Generate supporting paragraph for FAQ о медосмотрах.\nROLE: body\nKEYWORDS: медицинские осмотры такси\nsourceHint: Internal KB (телемедицина), External KB (стандартные требования)\nevidenceStrength: internal-tested\nsemanticFingerprint: Практические детали цифровых медосмотров, без повторения других FAQ.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-4",
+                "tag": "h3",
+                "keywords": [
+                  "документы для бизнес такси",
+                  "оформление путевых листов",
+                  "электронные сервисы для такси"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, какие документы нужны для легальной работы и как их быстро оформить.",
+                "intent": "Разъяснить, какие документы необходимы для старта и ежедневной работы, а также как автоматизация упрощает оформление.",
+                "audiences": "Водители, стремящиеся избежать бюрократии и штрафов, желающие быстро оформить все документы.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ 'Какие документы нужны для работы в бизнес-такси и как их оформить?' for FAQ section.\nGOAL: Подробно раскрыть перечень документов, особенности оформления путевых листов и преимущества электронных сервисов.\nKEYWORDS: документы для бизнес такси, оформление путевых листов, электронные сервисы для такси\nsemanticFingerprint: FAQ о документах и цифровых решениях, с акцентом на скорость и легальность.\nsourceHint: Internal KB (документы, автоматизация), External KB (стандартные требования)\nevidenceStrength: internal-tested\ninterlink planning: Вставить ссылку на страницу 'электронные путевые листы для такси'.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "документы для бизнес такси"
+                    ],
+                    "taxonomy": "supporting",
+                    "attention": "Получите список документов и советы по их быстрому оформлению.",
+                    "intent": "Дать конкретный ответ о необходимых документах и способах их оформления через цифровые сервисы.",
+                    "audiences": "Водители, желающие быстро и легально начать работу.",
+                    "selfPrompt": "CONTEXT: Generate supporting paragraph for FAQ о документах.\nROLE: body\nKEYWORDS: документы для бизнес такси\nsourceHint: Internal KB (документы, автоматизация), External KB (стандартные требования)\nevidenceStrength: internal-tested\nsemanticFingerprint: Практические детали по оформлению документов, без повторения других FAQ.",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -3051,5 +3251,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T13:46:24.439Z";
+export const lastUpdated = "2025-10-28T13:47:29.963Z";
 export const generatedBy = "menu-persist-api";
