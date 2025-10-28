@@ -2706,7 +2706,7 @@ export const contentData = {
         "isVectorConnected": false,
         "isChatSynchronized": false,
         "createdAt": "2025-10-28T15:57:22.042Z",
-        "updatedAt": "2025-10-28T16:12:50.118Z",
+        "updatedAt": "2025-10-28T16:14:47.202Z",
         "order": 2,
         "badgeName": "Блог",
         "description": "Узнайте, как отменить лицензию на такси на Госуслугах: пошаговая инструкция, необходимые документы и советы для быстрого аннулирования онлайн.",
@@ -3077,6 +3077,206 @@ export const contentData = {
                 ]
               }
             ]
+          },
+          {
+            "id": "FAQ",
+            "tag": "h2",
+            "classification": "semantic",
+            "keywords": [
+              "часто задаваемые вопросы по отмене лицензии такси",
+              "проблемы при аннулировании лицензии",
+              "онлайн аннулирование лицензии такси",
+              "ошибки при подаче заявления на Госуслугах",
+              "сроки рассмотрения заявления на отмену лицензии",
+              "отмена лицензии такси для ИП",
+              "документы для аннулирования лицензии"
+            ],
+            "taxonomy": "FAQ",
+            "attention": "Ответы на самые частые вопросы помогут избежать ошибок и ускорить процесс отмены лицензии на такси через Госуслуги.",
+            "intent": "Дать пользователю быстрые и точные ответы на распространённые вопросы, возникающие при самостоятельной отмене лицензии на такси онлайн.",
+            "audiences": "Владельцы такси, индивидуальные предприниматели, водители с опытом самостоятельного оформления госуслуг, ищущие практические разъяснения и решения типовых затруднений.",
+            "selfPrompt": "⚠️ APPLY CUSTOM REQUIREMENTS FIRST (see above)\n\nCONTEXT: Generate h2 FAQ section for page \"Как отменить лицензию на такси на Госуслугах: пошаговая инструкция\"\n\nGOAL: Сконцентрировать ответы на наиболее частые вопросы, связанные с аннулированием лицензии на такси через Госуслуги, чтобы снять типовые опасения, разъяснить нюансы процедуры и повысить уверенность пользователя в самостоятельных действиях.\n\nAUDIENCE: Владельцы такси, ИП, водители | Level: intermediate | Pain points: страх ошибок, нехватка времени, неясность отдельных этапов, опасения по срокам и документам.\n\nKEYWORDS TO INTEGRATE:\n[часто задаваемые вопросы по отмене лицензии такси, проблемы при аннулировании лицензии, онлайн аннулирование лицензии такси, ошибки при подаче заявления на Госуслугах, сроки рассмотрения заявления на отмену лицензии, отмена лицензии такси для ИП, документы для аннулирования лицензии]\n⚠️ WARNING: NO keyword stuffing! Organic use only.\n\nWORD COUNT: minWords: 300, maxWords: 450 - STRICT COMPLIANCE REQUIRED\n\nMARKDOWN/MDX SYNTAX: H2 FAQ section with nested H3 for each question and P for answers\n\nWRITING STYLE: Story-driven, engaging storytelling approach\n\nCONTENT FORMAT: Easy to understand, basic language\n\nKNOWLEDGE SOURCES (PRIORITY ORDER):\n- PRIMARY: Use facts from Internal KB: рекомендации, документы, сроки, типовые ошибки\n- SECONDARY: Apply insights from External KB: частые проблемы, советы, разъяснения нюансов\n\nQUALITY CRITERIA:\n- Actionable (конкретные ответы и рекомендации)\n- Specific (без общих фраз)\n- Data-backed (факты и советы из Knowledge Bases)\n- No fluff (только полезная информация)\n\nE-E-A-T ENHANCERS (STRUCTURAL):\n- semanticFingerprint: Каждый вопрос раскрывает уникальный аспект отмены лицензии, не дублируя другие разделы.\n- sourceHint: Internal KB (основные ответы), External KB (дополнительные советы)\n- evidenceStrength: internal-tested | external-peer-reviewed\n\nELEMENT-SPECIFIC REQUIREMENTS:\n- Вопросы не должны повторять шаги инструкции или вводные разделы, а дополнять их практическими разъяснениями.\n- Включить план внутренних перелинковок: анкоры на разделы о документах, сроках, ошибках.\n- Готовность к FAQPage schema для расширенных сниппетов.\n\nPAGE SETTINGS:\n• Writing Style: Narrative - Story-driven, engaging storytelling approach\n• Content Format: Simple - Easy to understand, basic language\n• Custom Requirements: Applied as PRIORITY OVERRIDE (see above)",
+            "writingStyle": "narrative",
+            "contentFormat": "simple",
+            "customRequirements": "You are a content combiner AI assistant. Your task is to generate high-quality articles by merging information from two sources: the Internal Knowledge Base (your own reliable data) and the External Knowledge Base (extracts from competitor websites). Always prioritize the Internal Knowledge Base as the foundation to ensure alignment with our goals and avoid promoting competitor products.\n\nStep-by-Step Process:\n\n1. Start with Internal Base as Foundation: Begin by analyzing the provided excerpt from the Internal Knowledge Base. Use it as the core structure, key facts, and tone for the article. All generated content must build upon this foundation without contradicting it.\n\n2. Extract Value from External Base: Review the excerpt from the External Knowledge Base. Identify and extract only valuable, non-promotional information such as general facts, statistics, tips, or insights that enhance the topic. Strictly filter out:\n   • Any direct or indirect promotion of competitor products, services, or brands.\n   • Biased opinions that favor competitors.\n   • Irrelevant or conflicting details that could dilute our objectives.\n\n3. Integrate and Enhance: Merge the extracted external information into the internal foundation. Ensure the integration:\n   • Adds depth and usefulness without overwhelming the internal content.\n   • Maintains neutrality and focuses on user benefits aligned with our products/services.\n   • Uses transitions to make the content flow naturally.\n\n4. Validate and Refine: Check the combined content for conflicts. If any promotional elements slip through, remove them. Ensure the final output is original, engaging, and optimized for our audience.\n\nOutput Format: Provide the generated article in Markdown, starting with a brief summary of what was integrated from each source.",
+            "designDescription": "",
+            "connectedDesignSectionId": "",
+            "additionalData": {
+              "minWords": 300,
+              "maxWords": 450,
+              "actualContent": ""
+            },
+            "realContentStructure": [
+              {
+                "id": "p-FAQ",
+                "tag": "p",
+                "keywords": [
+                  "часто задаваемые вопросы по отмене лицензии такси"
+                ],
+                "taxonomy": "supporting",
+                "attention": "Краткое введение к блоку FAQ помогает пользователю быстро сориентироваться и найти нужный ответ.",
+                "intent": "Объяснить, зачем создан раздел FAQ и как он поможет пользователю при отмене лицензии на такси.",
+                "audiences": "Пользователи, которые ищут быстрые ответы на частые вопросы по отмене лицензии.",
+                "selfPrompt": "CONTEXT: Generate paragraph (intro) for FAQ section explaining его назначение и пользу для пользователя.\nROLE: intro\nKEYWORDS: [часто задаваемые вопросы по отмене лицензии такси]\nWORD COUNT: minWords: 70, maxWords: 130\nsourceHint: Internal KB (структура FAQ), External KB (типовые вопросы)\nsemanticFingerprint: Вводный абзац, мотивирующий воспользоваться FAQ для быстрого решения проблем.",
+                "additionalData": {
+                  "minWords": 70,
+                  "maxWords": 130,
+                  "actualContent": ""
+                }
+              },
+              {
+                "id": "h3-FAQ-1",
+                "tag": "h3",
+                "keywords": [
+                  "проблемы при аннулировании лицензии",
+                  "ошибки при подаче заявления на Госуслугах",
+                  "технические сбои портала"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, как избежать типичных ошибок и что делать при сбоях на портале.",
+                "intent": "Ответить на вопрос о наиболее распространённых ошибках и проблемах при подаче заявления на отмену лицензии через Госуслуги.",
+                "audiences": "Владельцы такси и ИП, которые опасаются технических сбоев или ошибок при заполнении заявления.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ question on \"Какие ошибки и проблемы чаще всего возникают при отмене лицензии на такси через Госуслуги?\" for section 'FAQ'.\nREFERENCE PARENT H2: 'FAQ'\nKEYWORDS: [проблемы при аннулировании лицензии, ошибки при подаче заявления на Госуслугах, технические сбои портала]\nsemanticFingerprint: Вопрос раскрывает типовые технические и пользовательские ошибки, не дублируя инструкцию.\ninterlink planning: ссылка на раздел с рекомендациями по заполнению заявления.\nWORD COUNT: minWords: 150, maxWords: 220\nsourceHint: Internal KB (ошибки, рекомендации), External KB (частые проблемы)\nevidenceStrength: internal-tested\n\nPAGE SETTINGS: Narrative, Simple, Custom Requirements applied.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-1-1",
+                    "tag": "p",
+                    "keywords": [
+                      "ошибки при подаче заявления на Госуслугах"
+                    ],
+                    "selfPrompt": "CONTEXT: Generate paragraph (answer) for FAQ question on типовые ошибки и проблемы при отмене лицензии через Госуслуги.\nROLE: answer\nKEYWORDS: [ошибки при подаче заявления на Госуслугах]\nWORD COUNT: minWords: 60, maxWords: 120\nsourceHint: Internal KB (ошибки, советы), External KB (примеры проблем)\nsemanticFingerprint: Конкретные примеры ошибок и рекомендации по их предотвращению.",
+                    "taxonomy": "supporting",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-2",
+                "tag": "h3",
+                "keywords": [
+                  "сроки рассмотрения заявления на отмену лицензии",
+                  "статус заявления на Госуслугах",
+                  "уведомление о решении"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Понимание сроков и этапов рассмотрения заявления поможет правильно спланировать дальнейшие действия.",
+                "intent": "Разъяснить, сколько времени занимает рассмотрение заявления на отмену лицензии и как отслеживать его статус.",
+                "audiences": "Пользователи, которые хотят знать, когда ждать результата и как не пропустить уведомление.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ question on \"Сколько времени занимает рассмотрение заявления на отмену лицензии и как узнать статус?\" for section 'FAQ'.\nREFERENCE PARENT H2: 'FAQ'\nKEYWORDS: [сроки рассмотрения заявления на отмену лицензии, статус заявления на Госуслугах, уведомление о решении]\nsemanticFingerprint: Вопрос раскрывает временные рамки и способы отслеживания статуса, не дублируя инструкцию.\ninterlink planning: ссылка на раздел о регламенте подачи заявления.\nWORD COUNT: minWords: 150, maxWords: 220\nsourceHint: Internal KB (сроки, уведомления), External KB (варианты статусов)\nevidenceStrength: internal-tested\n\nPAGE SETTINGS: Narrative, Simple, Custom Requirements applied.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-2-1",
+                    "tag": "p",
+                    "keywords": [
+                      "статус заявления на Госуслугах"
+                    ],
+                    "selfPrompt": "CONTEXT: Generate paragraph (answer) for FAQ question on сроки рассмотрения и отслеживание статуса заявления на отмену лицензии.\nROLE: answer\nKEYWORDS: [статус заявления на Госуслугах]\nWORD COUNT: minWords: 60, maxWords: 120\nsourceHint: Internal KB (сроки, уведомления), External KB (статусы)\nsemanticFingerprint: Конкретные сроки и способы проверки статуса заявления.",
+                    "taxonomy": "supporting",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-3",
+                "tag": "h3",
+                "keywords": [
+                  "отмена лицензии такси для ИП",
+                  "документы для аннулирования лицензии",
+                  "доверенность на подачу заявления"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Узнайте, какие документы нужны для ИП и как действовать, если заявление подает представитель.",
+                "intent": "Пояснить, какие документы требуются для аннулирования лицензии ИП и как оформить доверенность для представителя.",
+                "audiences": "ИП и представители, которые хотят подготовить полный пакет документов без ошибок.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ question on \"Какие документы нужны для отмены лицензии такси ИП и можно ли подать заявление через представителя?\" for section 'FAQ'.\nREFERENCE PARENT H2: 'FAQ'\nKEYWORDS: [отмена лицензии такси для ИП, документы для аннулирования лицензии, доверенность на подачу заявления]\nsemanticFingerprint: Вопрос раскрывает нюансы по документам и представительству, не дублируя основной список документов.\ninterlink planning: ссылка на раздел о необходимых документах.\nWORD COUNT: minWords: 150, maxWords: 220\nsourceHint: Internal KB (документы, доверенность), External KB (разъяснения)\nevidenceStrength: internal-tested\n\nPAGE SETTINGS: Narrative, Simple, Custom Requirements applied.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-3-1",
+                    "tag": "p",
+                    "keywords": [
+                      "документы для аннулирования лицензии"
+                    ],
+                    "selfPrompt": "CONTEXT: Generate paragraph (answer) for FAQ question on документы для ИП и порядок подачи заявления через представителя.\nROLE: answer\nKEYWORDS: [документы для аннулирования лицензии]\nWORD COUNT: minWords: 60, maxWords: 120\nsourceHint: Internal KB (документы, доверенность), External KB (нюансы для ИП)\nsemanticFingerprint: Перечень документов и условия подачи заявления представителем.",
+                    "taxonomy": "supporting",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "FAQ-4",
+                "tag": "h3",
+                "keywords": [
+                  "последствия отмены лицензии на такси",
+                  "уведомление сотрудников и клиентов",
+                  "завершение деятельности такси"
+                ],
+                "taxonomy": "FAQ",
+                "attention": "Понимание последствий отмены лицензии поможет избежать юридических и организационных ошибок.",
+                "intent": "Объяснить, что делать после аннулирования лицензии, как уведомить сотрудников и клиентов, и какие действия обязательны для завершения деятельности.",
+                "audiences": "Владельцы такси и ИП, которые хотят корректно завершить работу и избежать штрафов.",
+                "selfPrompt": "CONTEXT: Generate h3 FAQ question on \"Что делать после отмены лицензии на такси и как уведомить сотрудников и клиентов?\" for section 'FAQ'.\nREFERENCE PARENT H2: 'FAQ'\nKEYWORDS: [последствия отмены лицензии на такси, уведомление сотрудников и клиентов, завершение деятельности такси]\nsemanticFingerprint: Вопрос раскрывает действия после отмены лицензии, не дублируя инструкцию.\ninterlink planning: ссылка на раздел о последствиях и уведомлениях.\nWORD COUNT: minWords: 150, maxWords: 220\nsourceHint: Internal KB (последствия, уведомления), External KB (советы)\nevidenceStrength: internal-tested\n\nPAGE SETTINGS: Narrative, Simple, Custom Requirements applied.",
+                "additionalData": {
+                  "minWords": 150,
+                  "maxWords": 220,
+                  "actualContent": ""
+                },
+                "realContentStructure": [
+                  {
+                    "id": "p-FAQ-4-1",
+                    "tag": "p",
+                    "keywords": [
+                      "уведомление сотрудников и клиентов"
+                    ],
+                    "selfPrompt": "CONTEXT: Generate paragraph (answer) for FAQ question on действия после отмены лицензии и уведомление сотрудников/клиентов.\nROLE: answer\nKEYWORDS: [уведомление сотрудников и клиентов]\nWORD COUNT: minWords: 60, maxWords: 120\nsourceHint: Internal KB (последствия, уведомления), External KB (советы)\nsemanticFingerprint: Конкретные рекомендации по уведомлению и завершению деятельности.",
+                    "taxonomy": "supporting",
+                    "attention": "",
+                    "intent": "",
+                    "audiences": "",
+                    "additionalData": {
+                      "minWords": 60,
+                      "maxWords": 120,
+                      "actualContent": ""
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -3109,5 +3309,5 @@ export const contentData = {
 
 export type contentData = typeof contentData;
 
-export const lastUpdated = "2025-10-28T16:14:47.130Z";
+export const lastUpdated = "2025-10-28T16:16:29.982Z";
 export const generatedBy = "menu-persist-api";
