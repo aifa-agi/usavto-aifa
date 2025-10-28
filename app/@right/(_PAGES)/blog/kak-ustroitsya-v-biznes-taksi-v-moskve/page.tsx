@@ -1,5 +1,5 @@
 // Auto-generated SEO-optimized static page - do not edit manually
-// Generated on: 2025-10-28T13:52:13.992Z
+// Generated on: 2025-10-28T13:52:44.933Z
 // Source href: /blog/kak-ustroitsya-v-biznes-taksi-v-moskve
 // Page metadata: Как устроиться в бизнес такси в Москве: требования, доход, старт | 5 sections
 // FAQ sections detected: 4
@@ -44,7 +44,7 @@ const sections = [
           "content": [
             {
               "type": "text",
-              "text": "Как устроиться в бизнес такси в Москве: доход, требования и старт"
+              "text": "Как устроиться в бизнес такси в Москве: доход, требования и старт."
             }
           ]
         },
@@ -1649,8 +1649,8 @@ export default function Page() {
               "url": "/app-images/jqx4patm54denzgusqq1wj2f.webp",
               "alt": "как устроиться в бизнес такси в москве"
             },
-            "datePublished": "2025-10-28T13:52:13.992Z",
-            "dateModified": "2025-10-28T13:52:13.992Z",
+            "datePublished": "2025-10-28T13:52:44.933Z",
+            "dateModified": "2025-10-28T13:52:44.933Z",
             "articleSection": "blog",
             "keywords": ["как устроиться в бизнес такси в москве"],
             "mainEntityOfPage": {
