@@ -13,7 +13,6 @@ import { getChatById } from "../../../(_service)/(_db-queries)/chat/queries";
 import { getMessagesByChatId } from "../../../(_service)/(_db-queries)/message/queries";
 import { auth } from "@/app/@left/(_sub_domains)/(_AUTH)/(_service)/(_actions)/auth";
 
-export const dynamic = "force-dynamic";
 
 export default function Page(props: { params: Promise<{ id: string }> }) {
   return (
