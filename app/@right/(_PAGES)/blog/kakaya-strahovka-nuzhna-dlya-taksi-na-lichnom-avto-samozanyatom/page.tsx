@@ -25,6 +25,8 @@ import { Badge } from "@/components/ui/badge";
 // ============================================
 
 const sections = [
+
+
   {
     "id": "h2-1",
     "bodyContent": {
