@@ -1,10 +1,6 @@
-// @app/@left/(_public)/(_CHAT-FRACTAL)/(chat)/layout.tsx
-
-import { cookies } from "next/headers";
+// @/app/@left/(_public)/(_CHAT-FRACTAL)/(chat)/layout.tsx
 
 import { AppSidebar } from "@/app/@left/(_sub_domains)/(_CHAT)/(chat)/(_service)/(_components)/app-sidebar";
-
-import Script from "next/script";
 import { validateTranslations } from "./(_service)/(_libs)/validate-translations";
 import { RoleStatus } from "./(_service)/(_components)/role-status";
 import { auth } from "@/app/@left/(_sub_domains)/(_AUTH)/(_service)/(_actions)/auth";
@@ -20,17 +16,18 @@ export default async function Layout({
 }: {
   children: React.ReactNode;
 }) {
+  // Validate translations
   validateTranslations();
-  const [session, cookieStore] = await Promise.all([auth(), cookies()]);
-  const isCollapsed = cookieStore.get("sidebar:state")?.value !== "true";
+
+  // Get user session
+  const session = await auth();
 
   return (
     <>
-      <Script
-        src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"
-        strategy="beforeInteractive"
-      />
-      <SidebarProvider defaultOpen={!isCollapsed}>
+
+
+      {/* Sidebar - always open by default */}
+      <SidebarProvider defaultOpen={false}>
         <AppSidebar user={session?.user} />
         <SidebarInset>
           {children}

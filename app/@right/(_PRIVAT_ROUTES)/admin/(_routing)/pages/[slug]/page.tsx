@@ -44,15 +44,4 @@ export default async function AdminPageDetails({
   );
 }
 
-/**
- * Generate metadata for the page based on slug
- */
-export async function generateMetadata({ params }: AdminPageDetailsProps) {
-  // Also await params in generateMetadata
-  const { slug } = await params;
 
-  return {
-    title: `Admin: ${slug}`,
-    description: `Administrating page ${slug}`,
-  };
-}
