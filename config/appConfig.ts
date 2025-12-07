@@ -138,7 +138,14 @@ export const appConfig: AppConfig = {
 // ============================================
 
 export type SupportedLang = "ru" | "en" | "es" | "fr" | "de" | "it";
-
+export const SUPPORTED_LANGUAGES: readonly SupportedLang[] = [
+  "ru", 
+  "en", 
+  "es", 
+  "fr", 
+  "de", 
+  "it"
+] as const;
 export type ImageFormat = "png" | "jpg" | "jpeg" | "webp" | "avif" | "svg" | "gif";
 
 export type RegularImageType = 
@@ -190,11 +197,7 @@ export interface AppConfig {
   mailSupport: string;
   lang: SupportedLang;
   chatBrand: string;
-
-  // ✅ Dynamic images with metadata (excluding logo)
   images: Record<RegularImageType, ImageMetadata>;
-
-  // Logo field - NOT part of images, handled separately
   logo: string;
 
   icons: {

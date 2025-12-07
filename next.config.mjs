@@ -1,27 +1,6 @@
 // File: next.config.mjs
-// Best practices: This is the single source of truth for your Next.js configuration,
-// combining your project's settings with PWA capabilities and custom file tracing.
-
-/**
- * Configuration overview:
- * 1. Import PWA wrapper for service worker generation
- * 2. Define base Next.js config with experimental features and image optimization
- * 3. Add outputFileTracingIncludes to ensure custom data files are included in Vercel deployment
- * 4. Merge all configs using withPWA wrapper
- * 
- * File tracing context:
- * - Next.js uses @vercel/nft to trace dependencies automatically
- * - Custom data files (like config/content/*) need explicit inclusion
- * - Route-specific includes ensure only necessary files are bundled per function
- */
 
 import withPWA from 'next-pwa';
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-// Get __dirname equivalent in ES modules
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 // Define PWA-specific settings
 const pwaConfig = withPWA({
@@ -36,13 +15,12 @@ const pwaConfig = withPWA({
 
 /** @type {import('next').NextConfig} */
 // This is your base Next.js configuration
-const isImageOptimizationOn = process.env.IMAGE_OPTIMIZATION_ON === 'true';
 
 const nextConfig = {
   experimental: {
     ppr: true, // Enables Partial Prerendering (PPR)
   },
-  
+
   images: {
     remotePatterns: [
       {
@@ -82,16 +60,12 @@ const nextConfig = {
   outputFileTracingIncludes: {
     // Include all content data files for the menu read API route
     // This ensures config/content/* files are available in serverless environment
-    '/api/menu': [
-      './config/content/**/*',
-    ],
-    
+    '/api/menu': ['./config/content/**/*'],
+
     // If you have the route in app router with parallel routes:
     // Use the full route path without the route.ts file
-    '/@right/(_server)/api/menu': [
-      './config/content/**/*',
-    ],
-    
+    '/@right/(_server)/api/menu': ['./config/content/**/*'],
+
     // Alternative: Include for all API routes if multiple routes need these files
     // '/api/**': [
     //   './config/content/**/*',
@@ -100,7 +74,7 @@ const nextConfig = {
 
   /**
    * Optional: outputFileTracingRoot
-   * 
+   *
    * Use this in monorepo setups to include files outside project directory
    * Example: if your project is in packages/web-app and you need files from root
    */
@@ -108,7 +82,7 @@ const nextConfig = {
 
   /**
    * Optional: outputFileTracingExcludes
-   * 
+   *
    * Use this to exclude unnecessary files that were auto-traced
    * Helps reduce bundle size
    */

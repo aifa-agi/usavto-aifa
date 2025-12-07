@@ -2,10 +2,8 @@
 
 import { useChatLanguage } from "@/contexts/language-context";
 import translations from "../(_translations)/translations.json";
-import {
-  DEFAULT_LANGUAGE,
-  SupportedLanguage,
-} from "@/config/translations.config";
+import { DEFAULT_LANGUAGE } from "@/config/translations.config";
+import type { SupportedLanguage } from "@/config/translations.config";
 
 type TranslationEntry = {
   [K in SupportedLanguage]?: string;

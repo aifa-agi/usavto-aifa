@@ -4,8 +4,10 @@ import React, { createContext, useContext, useEffect, useState } from "react";
 import {
   SUPPORTED_LANGUAGES,
   DEFAULT_LANGUAGE,
-  SupportedLanguage,
 } from "@/config/translations.config";
+import type { SupportedLanguage } from "@/config/translations.config";
+
+
 
 interface LanguageContextType {
   language: SupportedLanguage;
@@ -14,7 +16,7 @@ interface LanguageContextType {
 
 const LanguageContext = createContext<LanguageContextType>({
   language: DEFAULT_LANGUAGE,
-  setLanguage: () => {},
+  setLanguage: () => { },
 });
 
 export const useChatLanguage = () => useContext(LanguageContext);
@@ -32,7 +34,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({
       }
     }
   }, []);
-  useEffect(() => {}, [language]);
+  useEffect(() => { }, [language]);
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>
       {children}

@@ -182,30 +182,27 @@ export function TravelSheetsSection() {
         variants={variants}
       >
         <Card
-          className={`p-4 w-full border dark:border-gray-600 transition-transform duration-300 ease-in-out cursor-pointer hover:scale-105 hover:shadow-lg ${
-            isSpecial ? "bg-blue-800 text-white" : "bg-white dark:bg-gray-700"
-          }`}
+          className={`p-4 w-full border dark:border-gray-600 transition-transform duration-300 ease-in-out cursor-pointer hover:scale-105 hover:shadow-lg ${isSpecial ? "bg-blue-800 text-white" : "bg-white dark:bg-gray-700"
+            }`}
         >
           <CardContent className="p-0 h-full flex flex-col">
             <div className="flex gap-4 h-full">
               <div className="flex-1 flex flex-col">
                 <div className="flex gap-3 mb-4">
                   <div
-                    className={`w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0 ${
-                      isSpecial
+                    className={`w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0 ${isSpecial
                         ? "bg-white text-blue-800"
                         : "bg-blue-800 text-white"
-                    }`}
+                      }`}
                   >
                     <IconComponent className="w-4 h-4" />
                   </div>
                   <div className="flex flex-col gap-3 flex-1">
                     <h3
-                      className={`text-xl font-bold leading-tight ${
-                        isSpecial
+                      className={`text-xl font-bold leading-tight ${isSpecial
                           ? "text-white"
                           : "text-gray-900 dark:text-white"
-                      }`}
+                        }`}
                     >
                       {card.title}
                     </h3>
@@ -213,11 +210,10 @@ export function TravelSheetsSection() {
                       {card.descriptions.map((description, descIndex) => (
                         <p
                           key={descIndex}
-                          className={`text-base leading-relaxed ${
-                            isSpecial
+                          className={`text-base leading-relaxed ${isSpecial
                               ? "text-white"
                               : "text-gray-700 dark:text-gray-300"
-                          }`}
+                            }`}
                         >
                           {description}
                         </p>
@@ -250,11 +246,10 @@ export function TravelSheetsSection() {
                     >
                       <Badge
                         variant="secondary"
-                        className={`text-sm font-bold bg-white text-blue-800 ${
-                          card.badge.animate
+                        className={`text-sm font-bold bg-white text-blue-800 ${card.badge.animate
                             ? "animate-bounce hover:animate-none"
                             : ""
-                        }`}
+                          }`}
                       >
                         {card.badge.text}
                       </Badge>
