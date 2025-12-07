@@ -65,7 +65,6 @@ export default async function RootLayout({
   return (
     <html
       lang={appConfig.lang}
-      suppressHydrationWarning
       className={`${geist.variable} ${geistMono.variable}`}
     >
       <head />
