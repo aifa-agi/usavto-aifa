@@ -14,14 +14,7 @@ import { constructMetadata } from "@/lib/construct-metadata";
 import ServerContentRenderer from "@/app/@right/(_service)/(_components)/server-content-renderer";
 import { Badge } from "@/components/ui/badge";
 
-// ============================================
-// STATIC GENERATION CONFIGURATION
-// ============================================
 
-// Force static generation for optimal SEO and performance
-export const dynamic = "force-static";
-export const revalidate = false;
-export const fetchCache = "force-cache";
 
 // NOTE: generateStaticParams is not needed for this page
 // Path is hardcoded: /blog/blog/kakaya-strahovka-nuzhna-dlya-taksi-na-lichnom-avto-samozanyatom

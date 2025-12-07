@@ -13,10 +13,6 @@ import ContentRenderer from "@/app/@right/(_service)/(_components)/content-rende
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 
-// Enforce static generation for SEO
-export const dynamic = "force-static";
-export const revalidate = false;
-export const fetchCache = "force-cache";
 
 // Embedded sections data
 const sections = [

@@ -11,10 +11,6 @@ import ContentRenderer from "@/app/@right/(_service)/(_components)/content-rende
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 
-// Enforce static generation for SEO
-export const dynamic = "force-static";
-export const revalidate = false;
-export const fetchCache = "force-cache";
 
 // Embedded sections data
 const sections = [
@@ -4157,7 +4153,7 @@ export default function Page() {
             <Badge className="shadow-none rounded-md px-2.5 py-0.5 text-xs font-semibold h-6 flex items-center">
               epl
             </Badge>
-             {["Электронный путевой лист"].slice(0, 3).map((keyword: string, index: number) => (
+            {["Электронный путевой лист"].slice(0, 3).map((keyword: string, index: number) => (
               <Badge key={index} variant="outline" className="shadow-none rounded-md px-2.5 py-0.5 text-xs font-semibold h-6 flex items-center">
                 {keyword}
               </Badge>

@@ -9,9 +9,6 @@ import { appConfig, getHomePageIllustration } from "@/config/appConfig";
 import { AnalyticsTracker } from "./(_components)/analytics-tracker";
 
 
-// ✅ Force static generation
-export const dynamic = 'force-static';
-export const revalidate = false;
 
 /**
  * Comments in English: Thank You page after lead submission

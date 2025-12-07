@@ -13,7 +13,7 @@ import {
   SidebarProvider,
 } from "./(_service)/(_components)/sidebar";
 
-export const experimental_ppr = true;
+
 
 export default async function Layout({
   children,
