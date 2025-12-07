@@ -69,85 +69,85 @@ export default async function RootLayout({
     >
       <head />
       <body
-        style={{ overscrollBehaviorX: "none" }}
+
       >
-        <ThemeProvider
+        {/* <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
-        >
+        > */}
 
-          <SessionProvider>
-            <OnlineStatusProvider>
-              <LanguageProvider>
-                <RightSidebarProvider>
-                  <AppProvider>
-                    {/* === DESKTOP LAYOUT === */}
-                    <div className="hidden md:block h-screen w-screen">
-                      <ResizablePanelGroup direction="horizontal">
-                        <ResizablePanel defaultSize={40} minSize={35}>
-                          <div className="overflow-hidden h-full">{left}</div>
-                        </ResizablePanel>
-                        <ResizableHandle withHandle />
-                        <ResizablePanel defaultSize={60} minSize={35}>
-                          {/* --- START: CORRECTED BLOCK --- */}
+        <SessionProvider>
+          <OnlineStatusProvider>
+            <LanguageProvider>
+              <RightSidebarProvider>
+                <AppProvider>
+                  {/* === DESKTOP LAYOUT === */}
+                  <div className="hidden md:block h-screen w-screen">
+                    <ResizablePanelGroup direction="horizontal">
+                      <ResizablePanel defaultSize={40} minSize={35}>
+                        <div className="overflow-hidden h-full">{left}</div>
+                      </ResizablePanel>
+                      <ResizableHandle withHandle />
+                      <ResizablePanel defaultSize={60} minSize={35}>
+                        {/* --- START: CORRECTED BLOCK --- */}
+                        <NavigationMenuProvider>
+                          <div
+                            id="right-slot"
+                            className="relative flex flex-col h-screen"
+                            style={{
+                              isolation: 'isolate',
+                              overflow: 'hidden'
+                            }}
+                          >
+                            <NavBar />
+                            <main className="flex-1 overflow-y-auto hide-scrollbar">
+                              {right}
+                            </main>
+                          </div>
+                        </NavigationMenuProvider>
+                        {/* --- END: CORRECTED BLOCK --- */}
+                      </ResizablePanel>
+                    </ResizablePanelGroup>
+                    <CookieBanner />
+                  </div>
+
+
+                  {/* === MOBILE LAYOUT === */}
+                  <div className="w-full md:hidden relative">
+                    <MobileDrawerWrapper>
+                      {left}
+                      <div className="border-l overflow-hidden border-secondary">
+                        <RightDrawerBar>
                           <NavigationMenuProvider>
-                            <div
-                              id="right-slot"
-                              className="relative flex flex-col h-screen"
-                              style={{
-                                isolation: 'isolate',
-                                overflow: 'hidden'
-                              }}
-                            >
+                            <div className="flex flex-col h-svh pb-6">
                               <NavBar />
                               <main className="flex-1 overflow-y-auto hide-scrollbar">
                                 {right}
                               </main>
+                              <CookieBanner />
                             </div>
                           </NavigationMenuProvider>
-                          {/* --- END: CORRECTED BLOCK --- */}
-                        </ResizablePanel>
-                      </ResizablePanelGroup>
-                      <CookieBanner />
-                    </div>
+                        </RightDrawerBar>
+                      </div>
+                    </MobileDrawerWrapper>
+                  </div>
 
 
-                    {/* === MOBILE LAYOUT === */}
-                    <div className="w-full md:hidden relative">
-                      <MobileDrawerWrapper>
-                        {left}
-                        <div className="border-l overflow-hidden border-secondary">
-                          <RightDrawerBar>
-                            <NavigationMenuProvider>
-                              <div className="flex flex-col h-svh pb-6">
-                                <NavBar />
-                                <main className="flex-1 overflow-y-auto hide-scrollbar">
-                                  {right}
-                                </main>
-                                <CookieBanner />
-                              </div>
-                            </NavigationMenuProvider>
-                          </RightDrawerBar>
-                        </div>
-                      </MobileDrawerWrapper>
-                    </div>
+                  <DevIndicatorClient />
+                </AppProvider>
+              </RightSidebarProvider>
+            </LanguageProvider>
+          </OnlineStatusProvider>
 
-
-                    <DevIndicatorClient />
-                  </AppProvider>
-                </RightSidebarProvider>
-              </LanguageProvider>
-            </OnlineStatusProvider>
-
-            {process.env.NODE_ENV === "production" && (
-              <GoogleAnalytics
-                gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID!}
-              />
-            )}
-          </SessionProvider>
-        </ThemeProvider>
+          {process.env.NODE_ENV === "production" && (
+            <GoogleAnalytics
+              gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID!}
+            />
+          )}
+        </SessionProvider>
+        {/* </ThemeProvider> */}
         <Toaster position="top-center" />
       </body>
     </html>
